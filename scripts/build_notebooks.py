@@ -148,7 +148,7 @@ From GitHub, click the Open in Colab badge above. In Colab, choose Runtime and R
 | Mode | Public input | Typical resource | Output |
 | --- | --- | --- | --- |
 | DEMO | Aggregate result bundle | Colab CPU, minutes | Verified tables and figures |
-| ANALYSIS | Retained activation cache and exact analysis lock | CPU plus cache storage | Recomputed statistics |
+| ANALYSIS | Retained activation cache and version-pinned analysis requirements | CPU plus cache storage | Recomputed statistics |
 | FULL | Model and factual datasets | CUDA GPU, long run | New activations and statistics |
 """),
         code(setup_cell("DEMO")),
@@ -286,7 +286,7 @@ The experiment inherits the factual truth-geometry motivation, cities data famil
 
 DEMO verifies and presents the retained result files. ANALYSIS recomputes every statistic from a retained activation cache after checking every cache part. The cache is not publicly distributed yet, so this middle tier remains maintainer-only. FULL requests the model at the exact frozen revision, extracts activations, runs the analysis, and compares the reproduced measurements with the public reference.
 
-ANALYSIS installs `requirements-truth-analysis.txt` before importing the numerical stack, then reads the cache location from TRUTH_CACHE_ROOT. FULL installs the separate GPU reproduction lock at the same point. All generated files use OUTPUT_ROOT. Set GEOMETRY_OUTPUT_ROOT to a mounted Google Drive directory before the setup cell when a run must survive a Colab reset. The following table records the software versions used for the retained run.
+ANALYSIS installs `requirements-truth-analysis.txt` before importing the recorded numerical stack, then reads the cache location from TRUTH_CACHE_ROOT. FULL installs the separate GPU reproduction requirements at the same point. Platform and BLAS differences remain visible because the result comparison fails closed on any changed value. All generated files use OUTPUT_ROOT. Set GEOMETRY_OUTPUT_ROOT to a mounted Google Drive directory before the setup cell when a run must survive a Colab reset. The following table records the software versions used for the retained run.
 """),
         code("""
 display(retained_environment(bundle))
@@ -491,7 +491,7 @@ display(number_lineage(bundle))
         markdown("""
 ## Full reconstruction
 
-FULL installs the ValuePrism dependencies, reads HF_TOKEN from Colab Secrets, and reconstructs the public aggregate on CPU. The visible comparison checks aggregate counts, all five seed-specific strict scores and intervention effects, every overlap count including L1, strict and common-training row hashes, frozen input file hashes, confirmatory row membership across all four board cells, and the U1 exclusion hash. The normalization code and counts are reproduced. The retained confirmatory hash covers unique row membership after sorting rather than candidate order. A separate public hash for the complete form-to-cluster mapping remains unavailable. ValuePrism dependency ranges also remain broader than the exact Truth reproduction lock, so a fresh FULL validation matrix is still required before claiming environment-complete reproduction.
+FULL installs the ValuePrism dependencies, reads HF_TOKEN from Colab Secrets, and reconstructs the public aggregate on CPU. The visible comparison checks aggregate counts, all five seed-specific strict scores and intervention effects, every overlap count including L1, strict and common-training row hashes, frozen input file hashes, confirmatory row membership across all four board cells, and the U1 exclusion hash. The normalization code and counts are reproduced. The retained confirmatory hash covers unique row membership after sorting rather than candidate order. A separate public hash for the complete form-to-cluster mapping remains unavailable. ValuePrism dependency ranges also remain broader than the version-pinned Truth requirements, so a fresh FULL validation matrix is still required before claiming environment-complete reproduction.
 """),
         code(secret_cell(
             "valueprism-full",
