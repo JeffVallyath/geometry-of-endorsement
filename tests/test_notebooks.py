@@ -39,6 +39,8 @@ def test_truth_notebook_describes_the_implemented_estimator() -> None:
     assert "2,000-group bootstrap" in text
     assert "Monte Carlo" in text
     assert "layers 8 through 24" not in text
+    assert "Factual truth is easier and represents a different target" in text
+    assert "requirements-truth-analysis.txt" in text
 
 
 def test_current_frontier_is_explicit() -> None:
@@ -50,3 +52,6 @@ def test_current_frontier_is_explicit() -> None:
     assert "layer 19" in status.lower()
     assert "0.780" in status
     assert "rephrasing-flip experiment has not run" in status
+    assert "Rewarding demonstrated merit" in leakage
+    assert "confirmatory row membership across all four board cells" in leakage
+    assert "candidate ordering" not in leakage

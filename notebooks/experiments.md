@@ -36,3 +36,25 @@
 | Result | Layer 19, DIM I_b=1.65, logistic I_b=2.08, SBERT I_b=0.28 |
 | Relation AUROC | Native 0.721, DIM 0.732, logistic 0.780 |
 | Conclusion | Development evidence supports a relation signal. Human-audited confirmation and rephrasing-flip prediction remain open |
+
+## Reconstruction contract repair
+
+| Field | Value |
+| --- | --- |
+| Hypothesis | FULL currently reads a nonexistent single row_id column from the four-cell confirmatory manifest |
+| Baseline | Published v1.1.0 comparison path |
+| Changed variable | Flatten the four row ID columns, deduplicate row membership, and hash with the manifest builder's sorted rule |
+| Held fixed | Frozen manifest, candidate set, row identity function, and expected hash |
+| Result | Synthetic regression covers all four columns and repeated row IDs; public suite passes |
+| Conclusion | The comparison now operationally verifies the stored confirmatory row-membership contract |
+
+## Analysis environment lock
+
+| Field | Value |
+| --- | --- |
+| Hypothesis | ANALYSIS can drift when numerical packages load before exact versions are installed |
+| Baseline | Ranged package installation in v1.1.0 |
+| Changed variable | Install the CPU analysis lock before importing NumPy, pandas, scikit-learn, PyYAML, or plotting code |
+| Held fixed | Activation cache contract, seed 314159, estimator, layer selection, and exact result comparison |
+| Result | Setup source now selects the analysis or GPU lock before experiment imports |
+| Conclusion | ANALYSIS and FULL use mode-specific dependency locks without forcing CUDA packages into the CPU-only path |

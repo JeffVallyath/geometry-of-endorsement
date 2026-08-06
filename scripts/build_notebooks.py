@@ -8,8 +8,8 @@ import nbformat as nbf
 
 ROOT = Path(__file__).resolve().parents[1]
 PUBLIC_REPOSITORY = "https://github.com/JeffVallyath/geometry-of-truth.git"
-PUBLIC_REF = "v1.1.0"
-PUBLIC_COMMIT = "2a2c056f24cff362990fb7468545c6b206e3f490"
+PUBLIC_REF = "v1.1.1"
+PUBLIC_COMMIT = "cf605a169eef6cbe24ead242e0a5a39097df4f0d"
 
 
 def markdown(text: str):
@@ -127,6 +127,10 @@ The control asks whether the extraction and probing pipeline can recover factual
 
 Layer 14 gives T=1.92 with a 95 percent bootstrap interval from 1.89 to 1.96. Directional consensus is C=0.999. None of 1,000 group-preserving Monte Carlo null runs match the observed statistic, giving p=1/1001 with the prespecified add-one correction. The 1/2 transfer gives T=1.84 with a 95 percent interval from 1.81 to 1.87.
 
+## Construct boundary
+
+This control matches the answer-mapping and activation-extraction mechanics used in the moral experiment. Factual truth is easier and represents a different target from moral endorsement. A pass establishes instrument sensitivity, while the checkerboard experiments supply the construct-specific evidence.
+
 ## Contents
 
 1. Experimental population and split
@@ -144,7 +148,7 @@ From GitHub, click the Open in Colab badge above. In Colab, choose Runtime and R
 | Mode | Public input | Typical resource | Output |
 | --- | --- | --- | --- |
 | DEMO | Aggregate result bundle | Colab CPU, minutes | Verified tables and figures |
-| ANALYSIS | Retained activation cache | CPU plus cache storage | Recomputed statistics |
+| ANALYSIS | Retained activation cache and exact analysis lock | CPU plus cache storage | Recomputed statistics |
 | FULL | Model and factual datasets | CUDA GPU, long run | New activations and statistics |
 """),
         code(setup_cell("DEMO")),
@@ -282,7 +286,7 @@ The experiment inherits the factual truth-geometry motivation, cities data famil
 
 DEMO verifies and presents the retained result files. ANALYSIS recomputes every statistic from a retained activation cache after checking every cache part. The cache is not publicly distributed yet, so this middle tier remains maintainer-only. FULL requests the model at the exact frozen revision, extracts activations, runs the analysis, and compares the reproduced measurements with the public reference.
 
-ANALYSIS reads the cache location from TRUTH_CACHE_ROOT. All generated files use OUTPUT_ROOT. Set GEOMETRY_OUTPUT_ROOT to a mounted Google Drive directory before the setup cell when a run must survive a Colab reset. The following table records the software versions used for the retained run.
+ANALYSIS installs `requirements-truth-analysis.txt` before importing the numerical stack, then reads the cache location from TRUTH_CACHE_ROOT. FULL installs the separate GPU reproduction lock at the same point. All generated files use OUTPUT_ROOT. Set GEOMETRY_OUTPUT_ROOT to a mounted Google Drive directory before the setup cell when a run must survive a Colab reset. The following table records the software versions used for the retained run.
 """),
         code("""
 display(retained_environment(bundle))
@@ -375,6 +379,16 @@ print("Artifact integrity verified")
 A ValuePrism row pairs one situation with one consideration and labels that consideration Supports or Opposes. Removing the third Either label leaves 183,023 eligible rows. Among them, 20,032 situations contain at least one row of each valence, and 3,437 exact consideration phrases appear with both valences somewhere in the dataset.
 
 Combining those reversals produces 13,923 possible checkerboards across 6,073 distinct consideration pairs. A checkerboard contains two situations and two considerations. The first consideration supports in one situation and opposes in the other, while the second consideration follows the opposite pattern. The 13,923 figure counts possible boards before semantic review, and the 6,073 figure counts unique pairs even when one pair supports several boards.
+
+A synthetic example makes the reciprocal structure concrete.
+
+| Synthetic unit | Academic prize | Emergency housing |
+| --- | --- | --- |
+| Action | Award the highest-scoring applicant | Prioritize the lowest-income applicant |
+| Rewarding demonstrated merit | Supports | Opposes |
+| Prioritizing urgent need | Opposes | Supports |
+
+The labels reverse because the action and allocation purpose change, while each consideration keeps the same meaning and stakeholder role. Human review applies that same requirement to real candidates.
 
 For scores f, the checkerboard interaction is
 
@@ -477,7 +491,7 @@ display(number_lineage(bundle))
         markdown("""
 ## Full reconstruction
 
-FULL installs the ValuePrism dependencies, reads HF_TOKEN from Colab Secrets, and reconstructs the public aggregate on CPU. The visible comparison checks aggregate counts, all five seed-specific strict scores and intervention effects, every overlap count including L1, strict and common-training row hashes, frozen input file hashes, candidate ordering, and the U1 exclusion hash. The normalization code and counts are reproduced. A separate public hash for the complete form-to-cluster mapping remains unavailable. ValuePrism dependency ranges also remain broader than the exact Truth reproduction lock, so a fresh FULL validation matrix is still required before claiming environment-complete reproduction.
+FULL installs the ValuePrism dependencies, reads HF_TOKEN from Colab Secrets, and reconstructs the public aggregate on CPU. The visible comparison checks aggregate counts, all five seed-specific strict scores and intervention effects, every overlap count including L1, strict and common-training row hashes, frozen input file hashes, confirmatory row membership across all four board cells, and the U1 exclusion hash. The normalization code and counts are reproduced. The retained confirmatory hash covers unique row membership after sorting rather than candidate order. A separate public hash for the complete form-to-cluster mapping remains unavailable. ValuePrism dependency ranges also remain broader than the exact Truth reproduction lock, so a fresh FULL validation matrix is still required before claiming environment-complete reproduction.
 """),
         code(secret_cell(
             "valueprism-full",
