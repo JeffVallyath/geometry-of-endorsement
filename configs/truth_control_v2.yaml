@@ -1,0 +1,71 @@
+run:
+  name: llama31_8b_truth_control_v2_neutral_mapping
+  protocol: TRUTH_CONTROL_V2_NEUTRAL_MAPPING
+  mode: full
+  seed: 314159
+
+model:
+  id: meta-llama/Meta-Llama-3.1-8B-Instruct
+  revision: main
+  torch_dtype: bfloat16
+  allow_fp16_fallback: false
+  quantization: none
+  min_gpu_memory_mib: 23000
+  device_map: auto
+  trust_remote_code: false
+
+data:
+  statement_column: statement
+  label_column: label
+  group_columns: [city]
+  max_examples_per_dataset: null
+  datasets:
+    - name: cities
+      url: https://raw.githubusercontent.com/saprmarks/geometry-of-truth/5d1c630c44f7e50bda7ad86d601ccadf9abc5ddb/datasets/cities.csv
+      sha256: f2560a0c1758c69935b50125111b574b71896bb75930dd87b1d8c973c1fa086e
+    - name: neg_cities
+      url: https://raw.githubusercontent.com/saprmarks/geometry-of-truth/5d1c630c44f7e50bda7ad86d601ccadf9abc5ddb/datasets/neg_cities.csv
+      sha256: 66c5c84de98ca15570138c205ab0e3907b57750083fac72a4eacafc3d9ebcea7
+
+prompt:
+  chat_template_source: pinned_tokenizer_revision
+  add_generation_prompt: true
+  stop_conditions: not_applicable_sequence_scoring_without_generation
+  system_template: You classify factual statements. Follow the requested neutral answer mapping exactly.
+  schemes:
+    primary:
+      symbols: [A, B]
+      user_template: |-
+        Statement: {statement}
+        Question: Is this statement factually true or false?
+        {mapping_instruction}
+    transfer:
+      symbols: ["1", "2"]
+      user_template: |-
+        Consider this factual claim: {statement}
+        Is the claim correct or incorrect?
+        {mapping_instruction}
+
+cache:
+  batch_size: 8
+  chunk_size: 64
+  activation_dtype: float16
+  sync_every_chunks: 1
+
+analysis:
+  train_fraction: 0.60
+  dev_fraction: 0.20
+  test_fraction: 0.20
+  primary_scheme: primary
+  transfer_scheme: transfer
+  selection_metric: min_primary_mapping_signed_standardized_separation
+  primary_statistic: mean_cross_partition_signed_standardized_separation
+  training_partitions: 8
+  permutation_unit: training_group_sign_flip
+  permutations: 1000
+  checkpoint_every_permutations: 10
+  bootstrap_unit: test_group_id
+  bootstrap_replicates: 2000
+  confidence_level: 0.95
+  native_auroc_gate: 0.70
+  permutation_p_gate: 0.05

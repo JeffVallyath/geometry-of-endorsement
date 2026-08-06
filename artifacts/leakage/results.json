@@ -1,0 +1,298 @@
+{
+  "audit": {
+    "binary_rows": 183023,
+    "both_valence_exact_considerations": 3437,
+    "both_valence_situations": 20032,
+    "candidate_checkerboards": 13923,
+    "consideration_pairs": 6073,
+    "viability_candidate_rows": 164279,
+    "viability_rows": 110656,
+    "viability_situations": 19068
+  },
+  "candidate_audit": {
+    "ranked_candidates": 1090,
+    "required_acceptance_fraction": 0.7339449541284404,
+    "target_confirmed": 800
+  },
+  "controls": {
+    "primary_checkerboard_endpoint": "standardized continuous interaction contrast I_b = [f(s1,c1)-f(s1,c2)] + [f(s2,c2)-f(s2,c1)], exactly 0 for any additive model",
+    "strict_generalization": {
+      "assertions_pass": true,
+      "cluster_overlap_prohibited": true,
+      "hash_test_rows": "cff427cc2bd4205badc56d813b3c982f672871dace8ef000c6d8d0000483d5a5",
+      "n_test_rows": 7394,
+      "n_train_rows": 116000,
+      "purpose": "does the relation readout generalise to UNSEEN consideration identities, not just familiar ones",
+      "situation_overlap_prohibited": true
+    }
+  },
+  "dataset": {
+    "config": "valence",
+    "gated": true,
+    "license": "AI2 ImpACT License for Medium Risk Artifacts",
+    "name": "allenai/ValuePrism",
+    "revision": "d439ca90825e5b4e5ef97798d9b5950e16ba7065",
+    "row_level_text_included": false
+  },
+  "normalization": {
+    "counts": {
+      "L0": 17678,
+      "L1": 15707,
+      "L2": 14601,
+      "L3": 10191
+    },
+    "l3": {
+      "character_ngram_range": [
+        3,
+        5
+      ],
+      "cluster_cap": 25,
+      "threshold": 0.85
+    }
+  },
+  "schema_version": 1,
+  "stress_test": {
+    "consideration_deltas": [
+      0.0927701674,
+      0.0754454343,
+      0.0814964297,
+      0.0739526931,
+      0.0410749399
+    ],
+    "consideration_mean_pp": 7.294793287999998,
+    "consideration_sample_sd_pp": 1.9294639911081233,
+    "metric": "pair_text within-situation paired accuracy",
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "situation_deltas": [
+      0.0080669711,
+      -0.0077951002,
+      0.0113318845,
+      0.0182388145,
+      -0.0034957396
+    ],
+    "situation_mean_pp": 0.526936606,
+    "situation_sample_sd_pp": 1.0727239539166569,
+    "strict_scores": [
+      0.7095890411,
+      0.6957126949,
+      0.713908724,
+      0.7201481904,
+      0.7668778676
+    ],
+    "training_injection_fraction": 0.3
+  },
+  "strict_split": {
+    "assertions_pass": true,
+    "dataset_binary_rows": 182602,
+    "duplicate_rows_dropped": 421,
+    "overlaps": {
+      "exact_consideration": 0,
+      "l1_normalized": 2,
+      "l2_prefix_stripped": 0,
+      "l3_semantic_cluster": 0,
+      "row_id": 0,
+      "situation": 0
+    },
+    "test_clusters": 996,
+    "test_row_hash": "cff427cc2bd4205badc56d813b3c982f672871dace8ef000c6d8d0000483d5a5",
+    "test_rows": 7394,
+    "test_situations": 4372,
+    "train_row_hash": "2539dece8cc0fb2315219d4ba61be3df031c852d6dee5610e3278329376f9dbe",
+    "train_rows": 116000
+  },
+  "sensitivity": {
+    "coverage": {
+      "U0": {
+        "consideration_clusters": 996,
+        "domain_proxy_method": "frozen first-match keyword taxonomy over normalized situation text; ValuePrism valence exposes no native domain field",
+        "domain_rows": {
+          "education_science": 48,
+          "environment_animals": 80,
+          "family_relationships": 833,
+          "health_safety": 219,
+          "law_rights": 250,
+          "other": 4800,
+          "personal_lifestyle": 184,
+          "politics_civic": 392,
+          "religion_culture": 34,
+          "technology_media": 52,
+          "work_economy": 502
+        },
+        "domain_situations": {
+          "education_science": 36,
+          "environment_animals": 44,
+          "family_relationships": 555,
+          "health_safety": 143,
+          "law_rights": 126,
+          "other": 2811,
+          "personal_lifestyle": 119,
+          "politics_civic": 176,
+          "religion_culture": 21,
+          "technology_media": 34,
+          "work_economy": 307
+        },
+        "rows": 7394,
+        "situations": 4372,
+        "supports_fraction": 0.5751961049499594,
+        "valence_rows": {
+          "opposes": 3141,
+          "supports": 4253
+        },
+        "vrd_rows": {
+          "Duty": 2333,
+          "Right": 1224,
+          "Value": 3837
+        },
+        "within_consideration_comparisons": 378506,
+        "within_consideration_groups": 223,
+        "within_situation_comparisons": 2009,
+        "within_situation_groups": 1205
+      },
+      "U1": {
+        "consideration_clusters": 991,
+        "domain_proxy_method": "frozen first-match keyword taxonomy over normalized situation text; ValuePrism valence exposes no native domain field",
+        "domain_rows": {
+          "education_science": 47,
+          "environment_animals": 74,
+          "family_relationships": 809,
+          "health_safety": 209,
+          "law_rights": 245,
+          "other": 4550,
+          "personal_lifestyle": 179,
+          "politics_civic": 389,
+          "religion_culture": 33,
+          "technology_media": 48,
+          "work_economy": 498
+        },
+        "domain_situations": {
+          "education_science": 35,
+          "environment_animals": 40,
+          "family_relationships": 549,
+          "health_safety": 139,
+          "law_rights": 124,
+          "other": 2698,
+          "personal_lifestyle": 118,
+          "politics_civic": 176,
+          "religion_culture": 20,
+          "technology_media": 32,
+          "work_economy": 306
+        },
+        "rows": 7081,
+        "situations": 4237,
+        "supports_fraction": 0.5966671374099703,
+        "valence_rows": {
+          "opposes": 2856,
+          "supports": 4225
+        },
+        "vrd_rows": {
+          "Duty": 2294,
+          "Right": 1213,
+          "Value": 3574
+        },
+        "within_consideration_comparisons": 374160,
+        "within_consideration_groups": 220,
+        "within_situation_comparisons": 1865,
+        "within_situation_groups": 1117
+      },
+      "U2": {
+        "consideration_clusters": 300,
+        "domain_proxy_method": "frozen first-match keyword taxonomy over normalized situation text; ValuePrism valence exposes no native domain field",
+        "domain_rows": {
+          "education_science": 7,
+          "environment_animals": 3,
+          "family_relationships": 58,
+          "health_safety": 21,
+          "law_rights": 18,
+          "other": 394,
+          "personal_lifestyle": 13,
+          "politics_civic": 27,
+          "religion_culture": 1,
+          "technology_media": 7,
+          "work_economy": 38
+        },
+        "domain_situations": {
+          "education_science": 6,
+          "environment_animals": 3,
+          "family_relationships": 54,
+          "health_safety": 21,
+          "law_rights": 15,
+          "other": 368,
+          "personal_lifestyle": 13,
+          "politics_civic": 24,
+          "religion_culture": 1,
+          "technology_media": 7,
+          "work_economy": 35
+        },
+        "rows": 587,
+        "situations": 547,
+        "supports_fraction": 0.5417376490630323,
+        "valence_rows": {
+          "opposes": 269,
+          "supports": 318
+        },
+        "vrd_rows": {
+          "Duty": 251,
+          "Right": 125,
+          "Value": 211
+        },
+        "within_consideration_comparisons": 477,
+        "within_consideration_groups": 26,
+        "within_situation_comparisons": 23,
+        "within_situation_groups": 20
+      },
+      "U3": {
+        "consideration_clusters": 300,
+        "domain_proxy_method": "frozen first-match keyword taxonomy over normalized situation text; ValuePrism valence exposes no native domain field",
+        "domain_rows": {
+          "education_science": 7,
+          "environment_animals": 3,
+          "family_relationships": 58,
+          "health_safety": 21,
+          "law_rights": 18,
+          "other": 394,
+          "personal_lifestyle": 13,
+          "politics_civic": 27,
+          "religion_culture": 1,
+          "technology_media": 7,
+          "work_economy": 38
+        },
+        "domain_situations": {
+          "education_science": 6,
+          "environment_animals": 3,
+          "family_relationships": 54,
+          "health_safety": 21,
+          "law_rights": 15,
+          "other": 368,
+          "personal_lifestyle": 13,
+          "politics_civic": 24,
+          "religion_culture": 1,
+          "technology_media": 7,
+          "work_economy": 35
+        },
+        "rows": 587,
+        "situations": 547,
+        "supports_fraction": 0.5417376490630323,
+        "valence_rows": {
+          "opposes": 269,
+          "supports": 318
+        },
+        "vrd_rows": {
+          "Duty": 251,
+          "Right": 125,
+          "Value": 211
+        },
+        "within_consideration_comparisons": 477,
+        "within_consideration_groups": 26,
+        "within_situation_comparisons": 23,
+        "within_situation_groups": 20
+      }
+    },
+    "terminal_disposition": "ULTRACLEAN_INCONCLUSIVE"
+  }
+}

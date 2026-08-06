@@ -1,0 +1,43 @@
+{
+  "config": {
+    "mode": "full",
+    "public_path": "configs/truth_control_v2.yaml",
+    "sha256": "61e9c98297fe85af4eec1ea064122155740cf8420bd818180371388322d95ee2"
+  },
+  "datasets": [
+    {
+      "name": "cities",
+      "rows": 1496,
+      "sha256": "f2560a0c1758c69935b50125111b574b71896bb75930dd87b1d8c973c1fa086e"
+    },
+    {
+      "name": "neg_cities",
+      "rows": 1496,
+      "sha256": "66c5c84de98ca15570138c205ab0e3907b57750083fac72a4eacafc3d9ebcea7"
+    }
+  ],
+  "model": {
+    "id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "quantization": "none",
+    "requested_revision": "main",
+    "resolved_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+    "torch_dtype": "bfloat16"
+  },
+  "runtime": {
+    "gpu": {
+      "memory_total_mib": 81152,
+      "name": "NVIDIA A100-SXM4-80GB"
+    },
+    "packages": {
+      "accelerate": "1.10.1",
+      "huggingface-hub": "0.34.4",
+      "numpy": "2.2.6",
+      "pandas": "2.3.2",
+      "scikit-learn": "1.7.1",
+      "torch": "2.11.0+cu128",
+      "transformers": "4.56.2"
+    },
+    "platform": "Linux-6.6.122+-x86_64-with-glibc2.35",
+    "python": "3.12.13 (main, Mar  4 2026, 09:23:07) [GCC 11.4.0]"
+  }
+}

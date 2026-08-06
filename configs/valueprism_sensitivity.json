@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "dataset": {"name": "allenai/ValuePrism", "config": "valence", "cached_revision": "d439ca90825e5b4e5ef97798d9b5950e16ba7065", "expected_deduplicated_binary_rows": 182602},
+  "frozen_inputs": {
+    "manifest_train_common.csv": "a674f40c5c47e48f523f8cc8f0a8d8fde4288e979294780dc4c78682e61bb20e",
+    "manifest_strict_train.csv": "e1c1e8547252534e2eadf2855fd59b83dabf4c0ffa41fdd84bc925243c7a73e5",
+    "manifest_strict_test.csv": "5f68a196ae8c3333d713b240cb04bc4cea9dbc763e12d706ae442af68bae4f36",
+    "manifest_confirmatory.csv": "af17c7e84a284406590a18ef4ab52dc6e919553b7b55cb6f1fa364d8ed6b0da5"
+  },
+  "frozen_row_hashes": {"strict_train": "2539dece8cc0fb2315219d4ba61be3df031c852d6dee5610e3278329376f9dbe", "strict_test": "cff427cc2bd4205badc56d813b3c982f672871dace8ef000c6d8d0000483d5a5"},
+  "retrieval": {
+    "views": ["normalized_character_3_5gram_tfidf_cosine", "prefix_stripped_token_set_jaccard", "prefix_stripped_light_lemma_character_3_5gram_tfidf_cosine", "sentence_transformer_cosine"],
+    "search_top_k_forms_per_view": 20,
+    "retain_top_k_clusters_per_view": 5,
+    "character_ngram_range": [3, 5],
+    "sentence_embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+    "sentence_embedding_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "sentence_embedding_weight_sha256": "53aa51172d142c89d9012cce15ae4d6cc0ca6895895114379cacb4fab128d9db",
+    "sentence_embedding_device": "cpu",
+    "batch_size": 256
+  },
+  "risk_bands": {
+    "automatic_high_confidence": {"rule": "normalized exact OR (char>=0.93 AND token_jaccard>=0.80 AND lemma_char>=0.93) OR (embedding>=0.94 AND token_jaccard>=0.75 AND lemma_char>=0.85)", "char_min": 0.93, "token_jaccard_min": 0.8, "lemma_char_min": 0.93, "embedding_alt_min": 0.94, "embedding_alt_token_min": 0.75, "embedding_alt_lemma_min": 0.85},
+    "ambiguous_high_risk": {"rule": "not automatic-high and any(char>=0.78, token_jaccard>=0.60, lemma_char>=0.78, embedding>=0.82)", "char_min": 0.78, "token_jaccard_min": 0.6, "lemma_char_min": 0.78, "embedding_min": 0.82},
+    "safe_outside": "all nearest-neighborhood candidates fall below every ambiguous-high-risk threshold"
+  },
+  "human_audit": {
+    "question": "Would exposure to one phrase substantially defeat the intended holdout of the other because they express effectively the same consideration?",
+    "labels": ["same_identity", "distinct", "uncertain"],
+    "minimum_adjudicated_pairs_for_calibration": 100,
+    "minimum_per_risk_band": 20,
+    "blind_fields_excluded": ["ValuePrism labels", "activation results", "probe scores", "model performance", "baseline performance"]
+  },
+  "domain_proxy": {
+    "method": "frozen first-match keyword taxonomy over normalized situation text; ValuePrism valence exposes no native domain field",
+    "ordered_categories": {
+      "health_safety": ["health", "medical", "doctor", "hospital", "disease", "drug", "alcohol", "safety", "harm", "injury", "life"],
+      "family_relationships": ["family", "parent", "child", "friend", "relationship", "marriage", "partner", "mother", "father"],
+      "work_economy": ["work", "job", "employee", "employer", "business", "money", "market", "pay", "economic"],
+      "law_rights": ["law", "legal", "court", "crime", "police", "right", "justice", "prison", "property"],
+      "environment_animals": ["environment", "climate", "animal", "nature", "pollution", "species", "forest"],
+      "religion_culture": ["religion", "religious", "church", "faith", "culture", "tradition", "heritage"],
+      "politics_civic": ["government", "politic", "election", "vote", "nation", "war", "military", "public"],
+      "education_science": ["school", "student", "teacher", "education", "research", "science", "university"],
+      "technology_media": ["technology", "internet", "online", "social media", "computer", "ai ", "privacy", "data"],
+      "personal_lifestyle": ["eat", "food", "sport", "travel", "home", "clothes", "hobby", "music", "art"]
+    },
+    "fallback": "other"
+  },
+  "terminal_thresholds": {"target_residual_exposure": 0.01, "primary_revision_substantial_fraction": 0.05, "minimum_conservative_rows": 5000, "minimum_conservative_within_situation_comparison_retention": 0.75}
+}
