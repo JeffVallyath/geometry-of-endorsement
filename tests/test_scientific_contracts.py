@@ -1,6 +1,10 @@
 from __future__ import annotations
 
+import pandas as pd
+
 from geometry_of_truth.leakage.contracts import load_bundle as load_leakage
+from geometry_of_truth.leakage.reproduce import _confirmatory_row_hash
+from geometry_of_truth.leakage.reproduction.build_confirmatory_split import manifest_hash
 from geometry_of_truth.project.contracts import load_status
 from geometry_of_truth.truth.contracts import load_bundle as load_truth
 from geometry_of_truth.truth.results import bootstrap_intervals, direction_method
@@ -43,3 +47,17 @@ def test_current_project_frontier() -> None:
     stages = {row["stage"]: row["status"] for row in status["stages"]}
     assert stages["Human-audited confirmation"] == "Pending"
     assert stages["Rephrasing-flip prediction"] == "Not yet run"
+
+
+def test_confirmatory_hash_flattens_all_four_row_columns(tmp_path) -> None:
+    rows = pd.DataFrame(
+        {
+            "row_id_s1_A": ["a", "a"],
+            "row_id_s1_B": ["b", "e"],
+            "row_id_s2_A": ["c", "f"],
+            "row_id_s2_B": ["d", "d"],
+        }
+    )
+    path = tmp_path / "manifest_confirmatory.csv"
+    rows.to_csv(path, index=False)
+    assert _confirmatory_row_hash(path) == manifest_hash({"a", "b", "c", "d", "e", "f"})

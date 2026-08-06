@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "geometry-of-truth"
-version = "1.1.0"
+version = "1.1.1"
 description = "Reproducible factual-truth control and ValuePrism leakage methodology"
 requires-python = ">=3.10"
 dependencies = [
@@ -32,4 +32,3 @@ valueprism-full = [
 
 [tool.setuptools.packages.find]
 where = ["src"]
-

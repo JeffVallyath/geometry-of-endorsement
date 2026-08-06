@@ -54,6 +54,23 @@ def _row_hash(path: Path) -> str:
     return manifest_hash(pd.read_csv(path, dtype={"row_id": str})["row_id"])
 
 
+CONFIRMATORY_ROW_COLUMNS = (
+    "row_id_s1_A",
+    "row_id_s1_B",
+    "row_id_s2_A",
+    "row_id_s2_B",
+)
+
+
+def _confirmatory_row_hash(path: Path) -> str:
+    frame = pd.read_csv(path, dtype=str)
+    missing = [column for column in CONFIRMATORY_ROW_COLUMNS if column not in frame]
+    if missing:
+        raise RuntimeError(f"Confirmatory manifest is missing row columns  {missing}")
+    row_ids = set(frame.loc[:, CONFIRMATORY_ROW_COLUMNS].to_numpy().ravel())
+    return manifest_hash(row_ids)
+
+
 def compare_rebuild(output_root: str | Path) -> pd.DataFrame:
     output = Path(output_root).resolve()
     frozen = load_bundle()["results"]
@@ -94,7 +111,7 @@ def compare_rebuild(output_root: str | Path) -> pd.DataFrame:
         ("strict train row hash", _row_hash(output / "manifest_strict_train.csv"), frozen["strict_split"]["train_row_hash"], None),
         ("strict test row hash", _row_hash(output / "manifest_strict_test.csv"), frozen["strict_split"]["test_row_hash"], None),
         ("common training row hash", _row_hash(output / "manifest_train_common.csv"), manifest["common_training_manifest"]["hash_rows"], None),
-        ("candidate ordering row hash", manifest["hash_confirmatory_rows"], manifest_hash(pd.read_csv(output / "manifest_confirmatory.csv", dtype={"row_id": str})["row_id"]), None),
+        ("confirmatory row-membership hash", _confirmatory_row_hash(output / "manifest_confirmatory.csv"), manifest["hash_confirmatory_rows"], None),
         ("U1 exclusion row hash", ultra["artifacts"]["manifests/strict_U1_high_precision_clean.csv"]["row_hash"], frozen["sensitivity"]["coverage"]["U1"]["row_hash"], None),
     ])
     rows = []

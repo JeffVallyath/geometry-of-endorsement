@@ -66,10 +66,18 @@ if IN_COLAB:
     head = subprocess.run(["git", "-C", str(REPO_ROOT), "rev-parse", "HEAD"], check=True, text=True, capture_output=True).stdout.strip()
     if head != PUBLIC_COMMIT:
         raise RuntimeError(f"Expected public commit {{PUBLIC_COMMIT}}, found {{head}}")
-    subprocess.run([sys.executable, "-m", "pip", "install", "-q", str(REPO_ROOT)], check=True)
 else:
     candidates = [Path.cwd(), *Path.cwd().parents]
     REPO_ROOT = next(path for path in candidates if (path / "pyproject.toml").is_file())
+
+if RUN_MODE == "ANALYSIS":
+    subprocess.run([sys.executable, "-m", "pip", "install", "-q", "-r", str(REPO_ROOT / "requirements-truth-analysis.txt")], check=True)
+    subprocess.run([sys.executable, "-m", "pip", "install", "-q", str(REPO_ROOT), "--no-deps"], check=True)
+elif RUN_MODE == "FULL":
+    subprocess.run([sys.executable, "-m", "pip", "install", "-q", "-r", str(REPO_ROOT / "requirements-truth-reproduction.txt")], check=True)
+    subprocess.run([sys.executable, "-m", "pip", "install", "-q", str(REPO_ROOT), "--no-deps"], check=True)
+elif IN_COLAB:
+    subprocess.run([sys.executable, "-m", "pip", "install", "-q", str(REPO_ROOT)], check=True)
 
 OUTPUT_ROOT = Path(os.environ.get("GEOMETRY_OUTPUT_ROOT", "/content/geometry-results" if IN_COLAB else str(REPO_ROOT / "geometry-results")))
 OUTPUT_ROOT.mkdir(parents=True, exist_ok=True)
@@ -83,10 +91,7 @@ print({{"mode": RUN_MODE, "output_root": str(OUTPUT_ROOT)}})
 
 def secret_cell(extra: str, call: str) -> str:
     if extra == "truth-full":
-        install = """
-    subprocess.run([sys.executable, "-m", "pip", "install", "-q", "-r", str(REPO_ROOT / "requirements-truth-reproduction.txt")], check=True)
-    subprocess.run([sys.executable, "-m", "pip", "install", "-q", str(REPO_ROOT), "--no-deps"], check=True)
-"""
+        install = ""
     else:
         install = f"""
     subprocess.run([sys.executable, "-m", "pip", "install", "-q", f"{{REPO_ROOT}}[{extra}]"], check=True)
