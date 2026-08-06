@@ -85,6 +85,8 @@
       0.7201481904,
       0.7668778676
     ],
+    "situation_holdout_fraction": 0.35,
+    "consideration_cluster_holdout_fraction": 0.25,
     "training_injection_fraction": 0.3
   },
   "strict_split": {
@@ -99,6 +101,7 @@
       "row_id": 0,
       "situation": 0
     },
+    "l1_overlap_disposition": "Both L1-normalized collisions are conservatively removed from U1. Licensed phrase text is not redistributed in the public aggregate.",
     "test_clusters": 996,
     "test_row_hash": "cff427cc2bd4205badc56d813b3c982f672871dace8ef000c6d8d0000483d5a5",
     "test_rows": 7394,
@@ -183,6 +186,7 @@
           "technology_media": 32,
           "work_economy": 306
         },
+        "row_hash": "5d3b93f1b28ea7ec4d2fe3fbcadfe93303c4f0f0774d3984bcd1b7d33cae4143",
         "rows": 7081,
         "situations": 4237,
         "supports_fraction": 0.5966671374099703,
@@ -229,6 +233,7 @@
           "technology_media": 7,
           "work_economy": 35
         },
+        "row_hash": "077df1bfb63c0180539a83eff1e51b090184147e5e5656225bed8bc2059369ec",
         "rows": 587,
         "situations": 547,
         "supports_fraction": 0.5417376490630323,
@@ -275,6 +280,7 @@
           "technology_media": 7,
           "work_economy": 35
         },
+        "row_hash": "077df1bfb63c0180539a83eff1e51b090184147e5e5656225bed8bc2059369ec",
         "rows": 587,
         "situations": 547,
         "supports_fraction": 0.5417376490630323,
@@ -293,6 +299,7 @@
         "within_situation_groups": 20
       }
     },
+    "human_adjudications": 0,
     "terminal_disposition": "ULTRACLEAN_INCONCLUSIVE"
   }
 }

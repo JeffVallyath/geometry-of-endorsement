@@ -9,6 +9,7 @@ from typing import Any
 
 import numpy as np
 import pandas as pd
+import yaml
 
 from geometry_of_truth.common.artifacts import repository_root, sha256_file
 
@@ -154,15 +155,26 @@ def reproduce_full(output_root: str | Path, persistent_root: str | Path | None =
         raise RuntimeError("Full reproduction requires HF_TOKEN")
     gpu_preflight()
     from huggingface_hub import HfApi
-    resolved = HfApi(token=os.environ["HF_TOKEN"]).model_info(MODEL_ID, revision="main").sha
+    resolved = HfApi(token=os.environ["HF_TOKEN"]).model_info(
+        MODEL_ID, revision=MODEL_REVISION
+    ).sha
     if resolved != MODEL_REVISION:
-        raise RuntimeError(f"Model main resolves to {resolved} instead of the frozen revision")
+        raise RuntimeError(f"Frozen model revision resolves to {resolved}")
     from .reproduction.runner import run
 
     root = repository_root()
     output = Path(output_root).expanduser().resolve()
     persistent = Path(persistent_root).expanduser().resolve() if persistent_root else None
-    result = run(root / "configs" / "truth_control_v2.yaml", output, persistent_dir=persistent)
+    output.mkdir(parents=True, exist_ok=True)
+    frozen_config = yaml.safe_load(
+        (root / "configs" / "truth_control_v2.yaml").read_text(encoding="utf-8")
+    )
+    frozen_config["model"]["revision"] = MODEL_REVISION
+    reproduction_config = output / "truth_control_v2_reproduction.yaml"
+    reproduction_config.write_text(
+        yaml.safe_dump(frozen_config, sort_keys=False), encoding="utf-8"
+    )
+    result = run(reproduction_config, output, persistent_dir=persistent)
     bundle = load_bundle(root)
     selected = str(result["selected_layer"])
     checks = {

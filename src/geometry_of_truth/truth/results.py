@@ -57,9 +57,9 @@ def mapping_checks(split: pd.DataFrame, v2: dict[str, Any]) -> pd.DataFrame:
 
 def direction_method() -> pd.DataFrame:
     return pd.DataFrame([
-        ("fit", "unit mean true minus mean false", "A/B training rows outside partition k"),
-        ("center", "midpoint of projected class means", "training only"),
-        ("scale", "population SD of centered projections", "training only"),
+        ("fit", "unit mean true minus mean false", "A/B training rows inside partition k"),
+        ("center", "midpoint of projected class means", "the same training partition"),
+        ("scale", "population SD of centered projections", "the same training partition"),
         ("score", "centered projection divided by training SD", "held out development or test rows"),
         ("partition effect", "mean true z minus mean false z", "macro average across datasets"),
         ("signed statistic", "mean partition effect", "eight train oriented directions"),
@@ -101,6 +101,30 @@ def consensus(v2: dict[str, Any]) -> pd.DataFrame:
     ], columns=["component", "value", "meaning"])
 
 
+def bootstrap_intervals(v2: dict[str, Any]) -> pd.DataFrame:
+    selected = v2["confirmatory_layer_results"][str(v2["selected_layer"])]
+    rows = []
+    for scheme, symbols in (("primary", "A/B"), ("transfer", "1/2")):
+        interval = selected["group_bootstrap_ci"][scheme]
+        point = selected["test"][scheme]["overall"]["T"]
+        rows.append((
+            symbols,
+            point,
+            interval["low"],
+            interval["high"],
+            interval["replicates"],
+            interval["confidence_level"],
+        ))
+    return pd.DataFrame(rows, columns=[
+        "answer symbols",
+        "T",
+        "CI low",
+        "CI high",
+        "bootstrap replicates",
+        "confidence level",
+    ])
+
+
 def permutation_summary(v2: dict[str, Any]) -> pd.DataFrame:
     null = v2["permutation_null"]
     return pd.DataFrame([
@@ -127,16 +151,16 @@ def validation(v2: dict[str, Any]) -> pd.DataFrame:
     selected = v2["confirmatory_layer_results"][str(v2["selected_layer"])]["test"]
     actual = {
         "selected layer": v2["selected_layer"],
-        "signed cross fit T": v2["primary_test_T"],
+        "eight partition signed T": v2["primary_test_T"],
         "directional consensus C": v2["directional_consensus_C"],
-        "exact permutation p": v2["permutation_null"]["p_greater_equal"],
+        "Monte Carlo permutation p": v2["permutation_null"]["p_greater_equal"],
         "held out 1/2 T": selected["transfer"]["overall"]["T"],
     }
     expected = {
         "selected layer": EXPECTED["selected_layer"],
-        "signed cross fit T": EXPECTED["primary_T"],
+        "eight partition signed T": EXPECTED["primary_T"],
         "directional consensus C": EXPECTED["consensus_C"],
-        "exact permutation p": EXPECTED["permutation_p"],
+        "Monte Carlo permutation p": EXPECTED["permutation_p"],
         "held out 1/2 T": EXPECTED["transfer_T"],
     }
     rows = [{"quantity": key, "expected": expected[key], "observed": actual[key], "pass": actual[key] == expected[key]} for key in expected]

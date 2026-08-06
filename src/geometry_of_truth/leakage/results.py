@@ -55,6 +55,22 @@ def split_lineage(results: dict[str, Any]) -> pd.DataFrame:
     ], columns=["lane", "input", "rule", "output"])
 
 
+def overlap_checks(results: dict[str, Any]) -> pd.DataFrame:
+    overlaps = results["strict_split"]["overlaps"]
+    labels = (
+        ("Row identity", "row_id", "Prohibited in U0"),
+        ("Exact consideration", "exact_consideration", "Prohibited in U0"),
+        ("L1 normalized consideration", "l1_normalized", "Removed in U1"),
+        ("L2 prefix stripped consideration", "l2_prefix_stripped", "Prohibited in U0"),
+        ("L3 algorithmic identity cluster", "l3_semantic_cluster", "Prohibited in U0"),
+        ("Situation", "situation", "Prohibited in U0"),
+    )
+    return pd.DataFrame([
+        (label, overlaps[key], disposition)
+        for label, key, disposition in labels
+    ], columns=["boundary", "cross split overlaps", "disposition"])
+
+
 def stress_draws(results: dict[str, Any]) -> pd.DataFrame:
     s = results["stress_test"]
     rows = []

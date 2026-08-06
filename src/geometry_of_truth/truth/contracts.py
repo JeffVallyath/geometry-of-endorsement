@@ -84,19 +84,37 @@ def provenance(bundle: dict[str, Any]) -> pd.DataFrame:
     ], columns=["item", "value"])
 
 
+def retained_environment(bundle: dict[str, Any]) -> pd.DataFrame:
+    environment = bundle["environment"]
+    runtime = environment["runtime"]
+    rows = [
+        ("Python", runtime["python"]),
+        ("Platform", runtime["platform"]),
+        ("GPU", runtime["gpu"]["name"]),
+        ("GPU memory MiB", runtime["gpu"]["memory_total_mib"]),
+    ]
+    rows.extend((name, version) for name, version in sorted(runtime["packages"].items()))
+    return pd.DataFrame(rows, columns=["component", "retained run"])
+
+
 def number_lineage(bundle: dict[str, Any]) -> pd.DataFrame:
     split = bundle["split"]
     primary = split[split["scheme"] == "primary"]
     v2 = bundle["v2"]
-    selected = v2["confirmatory_layer_results"][str(v2["selected_layer"])]["test"]
+    selected_result = v2["confirmatory_layer_results"][str(v2["selected_layer"])]
+    selected = selected_result["test"]
     rows = [
         ("Semantic proposition rows", len(primary), "split_manifest.csv", "count where scheme equals primary"),
         ("Proposition groups", int(primary["group_id"].nunique()), "split_manifest.csv", "distinct group_id where scheme equals primary"),
         ("Selected layer", v2["selected_layer"], "v2_results.json", "selected_layer"),
         ("Primary signed T", v2["primary_test_T"], "v2_results.json", "primary_test_T"),
+        ("Primary group-bootstrap CI low", selected_result["group_bootstrap_ci"]["primary"]["low"], "v2_results.json", "confirmatory_layer_results.14.group_bootstrap_ci.primary.low"),
+        ("Primary group-bootstrap CI high", selected_result["group_bootstrap_ci"]["primary"]["high"], "v2_results.json", "confirmatory_layer_results.14.group_bootstrap_ci.primary.high"),
         ("Directional consensus C", v2["directional_consensus_C"], "v2_results.json", "directional_consensus_C"),
-        ("Exact permutation p", v2["permutation_null"]["p_greater_equal"], "v2_results.json", "permutation_null.p_greater_equal"),
+        ("Monte Carlo permutation p", v2["permutation_null"]["p_greater_equal"], "v2_results.json", "permutation_null.p_greater_equal"),
         ("Held out 1/2 signed T", selected["transfer"]["overall"]["T"], "v2_results.json", "confirmatory_layer_results.14.test.transfer.overall.T"),
+        ("Held out 1/2 group-bootstrap CI low", selected_result["group_bootstrap_ci"]["transfer"]["low"], "v2_results.json", "confirmatory_layer_results.14.group_bootstrap_ci.transfer.low"),
+        ("Held out 1/2 group-bootstrap CI high", selected_result["group_bootstrap_ci"]["transfer"]["high"], "v2_results.json", "confirmatory_layer_results.14.group_bootstrap_ci.transfer.high"),
         ("Truth v1 disposition", bundle["v1"]["frozen_v1_disposition"], "v1_diagnostic.json", "frozen_v1_disposition"),
     ]
     return pd.DataFrame(rows, columns=["reported quantity", "value", "source artifact", "field or calculation"])

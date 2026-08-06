@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-08-05",
+  "claim_boundary": "Development evidence only. Human-audited confirmation and rephrasing-flip prediction remain open.",
+  "stages": [
+    {
+      "stage": "ValuePrism leakage control",
+      "question": "Can the evaluation resist repeated-consideration shortcuts?",
+      "status": "Built with a disclosed sensitivity boundary",
+      "evidence": "The strict U0 split has zero exact, L2, L3, and situation overlap but two L1-normalized collisions. U1 removes both collisions and the automatic-high risks, retaining 7081 rows and 1865 within-situation comparisons. Human semantic review remains pending."
+    },
+    {
+      "stage": "Factual positive control",
+      "question": "Can the activation procedure recover factual class information across answer mappings and unseen symbols?",
+      "status": "Passed",
+      "evidence": "Layer 14 gives T 1.924455 with a 95 percent group-bootstrap interval from 1.892961 to 1.955590. Transfer to 1 and 2 gives T 1.840165 with an interval from 1.807030 to 1.874273."
+    },
+    {
+      "stage": "Moral-relation development test",
+      "question": "Does Llama encode the situation and consideration relation?",
+      "status": "Development result passed",
+      "evidence": "At layer 19, the difference-in-means probe gives I_b 1.647011 and the logistic probe gives I_b 2.083585 on 125 development evaluation boards. Both beat the frozen SBERT interaction baseline."
+    },
+    {
+      "stage": "Human-audited confirmation",
+      "question": "Does the relation result survive checkerboards accepted under blinded semantic review?",
+      "status": "Pending",
+      "evidence": "Reviewer calibration and final acceptance decisions are not complete, and the confirmatory model result remains unopened."
+    },
+    {
+      "stage": "Rephrasing-flip prediction",
+      "question": "Does the original hidden state predict later moral-answer flips beyond text and native answer margin?",
+      "status": "Not yet run",
+      "evidence": "The current AUROC comparison concerns relation decoding on the development slice, not prediction of rephrasing instability."
+    }
+  ],
+  "moral_relation_development": {
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "model_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+    "selected_layer": 19,
+    "training_rows": 1500,
+    "selection_rows": 300,
+    "selection_boards": 75,
+    "evaluation_rows": 500,
+    "evaluation_boards": 125,
+    "primary_endpoint": "standardized reciprocal interaction contrast I_b",
+    "difference_in_means": {
+      "I_b": 1.6470105763501846,
+      "permutation_p": 0.004975124378109453,
+      "delta_over_sbert_ci_low": 1.088548006645374,
+      "delta_over_sbert_ci_high": 1.637033629068546,
+      "relation_auroc": 0.731968
+    },
+    "logistic": {
+      "I_b": 2.083584884709801,
+      "permutation_p": 0.004975124378109453,
+      "delta_over_sbert_ci_low": 1.497045579136823,
+      "delta_over_sbert_ci_high": 2.1016846732963312,
+      "relation_auroc": 0.779616
+    },
+    "controls": {
+      "native_answer_margin_auroc": 0.721056,
+      "sbert_interaction_I_b": 0.2842197584932241,
+      "situation_only_I_b": 0.0,
+      "consideration_only_I_b": 0.0,
+      "separate_encoding_additive_I_b": 7.99360577730113e-18
+    },
+    "terminal_disposition": "M1_VERTICAL_SLICE_SIGNAL_SUPPORTED",
+    "source_result_sha256": "85c281974299682cd544d341d73174997ddc696b73a0912bfb274162404f34e0",
+    "source_audit_archive_sha256": "d1e57f79cd93e7ae7a4db44076dcbe6785c685c31e908e717012c0f509f9ac53"
+  }
+}
