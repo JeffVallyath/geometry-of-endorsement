@@ -17,13 +17,24 @@
 
 | Field | Frozen value |
 | --- | --- |
-| Hypothesis | A truth direction fitted on neutral A/B prompts transfers across reversed mappings and held-out 1/2 symbols |
+| Hypothesis | A truth direction fitted on neutral A/B prompts transfers across reversed mappings and a held-out 1/2 prompt scheme |
 | Baseline | Preserved countersemantic True/False attempt |
-| Changed variable | Replace literal truth words with neutral answer symbols |
-| Held fixed | Factual source family, grouped split, mean-difference direction, held-out test |
+| Changed variable | Replace literal truth words with neutral symbols in v2; the held-out condition also changes A/B to 1/2 and uses a second user template |
+| Held fixed | Factual source family, grouped split, mean-difference procedure, held-out test groups |
 | Model | Meta Llama 3.1 8B Instruct at revision 0e9e39f249a16976918f6564b8830bc894c89659 |
 | Result | Layer 14, A/B T=1.92, 1/2 T=1.84, C=0.999, p=1/1001 |
-| Conclusion | The activation procedure recovers factual class information across answer mappings |
+| Conclusion | The activation procedure recovers factual class information across answer mappings and the combined held-out vocabulary and prompt-template shift; answer symbols alone are not isolated |
+
+## Notebook interface correction
+
+| Field | Value |
+| --- | --- |
+| Hypothesis | Shared setup code can expose unsupported modes and overstate what the held-out Truth transfer isolates |
+| Baseline | Published v1.1.1 notebook sources |
+| Changed variable | Correct transfer wording, validate notebook-specific modes, and state the two distinct confirmatory-manifest hash contracts |
+| Held fixed | Frozen prompts, activations, splits, results, model revision, and reconstruction thresholds |
+| Result | Truth declares DEMO, ANALYSIS, and FULL; ValuePrism declares DEMO and FULL; the exact manifest file SHA is distinguished from the row-membership hash |
+| Conclusion | The notebook interface now matches the implemented conditions without adding a post-result experimental control |
 
 ## Moral-relation development slice
 

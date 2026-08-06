@@ -8,7 +8,7 @@ import nbformat as nbf
 
 ROOT = Path(__file__).resolve().parents[1]
 PUBLIC_REPOSITORY = "https://github.com/JeffVallyath/geometry-of-truth.git"
-PUBLIC_REF = "v1.1.1"
+PUBLIC_REF = "v1.1.2"
 PUBLIC_COMMIT = "cf605a169eef6cbe24ead242e0a5a39097df4f0d"
 
 
@@ -26,7 +26,29 @@ def colab_badge(filename: str) -> str:
     return f"[![Open in Colab]({image})]({target})"
 
 
-def setup_cell(run_mode: str) -> str:
+def setup_cell(
+    run_mode: str,
+    valid_modes: tuple[str, ...],
+    *,
+    truth_dependency_locks: bool = False,
+) -> str:
+    valid_mode_literal = "{" + ", ".join(repr(mode) for mode in sorted(valid_modes)) + "}"
+    if truth_dependency_locks:
+        dependency_setup = """
+if RUN_MODE == "ANALYSIS":
+    subprocess.run([sys.executable, "-m", "pip", "install", "-q", "-r", str(REPO_ROOT / "requirements-truth-analysis.txt")], check=True)
+    subprocess.run([sys.executable, "-m", "pip", "install", "-q", str(REPO_ROOT), "--no-deps"], check=True)
+elif RUN_MODE == "FULL":
+    subprocess.run([sys.executable, "-m", "pip", "install", "-q", "-r", str(REPO_ROOT / "requirements-truth-reproduction.txt")], check=True)
+    subprocess.run([sys.executable, "-m", "pip", "install", "-q", str(REPO_ROOT), "--no-deps"], check=True)
+elif IN_COLAB:
+    subprocess.run([sys.executable, "-m", "pip", "install", "-q", str(REPO_ROOT)], check=True)
+""".strip()
+    else:
+        dependency_setup = """
+if IN_COLAB:
+    subprocess.run([sys.executable, "-m", "pip", "install", "-q", str(REPO_ROOT)], check=True)
+""".strip()
     return f"""
 from pathlib import Path
 import os
@@ -37,6 +59,10 @@ PUBLIC_REPOSITORY = {PUBLIC_REPOSITORY!r}
 PUBLIC_REF = {PUBLIC_REF!r}
 PUBLIC_COMMIT = {PUBLIC_COMMIT!r}
 RUN_MODE = {run_mode!r}
+VALID_MODES = {valid_mode_literal}
+
+if RUN_MODE not in VALID_MODES:
+    raise ValueError(f"RUN_MODE must be one of {{sorted(VALID_MODES)}}, got {{RUN_MODE!r}}")
 
 try:
     import google.colab
@@ -70,14 +96,7 @@ else:
     candidates = [Path.cwd(), *Path.cwd().parents]
     REPO_ROOT = next(path for path in candidates if (path / "pyproject.toml").is_file())
 
-if RUN_MODE == "ANALYSIS":
-    subprocess.run([sys.executable, "-m", "pip", "install", "-q", "-r", str(REPO_ROOT / "requirements-truth-analysis.txt")], check=True)
-    subprocess.run([sys.executable, "-m", "pip", "install", "-q", str(REPO_ROOT), "--no-deps"], check=True)
-elif RUN_MODE == "FULL":
-    subprocess.run([sys.executable, "-m", "pip", "install", "-q", "-r", str(REPO_ROOT / "requirements-truth-reproduction.txt")], check=True)
-    subprocess.run([sys.executable, "-m", "pip", "install", "-q", str(REPO_ROOT), "--no-deps"], check=True)
-elif IN_COLAB:
-    subprocess.run([sys.executable, "-m", "pip", "install", "-q", str(REPO_ROOT)], check=True)
+{dependency_setup}
 
 OUTPUT_ROOT = Path(os.environ.get("GEOMETRY_OUTPUT_ROOT", "/content/geometry-results" if IN_COLAB else str(REPO_ROOT / "geometry-results")))
 OUTPUT_ROOT.mkdir(parents=True, exist_ok=True)
@@ -123,7 +142,7 @@ def truth_notebook():
 
 The project tests whether a language model encodes how a consideration bears on an action in a particular situation. This notebook covers the factual positive control for the activation method. The later Llama moral-relation development test has now passed, while the human-audited confirmatory test and rephrasing-flip prediction remain open.
 
-The control asks whether the extraction and probing pipeline can recover factual truth when the answer mapping changes. Training and testing both include standard and reversed A/B mappings. A held-out transfer replaces A/B with 1/2. This tests whether the signal follows the factual class across answer symbols.
+The control asks whether the extraction and probing pipeline can recover factual truth when the answer mapping changes. Training and testing both include standard and reversed A/B mappings. The held-out transfer changes both the output symbols and the surrounding user phrasing. It tests whether the signal follows the factual class across a second answer vocabulary and a modest prompt-template change.
 
 Layer 14 gives T=1.92 with a 95 percent bootstrap interval from 1.89 to 1.96. Directional consensus is C=0.999. None of 1,000 group-preserving Monte Carlo null runs match the observed statistic, giving p=1/1001 with the prespecified add-one correction. The 1/2 transfer gives T=1.84 with a 95 percent interval from 1.81 to 1.87.
 
@@ -145,13 +164,19 @@ This control matches the answer-mapping and activation-extraction mechanics used
 
 From GitHub, click the Open in Colab badge above. In Colab, choose Runtime and Run all. DEMO verifies the retained result files on CPU. ANALYSIS recomputes statistics from the hash-bound activation cache and is maintainer-only until that cache is published. FULL downloads the pinned model and datasets, extracts activations again, and requires an accepted model license, an HF_TOKEN Colab secret, and a CUDA GPU with at least 23,000 MiB of free memory.
 
+Colab is the public reproduction path and enforces the repository origin, commit, and cleanliness checks. Local execution is a maintainer convenience that trusts the enclosing checkout.
+
 | Mode | Public input | Typical resource | Output |
 | --- | --- | --- | --- |
 | DEMO | Aggregate result bundle | Colab CPU, minutes | Verified tables and figures |
 | ANALYSIS | Retained activation cache and version-pinned analysis requirements | CPU plus cache storage | Recomputed statistics |
 | FULL | Model and factual datasets | CUDA GPU, long run | New activations and statistics |
 """),
-        code(setup_cell("DEMO")),
+        code(setup_cell(
+            "DEMO",
+            ("DEMO", "ANALYSIS", "FULL"),
+            truth_dependency_locks=True,
+        )),
         code("""
 from IPython.display import display
 
@@ -182,9 +207,9 @@ The model is Meta Llama 3.1 8B Instruct. For each prompt, the extractor records 
 
 The factual sources contribute 1,496 affirmative city records and 1,496 matched negated records to each answer scheme. The experiment forms 748 proposition groups and keeps every linked version in one split, preventing an affirmative form from training a probe that later sees its negated partner in testing. Groups stay intact.
 
-Each answer scheme contains 2,992 prompt records. Within each scheme, 1,796 records train the directions, 600 select the layer, and 596 remain untouched for the confirmatory test. The held-out 1 and 2 scheme mirrors the A and B design, producing 5,984 cached records across both schemes.
+Each answer scheme contains 2,992 prompt records. Within each scheme, 1,796 records train the directions, 600 select the layer, and 596 remain untouched for the confirmatory test. The held-out 1 and 2 scheme uses the same factual records and grouped split with a second user template, producing 5,984 cached records across both schemes.
 
-Standard prompts map true to A and false to B. Reversed prompts map true to B and false to A. The transfer prompts replace those symbols with 1 and 2. Every semantic class therefore appears under both answer assignments.
+Standard prompts map true to A and false to B. Reversed prompts map true to B and false to A. The transfer prompts use 1 and 2 and also replace the question wording. Every semantic class therefore appears under both answer assignments. This condition tests joint transfer across answer vocabulary and prompt template, rather than isolating answer symbols alone.
 """),
         code("""
 display(prompt_examples())
@@ -231,7 +256,7 @@ display(layer_selection(v2).figure)
         markdown("""
 ## Confirmatory result
 
-At layer 14, all eight held-out subset effects are positive and range from 1.876 to 1.955. Their average is T=1.924, meaning that true and false test projections differ by about 1.92 training-standardized projection units after equal weighting of the two factual sources. A 2,000-group bootstrap gives a 95 percent interval from 1.893 to 1.956.
+At layer 14, all eight direction-specific effects on the held-out test set are positive and range from 1.876 to 1.955. Their average is T=1.924, meaning that true and false test projections differ by about 1.92 training-standardized projection units after equal weighting of the two factual sources. A 2,000-group bootstrap gives a 95 percent interval from 1.893 to 1.956.
 
 The eight unit directions produce C=0.9987 and an implied mean pairwise cosine of 0.9970. Both quantities show that the direction changes very little across training subsets.
 
@@ -250,11 +275,11 @@ display(permutation_null(v2).figure)
 display(bootstrap_intervals(v2))
 """),
         markdown("""
-## Symbol transfer
+## Answer-vocabulary and prompt-template transfer
 
-The selected layer and fitted procedure next score prompts that use 1 and 2 instead of A and B. The table reports standard mapping, reversed mapping, and their equal-weight average for both symbol schemes. Signed T retains the training orientation. Macro AUROC reports ranking quality, where 0.5 is chance and 1.0 is perfect ranking within each factual source.
+The selected layer and fitted procedure next score prompts that use 1 and 2 instead of A and B and phrase the factual question differently. The table reports standard mapping, reversed mapping, and their equal-weight average for both prompt schemes. Signed T retains the training orientation. Macro AUROC reports ranking quality, where 0.5 is chance and 1.0 is perfect ranking within each factual source.
 
-For A/B, standard mapping gives T=2.03 and reversed mapping gives T=1.82, producing the T=1.92 average. For held-out 1/2, the corresponding values are T=1.99 and T=1.69, producing T=1.84. Its 2,000-group bootstrap interval runs from 1.807 to 1.874. Macro AUROC equals 1.0 in every row. The transfer preserves separation after removing the original answer tokens.
+For A/B, standard mapping gives T=2.03 and reversed mapping gives T=1.82, producing the T=1.92 average. For held-out 1/2 with the second prompt template, the corresponding values are T=1.99 and T=1.69, producing T=1.84. Its 2,000-group bootstrap interval runs from 1.807 to 1.874. Macro AUROC equals 1.0 in every row. The result establishes transfer across the combined answer-vocabulary and prompt-template change. A pure verbalizer control with identical user wording remains a separate experiment.
 """),
         code("""
 display(transfer(v2))
@@ -286,7 +311,7 @@ The experiment inherits the factual truth-geometry motivation, cities data famil
 
 DEMO verifies and presents the retained result files. ANALYSIS recomputes every statistic from a retained activation cache after checking every cache part. The cache is not publicly distributed yet, so this middle tier remains maintainer-only. FULL requests the model at the exact frozen revision, extracts activations, runs the analysis, and compares the reproduced measurements with the public reference.
 
-ANALYSIS installs `requirements-truth-analysis.txt` before importing the recorded numerical stack, then reads the cache location from TRUTH_CACHE_ROOT. FULL installs the separate GPU reproduction requirements at the same point. Platform and BLAS differences remain visible because the result comparison fails closed on any changed value. All generated files use OUTPUT_ROOT. Set GEOMETRY_OUTPUT_ROOT to a mounted Google Drive directory before the setup cell when a run must survive a Colab reset. The following table records the software versions used for the retained run.
+ANALYSIS installs `requirements-truth-analysis.txt` before importing the recorded numerical stack, then reads the cache location from TRUTH_CACHE_ROOT. FULL installs the separate GPU reproduction requirements at the same point. Platform and BLAS differences remain visible because the result comparison fails closed on any changed value. This is an exact replay contract for the retained environment. Independent cross-platform numerical equivalence remains a separate contract requiring prespecified tolerances. All generated files use OUTPUT_ROOT. Set GEOMETRY_OUTPUT_ROOT to a mounted Google Drive directory before the setup cell when a run must survive a Colab reset. The following table records the software versions used for the retained run.
 """),
         code("""
 display(retained_environment(bundle))
@@ -344,6 +369,8 @@ Across five strict-style split draws, a 30 percent controlled injection of held-
 
 From GitHub, click the Open in Colab badge above. In Colab, choose Runtime and Run all. DEMO verifies and presents the public aggregate measurements on CPU. FULL retrieves ValuePrism after the dataset license has been accepted, reads HF_TOKEN from Colab Secrets, rebuilds the measurements on CPU, and keeps licensed row text inside the active runtime.
 
+Colab is the public reproduction path and enforces the repository origin, commit, and cleanliness checks. Local execution is a maintainer convenience that trusts the enclosing checkout.
+
 | Mode | Public input | Typical resource | Output |
 | --- | --- | --- | --- |
 | DEMO | Aggregate result bundle | Colab CPU, minutes | Verified tables and figures |
@@ -351,7 +378,7 @@ From GitHub, click the Open in Colab badge above. In Colab, choose Runtime and R
 
 Set GEOMETRY_OUTPUT_ROOT to a mounted Google Drive directory before the setup cell when a long reconstruction must survive a Colab reset.
 """),
-        code(setup_cell("DEMO")),
+        code(setup_cell("DEMO", ("DEMO", "FULL"))),
         code("""
 from IPython.display import display
 
@@ -491,7 +518,7 @@ display(number_lineage(bundle))
         markdown("""
 ## Full reconstruction
 
-FULL installs the ValuePrism dependencies, reads HF_TOKEN from Colab Secrets, and reconstructs the public aggregate on CPU. The visible comparison checks aggregate counts, all five seed-specific strict scores and intervention effects, every overlap count including L1, strict and common-training row hashes, frozen input file hashes, confirmatory row membership across all four board cells, and the U1 exclusion hash. The normalization code and counts are reproduced. The retained confirmatory hash covers unique row membership after sorting rather than candidate order. A separate public hash for the complete form-to-cluster mapping remains unavailable. ValuePrism dependency ranges also remain broader than the version-pinned Truth requirements, so a fresh FULL validation matrix is still required before claiming environment-complete reproduction.
+FULL installs the ValuePrism dependencies, reads HF_TOKEN from Colab Secrets, and reconstructs the public aggregate on CPU. The visible comparison checks aggregate counts, all five seed-specific strict scores and intervention effects, every overlap count including L1, strict and common-training row hashes, frozen input file hashes, confirmatory row membership across all four board cells, and the U1 exclusion hash. The normalization code and counts are reproduced. The exact frozen SHA-256 for `manifest_confirmatory.csv` requires the same board grouping, rank, primary or reserve assignment, and review order. The separate row-membership hash verifies the underlying unique row set after sorting. A public hash for the complete form-to-cluster mapping remains unavailable. ValuePrism dependency ranges also remain broader than the version-pinned Truth requirements, so a fresh FULL validation matrix is still required before claiming environment-complete reproduction.
 """),
         code(secret_cell(
             "valueprism-full",
@@ -535,7 +562,7 @@ Two pieces remain open. Human reviewers have not completed the semantic calibrat
 
 Click the Open in Colab badge, then choose Runtime and Run all. This notebook verifies and presents public aggregate artifacts on CPU in minutes. It downloads neither Llama nor licensed ValuePrism rows.
 """),
-        code(setup_cell("DEMO")),
+        code(setup_cell("DEMO", ("DEMO",))),
         code("""
 from IPython.display import display
 

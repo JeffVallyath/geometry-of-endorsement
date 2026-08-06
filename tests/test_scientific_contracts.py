@@ -1,5 +1,8 @@
 from __future__ import annotations
 
+import json
+from pathlib import Path
+
 import pandas as pd
 
 from geometry_of_truth.leakage.contracts import load_bundle as load_leakage
@@ -8,6 +11,9 @@ from geometry_of_truth.leakage.reproduction.build_confirmatory_split import mani
 from geometry_of_truth.project.contracts import load_status
 from geometry_of_truth.truth.contracts import load_bundle as load_truth
 from geometry_of_truth.truth.results import bootstrap_intervals, direction_method
+
+
+ROOT = Path(__file__).resolve().parents[1]
 
 
 def test_truth_method_and_intervals() -> None:
@@ -61,3 +67,9 @@ def test_confirmatory_hash_flattens_all_four_row_columns(tmp_path) -> None:
     path = tmp_path / "manifest_confirmatory.csv"
     rows.to_csv(path, index=False)
     assert _confirmatory_row_hash(path) == manifest_hash({"a", "b", "c", "d", "e", "f"})
+
+
+def test_frozen_confirmatory_file_hash_covers_the_ordered_manifest() -> None:
+    config = json.loads((ROOT / "configs" / "valueprism_sensitivity.json").read_text(encoding="utf-8"))
+    digest = config["frozen_inputs"]["manifest_confirmatory.csv"]
+    assert digest == "af17c7e84a284406590a18ef4ab52dc6e919553b7b55cb6f1fa364d8ed6b0da5"
