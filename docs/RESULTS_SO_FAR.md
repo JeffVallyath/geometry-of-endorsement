@@ -86,6 +86,8 @@ Gemma repeated the experiment using its own prompt, activations, selected layer,
 
 Layer 27 was selected.
 
+Within-situation accuracy checks whether, in the same situation, the reason labeled Supports receives a higher score than the reason labeled Opposes. Within-reason accuracy holds the moral reason fixed and checks whether it receives a higher score in the situation where it Supports the action than in the situation where it Opposes it.
+
 | **Measurement** | **Within-situation accuracy** | **Within-reason accuracy** | **Four-part score** |
 | --- | --- | --- | --- |
 | Model’s own answer strength | 0.8920 | 0.8597 | 2.4068 |
