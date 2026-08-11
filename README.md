@@ -1,88 +1,74 @@
 # Geometry of Endorsement
 
-Language models can reverse a moral judgment after a rewrite that preserves the underlying situation. This project tests whether the model's original hidden state contains advance evidence of that instability.
+A language model can give a reasonable moral answer once and still be unstable. It might understand the situation correctly, or it might just be reacting to familiar wording. Even if the first answer looks fine, we do not know whether that same judgment would survive another way of writing the same case.
 
-The plan tests two claims. First, does the model's internal state encode the relation between the situation and consideration? Second, does that same state predict which judgments change under rephrasing that holds meaning fixed? Later verdict and intervention analyses remain follow-ups to these claims.
+The project boils down to two fundamental research questions.
 
-Three quantities remain separate throughout the project.
+1. Does the model internally track whether a particular moral reason supports or opposes an action in context?
 
-| Quantity | Meaning |
-| --- | --- |
-| Stored relation | ValuePrism records whether a consideration Supports or Opposes an action |
-| Model reason judgment | The model states whether that named consideration Supports or Opposes the action |
-| Complete verdict | The model gives its broader stance on the action, including support, opposition, permission, uncertainty, or refusal |
+2. If it does, can that internal state tell us which judgments are likely to become unstable when the same case is rewritten without changing what happened?
 
-The stored relation supplies the representation target. It does not stand in for the model's own judgment or its complete verdict.
+## The basic setup
 
-## The checkerboard test
+The main dataset is ValuePrism. Each example gives us a situation, an action, and a moral reason such as autonomy, fairness, privacy, or harm. The dataset also records whether that reason Supports or Opposes the action in that situation.
 
-ValuePrism contains consideration names that receive both labels across different situations. The project arranges two such reversals into a reciprocal checkerboard.
+The useful part is that the same reason can point in different directions depending on the case.
 
-| Situation | Consideration A | Consideration B |
+For example, autonomy might support respecting a patient’s refusal of treatment. In another situation, an appeal to personal freedom might allow a toddler to run down the street, endangering themselves.
+
+This provides us with a way to test whether the model is actually using the situation rather than following simple moral intuition from the words themselves.
+
+We arrange examples into four part comparisons where two reasons swap direction across two situations, a setup which we can call a checkerboard.
+
+| Situation | Reason A | Reason B |
 | --- | --- | --- |
 | Situation 1 | Supports | Opposes |
 | Situation 2 | Opposes | Supports |
 
-A score based only on the situation cancels exactly. A fixed consideration score also cancels, as does their sum. A positive checkerboard interaction therefore requires the score to change with the pairing between the situation and the consideration.
+This setup is useful because a fixed preference for one situation cancels out. A fixed preference for one reason also cancels out. So, if the model’s internal score still separates Supports from Opposes, it has to be responding to how the reason applies in that particular situation.
 
-Nonlinear wording cues can still produce that pattern. Held out consideration identities, a matched text comparison, reversed answer mappings, factual positive controls, and replication in another model family address that alternative in the development design.
+We also tried to rule out a few boring explanations before taking the result with anything more than a grain of salt. We keep familiar reason wording and repeated situations out of the test set so the model cannot just lean on examples it has effectively seen before. We compare the internal signal with a text-only model to see whether the wording itself already gives the answer away. We swap the answer labels to make sure the model is not just favoring one output token. Finally, we repeat the whole thing in Gemma so the result is not resting on one model, in this case Llama.
 
-## Development evidence
+## What we have so far
 
-Llama 3.1 8B Instruct and Gemma 2 9B it both contain a linearly readable Supports versus Opposes signal at the final prompt token.
+Most of the recent work has gone into the first question.
 
-| Model and readout | Selected layer | Checkerboard interaction |
-| --- | --- | --- |
-| Llama native answer margin | n/a | 1.609 |
-| Llama difference in means | 19 | 1.647 |
-| Llama logistic probe | 19 | 2.084 |
-| Gemma difference in means | 27 | 2.322 |
-| Gemma logistic probe | 27 | 2.150 |
-| Frozen SBERT comparison | n/a | 0.284 |
+The data split is built, and we confirmed that familiar reason wording really can make the task easier, so blocking that shortcut matters.
 
-On the 500-row Llama development evaluation, relation AUROC reached 0.721 for the native margin, 0.732 for difference in means, and 0.780 for the logistic probe, while all three additive controls produced interaction zero on development data. Gemma fitted its own direction in its own activation space and reproduced the result at layer 27.
+We also ran a factual sanity check first. Before trusting the activation method on something as potentially messy as moral reasoning, we wanted to see whether it could recover a much more obvious distinction where we already knew what the right answer was. So, we tested it on simple true and false statements. The method worked there, which at least gave us some confidence that the machinery itself was functioning before we tried to interpret the moral-reason signal.
 
-These are development results. Human semantic review, held out prediction of rephrasing instability, and sealed confirmation remain incomplete. [Results so far](docs/RESULTS_SO_FAR.md) preserves the numerical record and evidence boundary.
+After that, we tested Llama 3.1 8B Instruct.
 
-## The construct boundary
+The model showed a readable internal difference between cases where a reason Supports the action and cases where it Opposes the action.
 
-The checkerboards repeat a named consideration, not a fully specified moral proposition. A word such as autonomy can concern a patient's treatment in one situation and a speaker's expression in another. The holder and normative object can change even when the ordinary sense remains stable.
+We then repeated the experiment in Gemma 2 9B it. Gemma used its own prompt, its own internal states, and its own fitted score, and we still found the same general pattern.
 
-The supported development claim concerns the contextual direction of a repeated named consideration, while a stronger exact-reason-like claim requires human-confirmed stability of ordinary sense, holder, and normative object across the paired situations.
+So, from here, the first question currently has positive development evidence in two models.
 
-## The rephrasing test
+The first question is not finished. The result we have so far comes from development data, which means it is evidence we found while building and checking the experiment rather than the final test of the claim. We also still need people to review the source examples and confirm that the Supports or Opposes labels are actually reasonable readings of the situations and not just LLM slop. Once that review is finished, we can define the clean set of examples and run a final test whose model results we have not looked at yet. If the same pattern survives then I would say for the most part, that would close out the work needed for the first question.
 
-The current pilot contains 112 original items from the open Llama development population. Eighty form a representative sample. Another 32 were selected because relation geometry and native confidence rank their vulnerability differently.
+## Where the second question stands
 
-Each original has four proposed rewrites. The 448 ordinary candidates share 11 identity controls, 11 trivial restatements, and 11 single-fact changes. The candidate text is frozen, but the original review form has been superseded before distribution because an audit found excessive burden and an uncertainty rule that was too permissive before any human label or rephrasing outcome was recorded.
+The second experiment is already prepared.
 
-The reduced review asks whether each rewrite preserves the substantive facts and relationships relevant to whether the unchanged consideration supports or opposes the action. Two independent `PRESERVED` judgments are required for the primary population. Any `UNCERTAIN` judgment excludes the rewrite from that population.
+We selected a little over one hundred original cases and generated several alternative wordings for each one. The point is to keep the case the same while changing how it is expressed.
 
-Claim 1 reviewers separately judge whether the stored relation in the source cell is clear and plausible. The primary Claim 2 population joins unanimous source clarity with unanimous rewrite preservation through stable item identifiers. Human review labels, Claim 2 rephrasing outcomes, susceptibility estimates, and sealed confirmatory results remain unobserved.
+Before we run the main analysis, there are two things that need to be checked.
 
-Prediction uses the original state only. The baseline receives the original prompt text and native confidence. The geometry model receives those inputs plus the original relation score. Generic activation summaries, principal components, random directions, label-permuted directions, and other unrelated measurements test under grouped held out evaluation whether any improvement belongs specifically to relation geometry.
+First, is the original ValuePrism label actually a clear reading of the situation?
 
-The primary prediction unit is one original item. Its four rewrites are repeated trials, not four independent geometry observations. The 80 representative items support prevalence and prediction estimates, while the enriched 32-item disagreement sample remains a separate diagnostic analysis.
+And second, did the rewrite really preserve the case?
 
-## Causal compatibility
+Two reviewers will judge these independently before we look at the protected model outcomes.
 
-Both pretrained checkpoints passed the token-level intervention compatibility test. Llama uses layer 19 and Gemma uses layer 27. In each case, the intervention changes the chosen final-prompt-token block output, leaves every untargeted position unchanged at that intervention site, preserves all model parameters, and returns finite answer probabilities under BF16 execution for both checkpoint tests.
+## What we are doing next
 
-This establishes access to the intended activation. Signed dose response, answer remapping, direction controls, location controls, and damage measurements remain unrun, so causal efficacy has not been established.
+Right now, there are four things that I would say are blocking the main experiment.
 
-## Repository guide
+1. Finish the review of the original ValuePrism examples.
 
-[Results so far](docs/RESULTS_SO_FAR.md) records completed measurements, controls, failures, revisions, and provenance. [Project plan](docs/PROJECT_PLAN.md) records the human-review design, analysis populations, decision gates, deferred mechanism work, and interpretation rules. [Human review](docs/HUMAN_REVIEW.md) provides the reviewer rules, response definitions, eligibility limits, fatigue controls, diagnostics, and locking procedure.
+2. Finish the review of the proposed rewrites.
 
-The August 5 project-status notebook remains a dated artifact and no longer defines the current frontier. The ValuePrism leakage and factual-control notebooks reproduce their respective analyses.
+3. Combine those two reviews into one final approved set.
 
-For a local code check, run the following commands.
-
-~~~bash
-python -m pip install -e .
-python -m pytest -q
-~~~
-
-ValuePrism row text remains outside this repository under the dataset license. Private development outputs, row-level Gemma artifacts, row-filled human-review packages, reviewer answers, and sealed results also remain outside the public release. Header-only [review templates](review_templates/) expose the frozen schemas without study rows.
-
-A successful held out prediction result would support using original-state relation geometry as an early screening signal for rephrasing fragility, while a null result would restrict the finding to readable prompt state and redirect the next study toward composition and verdict stages.
+4. We also need to verify that Llama and Gemma can reliably perform the Supports versus Opposes task itself. Otherwise, it becomes much harder to interpret what their internal states mean.
