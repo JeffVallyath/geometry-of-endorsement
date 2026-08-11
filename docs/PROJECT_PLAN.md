@@ -2,7 +2,7 @@
 
 This document records the prospective research program, owner-approved decisions, human-review design, analysis populations, and result branches as of August 10, 2026, while completed measurements remain in [Results so far](RESULTS_SO_FAR.md).
 
-The human-review redesign described here has owner approval. Its technical freeze remains pending until the versioned instruments, blank sheets, manifests, hashes, joins, tests, and freeze receipt exist.
+The human-review redesign described here has owner approval. Its technical v2 package now binds the instruments, blank sheets, manifests, hashes, stable identifier join, tests, reviewer instructions, and prospective freeze receipt.
 
 ## Research claims
 
@@ -43,7 +43,7 @@ The 125-board development review occurs after the aggregate development result b
 | Gemma as prespecified replication | Owner-approved |
 | Contextual direction as primary Claim 1 construct | Owner-approved |
 | Independent human consensus for primary semantic eligibility | Owner-approved |
-| Reduced v2 human-review design | Owner-approved, technical freeze pending |
+| Reduced v2 human-review design | Owner-approved and technically frozen |
 | Original v1 packages | Preserved and superseded before review |
 | Candidate rewrite text | Frozen and unchanged |
 | Smallest effect of scientific interest | Open |
@@ -212,7 +212,7 @@ Required tests reject uncertainty from primary acceptance, reject a preserved re
 
 ### Gate 1
 
-Implement and freeze both v2 instruments, their packages, joins, analysis configuration, tests, and receipt. Mark v1 superseded before distribution.
+Completed. Both v2 instruments, their packages, stable identifier join, analysis configuration, tests, and receipt are frozen. V1 remains byte-identical and superseded before distribution.
 
 ### Gate 2
 

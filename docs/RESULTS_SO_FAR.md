@@ -164,7 +164,7 @@ Once human source labels exist, the report should stratify performance by consen
 
 The development result concerns the contextual `Supports` versus `Opposes` direction of a repeated named consideration. It does not establish a universal moral axis or one invariant fully instantiated reason across situations.
 
-The project owner approved the revised construct on August 10, 2026, before any human review label or sealed confirmatory result was observed. The earlier form is superseded. It remains preserved as protocol history. The reduced v2 design is owner-approved and still awaits a versioned package, package hashes, stable identifier joins, implementation tests, and a prospective freeze receipt before distribution.
+The project owner approved the revised construct on August 10, 2026, before any human review label or sealed confirmatory result was observed. The earlier form is superseded and remains preserved as protocol history. The reduced v2 design now has versioned instruments, blank sheets, package hashes, a stable identifier join, implementation tests, and a prospective freeze receipt.
 
 The first review stage asks for four cell judgments and two repeated-consideration judgments per board, with each cell receiving `CLEAR`, `AMBIGUOUS`, or `INVALID` and each repeated consideration receiving `STABLE`, `SHIFTED`, or `UNCERTAIN` for ordinary meaning. Failure flags and short explanations appear only when a judgment is not clear or stable.
 
@@ -201,11 +201,11 @@ The initial generation cost was $1.280928, the two retries cost $0.033067, and t
 
 The candidate set remains unchanged. The original v1 review package is preserved and marked superseded before review because it required many component ratings without a matching downstream analysis and allowed unresolved critical uncertainty to pass under one acceptance path before any reviewer response existed. Reviewers will not complete v1.
 
-The planned v2 question asks whether the rewrite preserves all facts and relationships that could reasonably affect whether the unchanged consideration supports or opposes the action. Reviewers choose `PRESERVED`, `CHANGED`, or `UNCERTAIN`. A changed or uncertain judgment requires diagnostic flags and a short explanation.
+The frozen v2 question asks whether the rewrite preserves all facts and relationships that could reasonably affect whether the unchanged consideration supports or opposes the action. Reviewers choose `PRESERVED`, `CHANGED`, or `UNCERTAIN`. A changed or uncertain judgment requires diagnostic flags and a short explanation.
 
 Primary rewrite acceptance requires two independent `PRESERVED` judgments. Any uncertainty excludes the rewrite from that population. Adjudicated cases remain separate and retain their original disagreement status.
 
-The existing provider, Claim 2, M1, and AISteer regression suite reported 51 passing tests and 60 third-party scikit-learn deprecation warnings before the v2 review redesign. New v2 implementation tests remain pending.
+The existing provider, Claim 2, M1, and AISteer regression suite reported 51 passing tests and 60 third-party scikit-learn deprecation warnings before the v2 review redesign. The focused v2 and existing Claim 2 regression suite now passes 29 tests with the same 60 third-party warnings. The broader local suite requires PyTorch, which is absent from the current CPU-only verification environment.
 
 ## Claim 2 statistical target
 
@@ -265,7 +265,7 @@ The Claim 2 generation record also binds the 459 jobs, 23 batches, two retries, 
 
 ## Remaining evidence
 
-The next gate is procedural. The project must implement and freeze the reduced v2 rubrics, blank sheets, stable identifier join, analysis populations, reviewer eligibility rules, calibration material, prospective assertions, and v1 preservation hashes before distributing review packages.
+The reduced v2 rubrics, blank sheets, stable identifier join, reviewer eligibility rules, prospective assertions, and v1 preservation hashes are frozen. The next gate is independent review. Calibration must finish before each reviewer begins study rows.
 
 The human reviews can then run in parallel. Claim 1 measures source relation clarity. Claim 2 measures rewrite preservation. Holder and object review follows only for eligible consideration pairs after first-stage labels lock.
 

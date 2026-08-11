@@ -72,7 +72,7 @@ This establishes access to the intended activation. Signed dose response, answer
 
 ## Repository guide
 
-[Results so far](docs/RESULTS_SO_FAR.md) records completed measurements, controls, failures, revisions, and provenance. [Project plan](docs/PROJECT_PLAN.md) records the human-review design, analysis populations, decision gates, deferred mechanism work, and interpretation rules.
+[Results so far](docs/RESULTS_SO_FAR.md) records completed measurements, controls, failures, revisions, and provenance. [Project plan](docs/PROJECT_PLAN.md) records the human-review design, analysis populations, decision gates, deferred mechanism work, and interpretation rules. [Human review](docs/HUMAN_REVIEW.md) provides the reviewer rules, response definitions, eligibility limits, fatigue controls, diagnostics, and locking procedure.
 
 The August 5 project-status notebook remains a dated artifact and no longer defines the current frontier. The ValuePrism leakage and factual-control notebooks reproduce their respective analyses.
 
@@ -83,6 +83,6 @@ python -m pip install -e .
 python -m pytest -q
 ~~~
 
-ValuePrism row text remains outside this repository under the dataset license. Private development outputs, row-level Gemma artifacts, human-review packages, and sealed results also remain outside the public release.
+ValuePrism row text remains outside this repository under the dataset license. Private development outputs, row-level Gemma artifacts, row-filled human-review packages, reviewer answers, and sealed results also remain outside the public release. Header-only [review templates](review_templates/) expose the frozen schemas without study rows.
 
 A successful held out prediction result would support using original-state relation geometry as an early screening signal for rephrasing fragility, while a null result would restrict the finding to readable prompt state and redirect the next study toward composition and verdict stages.

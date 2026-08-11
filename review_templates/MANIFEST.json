@@ -1,0 +1,29 @@
+{
+  "schema_version": 2,
+  "freeze_id": "geometry_human_review_v2_2026-08-10",
+  "status": "FROZEN_READY_FOR_INDEPENDENT_REVIEW",
+  "public_files_sha256": {
+    "docs/HUMAN_REVIEW.md": "fdbbb3687c08300279048eab9ab0b777a4f6188589b460d4bcf9bc3bad7b9b0c",
+    "docs/HUMAN_REVIEW_CALIBRATION.md": "680c05737fa6405ae81b16be1b4c6ea442289c538c3ab37de21ea2c35ea32f14",
+    "review_templates/README.md": "67d2a14e644f5bb866789ce104fe90343a9244705d5243ae3624debaa03f1032",
+    "review_templates/claim1_first_stage.csv": "20beef3306a0330884069d331bae4a8d0f9ec0257da09172649c786314bbd958",
+    "review_templates/claim1_second_stage.csv": "829c63d3f872f6797b4a91a9f870ef3c477a961f53447dfc2b0a0bf080f04e56",
+    "review_templates/claim2_rewrite.csv": "798f62f9a217790c5414f6f149e015018714029d649c349d13f9b67ddec3834e",
+    "review_templates/reviewer_metadata.json": "3966d8cac3134c24e2323378506b4a1958130bc08354086e3aca68bb38a34f1e"
+  },
+  "private_package_receipt": {
+    "claim1_first_stage_rows": 125,
+    "claim1_reviewer_1_zip_sha256": "418fd6725daacb81af13271187fb7675e28375b60ccf73a3c79deaf45d69d01f",
+    "claim1_reviewer_2_zip_sha256": "d4f2a8ebfdbd04e7d89bdbfa8424d7c0759cc0d7962295b7a052944641ab15cf",
+    "claim2_candidate_rows": 481,
+    "claim2_reviewer_1_zip_sha256": "e1973675027e7773f29960671dc05a3dc1249e9b5899e8ebe1d8254f7c04fa82",
+    "claim2_reviewer_2_zip_sha256": "1b43ebfa19bdca02322236ab32cf39f54a62769a96015905841040d38387d1d4",
+    "stable_join_rows": 112,
+    "stable_join_sha256": "8ff256caafe1f57c2cc55d49291edfe20b2fae2952865e0b4be9ba1165f17eba",
+    "claim1_second_stage_status": "PENDING_TWO_LOCKED_FIRST_STAGE_REVIEWS"
+  },
+  "contains_study_rows": false,
+  "contains_reviewer_answers": false,
+  "contains_model_measurements": false,
+  "contains_private_identifier_map": false
+}
