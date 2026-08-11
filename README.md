@@ -8,7 +8,7 @@ The project boils down to two fundamental research questions.
 
 2. If it does, can that internal state tell us which judgments are likely to become unstable when the same case is rewritten without changing what happened?
 
-If you want the fuller version, start with the [project plan](docs/PROJECT_PLAN.md). It explains what each stage is testing and how the analysis fits together. Then read [results so far](docs/RESULTS_SO_FAR.md) for the actual numbers, completed checks, and what is still pending.
+If you want the fuller version, start with the [project plan](docs/PROJECT_PLAN.md). It explains what each stage is testing and how the analysis fits together. Then read [results so far](docs/RESULTS_SO_FAR.md) for the actual numbers and completed checks.
 
 ## The basic setup
 
