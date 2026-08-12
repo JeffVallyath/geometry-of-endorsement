@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "experiment_id": "2026-08-03-llama-m1-development",
+  "hypothesis": "The joint pre-answer state encodes how the named consideration bears on the action in context.",
+  "baseline": "Frozen SBERT interaction score on the same 125 development checkerboards.",
+  "claim_boundary": "Nonconfirmatory development evidence only. No human-audited confirmatory result is included.",
+  "model": {
+    "id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+    "tokenizer_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+    "torch_dtype": "bfloat16",
+    "quantization": "none"
+  },
+  "data": {
+    "dataset": "allenai/ValuePrism",
+    "config": "valence",
+    "revision": "d439ca90825e5b4e5ef97798d9b5950e16ba7065",
+    "seed": 20260803,
+    "pilot_train_rows": 1500,
+    "pilot_select_rows": 300,
+    "pilot_select_boards": 75,
+    "pilot_eval_rows": 500,
+    "pilot_eval_boards": 125
+  },
+  "manifest_hashes": {
+    "pilot_train": "bf7213f359f78aec39f6720f99969a2f8f7d22aaea4921664ef6170295c1a9b0",
+    "pilot_select": "0e376434e0fa337d49d2d60b6f0903e34a393819862516b78540662df08cf224",
+    "pilot_eval": "f5181540e4a289f53520af3761e146690f9ed9f720c7c19ff97888eca15c4c71",
+    "pilot_select_boards": "3a8adb4825fc615e190d458a50555989e681e8ee06d061ba1a483c139f2e5fcf",
+    "pilot_eval_boards": "04a8184e3b90a2809c314dbcc54c21089e4abc60c8956550343037237fdfe569"
+  },
+  "prompt_contract_sha256": "33c046d3724f8a2e2a0f985bdba4edae47ee5baba8343c1da861c2fef63d54da",
+  "selected_layer": 19,
+  "metrics": {
+    "difference_in_means_relation_auroc": 0.731968,
+    "difference_in_means_I_b": 1.6470105763501846,
+    "logistic_relation_auroc": 0.779616,
+    "logistic_I_b": 2.083584884709801,
+    "sbert_interaction_I_b": 0.2842197584932241,
+    "native_answer_margin_auroc": 0.721056,
+    "situation_only_I_b": 0.0,
+    "consideration_only_I_b": 0.0,
+    "separate_encoding_additive_I_b": 7.99360577730113e-18
+  },
+  "terminal_disposition": "M1_VERTICAL_SLICE_SIGNAL_SUPPORTED",
+  "comparison": {
+    "reported_value_absolute_tolerance": 0.0005,
+    "rationale": "This tolerance requires agreement after rounding to four decimal places, which is the public reporting precision."
+  },
+  "retained_provenance": {
+    "source_extraction_commit": "1f6786ee4fae6288cc8fac5f09111629659c0981",
+    "analysis_commit": "37f4a59daeb720bc4c2b540c5692c7a3b1e4819d",
+    "finalization_commit": "18117f729d72dc7869c1a1fe35c24ebd7516b0b8",
+    "source_result_sha256": "85c281974299682cd544d341d73174997ddc696b73a0912bfb274162404f34e0",
+    "source_audit_archive_sha256": "d1e57f79cd93e7ae7a4db44076dcbe6785c685c31e908e717012c0f509f9ac53",
+    "source_text_included": false
+  }
+}

@@ -16,7 +16,7 @@ def repository_root(start: str | Path | None = None) -> Path:
     for candidate in installed.parents:
         if (candidate / "pyproject.toml").is_file() and (candidate / "artifacts").is_dir():
             return candidate
-    raise FileNotFoundError("Could not locate the geometry-of-truth repository root")
+    raise FileNotFoundError("Could not locate the geometry-of-endorsement repository root")
 
 
 def sha256_file(path: str | Path) -> str:

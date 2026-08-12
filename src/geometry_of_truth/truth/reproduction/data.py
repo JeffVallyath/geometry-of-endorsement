@@ -40,7 +40,7 @@ def fetch_dataset(spec: DatasetSpec, data_dir: str | Path) -> DatasetArtifact:
         raise RuntimeError(f"Cached {spec.name} hash does not match the frozen manifest: {target}")
     if not target.exists():
         partial = target.with_suffix(".csv.part")
-        request = urllib.request.Request(spec.url, headers={"User-Agent": "geometry-of-truth/1.0"})
+        request = urllib.request.Request(spec.url, headers={"User-Agent": "geometry-of-endorsement/1.0"})
         with urllib.request.urlopen(request, timeout=60) as response, partial.open("wb") as handle:
             while block := response.read(1024 * 1024):
                 handle.write(block)

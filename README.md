@@ -10,6 +10,8 @@ The project boils down to two fundamental research questions.
 
 If you want the fuller version, start with the [project plan](docs/PROJECT_PLAN.md). It explains what each stage is testing and how the analysis fits together. Then read [results so far](docs/RESULTS_SO_FAR.md) for the actual numbers and completed checks.
 
+If you want to rerun the work, start with the [ValuePrism pipeline notebook](notebooks/01_reproduce_valueprism_pipeline.ipynb). It rebuilds the split and checkerboard inputs. Then open the [Llama development notebook](notebooks/02_reproduce_llama_m1.ipynb), which uses those files for the layer 19 replay. Both notebooks open in Colab and default to a quick public result check.
+
 ## The basic setup
 
 The main dataset is ValuePrism. Each example gives us a situation, an action, and a moral reason such as autonomy, fairness, privacy, or harm. The dataset also records whether that reason Supports or Opposes the action in that situation.

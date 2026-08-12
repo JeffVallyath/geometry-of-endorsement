@@ -69,3 +69,25 @@
 | Held fixed | Activation cache contract, seed 314159, estimator, layer selection, and exact result comparison |
 | Result | Setup source now selects the analysis or GPU lock before experiment imports |
 | Conclusion | ANALYSIS and FULL use mode-specific dependency locks without forcing CUDA packages into the CPU-only path |
+
+## Public ValuePrism and Llama replay
+
+| Field | Frozen value |
+| --- | --- |
+| Experiment ID | 2026-08-11-public-reproduction |
+| Hypothesis | The public pipeline can reconstruct the frozen M0 manifests, then rerun the Llama development test without opening confirmatory results |
+| Baseline | Retained ValuePrism aggregate and the finalized Llama development result with source SHA-256 85c281974299682cd544d341d73174997ddc696b73a0912bfb274162404f34e0 |
+| Changed variable | Execution environment and checkout only |
+| Held fixed | ValuePrism revision, Llama revision, seed 20260803, split sizes, prompts, layer selection, probes, baselines, and tie-neutral analysis |
+| Comparison | Exact agreement for 14 protocol fields and absolute tolerance 0.0005 for 9 reported measurements |
+| CPU verification | 41 tests passed and 1 PyTorch-dependent test skipped on the local Python 3.13 environment |
+| Local M0 attempt | The cached ValuePrism rebuild spent 900 seconds in deterministic L3 clustering without producing the terminal manifest hashes, so it does not count as a completed reproduction |
+| Conclusion | The open development experiment now has a pinned public runner and two generated Colab entry points. A GPU replay remains required before reporting an independent numerical reproduction |
+
+## Colab note reduction
+
+| Field | Value |
+| --- | --- |
+| Change | Shortened the ValuePrism Markdown from 232 to 126 words and the Llama Markdown from 272 to 122 words |
+| Held fixed | Every code cell, frozen parameter, output contract, and evidence boundary |
+| Result | The notebooks now use short wording drawn from the README and results document |

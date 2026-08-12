@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "public_repository": "https://github.com/JeffVallyath/geometry-of-endorsement.git",
+  "public_ref": "codex/reproduction-pipeline",
+  "source_commit": "cb7ea2a36d12d3f58033df5abe06685e99bb7d8b",
+  "notebooks": [
+    "01_reproduce_valueprism_pipeline.ipynb",
+    "02_reproduce_llama_m1.ipynb"
+  ],
+  "open_evidence_only": true,
+  "sealed_confirmatory_results_included": false
+}

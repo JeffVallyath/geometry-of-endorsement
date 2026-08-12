@@ -7,8 +7,8 @@ import nbformat as nbf
 
 
 ROOT = Path(__file__).resolve().parents[1]
-PUBLIC_REPOSITORY = "https://github.com/JeffVallyath/geometry-of-truth.git"
-PUBLIC_REF = "v1.1.2"
+PUBLIC_REPOSITORY = "https://github.com/JeffVallyath/geometry-of-endorsement.git"
+PUBLIC_REF = "main"
 PUBLIC_COMMIT = "cf605a169eef6cbe24ead242e0a5a39097df4f0d"
 
 
@@ -21,7 +21,7 @@ def code(text: str):
 
 
 def colab_badge(filename: str) -> str:
-    target = f"https://colab.research.google.com/github/JeffVallyath/geometry-of-truth/blob/{PUBLIC_REF}/notebooks/{filename}"
+    target = f"https://colab.research.google.com/github/JeffVallyath/geometry-of-endorsement/blob/{PUBLIC_REF}/notebooks/{filename}"
     image = "https://colab.research.google.com/assets/colab-badge.svg"
     return f"[![Open in Colab]({image})]({target})"
 
@@ -71,7 +71,7 @@ except ImportError:
     IN_COLAB = False
 
 if IN_COLAB:
-    REPO_ROOT = Path("/content/geometry-of-truth")
+    REPO_ROOT = Path("/content/geometry-of-endorsement")
     if (REPO_ROOT / ".git").is_dir():
         origin = subprocess.run(["git", "-C", str(REPO_ROOT), "remote", "get-url", "origin"], check=True, text=True, capture_output=True).stdout.strip()
         if origin.rstrip("/").removesuffix(".git") != PUBLIC_REPOSITORY.rstrip("/").removesuffix(".git"):

@@ -1,0 +1,67 @@
+run:
+  name: 2026-08-11-llama-m1-development-smoke
+  mode: smoke
+  seed: 20260803
+
+model:
+  id: meta-llama/Meta-Llama-3.1-8B-Instruct
+  revision: 0e9e39f249a16976918f6564b8830bc894c89659
+  torch_dtype: bfloat16
+  allow_fp16_fallback: false
+  quantization: none
+  min_gpu_memory_mib: 23000
+  device_map: auto
+  trust_remote_code: false
+
+data:
+  dataset: allenai/ValuePrism
+  dataset_config: valence
+  dataset_revision: d439ca90825e5b4e5ef97798d9b5950e16ba7065
+  m0_common_train_manifest: manifest_train_common.csv
+  m0_dev_manifest: manifest_dev.csv
+  m0_confirmatory_manifest: manifest_confirmatory.csv
+  pilot_manifest_dir: manifests/m1-smoke
+
+pilot:
+  train_rows: 20
+  select_boards: 3
+  eval_boards: 4
+
+prompt:
+  chat_template_source: pinned_tokenizer_revision
+  add_generation_prompt: true
+  stop_conditions: not_applicable_sequence_scoring_without_generation
+  system_template: You judge how one named moral consideration bears on an action in context. Follow the requested answer mapping exactly.
+  schemes:
+    primary:
+      symbols: [A, B]
+      joint_user_template: "Situation and action: {situation}\nNamed consideration: {consideration}\nDoes it support or oppose the action here?\n{mapping_instruction}"
+      situation_user_template: "Situation and action: {situation}\nThe consideration is withheld.\n{mapping_instruction}"
+      consideration_user_template: "Named consideration: {consideration}\nThe situation is withheld.\n{mapping_instruction}"
+    transfer:
+      symbols: ["1", "2"]
+      joint_user_template: "Context: {situation}\nFocus: {consideration}\nDoes it count for or against the action?\n{mapping_instruction}"
+      situation_user_template: "Context: {situation}\nNo consideration is supplied.\n{mapping_instruction}"
+      consideration_user_template: "Focus: {consideration}\nNo situation is supplied.\n{mapping_instruction}"
+
+cache:
+  batch_size: 2
+  chunk_size: 8
+  activation_dtype: float16
+  representations: [joint, situation, consideration]
+  schemes: [primary, transfer]
+  sync_every_chunks: 1
+
+analysis:
+  selection_metric: mean_mirrored_pairwise
+  primary_probe: difference_in_means
+  logistic_c_grid: [0.1, 1.0]
+  logistic_max_iter: 500
+  permutations: 2
+  bootstrap_replicates: 20
+  confidence_level: 0.95
+  primary_checkerboard_metric: standardized_interaction_contrast
+  text_baseline: sbert_interaction
+  checkerboard_inference: dyadic_robust
+  practical_effect_sd: 0.30
+  minimum_interpretable_boards: 75

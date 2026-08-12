@@ -33,6 +33,15 @@ def test_source_notebooks_are_clean_and_parseable() -> None:
                 ast.parse(source(cell))
 
 
+def test_notebooks_use_the_current_public_repository_name() -> None:
+    for name in NOTEBOOKS:
+        text = "\n".join(source(cell) for cell in load(name)["cells"])
+        assert "JeffVallyath/geometry-of-truth" not in text
+        assert "/content/geometry-of-truth" not in text
+        assert "JeffVallyath/geometry-of-endorsement" in text
+        assert "/content/geometry-of-endorsement" in text
+
+
 def test_notebook_mode_contracts_reject_unknown_modes_before_setup() -> None:
     for name in NOTEBOOKS:
         notebook = load(name)
