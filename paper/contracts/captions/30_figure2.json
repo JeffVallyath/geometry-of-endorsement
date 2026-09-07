@@ -1,0 +1,149 @@
+{
+  "unit_id": "figure2",
+  "heading_prefix": "Figure 2",
+  "title": "Scorers at the selected layer",
+  "numbers": [
+    {
+      "path": "figures.models.llama.selected_layer",
+      "decimals": null,
+      "thousands": false,
+      "text": "19"
+    },
+    {
+      "path": "figures.models.gemma.selected_layer",
+      "decimals": null,
+      "thousands": false,
+      "text": "27"
+    },
+    {
+      "path": "figures.models.llama.evaluations.sbert_interaction.I_b",
+      "decimals": 2,
+      "thousands": false,
+      "text": "0.28"
+    },
+    {
+      "path": "figures.models.llama.delta_over_text_baseline.difference_in_means.point",
+      "decimals": 3,
+      "thousands": false,
+      "text": "1.363"
+    },
+    {
+      "path": "figures.models.llama.delta_over_text_baseline.difference_in_means.low",
+      "decimals": 3,
+      "thousands": false,
+      "text": "1.089"
+    },
+    {
+      "path": "figures.models.llama.delta_over_text_baseline.difference_in_means.high",
+      "decimals": 3,
+      "thousands": false,
+      "text": "1.637"
+    },
+    {
+      "path": "figures.models.gemma.delta_over_text_baseline.difference_in_means.point",
+      "decimals": 3,
+      "thousands": false,
+      "text": "2.038"
+    },
+    {
+      "path": "figures.models.gemma.delta_over_text_baseline.difference_in_means.low",
+      "decimals": 3,
+      "thousands": false,
+      "text": "1.661"
+    },
+    {
+      "path": "figures.models.gemma.delta_over_text_baseline.difference_in_means.high",
+      "decimals": 3,
+      "thousands": false,
+      "text": "2.415"
+    }
+  ],
+  "literals": [
+    {
+      "text": "2",
+      "note": "figure number"
+    },
+    {
+      "text": "95",
+      "note": "confidence level, percent"
+    },
+    {
+      "text": "4",
+      "note": "number of gates the frozen direction cleared"
+    }
+  ],
+  "required_facts": [
+    {
+      "id": "four-scorers",
+      "critical": true,
+      "description": "Names the scorers compared in the panel.",
+      "all_of": [
+        "model answer margin",
+        "support/opposition direction",
+        "logistic activation probe",
+        "frozen MiniLM comparator"
+      ]
+    },
+    {
+      "id": "comparator-nonzero",
+      "critical": true,
+      "description": "States the frozen MiniLM comparator reaches 0.28, small but not zero.",
+      "all_of": [
+        "0\\.28",
+        "not zero|above zero|nonzero"
+      ]
+    },
+    {
+      "id": "gate-is-on-the-margin",
+      "critical": true,
+      "description": "The preregistered gate is on the margin over the comparator, not on the comparator being zero.",
+      "any_of": [
+        "margin over",
+        "exceeds the .{0,40}comparator by"
+      ]
+    },
+    {
+      "id": "gate-intervals-exclude-zero",
+      "critical": true,
+      "description": "Both margin intervals exclude zero.",
+      "any_of": [
+        "exclud\\w* zero|above zero|do not (contain|include) zero"
+      ]
+    },
+    {
+      "id": "interval-type",
+      "critical": true,
+      "description": "Intervals are 95% normal intervals from the dyadic-robust standard error.",
+      "all_of": [
+        "95",
+        "normal",
+        "dyadic-robust"
+      ]
+    },
+    {
+      "id": "encoding-consistent",
+      "critical": false,
+      "description": "Colours and ordering are held fixed across the figure set.",
+      "any_of": [
+        "same (colour|color)|held fixed|consistent (colour|color)"
+      ]
+    }
+  ],
+  "forbidden": [
+    {
+      "id": "no-text-fails-entirely",
+      "pattern": "(text|comparator)[^.]{0,60}\\b(fails|no separation|zero separation|cannot separate)\\b",
+      "note": "the comparator reaches 0.28; it must not be described as achieving nothing"
+    }
+  ],
+  "qualifiers": [
+    {
+      "id": "comparator-not-zero",
+      "pattern": "not zero|above zero|nonzero",
+      "note": "the comparator's nonzero value must not be rounded away rhetorically"
+    }
+  ],
+  "readability": {
+    "max_sentence_words": 38
+  }
+}

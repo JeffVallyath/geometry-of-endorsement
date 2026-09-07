@@ -1,0 +1,29 @@
+{
+  "unit_id": "results-11",
+  "heading_prefix": "11. ",
+  "note": "Gold answers and accept_patterns are for grading only. build_prompt() sends the reader the prose and the question text, nothing else.",
+  "questions": [
+    {
+      "id": "main-finding",
+      "critical": true,
+      "question": "Is the support/opposition distinction created by instruction tuning?",
+      "gold": "No. Both base checkpoints performed above chance and relation AUROC was 1.000 across base and instruct decoding.",
+      "accept_patterns": [
+        "no\\b",
+        "before instruction",
+        "base"
+      ]
+    },
+    {
+      "id": "what-changes",
+      "critical": true,
+      "question": "What does instruction tuning change?",
+      "gold": "The exact geometry rotates; base/instruct cosine is well below 1 and chat-template comparisons fall further.",
+      "accept_patterns": [
+        "rotat",
+        "cosine",
+        "geometry"
+      ]
+    }
+  ]
+}

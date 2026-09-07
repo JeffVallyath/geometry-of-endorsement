@@ -1,0 +1,60 @@
+{
+  "unit_id": "figure1",
+  "heading_prefix": "Figure 1",
+  "note": "Gold answers and accept_patterns are for grading only. build_prompt() sends the reader the rewritten prose and the question text, nothing else.",
+  "questions": [
+    {
+      "id": "selection-split",
+      "critical": true,
+      "question": "Which split was used to choose the layer?",
+      "gold": "The pilot select split.",
+      "accept_patterns": [
+        "select split",
+        "selection split",
+        "pilot select"
+      ]
+    },
+    {
+      "id": "selection-criterion",
+      "critical": true,
+      "question": "What criterion chose the layer?",
+      "gold": "The prespecified criterion mean_mirrored_pairwise.",
+      "accept_patterns": [
+        "mean_mirrored_pairwise",
+        "mean mirrored pairwise"
+      ]
+    },
+    {
+      "id": "curves-role",
+      "critical": true,
+      "question": "Did the plotted curves play any part in choosing the layer?",
+      "gold": "No. They had no part in choosing the layer.",
+      "accept_patterns": [
+        "no\\b",
+        "no part",
+        "did not"
+      ]
+    },
+    {
+      "id": "is-selected-the-peak",
+      "critical": true,
+      "question": "Is the selected layer the peak of the plotted curves in either model?",
+      "gold": "No. Llama peaks at layer 21 but layer 19 was selected; Gemma peaks at 28 but 27 was selected.",
+      "accept_patterns": [
+        "no\\b",
+        "not the peak",
+        "21",
+        "28"
+      ]
+    },
+    {
+      "id": "which-quantity-primary",
+      "critical": false,
+      "question": "Which quantity is shown as the secondary one?",
+      "gold": "AUROC.",
+      "accept_patterns": [
+        "auroc"
+      ]
+    }
+  ]
+}

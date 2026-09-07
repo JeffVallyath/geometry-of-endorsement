@@ -1,0 +1,262 @@
+{
+  "schema_version": 1,
+  "source_of_truth": "this file",
+  "note": [
+    "This file is the source of truth for canonical names. The Results document",
+    "seeded it, but does not override it: Results is audited against this file like",
+    "every other document, so an inconsistency there cannot propagate simply because",
+    "Results is privileged.",
+    "flag_aliases are wordings that denote an object already named here and should be",
+    "rewritten. accepted_variants are permitted wordings, including short forms after",
+    "the canonical name has appeared."
+  ],
+  "terms": [
+    {
+      "id": "support_opposition_direction",
+      "canonical": "support/opposition direction",
+      "symbol": null,
+      "definition": "The linear direction in activation space fitted to separate Supports from Opposes examples.",
+      "accepted_variants": [
+        "relation direction",
+        "support/opposition directions"
+      ],
+      "flag_aliases": [
+        "difference-in-means direction",
+        "the fitted direction",
+        "the relation vector"
+      ],
+      "alias_note": "The object is the support/opposition direction. 'Difference in means' is how it is fitted, not what it is called."
+    },
+    {
+      "id": "difference_in_means_fit",
+      "canonical": "difference in means",
+      "symbol": null,
+      "definition": "The fitting method for the support/opposition direction: mean activation of Supports minus mean activation of Opposes, normalized.",
+      "accepted_variants": [
+        "difference-in-means fit",
+        "difference-in-means"
+      ],
+      "flag_aliases": [],
+      "alias_note": "Use only when naming the fitting method or the probe family, never as the name of the direction itself."
+    },
+    {
+      "id": "logistic_activation_probe",
+      "canonical": "logistic activation probe",
+      "symbol": null,
+      "definition": "An L2-regularized linear classifier fitted on the same activations as the support/opposition direction.",
+      "accepted_variants": [
+        "logistic probe"
+      ],
+      "flag_aliases": [
+        "logistic classifier on activations",
+        "the regularized probe"
+      ],
+      "alias_note": "'logistic probe' is an acceptable short form after first use."
+    },
+    {
+      "id": "model_answer_margin",
+      "canonical": "model answer margin",
+      "symbol": null,
+      "definition": "The model's own semantic Supports-minus-Opposes candidate log-probability margin.",
+      "accepted_variants": [
+        "answer margin"
+      ],
+      "flag_aliases": [
+        "native answer margin",
+        "native margin"
+      ],
+      "alias_note": "'native_answer_margin' is the field name in the artifacts; prose uses 'model answer margin'."
+    },
+    {
+      "id": "frozen_minilm_comparator",
+      "canonical": "frozen MiniLM comparator",
+      "symbol": null,
+      "definition": "A logistic classifier over MiniLM embeddings of the situation and the consideration plus their elementwise product and absolute difference. It sees text only, never activations.",
+      "accepted_variants": [
+        "MiniLM comparator"
+      ],
+      "flag_aliases": [
+        "frozen text baseline",
+        "frozen MiniLM text baseline",
+        "text-only baseline",
+        "the text baseline"
+      ],
+      "alias_note": "Results names this the frozen MiniLM comparator; figure labels and captions must match."
+    },
+    {
+      "id": "checkerboard",
+      "canonical": "checkerboard",
+      "symbol": null,
+      "definition": "A two-situation, two-consideration design where each consideration flips from Supports to Opposes across situations.",
+      "accepted_variants": [
+        "checkerboards",
+        "board",
+        "boards"
+      ],
+      "flag_aliases": [
+        "2x2 design",
+        "crossed design"
+      ],
+      "alias_note": "'board' is the artifact-level unit of one checkerboard and is acceptable."
+    },
+    {
+      "id": "checkerboard_interaction",
+      "canonical": "checkerboard interaction",
+      "symbol": "I_b",
+      "definition": "The standardized difference-in-differences over the four cells of a checkerboard. Zero for any score additive in situation and consideration.",
+      "accepted_variants": [
+        "checkerboard score",
+        "interaction"
+      ],
+      "flag_aliases": [
+        "interaction effect",
+        "checkerboard statistic",
+        "DiD score"
+      ],
+      "alias_note": "Symbol I_b must be introduced alongside the canonical name before it is used alone."
+    },
+    {
+      "id": "standardized_separation",
+      "canonical": "standardized separation",
+      "symbol": "T",
+      "definition": "A True-minus-False mean difference measured in training-projection standard deviations, averaged over eight training partitions.",
+      "accepted_variants": [],
+      "flag_aliases": [
+        "separation score",
+        "truth separation",
+        "effect size T"
+      ],
+      "alias_note": "T is not an AUROC, a probability, or Cohen's d; do not describe it as an effect size without qualification."
+    },
+    {
+      "id": "deterministic_random_item_scores",
+      "canonical": "deterministic random item scores",
+      "symbol": null,
+      "definition": "A baseline that hashes each item identifier to a scalar in [0, 1) and scores the item with it. It is a scalar per item, not a direction in activation space.",
+      "accepted_variants": [
+        "random item scores"
+      ],
+      "flag_aliases": [
+        "random direction",
+        "random activation direction",
+        "arbitrary direction of the same norm",
+        "random vector"
+      ],
+      "alias_note": "Calling this baseline a random direction is a scientific error: no vector in hidden-state space is ever sampled. Naming arbitrary directions as something the figure does NOT test is correct and permitted."
+    },
+    {
+      "id": "held_out_answer_template",
+      "canonical": "held-out answer template",
+      "symbol": null,
+      "definition": "An answer format not seen during fitting, used to test whether a result survives a change of answer surface form.",
+      "accepted_variants": [
+        "held-out template"
+      ],
+      "flag_aliases": [
+        "transfer template",
+        "alternative format"
+      ],
+      "alias_note": null
+    },
+    {
+      "id": "situation_level_label_flip",
+      "canonical": "situation-level label flip",
+      "symbol": null,
+      "definition": "The permutation null: each training situation independently keeps or reverses all of its labels.",
+      "accepted_variants": [
+        "label flip",
+        "group-preserving label permutation"
+      ],
+      "flag_aliases": [
+        "label shuffle",
+        "random relabeling",
+        "permutation of labels"
+      ],
+      "alias_note": "'shuffle' wrongly implies rows are permuted; the null flips label orientation within situations."
+    },
+    {
+      "id": "pilot_train_split",
+      "canonical": "pilot train split",
+      "symbol": null,
+      "definition": "The 1,500-row split on which probes are fitted.",
+      "accepted_variants": [
+        "training split",
+        "training rows"
+      ],
+      "flag_aliases": [
+        "train set"
+      ],
+      "alias_note": null
+    },
+    {
+      "id": "pilot_select_split",
+      "canonical": "pilot select split",
+      "symbol": null,
+      "definition": "The 300-row / 75-checkerboard split on which the layer and the standardization constants are chosen.",
+      "accepted_variants": [
+        "selection split",
+        "select split"
+      ],
+      "flag_aliases": [
+        "validation set",
+        "dev set"
+      ],
+      "alias_note": null
+    },
+    {
+      "id": "pilot_evaluation_split",
+      "canonical": "pilot evaluation split",
+      "symbol": null,
+      "definition": "The 500-row / 125-checkerboard split on which every reported metric is computed.",
+      "accepted_variants": [
+        "evaluation split",
+        "evaluation boards"
+      ],
+      "flag_aliases": [
+        "test set",
+        "held-out test set"
+      ],
+      "alias_note": "Reserve 'test set' for the 7,394-row strict test set, which none of these figures use."
+    },
+    {
+      "id": "development_evidence",
+      "canonical": "development evidence",
+      "symbol": null,
+      "definition": "Evidence obtained while building and checking the experiment. Distinct from the audited confirmatory result.",
+      "accepted_variants": [
+        "development data",
+        "development split"
+      ],
+      "flag_aliases": [
+        "preliminary result",
+        "pilot result"
+      ],
+      "alias_note": "Never let development evidence be described in language that implies a confirmatory outcome."
+    },
+    {
+      "id": "strict_test_set",
+      "canonical": "strict test set",
+      "symbol": null,
+      "definition": "The 7,394-row split held out on both the situation and the consideration-cluster axis. Untouched by every figure in this set.",
+      "accepted_variants": [],
+      "flag_aliases": [],
+      "alias_note": null
+    },
+    {
+      "id": "dyadic_robust_interval",
+      "canonical": "dyadic-robust standard error",
+      "symbol": null,
+      "definition": "The frozen standard error from which the 95% normal confidence intervals on M1 checkerboard interaction estimates are built.",
+      "accepted_variants": [
+        "dyadic-robust SE"
+      ],
+      "flag_aliases": [
+        "dyadic-robust bootstrap",
+        "bootstrapped CI",
+        "bootstrap over boards"
+      ],
+      "alias_note": "M1 intervals are normal intervals on the dyadic-robust standard error. Naming a bootstrap in contrast is fine; calling the M1 interval one is not."
+    }
+  ],
+  "seeded_from": "docs/RESULTS_AND_CLAIMS.md"
+}

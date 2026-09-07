@@ -1,0 +1,40 @@
+{
+  "unit_id": "results-5",
+  "heading_prefix": "5. ",
+  "note": "Gold answers and accept_patterns are for grading only. build_prompt() sends the reader the prose and the question text, nothing else.",
+  "questions": [
+    {
+      "id": "main-finding",
+      "critical": true,
+      "question": "Is the direction specifically moral?",
+      "gold": "No. Value, Right and Duty directions were nearly parallel, and the direction transferred to ordinary argument-relation corpora.",
+      "accept_patterns": [
+        "no",
+        "not.{0,20}moral",
+        "transfer"
+      ]
+    },
+    {
+      "id": "what-comparison",
+      "critical": true,
+      "question": "What evidence shows it is not moral-specific?",
+      "gold": "Separately fitted Value, Right and Duty directions were almost parallel and performed like one global direction, and the ValuePrism direction transferred without refitting to argument corpora.",
+      "accept_patterns": [
+        "parallel",
+        "transfer",
+        "without refitting"
+      ]
+    },
+    {
+      "id": "not-established",
+      "critical": true,
+      "question": "What remains entangled?",
+      "gold": "The raw geometry: relation and sentiment directions still have high cosine similarity.",
+      "accept_patterns": [
+        "entangl",
+        "sentiment",
+        "cosine"
+      ]
+    }
+  ]
+}

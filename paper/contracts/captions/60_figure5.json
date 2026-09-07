@@ -1,0 +1,166 @@
+{
+  "unit_id": "figure5",
+  "heading_prefix": "Figure 5",
+  "title": "Specificity of the support/opposition direction",
+  "numbers": [
+    {
+      "path": "figures.models.llama.selected_layer",
+      "decimals": null,
+      "thousands": false,
+      "text": "19"
+    },
+    {
+      "path": "figures.models.gemma.selected_layer",
+      "decimals": null,
+      "thousands": false,
+      "text": "27"
+    },
+    {
+      "path": "figures.models.llama.evaluations.held_out_template.I_b",
+      "decimals": 2,
+      "thousands": false,
+      "text": "2.16"
+    },
+    {
+      "path": "figures.models.gemma.evaluations.held_out_template.I_b",
+      "decimals": 2,
+      "thousands": false,
+      "text": "2.26"
+    },
+    {
+      "path": "figures.models.llama.evaluations.sbert_interaction.I_b",
+      "decimals": 2,
+      "thousands": false,
+      "text": "0.28"
+    },
+    {
+      "path": "figures.models.llama.evaluations.deterministic_random.I_b",
+      "decimals": 2,
+      "thousands": false,
+      "text": "-0.26"
+    }
+  ],
+  "literals": [
+    {
+      "text": "5",
+      "note": "figure number"
+    },
+    {
+      "text": "0",
+      "note": "the value the structural checks take, and the lower bound of the hash range"
+    },
+    {
+      "text": "1",
+      "note": "the upper bound of the hash range [0, 1)"
+    },
+    {
+      "text": "3",
+      "note": "the number of bands in the panel"
+    }
+  ],
+  "required_facts": [
+    {
+      "id": "three-bands",
+      "critical": true,
+      "description": "The panel is organised into three bands.",
+      "all_of": [
+        "(three|3) bands|three groups"
+      ]
+    },
+    {
+      "id": "held-out-template-survives",
+      "critical": true,
+      "description": "The frozen direction still separates under a held-out answer template.",
+      "all_of": [
+        "held-out answer template",
+        "(2\\.16|2\\.26)"
+      ]
+    },
+    {
+      "id": "what-template-controls-for",
+      "critical": true,
+      "description": "The template control rules out the scorer reading the answer token or prompt surface form.",
+      "any_of": [
+        "answer token",
+        "surface form"
+      ]
+    },
+    {
+      "id": "random-is-item-scores-not-direction",
+      "critical": true,
+      "description": "The random baseline hashes each item identifier to a scalar; it is not a direction in activation space.",
+      "all_of": [
+        "hash",
+        "not a (random )?direction|never .{0,40}activation space|scalar"
+      ]
+    },
+    {
+      "id": "structural-zero-by-construction",
+      "critical": true,
+      "description": "Situation-only, consideration-only and additive separate encoding are zero analytically, because the interaction annihilates additive scores.",
+      "all_of": [
+        "by construction|analytic",
+        "additive"
+      ]
+    },
+    {
+      "id": "structural-not-model-evidence",
+      "critical": true,
+      "description": "The structural checks are estimator validity checks, not evidence about the model.",
+      "any_of": [
+        "not evidence about the model",
+        "validity check"
+      ]
+    },
+    {
+      "id": "gap-semantic-directions",
+      "critical": true,
+      "description": "Specificity against other semantic directions is not testable from M1.",
+      "any_of": [
+        "truth, sentiment",
+        "other semantic direction"
+      ]
+    },
+    {
+      "id": "gap-activation-directions",
+      "critical": true,
+      "description": "Specificity against arbitrary activation-space directions is not supplied by M1 either.",
+      "any_of": [
+        "arbitrary .{0,30}direction",
+        "random-hidden-direction",
+        "activation-space direction"
+      ]
+    },
+    {
+      "id": "what-figure-does-establish",
+      "critical": true,
+      "description": "States positively what the figure does establish: not wording, not answer format, not board algebra.",
+      "any_of": [
+        "not wording",
+        "not the wording"
+      ]
+    }
+  ],
+  "forbidden": [
+    {
+      "id": "no-random-direction-claim",
+      "pattern": "random (activation )?direction|arbitrary direction of the same norm",
+      "note": "the deterministic random baseline is a per-item scalar, never a sampled vector"
+    },
+    {
+      "id": "no-full-specificity-claim",
+      "pattern": "(rules out|excludes) all (other )?(confounds|explanations)|fully specific",
+      "note": "two specificity gaps remain open"
+    }
+  ],
+  "qualifiers": [
+    {
+      "id": "gaps-stated",
+      "pattern": "does not|not supplied|not testable",
+      "note": "the limits of the figure must be stated explicitly"
+    }
+  ],
+  "readability": {
+    "max_sentence_words": 38
+  }
+}

@@ -1,0 +1,181 @@
+{
+  "unit_id": "results-4",
+  "heading_prefix": "4. ",
+  "coverage_label": "\u00a74 Does distance along the direction meas",
+  "numbers": [
+    {
+      "value": "4",
+      "status": "pending",
+      "claimed_source_family": "claim2_rephrasing_robustness",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "5",
+      "status": "pending",
+      "claimed_source_family": "claim2_rephrasing_robustness",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "11",
+      "status": "pending",
+      "claimed_source_family": "claim2_rephrasing_robustness",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "13",
+      "status": "pending",
+      "claimed_source_family": "claim2_rephrasing_robustness",
+      "reason": "canonical archive not yet resolved",
+      "headline": false
+    },
+    {
+      "value": "23",
+      "status": "pending",
+      "claimed_source_family": "claim2_rephrasing_robustness",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "48",
+      "status": "pending",
+      "claimed_source_family": "claim2_rephrasing_robustness",
+      "reason": "canonical archive not yet resolved",
+      "headline": false
+    },
+    {
+      "value": "49",
+      "status": "pending",
+      "claimed_source_family": "claim2_rephrasing_robustness",
+      "reason": "canonical archive not yet resolved",
+      "headline": false
+    },
+    {
+      "value": "67",
+      "status": "pending",
+      "claimed_source_family": "claim2_rephrasing_robustness",
+      "reason": "canonical archive not yet resolved",
+      "headline": false
+    },
+    {
+      "value": "170",
+      "status": "pending",
+      "claimed_source_family": "claim2_rephrasing_robustness",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "13.5",
+      "status": "pending",
+      "claimed_source_family": "claim2_rephrasing_robustness",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "-0.00870",
+      "status": "pending",
+      "claimed_source_family": "claim2_rephrasing_robustness",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "-0.06625",
+      "status": "pending",
+      "claimed_source_family": "claim2_rephrasing_robustness",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "-0.13450",
+      "status": "pending",
+      "claimed_source_family": "claim2_rephrasing_robustness",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.002753",
+      "status": "pending",
+      "claimed_source_family": "claim2_rephrasing_robustness",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.007011",
+      "status": "pending",
+      "claimed_source_family": "claim2_rephrasing_robustness",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.010818",
+      "status": "pending",
+      "claimed_source_family": "claim2_rephrasing_robustness",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.440353",
+      "status": "pending",
+      "claimed_source_family": "claim2_rephrasing_robustness",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.444223",
+      "status": "pending",
+      "claimed_source_family": "claim2_rephrasing_robustness",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "-0.000507",
+      "status": "pending",
+      "claimed_source_family": "claim2_rephrasing_robustness",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "-0.003870",
+      "status": "pending",
+      "claimed_source_family": "claim2_rephrasing_robustness",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "-0.024731",
+      "status": "pending",
+      "claimed_source_family": "claim2_rephrasing_robustness",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    }
+  ],
+  "literals": [],
+  "required_facts": [
+    {
+      "id": "magnitude-not-commitment",
+      "critical": true,
+      "description": "Distance from the boundary does not reliably predict resistance to rephrasing.",
+      "any_of": [
+        "not a reliable",
+        "did not add useful",
+        "Not reliably"
+      ]
+    },
+    {
+      "id": "polarity-still-identified",
+      "critical": true,
+      "description": "The scalar still identifies relation polarity.",
+      "any_of": [
+        "identifies relation polarity",
+        "polarity"
+      ]
+    }
+  ],
+  "forbidden": [],
+  "qualifiers": [],
+  "readability": {
+    "max_sentence_words": 38
+  }
+}

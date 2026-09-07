@@ -1,0 +1,189 @@
+{
+  "unit_id": "figure1",
+  "heading_prefix": "Figure 1",
+  "title": "Support/opposition decodability across layers",
+  "numbers": [
+    {
+      "path": "figures.models.llama.selected_layer",
+      "decimals": null,
+      "thousands": false,
+      "text": "19"
+    },
+    {
+      "path": "figures.models.gemma.selected_layer",
+      "decimals": null,
+      "thousands": false,
+      "text": "27"
+    },
+    {
+      "path": "figures.models.llama.n_layers",
+      "decimals": null,
+      "thousands": false,
+      "text": "32"
+    },
+    {
+      "path": "figures.models.gemma.n_layers",
+      "decimals": null,
+      "thousands": false,
+      "text": "42"
+    },
+    {
+      "path": "figures.models.llama.layerwise.21.auroc",
+      "decimals": 4,
+      "thousands": false,
+      "text": "0.7348"
+    },
+    {
+      "path": "figures.models.llama.layerwise.21.I_b",
+      "decimals": 4,
+      "thousands": false,
+      "text": "1.6528"
+    },
+    {
+      "path": "figures.models.llama.layerwise.19.auroc",
+      "decimals": 4,
+      "thousands": false,
+      "text": "0.7320"
+    },
+    {
+      "path": "figures.models.llama.layerwise.19.I_b",
+      "decimals": 4,
+      "thousands": false,
+      "text": "1.6470"
+    },
+    {
+      "path": "figures.models.gemma.layerwise.28.auroc",
+      "decimals": 4,
+      "thousands": false,
+      "text": "0.8306"
+    },
+    {
+      "path": "figures.models.gemma.layerwise.28.I_b",
+      "decimals": 4,
+      "thousands": false,
+      "text": "2.3366"
+    },
+    {
+      "path": "figures.models.gemma.layerwise.27.auroc",
+      "decimals": 4,
+      "thousands": false,
+      "text": "0.8291"
+    },
+    {
+      "path": "figures.models.gemma.layerwise.27.I_b",
+      "decimals": 4,
+      "thousands": false,
+      "text": "2.3221"
+    }
+  ],
+  "literals": [
+    {
+      "text": "1",
+      "note": "figure number"
+    },
+    {
+      "text": "21",
+      "note": "layer index of the Llama evaluation argmax"
+    },
+    {
+      "text": "28",
+      "note": "layer index of the Gemma evaluation argmax"
+    },
+    {
+      "text": "10",
+      "note": "lower bound of the Llama rise band"
+    },
+    {
+      "text": "15",
+      "note": "upper bound of the Llama rise band"
+    },
+    {
+      "text": "17",
+      "note": "lower bound of the Gemma rise band"
+    },
+    {
+      "text": "25",
+      "note": "upper bound of the Gemma rise band"
+    }
+  ],
+  "required_facts": [
+    {
+      "id": "panels-ib-and-auroc",
+      "critical": true,
+      "description": "Names which panels show the checkerboard interaction and which show AUROC.",
+      "all_of": [
+        "\\(a, b\\)|\\(a\\)",
+        "\\(c, d\\)|\\(c\\)",
+        "AUROC"
+      ]
+    },
+    {
+      "id": "shared-row-axis",
+      "critical": false,
+      "description": "States that rows share a y-axis so the models are comparable.",
+      "any_of": [
+        "share (a|the) y-axis|same y-axis"
+      ]
+    },
+    {
+      "id": "selection-rule-named",
+      "critical": true,
+      "description": "Names the prespecified selection criterion mean_mirrored_pairwise.",
+      "any_of": [
+        "mean_mirrored_pairwise"
+      ]
+    },
+    {
+      "id": "selection-on-select-split",
+      "critical": true,
+      "description": "The layer was chosen on the pilot select split before evaluation scoring.",
+      "all_of": [
+        "pilot select split|selection split",
+        "before"
+      ]
+    },
+    {
+      "id": "not-argmax-both-models",
+      "critical": true,
+      "description": "The selected layer is not the argmax of the plotted curves in either model.",
+      "all_of": [
+        "not the (arg ?max|maximum|highest|peak)|did not (choose|pick) the (arg ?max|highest|peak)",
+        "21",
+        "28"
+      ]
+    },
+    {
+      "id": "development-only",
+      "critical": true,
+      "description": "The curves are development-split evaluation metrics.",
+      "any_of": [
+        "development"
+      ]
+    },
+    {
+      "id": "curves-not-used-for-selection",
+      "critical": true,
+      "description": "The plotted curves had no part in choosing the layer.",
+      "any_of": [
+        "no part in choosing|did not (choose|determine) the layer|not used to (choose|select)"
+      ]
+    }
+  ],
+  "forbidden": [
+    {
+      "id": "no-best-layer-claim",
+      "pattern": "\\b(best|optimal) layer\\b",
+      "note": "the selected layer is not claimed to be optimal"
+    }
+  ],
+  "qualifiers": [
+    {
+      "id": "development",
+      "pattern": "development",
+      "note": "development scope must be stated"
+    }
+  ],
+  "readability": {
+    "max_sentence_words": 38
+  }
+}

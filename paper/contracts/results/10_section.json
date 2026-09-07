@@ -1,0 +1,245 @@
+{
+  "unit_id": "results-10",
+  "heading_prefix": "10. ",
+  "coverage_label": "\u00a710 Is the support/opposition direction di",
+  "numbers": [
+    {
+      "value": "75",
+      "status": "pending",
+      "claimed_source_family": "claim2_report_alignment",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "78",
+      "status": "pending",
+      "claimed_source_family": "claim2_report_alignment",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "98",
+      "status": "pending",
+      "claimed_source_family": "claim2_report_alignment",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "99",
+      "status": "pending",
+      "claimed_source_family": "claim2_report_alignment",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "102",
+      "status": "pending",
+      "claimed_source_family": "claim2_report_alignment",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "110",
+      "status": "pending",
+      "claimed_source_family": "claim2_report_alignment",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "158",
+      "status": "pending",
+      "claimed_source_family": "claim2_report_alignment",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "300",
+      "status": "pending",
+      "claimed_source_family": "claim2_report_alignment",
+      "reason": "canonical archive not yet resolved",
+      "headline": false
+    },
+    {
+      "value": "1454",
+      "status": "pending",
+      "claimed_source_family": "claim2_report_alignment",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "1500",
+      "status": "pending",
+      "claimed_source_family": "claim2_report_alignment",
+      "reason": "canonical archive not yet resolved",
+      "headline": false
+    },
+    {
+      "value": "7394",
+      "status": "pending",
+      "claimed_source_family": "claim2_report_alignment",
+      "reason": "canonical archive not yet resolved",
+      "headline": false
+    },
+    {
+      "value": "0.004",
+      "status": "pending",
+      "claimed_source_family": "claim2_report_alignment",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.010",
+      "status": "pending",
+      "claimed_source_family": "claim2_report_alignment",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.025",
+      "status": "pending",
+      "claimed_source_family": "claim2_report_alignment",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.028",
+      "status": "pending",
+      "claimed_source_family": "claim2_report_alignment",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.031",
+      "status": "pending",
+      "claimed_source_family": "claim2_report_alignment",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.038",
+      "status": "pending",
+      "claimed_source_family": "claim2_report_alignment",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.039",
+      "status": "pending",
+      "claimed_source_family": "claim2_report_alignment",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.044",
+      "status": "pending",
+      "claimed_source_family": "claim2_report_alignment",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.049",
+      "status": "pending",
+      "claimed_source_family": "claim2_report_alignment",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.051",
+      "status": "pending",
+      "claimed_source_family": "claim2_report_alignment",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.059",
+      "status": "pending",
+      "claimed_source_family": "claim2_report_alignment",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.064",
+      "status": "pending",
+      "claimed_source_family": "claim2_report_alignment",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.073",
+      "status": "pending",
+      "claimed_source_family": "claim2_report_alignment",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.082",
+      "status": "pending",
+      "claimed_source_family": "claim2_report_alignment",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.083",
+      "status": "pending",
+      "claimed_source_family": "claim2_report_alignment",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.092",
+      "status": "pending",
+      "claimed_source_family": "claim2_report_alignment",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.117",
+      "status": "pending",
+      "claimed_source_family": "claim2_report_alignment",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.130",
+      "status": "pending",
+      "claimed_source_family": "claim2_report_alignment",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    }
+  ],
+  "literals": [],
+  "required_facts": [
+    {
+      "id": "scalar-follows-the-report",
+      "critical": true,
+      "description": "On disagreement cells the scalar overwhelmingly follows the model's own report.",
+      "any_of": [
+        "followed the report",
+        "follows the model",
+        "report-aligned"
+      ]
+    },
+    {
+      "id": "elicitation-failure",
+      "critical": true,
+      "description": "The apparent dissociation was largely an elicitation failure removed by fixed few-shot prompting.",
+      "any_of": [
+        "elicitation",
+        "eight-shot"
+      ]
+    },
+    {
+      "id": "development-populations",
+      "critical": true,
+      "description": "The replication populations are development partitions, not the strict test set.",
+      "all_of": [
+        "strict test set"
+      ]
+    }
+  ],
+  "forbidden": [],
+  "qualifiers": [],
+  "readability": {
+    "max_sentence_words": 38
+  }
+}

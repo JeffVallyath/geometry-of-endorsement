@@ -1,0 +1,127 @@
+{
+  "unit_id": "figure3",
+  "heading_prefix": "Figure 3",
+  "note": "Gold answers and accept_patterns are for grading only. build_prompt() sends the reader the rewritten prose and the question text, nothing else.",
+  "questions": [
+    {
+      "id": "what-was-randomized",
+      "critical": true,
+      "question": "What does each permutation draw randomize?",
+      "gold": "The orientation of the labels: each training situation independently keeps or reverses all of its labels.",
+      "accept_patterns": [
+        "orientation",
+        "revers",
+        "flip"
+      ]
+    },
+    {
+      "id": "what-was-preserved",
+      "critical": true,
+      "question": "What does the null hold fixed rather than randomize?",
+      "gold": "The rows themselves, the grouping into situations, and the label composition within each situation.",
+      "accept_patterns": [
+        "row",
+        "grouping",
+        "situation",
+        "composition"
+      ]
+    },
+    {
+      "id": "probes-refit",
+      "critical": true,
+      "question": "Were the probes refit on every permutation draw, or fitted once and reused?",
+      "gold": "Refit from scratch on every draw, and the select split refits its own standardization constants too.",
+      "accept_patterns": [
+        "refit",
+        "re-fit",
+        "from scratch",
+        "every draw",
+        "each draw"
+      ]
+    },
+    {
+      "id": "which-data-held-out",
+      "critical": true,
+      "question": "On which data is the checkerboard interaction recomputed for each draw?",
+      "gold": "The 125 held-out evaluation boards.",
+      "accept_patterns": [
+        "125",
+        "evaluation board",
+        "held-out"
+      ]
+    },
+    {
+      "id": "sidedness",
+      "critical": true,
+      "question": "Is the reported p-value one-sided or two-sided?",
+      "gold": "One-sided, defined as (k+1)/(B+1).",
+      "accept_patterns": [
+        "one-sided",
+        "one sided"
+      ]
+    },
+    {
+      "id": "which-at-floor",
+      "critical": true,
+      "question": "Which result sits at the permutation resolution floor?",
+      "gold": "Gemma's logistic result, at 1/201. The Llama values at 200 draws were also at the floor before the re-run, but Gemma's support/opposition direction is not.",
+      "accept_patterns": [
+        "gemma.{0,40}logistic",
+        "logistic.{0,40}gemma",
+        "1/201"
+      ]
+    },
+    {
+      "id": "gemma-dim-measured",
+      "critical": true,
+      "question": "Is Gemma's support/opposition direction p-value a measured value or a floor?",
+      "gold": "Measured: 2 draws reached the observed value, giving 0.0149.",
+      "accept_patterns": [
+        "measured",
+        "0\\.0149",
+        "not .{0,20}floor"
+      ]
+    },
+    {
+      "id": "llama-corrected",
+      "critical": true,
+      "question": "What p-value does the Llama support/opposition direction have after the re-run, and what did it replace?",
+      "gold": "0.0132 with 131 draws at or above the observed value, replacing 0.005 which was the resolution floor.",
+      "accept_patterns": [
+        "0\\.0132"
+      ]
+    },
+    {
+      "id": "why-gemma-not-rerun",
+      "critical": true,
+      "question": "Why was Gemma not re-run at a larger number of draws?",
+      "gold": "Its layer-27 activations were not retained.",
+      "accept_patterns": [
+        "not retained",
+        "activations",
+        "not kept"
+      ]
+    },
+    {
+      "id": "which-sharper",
+      "critical": true,
+      "question": "Which row of panels carries the sharper evidence, and why?",
+      "gold": "The logistic activation probe, because its null is much less dispersed (SD 0.46 against 1.01).",
+      "accept_patterns": [
+        "logistic"
+      ]
+    },
+    {
+      "id": "mechanism-claimed",
+      "critical": true,
+      "question": "Does the passage explain why the two nulls differ in dispersion?",
+      "gold": "No. It says the experiment does not isolate why; regularization is one plausible contributor but is not separated from other differences.",
+      "accept_patterns": [
+        "no\\b",
+        "does not isolate",
+        "not separated",
+        "plausible"
+      ]
+    }
+  ]
+}

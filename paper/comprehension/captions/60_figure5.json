@@ -1,0 +1,85 @@
+{
+  "unit_id": "figure5",
+  "heading_prefix": "Figure 5",
+  "note": "Gold answers and accept_patterns are for grading only. build_prompt() sends the reader the rewritten prose and the question text, nothing else.",
+  "questions": [
+    {
+      "id": "template-control-rules-out",
+      "critical": true,
+      "question": "What does the held-out answer template control rule out?",
+      "gold": "That the scorer is really reading the answer token or the surface form of the prompt.",
+      "accept_patterns": [
+        "answer token",
+        "surface form"
+      ]
+    },
+    {
+      "id": "random-baseline-nature",
+      "critical": true,
+      "question": "What exactly is the deterministic random item score baseline?",
+      "gold": "A hash of each item identifier to a scalar in 0 to 1, used as that item's score. No vector in activation space is sampled.",
+      "accept_patterns": [
+        "hash",
+        "scalar"
+      ]
+    },
+    {
+      "id": "random-not-a-direction",
+      "critical": true,
+      "question": "Does that baseline test arbitrary directions in activation space?",
+      "gold": "No. No vector in activation space is ever sampled, so it says nothing about arbitrary directions.",
+      "accept_patterns": [
+        "no\\b",
+        "never",
+        "nothing about",
+        "does not"
+      ]
+    },
+    {
+      "id": "zero-band-meaning",
+      "critical": true,
+      "question": "Why do the third-band rows equal exactly zero, and are they evidence about the model?",
+      "gold": "They are zero analytically because the interaction annihilates additive scores. They are estimator validity checks, not evidence about the model.",
+      "accept_patterns": [
+        "construction",
+        "analytic",
+        "additive"
+      ]
+    },
+    {
+      "id": "gap-semantic",
+      "critical": true,
+      "question": "Does this figure establish specificity against other semantic directions such as truth or sentiment?",
+      "gold": "No. M1 fits only the relation direction; that comparison belongs to the later intervention work.",
+      "accept_patterns": [
+        "no\\b",
+        "not testable",
+        "does not",
+        "later"
+      ]
+    },
+    {
+      "id": "gap-arbitrary",
+      "critical": true,
+      "question": "Does this figure establish that an arbitrary direction in the residual stream would fail to produce the effect?",
+      "gold": "No. M1 contains no such control.",
+      "accept_patterns": [
+        "no\\b",
+        "does not",
+        "not supplied",
+        "no such control"
+      ]
+    },
+    {
+      "id": "what-it-does-establish",
+      "critical": true,
+      "question": "What does the figure positively establish?",
+      "gold": "That the effect is not wording, not answer format, and not an artefact of the board algebra.",
+      "accept_patterns": [
+        "wording",
+        "answer format",
+        "algebra"
+      ]
+    }
+  ]
+}

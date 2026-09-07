@@ -1,0 +1,80 @@
+{
+  "unit_id": "results-11",
+  "heading_prefix": "11. ",
+  "coverage_label": "\u00a711 Is the support/opposition distinction ",
+  "numbers": [
+    {
+      "value": "0.207",
+      "status": "pending",
+      "claimed_source_family": "base_instruct_comparison",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.290",
+      "status": "pending",
+      "claimed_source_family": "base_instruct_comparison",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.603",
+      "status": "pending",
+      "claimed_source_family": "base_instruct_comparison",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.627",
+      "status": "pending",
+      "claimed_source_family": "base_instruct_comparison",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.771",
+      "status": "pending",
+      "claimed_source_family": "base_instruct_comparison",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.792",
+      "status": "pending",
+      "claimed_source_family": "base_instruct_comparison",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "1.000",
+      "status": "pending",
+      "claimed_source_family": "base_instruct_comparison",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    }
+  ],
+  "literals": [],
+  "required_facts": [
+    {
+      "id": "present-before-tuning",
+      "critical": true,
+      "description": "The distinction is linearly separable before instruction tuning.",
+      "any_of": [
+        "before instruction tuning"
+      ]
+    },
+    {
+      "id": "geometry-rotates",
+      "critical": true,
+      "description": "The exact geometry still rotates between base and instruct.",
+      "any_of": [
+        "still rotated"
+      ]
+    }
+  ],
+  "forbidden": [],
+  "qualifiers": [],
+  "readability": {
+    "max_sentence_words": 38
+  }
+}

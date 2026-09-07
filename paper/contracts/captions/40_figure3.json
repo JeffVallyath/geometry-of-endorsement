@@ -1,0 +1,296 @@
+{
+  "unit_id": "figure3",
+  "heading_prefix": "Figure 3",
+  "title": "Checkerboard interaction against the permutation null",
+  "numbers": [
+    {
+      "path": "figures.models.llama.permutation_null_large.probes.difference_in_means.B",
+      "decimals": null,
+      "thousands": true,
+      "text": "10,000"
+    },
+    {
+      "path": "figures.models.llama.permutation_null_large.probes.difference_in_means.k_ge_observed",
+      "decimals": null,
+      "thousands": false,
+      "text": "131"
+    },
+    {
+      "path": "figures.models.llama.permutation_null_large.probes.difference_in_means.p",
+      "decimals": 4,
+      "thousands": false,
+      "text": "0.0132"
+    },
+    {
+      "path": "figures.models.llama.permutation_null_large.probes.difference_in_means.null_sd",
+      "decimals": 2,
+      "thousands": false,
+      "text": "1.01"
+    },
+    {
+      "path": "figures.models.llama.permutation_null_large.probes.difference_in_means.p_two_sided_sensitivity",
+      "decimals": 4,
+      "thousands": false,
+      "text": "0.0245"
+    },
+    {
+      "path": "figures.models.llama.permutation_null_large.probes.logistic.p",
+      "decimals": 4,
+      "thousands": false,
+      "text": "0.0001"
+    },
+    {
+      "path": "figures.models.llama.permutation_null_large.probes.logistic.null_sd",
+      "decimals": 2,
+      "thousands": false,
+      "text": "0.46"
+    },
+    {
+      "path": "figures.models.gemma.permutation_null.difference_in_means.B",
+      "decimals": null,
+      "thousands": false,
+      "text": "200"
+    },
+    {
+      "path": "figures.models.gemma.permutation_null.difference_in_means.p",
+      "decimals": 4,
+      "thousands": false,
+      "text": "0.0149"
+    },
+    {
+      "path": "figures.models.gemma.permutation_null.difference_in_means.k_ge_observed",
+      "decimals": null,
+      "thousands": false,
+      "text": "2"
+    },
+    {
+      "path": "figures.models.llama.sample_counts.pilot_train",
+      "decimals": null,
+      "thousands": true,
+      "text": "1,500"
+    },
+    {
+      "path": "figures.models.llama.sample_counts.pilot_eval_boards",
+      "decimals": null,
+      "thousands": true,
+      "text": "125"
+    },
+    {
+      "path": "figures.models.gemma.selected_layer",
+      "decimals": null,
+      "thousands": false,
+      "text": "27"
+    }
+  ],
+  "literals": [
+    {
+      "text": "3",
+      "note": "figure number"
+    },
+    {
+      "text": "0",
+      "note": "k for the logistic probes; also the leading digit of p values"
+    },
+    {
+      "text": "1",
+      "note": "the +1 in (k+1)/(B+1), and the |I_b| = 1 dispersion threshold"
+    },
+    {
+      "text": "1,454",
+      "note": "Llama training situations, from artifacts/figures/m1_situation_groups.csv"
+    },
+    {
+      "text": "201",
+      "note": "B + 1 for the Gemma runs, used to show the floor value"
+    },
+    {
+      "text": "46",
+      "note": "percent of support/opposition-direction null draws beyond |I_b| = 1"
+    },
+    {
+      "text": "2.5",
+      "note": "percent of logistic null draws beyond |I_b| = 1"
+    },
+    {
+      "text": "0.005",
+      "note": "the superseded Llama p-value, quoted to show it was the floor"
+    },
+    {
+      "text": "0.05",
+      "note": "conventional significance threshold referenced in the text"
+    }
+  ],
+  "required_facts": [
+    {
+      "id": "null-is-situation-level-flip",
+      "critical": true,
+      "description": "The null flips labels for whole training situations, independently per situation.",
+      "all_of": [
+        "situation",
+        "(flip|revers)"
+      ]
+    },
+    {
+      "id": "null-preserves-structure",
+      "critical": true,
+      "description": "Names what the null holds fixed rather than randomizes.",
+      "any_of": [
+        "preserv",
+        "holds fixed",
+        "keeps",
+        "unchanged"
+      ]
+    },
+    {
+      "id": "probes-refit-every-draw",
+      "critical": true,
+      "description": "Both probes are refit from scratch on every permuted draw.",
+      "all_of": [
+        "refit",
+        "(both probes|each draw|every draw)"
+      ]
+    },
+    {
+      "id": "scaler-refit-per-draw",
+      "critical": true,
+      "description": "The select split refits its own standardization constants on each draw.",
+      "any_of": [
+        "own standardization constants",
+        "refits its own",
+        "standardization constants are refit"
+      ]
+    },
+    {
+      "id": "eval-boards-held-out",
+      "critical": true,
+      "description": "The interaction is recomputed on the held-out evaluation boards.",
+      "all_of": [
+        "125",
+        "(held-out|evaluation) board"
+      ]
+    },
+    {
+      "id": "p-is-one-sided",
+      "critical": true,
+      "description": "The reported p-value is one-sided.",
+      "all_of": [
+        "one-sided"
+      ]
+    },
+    {
+      "id": "p-formula",
+      "critical": true,
+      "description": "p = (k+1)/(B+1) with k the count of draws at or above the observed value.",
+      "any_of": [
+        "\\(k\\+1\\)/\\(B\\+1\\)",
+        "\\(k \\+ 1\\)/\\(B \\+ 1\\)",
+        "k\\+1.{0,14}B\\+1"
+      ]
+    },
+    {
+      "id": "llama-rerun-supersedes",
+      "critical": true,
+      "description": "The Llama panels are a B = 10,000 re-run that supersedes the B = 200 source values.",
+      "all_of": [
+        "10,000",
+        "supersede"
+      ]
+    },
+    {
+      "id": "llama-dim-corrected",
+      "critical": true,
+      "description": "The Llama support/opposition direction reports p = 0.0132 with k = 131.",
+      "all_of": [
+        "0\\.0132",
+        "131"
+      ]
+    },
+    {
+      "id": "original-was-floor",
+      "critical": true,
+      "description": "The superseded p = 0.005 was the resolution floor, not a measured tail.",
+      "any_of": [
+        "resolution floor",
+        "not a measured tail",
+        "smallest value.{0,40}could report"
+      ]
+    },
+    {
+      "id": "gemma-not-uniformly-floored",
+      "critical": true,
+      "description": "Only Gemma's logistic result sits at the floor; Gemma's direction has k = 2 and a measured p = 0.0149.",
+      "all_of": [
+        "logistic",
+        "0\\.0149"
+      ]
+    },
+    {
+      "id": "gemma-not-rerun-reason",
+      "critical": true,
+      "description": "Gemma was not re-run because its layer-27 activations were not retained.",
+      "any_of": [
+        "not retained",
+        "were not kept",
+        "no longer available"
+      ]
+    },
+    {
+      "id": "dispersion-difference",
+      "critical": true,
+      "description": "Reports the dispersion gap between the two nulls.",
+      "all_of": [
+        "1\\.01",
+        "0\\.46"
+      ]
+    },
+    {
+      "id": "logistic-is-sharper",
+      "critical": true,
+      "description": "States that the logistic panels carry the sharper evidence.",
+      "any_of": [
+        "sharper",
+        "weaker of the two"
+      ]
+    },
+    {
+      "id": "two-sided-sensitivity",
+      "critical": false,
+      "description": "The two-sided sensitivity check gives p = 0.0245.",
+      "any_of": [
+        "0\\.0245"
+      ]
+    }
+  ],
+  "forbidden": [
+    {
+      "id": "no-regularization-mechanism",
+      "pattern": "because [^.]{0,80}regulari|regulari\\w+ (is why|explains|causes)",
+      "note": "the experiment does not isolate regularization as the cause of the dispersion gap"
+    },
+    {
+      "id": "no-shuffle-language",
+      "pattern": "shuffl",
+      "note": "rows are never shuffled; label orientation is flipped within situations"
+    },
+    {
+      "id": "no-significance-inflation",
+      "pattern": "highly significant|strongly significant",
+      "note": "report the p-value rather than amplifying it rhetorically"
+    }
+  ],
+  "qualifiers": [
+    {
+      "id": "gemma-limitation-present",
+      "pattern": "200",
+      "note": "the Gemma B = 200 resolution limit must stay visible"
+    },
+    {
+      "id": "mechanism-hedge",
+      "pattern": "does not (isolate|separate|establish)|not separated|plausible",
+      "note": "the caption must not claim a verified mechanism for the dispersion gap"
+    }
+  ],
+  "readability": {
+    "max_sentence_words": 38
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "unit_id": "results-1",
+  "heading_prefix": "1. ",
+  "note": "Gold answers and accept_patterns are for grading only. build_prompt() sends the reader the prose and the question text, nothing else.",
+  "questions": [
+    {
+      "id": "main-finding",
+      "critical": true,
+      "question": "What is the main empirical finding of this section?",
+      "gold": "ValuePrism contains a real context-dependent relation task: the same consideration receives both labels in different situations.",
+      "accept_patterns": [
+        "yes",
+        "both labels",
+        "context-dependent",
+        "same consideration"
+      ]
+    },
+    {
+      "id": "holdout",
+      "critical": true,
+      "question": "On which axes must a strict-test row be held out?",
+      "gold": "Both: its situation must be unseen in training and its consideration cluster must be unseen in training.",
+      "accept_patterns": [
+        "both",
+        "situation",
+        "consideration"
+      ]
+    },
+    {
+      "id": "what-comparison",
+      "critical": true,
+      "question": "What comparison shows that familiar consideration wording is a shortcut?",
+      "gold": "Deliberately exposing held-out consideration wording improved a text-only predictor by 7.29 percentage points, while exposing familiar situations changed little.",
+      "accept_patterns": [
+        "7.29",
+        "wording",
+        "text-only"
+      ]
+    },
+    {
+      "id": "not-established",
+      "critical": false,
+      "question": "What does the strict grouping cost?",
+      "gold": "A stricter semantic filter left only 1,865 within-situation comparisons, and the next automatic filter collapsed to 23.",
+      "accept_patterns": [
+        "1,865",
+        "23",
+        "filter"
+      ]
+    }
+  ]
+}

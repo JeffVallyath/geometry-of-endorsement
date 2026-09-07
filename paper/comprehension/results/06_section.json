@@ -1,0 +1,40 @@
+{
+  "unit_id": "results-6",
+  "heading_prefix": "6. ",
+  "note": "Gold answers and accept_patterns are for grading only. build_prompt() sends the reader the prose and the question text, nothing else.",
+  "questions": [
+    {
+      "id": "main-finding",
+      "critical": true,
+      "question": "Does steering the direction change the model's answer?",
+      "gold": "Yes. The composite contrast is positive in both models with a permutation p-value of 0.0002.",
+      "accept_patterns": [
+        "yes",
+        "0.0002",
+        "positive"
+      ]
+    },
+    {
+      "id": "statistic-units",
+      "critical": true,
+      "question": "Is the headline statistic a raw logit or nat shift?",
+      "gold": "No. It is a dimensionless composite contrast.",
+      "accept_patterns": [
+        "dimensionless",
+        "no\\b",
+        "not a raw"
+      ]
+    },
+    {
+      "id": "localization",
+      "critical": true,
+      "question": "Is the effect sharply localized to the selected layer?",
+      "gold": "No. Nearby layers gave comparable slopes.",
+      "accept_patterns": [
+        "no\\b",
+        "not sharply",
+        "nearby"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "unit_id": "results-7",
+  "heading_prefix": "7. ",
+  "coverage_label": "\u00a77 Is that causal effect specific to the ",
+  "numbers": [
+    {
+      "value": "1",
+      "status": "pending",
+      "claimed_source_family": "causal_intervention_specificity",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "8",
+      "status": "pending",
+      "claimed_source_family": "causal_intervention_specificity",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "11",
+      "status": "pending",
+      "claimed_source_family": "causal_intervention_specificity",
+      "reason": "canonical archive not yet resolved",
+      "headline": false
+    },
+    {
+      "value": "0.89",
+      "status": "pending",
+      "claimed_source_family": "causal_intervention_specificity",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.457",
+      "status": "pending",
+      "claimed_source_family": "causal_intervention_specificity",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.602",
+      "status": "pending",
+      "claimed_source_family": "causal_intervention_specificity",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "-0.015",
+      "status": "pending",
+      "claimed_source_family": "causal_intervention_specificity",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "-0.113",
+      "status": "pending",
+      "claimed_source_family": "causal_intervention_specificity",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "-0.125",
+      "status": "pending",
+      "claimed_source_family": "causal_intervention_specificity",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "-0.247",
+      "status": "pending",
+      "claimed_source_family": "causal_intervention_specificity",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "-0.392",
+      "status": "pending",
+      "claimed_source_family": "causal_intervention_specificity",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "-0.542",
+      "status": "pending",
+      "claimed_source_family": "causal_intervention_specificity",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "-0.681",
+      "status": "pending",
+      "claimed_source_family": "causal_intervention_specificity",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    }
+  ],
+  "literals": [],
+  "required_facts": [
+    {
+      "id": "not-specific-on-this-endpoint",
+      "critical": true,
+      "description": "Truth and sentiment directions often move the same answer margin as much or more.",
+      "any_of": [
+        "Mostly no",
+        "as much as, or more"
+      ]
+    },
+    {
+      "id": "one-of-eight",
+      "critical": true,
+      "description": "Only one of eight headline comparisons favoured relation steering.",
+      "any_of": [
+        "1 of 8",
+        "one of eight"
+      ]
+    },
+    {
+      "id": "normalization-does-not-rescue",
+      "critical": true,
+      "description": "Equal-L2 normalization did not remove the pattern.",
+      "any_of": [
+        "equal-L2",
+        "did not remove"
+      ]
+    }
+  ],
+  "forbidden": [],
+  "qualifiers": [],
+  "readability": {
+    "max_sentence_words": 38
+  }
+}

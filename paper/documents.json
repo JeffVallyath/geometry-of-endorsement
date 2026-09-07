@@ -1,0 +1,24 @@
+{
+  "schema_version": 2,
+  "note": [
+    "Every prose document under validation, with the contracts and blind-reader",
+    "questions that govern it. paper/TERMINOLOGY.json is the source of truth for",
+    "canonical names across all of them."
+  ],
+  "documents": [
+    {
+      "id": "results",
+      "path": "docs/RESULTS_AND_CLAIMS.md",
+      "contracts": "paper/contracts/results",
+      "comprehension": "paper/comprehension/results",
+      "role": "Defines the empirical claims. Terminology is audited against TERMINOLOGY.json, not privileged over it."
+    },
+    {
+      "id": "captions",
+      "path": "figures/CAPTIONS.md",
+      "contracts": "paper/contracts/captions",
+      "comprehension": "paper/comprehension/captions",
+      "role": "Figure captions. Inherits terminology; must not introduce names of its own."
+    }
+  ]
+}

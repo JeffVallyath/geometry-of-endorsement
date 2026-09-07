@@ -1,0 +1,172 @@
+{
+  "unit_id": "shared-definitions",
+  "heading_prefix": "Shared definitions",
+  "title": "Definitions shared by every figure",
+  "numbers": [
+    {
+      "path": "figures.models.llama.sample_counts.pilot_train",
+      "decimals": null,
+      "thousands": true,
+      "text": "1,500"
+    },
+    {
+      "path": "figures.models.llama.sample_counts.pilot_select",
+      "decimals": null,
+      "thousands": true,
+      "text": "300"
+    },
+    {
+      "path": "figures.models.llama.sample_counts.pilot_eval",
+      "decimals": null,
+      "thousands": true,
+      "text": "500"
+    },
+    {
+      "path": "figures.models.llama.sample_counts.pilot_eval_boards",
+      "decimals": null,
+      "thousands": true,
+      "text": "125"
+    }
+  ],
+  "literals": [
+    {
+      "text": "75",
+      "note": "checkerboards in the pilot select split"
+    },
+    {
+      "text": "7,394",
+      "note": "rows in the strict test set (Results \u00a71)"
+    },
+    {
+      "text": "95",
+      "note": "confidence level, percent"
+    },
+    {
+      "text": "2",
+      "note": "structural: two situations, two considerations"
+    },
+    {
+      "text": "4",
+      "note": "structural: four cells of a checkerboard"
+    },
+    {
+      "text": "0",
+      "note": "the value I_b takes for any additive score"
+    },
+    {
+      "text": "11",
+      "note": "subscript in the I_b formula"
+    },
+    {
+      "text": "12",
+      "note": "subscript in the I_b formula"
+    },
+    {
+      "text": "21",
+      "note": "subscript in the I_b formula"
+    },
+    {
+      "text": "22",
+      "note": "subscript in the I_b formula"
+    },
+    {
+      "text": "2000",
+      "note": "bootstrap replicates for the truth-control intervals"
+    }
+  ],
+  "required_facts": [
+    {
+      "id": "ib-is-did",
+      "critical": true,
+      "description": "The checkerboard interaction is a standardized difference-in-differences, and its scale is stated.",
+      "any_of": [
+        "difference-in-differences"
+      ],
+      "all_of": [
+        "standard deviations?"
+      ]
+    },
+    {
+      "id": "ib-zero-for-additive",
+      "critical": true,
+      "description": "Any score additive in situation and consideration gives I_b = 0 exactly.",
+      "any_of": [
+        "additive"
+      ],
+      "all_of": [
+        "exactly|by construction"
+      ]
+    },
+    {
+      "id": "standardization-frozen-on-select",
+      "critical": true,
+      "description": "Standardization constants are frozen on the pilot select split.",
+      "any_of": [
+        "pilot select split|selection split"
+      ]
+    },
+    {
+      "id": "three-splits",
+      "critical": true,
+      "description": "Fit on pilot train, choose layer/constants on pilot select, report on pilot evaluation.",
+      "all_of": [
+        "pilot train split",
+        "pilot select split",
+        "pilot evaluation split"
+      ]
+    },
+    {
+      "id": "eval-not-used-for-selection",
+      "critical": true,
+      "description": "The evaluation split did not participate in layer selection.",
+      "any_of": [
+        "did not (participate|take part)|no part in (choosing|selecting)"
+      ]
+    },
+    {
+      "id": "no-confirmatory-or-strict-test",
+      "critical": true,
+      "description": "No figure touches the confirmatory boards or the strict test set.",
+      "all_of": [
+        "confirmatory",
+        "strict test set"
+      ]
+    },
+    {
+      "id": "ci-is-normal-not-bootstrap",
+      "critical": true,
+      "description": "M1 intervals are normal intervals on the dyadic-robust standard error, not bootstrap.",
+      "all_of": [
+        "normal",
+        "dyadic-robust",
+        "not bootstrap|not a bootstrap|rather than a bootstrap"
+      ]
+    },
+    {
+      "id": "fig4-uses-bootstrap",
+      "critical": true,
+      "description": "Figure 4 is the exception and uses a group bootstrap.",
+      "all_of": [
+        "Figure 4",
+        "bootstrap"
+      ]
+    }
+  ],
+  "forbidden": [
+    {
+      "id": "no-bootstrap-for-m1",
+      "pattern": "bootstrap (interval|CI)s? (over|on) (boards|the boards)",
+      "note": "M1 intervals are not bootstrap intervals"
+    }
+  ],
+  "qualifiers": [
+    {
+      "id": "development-scope",
+      "pattern": "development",
+      "note": "the development scope of every panel must be stated"
+    }
+  ],
+  "readability": {
+    "max_sentence_words": 38
+  }
+}

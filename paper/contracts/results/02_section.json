@@ -1,0 +1,140 @@
+{
+  "unit_id": "results-2",
+  "heading_prefix": "2. ",
+  "coverage_label": "\u00a72 Can the activation pipeline recover a ",
+  "numbers": [
+    {
+      "path": "figures.truth_control.llama.selected_layer",
+      "decimals": null,
+      "thousands": false,
+      "text": "14",
+      "status": "verified",
+      "headline": true
+    },
+    {
+      "path": "figures.truth_control.llama.primary_T",
+      "decimals": 4,
+      "thousands": false,
+      "text": "1.9245",
+      "status": "verified",
+      "headline": true
+    },
+    {
+      "path": "figures.truth_control.llama.primary_ci.low",
+      "decimals": 4,
+      "thousands": false,
+      "text": "1.8930",
+      "status": "verified",
+      "headline": true
+    },
+    {
+      "path": "figures.truth_control.llama.primary_ci.high",
+      "decimals": 4,
+      "thousands": false,
+      "text": "1.9556",
+      "status": "verified",
+      "headline": true
+    },
+    {
+      "path": "figures.truth_control.llama.transfer_T",
+      "decimals": 4,
+      "thousands": false,
+      "text": "1.8402",
+      "status": "verified",
+      "headline": true
+    },
+    {
+      "path": "figures.models.gemma.truth_control_layer",
+      "decimals": null,
+      "thousands": false,
+      "text": "25",
+      "status": "verified",
+      "headline": true
+    },
+    {
+      "path": "figures.models.gemma.truth_control_T",
+      "decimals": 4,
+      "thousands": false,
+      "text": "1.9444",
+      "status": "verified",
+      "headline": true
+    },
+    {
+      "value": "95",
+      "status": "pending",
+      "claimed_source_family": "truth_control_v2",
+      "reason": "permutation count not carried into a committed artifact",
+      "headline": true
+    },
+    {
+      "value": "1000",
+      "status": "pending",
+      "claimed_source_family": "truth_control_v2",
+      "reason": "permutation count not carried into a committed artifact",
+      "headline": true
+    },
+    {
+      "value": "1.9207",
+      "status": "pending",
+      "claimed_source_family": "truth_control_v2",
+      "reason": "permutation count not carried into a committed artifact",
+      "headline": true
+    },
+    {
+      "value": "1.9666",
+      "status": "pending",
+      "claimed_source_family": "truth_control_v2",
+      "reason": "permutation count not carried into a committed artifact",
+      "headline": true
+    }
+  ],
+  "literals": [
+    {
+      "text": "8",
+      "note": "training partitions averaged into the standardized separation"
+    },
+    {
+      "text": "1.92",
+      "note": "rounded gloss of the standardized separation, quoted in prose"
+    },
+    {
+      "text": "2",
+      "note": "the two answer mappings"
+    }
+  ],
+  "required_facts": [
+    {
+      "id": "control-recovers-known-distinction",
+      "critical": true,
+      "description": "The pipeline recovers factual True/False structure in both models.",
+      "any_of": [
+        "both models",
+        "Llama and Gemma"
+      ]
+    },
+    {
+      "id": "token-confound-addressed",
+      "critical": true,
+      "description": "The answer format was redesigned to separate semantics from the reporting token.",
+      "any_of": [
+        "token-semantic confound",
+        "reversed across examples",
+        "neutral"
+      ]
+    },
+    {
+      "id": "T-units-stated",
+      "critical": true,
+      "description": "The standardized separation is stated in training-projection standard deviations, averaged over eight partitions.",
+      "all_of": [
+        "training-projection standard deviations",
+        "eight"
+      ]
+    }
+  ],
+  "forbidden": [],
+  "qualifiers": [],
+  "readability": {
+    "max_sentence_words": 38
+  }
+}

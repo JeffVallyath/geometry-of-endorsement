@@ -1,0 +1,138 @@
+{
+  "unit_id": "results-9",
+  "heading_prefix": "9. ",
+  "coverage_label": "\u00a79 Does the model track who supports what",
+  "numbers": [
+    {
+      "value": "0.95",
+      "status": "pending",
+      "claimed_source_family": "relation_readout_discrimination_v1",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.513",
+      "status": "pending",
+      "claimed_source_family": "relation_readout_discrimination_v1",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.531",
+      "status": "pending",
+      "claimed_source_family": "relation_readout_discrimination_v1",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.534",
+      "status": "pending",
+      "claimed_source_family": "relation_readout_discrimination_v1",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.604",
+      "status": "pending",
+      "claimed_source_family": "relation_readout_discrimination_v1",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.827",
+      "status": "pending",
+      "claimed_source_family": "relation_readout_discrimination_v1",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.857",
+      "status": "pending",
+      "claimed_source_family": "relation_readout_discrimination_v1",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.896",
+      "status": "pending",
+      "claimed_source_family": "relation_readout_discrimination_v1",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.917",
+      "status": "pending",
+      "claimed_source_family": "relation_readout_discrimination_v1",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.939",
+      "status": "pending",
+      "claimed_source_family": "relation_readout_discrimination_v1",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.940",
+      "status": "pending",
+      "claimed_source_family": "relation_readout_discrimination_v1",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.950",
+      "status": "pending",
+      "claimed_source_family": "relation_readout_discrimination_v1",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.979",
+      "status": "pending",
+      "claimed_source_family": "relation_readout_discrimination_v1",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "1.000",
+      "status": "pending",
+      "claimed_source_family": "relation_readout_discrimination_v1",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    }
+  ],
+  "literals": [],
+  "required_facts": [
+    {
+      "id": "tracks-holder-and-target",
+      "critical": true,
+      "description": "The representation tracks which holder is queried and that holder's stance.",
+      "any_of": [
+        "holder",
+        "who supports what"
+      ]
+    },
+    {
+      "id": "scalar-insufficient",
+      "critical": true,
+      "description": "The scalar alone is near chance on the four-way task while the full state is not.",
+      "any_of": [
+        "scalar alone"
+      ]
+    },
+    {
+      "id": "additive-baseline-fails",
+      "critical": true,
+      "description": "An additive holder-plus-sign baseline is far below the full activation.",
+      "any_of": [
+        "additive holder"
+      ]
+    }
+  ],
+  "forbidden": [],
+  "qualifiers": [],
+  "readability": {
+    "max_sentence_words": 38
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "unit_id": "results-8",
+  "heading_prefix": "8. ",
+  "coverage_label": "\u00a78 Does a semantic direction have a stabl",
+  "numbers": [
+    {
+      "value": "32",
+      "status": "pending",
+      "claimed_source_family": "causal_fingerprint_v3",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.0467",
+      "status": "pending",
+      "claimed_source_family": "causal_fingerprint_v3",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.0663",
+      "status": "pending",
+      "claimed_source_family": "causal_fingerprint_v3",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.2580",
+      "status": "pending",
+      "claimed_source_family": "causal_fingerprint_v3",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.4594",
+      "status": "pending",
+      "claimed_source_family": "causal_fingerprint_v3",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.7500",
+      "status": "pending",
+      "claimed_source_family": "causal_fingerprint_v3",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.8435",
+      "status": "pending",
+      "claimed_source_family": "causal_fingerprint_v3",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.9814",
+      "status": "pending",
+      "claimed_source_family": "causal_fingerprint_v3",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.9863",
+      "status": "pending",
+      "claimed_source_family": "causal_fingerprint_v3",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.9926",
+      "status": "pending",
+      "claimed_source_family": "causal_fingerprint_v3",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.9984",
+      "status": "pending",
+      "claimed_source_family": "causal_fingerprint_v3",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.99995",
+      "status": "pending",
+      "claimed_source_family": "causal_fingerprint_v3",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    }
+  ],
+  "literals": [],
+  "required_facts": [
+    {
+      "id": "fingerprint-defined",
+      "critical": true,
+      "description": "The causal fingerprint is a vector of local changes in semantic output margins.",
+      "any_of": [
+        "causal fingerprint"
+      ]
+    },
+    {
+      "id": "original-check-invalid",
+      "critical": true,
+      "description": "The original random-direction reliability check was invalid.",
+      "any_of": [
+        "was invalid",
+        "measured repeatable projection geometry"
+      ]
+    },
+    {
+      "id": "stability-differs-by-model",
+      "critical": true,
+      "description": "Cross-context fingerprint stability was much stronger in Llama than Gemma.",
+      "any_of": [
+        "stronger in Llama"
+      ]
+    }
+  ],
+  "forbidden": [],
+  "qualifiers": [],
+  "readability": {
+    "max_sentence_words": 38
+  }
+}

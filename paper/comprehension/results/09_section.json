@@ -1,0 +1,40 @@
+{
+  "unit_id": "results-9",
+  "heading_prefix": "9. ",
+  "note": "Gold answers and accept_patterns are for grading only. build_prompt() sends the reader the prose and the question text, nothing else.",
+  "questions": [
+    {
+      "id": "main-finding",
+      "critical": true,
+      "question": "Does the model track who supports what, or only polarity?",
+      "gold": "The broader activation tracks holder and target, not just a generic positive/negative score.",
+      "accept_patterns": [
+        "holder",
+        "more than",
+        "who supports"
+      ]
+    },
+    {
+      "id": "what-comparison",
+      "critical": true,
+      "question": "What comparison shows the scalar is insufficient?",
+      "gold": "On the four-way task the full residual activation reaches about 0.94 while the scalar alone is near chance.",
+      "accept_patterns": [
+        "scalar alone",
+        "0.94",
+        "four-way"
+      ]
+    },
+    {
+      "id": "baseline",
+      "critical": true,
+      "question": "What does the additive holder-plus-sign baseline show?",
+      "gold": "It falls far short of the full activation, so the richer state carries holder-target-relation interaction information.",
+      "accept_patterns": [
+        "additive",
+        "interaction",
+        "falls"
+      ]
+    }
+  ]
+}

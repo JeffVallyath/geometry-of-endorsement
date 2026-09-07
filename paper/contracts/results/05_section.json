@@ -1,0 +1,210 @@
+{
+  "unit_id": "results-5",
+  "heading_prefix": "5. ",
+  "coverage_label": "\u00a75 Is the direction specifically moral?",
+  "numbers": [
+    {
+      "value": "2016",
+      "status": "pending",
+      "claimed_source_family": "relation_transfer_and_purity",
+      "reason": "canonical archive not yet resolved",
+      "headline": false
+    },
+    {
+      "value": "0.680",
+      "status": "pending",
+      "claimed_source_family": "relation_transfer_and_purity",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.682",
+      "status": "pending",
+      "claimed_source_family": "relation_transfer_and_purity",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.709",
+      "status": "pending",
+      "claimed_source_family": "relation_transfer_and_purity",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.731",
+      "status": "pending",
+      "claimed_source_family": "relation_transfer_and_purity",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.737",
+      "status": "pending",
+      "claimed_source_family": "relation_transfer_and_purity",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.739",
+      "status": "pending",
+      "claimed_source_family": "relation_transfer_and_purity",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.754",
+      "status": "pending",
+      "claimed_source_family": "relation_transfer_and_purity",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.762",
+      "status": "pending",
+      "claimed_source_family": "relation_transfer_and_purity",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.785",
+      "status": "pending",
+      "claimed_source_family": "relation_transfer_and_purity",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.792",
+      "status": "pending",
+      "claimed_source_family": "relation_transfer_and_purity",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.801",
+      "status": "pending",
+      "claimed_source_family": "relation_transfer_and_purity",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.804",
+      "status": "pending",
+      "claimed_source_family": "relation_transfer_and_purity",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.817",
+      "status": "pending",
+      "claimed_source_family": "relation_transfer_and_purity",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.833",
+      "status": "pending",
+      "claimed_source_family": "relation_transfer_and_purity",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.835",
+      "status": "pending",
+      "claimed_source_family": "relation_transfer_and_purity",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.838",
+      "status": "pending",
+      "claimed_source_family": "relation_transfer_and_purity",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.847",
+      "status": "pending",
+      "claimed_source_family": "relation_transfer_and_purity",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.866",
+      "status": "pending",
+      "claimed_source_family": "relation_transfer_and_purity",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.867",
+      "status": "pending",
+      "claimed_source_family": "relation_transfer_and_purity",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.877",
+      "status": "pending",
+      "claimed_source_family": "relation_transfer_and_purity",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.882",
+      "status": "pending",
+      "claimed_source_family": "relation_transfer_and_purity",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.965",
+      "status": "pending",
+      "claimed_source_family": "relation_transfer_and_purity",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.966",
+      "status": "pending",
+      "claimed_source_family": "relation_transfer_and_purity",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    }
+  ],
+  "literals": [],
+  "required_facts": [
+    {
+      "id": "not-specifically-moral",
+      "critical": true,
+      "description": "The direction is not specifically moral.",
+      "any_of": [
+        "not specifically moral",
+        "^No\\.",
+        "almost parallel"
+      ]
+    },
+    {
+      "id": "transfers-to-argument-corpora",
+      "critical": true,
+      "description": "The direction transfers without refitting to ordinary argument-relation corpora.",
+      "all_of": [
+        "without refitting"
+      ]
+    },
+    {
+      "id": "residual-entanglement",
+      "critical": true,
+      "description": "The raw geometry remains entangled with sentiment.",
+      "any_of": [
+        "still entangled",
+        "entangled"
+      ]
+    }
+  ],
+  "forbidden": [],
+  "qualifiers": [],
+  "readability": {
+    "max_sentence_words": 38
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "unit_id": "results-7",
+  "heading_prefix": "7. ",
+  "note": "Gold answers and accept_patterns are for grading only. build_prompt() sends the reader the prose and the question text, nothing else.",
+  "questions": [
+    {
+      "id": "main-finding",
+      "critical": true,
+      "question": "Is the causal effect specific to the relation direction?",
+      "gold": "Mostly no. Truth and sentiment directions often moved the same answer margin as much or more.",
+      "accept_patterns": [
+        "mostly no",
+        "no\\b",
+        "truth",
+        "sentiment"
+      ]
+    },
+    {
+      "id": "what-comparison",
+      "critical": true,
+      "question": "How many headline comparisons favoured relation steering?",
+      "gold": "Only 1 of 8.",
+      "accept_patterns": [
+        "1 of 8",
+        "one of eight"
+      ]
+    },
+    {
+      "id": "not-established",
+      "critical": true,
+      "question": "Did equal-L2 normalization change the conclusion?",
+      "gold": "No, it did not remove the pattern.",
+      "accept_patterns": [
+        "no\\b",
+        "did not remove"
+      ]
+    }
+  ]
+}

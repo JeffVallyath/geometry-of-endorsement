@@ -1,0 +1,35 @@
+{
+  "unit_id": "results-13",
+  "heading_prefix": "13. ",
+  "coverage_label": "\u00a713 Overall evidence picture",
+  "numbers": [],
+  "literals": [
+    {
+      "text": "1",
+      "note": "rank-1 steering"
+    }
+  ],
+  "required_facts": [
+    {
+      "id": "central-claim",
+      "critical": true,
+      "description": "A readable, transferable, causally powerful direction can still be one coordinate of a richer representation.",
+      "any_of": [
+        "one coordinate"
+      ]
+    },
+    {
+      "id": "limits-restated",
+      "critical": true,
+      "description": "Restates that magnitude is not a commitment meter and that other directions move the same endpoint.",
+      "any_of": [
+        "commitment meter"
+      ]
+    }
+  ],
+  "forbidden": [],
+  "qualifiers": [],
+  "readability": {
+    "max_sentence_words": 38
+  }
+}

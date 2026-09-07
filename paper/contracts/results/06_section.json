@@ -1,0 +1,124 @@
+{
+  "unit_id": "results-6",
+  "heading_prefix": "6. ",
+  "coverage_label": "\u00a76 Does steering the direction change the",
+  "numbers": [
+    {
+      "value": "95",
+      "status": "pending",
+      "claimed_source_family": "causal_intervention_v001",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.363",
+      "status": "pending",
+      "claimed_source_family": "causal_intervention_v001",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.390",
+      "status": "pending",
+      "claimed_source_family": "causal_intervention_v001",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.417",
+      "status": "pending",
+      "claimed_source_family": "causal_intervention_v001",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.770",
+      "status": "pending",
+      "claimed_source_family": "causal_intervention_v001",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.798",
+      "status": "pending",
+      "claimed_source_family": "causal_intervention_v001",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "1.004",
+      "status": "pending",
+      "claimed_source_family": "causal_intervention_v001",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "1.171",
+      "status": "pending",
+      "claimed_source_family": "causal_intervention_v001",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "1.280",
+      "status": "pending",
+      "claimed_source_family": "causal_intervention_v001",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "1.388",
+      "status": "pending",
+      "claimed_source_family": "causal_intervention_v001",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "1.772",
+      "status": "pending",
+      "claimed_source_family": "causal_intervention_v001",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    },
+    {
+      "value": "0.0002",
+      "status": "pending",
+      "claimed_source_family": "causal_intervention_v001",
+      "reason": "canonical archive not yet resolved",
+      "headline": true
+    }
+  ],
+  "literals": [],
+  "required_facts": [
+    {
+      "id": "steering-moves-the-answer",
+      "critical": true,
+      "description": "Steering along the direction moves the model's answer in the intended direction.",
+      "any_of": [
+        "Yes",
+        "moves systematically"
+      ]
+    },
+    {
+      "id": "composite-is-dimensionless",
+      "critical": true,
+      "description": "The headline statistic is a dimensionless composite contrast.",
+      "any_of": [
+        "dimensionless"
+      ]
+    },
+    {
+      "id": "effect-not-localized",
+      "critical": true,
+      "description": "Nearby layers show comparable slopes, so the effect is not sharply localized.",
+      "any_of": [
+        "not sharply localized"
+      ]
+    }
+  ],
+  "forbidden": [],
+  "qualifiers": [],
+  "readability": {
+    "max_sentence_words": 38
+  }
+}

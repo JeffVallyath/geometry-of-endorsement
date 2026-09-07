@@ -1,0 +1,171 @@
+{
+  "unit_id": "results-1",
+  "heading_prefix": "1. ",
+  "coverage_label": "\u00a71 Does ValuePrism contain a real context",
+  "numbers": [
+    {
+      "path": "leakage.audit.binary_rows",
+      "decimals": null,
+      "thousands": true,
+      "text": "183,023",
+      "status": "verified",
+      "headline": true
+    },
+    {
+      "path": "leakage.audit.both_valence_exact_considerations",
+      "decimals": null,
+      "thousands": true,
+      "text": "3,437",
+      "status": "verified",
+      "headline": true
+    },
+    {
+      "path": "leakage.audit.candidate_checkerboards",
+      "decimals": null,
+      "thousands": true,
+      "text": "13,923",
+      "status": "verified",
+      "headline": true
+    },
+    {
+      "path": "leakage.audit.consideration_pairs",
+      "decimals": null,
+      "thousands": true,
+      "text": "6,073",
+      "status": "verified",
+      "headline": true
+    },
+    {
+      "path": "leakage.strict_split.train_rows",
+      "decimals": null,
+      "thousands": true,
+      "text": "116,000",
+      "status": "verified",
+      "headline": true
+    },
+    {
+      "path": "leakage.strict_split.test_rows",
+      "decimals": null,
+      "thousands": true,
+      "text": "7,394",
+      "status": "verified",
+      "headline": true
+    },
+    {
+      "path": "leakage.stress_test.consideration_mean_pp",
+      "decimals": 2,
+      "thousands": false,
+      "text": "7.29",
+      "status": "verified",
+      "headline": true
+    },
+    {
+      "path": "leakage.sensitivity.coverage.U1.within_situation_comparisons",
+      "decimals": null,
+      "thousands": true,
+      "text": "1,865",
+      "status": "verified",
+      "headline": true
+    },
+    {
+      "value": "0.53",
+      "status": "pending",
+      "claimed_source_family": "valueprism_leakage_audit",
+      "reason": "interval bounds and the mixed-boundary row count are not retained in artifacts/leakage/results.json",
+      "headline": true
+    },
+    {
+      "value": "1.86",
+      "status": "pending",
+      "claimed_source_family": "valueprism_leakage_audit",
+      "reason": "interval bounds and the mixed-boundary row count are not retained in artifacts/leakage/results.json",
+      "headline": true
+    },
+    {
+      "value": "4.90",
+      "status": "pending",
+      "claimed_source_family": "valueprism_leakage_audit",
+      "reason": "interval bounds and the mixed-boundary row count are not retained in artifacts/leakage/results.json",
+      "headline": true
+    },
+    {
+      "value": "9.69",
+      "status": "pending",
+      "claimed_source_family": "valueprism_leakage_audit",
+      "reason": "interval bounds and the mixed-boundary row count are not retained in artifacts/leakage/results.json",
+      "headline": true
+    },
+    {
+      "value": "-0.81",
+      "status": "pending",
+      "claimed_source_family": "valueprism_leakage_audit",
+      "reason": "interval bounds and the mixed-boundary row count are not retained in artifacts/leakage/results.json",
+      "headline": true
+    },
+    {
+      "value": "59208",
+      "status": "pending",
+      "claimed_source_family": "valueprism_leakage_audit",
+      "reason": "interval bounds and the mixed-boundary row count are not retained in artifacts/leakage/results.json",
+      "headline": true
+    }
+  ],
+  "literals": [
+    {
+      "text": "2",
+      "note": "the two labels of the binary task"
+    },
+    {
+      "text": "23",
+      "note": "checkerboards left by the next automatic filter"
+    },
+    {
+      "text": "3",
+      "note": "the third 'Either' label removed before counting"
+    }
+  ],
+  "required_facts": [
+    {
+      "id": "task-is-context-dependent",
+      "critical": true,
+      "description": "The same consideration receives both labels across different situations.",
+      "any_of": [
+        "both labels",
+        "both valence",
+        "receive both"
+      ]
+    },
+    {
+      "id": "double-holdout",
+      "critical": true,
+      "description": "A strict-test row is held out on both the situation and the consideration-cluster axis.",
+      "all_of": [
+        "situation",
+        "consideration cluster"
+      ]
+    },
+    {
+      "id": "wording-shortcut-real",
+      "critical": true,
+      "description": "Exposing held-out consideration wording measurably helps a text-only predictor.",
+      "any_of": [
+        "7.29",
+        "shortcut"
+      ]
+    },
+    {
+      "id": "grouping-cost",
+      "critical": true,
+      "description": "Strong grouping was necessary without filtering away nearly all relational structure.",
+      "any_of": [
+        "1,865",
+        "filtering away"
+      ]
+    }
+  ],
+  "forbidden": [],
+  "qualifiers": [],
+  "readability": {
+    "max_sentence_words": 38
+  }
+}

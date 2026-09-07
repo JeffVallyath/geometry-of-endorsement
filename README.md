@@ -1,6 +1,6 @@
 **Geometry of Endorsement studies what internal directions in language models actually tell us about how the model represents and uses semantic information. We began with moral support and opposition, but the project has increasingly become about a broader question: when a direction lets us read and change a model’s behavior, what have we actually identified?**
 
-For the full logical progression of my plan, read Project Strategy. For the empirical details, see Results and Claims. The reasoning and results from the human review are in Human Review, while Current Status tracks the experiments that are still on the table. Reproduction instructions live in Reproducibility.
+For the full logical progression of my plan, read Project Strategy. For the empirical details, see [Results and Claims](docs/RESULTS_AND_CLAIMS.md). The reasoning and results from the human review are in Human Review, while Current Status tracks the experiments that are still on the table. Reproduction instructions live in Reproducibility.
 
 A language model can give a reasonable moral answer once and still be unstable. It might understand the situation correctly, or it might just be reacting to familiar wording. Even if the first answer looks fine, we do not know whether that same judgment would survive another way of writing the same case.
 

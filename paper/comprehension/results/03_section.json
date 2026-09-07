@@ -1,0 +1,49 @@
+{
+  "unit_id": "results-3",
+  "heading_prefix": "3. ",
+  "note": "Gold answers and accept_patterns are for grading only. build_prompt() sends the reader the prose and the question text, nothing else.",
+  "questions": [
+    {
+      "id": "main-finding",
+      "critical": true,
+      "question": "What is the main finding?",
+      "gold": "Both models contain a context-sensitive support/opposition representation: activation scores separate Supports from Opposes in a way that depends on the situation-consideration pairing.",
+      "accept_patterns": [
+        "yes",
+        "context-sensitive",
+        "both"
+      ]
+    },
+    {
+      "id": "what-comparison",
+      "critical": true,
+      "question": "What comparison rules out the wording explanation?",
+      "gold": "The frozen MiniLM comparator, which sees only text, reaches a far smaller checkerboard interaction than the activation scorers.",
+      "accept_patterns": [
+        "minilm",
+        "comparator",
+        "text"
+      ]
+    },
+    {
+      "id": "cancels",
+      "critical": true,
+      "question": "What does the checkerboard design cancel out?",
+      "gold": "Any fixed preference for a situation or a consideration; an additive score gives exactly zero.",
+      "accept_patterns": [
+        "additive",
+        "fixed preference",
+        "cancel"
+      ]
+    },
+    {
+      "id": "dev-or-confirmatory",
+      "critical": true,
+      "question": "Is this development or confirmatory evidence?",
+      "gold": "Development evidence.",
+      "accept_patterns": [
+        "development"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "unit_id": "results-12",
+  "heading_prefix": "12. ",
+  "note": "Gold answers and accept_patterns are for grading only. build_prompt() sends the reader the prose and the question text, nothing else.",
+  "questions": [
+    {
+      "id": "main-finding",
+      "critical": true,
+      "question": "Does rank-1 steering recreate the natural counterfactual?",
+      "gold": "In Gemma, no. It converts the direct answer while the other consequences move away from the natural pattern.",
+      "accept_patterns": [
+        "no\\b",
+        "gemma",
+        "away"
+      ]
+    },
+    {
+      "id": "what-comparison",
+      "critical": true,
+      "question": "What comparison shows the target was reachable another way?",
+      "gold": "A full counterfactual-state patch and a full-state interpolation reach the same answer target with high recovery.",
+      "accept_patterns": [
+        "full.state",
+        "patch",
+        "interpolation"
+      ]
+    },
+    {
+      "id": "which-model-failed",
+      "critical": true,
+      "question": "Why is Llama not reported for this comparison?",
+      "gold": "Its natural counterfactual reference was not stable enough across equivalent prompt realizations.",
+      "accept_patterns": [
+        "llama",
+        "not stable"
+      ]
+    },
+    {
+      "id": "csr-scale",
+      "critical": true,
+      "question": "What do CSR values of 1, 0 and negative mean?",
+      "gold": "1 is exact recovery, 0 is no movement from base, and negative means the intervention moved farther from the natural counterfactual.",
+      "accept_patterns": [
+        "exact recovery",
+        "no movement",
+        "farther|further"
+      ]
+    }
+  ]
+}

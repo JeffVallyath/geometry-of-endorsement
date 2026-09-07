@@ -1,0 +1,50 @@
+{
+  "unit_id": "results-2",
+  "heading_prefix": "2. ",
+  "note": "Gold answers and accept_patterns are for grading only. build_prompt() sends the reader the prose and the question text, nothing else.",
+  "questions": [
+    {
+      "id": "main-finding",
+      "critical": true,
+      "question": "What does this control show?",
+      "gold": "The extraction and direction-fitting machinery recovers a known factual True/False distinction.",
+      "accept_patterns": [
+        "yes",
+        "recover",
+        "true/false",
+        "factual"
+      ]
+    },
+    {
+      "id": "which-models",
+      "critical": true,
+      "question": "Which models does it hold in?",
+      "gold": "Both Llama and Gemma.",
+      "accept_patterns": [
+        "both",
+        "llama.{0,20}gemma",
+        "gemma.{0,20}llama"
+      ]
+    },
+    {
+      "id": "what-was-fixed",
+      "critical": true,
+      "question": "What confound did the answer format redesign address?",
+      "gold": "A token-semantic confound: the neutral symbols are reversed across examples so the semantic label is separated from the physical reporting token.",
+      "accept_patterns": [
+        "token",
+        "reversed",
+        "neutral"
+      ]
+    },
+    {
+      "id": "units",
+      "critical": true,
+      "question": "What are the units of the standardized separation?",
+      "gold": "Training-projection standard deviations, averaged across eight train-oriented directions.",
+      "accept_patterns": [
+        "standard deviation"
+      ]
+    }
+  ]
+}

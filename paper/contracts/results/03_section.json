@@ -1,0 +1,347 @@
+{
+  "unit_id": "results-3",
+  "heading_prefix": "3. ",
+  "coverage_label": "\u00a73 Do Llama and Gemma contain a context-s",
+  "numbers": [
+    {
+      "path": "figures.models.llama.sample_counts.pilot_train",
+      "decimals": null,
+      "thousands": true,
+      "text": "1,500",
+      "status": "verified",
+      "headline": false
+    },
+    {
+      "path": "figures.models.llama.sample_counts.pilot_select",
+      "decimals": null,
+      "thousands": true,
+      "text": "300",
+      "status": "verified",
+      "headline": false
+    },
+    {
+      "path": "figures.models.llama.sample_counts.pilot_eval",
+      "decimals": null,
+      "thousands": true,
+      "text": "500",
+      "status": "verified",
+      "headline": false
+    },
+    {
+      "path": "figures.models.llama.sample_counts.pilot_eval_boards",
+      "decimals": null,
+      "thousands": true,
+      "text": "125",
+      "status": "verified",
+      "headline": false
+    },
+    {
+      "path": "figures.models.llama.selected_layer",
+      "decimals": null,
+      "thousands": false,
+      "text": "19",
+      "status": "verified",
+      "headline": false
+    },
+    {
+      "path": "figures.models.gemma.selected_layer",
+      "decimals": null,
+      "thousands": false,
+      "text": "27",
+      "status": "verified",
+      "headline": false
+    },
+    {
+      "path": "figures.models.llama.evaluations.native_answer_margin.auroc",
+      "decimals": 3,
+      "thousands": false,
+      "text": "0.721",
+      "status": "verified",
+      "headline": true
+    },
+    {
+      "path": "figures.models.llama.evaluations.native_answer_margin.I_b",
+      "decimals": 4,
+      "thousands": false,
+      "text": "1.6089",
+      "status": "verified",
+      "headline": true
+    },
+    {
+      "path": "figures.models.llama.evaluations.difference_in_means.auroc",
+      "decimals": 3,
+      "thousands": false,
+      "text": "0.732",
+      "status": "verified",
+      "headline": true
+    },
+    {
+      "path": "figures.models.llama.evaluations.difference_in_means.I_b",
+      "decimals": 4,
+      "thousands": false,
+      "text": "1.6470",
+      "status": "verified",
+      "headline": true
+    },
+    {
+      "path": "figures.models.llama.evaluations.logistic.auroc",
+      "decimals": 3,
+      "thousands": false,
+      "text": "0.780",
+      "status": "verified",
+      "headline": true
+    },
+    {
+      "path": "figures.models.llama.evaluations.logistic.I_b",
+      "decimals": 4,
+      "thousands": false,
+      "text": "2.0836",
+      "status": "verified",
+      "headline": true
+    },
+    {
+      "path": "figures.models.llama.evaluations.sbert_interaction.I_b",
+      "decimals": 4,
+      "thousands": false,
+      "text": "0.2842",
+      "status": "verified",
+      "headline": true
+    },
+    {
+      "path": "figures.models.llama.delta_over_text_baseline.difference_in_means.point",
+      "decimals": 4,
+      "thousands": false,
+      "text": "1.3628",
+      "status": "verified",
+      "headline": true
+    },
+    {
+      "path": "figures.models.llama.delta_over_text_baseline.difference_in_means.low",
+      "decimals": 4,
+      "thousands": false,
+      "text": "1.0885",
+      "status": "verified",
+      "headline": true
+    },
+    {
+      "path": "figures.models.llama.delta_over_text_baseline.difference_in_means.high",
+      "decimals": 4,
+      "thousands": false,
+      "text": "1.6370",
+      "status": "verified",
+      "headline": true
+    },
+    {
+      "path": "figures.models.llama.evaluations.held_out_template.I_b",
+      "decimals": 4,
+      "thousands": false,
+      "text": "2.1569",
+      "status": "verified",
+      "headline": true
+    },
+    {
+      "path": "figures.models.gemma.evaluations.native_answer_margin.within_situation",
+      "decimals": 4,
+      "thousands": false,
+      "text": "0.8920",
+      "status": "verified",
+      "headline": true
+    },
+    {
+      "path": "figures.models.gemma.evaluations.native_answer_margin.within_consideration",
+      "decimals": 4,
+      "thousands": false,
+      "text": "0.8597",
+      "status": "verified",
+      "headline": true
+    },
+    {
+      "path": "figures.models.gemma.evaluations.native_answer_margin.I_b",
+      "decimals": 4,
+      "thousands": false,
+      "text": "2.4068",
+      "status": "verified",
+      "headline": true
+    },
+    {
+      "path": "figures.models.gemma.evaluations.difference_in_means.within_situation",
+      "decimals": 4,
+      "thousands": false,
+      "text": "0.8720",
+      "status": "verified",
+      "headline": true
+    },
+    {
+      "path": "figures.models.gemma.evaluations.difference_in_means.within_consideration",
+      "decimals": 4,
+      "thousands": false,
+      "text": "0.8776",
+      "status": "verified",
+      "headline": true
+    },
+    {
+      "path": "figures.models.gemma.evaluations.difference_in_means.I_b",
+      "decimals": 4,
+      "thousands": false,
+      "text": "2.3221",
+      "status": "verified",
+      "headline": true
+    },
+    {
+      "path": "figures.models.gemma.evaluations.logistic.within_situation",
+      "decimals": 4,
+      "thousands": false,
+      "text": "0.8680",
+      "status": "verified",
+      "headline": true
+    },
+    {
+      "path": "figures.models.gemma.evaluations.logistic.within_consideration",
+      "decimals": 4,
+      "thousands": false,
+      "text": "0.8425",
+      "status": "verified",
+      "headline": true
+    },
+    {
+      "path": "figures.models.gemma.evaluations.logistic.I_b",
+      "decimals": 4,
+      "thousands": false,
+      "text": "2.1499",
+      "status": "verified",
+      "headline": true
+    },
+    {
+      "path": "figures.models.gemma.evaluations.sbert_interaction.within_situation",
+      "decimals": 4,
+      "thousands": false,
+      "text": "0.5560",
+      "status": "verified",
+      "headline": true
+    },
+    {
+      "path": "figures.models.gemma.evaluations.sbert_interaction.within_consideration",
+      "decimals": 4,
+      "thousands": false,
+      "text": "0.5885",
+      "status": "verified",
+      "headline": true
+    },
+    {
+      "path": "figures.models.gemma.delta_over_text_baseline.difference_in_means.point",
+      "decimals": 4,
+      "thousands": false,
+      "text": "2.0378",
+      "status": "verified",
+      "headline": true
+    },
+    {
+      "path": "figures.models.gemma.delta_over_text_baseline.difference_in_means.low",
+      "decimals": 4,
+      "thousands": false,
+      "text": "1.6608",
+      "status": "verified",
+      "headline": true
+    },
+    {
+      "path": "figures.models.gemma.delta_over_text_baseline.difference_in_means.high",
+      "decimals": 4,
+      "thousands": false,
+      "text": "2.4149",
+      "status": "verified",
+      "headline": true
+    },
+    {
+      "path": "figures.models.gemma.evaluations.held_out_template.I_b",
+      "decimals": 4,
+      "thousands": false,
+      "text": "2.2617",
+      "status": "verified",
+      "headline": true
+    }
+  ],
+  "literals": [
+    {
+      "text": "1",
+      "note": "cell indices and the single-cell presentation"
+    },
+    {
+      "text": "2",
+      "note": "two situations, two considerations"
+    },
+    {
+      "text": "4",
+      "note": "the four cells of a checkerboard"
+    },
+    {
+      "text": "0",
+      "note": "the value the interaction takes for an additive score"
+    },
+    {
+      "text": "11",
+      "note": "cell subscript"
+    },
+    {
+      "text": "12",
+      "note": "cell subscript"
+    },
+    {
+      "text": "21",
+      "note": "cell subscript"
+    },
+    {
+      "text": "22",
+      "note": "cell subscript"
+    }
+  ],
+  "required_facts": [
+    {
+      "id": "interaction-cancels-additive",
+      "critical": true,
+      "description": "Any additive score gives a checkerboard interaction of exactly zero.",
+      "all_of": [
+        "additive",
+        "exactly"
+      ]
+    },
+    {
+      "id": "one-cell-at-a-time",
+      "critical": true,
+      "description": "The model sees one cell at a time; the checkerboard is only the evaluation structure.",
+      "any_of": [
+        "one cell at a time"
+      ]
+    },
+    {
+      "id": "standardization-frozen-on-selection",
+      "critical": true,
+      "description": "Standardization is frozen on the selection split.",
+      "any_of": [
+        "frozen on the selection split"
+      ]
+    },
+    {
+      "id": "comparator-margin",
+      "critical": true,
+      "description": "The direction is compared against the frozen MiniLM comparator by a margin with an interval.",
+      "all_of": [
+        "comparator",
+        "1.3628"
+      ]
+    },
+    {
+      "id": "both-models",
+      "critical": true,
+      "description": "Gemma independently selected its own layer and reproduces the pattern.",
+      "any_of": [
+        "independently selected",
+        "Gemma independently"
+      ]
+    }
+  ],
+  "forbidden": [],
+  "qualifiers": [],
+  "readability": {
+    "max_sentence_words": 38
+  }
+}

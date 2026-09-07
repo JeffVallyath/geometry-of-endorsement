@@ -1,0 +1,155 @@
+{
+  "unit_id": "figure4",
+  "heading_prefix": "Figure 4",
+  "title": "Factual True/False positive control",
+  "numbers": [
+    {
+      "path": "figures.truth_control.llama.selected_layer",
+      "decimals": null,
+      "thousands": false,
+      "text": "14"
+    },
+    {
+      "path": "figures.models.gemma.truth_control_layer",
+      "decimals": null,
+      "thousands": false,
+      "text": "25"
+    },
+    {
+      "path": "figures.truth_control.llama.primary_ci.replicates",
+      "decimals": null,
+      "thousands": true,
+      "text": "2,000"
+    }
+  ],
+  "literals": [
+    {
+      "text": "4",
+      "note": "figure number"
+    },
+    {
+      "text": "95",
+      "note": "confidence level, percent"
+    },
+    {
+      "text": "8",
+      "note": "training partitions averaged into the standardized separation"
+    },
+    {
+      "text": "0.0003",
+      "note": "reversed-instruction AUROC in the failed first control"
+    },
+    {
+      "text": "0.9997",
+      "note": "reversed-literal True-minus-False AUROC in the failed first control"
+    },
+    {
+      "text": "1",
+      "note": "control version number, and part of the held-out answer format"
+    },
+    {
+      "text": "2",
+      "note": "control version number, and part of the held-out answer format"
+    }
+  ],
+  "required_facts": [
+    {
+      "id": "control-purpose",
+      "critical": true,
+      "description": "The control applies the same machinery to a task whose ground truth is already known.",
+      "any_of": [
+        "known ground truth",
+        "ground truth is known",
+        "already know"
+      ]
+    },
+    {
+      "id": "control-is-a-gate",
+      "critical": true,
+      "description": "A passing truth control is required per model before the relation result is reported.",
+      "all_of": [
+        "(gate|requires|must pass)",
+        "(each model|per model|its own)"
+      ]
+    },
+    {
+      "id": "T-definition",
+      "critical": true,
+      "description": "The standardized separation is a True-minus-False mean difference in training-projection standard deviations, averaged over eight partitions.",
+      "all_of": [
+        "True-minus-False",
+        "standard deviation",
+        "eight"
+      ]
+    },
+    {
+      "id": "T-scale-stated",
+      "critical": true,
+      "description": "The scale of the standardized separation is stated, so its magnitude cannot be read as a conventional effect size.",
+      "any_of": [
+        "scale is therefore set",
+        "training projections"
+      ]
+    },
+    {
+      "id": "v1-failed",
+      "critical": true,
+      "description": "An earlier version failed strict review because the probe was reading the answer token.",
+      "all_of": [
+        "answer token",
+        "0\\.0003",
+        "0\\.9997"
+      ]
+    },
+    {
+      "id": "v2-design",
+      "critical": true,
+      "description": "The version shown uses neutral symbols whose meaning reverses across examples, and tests transfer to a held-out answer format.",
+      "any_of": [
+        "reversed across examples",
+        "meaning is reversed",
+        "reverses across examples"
+      ]
+    },
+    {
+      "id": "gemma-open-marker",
+      "critical": true,
+      "description": "The Gemma point is drawn open because only its point estimate was retained.",
+      "any_of": [
+        "only its point estimate",
+        "no interval"
+      ]
+    },
+    {
+      "id": "fig4-bootstrap",
+      "critical": true,
+      "description": "The held-out intervals are group bootstrap intervals with 2,000 replicates.",
+      "all_of": [
+        "bootstrap",
+        "2,000"
+      ]
+    }
+  ],
+  "forbidden": [
+    {
+      "id": "no-t-as-effect-size",
+      "pattern": "is an effect size|as an effect size",
+      "note": "the standardized separation is not a conventional effect size"
+    },
+    {
+      "id": "no-truth-generalization",
+      "pattern": "proves the (method|pipeline) works",
+      "note": "a passing positive control does not prove the relation result"
+    }
+  ],
+  "qualifiers": [
+    {
+      "id": "development-sweep",
+      "pattern": "development",
+      "note": "the layer sweep panel is development data"
+    }
+  ],
+  "readability": {
+    "max_sentence_words": 38
+  }
+}

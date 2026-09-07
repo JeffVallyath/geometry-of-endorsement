@@ -1,0 +1,64 @@
+{
+  "unit_id": "scope",
+  "heading_prefix": "Scope",
+  "title": "Scope of the figure set",
+  "numbers": [],
+  "literals": [
+    {
+      "text": "1",
+      "note": "ordinal 'M1', masked contextually"
+    }
+  ],
+  "required_facts": [
+    {
+      "id": "m1-decodability-only",
+      "critical": true,
+      "description": "States that every figure here is M1 development evidence about decodability.",
+      "any_of": [
+        "development evidence",
+        "decodab"
+      ]
+    },
+    {
+      "id": "two-model-symmetry-real-here",
+      "critical": true,
+      "description": "States the two-model agreement holds for this figure set.",
+      "any_of": [
+        "both models",
+        "Llama and Gemma",
+        "two-model"
+      ]
+    },
+    {
+      "id": "later-results-asymmetric",
+      "critical": true,
+      "description": "States the later causal/reliability results do NOT replicate across both models.",
+      "any_of": [
+        "do not replicate",
+        "does not replicate",
+        "not replicate symmetric",
+        "narrower Llama"
+      ]
+    },
+    {
+      "id": "keep-separate",
+      "critical": true,
+      "description": "Instructs that the M1 suite be kept separate from later single-model claims.",
+      "any_of": [
+        "separate",
+        "do not (place|combine|merge)"
+      ]
+    }
+  ],
+  "forbidden": [
+    {
+      "id": "no-confirmatory-implication",
+      "pattern": "\\b(confirms|confirmed|establishes that the model)\\b",
+      "note": "development evidence must not be described in confirmatory language"
+    }
+  ],
+  "qualifiers": [],
+  "readability": {
+    "max_sentence_words": 38
+  }
+}
