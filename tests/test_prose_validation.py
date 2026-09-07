@@ -327,3 +327,41 @@ def test_grade_requires_every_critical_question():
 def test_unavailable_reader_refuses_rather_than_faking():
     with pytest.raises(RuntimeError):
         pc.UnavailableReader().answer("passage", [])
+
+
+# --------------------------------------------------------------------------
+# rendering
+# --------------------------------------------------------------------------
+
+def test_shipped_documents_render():
+    report, _ = pc.run()
+    rendering = [f for f in report.findings if f.gate == "RENDERING"]
+    assert not rendering, "; ".join(str(f) for f in rendering)
+
+
+def test_blocked_math_macro_is_an_error():
+    """A macro the renderer rejects leaves an error box where a formula should be."""
+    report = pc.Report()
+    pc.check_rendering("d", r"the scale is $$s=\operatorname{median}(x)$$ here", report)
+    assert "blocked-macro" in {f.rule for f in report.errors}
+
+
+def test_inline_math_across_a_line_break_is_an_error():
+    report = pc.Report()
+    wrapped = "a formula $I_b = a -\nb$ wrapped over two lines"
+    pc.check_rendering("d", wrapped, report)
+    assert "unbalanced-math" in {f.rule for f in report.errors}
+
+
+def test_fenced_math_with_allowed_macros_is_clean():
+    document = "\n".join([
+        "text $x$",
+        "",
+        "```math",
+        r"y=\mathrm{median}(x)",
+        "```",
+        "",
+    ])
+    report = pc.Report()
+    pc.check_rendering("d", document, report)
+    assert not report.errors

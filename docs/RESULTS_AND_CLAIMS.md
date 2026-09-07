@@ -296,7 +296,7 @@ The distance uses development-frozen robust scales:
 
 ```math
 s_j=\max\left(1.4826\,\mathrm{MAD}(N_{\cdot,j}),\;
-0.25\times\operatorname{median}_{k\in\{2,3,4\}}
+0.25\times\mathrm{median}_{k\in\{2,3,4\}}
 1.4826\,\mathrm{MAD}(N_{\cdot,k})\right),
 ```
 

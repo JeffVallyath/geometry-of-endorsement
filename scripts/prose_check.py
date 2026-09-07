@@ -11,6 +11,8 @@ Three gates run over each prose unit.
                claim appears, qualifications are intact. Failures are errors.
   TERMINOLOGY  canonical names are used, flagged aliases are absent, symbols are
                introduced before use. Failures are errors.
+  RENDERING    the math and markdown actually display: no macro the renderer
+               rejects, no inline math spanning a line break. Errors.
   READABILITY  mechanical warnings only. Never fails a run.
 
 A fourth category sits alongside them. A number may be declared *pending*: the
@@ -403,6 +405,55 @@ def check_readability(doc_id: str, unit_id: str, body: str, contract: dict,
 
 
 # --------------------------------------------------------------------------
+# rendering
+# --------------------------------------------------------------------------
+
+# GitHub renders math with KaTeX and refuses a set of macros. A formula using one
+# is replaced by an error box, so the definition never reaches the reader.
+BLOCKED_MACROS = (
+    "operatorname", "newcommand", "renewcommand", "providecommand", "def", "gdef",
+    "edef", "xdef", "let", "futurelet", "global", "includegraphics", "htmlClass",
+    "htmlId", "htmlStyle", "htmlData", "url", "href",
+)
+
+
+def math_regions(text: str) -> list[str]:
+    """Every span the renderer will treat as math."""
+    regions: list[str] = []
+    regions += re.findall(r"```math\n(.*?)```", text, re.S)
+    without_fences = re.sub(r"```.*?```", " ", text, flags=re.S)
+    regions += re.findall(r"\$\$(.*?)\$\$", without_fences, re.S)
+    inline_source = re.sub(r"\$\$.*?\$\$", " ", without_fences, flags=re.S)
+    regions += re.findall(r"(?<!\$)\$([^$\n]+)\$(?!\$)", inline_source)
+    return regions
+
+
+def check_rendering(doc_id: str, text: str, report: Report) -> None:
+    for region in math_regions(text):
+        for macro in BLOCKED_MACROS:
+            if re.search(rf"\\{macro}\*?(?![A-Za-z])", region):
+                report.add("RENDERING", ERROR, doc_id, "document", "blocked-macro",
+                           f"\\{macro} is rejected by the renderer; the formula will not "
+                           f"display: {region.strip()[:70]}")
+
+    lines = text.split("\n")
+    in_fence = False
+    for number, line in enumerate(lines, 1):
+        if line.strip().startswith("```"):
+            in_fence = not in_fence
+            continue
+        if in_fence:
+            continue
+        if line.count("$") % 2:
+            report.add("RENDERING", ERROR, doc_id, "document", "unbalanced-math",
+                       f"line {number} has an odd number of $; inline math cannot span "
+                       f"a line break")
+    if in_fence:
+        report.add("RENDERING", ERROR, doc_id, "document", "unclosed-fence",
+                   "a code fence is never closed")
+
+
+# --------------------------------------------------------------------------
 # blind comprehension
 # --------------------------------------------------------------------------
 
@@ -531,6 +582,7 @@ def run(selected: str | None = None, strict: bool = False,
             check_readability(doc["id"], contract["unit_id"], body, contract, report)
 
         check_symbol_order(doc["id"], text, terminology, report)
+        check_rendering(doc["id"], text, report)
 
     return report, all_units
 
