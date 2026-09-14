@@ -1,0 +1,37 @@
+{
+  "at": "2026-09-10T19:30:01.347690+00:00",
+  "actor": "gemma",
+  "prefix_tokens": 712,
+  "suffix_tokens": [
+    34,
+    34,
+    38,
+    33,
+    33,
+    34,
+    44,
+    44,
+    48,
+    43,
+    43,
+    44
+  ],
+  "cache_bytes": 244973568,
+  "seconds": {
+    "compile": 0.29015372100002423,
+    "compile_capture": 0.28163084166681074,
+    "compile_shared": 0.2929340266667471,
+    "compile_aware12": 0.8674177863334384,
+    "ask": 0.10406885366683127,
+    "ask_batch12": 0.14288932033347615,
+    "ask_batch24": 0.23115814566669238,
+    "ask_capture12": 0.1362368743333112,
+    "ask_generate32": 0.41982160399948043,
+    "clone": 0.012158548666472294,
+    "hash": 0.2005414823333922,
+    "train_step4_shared": 0.36843674600004306,
+    "train_step4_aware": 0.6904714079996666
+  },
+  "gpu_memory_peak_bytes": 37415622656,
+  "note": "disposable timing panel; not a measurement"
+}

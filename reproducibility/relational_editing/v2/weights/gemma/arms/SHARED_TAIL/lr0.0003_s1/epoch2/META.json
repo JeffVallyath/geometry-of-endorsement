@@ -1,0 +1,45 @@
+{
+  "at": "2026-09-10T20:48:40.493902+00:00",
+  "schema": "SRS2_RANK16_AUGMENTED_V1",
+  "actor": "gemma",
+  "arm": "SHARED_TAIL",
+  "site": 15,
+  "seed": 1,
+  "cap": 103.18592071533203,
+  "aware": false,
+  "footprint": "tail",
+  "files": {
+    "relation_0": "a633c20d2c65ca080396fc76c517aa2865926f49f2cf94452edca29488d14258",
+    "relation_1": "15d57eccfe39412ff06540160951847ab47a5b34ea37f7ecbccecd8654f94256"
+  },
+  "init": {
+    "kind": "v1_warm_start",
+    "v1_dir": "<private operational reference omitted>",
+    "v1_files": {
+      "relation_0": "de4a018a48d256cf8f8db5fef4de4f857292f5e37aeb932be578794c90b82f89",
+      "relation_1": "c38c800c656e02f288868da21d0ac4ff82063824acd15a4c797e2c23a7ae7806"
+    },
+    "v1_meta_sha256": "1bdf33afaef635da176dd73093564b79a7643f46841d37723e03911b4e45fee2",
+    "v1_seed": 1,
+    "v1_epoch": 4,
+    "v1_family": "PREFIX_DISTRIBUTED"
+  },
+  "epoch": 2,
+  "lr": 0.0003,
+  "steps": 720,
+  "visits": 2880,
+  "frobenius": {
+    "0": {
+      "input": 5.9471235275268555,
+      "output": 3.8241841793060303,
+      "bias": 0.0787745863199234,
+      "q_block": 0.6802961826324463
+    },
+    "1": {
+      "input": 4.205268383026123,
+      "output": 3.5417675971984863,
+      "bias": 0.07666605710983276,
+      "q_block": 0.2629232704639435
+    }
+  }
+}

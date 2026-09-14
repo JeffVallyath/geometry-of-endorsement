@@ -1,0 +1,894 @@
+{
+  "at": "2026-09-10T20:43:22.759039+00:00",
+  "arm": "SHARED_TAIL",
+  "lr": 0.001,
+  "seed": 0,
+  "epochs_run": 2,
+  "curve": [
+    {
+      "arm": "SHARED_TAIL",
+      "lr": 0.001,
+      "seed": 0,
+      "epoch": 1,
+      "strength": 0.5,
+      "checkpoint": "<private operational reference omitted>",
+      "cal": {
+        "n_scenes": 32,
+        "n_queries": 480,
+        "changed": 0.35416666666666663,
+        "harm": 0.0,
+        "conditional_harm": 0.0,
+        "all24": 0.09375,
+        "accuracy": 0.7122395833333334,
+        "touched_accuracy": 0.4244791666666667,
+        "other_address_error": 0.0,
+        "preservation": 1.0,
+        "nonaddressed_change": 0.0,
+        "changed_by_direction": {
+          "0": 0.32291666666666663,
+          "1": 0.38541666666666663
+        },
+        "by_cell": {
+          "(4, 2, 0)": {
+            "changed": 0.38541666666666663,
+            "harm": 0.0,
+            "all24": 0.0625
+          },
+          "(4, 2, 1)": {
+            "changed": 0.32291666666666663,
+            "harm": 0.0,
+            "all24": 0.125
+          }
+        },
+        "by_family": {
+          "direct": 0.775,
+          "opposes": 0.69375,
+          "same": 0.6875
+        },
+        "loss": 1.7162072960336219,
+        "mean_realized_norm": 51.57458542171593,
+        "mean_energy": 148105.3908203125,
+        "mean_frobenius": 374.01188044992534,
+        "edited_tokens_per_artifact": 55.675,
+        "cache_bytes": 142709145.6,
+        "seconds": 13.107283168001231,
+        "n_rows": 480,
+        "strength": 0.5,
+        "arm": "SHARED_TAIL"
+      },
+      "fit": {
+        "n_scenes": 96,
+        "n_queries": 1440,
+        "changed": 0.9913194444444443,
+        "harm": 0.013310185185185184,
+        "conditional_harm": 0.013671875,
+        "all24": 0.8958333333333334,
+        "accuracy": 0.9878472222222223,
+        "touched_accuracy": 0.9904513888888888,
+        "other_address_error": 0.014756944444444442,
+        "preservation": 0.986328125,
+        "nonaddressed_change": 0.026041666666666668,
+        "changed_by_direction": {
+          "0": 0.9895833333333334,
+          "1": 0.9930555555555555
+        },
+        "by_cell": {
+          "(4, 2, 0)": {
+            "changed": 0.9930555555555555,
+            "harm": 0.005787037037037038,
+            "all24": 0.9166666666666666
+          },
+          "(4, 2, 1)": {
+            "changed": 0.9895833333333334,
+            "harm": 0.020833333333333332,
+            "all24": 0.875
+          }
+        },
+        "by_family": {
+          "direct": 0.9833333333333333,
+          "opposes": 0.9958333333333333,
+          "same": 0.9875
+        },
+        "loss": 0.03634646507543443,
+        "mean_realized_norm": 103.15918992979219,
+        "mean_energy": 507547.08098958334,
+        "mean_frobenius": 685.4731965851128,
+        "edited_tokens_per_artifact": 47.69166666666667,
+        "cache_bytes": 142772224.0,
+        "seconds": 39.27401770899996,
+        "n_rows": 1440,
+        "strength": 1.0,
+        "arm": "SHARED_TAIL"
+      },
+      "feasible": false,
+      "frontier": [
+        0,
+        0.35416666666666663
+      ],
+      "norm": 51.57458542171593,
+      "frobenius": 374.01188044992534,
+      "saturation": 0.9662764284466189,
+      "loss_train": 0.06546504456670542,
+      "visits": 1440,
+      "steps": 360,
+      "train_seconds": 111.55061356899932,
+      "eval_seconds": 52.67844513900127
+    },
+    {
+      "arm": "SHARED_TAIL",
+      "lr": 0.001,
+      "seed": 0,
+      "epoch": 1,
+      "strength": 0.75,
+      "checkpoint": "<private operational reference omitted>",
+      "cal": {
+        "n_scenes": 32,
+        "n_queries": 480,
+        "changed": 0.8125,
+        "harm": 0.005208333333333333,
+        "conditional_harm": 0.005859375,
+        "all24": 0.59375,
+        "accuracy": 0.9140625,
+        "touched_accuracy": 0.8359375,
+        "other_address_error": 0.0078125,
+        "preservation": 0.994140625,
+        "nonaddressed_change": 0.0,
+        "changed_by_direction": {
+          "0": 0.8020833333333333,
+          "1": 0.8229166666666667
+        },
+        "by_cell": {
+          "(4, 2, 0)": {
+            "changed": 0.8229166666666667,
+            "harm": 0.010416666666666666,
+            "all24": 0.5
+          },
+          "(4, 2, 1)": {
+            "changed": 0.8020833333333333,
+            "harm": 0.0,
+            "all24": 0.6875
+          }
+        },
+        "by_family": {
+          "direct": 0.9208333333333333,
+          "opposes": 0.91875,
+          "same": 0.875
+        },
+        "loss": 0.32472523741277354,
+        "mean_realized_norm": 77.35963558647522,
+        "mean_energy": 333217.8087890625,
+        "mean_frobenius": 561.0011861890068,
+        "edited_tokens_per_artifact": 55.675,
+        "cache_bytes": 142709145.6,
+        "seconds": 12.731505036999806,
+        "n_rows": 480,
+        "strength": 0.75,
+        "arm": "SHARED_TAIL"
+      },
+      "fit": {
+        "n_scenes": 96,
+        "n_queries": 1440,
+        "changed": 0.9913194444444443,
+        "harm": 0.013310185185185184,
+        "conditional_harm": 0.013671875,
+        "all24": 0.8958333333333334,
+        "accuracy": 0.9878472222222223,
+        "touched_accuracy": 0.9904513888888888,
+        "other_address_error": 0.014756944444444442,
+        "preservation": 0.986328125,
+        "nonaddressed_change": 0.026041666666666668,
+        "changed_by_direction": {
+          "0": 0.9895833333333334,
+          "1": 0.9930555555555555
+        },
+        "by_cell": {
+          "(4, 2, 0)": {
+            "changed": 0.9930555555555555,
+            "harm": 0.005787037037037038,
+            "all24": 0.9166666666666666
+          },
+          "(4, 2, 1)": {
+            "changed": 0.9895833333333334,
+            "harm": 0.020833333333333332,
+            "all24": 0.875
+          }
+        },
+        "by_family": {
+          "direct": 0.9833333333333333,
+          "opposes": 0.9958333333333333,
+          "same": 0.9875
+        },
+        "loss": 0.03634646507543443,
+        "mean_realized_norm": 103.15918992979219,
+        "mean_energy": 507547.08098958334,
+        "mean_frobenius": 685.4731965851128,
+        "edited_tokens_per_artifact": 47.69166666666667,
+        "cache_bytes": 142772224.0,
+        "seconds": 39.27401770899996,
+        "n_rows": 1440,
+        "strength": 1.0,
+        "arm": "SHARED_TAIL"
+      },
+      "feasible": true,
+      "frontier": [
+        1,
+        0.8125
+      ],
+      "norm": 77.35963558647522,
+      "frobenius": 561.0011861890068,
+      "saturation": 0.9662764284466189,
+      "loss_train": 0.06546504456670542,
+      "visits": 1440,
+      "steps": 360,
+      "train_seconds": 111.55061356899932,
+      "eval_seconds": 65.50456828400092
+    },
+    {
+      "arm": "SHARED_TAIL",
+      "lr": 0.001,
+      "seed": 0,
+      "epoch": 1,
+      "strength": 1.0,
+      "checkpoint": "<private operational reference omitted>",
+      "cal": {
+        "n_scenes": 32,
+        "n_queries": 480,
+        "changed": 0.9375,
+        "harm": 0.03298611111111111,
+        "conditional_harm": 0.033854166666666664,
+        "all24": 0.6875,
+        "accuracy": 0.9518229166666667,
+        "touched_accuracy": 0.9401041666666667,
+        "other_address_error": 0.03645833333333333,
+        "preservation": 0.9661458333333333,
+        "nonaddressed_change": 0.0,
+        "changed_by_direction": {
+          "0": 0.9270833333333333,
+          "1": 0.9479166666666667
+        },
+        "by_cell": {
+          "(4, 2, 0)": {
+            "changed": 0.9479166666666667,
+            "harm": 0.013888888888888888,
+            "all24": 0.75
+          },
+          "(4, 2, 1)": {
+            "changed": 0.9270833333333333,
+            "harm": 0.05208333333333333,
+            "all24": 0.625
+          }
+        },
+        "by_family": {
+          "direct": 0.9666666666666667,
+          "opposes": 0.95625,
+          "same": 0.8875
+        },
+        "loss": 0.16634053487387063,
+        "mean_realized_norm": 103.14578419391168,
+        "mean_energy": 592382.659765625,
+        "mean_frobenius": 747.9993182241798,
+        "edited_tokens_per_artifact": 55.675,
+        "cache_bytes": 142709145.6,
+        "seconds": 12.827928270000484,
+        "n_rows": 480,
+        "strength": 1.0,
+        "arm": "SHARED_TAIL"
+      },
+      "fit": {
+        "n_scenes": 96,
+        "n_queries": 1440,
+        "changed": 0.9913194444444443,
+        "harm": 0.013310185185185184,
+        "conditional_harm": 0.013671875,
+        "all24": 0.8958333333333334,
+        "accuracy": 0.9878472222222223,
+        "touched_accuracy": 0.9904513888888888,
+        "other_address_error": 0.014756944444444442,
+        "preservation": 0.986328125,
+        "nonaddressed_change": 0.026041666666666668,
+        "changed_by_direction": {
+          "0": 0.9895833333333334,
+          "1": 0.9930555555555555
+        },
+        "by_cell": {
+          "(4, 2, 0)": {
+            "changed": 0.9930555555555555,
+            "harm": 0.005787037037037038,
+            "all24": 0.9166666666666666
+          },
+          "(4, 2, 1)": {
+            "changed": 0.9895833333333334,
+            "harm": 0.020833333333333332,
+            "all24": 0.875
+          }
+        },
+        "by_family": {
+          "direct": 0.9833333333333333,
+          "opposes": 0.9958333333333333,
+          "same": 0.9875
+        },
+        "loss": 0.03634646507543443,
+        "mean_realized_norm": 103.15918992979219,
+        "mean_energy": 507547.08098958334,
+        "mean_frobenius": 685.4731965851128,
+        "edited_tokens_per_artifact": 47.69166666666667,
+        "cache_bytes": 142772224.0,
+        "seconds": 39.27401770899996,
+        "n_rows": 1440,
+        "strength": 1.0,
+        "arm": "SHARED_TAIL"
+      },
+      "feasible": true,
+      "frontier": [
+        1,
+        0.9375
+      ],
+      "norm": 103.14578419391168,
+      "frobenius": 747.9993182241798,
+      "saturation": 0.9662764284466189,
+      "loss_train": 0.06546504456670542,
+      "visits": 1440,
+      "steps": 360,
+      "train_seconds": 111.55061356899932,
+      "eval_seconds": 78.4299615710006
+    },
+    {
+      "arm": "SHARED_TAIL",
+      "lr": 0.001,
+      "seed": 0,
+      "epoch": 1,
+      "strength": 1.25,
+      "checkpoint": "<private operational reference omitted>",
+      "cal": {
+        "n_scenes": 32,
+        "n_queries": 480,
+        "changed": 0.9427083333333333,
+        "harm": 0.08159722222222222,
+        "conditional_harm": 0.08268229166666666,
+        "all24": 0.5625,
+        "accuracy": 0.9270833333333333,
+        "touched_accuracy": 0.9427083333333334,
+        "other_address_error": 0.08854166666666667,
+        "preservation": 0.9173177083333334,
+        "nonaddressed_change": 0.0625,
+        "changed_by_direction": {
+          "0": 0.9479166666666667,
+          "1": 0.9375
+        },
+        "by_cell": {
+          "(4, 2, 0)": {
+            "changed": 0.9375,
+            "harm": 0.027777777777777776,
+            "all24": 0.6875
+          },
+          "(4, 2, 1)": {
+            "changed": 0.9479166666666667,
+            "harm": 0.13541666666666666,
+            "all24": 0.4375
+          }
+        },
+        "by_family": {
+          "direct": 0.9291666666666667,
+          "opposes": 0.96875,
+          "same": 0.825
+        },
+        "loss": 0.225812225835701,
+        "mean_realized_norm": 128.93321351015788,
+        "mean_energy": 925612.048828125,
+        "mean_frobenius": 935.0060978782997,
+        "edited_tokens_per_artifact": 55.675,
+        "cache_bytes": 142709145.6,
+        "seconds": 12.737974763000238,
+        "n_rows": 480,
+        "strength": 1.25,
+        "arm": "SHARED_TAIL"
+      },
+      "fit": {
+        "n_scenes": 96,
+        "n_queries": 1440,
+        "changed": 0.9913194444444443,
+        "harm": 0.013310185185185184,
+        "conditional_harm": 0.013671875,
+        "all24": 0.8958333333333334,
+        "accuracy": 0.9878472222222223,
+        "touched_accuracy": 0.9904513888888888,
+        "other_address_error": 0.014756944444444442,
+        "preservation": 0.986328125,
+        "nonaddressed_change": 0.026041666666666668,
+        "changed_by_direction": {
+          "0": 0.9895833333333334,
+          "1": 0.9930555555555555
+        },
+        "by_cell": {
+          "(4, 2, 0)": {
+            "changed": 0.9930555555555555,
+            "harm": 0.005787037037037038,
+            "all24": 0.9166666666666666
+          },
+          "(4, 2, 1)": {
+            "changed": 0.9895833333333334,
+            "harm": 0.020833333333333332,
+            "all24": 0.875
+          }
+        },
+        "by_family": {
+          "direct": 0.9833333333333333,
+          "opposes": 0.9958333333333333,
+          "same": 0.9875
+        },
+        "loss": 0.03634646507543443,
+        "mean_realized_norm": 103.15918992979219,
+        "mean_energy": 507547.08098958334,
+        "mean_frobenius": 685.4731965851128,
+        "edited_tokens_per_artifact": 47.69166666666667,
+        "cache_bytes": 142772224.0,
+        "seconds": 39.27401770899996,
+        "n_rows": 1440,
+        "strength": 1.0,
+        "arm": "SHARED_TAIL"
+      },
+      "feasible": false,
+      "frontier": [
+        0,
+        0.7795138888888888
+      ],
+      "norm": 128.93321351015788,
+      "frobenius": 935.0060978782997,
+      "saturation": 0.9662764284466189,
+      "loss_train": 0.06546504456670542,
+      "visits": 1440,
+      "steps": 360,
+      "train_seconds": 111.55061356899932,
+      "eval_seconds": 91.26164393600084
+    },
+    {
+      "arm": "SHARED_TAIL",
+      "lr": 0.001,
+      "seed": 0,
+      "epoch": 2,
+      "strength": 0.5,
+      "checkpoint": "<private operational reference omitted>",
+      "cal": {
+        "n_scenes": 32,
+        "n_queries": 480,
+        "changed": 0.29166666666666663,
+        "harm": 0.005208333333333333,
+        "conditional_harm": 0.005208333333333333,
+        "all24": 0.0625,
+        "accuracy": 0.6796875,
+        "touched_accuracy": 0.3645833333333333,
+        "other_address_error": 0.005208333333333333,
+        "preservation": 0.9947916666666667,
+        "nonaddressed_change": 0.015625,
+        "changed_by_direction": {
+          "0": 0.21875,
+          "1": 0.3645833333333333
+        },
+        "by_cell": {
+          "(4, 2, 0)": {
+            "changed": 0.3645833333333333,
+            "harm": 0.010416666666666666,
+            "all24": 0.0625
+          },
+          "(4, 2, 1)": {
+            "changed": 0.21875,
+            "harm": 0.0,
+            "all24": 0.0625
+          }
+        },
+        "by_family": {
+          "direct": 0.7458333333333333,
+          "opposes": 0.6875,
+          "same": 0.625
+        },
+        "loss": 1.9627446256986407,
+        "mean_realized_norm": 51.59438533808653,
+        "mean_energy": 148205.77060546874,
+        "mean_frobenius": 374.12294833708154,
+        "edited_tokens_per_artifact": 55.675,
+        "cache_bytes": 142709145.6,
+        "seconds": 13.118851540000833,
+        "n_rows": 480,
+        "strength": 0.5,
+        "arm": "SHARED_TAIL"
+      },
+      "fit": {
+        "n_scenes": 96,
+        "n_queries": 1440,
+        "changed": 0.9965277777777777,
+        "harm": 0.0,
+        "conditional_harm": 0.0,
+        "all24": 0.9791666666666666,
+        "accuracy": 0.9986979166666666,
+        "touched_accuracy": 0.9973958333333334,
+        "other_address_error": 0.0,
+        "preservation": 1.0,
+        "nonaddressed_change": 0.0,
+        "changed_by_direction": {
+          "0": 0.9965277777777778,
+          "1": 0.9965277777777777
+        },
+        "by_cell": {
+          "(4, 2, 0)": {
+            "changed": 0.9965277777777777,
+            "harm": 0.0,
+            "all24": 0.9791666666666666
+          },
+          "(4, 2, 1)": {
+            "changed": 0.9965277777777778,
+            "harm": 0.0,
+            "all24": 0.9791666666666666
+          }
+        },
+        "by_family": {
+          "direct": 1.0,
+          "opposes": 1.0,
+          "same": 0.9916666666666667
+        },
+        "loss": 0.004510438596622003,
+        "mean_realized_norm": 103.18676710087125,
+        "mean_energy": 507797.45065104164,
+        "mean_frobenius": 685.614542832911,
+        "edited_tokens_per_artifact": 47.69166666666667,
+        "cache_bytes": 142772224.0,
+        "seconds": 39.31299090700122,
+        "n_rows": 1440,
+        "strength": 1.0,
+        "arm": "SHARED_TAIL"
+      },
+      "feasible": false,
+      "frontier": [
+        0,
+        0.28124999999999994
+      ],
+      "norm": 51.59438533808653,
+      "frobenius": 374.12294833708154,
+      "saturation": 0.998427398217718,
+      "loss_train": 0.01132054089691034,
+      "visits": 2880,
+      "steps": 720,
+      "train_seconds": 109.87512518400035,
+      "eval_seconds": 52.72802480000064
+    },
+    {
+      "arm": "SHARED_TAIL",
+      "lr": 0.001,
+      "seed": 0,
+      "epoch": 2,
+      "strength": 0.75,
+      "checkpoint": "<private operational reference omitted>",
+      "cal": {
+        "n_scenes": 32,
+        "n_queries": 480,
+        "changed": 0.7604166666666667,
+        "harm": 0.0,
+        "conditional_harm": 0.0,
+        "all24": 0.5625,
+        "accuracy": 0.88671875,
+        "touched_accuracy": 0.7734375,
+        "other_address_error": 0.0,
+        "preservation": 1.0,
+        "nonaddressed_change": 0.0,
+        "changed_by_direction": {
+          "0": 0.625,
+          "1": 0.8958333333333333
+        },
+        "by_cell": {
+          "(4, 2, 0)": {
+            "changed": 0.8958333333333333,
+            "harm": 0.0,
+            "all24": 0.75
+          },
+          "(4, 2, 1)": {
+            "changed": 0.625,
+            "harm": 0.0,
+            "all24": 0.375
+          }
+        },
+        "by_family": {
+          "direct": 0.9083333333333333,
+          "opposes": 0.9125,
+          "same": 0.85
+        },
+        "loss": 0.4863302450964132,
+        "mean_realized_norm": 77.38988354412707,
+        "mean_energy": 333448.38359375,
+        "mean_frobenius": 561.1723340552755,
+        "edited_tokens_per_artifact": 55.675,
+        "cache_bytes": 142709145.6,
+        "seconds": 13.144439181000052,
+        "n_rows": 480,
+        "strength": 0.75,
+        "arm": "SHARED_TAIL"
+      },
+      "fit": {
+        "n_scenes": 96,
+        "n_queries": 1440,
+        "changed": 0.9965277777777777,
+        "harm": 0.0,
+        "conditional_harm": 0.0,
+        "all24": 0.9791666666666666,
+        "accuracy": 0.9986979166666666,
+        "touched_accuracy": 0.9973958333333334,
+        "other_address_error": 0.0,
+        "preservation": 1.0,
+        "nonaddressed_change": 0.0,
+        "changed_by_direction": {
+          "0": 0.9965277777777778,
+          "1": 0.9965277777777777
+        },
+        "by_cell": {
+          "(4, 2, 0)": {
+            "changed": 0.9965277777777777,
+            "harm": 0.0,
+            "all24": 0.9791666666666666
+          },
+          "(4, 2, 1)": {
+            "changed": 0.9965277777777778,
+            "harm": 0.0,
+            "all24": 0.9791666666666666
+          }
+        },
+        "by_family": {
+          "direct": 1.0,
+          "opposes": 1.0,
+          "same": 0.9916666666666667
+        },
+        "loss": 0.004510438596622003,
+        "mean_realized_norm": 103.18676710087125,
+        "mean_energy": 507797.45065104164,
+        "mean_frobenius": 685.614542832911,
+        "edited_tokens_per_artifact": 47.69166666666667,
+        "cache_bytes": 142772224.0,
+        "seconds": 39.31299090700122,
+        "n_rows": 1440,
+        "strength": 1.0,
+        "arm": "SHARED_TAIL"
+      },
+      "feasible": false,
+      "frontier": [
+        0,
+        0.7604166666666667
+      ],
+      "norm": 77.38988354412707,
+      "frobenius": 561.1723340552755,
+      "saturation": 0.998427398217718,
+      "loss_train": 0.01132054089691034,
+      "visits": 2880,
+      "steps": 720,
+      "train_seconds": 109.87512518400035,
+      "eval_seconds": 65.95962810200035
+    },
+    {
+      "arm": "SHARED_TAIL",
+      "lr": 0.001,
+      "seed": 0,
+      "epoch": 2,
+      "strength": 1.0,
+      "checkpoint": "<private operational reference omitted>",
+      "cal": {
+        "n_scenes": 32,
+        "n_queries": 480,
+        "changed": 0.96875,
+        "harm": 0.012152777777777776,
+        "conditional_harm": 0.012369791666666666,
+        "all24": 0.78125,
+        "accuracy": 0.9778645833333333,
+        "touched_accuracy": 0.96875,
+        "other_address_error": 0.013020833333333332,
+        "preservation": 0.9876302083333333,
+        "nonaddressed_change": 0.03125,
+        "changed_by_direction": {
+          "0": 0.96875,
+          "1": 0.96875
+        },
+        "by_cell": {
+          "(4, 2, 0)": {
+            "changed": 0.96875,
+            "harm": 0.003472222222222222,
+            "all24": 0.75
+          },
+          "(4, 2, 1)": {
+            "changed": 0.96875,
+            "harm": 0.020833333333333332,
+            "all24": 0.8125
+          }
+        },
+        "by_family": {
+          "direct": 0.9875,
+          "opposes": 1.0,
+          "same": 0.9
+        },
+        "loss": 0.05233627798294644,
+        "mean_realized_norm": 103.18677519381609,
+        "mean_energy": 592800.1546875,
+        "mean_frobenius": 748.230828191722,
+        "edited_tokens_per_artifact": 55.675,
+        "cache_bytes": 142709145.6,
+        "seconds": 13.172638563000874,
+        "n_rows": 480,
+        "strength": 1.0,
+        "arm": "SHARED_TAIL"
+      },
+      "fit": {
+        "n_scenes": 96,
+        "n_queries": 1440,
+        "changed": 0.9965277777777777,
+        "harm": 0.0,
+        "conditional_harm": 0.0,
+        "all24": 0.9791666666666666,
+        "accuracy": 0.9986979166666666,
+        "touched_accuracy": 0.9973958333333334,
+        "other_address_error": 0.0,
+        "preservation": 1.0,
+        "nonaddressed_change": 0.0,
+        "changed_by_direction": {
+          "0": 0.9965277777777778,
+          "1": 0.9965277777777777
+        },
+        "by_cell": {
+          "(4, 2, 0)": {
+            "changed": 0.9965277777777777,
+            "harm": 0.0,
+            "all24": 0.9791666666666666
+          },
+          "(4, 2, 1)": {
+            "changed": 0.9965277777777778,
+            "harm": 0.0,
+            "all24": 0.9791666666666666
+          }
+        },
+        "by_family": {
+          "direct": 1.0,
+          "opposes": 1.0,
+          "same": 0.9916666666666667
+        },
+        "loss": 0.004510438596622003,
+        "mean_realized_norm": 103.18676710087125,
+        "mean_energy": 507797.45065104164,
+        "mean_frobenius": 685.614542832911,
+        "edited_tokens_per_artifact": 47.69166666666667,
+        "cache_bytes": 142772224.0,
+        "seconds": 39.31299090700122,
+        "n_rows": 1440,
+        "strength": 1.0,
+        "arm": "SHARED_TAIL"
+      },
+      "feasible": true,
+      "frontier": [
+        1,
+        0.96875
+      ],
+      "norm": 103.18677519381609,
+      "frobenius": 748.230828191722,
+      "saturation": 0.998427398217718,
+      "loss_train": 0.01132054089691034,
+      "visits": 2880,
+      "steps": 720,
+      "train_seconds": 109.87512518400035,
+      "eval_seconds": 79.23043603599945
+    },
+    {
+      "arm": "SHARED_TAIL",
+      "lr": 0.001,
+      "seed": 0,
+      "epoch": 2,
+      "strength": 1.25,
+      "checkpoint": "<private operational reference omitted>",
+      "cal": {
+        "n_scenes": 32,
+        "n_queries": 480,
+        "changed": 0.9583333333333333,
+        "harm": 0.010416666666666666,
+        "conditional_harm": 0.010416666666666666,
+        "all24": 0.8125,
+        "accuracy": 0.9765625,
+        "touched_accuracy": 0.9635416666666667,
+        "other_address_error": 0.010416666666666666,
+        "preservation": 0.9895833333333333,
+        "nonaddressed_change": 0.03125,
+        "changed_by_direction": {
+          "0": 0.9791666666666666,
+          "1": 0.9375
+        },
+        "by_cell": {
+          "(4, 2, 0)": {
+            "changed": 0.9375,
+            "harm": 0.0,
+            "all24": 0.75
+          },
+          "(4, 2, 1)": {
+            "changed": 0.9791666666666666,
+            "harm": 0.020833333333333332,
+            "all24": 0.875
+          }
+        },
+        "by_family": {
+          "direct": 0.9916666666666667,
+          "opposes": 1.0,
+          "same": 0.875
+        },
+        "loss": 0.06767264208231911,
+        "mean_realized_norm": 128.98245042613337,
+        "mean_energy": 926235.620703125,
+        "mean_frobenius": 935.2812346736406,
+        "edited_tokens_per_artifact": 55.675,
+        "cache_bytes": 142709145.6,
+        "seconds": 13.123282445998484,
+        "n_rows": 480,
+        "strength": 1.25,
+        "arm": "SHARED_TAIL"
+      },
+      "fit": {
+        "n_scenes": 96,
+        "n_queries": 1440,
+        "changed": 0.9965277777777777,
+        "harm": 0.0,
+        "conditional_harm": 0.0,
+        "all24": 0.9791666666666666,
+        "accuracy": 0.9986979166666666,
+        "touched_accuracy": 0.9973958333333334,
+        "other_address_error": 0.0,
+        "preservation": 1.0,
+        "nonaddressed_change": 0.0,
+        "changed_by_direction": {
+          "0": 0.9965277777777778,
+          "1": 0.9965277777777777
+        },
+        "by_cell": {
+          "(4, 2, 0)": {
+            "changed": 0.9965277777777777,
+            "harm": 0.0,
+            "all24": 0.9791666666666666
+          },
+          "(4, 2, 1)": {
+            "changed": 0.9965277777777778,
+            "harm": 0.0,
+            "all24": 0.9791666666666666
+          }
+        },
+        "by_family": {
+          "direct": 1.0,
+          "opposes": 1.0,
+          "same": 0.9916666666666667
+        },
+        "loss": 0.004510438596622003,
+        "mean_realized_norm": 103.18676710087125,
+        "mean_energy": 507797.45065104164,
+        "mean_frobenius": 685.614542832911,
+        "edited_tokens_per_artifact": 47.69166666666667,
+        "cache_bytes": 142772224.0,
+        "seconds": 39.31299090700122,
+        "n_rows": 1440,
+        "strength": 1.0,
+        "arm": "SHARED_TAIL"
+      },
+      "feasible": true,
+      "frontier": [
+        1,
+        0.9583333333333333
+      ],
+      "norm": 128.98245042613337,
+      "frobenius": 935.2812346736406,
+      "saturation": 0.998427398217718,
+      "loss_train": 0.01132054089691034,
+      "visits": 2880,
+      "steps": 720,
+      "train_seconds": 109.87512518400035,
+      "eval_seconds": 92.43804720700064
+    }
+  ],
+  "init": {
+    "kind": "v1_warm_start",
+    "v1_dir": "<private operational reference omitted>",
+    "v1_files": {
+      "relation_0": "2de1db39f60de463c545e7e92178a523c047d5a6343c70a28acee5a26bf0f022",
+      "relation_1": "4cde0c19461f13a25503b8ed5c94e15ab0eca9e80b8eb8fcf463a4a07c5d1426"
+    },
+    "v1_meta_sha256": "007905c1e15bc4dc9c2bde9a16eafc244dd3d3674491d93eb1919ee7c6e5832f",
+    "v1_seed": 0,
+    "v1_epoch": 4,
+    "v1_family": "PREFIX_DISTRIBUTED"
+  },
+  "not_extended": true
+}

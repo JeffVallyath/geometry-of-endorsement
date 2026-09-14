@@ -1,0 +1,532 @@
+{
+  "at": "2026-09-10T19:36:45.222615+00:00",
+  "actor": "qwen",
+  "procedure": "T4",
+  "site": 13,
+  "requests": 16,
+  "rows": [
+    {
+      "query_id": "CAL-SRS2-0028-d0-02",
+      "scene_id": "CAL-SRS2-0028",
+      "cached_logps": [
+        -2.455681169521995e-05,
+        -10.613714218139648
+      ],
+      "full_logps": [
+        -2.455681169521995e-05,
+        -10.613714218139648
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "counterfactual_cached": [
+        -6.005489349365234,
+        -0.0024682790972292423
+      ],
+      "counterfactual_full": [
+        -6.005489349365234,
+        -0.0024682790972292423
+      ],
+      "counterfactual_max_abs": 0.0,
+      "counterfactual_same_choice": true,
+      "propagation_next_block_equal": true,
+      "prefix_tokens": 666,
+      "clause_tokens": 9,
+      "cache_bytes": 98205696,
+      "prefix_hash": "884c4b394763ce2a76624908fed45cfad8fe3a63f337a91d21aedb9a4e53f8ad"
+    },
+    {
+      "query_id": "CAL-SRS2-0002-d1-05",
+      "scene_id": "CAL-SRS2-0002",
+      "cached_logps": [
+        0.0,
+        -22.58890151977539
+      ],
+      "full_logps": [
+        0.0,
+        -22.58890151977539
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "counterfactual_cached": [
+        0.0,
+        -20.783309936523438
+      ],
+      "counterfactual_full": [
+        0.0,
+        -20.783309936523438
+      ],
+      "counterfactual_max_abs": 0.0,
+      "counterfactual_same_choice": true,
+      "propagation_next_block_equal": true,
+      "prefix_tokens": 669,
+      "clause_tokens": 9,
+      "cache_bytes": 98648064,
+      "prefix_hash": "30d37007cdd49d23f6c325953154946e577241f74132778ecd4fc5cfb1f6a4a1"
+    },
+    {
+      "query_id": "CAL-SRS2-0027-d1-01",
+      "scene_id": "CAL-SRS2-0027",
+      "cached_logps": [
+        -15.705558776855469,
+        -1.1920928244535389e-07
+      ],
+      "full_logps": [
+        -15.705558776855469,
+        -1.1920928244535389e-07
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "counterfactual_cached": [
+        -18.706405639648438,
+        0.0
+      ],
+      "counterfactual_full": [
+        -18.706405639648438,
+        0.0
+      ],
+      "counterfactual_max_abs": 0.0,
+      "counterfactual_same_choice": true,
+      "propagation_next_block_equal": true,
+      "prefix_tokens": 667,
+      "clause_tokens": 9,
+      "cache_bytes": 98353152,
+      "prefix_hash": "c6d50146b0362ac467f0fd72b687fbde48265740fa13d1f2a15e47b39ae82b3a"
+    },
+    {
+      "query_id": "CAL-SRS2-0022-d0-01",
+      "scene_id": "CAL-SRS2-0022",
+      "cached_logps": [
+        -20.759502410888672,
+        0.0
+      ],
+      "full_logps": [
+        -20.759502410888672,
+        0.0
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "counterfactual_cached": [
+        0.0,
+        -29.849597930908203
+      ],
+      "counterfactual_full": [
+        0.0,
+        -29.849597930908203
+      ],
+      "counterfactual_max_abs": 0.0,
+      "counterfactual_same_choice": true,
+      "propagation_next_block_equal": true,
+      "prefix_tokens": 669,
+      "clause_tokens": 9,
+      "cache_bytes": 98648064,
+      "prefix_hash": "b8ebcf3980e1f53ad080bd68eed0daf22fa7737f4d830b6c7f2b585b3ff1bd9c"
+    },
+    {
+      "query_id": "CAL-SRS2-0013-d0-03",
+      "scene_id": "CAL-SRS2-0013",
+      "cached_logps": [
+        -33.94635772705078,
+        0.0
+      ],
+      "full_logps": [
+        -33.94635772705078,
+        0.0
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "counterfactual_cached": [
+        -32.940704345703125,
+        0.0
+      ],
+      "counterfactual_full": [
+        -32.940704345703125,
+        0.0
+      ],
+      "counterfactual_max_abs": 0.0,
+      "counterfactual_same_choice": true,
+      "propagation_next_block_equal": true,
+      "prefix_tokens": 667,
+      "clause_tokens": 10,
+      "cache_bytes": 98353152,
+      "prefix_hash": "6695cf06a47c01900650910a12ca632367fb6b9483a5b9e748d016f26c8c5460"
+    },
+    {
+      "query_id": "CAL-SRS2-0003-d0-05",
+      "scene_id": "CAL-SRS2-0003",
+      "cached_logps": [
+        -20.438186645507812,
+        0.0
+      ],
+      "full_logps": [
+        -20.438186645507812,
+        0.0
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "counterfactual_cached": [
+        -19.435985565185547,
+        0.0
+      ],
+      "counterfactual_full": [
+        -19.435985565185547,
+        0.0
+      ],
+      "counterfactual_max_abs": 0.0,
+      "counterfactual_same_choice": true,
+      "propagation_next_block_equal": true,
+      "prefix_tokens": 671,
+      "clause_tokens": 10,
+      "cache_bytes": 98942976,
+      "prefix_hash": "db812ce14e7e92357ba65c6abdb90a52af2a07dc2919588c13a103362567669e"
+    },
+    {
+      "query_id": "CAL-SRS2-0003-d1-03",
+      "scene_id": "CAL-SRS2-0003",
+      "cached_logps": [
+        -32.54582977294922,
+        0.0
+      ],
+      "full_logps": [
+        -32.54582977294922,
+        0.0
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "counterfactual_cached": [
+        -31.220321655273438,
+        0.0
+      ],
+      "counterfactual_full": [
+        -31.220321655273438,
+        0.0
+      ],
+      "counterfactual_max_abs": 0.0,
+      "counterfactual_same_choice": true,
+      "propagation_next_block_equal": true,
+      "prefix_tokens": 671,
+      "clause_tokens": 10,
+      "cache_bytes": 98942976,
+      "prefix_hash": "db812ce14e7e92357ba65c6abdb90a52af2a07dc2919588c13a103362567669e"
+    },
+    {
+      "query_id": "CAL-SRS2-0003-d0-01",
+      "scene_id": "CAL-SRS2-0003",
+      "cached_logps": [
+        0.0,
+        -32.05921936035156
+      ],
+      "full_logps": [
+        0.0,
+        -32.05921936035156
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "counterfactual_cached": [
+        -9.179073458653875e-06,
+        -11.59858512878418
+      ],
+      "counterfactual_full": [
+        -9.179073458653875e-06,
+        -11.59858512878418
+      ],
+      "counterfactual_max_abs": 0.0,
+      "counterfactual_same_choice": true,
+      "propagation_next_block_equal": true,
+      "prefix_tokens": 671,
+      "clause_tokens": 10,
+      "cache_bytes": 98942976,
+      "prefix_hash": "db812ce14e7e92357ba65c6abdb90a52af2a07dc2919588c13a103362567669e"
+    },
+    {
+      "query_id": "CAL-SRS2-0017-d1-01",
+      "scene_id": "CAL-SRS2-0017",
+      "cached_logps": [
+        -24.12298583984375,
+        0.0
+      ],
+      "full_logps": [
+        -24.12298583984375,
+        0.0
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "counterfactual_cached": [
+        -31.727134704589844,
+        0.0
+      ],
+      "counterfactual_full": [
+        -31.727134704589844,
+        0.0
+      ],
+      "counterfactual_max_abs": 0.0,
+      "counterfactual_same_choice": true,
+      "propagation_next_block_equal": true,
+      "prefix_tokens": 669,
+      "clause_tokens": 10,
+      "cache_bytes": 98648064,
+      "prefix_hash": "9481bb5bf4a16381af14127e2eed7df43c4912ea74352bbc28dc161574d8a5b7"
+    },
+    {
+      "query_id": "CAL-SRS2-0017-d1-02",
+      "scene_id": "CAL-SRS2-0017",
+      "cached_logps": [
+        -27.337642669677734,
+        0.0
+      ],
+      "full_logps": [
+        -27.337642669677734,
+        0.0
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "counterfactual_cached": [
+        -4.531683444976807,
+        -0.01082087866961956
+      ],
+      "counterfactual_full": [
+        -4.531683444976807,
+        -0.01082087866961956
+      ],
+      "counterfactual_max_abs": 0.0,
+      "counterfactual_same_choice": true,
+      "propagation_next_block_equal": true,
+      "prefix_tokens": 669,
+      "clause_tokens": 10,
+      "cache_bytes": 98648064,
+      "prefix_hash": "9481bb5bf4a16381af14127e2eed7df43c4912ea74352bbc28dc161574d8a5b7"
+    },
+    {
+      "query_id": "CAL-SRS2-0020-d0-01",
+      "scene_id": "CAL-SRS2-0020",
+      "cached_logps": [
+        -12.819270133972168,
+        -2.7418097943154862e-06
+      ],
+      "full_logps": [
+        -12.819270133972168,
+        -2.7418097943154862e-06
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "counterfactual_cached": [
+        -4.415165901184082,
+        -0.012166219763457775
+      ],
+      "counterfactual_full": [
+        -4.415165901184082,
+        -0.012166219763457775
+      ],
+      "counterfactual_max_abs": 0.0,
+      "counterfactual_same_choice": true,
+      "propagation_next_block_equal": true,
+      "prefix_tokens": 668,
+      "clause_tokens": 9,
+      "cache_bytes": 98500608,
+      "prefix_hash": "26e86ea9a55fff3a58518772220ef8ae3b3c9fef5dea26c577db0848f6c91874"
+    },
+    {
+      "query_id": "CAL-SRS2-0019-d1-01",
+      "scene_id": "CAL-SRS2-0019",
+      "cached_logps": [
+        -15.677505493164062,
+        -1.1920928244535389e-07
+      ],
+      "full_logps": [
+        -15.677505493164062,
+        -1.1920928244535389e-07
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "counterfactual_cached": [
+        -26.58313751220703,
+        0.0
+      ],
+      "counterfactual_full": [
+        -26.58313751220703,
+        0.0
+      ],
+      "counterfactual_max_abs": 0.0,
+      "counterfactual_same_choice": true,
+      "propagation_next_block_equal": true,
+      "prefix_tokens": 671,
+      "clause_tokens": 10,
+      "cache_bytes": 98942976,
+      "prefix_hash": "0cb9b311accab013fd40db7575e88672e5917375b6b34a2bfccf1e591785475c"
+    },
+    {
+      "query_id": "CAL-SRS2-0009-d1-05",
+      "scene_id": "CAL-SRS2-0009",
+      "cached_logps": [
+        -32.278629302978516,
+        0.0
+      ],
+      "full_logps": [
+        -32.278629302978516,
+        0.0
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "counterfactual_cached": [
+        -34.015560150146484,
+        0.0
+      ],
+      "counterfactual_full": [
+        -34.015560150146484,
+        0.0
+      ],
+      "counterfactual_max_abs": 0.0,
+      "counterfactual_same_choice": true,
+      "propagation_next_block_equal": true,
+      "prefix_tokens": 670,
+      "clause_tokens": 10,
+      "cache_bytes": 98795520,
+      "prefix_hash": "aca522d76a0d9c0350c044d8c84f568ccbe2384d99c8827133a15095daa89627"
+    },
+    {
+      "query_id": "CAL-SRS2-0009-d0-04",
+      "scene_id": "CAL-SRS2-0009",
+      "cached_logps": [
+        -0.6463329195976257,
+        -0.7422611117362976
+      ],
+      "full_logps": [
+        -0.6463329195976257,
+        -0.7422611117362976
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "counterfactual_cached": [
+        -11.638310432434082,
+        -8.821448318485636e-06
+      ],
+      "counterfactual_full": [
+        -11.638310432434082,
+        -8.821448318485636e-06
+      ],
+      "counterfactual_max_abs": 0.0,
+      "counterfactual_same_choice": true,
+      "propagation_next_block_equal": true,
+      "prefix_tokens": 670,
+      "clause_tokens": 10,
+      "cache_bytes": 98795520,
+      "prefix_hash": "aca522d76a0d9c0350c044d8c84f568ccbe2384d99c8827133a15095daa89627"
+    },
+    {
+      "query_id": "CAL-SRS2-0031-d1-03",
+      "scene_id": "CAL-SRS2-0031",
+      "cached_logps": [
+        -31.644424438476562,
+        0.0
+      ],
+      "full_logps": [
+        -31.644424438476562,
+        0.0
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "counterfactual_cached": [
+        -25.409809112548828,
+        0.0
+      ],
+      "counterfactual_full": [
+        -25.409809112548828,
+        0.0
+      ],
+      "counterfactual_max_abs": 0.0,
+      "counterfactual_same_choice": true,
+      "propagation_next_block_equal": true,
+      "prefix_tokens": 671,
+      "clause_tokens": 10,
+      "cache_bytes": 98942976,
+      "prefix_hash": "2acc2a69002f423be87cf093334533657fa9aaa33d3620e2ab3dbda015996308"
+    },
+    {
+      "query_id": "CAL-SRS2-0026-d1-04",
+      "scene_id": "CAL-SRS2-0026",
+      "cached_logps": [
+        -0.7472171783447266,
+        -0.6418514251708984
+      ],
+      "full_logps": [
+        -0.7472171783447266,
+        -0.6418514251708984
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "counterfactual_cached": [
+        -0.0022067499812692404,
+        -6.117341995239258
+      ],
+      "counterfactual_full": [
+        -0.0022067499812692404,
+        -6.117341995239258
+      ],
+      "counterfactual_max_abs": 0.0,
+      "counterfactual_same_choice": true,
+      "propagation_next_block_equal": true,
+      "prefix_tokens": 670,
+      "clause_tokens": 9,
+      "cache_bytes": 98795520,
+      "prefix_hash": "353261101c9337ab80acc908f7406382357300dc1b648993dabf4d746dd5faa5"
+    }
+  ],
+  "zero_self_edit_hash_identical": true,
+  "clone_hash_identical": true,
+  "cached_vs_full": {
+    "max_abs_logp": 0.0,
+    "same_choice": true,
+    "mean_abs": 0.0
+  },
+  "batched_vs_single": {
+    "max_abs_logp": 0.8607444763183594,
+    "same_choice": false,
+    "n": 16
+  },
+  "aware_batched_prefix_vs_single_prefix": "NOT_APPLICABLE",
+  "counterfactual_reference": {
+    "max_abs_logp": 0.0,
+    "same_choice": true
+  },
+  "order_independent": true,
+  "masters_unchanged_after_reordered_queries": true,
+  "recompile_deterministic": true,
+  "master_unchanged_every_ask": true,
+  "propagation_next_block": true,
+  "query_tail_init_emulates_shared_tail": "NOT_APPLICABLE(zero-functional init)",
+  "serving_path": "KV_CACHE_CLONE + uniform batch-12 clone asks",
+  "batched_ask_tolerance": "same choice required; |dlogp| recorded (BF16 batch-shape kernel effect: batch 1 reproduces single asks exactly, batch>1 shifts label log-probs by ~0.05-0.2 nats)",
+  "generation_prompt": "<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+  "pass_": false
+}

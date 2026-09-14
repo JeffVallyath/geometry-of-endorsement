@@ -1,0 +1,125 @@
+{
+  "representation": {
+    "llama": {
+      "layer": 19,
+      "direction": 1.6470105763501846,
+      "logistic": 2.083584884709801,
+      "text": 0.2842197584932241,
+      "truth": 1.9244548082351685
+    },
+    "gemma": {
+      "layer": 27,
+      "direction": 2.322065657499451,
+      "logistic": 2.1498679359981745,
+      "text": 0.28423034745208026,
+      "truth": 1.944393515586853
+    }
+  },
+  "fragility": {
+    "llama": {
+      "gain": -0.0038695091569202478,
+      "lower": -0.024730549522438416,
+      "upper": 0.010817800861121035
+    },
+    "gemma": {
+      "gain": 0.002753355509568539,
+      "lower": -0.0005067484601991478,
+      "upper": 0.00701089423710247
+    }
+  },
+  "fingerprint": {
+    "llama": {
+      "correlation": 0.9925746539259157,
+      "similarity": 0.8435280511477627
+    },
+    "gemma": {
+      "correlation": 0.9984309275626068,
+      "similarity": 0.45936987879025193
+    }
+  },
+  "full_state": {
+    "llama": {
+      "situations": 0.06360548824556525,
+      "checkerboards": 0.07290463911442902
+    },
+    "gemma": {
+      "situations": 0.037999049545798975,
+      "checkerboards": 0.03126511228142627
+    }
+  },
+  "specificity": {
+    "llama": {
+      "valueprism": {
+        "truth": -0.015327382173448178,
+        "sentiment": -0.5420200894202385
+      },
+      "arguments": {
+        "truth": -0.12465277904082848,
+        "sentiment": -0.39225694496243707
+      }
+    },
+    "gemma": {
+      "valueprism": {
+        "truth": -0.2467199898295335,
+        "sentiment": 0.6021081348289814
+      },
+      "arguments": {
+        "truth": -0.6805109129349386,
+        "sentiment": -0.11321924681464796
+      }
+    }
+  },
+  "counterfactual": {
+    "rank_one": {
+      "recovery": -0.8508023069772639,
+      "lower": -1.0047594830011988,
+      "upper": -0.7066918757910918
+    },
+    "interpolation": {
+      "recovery": 0.9135822378114593,
+      "lower": 0.8994605138779845,
+      "upper": 0.9259728090863992
+    },
+    "replacement": {
+      "recovery": 0.981272301693043,
+      "lower": 0.979915374061593,
+      "upper": 0.9825537048516965
+    },
+    "direct_margin_hit_percent": 100.0
+  },
+  "editing": {
+    "gemma": {
+      "seed0": {
+        "single_changed": 90.625,
+        "max_repeat_disagreement": 0.13020833333333331,
+        "min_restoration": 98.15271278966132,
+        "ABC_harm": 8.072916666666668
+      },
+      "seed1": {
+        "single_changed": 92.96875,
+        "max_repeat_disagreement": 0.13020833333333331,
+        "min_restoration": 99.06994047619048,
+        "ABC_harm": 8.919270833333332
+      }
+    },
+    "qwen": {
+      "seed0": {
+        "single_changed": 88.54166666666666,
+        "max_repeat_disagreement": 0.5208333333333333,
+        "min_restoration": 98.99925595238095,
+        "ABC_harm": 5.46875
+      },
+      "seed1": {
+        "single_changed": 93.75,
+        "max_repeat_disagreement": 0.26041666666666663,
+        "min_restoration": 96.21263586956522,
+        "ABC_harm": 6.901041666666666
+      }
+    }
+  },
+  "source_best_bundle_percent": 29.6875,
+  "training_seeds": [
+    0,
+    1
+  ]
+}

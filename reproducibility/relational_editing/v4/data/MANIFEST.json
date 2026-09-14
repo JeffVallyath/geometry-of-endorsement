@@ -1,0 +1,42 @@
+{
+  "seed": 260911398,
+  "files": {
+    "fit_scenes.jsonl": {
+      "scenes": 96,
+      "sha256": "27c9bce66077af63be4f9de2a6f468a560d4333298a032e64a3c332fa129e8dd"
+    },
+    "cal_scenes.jsonl": {
+      "scenes": 48,
+      "sha256": "4ea419b7cbe9ca2891ffe1a7455e0c10bdc161f858a05b191eb1edb8c7997892"
+    },
+    "final_scenes.jsonl": {
+      "scenes": 128,
+      "sha256": "b8f996543a3e172b82810095e668f01cbfea27d6fedc92623317b2e675a2aab3"
+    },
+    "workflow_scenes.jsonl": {
+      "scenes": 128,
+      "sha256": "083d671eae02f29b8a9a16c331ab992c259e8a14af0f8037de5b7ff41d93163f"
+    }
+  },
+  "programs": [
+    "single",
+    "noop",
+    "repeat2",
+    "repeat4",
+    "repeat8",
+    "restore",
+    "restore_after4",
+    "overwrite",
+    "AB",
+    "BA",
+    "ABC",
+    "CBA",
+    "AB_cross"
+  ],
+  "question_specs": {
+    "sparse": 6,
+    "complete": 12,
+    "per_draw": true,
+    "draws": 2
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "at": "2026-09-11T13:03:04.267999+00:00",
+  "first_question_generated_at": "2026-09-11T12:51:21.523106+00:00",
+  "seal_at": "2026-09-11T12:51:21.500518+00:00",
+  "scenes": 64,
+  "conditions": [
+    "SOURCE",
+    "COUNTERFACTUAL",
+    "TEXT_CORRECTION",
+    "INVARIANT_SET_s0",
+    "INVARIANT_SET_s1",
+    "FREE_OVERWRITE_s0",
+    "FREE_OVERWRITE_s1",
+    "AFFINE_CLAUSE_s0",
+    "AFFINE_CLAUSE_s1"
+  ],
+  "rows": {
+    "SOURCE": 3072,
+    "COUNTERFACTUAL": 3072,
+    "TEXT_CORRECTION": 3072,
+    "INVARIANT_SET_s0": 3072,
+    "INVARIANT_SET_s1": 3072,
+    "FREE_OVERWRITE_s0": 3072,
+    "FREE_OVERWRITE_s1": 3072,
+    "AFFINE_CLAUSE_s0": 3072,
+    "AFFINE_CLAUSE_s1": 3072
+  },
+  "seal_mismatches": [],
+  "recompile_deterministic": true,
+  "seconds": 702.7486416780011,
+  "generation_scenes": [
+    "FINAL-RSO3-0004",
+    "FINAL-RSO3-0007",
+    "FINAL-RSO3-0008",
+    "FINAL-RSO3-0061",
+    "FINAL-RSO3-0078",
+    "FINAL-RSO3-0090",
+    "FINAL-RSO3-0107",
+    "FINAL-RSO3-0121"
+  ],
+  "master_verified_samples": {
+    "SOURCE": 1536,
+    "COUNTERFACTUAL": 1536,
+    "TEXT_CORRECTION": 1536,
+    "INVARIANT_SET_s0": 1536,
+    "INVARIANT_SET_s1": 1536,
+    "FREE_OVERWRITE_s0": 1536,
+    "FREE_OVERWRITE_s1": 1536,
+    "AFFINE_CLAUSE_s0": 1536,
+    "AFFINE_CLAUSE_s1": 1536
+  },
+  "master_failures": {
+    "SOURCE": 0,
+    "COUNTERFACTUAL": 0,
+    "TEXT_CORRECTION": 0,
+    "INVARIANT_SET_s0": 0,
+    "INVARIANT_SET_s1": 0,
+    "FREE_OVERWRITE_s0": 0,
+    "FREE_OVERWRITE_s1": 0,
+    "AFFINE_CLAUSE_s0": 0,
+    "AFFINE_CLAUSE_s1": 0
+  }
+}

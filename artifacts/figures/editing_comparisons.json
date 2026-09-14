@@ -1,0 +1,170 @@
+{
+  "coverage": [
+    {
+      "actor": "gemma",
+      "editor": "Constrained",
+      "scenes": 64,
+      "effect": 0.125,
+      "lower": 0.00390625,
+      "upper": 0.23828125,
+      "level": 0.9875,
+      "seeds": [
+        0.03125,
+        0.21875
+      ]
+    },
+    {
+      "actor": "gemma",
+      "editor": "Free overwrite",
+      "scenes": 64,
+      "effect": 0.0859375,
+      "lower": -0.01171875,
+      "upper": 0.1875,
+      "level": 0.9875,
+      "seeds": [
+        0.046875,
+        0.125
+      ]
+    },
+    {
+      "actor": "qwen",
+      "editor": "Constrained",
+      "scenes": 32,
+      "effect": 0.28125,
+      "lower": 0.1328125,
+      "upper": 0.4375,
+      "level": 0.9875,
+      "seeds": [
+        0.3125,
+        0.25
+      ]
+    },
+    {
+      "actor": "qwen",
+      "editor": "Free overwrite",
+      "scenes": 32,
+      "effect": 0.25,
+      "lower": 0.1171875,
+      "upper": 0.38676757812500284,
+      "level": 0.9875,
+      "seeds": [
+        0.234375,
+        0.265625
+      ]
+    }
+  ],
+  "readers": [
+    {
+      "actor": "gemma",
+      "editor": "Constrained",
+      "reader": "Paraphrase",
+      "effect": -0.0234375,
+      "lower": -0.083984375,
+      "upper": 0.033203125,
+      "level": 0.99375,
+      "scenes": 64,
+      "seeds": [
+        -0.03125,
+        -0.015625
+      ]
+    },
+    {
+      "actor": "gemma",
+      "editor": "Constrained",
+      "reader": "Explicit rule",
+      "effect": -0.00390625,
+      "lower": -0.05078125,
+      "upper": 0.041015625,
+      "level": 0.99375,
+      "scenes": 64,
+      "seeds": [
+        -0.01171875,
+        0.00390625
+      ]
+    },
+    {
+      "actor": "gemma",
+      "editor": "Free overwrite",
+      "reader": "Paraphrase",
+      "effect": -0.0703125,
+      "lower": -0.1171875,
+      "upper": -0.0234375,
+      "level": 0.99375,
+      "scenes": 64,
+      "seeds": [
+        -0.08203125,
+        -0.05859375
+      ]
+    },
+    {
+      "actor": "gemma",
+      "editor": "Free overwrite",
+      "reader": "Explicit rule",
+      "effect": -0.08203125,
+      "lower": -0.13818969726562522,
+      "upper": -0.02734375,
+      "level": 0.99375,
+      "scenes": 64,
+      "seeds": [
+        -0.1328125,
+        -0.03125
+      ]
+    },
+    {
+      "actor": "qwen",
+      "editor": "Constrained",
+      "reader": "Paraphrase",
+      "effect": 0.01953125,
+      "lower": -0.0390625,
+      "upper": 0.08984375,
+      "level": 0.99375,
+      "scenes": 32,
+      "seeds": [
+        0.0078125,
+        0.03125
+      ]
+    },
+    {
+      "actor": "qwen",
+      "editor": "Constrained",
+      "reader": "Explicit rule",
+      "effect": -0.1875,
+      "lower": -0.30859375,
+      "upper": -0.08299560546875284,
+      "level": 0.99375,
+      "scenes": 32,
+      "seeds": [
+        -0.1953125,
+        -0.1796875
+      ]
+    },
+    {
+      "actor": "qwen",
+      "editor": "Free overwrite",
+      "reader": "Paraphrase",
+      "effect": -0.02734375,
+      "lower": -0.078125,
+      "upper": 0.01953125,
+      "level": 0.99375,
+      "scenes": 32,
+      "seeds": [
+        -0.046875,
+        -0.0078125
+      ]
+    },
+    {
+      "actor": "qwen",
+      "editor": "Free overwrite",
+      "reader": "Explicit rule",
+      "effect": -0.125,
+      "lower": -0.27734375,
+      "upper": 0.014660644531247158,
+      "level": 0.99375,
+      "scenes": 32,
+      "seeds": [
+        -0.0859375,
+        -0.1640625
+      ]
+    }
+  ]
+}

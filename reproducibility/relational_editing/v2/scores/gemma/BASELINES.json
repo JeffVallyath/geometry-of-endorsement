@@ -1,0 +1,106 @@
+{
+  "at": "2026-09-10T20:07:44.088727+00:00",
+  "no_edit_fit": {
+    "n_scenes": 96,
+    "n_queries": 1152,
+    "changed": 0.07175925925925924,
+    "harm": 0.0,
+    "conditional_harm": 0.0,
+    "all24": 0.16666666666666666,
+    "accuracy": 0.6380208333333334,
+    "touched_accuracy": 0.2795138888888889,
+    "other_address_error": 0.003472222222222222,
+    "preservation": 1.0,
+    "nonaddressed_change": 0.0,
+    "changed_by_direction": {
+      "0": 0.03472222222222222,
+      "1": 0.14583333333333334
+    },
+    "by_cell": {
+      "(4, 2, 0)": {
+        "changed": 0.14583333333333334,
+        "harm": 0.0,
+        "all24": 0.3333333333333333
+      },
+      "(4, 2, 1)": {
+        "changed": 0.03472222222222222,
+        "harm": 0.0,
+        "all24": 0.0
+      }
+    },
+    "by_family": {
+      "direct": 0.75,
+      "opposes": 0.625,
+      "same": 0.328125
+    }
+  },
+  "no_edit_cal": {
+    "n_scenes": 32,
+    "n_queries": 384,
+    "changed": 0.05555555555555555,
+    "harm": 0.0,
+    "conditional_harm": 0.0,
+    "all24": 0.09375,
+    "accuracy": 0.6223958333333334,
+    "touched_accuracy": 0.24479166666666663,
+    "other_address_error": 0.0,
+    "preservation": 1.0,
+    "nonaddressed_change": 0.0,
+    "changed_by_direction": {
+      "0": 0.010416666666666666,
+      "1": 0.14583333333333331
+    },
+    "by_cell": {
+      "(4, 2, 0)": {
+        "changed": 0.14583333333333331,
+        "harm": 0.0,
+        "all24": 0.1875
+      },
+      "(4, 2, 1)": {
+        "changed": 0.010416666666666666,
+        "harm": 0.0,
+        "all24": 0.0
+      }
+    },
+    "by_family": {
+      "direct": 0.75,
+      "opposes": 0.625,
+      "same": 0.234375
+    }
+  },
+  "counterfactual_cal": {
+    "n_scenes": 32,
+    "n_queries": 384,
+    "changed": 0.9427083333333333,
+    "harm": 0.03645833333333333,
+    "conditional_harm": 0.03645833333333333,
+    "all24": 0.75,
+    "accuracy": 0.953125,
+    "touched_accuracy": 0.9427083333333333,
+    "other_address_error": 0.03645833333333333,
+    "preservation": 0.9635416666666666,
+    "nonaddressed_change": 0.0,
+    "changed_by_direction": {
+      "0": 0.9270833333333334,
+      "1": 0.9583333333333333
+    },
+    "by_cell": {
+      "(4, 2, 0)": {
+        "changed": 0.9583333333333333,
+        "harm": 0.0,
+        "all24": 0.9375
+      },
+      "(4, 2, 1)": {
+        "changed": 0.9270833333333334,
+        "harm": 0.07291666666666666,
+        "all24": 0.5625
+      }
+    },
+    "by_family": {
+      "direct": 0.9895833333333334,
+      "opposes": 0.9296875,
+      "same": 0.890625
+    }
+  },
+  "note": "no-edit = the zero-functional behaviour (Qwen init); counterfactual = natural destination-prefix reference"
+}

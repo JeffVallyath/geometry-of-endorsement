@@ -1,0 +1,125 @@
+{
+  "activation_site": "final prompt position immediately before the candidate answer sequence",
+  "actors": {
+    "gemma": {
+      "band": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ],
+      "chat_policy": "FOLD_SYSTEM_INTO_USER",
+      "hidden_size": 3584,
+      "jointly_residualized_relation_sha256": "f8484d17ed9abf50a21046c30aafe33454b34ba19910ed2ff01c8b42e4f26dea",
+      "model_id": "google/gemma-2-9b-it",
+      "model_revision": "11c9b309abf73637e4b6f9a3fa1e92e615547819",
+      "primary_layer": 27,
+      "raw_relation_dim_sha256": "81c704de24ffc90b468f13bbf494638804f7fafa4b24f2f51d6bb64d2dc1c4e7"
+    },
+    "llama": {
+      "band": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ],
+      "chat_policy": "NATIVE_SYSTEM",
+      "hidden_size": 4096,
+      "jointly_residualized_relation_sha256": "f9bdfb2dd428c50125543770d0c7935f32cdba50740ac267a703a93d5b88319c",
+      "model_id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "model_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+      "primary_layer": 19,
+      "raw_relation_dim_sha256": "f44fb897ab2617abd95ca5a2f8e67dd2626dd75099a9cdf3973033b3e1b64c99"
+    }
+  },
+  "arms": {
+    "A": "no-new-inference characterization (4.1-4.6), label PROSPECTIVELY_FROZEN_POST_HOC_DIAGNOSTICS",
+    "B": "prospective Track A re-elicitation (F1, F2)",
+    "C": "naturalistic Q-REPORT V2 extraction and frozen probe analysis"
+  },
+  "boundaries": [
+    "sealed confirmation set untouched",
+    "no quantization or substitute checkpoint"
+  ],
+  "execution": {
+    "batch_size": 1,
+    "dtype": "exact bfloat16, no quantization or offload",
+    "one_model_resident": true,
+    "scorer": "frozen candidate-sequence scorer (teacher-forced log-probability sum, float32 log-softmax)"
+  },
+  "files": [
+    "STUDY_CONTRACT.json",
+    "STUDY_CONTRACT.md",
+    "INPUT_MANIFEST.json",
+    "ANALYSIS_PLAN.json",
+    "TRACK_A_REELICITATION_PROMPT_FREEZE.json",
+    "TRACK_A_DEMONSTRATION_FREEZE.jsonl",
+    "TRACK_A_REELICITATION_PROMPTS.jsonl",
+    "NATURALISTIC_CELL_INPUTS.jsonl",
+    "NATURALISTIC_FOLD_ASSIGNMENTS.json",
+    "TERMINAL_CLASSIFICATIONS.json",
+    "CLAIM_BOUNDARY.md",
+    "artifact_manifest.json"
+  ],
+  "fixed_facts": [
+    "G1 terminal BOUND_RELATIONAL_REPRESENTATION (decoding sense) both actors",
+    "G2 READOUT_IDENTICAL_TO_REPORT (frozen DIM strongly report-aligned; logistic less so)",
+    "G3 exploratory two-cell association with adverse Llama diagnostic",
+    "G4 CLARITY_NARROW_CLAIM_STANDS",
+    "G5 ENDPOINT_AT_FLOOR",
+    "C9 FEATURE_PRESENT_IN_BASE",
+    "V3 instrument terminal invalid (untouched)"
+  ],
+  "no_retry_rules": [
+    "no adaptive prompt tuning or selection after outcomes",
+    "no third prompt format",
+    "no threshold relaxation",
+    "no model/layer/dtype/direction substitution",
+    "zero scientific retries after any valid scientific outcome is written",
+    "development worlds may not alter prompts or select the reported format"
+  ],
+  "question": "Is the Track A hidden-readout / native-answer gap caused by (A) a broken zero-shot answer format, (B) a valid internal-readout / behavioral-report dissociation on multi-entity relations, (C) prompt sensitivity of the internal representation, or (D) an actor-specific mixture?",
+  "schema_version": "RRRD_V1_STUDY_CONTRACT",
+  "source_of_truth_order": [
+    "frozen raw result artifacts, exact analysis code, hashes",
+    "this freeze"
+  ],
+  "splits": {
+    "naturalistic": {
+      "folds": "NATURALISTIC_FOLD_ASSIGNMENTS.json",
+      "population": "open human-reviewed 125 boards / 500 cells (Unit 2)"
+    },
+    "track_a": {
+      "development": "development (24 worlds)",
+      "evaluation": "heldout_evaluation (48 worlds)",
+      "fit": "residual_probe_train (72 worlds)",
+      "source": "RELATION_BINDING_FACTORIAL_V2_SPLITS.json"
+    }
+  },
+  "status": "FROZEN_BEFORE_ANY_NEW_OUTCOME_COMPUTATION",
+  "study_id": "RELATION_READOUT_REPORT_DISCRIMINATION_V1",
+  "thresholds": {
+    "agreement": 0.9,
+    "direct_competence": 0.8,
+    "direct_competence_ci_low": 0.7,
+    "four_class_chance": 0.25,
+    "margin_reproduction_tolerance": 0.002,
+    "practical_gate": 0.7,
+    "primary_margin_joint": 0.05,
+    "role_order_transfer": 0.6
+  }
+}

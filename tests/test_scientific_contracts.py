@@ -51,8 +51,8 @@ def test_current_project_frontier() -> None:
     assert result["controls"]["native_answer_margin_auroc"] == 0.721056
     assert result["logistic"]["relation_auroc"] == 0.779616
     stages = {row["stage"]: row["status"] for row in status["stages"]}
-    assert stages["Human-audited confirmation"] == "Pending"
-    assert stages["Rephrasing-flip prediction"] == "Not yet run"
+    assert stages["Human-audited confirmation"] == "Not certified by this public package"
+    assert stages["Rephrasing-flip prediction"] == "Measured; no reliable scalar increment"
 
 
 def test_confirmatory_hash_flattens_all_four_row_columns(tmp_path) -> None:

@@ -1,0 +1,33 @@
+{
+  "at": "2026-09-10T08:26:25.205369+00:00",
+  "candidates": [
+    "LATE@27_lr0.0003",
+    "PREFIX_LAST@27_lr0.0003",
+    "PREFIX_DISTRIBUTED@27_lr0.0003",
+    "PREFIX_LAST@15_lr0.0003",
+    "PREFIX_DISTRIBUTED@15_lr0.0003",
+    "LATE@27_lr0.001",
+    "PREFIX_LAST@27_lr0.001",
+    "PREFIX_DISTRIBUTED@27_lr0.001",
+    "PREFIX_LAST@15_lr0.001",
+    "PREFIX_DISTRIBUTED@15_lr0.001"
+  ],
+  "epochs_per_candidate": 4,
+  "epoch_seconds": {
+    "('LATE', 27, 0.0003)": 215.33578830863587,
+    "('PREFIX_LAST', 27, 0.0003)": 197.69766234381422,
+    "('PREFIX_DISTRIBUTED', 27, 0.0003)": 197.6256279373967,
+    "('PREFIX_LAST', 15, 0.0003)": 207.61428758540168,
+    "('PREFIX_DISTRIBUTED', 15, 0.0003)": 207.3994260110241,
+    "('LATE', 27, 0.001)": 215.33578830863587,
+    "('PREFIX_LAST', 27, 0.001)": 197.69766234381422,
+    "('PREFIX_DISTRIBUTED', 27, 0.001)": 197.6256279373967,
+    "('PREFIX_LAST', 15, 0.001)": 207.61428758540168,
+    "('PREFIX_DISTRIBUTED', 15, 0.001)": 207.3994260110241
+  },
+  "eval_seconds": 137.49045437340828,
+  "groups_per_epoch": 192,
+  "remaining_dev_seconds": 14161.923952,
+  "rule": "fixed from measured benchmark timings before any training outcome: epochs = min(4, floor(remaining / (sum over 10 candidates + 3 seed-1 reruns of one-epoch time)))",
+  "dev_deadline": "2026-09-10T12:22:27.129314+00:00"
+}

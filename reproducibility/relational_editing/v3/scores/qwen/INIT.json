@@ -1,0 +1,102 @@
+{
+  "at": "2026-09-11T11:53:22.973006+00:00",
+  "actor": "qwen",
+  "seeds": {
+    "0": {
+      "u_rule": {
+        "kind": "svd_of_fit_paired_development_clause_summary_differences",
+        "rows": 96,
+        "singular_values": [
+          84.76445290868233,
+          55.446438412714926,
+          26.60618136710768,
+          18.008549132988477,
+          16.23012955256004,
+          15.380298480384264,
+          13.214055275963668,
+          11.770326051106009,
+          11.09603341497714,
+          9.078777220558953,
+          8.393810245229835,
+          8.297959264580665,
+          7.558416095103609,
+          6.743709321828579,
+          6.446304004201801,
+          6.266804209060059
+        ]
+      },
+      "head_rule": "independent zero-functional initialization; no cross-model factor reuse",
+      "heads": {
+        "FREE_OVERWRITE": {
+          "error": null,
+          "scale": null,
+          "rule": "zero-functional identity: F(H,Hbar) = (H-mu)U so the output equals H exactly"
+        },
+        "INVARIANT_SET": {
+          "error": null,
+          "scale": null,
+          "rule": "zero heads: the initial map is the projection R + mu (not an identity)"
+        }
+      },
+      "checks": {
+        "nest": 0.0,
+        "idem": 1.9073486328125e-06,
+        "over": 1.9073486328125e-06,
+        "free_identity": 3.814697265625e-06,
+        "inv_vs_free_init": 3.810680389404297,
+        "orth": 3.5762786865234375e-07
+      },
+      "file": "<private operational reference omitted>",
+      "sha256": "ba9e34851971a154ef6b1294f7d54540de8ced5d329bb72d9b40dfc6f2ebb8f1"
+    },
+    "1": {
+      "u_rule": {
+        "kind": "svd_of_fit_paired_development_clause_summary_differences",
+        "rows": 96,
+        "singular_values": [
+          84.76445290868233,
+          55.446438412714926,
+          26.60618136710768,
+          18.008549132988477,
+          16.23012955256004,
+          15.380298480384264,
+          13.214055275963668,
+          11.770326051106009,
+          11.09603341497714,
+          9.078777220558953,
+          8.393810245229835,
+          8.297959264580665,
+          7.558416095103609,
+          6.743709321828579,
+          6.446304004201801,
+          6.266804209060059
+        ]
+      },
+      "head_rule": "independent zero-functional initialization; no cross-model factor reuse",
+      "heads": {
+        "FREE_OVERWRITE": {
+          "error": null,
+          "scale": null,
+          "rule": "zero-functional identity: F(H,Hbar) = (H-mu)U so the output equals H exactly"
+        },
+        "INVARIANT_SET": {
+          "error": null,
+          "scale": null,
+          "rule": "zero heads: the initial map is the projection R + mu (not an identity)"
+        }
+      },
+      "checks": {
+        "nest": 0.0,
+        "idem": 1.9073486328125e-06,
+        "over": 1.9073486328125e-06,
+        "free_identity": 3.814697265625e-06,
+        "inv_vs_free_init": 3.810680389404297,
+        "orth": 3.5762786865234375e-07
+      },
+      "file": "<private operational reference omitted>",
+      "sha256": "ba9e34851971a154ef6b1294f7d54540de8ced5d329bb72d9b40dfc6f2ebb8f1"
+    }
+  },
+  "cap_ref": 28.22532844543457,
+  "mu_norm": 42.76191711425781
+}

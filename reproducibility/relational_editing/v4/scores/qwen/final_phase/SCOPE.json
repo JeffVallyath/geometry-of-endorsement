@@ -1,0 +1,20 @@
+{
+  "at": "2026-09-12T01:32:29.383247+00:00",
+  "scope": "FULL",
+  "sizes": {
+    "final": 64,
+    "program": 32,
+    "workflow": 64
+  },
+  "predicted_seconds": {
+    "seal": 242.63916892148555,
+    "final": 803.6374207993504,
+    "programs": 2936.8527689069806,
+    "workflow": 1639.1698386771975,
+    "panels": 600,
+    "total": 6222.299197305014
+  },
+  "remaining_seconds": 17240.616758,
+  "fits": true,
+  "rule": "contracted FULL sizes are fixed (never shrunk); stages run in order seal -> singles -> programs -> witness -> workflow -> anchor and record NOT_MEASURED/PARTIAL when the effective deadline is reached"
+}

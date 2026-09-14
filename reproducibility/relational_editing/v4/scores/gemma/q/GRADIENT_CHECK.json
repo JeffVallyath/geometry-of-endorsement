@@ -1,0 +1,67 @@
+{
+  "at": "2026-09-11T19:57:55.498436+00:00",
+  "actor": "gemma",
+  "procedure": "C1",
+  "scenes": [
+    "FIT-RCC4-0008",
+    "FIT-RCC4-0090",
+    "FIT-RCC4-0058",
+    "FIT-RCC4-0025"
+  ],
+  "queries": 16,
+  "coverage": "complete",
+  "results": {
+    "INVARIANT_SET": {
+      "loss": 0.004655105585698038,
+      "grad_norms": {
+        "basis_raw": 0.008880266919732094,
+        "head": 0.005131027195602655,
+        "bias": 6.288393342401832e-05
+      },
+      "backbone_grad": false,
+      "finite": true,
+      "editor_grad_nonzero": true,
+      "max_score_move": 0.003977814660174772,
+      "warm_start": {
+        "kind": "v3_selected_checkpoint_warm_start",
+        "dir": "<private operational reference omitted>",
+        "sha256": {
+          "setter": "00fedcd6b69def308e4b62934aaaabf17378cbe54fa5bf657834137f60d40f39",
+          "meta": "c4bcb8abb656de58d643256efdccdfc5b24e3738c3858190b30be4ad87f66152"
+        },
+        "v3_lr": 0.0003,
+        "v3_epoch": 2,
+        "load_basis_error": 0.0,
+        "optimizer_state": "fresh AdamW moments (V3 checkpoints hold no optimizer state)"
+      },
+      "seconds": 2.9283294960000603
+    },
+    "FREE_OVERWRITE": {
+      "loss": 0.013184295734390616,
+      "grad_norms": {
+        "basis_raw": 0.1222810372710228,
+        "head": 0.079655721783638,
+        "bias": 0.0007324031321331859
+      },
+      "backbone_grad": false,
+      "finite": true,
+      "editor_grad_nonzero": true,
+      "max_score_move": 0.03344672059756704,
+      "warm_start": {
+        "kind": "v3_selected_checkpoint_warm_start",
+        "dir": "<private operational reference omitted>",
+        "sha256": {
+          "setter": "effed08fd38e4449cc79c3bc52d2c73511d390aec56287050f59860f2d743499",
+          "meta": "e9c5e570cd2f372e7760c86b3caaf33439bbea1f1c26cb7b2b53bfda7d3bfa4a"
+        },
+        "v3_lr": 0.001,
+        "v3_epoch": 3,
+        "load_basis_error": 0.0,
+        "optimizer_state": "fresh AdamW moments (V3 checkpoints hold no optimizer state)"
+      },
+      "seconds": 1.8706303829999342
+    }
+  },
+  "backbone_unchanged": true,
+  "pass_": true
+}

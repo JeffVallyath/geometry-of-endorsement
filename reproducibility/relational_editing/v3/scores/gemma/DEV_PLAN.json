@@ -1,0 +1,27 @@
+{
+  "e_max": 4,
+  "per_arm_epoch_seconds": {
+    "INVARIANT_SET": {
+      "train": 91.39297523403822,
+      "eval": 60.36839745900942
+    },
+    "FREE_OVERWRITE": {
+      "train": 91.39297523403822,
+      "eval": 60.36839745900942
+    },
+    "CONTINUED_AFFINE": {
+      "train": 91.23084827996446,
+      "eval": 120.73679491801884
+    }
+  },
+  "predicted_total_seconds": 5154.903885840786,
+  "groups_per_epoch": 360,
+  "dev_seconds": 10637.940352,
+  "rule": "E_max = largest e in [2, 4] with sum over arms of (2 + 2e) epoch-times <= development allocation, from the disposable benchmark before any training outcome",
+  "at": "2026-09-11T05:43:02.268008+00:00",
+  "arms": [
+    "INVARIANT_SET",
+    "FREE_OVERWRITE",
+    "CONTINUED_AFFINE"
+  ]
+}

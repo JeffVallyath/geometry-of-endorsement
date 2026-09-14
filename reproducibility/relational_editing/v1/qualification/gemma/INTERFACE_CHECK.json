@@ -1,0 +1,539 @@
+{
+  "at": "2026-09-10T07:53:32.319988+00:00",
+  "model": "gemma",
+  "procedure": "C1",
+  "task": "relation",
+  "requests": 16,
+  "rows": [
+    {
+      "query_id": "CAL-relation-008-d1-01",
+      "scene_id": "CAL-relation-008",
+      "cached_logps": [
+        -0.0013978243805468082,
+        -7.204813480377197
+      ],
+      "full_logps": [
+        -0.0013978243805468082,
+        -7.204813480377197
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "counterfactual_cached": [
+        -9.273723602294922,
+        -0.0003526780928950757
+      ],
+      "counterfactual_full": [
+        -9.273723602294922,
+        -0.0003526780928950757
+      ],
+      "counterfactual_max_abs": 0.0,
+      "counterfactual_same_choice": true,
+      "source_gold": 0,
+      "gold": 1,
+      "prefix_tokens": 403,
+      "clause_tokens": 9,
+      "cache_bytes": 138657792,
+      "prefix_hash": "0b860c8e867b4df1cbf0706ec4d65f9c5941c2e2d98a3d2e067bbc662831be31"
+    },
+    {
+      "query_id": "CAL-relation-021-d0-03",
+      "scene_id": "CAL-relation-021",
+      "cached_logps": [
+        -11.932902336120605,
+        -3.349725011503324e-05
+      ],
+      "full_logps": [
+        -11.932902336120605,
+        -3.349725011503324e-05
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "counterfactual_cached": [
+        -11.651389122009277,
+        -3.707340147229843e-05
+      ],
+      "counterfactual_full": [
+        -11.651389122009277,
+        -3.707340147229843e-05
+      ],
+      "counterfactual_max_abs": 0.0,
+      "counterfactual_same_choice": true,
+      "source_gold": 1,
+      "gold": 1,
+      "prefix_tokens": 406,
+      "clause_tokens": 8,
+      "cache_bytes": 139689984,
+      "prefix_hash": "5f1c2408959bbea643fc43490de47cebe8278d879f138ce6ed0e403cae498bdc"
+    },
+    {
+      "query_id": "CAL-relation-016-d0-00",
+      "scene_id": "CAL-relation-016",
+      "cached_logps": [
+        -2.586808113846928e-05,
+        -11.550666809082031
+      ],
+      "full_logps": [
+        -2.586808113846928e-05,
+        -11.550666809082031
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "counterfactual_cached": [
+        -12.055342674255371,
+        -3.969590397900902e-05
+      ],
+      "counterfactual_full": [
+        -12.055342674255371,
+        -3.969590397900902e-05
+      ],
+      "counterfactual_max_abs": 0.0,
+      "counterfactual_same_choice": true,
+      "source_gold": 0,
+      "gold": 1,
+      "prefix_tokens": 403,
+      "clause_tokens": 8,
+      "cache_bytes": 138657792,
+      "prefix_hash": "93bdca302e7755eb2097db405140e1869fb621a27b078a35527b9a5e65cf6822"
+    },
+    {
+      "query_id": "CAL-relation-020-d0-05",
+      "scene_id": "CAL-relation-020",
+      "cached_logps": [
+        -2.4437606043647975e-05,
+        -11.909004211425781
+      ],
+      "full_logps": [
+        -2.4437606043647975e-05,
+        -11.909004211425781
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "counterfactual_cached": [
+        -2.634490556374658e-05,
+        -11.838183403015137
+      ],
+      "counterfactual_full": [
+        -2.634490556374658e-05,
+        -11.838183403015137
+      ],
+      "counterfactual_max_abs": 0.0,
+      "counterfactual_same_choice": true,
+      "source_gold": 0,
+      "gold": 0,
+      "prefix_tokens": 407,
+      "clause_tokens": 9,
+      "cache_bytes": 140034048,
+      "prefix_hash": "4270f6a5f83be36b78f75d7a7d0cc7727c891ec8a9e7779dbc1ee77a9c272397"
+    },
+    {
+      "query_id": "CAL-relation-016-d0-04",
+      "scene_id": "CAL-relation-016",
+      "cached_logps": [
+        -10.937771797180176,
+        -3.6238969187252223e-05
+      ],
+      "full_logps": [
+        -10.937771797180176,
+        -3.6238969187252223e-05
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "counterfactual_cached": [
+        -11.058807373046875,
+        -3.4689302992774174e-05
+      ],
+      "counterfactual_full": [
+        -11.058807373046875,
+        -3.4689302992774174e-05
+      ],
+      "counterfactual_max_abs": 0.0,
+      "counterfactual_same_choice": true,
+      "source_gold": 1,
+      "gold": 1,
+      "prefix_tokens": 403,
+      "clause_tokens": 8,
+      "cache_bytes": 138657792,
+      "prefix_hash": "93bdca302e7755eb2097db405140e1869fb621a27b078a35527b9a5e65cf6822"
+    },
+    {
+      "query_id": "CAL-relation-000-d1-04",
+      "scene_id": "CAL-relation-000",
+      "cached_logps": [
+        -0.0006177900941111147,
+        -8.17195987701416
+      ],
+      "full_logps": [
+        -0.0006177900941111147,
+        -8.17195987701416
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "counterfactual_cached": [
+        -0.0005391574813984334,
+        -8.635144233703613
+      ],
+      "counterfactual_full": [
+        -0.0005391574813984334,
+        -8.635144233703613
+      ],
+      "counterfactual_max_abs": 0.0,
+      "counterfactual_same_choice": true,
+      "source_gold": 0,
+      "gold": 0,
+      "prefix_tokens": 411,
+      "clause_tokens": 10,
+      "cache_bytes": 141410304,
+      "prefix_hash": "8c2a6e91ed7f366548d5fafe12b3ffb64b6c164d70797155f1e91280b262eac7"
+    },
+    {
+      "query_id": "CAL-relation-017-d1-00",
+      "scene_id": "CAL-relation-017",
+      "cached_logps": [
+        -0.00041869457345455885,
+        -10.83816909790039
+      ],
+      "full_logps": [
+        -0.00041869457345455885,
+        -10.83816909790039
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "counterfactual_cached": [
+        -9.67927360534668,
+        -0.00038532938924618065
+      ],
+      "counterfactual_full": [
+        -9.67927360534668,
+        -0.00038532938924618065
+      ],
+      "counterfactual_max_abs": 0.0,
+      "counterfactual_same_choice": true,
+      "source_gold": 0,
+      "gold": 1,
+      "prefix_tokens": 405,
+      "clause_tokens": 8,
+      "cache_bytes": 139345920,
+      "prefix_hash": "73e3c3ce7ced3ab9bab15677d1058298368764fe2cf08ab3d1284f9292397e4e"
+    },
+    {
+      "query_id": "CAL-relation-009-d0-01",
+      "scene_id": "CAL-relation-009",
+      "cached_logps": [
+        -5.936446541454643e-05,
+        -10.319397926330566
+      ],
+      "full_logps": [
+        -5.936446541454643e-05,
+        -10.319397926330566
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "counterfactual_cached": [
+        -10.76774787902832,
+        -4.9828242481453344e-05
+      ],
+      "counterfactual_full": [
+        -10.76774787902832,
+        -4.9828242481453344e-05
+      ],
+      "counterfactual_max_abs": 0.0,
+      "counterfactual_same_choice": true,
+      "source_gold": 0,
+      "gold": 1,
+      "prefix_tokens": 406,
+      "clause_tokens": 10,
+      "cache_bytes": 139689984,
+      "prefix_hash": "868bb9375338a9c8cca273621285c8de60daa969b50bee4ad23e53b34a49cf2c"
+    },
+    {
+      "query_id": "CAL-relation-000-d0-04",
+      "scene_id": "CAL-relation-000",
+      "cached_logps": [
+        -5.638440416078083e-05,
+        -10.228835105895996
+      ],
+      "full_logps": [
+        -5.638440416078083e-05,
+        -10.228835105895996
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "counterfactual_cached": [
+        -7.366862701019272e-05,
+        -9.867805480957031
+      ],
+      "counterfactual_full": [
+        -7.366862701019272e-05,
+        -9.867805480957031
+      ],
+      "counterfactual_max_abs": 0.0,
+      "counterfactual_same_choice": true,
+      "source_gold": 0,
+      "gold": 0,
+      "prefix_tokens": 411,
+      "clause_tokens": 10,
+      "cache_bytes": 141410304,
+      "prefix_hash": "8c2a6e91ed7f366548d5fafe12b3ffb64b6c164d70797155f1e91280b262eac7"
+    },
+    {
+      "query_id": "CAL-relation-001-d0-00",
+      "scene_id": "CAL-relation-001",
+      "cached_logps": [
+        -2.753696753643453e-05,
+        -11.404061317443848
+      ],
+      "full_logps": [
+        -2.753696753643453e-05,
+        -11.404061317443848
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "counterfactual_cached": [
+        -11.45362377166748,
+        -3.909988299710676e-05
+      ],
+      "counterfactual_full": [
+        -11.45362377166748,
+        -3.909988299710676e-05
+      ],
+      "counterfactual_max_abs": 0.0,
+      "counterfactual_same_choice": true,
+      "source_gold": 0,
+      "gold": 1,
+      "prefix_tokens": 405,
+      "clause_tokens": 8,
+      "cache_bytes": 139345920,
+      "prefix_hash": "53a5e3e065ebbe199c19018c1ca8e07dc6b79f9597f02d1076e24794213684f8"
+    },
+    {
+      "query_id": "CAL-relation-007-d1-00",
+      "scene_id": "CAL-relation-007",
+      "cached_logps": [
+        -8.145094871520996,
+        -0.0007091629668138921
+      ],
+      "full_logps": [
+        -8.145094871520996,
+        -0.0007091629668138921
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "counterfactual_cached": [
+        -0.00026127262390218675,
+        -10.391094207763672
+      ],
+      "counterfactual_full": [
+        -0.00026127262390218675,
+        -10.391094207763672
+      ],
+      "counterfactual_max_abs": 0.0,
+      "counterfactual_same_choice": true,
+      "source_gold": 1,
+      "gold": 0,
+      "prefix_tokens": 406,
+      "clause_tokens": 9,
+      "cache_bytes": 139689984,
+      "prefix_hash": "f4894d127e37c06a5d5f2ecb3ad124a2ef5d3037ae15b03e3e650c78bea8eb2e"
+    },
+    {
+      "query_id": "CAL-relation-011-d0-02",
+      "scene_id": "CAL-relation-011",
+      "cached_logps": [
+        -8.964452743530273,
+        -0.00018404220463708043
+      ],
+      "full_logps": [
+        -8.964452743530273,
+        -0.00018404220463708043
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "counterfactual_cached": [
+        -0.015813305974006653,
+        -4.170251369476318
+      ],
+      "counterfactual_full": [
+        -0.015813305974006653,
+        -4.170251369476318
+      ],
+      "counterfactual_max_abs": 0.0,
+      "counterfactual_same_choice": true,
+      "source_gold": 1,
+      "gold": 0,
+      "prefix_tokens": 403,
+      "clause_tokens": 8,
+      "cache_bytes": 138657792,
+      "prefix_hash": "f70154fcbd7c3fceffccdc490df0abe6cd7dd83b02ab681a96a6f3398c87b3ae"
+    },
+    {
+      "query_id": "CAL-relation-007-d0-00",
+      "scene_id": "CAL-relation-007",
+      "cached_logps": [
+        -12.156765937805176,
+        -2.9682672902708873e-05
+      ],
+      "full_logps": [
+        -12.156765937805176,
+        -2.9682672902708873e-05
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "counterfactual_cached": [
+        -2.753696753643453e-05,
+        -11.897089004516602
+      ],
+      "counterfactual_full": [
+        -2.753696753643453e-05,
+        -11.897089004516602
+      ],
+      "counterfactual_max_abs": 0.0,
+      "counterfactual_same_choice": true,
+      "source_gold": 1,
+      "gold": 0,
+      "prefix_tokens": 406,
+      "clause_tokens": 9,
+      "cache_bytes": 139689984,
+      "prefix_hash": "f4894d127e37c06a5d5f2ecb3ad124a2ef5d3037ae15b03e3e650c78bea8eb2e"
+    },
+    {
+      "query_id": "CAL-relation-013-d0-00",
+      "scene_id": "CAL-relation-013",
+      "cached_logps": [
+        -11.71878719329834,
+        -3.8742269680369645e-05
+      ],
+      "full_logps": [
+        -11.71878719329834,
+        -3.8742269680369645e-05
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "counterfactual_cached": [
+        -3.2782016205601394e-05,
+        -11.268375396728516
+      ],
+      "counterfactual_full": [
+        -3.2782016205601394e-05,
+        -11.268375396728516
+      ],
+      "counterfactual_max_abs": 0.0,
+      "counterfactual_same_choice": true,
+      "source_gold": 1,
+      "gold": 0,
+      "prefix_tokens": 406,
+      "clause_tokens": 10,
+      "cache_bytes": 139689984,
+      "prefix_hash": "012e0b8bf2a308fd93d15b257babb8be77b2ab80eacea479e0fa42ba359bd05e"
+    },
+    {
+      "query_id": "CAL-relation-020-d0-04",
+      "scene_id": "CAL-relation-020",
+      "cached_logps": [
+        -11.071681022644043,
+        -3.862306402879767e-05
+      ],
+      "full_logps": [
+        -11.071681022644043,
+        -3.862306402879767e-05
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "counterfactual_cached": [
+        -11.182416915893555,
+        -3.576214658096433e-05
+      ],
+      "counterfactual_full": [
+        -11.182416915893555,
+        -3.576214658096433e-05
+      ],
+      "counterfactual_max_abs": 0.0,
+      "counterfactual_same_choice": true,
+      "source_gold": 1,
+      "gold": 1,
+      "prefix_tokens": 407,
+      "clause_tokens": 9,
+      "cache_bytes": 140034048,
+      "prefix_hash": "4270f6a5f83be36b78f75d7a7d0cc7727c891ec8a9e7779dbc1ee77a9c272397"
+    },
+    {
+      "query_id": "CAL-relation-009-d1-03",
+      "scene_id": "CAL-relation-009",
+      "cached_logps": [
+        -0.00035482310340739787,
+        -10.090343475341797
+      ],
+      "full_logps": [
+        -0.00035482310340739787,
+        -10.090343475341797
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "counterfactual_cached": [
+        -0.0004076126788277179,
+        -9.716023445129395
+      ],
+      "counterfactual_full": [
+        -0.0004076126788277179,
+        -9.716023445129395
+      ],
+      "counterfactual_max_abs": 0.0,
+      "counterfactual_same_choice": true,
+      "source_gold": 0,
+      "gold": 0,
+      "prefix_tokens": 406,
+      "clause_tokens": 10,
+      "cache_bytes": 139689984,
+      "prefix_hash": "868bb9375338a9c8cca273621285c8de60daa969b50bee4ad23e53b34a49cf2c"
+    }
+  ],
+  "zero_self_edit_hash_identical": true,
+  "clone_hash_identical": true,
+  "cached_vs_full": {
+    "max_abs_logp": 0.0,
+    "same_choice": true,
+    "mean_abs": 0.0
+  },
+  "counterfactual_reference": {
+    "max_abs_logp": 0.0,
+    "same_choice": true
+  },
+  "order_independent": true,
+  "masters_unchanged_after_reordered_queries": true,
+  "recompile_deterministic": true,
+  "master_unchanged_every_ask": true,
+  "serving_path": "KV_CACHE_CLONE",
+  "notes": "same-path zero/self edit must match exactly; cached vs full forward differences are BF16 shape-dependent kernel effects, recorded not zero-tolerance",
+  "pass_": true
+}

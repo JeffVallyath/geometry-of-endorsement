@@ -140,7 +140,7 @@ def truth_notebook():
 
 ## Scope and current status
 
-The project tests whether a language model encodes how a consideration bears on an action in a particular situation. This notebook covers the factual positive control for the activation method. The later Llama moral-relation development test has now passed, while the human-audited confirmatory test and rephrasing-flip prediction remain open.
+The project tests whether a language model encodes how a consideration bears on an action in a particular situation. This notebook covers the factual positive control for the activation method. The later Llama moral-relation development test has now passed. Current evidence, including measured rephrasing analyses and later relation editing, is indexed in docs/RESULTS_AND_CLAIMS.md and REPRODUCIBILITY.md.
 
 The control asks whether the extraction and probing pipeline can recover factual truth when the answer mapping changes. Training and testing both include standard and reversed A/B mappings. The held-out transfer changes both the output symbols and the surrounding user phrasing. It tests whether the signal follows the factual class across a second answer vocabulary and a modest prompt-template change.
 
@@ -335,7 +335,7 @@ else:
         markdown("""
 ## Interpretation
 
-The control establishes that the extraction and eight-partition direction ensemble can recover a known semantic distinction across two answer vocabularies. The completed moral-relation development result therefore rests on a pipeline that already passed a factual positive control. The open tests now ask whether the relation survives human-audited checkerboards and whether the original geometry predicts rephrasing-induced answer flips beyond text and native confidence.
+The control establishes that the extraction and eight-partition direction ensemble can recover a known semantic distinction across two answer vocabularies. The completed moral-relation development result therefore rests on a pipeline that already passed a factual positive control. Later rephrasing analyses did not reliably support prediction from the scalar direction beyond text and native confidence. The public package does not independently certify completed human review or a separate confirmatory result; see [Results and Claims](../docs/RESULTS_AND_CLAIMS.md).
 """),
     ]
     return notebook(cells)
@@ -351,7 +351,7 @@ def leakage_notebook():
 
 The project tests whether a model encodes how a consideration bears on an action in a particular situation. ValuePrism supplies situations, considerations, and Supports or Opposes labels, but repeated or nearly repeated moral phrases can create a shortcut. This notebook covers the split and checkerboard controls for that problem.
 
-The Llama moral-relation development test has now passed. The human-audited confirmatory test remains sealed, and rephrasing-flip prediction has not yet run. These leakage controls determine what the development result can support and what the confirmatory stage must still establish.
+The Llama moral-relation development test has now passed. Rephrasing analyses have since been measured and did not reliably support the scalar commitment interpretation. These original leakage controls are development evidence, not a separate confirmatory result. See docs/RESULTS_AND_CLAIMS.md for the current evidence and human-review boundary.
 
 Across five strict-style split draws, a 30 percent controlled injection of held-out consideration exposure raises text-only within-situation paired accuracy by 7.29 percentage points. The 95 percent Student-t interval for the mean intervention effect across those five draws runs from 4.90 to 9.69 points. Restoring situation exposure raises the mean by 0.53 points.
 
@@ -500,9 +500,9 @@ The checkerboard audit examines a different unit. Reviewers decide whether each 
         markdown("""
 ## Checkerboard supply
 
-The ranked pool contains exactly 1,090 candidate checkerboards, and the planned endpoint needs 800 human-confirmed boards. Dividing 800 by 1,090 gives a required acceptance fraction of 0.733945, or 73.3945 percent.
+The original ranked pool contains exactly 1,090 candidate checkerboards, and the historical design required 800 human-confirmed boards. Dividing 800 by 1,090 gives a required acceptance fraction of 0.733945, or 73.3945 percent.
 
-The 1,090 figure is an exact census of the ranked pool. Sampling uncertainty enters through the unknown human acceptance rate. Two independent reviewers first estimate that rate on a sample, and the resulting interval determines whether the pool can plausibly reach 800 accepted boards before the full audit proceeds.
+The 1,090 figure is an exact census of the ranked pool. Sampling uncertainty enters through the unknown human acceptance rate. The protocol asks two independent reviewers to first estimate that rate on a sample, then uses the resulting interval to determine whether the pool can plausibly reach 800 accepted boards. This describes the review design, not a record of completed judgments.
 """),
         code("""
 display(candidate_supply(results))
@@ -529,7 +529,7 @@ FULL installs the ValuePrism dependencies, reads HF_TOKEN from Colab Secrets, an
 
 The strict split measures generalization to unseen consideration identities and unseen situations. The reciprocal checkerboard measures whether a score changes with the relation after fixed consideration preferences cancel. The completed Llama development result passed its relation controls against situation-only, consideration-only, additive, and matched-text alternatives.
 
-Human review now determines whether that development signal survives a semantically audited confirmatory set. A separate rephrasing stage will test whether the original activation geometry predicts answer flips beyond matched text and native confidence. Those open stages set the current claim boundary.
+This notebook presents the original development measurements, not a separate confirmatory result. Rephrasing analyses have since been measured and did not reliably support a scalar increment beyond text and native confidence. Current evidence and human-review availability are indexed in docs/RESULTS_AND_CLAIMS.md.
 """),
     ]
     return notebook(cells)
@@ -547,7 +547,7 @@ The project asks whether a language model encodes the relation between a situati
 
 Three pieces are complete. The ValuePrism split and checkerboard controls define an evaluation that resists recognized consideration shortcuts. A factual positive control shows that the activation method recovers truth across answer mappings. A Llama 3.1 8B Instruct development test then finds a moral-relation signal at layer 19.
 
-Two pieces remain open. Human reviewers have not completed the semantic calibration needed for the confirmatory checkerboards, and the sealed confirmatory model result remains unopened. The rephrasing-flip experiment has not run. Current claims stop at development evidence.
+This notebook presents the retained development measurements. Rephrasing analyses have since been measured; they did not reliably support a scalar increment beyond text and native confidence. The public review instruments are not completed judgments, and this package does not independently verify completion of human review or a separate confirmatory outcome. See [Results and Claims](../docs/RESULTS_AND_CLAIMS.md) for the current scientific evidence and its limits.
 
 ## Contents
 
@@ -582,7 +582,7 @@ print({"artifact_integrity": "verified", "as_of": status["as_of"]})
         markdown("""
 ## Full experimental arc
 
-Each stage protects a different inference. The split limits memorization across training and testing. Checkerboards cancel fixed additive situation and consideration preferences. The factual control checks the extraction and probing procedure against a known semantic distinction. The moral development slice tests the target relation. Human audit and rephrasing then determine whether the result survives semantic review and predicts behavior under new wording.
+Each stage protects a different inference. The split limits memorization across training and testing. Checkerboards cancel fixed additive situation and consideration preferences. The factual control checks the extraction and probing procedure against a known semantic distinction. The moral development slice tests the target relation. Human review and rephrasing analyses address semantic validity and prediction under changed wording; their conclusions are distinct from the development readout.
 """),
         code("""
 display(stage_table(status))
@@ -603,7 +603,7 @@ display(development_results(status))
 
 The difference-in-means direction gives I_b=1.65, while the logistic activation probe gives I_b=2.08. The frozen SBERT matched-text baseline gives I_b=0.28. Situation-only and consideration-only controls give I_b=0, and the separate-encoding additive control is numerically zero.
 
-For both activation methods, none of 200 group-preserving permutation values match the observed improvement over SBERT. The add-one value is p=1/201. The 95 percent interval for the difference-in-means advantage over SBERT runs from 1.09 to 1.64. The logistic advantage runs from 1.50 to 2.10.
+The historical source summary reports that, for both activation methods, none of 200 group-preserving permutation values match the observed improvement over SBERT. Its add-one value is p=1/201. These values are retained as historical evidence, not current substitutes for the later refit-null analysis of held-out I_b shown in [Figure 3](../figures/CAPTIONS.md#figure-3--checkerboard-interaction-against-the-permutation-null). The null and contrast specifications differ, so the p-values must not be treated as interchangeable. The 95 percent interval for the difference-in-means advantage over SBERT runs from 1.09 to 1.64. The logistic advantage runs from 1.50 to 2.10.
 """),
         code("""
 display(development_intervals(status))
@@ -613,7 +613,7 @@ display(development_intervals(status))
 
 AUROC measures relation decoding on individual development rows. Native answer margin reaches 0.721. The difference-in-means activation direction reaches 0.732, and the logistic activation probe reaches 0.780. The simple direction only slightly exceeds native confidence, while the learned activation probe has a larger gap.
 
-These AUROCs do not measure rephrasing-flip prediction. That experiment will ask whether the original hidden state predicts later answer changes after controlling for text and native confidence. Treating the current 0.780 result as a flip-prediction result would cross the project claim boundary.
+These AUROCs do not measure rephrasing-flip prediction. The separate measured analyses ask whether the original hidden state predicts later answer changes after controlling for text and native confidence. Treating the current 0.780 result as a flip-prediction result would cross the project claim boundary.
 """),
         markdown("""
 ## Provenance and next decision point
@@ -625,7 +625,7 @@ display(source_lineage(status))
 print(status["claim_boundary"])
 """),
         markdown("""
-The next material decision follows the blind human calibration. Its result determines whether the checkerboard pool can support the confirmatory endpoint and whether the sealed relation test can be opened under the frozen protocol. Rephrasing remains a separate experiment even if confirmation succeeds.
+For current conclusions and unresolved questions, use docs/RESULTS_AND_CLAIMS.md. REPRODUCIBILITY.md distinguishes saved-evidence replay, optional model reproduction and unavailable artifacts. The development result here must not be relabeled as a separate confirmatory result.
 """),
     ]
     return notebook(cells)

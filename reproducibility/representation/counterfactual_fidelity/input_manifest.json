@@ -1,0 +1,243 @@
+{
+  "base_commit": "8f62d37",
+  "corpus_overlap_audit": {
+    "demo_given_shared_with_prior": [],
+    "demo_names_shared_with_study_worlds": [],
+    "demo_surnames_shared_with_prior": [],
+    "disjoint": true,
+    "new_full_names": 64,
+    "new_target_count": 384,
+    "prior_context_templates_in_new_contexts": [],
+    "prior_vocabulary_in_new_targets": [],
+    "prior_worlds": {
+      "track_a": 144,
+      "v1": 128
+    },
+    "shared_given_names_with_prior": [],
+    "shared_surnames_with_prior": [],
+    "shared_targets_with_prior": [],
+    "targets_unique_per_world": true,
+    "track_a_worlds_file_sha256": "e9d9fd0ecbd43ccc740379c7e2faa1def80cd2fc0b11b190b36558acba7bc6e9",
+    "v1_corpus_sha256": "22e7a657f183601ccbeaf6e570cafe108ffc44caacf05ac17215826699854191"
+  },
+  "forbidden_inputs": [
+    "V3 paths or outcomes",
+    "the sealed 60-board human-confirmation set",
+    "confirmatory splits",
+    "any final-world outcome before the final-analysis freeze",
+    "any final-world activation in a direction or witness fit"
+  ],
+  "inputs": [
+    {
+      "bytes": 23826,
+      "path": "reports/relation_readout_report_discrimination_v1/freeze/TRACK_A_DEMONSTRATION_FREEZE.jsonl",
+      "role": "rrrd_demonstration_freeze",
+      "sha256": "d610d3c5b712cfc43eb06d6cfeb93744b7680cd3dad9d2a04c71044fe8a3c4d5"
+    },
+    {
+      "bytes": 10549,
+      "path": "scripts/rrrd_v1_common.py",
+      "role": "rrrd_common_code",
+      "sha256": "c06ff33291c62d112b2aab4932e48a5e6b6f97292f82274310d8173214193841"
+    },
+    {
+      "bytes": 34219,
+      "path": "scripts/run_relation_binding_factorial_v2_model.py",
+      "role": "frozen_track_a_runner",
+      "sha256": "04a010a27a96ba9e565c08a07fd541ebca6659afaca13e3f0928e3c364abf634"
+    },
+    {
+      "bytes": 15685,
+      "path": "scripts/crif_v1_common.py",
+      "role": "v1_common_code",
+      "sha256": "e3369bcf99b39bb50bf524f37425ebe20065bd5ac8c895dd188a3d5af9149dde"
+    },
+    {
+      "bytes": 729788,
+      "path": "reports/counterfactual_relation_intervention_fidelity_v1/freeze/CORPUS.jsonl",
+      "role": "v1_corpus",
+      "sha256": "22e7a657f183601ccbeaf6e570cafe108ffc44caacf05ac17215826699854191"
+    },
+    {
+      "bytes": 19283,
+      "path": "reports/counterfactual_relation_intervention_fidelity_v1/freeze/STUDY_CONTRACT.json",
+      "role": "v1_study_contract",
+      "sha256": "99a5a5e05fd038d4afc1540e09a11eaa181297a8939d23779c5245fb201a8876"
+    },
+    {
+      "bytes": 6546,
+      "path": "reports/counterfactual_relation_intervention_fidelity_v1/final_freeze/FINAL_ANALYSIS_FREEZE.json",
+      "role": "v1_final_analysis_freeze",
+      "sha256": "55d8de29e9ca6e3b9d71828d9d63b5208bde554135c57310c854e0702319ce7f"
+    },
+    {
+      "bytes": 53477,
+      "path": "reports/counterfactual_relation_intervention_fidelity_v1/joint_closeout/COUNTERFACTUAL_SIGNATURE_RESULTS.json",
+      "role": "v1_results",
+      "sha256": "1e890c0e0e58d35e5a889474ed73d2ef549fddf78ccd0d2a3094be7062af9423"
+    },
+    {
+      "bytes": 84459,
+      "path": "reports/counterfactual_relation_intervention_fidelity_v1/joint_closeout/external_review_packet_v1.json",
+      "role": "v1_review_packet",
+      "sha256": "d6a8e8ce2d939657904474f771e916d729d643d68f504514b4532d15006e4d3d"
+    },
+    {
+      "bytes": 115332,
+      "path": "reports/relation_operator_transverse_fragility_v1/track_a_v2/freeze/RELATION_BINDING_FACTORIAL_V2_WORLDS.jsonl",
+      "role": "track_a_worlds",
+      "sha256": "e9d9fd0ecbd43ccc740379c7e2faa1def80cd2fc0b11b190b36558acba7bc6e9"
+    },
+    {
+      "bytes": 112723,
+      "path": "reports/relation_operator_transverse_fragility_v1/track_a_v2/freeze/TRACK_A_COMPETITOR_DIRECTIONS.json",
+      "role": "competitor_direction_manifest",
+      "sha256": "3eb7fb1747b5f9035494bc1eed765865558c895d8ea48837ce4839f2154d33ce"
+    },
+    {
+      "bytes": 20203878,
+      "path": "reports/relation_operator_transverse_fragility_v1/track_a_v2/freeze/runtime/llama/competitor_directions_v2.npz",
+      "role": "competitor_directions_llama",
+      "sha256": "c2f3a6b0c8c90e22faf2f6cc089ae72f92784b12e27cc9786ab95fb3d17057b7"
+    },
+    {
+      "bytes": 17679047,
+      "path": "reports/relation_operator_transverse_fragility_v1/track_a_v2/freeze/runtime/gemma/competitor_directions_v2.npz",
+      "role": "competitor_directions_gemma",
+      "sha256": "bdc6080ac38bf9ca7637a61b2716fd4a28c23f97ec6379d6509cbfd88bd66e0e"
+    },
+    {
+      "bytes": 20327,
+      "path": "scripts/stcrf_v2_common.py",
+      "role": "study_common_code",
+      "sha256": "9cd76c69182cf5e83fd9c3e6c334c9ea073e38f2f44bf5d39c3fa2946fb6129f"
+    },
+    {
+      "bytes": 36012,
+      "path": "scripts/stcrf_v2_build_corpus.py",
+      "role": "study_corpus_builder",
+      "sha256": "9dafc9600e7df6c74b2509f08e764ec2bda1abfd987a6619f07e5dd00e8c23ee"
+    }
+  ],
+  "original_frozen_dim_sha256": {
+    "gemma": "81c704de24ffc90b468f13bbf494638804f7fafa4b24f2f51d6bb64d2dc1c4e7",
+    "llama": "f44fb897ab2617abd95ca5a2f8e67dd2626dd75099a9cdf3973033b3e1b64c99"
+  },
+  "schema_version": "STCRF_V2_INPUT_AND_DIRECTION_MANIFEST",
+  "source_of_truth_hierarchy": [
+    "frozen scientific artifacts and manifests",
+    "current study reports"
+  ],
+  "track_a_directions": {
+    "gemma": {
+      "bundle": {
+        "bytes": 17679047,
+        "path": "runtime/gemma/competitor_directions_v2.npz",
+        "sha256": "bdc6080ac38bf9ca7637a61b2716fd4a28c23f97ec6379d6509cbfd88bd66e0e"
+      },
+      "dimension": 3584,
+      "directions": {
+        "answer_token": {
+          "dtype": "float64",
+          "sha256": "880d129dbc3306d526e03e7a0dfd8418ab4520e0d437ef8b28648d0711a53eb0",
+          "shape": [
+            3584
+          ],
+          "source_bundle": "relation",
+          "source_key": "physical_token"
+        },
+        "factual": {
+          "dtype": "float32",
+          "sha256": "308a2fb14f93f4e86d47b6c9344397c3c7029a4a1afa882e401599117eedf08c",
+          "shape": [
+            3584
+          ],
+          "source_bundle": "control",
+          "source_key": "factual_true_false"
+        },
+        "jointly_residualized_relation": {
+          "dtype": "float64",
+          "sha256": "f8484d17ed9abf50a21046c30aafe33454b34ba19910ed2ff01c8b42e4f26dea",
+          "shape": [
+            3584
+          ],
+          "source_bundle": "relation",
+          "source_key": "residual_dim"
+        },
+        "raw_relation_dim": {
+          "dtype": "float32",
+          "sha256": "81c704de24ffc90b468f13bbf494638804f7fafa4b24f2f51d6bb64d2dc1c4e7",
+          "shape": [
+            3584
+          ],
+          "source_bundle": "relation",
+          "source_key": "frozen_dim"
+        },
+        "sentiment": {
+          "dtype": "float32",
+          "sha256": "c283f4d9bba2caed381644cd13542264e4b467803719203b3e8207b1c9da06bf",
+          "shape": [
+            3584
+          ],
+          "source_bundle": "control",
+          "source_key": "sentiment_valence"
+        }
+      }
+    },
+    "llama": {
+      "bundle": {
+        "bytes": 20203878,
+        "path": "runtime/llama/competitor_directions_v2.npz",
+        "sha256": "c2f3a6b0c8c90e22faf2f6cc089ae72f92784b12e27cc9786ab95fb3d17057b7"
+      },
+      "dimension": 4096,
+      "directions": {
+        "answer_token": {
+          "dtype": "float64",
+          "sha256": "a409a5f31e92b07721c3508f11b5563d773dbda1e123a2ed01237148d0fcd6f2",
+          "shape": [
+            4096
+          ],
+          "source_bundle": "relation",
+          "source_key": "physical_token"
+        },
+        "factual": {
+          "dtype": "float32",
+          "sha256": "b34640ffb52161cd98a646c0ce3a0d343fe85e58ef05e7f12e348c4253ff4b9e",
+          "shape": [
+            4096
+          ],
+          "source_bundle": "control",
+          "source_key": "factual_true_false"
+        },
+        "jointly_residualized_relation": {
+          "dtype": "float64",
+          "sha256": "f9bdfb2dd428c50125543770d0c7935f32cdba50740ac267a703a93d5b88319c",
+          "shape": [
+            4096
+          ],
+          "source_bundle": "relation",
+          "source_key": "residual_dim"
+        },
+        "raw_relation_dim": {
+          "dtype": "float32",
+          "sha256": "f44fb897ab2617abd95ca5a2f8e67dd2626dd75099a9cdf3973033b3e1b64c99",
+          "shape": [
+            4096
+          ],
+          "source_bundle": "relation",
+          "source_key": "frozen_dim"
+        },
+        "sentiment": {
+          "dtype": "float32",
+          "sha256": "47a1b8b5c93568e1eb842bdd7fe24f276c8950d1d72b4572d6e6e66f98f7cadf",
+          "shape": [
+            4096
+          ],
+          "source_bundle": "control",
+          "source_key": "sentiment_valence"
+        }
+      }
+    }
+  }
+}

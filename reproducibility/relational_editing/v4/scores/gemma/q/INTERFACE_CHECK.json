@@ -1,0 +1,660 @@
+{
+  "at": "2026-09-11T19:57:48.865327+00:00",
+  "actor": "gemma",
+  "procedure": "C1",
+  "site": 15,
+  "requests": 16,
+  "rows": [
+    {
+      "query_id": "CAL-RCC4-0014-d1-01",
+      "scene_id": "CAL-RCC4-0014",
+      "cached_logps": [
+        -8.784497261047363,
+        -0.000398198957554996
+      ],
+      "full_logps": [
+        -8.784497261047363,
+        -0.000398198957554996
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "propagation_next_block_equal": true,
+      "prefix_tokens": 416,
+      "clause_tokens": 8,
+      "cache_bytes": 143130624,
+      "prefix_hash": "4999f4c9425d832e48b1442164da8ecb8579fe65a419f1c46e8435fab9174631"
+    },
+    {
+      "query_id": "CAL-RCC4-0046-d1-05",
+      "scene_id": "CAL-RCC4-0046",
+      "cached_logps": [
+        -7.986982345581055,
+        -0.0007526425761170685
+      ],
+      "full_logps": [
+        -7.986982345581055,
+        -0.0007526425761170685
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "propagation_next_block_equal": true,
+      "prefix_tokens": 412,
+      "clause_tokens": 8,
+      "cache_bytes": 141754368,
+      "prefix_hash": "a1dfbf0880757b0dfca2825a4e4d8db195b448604528e9c6a2e0a85facb71418"
+    },
+    {
+      "query_id": "CAL-RCC4-0046-d1-02",
+      "scene_id": "CAL-RCC4-0046",
+      "cached_logps": [
+        -0.0012504386249929667,
+        -7.481328964233398
+      ],
+      "full_logps": [
+        -0.0012504386249929667,
+        -7.481328964233398
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "propagation_next_block_equal": true,
+      "prefix_tokens": 412,
+      "clause_tokens": 8,
+      "cache_bytes": 141754368,
+      "prefix_hash": "a1dfbf0880757b0dfca2825a4e4d8db195b448604528e9c6a2e0a85facb71418"
+    },
+    {
+      "query_id": "CAL-RCC4-0017-d0-01",
+      "scene_id": "CAL-RCC4-0017",
+      "cached_logps": [
+        -2.753696753643453e-05,
+        -11.602877616882324
+      ],
+      "full_logps": [
+        -2.753696753643453e-05,
+        -11.602877616882324
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "propagation_next_block_equal": true,
+      "prefix_tokens": 414,
+      "clause_tokens": 9,
+      "cache_bytes": 142442496,
+      "prefix_hash": "3676816b79a0706bf3d8bd89f098793be3350e31c52cb4f8e44cc0a5dd0c15df"
+    },
+    {
+      "query_id": "CAL-RCC4-0039-d0-01",
+      "scene_id": "CAL-RCC4-0039",
+      "cached_logps": [
+        -0.009298116900026798,
+        -4.70020866394043
+      ],
+      "full_logps": [
+        -0.009298116900026798,
+        -4.70020866394043
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "propagation_next_block_equal": true,
+      "prefix_tokens": 413,
+      "clause_tokens": 10,
+      "cache_bytes": 142098432,
+      "prefix_hash": "d739075cc37363b92704f88cfd371ff111c6af2291ea821ef2edc14fe0c0b27a"
+    },
+    {
+      "query_id": "CAL-RCC4-0043-d0-02",
+      "scene_id": "CAL-RCC4-0043",
+      "cached_logps": [
+        -0.00027891082572750747,
+        -8.673945426940918
+      ],
+      "full_logps": [
+        -0.00027891082572750747,
+        -8.673945426940918
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "propagation_next_block_equal": true,
+      "prefix_tokens": 416,
+      "clause_tokens": 10,
+      "cache_bytes": 143130624,
+      "prefix_hash": "da0260a5e489a23db9ebf1de73dd17f16f96bd05918453e7787858429c90507f"
+    },
+    {
+      "query_id": "CAL-RCC4-0016-d0-00",
+      "scene_id": "CAL-RCC4-0016",
+      "cached_logps": [
+        -0.0003526780928950757,
+        -8.357599258422852
+      ],
+      "full_logps": [
+        -0.0003526780928950757,
+        -8.357599258422852
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "propagation_next_block_equal": true,
+      "prefix_tokens": 420,
+      "clause_tokens": 9,
+      "cache_bytes": 144506880,
+      "prefix_hash": "94e81bee26c33234f6d7194b16b9ff2351bedfbb7e6e0ea39b974b0c6fb05e56"
+    },
+    {
+      "query_id": "CAL-RCC4-0029-d1-04",
+      "scene_id": "CAL-RCC4-0029",
+      "cached_logps": [
+        -0.007264390587806702,
+        -5.002686977386475
+      ],
+      "full_logps": [
+        -0.007264390587806702,
+        -5.002686977386475
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "propagation_next_block_equal": true,
+      "prefix_tokens": 415,
+      "clause_tokens": 9,
+      "cache_bytes": 142786560,
+      "prefix_hash": "b67738c48e6244a845b4abcdd8f16c9b950b1717936cfa70f73e04547543c52d"
+    },
+    {
+      "query_id": "CAL-RCC4-0001-d1-03",
+      "scene_id": "CAL-RCC4-0001",
+      "cached_logps": [
+        -8.094137191772461,
+        -0.0008946230518631637
+      ],
+      "full_logps": [
+        -8.094137191772461,
+        -0.0008946230518631637
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "propagation_next_block_equal": true,
+      "prefix_tokens": 414,
+      "clause_tokens": 9,
+      "cache_bytes": 142442496,
+      "prefix_hash": "aad5f5c76067511e4275718980adc214579b82f7effc07098d8e291d2bb627bc"
+    },
+    {
+      "query_id": "CAL-RCC4-0001-d1-00",
+      "scene_id": "CAL-RCC4-0001",
+      "cached_logps": [
+        -7.790895462036133,
+        -0.0010511117288842797
+      ],
+      "full_logps": [
+        -7.790895462036133,
+        -0.0010511117288842797
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "propagation_next_block_equal": true,
+      "prefix_tokens": 414,
+      "clause_tokens": 9,
+      "cache_bytes": 142442496,
+      "prefix_hash": "aad5f5c76067511e4275718980adc214579b82f7effc07098d8e291d2bb627bc"
+    },
+    {
+      "query_id": "CAL-RCC4-0032-d1-01",
+      "scene_id": "CAL-RCC4-0032",
+      "cached_logps": [
+        -6.120659828186035,
+        -0.002736040623858571
+      ],
+      "full_logps": [
+        -6.120659828186035,
+        -0.002736040623858571
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "propagation_next_block_equal": true,
+      "prefix_tokens": 412,
+      "clause_tokens": 8,
+      "cache_bytes": 141754368,
+      "prefix_hash": "da3ea7a35e542d4306bebc88eee49844f97f2cc4bb1996d7497b15c7461b4270"
+    },
+    {
+      "query_id": "CAL-RCC4-0026-d1-05",
+      "scene_id": "CAL-RCC4-0026",
+      "cached_logps": [
+        -0.0004825619689654559,
+        -9.870345115661621
+      ],
+      "full_logps": [
+        -0.0004825619689654559,
+        -9.870345115661621
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "propagation_next_block_equal": true,
+      "prefix_tokens": 416,
+      "clause_tokens": 8,
+      "cache_bytes": 143130624,
+      "prefix_hash": "dd12064a0192cd7b11c5d91975c564fc2b2a7520dc7f78a49cfcc111aed02777"
+    },
+    {
+      "query_id": "CAL-RCC4-0030-d0-00",
+      "scene_id": "CAL-RCC4-0030",
+      "cached_logps": [
+        -5.972207145532593e-05,
+        -10.607857704162598
+      ],
+      "full_logps": [
+        -5.972207145532593e-05,
+        -10.607857704162598
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "propagation_next_block_equal": true,
+      "prefix_tokens": 418,
+      "clause_tokens": 9,
+      "cache_bytes": 143818752,
+      "prefix_hash": "4e4d1160e69c8f1aa48232640436273f90b6b1b63550c628731bcea065b9ca7f"
+    },
+    {
+      "query_id": "CAL-RCC4-0024-d1-03",
+      "scene_id": "CAL-RCC4-0024",
+      "cached_logps": [
+        -7.754370212554932,
+        -0.0011031500762328506
+      ],
+      "full_logps": [
+        -7.754370212554932,
+        -0.0011031500762328506
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "propagation_next_block_equal": true,
+      "prefix_tokens": 413,
+      "clause_tokens": 8,
+      "cache_bytes": 142098432,
+      "prefix_hash": "036749c696608b339726d9c9ae87f615a5818e7236b69b5a71f99bdc5235011a"
+    },
+    {
+      "query_id": "CAL-RCC4-0005-d0-04",
+      "scene_id": "CAL-RCC4-0005",
+      "cached_logps": [
+        -0.00047743841423653066,
+        -7.721400737762451
+      ],
+      "full_logps": [
+        -0.00047743841423653066,
+        -7.721400737762451
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "propagation_next_block_equal": true,
+      "prefix_tokens": 417,
+      "clause_tokens": 10,
+      "cache_bytes": 143474688,
+      "prefix_hash": "8c27352be9696eb1db069bdae71896ccdd868ba971a7a1ed745bc5198b5f1b75"
+    },
+    {
+      "query_id": "CAL-RCC4-0041-d1-00",
+      "scene_id": "CAL-RCC4-0041",
+      "cached_logps": [
+        -8.927343368530273,
+        -0.0005316513124853373
+      ],
+      "full_logps": [
+        -8.927343368530273,
+        -0.0005316513124853373
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "propagation_next_block_equal": true,
+      "prefix_tokens": 413,
+      "clause_tokens": 9,
+      "cache_bytes": 142098432,
+      "prefix_hash": "28ab314ca114144e2dd6220f98178f2fbb91e375beddf22f0774d9bf4adac0a8"
+    }
+  ],
+  "zero_self_edit_hash_identical": true,
+  "clone_hash_identical": true,
+  "cached_vs_full": {
+    "max_abs_logp": 0.0,
+    "same_choice": true,
+    "mean_abs": 0.0
+  },
+  "batched_vs_single": {
+    "max_abs_logp": 0.04598808288574219,
+    "same_choice": true,
+    "n": 16
+  },
+  "order_independent": true,
+  "masters_unchanged_after_reordered_queries": true,
+  "recompile_deterministic": true,
+  "master_unchanged_every_ask": true,
+  "propagation_next_block": true,
+  "setter_identities": {
+    "rows": [
+      {
+        "scene_id": "CAL-RCC4-0014",
+        "ws_AA_vs_A": 9.5367431640625e-07,
+        "ws_A8_vs_A": 3.814697265625e-06,
+        "ws_over_vs_direct": 9.5367431640625e-07,
+        "bf16_AA_hash_equal": false,
+        "bf16_A8_hash_equal": false,
+        "bf16_over_hash_equal": true,
+        "cast_error": 0.37283462285995483,
+        "numpy_vs_torch": 9.470006347100934e-06,
+        "state_scale": 155.79122924804688,
+        "update_norm": 11.175134181976318
+      },
+      {
+        "scene_id": "CAL-RCC4-0046",
+        "ws_AA_vs_A": 1.9073486328125e-06,
+        "ws_A8_vs_A": 4.76837158203125e-06,
+        "ws_over_vs_direct": 1.9073486328125e-06,
+        "bf16_AA_hash_equal": true,
+        "bf16_A8_hash_equal": true,
+        "bf16_over_hash_equal": true,
+        "cast_error": 0.5473945736885071,
+        "numpy_vs_torch": 5.05226083191701e-06,
+        "state_scale": 148.24539184570312,
+        "update_norm": 12.745761156082153
+      },
+      {
+        "scene_id": "CAL-RCC4-0017",
+        "ws_AA_vs_A": 9.5367431640625e-07,
+        "ws_A8_vs_A": 3.814697265625e-06,
+        "ws_over_vs_direct": 9.5367431640625e-07,
+        "bf16_AA_hash_equal": true,
+        "bf16_A8_hash_equal": true,
+        "bf16_over_hash_equal": true,
+        "cast_error": 0.5554433465003967,
+        "numpy_vs_torch": 6.794463303094744e-06,
+        "state_scale": 157.59361267089844,
+        "update_norm": 11.801164627075195
+      },
+      {
+        "scene_id": "CAL-RCC4-0039",
+        "ws_AA_vs_A": 1.9073486328125e-06,
+        "ws_A8_vs_A": 3.814697265625e-06,
+        "ws_over_vs_direct": 1.9073486328125e-06,
+        "bf16_AA_hash_equal": true,
+        "bf16_A8_hash_equal": true,
+        "bf16_over_hash_equal": false,
+        "cast_error": 0.3898218870162964,
+        "numpy_vs_torch": 6.718442278952352e-06,
+        "state_scale": 123.8298568725586,
+        "update_norm": 10.86266918182373
+      },
+      {
+        "scene_id": "CAL-RCC4-0043",
+        "ws_AA_vs_A": 1.9073486328125e-06,
+        "ws_A8_vs_A": 3.814697265625e-06,
+        "ws_over_vs_direct": 1.9073486328125e-06,
+        "bf16_AA_hash_equal": true,
+        "bf16_A8_hash_equal": true,
+        "bf16_over_hash_equal": true,
+        "cast_error": 0.51972496509552,
+        "numpy_vs_torch": 9.836939369733955e-06,
+        "state_scale": 173.1097412109375,
+        "update_norm": 13.154564094543456
+      },
+      {
+        "scene_id": "CAL-RCC4-0016",
+        "ws_AA_vs_A": 1.52587890625e-05,
+        "ws_A8_vs_A": 3.0517578125e-05,
+        "ws_over_vs_direct": 1.9073486328125e-06,
+        "bf16_AA_hash_equal": false,
+        "bf16_A8_hash_equal": false,
+        "bf16_over_hash_equal": false,
+        "cast_error": 0.40091294050216675,
+        "numpy_vs_torch": 6.157093338288178e-06,
+        "state_scale": 129.17269897460938,
+        "update_norm": 12.369838661617703
+      },
+      {
+        "scene_id": "CAL-RCC4-0029",
+        "ws_AA_vs_A": 9.5367431640625e-07,
+        "ws_A8_vs_A": 2.86102294921875e-06,
+        "ws_over_vs_direct": 1.9073486328125e-06,
+        "bf16_AA_hash_equal": false,
+        "bf16_A8_hash_equal": false,
+        "bf16_over_hash_equal": false,
+        "cast_error": 0.34971970319747925,
+        "numpy_vs_torch": 1.3629420209326781e-05,
+        "state_scale": 149.08444213867188,
+        "update_norm": 15.915237956576878
+      },
+      {
+        "scene_id": "CAL-RCC4-0001",
+        "ws_AA_vs_A": 1.9073486328125e-06,
+        "ws_A8_vs_A": 3.814697265625e-06,
+        "ws_over_vs_direct": 9.5367431640625e-07,
+        "bf16_AA_hash_equal": false,
+        "bf16_A8_hash_equal": true,
+        "bf16_over_hash_equal": true,
+        "cast_error": 0.5239463448524475,
+        "numpy_vs_torch": 9.1231499652622e-06,
+        "state_scale": 153.2646026611328,
+        "update_norm": 13.442138142055935
+      },
+      {
+        "scene_id": "CAL-RCC4-0032",
+        "ws_AA_vs_A": 1.9073486328125e-06,
+        "ws_A8_vs_A": 3.814697265625e-06,
+        "ws_over_vs_direct": 1.9073486328125e-06,
+        "bf16_AA_hash_equal": true,
+        "bf16_A8_hash_equal": true,
+        "bf16_over_hash_equal": false,
+        "cast_error": 0.3755326569080353,
+        "numpy_vs_torch": 5.133623702135992e-06,
+        "state_scale": 163.88107299804688,
+        "update_norm": 16.11855161190033
+      },
+      {
+        "scene_id": "CAL-RCC4-0026",
+        "ws_AA_vs_A": 1.9073486328125e-06,
+        "ws_A8_vs_A": 2.86102294921875e-06,
+        "ws_over_vs_direct": 1.9073486328125e-06,
+        "bf16_AA_hash_equal": false,
+        "bf16_A8_hash_equal": false,
+        "bf16_over_hash_equal": false,
+        "cast_error": 0.4992837905883789,
+        "numpy_vs_torch": 6.559925054716587e-06,
+        "state_scale": 149.60479736328125,
+        "update_norm": 12.328837752342224
+      },
+      {
+        "scene_id": "CAL-RCC4-0030",
+        "ws_AA_vs_A": 9.5367431640625e-07,
+        "ws_A8_vs_A": 2.86102294921875e-06,
+        "ws_over_vs_direct": 9.5367431640625e-07,
+        "bf16_AA_hash_equal": true,
+        "bf16_A8_hash_equal": true,
+        "bf16_over_hash_equal": true,
+        "cast_error": 0.3563162088394165,
+        "numpy_vs_torch": 1.0901924213158054e-05,
+        "state_scale": 150.18846130371094,
+        "update_norm": 13.218343522813585
+      },
+      {
+        "scene_id": "CAL-RCC4-0024",
+        "ws_AA_vs_A": 3.814697265625e-06,
+        "ws_A8_vs_A": 7.62939453125e-06,
+        "ws_over_vs_direct": 3.814697265625e-06,
+        "bf16_AA_hash_equal": false,
+        "bf16_A8_hash_equal": false,
+        "bf16_over_hash_equal": true,
+        "cast_error": 0.5441999435424805,
+        "numpy_vs_torch": 6.974027712658426e-06,
+        "state_scale": 148.826416015625,
+        "update_norm": 14.033859252929688
+      },
+      {
+        "scene_id": "CAL-RCC4-0005",
+        "ws_AA_vs_A": 1.9073486328125e-06,
+        "ws_A8_vs_A": 5.7220458984375e-06,
+        "ws_over_vs_direct": 1.9073486328125e-06,
+        "bf16_AA_hash_equal": true,
+        "bf16_A8_hash_equal": false,
+        "bf16_over_hash_equal": false,
+        "cast_error": 0.3993459641933441,
+        "numpy_vs_torch": 6.0243766029088874e-06,
+        "state_scale": 135.69775390625,
+        "update_norm": 12.541630840301513
+      },
+      {
+        "scene_id": "CAL-RCC4-0041",
+        "ws_AA_vs_A": 9.5367431640625e-07,
+        "ws_A8_vs_A": 2.384185791015625e-06,
+        "ws_over_vs_direct": 9.5367431640625e-07,
+        "bf16_AA_hash_equal": false,
+        "bf16_A8_hash_equal": false,
+        "bf16_over_hash_equal": true,
+        "cast_error": 0.3639425039291382,
+        "numpy_vs_torch": 1.1578063094930258e-05,
+        "state_scale": 157.8860321044922,
+        "update_norm": 13.512560738457573
+      }
+    ],
+    "max_ws_AA_vs_A": 1.52587890625e-05,
+    "max_ws_A8_vs_A": 3.0517578125e-05,
+    "max_ws_over_vs_direct": 3.814697265625e-06,
+    "bf16_AA_hash_equal_fraction": 0.5,
+    "bf16_A8_hash_equal_fraction": 0.5,
+    "bf16_over_hash_equal_fraction": 0.5714285714285714,
+    "max_numpy_vs_torch": 1.3629420209326781e-05,
+    "max_cast_error": 0.5554433465003967,
+    "note": "untrained random-U setter on real residuals: FP32 workspace identities are designed algebra (reported as numerical error, not a scientific result); BF16 hash equality after the cast is not guaranteed"
+  },
+  "frozen_v2_precision": [
+    {
+      "scene_id": "CAL-RCC4-0014",
+      "legacy_vs_fp32_state_max_abs": 0.0,
+      "hash_equal": true,
+      "legacy_energy": 121530.25,
+      "fp32_energy": 121530.25
+    },
+    {
+      "scene_id": "CAL-RCC4-0046",
+      "legacy_vs_fp32_state_max_abs": 0.0,
+      "hash_equal": true,
+      "legacy_energy": 121572.4375,
+      "fp32_energy": 121572.4375
+    },
+    {
+      "scene_id": "CAL-RCC4-0017",
+      "legacy_vs_fp32_state_max_abs": 0.0,
+      "hash_equal": true,
+      "legacy_energy": 149726.65625,
+      "fp32_energy": 149726.65625
+    },
+    {
+      "scene_id": "CAL-RCC4-0039",
+      "legacy_vs_fp32_state_max_abs": 0.0,
+      "hash_equal": true,
+      "legacy_energy": 166363.609375,
+      "fp32_energy": 166363.609375
+    },
+    {
+      "scene_id": "CAL-RCC4-0043",
+      "legacy_vs_fp32_state_max_abs": 0.0,
+      "hash_equal": true,
+      "legacy_energy": 166368.8125,
+      "fp32_energy": 166368.8125
+    },
+    {
+      "scene_id": "CAL-RCC4-0016",
+      "legacy_vs_fp32_state_max_abs": 0.0,
+      "hash_equal": true,
+      "legacy_energy": 123023.0703125,
+      "fp32_energy": 123023.0703125
+    },
+    {
+      "scene_id": "CAL-RCC4-0029",
+      "legacy_vs_fp32_state_max_abs": 0.0,
+      "hash_equal": true,
+      "legacy_energy": 149745.34375,
+      "fp32_energy": 149745.34375
+    },
+    {
+      "scene_id": "CAL-RCC4-0001",
+      "legacy_vs_fp32_state_max_abs": 0.0,
+      "hash_equal": true,
+      "legacy_energy": 149722.78125,
+      "fp32_energy": 149722.78125
+    },
+    {
+      "scene_id": "CAL-RCC4-0032",
+      "legacy_vs_fp32_state_max_abs": 0.0,
+      "hash_equal": true,
+      "legacy_energy": 106576.5234375,
+      "fp32_energy": 106576.5234375
+    },
+    {
+      "scene_id": "CAL-RCC4-0026",
+      "legacy_vs_fp32_state_max_abs": 0.0,
+      "hash_equal": true,
+      "legacy_energy": 125950.7421875,
+      "fp32_energy": 125950.7421875
+    },
+    {
+      "scene_id": "CAL-RCC4-0030",
+      "legacy_vs_fp32_state_max_abs": 0.0,
+      "hash_equal": true,
+      "legacy_energy": 137002.765625,
+      "fp32_energy": 137002.765625
+    },
+    {
+      "scene_id": "CAL-RCC4-0024",
+      "legacy_vs_fp32_state_max_abs": 0.0,
+      "hash_equal": true,
+      "legacy_energy": 117139.640625,
+      "fp32_energy": 117139.640625
+    },
+    {
+      "scene_id": "CAL-RCC4-0005",
+      "legacy_vs_fp32_state_max_abs": 0.0,
+      "hash_equal": true,
+      "legacy_energy": 166361.953125,
+      "fp32_energy": 166361.953125
+    },
+    {
+      "scene_id": "CAL-RCC4-0041",
+      "legacy_vs_fp32_state_max_abs": 0.0,
+      "hash_equal": true,
+      "legacy_energy": 149723.65625,
+      "fp32_energy": 149723.65625
+    }
+  ],
+  "serving_path": "KV_CACHE_CLONE + uniform batch-12 clone asks (identical to V2)",
+  "generation_prompt": "<end_of_turn>\n<start_of_turn>model\n",
+  "pass_": true
+}

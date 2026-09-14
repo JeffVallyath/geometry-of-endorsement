@@ -1,0 +1,45 @@
+{
+  "at": "2026-09-10T20:14:35.846745+00:00",
+  "schema": "SRS2_RANK16_AUGMENTED_V1",
+  "actor": "gemma",
+  "arm": "SHARED_CLAUSE",
+  "site": 15,
+  "seed": 0,
+  "cap": 103.18592071533203,
+  "aware": false,
+  "footprint": "clause",
+  "files": {
+    "relation_0": "e44cbbe9e2f00e01bbfe3379642be7a7a3dbd1af2c6c913130b66ba5d7a8d6be",
+    "relation_1": "10a3b6ef33e5b8acdc9a8eee080a2c2f728d70337e179b6b2ff0533d0d725d8e"
+  },
+  "init": {
+    "kind": "v1_warm_start",
+    "v1_dir": "<private operational reference omitted>",
+    "v1_files": {
+      "relation_0": "2de1db39f60de463c545e7e92178a523c047d5a6343c70a28acee5a26bf0f022",
+      "relation_1": "4cde0c19461f13a25503b8ed5c94e15ab0eca9e80b8eb8fcf463a4a07c5d1426"
+    },
+    "v1_meta_sha256": "007905c1e15bc4dc9c2bde9a16eafc244dd3d3674491d93eb1919ee7c6e5832f",
+    "v1_seed": 0,
+    "v1_epoch": 4,
+    "v1_family": "PREFIX_DISTRIBUTED"
+  },
+  "epoch": 2,
+  "lr": 0.0003,
+  "steps": 720,
+  "visits": 2880,
+  "frobenius": {
+    "0": {
+      "input": 4.545442581176758,
+      "output": 3.5911197662353516,
+      "bias": 0.0467056967318058,
+      "q_block": 1.1547597646713257
+    },
+    "1": {
+      "input": 4.528999328613281,
+      "output": 3.2399635314941406,
+      "bias": 0.06382083892822266,
+      "q_block": 0.8290970921516418
+    }
+  }
+}

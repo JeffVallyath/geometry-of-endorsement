@@ -1,0 +1,32 @@
+{
+  "e_max": 2,
+  "per_arm_epoch_seconds": {
+    "SHARED_CLAUSE": {
+      "train": 145.90095141601705,
+      "eval": 130.64595961434526
+    },
+    "SHARED_TAIL": {
+      "train": 145.90095141601705,
+      "eval": 130.64595961434526
+    },
+    "QUERY_CLAUSE": {
+      "train": 273.42667756786796,
+      "eval": 325.31888834674646
+    },
+    "QUERY_TAIL": {
+      "train": 273.42667756786796,
+      "eval": 325.31888834674646
+    }
+  },
+  "predicted_total_seconds": 10503.509723339721,
+  "groups_per_epoch": 360,
+  "dev_seconds": 10652.204435,
+  "rule": "E_max = largest e in [LR_EPOCHS, MAX_EPOCHS] with sum over arms of (LR_EPOCHS + 2e) epoch-times <= development allocation, fixed from the disposable benchmark before any training outcome",
+  "at": "2026-09-10T20:09:03.324097+00:00",
+  "arms": [
+    "SHARED_CLAUSE",
+    "SHARED_TAIL",
+    "QUERY_CLAUSE",
+    "QUERY_TAIL"
+  ]
+}

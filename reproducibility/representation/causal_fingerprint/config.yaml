@@ -1,0 +1,46 @@
+# Frozen scientific configuration; runtime launch and recovery policy omitted.
+schema_version: 1
+run_id: causal-fingerprint-v3-a100-20260825
+study_name: CAUSAL_FINGERPRINT_MEASUREMENT_V3
+source_repository: external-artifacts
+source_commit: "20db590121c905cb75eb55f08bf381b0be337e31"
+source_tree_clean: true
+scientific_contract_path: external-artifacts
+scientific_contract_sha256: "1e3a0a3cb69d81b7306f822fd7a737d99764d4cb08978ec74f23464347cf403b"
+bundle_path: external-artifacts
+bundle_sha256: "2195a63f52476eecbd7386f0cc424ff8c8db0ff78c65ef705c33a590e18e86dd"
+actor_model_name: meta-llama/Meta-Llama-3.1-8B-Instruct+google/gemma-2-9b-it
+stages:
+  - id: run_llama_v3_calibration
+    depends_on: []
+    expected_outputs: [{path: checkpoints/llama/causal_fingerprint_v3/CALIBRATION_SELECTION.json}]
+    checkpoint_paths: [checkpoints/llama/causal_fingerprint_v3/calibration]
+  - id: run_gemma_v3_calibration
+    depends_on: [run_llama_v3_calibration]
+    expected_outputs: [{path: checkpoints/gemma/causal_fingerprint_v3/CALIBRATION_SELECTION.json}]
+    checkpoint_paths: [checkpoints/gemma/causal_fingerprint_v3/calibration]
+  - id: run_llama_v3_validation
+    depends_on: [run_gemma_v3_calibration]
+    expected_outputs: [{path: checkpoints/llama/causal_fingerprint_v3/VALIDATION_RESULT.json}]
+    checkpoint_paths: [checkpoints/llama/causal_fingerprint_v3/validation]
+  - id: run_gemma_v3_validation
+    depends_on: [run_llama_v3_validation]
+    expected_outputs: [{path: checkpoints/gemma/causal_fingerprint_v3/VALIDATION_RESULT.json}]
+    checkpoint_paths: [checkpoints/gemma/causal_fingerprint_v3/validation]
+  - id: finalize_v3
+    depends_on: [run_gemma_v3_validation]
+    expected_outputs: [{path: CAUSAL_FINGERPRINT_MEASUREMENT_V3_REPORT.json}]
+    checkpoint_paths: []
+required_secrets: [HF_TOKEN]
+dependency_lock_path: work/requirements-causal-fingerprint-v3.lock
+dependency_lock_sha256: "a57b760cb55c130dd98145d5747368f3f3bf9684559368f4c0e46f382d8dcd6e"
+required_accelerator: A100
+allowed_accelerator_fallbacks: []
+minimum_vram_gib: 39
+estimated_peak_vram_gib: 22
+required_dtype: bfloat16
+high_memory: true
+technical_preflight: {required_imports: [torch, transformers, numpy], minimum_free_disk_gib: 25}
+scientific_terminal_exit_codes: [40]
+scientific_terminal_statuses: [V3_PERTURBATION_CALIBRATION_FAILED, CAUSAL_FINGERPRINT_MEASUREMENT_V3_INVALID]
+artifact_completeness_rule: {required_members: [CAUSAL_FINGERPRINT_MEASUREMENT_V3_REPORT.json, receipts/FINALIZE_V3.json], member_count_must_match: true, all_hashes_must_match: true}

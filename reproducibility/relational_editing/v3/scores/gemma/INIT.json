@@ -1,0 +1,144 @@
+{
+  "at": "2026-09-11T05:42:12.712557+00:00",
+  "actor": "gemma",
+  "seeds": {
+    "0": {
+      "u_rule": {
+        "kind": "svd_of_concatenated_v2_clause_output_factors",
+        "v2_seed": 0,
+        "rows": 32,
+        "singular_values": [
+          3.034609845240685,
+          2.858129223084275,
+          1.5006824726131047,
+          1.1868170682730308,
+          1.0788341742834515,
+          0.5905475078182219,
+          0.44287335139196543,
+          0.37155985542529807,
+          0.318760235826678,
+          0.25152921023562014,
+          0.23070671386205405,
+          0.22076709441582285,
+          0.2008629525696195,
+          0.1704484917941498,
+          0.16403754314411637,
+          0.16341140235363344
+        ]
+      },
+      "head_rule": "warm start toward the incumbent (V2 SHARED_CLAUSE, FP32 workspace, strength 1.25); not additional final supervision",
+      "heads": {
+        "INVARIANT_SET": {
+          "error": {
+            "0": 0.0026389010361599855,
+            "1": 5.833880887770354e-07
+          },
+          "scale": {
+            "0": 1.6656508330637838,
+            "1": 1.6961315038845675
+          },
+          "groups": {
+            "0": 72,
+            "1": 48
+          },
+          "rule": "ridge (1e-3 after one fixed feature scaling) toward the incumbent V2 clause edit projected coordinates (H_edit - mu) U on FIT source-clause states"
+        },
+        "FREE_OVERWRITE": {
+          "error": {
+            "0": 0.0026389010365952398,
+            "1": 5.8651929074342e-07
+          },
+          "scale": {
+            "0": 1.677316129552411,
+            "1": 1.7100229069594173
+          },
+          "groups": {
+            "0": 72,
+            "1": 48
+          },
+          "rule": "ridge (1e-3 after one fixed feature scaling) toward the incumbent V2 clause edit projected coordinates (H_edit - mu) U on FIT source-clause states"
+        }
+      },
+      "checks": {
+        "nest": 1.52587890625e-05,
+        "idem": 1.52587890625e-05,
+        "over": 1.52587890625e-05,
+        "free_identity": 0.0,
+        "inv_vs_free_init": 0.24086761474609375,
+        "orth": 3.5762786865234375e-07
+      },
+      "file": "<private operational reference omitted>",
+      "sha256": "ba4645178dd88f4f3b069a7aa512fdd8a0936e6aec09c7e96f3134fb0b3924a6"
+    },
+    "1": {
+      "u_rule": {
+        "kind": "svd_of_concatenated_v2_clause_output_factors",
+        "v2_seed": 1,
+        "rows": 32,
+        "singular_values": [
+          3.4097852928233423,
+          3.136555474401551,
+          1.7884404197855268,
+          0.8447703070128298,
+          0.6263193290437273,
+          0.5901641075201302,
+          0.5618193305195422,
+          0.4564355627593063,
+          0.45518497155740456,
+          0.3657779808080883,
+          0.3559382277472429,
+          0.28604301914402636,
+          0.23294064048817437,
+          0.23186701723756806,
+          0.17957592816325588,
+          0.17178967300423534
+        ]
+      },
+      "head_rule": "warm start toward the incumbent (V2 SHARED_CLAUSE, FP32 workspace, strength 1.25); not additional final supervision",
+      "heads": {
+        "INVARIANT_SET": {
+          "error": {
+            "0": 0.0020366573935536782,
+            "1": 1.494386571567552e-07
+          },
+          "scale": {
+            "0": 1.6667888635598194,
+            "1": 1.6990865185420123
+          },
+          "groups": {
+            "0": 72,
+            "1": 48
+          },
+          "rule": "ridge (1e-3 after one fixed feature scaling) toward the incumbent V2 clause edit projected coordinates (H_edit - mu) U on FIT source-clause states"
+        },
+        "FREE_OVERWRITE": {
+          "error": {
+            "0": 0.002036657393147652,
+            "1": 1.368847426318935e-07
+          },
+          "scale": {
+            "0": 1.677316129552411,
+            "1": 1.7100229069594173
+          },
+          "groups": {
+            "0": 72,
+            "1": 48
+          },
+          "rule": "ridge (1e-3 after one fixed feature scaling) toward the incumbent V2 clause edit projected coordinates (H_edit - mu) U on FIT source-clause states"
+        }
+      },
+      "checks": {
+        "nest": 1.52587890625e-05,
+        "idem": 1.52587890625e-05,
+        "over": 1.52587890625e-05,
+        "free_identity": 0.0,
+        "inv_vs_free_init": 0.17728090286254883,
+        "orth": 4.76837158203125e-07
+      },
+      "file": "<private operational reference omitted>",
+      "sha256": "6085f8b050e23de215886dc6fea181a862f7f4504b03567cdac8e62996621639"
+    }
+  },
+  "cap_ref": 103.18592071533203,
+  "mu_norm": 142.00071716308594
+}

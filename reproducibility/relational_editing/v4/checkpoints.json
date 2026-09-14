@@ -1,0 +1,885 @@
+{
+  "schema_version": 1,
+  "checkpoints": [
+    {
+      "selection_identity": "gemma/arms/FREE_COMPLETE_SINGLE/s0/epoch2/setter.npz",
+      "path": "reproducibility/relational_editing/v4/weights/26bcf56cd79fe0c275575d419abfffa2c2895272431613b5939c8bc6586f9e2c.npz",
+      "sha256": "26bcf56cd79fe0c275575d419abfffa2c2895272431613b5939c8bc6586f9e2c",
+      "bytes": 1392786,
+      "metadata": {
+        "schema": "RSO3_SETTER_V1",
+        "actor": "gemma",
+        "arm": "FREE_OVERWRITE",
+        "kind": "free",
+        "site": 15,
+        "seed": 0,
+        "rank": 16,
+        "cap_ref": 103.18592071533203,
+        "files": {
+          "setter": "26bcf56cd79fe0c275575d419abfffa2c2895272431613b5939c8bc6586f9e2c"
+        },
+        "init": {
+          "kind": "v3_selected_checkpoint_warm_start",
+          "sha256": {
+            "setter": "effed08fd38e4449cc79c3bc52d2c73511d390aec56287050f59860f2d743499",
+            "meta": "e9c5e570cd2f372e7760c86b3caaf33439bbea1f1c26cb7b2b53bfda7d3bfa4a"
+          },
+          "v3_lr": 0.001,
+          "v3_epoch": 3,
+          "load_basis_error": 0.0,
+          "optimizer_state": "fresh AdamW moments (V3 checkpoints hold no optimizer state)"
+        },
+        "norms": {
+          "head0": 13.003973007202148,
+          "head1": 10.28147029876709,
+          "bias0": 93.01345825195312,
+          "bias1": 70.50839233398438,
+          "basis_raw": 10.45723819732666
+        },
+        "epoch": 2,
+        "lr": 0.001,
+        "steps": 1440,
+        "slots": 5760,
+        "condition": "FREE_COMPLETE_SINGLE",
+        "coverage": "complete",
+        "warm_start": {
+          "kind": "v3_selected_checkpoint_warm_start",
+          "sha256": {
+            "setter": "effed08fd38e4449cc79c3bc52d2c73511d390aec56287050f59860f2d743499",
+            "meta": "e9c5e570cd2f372e7760c86b3caaf33439bbea1f1c26cb7b2b53bfda7d3bfa4a"
+          },
+          "v3_lr": 0.001,
+          "v3_epoch": 3,
+          "load_basis_error": 0.0,
+          "optimizer_state": "fresh AdamW moments (V3 checkpoints hold no optimizer state)"
+        }
+      },
+      "original_metadata_sha256": "83539097257c4967791f3f96cb45463903981a66010f6774cd982bb026faf69e"
+    },
+    {
+      "selection_identity": "gemma/arms/FREE_COMPLETE_SINGLE/s1/epoch1/setter.npz",
+      "path": "reproducibility/relational_editing/v4/weights/dc1c140f305243ad0036c5fe85023572f051b133b427ab3959be9444e752a64c.npz",
+      "sha256": "dc1c140f305243ad0036c5fe85023572f051b133b427ab3959be9444e752a64c",
+      "bytes": 1392786,
+      "metadata": {
+        "schema": "RSO3_SETTER_V1",
+        "actor": "gemma",
+        "arm": "FREE_OVERWRITE",
+        "kind": "free",
+        "site": 15,
+        "seed": 1,
+        "rank": 16,
+        "cap_ref": 103.18592071533203,
+        "files": {
+          "setter": "dc1c140f305243ad0036c5fe85023572f051b133b427ab3959be9444e752a64c"
+        },
+        "init": {
+          "kind": "v3_selected_checkpoint_warm_start",
+          "sha256": {
+            "setter": "6ddd24fb2b949206ef99e01d35fe6e540ce1d15a4b36f6fe05f8b60461208553",
+            "meta": "a3973e4ede6e87fc3a4c621471e78d190ae16bbeffa82640bb108a33ef951d77"
+          },
+          "v3_lr": 0.001,
+          "v3_epoch": 3,
+          "load_basis_error": 0.0,
+          "optimizer_state": "fresh AdamW moments (V3 checkpoints hold no optimizer state)"
+        },
+        "norms": {
+          "head0": 11.93486499786377,
+          "head1": 7.512486934661865,
+          "bias0": 104.8922348022461,
+          "bias1": 126.2379379272461,
+          "basis_raw": 9.815208435058594
+        },
+        "epoch": 1,
+        "lr": 0.001,
+        "steps": 720,
+        "slots": 2880,
+        "condition": "FREE_COMPLETE_SINGLE",
+        "coverage": "complete",
+        "warm_start": {
+          "kind": "v3_selected_checkpoint_warm_start",
+          "sha256": {
+            "setter": "6ddd24fb2b949206ef99e01d35fe6e540ce1d15a4b36f6fe05f8b60461208553",
+            "meta": "a3973e4ede6e87fc3a4c621471e78d190ae16bbeffa82640bb108a33ef951d77"
+          },
+          "v3_lr": 0.001,
+          "v3_epoch": 3,
+          "load_basis_error": 0.0,
+          "optimizer_state": "fresh AdamW moments (V3 checkpoints hold no optimizer state)"
+        }
+      },
+      "original_metadata_sha256": "47b59df96bfac0ed4bcbc4863d228de88173bf25326a15651321cef3bb84962f"
+    },
+    {
+      "selection_identity": "gemma/arms/FREE_SPARSE_CONTINUE/s0/epoch0/setter.npz",
+      "path": "reproducibility/relational_editing/v3/weights/effed08fd38e4449cc79c3bc52d2c73511d390aec56287050f59860f2d743499.npz",
+      "sha256": "effed08fd38e4449cc79c3bc52d2c73511d390aec56287050f59860f2d743499",
+      "bytes": 1392786,
+      "metadata": {
+        "schema": "RSO3_SETTER_V1",
+        "actor": "gemma",
+        "arm": "FREE_OVERWRITE",
+        "kind": "free",
+        "site": 15,
+        "seed": 0,
+        "rank": 16,
+        "cap_ref": 103.18592071533203,
+        "files": {
+          "setter": "effed08fd38e4449cc79c3bc52d2c73511d390aec56287050f59860f2d743499"
+        },
+        "init": {
+          "kind": "v3_selected_checkpoint_warm_start",
+          "sha256": {
+            "setter": "effed08fd38e4449cc79c3bc52d2c73511d390aec56287050f59860f2d743499",
+            "meta": "e9c5e570cd2f372e7760c86b3caaf33439bbea1f1c26cb7b2b53bfda7d3bfa4a"
+          },
+          "v3_lr": 0.001,
+          "v3_epoch": 3,
+          "load_basis_error": 0.0,
+          "optimizer_state": "fresh AdamW moments (V3 checkpoints hold no optimizer state)"
+        },
+        "norms": {
+          "head0": 11.952035903930664,
+          "head1": 9.719589233398438,
+          "bias0": 93.005859375,
+          "bias1": 70.51882934570312,
+          "basis_raw": 7.5689592361450195
+        },
+        "epoch": 0,
+        "lr": 0.001,
+        "steps": 0,
+        "slots": 0,
+        "condition": "FREE_SPARSE_CONTINUE",
+        "coverage": "sparse",
+        "warm_start": {
+          "kind": "v3_selected_checkpoint_warm_start",
+          "sha256": {
+            "setter": "effed08fd38e4449cc79c3bc52d2c73511d390aec56287050f59860f2d743499",
+            "meta": "e9c5e570cd2f372e7760c86b3caaf33439bbea1f1c26cb7b2b53bfda7d3bfa4a"
+          },
+          "v3_lr": 0.001,
+          "v3_epoch": 3,
+          "load_basis_error": 0.0,
+          "optimizer_state": "fresh AdamW moments (V3 checkpoints hold no optimizer state)"
+        }
+      },
+      "original_metadata_sha256": "1c806dc38937fdf420795a147e4f1d3428f7b871d3878f7033c0a358a7a2ea30"
+    },
+    {
+      "selection_identity": "gemma/arms/FREE_SPARSE_CONTINUE/s1/epoch1/setter.npz",
+      "path": "reproducibility/relational_editing/v4/weights/05a0f8619a9792803338fafdb6bf9b04c953b778924917ca1da5929057ce3431.npz",
+      "sha256": "05a0f8619a9792803338fafdb6bf9b04c953b778924917ca1da5929057ce3431",
+      "bytes": 1392786,
+      "metadata": {
+        "schema": "RSO3_SETTER_V1",
+        "actor": "gemma",
+        "arm": "FREE_OVERWRITE",
+        "kind": "free",
+        "site": 15,
+        "seed": 1,
+        "rank": 16,
+        "cap_ref": 103.18592071533203,
+        "files": {
+          "setter": "05a0f8619a9792803338fafdb6bf9b04c953b778924917ca1da5929057ce3431"
+        },
+        "init": {
+          "kind": "v3_selected_checkpoint_warm_start",
+          "sha256": {
+            "setter": "6ddd24fb2b949206ef99e01d35fe6e540ce1d15a4b36f6fe05f8b60461208553",
+            "meta": "a3973e4ede6e87fc3a4c621471e78d190ae16bbeffa82640bb108a33ef951d77"
+          },
+          "v3_lr": 0.001,
+          "v3_epoch": 3,
+          "load_basis_error": 0.0,
+          "optimizer_state": "fresh AdamW moments (V3 checkpoints hold no optimizer state)"
+        },
+        "norms": {
+          "head0": 11.934991836547852,
+          "head1": 7.382723808288574,
+          "bias0": 104.89785766601562,
+          "bias1": 126.23519134521484,
+          "basis_raw": 9.603827476501465
+        },
+        "epoch": 1,
+        "lr": 0.001,
+        "steps": 720,
+        "slots": 2880,
+        "condition": "FREE_SPARSE_CONTINUE",
+        "coverage": "sparse",
+        "warm_start": {
+          "kind": "v3_selected_checkpoint_warm_start",
+          "sha256": {
+            "setter": "6ddd24fb2b949206ef99e01d35fe6e540ce1d15a4b36f6fe05f8b60461208553",
+            "meta": "a3973e4ede6e87fc3a4c621471e78d190ae16bbeffa82640bb108a33ef951d77"
+          },
+          "v3_lr": 0.001,
+          "v3_epoch": 3,
+          "load_basis_error": 0.0,
+          "optimizer_state": "fresh AdamW moments (V3 checkpoints hold no optimizer state)"
+        }
+      },
+      "original_metadata_sha256": "00e42e71fbb8717580a87b5ce304894eb0ea58cd298e21f63673a60b928924c4"
+    },
+    {
+      "selection_identity": "gemma/arms/INV_COMPLETE_SINGLE/s0/epoch1/setter.npz",
+      "path": "reproducibility/relational_editing/v4/weights/0d701c784cd5f0bef19665f4b2e6bf1a9f0a2a003e9f6e263e3cca5ec8228fa7.npz",
+      "sha256": "0d701c784cd5f0bef19665f4b2e6bf1a9f0a2a003e9f6e263e3cca5ec8228fa7",
+      "bytes": 1392806,
+      "metadata": {
+        "schema": "RSO3_SETTER_V1",
+        "actor": "gemma",
+        "arm": "INVARIANT_SET",
+        "kind": "invariant",
+        "site": 15,
+        "seed": 0,
+        "rank": 16,
+        "cap_ref": 103.18592071533203,
+        "files": {
+          "setter": "0d701c784cd5f0bef19665f4b2e6bf1a9f0a2a003e9f6e263e3cca5ec8228fa7"
+        },
+        "init": {
+          "kind": "v3_selected_checkpoint_warm_start",
+          "sha256": {
+            "setter": "00fedcd6b69def308e4b62934aaaabf17378cbe54fa5bf657834137f60d40f39",
+            "meta": "c4bcb8abb656de58d643256efdccdfc5b24e3738c3858190b30be4ad87f66152"
+          },
+          "v3_lr": 0.0003,
+          "v3_epoch": 2,
+          "load_basis_error": 0.0,
+          "optimizer_state": "fresh AdamW moments (V3 checkpoints hold no optimizer state)"
+        },
+        "norms": {
+          "head0": 11.021747589111328,
+          "head1": 8.341436386108398,
+          "bias0": 93.50843048095703,
+          "bias1": 70.7272720336914,
+          "basis_raw": 4.710043430328369
+        },
+        "epoch": 1,
+        "lr": 0.0003,
+        "steps": 720,
+        "slots": 2880,
+        "condition": "INV_COMPLETE_SINGLE",
+        "coverage": "complete",
+        "warm_start": {
+          "kind": "v3_selected_checkpoint_warm_start",
+          "sha256": {
+            "setter": "00fedcd6b69def308e4b62934aaaabf17378cbe54fa5bf657834137f60d40f39",
+            "meta": "c4bcb8abb656de58d643256efdccdfc5b24e3738c3858190b30be4ad87f66152"
+          },
+          "v3_lr": 0.0003,
+          "v3_epoch": 2,
+          "load_basis_error": 0.0,
+          "optimizer_state": "fresh AdamW moments (V3 checkpoints hold no optimizer state)"
+        }
+      },
+      "original_metadata_sha256": "20f3d2b136860e219a09b3f85fe1542381d794bc5342904e7241896e0a89c6d9"
+    },
+    {
+      "selection_identity": "gemma/arms/INV_COMPLETE_SINGLE/s1/epoch1/setter.npz",
+      "path": "reproducibility/relational_editing/v4/weights/ae0f402258c7f579525199c3fda05d37c1afb994fd9381c4f4567b62d2102b2c.npz",
+      "sha256": "ae0f402258c7f579525199c3fda05d37c1afb994fd9381c4f4567b62d2102b2c",
+      "bytes": 1392806,
+      "metadata": {
+        "schema": "RSO3_SETTER_V1",
+        "actor": "gemma",
+        "arm": "INVARIANT_SET",
+        "kind": "invariant",
+        "site": 15,
+        "seed": 1,
+        "rank": 16,
+        "cap_ref": 103.18592071533203,
+        "files": {
+          "setter": "ae0f402258c7f579525199c3fda05d37c1afb994fd9381c4f4567b62d2102b2c"
+        },
+        "init": {
+          "kind": "v3_selected_checkpoint_warm_start",
+          "sha256": {
+            "setter": "a2952859b81e06e8cc4b312a07d6c82df7c4f53bc8c109bd89768b33c73c98f4",
+            "meta": "0b828d05be5987718c9494f8ed26c70df85a6b7b97b7b097ca664c539c07b111"
+          },
+          "v3_lr": 0.0003,
+          "v3_epoch": 2,
+          "load_basis_error": 0.0,
+          "optimizer_state": "fresh AdamW moments (V3 checkpoints hold no optimizer state)"
+        },
+        "norms": {
+          "head0": 9.551492691040039,
+          "head1": 4.349795818328857,
+          "bias0": 104.87377166748047,
+          "bias1": 126.62004852294922,
+          "basis_raw": 4.787235260009766
+        },
+        "epoch": 1,
+        "lr": 0.0003,
+        "steps": 720,
+        "slots": 2880,
+        "condition": "INV_COMPLETE_SINGLE",
+        "coverage": "complete",
+        "warm_start": {
+          "kind": "v3_selected_checkpoint_warm_start",
+          "sha256": {
+            "setter": "a2952859b81e06e8cc4b312a07d6c82df7c4f53bc8c109bd89768b33c73c98f4",
+            "meta": "0b828d05be5987718c9494f8ed26c70df85a6b7b97b7b097ca664c539c07b111"
+          },
+          "v3_lr": 0.0003,
+          "v3_epoch": 2,
+          "load_basis_error": 0.0,
+          "optimizer_state": "fresh AdamW moments (V3 checkpoints hold no optimizer state)"
+        }
+      },
+      "original_metadata_sha256": "61f139cb5d0f961a1de811d38ec1fe03b6be34d27d978ccd9cf77ef786514366"
+    },
+    {
+      "selection_identity": "gemma/arms/INV_SPARSE_CONTINUE/s0/epoch0/setter.npz",
+      "path": "reproducibility/relational_editing/v3/weights/00fedcd6b69def308e4b62934aaaabf17378cbe54fa5bf657834137f60d40f39.npz",
+      "sha256": "00fedcd6b69def308e4b62934aaaabf17378cbe54fa5bf657834137f60d40f39",
+      "bytes": 1392806,
+      "metadata": {
+        "schema": "RSO3_SETTER_V1",
+        "actor": "gemma",
+        "arm": "INVARIANT_SET",
+        "kind": "invariant",
+        "site": 15,
+        "seed": 0,
+        "rank": 16,
+        "cap_ref": 103.18592071533203,
+        "files": {
+          "setter": "00fedcd6b69def308e4b62934aaaabf17378cbe54fa5bf657834137f60d40f39"
+        },
+        "init": {
+          "kind": "v3_selected_checkpoint_warm_start",
+          "sha256": {
+            "setter": "00fedcd6b69def308e4b62934aaaabf17378cbe54fa5bf657834137f60d40f39",
+            "meta": "c4bcb8abb656de58d643256efdccdfc5b24e3738c3858190b30be4ad87f66152"
+          },
+          "v3_lr": 0.0003,
+          "v3_epoch": 2,
+          "load_basis_error": 0.0,
+          "optimizer_state": "fresh AdamW moments (V3 checkpoints hold no optimizer state)"
+        },
+        "norms": {
+          "head0": 10.954233169555664,
+          "head1": 8.234759330749512,
+          "bias0": 93.51181030273438,
+          "bias1": 70.73420715332031,
+          "basis_raw": 4.368470668792725
+        },
+        "epoch": 0,
+        "lr": 0.0003,
+        "steps": 0,
+        "slots": 0,
+        "condition": "INV_SPARSE_CONTINUE",
+        "coverage": "sparse",
+        "warm_start": {
+          "kind": "v3_selected_checkpoint_warm_start",
+          "sha256": {
+            "setter": "00fedcd6b69def308e4b62934aaaabf17378cbe54fa5bf657834137f60d40f39",
+            "meta": "c4bcb8abb656de58d643256efdccdfc5b24e3738c3858190b30be4ad87f66152"
+          },
+          "v3_lr": 0.0003,
+          "v3_epoch": 2,
+          "load_basis_error": 0.0,
+          "optimizer_state": "fresh AdamW moments (V3 checkpoints hold no optimizer state)"
+        }
+      },
+      "original_metadata_sha256": "e3b169f3e69337574cc40a2b477f66ee2f118757ef0c63dd79e5fa5a56d9cb9d"
+    },
+    {
+      "selection_identity": "gemma/arms/INV_SPARSE_CONTINUE/s1/epoch2/setter.npz",
+      "path": "reproducibility/relational_editing/v4/weights/7838fbdf2adc8e2c9306dab13f4887ef839144a3dcd90a878f00f9bbe963527e.npz",
+      "sha256": "7838fbdf2adc8e2c9306dab13f4887ef839144a3dcd90a878f00f9bbe963527e",
+      "bytes": 1392806,
+      "metadata": {
+        "schema": "RSO3_SETTER_V1",
+        "actor": "gemma",
+        "arm": "INVARIANT_SET",
+        "kind": "invariant",
+        "site": 15,
+        "seed": 1,
+        "rank": 16,
+        "cap_ref": 103.18592071533203,
+        "files": {
+          "setter": "7838fbdf2adc8e2c9306dab13f4887ef839144a3dcd90a878f00f9bbe963527e"
+        },
+        "init": {
+          "kind": "v3_selected_checkpoint_warm_start",
+          "sha256": {
+            "setter": "a2952859b81e06e8cc4b312a07d6c82df7c4f53bc8c109bd89768b33c73c98f4",
+            "meta": "0b828d05be5987718c9494f8ed26c70df85a6b7b97b7b097ca664c539c07b111"
+          },
+          "v3_lr": 0.0003,
+          "v3_epoch": 2,
+          "load_basis_error": 0.0,
+          "optimizer_state": "fresh AdamW moments (V3 checkpoints hold no optimizer state)"
+        },
+        "norms": {
+          "head0": 9.61914348602295,
+          "head1": 4.60113000869751,
+          "bias0": 104.86439514160156,
+          "bias1": 126.61052703857422,
+          "basis_raw": 4.914795398712158
+        },
+        "epoch": 2,
+        "lr": 0.0003,
+        "steps": 1440,
+        "slots": 5760,
+        "condition": "INV_SPARSE_CONTINUE",
+        "coverage": "sparse",
+        "warm_start": {
+          "kind": "v3_selected_checkpoint_warm_start",
+          "sha256": {
+            "setter": "a2952859b81e06e8cc4b312a07d6c82df7c4f53bc8c109bd89768b33c73c98f4",
+            "meta": "0b828d05be5987718c9494f8ed26c70df85a6b7b97b7b097ca664c539c07b111"
+          },
+          "v3_lr": 0.0003,
+          "v3_epoch": 2,
+          "load_basis_error": 0.0,
+          "optimizer_state": "fresh AdamW moments (V3 checkpoints hold no optimizer state)"
+        }
+      },
+      "original_metadata_sha256": "f2126240138894e2f613052d5eea53d744278c75cedf0447e7d2e6f58bd1cf39"
+    },
+    {
+      "selection_identity": "qwen/arms/FREE_COMPLETE_SINGLE/s0/epoch2/setter.npz",
+      "path": "reproducibility/relational_editing/v4/weights/c62438f655e0a6cf2f77230bcf95a42bac6740dcba5b6eb5699ffdc316cf540e.npz",
+      "sha256": "c62438f655e0a6cf2f77230bcf95a42bac6740dcba5b6eb5699ffdc316cf540e",
+      "bytes": 1591442,
+      "metadata": {
+        "schema": "RSO3_SETTER_V1",
+        "actor": "qwen",
+        "arm": "FREE_OVERWRITE",
+        "kind": "free",
+        "site": 13,
+        "seed": 0,
+        "rank": 16,
+        "cap_ref": 28.22532844543457,
+        "files": {
+          "setter": "c62438f655e0a6cf2f77230bcf95a42bac6740dcba5b6eb5699ffdc316cf540e"
+        },
+        "init": {
+          "kind": "v3_selected_checkpoint_warm_start",
+          "sha256": {
+            "setter": "9b4d57887adf59fefafd73384c3aa401a8e475e1d990db82cb861431e8a8c988",
+            "meta": "4d9fee9f4dabc20a3813aca13bcd7cf81663c826b6de7e711d5028d3f7130947"
+          },
+          "v3_lr": 0.001,
+          "v3_epoch": 2,
+          "load_basis_error": 0.0,
+          "optimizer_state": "fresh AdamW moments (V3 checkpoints hold no optimizer state)"
+        },
+        "norms": {
+          "head0": 8.847833633422852,
+          "head1": 9.00261402130127,
+          "bias0": 0.038159679621458054,
+          "bias1": 0.04866752773523331,
+          "basis_raw": 10.720104217529297
+        },
+        "epoch": 2,
+        "lr": 0.001,
+        "steps": 1440,
+        "slots": 5760,
+        "condition": "FREE_COMPLETE_SINGLE",
+        "coverage": "complete",
+        "warm_start": {
+          "kind": "v3_selected_checkpoint_warm_start",
+          "sha256": {
+            "setter": "9b4d57887adf59fefafd73384c3aa401a8e475e1d990db82cb861431e8a8c988",
+            "meta": "4d9fee9f4dabc20a3813aca13bcd7cf81663c826b6de7e711d5028d3f7130947"
+          },
+          "v3_lr": 0.001,
+          "v3_epoch": 2,
+          "load_basis_error": 0.0,
+          "optimizer_state": "fresh AdamW moments (V3 checkpoints hold no optimizer state)"
+        }
+      },
+      "original_metadata_sha256": "7223abc02a3263156b7a7093dba6bef93a041002aa1f137b647f9657dae9f8b1"
+    },
+    {
+      "selection_identity": "qwen/arms/FREE_COMPLETE_SINGLE/s1/epoch1/setter.npz",
+      "path": "reproducibility/relational_editing/v4/weights/01fa4bb992996ddd32c424f57139aaa2667e641ef5d747a5460cff1d36a648d8.npz",
+      "sha256": "01fa4bb992996ddd32c424f57139aaa2667e641ef5d747a5460cff1d36a648d8",
+      "bytes": 1591442,
+      "metadata": {
+        "schema": "RSO3_SETTER_V1",
+        "actor": "qwen",
+        "arm": "FREE_OVERWRITE",
+        "kind": "free",
+        "site": 13,
+        "seed": 1,
+        "rank": 16,
+        "cap_ref": 28.22532844543457,
+        "files": {
+          "setter": "01fa4bb992996ddd32c424f57139aaa2667e641ef5d747a5460cff1d36a648d8"
+        },
+        "init": {
+          "kind": "v3_selected_checkpoint_warm_start",
+          "sha256": {
+            "setter": "138798d02a8e53581e5e8567dc0dc5d9a7f766e1f943e74e3480667cd9f25ed1",
+            "meta": "ebcd85e3b6918b2dde25ae9c15a512fbce36903ef17349ccea3558347218a036"
+          },
+          "v3_lr": 0.001,
+          "v3_epoch": 2,
+          "load_basis_error": 0.0,
+          "optimizer_state": "fresh AdamW moments (V3 checkpoints hold no optimizer state)"
+        },
+        "norms": {
+          "head0": 9.022719383239746,
+          "head1": 8.077108383178711,
+          "bias0": 0.045156821608543396,
+          "bias1": 0.048424191772937775,
+          "basis_raw": 9.567273139953613
+        },
+        "epoch": 1,
+        "lr": 0.001,
+        "steps": 720,
+        "slots": 2880,
+        "condition": "FREE_COMPLETE_SINGLE",
+        "coverage": "complete",
+        "warm_start": {
+          "kind": "v3_selected_checkpoint_warm_start",
+          "sha256": {
+            "setter": "138798d02a8e53581e5e8567dc0dc5d9a7f766e1f943e74e3480667cd9f25ed1",
+            "meta": "ebcd85e3b6918b2dde25ae9c15a512fbce36903ef17349ccea3558347218a036"
+          },
+          "v3_lr": 0.001,
+          "v3_epoch": 2,
+          "load_basis_error": 0.0,
+          "optimizer_state": "fresh AdamW moments (V3 checkpoints hold no optimizer state)"
+        }
+      },
+      "original_metadata_sha256": "d1a441915d91a5435291ccefd8a5ccd6cb57e8582e4bb030f98ee670bd4456b0"
+    },
+    {
+      "selection_identity": "qwen/arms/FREE_SPARSE_CONTINUE/s0/epoch1/setter.npz",
+      "path": "reproducibility/relational_editing/v4/weights/48c8bcbf435b05af71ec8cf7cc3a4a566056afcfb3ca949f58cade9dc7ebdce4.npz",
+      "sha256": "48c8bcbf435b05af71ec8cf7cc3a4a566056afcfb3ca949f58cade9dc7ebdce4",
+      "bytes": 1591442,
+      "metadata": {
+        "schema": "RSO3_SETTER_V1",
+        "actor": "qwen",
+        "arm": "FREE_OVERWRITE",
+        "kind": "free",
+        "site": 13,
+        "seed": 0,
+        "rank": 16,
+        "cap_ref": 28.22532844543457,
+        "files": {
+          "setter": "48c8bcbf435b05af71ec8cf7cc3a4a566056afcfb3ca949f58cade9dc7ebdce4"
+        },
+        "init": {
+          "kind": "v3_selected_checkpoint_warm_start",
+          "sha256": {
+            "setter": "9b4d57887adf59fefafd73384c3aa401a8e475e1d990db82cb861431e8a8c988",
+            "meta": "4d9fee9f4dabc20a3813aca13bcd7cf81663c826b6de7e711d5028d3f7130947"
+          },
+          "v3_lr": 0.001,
+          "v3_epoch": 2,
+          "load_basis_error": 0.0,
+          "optimizer_state": "fresh AdamW moments (V3 checkpoints hold no optimizer state)"
+        },
+        "norms": {
+          "head0": 8.492446899414062,
+          "head1": 8.337089538574219,
+          "bias0": 0.03418060764670372,
+          "bias1": 0.056785423308610916,
+          "basis_raw": 9.549810409545898
+        },
+        "epoch": 1,
+        "lr": 0.001,
+        "steps": 720,
+        "slots": 2880,
+        "condition": "FREE_SPARSE_CONTINUE",
+        "coverage": "sparse",
+        "warm_start": {
+          "kind": "v3_selected_checkpoint_warm_start",
+          "sha256": {
+            "setter": "9b4d57887adf59fefafd73384c3aa401a8e475e1d990db82cb861431e8a8c988",
+            "meta": "4d9fee9f4dabc20a3813aca13bcd7cf81663c826b6de7e711d5028d3f7130947"
+          },
+          "v3_lr": 0.001,
+          "v3_epoch": 2,
+          "load_basis_error": 0.0,
+          "optimizer_state": "fresh AdamW moments (V3 checkpoints hold no optimizer state)"
+        }
+      },
+      "original_metadata_sha256": "c8d8b63fbd71620e996f877960790de5e616844a017f7824fdf31ccb15b5f3e3"
+    },
+    {
+      "selection_identity": "qwen/arms/FREE_SPARSE_CONTINUE/s1/epoch1/setter.npz",
+      "path": "reproducibility/relational_editing/v4/weights/54cfcb5225d87a8054e67efda0e226da16375b820b12a3cb8e6b306d7b8710d4.npz",
+      "sha256": "54cfcb5225d87a8054e67efda0e226da16375b820b12a3cb8e6b306d7b8710d4",
+      "bytes": 1591442,
+      "metadata": {
+        "schema": "RSO3_SETTER_V1",
+        "actor": "qwen",
+        "arm": "FREE_OVERWRITE",
+        "kind": "free",
+        "site": 13,
+        "seed": 1,
+        "rank": 16,
+        "cap_ref": 28.22532844543457,
+        "files": {
+          "setter": "54cfcb5225d87a8054e67efda0e226da16375b820b12a3cb8e6b306d7b8710d4"
+        },
+        "init": {
+          "kind": "v3_selected_checkpoint_warm_start",
+          "sha256": {
+            "setter": "138798d02a8e53581e5e8567dc0dc5d9a7f766e1f943e74e3480667cd9f25ed1",
+            "meta": "ebcd85e3b6918b2dde25ae9c15a512fbce36903ef17349ccea3558347218a036"
+          },
+          "v3_lr": 0.001,
+          "v3_epoch": 2,
+          "load_basis_error": 0.0,
+          "optimizer_state": "fresh AdamW moments (V3 checkpoints hold no optimizer state)"
+        },
+        "norms": {
+          "head0": 8.834272384643555,
+          "head1": 8.14117431640625,
+          "bias0": 0.029079852625727654,
+          "bias1": 0.049936164170503616,
+          "basis_raw": 9.611888885498047
+        },
+        "epoch": 1,
+        "lr": 0.001,
+        "steps": 720,
+        "slots": 2880,
+        "condition": "FREE_SPARSE_CONTINUE",
+        "coverage": "sparse",
+        "warm_start": {
+          "kind": "v3_selected_checkpoint_warm_start",
+          "sha256": {
+            "setter": "138798d02a8e53581e5e8567dc0dc5d9a7f766e1f943e74e3480667cd9f25ed1",
+            "meta": "ebcd85e3b6918b2dde25ae9c15a512fbce36903ef17349ccea3558347218a036"
+          },
+          "v3_lr": 0.001,
+          "v3_epoch": 2,
+          "load_basis_error": 0.0,
+          "optimizer_state": "fresh AdamW moments (V3 checkpoints hold no optimizer state)"
+        }
+      },
+      "original_metadata_sha256": "4b6494d7acc4eae4fd22fc8d5bc1cde257f18d702d72f05c34701a91b891d472"
+    },
+    {
+      "selection_identity": "qwen/arms/INV_COMPLETE_SINGLE/s0/epoch2/setter.npz",
+      "path": "reproducibility/relational_editing/v4/weights/443714638009555f3c09af98fa16f3b8c2e9b95b7aa7563ce3b23eed629283c3.npz",
+      "sha256": "443714638009555f3c09af98fa16f3b8c2e9b95b7aa7563ce3b23eed629283c3",
+      "bytes": 1591462,
+      "metadata": {
+        "schema": "RSO3_SETTER_V1",
+        "actor": "qwen",
+        "arm": "INVARIANT_SET",
+        "kind": "invariant",
+        "site": 13,
+        "seed": 0,
+        "rank": 16,
+        "cap_ref": 28.22532844543457,
+        "files": {
+          "setter": "443714638009555f3c09af98fa16f3b8c2e9b95b7aa7563ce3b23eed629283c3"
+        },
+        "init": {
+          "kind": "v3_selected_checkpoint_warm_start",
+          "sha256": {
+            "setter": "b781ecec3c45c0c4dca9025f455e5007c906b8efda9210767ba65f62a59203db",
+            "meta": "91f5c56c2bd5c7c3ab5421e8df571bbce4581d0fc0dccc56b76defa3734fbae0"
+          },
+          "v3_lr": 0.0003,
+          "v3_epoch": 3,
+          "load_basis_error": 0.0,
+          "optimizer_state": "fresh AdamW moments (V3 checkpoints hold no optimizer state)"
+        },
+        "norms": {
+          "head0": 3.4445626735687256,
+          "head1": 3.0879907608032227,
+          "bias0": 0.02657570317387581,
+          "bias1": 0.023490259423851967,
+          "basis_raw": 5.130105018615723
+        },
+        "epoch": 2,
+        "lr": 0.0003,
+        "steps": 1440,
+        "slots": 5760,
+        "condition": "INV_COMPLETE_SINGLE",
+        "coverage": "complete",
+        "warm_start": {
+          "kind": "v3_selected_checkpoint_warm_start",
+          "sha256": {
+            "setter": "b781ecec3c45c0c4dca9025f455e5007c906b8efda9210767ba65f62a59203db",
+            "meta": "91f5c56c2bd5c7c3ab5421e8df571bbce4581d0fc0dccc56b76defa3734fbae0"
+          },
+          "v3_lr": 0.0003,
+          "v3_epoch": 3,
+          "load_basis_error": 0.0,
+          "optimizer_state": "fresh AdamW moments (V3 checkpoints hold no optimizer state)"
+        }
+      },
+      "original_metadata_sha256": "a0da28a65a621eb292f9a9c3f96ab8d8d2b8f577fae57ed329c4a741b7515608"
+    },
+    {
+      "selection_identity": "qwen/arms/INV_COMPLETE_SINGLE/s1/epoch2/setter.npz",
+      "path": "reproducibility/relational_editing/v4/weights/d3e83728e022dc7b5006df25ebe5c8ae8ea01c1a3fe423daea17f3e155c0d1c9.npz",
+      "sha256": "d3e83728e022dc7b5006df25ebe5c8ae8ea01c1a3fe423daea17f3e155c0d1c9",
+      "bytes": 1591462,
+      "metadata": {
+        "schema": "RSO3_SETTER_V1",
+        "actor": "qwen",
+        "arm": "INVARIANT_SET",
+        "kind": "invariant",
+        "site": 13,
+        "seed": 1,
+        "rank": 16,
+        "cap_ref": 28.22532844543457,
+        "files": {
+          "setter": "d3e83728e022dc7b5006df25ebe5c8ae8ea01c1a3fe423daea17f3e155c0d1c9"
+        },
+        "init": {
+          "kind": "v3_selected_checkpoint_warm_start",
+          "sha256": {
+            "setter": "17eb1774306cff1d67494be981b485b3d8a1de903efbf2f2937334eb75644642",
+            "meta": "5b6a7879f00c1919a35df940f0b63bd05abe98d59c6d155cf4cd1d1031f44ebb"
+          },
+          "v3_lr": 0.0003,
+          "v3_epoch": 3,
+          "load_basis_error": 0.0,
+          "optimizer_state": "fresh AdamW moments (V3 checkpoints hold no optimizer state)"
+        },
+        "norms": {
+          "head0": 3.362239360809326,
+          "head1": 2.975229263305664,
+          "bias0": 0.03152787685394287,
+          "bias1": 0.022535881027579308,
+          "basis_raw": 5.064391136169434
+        },
+        "epoch": 2,
+        "lr": 0.0003,
+        "steps": 1440,
+        "slots": 5760,
+        "condition": "INV_COMPLETE_SINGLE",
+        "coverage": "complete",
+        "warm_start": {
+          "kind": "v3_selected_checkpoint_warm_start",
+          "sha256": {
+            "setter": "17eb1774306cff1d67494be981b485b3d8a1de903efbf2f2937334eb75644642",
+            "meta": "5b6a7879f00c1919a35df940f0b63bd05abe98d59c6d155cf4cd1d1031f44ebb"
+          },
+          "v3_lr": 0.0003,
+          "v3_epoch": 3,
+          "load_basis_error": 0.0,
+          "optimizer_state": "fresh AdamW moments (V3 checkpoints hold no optimizer state)"
+        }
+      },
+      "original_metadata_sha256": "d3dd8ce151de0ea5580ade9fe34e4018deb89d5a13af5f602a6e371c23fd6588"
+    },
+    {
+      "selection_identity": "qwen/arms/INV_SPARSE_CONTINUE/s0/epoch0/setter.npz",
+      "path": "reproducibility/relational_editing/v3/weights/b781ecec3c45c0c4dca9025f455e5007c906b8efda9210767ba65f62a59203db.npz",
+      "sha256": "b781ecec3c45c0c4dca9025f455e5007c906b8efda9210767ba65f62a59203db",
+      "bytes": 1591462,
+      "metadata": {
+        "schema": "RSO3_SETTER_V1",
+        "actor": "qwen",
+        "arm": "INVARIANT_SET",
+        "kind": "invariant",
+        "site": 13,
+        "seed": 0,
+        "rank": 16,
+        "cap_ref": 28.22532844543457,
+        "files": {
+          "setter": "b781ecec3c45c0c4dca9025f455e5007c906b8efda9210767ba65f62a59203db"
+        },
+        "init": {
+          "kind": "v3_selected_checkpoint_warm_start",
+          "sha256": {
+            "setter": "b781ecec3c45c0c4dca9025f455e5007c906b8efda9210767ba65f62a59203db",
+            "meta": "91f5c56c2bd5c7c3ab5421e8df571bbce4581d0fc0dccc56b76defa3734fbae0"
+          },
+          "v3_lr": 0.0003,
+          "v3_epoch": 3,
+          "load_basis_error": 0.0,
+          "optimizer_state": "fresh AdamW moments (V3 checkpoints hold no optimizer state)"
+        },
+        "norms": {
+          "head0": 2.4559645652770996,
+          "head1": 2.1550040245056152,
+          "bias0": 0.025031710043549538,
+          "bias1": 0.02234133891761303,
+          "basis_raw": 4.48384428024292
+        },
+        "epoch": 0,
+        "lr": 0.0003,
+        "steps": 0,
+        "slots": 0,
+        "condition": "INV_SPARSE_CONTINUE",
+        "coverage": "sparse",
+        "warm_start": {
+          "kind": "v3_selected_checkpoint_warm_start",
+          "sha256": {
+            "setter": "b781ecec3c45c0c4dca9025f455e5007c906b8efda9210767ba65f62a59203db",
+            "meta": "91f5c56c2bd5c7c3ab5421e8df571bbce4581d0fc0dccc56b76defa3734fbae0"
+          },
+          "v3_lr": 0.0003,
+          "v3_epoch": 3,
+          "load_basis_error": 0.0,
+          "optimizer_state": "fresh AdamW moments (V3 checkpoints hold no optimizer state)"
+        }
+      },
+      "original_metadata_sha256": "e9bdcfa2df4d9e98be9ad49f3f7ff98bee97a680d60c8f2a3a6fb56cb6edfed1"
+    },
+    {
+      "selection_identity": "qwen/arms/INV_SPARSE_CONTINUE/s1/epoch0/setter.npz",
+      "path": "reproducibility/relational_editing/v3/weights/17eb1774306cff1d67494be981b485b3d8a1de903efbf2f2937334eb75644642.npz",
+      "sha256": "17eb1774306cff1d67494be981b485b3d8a1de903efbf2f2937334eb75644642",
+      "bytes": 1591462,
+      "metadata": {
+        "schema": "RSO3_SETTER_V1",
+        "actor": "qwen",
+        "arm": "INVARIANT_SET",
+        "kind": "invariant",
+        "site": 13,
+        "seed": 1,
+        "rank": 16,
+        "cap_ref": 28.22532844543457,
+        "files": {
+          "setter": "17eb1774306cff1d67494be981b485b3d8a1de903efbf2f2937334eb75644642"
+        },
+        "init": {
+          "kind": "v3_selected_checkpoint_warm_start",
+          "sha256": {
+            "setter": "17eb1774306cff1d67494be981b485b3d8a1de903efbf2f2937334eb75644642",
+            "meta": "5b6a7879f00c1919a35df940f0b63bd05abe98d59c6d155cf4cd1d1031f44ebb"
+          },
+          "v3_lr": 0.0003,
+          "v3_epoch": 3,
+          "load_basis_error": 0.0,
+          "optimizer_state": "fresh AdamW moments (V3 checkpoints hold no optimizer state)"
+        },
+        "norms": {
+          "head0": 2.4092025756835938,
+          "head1": 2.1759355068206787,
+          "bias0": 0.025283215567469597,
+          "bias1": 0.021355587989091873,
+          "basis_raw": 4.445756912231445
+        },
+        "epoch": 0,
+        "lr": 0.0003,
+        "steps": 0,
+        "slots": 0,
+        "condition": "INV_SPARSE_CONTINUE",
+        "coverage": "sparse",
+        "warm_start": {
+          "kind": "v3_selected_checkpoint_warm_start",
+          "sha256": {
+            "setter": "17eb1774306cff1d67494be981b485b3d8a1de903efbf2f2937334eb75644642",
+            "meta": "5b6a7879f00c1919a35df940f0b63bd05abe98d59c6d155cf4cd1d1031f44ebb"
+          },
+          "v3_lr": 0.0003,
+          "v3_epoch": 3,
+          "load_basis_error": 0.0,
+          "optimizer_state": "fresh AdamW moments (V3 checkpoints hold no optimizer state)"
+        }
+      },
+      "original_metadata_sha256": "b5c2d246aae3205f9014ff24898759fbe8ca51991e09139506989135165ef23b"
+    }
+  ]
+}

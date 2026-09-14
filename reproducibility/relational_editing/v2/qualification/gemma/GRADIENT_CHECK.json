@@ -1,0 +1,116 @@
+{
+  "at": "2026-09-10T19:29:45.863079+00:00",
+  "actor": "gemma",
+  "procedure": "T4",
+  "scenes": [
+    "FIT-SRS2-0086",
+    "FIT-SRS2-0075",
+    "FIT-SRS2-0091",
+    "FIT-SRS2-0089"
+  ],
+  "queries": 16,
+  "results": {
+    "SHARED_CLAUSE": {
+      "loss": 1.9169504726305604,
+      "grad_norms": {
+        "0.input_factor": 3.5528321266174316,
+        "0.output_factor": 10.352664947509766,
+        "0.bias": 0.019251005724072456,
+        "1.input_factor": 0.06599950045347214,
+        "1.output_factor": 0.45697662234306335,
+        "1.bias": 0.0003644191601779312
+      },
+      "q_block_grad": {
+        "0": 0.15130823850631714,
+        "1": 4.5003314880887046e-05
+      },
+      "used_values": [
+        0,
+        1
+      ],
+      "backbone_grad": false,
+      "finite": true,
+      "output_factor_grad_nonzero": true,
+      "q_block_grad_nonzero": null,
+      "max_score_move": 6.834274042630568,
+      "seconds": 3.6065860610005984
+    },
+    "SHARED_TAIL": {
+      "loss": 0.5705843158793868,
+      "grad_norms": {
+        "0.input_factor": 0.1602153480052948,
+        "0.output_factor": 0.6487375497817993,
+        "0.bias": 0.0008736042655073106,
+        "1.input_factor": 0.0025407092180103064,
+        "1.output_factor": 0.010550926439464092,
+        "1.bias": 1.4038810149941128e-05
+      },
+      "q_block_grad": {
+        "0": 0.7145557403564453,
+        "1": 4.359021477284841e-05
+      },
+      "used_values": [
+        0,
+        1
+      ],
+      "backbone_grad": false,
+      "finite": true,
+      "output_factor_grad_nonzero": true,
+      "q_block_grad_nonzero": null,
+      "max_score_move": 4.608189582824707,
+      "seconds": 2.89240140199945
+    },
+    "QUERY_CLAUSE": {
+      "loss": 1.916729211807251,
+      "grad_norms": {
+        "0.input_factor": 1.9459631443023682,
+        "0.output_factor": 10.250374794006348,
+        "0.bias": 0.019111663103103638,
+        "1.input_factor": 0.03248679265379906,
+        "1.output_factor": 0.4233570694923401,
+        "1.bias": 0.0003372666542418301
+      },
+      "q_block_grad": {
+        "0": 0.011478361673653126,
+        "1": 2.8811257379857125e-06
+      },
+      "used_values": [
+        0,
+        1
+      ],
+      "backbone_grad": false,
+      "finite": true,
+      "output_factor_grad_nonzero": true,
+      "q_block_grad_nonzero": true,
+      "max_score_move": 6.7141532057430595,
+      "seconds": 5.826318067999637
+    },
+    "QUERY_TAIL": {
+      "loss": 0.5705680849787313,
+      "grad_norms": {
+        "0.input_factor": 0.0873902216553688,
+        "0.output_factor": 0.6479787826538086,
+        "0.bias": 0.0008716048905625939,
+        "1.input_factor": 0.0013160656671971083,
+        "1.output_factor": 0.010348020121455193,
+        "1.bias": 1.3709137419937178e-05
+      },
+      "q_block_grad": {
+        "0": 0.05440332740545273,
+        "1": 1.699850486147625e-06
+      },
+      "used_values": [
+        0,
+        1
+      ],
+      "backbone_grad": false,
+      "finite": true,
+      "output_factor_grad_nonzero": true,
+      "q_block_grad_nonzero": true,
+      "max_score_move": 4.066792011260986,
+      "seconds": 5.620516097000291
+    }
+  },
+  "backbone_unchanged": true,
+  "pass_": true
+}

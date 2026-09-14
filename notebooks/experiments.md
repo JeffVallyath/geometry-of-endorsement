@@ -1,5 +1,9 @@
 # Notebook experiment log
 
+This is the historical record for the original reproduction notebooks, not the
+current project frontier. Later studies and their scientific dispositions are
+indexed in [Results and Claims](../docs/RESULTS_AND_CLAIMS.md) and [Reproducibility](../REPRODUCIBILITY.md).
+
 ## ValuePrism shortcut restoration
 
 | Field | Frozen value |
@@ -46,7 +50,7 @@
 | Split | 1,500 train rows, 300 selection rows, 500 evaluation rows |
 | Result | Layer 19, DIM I_b=1.65, logistic I_b=2.08, SBERT I_b=0.28 |
 | Relation AUROC | Native 0.721, DIM 0.732, logistic 0.780 |
-| Conclusion | Development evidence supports a relation signal. Human-audited confirmation and rephrasing-flip prediction remain open |
+| Conclusion | Development evidence supports a relation signal. Human-audited confirmation and rephrasing-flip prediction were open at the time of this experiment; subsequently measured. |
 
 ## Reconstruction contract repair
 

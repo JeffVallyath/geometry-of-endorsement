@@ -1,0 +1,78 @@
+{
+  "at": "2026-09-12T00:40:29.152224+00:00",
+  "actor": "qwen",
+  "selected_procedure": "T4",
+  "natural_panel_procedure": "T4",
+  "attempts": [
+    {
+      "procedure": "T4",
+      "summary": {
+        "source": {
+          "n": 96,
+          "parse_rate": 1.0,
+          "direct_negation_accuracy": 0.921875,
+          "equality_accuracy": 0.71875,
+          "score_accuracy": 0.8541666666666666,
+          "truncated": 0,
+          "generation_score_agreement": 1.0,
+          "mean_new_tokens": 2.0,
+          "by_family": {
+            "direct": 0.9795918367346939,
+            "opposes": 0.7333333333333333,
+            "same": 0.71875
+          },
+          "primitive_qualified": true,
+          "equality_ge_85_reported_only": false
+        },
+        "counterfactual": {
+          "n": 96,
+          "parse_rate": 1.0,
+          "direct_negation_accuracy": 0.9375,
+          "equality_accuracy": 0.65625,
+          "score_accuracy": 0.84375,
+          "truncated": 0,
+          "generation_score_agreement": 1.0,
+          "mean_new_tokens": 2.0,
+          "by_family": {
+            "direct": 0.9795918367346939,
+            "opposes": 0.8,
+            "same": 0.65625
+          },
+          "primitive_qualified": true,
+          "equality_ge_85_reported_only": false
+        },
+        "pooled": {
+          "n": 192,
+          "parse_rate": 1.0,
+          "direct_negation_accuracy": 0.9296875,
+          "equality_accuracy": 0.6875,
+          "score_accuracy": 0.8489583333333334,
+          "truncated": 0,
+          "generation_score_agreement": 1.0,
+          "mean_new_tokens": 2.0,
+          "by_family": {
+            "direct": 0.9795918367346939,
+            "opposes": 0.7666666666666667,
+            "same": 0.6875
+          },
+          "primitive_qualified": true,
+          "equality_ge_85_reported_only": false
+        }
+      },
+      "generations": 192,
+      "qualified": true
+    }
+  ],
+  "total_generations": 192,
+  "requests": 96,
+  "policy": "RSO3 symmetric primitive policy: first procedure with >=95% parseable generations (<=32 new tokens) and >=90% direct/negation accuracy on BOTH the source and the natural-counterfactual inputs; equality is always measured and stays in every primary metric but never vetoes editing; historical V2 verdicts unchanged",
+  "equality_summary": {
+    "source": 0.71875,
+    "counterfactual": 0.65625
+  },
+  "battery": {
+    "direct_negation": 64,
+    "equality": 32
+  },
+  "template": "<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n"
+}

@@ -1,0 +1,20 @@
+{
+  "at": "2026-09-10T22:12:54.616300+00:00",
+  "artifacts": 320,
+  "scenes": 128,
+  "conditions": [
+    "SOURCE",
+    "COUNTERFACTUAL",
+    "TEXT_CORRECTION",
+    "SHARED_CLAUSE_s0",
+    "SHARED_CLAUSE_s1",
+    "SHARED_TAIL_s0",
+    "SHARED_TAIL_s1",
+    "V1_SHARED_TAIL_s0",
+    "V1_SHARED_TAIL_s1"
+  ],
+  "seal_sha256": "ba67f874d14d7845f3c3a02edc44823ff6710ac258e72a9c357a1f6035aa92de",
+  "seconds": 615.6169465340008,
+  "compiler_inputs": "prefix token ids, explicit clause spans and desired values of the edit program, method weights; no question, label mapping, gold, affected flag or target world existed before this file",
+  "questions_generated_before_seal": false
+}

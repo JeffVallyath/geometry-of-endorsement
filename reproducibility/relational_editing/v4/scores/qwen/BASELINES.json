@@ -1,0 +1,79 @@
+{
+  "at": "2026-09-12T00:42:32.145712+00:00",
+  "no_edit_cal_complete": {
+    "n_scenes": 48,
+    "n_queries": 1152,
+    "changed": 0.12499999999999997,
+    "harm": 0.0,
+    "conditional_harm": 0.0,
+    "all24": 0.0,
+    "accuracy": 0.6171875,
+    "touched_accuracy": 0.41875,
+    "other_address_error": 0.07559523809523809,
+    "preservation": 1.0,
+    "nonaddressed_change": 0.0,
+    "changed_by_direction": {
+      "0": 0.09375,
+      "1": 0.1875
+    },
+    "by_cell": {
+      "(4, 2, 0)": {
+        "changed": 0.1875,
+        "harm": 0.0,
+        "all24": 0.0
+      },
+      "(4, 2, 1)": {
+        "changed": 0.09375,
+        "harm": 0.0,
+        "all24": 0.0
+      }
+    },
+    "by_family": {
+      "both": 0.59375,
+      "direct": 0.7890625,
+      "either": 0.640625,
+      "opposes": 0.5833333333333334,
+      "same": 0.3072916666666667
+    },
+    "all_program_questions": 0.0,
+    "accuracy_all_program_questions": 0.6171875
+  },
+  "counterfactual_cal_complete": {
+    "n_scenes": 48,
+    "n_queries": 1152,
+    "changed": 0.8229166666666666,
+    "harm": 0.022569444444444444,
+    "conditional_harm": 0.023737373737373738,
+    "all24": 0.1875,
+    "accuracy": 0.890625,
+    "touched_accuracy": 0.8791666666666668,
+    "other_address_error": 0.04791666666666666,
+    "preservation": 0.9762626262626263,
+    "nonaddressed_change": 0.057291666666666664,
+    "changed_by_direction": {
+      "0": 0.7638888888888888,
+      "1": 0.8819444444444445
+    },
+    "by_cell": {
+      "(4, 2, 0)": {
+        "changed": 0.8819444444444445,
+        "harm": 0.01736111111111111,
+        "all24": 0.20833333333333334
+      },
+      "(4, 2, 1)": {
+        "changed": 0.7638888888888888,
+        "harm": 0.027777777777777776,
+        "all24": 0.16666666666666666
+      }
+    },
+    "by_family": {
+      "both": 0.9010416666666666,
+      "direct": 0.9713541666666666,
+      "either": 0.921875,
+      "opposes": 0.875,
+      "same": 0.703125
+    },
+    "all_program_questions": 0.1875,
+    "accuracy_all_program_questions": 0.890625
+  }
+}

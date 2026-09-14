@@ -1,0 +1,894 @@
+{
+  "at": "2026-09-10T21:50:24.466650+00:00",
+  "arm": "QUERY_TAIL",
+  "lr": 0.001,
+  "seed": 0,
+  "epochs_run": 2,
+  "curve": [
+    {
+      "arm": "QUERY_TAIL",
+      "lr": 0.001,
+      "seed": 0,
+      "epoch": 1,
+      "strength": 0.5,
+      "checkpoint": "<private operational reference omitted>",
+      "cal": {
+        "n_scenes": 32,
+        "n_queries": 480,
+        "changed": 0.27604166666666663,
+        "harm": 0.010416666666666666,
+        "conditional_harm": 0.010416666666666666,
+        "all24": 0.03125,
+        "accuracy": 0.6731770833333333,
+        "touched_accuracy": 0.3567708333333333,
+        "other_address_error": 0.010416666666666666,
+        "preservation": 0.9895833333333333,
+        "nonaddressed_change": 0.0,
+        "changed_by_direction": {
+          "0": 0.2916666666666667,
+          "1": 0.2604166666666667
+        },
+        "by_cell": {
+          "(4, 2, 0)": {
+            "changed": 0.2604166666666667,
+            "harm": 0.0,
+            "all24": 0.0
+          },
+          "(4, 2, 1)": {
+            "changed": 0.2916666666666667,
+            "harm": 0.020833333333333332,
+            "all24": 0.0625
+          }
+        },
+        "by_family": {
+          "direct": 0.7541666666666667,
+          "opposes": 0.66875,
+          "same": 0.575
+        },
+        "loss": 1.9727790176949156,
+        "mean_realized_norm": 51.52901192879074,
+        "mean_energy": 147906.41166178384,
+        "mean_frobenius": 373.6483555214194,
+        "edited_tokens_per_artifact": 55.675,
+        "cache_bytes": null,
+        "seconds": 26.645551610999973,
+        "n_rows": 480,
+        "strength": 0.5,
+        "arm": "QUERY_TAIL"
+      },
+      "fit": {
+        "n_scenes": 96,
+        "n_queries": 1440,
+        "changed": 0.9791666666666666,
+        "harm": 0.0,
+        "conditional_harm": 0.0,
+        "all24": 0.9270833333333334,
+        "accuracy": 0.9926215277777778,
+        "touched_accuracy": 0.9852430555555555,
+        "other_address_error": 0.0,
+        "preservation": 1.0,
+        "nonaddressed_change": 0.0,
+        "changed_by_direction": {
+          "0": 0.9930555555555557,
+          "1": 0.9652777777777777
+        },
+        "by_cell": {
+          "(4, 2, 0)": {
+            "changed": 0.9652777777777777,
+            "harm": 0.0,
+            "all24": 0.8958333333333334
+          },
+          "(4, 2, 1)": {
+            "changed": 0.9930555555555557,
+            "harm": 0.0,
+            "all24": 0.9583333333333334
+          }
+        },
+        "by_family": {
+          "direct": 0.9888888888888889,
+          "opposes": 0.9958333333333333,
+          "same": 0.9875
+        },
+        "loss": 0.040720070219368965,
+        "mean_realized_norm": 103.07561695433377,
+        "mean_energy": 506879.60603298614,
+        "mean_frobenius": 684.8587234743898,
+        "edited_tokens_per_artifact": 47.69166666666667,
+        "cache_bytes": null,
+        "seconds": 78.88192415000049,
+        "n_rows": 1440,
+        "strength": 1.0,
+        "arm": "QUERY_TAIL"
+      },
+      "feasible": false,
+      "frontier": [
+        0,
+        0.2552083333333333
+      ],
+      "norm": 51.52901192879074,
+      "frobenius": 373.6483555214194,
+      "saturation": 0.9679800803774244,
+      "loss_train": 0.05037200305041552,
+      "visits": 1440,
+      "steps": 360,
+      "train_seconds": 180.39342029699947,
+      "eval_seconds": 105.81909191900013
+    },
+    {
+      "arm": "QUERY_TAIL",
+      "lr": 0.001,
+      "seed": 0,
+      "epoch": 1,
+      "strength": 0.75,
+      "checkpoint": "<private operational reference omitted>",
+      "cal": {
+        "n_scenes": 32,
+        "n_queries": 480,
+        "changed": 0.671875,
+        "harm": 0.001736111111111111,
+        "conditional_harm": 0.001736111111111111,
+        "all24": 0.3125,
+        "accuracy": 0.8515625,
+        "touched_accuracy": 0.703125,
+        "other_address_error": 0.0,
+        "preservation": 0.9982638888888888,
+        "nonaddressed_change": 0.0,
+        "changed_by_direction": {
+          "0": 0.65625,
+          "1": 0.6875
+        },
+        "by_cell": {
+          "(4, 2, 0)": {
+            "changed": 0.6875,
+            "harm": 0.003472222222222222,
+            "all24": 0.3125
+          },
+          "(4, 2, 1)": {
+            "changed": 0.65625,
+            "harm": 0.0,
+            "all24": 0.3125
+          }
+        },
+        "by_family": {
+          "direct": 0.8541666666666666,
+          "opposes": 0.89375,
+          "same": 0.8
+        },
+        "loss": 0.6464360428281831,
+        "mean_realized_norm": 77.29206141546233,
+        "mean_energy": 332776.86635742185,
+        "mean_frobenius": 560.4624021153171,
+        "edited_tokens_per_artifact": 55.675,
+        "cache_bytes": null,
+        "seconds": 26.454057797000132,
+        "n_rows": 480,
+        "strength": 0.75,
+        "arm": "QUERY_TAIL"
+      },
+      "fit": {
+        "n_scenes": 96,
+        "n_queries": 1440,
+        "changed": 0.9791666666666666,
+        "harm": 0.0,
+        "conditional_harm": 0.0,
+        "all24": 0.9270833333333334,
+        "accuracy": 0.9926215277777778,
+        "touched_accuracy": 0.9852430555555555,
+        "other_address_error": 0.0,
+        "preservation": 1.0,
+        "nonaddressed_change": 0.0,
+        "changed_by_direction": {
+          "0": 0.9930555555555557,
+          "1": 0.9652777777777777
+        },
+        "by_cell": {
+          "(4, 2, 0)": {
+            "changed": 0.9652777777777777,
+            "harm": 0.0,
+            "all24": 0.8958333333333334
+          },
+          "(4, 2, 1)": {
+            "changed": 0.9930555555555557,
+            "harm": 0.0,
+            "all24": 0.9583333333333334
+          }
+        },
+        "by_family": {
+          "direct": 0.9888888888888889,
+          "opposes": 0.9958333333333333,
+          "same": 0.9875
+        },
+        "loss": 0.040720070219368965,
+        "mean_realized_norm": 103.07561695433377,
+        "mean_energy": 506879.60603298614,
+        "mean_frobenius": 684.8587234743898,
+        "edited_tokens_per_artifact": 47.69166666666667,
+        "cache_bytes": null,
+        "seconds": 78.88192415000049,
+        "n_rows": 1440,
+        "strength": 1.0,
+        "arm": "QUERY_TAIL"
+      },
+      "feasible": false,
+      "frontier": [
+        0,
+        0.6684027777777778
+      ],
+      "norm": 77.29206141546233,
+      "frobenius": 560.4624021153171,
+      "saturation": 0.9679800803774244,
+      "loss_train": 0.05037200305041552,
+      "visits": 1440,
+      "steps": 360,
+      "train_seconds": 180.39342029699947,
+      "eval_seconds": 132.34861086399906
+    },
+    {
+      "arm": "QUERY_TAIL",
+      "lr": 0.001,
+      "seed": 0,
+      "epoch": 1,
+      "strength": 1.0,
+      "checkpoint": "<private operational reference omitted>",
+      "cal": {
+        "n_scenes": 32,
+        "n_queries": 480,
+        "changed": 0.8802083333333333,
+        "harm": 0.013888888888888888,
+        "conditional_harm": 0.014322916666666666,
+        "all24": 0.65625,
+        "accuracy": 0.9401041666666666,
+        "touched_accuracy": 0.8958333333333334,
+        "other_address_error": 0.015625,
+        "preservation": 0.9856770833333333,
+        "nonaddressed_change": 0.03125,
+        "changed_by_direction": {
+          "0": 0.8958333333333333,
+          "1": 0.8645833333333333
+        },
+        "by_cell": {
+          "(4, 2, 0)": {
+            "changed": 0.8645833333333333,
+            "harm": 0.006944444444444444,
+            "all24": 0.625
+          },
+          "(4, 2, 1)": {
+            "changed": 0.8958333333333333,
+            "harm": 0.020833333333333332,
+            "all24": 0.6875
+          }
+        },
+        "by_family": {
+          "direct": 0.9583333333333334,
+          "opposes": 0.96875,
+          "same": 0.8
+        },
+        "loss": 0.18524983197915693,
+        "mean_realized_norm": 103.05609184616858,
+        "mean_energy": 591603.4328776042,
+        "mean_frobenius": 747.2833599786579,
+        "edited_tokens_per_artifact": 55.675,
+        "cache_bytes": null,
+        "seconds": 26.422705002998555,
+        "n_rows": 480,
+        "strength": 1.0,
+        "arm": "QUERY_TAIL"
+      },
+      "fit": {
+        "n_scenes": 96,
+        "n_queries": 1440,
+        "changed": 0.9791666666666666,
+        "harm": 0.0,
+        "conditional_harm": 0.0,
+        "all24": 0.9270833333333334,
+        "accuracy": 0.9926215277777778,
+        "touched_accuracy": 0.9852430555555555,
+        "other_address_error": 0.0,
+        "preservation": 1.0,
+        "nonaddressed_change": 0.0,
+        "changed_by_direction": {
+          "0": 0.9930555555555557,
+          "1": 0.9652777777777777
+        },
+        "by_cell": {
+          "(4, 2, 0)": {
+            "changed": 0.9652777777777777,
+            "harm": 0.0,
+            "all24": 0.8958333333333334
+          },
+          "(4, 2, 1)": {
+            "changed": 0.9930555555555557,
+            "harm": 0.0,
+            "all24": 0.9583333333333334
+          }
+        },
+        "by_family": {
+          "direct": 0.9888888888888889,
+          "opposes": 0.9958333333333333,
+          "same": 0.9875
+        },
+        "loss": 0.040720070219368965,
+        "mean_realized_norm": 103.07561695433377,
+        "mean_energy": 506879.60603298614,
+        "mean_frobenius": 684.8587234743898,
+        "edited_tokens_per_artifact": 47.69166666666667,
+        "cache_bytes": null,
+        "seconds": 78.88192415000049,
+        "n_rows": 1440,
+        "strength": 1.0,
+        "arm": "QUERY_TAIL"
+      },
+      "feasible": true,
+      "frontier": [
+        1,
+        0.8802083333333333
+      ],
+      "norm": 103.05609184616858,
+      "frobenius": 747.2833599786579,
+      "saturation": 0.9679800803774244,
+      "loss_train": 0.05037200305041552,
+      "visits": 1440,
+      "steps": 360,
+      "train_seconds": 180.39342029699947,
+      "eval_seconds": 158.85616918800042
+    },
+    {
+      "arm": "QUERY_TAIL",
+      "lr": 0.001,
+      "seed": 0,
+      "epoch": 1,
+      "strength": 1.25,
+      "checkpoint": "<private operational reference omitted>",
+      "cal": {
+        "n_scenes": 32,
+        "n_queries": 480,
+        "changed": 0.9010416666666667,
+        "harm": 0.008680555555555556,
+        "conditional_harm": 0.009114583333333332,
+        "all24": 0.625,
+        "accuracy": 0.9505208333333334,
+        "touched_accuracy": 0.9114583333333333,
+        "other_address_error": 0.010416666666666666,
+        "preservation": 0.9908854166666667,
+        "nonaddressed_change": 0.015625,
+        "changed_by_direction": {
+          "0": 0.9375,
+          "1": 0.8645833333333334
+        },
+        "by_cell": {
+          "(4, 2, 0)": {
+            "changed": 0.8645833333333334,
+            "harm": 0.006944444444444444,
+            "all24": 0.5625
+          },
+          "(4, 2, 1)": {
+            "changed": 0.9375,
+            "harm": 0.010416666666666666,
+            "all24": 0.6875
+          }
+        },
+        "by_family": {
+          "direct": 0.975,
+          "opposes": 0.975,
+          "same": 0.775
+        },
+        "loss": 0.17785893829846675,
+        "mean_realized_norm": 128.81961581300536,
+        "mean_energy": 924373.1793619791,
+        "mean_frobenius": 934.1003174409358,
+        "edited_tokens_per_artifact": 55.675,
+        "cache_bytes": null,
+        "seconds": 26.49989952299984,
+        "n_rows": 480,
+        "strength": 1.25,
+        "arm": "QUERY_TAIL"
+      },
+      "fit": {
+        "n_scenes": 96,
+        "n_queries": 1440,
+        "changed": 0.9791666666666666,
+        "harm": 0.0,
+        "conditional_harm": 0.0,
+        "all24": 0.9270833333333334,
+        "accuracy": 0.9926215277777778,
+        "touched_accuracy": 0.9852430555555555,
+        "other_address_error": 0.0,
+        "preservation": 1.0,
+        "nonaddressed_change": 0.0,
+        "changed_by_direction": {
+          "0": 0.9930555555555557,
+          "1": 0.9652777777777777
+        },
+        "by_cell": {
+          "(4, 2, 0)": {
+            "changed": 0.9652777777777777,
+            "harm": 0.0,
+            "all24": 0.8958333333333334
+          },
+          "(4, 2, 1)": {
+            "changed": 0.9930555555555557,
+            "harm": 0.0,
+            "all24": 0.9583333333333334
+          }
+        },
+        "by_family": {
+          "direct": 0.9888888888888889,
+          "opposes": 0.9958333333333333,
+          "same": 0.9875
+        },
+        "loss": 0.040720070219368965,
+        "mean_realized_norm": 103.07561695433377,
+        "mean_energy": 506879.60603298614,
+        "mean_frobenius": 684.8587234743898,
+        "edited_tokens_per_artifact": 47.69166666666667,
+        "cache_bytes": null,
+        "seconds": 78.88192415000049,
+        "n_rows": 1440,
+        "strength": 1.0,
+        "arm": "QUERY_TAIL"
+      },
+      "feasible": true,
+      "frontier": [
+        1,
+        0.9010416666666667
+      ],
+      "norm": 128.81961581300536,
+      "frobenius": 934.1003174409358,
+      "saturation": 0.9679800803774244,
+      "loss_train": 0.05037200305041552,
+      "visits": 1440,
+      "steps": 360,
+      "train_seconds": 180.39342029699947,
+      "eval_seconds": 185.4450640769992
+    },
+    {
+      "arm": "QUERY_TAIL",
+      "lr": 0.001,
+      "seed": 0,
+      "epoch": 2,
+      "strength": 0.5,
+      "checkpoint": "<private operational reference omitted>",
+      "cal": {
+        "n_scenes": 32,
+        "n_queries": 480,
+        "changed": 0.3125,
+        "harm": 0.0,
+        "conditional_harm": 0.0,
+        "all24": 0.09375,
+        "accuracy": 0.6979166666666666,
+        "touched_accuracy": 0.39583333333333337,
+        "other_address_error": 0.0,
+        "preservation": 1.0,
+        "nonaddressed_change": 0.0,
+        "changed_by_direction": {
+          "0": 0.33333333333333337,
+          "1": 0.29166666666666663
+        },
+        "by_cell": {
+          "(4, 2, 0)": {
+            "changed": 0.29166666666666663,
+            "harm": 0.0,
+            "all24": 0.0625
+          },
+          "(4, 2, 1)": {
+            "changed": 0.33333333333333337,
+            "harm": 0.0,
+            "all24": 0.125
+          }
+        },
+        "by_family": {
+          "direct": 0.7666666666666667,
+          "opposes": 0.69375,
+          "same": 0.625
+        },
+        "loss": 1.9974909196448796,
+        "mean_realized_norm": 51.59113158817117,
+        "mean_energy": 148188.65625,
+        "mean_frobenius": 374.09618564652266,
+        "edited_tokens_per_artifact": 55.675,
+        "cache_bytes": null,
+        "seconds": 26.63433469699885,
+        "n_rows": 480,
+        "strength": 0.5,
+        "arm": "QUERY_TAIL"
+      },
+      "fit": {
+        "n_scenes": 96,
+        "n_queries": 1440,
+        "changed": 1.0,
+        "harm": 0.0,
+        "conditional_harm": 0.0,
+        "all24": 1.0,
+        "accuracy": 1.0,
+        "touched_accuracy": 1.0,
+        "other_address_error": 0.0,
+        "preservation": 1.0,
+        "nonaddressed_change": 0.0,
+        "changed_by_direction": {
+          "0": 1.0,
+          "1": 1.0
+        },
+        "by_cell": {
+          "(4, 2, 0)": {
+            "changed": 1.0,
+            "harm": 0.0,
+            "all24": 1.0
+          },
+          "(4, 2, 1)": {
+            "changed": 1.0,
+            "harm": 0.0,
+            "all24": 1.0
+          }
+        },
+        "by_family": {
+          "direct": 1.0,
+          "opposes": 1.0,
+          "same": 1.0
+        },
+        "loss": 0.0015609523758699753,
+        "mean_realized_norm": 103.1825889618175,
+        "mean_energy": 507760.7332682292,
+        "mean_frobenius": 685.5819505598431,
+        "edited_tokens_per_artifact": 47.69166666666667,
+        "cache_bytes": null,
+        "seconds": 79.05028109200066,
+        "n_rows": 1440,
+        "strength": 1.0,
+        "arm": "QUERY_TAIL"
+      },
+      "feasible": false,
+      "frontier": [
+        0,
+        0.3125
+      ],
+      "norm": 51.59113158817117,
+      "frobenius": 374.09618564652266,
+      "saturation": 0.9983837148348769,
+      "loss_train": 0.005971708469274341,
+      "visits": 2880,
+      "steps": 720,
+      "train_seconds": 177.7543520149993,
+      "eval_seconds": 105.9196777090001
+    },
+    {
+      "arm": "QUERY_TAIL",
+      "lr": 0.001,
+      "seed": 0,
+      "epoch": 2,
+      "strength": 0.75,
+      "checkpoint": "<private operational reference omitted>",
+      "cal": {
+        "n_scenes": 32,
+        "n_queries": 480,
+        "changed": 0.8697916666666666,
+        "harm": 0.012152777777777776,
+        "conditional_harm": 0.012369791666666666,
+        "all24": 0.625,
+        "accuracy": 0.94140625,
+        "touched_accuracy": 0.8958333333333333,
+        "other_address_error": 0.013020833333333332,
+        "preservation": 0.9876302083333333,
+        "nonaddressed_change": 0.03125,
+        "changed_by_direction": {
+          "0": 0.9479166666666666,
+          "1": 0.7916666666666666
+        },
+        "by_cell": {
+          "(4, 2, 0)": {
+            "changed": 0.7916666666666666,
+            "harm": 0.003472222222222222,
+            "all24": 0.5
+          },
+          "(4, 2, 1)": {
+            "changed": 0.9479166666666666,
+            "harm": 0.020833333333333332,
+            "all24": 0.75
+          }
+        },
+        "by_family": {
+          "direct": 0.95,
+          "opposes": 0.93125,
+          "same": 0.9125
+        },
+        "loss": 0.3185750164198794,
+        "mean_realized_norm": 77.38626638448733,
+        "mean_energy": 333420.75688476564,
+        "mean_frobenius": 561.1411189860783,
+        "edited_tokens_per_artifact": 55.675,
+        "cache_bytes": null,
+        "seconds": 26.47929846400075,
+        "n_rows": 480,
+        "strength": 0.75,
+        "arm": "QUERY_TAIL"
+      },
+      "fit": {
+        "n_scenes": 96,
+        "n_queries": 1440,
+        "changed": 1.0,
+        "harm": 0.0,
+        "conditional_harm": 0.0,
+        "all24": 1.0,
+        "accuracy": 1.0,
+        "touched_accuracy": 1.0,
+        "other_address_error": 0.0,
+        "preservation": 1.0,
+        "nonaddressed_change": 0.0,
+        "changed_by_direction": {
+          "0": 1.0,
+          "1": 1.0
+        },
+        "by_cell": {
+          "(4, 2, 0)": {
+            "changed": 1.0,
+            "harm": 0.0,
+            "all24": 1.0
+          },
+          "(4, 2, 1)": {
+            "changed": 1.0,
+            "harm": 0.0,
+            "all24": 1.0
+          }
+        },
+        "by_family": {
+          "direct": 1.0,
+          "opposes": 1.0,
+          "same": 1.0
+        },
+        "loss": 0.0015609523758699753,
+        "mean_realized_norm": 103.1825889618175,
+        "mean_energy": 507760.7332682292,
+        "mean_frobenius": 685.5819505598431,
+        "edited_tokens_per_artifact": 47.69166666666667,
+        "cache_bytes": null,
+        "seconds": 79.05028109200066,
+        "n_rows": 1440,
+        "strength": 1.0,
+        "arm": "QUERY_TAIL"
+      },
+      "feasible": false,
+      "frontier": [
+        0,
+        0.845486111111111
+      ],
+      "norm": 77.38626638448733,
+      "frobenius": 561.1411189860783,
+      "saturation": 0.9983837148348769,
+      "loss_train": 0.005971708469274341,
+      "visits": 2880,
+      "steps": 720,
+      "train_seconds": 177.7543520149993,
+      "eval_seconds": 132.47848791899924
+    },
+    {
+      "arm": "QUERY_TAIL",
+      "lr": 0.001,
+      "seed": 0,
+      "epoch": 2,
+      "strength": 1.0,
+      "checkpoint": "<private operational reference omitted>",
+      "cal": {
+        "n_scenes": 32,
+        "n_queries": 480,
+        "changed": 0.953125,
+        "harm": 0.019097222222222224,
+        "conditional_harm": 0.01953125,
+        "all24": 0.8125,
+        "accuracy": 0.97265625,
+        "touched_accuracy": 0.9661458333333333,
+        "other_address_error": 0.020833333333333332,
+        "preservation": 0.98046875,
+        "nonaddressed_change": 0.03125,
+        "changed_by_direction": {
+          "0": 0.9791666666666666,
+          "1": 0.9270833333333333
+        },
+        "by_cell": {
+          "(4, 2, 0)": {
+            "changed": 0.9270833333333333,
+            "harm": 0.006944444444444444,
+            "all24": 0.8125
+          },
+          "(4, 2, 1)": {
+            "changed": 0.9791666666666666,
+            "harm": 0.03125,
+            "all24": 0.8125
+          }
+        },
+        "by_family": {
+          "direct": 0.975,
+          "opposes": 0.975,
+          "same": 0.925
+        },
+        "loss": 0.14720958453417174,
+        "mean_realized_norm": 103.1814801333604,
+        "mean_energy": 592745.6131510417,
+        "mean_frobenius": 748.1861457616394,
+        "edited_tokens_per_artifact": 55.675,
+        "cache_bytes": null,
+        "seconds": 26.547148067998933,
+        "n_rows": 480,
+        "strength": 1.0,
+        "arm": "QUERY_TAIL"
+      },
+      "fit": {
+        "n_scenes": 96,
+        "n_queries": 1440,
+        "changed": 1.0,
+        "harm": 0.0,
+        "conditional_harm": 0.0,
+        "all24": 1.0,
+        "accuracy": 1.0,
+        "touched_accuracy": 1.0,
+        "other_address_error": 0.0,
+        "preservation": 1.0,
+        "nonaddressed_change": 0.0,
+        "changed_by_direction": {
+          "0": 1.0,
+          "1": 1.0
+        },
+        "by_cell": {
+          "(4, 2, 0)": {
+            "changed": 1.0,
+            "harm": 0.0,
+            "all24": 1.0
+          },
+          "(4, 2, 1)": {
+            "changed": 1.0,
+            "harm": 0.0,
+            "all24": 1.0
+          }
+        },
+        "by_family": {
+          "direct": 1.0,
+          "opposes": 1.0,
+          "same": 1.0
+        },
+        "loss": 0.0015609523758699753,
+        "mean_realized_norm": 103.1825889618175,
+        "mean_energy": 507760.7332682292,
+        "mean_frobenius": 685.5819505598431,
+        "edited_tokens_per_artifact": 47.69166666666667,
+        "cache_bytes": null,
+        "seconds": 79.05028109200066,
+        "n_rows": 1440,
+        "strength": 1.0,
+        "arm": "QUERY_TAIL"
+      },
+      "feasible": true,
+      "frontier": [
+        1,
+        0.953125
+      ],
+      "norm": 103.1814801333604,
+      "frobenius": 748.1861457616394,
+      "saturation": 0.9983837148348769,
+      "loss_train": 0.005971708469274341,
+      "visits": 2880,
+      "steps": 720,
+      "train_seconds": 177.7543520149993,
+      "eval_seconds": 159.12670140299997
+    },
+    {
+      "arm": "QUERY_TAIL",
+      "lr": 0.001,
+      "seed": 0,
+      "epoch": 2,
+      "strength": 1.25,
+      "checkpoint": "<private operational reference omitted>",
+      "cal": {
+        "n_scenes": 32,
+        "n_queries": 480,
+        "changed": 0.9635416666666666,
+        "harm": 0.01909722222222222,
+        "conditional_harm": 0.01953125,
+        "all24": 0.75,
+        "accuracy": 0.9713541666666667,
+        "touched_accuracy": 0.9635416666666666,
+        "other_address_error": 0.020833333333333332,
+        "preservation": 0.98046875,
+        "nonaddressed_change": 0.03125,
+        "changed_by_direction": {
+          "0": 0.9791666666666666,
+          "1": 0.9479166666666666
+        },
+        "by_cell": {
+          "(4, 2, 0)": {
+            "changed": 0.9479166666666666,
+            "harm": 0.006944444444444444,
+            "all24": 0.6875
+          },
+          "(4, 2, 1)": {
+            "changed": 0.9791666666666666,
+            "harm": 0.03125,
+            "all24": 0.8125
+          }
+        },
+        "by_family": {
+          "direct": 0.9916666666666667,
+          "opposes": 0.98125,
+          "same": 0.875
+        },
+        "loss": 0.1344827826960947,
+        "mean_realized_norm": 128.9768882326658,
+        "mean_energy": 926165.5716796875,
+        "mean_frobenius": 935.2332186875481,
+        "edited_tokens_per_artifact": 55.675,
+        "cache_bytes": null,
+        "seconds": 26.346851569000137,
+        "n_rows": 480,
+        "strength": 1.25,
+        "arm": "QUERY_TAIL"
+      },
+      "fit": {
+        "n_scenes": 96,
+        "n_queries": 1440,
+        "changed": 1.0,
+        "harm": 0.0,
+        "conditional_harm": 0.0,
+        "all24": 1.0,
+        "accuracy": 1.0,
+        "touched_accuracy": 1.0,
+        "other_address_error": 0.0,
+        "preservation": 1.0,
+        "nonaddressed_change": 0.0,
+        "changed_by_direction": {
+          "0": 1.0,
+          "1": 1.0
+        },
+        "by_cell": {
+          "(4, 2, 0)": {
+            "changed": 1.0,
+            "harm": 0.0,
+            "all24": 1.0
+          },
+          "(4, 2, 1)": {
+            "changed": 1.0,
+            "harm": 0.0,
+            "all24": 1.0
+          }
+        },
+        "by_family": {
+          "direct": 1.0,
+          "opposes": 1.0,
+          "same": 1.0
+        },
+        "loss": 0.0015609523758699753,
+        "mean_realized_norm": 103.1825889618175,
+        "mean_energy": 507760.7332682292,
+        "mean_frobenius": 685.5819505598431,
+        "edited_tokens_per_artifact": 47.69166666666667,
+        "cache_bytes": null,
+        "seconds": 79.05028109200066,
+        "n_rows": 1440,
+        "strength": 1.0,
+        "arm": "QUERY_TAIL"
+      },
+      "feasible": true,
+      "frontier": [
+        1,
+        0.9635416666666666
+      ],
+      "norm": 128.9768882326658,
+      "frobenius": 935.2332186875481,
+      "saturation": 0.9983837148348769,
+      "loss_train": 0.005971708469274341,
+      "visits": 2880,
+      "steps": 720,
+      "train_seconds": 177.7543520149993,
+      "eval_seconds": 185.5604422769993
+    }
+  ],
+  "init": {
+    "kind": "v1_warm_start",
+    "v1_dir": "<private operational reference omitted>",
+    "v1_files": {
+      "relation_0": "2de1db39f60de463c545e7e92178a523c047d5a6343c70a28acee5a26bf0f022",
+      "relation_1": "4cde0c19461f13a25503b8ed5c94e15ab0eca9e80b8eb8fcf463a4a07c5d1426"
+    },
+    "v1_meta_sha256": "007905c1e15bc4dc9c2bde9a16eafc244dd3d3674491d93eb1919ee7c6e5832f",
+    "v1_seed": 0,
+    "v1_epoch": 4,
+    "v1_family": "PREFIX_DISTRIBUTED"
+  },
+  "not_extended": true
+}

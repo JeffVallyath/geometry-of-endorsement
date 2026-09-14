@@ -1,0 +1,73 @@
+{
+  "base_population_sha256": "9a965d577ab12ced6f0dd54f4f9dd78f051cd57f56f1b514ebf499462a3b8865",
+  "behavioral_prompt_batch_size": 1,
+  "bootstrap_replicates": 2000,
+  "candidate_population_sha256": "5a90c91e01ffd578888268f1bc86d935268cbf6c4bed62d86b93b0a0a401c864",
+  "candidate_scoring": "summed_full_candidate_sequence_log_probability",
+  "claim1_probe_sha256": "d3265c5dd23c20203c71ed79c8d84a789d36c1dafcca23f5f7b0b9409605a028",
+  "diagnostic_contract_sha256": "40a0b5471f760b3deebc675c4ccbd0f8090cb58b9621e405172977e8f51b8e77",
+  "dtype": "bfloat16",
+  "geometry_access_before_behavioral_viability": false,
+  "human_population_manifest_sha256": "01492e8e4fa8d0d6d71b925dccf96d5e578fa577beb62088a738f0377a71e1ce",
+  "inner_folds": 4,
+  "jury_rule": "frozen eligible panel excluding Gemma",
+  "local_prior_outcome_artifact_matches": [],
+  "m8_vs_m5_bootstrap_seed_rule": "inference.random_seed + 5000 + population_index",
+  "model_id": "google/gemma-2-9b-it",
+  "model_revision": "11c9b309abf73637e4b6f9a3fa1e92e615547819",
+  "outer_assignments": "reuse frozen representative-primary and enriched assignments; mapping-consistent subset inherits representative-primary assignments",
+  "outer_seeds": [
+    20260809,
+    20260810,
+    20260811,
+    20260812,
+    20260813
+  ],
+  "permutation_replicates": 2000,
+  "predictors": {
+    "M2": [
+      "original_text",
+      "native_gemma_confidence"
+    ],
+    "M3": [
+      "original_text",
+      "native_gemma_confidence",
+      "frozen_gemma_dim_geometry"
+    ],
+    "M5": [
+      "original_text",
+      "native_gemma_confidence",
+      "leave_gemma_out_jury"
+    ],
+    "M8": [
+      "original_text",
+      "native_gemma_confidence",
+      "leave_gemma_out_jury",
+      "frozen_gemma_dim_geometry"
+    ]
+  },
+  "primary_outcome": "mapping_averaged_semantic_sign_flip",
+  "prior_gemma_claim2_outcomes_inspected": false,
+  "prompt_contracts": [
+    "ab_standard",
+    "ab_reversed"
+  ],
+  "schema_version": 1,
+  "secondary_outcome": "strict_mapping_consistent_flip",
+  "selected_layer": 27,
+  "status": "GEMMA_PROSPECTIVE_CONTRACT_FROZEN",
+  "stop_if_viability_fails": true,
+  "tokenizer_revision": "11c9b309abf73637e4b6f9a3fa1e92e615547819",
+  "viability": {
+    "geometry_firewall_until_viability": true,
+    "minimum_distinct_representative_flipping_originals": 5,
+    "original_repeat_count": 2,
+    "original_repeat_tolerance": 0.002,
+    "populations": "same_human_approved_populations",
+    "require_all_behavioral_wordings_format_valid": true,
+    "require_no_prior_claim2_outcome_inspection": true,
+    "require_separate_freeze": true,
+    "require_zero_identity_control_sign_flips": true,
+    "stop_if_prospective_status_unprovable": true
+  }
+}

@@ -1,0 +1,122 @@
+[
+  {
+    "actor": "gemma",
+    "architecture": "INV_COMPLETE_SINGLE",
+    "reader": "R1",
+    "baseline": "R0",
+    "program": "ABC",
+    "family": "same",
+    "seeds": [
+      0,
+      1
+    ],
+    "level": 0.99375,
+    "draws": 10000,
+    "unit": "whole scene; average both seeds inside scene"
+  },
+  {
+    "actor": "gemma",
+    "architecture": "INV_COMPLETE_SINGLE",
+    "reader": "R2",
+    "baseline": "R0",
+    "program": "ABC",
+    "family": "same",
+    "seeds": [
+      0,
+      1
+    ],
+    "level": 0.99375,
+    "draws": 10000,
+    "unit": "whole scene; average both seeds inside scene"
+  },
+  {
+    "actor": "gemma",
+    "architecture": "FREE_COMPLETE_SINGLE",
+    "reader": "R1",
+    "baseline": "R0",
+    "program": "ABC",
+    "family": "same",
+    "seeds": [
+      0,
+      1
+    ],
+    "level": 0.99375,
+    "draws": 10000,
+    "unit": "whole scene; average both seeds inside scene"
+  },
+  {
+    "actor": "gemma",
+    "architecture": "FREE_COMPLETE_SINGLE",
+    "reader": "R2",
+    "baseline": "R0",
+    "program": "ABC",
+    "family": "same",
+    "seeds": [
+      0,
+      1
+    ],
+    "level": 0.99375,
+    "draws": 10000,
+    "unit": "whole scene; average both seeds inside scene"
+  },
+  {
+    "actor": "qwen",
+    "architecture": "INV_COMPLETE_SINGLE",
+    "reader": "R1",
+    "baseline": "R0",
+    "program": "ABC",
+    "family": "same",
+    "seeds": [
+      0,
+      1
+    ],
+    "level": 0.99375,
+    "draws": 10000,
+    "unit": "whole scene; average both seeds inside scene"
+  },
+  {
+    "actor": "qwen",
+    "architecture": "INV_COMPLETE_SINGLE",
+    "reader": "R2",
+    "baseline": "R0",
+    "program": "ABC",
+    "family": "same",
+    "seeds": [
+      0,
+      1
+    ],
+    "level": 0.99375,
+    "draws": 10000,
+    "unit": "whole scene; average both seeds inside scene"
+  },
+  {
+    "actor": "qwen",
+    "architecture": "FREE_COMPLETE_SINGLE",
+    "reader": "R1",
+    "baseline": "R0",
+    "program": "ABC",
+    "family": "same",
+    "seeds": [
+      0,
+      1
+    ],
+    "level": 0.99375,
+    "draws": 10000,
+    "unit": "whole scene; average both seeds inside scene"
+  },
+  {
+    "actor": "qwen",
+    "architecture": "FREE_COMPLETE_SINGLE",
+    "reader": "R2",
+    "baseline": "R0",
+    "program": "ABC",
+    "family": "same",
+    "seeds": [
+      0,
+      1
+    ],
+    "level": 0.99375,
+    "draws": 10000,
+    "unit": "whole scene; average both seeds inside scene"
+  }
+]

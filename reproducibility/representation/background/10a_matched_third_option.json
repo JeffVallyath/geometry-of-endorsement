@@ -1,0 +1,627 @@
+{
+  "schema": "STRATEGY_BACKGROUND_TERMINAL_PROJECTION_V1",
+  "strategy_block": 10,
+  "study": "FROZEN_POLICY_TRANSFER_DIAGNOSTIC_V1",
+  "evidence_level": "selected original terminal scientific summary values; not independent numerical replay",
+  "intake_boundary": "Original source bytes freshly hashed. Historical verification receipts are quoted as receipts; no fresh full-archive or member-by-member certification was performed.",
+  "curator_scope_qualification": "Frozen operators, exposed eight-family historical population. Matched TWO/THREE losses isolate added-option challenge within each renderer, but token length is not matched. Separate old/new renderer weakness remains. Degenerate four-family interval is not population certainty. No fresh generalization or refit claim.",
+  "records": [
+    {
+      "source": {
+        "name": "external_review_packet_v1.json",
+        "sha256": "10d1225e78d634a93246de4aba6143bf132ce327ae7b9f6202b6177d899cd641",
+        "bytes": 31634
+      },
+      "selected_values": {
+        "/status": "EXTERNAL_REVIEW_PACKET_READY",
+        "/evidence_topology/independent_actors": 1,
+        "/evidence_topology/actor": "Gemma-2-9b-it pinned revision",
+        "/evidence_topology/historical_families": 8,
+        "/evidence_topology/families_per_domain": 4,
+        "/evidence_topology/worlds": 72,
+        "/evidence_topology/splits": "No new fitting, calibration split or sealed evaluation population. Same exposed historical scenario families with new diagnostic views; prior fit and selection receipts remain supplied.",
+        "/evidence_topology/clustering_risks": "Worlds, endpoints, priorities, label mappings and layouts repeat within each fixed family. Cyclic generated families are not a random population sample. Complete-family bootstrap keeps paired cells/arms together; prompt counts are not independent sample size.",
+        "/evidence_topology/training_evaluation_exposure": "Operators fitted/selected previously; all coefficients and old exposures unchanged. Current views use already exposed historical worlds, not new independent actors or sealed examples.",
+        "/exact_empirical_result/verdict": "Consistent added-alternative loss plus broad renderer sensitivity; mixed format effects/interactions. Not selective generalization.",
+        "/exact_empirical_result/comparison": [
+          {
+            "domain": "allocation",
+            "count": 2,
+            "form": "NUMBERS",
+            "source_native_decision": 0.9722222222,
+            "destination_native_decision": 0.9722222222,
+            "source_native_recognition": 0.8324652778,
+            "destination_native_recognition": 0.8324652778,
+            "PAIRED_conflict": 0.421875,
+            "PAIRED_agreement_damage": 0.1354166667,
+            "PAIRED_recognition_damage": 0.1258680556,
+            "MEAN_conflict": 0.375,
+            "MEAN_agreement_damage": 0.0520833333,
+            "MEAN_recognition_damage": 0.0477430556,
+            "RANDOM_conflict": 0.0364583333,
+            "RANDOM_agreement_damage": 0,
+            "RANDOM_recognition_damage": 0.0043402778,
+            "PROJECTED_ORACLE_conflict": 0.4791666667,
+            "PROJECTED_ORACLE_agreement_damage": 0,
+            "PROJECTED_ORACLE_recognition_damage": 0.0607638889,
+            "FULL_STATE_ORACLE_conflict": 0.7604166667,
+            "FULL_STATE_ORACLE_agreement_damage": 0.0104166667,
+            "FULL_STATE_ORACLE_recognition_damage": 0.0911458333
+          },
+          {
+            "domain": "allocation",
+            "count": 2,
+            "form": "WORDS",
+            "source_native_decision": 0.9444444444,
+            "destination_native_decision": 0.9444444444,
+            "source_native_recognition": 0.7942708333,
+            "destination_native_recognition": 0.7942708333,
+            "PAIRED_conflict": 0.46875,
+            "PAIRED_agreement_damage": 0.1458333333,
+            "PAIRED_recognition_damage": 0.09375,
+            "MEAN_conflict": 0.4947916667,
+            "MEAN_agreement_damage": 0.0208333333,
+            "MEAN_recognition_damage": 0.0416666667,
+            "RANDOM_conflict": 0.078125,
+            "RANDOM_agreement_damage": 0,
+            "RANDOM_recognition_damage": 0.0034722222,
+            "PROJECTED_ORACLE_conflict": 0.5364583333,
+            "PROJECTED_ORACLE_agreement_damage": 0,
+            "PROJECTED_ORACLE_recognition_damage": 0.0616319444,
+            "FULL_STATE_ORACLE_conflict": 0.7760416667,
+            "FULL_STATE_ORACLE_agreement_damage": 0,
+            "FULL_STATE_ORACLE_recognition_damage": 0.1041666667
+          },
+          {
+            "domain": "allocation",
+            "count": 3,
+            "form": "NUMBERS",
+            "source_native_decision": 0.9340277778,
+            "destination_native_decision": 0.9340277778,
+            "source_native_recognition": 0.9513888889,
+            "destination_native_recognition": 0.9513888889,
+            "PAIRED_conflict": 0.3072916667,
+            "PAIRED_agreement_damage": 0.03125,
+            "PAIRED_recognition_damage": 0.0954861111,
+            "MEAN_conflict": 0.3333333333,
+            "MEAN_agreement_damage": 0.0729166667,
+            "MEAN_recognition_damage": 0.0303819444,
+            "RANDOM_conflict": 0.0416666667,
+            "RANDOM_agreement_damage": 0.0208333333,
+            "RANDOM_recognition_damage": 0.0017361111,
+            "PROJECTED_ORACLE_conflict": 0.234375,
+            "PROJECTED_ORACLE_agreement_damage": 0.0208333333,
+            "PROJECTED_ORACLE_recognition_damage": 0.0243055556,
+            "FULL_STATE_ORACLE_conflict": 0.7395833333,
+            "FULL_STATE_ORACLE_agreement_damage": 0.09375,
+            "FULL_STATE_ORACLE_recognition_damage": 0.0425347222
+          },
+          {
+            "domain": "allocation",
+            "count": 3,
+            "form": "WORDS",
+            "source_native_decision": 0.9548611111,
+            "destination_native_decision": 0.9548611111,
+            "source_native_recognition": 0.9071180556,
+            "destination_native_recognition": 0.9071180556,
+            "PAIRED_conflict": 0.3229166667,
+            "PAIRED_agreement_damage": 0.0625,
+            "PAIRED_recognition_damage": 0.0746527778,
+            "MEAN_conflict": 0.4270833333,
+            "MEAN_agreement_damage": 0.0729166667,
+            "MEAN_recognition_damage": 0.0486111111,
+            "RANDOM_conflict": 0.046875,
+            "RANDOM_agreement_damage": 0.0416666667,
+            "RANDOM_recognition_damage": 0.0017361111,
+            "PROJECTED_ORACLE_conflict": 0.3229166667,
+            "PROJECTED_ORACLE_agreement_damage": 0.0104166667,
+            "PROJECTED_ORACLE_recognition_damage": 0.0381944444,
+            "FULL_STATE_ORACLE_conflict": 0.7291666667,
+            "FULL_STATE_ORACLE_agreement_damage": 0.0208333333,
+            "FULL_STATE_ORACLE_recognition_damage": 0.0668402778
+          },
+          {
+            "domain": "reporting",
+            "count": 2,
+            "form": "NUMBERS",
+            "source_native_decision": 0.8993055556,
+            "destination_native_decision": 0.8993055556,
+            "source_native_recognition": 0.8602430556,
+            "destination_native_recognition": 0.8602430556,
+            "PAIRED_conflict": 0.359375,
+            "PAIRED_agreement_damage": 0.0208333333,
+            "PAIRED_recognition_damage": 0.2048611111,
+            "MEAN_conflict": 0.1458333333,
+            "MEAN_agreement_damage": 0,
+            "MEAN_recognition_damage": 0.0833333333,
+            "RANDOM_conflict": 0.0260416667,
+            "RANDOM_agreement_damage": 0,
+            "RANDOM_recognition_damage": 0.0104166667,
+            "PROJECTED_ORACLE_conflict": 0.3958333333,
+            "PROJECTED_ORACLE_agreement_damage": 0.15625,
+            "PROJECTED_ORACLE_recognition_damage": 0.0520833333,
+            "FULL_STATE_ORACLE_conflict": 0.7760416667,
+            "FULL_STATE_ORACLE_agreement_damage": 0.2291666667,
+            "FULL_STATE_ORACLE_recognition_damage": 0.0520833333
+          },
+          {
+            "domain": "reporting",
+            "count": 2,
+            "form": "WORDS",
+            "source_native_decision": 0.9548611111,
+            "destination_native_decision": 0.9548611111,
+            "source_native_recognition": 0.8194444444,
+            "destination_native_recognition": 0.8194444444,
+            "PAIRED_conflict": 0.3229166667,
+            "PAIRED_agreement_damage": 0,
+            "PAIRED_recognition_damage": 0.1171875,
+            "MEAN_conflict": 0.265625,
+            "MEAN_agreement_damage": 0,
+            "MEAN_recognition_damage": 0.0807291667,
+            "RANDOM_conflict": 0.0520833333,
+            "RANDOM_agreement_damage": 0,
+            "RANDOM_recognition_damage": 0.0043402778,
+            "PROJECTED_ORACLE_conflict": 0.515625,
+            "PROJECTED_ORACLE_agreement_damage": 0,
+            "PROJECTED_ORACLE_recognition_damage": 0.0859375,
+            "FULL_STATE_ORACLE_conflict": 0.7552083333,
+            "FULL_STATE_ORACLE_agreement_damage": 0.0208333333,
+            "FULL_STATE_ORACLE_recognition_damage": 0.0859375
+          },
+          {
+            "domain": "reporting",
+            "count": 3,
+            "form": "NUMBERS",
+            "source_native_decision": 0.9236111111,
+            "destination_native_decision": 0.9236111111,
+            "source_native_recognition": 0.9348958333,
+            "destination_native_recognition": 0.9348958333,
+            "PAIRED_conflict": 0.21875,
+            "PAIRED_agreement_damage": 0.21875,
+            "PAIRED_recognition_damage": 0.1614583333,
+            "MEAN_conflict": 0.1510416667,
+            "MEAN_agreement_damage": 0,
+            "MEAN_recognition_damage": 0.0659722222,
+            "RANDOM_conflict": 0.015625,
+            "RANDOM_agreement_damage": 0.0208333333,
+            "RANDOM_recognition_damage": 0.0034722222,
+            "PROJECTED_ORACLE_conflict": 0.1614583333,
+            "PROJECTED_ORACLE_agreement_damage": 0.0625,
+            "PROJECTED_ORACLE_recognition_damage": 0.0442708333,
+            "FULL_STATE_ORACLE_conflict": 0.7239583333,
+            "FULL_STATE_ORACLE_agreement_damage": 0.1041666667,
+            "FULL_STATE_ORACLE_recognition_damage": 0.0494791667
+          },
+          {
+            "domain": "reporting",
+            "count": 3,
+            "form": "WORDS",
+            "source_native_decision": 0.9479166667,
+            "destination_native_decision": 0.9479166667,
+            "source_native_recognition": 0.8932291667,
+            "destination_native_recognition": 0.8932291667,
+            "PAIRED_conflict": 0.2604166667,
+            "PAIRED_agreement_damage": 0.0833333333,
+            "PAIRED_recognition_damage": 0.0954861111,
+            "MEAN_conflict": 0.1822916667,
+            "MEAN_agreement_damage": 0.0104166667,
+            "MEAN_recognition_damage": 0.0694444444,
+            "RANDOM_conflict": 0.0260416667,
+            "RANDOM_agreement_damage": 0,
+            "RANDOM_recognition_damage": 0.0017361111,
+            "PROJECTED_ORACLE_conflict": 0.1510416667,
+            "PROJECTED_ORACLE_agreement_damage": 0.03125,
+            "PROJECTED_ORACLE_recognition_damage": 0.0789930556,
+            "FULL_STATE_ORACLE_conflict": 0.734375,
+            "FULL_STATE_ORACLE_agreement_damage": 0.0520833333,
+            "FULL_STATE_ORACLE_recognition_damage": 0.0815972222
+          }
+        ],
+        "/exact_empirical_result/primary_and_interaction_contrasts": [
+          {
+            "domain": "allocation",
+            "contrast": "COUNT_WORDS",
+            "primary": true,
+            "estimate": -0.1458333333,
+            "CI9875": [
+              -0.1770833333,
+              -0.1145833333
+            ],
+            "CI95": [
+              -0.1770833333,
+              -0.1145833333
+            ],
+            "families": 4,
+            "paired_items": 192
+          },
+          {
+            "domain": "allocation",
+            "contrast": "COUNT_NUMBERS",
+            "primary": true,
+            "estimate": -0.1145833333,
+            "CI9875": [
+              -0.171875,
+              -0.0677083333
+            ],
+            "CI95": [
+              -0.1614583333,
+              -0.0729166667
+            ],
+            "families": 4,
+            "paired_items": 192
+          },
+          {
+            "domain": "allocation",
+            "contrast": "FORMAT_TWO",
+            "primary": true,
+            "estimate": -0.046875,
+            "CI9875": [
+              -0.0625,
+              -0.0260416667
+            ],
+            "CI95": [
+              -0.0625,
+              -0.03125
+            ],
+            "families": 4,
+            "paired_items": 192
+          },
+          {
+            "domain": "allocation",
+            "contrast": "FORMAT_THREE",
+            "primary": true,
+            "estimate": -0.015625,
+            "CI9875": [
+              -0.0364583333,
+              0.0104166667
+            ],
+            "CI95": [
+              -0.0364583333,
+              0.0104166667
+            ],
+            "families": 4,
+            "paired_items": 192
+          },
+          {
+            "domain": "allocation",
+            "contrast": "INTERACTION",
+            "primary": false,
+            "estimate": 0.03125,
+            "CI9875": [
+              0.0052083333,
+              0.0677083333
+            ],
+            "CI95": [
+              0.0052083333,
+              0.0677083333
+            ],
+            "families": 4,
+            "paired_items": 192
+          },
+          {
+            "domain": "reporting",
+            "contrast": "COUNT_WORDS",
+            "primary": true,
+            "estimate": -0.0625,
+            "CI9875": [
+              -0.0625,
+              -0.0625
+            ],
+            "CI95": [
+              -0.0625,
+              -0.0625
+            ],
+            "families": 4,
+            "paired_items": 192
+          },
+          {
+            "domain": "reporting",
+            "contrast": "COUNT_NUMBERS",
+            "primary": true,
+            "estimate": -0.140625,
+            "CI9875": [
+              -0.1666666667,
+              -0.0989583333
+            ],
+            "CI95": [
+              -0.1666666667,
+              -0.1041666667
+            ],
+            "families": 4,
+            "paired_items": 192
+          },
+          {
+            "domain": "reporting",
+            "contrast": "FORMAT_TWO",
+            "primary": true,
+            "estimate": 0.0364583333,
+            "CI9875": [
+              -0.0052083333,
+              0.0625
+            ],
+            "CI95": [
+              0,
+              0.0625
+            ],
+            "families": 4,
+            "paired_items": 192
+          },
+          {
+            "domain": "reporting",
+            "contrast": "FORMAT_THREE",
+            "primary": true,
+            "estimate": -0.0416666667,
+            "CI9875": [
+              -0.0572916667,
+              -0.0260416667
+            ],
+            "CI95": [
+              -0.0572916667,
+              -0.0260416667
+            ],
+            "families": 4,
+            "paired_items": 192
+          },
+          {
+            "domain": "reporting",
+            "contrast": "INTERACTION",
+            "primary": false,
+            "estimate": -0.078125,
+            "CI9875": [
+              -0.1041666667,
+              -0.0364583333
+            ],
+            "CI95": [
+              -0.1041666667,
+              -0.0416666667
+            ],
+            "families": 4,
+            "paired_items": 192
+          }
+        ],
+        "/exact_empirical_result/baseline_scope": "Natural own-rule decision89.93–97.22%, recognition79.43–95.14%; source destination-conflict baseline1.56–8.33%. Natural opposite-priority references were separately measured.",
+        "/exact_empirical_result/practical_disposition": "No new practical scalar gate; measured PAIRED conflict21.875–46.875% and recognition newly-wrong7.465–20.486% do not reproduce old selective binary performance.",
+        "/exact_empirical_result/normalization": "Hard choice and within-cell source improvement primary. Semantic destination-minus-source log margins and allowed full-vocabulary answer mass in PER_ITEM/SUMMARY; no cross-count normalized-probability claim.",
+        "/negative_surprising_evidence": [
+          "Historical32 reproduce exactly while all new TWO/common-ranking PAIRED cells are already weak; old/new renderer comparison is not an isolated numeric/count contrast.",
+          "MEAN outperforms PAIRED in three of four allocation cells; PAIRED exceeds MEAN in reporting but recognition damage persists.",
+          "All four count contrasts are negative; representation effects do not share one uniform sign across domain/count.",
+          "Reporting WORDS count effect is identical−6.25pp in all four family means, making the bootstrap interval degenerate without establishing population certainty.",
+          "Projected oracle TWO39.58–53.65% versus THREE15.10–32.29%; not the best attainable vector in the selected span.",
+          "Full-state oracle only72.40–77.60% conflict accuracy and can damage agreement/recognition; no perfect full-state rescue.",
+          "Reporting THREE/NUMBERS PAIRED newly wrong agreement21.88%, recognition16.15%; net accuracy alone can conceal damage.",
+          "RANDOM remains near unedited source destination baseline; directional control exists but is not complete/selective.",
+          "No deployment/refit/no-trade adaptation or further scientific execution performed."
+        ],
+        "/what_was_held_fixed": {
+          "target": "Offline opposite-policy winner; same recognition labels and matched endpoints",
+          "current_context": "Same world, retained winners/symbols, mapping/layout/policy/endpoint within matched contrasts; only count/format changed. Token lengths are not matched.",
+          "model_parameters": {
+            "model": "google/gemma-2-9b-it",
+            "revision": "11c9b309abf73637e4b6f9a3fa1e92e615547819",
+            "backbone": "BF16, unchanged; frozen evaluation/no optimizer",
+            "readout": "validated FP32",
+            "site": 27,
+            "position": "final real prompt token",
+            "one_shot": true
+          },
+          "operators": {
+            "reporting_0-to-1": {
+              "PAIRED": {
+                "method": "PAIRED",
+                "rank": 16,
+                "strength": 1.5
+              },
+              "MEAN": {
+                "method": "MEAN_DECISION",
+                "rank": 0,
+                "strength": 0.5
+              }
+            },
+            "reporting_1-to-0": {
+              "PAIRED": {
+                "method": "PAIRED",
+                "rank": 16,
+                "strength": 1
+              },
+              "MEAN": {
+                "method": "MEAN_DECISION",
+                "rank": 0,
+                "strength": 2
+              }
+            },
+            "allocation_0-to-1": {
+              "PAIRED": {
+                "method": "PAIRED",
+                "rank": 16,
+                "strength": 1
+              },
+              "MEAN": {
+                "method": "MEAN_DECISION",
+                "rank": 0,
+                "strength": 2
+              }
+            },
+            "allocation_1-to-0": {
+              "PAIRED": {
+                "method": "PAIRED",
+                "rank": 16,
+                "strength": 1.5
+              },
+              "MEAN": {
+                "method": "MEAN_DECISION",
+                "rank": 0,
+                "strength": 2
+              }
+            }
+          },
+          "state_fields": [
+            "h",
+            "domain",
+            "policy"
+          ],
+          "donor_fields": "None for deployable predictors. Privileged oracles alone access paired natural destination state after saved-update receipt.",
+          "action_space": "Original allowed AB/AC/BC/ABC symbols; same full vocabulary decoder; no compression/relabeling.",
+          "history_cutoff": "Independent prompts, no prior answers or relation outputs reused.",
+          "calibration_parameters": "All four inherited rank16 factors/means/caps/random vectors/selected strengths unchanged.",
+          "forecast_timing": "NOT_APPLICABLE; no forecast was created or revealed."
+        }
+      }
+    },
+    {
+      "source": {
+        "name": "FULL_VERIFICATION.json",
+        "sha256": "c1bdc00d4ee440a0acaaaef3a44481f3f3b5aa5dbb4e25b92166cd080edb73f5",
+        "bytes": 992
+      },
+      "selected_values": {
+        "/status": "COMPLETE_FACTORIAL_VERIFIED",
+        "/natural_rows": 11520,
+        "/edited_rows": 57600,
+        "/source_only_updates_verified": 34560,
+        "/invalid_updates": 0,
+        "/source_only_numeric_max_error": 0.0,
+        "/generation_checks": 64,
+        "/generation_mismatches": 0,
+        "/input_binding": {
+          "manifest_sha256": "6531e891d45fa0f07b9fd97bed6ad1a180948af8655484310bb2ddcb1a9c69bd",
+          "selection_sha256": "3353b27e545464649a59b6404a62e07d6f127d36dc39a396adb0e668e8545021",
+          "verified_files": 24
+        }
+      }
+    },
+    {
+      "source": {
+        "name": "SUMMARY.csv",
+        "sha256": "91642fd6f6913b32ed09c6f72e2b57cf7c7d69127ca75410028a71fdac7e4d0e",
+        "bytes": 94910
+      },
+      "row_filter": {
+        "arm": "PAIRED",
+        "scope": "conflict"
+      },
+      "selected_rows": [
+        {
+          "domain": "allocation",
+          "count": "2",
+          "form": "NUMBERS",
+          "arm": "PAIRED",
+          "scope": "conflict",
+          "n": "192",
+          "families": "4",
+          "invalids": "0",
+          "destination_correct": "0.421875",
+          "own_rule_correct": "0.578125",
+          "valid": "1",
+          "destination_minus_source_log_margin_finite_n": "192",
+          "destination_minus_source_log_margin": "-2.27574761721"
+        },
+        {
+          "domain": "allocation",
+          "count": "2",
+          "form": "WORDS",
+          "arm": "PAIRED",
+          "scope": "conflict",
+          "n": "192",
+          "families": "4",
+          "invalids": "0",
+          "destination_correct": "0.46875",
+          "own_rule_correct": "0.53125",
+          "valid": "1",
+          "destination_minus_source_log_margin_finite_n": "192",
+          "destination_minus_source_log_margin": "-1.84335677502"
+        },
+        {
+          "domain": "allocation",
+          "count": "3",
+          "form": "NUMBERS",
+          "arm": "PAIRED",
+          "scope": "conflict",
+          "n": "192",
+          "families": "4",
+          "invalids": "0",
+          "destination_correct": "0.307291666667",
+          "own_rule_correct": "0.645833333333",
+          "valid": "1",
+          "destination_minus_source_log_margin_finite_n": "192",
+          "destination_minus_source_log_margin": "-4.2533423226"
+        },
+        {
+          "domain": "allocation",
+          "count": "3",
+          "form": "WORDS",
+          "arm": "PAIRED",
+          "scope": "conflict",
+          "n": "192",
+          "families": "4",
+          "invalids": "0",
+          "destination_correct": "0.322916666667",
+          "own_rule_correct": "0.619791666667",
+          "valid": "1",
+          "destination_minus_source_log_margin_finite_n": "192",
+          "destination_minus_source_log_margin": "-4.00320626054"
+        },
+        {
+          "domain": "reporting",
+          "count": "2",
+          "form": "NUMBERS",
+          "arm": "PAIRED",
+          "scope": "conflict",
+          "n": "192",
+          "families": "4",
+          "invalids": "0",
+          "destination_correct": "0.359375",
+          "own_rule_correct": "0.640625",
+          "valid": "1",
+          "destination_minus_source_log_margin_finite_n": "192",
+          "destination_minus_source_log_margin": "-1.96332079499"
+        },
+        {
+          "domain": "reporting",
+          "count": "2",
+          "form": "WORDS",
+          "arm": "PAIRED",
+          "scope": "conflict",
+          "n": "192",
+          "families": "4",
+          "invalids": "0",
+          "destination_correct": "0.322916666667",
+          "own_rule_correct": "0.677083333333",
+          "valid": "1",
+          "destination_minus_source_log_margin_finite_n": "192",
+          "destination_minus_source_log_margin": "-2.80358904626"
+        },
+        {
+          "domain": "reporting",
+          "count": "3",
+          "form": "NUMBERS",
+          "arm": "PAIRED",
+          "scope": "conflict",
+          "n": "192",
+          "families": "4",
+          "invalids": "0",
+          "destination_correct": "0.21875",
+          "own_rule_correct": "0.65625",
+          "valid": "1",
+          "destination_minus_source_log_margin_finite_n": "192",
+          "destination_minus_source_log_margin": "-3.86983529797"
+        },
+        {
+          "domain": "reporting",
+          "count": "3",
+          "form": "WORDS",
+          "arm": "PAIRED",
+          "scope": "conflict",
+          "n": "192",
+          "families": "4",
+          "invalids": "0",
+          "destination_correct": "0.260416666667",
+          "own_rule_correct": "0.677083333333",
+          "valid": "1",
+          "destination_minus_source_log_margin_finite_n": "192",
+          "destination_minus_source_log_margin": "-4.4434379041"
+        }
+      ]
+    }
+  ]
+}

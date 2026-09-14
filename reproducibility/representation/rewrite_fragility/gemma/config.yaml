@@ -1,0 +1,278 @@
+schema_version: 1
+contract_id: claim2_failure_analysis_v004
+supersedes:
+  contract_id: claim2_failure_analysis_v003
+  diagnostic_contract_sha256: 4c59a7d28cb756a90d0a6efd6190e4c2ce4a383e9e5157bb1d2f8eb2831c9a9f
+  source_config_sha256: c4bb63b226f4d105bf774cd17872bb0d645f8b0b757fdee96212b532467c6ff5
+  reason: >-
+    study owner authorized a pre-feature v004 amendment after Gate 2 to bind the
+    already-required authoritative stable join, owner base manifest, and
+    frozen outcome-blind rewrite-strength manifest; verify all 24 Gate 2
+    files; and complete the already-prespecified power report without changing
+    any scientific rule.
+  diagnostic_features_generated_before_amendment: false
+  outcome_values_changed_or_reanalyzed: false
+  human_authorization_received: true
+  human_authorization_text: >-
+    I authorize the scoped v004 amendment: preserve v003; bind the authoritative
+    stable join, owner base manifest, and frozen rewrite-strength manifest;
+    verify all 24 Gate 2 files; and complete the prespecified power report
+    without changing any population, predictor, endpoint, mapping, threshold,
+    hyperparameter, or stopping rule.
+  changed_fields_only:
+    - contract_id
+    - paths.output_dir
+    - paths.authoritative_inputs
+    - supersedes
+    - power.observed_input_bindings
+    - power.simulation_method
+claim_boundary: exploratory_post_outcome_llama_with_separately_frozen_prospective_gemma
+frozen_llama_result: >-
+  Claim 1 geometry did not improve the preregistered held-out prediction
+  metric beyond original text and native confidence in the representative
+  Llama population.
+
+paths:
+  output_dir: outputs/claim2-failure-analysis/v004
+  human_manifest: outputs/human-review-derived-sets/artifact_manifest.json
+  gate2_run_record: outputs/claim2-behavioral-viability/v005-run-record/run_provenance_v005.json
+  gate2_dir: outputs/claim2-behavioral-viability/v005
+  llama_compact_metadata: outputs/claim1-first-pass-semantic-stratification/source/llama-compact/claim2_m1_compact.metadata.json
+  llama_compact_vectors: outputs/claim1-first-pass-semantic-stratification/source/llama-compact/claim2_m1_compact.npz
+  gemma_provenance: outputs/claim1-first-pass-semantic-stratification/gemma_score_provenance.json
+  gemma_recovery_report: outputs/claim1-human-consensus-analysis/gemma_recovery_report.md
+  frozen_geometry_candidates:
+    - external-artifacts
+  authoritative_inputs:
+    claim1_claim2_stable_join:
+      rows: 112
+      sha256: 8ff256caafe1f57c2cc55d49291edfe20b2fae2952865e0b4be9ba1165f17eba
+      staged_name: claim1_claim2_join.csv
+      candidates:
+        - external-artifacts
+        - outputs/claim2-failure-analysis/v004/frozen_inputs/claim1_claim2_join.csv
+    owner_base_manifest:
+      rows: 112
+      sha256: 38346cf0113e48617cb6fd0ec41611d6314fec6b9ef4eb0a76193936406ef7d5
+      staged_name: base_item_manifest_private.csv
+      candidates:
+        - external-artifacts
+        - outputs/claim2-failure-analysis/v004/frozen_inputs/base_item_manifest_private.csv
+    rewrite_strength_manifest:
+      rows: 481
+      sha256: 54d1723b5a5c939afc5277302613ede68201c396289c7566d51916c1ade4d4e3
+      staged_name: rewrite_strength_manifest.csv
+      candidates:
+        - outputs/claim2-review-closure/rewrite_strength_manifest.csv
+        - outputs/claim2-failure-analysis/v004/frozen_inputs/rewrite_strength_manifest.csv
+
+reference:
+  jagged_judges_repository: https://github.com/machine-theory/jagged-judges
+  jagged_judges_commit: c693fce052d32610851d66299c04b0ccef775f62
+  copied_upstream_code: false
+
+models:
+  target_llama:
+    id: meta-llama/Meta-Llama-3.1-8B-Instruct
+    revision: 0e9e39f249a16976918f6564b8830bc894c89659
+  prospective_gemma:
+    id: google/gemma-2-9b-it
+    revision: 11c9b309abf73637e4b6f9a3fa1e92e615547819
+    selected_layer: 27
+  jury:
+    - {family: gemma2, id: google/gemma-2-9b-it, revision: 11c9b309abf73637e4b6f9a3fa1e92e615547819}
+    - {family: qwen25, id: Qwen/Qwen2.5-14B-Instruct, revision: cf98f3b3bbb457ad9e2bb7baf9a0125b6b88caa8}
+    - {family: mistral_nemo, id: mistralai/Mistral-Nemo-Instruct-2407, revision: 04d8a90549d23fc6bd7f642064003592df51e9b3}
+    - {family: olmo2, id: allenai/OLMo-2-1124-13B-Instruct, revision: 3a5c85baefbb1896a54d56fe2e76c0395627ddf4}
+    - {family: phi4, id: microsoft/Phi-4, revision: 2db69c1c3e91a05d2c64a3185acfbaf36f744e25}
+    - {family: granite33, id: ibm-granite/granite-3.3-8b-instruct, revision: 51dd4bc2ade4059a6bd87649d68aa11e4fb2529b}
+    - {family: falcon3, id: tiiuae/Falcon3-10B-Instruct, revision: 8799bc6aec0152757221dc6b272d824642db6202}
+  minimum_usable_jury_families: 5
+  jury_eligibility:
+    minimum_mapping_consistency: 0.90
+    minimum_semantic_accuracy: 0.65
+    maximum_single_symbol_fraction: 0.95
+
+scoring:
+  behavioral_prompt_batch_size: 1
+  dtype: bfloat16
+  semantic_margin_dtype: float32
+  padding_side: right
+  pad_token_policy: eos_as_pad_if_missing
+  candidate_score: summed_full_candidate_sequence_log_probability
+  direct_semantic_length_normalized_sensitivity: true
+  attention_implementation: same_as_repaired_gate2_default
+  exact_repeat_tolerance: 0.002
+  unload_after_each_model: true
+
+prompt_contracts:
+  - {id: ab_standard, symbols: [A, B], supports_index: 0}
+  - {id: ab_reversed, symbols: [A, B], supports_index: 1}
+  - {id: 12_standard, symbols: ['1', '2'], supports_index: 0}
+  - {id: 12_reversed, symbols: ['1', '2'], supports_index: 1}
+  - {id: direct_semantic, symbols: [Supports, Opposes], supports_index: 0}
+
+mechanical:
+  trials: 10
+  random_seed: 24121987
+  random_strings:
+    - H7Q2-LIME-84
+    - VIOLET-903-K
+    - P4X-EMBER-17
+    - QUARTZ-661-M
+    - N8R-CEDAR-52
+    - TULIP-409-Z
+    - F3W-ONYX-28
+    - SABLE-775-J
+    - K6D-MINT-31
+    - RAVEN-208-P
+
+predictor_ladder:
+  M0: []
+  M1: [original_text]
+  M2a: [native_confidence]
+  M2b: [frozen_dim_geometry]
+  M2: [original_text, native_confidence]
+  M3: [original_text, native_confidence, frozen_dim_geometry]
+  M4: [primary_jury_scalar]
+  M5: [original_text, native_confidence, primary_jury_scalar]
+  M6: [original_text, native_confidence, primary_mechanical_scalar]
+  M7: [original_text, native_confidence, primary_jury_scalar, primary_mechanical_scalar]
+  M8: [original_text, native_confidence, primary_jury_scalar, frozen_dim_geometry]
+  M9: [original_text, native_confidence, primary_jury_scalar, primary_mechanical_scalar, frozen_dim_geometry]
+  primary_jury_scalar: leave_target_out_vote_entropy
+  primary_mechanical_scalar: irrelevant_string_verdict_retention
+
+jury_features:
+  hard_vote_rule: standard_and_reversed_semantic_signs_agree_and_scoring_succeeds
+  abstention_rule: mapping_disagreement_or_scoring_error
+  primary_scalar: leave_target_out_vote_entropy
+  reported:
+    - leave_target_out_majority_fraction
+    - leave_target_out_vote_margin
+    - leave_target_out_vote_entropy
+    - valid_votes
+    - target_in_jury_minority
+    - target_jury_disagreement
+    - mapping_inconsistent_fraction
+    - family_balanced_majority_strength
+    - calibration_standardized_soft_mean
+    - calibration_standardized_soft_dispersion
+  robustness:
+    - leave_one_jury_model_out
+    - all_21_five_of_seven_subsets
+    - family_balanced_aggregation
+
+inference:
+  populations:
+    - representative_primary
+    - representative_mapping_consistent_secondary
+    - enriched_geometry_confidence_diagnostic
+  statistical_unit: base_item_id
+  frozen_outer_folds: 5
+  frozen_outer_repeats: 5
+  frozen_inner_folds: 4
+  frozen_outer_seeds: [20260809, 20260810, 20260811, 20260812, 20260813]
+  use_exact_frozen_outer_assignments: true
+  regularization_c: [0.01, 0.1, 1.0, 10.0]
+  text_pca_dimensions: [8, 16, 32]
+  text_encoder: sentence-transformers/all-MiniLM-L6-v2
+  text_encoder_revision: 1110a243fdf4706b3f48f1d95db1a4f5529b4d41
+  normalization_fit_on_training_only: true
+  bootstrap_replicates: 2000
+  permutation_replicates: 2000
+  random_seed: 61703
+
+outcomes:
+  official: binomial_flip_count_per_accepted_rewrite
+  diagnostic:
+    - any_accepted_rewrite_flips
+    - mapping_consistent_flips_only
+    - mean_absolute_semantic_margin_movement
+    - maximum_absolute_semantic_margin_movement
+    - mean_movement_toward_boundary
+    - rewrite_margin_variance
+    - cross_format_robust_flips
+    - flips_surviving_all_formats
+
+power:
+  eligible_originals: [75, 100, 150, 200, 300, 500, 800]
+  accepted_rewrites_per_original: [2, 3, 4]
+  incremental_log_loss_gain: [0.0025, 0.005, 0.01, 0.02]
+  standardized_odds_ratio: [1.25, 1.5, 2.0, 3.0]
+  mapping_consistency: [current, improved]
+  plausible_event_rates: [0.05, 0.10, 0.15, 0.25, 0.35]
+  simulation_replicates: 2000
+  current_mapping_consistency: observed_repaired_gate2_rate
+  improved_mapping_consistency: 0.95
+  observed_input_bindings:
+    representative_eligible_yield_numerator: 49
+    representative_eligible_yield_denominator: 80
+    repaired_gate2_mapping_consistent_wordings: 280
+    repaired_gate2_total_wordings: 349
+  simulation_method:
+    outcome_unit: original_item
+    grouped_outer_folds: 5
+    grouped_outer_repeats: 5
+    confidence_interval: item_level_normal_approximation_to_cross_fitted_loss_delta
+    predictor_distribution: observed_representative_native_confidence_jury_geometry_correlation
+    calibration_instability: standard_deviation_of_foldwise_calibration_error
+    prediction_variance: mean_item_probability_variance_across_simulation_replicates
+    target_gain_handling: interpolate_between_baseline_and_oracle_then_report_achieved_gain_and_feasibility
+
+diagnostic_thresholds:
+  materially_better_mapping_consistency_absolute: 0.10
+  substantially_different_flip_count_absolute: 5
+  favorable_predictive_increment_minimum_log_loss: 0.0025
+  favorable_predictive_interval_rule: lower_bound_above_zero
+  jury_robustness_minimum_leave_one_out_fraction: 0.80
+  high_absolute_predictor_correlation: 0.70
+  severe_range_sd_retention_ratio: 0.50
+  stronger_rewrite_flip_concentration: 0.50
+  underpowered_detection_probability: 0.50
+
+deterministic_decision_logic:
+  PARAPHRASE_INSTABILITY_PREDICTABLE_NOT_BY_FROZEN_DIM: jury_increment_favorable_and_robust AND frozen_dim_increment_not_favorable AND prompt_contract_not_flawed
+  GEOMETRY_REDUNDANT_WITH_CONFIDENCE: geometry_alone_favorable AND geometry_increment_after_confidence_not_favorable AND abs_geometry_confidence_correlation_at_least_0_70
+  ORIGINAL_GEOMETRY_SUMMARY_MISSPECIFIED: predefined_alternate_geometry_increment_favorable AND original_dim_increment_not_favorable
+  PROMPT_OR_MAPPING_CONTRACT_FLAW: independent_competence_consistency_improves_at_least_0_10 AND claim2_flip_count_changes_by_at_least_5
+  BINARY_ENDPOINT_TOO_NOISY_OR_COARSE: continuous_outcome_increment_favorable AND binary_increment_not_favorable OR robust_flips_substantially_fewer
+  PERTURBATION_DISTRIBUTION_TOO_WEAK: accepted_strength_shifted_weaker AND top_strength_quartile_contains_more_than_half_of_flips
+  PRIMARY_SAMPLE_RANGE_RESTRICTED: final_primary_geometry_sd_is_below_half_of_80_item_sd AND near_boundary_attrition_is_disproportionate
+  CURRENT_STUDY_UNDERPOWERED: no_strong_predictor_favorable AND detection_probability_for_or_1_5_at_n49_below_0_50
+  CURRENT_FORM_OF_CLAIM2_NOT_SUPPORTED: prompt_contract_robust AND jury_predictive AND adequate_prospective_data AND all_predefined_claim1_features_null
+  DIFFERENT_INSTABILITY_PHENOMENON: jury_null AND prompt_measurement_sound AND adequate_prospective_power
+
+prospective_design_rules:
+  mapping_problem: choose_format_on_claim1_competence_and_require_mapping_consistency
+  underpowered: use_smallest_grid_n_with_detection_probability_at_least_0_80_and_final_untouched_test_split
+  rewrite_strength_problem: add_independently_reviewed_stronger_rephrasing_family
+  range_restriction: sample_human_clear_items_across_frozen_geometry_quantiles
+  jury_positive_dim_null: preregister_leave_target_out_jury_versus_frozen_geometry
+  enriched_only: fresh_geometry_confidence_disagreement_sample_no_prevalence_claim
+  alternate_geometry_positive: freeze_feature_before_fresh_originals_and_rewrites
+  no_category: replicate_unchanged_with_smallest_grid_n_at_detection_probability_at_least_0_80
+
+decision_categories:
+  - PARAPHRASE_INSTABILITY_PREDICTABLE_NOT_BY_FROZEN_DIM
+  - GEOMETRY_REDUNDANT_WITH_CONFIDENCE
+  - ORIGINAL_GEOMETRY_SUMMARY_MISSPECIFIED
+  - PROMPT_OR_MAPPING_CONTRACT_FLAW
+  - BINARY_ENDPOINT_TOO_NOISY_OR_COARSE
+  - PERTURBATION_DISTRIBUTION_TOO_WEAK
+  - PRIMARY_SAMPLE_RANGE_RESTRICTED
+  - CURRENT_STUDY_UNDERPOWERED
+  - CURRENT_FORM_OF_CLAIM2_NOT_SUPPORTED
+  - DIFFERENT_INSTABILITY_PHENOMENON
+
+gemma:
+  require_no_prior_claim2_outcome_inspection: true
+  require_separate_freeze: true
+  geometry_firewall_until_viability: true
+  minimum_distinct_representative_flipping_originals: 5
+  require_all_behavioral_wordings_format_valid: true
+  require_zero_identity_control_sign_flips: true
+  original_repeat_tolerance: 0.002
+  original_repeat_count: 2
+  populations: same_human_approved_populations
+  stop_if_prospective_status_unprovable: true

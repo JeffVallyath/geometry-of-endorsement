@@ -1,0 +1,321 @@
+{
+  "schema": "STRATEGY_BACKGROUND_TERMINAL_PROJECTION_V1",
+  "strategy_block": 11,
+  "study": "SELECTIVE_CONTROL_PROGRESS_SPRINT_V1",
+  "evidence_level": "selected original terminal scientific summary values; not independent numerical replay",
+  "intake_boundary": "Original source bytes freshly hashed. Historical verification receipts are quoted as receipts; no fresh full-archive or member-by-member certification was performed.",
+  "curator_scope_qualification": "Same-actuator hidden-state versus logit gate contrast supports bounded component evidence. Fresh familiar selective target M1 and four/six-option stress M2 fail; M4 not measured and novelty open. Oracle task gate also fails stress, so routing improvement does not rescue actuator efficacy. The original decision phrase cannot produce the destination answer at all is rhetorical and must not be read as zero accuracy: its own reported stress accuracy is about 25 percent. Do not call zero-crossing intervals equivalence. Native prompting stronger on the same fresh cohort.",
+  "records": [
+    {
+      "source": {
+        "name": "SCORECARD_AFTER.json",
+        "sha256": "df20ac01f39cda9cd4db1255acfb25e67493cd69b1a0a6a1a9b1bb04d4ab8d00",
+        "bytes": 142748
+      },
+      "selected_values": {
+        "/scope": "FRESH_FULL",
+        "/freeze_sha256": "87f40f46fbb127d1366612f9e13faf18a98963b4d0dfd397a505d0a7c938e099",
+        "/rows": 15360,
+        "/finalist": "G_H(T4_c256_m1)",
+        "/comparator": "G_LOGIT(T4_c256_m1)",
+        "/ablations": [
+          "T4_c256_m1",
+          "G_H(U_c512_m1)"
+        ],
+        "/M1": {
+          "status": "NOT_ESTABLISHED",
+          "arm": "G_H@G_H(T4_c256_m1)(T4_seed0_c256)",
+          "per_seed": [
+            "T4_seed0_c256",
+            "T4_seed1_c256"
+          ],
+          "checks": {
+            "overall_accuracy_both_seeds": {
+              "value": 0.7317708333333334,
+              "threshold": 0.75,
+              "passed": false
+            },
+            "min_domain_accuracy": {
+              "value": 0.7083333333333334,
+              "threshold": 0.7,
+              "passed": true
+            },
+            "harm_each_domain": {
+              "value": 0.08854166666666667,
+              "threshold": 0.05,
+              "passed": false
+            },
+            "gain_over_preselected_initialization": {
+              "value": 0.45833333333333337,
+              "threshold": 0.15,
+              "passed": true
+            }
+          }
+        },
+        "/M2": {
+          "status": "NOT_ESTABLISHED",
+          "arm": "G_H@G_H(T4_c256_m1)(T4_seed0_c256)",
+          "per_seed": [
+            "T4_seed0_c256",
+            "T4_seed1_c256"
+          ],
+          "checks": {
+            "overall_accuracy_both_seeds": {
+              "value": 0.24696180555555552,
+              "threshold": 0.8,
+              "passed": false
+            },
+            "min_domain_accuracy": {
+              "value": 0.21788194444444442,
+              "threshold": 0.75,
+              "passed": false
+            },
+            "harm_each_domain": {
+              "value": 0.18229166666666666,
+              "threshold": 0.05,
+              "passed": false
+            },
+            "decisive_new_option": {
+              "value": 0.22526041666666666,
+              "threshold": 0.75,
+              "passed": false
+            },
+            "gain_over_selected_comparator": {
+              "value": 0.0,
+              "threshold": 0.1,
+              "passed": false
+            }
+          }
+        },
+        "/M3": {
+          "status": "SEE_CONTRASTS",
+          "note": "matched component contrasts: the finalist against the same actuator with a different gate (F vs B), against the same gate with the original teacher-imitating actuator, and against the ungated actuator; all on fresh cases with unchanged inference access"
+        },
+        "/M4": {
+          "status": "NOT_MEASURED",
+          "note": "no second backbone and no external task were run in this sprint"
+        },
+        "/novelty": {
+          "status": "OPEN",
+          "note": "conditional steering, gating, PSR and ReFT are prior art; the measured comparison narrows but does not certify novelty"
+        },
+        "/contrasts": {
+          "F_minus_B_familiar_conflict_accuracy": {
+            "F": {
+              "recipe": "G_H(T4_c256_m1)",
+              "arms": [
+                "T4_seed0_c256",
+                "T4_seed1_c256"
+              ]
+            },
+            "B": {
+              "recipe": "G_LOGIT(T4_c256_m1)",
+              "arms": [
+                "T4_seed0_c256",
+                "T4_seed1_c256"
+              ]
+            },
+            "per_seed": {
+              "T4_seed0_c256_vs_T4_seed0_c256": 0.4375,
+              "T4_seed1_c256_vs_T4_seed1_c256": 0.41927083333333337
+            },
+            "difference": 0.42838541666666663,
+            "ci95": [
+              0.3997395833333333,
+              0.45442708333333337
+            ],
+            "ci_corrected": [
+              0.390625,
+              0.4609375
+            ],
+            "interval": 0.9875,
+            "draws": 10000,
+            "seed": 260909,
+            "families_per_domain": {
+              "allocation": 24,
+              "reporting": 24
+            },
+            "per_domain": {
+              "allocation": 0.4036458333333333,
+              "reporting": 0.453125
+            }
+          },
+          "F_minus_B_stress_conflict_accuracy": {
+            "F": {
+              "recipe": "G_H(T4_c256_m1)",
+              "arms": [
+                "T4_seed0_c256",
+                "T4_seed1_c256"
+              ]
+            },
+            "B": {
+              "recipe": "G_LOGIT(T4_c256_m1)",
+              "arms": [
+                "T4_seed0_c256",
+                "T4_seed1_c256"
+              ]
+            },
+            "per_seed": {
+              "T4_seed0_c256_vs_T4_seed0_c256": 0.0,
+              "T4_seed1_c256_vs_T4_seed1_c256": -0.00043402777777777775
+            },
+            "difference": -0.00021701388888888888,
+            "ci95": [
+              -0.0006510416666666666,
+              0.0
+            ],
+            "ci_corrected": [
+              -0.0008680555555555555,
+              0.0
+            ],
+            "interval": 0.9875,
+            "draws": 10000,
+            "seed": 260909,
+            "families_per_domain": {
+              "allocation": 24,
+              "reporting": 24
+            },
+            "per_domain": {
+              "allocation": -0.00043402777777777775,
+              "reporting": 0.0
+            }
+          },
+          "gate_U_minus_U_agreement_harm": {
+            "gated": {
+              "recipe": "G_H(U_c512_m1)",
+              "arms": [
+                "U_seed0",
+                "U_seed1"
+              ]
+            },
+            "raw": {
+              "arms": [
+                "U_seed0",
+                "U_seed1"
+              ]
+            },
+            "per_seed": {
+              "U_seed0_vs_U_seed0": -0.13541666666666666,
+              "U_seed1_vs_U_seed1": -0.13411458333333334
+            },
+            "difference": -0.134765625,
+            "ci95": [
+              -0.15494791666666669,
+              -0.11458333333333333
+            ],
+            "ci_corrected": [
+              -0.1611368815104168,
+              -0.10872395833333333
+            ],
+            "interval": 0.9875,
+            "draws": 10000,
+            "seed": 260909,
+            "families_per_domain": {
+              "allocation": 24,
+              "reporting": 24
+            },
+            "per_domain": {
+              "allocation": -0.09375,
+              "reporting": -0.17578125
+            }
+          },
+          "T1_minus_U_agreement_harm": {
+            "T": {
+              "arms": [
+                "T1_seed0_c512",
+                "T1_seed1_c512"
+              ]
+            },
+            "U": {
+              "arms": [
+                "U_seed0",
+                "U_seed1"
+              ]
+            },
+            "per_seed": {
+              "T1_seed0_c512_vs_U_seed0": -0.057291666666666664,
+              "T1_seed1_c512_vs_U_seed1": -0.10286458333333334
+            },
+            "difference": -0.080078125,
+            "ci95": [
+              -0.11197916666666667,
+              -0.048828125
+            ],
+            "ci_corrected": [
+              -0.12109375,
+              -0.040364583333333336
+            ],
+            "interval": 0.9875,
+            "draws": 10000,
+            "seed": 260909,
+            "families_per_domain": {
+              "allocation": 24,
+              "reporting": 24
+            },
+            "per_domain": {
+              "allocation": -0.057291666666666664,
+              "reporting": -0.10286458333333333
+            }
+          }
+        },
+        "/live_hook/rows": 64,
+        "/live_hook/applied": 32,
+        "/live_hook/withheld": 32,
+        "/live_hook/max_abs_logp_error": 0.0,
+        "/live_hook/max_score_error": 7.667969093017035e-08,
+        "/live_hook/choice_matches": 64,
+        "/live_hook/equivalent": true
+      }
+    },
+    {
+      "source": {
+        "name": "REPORT.md",
+        "sha256": "7730329c7e46baf529741bd899cb5832b2f5f0ecf24ab3029ba1c4db93115f4d",
+        "bytes": 12194
+      },
+      "selected_excerpts": [
+        {
+          "start_line": 21,
+          "end_line": 23,
+          "text": "Gemma-2-9b-it at revision `11c9b309…`, frozen unquantized BF16, the validated\nFP32 readout, post-block 27, rank 16, final real prompt token, one-shot\nintervention. The supplied bundle"
+        },
+        {
+          "start_line": 160,
+          "end_line": 164,
+          "text": "Zero exact prompt overlap and zero family overlap with the development banks.\nFamiliar (2/3 options) and stress (4/6 options) are reported separately and\nnever pooled. Complete tables are in `REPORT_TABLES.md`; the arm-by-gate matrix\ncovers every frozen gate applied to every raw arm, plus the native prompting\nreferences and the oracle diagnostics."
+        }
+      ]
+    },
+    {
+      "source": {
+        "name": "DECISION.md",
+        "sha256": "8a5deab3c9cb30ea10f8d6300a965886ff6310aca3beb3ca0e791fa2b8b0d29e",
+        "bytes": 8618
+      },
+      "selected_excerpts": [
+        {
+          "start_line": 5,
+          "end_line": 20,
+          "text": "**M1 (fresh selective capability, familiar 2/3 options): NOT_ESTABLISHED.**\nThe frozen finalist reaches 76.04% (seed 0) and 73.18% (seed 1) conflict accuracy\non the sealed cohort, against 27.34% for the preselected protection-feasible\ninitialization — a +45.83 pp gain, far past the required +15 pp, and the\nper-domain accuracy floor is met (70.83%). It fails on two of four checks: the\nminimum-seed accuracy is 73.18% against a required 75%, and the observed\nagreement harm is 8.33%/8.85% in the worst domain against a required 5%.\nRecognition harm is 0.00% in every domain and both seeds.\n\n**M2 (transfer to 4/6-option stress): NOT_ESTABLISHED, decisively.**\nConflict accuracy is 24.70%/25.09% against a required 80%, decisive-new-option\naccuracy 23.70% against 75%, and agreement harm 18.23%. The task-category\n**oracle** gate on the same actuator also reaches only 24.70%: at four and six\noptions this editor cannot produce the destination answer at all, so no routing\npolicy over its two outputs could have passed. This is an actuator limit, not a\ngate failure."
+        },
+        {
+          "start_line": 43,
+          "end_line": 56,
+          "text": "**M4 (independent model, external task value): NOT_MEASURED.** Gemma only, one\nsynthetic grammar. **Novelty: OPEN.** **Practical value: negative on this\nevidence** — see below.\n\n## The result that constrains everything else\n\nGood prompting wins by a wide margin. On the same sealed cohort the native\ndestination-policy prompt reaches **98.44%** (familiar) and **85.03%** (stress)\nconflict accuracy, and the protection-explicit prompt 94.79% / 84.16%. The best\ninternal edit reaches 76.04% / 25.09%. There is no version of these numbers in\nwhich the rank-16 one-shot edit is the better way to solve this task. The\ncontract asked for this to be said plainly, and it is: **for this task, a direct\ninstruction is better than the intervention.** The interesting question the edit\nstill answers is a mechanistic one about separability, not a deployment one."
+        }
+      ]
+    },
+    {
+      "source": {
+        "name": "terminal-v2-INTAKE.json",
+        "sha256": "794b2236cdc519ebdb9c04fd73df6852966d4832f61dcc29546961b92a0fef6e",
+        "bytes": 439916
+      },
+      "selected_values": {
+        "/status": "LOCAL_NFS_HASH_READBACK_VERIFIED",
+        "/terminal": true,
+        "/scientific_completeness_not_inferred_from_custody": true
+      }
+    }
+  ]
+}

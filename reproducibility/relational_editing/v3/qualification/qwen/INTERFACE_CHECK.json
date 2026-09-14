@@ -1,0 +1,561 @@
+{
+  "at": "2026-09-11T05:33:34.381384+00:00",
+  "actor": "qwen",
+  "procedure": "T4",
+  "site": 13,
+  "requests": 16,
+  "rows": [
+    {
+      "query_id": "CAL-RSO3-0014-d1-03",
+      "scene_id": "CAL-RSO3-0014",
+      "cached_logps": [
+        0.0,
+        -24.377029418945312
+      ],
+      "full_logps": [
+        0.0,
+        -24.377029418945312
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "propagation_next_block_equal": true,
+      "prefix_tokens": 668,
+      "clause_tokens": 9,
+      "cache_bytes": 98500608,
+      "prefix_hash": "d339126609bf7443c51e25fa5323155a58e8de249c336372df64c5fb3e1ae834"
+    },
+    {
+      "query_id": "CAL-RSO3-0036-d0-00",
+      "scene_id": "CAL-RSO3-0036",
+      "cached_logps": [
+        0.0,
+        -25.684669494628906
+      ],
+      "full_logps": [
+        0.0,
+        -25.684669494628906
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "propagation_next_block_equal": true,
+      "prefix_tokens": 670,
+      "clause_tokens": 9,
+      "cache_bytes": 98795520,
+      "prefix_hash": "e506a1f4cff493d53a0dc2e5bb3f614a3ede30224896551ead96abc0b71805cb"
+    },
+    {
+      "query_id": "CAL-RSO3-0038-d0-01",
+      "scene_id": "CAL-RSO3-0038",
+      "cached_logps": [
+        -0.011295419186353683,
+        -4.489002227783203
+      ],
+      "full_logps": [
+        -0.011295419186353683,
+        -4.489002227783203
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "propagation_next_block_equal": true,
+      "prefix_tokens": 671,
+      "clause_tokens": 9,
+      "cache_bytes": 98942976,
+      "prefix_hash": "e5982587397676a450c0af21f127f1071a5e8d9ee60ef3ee0411e50f93ba63b9"
+    },
+    {
+      "query_id": "CAL-RSO3-0030-d0-04",
+      "scene_id": "CAL-RSO3-0030",
+      "cached_logps": [
+        -11.712410926818848,
+        -8.22540732769994e-06
+      ],
+      "full_logps": [
+        -11.712410926818848,
+        -8.22540732769994e-06
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "propagation_next_block_equal": true,
+      "prefix_tokens": 668,
+      "clause_tokens": 9,
+      "cache_bytes": 98500608,
+      "prefix_hash": "3a205881d2f11e1e067a800994f1dc6896f05e82ec352e0720eb292dffd5d381"
+    },
+    {
+      "query_id": "CAL-RSO3-0030-d1-04",
+      "scene_id": "CAL-RSO3-0030",
+      "cached_logps": [
+        -22.34326934814453,
+        0.0
+      ],
+      "full_logps": [
+        -22.34326934814453,
+        0.0
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "propagation_next_block_equal": true,
+      "prefix_tokens": 668,
+      "clause_tokens": 9,
+      "cache_bytes": 98500608,
+      "prefix_hash": "3a205881d2f11e1e067a800994f1dc6896f05e82ec352e0720eb292dffd5d381"
+    },
+    {
+      "query_id": "CAL-RSO3-0002-d1-02",
+      "scene_id": "CAL-RSO3-0002",
+      "cached_logps": [
+        -12.112913131713867,
+        -5.483612312673358e-06
+      ],
+      "full_logps": [
+        -12.112913131713867,
+        -5.483612312673358e-06
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "propagation_next_block_equal": true,
+      "prefix_tokens": 672,
+      "clause_tokens": 9,
+      "cache_bytes": 99090432,
+      "prefix_hash": "4ea29e29904126a410851fb589de6dbc21f336c59be516f70c9e9b9dd91538b0"
+    },
+    {
+      "query_id": "CAL-RSO3-0027-d1-05",
+      "scene_id": "CAL-RSO3-0027",
+      "cached_logps": [
+        -33.3018684387207,
+        0.0
+      ],
+      "full_logps": [
+        -33.3018684387207,
+        0.0
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "propagation_next_block_equal": true,
+      "prefix_tokens": 672,
+      "clause_tokens": 10,
+      "cache_bytes": 99090432,
+      "prefix_hash": "aec5d63a661da90dc2f499fde92dba28f57cef0de07e5239f2099b1908ac86e3"
+    },
+    {
+      "query_id": "CAL-RSO3-0020-d1-02",
+      "scene_id": "CAL-RSO3-0020",
+      "cached_logps": [
+        -0.0033999038860201836,
+        -5.685708045959473
+      ],
+      "full_logps": [
+        -0.0033999038860201836,
+        -5.685708045959473
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "propagation_next_block_equal": true,
+      "prefix_tokens": 668,
+      "clause_tokens": 9,
+      "cache_bytes": 98500608,
+      "prefix_hash": "6e4e6e7ee6bf8d571283450c0bfd558019d191bef145207cf6ef623f1a3a41b0"
+    },
+    {
+      "query_id": "CAL-RSO3-0020-d0-05",
+      "scene_id": "CAL-RSO3-0020",
+      "cached_logps": [
+        -28.61682891845703,
+        0.0
+      ],
+      "full_logps": [
+        -28.61682891845703,
+        0.0
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "propagation_next_block_equal": true,
+      "prefix_tokens": 668,
+      "clause_tokens": 9,
+      "cache_bytes": 98500608,
+      "prefix_hash": "6e4e6e7ee6bf8d571283450c0bfd558019d191bef145207cf6ef623f1a3a41b0"
+    },
+    {
+      "query_id": "CAL-RSO3-0011-d0-05",
+      "scene_id": "CAL-RSO3-0011",
+      "cached_logps": [
+        0.0,
+        -17.972312927246094
+      ],
+      "full_logps": [
+        0.0,
+        -17.972312927246094
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "propagation_next_block_equal": true,
+      "prefix_tokens": 672,
+      "clause_tokens": 10,
+      "cache_bytes": 99090432,
+      "prefix_hash": "5cae0bcd0bc663cbb6ce062bcfff3c1fb7713d75358fd3aefa2f87ba294db35e"
+    },
+    {
+      "query_id": "CAL-RSO3-0016-d0-02",
+      "scene_id": "CAL-RSO3-0016",
+      "cached_logps": [
+        0.0,
+        -18.538135528564453
+      ],
+      "full_logps": [
+        0.0,
+        -18.538135528564453
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "propagation_next_block_equal": true,
+      "prefix_tokens": 667,
+      "clause_tokens": 9,
+      "cache_bytes": 98353152,
+      "prefix_hash": "2fa9e240d2de1f16e2cf07529d29acf1afa307d50d3eb5700acec06c6b851233"
+    },
+    {
+      "query_id": "CAL-RSO3-0006-d1-01",
+      "scene_id": "CAL-RSO3-0006",
+      "cached_logps": [
+        -8.61445426940918,
+        -0.00018153927521780133
+      ],
+      "full_logps": [
+        -8.61445426940918,
+        -0.00018153927521780133
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "propagation_next_block_equal": true,
+      "prefix_tokens": 669,
+      "clause_tokens": 9,
+      "cache_bytes": 98648064,
+      "prefix_hash": "c335df6a9618e805d95027e007824aca5d8f78e2edcec43d73b1e1c413fc4952"
+    },
+    {
+      "query_id": "CAL-RSO3-0026-d0-03",
+      "scene_id": "CAL-RSO3-0026",
+      "cached_logps": [
+        0.0,
+        -26.22409439086914
+      ],
+      "full_logps": [
+        0.0,
+        -26.22409439086914
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "propagation_next_block_equal": true,
+      "prefix_tokens": 669,
+      "clause_tokens": 9,
+      "cache_bytes": 98648064,
+      "prefix_hash": "0fb755cc1394f3af120dd97490038954709856fe8d710a8fc1850b1fc8795547"
+    },
+    {
+      "query_id": "CAL-RSO3-0040-d0-00",
+      "scene_id": "CAL-RSO3-0040",
+      "cached_logps": [
+        0.0,
+        -28.063232421875
+      ],
+      "full_logps": [
+        0.0,
+        -28.063232421875
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "propagation_next_block_equal": true,
+      "prefix_tokens": 671,
+      "clause_tokens": 9,
+      "cache_bytes": 98942976,
+      "prefix_hash": "72cae5f43ef6360bdaf816999028ca7790aabd16cd604b99d8e04793b9f24b16"
+    },
+    {
+      "query_id": "CAL-RSO3-0032-d0-02",
+      "scene_id": "CAL-RSO3-0032",
+      "cached_logps": [
+        0.0,
+        -23.99686050415039
+      ],
+      "full_logps": [
+        0.0,
+        -23.99686050415039
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "propagation_next_block_equal": true,
+      "prefix_tokens": 672,
+      "clause_tokens": 9,
+      "cache_bytes": 99090432,
+      "prefix_hash": "7d541a801e429c276975b590e3ca158478e492453d2122507c354988d16e8978"
+    },
+    {
+      "query_id": "CAL-RSO3-0023-d0-05",
+      "scene_id": "CAL-RSO3-0023",
+      "cached_logps": [
+        -24.13677215576172,
+        0.0
+      ],
+      "full_logps": [
+        -24.13677215576172,
+        0.0
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "propagation_next_block_equal": true,
+      "prefix_tokens": 671,
+      "clause_tokens": 10,
+      "cache_bytes": 98942976,
+      "prefix_hash": "fe8501a6dc23ac9f46b1e735be5f3fb8c6bddd5947e9715ca76eac0bdc39ec6c"
+    }
+  ],
+  "zero_self_edit_hash_identical": true,
+  "clone_hash_identical": true,
+  "cached_vs_full": {
+    "max_abs_logp": 0.0,
+    "same_choice": true,
+    "mean_abs": 0.0
+  },
+  "batched_vs_single": {
+    "max_abs_logp": 0.8521184921264648,
+    "same_choice": true,
+    "n": 16
+  },
+  "order_independent": true,
+  "masters_unchanged_after_reordered_queries": true,
+  "recompile_deterministic": true,
+  "master_unchanged_every_ask": true,
+  "propagation_next_block": true,
+  "setter_identities": {
+    "rows": [
+      {
+        "scene_id": "CAL-RSO3-0014",
+        "ws_AA_vs_A": 4.76837158203125e-07,
+        "ws_A8_vs_A": 9.5367431640625e-07,
+        "ws_over_vs_direct": 4.76837158203125e-07,
+        "bf16_AA_hash_equal": false,
+        "bf16_A8_hash_equal": false,
+        "bf16_over_hash_equal": true,
+        "cast_error": 0.11133310943841934,
+        "numpy_vs_torch": 2.9405108321611806e-06,
+        "state_scale": 37.57884979248047,
+        "update_norm": 4.8702563179863825
+      },
+      {
+        "scene_id": "CAL-RSO3-0036",
+        "ws_AA_vs_A": 4.76837158203125e-07,
+        "ws_A8_vs_A": 1.430511474609375e-06,
+        "ws_over_vs_direct": 4.76837158203125e-07,
+        "bf16_AA_hash_equal": true,
+        "bf16_A8_hash_equal": false,
+        "bf16_over_hash_equal": false,
+        "cast_error": 0.1132052019238472,
+        "numpy_vs_torch": 2.2114794191452347e-06,
+        "state_scale": 37.321041107177734,
+        "update_norm": 5.841928905910915
+      },
+      {
+        "scene_id": "CAL-RSO3-0038",
+        "ws_AA_vs_A": 4.76837158203125e-07,
+        "ws_A8_vs_A": 1.1920928955078125e-06,
+        "ws_over_vs_direct": 4.76837158203125e-07,
+        "bf16_AA_hash_equal": true,
+        "bf16_A8_hash_equal": true,
+        "bf16_over_hash_equal": true,
+        "cast_error": 0.1318291574716568,
+        "numpy_vs_torch": 2.1274178578778447e-06,
+        "state_scale": 35.43019485473633,
+        "update_norm": 4.249154673682319
+      },
+      {
+        "scene_id": "CAL-RSO3-0030",
+        "ws_AA_vs_A": 4.76837158203125e-07,
+        "ws_A8_vs_A": 1.9073486328125e-06,
+        "ws_over_vs_direct": 4.76837158203125e-07,
+        "bf16_AA_hash_equal": false,
+        "bf16_A8_hash_equal": false,
+        "bf16_over_hash_equal": true,
+        "cast_error": 0.1292824000120163,
+        "numpy_vs_torch": 1.843694711567423e-06,
+        "state_scale": 36.48684310913086,
+        "update_norm": 4.941489934921265
+      },
+      {
+        "scene_id": "CAL-RSO3-0002",
+        "ws_AA_vs_A": 9.5367431640625e-07,
+        "ws_A8_vs_A": 9.5367431640625e-07,
+        "ws_over_vs_direct": 9.5367431640625e-07,
+        "bf16_AA_hash_equal": true,
+        "bf16_A8_hash_equal": false,
+        "bf16_over_hash_equal": true,
+        "cast_error": 0.14386242628097534,
+        "numpy_vs_torch": 2.3789809162622078e-06,
+        "state_scale": 37.87955093383789,
+        "update_norm": 5.118557824028863
+      },
+      {
+        "scene_id": "CAL-RSO3-0027",
+        "ws_AA_vs_A": 4.76837158203125e-07,
+        "ws_A8_vs_A": 1.9073486328125e-06,
+        "ws_over_vs_direct": 2.384185791015625e-07,
+        "bf16_AA_hash_equal": true,
+        "bf16_A8_hash_equal": true,
+        "bf16_over_hash_equal": false,
+        "cast_error": 0.120236337184906,
+        "numpy_vs_torch": 1.5979648964048465e-06,
+        "state_scale": 36.394203186035156,
+        "update_norm": 4.156709337234497
+      },
+      {
+        "scene_id": "CAL-RSO3-0020",
+        "ws_AA_vs_A": 4.76837158203125e-07,
+        "ws_A8_vs_A": 1.430511474609375e-06,
+        "ws_over_vs_direct": 4.76837158203125e-07,
+        "bf16_AA_hash_equal": false,
+        "bf16_A8_hash_equal": false,
+        "bf16_over_hash_equal": false,
+        "cast_error": 0.08517716079950333,
+        "numpy_vs_torch": 1.8441734042085045e-06,
+        "state_scale": 37.48444366455078,
+        "update_norm": 4.950156185362074
+      },
+      {
+        "scene_id": "CAL-RSO3-0011",
+        "ws_AA_vs_A": 9.5367431640625e-07,
+        "ws_A8_vs_A": 1.9073486328125e-06,
+        "ws_over_vs_direct": 4.76837158203125e-07,
+        "bf16_AA_hash_equal": true,
+        "bf16_A8_hash_equal": true,
+        "bf16_over_hash_equal": false,
+        "cast_error": 0.14209996163845062,
+        "numpy_vs_torch": 3.1965553759505383e-06,
+        "state_scale": 36.81721115112305,
+        "update_norm": 4.8053457021713255
+      },
+      {
+        "scene_id": "CAL-RSO3-0016",
+        "ws_AA_vs_A": 4.76837158203125e-07,
+        "ws_A8_vs_A": 1.1920928955078125e-06,
+        "ws_over_vs_direct": 4.76837158203125e-07,
+        "bf16_AA_hash_equal": false,
+        "bf16_A8_hash_equal": false,
+        "bf16_over_hash_equal": true,
+        "cast_error": 0.11224918812513351,
+        "numpy_vs_torch": 1.555114153006798e-06,
+        "state_scale": 36.023651123046875,
+        "update_norm": 4.699256022771199
+      },
+      {
+        "scene_id": "CAL-RSO3-0006",
+        "ws_AA_vs_A": 4.76837158203125e-07,
+        "ws_A8_vs_A": 1.430511474609375e-06,
+        "ws_over_vs_direct": 4.76837158203125e-07,
+        "bf16_AA_hash_equal": false,
+        "bf16_A8_hash_equal": false,
+        "bf16_over_hash_equal": false,
+        "cast_error": 0.1018199473619461,
+        "numpy_vs_torch": 3.3477541165893854e-06,
+        "state_scale": 38.579071044921875,
+        "update_norm": 5.222234143151177
+      },
+      {
+        "scene_id": "CAL-RSO3-0026",
+        "ws_AA_vs_A": 4.76837158203125e-07,
+        "ws_A8_vs_A": 9.5367431640625e-07,
+        "ws_over_vs_direct": 4.76837158203125e-07,
+        "bf16_AA_hash_equal": false,
+        "bf16_A8_hash_equal": false,
+        "bf16_over_hash_equal": true,
+        "cast_error": 0.10709250718355179,
+        "numpy_vs_torch": 3.0584549151058127e-06,
+        "state_scale": 38.18499755859375,
+        "update_norm": 3.75830168194241
+      },
+      {
+        "scene_id": "CAL-RSO3-0040",
+        "ws_AA_vs_A": 4.76837158203125e-07,
+        "ws_A8_vs_A": 7.152557373046875e-07,
+        "ws_over_vs_direct": 4.76837158203125e-07,
+        "bf16_AA_hash_equal": false,
+        "bf16_A8_hash_equal": false,
+        "bf16_over_hash_equal": false,
+        "cast_error": 0.13756702840328217,
+        "numpy_vs_torch": 2.0188377476415553e-06,
+        "state_scale": 37.5040168762207,
+        "update_norm": 3.5508562988705106
+      },
+      {
+        "scene_id": "CAL-RSO3-0032",
+        "ws_AA_vs_A": 9.5367431640625e-07,
+        "ws_A8_vs_A": 1.430511474609375e-06,
+        "ws_over_vs_direct": 9.5367431640625e-07,
+        "bf16_AA_hash_equal": true,
+        "bf16_A8_hash_equal": true,
+        "bf16_over_hash_equal": false,
+        "cast_error": 0.11548726260662079,
+        "numpy_vs_torch": 2.53547158024503e-06,
+        "state_scale": 38.00309371948242,
+        "update_norm": 4.907871034410265
+      },
+      {
+        "scene_id": "CAL-RSO3-0023",
+        "ws_AA_vs_A": 4.76837158203125e-07,
+        "ws_A8_vs_A": 9.5367431640625e-07,
+        "ws_over_vs_direct": 4.76837158203125e-07,
+        "bf16_AA_hash_equal": false,
+        "bf16_A8_hash_equal": false,
+        "bf16_over_hash_equal": false,
+        "cast_error": 0.14307723939418793,
+        "numpy_vs_torch": 1.230194342838331e-06,
+        "state_scale": 37.331661224365234,
+        "update_norm": 5.37155499458313
+      }
+    ],
+    "max_ws_AA_vs_A": 9.5367431640625e-07,
+    "max_ws_A8_vs_A": 1.9073486328125e-06,
+    "max_ws_over_vs_direct": 9.5367431640625e-07,
+    "bf16_AA_hash_equal_fraction": 0.42857142857142855,
+    "bf16_A8_hash_equal_fraction": 0.2857142857142857,
+    "bf16_over_hash_equal_fraction": 0.42857142857142855,
+    "max_numpy_vs_torch": 3.3477541165893854e-06,
+    "max_cast_error": 0.14386242628097534,
+    "note": "untrained random-U setter on real residuals: FP32 workspace identities are designed algebra (reported as numerical error, not a scientific result); BF16 hash equality after the cast is not guaranteed"
+  },
+  "frozen_v2_precision": [],
+  "serving_path": "KV_CACHE_CLONE + uniform batch-12 clone asks (identical to V2)",
+  "generation_prompt": "<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+  "pass_": true
+}

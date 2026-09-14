@@ -1,0 +1,116 @@
+{
+  "at": "2026-09-10T19:37:00.709842+00:00",
+  "actor": "qwen",
+  "procedure": "T4",
+  "scenes": [
+    "FIT-SRS2-0086",
+    "FIT-SRS2-0075",
+    "FIT-SRS2-0091",
+    "FIT-SRS2-0089"
+  ],
+  "queries": 16,
+  "results": {
+    "SHARED_CLAUSE": {
+      "loss": 11.662202596664429,
+      "grad_norms": {
+        "0.input_factor": 0.0,
+        "0.output_factor": 0.03509190306067467,
+        "0.bias": 0.0,
+        "1.input_factor": 0.0,
+        "1.output_factor": 0.023022081702947617,
+        "1.bias": 0.0
+      },
+      "q_block_grad": {
+        "0": 12.173916816711426,
+        "1": 5.869236946105957
+      },
+      "used_values": [
+        0,
+        1
+      ],
+      "backbone_grad": false,
+      "finite": true,
+      "output_factor_grad_nonzero": true,
+      "q_block_grad_nonzero": null,
+      "max_score_move": 0.7169609069824219,
+      "seconds": 2.76859854399936
+    },
+    "SHARED_TAIL": {
+      "loss": 11.662202596664429,
+      "grad_norms": {
+        "0.input_factor": 0.0,
+        "0.output_factor": 0.05351854860782623,
+        "0.bias": 0.0,
+        "1.input_factor": 0.0,
+        "1.output_factor": 0.024205004796385765,
+        "1.bias": 0.0
+      },
+      "q_block_grad": {
+        "0": 17.796979904174805,
+        "1": 6.123435974121094
+      },
+      "used_values": [
+        0,
+        1
+      ],
+      "backbone_grad": false,
+      "finite": true,
+      "output_factor_grad_nonzero": true,
+      "q_block_grad_nonzero": null,
+      "max_score_move": 0.9319000244140625,
+      "seconds": 2.2748267150000174
+    },
+    "QUERY_CLAUSE": {
+      "loss": 11.246275901794434,
+      "grad_norms": {
+        "0.input_factor": 0.0,
+        "0.output_factor": 0.030547039583325386,
+        "0.bias": 0.0,
+        "1.input_factor": 0.0,
+        "1.output_factor": 0.016174081712961197,
+        "1.bias": 0.0
+      },
+      "q_block_grad": {
+        "0": 0.3908507823944092,
+        "1": 0.2574554979801178
+      },
+      "used_values": [
+        0,
+        1
+      ],
+      "backbone_grad": false,
+      "finite": true,
+      "output_factor_grad_nonzero": true,
+      "q_block_grad_nonzero": true,
+      "max_score_move": 0.4687309265136719,
+      "seconds": 4.461247160000312
+    },
+    "QUERY_TAIL": {
+      "loss": 11.246275901794434,
+      "grad_norms": {
+        "0.input_factor": 0.0,
+        "0.output_factor": 0.04633402079343796,
+        "0.bias": 0.0,
+        "1.input_factor": 0.0,
+        "1.output_factor": 0.016924917697906494,
+        "1.bias": 0.0
+      },
+      "q_block_grad": {
+        "0": 0.5686874985694885,
+        "1": 0.2739802300930023
+      },
+      "used_values": [
+        0,
+        1
+      ],
+      "backbone_grad": false,
+      "finite": true,
+      "output_factor_grad_nonzero": true,
+      "q_block_grad_nonzero": true,
+      "max_score_move": 0.5319023132324219,
+      "seconds": 4.600743828999839
+    }
+  },
+  "backbone_unchanged": true,
+  "pass_": true
+}

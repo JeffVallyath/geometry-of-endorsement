@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "study_id": "RELATION_DIRECTION_IDENTITY_V1",
+  "setup_only": true,
+  "seed": 20260822,
+  "models": {
+    "llama": {"id": "meta-llama/Meta-Llama-3.1-8B-Instruct", "revision": "0e9e39f249a16976918f6564b8830bc894c89659", "layer": 19, "hidden_size": 4096, "direction_sha256": "f44fb897ab2617abd95ca5a2f8e67dd2626dd75099a9cdf3973033b3e1b64c99", "probe_bundle_sha256": "d1e57f79cd93e7ae7a4db44076dcbe6785c685c31e908e717012c0f509f9ac53"},
+    "gemma": {"id": "google/gemma-2-9b-it", "revision": "11c9b309abf73637e4b6f9a3fa1e92e615547819", "layer": 27, "hidden_size": 3584, "direction_sha256": "81c704de24ffc90b468f13bbf494638804f7fafa4b24f2f51d6bb64d2dc1c4e7", "probe_bundle_sha256": "bb155a092e3c33b04d6031975c2bbf43f2f57513188451022193d2ab8a9db3d8"}
+  },
+  "frozen_prompt_contract_sha256": "33c046d3724f8a2e2a0f985bdba4edae47ee5baba8343c1da861c2fef63d54da",
+  "activation_position": "final_prompt_position_immediately_before_candidate_answer_sequence",
+  "direction_sign": "positive_semantic_relation_minus_negative_semantic_relation",
+  "normalization": "unit_l2_direction; standardized intervention unit is frozen pilot_select projection sigma times direction divided by squared_l2_norm",
+  "batch_size": 1,
+  "model_dtype": "bfloat16",
+  "margin_dtype": "float32",
+  "datasets": {"primary": "AMPERE++", "secondary": ["AbstRCT", "US2016"], "sentiment_lane": "SENTIMENT_ALTERNATIVE_UNRESOLVED"},
+  "sampling": {
+    "primary_caps_per_class": {"train": 2000, "validation": 300, "test": 600},
+    "secondary_caps_per_class": {"train": 1000, "validation": 200, "test": 300},
+    "balance_to_minority": true,
+    "group_split_fractions": {"train": 0.7, "validation": 0.1, "test": 0.2}
+  },
+  "statistics": {"bootstrap_replicates": 5000, "permutation_replicates": 5000, "interval": 0.95, "resampling_unit": "authoritative_group", "model_combination": "report_separately"},
+  "decision_thresholds": {
+    "alpha": 0.05,
+    "established_auroc_lower_bound": 0.5,
+    "positive_interaction_lower_bound": 0.0,
+    "mapping_consistency_minimum": 0.75,
+    "fixed_token_collapse_floor": 0.05,
+    "fixed_token_collapse_ceiling": 0.95,
+    "strong_template_auroc_gap": 0.10,
+    "secondary_directional_consistency_auroc": 0.5,
+    "broad_primary_auroc_interval_width": 0.20,
+    "cosine_null_envelope_quantile": 0.95
+  },
+  "analysis_aggregation": {
+    "primary_external": "convert every score to positive-semantic-minus-negative-semantic orientation, then equal-weight the two templates and four mappings within row before grouped inference",
+    "valueprism": "equal-weight the four frozen output mappings within row; preserve board as the grouped unit",
+    "reporting_channel_primary": "span of separately estimated A-versus-B and 1-versus-2 physical-token directions from pilot_select only",
+    "reporting_channel_secondary": "A-minus-B and 1-minus-2 output-head row contrasts; diagnostic only because final normalization and downstream layers prevent identification with the frozen intermediate representation"
+  },
+  "control_availability": {
+    "factual_true_false": "UNAVAILABLE_NO_FROZEN_VECTOR_IN_SAME_ACTOR_LAYER_SPACE",
+    "sentiment": "SENTIMENT_ALTERNATIVE_UNRESOLVED",
+    "no_intervention": "dose_zero_reference_in_every_active_direction_family"
+  },
+  "intervention": {
+    "valueprism_boards": 60,
+    "amperepp_examples_per_class": 100,
+    "full_doses": [-2.0, -1.0, -0.5, 0.0, 0.5, 1.0, 2.0],
+    "control_doses": [-1.0, 0.0, 1.0]
+  },
+  "execution_modes": ["AUDIT_ONLY", "RUN_LLAMA_EXTRACTION", "RUN_LLAMA_INTERVENTION", "RUN_GEMMA_EXTRACTION", "RUN_GEMMA_INTERVENTION", "ANALYZE_CPU", "BUILD_FINAL_REPORT"],
+  "setup_allowed_modes": ["AUDIT_ONLY", "SYNTHETIC_SMOKE_TEST"]
+}

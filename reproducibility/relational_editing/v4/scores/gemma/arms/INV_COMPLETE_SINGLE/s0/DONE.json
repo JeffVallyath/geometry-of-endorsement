@@ -1,0 +1,354 @@
+{
+  "at": "2026-09-11T20:19:29.410351+00:00",
+  "condition": "INV_COMPLETE_SINGLE",
+  "arm": "INVARIANT_SET",
+  "coverage": "complete",
+  "seed": 0,
+  "lr": 0.0003,
+  "epochs": 2,
+  "curve": [
+    {
+      "condition": "INV_COMPLETE_SINGLE",
+      "arm": "INVARIANT_SET",
+      "coverage": "complete",
+      "lr": 0.0003,
+      "seed": 0,
+      "checkpoint": 0,
+      "epoch": 0,
+      "strength": 1.0,
+      "path": "<private operational reference omitted>",
+      "cal": {
+        "n_scenes": 48,
+        "n_queries": 1440,
+        "changed": 0.9236111111111112,
+        "harm": 0.022569444444444448,
+        "conditional_harm": 0.022708704693998813,
+        "all24": 0.4791666666666667,
+        "accuracy": 0.9552951388888888,
+        "touched_accuracy": 0.9364583333333334,
+        "other_address_error": 0.017361111111111112,
+        "preservation": 0.9772912953060012,
+        "nonaddressed_change": 0.005208333333333333,
+        "changed_by_direction": {
+          "0": 0.96875,
+          "1": 0.8784722222222223
+        },
+        "by_cell": {
+          "(4, 2, 0)": {
+            "changed": 0.8784722222222223,
+            "harm": 0.006944444444444445,
+            "all24": 0.2916666666666667
+          },
+          "(4, 2, 1)": {
+            "changed": 0.96875,
+            "harm": 0.03819444444444444,
+            "all24": 0.6666666666666666
+          }
+        },
+        "by_family": {
+          "both": 0.9125,
+          "direct": 0.99375,
+          "either": 0.9333333333333333,
+          "opposes": 0.9916666666666667,
+          "same": 0.8916666666666667
+        },
+        "all_program_questions": 0.4791666666666667,
+        "accuracy_all_program_questions": 0.9552951388888888,
+        "loss": 0.19472440481810685,
+        "mean_realized_norm": 63.47452931741456,
+        "mean_energy": 40040.402506510414,
+        "mean_frobenius": 199.00720635916912,
+        "edited_tokens_per_artifact": 8.716666666666667,
+        "cache_bytes": 142557184.0,
+        "max_cast_error": 0.6273919343948364,
+        "seconds": 24.208799162000105,
+        "n_rows": 1440,
+        "strength": 1.0,
+        "arm": "INV_COMPLETE_SINGLE"
+      },
+      "cal_sparse_subset": {
+        "changed": 0.9722222222222223,
+        "harm": 0.016203703703703703,
+        "all24": 0.7916666666666666,
+        "changed_by_direction": {
+          "0": 0.986111111111111,
+          "1": 0.9583333333333334
+        },
+        "note": "same rows restricted to the six original (sparse) specifications; diagnostic continuity with V3 CAL"
+      },
+      "feasible": true,
+      "rank": [
+        0,
+        -0.479166666667,
+        -0.923611111111,
+        0.022569444444,
+        0,
+        0
+      ],
+      "loss_train": null,
+      "reg_train": null,
+      "steps": 0,
+      "slots": 0,
+      "train_seconds": 0.0,
+      "eval_seconds": 24.373771381000097,
+      "norm": 63.47452931741456,
+      "frobenius": 199.00720635916912
+    },
+    {
+      "condition": "INV_COMPLETE_SINGLE",
+      "arm": "INVARIANT_SET",
+      "coverage": "complete",
+      "lr": 0.0003,
+      "seed": 0,
+      "checkpoint": 1,
+      "epoch": 1,
+      "strength": 1.0,
+      "path": "<private operational reference omitted>",
+      "cal": {
+        "n_scenes": 48,
+        "n_queries": 1440,
+        "changed": 0.9409722222222223,
+        "harm": 0.010995370370370369,
+        "conditional_harm": 0.01137910972469796,
+        "all24": 0.6041666666666666,
+        "accuracy": 0.9657118055555557,
+        "touched_accuracy": 0.9604166666666667,
+        "other_address_error": 0.005555555555555556,
+        "preservation": 0.9886208902753021,
+        "nonaddressed_change": 0.0,
+        "changed_by_direction": {
+          "0": 0.9166666666666666,
+          "1": 0.9652777777777778
+        },
+        "by_cell": {
+          "(4, 2, 0)": {
+            "changed": 0.9652777777777778,
+            "harm": 0.011574074074074075,
+            "all24": 0.7083333333333334
+          },
+          "(4, 2, 1)": {
+            "changed": 0.9166666666666666,
+            "harm": 0.010416666666666666,
+            "all24": 0.5
+          }
+        },
+        "by_family": {
+          "both": 0.9833333333333333,
+          "direct": 0.9895833333333334,
+          "either": 0.975,
+          "opposes": 0.9791666666666666,
+          "same": 0.8791666666666667
+        },
+        "all_program_questions": 0.6041666666666666,
+        "accuracy_all_program_questions": 0.9657118055555557,
+        "loss": 0.1397700762744143,
+        "mean_realized_norm": 58.10996929591746,
+        "mean_energy": 35827.3525390625,
+        "mean_frobenius": 187.80554793662168,
+        "edited_tokens_per_artifact": 8.716666666666667,
+        "cache_bytes": 142557184.0,
+        "max_cast_error": 0.6253294944763184,
+        "seconds": 24.352805595999598,
+        "n_rows": 1440,
+        "strength": 1.0,
+        "arm": "INV_COMPLETE_SINGLE"
+      },
+      "cal_sparse_subset": {
+        "changed": 0.9583333333333334,
+        "harm": 0.01273148148148148,
+        "all24": 0.8125,
+        "changed_by_direction": {
+          "0": 0.9444444444444443,
+          "1": 0.9722222222222222
+        },
+        "note": "same rows restricted to the six original (sparse) specifications; diagnostic continuity with V3 CAL"
+      },
+      "feasible": true,
+      "rank": [
+        0,
+        -0.604166666667,
+        -0.940972222222,
+        0.01099537037,
+        1,
+        0
+      ],
+      "loss_train": 0.015359649160366947,
+      "reg_train": 0.004239780042229945,
+      "mean_group_weight": 0.16666666666666666,
+      "steps": 720,
+      "slots": 2880,
+      "groups_this_epoch": 720,
+      "train_seconds": 166.570462744,
+      "eval_seconds": 24.505284589999974,
+      "norm": 58.10996929591746,
+      "frobenius": 187.80554793662168
+    },
+    {
+      "condition": "INV_COMPLETE_SINGLE",
+      "arm": "INVARIANT_SET",
+      "coverage": "complete",
+      "lr": 0.0003,
+      "seed": 0,
+      "checkpoint": 2,
+      "epoch": 2,
+      "strength": 1.0,
+      "path": "<private operational reference omitted>",
+      "cal": {
+        "n_scenes": 48,
+        "n_queries": 1440,
+        "changed": 0.9496527777777778,
+        "harm": 0.007523148148148148,
+        "conditional_harm": 0.007912457912457913,
+        "all24": 0.5833333333333334,
+        "accuracy": 0.9700520833333334,
+        "touched_accuracy": 0.9625,
+        "other_address_error": 0.001736111111111111,
+        "preservation": 0.992087542087542,
+        "nonaddressed_change": 0.0,
+        "changed_by_direction": {
+          "0": 0.9270833333333334,
+          "1": 0.9722222222222222
+        },
+        "by_cell": {
+          "(4, 2, 0)": {
+            "changed": 0.9722222222222222,
+            "harm": 0.008101851851851851,
+            "all24": 0.6666666666666666
+          },
+          "(4, 2, 1)": {
+            "changed": 0.9270833333333334,
+            "harm": 0.006944444444444444,
+            "all24": 0.5
+          }
+        },
+        "by_family": {
+          "both": 0.975,
+          "direct": 0.9958333333333333,
+          "either": 0.9833333333333333,
+          "opposes": 0.9875,
+          "same": 0.8833333333333333
+        },
+        "all_program_questions": 0.5833333333333334,
+        "accuracy_all_program_questions": 0.9700520833333334,
+        "loss": 0.10882651861685165,
+        "mean_realized_norm": 47.88567179977096,
+        "mean_energy": 26070.91290690104,
+        "mean_frobenius": 160.10933964168402,
+        "edited_tokens_per_artifact": 8.716666666666667,
+        "cache_bytes": 142557184.0,
+        "max_cast_error": 0.6166747212409973,
+        "seconds": 24.184689947999686,
+        "n_rows": 1440,
+        "strength": 1.0,
+        "arm": "INV_COMPLETE_SINGLE"
+      },
+      "cal_sparse_subset": {
+        "changed": 0.9583333333333334,
+        "harm": 0.003472222222222222,
+        "all24": 0.8125,
+        "changed_by_direction": {
+          "0": 0.9444444444444443,
+          "1": 0.9722222222222222
+        },
+        "note": "same rows restricted to the six original (sparse) specifications; diagnostic continuity with V3 CAL"
+      },
+      "feasible": true,
+      "rank": [
+        0,
+        -0.583333333333,
+        -0.949652777778,
+        0.007523148148,
+        2,
+        0
+      ],
+      "loss_train": 0.0036860786769895844,
+      "reg_train": 0.0034367561393689053,
+      "mean_group_weight": 0.16666666666666666,
+      "steps": 1440,
+      "slots": 5760,
+      "groups_this_epoch": 720,
+      "train_seconds": 168.235236988,
+      "eval_seconds": 24.34513746199991,
+      "norm": 47.88567179977096,
+      "frobenius": 160.10933964168402
+    }
+  ],
+  "selection": {
+    "checkpoint": 1,
+    "feasible": true,
+    "label": "capable_candidate",
+    "rule": "complete_single_cal_feasibility_first",
+    "cal": {
+      "n_scenes": 48,
+      "n_queries": 1440,
+      "changed": 0.9409722222222223,
+      "harm": 0.010995370370370369,
+      "conditional_harm": 0.01137910972469796,
+      "all24": 0.6041666666666666,
+      "accuracy": 0.9657118055555557,
+      "touched_accuracy": 0.9604166666666667,
+      "other_address_error": 0.005555555555555556,
+      "preservation": 0.9886208902753021,
+      "nonaddressed_change": 0.0,
+      "changed_by_direction": {
+        "0": 0.9166666666666666,
+        "1": 0.9652777777777778
+      },
+      "by_cell": {
+        "(4, 2, 0)": {
+          "changed": 0.9652777777777778,
+          "harm": 0.011574074074074075,
+          "all24": 0.7083333333333334
+        },
+        "(4, 2, 1)": {
+          "changed": 0.9166666666666666,
+          "harm": 0.010416666666666666,
+          "all24": 0.5
+        }
+      },
+      "by_family": {
+        "both": 0.9833333333333333,
+        "direct": 0.9895833333333334,
+        "either": 0.975,
+        "opposes": 0.9791666666666666,
+        "same": 0.8791666666666667
+      },
+      "all_program_questions": 0.6041666666666666,
+      "accuracy_all_program_questions": 0.9657118055555557,
+      "loss": 0.1397700762744143,
+      "mean_realized_norm": 58.10996929591746,
+      "mean_energy": 35827.3525390625,
+      "mean_frobenius": 187.80554793662168,
+      "edited_tokens_per_artifact": 8.716666666666667,
+      "cache_bytes": 142557184.0,
+      "max_cast_error": 0.6253294944763184,
+      "seconds": 24.352805595999598,
+      "n_rows": 1440,
+      "strength": 1.0,
+      "arm": "INV_COMPLETE_SINGLE"
+    },
+    "path": "<private operational reference omitted>"
+  },
+  "warm_start": {
+    "kind": "v3_selected_checkpoint_warm_start",
+    "dir": "<private operational reference omitted>",
+    "sha256": {
+      "setter": "00fedcd6b69def308e4b62934aaaabf17378cbe54fa5bf657834137f60d40f39",
+      "meta": "c4bcb8abb656de58d643256efdccdfc5b24e3738c3858190b30be4ad87f66152"
+    },
+    "v3_lr": 0.0003,
+    "v3_epoch": 2,
+    "load_basis_error": 0.0,
+    "optimizer_state": "fresh AdamW moments (V3 checkpoints hold no optimizer state)"
+  },
+  "stats": {
+    "updates": 12612,
+    "delta_sq_sum": 51522714.41015625
+  },
+  "opportunity": {
+    "steps": 1440,
+    "slots": 5760,
+    "groups_per_epoch": 720,
+    "epochs": 2
+  }
+}

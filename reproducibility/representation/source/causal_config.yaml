@@ -1,0 +1,125 @@
+schema_version: 1
+study_id: existing-human-review-payoff-v001
+status: FROZEN_BEFORE_FRESH_INFERENCE
+strategic_constraint: NO_NEW_LARGE_SCALE_HUMAN_REVIEW
+
+paths:
+  output_root: outputs/existing-human-review-payoff/v001
+  human_derived_root: outputs/human-review-derived-sets-v3
+  llama_cell_scores: outputs/claim1-first-pass-semantic-stratification/llama_frozen_cell_scores.csv
+  llama_compact: outputs/claim1-first-pass-semantic-stratification/source/llama-compact/claim2_m1_compact.npz
+  llama_compact_metadata: outputs/claim1-first-pass-semantic-stratification/source/llama-compact/claim2_m1_compact.metadata.json
+  claim2_behavioral_root: outputs/claim2-failure-analysis/v007
+  llama_probe_bundle: external-artifacts
+  llama_source_bundle: external-artifacts
+  gemma_probe_bundle: external-artifacts
+  claim1_reviewer_1: external-artifacts
+  claim1_reviewer_2: external-artifacts
+  valueprism_dataset: allenai/ValuePrism
+  valueprism_config: valence
+  valueprism_split: all
+
+expected_inputs:
+  human_derived_manifest_sha256: 47179a7d65f942f913a95090c576879d76d2662bc4ed875ed41ead14babb7add
+  claim1_consensus_cells_sha256: e86d61cf80a8598ddd615cd5b1d83c1dfb7a2ba9c345ca6ae06a0d95dc9b9dde
+  claim1_consensus_boards_sha256: 278540cd90dca77985c384c9a3ff5573285519fd6198c73f7408d9defbb0241f
+  claim1_consensus_reason_pairs_sha256: 7926fbf363eafa52ae84159cf59e28022629b57312e23acf4947c8e8f9cdcd44
+  claim2_independent_judgments_sha256: 7e9371fbbf863fbcad2b9248ceb70bc3420ea72681c3be4b360d9b06f7b66830
+  claim2_strict_consensus_ordinary_sha256: 7feb38dbd8577351575f2af2a48e17672d77cb79a34f5ababbd1e9b436dc9905
+  llama_cell_scores_sha256: f4b2489a947e3cf169190ee8431e6718e61598c83871564a08fd83fd098ad4b8
+  llama_probe_bundle_sha256: d1e57f79cd93e7ae7a4db44076dcbe6785c685c31e908e717012c0f509f9ac53
+  llama_source_bundle_sha256: 9b3561887259c6346ce8d046bf79bd601ec33c2c995edbf2641c6305a16950cf
+  gemma_probe_bundle_sha256: bb155a092e3c33b04d6031975c2bbf43f2f57513188451022193d2ab8a9db3d8
+
+models:
+  order: [llama, gemma]
+  llama:
+    id: meta-llama/Meta-Llama-3.1-8B-Instruct
+    revision: 0e9e39f249a16976918f6564b8830bc894c89659
+    tokenizer_revision: 0e9e39f249a16976918f6564b8830bc894c89659
+    selected_layer: 19
+    wrong_layer: 20
+    hidden_size: 4096
+  gemma:
+    id: google/gemma-2-9b-it
+    revision: 11c9b309abf73637e4b6f9a3fa1e92e615547819
+    tokenizer_revision: 11c9b309abf73637e4b6f9a3fa1e92e615547819
+    selected_layer: 27
+    wrong_layer: 28
+    hidden_size: 3584
+
+runtime:
+  batch_size: 1
+  model_dtype: bfloat16
+  score_accumulation_dtype: float32
+  minimum_gpu: NVIDIA A100 40GB
+  quantization: none
+  offload: forbidden
+  unload_between_models: true
+  persistent_checkpoints: true
+
+claim1_human_strata:
+  phase_label: POST-HOC DEVELOPMENT SEMANTIC STRATIFICATION
+  relation_strata: [BOTH_CLEAR, ONE_CLEAR, NEITHER_CLEAR, REVIEWER2_CLEAR, REVIEWER2_AMBIGUOUS, REVIEWER2_INVALID]
+  repeated_consideration_strata: [BOTH_STABLE, ONE_STABLE, NEITHER_STABLE_OR_DISPUTED]
+  readouts: [difference_in_means, logistic, native_answer_margin, text_only]
+  strict_consensus_checkerboards_descriptive_only: true
+
+verdict_arm:
+  categories: [SUPPORT, OPPOSE, PERMISSIBLE, UNCERTAIN, REFUSE]
+  prompt: |-
+    Consider the action in the case overall, not only one named consideration.
+    Which complete stance best describes the action?
+    Reply with exactly one number: 1, 2, 3, 4, or 5.
+  answer_symbols: ["1", "2", "3", "4", "5"]
+  mappings:
+    A:
+      "1": SUPPORT
+      "2": OPPOSE
+      "3": PERMISSIBLE
+      "4": UNCERTAIN
+      "5": REFUSE
+    B:
+      "1": UNCERTAIN
+      "2": PERMISSIBLE
+      "3": REFUSE
+      "4": OPPOSE
+      "5": SUPPORT
+  mapping_consistency_required: true
+  populations: [representative_primary, enriched_diagnostic, stronger_first_stage_sensitivity, controls]
+
+intervention:
+  activation_position: final_prompt_token_pre_answer
+  doses_training_projection_sd: [-2.0, -1.0, -0.5, 0.0, 0.5, 1.0, 2.0]
+  local_slope_doses: [-0.5, 0.0, 0.5]
+  families: [dim, opposite_dim, random_orthogonal, wrong_layer, no_intervention]
+  random_orthogonal_seeds: [2026082101, 2026082102, 2026082103]
+  calibration_split: pilot_train
+  model_order: [llama, gemma]
+  llama_report_required_before_gemma: true
+
+type_transfer:
+  types: [Value, Right, Duty]
+  train_split: pilot_train
+  test_split: pilot_eval
+  selected_layers_only: true
+  no_claim2_outcomes: true
+
+statistics:
+  unit: original_item
+  claim1_cluster: board_id
+  bootstrap_replicates: 5000
+  permutation_replicates: 5000
+  seed: 20260821
+  confidence_interval: [0.025, 0.975]
+  fisher_exact_diagnostic_only: true
+
+stopping_rules:
+  - stop_if_input_hash_or_exact_join_fails
+  - stop_model_if_revision_vector_layer_or_position_cannot_be_verified
+  - stop_if_prior_complete_verdict_or_real_intervention_outcomes_exist
+  - write_verdict_report_before_any_intervention_outcome_is_opened
+  - write_llama_intervention_report_before_running_gemma_intervention
+  - never_change_contract_from_observed_outcomes
+  - never_create_new_human_review_material
+  - never_commit_or_push_automatically

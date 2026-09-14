@@ -1,354 +1,305 @@
 # Results and Claims
 
-**Checkerboard: a two-situation, two-consideration design where each consideration flips from Supports to Opposes across situations. This cancels fixed situation and fixed consideration preferences.**
+The project began with a fairly simple question: does a model represent whether
+a reason supports or opposes an action in its particular situation? It then
+became a question about what we have found when that representation lets us
+change the model's answer.
 
-**Support/opposition direction: a linear direction in activation space fitted to separate Supports from Opposes examples.**
-
-**Causal fingerprint: the vector of local changes that a direction induces in a fixed panel of downstream semantic answer margins. The formal definition appears where the result is introduced.**
-
-**More concepts than control knobs: my informal hypothesis that representations can distinguish semantic variables more finely than the downstream mechanisms through which interventions change behavior.**
-
-**I left the raw formulas in mostly for transparency. You definitely do not need to follow every step of the math to understand the results. In my opinion, the more important part is what each metric is actually trying to measure. The formulas are there so the exact definitions can stay transparent, and so we can come back later and catch anything dumb or questionable if needed.**
-
----
+This is the current results page. The point of the tables is to show what each
+experiment measured, not to make the argument depend on following every detail
+of the analysis. Exact methods, saved results and reproduction limits are in
+[Reproducibility](../REPRODUCIBILITY.md).
 
 ## Part I. Establishing the relation signal
 
-First establish that the task, measurement pipeline, and cross-model relation signal are real.
+### 1. Do the models represent support and opposition in context?
 
-### 1. Does ValuePrism contain a real context-dependent relation task?
+Yes. In both Llama and Gemma, we can read a support/opposition signal from the
+model's activations that depends on the particular situation and reason.
 
-Yes. A ValuePrism row is a short natural-language situation or action paired with one named consideration, such as Compassion, Autonomy, or a Right, plus a label saying whether that consideration **Supports** or **Opposes** the action. After removing the third `Either` label, the dataset contains **183,023 Supports/Opposes rows**. Among them, **3,437 exact consideration strings** receive both labels in different situations, yielding **13,923 possible checkerboards** across **6,073 consideration pairs**.
+The main test uses a **checkerboard**: paired situations and considerations
+whose Supports/Opposes labels reverse. We standardize the scores and combine them so that a fixed
+preference for a situation or consideration cancels out. Larger positive values
+mean stronger context-sensitive separation on this measure.
 
-The strict split starts from the deduplicated binary data and contains **116,000 training rows** and **7,394 test rows**. A test row must be held out on **both** axes: its situation is unseen in training and its consideration cluster is unseen in training. A training row must cross neither held-out boundary. The remaining **59,208 mixed-boundary rows** cross only one of those two boundaries, so they are excluded from both partitions rather than partially exposing a strict-test situation or consideration family.
-
-This grouping matters. Deliberately exposing held-out consideration wording improved a text-only predictor by **7.29 percentage points [4.90, 9.69]**. Exposing familiar situations changed performance by only **0.53 points [-0.81, 1.86]**. Familiar consideration wording is therefore a meaningful shortcut even without activations.
-
-A slightly stricter semantic filter retained **1,865 within-situation comparisons**, while the next automatic filter collapsed to only **23**. Strong grouping was therefore necessary without filtering away nearly all of the relational structure.
-
-### 2. Can the activation pipeline recover a known semantic distinction?
-
-Yes. The same extraction and direction-fitting machinery recovered factual True/False structure in both models after the answer format was redesigned to avoid a token-semantic confound.
-
-The repaired control used neutral `A/B` symbols whose meanings were reversed across examples, then tested transfer to a held-out `1/2` format. For each of eight training partitions $k$, the training rows define a unit truth direction $w_k$. Projection scores on held-out rows are centered and scaled using **training-only** statistics:
-
-```math
-z_{ik}=\frac{h_i^\top w_k-m_k}{\sigma_k},
-```
-
-where $m_k$ and $\sigma_k$ are the mean and standard deviation of training projections for partition $k$. The held-out effect is
-
-```math
-\Delta_k=\mathbb{E}[z_{ik}\mid \mathrm{True}]
--\mathbb{E}[z_{ik}\mid \mathrm{False}],
-\qquad
-T=\frac{1}{8}\sum_{k=1}^{8}\Delta_k.
-```
-
-The averaged effect is the **standardized separation**, written $T$. It is a True-minus-False mean difference measured in training-projection standard deviations, averaged across eight train-oriented directions. A value near 1.92 therefore means that held-out True examples lie about 1.92 training-projection standard deviations farther along the train-defined truth direction than held-out False examples do.
-
-| Model | Selected layer | Standardized separation $T$ | 95% interval | Transfer check |
-|---|---:|---:|---:|---|
-| Llama-3.1-8B-Instruct | 14 | **1.9245** | [1.8930, 1.9556] | **1.8402** on held-out `1/2` |
-| Gemma-2-9B-it | 25 | **1.9444** | [1.9207, 1.9666] | same neutral-mapping design |
-
-For Llama, none of **1,000** group-preserving randomized labelings matched the observed separation. The pipeline can therefore recover a clear semantic distinction while separating semantic labels from the physical token used to report them.
-
-### 3. Do Llama and Gemma contain a context-sensitive support/opposition representation?
-
-Yes. In both models, activation scores distinguish Supports from Opposes in a way that depends on the particular situation-consideration pairing.
-
-A concrete checkerboard from the development data:
-
-| Situation | Compassion | Right to truthful information |
-|---|---|---|
-| Telling a white lie to your friend. | Supports | Opposes |
-| Telling a friend the truth if her dress looks ugly | Opposes | Supports |
-
-The model sees **one cell at a time**: one short situation/action plus one named consideration. The checkerboard is only the evaluation structure.
-
-**For each example, the Supports versus Opposes score is put on a common normalized scale. We then combine the four scores in a checkerboard so that any fixed preference for a situation or moral reason cancels to zero. The resulting checkerboard score therefore measures how strongly the model’s score changes with the particular situation-and-reason pairing. Zero means no such interaction under this measure. Larger positive values indicate a stronger context-sensitive pattern.**
-
-Formally, each scorer is standardized using mean and standard deviation frozen on the selection split:
-
-```math
-\tilde f(s,c)=\frac{f(s,c)-\mu_{\mathrm{select}}}{\sigma_{\mathrm{select}}},
-\qquad
-I_b=
-[\tilde f(s_1,c_1)-\tilde f(s_1,c_2)]
-+[\tilde f(s_2,c_2)-\tilde f(s_2,c_1)].
-```
-
-The four-cell combination is the **checkerboard interaction**, written $I_b$. Equivalently, $I_b=\tilde S_{11}-\tilde S_{12}-\tilde S_{21}+\tilde S_{22}$.
-
-Any additive score $f(s,c)=a(s)+b(c)$ gives $I_b=0$ exactly. Values such as **1.6089** or **2.3221** are therefore standardized difference-in-differences, expressed in selection-split standard deviations.
-
-The raw score $f$ depends on the model being evaluated. The model-answer row uses the semantic Supports-minus-Opposes candidate log-probability margin; the direction uses $h^\top d$; the logistic probe uses its linear decision function. The frozen MiniLM comparator is a linear classifier over MiniLM situation and consideration embeddings plus their elementwise product and absolute difference.
-
-Llama used 1,500 fit rows and 300 layer-selection rows. It was then evaluated on 500 rows across 125 checkerboards, at the selected layer 19.
-
-| Llama measurement | AUROC | $I_b$ |
+| Development measurement | Llama | Gemma |
 |---|---:|---:|
-| Model answer margin | 0.721 | 1.6089 |
-| Support/opposition direction | 0.732 | **1.6470** |
-| Logistic activation probe | **0.780** | **2.0836** |
-| Frozen MiniLM comparator | n/a | 0.2842 |
+| Support/opposition direction | 1.6470 | 2.3221 |
+| Logistic activation probe | 2.0836 | 2.1499 |
+| Text-only comparison | 0.2842 | 0.2842 |
+| Selected layer | 19 | 27 |
 
-The direction exceeded the text comparator by **1.3628 [1.0885, 1.6370]** and transferred to a held-out answer format at **2.1569**.
+The direction is a linear readout fitted to separate Supports from Opposes.
+The logistic probe is another fitted linear readout; the text-only comparison
+asks how much of the result the wording can explain without model activations.
 
-Gemma independently selected layer 27:
+Before interpreting this as a new relation signal, we checked that the same
+pipeline could recover factual True/False structure. Standardized separation
+was 1.9245 in Llama and 1.9444 in Gemma. The answer symbols had their meanings
+swapped across examples, so the model could not succeed just by favoring a
+particular answer token. The earlier literal-label control failed and remains
+a diagnostic of the answer-format problem, not another positive result.
 
-| Gemma measurement | Within-situation accuracy | Within-consideration accuracy | $I_b$ |
-|---|---:|---:|---:|
-| Model answer margin | 0.8920 | 0.8597 | 2.4068 |
-| Support/opposition direction | 0.8720 | 0.8776 | **2.3221** |
-| Logistic activation probe | 0.8680 | 0.8425 | 2.1499 |
-| Frozen MiniLM comparator | 0.5560 | 0.5885 | 0.2842 |
+These are development measurements. They support a readable relation signal,
+but they do not establish correct moral judgment or tell us the complete
+mechanism behind the answer. The original plots and statistical details are in
+[Figure captions](../figures/CAPTIONS.md).
 
-The Gemma direction exceeded the text comparator by **2.0378 [1.6608, 2.4149]** and transferred at **2.2617**.
+## Part II. What does the direction tell us?
 
-## Part II. Identifying what the direction means
+### 2. Does distance along the direction measure how firmly the model holds its judgment?
 
-Next ask what the direction means: whether its magnitude measures commitment and whether its semantics are specifically moral.
+Not reliably. Our original hypothesis was that examples nearer the decision
+boundary would be easier to flip through meaning-preserving rephrasing.
+The important test is whether the direction adds prediction beyond the text
+and the model's own answer confidence.
 
-### 4. Does distance along the direction measure how firmly the model holds the judgment?
+| Analysis | Improvement from adding the direction score | Interval |
+|---|---:|---:|
+| Llama representative originals | -0.003870 | [-0.024731, 0.010818] |
+| Gemma analysis planned before its outcomes | 0.002753 | [-0.000507, 0.007011] |
 
-Not reliably. Rephrasings sometimes changed the model's Supports/Opposes judgment, but distance from the direction's decision boundary did not add useful prediction beyond the original text and native answer confidence.
+The intervals show uncertainty in the estimates. The improvement is measured
+in log loss, which evaluates predicted probabilities.
+Positive means adding the direction helped; negative means it made prediction
+worse. Neither interval gives reliable evidence of an improvement.
 
-On the representative set, **23 of 170 rephrasings changed sign**, or **13.5%**. Those flips were spread across 13 of 48 originals. Exact repeats and trivial restatements were stable in **11/11** cases each. Requiring the semantic verdict to agree under both swapped answer mappings reduced the robust event count to **5 flips across 4 originals**.
+So the direction can tell us which side the model is on without reliably
+telling us how resistant that judgment is to rephrasing. This is not proof that
+every activation-based predictor of instability must fail. Individual human
+judgments are not distributed. The public package does not independently verify
+completion of human review, and these development results are not being presented
+as a separate confirmatory test.
 
-For Llama's 49 representative originals, baseline log loss was **0.440353**. Adding the direction score moved it to **0.444223**, an incremental gain of **-0.003870 [-0.024731, 0.010818]**. Gemma's prospective estimate was **+0.002753 [-0.000507, 0.007011]**. A later 67-original test was also adverse, with normalized-RMSE improvement **-0.06625 [-0.13450, -0.00870]**.
+### 3. Is the signal specifically moral, and is its effect unique?
 
-The scalar identifies relation polarity, but its magnitude is not a reliable ordinal measure of resistance to rephrasing.
+No to the first question, and mostly no to the second on the answer we tested.
+The ValuePrism direction transfers without refitting to ordinary argument
+support/attack relations. Transfer back to ValuePrism is also observed.
 
-### 5. Is the direction specifically moral?
+Removing measured answer-token, sentiment and factual-truth components does
+not eliminate the relation signal. This supports a more general counts-for/
+counts-against interpretation. It does not mean the representations are completely
+independent of one another.
 
-No. Within ValuePrism, separately fitted Value, Right, and Duty directions were almost parallel and performed similarly to one global direction.
+Steering the relation direction changes the model's support/opposition answer.
+But matched truth and sentiment interventions often change that same answer
+as much or more. Each number below is the relation response slope minus the
+comparison direction's slope. Positive favors relation steering; negative favors
+the comparison.
 
-| Model | Within-type AUROC | Cross-type AUROC | Global AUROC | Minimum cosine |
+| Comparison direction | Llama ValuePrism | Llama argument relations | Gemma ValuePrism | Gemma argument relations |
 |---|---:|---:|---:|---:|
-| Llama | 0.737 | 0.737 | 0.739 | **0.966** |
-| Gemma | 0.838 | 0.833 | 0.835 | **0.965** |
+| Factual truth | -0.015 | -0.125 | -0.247 | -0.681 |
+| Sentiment | -0.542 | -0.392 | 0.602 | -0.113 |
 
-The ValuePrism direction also transferred without refitting to three argument-relation corpora. **AMPERE++** covers support and attack relations in ICLR referee reports. **AbstRCT** covers argument relations in biomedical randomized-trial abstracts. **US2016** covers argumentative relations in 2016 U.S. presidential debates and linked Reddit reactions. An AMPERE++ direction also transferred back to ValuePrism.
+An exploratory follow-up matched how far the interventions moved the activation
+state. Its results were mixed, and some comparisons reversed which direction
+was stronger. It did not establish a general advantage for relation steering.
 
-| Transfer | Llama AUROC | Gemma AUROC |
+This motivated the idea of **more concepts than control knobs**: distinct
+representations may share ways of influencing an answer. It is not proof of a
+universal shared control mechanism. The separate refusal reconstruction is
+retained as background, not as a test of that universal claim.
+
+### 4. Does the same direction have a stable effect across contexts?
+
+Not automatically. We tested more than whether the target answer moved by
+recording a direction's effects across a panel of downstream answers. That
+pattern is what we call its **causal fingerprint**.
+
+The first measurement check was invalid. Random directions could look reliable
+simply because they were projected through similar average gradients. That
+rewarded repeatable projection geometry without establishing semantic structure.
+
+| Final validation measurement | Llama | Gemma |
 |---|---:|---:|
-| ValuePrism → AMPERE++ | **0.762 [0.682, 0.847]** | **0.801 [0.731, 0.882]** |
-| AMPERE++ → ValuePrism | **0.785 [0.754, 0.817]** | **0.835 [0.804, 0.866]** |
-| ValuePrism → AbstRCT | 0.867 | 0.877 |
-| ValuePrism → US2016 | 0.709 | 0.785 |
+| Agreement between gradient predictions and small interventions | 0.9926 | 0.9984 |
+| Median similarity of the same direction's fingerprint across contexts | 0.8435 | 0.4594 |
 
-Relation decoding and transfer remained after removing measured answer-token, sentiment, and factual-truth components. The raw geometry was still entangled, including relation/sentiment cosine **0.680** in Llama and **0.792** in Gemma.
+The first row is a correlation: it asks whether we can predict a small
+intervention's local effect. The second asks whether the same direction produces
+a similar pattern in different contexts. These are different requirements.
 
-The direction is therefore better described as a **general context-sensitive support/opposition component** embedded in broader evaluative geometry.
+Local predictions were accurate in both models, but cross-context stability was
+much weaker in Gemma. The random-direction numerical controls also failed their
+checks. The final instrument remained invalid for the intended cross-model
+claim; these results do not establish the proposed shared control geometry.
 
-## Part III. From semantic readout to causal control
+## Part III. Looking beyond the single score
 
-Now move from readout to intervention: causal effect, specificity, and cross-context stability.
+### 5. Does the broader activation contain information the direction and answer leave out?
 
-### 6. Does steering the direction change the model's answer?
+Yes, with an important distinction between the experiments. Controlled contexts
+vary who holds a stance and what it concerns, then change the question. Broader
+activation readouts recover relation information that the single support/
+opposition score does not fully describe.
 
-Yes. The intervention is
+On natural disagreements, the direction usually follows the model's own answer.
+A controlled task initially looked as though the model represented the right
+relation but could not report it. That gap largely disappeared when we supplied
+fixed examples showing how to answer. We should therefore not treat the original
+gap as evidence of knowledge the model could not express.
 
-```math
-h' = h + \alpha d_{\mathrm{relation}}.
-```
+The separate question is whether the broader activation improves prediction
+after accounting for the text and the model's answer. The replication analysis
+was planned in advance and found the following log-loss improvements:
 
-The frozen headline statistic is a **dimensionless composite contrast** over paired signed intervention responses. Zero means no consistent intended-direction effect across the panel; positive values mean the answer moves systematically with steering. Its magnitude sits on the contrast's own dimensionless scale.
-
-| Model | Composite contrast | 95% interval |
+| Replication population | Llama | Gemma |
 |---|---:|---:|
-| Llama | **0.390** | [0.363, 0.417] |
-| Gemma | **1.280** | [1.171, 1.388] |
+| Examples grouped by situation | 0.064 | 0.038 |
+| Examples grouped by checkerboard | 0.073 | 0.031 |
 
-Both had permutation **p = 0.0002**.
+These populations came from different pre-existing development partitions, not
+the strict test. They are also separate from the earlier retrospective analysis.
+That earlier analysis had an invalid baseline: checkerboard position determined
+the label. Removing position was a correction made after seeing the results,
+not a successful test of the original plan.
 
-The underlying response curve uses the semantic candidate margin $\log p(\mathrm{Supports})-\log p(\mathrm{Opposes})$. Regressing this margin on signed intervention coefficient $\alpha$ gave selected-layer slopes **0.770** in Llama and **1.772** in Gemma, in semantic log-probability-margin units per frozen $\alpha$ unit. Nearby-layer slopes were **0.798** and **1.004**, so the effect was not sharply localized.
+The controlled and prompting observations are available as summary results;
+the replication planned in advance can be checked from saved predictions. A separate
+base-versus-instruction-tuned comparison is retained as background: decoding can
+remain strong even when the detailed direction geometry changes.
 
-### 7. Is that causal effect specific to the relation direction?
+## Part IV. Does changing the answer recreate the semantic change?
 
-Mostly no on the tested answer endpoint. Truth and sentiment directions often moved the same Supports/Opposes margin as much as, or more than, the relation direction.
+### 6. Does steering reproduce what happens when we actually change the relation?
 
-Each number below is **relation response slope minus comparator response slope** after matching intervention scale. Positive favors relation steering; negative favors the comparator.
+In the measured Gemma comparison, no. Steering could reach the direct-answer
+target while moving the other answers away from the pattern produced by
+actually changing the relation.
 
-| Comparison | Llama VP | Llama AMPERE++ | Gemma VP | Gemma AMPERE++ |
+The test uses paired synthetic contexts that differ only in one person's stance
+toward one target. The direct question sets intervention strength. Held-out
+questions then ask about the complement, rephrase the focal relation, or ask
+about relations that should not change.
+
+We measure how closely the intervention reproduces the natural pattern across
+those other questions, using scales fixed on development data. A negative
+recovery score means it moved farther from that pattern than the unchanged
+starting state.
+
+| Gemma intervention | Recovery of the natural change | Interval |
+|---|---:|---:|
+| Steering along the relation direction | -0.851 | [-1.005, -0.707] |
+| Moving the whole activation toward the changed context, to the same answer target | 0.914 | [0.899, 0.926] |
+| Replacing it with the changed context's activation | 0.981 | [0.980, 0.983] |
+
+Relation steering reached the requested direct-answer margin in 100% of the
+final contexts, yet did not recover the broader change. The margin measures the
+model's relative preference for the answer, not just which answer won.
+
+There is an important qualification. Reaching those margins did not satisfy
+every requirement set before the experiment: some targets were below the required
+absolute strength, and the direction fitted to the matched setting failed its
+qualification check. The measured answer changes are not a full pass of those
+stricter requirements.
+
+A later-layer readout gave supporting summary evidence, but its result is not
+independently replayed in this package. Llama's natural changed-context reference
+was unstable across equivalent wording, so it did not qualify for this comparison.
+That reference failure is not a negative editing result.
+
+**Changing the target answer did not reproduce the broader consequences of
+changing the underlying relation.**
+
+![Direct-answer margins and broader counterfactual recovery](../figures/fig6_answer_consequences.png)
+
+The [matched consequence figure](../figures/CAPTIONS.md#figure-6--direct-answers-and-broader-counterfactual-consequences)
+separates direct-margin attainment from recovery of the held-out natural pattern.
+
+## Part V. Editing a shared state
+
+### 7. Can we change a relation before knowing which question will be asked?
+
+Yes in bounded tests, but reliably combining changes remains unresolved.
+The later editors change an addressed relation in the context before seeing
+the downstream question. Fresh questions then test what the edited state supports.
+
+The initial editor produced substantial effects, but did not meet all the
+reliability requirements. Some model and task branches failed qualification
+before they could support the intended comparison.
+
+A matched comparison then produced strong single edits under revised checks
+of the model's starting ability. That was an explicitly amended qualification,
+not a pass under the original protocol. Repeating and undoing edits still failed.
+
+Later editors could repeat changes and restore earlier answers. A less
+restricted editor, called free overwrite, also worked, so that capability was
+not unique to the constrained design. Training on a broader set of consequences
+of single edits then improved some unseen sequences of changes. Reliable joint
+control and full replication across models were still not established.
+
+[Supplementary Figure S1](../figures/CAPTIONS.md#supplementary-figure-s1--broader-single-edit-training-and-later-sequences)
+shows the matched comparison between broader and narrower single-edit training,
+including both seed effects and the uncertainty in each model/editor comparison.
+
+One prepared study defined fixed ways of asking the readout questions but
+produced no new efficacy measurements. Preparation alone is neither a positive
+nor a negative result. The next experiment asked a harder question. If we reach
+the same final relations from different starting relations, do the answers
+still depend on what was overwritten?
+
+The table below uses the ordinary question wording and the constrained editor,
+which is designed to change the requested relation while keeping the others stable.
+Repeating an edit should leave its result unchanged; restoration should recover
+answers that were correct in the starting state. Joint updates should not
+introduce errors on relations that were supposed to stay unchanged.
+
+| Model and training seed | Requested change correct | Most disagreement after repeats | Lowest restoration rate | New errors on unchanged relations after joint updates |
 |---|---:|---:|---:|---:|
-| Relation minus factual | -0.015 | -0.125 | -0.247 | -0.681 |
-| Relation minus sentiment | -0.542 | -0.392 | **+0.602** | -0.113 |
+| Gemma seed 0 | 90.6250% | 0.1302% | 98.1527% | 8.0729% |
+| Gemma seed 1 | 92.9688% | 0.1302% | 99.0699% | 8.9193% |
+| Qwen seed 0 | 88.5417% | 0.5208% | 98.9993% | 5.4688% |
+| Qwen seed 1 | 93.7500% | 0.2604% | 96.2126% | 6.9010% |
 
-Only **1 of 8** headline comparisons favored relation steering, and equal-L2 normalization did not remove the pattern.
+These are point estimates on the tested program subset, not population
+guarantees. Both original training seeds are shown and must meet the requirements;
+success from a single seed does not replace success across both.
 
-A refusal-domain reconstruction gave a related result: 11 directions had mean pairwise cosine **0.457**, while geometric similarity predicted refusal-effect strength with **r ≈ 0.89**. This motivated the **more concepts than control knobs** hypothesis.
+The best rate of getting the whole declared answer set correct consistently
+across starting states was 29.6875%. No tested setting met all the requirements
+for independence from the starting relations. Consistent wrong answers do not
+count as success.
 
-### 8. Does a semantic direction have a stable causal role across contexts?
+![Joint-answer disagreement despite correct atomic relations](../figures/fig7_source_history.png)
 
-Not automatically. A direction can have locally predictable effects while its pattern across downstream endpoints changes with context.
+The [source-history figure](../figures/CAPTIONS.md#figure-7--joint-answers-retain-overwritten-source-history)
+shows descriptive root counts where all atomic answers are correct across starting
+states but some joint answers still vary with the overwritten history.
 
-For direction $d_i$, activation $h$, and semantic answer margin $m_j$,
+The comparison with the model answering genuinely rewritten text is also
+imperfect: those answers can be wrong, and their accuracy is not a hard upper
+limit. Some single-edit checks are relative to that comparison; passing them
+does not mean every question in a scene is answered correctly.
 
-```math
-c_{ij}(h)=\nabla_h m_j(h)^\top d_i,
-\qquad
-f_i(h)=\big(c_{i1}(h),\ldots,c_{iJ}(h)\big).
-```
+Giving the reader extra instructions changes how the state is queried; it is
+not the same as improving answers under the original wording. Descriptive
+intervals added after seeing the outcomes do not change the original primary
+tests or their thresholds.
 
-The vector $f_i(h)$ is the **causal fingerprint**. Its coordinates are local changes in semantic output margins, not residual-stream similarities. Gradients were validated against centered finite interventions before fingerprint stability was evaluated.
+[Supplementary Figure S2](../figures/CAPTIONS.md#supplementary-figure-s2--changing-how-the-same-edited-state-is-queried)
+compares the fixed readers on the same saved edited states. It keeps a change in
+question wording separate from a change in the editor itself.
 
-The original random-direction reliability check was invalid. It effectively compared $\bar g_{\mathrm{left}}^\top r_k$ with $\bar g_{\mathrm{right}}^\top r_k$. If the two halves have similar mean gradient fields, fixed random directions look reproducible even without semantic structure. A semantics-free synthetic fixture scored about **0.99995**, so that statistic measured repeatable projection geometry rather than semantic specificity.
+## Part VI. What can we conclude?
 
-The final validation used **32 independent items per model**, eight each for language, relation, sentiment, and truth.
+### 8. What does the evidence establish, and what is still missing?
 
-| Metric | Llama | Gemma |
-|---|---:|---:|
-| Gradient / finite-intervention correlation | **0.9926** | **0.9984** |
-| Sign agreement | 0.9863 | 0.9814 |
-| Median relative error | 0.0663 | 0.0467 |
-| Median same-direction fingerprint similarity | **0.8435** | **0.4594** |
-| Relation-family similarity | 0.7500 | 0.2580 |
+The support/opposition direction is readable, transferable and causally useful.
+But its magnitude is not a reliable measure of commitment, and moving it does
+not necessarily recreate the consequences of changing the relation itself.
+The broader activation contains information that the single score leaves out.
 
-Local numerical fidelity was excellent in both models, while cross-context fingerprint stability was much stronger in Llama.
+Learned editors make stronger changes before seeing the question and can repeat
+and restore them in bounded tests. That progress does not establish that they
+recreate the same internal state as rewritten text, erase the starting history,
+or reliably combine arbitrary updates. It also does not establish a uniquely
+located semantic mechanism or reliable behavior under other ways of asking.
+An unfinished successor is not a completed result.
 
-## Part IV. Recovering the richer relational state
-
-The next stage treats the scalar as one coordinate and asks what information exists in the broader state.
-
-### 9. Does the model track who supports what, or only polarity?
-
-The broader activation contains substantially more than a generic positive/negative score. Controlled contexts contain multiple people and targets while the **query** changes.
-
-- **Dual-query reversal:** keep the context fixed and ask two relation questions whose correct signs are opposite.
-- **Holder swap:** keep context and target fixed but switch the queried holder, in contexts where the two holders have opposite stances.
-- **Target swap:** keep context and holder fixed but switch the queried target, in contexts where the correct relation sign reverses.
-
-Using the frozen one-dimensional direction with no refitting:
-
-| Measurement | Llama | Gemma |
-|---|---:|---:|
-| Scalar sign balanced accuracy | **0.857** | **0.827** |
-| Dual-query reversal | 1.000 | 0.896 |
-| Holder swap | 1.000 | 0.917 |
-| Target swap | 1.000 | 0.979 |
-| Four-way full residual activation | **0.940** | **0.940** |
-| Four-way scalar alone | 0.531 | 0.534 |
-
-The four-way task jointly identifies **which holder** is queried and **whether that holder supports or opposes the target**.
-
-For the residual readout, fit-context activations are linearly residualized against the scalar score, native answer probability, prompt length, context-sentence count, answer-mapping one-hots, and lexical-family one-hots; the fitted transformation is then applied unchanged to held-out contexts. Relation-presence decoding remained **0.939** in Llama and **0.950** in Gemma.
-
-An additive holder-plus-sign baseline reached only **0.604** joint balanced accuracy in Llama and **0.513** in Gemma, versus about **0.95** from the full activation. The richer state therefore contains holder-target-relation interaction information missing from the scalar.
-
-### 10. Is the support/opposition direction different from the model's own answer?
-
-Usually not by much. On ValuePrism cells where the model's report disagreed with the task label, the one-dimensional direction overwhelmingly followed the report.
-
-| Model | Disagreement cells | Probability scalar sides with task label |
-|---|---:|---:|
-| Llama | 158 across 110 boards | **0.082 [0.039, 0.130]** |
-| Gemma | 102 across 78 boards | **0.049 [0.010, 0.092]** |
-
-A controlled zero-shot task initially looked like a representation/report dissociation, but fixed eight-shot elicitation largely removed it. Native answers then agreed with the frozen direction on more than **99%** of signed Llama rows and about **98%** of Gemma rows.
-
-The broader activation still adds information beyond text, mapping, and the native answer. These replication populations came from pre-existing M1 development partitions. The 1,500-row fit split formed **1,454 situation units**. The 300-row selection split formed **75 checkerboards**. Neither is being presented as the 7,394-row strict test set.
-
-| Population | Llama log-loss improvement | Gemma improvement |
-|---|---:|---:|
-| 1,454-situation population | **0.064 [0.044, 0.083]** | **0.038 [0.025, 0.051]** |
-| 75-checkerboard population | **0.073 [0.028, 0.117]** | **0.031 [0.004, 0.059]** |
-
-The scalar is strongly report-aligned, while the broader activation contains additional relation information.
-
-### 11. Is the support/opposition distinction created by instruction tuning?
-
-No. On an explicit stance task, both base checkpoints performed above chance, with balanced accuracy **0.771** for Llama and **0.792** for Gemma. At the frozen layers, relation AUROC was **1.000** for base→base, base→instruct, instruct→base, and instruct→instruct decoding.
-
-The exact geometry still rotated. Base/instruct direction cosine was **0.627** in Llama and **0.603** in Gemma. Chat-template comparisons fell further, to **0.207** and **0.290**, despite high AUROC.
-
-The distinction is therefore linearly separable before instruction tuning even though post-training and prompting alter its detailed geometry.
-
-## Part V. Does steering recreate the semantic counterfactual?
-
-Finally ask whether strong steering reproduces the broader consequences of actually changing the relation.
-
-### 12. If steering changes the answer, does it recreate the natural counterfactual?
-
-In Gemma, no. Rank-1 relation steering could convert the direct answer at counterfactual-like strength while the other consequences moved away from the pattern produced by actually changing the relation.
-
-The test uses deterministic synthetic contexts with two holders, two targets, and explicit relation facts. Base and counterfactual versions are identical except that **one focal holder-target relation is programmatically flipped SUPPORT↔OPPOSE**; all other facts stay fixed. A second independently written realization changes wording and sentence order while preserving those facts.
-
-$Q_1$ asks about the focal relation and calibrates intervention strength. $Q_2$ asks its complement, $Q_3,Q_4$ paraphrase the focal facts, and $Q_5,Q_6$ query unchanged holder/target relations.
-
-For question $q$, the behavioral endpoint is a semantic margin in natural-log probability units:
-
-```math
-m_q(x)=\log p(\mathrm{ENTAILED}\mid x,q)-\log p(\mathrm{NOT\_ENTAILED}\mid x,q).
-```
-
-The natural signature is
-
-```math
-N_w=\big(m_q(x_{cf})-m_q(x_{base})\big)_{q=2}^{6},
-```
-
-and $I_w$ is the corresponding intervention-induced change.
-
-The distance uses development-frozen robust scales:
-
-```math
-s_j=\max\left(1.4826\,\mathrm{MAD}(N_{\cdot,j}),\;
-0.25\times\mathrm{median}_{k\in\{2,3,4\}}
-1.4826\,\mathrm{MAD}(N_{\cdot,k})\right),
-```
-
-```math
-D(u,v)^2=\sum_{j=2}^{6}a_j
-\left(\frac{u_j-v_j}{s_j}\right)^2,
-```
-
-with $a_2=a_3=a_4=\frac13$ and $a_5=a_6=\frac12$. Counterfactual Signature Recovery is
-
-```math
-\mathrm{CSR}_w(I)=1-\frac{D(I_w,N_w)^2}{D(0,N_w)^2}.
-```
-
-CSR = **1** is exact recovery, **0** is no movement from base, and negative values mean the intervention moved farther from the natural counterfactual.
-
-At the main target, rank-1 steering hit the requested $Q_1$ margin on **100%** of 96 final Gemma contexts. It flipped the hard answer on **99%** of them. CSR was nevertheless **-0.851 [-1.005, -0.707]**.
-
-Recovery worsened as the steering strength rose, measured as a fraction of the natural $Q_1$ change:
-
-| Fraction of the natural $Q_1$ change | 25% | 50% | 75% | 100% |
-|---|---:|---:|---:|---:|
-| CSR | -0.144 | -0.394 | -0.851 | -1.681 |
-
-| Held-out consequence | Natural | Full-state interpolation | Rank-1 steering |
-|---|---:|---:|---:|
-| Complement $Q_2$ | +2.61 | +1.91 | **-0.28** |
-| Focal paraphrases $Q_3,Q_4$, mean | +0.66 | +0.49 | +0.18 |
-| Stability controls $Q_5,Q_6$, mean | +0.06 | +0.04 | **+1.15** |
-
-The same direct-answer target was reachable through the full state. A complete counterfactual-state patch gave **CSR 0.981 [0.980, 0.983]**; interpolating the whole activation only far enough to reach the same $Q_1$ target gave **0.914 [0.899, 0.926]**.
-
-A later-layer witness corroborated the behavioral result. It is an **L2-regularized logistic probe at layer 32**, five layers after steering at layer 27, fitted on 64 separate contexts. Before fitting, each layer-32 residual-stream vector is orthogonally projected out of the span of the two tested rank-1 relation directions:
-
-```math
-X_\perp=X-(XQ)Q^\top.
-```
-
-The probe is trained on these residualized activations; its weight vector is not projected after fitting. On unsteered final states it reached **1.000** balanced accuracy and **0.979** cross-template accuracy.
-
-| Intervention | Later-layer witness recovery |
-|---|---:|
-| Full-state patch | **0.993** |
-| Full-state interpolation | **0.779 [0.727, 0.828]** |
-| Rank-1 relation steering | **0.198 [0.123, 0.269]** |
-
-Behavior and later-layer state agree: whole-state movement approaches the natural counterfactual, while rank-1 steering converts the answer without reproducing the broader consequence pattern. Llama's natural counterfactual reference was not stable enough across equivalent prompt realizations for the same fidelity comparison.
-
-### 13. Overall evidence picture
-
-The support/opposition direction survives checkerboard controls, replicates across Llama and Gemma, transfers to ordinary argument relations, and remains informative after measured answer-token, sentiment, and truth components are removed. Its magnitude is not a reliable commitment meter, semantically different directions can move the same answer endpoint, and controlled multi-person tests show that the broader activation carries relational structure missing from the scalar.
-
-The counterfactual experiment sharpens the distinction. In Gemma, rank-1 steering produces the counterfactual answer while moving the held-out consequence pattern away from the natural semantic change. A higher-dimensional state change reaches the same answer target while preserving that pattern.
-
-> **A linear semantic direction can be readable, transferable, and causally powerful while still being only one coordinate of a richer representation. Controlling that coordinate can reproduce the target answer without reproducing the broader computation associated with changing the underlying semantic fact.**
+A semantic intervention earns a stronger interpretation when its effects propagate
+through the later consequences of the edited fact while preserving unrelated
+information. The experiments here measure that progression from readable relation
+signals to reusable state updates, and identify the points where the stronger
+interpretation still fails.

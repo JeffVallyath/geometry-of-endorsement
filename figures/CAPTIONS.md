@@ -1,21 +1,17 @@
 # Figure captions
 
-Draft captions for the linear-probe figures. Each states the method, then the
-result, then how to read it, then what it does not show.
+Methods, measurements, and interpretation for the representation and editing figures.
 
 ## Scope
 
-Every figure here reports development evidence about **decodability**: whether a
+The representation figure set reports development evidence about **decodability**: whether a
 linear readout of the model's activations tracks how a consideration bears on an
 action. All five figures agree across Llama and Gemma.
 
-That agreement is real for this question, and it stops here. The later causal and
-reliability results do not replicate symmetrically. Those results support the
-narrower Llama finding, while Gemma misses the required conjunction.
-
-Keep this figure set separate from the later single-model claims when assembling
-the paper. Sharing a colour scheme is fine. Sharing a figure, a "results across
-both models" section, or a summary sentence that spans both is not.
+That agreement is real for this question, and it stops here. Later causal and
+reliability results do not replicate symmetrically across studies. Qualification
+failures and bounded positive outcomes differ by experiment; the
+[results page](../docs/RESULTS_AND_CLAIMS.md) keeps their scopes separate.
 
 ## Shared definitions
 
@@ -131,13 +127,14 @@ observed value. This is the prespecified test in both the original run and the
 re-run. A two-sided version of the same 10,000 draws gives 0.0245 for the Llama
 support/opposition direction, so the conclusion does not turn on sidedness.
 
-**The Llama panels supersede the values in the source run.** They come from a
-re-run at 10,000 draws. The source run used 200 draws, at which both Llama probes
-reported 0.005 — the resolution floor rather than a measured tail. At 10,000
-draws the two probes separate. The logistic activation probe holds at 0.0001 with
-no draw reaching the observed value. The support/opposition direction gives
-0.0132, with 131 draws at or above it. Its original figure therefore understated
-its tail by roughly a factor of three. Both remain below 0.05.
+**The Llama panels show the later refit-null analysis.** They use 10,000 draws
+with the procedure described above. The historical source summary used 200 draws
+for improvement over the text comparator, and both Llama probes reported 0.005,
+the resolution floor. That historical test and the later refitted-interaction
+null are not interchangeable; the change cannot be interpreted simply as a more
+precise estimate of the same tail. In the later analysis, the logistic activation
+probe gives 0.0001 with no draw reaching the observed value. The support/opposition
+direction gives 0.0132, with 131 draws at or above it. Both are below 0.05.
 
 **The Gemma panels are still at 200 draws.** That is low resolution, but it is not
 uniformly censored. Only Gemma's logistic result sits at the floor of 1/201.
@@ -226,3 +223,108 @@ So the figure establishes that the effect is not wording, not answer format, and
 not an artefact of the board algebra. It does not establish that an arbitrary
 direction in the residual stream would fail to produce it.
 
+## Figure 6 — Direct answers and broader counterfactual consequences
+
+![Direct-margin hits compared with broader consequence recovery](fig6_answer_consequences.png)
+
+The matched Gemma comparison uses the same 96 final worlds at target fraction
+0.75. Rank-one relation steering and whole-state interpolation reach the requested
+direct-answer margin within tolerance in 100% of these worlds. This is a margin
+criterion, not perfect hard-answer accuracy or a full strong-target pass: some
+targets fall below the frozen absolute-strength requirement. The direction fitted
+to the matched setting also failed qualification; the displayed rank-one arm uses
+the original frozen direction.
+
+The right panel measures recovery of the natural change on held-out questions,
+including complementary, paraphrased, and unchanged relations. Recovery is a
+normalized score, not a proportion of correct answers; zero is the unchanged
+starting state and one is the natural change. Negative recovery moves farther
+from the natural pattern. Error bars are the saved 95% world-bootstrap intervals.
+The natural changed-state patch is a reference intervention, not margin-tuned.
+Llama failed natural-reference qualification and is not included in this comparison.
+
+[Saved results](../reproducibility/representation/counterfactual_fidelity/results.json),
+[per-world measurements](../reproducibility/representation/counterfactual_fidelity/scores/final_gemma.jsonl.gz),
+and [plot data](../artifacts/figures/consequence_comparisons.json) retain the exact
+estimates. The supported table replay checks the behavioral measurements; it does
+not recreate the omitted fitted direction or later-layer witness.
+
+## Figure 7 — Joint answers retain overwritten source history
+
+![Source-history disagreement despite correct atomic relations](fig7_source_history.png)
+
+The top panel shows a saved synthetic design: 4 starting states receive the same
+requested final assignments before fresh questions are supplied. The lower panel
+uses every terminal root under the original reader: Gemma has 64 roots and Qwen
+32, with both editors and both original training seeds shown separately.
+
+A root is atomic-perfect only when all 16 direct/opposes questions are correct
+across every starting state. The red segment counts such roots where at least
+one of the 18 joint both/either/same questions still changes its answer with the
+overwritten starting values. The teal segment has correct atomic answers and no
+joint disagreement; its joint answers may still be consistently wrong. Gray
+marks roots with at least one incorrect atomic answer. The right-hand counts
+use atomic-perfect roots as their denominator; the bars use all roots.
+
+These are descriptive counts derived from saved per-root sufficient statistics,
+not a new primary test, an uncertainty interval, or a pooled model/seed estimate.
+They isolate observed answer disagreements, not a claim about an identified
+internal mechanism. The top panel is a design example, not a sequence of model answers.
+
+[Root statistics](../reproducibility/relational_editing/v6/scores/source_root_statistics.json.gz),
+[synthetic source worlds](../reproducibility/relational_editing/v6/data/gemma_source_roots.jsonl),
+and [plot data](../artifacts/figures/consequence_comparisons.json) provide the
+population and exact counts. Both new figures regenerate through
+`python -m repro figures` using [the plotting code](../src/repro/consequence_figures.py).
+
+## Supplementary Figure S1 — Broader single-edit training and later sequences
+
+![Matched effects of broader single-edit training](supplementary/figS1_editing_coverage.png)
+
+This is a matched comparison within the coverage study, not a trend across studies.
+Both editors were trained on individual edits; the broader condition was trained
+on more consequences of each edit. The evaluation asks whether all questions about
+the resulting program are correct after two or three updates, averaging those two
+outcomes within each scene. Reversed orders are not counted as additional scenes.
+
+The constrained editor limits changes to preserve other addressed relations; free
+overwrite is the less restricted comparison. Each row shows broader minus narrower
+training for the same editor and model. Positive values favor broader training.
+The dot and interval average both training seeds within each scene. The triangles
+show the separate seed effects, not extra independent observations.
+
+Intervals are the saved 98.75% paired whole-scene bootstrap intervals. Gemma has
+64 scenes and Qwen 32. Three intervals exclude zero in favor of broader training;
+Gemma's free-overwrite interval crosses zero. This relative improvement does not
+establish a pass of the full absolute joint-control requirements.
+
+The [original comparison table](../reproducibility/relational_editing/v4/expected/T10_coverage_contrasts.csv)
+contains the estimates, all seed-specific intervals, and the other study contrasts.
+The [plot data](../artifacts/figures/editing_comparisons.json) retain the selected
+values without recomputing uncertainty.
+
+## Supplementary Figure S2 — Changing how the same edited state is queried
+
+![Paired changes from alternative fixed readers](supplementary/figS2_fixed_readers.png)
+
+Each row compares an alternative question with the original question on the same
+saved edited states. The paraphrase asks whether two people hold matching positions.
+The explicit-rule version adds an explanation: the answer is yes if both support
+or both oppose the proposal, and no otherwise. That extra instruction changes the
+readout interface; it is not evidence of better answers under the original wording.
+
+The endpoint is same-side question accuracy after a three-edit sequence, averaged
+within each scene and then across the two original training seeds. The panel uses
+the study's fixed early ordering. Intervals are the saved 99.375% paired whole-scene
+bootstrap intervals. Gemma has 64 scenes and Qwen 32. Seed effects are shown
+separately, and neither model nor study populations are pooled.
+
+None of these corrected intervals establishes an improvement. Several are wholly
+negative; the others cross zero, which is not evidence of equivalence. This
+comparison is distinct from the full source-independence test: a change in
+question accuracy does not show that overwritten starting relations have ceased
+to affect the answers.
+
+The [paired scene records](../reproducibility/relational_editing/v6/scores/reader_paired_contrasts.json.gz),
+[exact reader prompts](../reproducibility/relational_editing/v6/data/READERS.json),
+and [plot data](../artifacts/figures/editing_comparisons.json) give the full comparisons.

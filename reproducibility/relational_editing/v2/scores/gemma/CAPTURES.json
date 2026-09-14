@@ -1,0 +1,28 @@
+{
+  "at": "2026-09-10T20:09:03.024783+00:00",
+  "actor": "gemma",
+  "site": 15,
+  "cap": 103.18592071533203,
+  "cap_rule": "inherited V1 site-15 relation cap 103.18592071533203 (clip THEN strength)",
+  "cap_new_fit_rule": 105.78401184082031,
+  "delta_stats": {
+    "p95": 52.892005920410156,
+    "median": 44.47692108154297,
+    "mean": 44.88031005859375,
+    "n": 96
+  },
+  "mu_rule": "frozen FIT source mean over all prefix token states except position 0 (Qwen center); Gemma arms keep the stored V1 center for exact warm-start function preservation",
+  "mu_q_rule": "frozen FIT mean of the final source-question state from unedited source+question forwards (query feature block only)",
+  "mu_norm": 140.88583374023438,
+  "mu_q_norm": 154.379638671875,
+  "native_delta_scale": {
+    "z_src_norm": 155.89532470703125,
+    "z_dst_minus_src": 44.88031005859375
+  },
+  "q_store": {
+    "queries": 1536,
+    "sha256": "b7c9f92f31553d7a94b8fceeacdd707b571226661aeace0bad60cfce8c24de53"
+  },
+  "captures_sha256": "953d7960008e24d10ba1295da1d81eef2689a8d3e61e956214c0d85bd14e1382",
+  "scenes": 96
+}

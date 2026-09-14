@@ -1,0 +1,70 @@
+{
+  "at": "2026-09-11T05:28:51.372627+00:00",
+  "actor": "gemma",
+  "procedure": "C1",
+  "scenes": [
+    "FIT-RSO3-0008",
+    "FIT-RSO3-0037",
+    "FIT-RSO3-0024",
+    "FIT-RSO3-0088"
+  ],
+  "queries": 16,
+  "results": {
+    "INVARIANT_SET": {
+      "loss": 6.372763991355896,
+      "grad_norms": {
+        "basis_raw": 7.900588035583496,
+        "head": 9.491740226745605,
+        "bias": 0.04051597788929939
+      },
+      "used_values": [
+        0,
+        1
+      ],
+      "backbone_grad": false,
+      "finite": true,
+      "editor_grad_nonzero": true,
+      "max_score_move": 8.17698530011694,
+      "seconds": 2.4351141329998427
+    },
+    "FREE_OVERWRITE": {
+      "loss": 6.349865794181824,
+      "grad_norms": {
+        "basis_raw": 7.739650726318359,
+        "head": 9.364781379699707,
+        "bias": 0.039610471576452255
+      },
+      "used_values": [
+        0,
+        1
+      ],
+      "backbone_grad": false,
+      "finite": true,
+      "editor_grad_nonzero": true,
+      "max_score_move": 7.962201392336283,
+      "seconds": 1.876919824000197
+    },
+    "CONTINUED_AFFINE": {
+      "loss": 0.574107688596996,
+      "grad_norms": {
+        "0.input_factor": 0.001920772367157042,
+        "0.output_factor": 0.013114513829350471,
+        "0.bias": 9.841205610428005e-06,
+        "1.input_factor": 1.0971332788467407,
+        "1.output_factor": 4.959660053253174,
+        "1.bias": 0.005759093910455704
+      },
+      "used_values": [
+        0,
+        1
+      ],
+      "backbone_grad": false,
+      "finite": true,
+      "editor_grad_nonzero": true,
+      "max_score_move": 4.2805664737243205,
+      "seconds": 1.8804899629999454
+    }
+  },
+  "backbone_unchanged": true,
+  "pass_": true
+}

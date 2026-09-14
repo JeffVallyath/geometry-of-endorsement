@@ -46,8 +46,14 @@ def test_public_review_package_contains_no_study_rows_or_answers() -> None:
 
 def test_public_review_manifest_binds_every_public_artifact() -> None:
     manifest = json.loads((TEMPLATES / "MANIFEST.json").read_text(encoding="utf-8"))
-    assert manifest["status"] == "FROZEN_READY_FOR_INDEPENDENT_REVIEW"
+    assert manifest["status"] == "FROZEN_REVIEW_INSTRUMENT_NOT_CURRENT_STUDY_STATUS"
     assert manifest["contains_study_rows"] is False
     for relative, expected in manifest["public_files_sha256"].items():
         actual = hashlib.sha256((ROOT / relative).read_bytes()).hexdigest()
         assert actual == expected
+
+
+def test_source_populated_reviewer_archives_are_not_distributed():
+    assert not list((ROOT / "review_packages").rglob("*.zip"))
+    manifest = json.loads((TEMPLATES / "MANIFEST.json").read_text(encoding="utf-8"))
+    assert "private_package_receipt" not in manifest

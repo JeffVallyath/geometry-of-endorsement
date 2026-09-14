@@ -1,0 +1,63 @@
+{
+  "at": "2026-09-10T11:32:16.460923+00:00",
+  "first_question_generated_at": "2026-09-10T11:04:35.236899+00:00",
+  "seal_at": "2026-09-10T11:04:35.215851+00:00",
+  "scenes": 64,
+  "conditions": [
+    "SOURCE",
+    "COUNTERFACTUAL",
+    "LATE_s0",
+    "LATE_s1",
+    "LATE_MEAN",
+    "PREFIX_LAST_s0",
+    "PREFIX_LAST_s1",
+    "PREFIX_DISTRIBUTED_s0",
+    "PREFIX_DISTRIBUTED_s1"
+  ],
+  "rows": {
+    "SOURCE": 1536,
+    "COUNTERFACTUAL": 1536,
+    "LATE_s0": 1536,
+    "LATE_s1": 1536,
+    "LATE_MEAN": 1536,
+    "PREFIX_LAST_s0": 1536,
+    "PREFIX_LAST_s1": 1536,
+    "PREFIX_DISTRIBUTED_s0": 1536,
+    "PREFIX_DISTRIBUTED_s1": 1536
+  },
+  "seal_mismatches": [],
+  "recompile_deterministic": true,
+  "seconds": 1661.2277920920005,
+  "generation_scenes": [
+    "FINAL-relation-004",
+    "FINAL-relation-006",
+    "FINAL-relation-014",
+    "FINAL-relation-020",
+    "FINAL-relation-024",
+    "FINAL-relation-032",
+    "FINAL-relation-035",
+    "FINAL-relation-043"
+  ],
+  "master_verified_samples": {
+    "SOURCE": 192,
+    "COUNTERFACTUAL": 192,
+    "LATE_s0": 192,
+    "LATE_s1": 192,
+    "LATE_MEAN": 192,
+    "PREFIX_LAST_s0": 192,
+    "PREFIX_LAST_s1": 192,
+    "PREFIX_DISTRIBUTED_s0": 192,
+    "PREFIX_DISTRIBUTED_s1": 192
+  },
+  "master_failures": {
+    "SOURCE": 0,
+    "COUNTERFACTUAL": 0,
+    "LATE_s0": 0,
+    "LATE_s1": 0,
+    "LATE_MEAN": 0,
+    "PREFIX_LAST_s0": 0,
+    "PREFIX_LAST_s1": 0,
+    "PREFIX_DISTRIBUTED_s0": 0,
+    "PREFIX_DISTRIBUTED_s1": 0
+  }
+}

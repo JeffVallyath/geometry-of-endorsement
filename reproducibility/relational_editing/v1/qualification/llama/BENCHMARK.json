@@ -1,0 +1,28 @@
+{
+  "at": "2026-09-10T07:57:22.677787+00:00",
+  "model": "llama",
+  "prefix_tokens": 141,
+  "suffix_tokens": [
+    32,
+    32,
+    37,
+    32
+  ],
+  "cache_bytes": 18481152,
+  "seconds": {
+    "compile": 0.04596956466669629,
+    "compile_capture": 0.04597446166659817,
+    "compile_distributed": 0.04748361466666514,
+    "ask": 0.04280258233332764,
+    "ask_late": 0.04413926500001253,
+    "ask_generate32": 0.11606412799983445,
+    "clone": 0.005438608666584817,
+    "hash": 0.01613052466670221,
+    "train_step4_LATE@20": 0.10656955650006239,
+    "train_step4_PREFIX_LAST@11": 0.13480554150009993,
+    "train_step4_PREFIX_LAST@20": 0.10600828949986862,
+    "train_step4_PREFIX_DISTRIBUTED@11": 0.1354955220001557,
+    "train_step4_PREFIX_DISTRIBUTED@20": 0.1069306394999785
+  },
+  "note": "disposable timing panel; not a measurement"
+}

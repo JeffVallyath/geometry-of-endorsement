@@ -1,0 +1,182 @@
+{
+  "at": "2026-09-10T19:36:12.480829+00:00",
+  "actor": "qwen",
+  "selected_procedure": null,
+  "natural_panel_procedure": "T4",
+  "attempts": [
+    {
+      "procedure": "C1",
+      "summary": {
+        "source": {
+          "n": 96,
+          "parse_rate": 1.0,
+          "direct_negation_accuracy": 0.96875,
+          "equality_accuracy": 0.625,
+          "score_accuracy": 0.8541666666666666,
+          "truncated": 0,
+          "generation_score_agreement": 1.0,
+          "mean_new_tokens": 2.0,
+          "by_family": {
+            "direct": 0.9803921568627451,
+            "opposes": 0.9230769230769231,
+            "same": 0.625
+          },
+          "qualified": false
+        },
+        "counterfactual": {
+          "n": 96,
+          "parse_rate": 1.0,
+          "direct_negation_accuracy": 0.984375,
+          "equality_accuracy": 0.53125,
+          "score_accuracy": 0.8333333333333334,
+          "truncated": 0,
+          "generation_score_agreement": 1.0,
+          "mean_new_tokens": 2.0,
+          "by_family": {
+            "direct": 1.0,
+            "opposes": 0.9230769230769231,
+            "same": 0.53125
+          },
+          "qualified": false
+        },
+        "pooled": {
+          "n": 192,
+          "parse_rate": 1.0,
+          "direct_negation_accuracy": 0.9765625,
+          "equality_accuracy": 0.578125,
+          "score_accuracy": 0.84375,
+          "truncated": 0,
+          "generation_score_agreement": 1.0,
+          "mean_new_tokens": 2.0,
+          "by_family": {
+            "direct": 0.9901960784313726,
+            "opposes": 0.9230769230769231,
+            "same": 0.578125
+          },
+          "qualified": false
+        }
+      },
+      "generations": 192,
+      "qualified": false
+    },
+    {
+      "procedure": "C1S",
+      "summary": {
+        "source": {
+          "n": 96,
+          "parse_rate": 1.0,
+          "direct_negation_accuracy": 0.953125,
+          "equality_accuracy": 0.625,
+          "score_accuracy": 0.84375,
+          "truncated": 0,
+          "generation_score_agreement": 1.0,
+          "mean_new_tokens": 2.0,
+          "by_family": {
+            "direct": 0.9607843137254902,
+            "opposes": 0.9230769230769231,
+            "same": 0.625
+          },
+          "qualified": false
+        },
+        "counterfactual": {
+          "n": 96,
+          "parse_rate": 1.0,
+          "direct_negation_accuracy": 0.96875,
+          "equality_accuracy": 0.5625,
+          "score_accuracy": 0.8333333333333334,
+          "truncated": 0,
+          "generation_score_agreement": 1.0,
+          "mean_new_tokens": 2.0,
+          "by_family": {
+            "direct": 0.9803921568627451,
+            "opposes": 0.9230769230769231,
+            "same": 0.5625
+          },
+          "qualified": false
+        },
+        "pooled": {
+          "n": 192,
+          "parse_rate": 1.0,
+          "direct_negation_accuracy": 0.9609375,
+          "equality_accuracy": 0.59375,
+          "score_accuracy": 0.8385416666666666,
+          "truncated": 0,
+          "generation_score_agreement": 1.0,
+          "mean_new_tokens": 2.0,
+          "by_family": {
+            "direct": 0.9705882352941176,
+            "opposes": 0.9230769230769231,
+            "same": 0.59375
+          },
+          "qualified": false
+        }
+      },
+      "generations": 192,
+      "qualified": false
+    },
+    {
+      "procedure": "T4",
+      "summary": {
+        "source": {
+          "n": 96,
+          "parse_rate": 1.0,
+          "direct_negation_accuracy": 0.953125,
+          "equality_accuracy": 0.65625,
+          "score_accuracy": 0.8541666666666666,
+          "truncated": 0,
+          "generation_score_agreement": 1.0,
+          "mean_new_tokens": 2.0,
+          "by_family": {
+            "direct": 0.9607843137254902,
+            "opposes": 0.9230769230769231,
+            "same": 0.65625
+          },
+          "qualified": false
+        },
+        "counterfactual": {
+          "n": 96,
+          "parse_rate": 1.0,
+          "direct_negation_accuracy": 0.9375,
+          "equality_accuracy": 0.71875,
+          "score_accuracy": 0.8645833333333334,
+          "truncated": 0,
+          "generation_score_agreement": 1.0,
+          "mean_new_tokens": 2.0,
+          "by_family": {
+            "direct": 1.0,
+            "opposes": 0.6923076923076923,
+            "same": 0.71875
+          },
+          "qualified": false
+        },
+        "pooled": {
+          "n": 192,
+          "parse_rate": 1.0,
+          "direct_negation_accuracy": 0.9453125,
+          "equality_accuracy": 0.6875,
+          "score_accuracy": 0.859375,
+          "truncated": 0,
+          "generation_score_agreement": 1.0,
+          "mean_new_tokens": 2.0,
+          "by_family": {
+            "direct": 0.9803921568627451,
+            "opposes": 0.8076923076923077,
+            "same": 0.6875
+          },
+          "qualified": false
+        }
+      },
+      "generations": 192,
+      "qualified": false
+    }
+  ],
+  "total_generations": 576,
+  "requests": 96,
+  "rule": "first procedure (C1 -> C1S -> T4) with >=95% parseable generations (<=32 new tokens), >=90% direct/negation accuracy and >=85% equality accuracy on the fixed 96-request CAL battery, required on BOTH the source and the natural-counterfactual inputs; at most three procedures; no outcome-dependent exclusion",
+  "battery": {
+    "direct_negation": 64,
+    "equality": 32,
+    "balanced_by": "stance x target relevance x truth (direct/negation), stance x truth (equality)"
+  },
+  "template": "<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n"
+}

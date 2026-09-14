@@ -1,0 +1,10 @@
+model,train_type_a,train_type_b,cosine_similarity
+llama,Value,Value,0.9999999403953552
+llama,Value,Right,0.9663131833076476
+llama,Value,Duty,0.9794386625289916
+llama,Right,Value,0.9663131833076476
+llama,Right,Right,1.0000001192092896
+llama,Right,Duty,0.9727339744567872
+llama,Duty,Value,0.9794386625289916
+llama,Duty,Right,0.9727339744567872
+llama,Duty,Duty,1.0

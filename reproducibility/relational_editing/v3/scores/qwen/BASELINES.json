@@ -1,0 +1,111 @@
+{
+  "at": "2026-09-11T11:52:51.319798+00:00",
+  "no_edit_fit": {
+    "n_scenes": 96,
+    "n_queries": 1152,
+    "changed": 0.1435185185185185,
+    "harm": 0.0,
+    "conditional_harm": 0.0,
+    "all24": 0.0625,
+    "accuracy": 0.6111111111111112,
+    "touched_accuracy": 0.2986111111111111,
+    "other_address_error": 0.07638888888888888,
+    "preservation": 1.0,
+    "nonaddressed_change": 0.0,
+    "changed_by_direction": {
+      "0": 0.11805555555555554,
+      "1": 0.19444444444444442
+    },
+    "by_cell": {
+      "(4, 2, 0)": {
+        "changed": 0.19444444444444442,
+        "harm": 0.0,
+        "all24": 0.125
+      },
+      "(4, 2, 1)": {
+        "changed": 0.11805555555555554,
+        "harm": 0.0,
+        "all24": 0.0
+      }
+    },
+    "by_family": {
+      "direct": 0.7256944444444444,
+      "opposes": 0.5885416666666666,
+      "same": 0.3125
+    },
+    "all_program_questions": 0.0625,
+    "accuracy_all_program_questions": 0.6111111111111112
+  },
+  "no_edit_cal": {
+    "n_scenes": 48,
+    "n_queries": 576,
+    "changed": 0.17129629629629628,
+    "harm": 0.0,
+    "conditional_harm": 0.0,
+    "all24": 0.0,
+    "accuracy": 0.6267361111111112,
+    "touched_accuracy": 0.31249999999999994,
+    "other_address_error": 0.05902777777777777,
+    "preservation": 1.0,
+    "nonaddressed_change": 0.0,
+    "changed_by_direction": {
+      "0": 0.1111111111111111,
+      "1": 0.2916666666666667
+    },
+    "by_cell": {
+      "(4, 2, 0)": {
+        "changed": 0.2916666666666667,
+        "harm": 0.0,
+        "all24": 0.0
+      },
+      "(4, 2, 1)": {
+        "changed": 0.1111111111111111,
+        "harm": 0.0,
+        "all24": 0.0
+      }
+    },
+    "by_family": {
+      "direct": 0.7361111111111112,
+      "opposes": 0.59375,
+      "same": 0.3645833333333333
+    },
+    "all_program_questions": 0.0,
+    "accuracy_all_program_questions": 0.6267361111111112
+  },
+  "counterfactual_cal": {
+    "n_scenes": 48,
+    "n_queries": 576,
+    "changed": 0.8229166666666666,
+    "harm": 0.03472222222222222,
+    "conditional_harm": 0.03680555555555556,
+    "all24": 0.3125,
+    "accuracy": 0.8802083333333334,
+    "touched_accuracy": 0.8229166666666666,
+    "other_address_error": 0.0625,
+    "preservation": 0.9631944444444445,
+    "nonaddressed_change": 0.020833333333333332,
+    "changed_by_direction": {
+      "0": 0.798611111111111,
+      "1": 0.8472222222222223
+    },
+    "by_cell": {
+      "(4, 2, 0)": {
+        "changed": 0.8472222222222223,
+        "harm": 0.020833333333333332,
+        "all24": 0.375
+      },
+      "(4, 2, 1)": {
+        "changed": 0.798611111111111,
+        "harm": 0.048611111111111105,
+        "all24": 0.25
+      }
+    },
+    "by_family": {
+      "direct": 0.9791666666666666,
+      "opposes": 0.8385416666666666,
+      "same": 0.6666666666666666
+    },
+    "all_program_questions": 0.3125,
+    "accuracy_all_program_questions": 0.8802083333333334
+  }
+}

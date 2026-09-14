@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "scope": "representation scientific sources and optional rerun boundaries; not a GPU execution interface",
+  "supported_default": "saved scores/predictions/compact validation arrays; no inference",
+  "interpretation_boundaries": {
+    "counterfactual_witness": "aggregate corroboration only until witness logits or states plus fitted weights are available",
+    "controlled_full_state_and_elicitation": "aggregate support; native/DIM query records present but full-state probe/elicitation predictions not a complete saved-score replay",
+    "retrospective": "frozen position-confounded baseline invalid; positive no-position variant post hoc; frozen-plan OOF replication separate",
+    "source_closure": "recovered scientific dependencies are source snapshots; no provider launcher, account credentials, reviewer text or optional GPU verification included"
+  },
+  "recorded_environments": {
+    "fingerprint": {
+      "kind": "frozen_dependency_lock_not_independently_rebuilt",
+      "requirements": [
+        "accelerate==1.10.1",
+        "huggingface-hub==0.34.4",
+        "numpy==2.0.2",
+        "scipy==1.16.1",
+        "torch==2.8.0",
+        "transformers==4.55.2"
+      ]
+    },
+    "relation_transfer_models": {
+      "llama": {
+        "id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+        "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+        "layer": 19,
+        "hidden_size": 4096
+      },
+      "gemma": {
+        "id": "google/gemma-2-9b-it",
+        "revision": "11c9b309abf73637e4b6f9a3fa1e92e615547819",
+        "layer": 27,
+        "hidden_size": 3584
+      }
+    },
+    "full_state_llama": {
+      "device_name": "NVIDIA A100-SXM4-40GB",
+      "torch": "2.11.0+cu128",
+      "transformers": "4.56.2"
+    },
+    "full_state_gemma": {
+      "device_name": "NVIDIA A100-SXM4-40GB",
+      "torch": "2.11.0+cu128",
+      "transformers": "4.56.2"
+    }
+  },
+  "source_note": "Original scientific helper package names are preserved under source/. Some runtime entry points still require original input layouts and undistributed fitted parameters/activations. No end-to-end GPU execution is certified."
+}

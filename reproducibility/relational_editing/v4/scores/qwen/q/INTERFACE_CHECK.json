@@ -1,0 +1,561 @@
+{
+  "at": "2026-09-12T00:41:03.600593+00:00",
+  "actor": "qwen",
+  "procedure": "T4",
+  "site": 13,
+  "requests": 16,
+  "rows": [
+    {
+      "query_id": "CAL-RCC4-0014-d1-01",
+      "scene_id": "CAL-RCC4-0014",
+      "cached_logps": [
+        -29.007347106933594,
+        0.0
+      ],
+      "full_logps": [
+        -29.007347106933594,
+        0.0
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "propagation_next_block_equal": true,
+      "prefix_tokens": 670,
+      "clause_tokens": 9,
+      "cache_bytes": 98795520,
+      "prefix_hash": "bf4d020c65d8081890674a71e69f274f3f6ed97d7d9822da82caaa59758ff24d"
+    },
+    {
+      "query_id": "CAL-RCC4-0046-d1-05",
+      "scene_id": "CAL-RCC4-0046",
+      "cached_logps": [
+        -31.645404815673828,
+        0.0
+      ],
+      "full_logps": [
+        -31.645404815673828,
+        0.0
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "propagation_next_block_equal": true,
+      "prefix_tokens": 668,
+      "clause_tokens": 9,
+      "cache_bytes": 98500608,
+      "prefix_hash": "f01a1e17cc84dfb4139d8d8fe3271bbd8b45436286f1833a0324365b3f07f29f"
+    },
+    {
+      "query_id": "CAL-RCC4-0046-d1-02",
+      "scene_id": "CAL-RCC4-0046",
+      "cached_logps": [
+        0.0,
+        -19.974044799804688
+      ],
+      "full_logps": [
+        0.0,
+        -19.974044799804688
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "propagation_next_block_equal": true,
+      "prefix_tokens": 668,
+      "clause_tokens": 9,
+      "cache_bytes": 98500608,
+      "prefix_hash": "f01a1e17cc84dfb4139d8d8fe3271bbd8b45436286f1833a0324365b3f07f29f"
+    },
+    {
+      "query_id": "CAL-RCC4-0017-d0-01",
+      "scene_id": "CAL-RCC4-0017",
+      "cached_logps": [
+        0.0,
+        -30.780750274658203
+      ],
+      "full_logps": [
+        0.0,
+        -30.780750274658203
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "propagation_next_block_equal": true,
+      "prefix_tokens": 672,
+      "clause_tokens": 10,
+      "cache_bytes": 99090432,
+      "prefix_hash": "eaf447763ec7d5ef63755c34e263c945f9c4665a7b7016c5de18c4804c2dbe8a"
+    },
+    {
+      "query_id": "CAL-RCC4-0039-d0-01",
+      "scene_id": "CAL-RCC4-0039",
+      "cached_logps": [
+        -12.396915435791016,
+        -4.172316494077677e-06
+      ],
+      "full_logps": [
+        -12.396915435791016,
+        -4.172316494077677e-06
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "propagation_next_block_equal": true,
+      "prefix_tokens": 669,
+      "clause_tokens": 10,
+      "cache_bytes": 98648064,
+      "prefix_hash": "d25ed9d65e54f4d729c436989f176d0667a5346b36e070a321e9be14e9b25fd2"
+    },
+    {
+      "query_id": "CAL-RCC4-0043-d0-02",
+      "scene_id": "CAL-RCC4-0043",
+      "cached_logps": [
+        0.0,
+        -29.199264526367188
+      ],
+      "full_logps": [
+        0.0,
+        -29.199264526367188
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "propagation_next_block_equal": true,
+      "prefix_tokens": 670,
+      "clause_tokens": 10,
+      "cache_bytes": 98795520,
+      "prefix_hash": "865f1e9a8a04e31b5ef2dc0a2822247369bc450b12281a8d0f12eccb823570e4"
+    },
+    {
+      "query_id": "CAL-RCC4-0016-d0-00",
+      "scene_id": "CAL-RCC4-0016",
+      "cached_logps": [
+        -0.001100649475120008,
+        -6.812402725219727
+      ],
+      "full_logps": [
+        -0.001100649475120008,
+        -6.812402725219727
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "propagation_next_block_equal": true,
+      "prefix_tokens": 670,
+      "clause_tokens": 9,
+      "cache_bytes": 98795520,
+      "prefix_hash": "d7997fbe6989a625d5a311d89cdff5d7b45418e6ae22966d2af83ce1f50ce170"
+    },
+    {
+      "query_id": "CAL-RCC4-0029-d1-04",
+      "scene_id": "CAL-RCC4-0029",
+      "cached_logps": [
+        -1.9311717551317997e-05,
+        -10.85220718383789
+      ],
+      "full_logps": [
+        -1.9311717551317997e-05,
+        -10.85220718383789
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "propagation_next_block_equal": true,
+      "prefix_tokens": 669,
+      "clause_tokens": 10,
+      "cache_bytes": 98648064,
+      "prefix_hash": "6f003c698e9c73911a051dc317f10f8c01b7dc34c138f6a2ad71b8d4bf9e3950"
+    },
+    {
+      "query_id": "CAL-RCC4-0001-d1-03",
+      "scene_id": "CAL-RCC4-0001",
+      "cached_logps": [
+        -31.582611083984375,
+        0.0
+      ],
+      "full_logps": [
+        -31.582611083984375,
+        0.0
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "propagation_next_block_equal": true,
+      "prefix_tokens": 672,
+      "clause_tokens": 10,
+      "cache_bytes": 99090432,
+      "prefix_hash": "f39ce9ffa7ce547bbecf4ea46955be550355cbd7945c131b4ed2a223aa468a30"
+    },
+    {
+      "query_id": "CAL-RCC4-0001-d1-00",
+      "scene_id": "CAL-RCC4-0001",
+      "cached_logps": [
+        -28.52912139892578,
+        0.0
+      ],
+      "full_logps": [
+        -28.52912139892578,
+        0.0
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "propagation_next_block_equal": true,
+      "prefix_tokens": 672,
+      "clause_tokens": 10,
+      "cache_bytes": 99090432,
+      "prefix_hash": "f39ce9ffa7ce547bbecf4ea46955be550355cbd7945c131b4ed2a223aa468a30"
+    },
+    {
+      "query_id": "CAL-RCC4-0032-d1-01",
+      "scene_id": "CAL-RCC4-0032",
+      "cached_logps": [
+        -22.471725463867188,
+        0.0
+      ],
+      "full_logps": [
+        -22.471725463867188,
+        0.0
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "propagation_next_block_equal": true,
+      "prefix_tokens": 666,
+      "clause_tokens": 8,
+      "cache_bytes": 98205696,
+      "prefix_hash": "13b6a221bab3d9b4b7e06bb974ab206ba105999d4e328769b2cb852184c915e9"
+    },
+    {
+      "query_id": "CAL-RCC4-0026-d1-05",
+      "scene_id": "CAL-RCC4-0026",
+      "cached_logps": [
+        0.0,
+        -17.140380859375
+      ],
+      "full_logps": [
+        0.0,
+        -17.140380859375
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "propagation_next_block_equal": true,
+      "prefix_tokens": 670,
+      "clause_tokens": 9,
+      "cache_bytes": 98795520,
+      "prefix_hash": "d9944a35441bd5117469faeb5483ca78bae1ae8b48974bde3c4cddb63c474805"
+    },
+    {
+      "query_id": "CAL-RCC4-0030-d0-00",
+      "scene_id": "CAL-RCC4-0030",
+      "cached_logps": [
+        0.0,
+        -17.70372772216797
+      ],
+      "full_logps": [
+        0.0,
+        -17.70372772216797
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "propagation_next_block_equal": true,
+      "prefix_tokens": 670,
+      "clause_tokens": 9,
+      "cache_bytes": 98795520,
+      "prefix_hash": "cd49d907a6f43131a11c4010eba79ba84c786e4095f435fb9f48e06e1d5e2e4a"
+    },
+    {
+      "query_id": "CAL-RCC4-0024-d1-03",
+      "scene_id": "CAL-RCC4-0024",
+      "cached_logps": [
+        -31.522911071777344,
+        0.0
+      ],
+      "full_logps": [
+        -31.522911071777344,
+        0.0
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "propagation_next_block_equal": true,
+      "prefix_tokens": 669,
+      "clause_tokens": 9,
+      "cache_bytes": 98648064,
+      "prefix_hash": "90a48585d012b765707304d1e1bebfddcad4d3ac79e8716332108c57fc21560a"
+    },
+    {
+      "query_id": "CAL-RCC4-0005-d0-04",
+      "scene_id": "CAL-RCC4-0005",
+      "cached_logps": [
+        -0.03446716070175171,
+        -3.3849310874938965
+      ],
+      "full_logps": [
+        -0.03446716070175171,
+        -3.3849310874938965
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "propagation_next_block_equal": true,
+      "prefix_tokens": 669,
+      "clause_tokens": 10,
+      "cache_bytes": 98648064,
+      "prefix_hash": "7e08084da0346562a1c246889fb229bc60a3b55a222d626b9d739f1e4b2cc68d"
+    },
+    {
+      "query_id": "CAL-RCC4-0041-d1-00",
+      "scene_id": "CAL-RCC4-0041",
+      "cached_logps": [
+        -24.511444091796875,
+        0.0
+      ],
+      "full_logps": [
+        -24.511444091796875,
+        0.0
+      ],
+      "max_abs_diff": 0.0,
+      "same_choice": true,
+      "master_unchanged": true,
+      "recompile_hash_equal": true,
+      "propagation_next_block_equal": true,
+      "prefix_tokens": 667,
+      "clause_tokens": 10,
+      "cache_bytes": 98353152,
+      "prefix_hash": "9963c5d19b8aff701734c83ed9fe864396f0eb331fd3f13d8495655b1b8dda3e"
+    }
+  ],
+  "zero_self_edit_hash_identical": true,
+  "clone_hash_identical": true,
+  "cached_vs_full": {
+    "max_abs_logp": 0.0,
+    "same_choice": true,
+    "mean_abs": 0.0
+  },
+  "batched_vs_single": {
+    "max_abs_logp": 0.6274375915527344,
+    "same_choice": true,
+    "n": 16
+  },
+  "order_independent": true,
+  "masters_unchanged_after_reordered_queries": true,
+  "recompile_deterministic": true,
+  "master_unchanged_every_ask": true,
+  "propagation_next_block": true,
+  "setter_identities": {
+    "rows": [
+      {
+        "scene_id": "CAL-RCC4-0014",
+        "ws_AA_vs_A": 4.76837158203125e-07,
+        "ws_A8_vs_A": 1.430511474609375e-06,
+        "ws_over_vs_direct": 4.76837158203125e-07,
+        "bf16_AA_hash_equal": true,
+        "bf16_A8_hash_equal": false,
+        "bf16_over_hash_equal": false,
+        "cast_error": 0.1332641988992691,
+        "numpy_vs_torch": 2.499350138407408e-06,
+        "state_scale": 36.659271240234375,
+        "update_norm": 5.078857554329766
+      },
+      {
+        "scene_id": "CAL-RCC4-0046",
+        "ws_AA_vs_A": 4.76837158203125e-07,
+        "ws_A8_vs_A": 1.430511474609375e-06,
+        "ws_over_vs_direct": 4.76837158203125e-07,
+        "bf16_AA_hash_equal": false,
+        "bf16_A8_hash_equal": false,
+        "bf16_over_hash_equal": false,
+        "cast_error": 0.14405836164951324,
+        "numpy_vs_torch": 2.7122167907123185e-06,
+        "state_scale": 36.902217864990234,
+        "update_norm": 5.275289588504368
+      },
+      {
+        "scene_id": "CAL-RCC4-0017",
+        "ws_AA_vs_A": 4.76837158203125e-07,
+        "ws_A8_vs_A": 9.5367431640625e-07,
+        "ws_over_vs_direct": 4.76837158203125e-07,
+        "bf16_AA_hash_equal": false,
+        "bf16_A8_hash_equal": false,
+        "bf16_over_hash_equal": false,
+        "cast_error": 0.13919202983379364,
+        "numpy_vs_torch": 2.720536144806829e-06,
+        "state_scale": 37.85917663574219,
+        "update_norm": 4.582796382904053
+      },
+      {
+        "scene_id": "CAL-RCC4-0039",
+        "ws_AA_vs_A": 4.76837158203125e-07,
+        "ws_A8_vs_A": 1.430511474609375e-06,
+        "ws_over_vs_direct": 4.76837158203125e-07,
+        "bf16_AA_hash_equal": false,
+        "bf16_A8_hash_equal": false,
+        "bf16_over_hash_equal": true,
+        "cast_error": 0.10497019439935684,
+        "numpy_vs_torch": 2.8249878951669416e-06,
+        "state_scale": 35.16823959350586,
+        "update_norm": 4.332749962806702
+      },
+      {
+        "scene_id": "CAL-RCC4-0043",
+        "ws_AA_vs_A": 3.814697265625e-06,
+        "ws_A8_vs_A": 3.814697265625e-06,
+        "ws_over_vs_direct": 3.814697265625e-06,
+        "bf16_AA_hash_equal": true,
+        "bf16_A8_hash_equal": true,
+        "bf16_over_hash_equal": true,
+        "cast_error": 0.14103440940380096,
+        "numpy_vs_torch": 3.654420218879295e-06,
+        "state_scale": 40.0749397277832,
+        "update_norm": 5.164110279083252
+      },
+      {
+        "scene_id": "CAL-RCC4-0016",
+        "ws_AA_vs_A": 4.76837158203125e-07,
+        "ws_A8_vs_A": 3.814697265625e-06,
+        "ws_over_vs_direct": 4.76837158203125e-07,
+        "bf16_AA_hash_equal": false,
+        "bf16_A8_hash_equal": false,
+        "bf16_over_hash_equal": true,
+        "cast_error": 0.14319635927677155,
+        "numpy_vs_torch": 2.0467233738941104e-06,
+        "state_scale": 36.21928405761719,
+        "update_norm": 4.476282782024807
+      },
+      {
+        "scene_id": "CAL-RCC4-0029",
+        "ws_AA_vs_A": 4.76837158203125e-07,
+        "ws_A8_vs_A": 1.430511474609375e-06,
+        "ws_over_vs_direct": 4.76837158203125e-07,
+        "bf16_AA_hash_equal": true,
+        "bf16_A8_hash_equal": false,
+        "bf16_over_hash_equal": false,
+        "cast_error": 0.11895863711833954,
+        "numpy_vs_torch": 2.360392947764467e-06,
+        "state_scale": 38.92610168457031,
+        "update_norm": 4.9849730968475345
+      },
+      {
+        "scene_id": "CAL-RCC4-0001",
+        "ws_AA_vs_A": 4.76837158203125e-07,
+        "ws_A8_vs_A": 1.430511474609375e-06,
+        "ws_over_vs_direct": 9.5367431640625e-07,
+        "bf16_AA_hash_equal": true,
+        "bf16_A8_hash_equal": true,
+        "bf16_over_hash_equal": false,
+        "cast_error": 0.12345399707555771,
+        "numpy_vs_torch": 2.921475420691877e-06,
+        "state_scale": 39.6933708190918,
+        "update_norm": 4.342016744613647
+      },
+      {
+        "scene_id": "CAL-RCC4-0032",
+        "ws_AA_vs_A": 4.76837158203125e-07,
+        "ws_A8_vs_A": 7.152557373046875e-07,
+        "ws_over_vs_direct": 4.76837158203125e-07,
+        "bf16_AA_hash_equal": true,
+        "bf16_A8_hash_equal": true,
+        "bf16_over_hash_equal": false,
+        "cast_error": 0.15160910785198212,
+        "numpy_vs_torch": 2.2139256117270634e-06,
+        "state_scale": 35.90117645263672,
+        "update_norm": 4.909450829029083
+      },
+      {
+        "scene_id": "CAL-RCC4-0026",
+        "ws_AA_vs_A": 4.76837158203125e-07,
+        "ws_A8_vs_A": 1.430511474609375e-06,
+        "ws_over_vs_direct": 4.76837158203125e-07,
+        "bf16_AA_hash_equal": false,
+        "bf16_A8_hash_equal": false,
+        "bf16_over_hash_equal": false,
+        "cast_error": 0.09731113910675049,
+        "numpy_vs_torch": 2.3252216934110947e-06,
+        "state_scale": 37.97136306762695,
+        "update_norm": 6.716420597500271
+      },
+      {
+        "scene_id": "CAL-RCC4-0030",
+        "ws_AA_vs_A": 4.76837158203125e-07,
+        "ws_A8_vs_A": 1.430511474609375e-06,
+        "ws_over_vs_direct": 4.76837158203125e-07,
+        "bf16_AA_hash_equal": false,
+        "bf16_A8_hash_equal": false,
+        "bf16_over_hash_equal": false,
+        "cast_error": 0.14478623867034912,
+        "numpy_vs_torch": 3.0517755718051376e-06,
+        "state_scale": 36.287628173828125,
+        "update_norm": 4.451679494645861
+      },
+      {
+        "scene_id": "CAL-RCC4-0024",
+        "ws_AA_vs_A": 4.76837158203125e-07,
+        "ws_A8_vs_A": 9.5367431640625e-07,
+        "ws_over_vs_direct": 4.76837158203125e-07,
+        "bf16_AA_hash_equal": true,
+        "bf16_A8_hash_equal": true,
+        "bf16_over_hash_equal": false,
+        "cast_error": 0.11302616447210312,
+        "numpy_vs_torch": 3.4248773346234884e-06,
+        "state_scale": 38.19331359863281,
+        "update_norm": 4.141828272077772
+      },
+      {
+        "scene_id": "CAL-RCC4-0005",
+        "ws_AA_vs_A": 4.76837158203125e-07,
+        "ws_A8_vs_A": 1.430511474609375e-06,
+        "ws_over_vs_direct": 4.76837158203125e-07,
+        "bf16_AA_hash_equal": false,
+        "bf16_A8_hash_equal": true,
+        "bf16_over_hash_equal": false,
+        "cast_error": 0.12492556869983673,
+        "numpy_vs_torch": 3.524766398754764e-06,
+        "state_scale": 38.06220626831055,
+        "update_norm": 4.05445032119751
+      },
+      {
+        "scene_id": "CAL-RCC4-0041",
+        "ws_AA_vs_A": 9.5367431640625e-07,
+        "ws_A8_vs_A": 1.430511474609375e-06,
+        "ws_over_vs_direct": 9.5367431640625e-07,
+        "bf16_AA_hash_equal": true,
+        "bf16_A8_hash_equal": true,
+        "bf16_over_hash_equal": true,
+        "cast_error": 0.14444902539253235,
+        "numpy_vs_torch": 3.195652077181421e-06,
+        "state_scale": 39.13981628417969,
+        "update_norm": 3.919447112083435
+      }
+    ],
+    "max_ws_AA_vs_A": 3.814697265625e-06,
+    "max_ws_A8_vs_A": 3.814697265625e-06,
+    "max_ws_over_vs_direct": 3.814697265625e-06,
+    "bf16_AA_hash_equal_fraction": 0.5,
+    "bf16_A8_hash_equal_fraction": 0.42857142857142855,
+    "bf16_over_hash_equal_fraction": 0.2857142857142857,
+    "max_numpy_vs_torch": 3.654420218879295e-06,
+    "max_cast_error": 0.15160910785198212,
+    "note": "untrained random-U setter on real residuals: FP32 workspace identities are designed algebra (reported as numerical error, not a scientific result); BF16 hash equality after the cast is not guaranteed"
+  },
+  "frozen_v2_precision": [],
+  "serving_path": "KV_CACHE_CLONE + uniform batch-12 clone asks (identical to V2)",
+  "generation_prompt": "<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+  "pass_": true
+}

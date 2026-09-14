@@ -1,0 +1,108 @@
+{
+  "at": "2026-09-10T07:52:57.557988+00:00",
+  "model": "gemma",
+  "selected_procedures": {
+    "relation": "C1"
+  },
+  "attempts": [
+    {
+      "procedure": "C0",
+      "tasks": [
+        "relation",
+        "priority"
+      ],
+      "summary": {
+        "relation": {
+          "n": 24,
+          "parse_rate": 1.0,
+          "changed_type_accuracy": 0.8333333333333334,
+          "invariant_type_accuracy": 1.0,
+          "score_accuracy": 0.9166666666666666,
+          "generation_score_agreement": 1.0,
+          "truncated": 0,
+          "qualified": false,
+          "mean_new_tokens": 3.0
+        },
+        "priority": {
+          "n": 24,
+          "parse_rate": 1.0,
+          "changed_type_accuracy": 0.8333333333333334,
+          "invariant_type_accuracy": 0.9166666666666666,
+          "score_accuracy": 0.875,
+          "generation_score_agreement": 1.0,
+          "truncated": 0,
+          "qualified": false,
+          "mean_new_tokens": 3.0833333333333335
+        }
+      },
+      "generations": 48
+    },
+    {
+      "procedure": "C1",
+      "tasks": [
+        "relation",
+        "priority"
+      ],
+      "summary": {
+        "relation": {
+          "n": 24,
+          "parse_rate": 1.0,
+          "changed_type_accuracy": 1.0,
+          "invariant_type_accuracy": 1.0,
+          "score_accuracy": 1.0,
+          "generation_score_agreement": 1.0,
+          "truncated": 0,
+          "qualified": true,
+          "mean_new_tokens": 3.0
+        },
+        "priority": {
+          "n": 24,
+          "parse_rate": 1.0,
+          "changed_type_accuracy": 0.75,
+          "invariant_type_accuracy": 0.8333333333333334,
+          "score_accuracy": 0.7916666666666666,
+          "generation_score_agreement": 1.0,
+          "truncated": 0,
+          "qualified": false,
+          "mean_new_tokens": 3.0
+        }
+      },
+      "generations": 48
+    },
+    {
+      "procedure": "C2",
+      "tasks": [
+        "priority"
+      ],
+      "summary": {
+        "priority": {
+          "n": 24,
+          "parse_rate": 1.0,
+          "changed_type_accuracy": 0.6666666666666666,
+          "invariant_type_accuracy": 0.75,
+          "score_accuracy": 0.7083333333333334,
+          "generation_score_agreement": 1.0,
+          "truncated": 0,
+          "qualified": false,
+          "mean_new_tokens": 3.0833333333333335
+        }
+      },
+      "generations": 24
+    }
+  ],
+  "total_generations": 120,
+  "extra_generations": 72,
+  "natural_panel_procedures": {
+    "priority": "C0"
+  },
+  "rule": "first procedure with >=95% parseable generations (<=32 new tokens) and >=90% native source-gold accuracy separately on changed-type and invariant-type CAL requests, per task",
+  "counterfactual_score_accuracy": {
+    "relation": 0.9583333333333334
+  },
+  "qualified_tasks": [
+    "relation"
+  ],
+  "unqualified_tasks": [
+    "priority"
+  ]
+}

@@ -1,0 +1,311 @@
+{
+  "schema": "STRATEGY_BACKGROUND_TERMINAL_PROJECTION_V1",
+  "strategy_block": 8,
+  "study": "GEOMETRY_BALANCED_CONTROL_VALIDATION_V1",
+  "evidence_level": "selected original terminal scientific summary values; not independent numerical replay",
+  "intake_boundary": "Original source bytes freshly hashed. Historical verification receipts are quoted as receipts; no fresh full-archive or member-by-member certification was performed.",
+  "curator_scope_qualification": "Gemma only, same four-dimensional span and fixed two-axis controller. Bank-dependent response concentration, not a universal two-dimensional mechanism. WORD remains strong; CODE narrows. Reported prompt counts are repeated group views. Native relation/language competence limits semantic interpretation.",
+  "records": [
+    {
+      "source": {
+        "name": "GBCV_V1_RESULTS.json",
+        "sha256": "2401f08e7542fd85aff27a0a16cc9a2cf4439ce2444a5b8559f5fb129ec27fba",
+        "bytes": 15720
+      },
+      "selected_values": {
+        "/study_id": "GEOMETRY_BALANCED_CONTROL_VALIDATION_V1",
+        "/terminal_status": "GEOMETRY_BALANCED_CONTROL_VALIDATION_V1_COMPLETE",
+        "/decision_label": "NARROWING",
+        "/decisions": {
+          "fitting_advantage": {
+            "CODE": {
+              "ci_low_95": -0.04347785294138248,
+              "ci_low_bonferroni": -0.05392335987508197,
+              "difference": -0.010468355574492038,
+              "fitting_advantage": false,
+              "geometry_as_good_or_better": true
+            },
+            "WORD": {
+              "ci_low_95": 0.035886918826913174,
+              "ci_low_bonferroni": 0.029092789428552153,
+              "difference": 0.05426259119010037,
+              "fitting_advantage": true,
+              "geometry_as_good_or_better": false
+            }
+          },
+          "interface_conditioned": false,
+          "label": "NARROWING",
+          "matched_interface_controllers_strong": {
+            "CODE": false,
+            "WORD": true
+          },
+          "model_inadequacy_full4_lb_below_0.90": {
+            "CODE": false,
+            "WORD": false
+          },
+          "narrowing_any": true,
+          "strong_concentration_shared2_both_interfaces": false
+        },
+        "/final_freeze_sha256": "d2886b9febad0d7f31789c72e8e34f4f6d7192c4cf5116a2477b77ec8103ad6f",
+        "/n_final_groups": 96,
+        "/n_final_prompts": 1152,
+        "/k_primary": 2,
+        "/epsilon": 15.113773803710938,
+        "/context_provenance": {
+          "FRESH_CONTEXT": 96,
+          "REUSED_FIT_CALIBRATION_CONTEXT": 96
+        },
+        "/balanced_signed_R": {
+          "CODE": {
+            "CODE2": [
+              0.8178501807056358,
+              0.7804158858772319,
+              0.8448986540568758
+            ],
+            "FULL4": [
+              0.9753233815257986,
+              0.9696570968993539,
+              0.9798851344047133
+            ],
+            "GEOMETRY2": [
+              0.6898006940044907,
+              0.6555021764004724,
+              0.7223831521812007
+            ],
+            "RANDOM2": [
+              0.4548325425123023,
+              0.40946122937800955,
+              0.49436597362712525
+            ],
+            "SHARED1": [
+              0.5630089436504304,
+              0.49568126208040797,
+              0.6336695703695894
+            ],
+            "SHARED2": [
+              0.6793323384299987,
+              0.6148767215616245,
+              0.7464662144752082
+            ],
+            "WORD2": [
+              0.673252939305393,
+              0.6241512075366902,
+              0.7226291073258898
+            ]
+          },
+          "POOLED": {
+            "CODE2": [
+              0.7819441907781174,
+              0.7435854434852065,
+              0.814683677426283
+            ],
+            "FULL4": [
+              0.9780934026755629,
+              0.9744753010325865,
+              0.9813448853318731
+            ],
+            "GEOMETRY2": [
+              0.7523104896946098,
+              0.7271429960503577,
+              0.7757680016287373
+            ],
+            "RANDOM2": [
+              0.47165773933336996,
+              0.44175289749484,
+              0.4988685830295719
+            ],
+            "SHARED1": [
+              0.6169733444676748,
+              0.5645161496208095,
+              0.6683987454857359
+            ],
+            "SHARED2": [
+              0.7726027357151006,
+              0.7255244341151703,
+              0.8162287008848198
+            ],
+            "WORD2": [
+              0.7775106971466996,
+              0.7387342715369382,
+              0.8130443136925097
+            ]
+          },
+          "WORD": {
+            "CODE2": [
+              0.7422915569462336,
+              0.6999324637813591,
+              0.7819452422247486
+            ],
+            "FULL4": [
+              0.981152464257764,
+              0.9778273851386772,
+              0.9840116984784744
+            ],
+            "GEOMETRY2": [
+              0.8213429281376035,
+              0.8000317210711388,
+              0.8434304798500132
+            ],
+            "RANDOM2": [
+              0.49023857696079476,
+              0.46247632972373265,
+              0.5199986522830903
+            ],
+            "SHARED1": [
+              0.6765687108642782,
+              0.6325361567689646,
+              0.716914547309584
+            ],
+            "SHARED2": [
+              0.8756055193277038,
+              0.860240872540405,
+              0.8906445145099999
+            ],
+            "WORD2": [
+              0.892647327668789,
+              0.8791595454477235,
+              0.9051192646187088
+            ]
+          }
+        },
+        "/canonical_signed_R": {
+          "CODE": {
+            "CODE2": [
+              0.9158638207726809,
+              0.8972547952879516,
+              0.9301667341832817
+            ],
+            "FULL4": [
+              0.9765502430702764,
+              0.9712675170128052,
+              0.9807548590113271
+            ],
+            "GEOMETRY2": [
+              0.8995283336696962,
+              0.8790635905382641,
+              0.9173349678791552
+            ],
+            "RANDOM2": [
+              0.5266348530483305,
+              0.47456198634391383,
+              0.5679839244597024
+            ],
+            "SHARED1": [
+              0.8256730374720487,
+              0.7870797507297552,
+              0.8617696060289027
+            ],
+            "SHARED2": [
+              0.8832033512874451,
+              0.8522421726885525,
+              0.9112162288288295
+            ],
+            "WORD2": [
+              0.8734311722856203,
+              0.8428437912585982,
+              0.9011678861390977
+            ]
+          },
+          "POOLED": {
+            "CODE2": [
+              0.9042852000865118,
+              0.8846130149983017,
+              0.9209327582773836
+            ],
+            "FULL4": [
+              0.980456168398468,
+              0.976960975771898,
+              0.9835399642621988
+            ],
+            "GEOMETRY2": [
+              0.9231013892963809,
+              0.9100797594333974,
+              0.9348348821717577
+            ],
+            "RANDOM2": [
+              0.5320447475171106,
+              0.49372785666263747,
+              0.5651397890238062
+            ],
+            "SHARED1": [
+              0.8465237817475065,
+              0.8181638533754625,
+              0.8721187985878869
+            ],
+            "SHARED2": [
+              0.9195150474441854,
+              0.9001287788459449,
+              0.9363696523224716
+            ],
+            "WORD2": [
+              0.9169279341467522,
+              0.8976335643740914,
+              0.9336700142512963
+            ]
+          },
+          "WORD": {
+            "CODE2": [
+              0.892860392252382,
+              0.8698347998393796,
+              0.9129759064762243
+            ],
+            "FULL4": [
+              0.9843102065864842,
+              0.9810889037722536,
+              0.9870931919492828
+            ],
+            "GEOMETRY2": [
+              0.946361295454273,
+              0.9371508812810205,
+              0.9550033923270572
+            ],
+            "RANDOM2": [
+              0.5373827758007874,
+              0.4992161619068899,
+              0.5711363562382998
+            ],
+            "SHARED1": [
+              0.8670975403153334,
+              0.842449319121698,
+              0.8882312279739876
+            ],
+            "SHARED2": [
+              0.955344371330546,
+              0.9478180726110456,
+              0.9621959720627918
+            ],
+            "WORD2": [
+              0.9598468758013436,
+              0.9527374956562229,
+              0.9659774784542842
+            ]
+          }
+        }
+      }
+    },
+    {
+      "source": {
+        "name": "REPORT.md",
+        "sha256": "6f896fe3ddd7676a6d5d64dc702ac7510fccf7fff5460b951933411215deb212",
+        "bytes": 26313
+      },
+      "selected_excerpts": [
+        {
+          "start_line": 3,
+          "end_line": 7,
+          "text": "Analysed 2026-09-06T04:59:45.391701+00:00. Gemma-2-9B-it (revision 11c9b309abf7…), layer 27, final real prompt token; bfloat16 decoder and hooks unchanged; FP32_READOUT primary (LEGACY_NATIVE beside it); the four canonical directions, geometry axes and step (epsilon 15.114) reused by hash from AICT v1. 96 final groups x 12 conditions = 1152 final prompts; context provenance {'FRESH_CONTEXT': 96, 'REUSED_FIT_CALIBRATION_CONTEXT': 96}; fallback taken False; predictions saved before targets: True.\n\n## Decision: NARROWING\n\nBalanced signed recovery: SHARED2 CODE 0.679 [0.615, 0.746], WORD 0.876 [0.860, 0.891]; GEOMETRY2 0.690 [0.656, 0.722] / 0.821 [0.800, 0.843]; FULL4 0.975 [0.970, 0.980] / 0.981 [0.978, 0.984]. SHARED2 meets the full strong-concentration conjunction in: ['WORD']; response families clearing the 0.60 bound: CODE ['language', 'relation', 'sentiment'], WORD ['language', 'relation', 'sentiment', 'truth'] (restricted successes are reported explicitly, other rows are kept). Recommendation: write the NARROWED result — the original bank is highly predictable, but its less-sampled combinations expose additional response dimensions, so the earlier high two-axis recovery was distribution-dependent; report bank-dependent predictability with the FULL4 reconstruction as the linear reference. The scoped 'two-axis mechanism' claim should not be written as an equally strong response-concentration claim across the span."
+        },
+        {
+          "start_line": 137,
+          "end_line": 150,
+          "text": "## Natural competence (final prompts, unsteered baseline forwards; descriptive)\n\n| family | interface | BA [95%] | DIRECT / PARAPHRASE | mapping STD / REV (DIRECT) | interpretable |\n|---|---|---|---|---|---|\n| language | CODE | 0.828 [0.78, 0.89] | 0.656 / 1.000 | 0.667 / 0.646 | False |\n| language | WORD | 0.833 [0.80, 0.86] | 0.667 / 1.000 | — | False |\n| relation | CODE | 0.661 [0.58, 0.74] | 0.688 / 0.635 | 0.708 / 0.667 | False |\n| relation | WORD | 0.729 [0.63, 0.82] | 0.729 / 0.729 | — | False |\n| sentiment | CODE | 0.990 [0.97, 1.00] | 0.990 / 0.990 | 1.000 / 0.979 | True |\n| sentiment | WORD | 0.958 [0.91, 1.00] | 0.938 / 0.979 | — | True |\n| truth | CODE | 0.984 [0.97, 1.00] | 1.000 / 0.969 | 1.000 / 1.000 | True |\n| truth | WORD | 1.000 [1.00, 1.00] | 1.000 / 1.000 | — | True |\n\nIncompetence on relation or language limits semantic interpretations; it does not erase a valid numerical response measurement. All preselected families enter every numerical result; no prompt was changed."
+        },
+        {
+          "start_line": 249,
+          "end_line": 252,
+          "text": "  \"context_reuse_disclosure\": \"fit (64 groups) and calibration (32 groups) contexts are the SECB / AICT groups with byte-identical prompts and prompt ids; their AICT measurements are known development evidence; the 96 final groups are fresh (never in the SECB lineage, never an AICT final group, no prior intervention exposure); the predeclared fallback was not needed.\",\n  \"missing_conditions\": [\n    \"relation and language are not semantically interpretable for the stronger claims in either interface on the final panel (relation BA 0.66 / 0.73; language 0.83 / 0.83, DIRECT wording below 0.75); their numeric response panels stand and enter every recovery statistic; no prompt was changed\",\n    \"truth is the response family with the lowest balanced recovery for every two-axis method in CODE (SHARED2 0.493, GEOMETRY2 0.617) although its natural competence is highest (0.98 / 1.00): the CODE truth prompts respond substantially to span directions outside the fitted plane\","
+        }
+      ]
+    }
+  ]
+}

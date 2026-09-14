@@ -1,0 +1,20 @@
+{
+  "at": "2026-09-11T05:42:12.238210+00:00",
+  "actor": "gemma",
+  "site": 15,
+  "cap_ref": 103.18592071533203,
+  "cap_rule": "V2 per-token reference 103.18592071533203",
+  "cap_new_fit_rule": 107.98799133300781,
+  "delta_stats": {
+    "p95": 53.993995666503906,
+    "median": 45.28204345703125,
+    "mean": 45.3817253112793,
+    "n": 96
+  },
+  "mu_rule": "the V2 stored center (identical across V2 arms/seeds/values): one common fixed source center for every Gemma method",
+  "mu_norm": 142.00071716308594,
+  "mu_fit_norm": 140.940185546875,
+  "groups": 120,
+  "captures_sha256": "d8a575bfcf1284875628a66d7021a6907050a6a11680f26477655cbe12cd9116",
+  "inputs": "FIT source prefixes and natural FIT counterfactual prefixes only; no question or label"
+}

@@ -1,0 +1,30 @@
+{
+  "at": "2026-09-10T22:02:38.985313+00:00",
+  "scope": "FULL",
+  "sizes": {
+    "final": 128,
+    "algebra": 64,
+    "workflow": 128
+  },
+  "predicted_seconds": {
+    "FULL": {
+      "final": 6260.386510539181,
+      "programs": 5129.334365594387,
+      "workflow": 2935.9248273376375,
+      "panels": 931.7707118176331,
+      "total": 15257.416415288839
+    },
+    "SMALL": {
+      "final": 3561.312183872099,
+      "programs": 2564.6671827971936,
+      "workflow": 1467.9624136688187,
+      "panels": 931.7707118176331,
+      "total": 8525.712492155744
+    }
+  },
+  "remaining_seconds": 21209.014717,
+  "reserve_hours_after": 0.5,
+  "requested": "AUTO",
+  "rule": "decided from the disposable benchmark before any FINAL outcome; SMALL keeps every size/direction cell, both orders, all methods, both seeds (fixed hashed IDs)",
+  "fits": true
+}

@@ -1,0 +1,24 @@
+{
+  "at": "2026-09-11T12:51:21.500518+00:00",
+  "artifacts": 128,
+  "scenes": 64,
+  "conditions": [
+    "SOURCE",
+    "COUNTERFACTUAL",
+    "TEXT_CORRECTION",
+    "INVARIANT_SET_s0",
+    "INVARIANT_SET_s1",
+    "FREE_OVERWRITE_s0",
+    "FREE_OVERWRITE_s1",
+    "AFFINE_CLAUSE_s0",
+    "AFFINE_CLAUSE_s1"
+  ],
+  "canonical_on_single": [
+    "CANONICAL_AFFINE_s0",
+    "CANONICAL_AFFINE_s1"
+  ],
+  "seal_sha256": "1fbf60a17629ca8edbd3da6ef3b36215700bb73aafb9cad10a0b577f42aca9fa",
+  "seconds": 173.5827846869979,
+  "compiler_inputs": "prefix token ids, explicit clause spans and requested values of the command program, method weights; no question, label mapping, gold, affected flag or target world existed before this file",
+  "questions_generated_before_seal": false
+}

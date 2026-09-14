@@ -1,0 +1,48 @@
+{
+  "at": "2026-09-11T19:58:17.773151+00:00",
+  "pass_": true,
+  "fit_programs": [
+    "noop",
+    "single"
+  ],
+  "cal_programs": [
+    "noop",
+    "single"
+  ],
+  "fit_scenes": 96,
+  "cal_scenes": 48,
+  "fit_noop": 24,
+  "cal_noop": 12,
+  "sparse_questions_per_scene": [
+    12
+  ],
+  "complete_questions_per_scene": [
+    24
+  ],
+  "cal_questions_per_scene": [
+    24
+  ],
+  "slots_per_scene": {
+    "sparse": [
+      24
+    ],
+    "complete": [
+      24
+    ]
+  },
+  "groups_per_epoch": {
+    "sparse": 720,
+    "complete": 720
+  },
+  "weight_per_scene": {
+    "sparse": [
+      1.0
+    ],
+    "complete": [
+      1.0
+    ]
+  },
+  "scene_id_overlap": [],
+  "final_or_workflow_read": false,
+  "dedup": 0
+}

@@ -1,0 +1,2986 @@
+{
+  "schema_version": 1,
+  "scope": "Numerical evidence, explicit scientific qualifications and ordinary document safety; no writing-quality evaluation.",
+  "sources": {
+    "figures": "artifacts/figures/figure_data.json",
+    "leakage": "artifacts/leakage/results.json",
+    "truth": "artifacts/truth/v2_results.json",
+    "m1ref": "artifacts/m1/development_reference.json",
+    "headlines": "reproducibility/headline_values.json",
+    "fingerprint": "reproducibility/representation/causal_fingerprint/terminal_result.json",
+    "retrospective": "reproducibility/representation/full_state_report/retrospective/results.json",
+    "replication": "reproducibility/representation/full_state_report/replication/results.json",
+    "counterfactual": "reproducibility/representation/counterfactual_fidelity/results.json",
+    "reference_qualification": "reproducibility/representation/counterfactual_fidelity/llama_reference_qualification.json",
+    "v2_qualification": "reproducibility/relational_editing/v2/qualification/gemma/QUALIFICATION.json",
+    "v2_freeze": "reproducibility/relational_editing/v2/scores/gemma/FREEZE.json",
+    "v3": "reproducibility/relational_editing/v3/expected/SUMMARY.json",
+    "v6": "reproducibility/relational_editing/v6/scores/functional_decisions.json.gz",
+    "v6_source": "reproducibility/relational_editing/v6/scores/source_root_statistics.json.gz",
+    "compression": "reproducibility/representation/background/08_causal_compression.json",
+    "paired": "reproducibility/representation/background/09_paired_priority_operator.json",
+    "third_option": "reproducibility/representation/background/10a_matched_third_option.json",
+    "repair": "reproducibility/representation/background/10b_generalization_repair.json",
+    "selector": "reproducibility/representation/background/11_applicability_selector.json",
+    "editing_figures": "artifacts/figures/editing_comparisons.json",
+    "consequences": "artifacts/figures/consequence_comparisons.json"
+  },
+  "definitions": [
+    {
+      "id": "support_opposition_direction",
+      "label": "support/opposition direction",
+      "definition": "The linear direction in activation space fitted to separate Supports from Opposes examples."
+    },
+    {
+      "id": "difference_in_means_fit",
+      "label": "difference in means",
+      "definition": "The fitting method for the support/opposition direction: mean activation of Supports minus mean activation of Opposes, normalized."
+    },
+    {
+      "id": "logistic_activation_probe",
+      "label": "logistic activation probe",
+      "definition": "An L2-regularized linear classifier fitted on the same activations as the support/opposition direction."
+    },
+    {
+      "id": "model_answer_margin",
+      "label": "model answer margin",
+      "definition": "The model's own semantic Supports-minus-Opposes candidate log-probability margin."
+    },
+    {
+      "id": "frozen_minilm_comparator",
+      "label": "frozen MiniLM comparator",
+      "definition": "A logistic classifier over MiniLM embeddings of the situation and the consideration plus their elementwise product and absolute difference. It sees text only, never activations."
+    },
+    {
+      "id": "checkerboard",
+      "label": "checkerboard",
+      "definition": "A two-situation, two-consideration design where each consideration flips from Supports to Opposes across situations."
+    },
+    {
+      "id": "checkerboard_interaction",
+      "label": "checkerboard interaction",
+      "definition": "The standardized difference-in-differences over the four cells of a checkerboard. Zero for any score additive in situation and consideration."
+    },
+    {
+      "id": "standardized_separation",
+      "label": "standardized separation",
+      "definition": "A True-minus-False mean difference measured in training-projection standard deviations, averaged over eight training partitions."
+    },
+    {
+      "id": "deterministic_random_item_scores",
+      "label": "deterministic random item scores",
+      "definition": "A baseline that hashes each item identifier to a scalar in [0, 1) and scores the item with it. It is a scalar per item, not a direction in activation space."
+    },
+    {
+      "id": "held_out_answer_template",
+      "label": "held-out answer template",
+      "definition": "An answer format not seen during fitting, used to test whether a result survives a change of answer surface form."
+    },
+    {
+      "id": "situation_level_label_flip",
+      "label": "situation-level label flip",
+      "definition": "The permutation null: each training situation independently keeps or reverses all of its labels."
+    },
+    {
+      "id": "pilot_train_split",
+      "label": "pilot train split",
+      "definition": "The 1,500-row split on which probes are fitted."
+    },
+    {
+      "id": "pilot_select_split",
+      "label": "pilot select split",
+      "definition": "The 300-row / 75-checkerboard split on which the layer and the standardization constants are chosen."
+    },
+    {
+      "id": "pilot_evaluation_split",
+      "label": "pilot evaluation split",
+      "definition": "The 500-row / 125-checkerboard split on which every reported metric is computed."
+    },
+    {
+      "id": "development_evidence",
+      "label": "development evidence",
+      "definition": "Evidence obtained while building and checking the experiment. Distinct from the audited confirmatory result."
+    },
+    {
+      "id": "strict_test_set",
+      "label": "strict test set",
+      "definition": "The 7,394-row split held out on both the situation and the consideration-cluster axis. Untouched by every figure in this set."
+    },
+    {
+      "id": "dyadic_robust_interval",
+      "label": "dyadic-robust standard error",
+      "definition": "The frozen standard error from which the 95% normal confidence intervals on M1 checkerboard interaction estimates are built."
+    }
+  ],
+  "documents": [
+    {
+      "id": "results",
+      "path": "docs/RESULTS_AND_CLAIMS.md",
+      "units": [
+        {
+          "id": "counterfactual",
+          "heading_pattern": "^6\\.\\s",
+          "numbers": [
+            {
+              "path": "headlines.counterfactual.rank_one.recovery",
+              "decimals": 3,
+              "status": "verified",
+              "headline": true
+            },
+            {
+              "path": "headlines.counterfactual.rank_one.lower",
+              "decimals": 3,
+              "status": "verified",
+              "headline": true
+            },
+            {
+              "path": "headlines.counterfactual.rank_one.upper",
+              "decimals": 3,
+              "status": "verified",
+              "headline": true
+            },
+            {
+              "path": "headlines.counterfactual.interpolation.recovery",
+              "decimals": 3,
+              "status": "verified",
+              "headline": true
+            },
+            {
+              "path": "headlines.counterfactual.interpolation.lower",
+              "decimals": 3,
+              "status": "verified",
+              "headline": true
+            },
+            {
+              "path": "headlines.counterfactual.interpolation.upper",
+              "decimals": 3,
+              "status": "verified",
+              "headline": true
+            },
+            {
+              "path": "headlines.counterfactual.replacement.recovery",
+              "decimals": 3,
+              "status": "verified",
+              "headline": true
+            },
+            {
+              "path": "headlines.counterfactual.replacement.lower",
+              "decimals": 3,
+              "status": "verified",
+              "headline": true
+            },
+            {
+              "path": "headlines.counterfactual.replacement.upper",
+              "decimals": 3,
+              "status": "verified",
+              "headline": true
+            },
+            {
+              "path": "headlines.counterfactual.direct_margin_hit_percent",
+              "decimals": 0,
+              "status": "verified",
+              "headline": true
+            }
+          ],
+          "literals": [],
+          "facts": [
+            {
+              "id": "frozen-qualification",
+              "description": "Margin hits do not imply full strong-target or direction qualification",
+              "alternatives": [
+                {
+                  "all_of": [
+                    "did not satisfy every requirement set before the experiment",
+                    "below the required absolute strength",
+                    "direction fitted to the matched setting failed its qualification check",
+                    "not a full pass"
+                  ]
+                },
+                {
+                  "all_of": [
+                    "(?:not|fail).{0,55}(?:all|every|full|complete).{0,40}(?:requirement|criteri|gate|qualification)",
+                    "(?:below|insufficient|unreachable).{0,40}(?:absolute|strength|strong.target)",
+                    "(?:matched|regime).{0,45}direction.{0,45}(?:fail|not qualified)",
+                    "not a full pass|not fully qualified|full pass.{0,20}(?:not|unsupported)"
+                  ]
+                }
+              ],
+              "source_evidence": [
+                {
+                  "path": "counterfactual.actor_classifications.gemma.class",
+                  "equals": "DIRECTION_NOT_QUALIFIED"
+                },
+                {
+                  "path": "counterfactual.actor_classifications.gemma.transport_disposition",
+                  "equals": "STRONG_TARGET_UNREACHABLE"
+                }
+              ]
+            },
+            {
+              "id": "witness-boundary",
+              "description": "Later-layer witness is aggregate-only, not independently replayed",
+              "alternatives": [
+                {
+                  "all_of": [
+                    "supporting summary evidence",
+                    "not independently replayed"
+                  ]
+                },
+                {
+                  "all_of": [
+                    "(?:aggregate|summary).{0,25}(?:evidence|support)|supporting summary",
+                    "not (?:independently )?replayed|independent replay.{0,20}(?:unavailable|absent)"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "held-out",
+              "description": "Direct-answer calibration separate from held-out consequences",
+              "alternatives": [
+                {
+                  "all_of": [
+                    "direct question sets intervention strength",
+                    "Held-out"
+                  ]
+                },
+                {
+                  "all_of": [
+                    "direct.{0,25}(?:question|answer).{0,35}(?:calibrat|strength|dose)",
+                    "held.out|unseen consequen"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "negative",
+              "description": "Rank-one fails broader recovery despite target hit",
+              "alternatives": [
+                {
+                  "all_of": [
+                    "did not recover the broader change"
+                  ]
+                },
+                {
+                  "all_of": [
+                    "(?:not|fail).{0,40}(?:recover|recreat|reproduc).{0,25}(?:broader|semantic|counterfactual)"
+                  ]
+                }
+              ],
+              "source_evidence": [
+                {
+                  "path": "headlines.counterfactual.rank_one.recovery",
+                  "lt": 0
+                }
+              ]
+            },
+            {
+              "id": "llama-reference",
+              "description": "Llama reference failed, not editor failure",
+              "alternatives": [
+                {
+                  "all_of": [
+                    "Llama",
+                    "unstable",
+                    "did not qualify",
+                    "not a negative editing result"
+                  ]
+                },
+                {
+                  "all_of": [
+                    "Llama",
+                    "unstable|inconsistent",
+                    "(?:not|fail).{0,25}qualif",
+                    "(?:not|rather than).{0,30}(?:negative editing|editor failure|editing failure)"
+                  ]
+                }
+              ],
+              "source_evidence": [
+                {
+                  "path": "reference_qualification.assay_qualified",
+                  "equals": false
+                },
+                {
+                  "path": "reference_qualification.status",
+                  "equals": "ASSAY_NOT_QUALIFIED"
+                }
+              ]
+            }
+          ],
+          "unsupported": []
+        },
+        {
+          "id": "editing",
+          "heading_pattern": "^7\\.\\s",
+          "numbers": [
+            {
+              "path": "headlines.editing.gemma.seed0.single_changed",
+              "decimals": 4,
+              "status": "verified",
+              "headline": true
+            },
+            {
+              "path": "headlines.editing.gemma.seed0.max_repeat_disagreement",
+              "decimals": 4,
+              "status": "verified",
+              "headline": true
+            },
+            {
+              "path": "headlines.editing.gemma.seed0.min_restoration",
+              "decimals": 4,
+              "status": "verified",
+              "headline": true
+            },
+            {
+              "path": "headlines.editing.gemma.seed0.ABC_harm",
+              "decimals": 4,
+              "status": "verified",
+              "headline": true
+            },
+            {
+              "path": "headlines.editing.gemma.seed1.single_changed",
+              "decimals": 4,
+              "status": "verified",
+              "headline": true
+            },
+            {
+              "path": "headlines.editing.gemma.seed1.max_repeat_disagreement",
+              "decimals": 4,
+              "status": "verified",
+              "headline": true
+            },
+            {
+              "path": "headlines.editing.gemma.seed1.min_restoration",
+              "decimals": 4,
+              "status": "verified",
+              "headline": true
+            },
+            {
+              "path": "headlines.editing.gemma.seed1.ABC_harm",
+              "decimals": 4,
+              "status": "verified",
+              "headline": true
+            },
+            {
+              "path": "headlines.editing.qwen.seed0.single_changed",
+              "decimals": 4,
+              "status": "verified",
+              "headline": true
+            },
+            {
+              "path": "headlines.editing.qwen.seed0.max_repeat_disagreement",
+              "decimals": 4,
+              "status": "verified",
+              "headline": true
+            },
+            {
+              "path": "headlines.editing.qwen.seed0.min_restoration",
+              "decimals": 4,
+              "status": "verified",
+              "headline": true
+            },
+            {
+              "path": "headlines.editing.qwen.seed0.ABC_harm",
+              "decimals": 4,
+              "status": "verified",
+              "headline": true
+            },
+            {
+              "path": "headlines.editing.qwen.seed1.single_changed",
+              "decimals": 4,
+              "status": "verified",
+              "headline": true
+            },
+            {
+              "path": "headlines.editing.qwen.seed1.max_repeat_disagreement",
+              "decimals": 4,
+              "status": "verified",
+              "headline": true
+            },
+            {
+              "path": "headlines.editing.qwen.seed1.min_restoration",
+              "decimals": 4,
+              "status": "verified",
+              "headline": true
+            },
+            {
+              "path": "headlines.editing.qwen.seed1.ABC_harm",
+              "decimals": 4,
+              "status": "verified",
+              "headline": true
+            },
+            {
+              "path": "headlines.training_seeds.0",
+              "decimals": null,
+              "status": "verified",
+              "headline": true
+            },
+            {
+              "path": "headlines.training_seeds.1",
+              "decimals": null,
+              "status": "verified",
+              "headline": true
+            },
+            {
+              "path": "headlines.source_best_bundle_percent",
+              "decimals": 4,
+              "status": "verified",
+              "headline": true
+            }
+          ],
+          "literals": [
+            {
+              "text": "6",
+              "kind": "figure reference"
+            },
+            {
+              "text": "7",
+              "kind": "figure reference"
+            }
+          ],
+          "facts": [
+            {
+              "id": "amendment",
+              "description": "Amended qualification not original pass",
+              "alternatives": [
+                {
+                  "all_of": [
+                    "explicitly amended qualification",
+                    "not a pass under the original protocol"
+                  ]
+                },
+                {
+                  "all_of": [
+                    "(?:qualification.{0,25}amend|amend.{0,25}qualification)",
+                    "(?:not|failed|rather than).{0,35}(?:original.protocol|original protocol|original qualification)|original protocol.{0,30}(?:not passed|failed)"
+                  ]
+                }
+              ],
+              "source_evidence": [
+                {
+                  "path": "v2_qualification.selected_procedure",
+                  "equals": null
+                },
+                {
+                  "path": "v2_freeze.procedure",
+                  "equals": "C1"
+                }
+              ]
+            },
+            {
+              "id": "free",
+              "description": "No unique constrained advantage",
+              "alternatives": [
+                {
+                  "all_of": [
+                    "free overwrite, also worked",
+                    "not unique to the constrained design"
+                  ]
+                },
+                {
+                  "all_of": [
+                    "(?:free|unconstrained).{0,20}overwrite.{0,30}(?:work|pass|success|met)",
+                    "not unique|no unique|neither unique|not (?:uniquely )?(?:superior|better)"
+                  ]
+                }
+              ],
+              "source_evidence": [
+                {
+                  "path": "v3.actors.gemma.final.F1.FREE_OVERWRITE.status",
+                  "equals": "F1_MET"
+                }
+              ]
+            },
+            {
+              "id": "no-efficacy",
+              "description": "Prepared predecessor had no efficacy",
+              "alternatives": [
+                {
+                  "all_of": [
+                    "no new efficacy measurements",
+                    "neither a positive nor a negative result"
+                  ]
+                },
+                {
+                  "all_of": [
+                    "(?:no|zero).{0,25}(?:new|fresh)? ?efficacy.{0,25}(?:measurement|outcome|result)",
+                    "neither.{0,20}positive.{0,20}negative|not an efficacy result"
+                  ]
+                }
+              ],
+              "source_evidence": [
+                {
+                  "path": "v6.historical_V5",
+                  "equals": "PREPARED_NO_EFFICACY; zero historical fresh outcomes"
+                }
+              ]
+            },
+            {
+              "id": "both-seeds",
+              "description": "Both original seeds retained",
+              "alternatives": [
+                {
+                  "all_of": [
+                    "Both original training seeds",
+                    "single seed does not replace success across both"
+                  ]
+                },
+                {
+                  "all_of": [
+                    "both.{0,25}(?:original )?(?:training )?seeds|two original seeds",
+                    "(?:single|one).{0,15}seed.{0,60}(?:not|cannot|doesn.t).{0,40}(?:replace|establish|substitute)|both.seed conjunction"
+                  ]
+                }
+              ],
+              "source_evidence": [
+                {
+                  "path": "v6.functional_progress.*.seeds",
+                  "contains": "0"
+                },
+                {
+                  "path": "v6.functional_progress.*.seeds",
+                  "contains": "1"
+                }
+              ]
+            },
+            {
+              "id": "stronger-failure",
+              "description": "Source-independence conjunction failed",
+              "alternatives": [
+                {
+                  "all_of": [
+                    "No tested setting met all the requirements for independence from the starting relations"
+                  ]
+                },
+                {
+                  "all_of": [
+                    "(?:no|not|fail).{0,65}(?:all|full|complete).{0,65}(?:source.independence|independen.{0,30}(?:starting|source))|(?:full|complete).{0,35}source.independen.{0,35}(?:fail|not met)"
+                  ]
+                }
+              ],
+              "source_evidence": [
+                {
+                  "path": "v6_source.absolute.*.prospective_operating_point",
+                  "equals": false
+                }
+              ]
+            },
+            {
+              "id": "point-estimate",
+              "description": "No population guarantee",
+              "alternatives": [
+                {
+                  "all_of": [
+                    "point estimates",
+                    "not population guarantees"
+                  ]
+                },
+                {
+                  "all_of": [
+                    "point estimates?",
+                    "not.{0,25}population guarantees?|no population guarantee"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "correctness",
+              "description": "Same wrong answer does not establish independence",
+              "alternatives": [
+                {
+                  "all_of": [
+                    "Consistent wrong answers do not count"
+                  ]
+                },
+                {
+                  "all_of": [
+                    "(?:consistent|identical|same).{0,20}wrong answers?.{0,35}(?:not|cannot|insufficient)|wrong answers?.{0,40}not.{0,25}(?:success|independence)"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "native",
+              "description": "Native-final is not oracle",
+              "alternatives": [
+                {
+                  "all_of": [
+                    "those answers can be wrong",
+                    "not a hard upper limit"
+                  ]
+                },
+                {
+                  "all_of": [
+                    "(?:native|those|reference).{0,30}answers?.{0,25}(?:wrong|fallible)|native.{0,30}not an oracle",
+                    "not.{0,25}(?:hard upper limit|accuracy ceiling|oracle)|neither.{0,25}oracle"
+                  ]
+                }
+              ],
+              "source_evidence": [
+                {
+                  "path": "v6.native_is_not_truth_or_accuracy_ceiling",
+                  "equals": true
+                }
+              ]
+            },
+            {
+              "id": "post-outcome",
+              "description": "Descriptive interval qualification retained",
+              "alternatives": [
+                {
+                  "all_of": [
+                    "added after seeing the outcomes",
+                    "do not change the original primary tests or their thresholds"
+                  ]
+                },
+                {
+                  "all_of": [
+                    "after.{0,25}(?:seeing.{0,15})?outcomes|post.outcome",
+                    "(?:not|unchanged).{0,50}(?:original|primary).{0,30}(?:test|threshold)|(?:original|primary).{0,40}(?:tests?|thresholds?).{0,30}unchanged"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "relative",
+              "description": "Relative bundle threshold not absolute",
+              "alternatives": [
+                {
+                  "all_of": [
+                    "single-edit checks are relative to that comparison",
+                    "does not mean every question in a scene is answered correctly"
+                  ]
+                },
+                {
+                  "all_of": [
+                    "single.edit.{0,35}relative|relative.{0,25}single.edit",
+                    "(?:not|doesn.t).{0,50}(?:every question|absolute.{0,20}(?:accuracy|correctness)|whole.scene)"
+                  ]
+                }
+              ]
+            }
+          ],
+          "unsupported": []
+        },
+        {
+          "id": "fingerprint",
+          "heading_pattern": "^4\\.\\s",
+          "numbers": [
+            {
+              "path": "headlines.fingerprint.llama.correlation",
+              "decimals": 4,
+              "status": "verified",
+              "headline": true
+            },
+            {
+              "path": "headlines.fingerprint.llama.similarity",
+              "decimals": 4,
+              "status": "verified",
+              "headline": true
+            },
+            {
+              "path": "headlines.fingerprint.gemma.correlation",
+              "decimals": 4,
+              "status": "verified",
+              "headline": true
+            },
+            {
+              "path": "headlines.fingerprint.gemma.similarity",
+              "decimals": 4,
+              "status": "verified",
+              "headline": true
+            }
+          ],
+          "literals": [],
+          "facts": [
+            {
+              "id": "invalid",
+              "description": "Final cross-model instrument invalid",
+              "alternatives": [
+                {
+                  "all_of": [
+                    "final instrument remained invalid",
+                    "cross-context stability"
+                  ]
+                },
+                {
+                  "all_of": [
+                    "(?:instrument|measurement).{0,35}(?:invalid|failed validation)",
+                    "cross.context.{0,30}stabil"
+                  ]
+                }
+              ],
+              "source_evidence": [
+                {
+                  "path": "fingerprint.terminal_disposition",
+                  "equals": "CAUSAL_FINGERPRINT_MEASUREMENT_V3_INVALID"
+                }
+              ]
+            },
+            {
+              "id": "initial-invalid",
+              "description": "Initial diagnostic failure retained",
+              "alternatives": [
+                {
+                  "all_of": [
+                    "first measurement check was invalid",
+                    "repeatable projection geometry"
+                  ]
+                },
+                {
+                  "all_of": [
+                    "(?:first|initial|earl).{0,40}(?:invalid|fail)",
+                    "(?:repeatable|generic).{0,30}projection"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "random-controls",
+              "description": "Random-direction numerical failures retained",
+              "alternatives": [
+                {
+                  "all_of": [
+                    "random-direction numerical controls also failed"
+                  ]
+                },
+                {
+                  "all_of": [
+                    "random.direction.{0,40}(?:control|numerical).{0,30}(?:fail|invalid)"
+                  ]
+                }
+              ]
+            }
+          ],
+          "unsupported": []
+        },
+        {
+          "id": "fragility",
+          "heading_pattern": "^2\\.\\s",
+          "numbers": [
+            {
+              "path": "headlines.fragility.llama.gain",
+              "decimals": 6,
+              "status": "verified",
+              "headline": true
+            },
+            {
+              "path": "headlines.fragility.llama.lower",
+              "decimals": 6,
+              "status": "verified",
+              "headline": true
+            },
+            {
+              "path": "headlines.fragility.llama.upper",
+              "decimals": 6,
+              "status": "verified",
+              "headline": true
+            },
+            {
+              "path": "headlines.fragility.gemma.gain",
+              "decimals": 6,
+              "status": "verified",
+              "headline": true
+            },
+            {
+              "path": "headlines.fragility.gemma.lower",
+              "decimals": 6,
+              "status": "verified",
+              "headline": true
+            },
+            {
+              "path": "headlines.fragility.gemma.upper",
+              "decimals": 6,
+              "status": "verified",
+              "headline": true
+            }
+          ],
+          "literals": [],
+          "facts": [
+            {
+              "id": "incremental",
+              "description": "Prediction beyond text and confidence",
+              "alternatives": [
+                {
+                  "all_of": [
+                    "adds prediction beyond the text",
+                    "model's own answer confidence"
+                  ]
+                },
+                {
+                  "all_of": [
+                    "(?:beyond|increment|add).{0,45}text",
+                    "(?:native|model.s own|answer).{0,25}confidence"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "negative",
+              "description": "No reliable scalar increment, not universal impossibility",
+              "alternatives": [
+                {
+                  "all_of": [
+                    "Neither interval gives reliable evidence",
+                    "not proof"
+                  ]
+                },
+                {
+                  "all_of": [
+                    "(?:no|neither|not).{0,55}(?:reliable|robust|support)",
+                    "(?:not|does not|cannot).{0,35}(?:proof|prove|impossib)"
+                  ]
+                }
+              ],
+              "source_evidence": [
+                {
+                  "path": "headlines.fragility.llama.lower",
+                  "lt": 0
+                },
+                {
+                  "path": "headlines.fragility.llama.upper",
+                  "gt": 0
+                },
+                {
+                  "path": "headlines.fragility.gemma.lower",
+                  "lt": 0
+                },
+                {
+                  "path": "headlines.fragility.gemma.upper",
+                  "gt": 0
+                }
+              ]
+            },
+            {
+              "id": "review-boundary",
+              "description": "Private judgments and confirmation remain distinct",
+              "alternatives": [
+                {
+                  "all_of": [
+                    "Individual human judgments are not distributed",
+                    "not being presented as a separate confirmatory test"
+                  ]
+                },
+                {
+                  "all_of": [
+                    "(?:individual|raw).{0,20}(?:human |review )?judgments?.{0,35}(?:not|excluded|private|withheld)",
+                    "(?:not|distinct|separate).{0,60}confirmatory"
+                  ]
+                }
+              ]
+            }
+          ],
+          "unsupported": []
+        },
+        {
+          "id": "full_state",
+          "heading_pattern": "^5\\.\\s",
+          "numbers": [
+            {
+              "path": "headlines.full_state.llama.situations",
+              "decimals": 3,
+              "status": "verified",
+              "headline": true
+            },
+            {
+              "path": "headlines.full_state.llama.checkerboards",
+              "decimals": 3,
+              "status": "verified",
+              "headline": true
+            },
+            {
+              "path": "headlines.full_state.gemma.situations",
+              "decimals": 3,
+              "status": "verified",
+              "headline": true
+            },
+            {
+              "path": "headlines.full_state.gemma.checkerboards",
+              "decimals": 3,
+              "status": "verified",
+              "headline": true
+            }
+          ],
+          "literals": [],
+          "facts": [
+            {
+              "id": "retrospective-confound",
+              "description": "Retrospective position-confounded baseline and post-hoc correction",
+              "alternatives": [
+                {
+                  "all_of": [
+                    "invalid baseline",
+                    "position determined the label",
+                    "correction made after seeing the results",
+                    "not a successful test of the original plan"
+                  ]
+                },
+                {
+                  "all_of": [
+                    "(?:invalid|degenerate).{0,25}baseline|baseline.{0,25}(?:invalid|degenerate)",
+                    "position.{0,30}(?:determin|fix|encod).{0,20}label",
+                    "post.hoc|after.{0,25}(?:results|outcomes)",
+                    "(?:not|no).{0,45}(?:success|pass).{0,35}(?:original|frozen)"
+                  ]
+                }
+              ],
+              "source_evidence": [
+                {
+                  "path": "retrospective.actors.*.frozen_plan_validity.position_covariate_determines_label",
+                  "equals": true
+                },
+                {
+                  "path": "retrospective.actors.*.frozen_plan_validity.verdict",
+                  "equals": "FROZEN_L_LADDER_INVALID_BY_DESIGN"
+                },
+                {
+                  "path": "retrospective.actors.*.exploratory_no_position_covariate.status",
+                  "equals": "POST_HOC_EXPLORATORY_NOT_FROZEN"
+                }
+              ]
+            },
+            {
+              "id": "elicitation",
+              "description": "Elicitation qualification retained",
+              "alternatives": [
+                {
+                  "all_of": [
+                    "gap largely disappeared",
+                    "fixed examples showing how to answer"
+                  ]
+                },
+                {
+                  "all_of": [
+                    "gap.{0,25}(?:disappear|vanish|shrink)",
+                    "fixed.{0,35}(?:example|demonstration)|few.shot"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "population",
+              "description": "Replications not retrospective or strict test",
+              "alternatives": [
+                {
+                  "all_of": [
+                    "pre-existing development partitions",
+                    "not the strict test",
+                    "separate from the earlier retrospective analysis"
+                  ]
+                },
+                {
+                  "all_of": [
+                    "pre.existing.{0,30}development",
+                    "(?:not|distinct from).{0,30}strict test",
+                    "(?:separate|distinct).{0,40}retrospective"
+                  ]
+                }
+              ],
+              "source_evidence": [
+                {
+                  "path": "replication.actors.*.evidence_status",
+                  "equals": "PROSPECTIVELY_FROZEN_INTERNAL_REPLICATION"
+                }
+              ]
+            }
+          ],
+          "unsupported": []
+        },
+        {
+          "id": "representation",
+          "heading_pattern": "^1\\.\\s",
+          "numbers": [
+            {
+              "path": "headlines.representation.llama.direction",
+              "decimals": 4,
+              "status": "verified",
+              "headline": true
+            },
+            {
+              "path": "headlines.representation.llama.logistic",
+              "decimals": 4,
+              "status": "verified",
+              "headline": true
+            },
+            {
+              "path": "headlines.representation.llama.text",
+              "decimals": 4,
+              "status": "verified",
+              "headline": true
+            },
+            {
+              "path": "headlines.representation.llama.layer",
+              "decimals": null,
+              "status": "verified",
+              "headline": true
+            },
+            {
+              "path": "headlines.representation.llama.truth",
+              "decimals": 4,
+              "status": "verified",
+              "headline": true
+            },
+            {
+              "path": "headlines.representation.gemma.direction",
+              "decimals": 4,
+              "status": "verified",
+              "headline": true
+            },
+            {
+              "path": "headlines.representation.gemma.logistic",
+              "decimals": 4,
+              "status": "verified",
+              "headline": true
+            },
+            {
+              "path": "headlines.representation.gemma.text",
+              "decimals": 4,
+              "status": "verified",
+              "headline": true
+            },
+            {
+              "path": "headlines.representation.gemma.layer",
+              "decimals": null,
+              "status": "verified",
+              "headline": true
+            },
+            {
+              "path": "headlines.representation.gemma.truth",
+              "decimals": 4,
+              "status": "verified",
+              "headline": true
+            }
+          ],
+          "literals": [],
+          "facts": [
+            {
+              "id": "development",
+              "description": "Development not confirmation",
+              "alternatives": [
+                {
+                  "all_of": [
+                    "development measurements",
+                    "do not establish correct moral judgment"
+                  ]
+                },
+                {
+                  "all_of": [
+                    "development|exploratory",
+                    "(?:not|neither|cannot|doesn.t).{0,60}(?:establish|prove|imply).{0,35}(?:moral|normative)"
+                  ]
+                }
+              ],
+              "source_evidence": [
+                {
+                  "path": "figures.models.llama.pilot_eval_used_for_selection",
+                  "equals": false
+                }
+              ]
+            },
+            {
+              "id": "failed-control",
+              "description": "Failed literal-label control remains negative",
+              "alternatives": [
+                {
+                  "all_of": [
+                    "literal-label control failed",
+                    "diagnostic"
+                  ]
+                },
+                {
+                  "all_of": [
+                    "(?:literal.label|answer.token).{0,45}(?:failed|invalid|diagnostic)"
+                  ]
+                }
+              ]
+            }
+          ],
+          "unsupported": []
+        },
+        {
+          "id": "specificity",
+          "heading_pattern": "^3\\.\\s",
+          "numbers": [
+            {
+              "path": "headlines.specificity.llama.valueprism.truth",
+              "decimals": 3,
+              "status": "verified",
+              "headline": true
+            },
+            {
+              "path": "headlines.specificity.llama.valueprism.sentiment",
+              "decimals": 3,
+              "status": "verified",
+              "headline": true
+            },
+            {
+              "path": "headlines.specificity.llama.arguments.truth",
+              "decimals": 3,
+              "status": "verified",
+              "headline": true
+            },
+            {
+              "path": "headlines.specificity.llama.arguments.sentiment",
+              "decimals": 3,
+              "status": "verified",
+              "headline": true
+            },
+            {
+              "path": "headlines.specificity.gemma.valueprism.truth",
+              "decimals": 3,
+              "status": "verified",
+              "headline": true
+            },
+            {
+              "path": "headlines.specificity.gemma.valueprism.sentiment",
+              "decimals": 3,
+              "status": "verified",
+              "headline": true
+            },
+            {
+              "path": "headlines.specificity.gemma.arguments.truth",
+              "decimals": 3,
+              "status": "verified",
+              "headline": true
+            },
+            {
+              "path": "headlines.specificity.gemma.arguments.sentiment",
+              "decimals": 3,
+              "status": "verified",
+              "headline": true
+            }
+          ],
+          "literals": [],
+          "facts": [
+            {
+              "id": "equal-distance-mixed",
+              "description": "Exploratory equal-distance analysis is mixed, not a general advantage",
+              "alternatives": [
+                {
+                  "all_of": [
+                    "exploratory follow-up",
+                    "results were mixed",
+                    "comparisons reversed",
+                    "did not establish a general advantage for relation steering"
+                  ]
+                },
+                {
+                  "all_of": [
+                    "exploratory|post.hoc",
+                    "mixed|heterogeneous",
+                    "revers|opposite",
+                    "(?:not|no).{0,55}(?:general|consistent|uniform).{0,35}(?:advantage|superior)"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "control",
+              "description": "Endpoint-specific causal comparison",
+              "alternatives": [
+                {
+                  "all_of": [
+                    "matched truth and sentiment",
+                    "same answer",
+                    "not proof of a universal"
+                  ]
+                },
+                {
+                  "all_of": [
+                    "(?:matched|compar).{0,50}truth.{0,30}sentiment",
+                    "(?:same|common).{0,30}(?:answer|endpoint)",
+                    "(?:not|no).{0,40}(?:proof|prove|universal)"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "transfer",
+              "description": "Relation transfer not pure independent geometry",
+              "alternatives": [
+                {
+                  "all_of": [
+                    "without refitting",
+                    "does not mean the representations are completely independent"
+                  ]
+                },
+                {
+                  "all_of": [
+                    "without (?:re)?fit|zero.shot transfer",
+                    "(?:not|no).{0,70}(?:complete|pure|geometric).{0,30}independen"
+                  ]
+                }
+              ]
+            }
+          ],
+          "unsupported": []
+        },
+        {
+          "id": "unresolved",
+          "heading_pattern": "^8\\.\\s",
+          "numbers": [],
+          "literals": [],
+          "facts": [
+            {
+              "id": "unresolved",
+              "description": "Strong mechanism claims unresolved",
+              "alternatives": [
+                {
+                  "all_of": [
+                    "does not establish that they recreate the same internal state",
+                    "unfinished successor is not a completed result"
+                  ]
+                },
+                {
+                  "all_of": [
+                    "(?:not|no).{0,45}(?:establish|prove).{0,60}(?:same|identical).{0,25}(?:internal|hidden).{0,15}state",
+                    "unfinished.{0,30}not.{0,20}completed"
+                  ]
+                }
+              ]
+            }
+          ],
+          "unsupported": []
+        }
+      ]
+    },
+    {
+      "id": "captions",
+      "path": "figures/CAPTIONS.md",
+      "units": [
+        {
+          "id": "scope",
+          "heading_pattern": "^Scope\\b",
+          "numbers": [],
+          "literals": [
+            {
+              "text": "1"
+            }
+          ],
+          "facts": [
+            {
+              "id": "m1-decodability-only",
+              "description": "States that every figure here is M1 development evidence about decodability.",
+              "any_of": [
+                "development evidence",
+                "decodab"
+              ]
+            },
+            {
+              "id": "two-model-symmetry-real-here",
+              "description": "States the two-model agreement holds for this figure set.",
+              "any_of": [
+                "both models",
+                "Llama and Gemma",
+                "two-model"
+              ]
+            },
+            {
+              "id": "later-results-asymmetric",
+              "description": "Later studies have experiment-specific qualification failures and bounded positives; there is no single blanket Llama/Gemma result.",
+              "all_of": [
+                "later causal and reliability results.{0,40}do not replicate symmetrically",
+                "qualification failures.{0,35}bounded positive outcomes.{0,35}(?:differ|vary).{0,25}(?:experiment|stud)"
+              ],
+              "source_evidence": [
+                {
+                  "path": "v2_qualification.selected_procedure",
+                  "equals": null
+                },
+                {
+                  "path": "v3.actors.gemma.final.F1.FREE_OVERWRITE.status",
+                  "equals": "F1_MET"
+                },
+                {
+                  "path": "v6_source.absolute.*.prospective_operating_point",
+                  "equals": false
+                }
+              ]
+            }
+          ],
+          "unsupported": [
+            {
+              "id": "no-confirmatory-implication",
+              "pattern": "\\b(confirms|confirmed|establishes that the model)\\b",
+              "reason": "development evidence must not be described in confirmatory language"
+            },
+            {
+              "id": "blanket-later-model-result",
+              "pattern": "narrower Llama finding.{0,35}Gemma misses the required conjunction",
+              "reason": "Later studies have distinct model qualifications and bounded outcomes; this cannot summarize all later work."
+            }
+          ]
+        },
+        {
+          "id": "shared-definitions",
+          "heading_pattern": "^Shared\\ definitions\\b",
+          "numbers": [
+            {
+              "path": "figures.models.llama.sample_counts.pilot_train",
+              "decimals": null,
+              "thousands": true,
+              "text": "1,500"
+            },
+            {
+              "path": "figures.models.llama.sample_counts.pilot_select",
+              "decimals": null,
+              "thousands": true,
+              "text": "300"
+            },
+            {
+              "path": "figures.models.llama.sample_counts.pilot_eval",
+              "decimals": null,
+              "thousands": true,
+              "text": "500"
+            },
+            {
+              "path": "figures.models.llama.sample_counts.pilot_eval_boards",
+              "decimals": null,
+              "thousands": true,
+              "text": "125"
+            }
+          ],
+          "literals": [
+            {
+              "text": "75"
+            },
+            {
+              "text": "7,394"
+            },
+            {
+              "text": "95"
+            },
+            {
+              "text": "2"
+            },
+            {
+              "text": "4"
+            },
+            {
+              "text": "0"
+            },
+            {
+              "text": "11"
+            },
+            {
+              "text": "12"
+            },
+            {
+              "text": "21"
+            },
+            {
+              "text": "22"
+            },
+            {
+              "text": "2000"
+            }
+          ],
+          "facts": [
+            {
+              "id": "ib-is-did",
+              "description": "The checkerboard interaction is a standardized difference-in-differences, and its scale is stated.",
+              "any_of": [
+                "difference-in-differences"
+              ],
+              "all_of": [
+                "standard deviations?"
+              ]
+            },
+            {
+              "id": "ib-zero-for-additive",
+              "description": "Any score additive in situation and consideration gives I_b = 0 exactly.",
+              "any_of": [
+                "additive"
+              ],
+              "all_of": [
+                "exactly|by construction"
+              ]
+            },
+            {
+              "id": "standardization-frozen-on-select",
+              "description": "Standardization constants are frozen on the pilot select split.",
+              "any_of": [
+                "pilot select split|selection split"
+              ],
+              "source_evidence": [
+                {
+                  "path": "figures.models.*.pilot_eval_used_for_selection",
+                  "equals": false
+                }
+              ]
+            },
+            {
+              "id": "three-splits",
+              "description": "Fit on pilot train, choose layer/constants on pilot select, report on pilot evaluation.",
+              "alternatives": [
+                {
+                  "all_of": [
+                    "pilot train split",
+                    "pilot select split",
+                    "pilot evaluation split"
+                  ]
+                },
+                {
+                  "all_of": [
+                    "(?:fit|train).{0,30}(?:train|fit)(?:ing)? split",
+                    "(?:layer|standardiz).{0,60}(?:select|validation) split",
+                    "(?:report|metric|score).{0,50}(?:evaluat|held.out)"
+                  ]
+                }
+              ],
+              "source_evidence": [
+                {
+                  "path": "figures.models.llama.sample_counts.pilot_train",
+                  "equals": 1500
+                },
+                {
+                  "path": "figures.models.llama.sample_counts.pilot_select",
+                  "equals": 300
+                },
+                {
+                  "path": "figures.models.llama.sample_counts.pilot_eval",
+                  "equals": 500
+                }
+              ]
+            },
+            {
+              "id": "eval-not-used-for-selection",
+              "description": "The evaluation split did not participate in layer selection.",
+              "any_of": [
+                "did not (participate|take part)|no part in (choosing|selecting)"
+              ],
+              "source_evidence": [
+                {
+                  "path": "figures.models.*.pilot_eval_used_for_selection",
+                  "equals": false
+                }
+              ]
+            },
+            {
+              "id": "no-confirmatory-or-strict-test",
+              "description": "No figure touches the confirmatory boards or the strict test set.",
+              "all_of": [
+                "confirmatory",
+                "strict test set"
+              ]
+            },
+            {
+              "id": "ci-is-normal-not-bootstrap",
+              "description": "M1 intervals are normal intervals on the dyadic-robust standard error, not bootstrap.",
+              "alternatives": [
+                {
+                  "all_of": [
+                    "normal",
+                    "dyadic-robust",
+                    "not bootstrap|not a bootstrap|rather than a bootstrap"
+                  ]
+                },
+                {
+                  "all_of": [
+                    "normal",
+                    "dyadic.robust",
+                    "not.{0,15}bootstrap|rather than.{0,10}bootstrap"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "fig4-uses-bootstrap",
+              "description": "Figure 4 is the exception and uses a group bootstrap.",
+              "all_of": [
+                "Figure 4",
+                "bootstrap"
+              ]
+            },
+            {
+              "id": "development-scope",
+              "description": "the development scope of every panel must be stated",
+              "any_of": [
+                "development"
+              ]
+            },
+            {
+              "id": "standardization-denominator",
+              "description": "Checkerboard interaction uses selection-split, not training/evaluation-split, standard deviations.",
+              "any_of": [
+                "(?:selection|select).split standard deviations?",
+                "standard deviations?.{0,35}(?:selection|select) split"
+              ],
+              "source_evidence": [
+                {
+                  "path": "figures.models.*.pilot_eval_used_for_selection",
+                  "equals": false
+                }
+              ]
+            }
+          ],
+          "unsupported": [
+            {
+              "id": "no-bootstrap-for-m1",
+              "pattern": "bootstrap (interval|CI)s? (over|on) (boards|the boards)",
+              "reason": "M1 intervals are not bootstrap intervals"
+            },
+            {
+              "id": "wrong-standardization-denominator",
+              "pattern": "(?:expressed|measured) in (?:training|evaluation).split standard deviations?",
+              "reason": "The checkerboard denominator was frozen on selection data."
+            }
+          ]
+        },
+        {
+          "id": "figure1",
+          "heading_pattern": "^Figure\\ 1\\b",
+          "numbers": [
+            {
+              "path": "figures.models.llama.selected_layer",
+              "decimals": null,
+              "thousands": false,
+              "text": "19"
+            },
+            {
+              "path": "figures.models.gemma.selected_layer",
+              "decimals": null,
+              "thousands": false,
+              "text": "27"
+            },
+            {
+              "path": "figures.models.llama.n_layers",
+              "decimals": null,
+              "thousands": false,
+              "text": "32"
+            },
+            {
+              "path": "figures.models.gemma.n_layers",
+              "decimals": null,
+              "thousands": false,
+              "text": "42"
+            },
+            {
+              "path": "figures.models.llama.layerwise.21.auroc",
+              "decimals": 4,
+              "thousands": false,
+              "text": "0.7348"
+            },
+            {
+              "path": "figures.models.llama.layerwise.21.I_b",
+              "decimals": 4,
+              "thousands": false,
+              "text": "1.6528"
+            },
+            {
+              "path": "figures.models.llama.layerwise.19.auroc",
+              "decimals": 4,
+              "thousands": false,
+              "text": "0.7320"
+            },
+            {
+              "path": "figures.models.llama.layerwise.19.I_b",
+              "decimals": 4,
+              "thousands": false,
+              "text": "1.6470"
+            },
+            {
+              "path": "figures.models.gemma.layerwise.28.auroc",
+              "decimals": 4,
+              "thousands": false,
+              "text": "0.8306"
+            },
+            {
+              "path": "figures.models.gemma.layerwise.28.I_b",
+              "decimals": 4,
+              "thousands": false,
+              "text": "2.3366"
+            },
+            {
+              "path": "figures.models.gemma.layerwise.27.auroc",
+              "decimals": 4,
+              "thousands": false,
+              "text": "0.8291"
+            },
+            {
+              "path": "figures.models.gemma.layerwise.27.I_b",
+              "decimals": 4,
+              "thousands": false,
+              "text": "2.3221"
+            }
+          ],
+          "literals": [
+            {
+              "text": "1"
+            },
+            {
+              "text": "21"
+            },
+            {
+              "text": "28"
+            },
+            {
+              "text": "10"
+            },
+            {
+              "text": "15"
+            },
+            {
+              "text": "17"
+            },
+            {
+              "text": "25"
+            }
+          ],
+          "facts": [
+            {
+              "id": "panels-ib-and-auroc",
+              "description": "Names which panels show the checkerboard interaction and which show AUROC.",
+              "all_of": [
+                "\\(a, b\\)|\\(a\\)",
+                "\\(c, d\\)|\\(c\\)",
+                "AUROC"
+              ]
+            },
+            {
+              "id": "selection-rule-named",
+              "description": "Names the prespecified selection criterion mean_mirrored_pairwise.",
+              "any_of": [
+                "mean_mirrored_pairwise"
+              ],
+              "source_evidence": [
+                {
+                  "path": "figures.models.*.selection_criterion",
+                  "equals": "mean_mirrored_pairwise"
+                }
+              ]
+            },
+            {
+              "id": "selection-on-select-split",
+              "description": "The layer was chosen on the pilot select split before evaluation scoring.",
+              "all_of": [
+                "pilot select split|selection split",
+                "before"
+              ]
+            },
+            {
+              "id": "not-argmax-both-models",
+              "description": "The selected layer is not the argmax of the plotted curves in either model.",
+              "all_of": [
+                "not the (arg ?max|maximum|highest|peak)|did not (choose|pick) the (arg ?max|highest|peak)",
+                "21",
+                "28"
+              ]
+            },
+            {
+              "id": "development-only",
+              "description": "The curves are development-split evaluation metrics.",
+              "any_of": [
+                "development"
+              ]
+            },
+            {
+              "id": "curves-not-used-for-selection",
+              "description": "The plotted curves had no part in choosing the layer.",
+              "any_of": [
+                "no part in choosing|did not (choose|determine) the layer|not used to (choose|select)"
+              ],
+              "source_evidence": [
+                {
+                  "path": "figures.models.*.pilot_eval_used_for_selection",
+                  "equals": false
+                }
+              ]
+            },
+            {
+              "id": "development",
+              "description": "development scope must be stated",
+              "any_of": [
+                "development"
+              ]
+            }
+          ],
+          "unsupported": [
+            {
+              "id": "no-best-layer-claim",
+              "pattern": "\\b(best|optimal) layer\\b",
+              "reason": "the selected layer is not claimed to be optimal"
+            }
+          ]
+        },
+        {
+          "id": "figure2",
+          "heading_pattern": "^Figure\\ 2\\b",
+          "numbers": [
+            {
+              "path": "figures.models.llama.selected_layer",
+              "decimals": null,
+              "thousands": false,
+              "text": "19"
+            },
+            {
+              "path": "figures.models.gemma.selected_layer",
+              "decimals": null,
+              "thousands": false,
+              "text": "27"
+            },
+            {
+              "path": "figures.models.llama.evaluations.sbert_interaction.I_b",
+              "decimals": 2,
+              "thousands": false,
+              "text": "0.28"
+            },
+            {
+              "path": "figures.models.llama.delta_over_text_baseline.difference_in_means.point",
+              "decimals": 3,
+              "thousands": false,
+              "text": "1.363"
+            },
+            {
+              "path": "figures.models.llama.delta_over_text_baseline.difference_in_means.low",
+              "decimals": 3,
+              "thousands": false,
+              "text": "1.089"
+            },
+            {
+              "path": "figures.models.llama.delta_over_text_baseline.difference_in_means.high",
+              "decimals": 3,
+              "thousands": false,
+              "text": "1.637"
+            },
+            {
+              "path": "figures.models.gemma.delta_over_text_baseline.difference_in_means.point",
+              "decimals": 3,
+              "thousands": false,
+              "text": "2.038"
+            },
+            {
+              "path": "figures.models.gemma.delta_over_text_baseline.difference_in_means.low",
+              "decimals": 3,
+              "thousands": false,
+              "text": "1.661"
+            },
+            {
+              "path": "figures.models.gemma.delta_over_text_baseline.difference_in_means.high",
+              "decimals": 3,
+              "thousands": false,
+              "text": "2.415"
+            }
+          ],
+          "literals": [
+            {
+              "text": "2"
+            },
+            {
+              "text": "95"
+            },
+            {
+              "text": "4"
+            }
+          ],
+          "facts": [
+            {
+              "id": "four-scorers",
+              "description": "Names the scorers compared in the panel.",
+              "alternatives": [
+                {
+                  "all_of": [
+                    "model answer margin",
+                    "support/opposition direction",
+                    "logistic activation probe",
+                    "frozen MiniLM comparator"
+                  ]
+                },
+                {
+                  "all_of": [
+                    "(?:model|native|answer).{0,20}margin",
+                    "(?:support.opposition|relation).{0,15}(?:direction|vector)",
+                    "logistic.{0,20}(?:probe|classifier)",
+                    "MiniLM"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "comparator-nonzero",
+              "description": "States the frozen MiniLM comparator reaches 0.28, small but not zero.",
+              "all_of": [
+                "0\\.28",
+                "not zero|above zero|nonzero"
+              ]
+            },
+            {
+              "id": "gate-is-on-the-margin",
+              "description": "The preregistered gate is on the margin over the comparator, not on the comparator being zero.",
+              "any_of": [
+                "margin over",
+                "exceeds the .{0,40}comparator by"
+              ]
+            },
+            {
+              "id": "gate-intervals-exclude-zero",
+              "description": "Both margin intervals exclude zero.",
+              "any_of": [
+                "exclud\\w* zero|above zero|do not (contain|include) zero"
+              ]
+            },
+            {
+              "id": "interval-type",
+              "description": "Intervals are 95% normal intervals from the dyadic-robust standard error.",
+              "all_of": [
+                "95",
+                "normal",
+                "dyadic-robust"
+              ]
+            },
+            {
+              "id": "comparator-not-zero",
+              "description": "the comparator's nonzero value must not be rounded away rhetorically",
+              "any_of": [
+                "not zero|above zero|nonzero"
+              ]
+            }
+          ],
+          "unsupported": [
+            {
+              "id": "no-text-fails-entirely",
+              "pattern": "(text|comparator)[^.]{0,60}\\b(fails|no separation|zero separation|cannot separate)\\b",
+              "reason": "the comparator reaches 0.28; it must not be described as achieving nothing"
+            }
+          ]
+        },
+        {
+          "id": "figure3",
+          "heading_pattern": "^Figure\\ 3\\b",
+          "numbers": [
+            {
+              "path": "figures.models.llama.permutation_null_large.probes.difference_in_means.B",
+              "decimals": null,
+              "thousands": true,
+              "text": "10,000"
+            },
+            {
+              "path": "figures.models.llama.permutation_null_large.probes.difference_in_means.k_ge_observed",
+              "decimals": null,
+              "thousands": false,
+              "text": "131"
+            },
+            {
+              "path": "figures.models.llama.permutation_null_large.probes.difference_in_means.p",
+              "decimals": 4,
+              "thousands": false,
+              "text": "0.0132"
+            },
+            {
+              "path": "figures.models.llama.permutation_null_large.probes.difference_in_means.null_sd",
+              "decimals": 2,
+              "thousands": false,
+              "text": "1.01"
+            },
+            {
+              "path": "figures.models.llama.permutation_null_large.probes.difference_in_means.p_two_sided_sensitivity",
+              "decimals": 4,
+              "thousands": false,
+              "text": "0.0245"
+            },
+            {
+              "path": "figures.models.llama.permutation_null_large.probes.logistic.p",
+              "decimals": 4,
+              "thousands": false,
+              "text": "0.0001"
+            },
+            {
+              "path": "figures.models.llama.permutation_null_large.probes.logistic.null_sd",
+              "decimals": 2,
+              "thousands": false,
+              "text": "0.46"
+            },
+            {
+              "path": "figures.models.gemma.permutation_null.difference_in_means.B",
+              "decimals": null,
+              "thousands": false,
+              "text": "200"
+            },
+            {
+              "path": "figures.models.gemma.permutation_null.difference_in_means.p",
+              "decimals": 4,
+              "thousands": false,
+              "text": "0.0149"
+            },
+            {
+              "path": "figures.models.gemma.permutation_null.difference_in_means.k_ge_observed",
+              "decimals": null,
+              "thousands": false,
+              "text": "2"
+            },
+            {
+              "path": "figures.models.llama.sample_counts.pilot_train",
+              "decimals": null,
+              "thousands": true,
+              "text": "1,500"
+            },
+            {
+              "path": "figures.models.llama.sample_counts.pilot_eval_boards",
+              "decimals": null,
+              "thousands": true,
+              "text": "125"
+            },
+            {
+              "path": "figures.models.gemma.selected_layer",
+              "decimals": null,
+              "thousands": false,
+              "text": "27"
+            }
+          ],
+          "literals": [
+            {
+              "text": "3"
+            },
+            {
+              "text": "0"
+            },
+            {
+              "text": "1"
+            },
+            {
+              "text": "1,454"
+            },
+            {
+              "text": "201"
+            },
+            {
+              "text": "46"
+            },
+            {
+              "text": "2.5"
+            },
+            {
+              "text": "0.005"
+            },
+            {
+              "text": "0.05"
+            }
+          ],
+          "facts": [
+            {
+              "id": "null-is-situation-level-flip",
+              "description": "The null flips labels for whole training situations, independently per situation.",
+              "all_of": [
+                "situation",
+                "(flip|revers)"
+              ]
+            },
+            {
+              "id": "null-preserves-structure",
+              "description": "Names what the null holds fixed rather than randomizes.",
+              "any_of": [
+                "preserv",
+                "holds fixed",
+                "keeps",
+                "unchanged"
+              ]
+            },
+            {
+              "id": "probes-refit-every-draw",
+              "description": "Both probes are refit from scratch on every permuted draw.",
+              "all_of": [
+                "refit",
+                "(both probes|each draw|every draw)"
+              ]
+            },
+            {
+              "id": "scaler-refit-per-draw",
+              "description": "The select split refits its own standardization constants on each draw.",
+              "any_of": [
+                "own standardization constants",
+                "refits its own",
+                "standardization constants are refit"
+              ]
+            },
+            {
+              "id": "eval-boards-held-out",
+              "description": "The interaction is recomputed on the held-out evaluation boards.",
+              "all_of": [
+                "125",
+                "(held-out|evaluation) board"
+              ]
+            },
+            {
+              "id": "p-is-one-sided",
+              "description": "The reported p-value is one-sided.",
+              "alternatives": [
+                {
+                  "all_of": [
+                    "one-sided"
+                  ]
+                },
+                {
+                  "all_of": [
+                    "one.sided|upper.tail|right.tail"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "p-formula",
+              "description": "p = (k+1)/(B+1) with k the count of draws at or above the observed value.",
+              "alternatives": [
+                {
+                  "any_of": [
+                    "\\(k\\+1\\)/\\(B\\+1\\)",
+                    "\\(k \\+ 1\\)/\\(B \\+ 1\\)",
+                    "k\\+1.{0,14}B\\+1"
+                  ]
+                },
+                {
+                  "all_of": [
+                    "\\(k\\s*\\+\\s*1\\)\\s*/\\s*\\(B\\s*\\+\\s*1\\)|\\\\frac\\{k\\s*\\+\\s*1\\}\\{B\\s*\\+\\s*1\\}|(?:exceedance|tail) count plus one.{0,35}(?:draws|replicates|permutations) plus one"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "historical-and-refit-nulls-distinct",
+              "description": "The historical comparator-improvement test and later refitted-interaction null are distinct tests, not a precision update of the same tail.",
+              "all_of": [
+                "10,000",
+                "historical.{0,120}200",
+                "improvement over the text comparator",
+                "refitted.interaction null.{0,20}not interchangeable",
+                "cannot be interpreted.{0,80}same tail"
+              ],
+              "source_evidence": [
+                {
+                  "path": "figures.models.llama.permutation_null_large.probes.difference_in_means.B",
+                  "equals": 10000
+                }
+              ]
+            },
+            {
+              "id": "llama-dim-corrected",
+              "description": "The Llama support/opposition direction reports p = 0.0132 with k = 131.",
+              "all_of": [
+                "0\\.0132",
+                "131"
+              ]
+            },
+            {
+              "id": "original-was-floor",
+              "description": "The superseded p = 0.005 was the resolution floor, not a measured tail.",
+              "any_of": [
+                "resolution floor",
+                "not a measured tail",
+                "smallest value.{0,40}could report"
+              ]
+            },
+            {
+              "id": "gemma-not-uniformly-floored",
+              "description": "Only Gemma's logistic result sits at the floor; Gemma's direction has k = 2 and a measured p = 0.0149.",
+              "all_of": [
+                "logistic",
+                "0\\.0149"
+              ]
+            },
+            {
+              "id": "gemma-not-rerun-reason",
+              "description": "Gemma was not re-run because its layer-27 activations were not retained.",
+              "alternatives": [
+                {
+                  "any_of": [
+                    "not retained",
+                    "were not kept",
+                    "no longer available"
+                  ]
+                },
+                {
+                  "all_of": [
+                    "(?:Gemma.{0,80}(?:not retained|unavailable|not kept)|(?:lost|unavailable|unretained).{0,40}(?:Gemma|activations))"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "dispersion-difference",
+              "description": "Reports the dispersion gap between the two nulls.",
+              "all_of": [
+                "1\\.01",
+                "0\\.46"
+              ]
+            },
+            {
+              "id": "logistic-is-sharper",
+              "description": "States that the logistic panels carry the sharper evidence.",
+              "alternatives": [
+                {
+                  "any_of": [
+                    "sharper",
+                    "weaker of the two"
+                  ]
+                },
+                {
+                  "all_of": [
+                    "logistic.{0,50}(?:sharper|less dispersed|stronger evidence)|direction.{0,30}weaker"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "two-sided-sensitivity",
+              "description": "The two-sided sensitivity check gives p = 0.0245.",
+              "any_of": [
+                "0\\.0245"
+              ]
+            },
+            {
+              "id": "gemma-limitation-present",
+              "description": "the Gemma B = 200 resolution limit must stay visible",
+              "any_of": [
+                "200"
+              ]
+            },
+            {
+              "id": "mechanism-hedge",
+              "description": "the caption must not claim a verified mechanism for the dispersion gap",
+              "any_of": [
+                "does not (isolate|separate|establish)|not separated|plausible"
+              ]
+            }
+          ],
+          "unsupported": [
+            {
+              "id": "no-regularization-mechanism",
+              "pattern": "because [^.]{0,80}regulari|regulari\\w+ (is why|explains|causes)",
+              "reason": "the experiment does not isolate regularization as the cause of the dispersion gap"
+            },
+            {
+              "id": "no-shuffle-language",
+              "pattern": "(?:rows? (?:were |are )?shuffl|shuffl\\w* (?:the )?rows?)",
+              "reason": "rows are never shuffled; label orientation is flipped within situations"
+            }
+          ]
+        },
+        {
+          "id": "figure4",
+          "heading_pattern": "^Figure\\ 4\\b",
+          "numbers": [
+            {
+              "path": "figures.truth_control.llama.selected_layer",
+              "decimals": null,
+              "thousands": false,
+              "text": "14"
+            },
+            {
+              "path": "figures.models.gemma.truth_control_layer",
+              "decimals": null,
+              "thousands": false,
+              "text": "25"
+            },
+            {
+              "path": "figures.truth_control.llama.primary_ci.replicates",
+              "decimals": null,
+              "thousands": true,
+              "text": "2,000"
+            }
+          ],
+          "literals": [
+            {
+              "text": "4"
+            },
+            {
+              "text": "95"
+            },
+            {
+              "text": "8"
+            },
+            {
+              "text": "0.0003"
+            },
+            {
+              "text": "0.9997"
+            },
+            {
+              "text": "1"
+            },
+            {
+              "text": "2"
+            }
+          ],
+          "facts": [
+            {
+              "id": "control-purpose",
+              "description": "The control applies the same machinery to a task whose ground truth is already known.",
+              "any_of": [
+                "known ground truth",
+                "ground truth is known",
+                "already know"
+              ]
+            },
+            {
+              "id": "control-is-a-gate",
+              "description": "A passing truth control is required per model before the relation result is reported.",
+              "all_of": [
+                "(gate|requires|must pass)",
+                "(each model|per model|its own)"
+              ]
+            },
+            {
+              "id": "T-definition",
+              "description": "The standardized separation is a True-minus-False mean difference in training-projection standard deviations, averaged over eight partitions.",
+              "alternatives": [
+                {
+                  "all_of": [
+                    "True-minus-False",
+                    "standard deviation",
+                    "eight"
+                  ]
+                },
+                {
+                  "all_of": [
+                    "True.minus.False|mean true.{0,25}minus.{0,20}mean false",
+                    "(?:training.projection|training projection).{0,25}standard deviations?",
+                    "eight|8"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "T-scale-stated",
+              "description": "The scale of the standardized separation is stated, so its magnitude cannot be read as a conventional effect size.",
+              "any_of": [
+                "scale is therefore set",
+                "training projections"
+              ]
+            },
+            {
+              "id": "v1-failed",
+              "description": "An earlier version failed strict review because the probe was reading the answer token.",
+              "all_of": [
+                "answer token",
+                "0\\.0003",
+                "0\\.9997"
+              ]
+            },
+            {
+              "id": "v2-design",
+              "description": "The version shown uses neutral symbols whose meaning reverses across examples, and tests transfer to a held-out answer format.",
+              "any_of": [
+                "reversed across examples",
+                "meaning is reversed",
+                "reverses across examples"
+              ]
+            },
+            {
+              "id": "gemma-open-marker",
+              "description": "The Gemma point is drawn open because only its point estimate was retained.",
+              "any_of": [
+                "only its point estimate",
+                "no interval"
+              ]
+            },
+            {
+              "id": "fig4-bootstrap",
+              "description": "The held-out intervals are group bootstrap intervals with 2,000 replicates.",
+              "all_of": [
+                "bootstrap",
+                "2,000"
+              ]
+            },
+            {
+              "id": "development-sweep",
+              "description": "the layer sweep panel is development data",
+              "any_of": [
+                "development"
+              ]
+            }
+          ],
+          "unsupported": [
+            {
+              "id": "no-t-as-effect-size",
+              "pattern": "is an effect size|as an effect size",
+              "reason": "the standardized separation is not a conventional effect size"
+            },
+            {
+              "id": "no-truth-generalization",
+              "pattern": "proves the (method|pipeline) works",
+              "reason": "a passing positive control does not prove the relation result"
+            }
+          ]
+        },
+        {
+          "id": "figure5",
+          "heading_pattern": "^Figure\\ 5\\b",
+          "numbers": [
+            {
+              "path": "figures.models.llama.selected_layer",
+              "decimals": null,
+              "thousands": false,
+              "text": "19"
+            },
+            {
+              "path": "figures.models.gemma.selected_layer",
+              "decimals": null,
+              "thousands": false,
+              "text": "27"
+            },
+            {
+              "path": "figures.models.llama.evaluations.held_out_template.I_b",
+              "decimals": 2,
+              "thousands": false,
+              "text": "2.16"
+            },
+            {
+              "path": "figures.models.gemma.evaluations.held_out_template.I_b",
+              "decimals": 2,
+              "thousands": false,
+              "text": "2.26"
+            },
+            {
+              "path": "figures.models.llama.evaluations.sbert_interaction.I_b",
+              "decimals": 2,
+              "thousands": false,
+              "text": "0.28"
+            },
+            {
+              "path": "figures.models.llama.evaluations.deterministic_random.I_b",
+              "decimals": 2,
+              "thousands": false,
+              "text": "-0.26"
+            }
+          ],
+          "literals": [
+            {
+              "text": "5"
+            },
+            {
+              "text": "0"
+            },
+            {
+              "text": "1"
+            },
+            {
+              "text": "3"
+            }
+          ],
+          "facts": [
+            {
+              "id": "held-out-template-survives",
+              "description": "The frozen direction still separates under a held-out answer template.",
+              "all_of": [
+                "held-out answer template",
+                "(2\\.16|2\\.26)"
+              ]
+            },
+            {
+              "id": "what-template-controls-for",
+              "description": "The template control rules out the scorer reading the answer token or prompt surface form.",
+              "any_of": [
+                "answer token",
+                "surface form"
+              ]
+            },
+            {
+              "id": "random-is-item-scores-not-direction",
+              "description": "The random baseline hashes each item identifier to a scalar; it is not a direction in activation space.",
+              "alternatives": [
+                {
+                  "all_of": [
+                    "hash",
+                    "not a (random )?direction|never .{0,40}activation space|scalar"
+                  ]
+                },
+                {
+                  "all_of": [
+                    "hash",
+                    "scalar|not a (?:random )?direction|no.{0,20}vector"
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "structural-zero-by-construction",
+              "description": "Situation-only, consideration-only and additive separate encoding are zero analytically, because the interaction annihilates additive scores.",
+              "all_of": [
+                "by construction|analytic",
+                "additive"
+              ]
+            },
+            {
+              "id": "structural-not-model-evidence",
+              "description": "The structural checks are estimator validity checks, not evidence about the model.",
+              "any_of": [
+                "not evidence about the model",
+                "validity check"
+              ]
+            },
+            {
+              "id": "gap-semantic-directions",
+              "description": "Specificity against other semantic directions is not testable from M1.",
+              "any_of": [
+                "truth, sentiment",
+                "other semantic direction"
+              ]
+            },
+            {
+              "id": "gap-activation-directions",
+              "description": "Specificity against arbitrary activation-space directions is not supplied by M1 either.",
+              "any_of": [
+                "arbitrary .{0,30}direction",
+                "random-hidden-direction",
+                "activation-space direction"
+              ]
+            },
+            {
+              "id": "what-figure-does-establish",
+              "description": "States positively what the figure does establish: not wording, not answer format, not board algebra.",
+              "any_of": [
+                "not wording",
+                "not the wording"
+              ]
+            },
+            {
+              "id": "gaps-stated",
+              "description": "the limits of the figure must be stated explicitly",
+              "any_of": [
+                "does not|not supplied|not testable"
+              ]
+            }
+          ],
+          "unsupported": [
+            {
+              "id": "no-random-direction-claim",
+              "pattern": "(?:baseline (?:is|samples)|[Ii]t is|we sample) (?:an? )?(?:random (?:activation )?direction|random vector)",
+              "reason": "the deterministic random baseline is a per-item scalar, never a sampled vector"
+            },
+            {
+              "id": "no-full-specificity-claim",
+              "pattern": "(rules out|excludes) all (other )?(confounds|explanations)|fully specific",
+              "reason": "two specificity gaps remain open"
+            }
+          ]
+        },
+        {
+          "id": "figure6",
+          "heading_pattern": "^Figure 6\\b",
+          "numbers": [
+            {
+              "path": "consequences.counterfactual.worlds",
+              "decimals": null
+            },
+            {
+              "path": "consequences.counterfactual.target_fraction",
+              "decimals": 2
+            },
+            {
+              "path": "consequences.counterfactual.arms.0.margin_hit",
+              "decimals": 0,
+              "percent": true
+            },
+            {
+              "path": "consequences.counterfactual.interval_level",
+              "decimals": 0,
+              "percent": true
+            }
+          ],
+          "facts": [
+            {
+              "id": "counterfactual-matched-scope",
+              "description": "Same final Gemma worlds, not a cross-model comparison.",
+              "all_of": [
+                "same 96 final worlds",
+                "Llama failed natural.reference qualification",
+                "not included"
+              ],
+              "source_evidence": [
+                {
+                  "path": "consequences.counterfactual.arms.*.worlds",
+                  "equals": 96
+                }
+              ]
+            },
+            {
+              "id": "counterfactual-margin-not-qualification",
+              "description": "Measured target attainment does not pass the frozen strong-target requirements.",
+              "all_of": [
+                "not perfect hard.answer accuracy or a full strong.target pass",
+                "absolute.strength requirement",
+                "direction fitted.{0,60}failed qualification",
+                "original frozen direction"
+              ],
+              "source_evidence": [
+                {
+                  "path": "consequences.counterfactual.arms.0.strong_target_pass",
+                  "equals": false
+                },
+                {
+                  "path": "consequences.counterfactual.arms.1.strong_target_pass",
+                  "equals": false
+                }
+              ]
+            },
+            {
+              "id": "counterfactual-recovery-units",
+              "description": "Recovery is not an answer-accuracy proportion; uncertainty is world-grouped.",
+              "all_of": [
+                "not a proportion of correct answers",
+                "Negative recovery moves farther",
+                "world.bootstrap intervals",
+                "not margin.tuned"
+              ],
+              "source_evidence": []
+            }
+          ],
+          "unsupported": []
+        },
+        {
+          "id": "figure7",
+          "heading_pattern": "^Figure 7\\b",
+          "numbers": [
+            {
+              "path": "consequences.source_history.origins",
+              "decimals": null
+            },
+            {
+              "path": "consequences.source_history.groups.0.roots",
+              "decimals": null
+            },
+            {
+              "path": "consequences.source_history.groups.4.roots",
+              "decimals": null
+            },
+            {
+              "path": "consequences.source_history.atomic_questions",
+              "decimals": null
+            },
+            {
+              "path": "consequences.source_history.joint_questions",
+              "decimals": null
+            }
+          ],
+          "facts": [
+            {
+              "id": "history-population",
+              "description": "Keep all roots, both editors and original seeds under the original reader.",
+              "all_of": [
+                "every terminal root under the original reader",
+                "both editors and both original training seeds shown separately"
+              ],
+              "source_evidence": [
+                {
+                  "path": "consequences.source_history.groups.*.reader",
+                  "equals": "R0"
+                }
+              ]
+            },
+            {
+              "id": "history-denominator",
+              "description": "Conditional atomic correctness and across-origin joint disagreement are distinct from unconditional error.",
+              "all_of": [
+                "all 16 direct/opposes questions are correct across every starting state",
+                "18 joint both/either/same questions",
+                "consistently wrong",
+                "counts use atomic.perfect roots as their denominator; the bars use all roots"
+              ],
+              "source_evidence": []
+            },
+            {
+              "id": "history-descriptive-only",
+              "description": "New descriptive visualization is not a primary or pooled inference.",
+              "all_of": [
+                "descriptive counts",
+                "not a new primary test",
+                "not a claim about an identified internal mechanism",
+                "design example, not a sequence of model answers"
+              ],
+              "source_evidence": []
+            }
+          ],
+          "unsupported": []
+        },
+        {
+          "id": "supplementary_s1",
+          "heading_pattern": "^Supplementary Figure S1\\b",
+          "numbers": [
+            {
+              "path": "editing_figures.coverage.0.level",
+              "decimals": 2,
+              "percent": true
+            },
+            {
+              "path": "editing_figures.coverage.0.scenes",
+              "decimals": null
+            },
+            {
+              "path": "editing_figures.coverage.2.scenes",
+              "decimals": null
+            }
+          ],
+          "facts": [
+            {
+              "id": "within-study-matched-coverage",
+              "description": "Broader versus narrower single-edit coverage is a paired within-study comparison, not a cross-study improvement trend.",
+              "all_of": [
+                "matched comparison within",
+                "not a trend across studies",
+                "trained on individual edits",
+                "broader minus narrower"
+              ],
+              "source_evidence": []
+            },
+            {
+              "id": "whole-scene-seed-denominator",
+              "description": "Coverage uncertainty uses paired whole scenes with seeds averaged, not additional independent seed or reversed-order observations.",
+              "all_of": [
+                "paired whole.scene bootstrap",
+                "both training seeds within each scene",
+                "not extra independent observations",
+                "Reversed orders are not counted as additional scenes"
+              ],
+              "source_evidence": [
+                {
+                  "path": "editing_figures.coverage.*.level",
+                  "equals": 0.9875
+                }
+              ]
+            },
+            {
+              "id": "coverage-relative-not-absolute",
+              "description": "Three paired benefits do not establish the absolute conjunction; Gemma free overwrite crosses zero.",
+              "all_of": [
+                "Three intervals exclude zero",
+                "Gemma.{0,20}free.overwrite interval crosses zero",
+                "does not.{0,35}pass.{0,35}absolute joint.control"
+              ],
+              "source_evidence": [
+                {
+                  "path": "editing_figures.coverage.0.lower",
+                  "gt": 0
+                },
+                {
+                  "path": "editing_figures.coverage.2.lower",
+                  "gt": 0
+                },
+                {
+                  "path": "editing_figures.coverage.3.lower",
+                  "gt": 0
+                },
+                {
+                  "path": "editing_figures.coverage.1.lower",
+                  "lt": 0
+                },
+                {
+                  "path": "editing_figures.coverage.1.upper",
+                  "gt": 0
+                }
+              ]
+            }
+          ],
+          "unsupported": []
+        },
+        {
+          "id": "supplementary_s2",
+          "heading_pattern": "^Supplementary Figure S2\\b",
+          "numbers": [
+            {
+              "path": "editing_figures.readers.0.level",
+              "decimals": 3,
+              "percent": true
+            },
+            {
+              "path": "editing_figures.readers.0.scenes",
+              "decimals": null
+            },
+            {
+              "path": "editing_figures.readers.4.scenes",
+              "decimals": null
+            }
+          ],
+          "facts": [
+            {
+              "id": "same-states-instruction-interface",
+              "description": "The explicit reader changes instructions while holding edited states fixed, not the original wording.",
+              "all_of": [
+                "same saved edited states",
+                "extra instruction changes",
+                "not evidence.{0,45}original wording"
+              ],
+              "source_evidence": []
+            },
+            {
+              "id": "reader-endpoint-denominator",
+              "description": "The reader endpoint uses same-side accuracy after three edits, whole-scene pairing, original seeds and fixed early ordering.",
+              "all_of": [
+                "same.side question accuracy after a three.edit sequence",
+                "within each scene.{0,40}two original training seeds",
+                "fixed early ordering",
+                "paired whole.scene.{0,15}bootstrap",
+                "neither model nor study populations are pooled"
+              ],
+              "source_evidence": [
+                {
+                  "path": "editing_figures.readers.*.level",
+                  "equals": 0.99375
+                }
+              ]
+            },
+            {
+              "id": "reader-no-established-improvement",
+              "description": "No corrected interval establishes improvement; crossing zero is not equivalence, and this contrast does not establish source independence.",
+              "all_of": [
+                "None of these corrected intervals establishes an improvement",
+                "not evidence of equivalence",
+                "distinct from.{0,20}source.independence test",
+                "does not show.{0,100}ceased.{0,30}affect"
+              ],
+              "source_evidence": [
+                {
+                  "path": "editing_figures.readers.*.lower",
+                  "lt": 0
+                }
+              ]
+            }
+          ],
+          "unsupported": []
+        }
+      ]
+    }
+  ],
+  "source_checks": [
+    {
+      "id": "development-not-strict-test-0",
+      "description": "The positive relation evidence is development evaluation, not the untouched strict test.",
+      "path": "figures.models.*.pilot_eval_used_for_selection",
+      "equals": false
+    },
+    {
+      "id": "incremental-instability-negative-0",
+      "description": "Distance did not reliably improve prediction beyond simpler text/confidence baselines.",
+      "path": "headlines.fragility.llama.lower",
+      "lt": 0
+    },
+    {
+      "id": "incremental-instability-negative-1",
+      "description": "Distance did not reliably improve prediction beyond simpler text/confidence baselines.",
+      "path": "headlines.fragility.llama.upper",
+      "gt": 0
+    },
+    {
+      "id": "incremental-instability-negative-2",
+      "description": "Distance did not reliably improve prediction beyond simpler text/confidence baselines.",
+      "path": "headlines.fragility.gemma.lower",
+      "lt": 0
+    },
+    {
+      "id": "incremental-instability-negative-3",
+      "description": "Distance did not reliably improve prediction beyond simpler text/confidence baselines.",
+      "path": "headlines.fragility.gemma.upper",
+      "gt": 0
+    },
+    {
+      "id": "fingerprint-validation-boundary-0",
+      "description": "The intended instrument did not establish a stable general cross-model causal role.",
+      "path": "fingerprint.terminal_disposition",
+      "equals": "CAUSAL_FINGERPRINT_MEASUREMENT_V3_INVALID"
+    },
+    {
+      "id": "same-span-not-new-mechanism-0",
+      "description": "The comparison resamples the same fixed span; recovery is not accuracy or circuit identification.",
+      "path": [
+        "compression",
+        "records",
+        0,
+        "selected_values",
+        "/decision_label"
+      ],
+      "equals": "NARROWING"
+    },
+    {
+      "id": "word-code-and-formal-test-0",
+      "description": "WORD remains strong, CODE narrows, and the formal interface-dependent explanation is not established.",
+      "path": [
+        "compression",
+        "records",
+        0,
+        "selected_values",
+        "/decisions",
+        "matched_interface_controllers_strong",
+        "WORD"
+      ],
+      "equals": true
+    },
+    {
+      "id": "word-code-and-formal-test-1",
+      "description": "WORD remains strong, CODE narrows, and the formal interface-dependent explanation is not established.",
+      "path": [
+        "compression",
+        "records",
+        0,
+        "selected_values",
+        "/decisions",
+        "matched_interface_controllers_strong",
+        "CODE"
+      ],
+      "equals": false
+    },
+    {
+      "id": "word-code-and-formal-test-2",
+      "description": "WORD remains strong, CODE narrows, and the formal interface-dependent explanation is not established.",
+      "path": [
+        "compression",
+        "records",
+        0,
+        "selected_values",
+        "/decisions",
+        "interface_conditioned"
+      ],
+      "equals": false
+    },
+    {
+      "id": "paired-binary-not-full-candidate-0",
+      "description": "Gemma binary correspondence advantage does not imply the full stronger candidate requirements passed.",
+      "path": [
+        "paired",
+        "records",
+        2,
+        "selected_values",
+        "",
+        "tasks",
+        0,
+        "task"
+      ],
+      "equals": "two"
+    },
+    {
+      "id": "paired-binary-not-full-candidate-1",
+      "description": "Gemma binary correspondence advantage does not imply the full stronger candidate requirements passed.",
+      "path": [
+        "paired",
+        "records",
+        2,
+        "selected_values",
+        "",
+        "tasks",
+        0,
+        "all_conditions"
+      ],
+      "equals": true
+    },
+    {
+      "id": "paired-binary-not-full-candidate-2",
+      "description": "Gemma binary correspondence advantage does not imply the full stronger candidate requirements passed.",
+      "path": [
+        "paired",
+        "records",
+        2,
+        "selected_values",
+        "",
+        "strong_candidate"
+      ],
+      "equals": false
+    },
+    {
+      "id": "matched-options-exposed-population-0",
+      "description": "The added-option comparison controls correct choice and rendering but uses exposed historical families.",
+      "path": [
+        "third_option",
+        "records",
+        0,
+        "selected_values",
+        "/evidence_topology/training_evaluation_exposure"
+      ],
+      "contains": "already exposed historical worlds"
+    },
+    {
+      "id": "repair-relative-not-practical-success-0",
+      "description": "Joint relearning helps relative to tested alternatives but misses practical reusable-repair requirements; native prompting stays stronger.",
+      "path": [
+        "repair",
+        "records",
+        0,
+        "selected_values",
+        "/exact_empirical_result/practical_disposition"
+      ],
+      "contains": "FAIL: no method reaches"
+    },
+    {
+      "id": "repair-relative-not-practical-success-1",
+      "description": "Joint relearning helps relative to tested alternatives but misses practical reusable-repair requirements; native prompting stays stronger.",
+      "path": [
+        "repair",
+        "records",
+        0,
+        "selected_values",
+        "/exact_empirical_result/practical_disposition"
+      ],
+      "contains": "not a successful reusable repair"
+    },
+    {
+      "id": "selector-relative-not-absolute-0",
+      "description": "The selector helps familiar cases but neither absolute familiar nor stress requirements were established.",
+      "path": [
+        "selector",
+        "records",
+        0,
+        "selected_values",
+        "/M1",
+        "status"
+      ],
+      "equals": "NOT_ESTABLISHED"
+    },
+    {
+      "id": "selector-relative-not-absolute-1",
+      "description": "The selector helps familiar cases but neither absolute familiar nor stress requirements were established.",
+      "path": [
+        "selector",
+        "records",
+        0,
+        "selected_values",
+        "/M2",
+        "status"
+      ],
+      "equals": "NOT_ESTABLISHED"
+    },
+    {
+      "id": "original-and-amended-qualification-0",
+      "description": "The amended starting-ability check does not retroactively pass the original protocol.",
+      "path": "v2_qualification.selected_procedure",
+      "equals": null
+    },
+    {
+      "id": "original-and-amended-qualification-1",
+      "description": "The amended starting-ability check does not retroactively pass the original protocol.",
+      "path": "v2_freeze.procedure",
+      "equals": "C1"
+    },
+    {
+      "id": "free-and-incomplete-generalization-0",
+      "description": "Free overwrite is a positive comparator; stronger combined/cross-model requirements remain unmet.",
+      "path": "v3.actors.gemma.final.F1.FREE_OVERWRITE.status",
+      "equals": "F1_MET"
+    },
+    {
+      "id": "no-efficacy-predecessor-0",
+      "description": "The prepared predecessor has no fresh efficacy and the executed successor provides the measurements.",
+      "path": "v6.historical_V5",
+      "equals": "PREPARED_NO_EFFICACY; zero historical fresh outcomes"
+    },
+    {
+      "id": "assisted-reader-not-unchanged-0",
+      "description": "The instruction-assisted reader is a changed interface.",
+      "path": "v6.R2_is_instruction_assisted",
+      "equals": true
+    },
+    {
+      "id": "source-independence-fails-and-needs-correctness-0",
+      "description": "No full source-independence setting passes; consistently wrong answers do not count.",
+      "path": "v6_source.absolute.*.prospective_operating_point",
+      "equals": false
+    },
+    {
+      "id": "source-independence-fails-and-needs-correctness-1",
+      "description": "No full source-independence setting passes; consistently wrong answers do not count.",
+      "path": "v6.functional_progress.*.seeds",
+      "contains": "0"
+    },
+    {
+      "id": "source-independence-fails-and-needs-correctness-2",
+      "description": "No full source-independence setting passes; consistently wrong answers do not count.",
+      "path": "v6.functional_progress.*.seeds",
+      "contains": "1"
+    }
+  ]
+}

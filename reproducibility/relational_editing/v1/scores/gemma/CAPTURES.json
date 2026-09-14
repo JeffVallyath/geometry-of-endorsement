@@ -1,0 +1,37 @@
+{
+  "at": "2026-09-10T08:26:25.137822+00:00",
+  "sites": [
+    15,
+    27
+  ],
+  "late_site": 27,
+  "caps": {
+    "15|relation": 103.18592071533203,
+    "27|relation": 160.88262939453125
+  },
+  "cap_rule": "2 x 95th percentile of FIT ||z_dst - z_src|| per site/task (pooled clause summaries; source and destination clauses may differ in token count)",
+  "delta_stats": {
+    "15|relation": {
+      "p95": 51.592960357666016,
+      "median": 43.59370422363281,
+      "mean": 44.36056900024414,
+      "n": 64,
+      "z_src_norm": 159.23391723632812
+    },
+    "27|relation": {
+      "p95": 80.44131469726562,
+      "median": 67.67973327636719,
+      "mean": 66.65621948242188,
+      "n": 64,
+      "z_src_norm": 313.7416076660156
+    }
+  },
+  "mu_rule": "frozen FIT source mean over all prefix token states excluding position 0 (prefix families); frozen FIT source mean of final-query-token states (LATE)",
+  "late_mean_norms": {
+    "relation_0": 34.89836502075195,
+    "relation_1": 35.331790924072266
+  },
+  "late_queries": 768,
+  "scenes": 64,
+  "captures_sha256": "2d6a1dd4ed2ee5ce510234287fea5e128a67c9566abf6e7500abf8c9fc19530d"
+}

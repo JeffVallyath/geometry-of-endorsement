@@ -1,0 +1,60 @@
+{
+  "schema_version": "1.1",
+  "study_id": "RELATION_DIRECTION_IDENTITY_V1_1",
+  "extends_study_id": "RELATION_DIRECTION_IDENTITY_V1",
+  "setup_only": true,
+  "seed": 20260822,
+  "models": {
+    "llama": {"id": "meta-llama/Meta-Llama-3.1-8B-Instruct", "revision": "0e9e39f249a16976918f6564b8830bc894c89659", "layer": 19, "hidden_size": 4096},
+    "gemma": {"id": "google/gemma-2-9b-it", "revision": "11c9b309abf73637e4b6f9a3fa1e92e615547819", "layer": 27, "hidden_size": 3584}
+  },
+  "activation_position": "final_prompt_position_immediately_before_candidate_answer_sequence",
+  "batch_size": 1,
+  "model_dtype": "bfloat16",
+  "margin_dtype": "float32",
+  "fit_policy": "difference_in_means_on_train_only; unit_l2; no_search_no_tuning_no_layer_selection",
+  "factual_control": {
+    "protocol": "TRUTH_CONTROL_V2_NEUTRAL_MAPPING",
+    "source_commit": "5d1c630c44f7e50bda7ad86d601ccadf9abc5ddb",
+    "sources": [
+      {"name": "cities", "url": "https://raw.githubusercontent.com/saprmarks/geometry-of-truth/5d1c630c44f7e50bda7ad86d601ccadf9abc5ddb/datasets/cities.csv", "sha256": "f2560a0c1758c69935b50125111b574b71896bb75930dd87b1d8c973c1fa086e"},
+      {"name": "neg_cities", "url": "https://raw.githubusercontent.com/saprmarks/geometry-of-truth/5d1c630c44f7e50bda7ad86d601ccadf9abc5ddb/datasets/neg_cities.csv", "sha256": "66c5c84de98ca15570138c205ab0e3907b57750083fac72a4eacafc3d9ebcea7"}
+    ],
+    "authoritative_split_manifest_sha256": "frozen_from_verified_truth_v2_cache_during_setup",
+    "prompt_contract": "byte-identical prompt block from configs/truth_control_v2.yaml",
+    "sample_limit": null,
+    "answer_mapping_policy": "sha256('answer-map:'+item_id), low bit; frozen CSV standard/reversed mapping field must match before inference"
+  },
+  "sentiment_control": {
+    "dataset": "UCI Sentiment Labelled Sentences",
+    "uci_id": 331,
+    "doi": "10.24432/C57604",
+    "version": "UCI archive snapshot downloaded and hash-frozen 2026-08-22",
+    "url": "https://archive.ics.uci.edu/static/public/331/sentiment+labelled+sentences.zip",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "source_domains": ["amazon_cells_labelled", "imdb_labelled", "yelp_labelled"],
+    "sample_limit": 3000,
+    "answer_mapping_policy": "sha256('answer-map:'+row_id), low bit; same orientation across primary and transfer schemes",
+    "split_fractions": {"train": 0.6, "dev": 0.2, "test": 0.2},
+    "split_unit": "source_domain_plus_source_line",
+    "schemes": {
+      "primary": {"symbols": ["A", "B"], "system": "You classify emotional sentiment. Follow the requested neutral answer mapping exactly.", "user": "Text: {text}\nQuestion: Is the overall sentiment positive or negative?\n{mapping_instruction}"},
+      "transfer": {"symbols": ["1", "2"], "system": "You classify emotional sentiment. Follow the requested neutral answer mapping exactly.", "user": "Consider this review text: {text}\nIs its overall sentiment positive or negative?\n{mapping_instruction}"}
+    }
+  },
+  "control_intervention": {
+    "datasets": ["ValuePrism", "AMPERE++"],
+    "directions": ["factual_true_false", "sentiment_valence"],
+    "doses": [-1.0, 0.0, 1.0],
+    "reuse_v1_frozen_rows_mappings_and_scale_definition": true
+  },
+  "decision_addendum": {
+    "sentiment_resolved_only_if": "both actors retain the frozen relation endpoints after train-only sentiment-span residualization and relation steering differs from sentiment steering under grouped uncertainty",
+    "factual_specificity_only_if": "both actors show relation steering differs from factual-control steering under grouped uncertainty",
+    "general_claim_requires_sentiment_resolution": true,
+    "relation_specific_steering_claim_requires_both_controls": true
+  },
+  "execution_modes": ["RUN_LLAMA_CONTROLS", "RUN_LLAMA_CONTROL_INTERVENTION", "RUN_GEMMA_CONTROLS", "RUN_GEMMA_CONTROL_INTERVENTION", "ANALYZE_CPU_V1_1"],
+  "setup_allowed_modes": ["AUDIT_ONLY", "SYNTHETIC_SMOKE_TEST"]
+}

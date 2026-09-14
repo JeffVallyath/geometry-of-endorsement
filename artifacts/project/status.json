@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "as_of": "2026-08-05",
-  "claim_boundary": "Development evidence only. Human-audited confirmation and rephrasing-flip prediction remain open.",
+  "as_of": "2026-09-12",
+  "claim_boundary": "Development, retrospective and frozen-plan studies are distinguished in docs/RESULTS_AND_CLAIMS.md. Rephrasing prediction has been measured; broader editing reliability remains unresolved. Individual review judgments and a separate confirmatory outcome are not distributed.",
   "stages": [
     {
       "stage": "ValuePrism leakage control",
       "question": "Can the evaluation resist repeated-consideration shortcuts?",
       "status": "Built with a disclosed sensitivity boundary",
-      "evidence": "The strict U0 split has zero exact, L2, L3, and situation overlap but two L1-normalized collisions. U1 removes both collisions and the automatic-high risks, retaining 7081 rows and 1865 within-situation comparisons. Human semantic review remains pending."
+      "evidence": "The retained split/sensitivity measurements describe dataset construction. Their historical human-adjudication count does not describe the current status of later human review."
     },
     {
       "stage": "Factual positive control",
@@ -24,14 +24,20 @@
     {
       "stage": "Human-audited confirmation",
       "question": "Does the relation result survive checkerboards accepted under blinded semantic review?",
-      "status": "Pending",
-      "evidence": "Reviewer calibration and final acceptance decisions are not complete, and the confirmatory model result remains unopened."
+      "status": "Not certified by this public package",
+      "evidence": "The public review instruments are not completed judgments. This package does not independently verify completion of human review or a separate confirmatory outcome."
     },
     {
       "stage": "Rephrasing-flip prediction",
       "question": "Does the original hidden state predict later moral-answer flips beyond text and native answer margin?",
-      "status": "Not yet run",
-      "evidence": "The current AUROC comparison concerns relation decoding on the development slice, not prediction of rephrasing instability."
+      "status": "Measured; no reliable scalar increment",
+      "evidence": "Saved analyses test prediction beyond text and native answer confidence. Relation-decoding AUROC is not a flip-prediction result; see docs/RESULTS_AND_CLAIMS.md."
+    },
+    {
+      "stage": "Question-independent relation editing",
+      "question": "Do edits behave consistently across questions, repeated updates and different starting relations?",
+      "status": "Completed bounded tests; stronger conjunctions fail",
+      "evidence": "See docs/RESULTS_AND_CLAIMS.md and reproducibility/relational_editing. Prepared fixed-readout predecessor has no efficacy outcomes; source-independence successor was measured."
     }
   ],
   "moral_relation_development": {
@@ -44,16 +50,24 @@
     "evaluation_rows": 500,
     "evaluation_boards": 125,
     "primary_endpoint": "standardized reciprocal interaction contrast I_b",
+    "permutation_context": {
+      "status": "historical_200_draw_summary",
+      "draws": 200,
+      "contrast": "Original reported improvement over the frozen SBERT interaction comparator",
+      "null": "Original reported group-preserving permutation test; retain its values separately from the later probe/scaler-refit null for held-out I_b",
+      "later_refit_null": "artifacts/figures/permutation_null_llama_B10000.json",
+      "interpretation": "The later refit-null analysis is shown in Figure 3. These are different null/contrast specifications, not interchangeable estimates; the historical p-values below are preserved unchanged."
+    },
     "difference_in_means": {
       "I_b": 1.6470105763501846,
-      "permutation_p": 0.004975124378109453,
+      "original_200_draw_permutation_p": 0.004975124378109453,
       "delta_over_sbert_ci_low": 1.088548006645374,
       "delta_over_sbert_ci_high": 1.637033629068546,
       "relation_auroc": 0.731968
     },
     "logistic": {
       "I_b": 2.083584884709801,
-      "permutation_p": 0.004975124378109453,
+      "original_200_draw_permutation_p": 0.004975124378109453,
       "delta_over_sbert_ci_low": 1.497045579136823,
       "delta_over_sbert_ci_high": 2.1016846732963312,
       "relation_auroc": 0.779616
@@ -61,8 +75,8 @@
     "controls": {
       "native_answer_margin_auroc": 0.721056,
       "sbert_interaction_I_b": 0.2842197584932241,
-      "situation_only_I_b": 0.0,
-      "consideration_only_I_b": 0.0,
+      "situation_only_I_b": 0,
+      "consideration_only_I_b": 0,
       "separate_encoding_additive_I_b": 7.99360577730113e-18
     },
     "terminal_disposition": "M1_VERTICAL_SLICE_SIGNAL_SUPPORTED",

@@ -1,0 +1,20 @@
+{
+  "at": "2026-09-11T11:53:22.494538+00:00",
+  "actor": "qwen",
+  "site": 13,
+  "cap_ref": 28.22532844543457,
+  "cap_rule": "2 x p95 of native FIT clause-summary displacement ||z_dst - z_src||",
+  "cap_new_fit_rule": 28.22532844543457,
+  "delta_stats": {
+    "p95": 14.112664222717285,
+    "median": 11.47681999206543,
+    "mean": 11.700901985168457,
+    "n": 96
+  },
+  "mu_rule": "frozen FIT source mean over all prefix token states except position 0",
+  "mu_norm": 42.76191711425781,
+  "mu_fit_norm": 42.76191711425781,
+  "groups": 120,
+  "captures_sha256": "e6e8f6cb8bc51390e28cece1ca4fe69f9b2ebb18527d083e40866a568652ee79",
+  "inputs": "FIT source prefixes and natural FIT counterfactual prefixes only; no question or label"
+}

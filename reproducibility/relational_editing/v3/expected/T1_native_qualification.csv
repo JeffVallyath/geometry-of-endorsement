@@ -1,0 +1,7 @@
+actor,procedure,world,n,parse_rate,direct_negation_accuracy,equality_accuracy,score_accuracy,truncated,generation_score_agreement,mean_new_tokens,by_family,primitive_qualified,equality_ge_85_reported_only
+gemma,C1,source,96,1.0,1.0,0.75,0.9166666666666666,0,1.0,3.0,"{""direct"": 1.0, ""opposes"": 1.0, ""same"": 0.75}",True,False
+gemma,C1,counterfactual,96,1.0,1.0,0.875,0.9583333333333334,0,1.0,3.0208333333333335,"{""direct"": 1.0, ""opposes"": 1.0, ""same"": 0.875}",True,True
+gemma,C1,pooled,192,1.0,1.0,0.8125,0.9375,0,1.0,3.0104166666666665,"{""direct"": 1.0, ""opposes"": 1.0, ""same"": 0.8125}",True,False
+qwen,T4,source,96,1.0,1.0,0.625,0.875,0,1.0,2.0,"{""direct"": 1.0, ""opposes"": 1.0, ""same"": 0.625}",True,False
+qwen,T4,counterfactual,96,1.0,0.921875,0.53125,0.7916666666666666,0,1.0,2.0,"{""direct"": 0.9777777777777777, ""opposes"": 0.7894736842105263, ""same"": 0.53125}",True,False
+qwen,T4,pooled,192,1.0,0.9609375,0.578125,0.8333333333333334,0,1.0,2.0,"{""direct"": 0.9888888888888889, ""opposes"": 0.8947368421052632, ""same"": 0.578125}",True,False

@@ -1,0 +1,28 @@
+{
+  "at": "2026-09-10T07:53:49.673540+00:00",
+  "model": "gemma",
+  "prefix_tokens": 405,
+  "suffix_tokens": [
+    33,
+    33,
+    37,
+    33
+  ],
+  "cache_bytes": 139345920,
+  "seconds": {
+    "compile": 0.17354686333328573,
+    "compile_capture": 0.1738811603333185,
+    "compile_distributed": 0.17550466266675357,
+    "ask": 0.06978436333338323,
+    "ask_late": 0.07080958233336787,
+    "ask_generate32": 0.23548134799966647,
+    "clone": 0.007031579666697023,
+    "hash": 0.108491746333281,
+    "train_step4_LATE@27": 0.2709363910000775,
+    "train_step4_PREFIX_LAST@15": 0.23437625499991555,
+    "train_step4_PREFIX_LAST@27": 0.1874225369999749,
+    "train_step4_PREFIX_DISTRIBUTED@15": 0.23335891800002173,
+    "train_step4_PREFIX_DISTRIBUTED@27": 0.18708146499989198
+  },
+  "note": "disposable timing panel; not a measurement"
+}

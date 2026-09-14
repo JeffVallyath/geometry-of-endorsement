@@ -1,0 +1,33 @@
+{
+  "at": "2026-09-11T21:06:09.527554+00:00",
+  "artifacts": 256,
+  "scenes": 128,
+  "conditions": [
+    "SOURCE",
+    "COUNTERFACTUAL",
+    "TEXT_CORRECTION",
+    "INV_SPARSE_CONTINUE_s0",
+    "INV_SPARSE_CONTINUE_s1",
+    "INV_COMPLETE_SINGLE_s0",
+    "INV_COMPLETE_SINGLE_s1",
+    "FREE_SPARSE_CONTINUE_s0",
+    "FREE_SPARSE_CONTINUE_s1",
+    "FREE_COMPLETE_SINGLE_s0",
+    "FREE_COMPLETE_SINGLE_s1",
+    "FROZEN_V3_INVARIANT_SET_s0",
+    "FROZEN_V3_INVARIANT_SET_s1",
+    "FROZEN_V3_FREE_OVERWRITE_s0",
+    "FROZEN_V3_FREE_OVERWRITE_s1"
+  ],
+  "canonical_on_single": [
+    "CANONICAL_CURRENT_s0",
+    "CANONICAL_CURRENT_s1"
+  ],
+  "anchor_panel_only": [
+    "FROZEN_V2_CLAUSE_s0"
+  ],
+  "seal_sha256": "829786bb4f7803737ed730f10069782cafe33c07cd089d9a1a1128e13fe04bb9",
+  "seconds": 736.1199128479993,
+  "compiler_inputs": "prefix token ids, explicit clause spans and requested values of the command program, method weights; no question, label mapping, gold, affected flag or target world existed before this file",
+  "questions_generated_before_seal": false
+}

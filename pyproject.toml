@@ -5,14 +5,16 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "geometry-of-endorsement"
 version = "1.1.2"
-description = "Reproducible factual-truth control and ValuePrism leakage methodology"
-requires-python = ">=3.10"
+description = "Reproducibility and analysis code for Geometry of Endorsement: representation, intervention fidelity, and question-independent relational state editing in language models."
+requires-python = ">=3.11"
 dependencies = [
   "matplotlib>=3.8,<4",
   "numpy>=1.26,<3",
   "pandas>=2.2,<3",
   "scikit-learn>=1.5,<2",
   "scipy>=1.13,<2",
+  "pyarrow>=15,<26",
+  "PyYAML>=6,<7",
 ]
 
 [project.optional-dependencies]
@@ -41,3 +43,8 @@ m1-full = [
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.pytest.ini_options]
+# Historical scientific source snapshots have their own original dependencies.
+# The supported public CPU acceptance suite lives here.
+testpaths = ["tests"]

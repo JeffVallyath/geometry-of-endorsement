@@ -1,0 +1,71 @@
+{
+  "at": "2026-09-10T19:26:39.100098+00:00",
+  "status": "TECHNICAL_PASS",
+  "seeds": {
+    "0": {
+      "rows": 192,
+      "same_choice": 192,
+      "max_abs_logp": 0.0,
+      "source_same_choice": 192,
+      "source_max_abs_logp": 0.0,
+      "hash_equal": 8,
+      "source_hash_equal": 8,
+      "scenes": 8,
+      "mismatches": [],
+      "pass_": true,
+      "factors": {
+        "relation_0": "2de1db39f60de463c545e7e92178a523c047d5a6343c70a28acee5a26bf0f022",
+        "relation_1": "4cde0c19461f13a25503b8ed5c94e15ab0eca9e80b8eb8fcf463a4a07c5d1426"
+      },
+      "cap": 103.18592071533203,
+      "site": 15
+    },
+    "1": {
+      "rows": 192,
+      "same_choice": 192,
+      "max_abs_logp": 0.0,
+      "source_same_choice": 192,
+      "source_max_abs_logp": 0.0,
+      "hash_equal": 8,
+      "source_hash_equal": 8,
+      "scenes": 8,
+      "mismatches": [],
+      "pass_": true,
+      "factors": {
+        "relation_0": "de4a018a48d256cf8f8db5fef4de4f857292f5e37aeb932be578794c90b82f89",
+        "relation_1": "c38c800c656e02f288868da21d0ac4ff82063824acd15a4c797e2c23a7ae7806"
+      },
+      "cap": 103.18592071533203,
+      "site": 15
+    }
+  },
+  "tolerance": {
+    "same_choice_required": true,
+    "max_abs_logp": 0.05,
+    "note": "inherited V1 verified tolerance: same choice on every row; |dlogp| differences are BF16 shape/kernel effects recorded not zero-tolerance; artifact hash equality additionally proves bit-identical compiled contexts"
+  },
+  "seconds": 86.73082962499939,
+  "anchors": {
+    "0": [
+      "FINAL-relation-020",
+      "FINAL-relation-030",
+      "FINAL-relation-045",
+      "FINAL-relation-046",
+      "FINAL-relation-054",
+      "FINAL-relation-028",
+      "FINAL-relation-019",
+      "FINAL-relation-015"
+    ],
+    "1": [
+      "FINAL-relation-025",
+      "FINAL-relation-063",
+      "FINAL-relation-062",
+      "FINAL-relation-050",
+      "FINAL-relation-013",
+      "FINAL-relation-016",
+      "FINAL-relation-000",
+      "FINAL-relation-035"
+    ]
+  },
+  "inputs": "old V1 prompts (old FIT C1 demonstrations, old FINAL scenes, old questions/labels), V1 PREFIX_DISTRIBUTED@15 epoch-4 factors and cap 103.18592071533203 before strength 1, BF16 backbone, FP32 softcapped readout; no successor data or query feature entered this replay"
+}

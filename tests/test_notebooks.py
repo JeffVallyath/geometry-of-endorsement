@@ -78,7 +78,8 @@ def test_current_frontier_is_explicit() -> None:
     assert "U3 is currently identical to U2" in leakage
     assert "layer 19" in status.lower()
     assert "0.780" in status
-    assert "rephrasing-flip experiment has not run" in status
+    assert "Rephrasing analyses have since been measured" in status
+    assert "rephrasing-flip experiment has not run" not in status
     assert "Rewarding demonstrated merit" in leakage
     assert "confirmatory row membership across all four board cells" in leakage
     assert "candidate ordering" not in leakage

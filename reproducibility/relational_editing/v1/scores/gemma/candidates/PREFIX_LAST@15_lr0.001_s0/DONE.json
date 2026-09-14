@@ -1,0 +1,758 @@
+{
+  "at": "2026-09-10T10:12:02.841956+00:00",
+  "candidate": "PREFIX_LAST@15_lr0.001_s0",
+  "family": "PREFIX_LAST",
+  "site": 15,
+  "lr": 0.001,
+  "seed": 0,
+  "epochs_run": 4,
+  "curve": [
+    {
+      "candidate": "PREFIX_LAST@15_lr0.001_s0",
+      "family": "PREFIX_LAST",
+      "site": 15,
+      "lr": 0.001,
+      "seed": 0,
+      "epoch": 1,
+      "strength": 0.5,
+      "checkpoint": "<private operational reference omitted>",
+      "score": 0.04166666666666666,
+      "harm": 0.006944444444444444,
+      "changed": 0.048611111111111105,
+      "norm": 51.59903812408447,
+      "per_task": {
+        "relation": {
+          "changed": 0.048611111111111105,
+          "invariant_harm": 0.006944444444444444,
+          "conditional_harm": 0.006993006993006993,
+          "all_correct": 0.0,
+          "accuracy": 0.517361111111111,
+          "n_scenes": 24,
+          "n_queries": 288,
+          "false_nonaddressed_change": 0.010416666666666666,
+          "changed_by_direction": {
+            "0": 0.02564102564102564,
+            "1": 0.07575757575757575
+          },
+          "score": 0.04166666666666666
+        }
+      },
+      "fit": {
+        "relation": {
+          "changed": 0.5390625,
+          "invariant_harm": 0.140625,
+          "conditional_harm": 0.140625,
+          "all_correct": 0.109375,
+          "accuracy": 0.69921875,
+          "n_scenes": 64,
+          "n_queries": 768,
+          "false_nonaddressed_change": 0.1953125,
+          "changed_by_direction": {
+            "0": 0.5733333333333333,
+            "1": 0.5170940170940169
+          },
+          "score": 0.3984375
+        },
+        "priority": null,
+        "mean_score": 0.3984375,
+        "loss": 0.5624492234655918,
+        "mean_realized_norm": 103.19346630573273,
+        "mean_energy": 10648.891479492188,
+        "edited_tokens_per_scene": 1.0,
+        "cache_bytes": 139469568.0,
+        "seconds": 65.21496162900075,
+        "n_rows": 768
+      },
+      "saturation": 0.9166666666666666,
+      "loss_train": 1.3130807967390865,
+      "visits": 768,
+      "steps": 192
+    },
+    {
+      "candidate": "PREFIX_LAST@15_lr0.001_s0",
+      "family": "PREFIX_LAST",
+      "site": 15,
+      "lr": 0.001,
+      "seed": 0,
+      "epoch": 1,
+      "strength": 1.0,
+      "checkpoint": "<private operational reference omitted>",
+      "score": 0.19444444444444448,
+      "harm": 0.25,
+      "changed": 0.4444444444444445,
+      "norm": 103.19232209523518,
+      "per_task": {
+        "relation": {
+          "changed": 0.4444444444444445,
+          "invariant_harm": 0.25,
+          "conditional_harm": 0.2517482517482518,
+          "all_correct": 0.0,
+          "accuracy": 0.59375,
+          "n_scenes": 24,
+          "n_queries": 288,
+          "false_nonaddressed_change": 0.3229166666666667,
+          "changed_by_direction": {
+            "0": 0.5128205128205129,
+            "1": 0.36363636363636365
+          },
+          "score": 0.19444444444444448
+        }
+      },
+      "fit": {
+        "relation": {
+          "changed": 0.5390625,
+          "invariant_harm": 0.140625,
+          "conditional_harm": 0.140625,
+          "all_correct": 0.109375,
+          "accuracy": 0.69921875,
+          "n_scenes": 64,
+          "n_queries": 768,
+          "false_nonaddressed_change": 0.1953125,
+          "changed_by_direction": {
+            "0": 0.5733333333333333,
+            "1": 0.5170940170940169
+          },
+          "score": 0.3984375
+        },
+        "priority": null,
+        "mean_score": 0.3984375,
+        "loss": 0.5624492234655918,
+        "mean_realized_norm": 103.19346630573273,
+        "mean_energy": 10648.891479492188,
+        "edited_tokens_per_scene": 1.0,
+        "cache_bytes": 139469568.0,
+        "seconds": 65.21496162900075,
+        "n_rows": 768
+      },
+      "saturation": 0.9166666666666666,
+      "loss_train": 1.3130807967390865,
+      "visits": 768,
+      "steps": 192
+    },
+    {
+      "candidate": "PREFIX_LAST@15_lr0.001_s0",
+      "family": "PREFIX_LAST",
+      "site": 15,
+      "lr": 0.001,
+      "seed": 0,
+      "epoch": 1,
+      "strength": 2.0,
+      "checkpoint": "<private operational reference omitted>",
+      "score": 0.1597222222222222,
+      "harm": 0.375,
+      "changed": 0.5347222222222222,
+      "norm": 206.3770840962728,
+      "per_task": {
+        "relation": {
+          "changed": 0.5347222222222222,
+          "invariant_harm": 0.375,
+          "conditional_harm": 0.3776223776223776,
+          "all_correct": 0.0,
+          "accuracy": 0.576388888888889,
+          "n_scenes": 24,
+          "n_queries": 288,
+          "false_nonaddressed_change": 0.375,
+          "changed_by_direction": {
+            "0": 0.5897435897435898,
+            "1": 0.46969696969696967
+          },
+          "score": 0.1597222222222222
+        }
+      },
+      "fit": {
+        "relation": {
+          "changed": 0.5390625,
+          "invariant_harm": 0.140625,
+          "conditional_harm": 0.140625,
+          "all_correct": 0.109375,
+          "accuracy": 0.69921875,
+          "n_scenes": 64,
+          "n_queries": 768,
+          "false_nonaddressed_change": 0.1953125,
+          "changed_by_direction": {
+            "0": 0.5733333333333333,
+            "1": 0.5170940170940169
+          },
+          "score": 0.3984375
+        },
+        "priority": null,
+        "mean_score": 0.3984375,
+        "loss": 0.5624492234655918,
+        "mean_realized_norm": 103.19346630573273,
+        "mean_energy": 10648.891479492188,
+        "edited_tokens_per_scene": 1.0,
+        "cache_bytes": 139469568.0,
+        "seconds": 65.21496162900075,
+        "n_rows": 768
+      },
+      "saturation": 0.9166666666666666,
+      "loss_train": 1.3130807967390865,
+      "visits": 768,
+      "steps": 192
+    },
+    {
+      "candidate": "PREFIX_LAST@15_lr0.001_s0",
+      "family": "PREFIX_LAST",
+      "site": 15,
+      "lr": 0.001,
+      "seed": 0,
+      "epoch": 2,
+      "strength": 0.5,
+      "checkpoint": "<private operational reference omitted>",
+      "score": 0.04166666666666666,
+      "harm": 0.006944444444444444,
+      "changed": 0.048611111111111105,
+      "norm": 51.58861907323202,
+      "per_task": {
+        "relation": {
+          "changed": 0.048611111111111105,
+          "invariant_harm": 0.006944444444444444,
+          "conditional_harm": 0.006993006993006993,
+          "all_correct": 0.0,
+          "accuracy": 0.5173611111111112,
+          "n_scenes": 24,
+          "n_queries": 288,
+          "false_nonaddressed_change": 0.010416666666666666,
+          "changed_by_direction": {
+            "0": 0.02564102564102564,
+            "1": 0.07575757575757575
+          },
+          "score": 0.04166666666666666
+        }
+      },
+      "fit": {
+        "relation": {
+          "changed": 0.7916666666666666,
+          "invariant_harm": 0.2786458333333333,
+          "conditional_harm": 0.2786458333333333,
+          "all_correct": 0.28125,
+          "accuracy": 0.7565104166666666,
+          "n_scenes": 64,
+          "n_queries": 768,
+          "false_nonaddressed_change": 0.3203125,
+          "changed_by_direction": {
+            "0": 0.7866666666666666,
+            "1": 0.7948717948717948
+          },
+          "score": 0.5130208333333333
+        },
+        "priority": null,
+        "mean_score": 0.5130208333333333,
+        "loss": 0.4432332725782544,
+        "mean_realized_norm": 103.19274878501892,
+        "mean_energy": 10648.743423461914,
+        "edited_tokens_per_scene": 1.0,
+        "cache_bytes": 139469568.0,
+        "seconds": 64.99562809700001,
+        "n_rows": 768
+      },
+      "saturation": 1.0,
+      "loss_train": 0.5652272861843812,
+      "visits": 1536,
+      "steps": 384
+    },
+    {
+      "candidate": "PREFIX_LAST@15_lr0.001_s0",
+      "family": "PREFIX_LAST",
+      "site": 15,
+      "lr": 0.001,
+      "seed": 0,
+      "epoch": 2,
+      "strength": 1.0,
+      "checkpoint": "<private operational reference omitted>",
+      "score": 0.28472222222222227,
+      "harm": 0.4236111111111111,
+      "changed": 0.7083333333333334,
+      "norm": 103.19567648569743,
+      "per_task": {
+        "relation": {
+          "changed": 0.7083333333333334,
+          "invariant_harm": 0.4236111111111111,
+          "conditional_harm": 0.42657342657342656,
+          "all_correct": 0.08333333333333333,
+          "accuracy": 0.638888888888889,
+          "n_scenes": 24,
+          "n_queries": 288,
+          "false_nonaddressed_change": 0.4375,
+          "changed_by_direction": {
+            "0": 0.7051282051282051,
+            "1": 0.712121212121212
+          },
+          "score": 0.28472222222222227
+        }
+      },
+      "fit": {
+        "relation": {
+          "changed": 0.7916666666666666,
+          "invariant_harm": 0.2786458333333333,
+          "conditional_harm": 0.2786458333333333,
+          "all_correct": 0.28125,
+          "accuracy": 0.7565104166666666,
+          "n_scenes": 64,
+          "n_queries": 768,
+          "false_nonaddressed_change": 0.3203125,
+          "changed_by_direction": {
+            "0": 0.7866666666666666,
+            "1": 0.7948717948717948
+          },
+          "score": 0.5130208333333333
+        },
+        "priority": null,
+        "mean_score": 0.5130208333333333,
+        "loss": 0.4432332725782544,
+        "mean_realized_norm": 103.19274878501892,
+        "mean_energy": 10648.743423461914,
+        "edited_tokens_per_scene": 1.0,
+        "cache_bytes": 139469568.0,
+        "seconds": 64.99562809700001,
+        "n_rows": 768
+      },
+      "saturation": 1.0,
+      "loss_train": 0.5652272861843812,
+      "visits": 1536,
+      "steps": 384
+    },
+    {
+      "candidate": "PREFIX_LAST@15_lr0.001_s0",
+      "family": "PREFIX_LAST",
+      "site": 15,
+      "lr": 0.001,
+      "seed": 0,
+      "epoch": 2,
+      "strength": 2.0,
+      "checkpoint": "<private operational reference omitted>",
+      "score": 0.20138888888888884,
+      "harm": 0.5416666666666666,
+      "changed": 0.7430555555555555,
+      "norm": 206.38513628641763,
+      "per_task": {
+        "relation": {
+          "changed": 0.7430555555555555,
+          "invariant_harm": 0.5416666666666666,
+          "conditional_harm": 0.5454545454545454,
+          "all_correct": 0.125,
+          "accuracy": 0.5972222222222222,
+          "n_scenes": 24,
+          "n_queries": 288,
+          "false_nonaddressed_change": 0.5625,
+          "changed_by_direction": {
+            "0": 0.782051282051282,
+            "1": 0.696969696969697
+          },
+          "score": 0.20138888888888884
+        }
+      },
+      "fit": {
+        "relation": {
+          "changed": 0.7916666666666666,
+          "invariant_harm": 0.2786458333333333,
+          "conditional_harm": 0.2786458333333333,
+          "all_correct": 0.28125,
+          "accuracy": 0.7565104166666666,
+          "n_scenes": 64,
+          "n_queries": 768,
+          "false_nonaddressed_change": 0.3203125,
+          "changed_by_direction": {
+            "0": 0.7866666666666666,
+            "1": 0.7948717948717948
+          },
+          "score": 0.5130208333333333
+        },
+        "priority": null,
+        "mean_score": 0.5130208333333333,
+        "loss": 0.4432332725782544,
+        "mean_realized_norm": 103.19274878501892,
+        "mean_energy": 10648.743423461914,
+        "edited_tokens_per_scene": 1.0,
+        "cache_bytes": 139469568.0,
+        "seconds": 64.99562809700001,
+        "n_rows": 768
+      },
+      "saturation": 1.0,
+      "loss_train": 0.5652272861843812,
+      "visits": 1536,
+      "steps": 384
+    },
+    {
+      "candidate": "PREFIX_LAST@15_lr0.001_s0",
+      "family": "PREFIX_LAST",
+      "site": 15,
+      "lr": 0.001,
+      "seed": 0,
+      "epoch": 3,
+      "strength": 0.5,
+      "checkpoint": "<private operational reference omitted>",
+      "score": 0.04166666666666666,
+      "harm": 0.006944444444444444,
+      "changed": 0.048611111111111105,
+      "norm": 51.59327173233032,
+      "per_task": {
+        "relation": {
+          "changed": 0.048611111111111105,
+          "invariant_harm": 0.006944444444444444,
+          "conditional_harm": 0.006993006993006993,
+          "all_correct": 0.0,
+          "accuracy": 0.5173611111111112,
+          "n_scenes": 24,
+          "n_queries": 288,
+          "false_nonaddressed_change": 0.010416666666666666,
+          "changed_by_direction": {
+            "0": 0.02564102564102564,
+            "1": 0.07575757575757575
+          },
+          "score": 0.04166666666666666
+        }
+      },
+      "fit": {
+        "relation": {
+          "changed": 0.8255208333333334,
+          "invariant_harm": 0.21875,
+          "conditional_harm": 0.21875,
+          "all_correct": 0.265625,
+          "accuracy": 0.8033854166666666,
+          "n_scenes": 64,
+          "n_queries": 768,
+          "false_nonaddressed_change": 0.24609375,
+          "changed_by_direction": {
+            "0": 0.7933333333333333,
+            "1": 0.8461538461538461
+          },
+          "score": 0.6067708333333334
+        },
+        "priority": null,
+        "mean_score": 0.6067708333333334,
+        "loss": 0.3954975614429941,
+        "mean_realized_norm": 103.1835708618164,
+        "mean_energy": 10646.849319458008,
+        "edited_tokens_per_scene": 1.0,
+        "cache_bytes": 139469568.0,
+        "seconds": 64.69500850999975,
+        "n_rows": 768
+      },
+      "saturation": 1.0,
+      "loss_train": 0.4757240013059345,
+      "visits": 2304,
+      "steps": 576
+    },
+    {
+      "candidate": "PREFIX_LAST@15_lr0.001_s0",
+      "family": "PREFIX_LAST",
+      "site": 15,
+      "lr": 0.001,
+      "seed": 0,
+      "epoch": 3,
+      "strength": 1.0,
+      "checkpoint": "<private operational reference omitted>",
+      "score": 0.34027777777777773,
+      "harm": 0.40277777777777773,
+      "changed": 0.7430555555555555,
+      "norm": 103.1843802134196,
+      "per_task": {
+        "relation": {
+          "changed": 0.7430555555555555,
+          "invariant_harm": 0.40277777777777773,
+          "conditional_harm": 0.40559440559440557,
+          "all_correct": 0.16666666666666666,
+          "accuracy": 0.6666666666666666,
+          "n_scenes": 24,
+          "n_queries": 288,
+          "false_nonaddressed_change": 0.4479166666666667,
+          "changed_by_direction": {
+            "0": 0.7692307692307694,
+            "1": 0.712121212121212
+          },
+          "score": 0.34027777777777773
+        }
+      },
+      "fit": {
+        "relation": {
+          "changed": 0.8255208333333334,
+          "invariant_harm": 0.21875,
+          "conditional_harm": 0.21875,
+          "all_correct": 0.265625,
+          "accuracy": 0.8033854166666666,
+          "n_scenes": 64,
+          "n_queries": 768,
+          "false_nonaddressed_change": 0.24609375,
+          "changed_by_direction": {
+            "0": 0.7933333333333333,
+            "1": 0.8461538461538461
+          },
+          "score": 0.6067708333333334
+        },
+        "priority": null,
+        "mean_score": 0.6067708333333334,
+        "loss": 0.3954975614429941,
+        "mean_realized_norm": 103.1835708618164,
+        "mean_energy": 10646.849319458008,
+        "edited_tokens_per_scene": 1.0,
+        "cache_bytes": 139469568.0,
+        "seconds": 64.69500850999975,
+        "n_rows": 768
+      },
+      "saturation": 1.0,
+      "loss_train": 0.4757240013059345,
+      "visits": 2304,
+      "steps": 576
+    },
+    {
+      "candidate": "PREFIX_LAST@15_lr0.001_s0",
+      "family": "PREFIX_LAST",
+      "site": 15,
+      "lr": 0.001,
+      "seed": 0,
+      "epoch": 3,
+      "strength": 2.0,
+      "checkpoint": "<private operational reference omitted>",
+      "score": 0.20138888888888884,
+      "harm": 0.5555555555555555,
+      "changed": 0.7569444444444443,
+      "norm": 206.3736368815104,
+      "per_task": {
+        "relation": {
+          "changed": 0.7569444444444443,
+          "invariant_harm": 0.5555555555555555,
+          "conditional_harm": 0.5594405594405595,
+          "all_correct": 0.08333333333333333,
+          "accuracy": 0.5972222222222222,
+          "n_scenes": 24,
+          "n_queries": 288,
+          "false_nonaddressed_change": 0.5625,
+          "changed_by_direction": {
+            "0": 0.7948717948717949,
+            "1": 0.7121212121212122
+          },
+          "score": 0.20138888888888884
+        }
+      },
+      "fit": {
+        "relation": {
+          "changed": 0.8255208333333334,
+          "invariant_harm": 0.21875,
+          "conditional_harm": 0.21875,
+          "all_correct": 0.265625,
+          "accuracy": 0.8033854166666666,
+          "n_scenes": 64,
+          "n_queries": 768,
+          "false_nonaddressed_change": 0.24609375,
+          "changed_by_direction": {
+            "0": 0.7933333333333333,
+            "1": 0.8461538461538461
+          },
+          "score": 0.6067708333333334
+        },
+        "priority": null,
+        "mean_score": 0.6067708333333334,
+        "loss": 0.3954975614429941,
+        "mean_realized_norm": 103.1835708618164,
+        "mean_energy": 10646.849319458008,
+        "edited_tokens_per_scene": 1.0,
+        "cache_bytes": 139469568.0,
+        "seconds": 64.69500850999975,
+        "n_rows": 768
+      },
+      "saturation": 1.0,
+      "loss_train": 0.4757240013059345,
+      "visits": 2304,
+      "steps": 576
+    },
+    {
+      "candidate": "PREFIX_LAST@15_lr0.001_s0",
+      "family": "PREFIX_LAST",
+      "site": 15,
+      "lr": 0.001,
+      "seed": 0,
+      "epoch": 4,
+      "strength": 0.5,
+      "checkpoint": "<private operational reference omitted>",
+      "score": 0.034722222222222224,
+      "harm": 0.006944444444444444,
+      "changed": 0.041666666666666664,
+      "norm": 51.59412542978922,
+      "per_task": {
+        "relation": {
+          "changed": 0.041666666666666664,
+          "invariant_harm": 0.006944444444444444,
+          "conditional_harm": 0.006993006993006993,
+          "all_correct": 0.0,
+          "accuracy": 0.5138888888888888,
+          "n_scenes": 24,
+          "n_queries": 288,
+          "false_nonaddressed_change": 0.010416666666666666,
+          "changed_by_direction": {
+            "0": 0.02564102564102564,
+            "1": 0.0606060606060606
+          },
+          "score": 0.034722222222222224
+        }
+      },
+      "fit": {
+        "relation": {
+          "changed": 0.7291666666666667,
+          "invariant_harm": 0.109375,
+          "conditional_harm": 0.109375,
+          "all_correct": 0.3125,
+          "accuracy": 0.8098958333333334,
+          "n_scenes": 64,
+          "n_queries": 768,
+          "false_nonaddressed_change": 0.1015625,
+          "changed_by_direction": {
+            "0": 0.8733333333333333,
+            "1": 0.6367521367521368
+          },
+          "score": 0.6197916666666667
+        },
+        "priority": null,
+        "mean_score": 0.6197916666666667,
+        "loss": 0.3741547843245219,
+        "mean_realized_norm": 103.19450986385345,
+        "mean_energy": 10649.106857299805,
+        "edited_tokens_per_scene": 1.0,
+        "cache_bytes": 139469568.0,
+        "seconds": 64.55680631299947,
+        "n_rows": 768
+      },
+      "saturation": 1.0,
+      "loss_train": 0.4479821372151491,
+      "visits": 3072,
+      "steps": 768
+    },
+    {
+      "candidate": "PREFIX_LAST@15_lr0.001_s0",
+      "family": "PREFIX_LAST",
+      "site": 15,
+      "lr": 0.001,
+      "seed": 0,
+      "epoch": 4,
+      "strength": 1.0,
+      "checkpoint": "<private operational reference omitted>",
+      "score": 0.40277777777777785,
+      "harm": 0.2708333333333333,
+      "changed": 0.6736111111111112,
+      "norm": 103.19459629058838,
+      "per_task": {
+        "relation": {
+          "changed": 0.6736111111111112,
+          "invariant_harm": 0.2708333333333333,
+          "conditional_harm": 0.2727272727272727,
+          "all_correct": 0.16666666666666666,
+          "accuracy": 0.6979166666666666,
+          "n_scenes": 24,
+          "n_queries": 288,
+          "false_nonaddressed_change": 0.2708333333333333,
+          "changed_by_direction": {
+            "0": 0.8333333333333334,
+            "1": 0.48484848484848475
+          },
+          "score": 0.40277777777777785
+        }
+      },
+      "fit": {
+        "relation": {
+          "changed": 0.7291666666666667,
+          "invariant_harm": 0.109375,
+          "conditional_harm": 0.109375,
+          "all_correct": 0.3125,
+          "accuracy": 0.8098958333333334,
+          "n_scenes": 64,
+          "n_queries": 768,
+          "false_nonaddressed_change": 0.1015625,
+          "changed_by_direction": {
+            "0": 0.8733333333333333,
+            "1": 0.6367521367521368
+          },
+          "score": 0.6197916666666667
+        },
+        "priority": null,
+        "mean_score": 0.6197916666666667,
+        "loss": 0.3741547843245219,
+        "mean_realized_norm": 103.19450986385345,
+        "mean_energy": 10649.106857299805,
+        "edited_tokens_per_scene": 1.0,
+        "cache_bytes": 139469568.0,
+        "seconds": 64.55680631299947,
+        "n_rows": 768
+      },
+      "saturation": 1.0,
+      "loss_train": 0.4479821372151491,
+      "visits": 3072,
+      "steps": 768
+    },
+    {
+      "candidate": "PREFIX_LAST@15_lr0.001_s0",
+      "family": "PREFIX_LAST",
+      "site": 15,
+      "lr": 0.001,
+      "seed": 0,
+      "epoch": 4,
+      "strength": 2.0,
+      "checkpoint": "<private operational reference omitted>",
+      "score": 0.24305555555555547,
+      "harm": 0.5486111111111112,
+      "changed": 0.7916666666666666,
+      "norm": 206.37112426757812,
+      "per_task": {
+        "relation": {
+          "changed": 0.7916666666666666,
+          "invariant_harm": 0.5486111111111112,
+          "conditional_harm": 0.5524475524475524,
+          "all_correct": 0.08333333333333333,
+          "accuracy": 0.6180555555555557,
+          "n_scenes": 24,
+          "n_queries": 288,
+          "false_nonaddressed_change": 0.5625,
+          "changed_by_direction": {
+            "0": 0.7820512820512822,
+            "1": 0.8030303030303029
+          },
+          "score": 0.24305555555555547
+        }
+      },
+      "fit": {
+        "relation": {
+          "changed": 0.7291666666666667,
+          "invariant_harm": 0.109375,
+          "conditional_harm": 0.109375,
+          "all_correct": 0.3125,
+          "accuracy": 0.8098958333333334,
+          "n_scenes": 64,
+          "n_queries": 768,
+          "false_nonaddressed_change": 0.1015625,
+          "changed_by_direction": {
+            "0": 0.8733333333333333,
+            "1": 0.6367521367521368
+          },
+          "score": 0.6197916666666667
+        },
+        "priority": null,
+        "mean_score": 0.6197916666666667,
+        "loss": 0.3741547843245219,
+        "mean_realized_norm": 103.19450986385345,
+        "mean_energy": 10649.106857299805,
+        "edited_tokens_per_scene": 1.0,
+        "cache_bytes": 139469568.0,
+        "seconds": 64.55680631299947,
+        "n_rows": 768
+      },
+      "saturation": 1.0,
+      "loss_train": 0.4479821372151491,
+      "visits": 3072,
+      "steps": 768
+    }
+  ],
+  "visits": 3072,
+  "steps": 768,
+  "train_seconds": 179.12073177399907,
+  "eval_seconds": 552.0282110889984,
+  "cap_scale": 1.0,
+  "caps": {
+    "relation": 103.18592071533203
+  },
+  "saturation_final": 0.9791666666666666,
+  "stats": {
+    "updates": 768,
+    "saturated": 752,
+    "raw_norm_sum": 912391.3297579996,
+    "realized_norm_sum": 0.0
+  }
+}

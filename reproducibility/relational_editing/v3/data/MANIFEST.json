@@ -1,0 +1,35 @@
+{
+  "seed": 260911397,
+  "files": {
+    "fit_scenes.jsonl": {
+      "scenes": 96,
+      "sha256": "a57b52c69eeddf31e103ddd73f08c413548538101e9caf6852b24fb72827954a"
+    },
+    "cal_scenes.jsonl": {
+      "scenes": 48,
+      "sha256": "d25637f0b38acb0228a793a174e91e4631d62d647d6868b060e6f97e83ba832d"
+    },
+    "final_scenes.jsonl": {
+      "scenes": 128,
+      "sha256": "88709ec7ab0fb192d56503af0fb0a7ae408cc7eee45a777a556572cf6c26f76a"
+    },
+    "workflow_scenes.jsonl": {
+      "scenes": 128,
+      "sha256": "200bbc5bc3f11348c1bb122d000d1404ace15f684a552b033e70a1a593d5a17d"
+    }
+  },
+  "programs": [
+    "single",
+    "noop",
+    "repeat2",
+    "repeat4",
+    "repeat8",
+    "restore",
+    "restore_after4",
+    "overwrite",
+    "AB",
+    "BA",
+    "ABC",
+    "CBA"
+  ]
+}

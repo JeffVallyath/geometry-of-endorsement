@@ -1,0 +1,16 @@
+{
+  "at": "2026-09-10T11:04:35.215851+00:00",
+  "scenes": 64,
+  "conditions": [
+    "SOURCE",
+    "COUNTERFACTUAL",
+    "PREFIX_LAST_s0",
+    "PREFIX_LAST_s1",
+    "PREFIX_DISTRIBUTED_s0",
+    "PREFIX_DISTRIBUTED_s1"
+  ],
+  "seal_sha256": "894efc5490a5ff4a83b171caf3369ca03b158d28c50d3ec06427cfd042aacf1f",
+  "seconds": 73.11287167000046,
+  "compiler_inputs": "prefix token ids from prefix_text(scene) and the edit plan from CompileRequest (addressed clause span, task, desired value) only; no question, label mapping, option table, flag or gold was generated before this file existed",
+  "questions_generated_before_seal": false
+}

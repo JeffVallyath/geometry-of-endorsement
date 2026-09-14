@@ -53,14 +53,14 @@ def development_intervals(status: dict[str, Any]) -> pd.DataFrame:
         rows.append((
             label,
             cell["I_b"],
-            cell["permutation_p"],
+            cell["original_200_draw_permutation_p"],
             cell["delta_over_sbert_ci_low"],
             cell["delta_over_sbert_ci_high"],
         ))
     return pd.DataFrame(rows, columns=[
         "method",
         "I_b",
-        "permutation p",
+        "Historical permutation p (200 draws; improvement over SBERT)",
         "Delta I_b over SBERT CI low",
         "Delta I_b over SBERT CI high",
     ])

@@ -1,0 +1,82 @@
+{
+  "at": "2026-09-10T07:53:42.248398+00:00",
+  "model": "gemma",
+  "task": "relation",
+  "procedure": "C1",
+  "scenes": [
+    "FIT-relation-042",
+    "FIT-relation-062",
+    "FIT-relation-026",
+    "FIT-relation-053"
+  ],
+  "queries": 16,
+  "results": {
+    "LATE@27": {
+      "loss": 7.2947845458984375,
+      "grad_norms": {
+        "input_factor": 0.0,
+        "output_factor": 0.020589852705597878,
+        "bias": 0.0
+      },
+      "backbone_grad": false,
+      "finite": true,
+      "output_factor_grad_nonzero": true,
+      "max_score_move": 0.05369281768798828,
+      "seconds": 2.233147789999748
+    },
+    "PREFIX_LAST@15": {
+      "loss": 7.2947845458984375,
+      "grad_norms": {
+        "input_factor": 0.0,
+        "output_factor": 0.0005849449662491679,
+        "bias": 0.0
+      },
+      "backbone_grad": false,
+      "finite": true,
+      "output_factor_grad_nonzero": true,
+      "max_score_move": 0.11322975158691406,
+      "seconds": 2.0362737219998053
+    },
+    "PREFIX_LAST@27": {
+      "loss": 7.2947845458984375,
+      "grad_norms": {
+        "input_factor": 0.0,
+        "output_factor": 0.0004495051398407668,
+        "bias": 0.0
+      },
+      "backbone_grad": false,
+      "finite": true,
+      "output_factor_grad_nonzero": true,
+      "max_score_move": 0.03991508483886719,
+      "seconds": 1.775326737999876
+    },
+    "PREFIX_DISTRIBUTED@15": {
+      "loss": 7.2947845458984375,
+      "grad_norms": {
+        "input_factor": 0.0,
+        "output_factor": 0.0071612391620874405,
+        "bias": 0.0
+      },
+      "backbone_grad": false,
+      "finite": true,
+      "output_factor_grad_nonzero": true,
+      "max_score_move": 0.07922077178955078,
+      "seconds": 1.9812897240003622
+    },
+    "PREFIX_DISTRIBUTED@27": {
+      "loss": 7.2947845458984375,
+      "grad_norms": {
+        "input_factor": 0.0,
+        "output_factor": 0.0012975927675142884,
+        "bias": 0.0
+      },
+      "backbone_grad": false,
+      "finite": true,
+      "output_factor_grad_nonzero": true,
+      "max_score_move": 0.03532695770263672,
+      "seconds": 1.7825086140001076
+    }
+  },
+  "backbone_unchanged": true,
+  "pass_": true
+}

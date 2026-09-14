@@ -1,0 +1,260 @@
+{
+  "schema_version": 1,
+  "scope": "Scientific environment facts extracted from existing evidence only; null means not independently recovered, not a guess.",
+  "studies": {
+    "v1": {
+      "scope": "Recorded scientific model-execution environment; not current CPU replay environment.",
+      "python": "3.12.3",
+      "packages": {
+        "torch": "2.11.0+cu128",
+        "transformers": "4.56.2",
+        "numpy": "2.2.6",
+        "pandas": "2.3.2",
+        "scikit_learn": "1.7.1",
+        "scipy": "1.17.1",
+        "sentence_transformers": "5.1.0"
+      },
+      "torch_cuda_runtime": "12.8",
+      "cudnn_reported_integer": "91900",
+      "gpu_model": "NVIDIA A100-SXM4-40GB",
+      "gpu_memory_mib": 40960,
+      "os_release": null,
+      "os_boundary": "No OS-release value in inspected per-study runtime lock or preflight; do not infer Ubuntu version from a stack name.",
+      "precision": {
+        "backbone": "bfloat16",
+        "readout_projection": "float32",
+        "tf32": false
+      },
+      "recorded_version_deviation": {
+        "legacy_spec_text_torch": "2.8.0",
+        "executed_bound_torch": "2.11.0+cu128",
+        "explanation": "Retained environment record explicitly binds the frozen runner version rather than the legacy spec text."
+      },
+      "evidence": [
+        {
+          "kind": "per-study environment inventory",
+          "sha256": "81dc9991fae6249bdd9be2151571b51bc385c865aad19fd0f93beb9b5de619aa",
+          "bytes": 1756,
+          "binding": "size/SHA256 matched retained terminal member inventory"
+        },
+        {
+          "kind": "per-study GPU preflight",
+          "sha256": "3de0867687e93f97f7fa42e8e14d6385443534b4cd847d8a98522f85850aaf21",
+          "bytes": 3076,
+          "binding": "retained local evidence SHA256; no independent expected outer ZIP digest available"
+        },
+        {
+          "kind": "exact executed scientific adapter",
+          "module": "qbrc_adapter.py",
+          "sha256": "76a15461b58d11c8a852c7c9b0b98985171d654e89a519001b16e59925b54f18",
+          "binding": "source capsule member verified during private intake"
+        }
+      ]
+    },
+    "v2": {
+      "scope": "Recorded scientific model-execution environment; not current CPU replay environment.",
+      "python": "3.12.3",
+      "packages": {
+        "torch": "2.11.0+cu128",
+        "transformers": "4.56.2",
+        "numpy": "2.2.6",
+        "pandas": "2.3.2",
+        "scikit_learn": "1.7.1",
+        "scipy": "1.17.1",
+        "sentence_transformers": "5.1.0"
+      },
+      "torch_cuda_runtime": "12.8",
+      "cudnn_reported_integer": "91900",
+      "gpu_model": "NVIDIA A100-SXM4-40GB",
+      "gpu_memory_mib": 40960,
+      "os_release": null,
+      "os_boundary": "No OS-release value in inspected per-study runtime lock or preflight; do not infer Ubuntu version from a stack name.",
+      "precision": {
+        "backbone": "bfloat16",
+        "readout_projection": "float32",
+        "tf32": false
+      },
+      "recorded_version_deviation": {
+        "legacy_spec_text_torch": "2.8.0",
+        "executed_bound_torch": "2.11.0+cu128",
+        "explanation": "Retained environment record explicitly binds the frozen runner version rather than the legacy spec text."
+      },
+      "evidence": [
+        {
+          "kind": "per-study environment inventory",
+          "sha256": "86ee709f8821654814c27ab3e3c257f4db9e3893fac1fd8f084066b3e8895608",
+          "bytes": 1756,
+          "binding": "size/SHA256 matched retained terminal member inventory"
+        },
+        {
+          "kind": "per-study GPU preflight",
+          "sha256": "c70e6df7b128bb0da20314d39335e2ef9bc8cb32c3e8b285f29553d02e5e6beb",
+          "bytes": 3122,
+          "binding": "retained local evidence SHA256; no independent expected outer ZIP digest available"
+        },
+        {
+          "kind": "exact executed scientific adapter",
+          "module": "srs2_adapter.py",
+          "sha256": "3ab949cfc93b40da4640f4811aa4bc11763ba1ba5b77b316f3471c5cde2282ac",
+          "binding": "source capsule member verified during private intake"
+        }
+      ]
+    },
+    "v3": {
+      "scope": "Recorded scientific model-execution environment; not current CPU replay environment.",
+      "python": "3.12.3",
+      "packages": {
+        "torch": "2.11.0+cu128",
+        "transformers": "4.56.2",
+        "numpy": "2.2.6",
+        "pandas": "2.3.2",
+        "scikit_learn": "1.7.1",
+        "scipy": "1.17.1",
+        "sentence_transformers": "5.1.0"
+      },
+      "torch_cuda_runtime": "12.8",
+      "cudnn_reported_integer": "91900",
+      "gpu_model": "NVIDIA A100-SXM4-40GB",
+      "gpu_memory_mib": 40960,
+      "os_release": null,
+      "os_boundary": "No OS-release value in inspected per-study runtime lock or preflight; do not infer Ubuntu version from a stack name.",
+      "precision": {
+        "backbone": "bfloat16",
+        "readout_projection": "float32",
+        "tf32": false,
+        "program_workspace": "float32; historical frozen legacy controls retain their separately specified path"
+      },
+      "recorded_version_deviation": {
+        "legacy_spec_text_torch": "2.8.0",
+        "executed_bound_torch": "2.11.0+cu128",
+        "explanation": "Retained environment record explicitly binds the frozen runner version rather than the legacy spec text."
+      },
+      "evidence": [
+        {
+          "kind": "per-study environment inventory",
+          "sha256": "e6b7281e2c16f9f26c02648fd56211950f85d74928789b45713f2078c91f59a8",
+          "bytes": 1756,
+          "binding": "size/SHA256 matched retained terminal member inventory"
+        },
+        {
+          "kind": "per-study GPU preflight",
+          "sha256": "e9550313ded07ce128f048d83c0cc51b4ecb7db7582e1b7f6c3d9fd34cbccc31",
+          "bytes": 3133,
+          "binding": "retained local evidence SHA256; no independent expected outer ZIP digest available"
+        },
+        {
+          "kind": "exact executed scientific adapter",
+          "module": "rso3_adapter.py",
+          "sha256": "38bdc766663e5b49f2ae7ef27885d13de36a74489c3a9ff2ac49bedd7874838a",
+          "binding": "source capsule member verified during private intake"
+        }
+      ]
+    },
+    "v4": {
+      "scope": "Recorded scientific model-execution environment; not current CPU replay environment.",
+      "python": "3.12.3",
+      "packages": {
+        "torch": "2.11.0+cu128",
+        "transformers": "4.56.2",
+        "numpy": "2.2.6",
+        "pandas": "2.3.2",
+        "scikit_learn": "1.7.1",
+        "scipy": "1.17.1",
+        "sentence_transformers": "5.1.0"
+      },
+      "torch_cuda_runtime": "12.8",
+      "cudnn_reported_integer": "91900",
+      "gpu_model": "NVIDIA A100-SXM4-40GB",
+      "gpu_memory_mib": 40960,
+      "os_release": null,
+      "os_boundary": "No OS-release value in inspected per-study runtime lock or preflight; do not infer Ubuntu version from a stack name.",
+      "precision": {
+        "backbone": "bfloat16",
+        "readout_projection": "float32",
+        "tf32": false,
+        "program_workspace": "float32; historical frozen legacy controls retain their separately specified path"
+      },
+      "recorded_version_deviation": {
+        "legacy_spec_text_torch": "2.8.0",
+        "executed_bound_torch": "2.11.0+cu128",
+        "explanation": "Retained environment record explicitly binds the frozen runner version rather than the legacy spec text."
+      },
+      "evidence": [
+        {
+          "kind": "per-study environment inventory",
+          "sha256": "d6563375bf2c29c684a10110a4957163343f56b64e72df0f6cfa06036256a107",
+          "bytes": 1756,
+          "binding": "size/SHA256 matched retained terminal member inventory"
+        },
+        {
+          "kind": "per-study GPU preflight",
+          "sha256": "ed947c8c56fe7fc3362d755b06fd997319e1d2fa1ab0576c294f4a7129db25cc",
+          "bytes": 3187,
+          "binding": "retained local evidence SHA256; no independent expected outer ZIP digest available"
+        },
+        {
+          "kind": "exact executed scientific adapter",
+          "module": "rso3_adapter.py",
+          "sha256": "1765978114abf345f23d95b62538158bfa2414d7c48b63d3319e8a9b9987b0e1",
+          "binding": "source capsule member verified during private intake"
+        }
+      ]
+    },
+    "v6": {
+      "scope": "A/B remote preflight and remote CPU prerequisite record; these records do not independently establish the later C runtime.",
+      "panels_A_B": {
+        "python": "3.12.3",
+        "packages": {
+          "torch": "2.11.0+cu128",
+          "transformers": "4.56.2"
+        },
+        "torch_wheel_cuda_build_tag": "cu128",
+        "torch_cuda_runtime": null,
+        "gpu_model": "NVIDIA A100-SXM4-40GB",
+        "gpu_memory_mib": 40960,
+        "os_release": null
+      },
+      "panel_C": {
+        "python": null,
+        "packages": null,
+        "torch_cuda_runtime": null,
+        "gpu_model": null,
+        "status": "Independently observed model-execution environment not recovered in this bounded intake."
+      },
+      "precision": {
+        "backbone": "bf16",
+        "workspace": "fp32",
+        "readout": "inherited-logits32-full-vocabulary-log-softmax",
+        "chunk": 12,
+        "scheduler": "V5-first-occurrence",
+        "alias_scope": "one-case-canonical-physical-batch-slot"
+      },
+      "evidence": [
+        {
+          "kind": "A/B remote CPU prerequisite package versions",
+          "sha256": "8387be6a1fa62591f55abd57e5bc8a72fae897b632968978ce65de394532e3f6",
+          "bytes": 14521,
+          "binding": "retained local metadata SHA256"
+        },
+        {
+          "kind": "A/B remote Python/GPU preflight",
+          "sha256": "3dae80baba6648ad6abcee57fef0061de334468fbfd7406f3127e8f966588e53",
+          "bytes": 3204,
+          "binding": "retained local metadata SHA256"
+        },
+        {
+          "kind": "exact executed serving policy",
+          "module": "rsi6_forward.py",
+          "sha256": "f25a3b2db50745dc6ea29dac3611f7e47d0afcda7368afb57dc63a7646cfb398",
+          "binding": "AB and C source capsules share this identical source object"
+        }
+      ],
+      "boundaries": [
+        "cu128 identifies the installed torch wheel build; it is not a separately queried torch.version.cuda value in these retained records.",
+        "The separate C_CONTINUATION_CPU_r1 record is a LOCAL CPU test (torch 2.8.0+cpu), not C model-execution evidence.",
+        "OS release not observed; do not assert a stack-derived release as measured runtime."
+      ]
+    }
+  },
+  "privacy": "Provider, host, account, GPU UUID, absolute paths, budget and billing fields intentionally excluded."
+}

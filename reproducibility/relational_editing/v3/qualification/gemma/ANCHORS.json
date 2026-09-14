@@ -1,0 +1,76 @@
+{
+  "at": "2026-09-11T05:27:07.793648+00:00",
+  "status": "TECHNICAL_PASS",
+  "seeds": {
+    "0": {
+      "rows": 192,
+      "same_choice": 192,
+      "max_abs_logp": 0.0,
+      "source_rows": 192,
+      "source_same_choice": 192,
+      "source_max_abs_logp": 0.0,
+      "hash_equal": 4,
+      "source_hash_equal": 4,
+      "artifacts": 8,
+      "program_rows": 768,
+      "program_same_choice": 768,
+      "program_max_abs_logp": 0.0,
+      "program_hash_equal": 32,
+      "program_artifacts": 32,
+      "mismatches": [],
+      "pass_": true,
+      "bit_identical": false,
+      "factors": {
+        "relation_0": "e44cbbe9e2f00e01bbfe3379642be7a7a3dbd1af2c6c913130b66ba5d7a8d6be",
+        "relation_1": "10a3b6ef33e5b8acdc9a8eee080a2c2f728d70337e179b6b2ff0533d0d725d8e"
+      },
+      "strength": 1.25,
+      "site": 15
+    },
+    "1": {
+      "rows": 192,
+      "same_choice": 192,
+      "max_abs_logp": 0.0,
+      "source_rows": 192,
+      "source_same_choice": 192,
+      "source_max_abs_logp": 0.0,
+      "hash_equal": 4,
+      "source_hash_equal": 4,
+      "artifacts": 8,
+      "program_rows": 768,
+      "program_same_choice": 768,
+      "program_max_abs_logp": 0.0,
+      "program_hash_equal": 32,
+      "program_artifacts": 32,
+      "mismatches": [],
+      "pass_": true,
+      "bit_identical": false,
+      "factors": {
+        "relation_0": "d7fe3a3191f538f46bc3db08a100176c8b7568d092981225f6b9a08a24a48055",
+        "relation_1": "813bee6d1ec46c654235aeb5b19ed5a2f07f1f4c34cba2e59a1de72737069c15"
+      },
+      "strength": 1.25,
+      "site": 15
+    }
+  },
+  "single": [
+    "FINAL-SRS2-0091",
+    "FINAL-SRS2-0064",
+    "FINAL-SRS2-0009",
+    "FINAL-SRS2-0022"
+  ],
+  "programs": [
+    "FINAL-SRS2-0074",
+    "FINAL-SRS2-0001",
+    "FINAL-SRS2-0024",
+    "FINAL-SRS2-0119"
+  ],
+  "bit_identical": false,
+  "tolerance": {
+    "same_choice_required": true,
+    "max_abs_logp": 0.05,
+    "note": "inherited verified tolerance: same choice on every row; artifact hash equality additionally proves bit-identical compiled contexts"
+  },
+  "seconds": 45.606759110999974,
+  "inputs": "V2 prompts (V2 FIT C1 demonstrations, V2 FINAL scenes, V2 questions/labels), the selected V2 SHARED_CLAUSE factors at strength 1.25 through the historical per-command BF16 path, BF16 backbone, FP32 readout, batch-12 clone asks; no V3 data entered this replay"
+}

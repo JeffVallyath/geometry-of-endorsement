@@ -1,0 +1,79 @@
+{
+  "at": "2026-09-11T19:59:01.993282+00:00",
+  "no_edit_cal_complete": {
+    "n_scenes": 48,
+    "n_queries": 1152,
+    "changed": 0.07638888888888888,
+    "harm": 0.0,
+    "conditional_harm": 0.0,
+    "all24": 0.08333333333333333,
+    "accuracy": 0.6328125,
+    "touched_accuracy": 0.41250000000000003,
+    "other_address_error": 0.02202380952380952,
+    "preservation": 1.0,
+    "nonaddressed_change": 0.0,
+    "changed_by_direction": {
+      "0": 0.0798611111111111,
+      "1": 0.06944444444444445
+    },
+    "by_cell": {
+      "(4, 2, 0)": {
+        "changed": 0.06944444444444445,
+        "harm": 0.0,
+        "all24": 0.16666666666666666
+      },
+      "(4, 2, 1)": {
+        "changed": 0.0798611111111111,
+        "harm": 0.0,
+        "all24": 0.0
+      }
+    },
+    "by_family": {
+      "both": 0.65625,
+      "direct": 0.8125,
+      "either": 0.6354166666666666,
+      "opposes": 0.625,
+      "same": 0.2552083333333333
+    },
+    "all_program_questions": 0.08333333333333333,
+    "accuracy_all_program_questions": 0.6328125
+  },
+  "counterfactual_cal_complete": {
+    "n_scenes": 48,
+    "n_queries": 1152,
+    "changed": 0.875,
+    "harm": 0.001736111111111111,
+    "conditional_harm": 0.001736111111111111,
+    "all24": 0.375,
+    "accuracy": 0.9366319444444445,
+    "touched_accuracy": 0.9104166666666668,
+    "other_address_error": 0.0,
+    "preservation": 0.9982638888888888,
+    "nonaddressed_change": 0.0,
+    "changed_by_direction": {
+      "0": 0.8923611111111112,
+      "1": 0.857638888888889
+    },
+    "by_cell": {
+      "(4, 2, 0)": {
+        "changed": 0.857638888888889,
+        "harm": 0.0,
+        "all24": 0.3333333333333333
+      },
+      "(4, 2, 1)": {
+        "changed": 0.8923611111111112,
+        "harm": 0.003472222222222222,
+        "all24": 0.4166666666666667
+      }
+    },
+    "by_family": {
+      "both": 0.9010416666666666,
+      "direct": 0.9973958333333334,
+      "either": 0.9427083333333334,
+      "opposes": 0.96875,
+      "same": 0.8125
+    },
+    "all_program_questions": 0.375,
+    "accuracy_all_program_questions": 0.9366319444444445
+  }
+}

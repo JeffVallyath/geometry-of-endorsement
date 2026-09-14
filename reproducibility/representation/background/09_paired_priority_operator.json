@@ -1,0 +1,326 @@
+{
+  "schema": "STRATEGY_BACKGROUND_TERMINAL_PROJECTION_V1",
+  "strategy_block": 9,
+  "study": "PAIRED_POLICY_OPERATOR_V1",
+  "evidence_level": "selected original terminal scientific summary values; not independent numerical replay",
+  "intake_boundary": "Original source bytes freshly hashed. Historical verification receipts are quoted as receipts; no fresh full-archive or member-by-member certification was performed.",
+  "curator_scope_qualification": "Binary correspondence advantage is supported on Gemma authored templates. Full STRONG CANDIDATE fails. The original three-option comparison also changed rendering; do not isolate option count from it. Qwen native qualification failure means editing NOT MEASURED, not a negative editing replication.",
+  "records": [
+    {
+      "source": {
+        "name": "DECISION.md",
+        "sha256": "ef6d1284895414ada187555892870aa9341a82cbd611cb22e1739e6f3b6ed017",
+        "bytes": 7699
+      },
+      "selected_excerpts": [
+        {
+          "start_line": 3,
+          "end_line": 6,
+          "text": "**Verdict:** correspondence helped Gemma switch decisions within binary templates;\nselective three-option transfer failed. Qwen failed the frozen native competence\ngate, so fresh Qwen editing was **NOT MEASURED — UNQUALIFIED**, not a failed\nediting replication. STRONG CANDIDATE is false. No successor is authorized here."
+        },
+        {
+          "start_line": 10,
+          "end_line": 13,
+          "text": "Independent units: **8 two-option families per domain; 4 three-option families\nper domain, a subset of those same families**. Each domain contributes 512 binary\nand 432 three-option decision rows. These are small authored, common-template\npopulations; the three-option task adds numeric ranking and an answer-interface"
+        },
+        {
+          "start_line": 17,
+          "end_line": 44,
+          "text": "Destination-rule accuracy (%), Gemma post-block 27:\n\n| Task / domain | PAIRED | MEAN | Shuffled | Marginal | Random | Projected oracle | Full-state oracle | Direct instruction |\n|---|---:|---:|---:|---:|---:|---:|---:|---:|\n| Two / allocation | 100.00 | 78.32 | 50.20 | 49.80 | 49.61 | 99.61 | 99.61 | 99.61 |\n| Two / reporting | 92.58 | 65.23 | 53.52 | 52.54 | 52.15 | 94.53 | 94.73 | 98.44 |\n| Three / allocation | 55.79 | **62.73** | 28.01 | 33.33 | 33.33 | 69.91 | 96.76 | 100.00 |\n| Three / reporting | 46.06 | 38.89 | 30.79 | 33.33 | 33.33 | 53.94 | 93.52 | 100.00 |\n\nPAIRED minus MEAN / SHUFFLED, percentage points; 97.5% paired family-bootstrap\nintervals, 4,000 draws, seed 260908:\n\n| Task / domain | Minus MEAN | Minus SHUFFLED |\n|---|---:|---:|\n| Two / allocation | +21.68 [19.92, 23.24] | +49.80 [49.22, 50.00] |\n| Two / reporting | +27.34 [22.85, 31.25] | +39.06 [35.16, 42.38] |\n| Three / allocation | -6.94 [-10.42, -3.94] | +27.78 [23.61, 31.02] |\n| Three / reporting | +7.18 [5.56, 9.95] | +15.28 [12.96, 19.44] |\n\nPAIRED recognition / agreement harmful flips (% of **all corresponding rows**):\ntwo allocation 0 / 0; two reporting 2.54 / 0; three allocation 8.80 / 20.83;\nthree reporting 12.19 / 44.44. Net losses are reported separately. Secondary\nequal-domain accuracy is 96.29% binary and 50.93% three-option. The binary\nyardstick passes. Three-option accuracy, both preservation gates, mean advantage,\nits corrected lower bound, and allocation mean-advantage reversal (including\nswitch 0) fail. The allocation mean's stronger result belongs to that baseline.\n\n| Prespecified explanation | Disposition supported by this study |"
+        },
+        {
+          "start_line": 56,
+          "end_line": 64,
+          "text": "All four Gemma primary maps selected rank 16 using old calibration only. The\noriginal 18 families were already exposed development (FIT 00–05, CAL 06–08),\nnot confirmation. No three-option fitting, favorable-case selection, layer\nsweep, backbone training or library upgrade occurred. Source-only updates use\nhidden state plus domain/requested switch; all 67,008 updates were frozen before\noracle access and reproduced exactly in live edit instrumentation. Projected,\nfull-state and cross-world oracles intentionally have counterfactual access;\nthey are diagnostics, not deployable competitors. Known low-rank ridge estimators\nwere used; this is not a new algorithm."
+        }
+      ]
+    },
+    {
+      "source": {
+        "name": "PRACTICAL_GATES.json",
+        "sha256": "57cea2e5518299bcd1cdbe08b81b09f56320577386455a278a78d7aed18e4ff0",
+        "bytes": 4410
+      },
+      "selected_values": {
+        "": [
+          {
+            "task": "two",
+            "domain": "allocation",
+            "destination_accuracy": 1.0,
+            "recognition_damage": 0.0,
+            "agreement_damage": 0.0,
+            "MEAN_advantage": 0.216796875,
+            "MEAN_low97_5": 0.19921875,
+            "SHUFFLED_PAIRS_advantage": 0.498046875,
+            "SHUFFLED_PAIRS_low97_5": 0.4921875,
+            "all_domain_conditions": true,
+            "failed_conditions": "",
+            "conditions": {
+              "accuracy_threshold": true,
+              "recognition_damage_le_005": true,
+              "agreement_damage_le_005": true,
+              "MEAN_advantage_threshold": true,
+              "MEAN_corrected_positive": true,
+              "MEAN_switch0_no_reversal": true,
+              "MEAN_switch1_no_reversal": true,
+              "SHUFFLED_PAIRS_advantage_threshold": true,
+              "SHUFFLED_PAIRS_corrected_positive": true,
+              "SHUFFLED_PAIRS_switch0_no_reversal": true,
+              "SHUFFLED_PAIRS_switch1_no_reversal": true
+            },
+            "interpretation": "Domain-specific yardstick; qualified-actor macro result and semantic generation gate must also be disclosed"
+          },
+          {
+            "task": "two",
+            "domain": "reporting",
+            "destination_accuracy": 0.92578125,
+            "recognition_damage": 0.025390625,
+            "agreement_damage": 0.0,
+            "MEAN_advantage": 0.2734375,
+            "MEAN_low97_5": 0.228515625,
+            "SHUFFLED_PAIRS_advantage": 0.390625,
+            "SHUFFLED_PAIRS_low97_5": 0.3515625,
+            "all_domain_conditions": true,
+            "failed_conditions": "",
+            "conditions": {
+              "accuracy_threshold": true,
+              "recognition_damage_le_005": true,
+              "agreement_damage_le_005": true,
+              "MEAN_advantage_threshold": true,
+              "MEAN_corrected_positive": true,
+              "MEAN_switch0_no_reversal": true,
+              "MEAN_switch1_no_reversal": true,
+              "SHUFFLED_PAIRS_advantage_threshold": true,
+              "SHUFFLED_PAIRS_corrected_positive": true,
+              "SHUFFLED_PAIRS_switch0_no_reversal": true,
+              "SHUFFLED_PAIRS_switch1_no_reversal": true
+            },
+            "interpretation": "Domain-specific yardstick; qualified-actor macro result and semantic generation gate must also be disclosed"
+          },
+          {
+            "task": "three",
+            "domain": "allocation",
+            "destination_accuracy": 0.5578703703703705,
+            "recognition_damage": 0.08796296296296297,
+            "agreement_damage": 0.20833333333333331,
+            "MEAN_advantage": -0.06944444444444445,
+            "MEAN_low97_5": -0.10416666666666666,
+            "SHUFFLED_PAIRS_advantage": 0.2777777777777778,
+            "SHUFFLED_PAIRS_low97_5": 0.2361111111111111,
+            "all_domain_conditions": false,
+            "failed_conditions": "accuracy_threshold;recognition_damage_le_005;agreement_damage_le_005;MEAN_advantage_threshold;MEAN_corrected_positive;MEAN_switch0_no_reversal",
+            "conditions": {
+              "accuracy_threshold": false,
+              "recognition_damage_le_005": false,
+              "agreement_damage_le_005": false,
+              "MEAN_advantage_threshold": false,
+              "MEAN_corrected_positive": false,
+              "MEAN_switch0_no_reversal": false,
+              "MEAN_switch1_no_reversal": true,
+              "SHUFFLED_PAIRS_advantage_threshold": true,
+              "SHUFFLED_PAIRS_corrected_positive": true,
+              "SHUFFLED_PAIRS_switch0_no_reversal": true,
+              "SHUFFLED_PAIRS_switch1_no_reversal": true
+            },
+            "interpretation": "Domain-specific yardstick; qualified-actor macro result and semantic generation gate must also be disclosed"
+          },
+          {
+            "task": "three",
+            "domain": "reporting",
+            "destination_accuracy": 0.46064814814814814,
+            "recognition_damage": 0.12191358024691358,
+            "agreement_damage": 0.4444444444444444,
+            "MEAN_advantage": 0.07175925925925926,
+            "MEAN_low97_5": 0.05555555555555555,
+            "SHUFFLED_PAIRS_advantage": 0.1527777777777778,
+            "SHUFFLED_PAIRS_low97_5": 0.12962962962962962,
+            "all_domain_conditions": false,
+            "failed_conditions": "accuracy_threshold;recognition_damage_le_005;agreement_damage_le_005;MEAN_advantage_threshold",
+            "conditions": {
+              "accuracy_threshold": false,
+              "recognition_damage_le_005": false,
+              "agreement_damage_le_005": false,
+              "MEAN_advantage_threshold": false,
+              "MEAN_corrected_positive": true,
+              "MEAN_switch0_no_reversal": true,
+              "MEAN_switch1_no_reversal": true,
+              "SHUFFLED_PAIRS_advantage_threshold": true,
+              "SHUFFLED_PAIRS_corrected_positive": true,
+              "SHUFFLED_PAIRS_switch0_no_reversal": true,
+              "SHUFFLED_PAIRS_switch1_no_reversal": true
+            },
+            "interpretation": "Domain-specific yardstick; qualified-actor macro result and semantic generation gate must also be disclosed"
+          }
+        ]
+      }
+    },
+    {
+      "source": {
+        "name": "ACTOR_PRACTICAL_YARDSTICK.json",
+        "sha256": "8590c8452d8b8c2147091cd41680c24fc565d945ffdfb296dab6fa3f260cb124",
+        "bytes": 3591
+      },
+      "selected_values": {
+        "": {
+          "analysis_role": "SECONDARY_EQUAL_DOMAIN_ACTOR_YARDSTICK",
+          "tasks": [
+            {
+              "task": "two",
+              "destination_accuracy": 0.962890625,
+              "recognition_damage": 0.0126953125,
+              "agreement_damage": 0.0,
+              "MEAN_advantage": 0.2451171875,
+              "MEAN_low97_5": 0.2216796875,
+              "SHUFFLED_PAIRS_advantage": 0.4443359375,
+              "SHUFFLED_PAIRS_low97_5": 0.42578125,
+              "conditions": {
+                "accuracy_threshold": true,
+                "recognition_damage_le_005": true,
+                "agreement_damage_le_005": true,
+                "MEAN_advantage_threshold": true,
+                "MEAN_corrected_positive": true,
+                "MEAN_allocation_no_reversal": true,
+                "MEAN_allocation_switch0_no_reversal": true,
+                "MEAN_allocation_switch1_no_reversal": true,
+                "MEAN_reporting_no_reversal": true,
+                "MEAN_reporting_switch0_no_reversal": true,
+                "MEAN_reporting_switch1_no_reversal": true,
+                "SHUFFLED_PAIRS_advantage_threshold": true,
+                "SHUFFLED_PAIRS_corrected_positive": true,
+                "SHUFFLED_PAIRS_allocation_no_reversal": true,
+                "SHUFFLED_PAIRS_allocation_switch0_no_reversal": true,
+                "SHUFFLED_PAIRS_allocation_switch1_no_reversal": true,
+                "SHUFFLED_PAIRS_reporting_no_reversal": true,
+                "SHUFFLED_PAIRS_reporting_switch0_no_reversal": true,
+                "SHUFFLED_PAIRS_reporting_switch1_no_reversal": true
+              },
+              "failed_conditions": [],
+              "all_conditions": true
+            },
+            {
+              "task": "three",
+              "destination_accuracy": 0.5092592592592593,
+              "recognition_damage": 0.10493827160493827,
+              "agreement_damage": 0.32638888888888884,
+              "MEAN_advantage": 0.0011574074074074056,
+              "MEAN_low97_5": -0.01967592592592592,
+              "SHUFFLED_PAIRS_advantage": 0.2152777777777778,
+              "SHUFFLED_PAIRS_low97_5": 0.18981481481481483,
+              "conditions": {
+                "accuracy_threshold": false,
+                "recognition_damage_le_005": false,
+                "agreement_damage_le_005": false,
+                "MEAN_advantage_threshold": false,
+                "MEAN_corrected_positive": false,
+                "MEAN_allocation_no_reversal": false,
+                "MEAN_allocation_switch0_no_reversal": false,
+                "MEAN_allocation_switch1_no_reversal": true,
+                "MEAN_reporting_no_reversal": true,
+                "MEAN_reporting_switch0_no_reversal": true,
+                "MEAN_reporting_switch1_no_reversal": true,
+                "SHUFFLED_PAIRS_advantage_threshold": true,
+                "SHUFFLED_PAIRS_corrected_positive": true,
+                "SHUFFLED_PAIRS_allocation_no_reversal": true,
+                "SHUFFLED_PAIRS_allocation_switch0_no_reversal": true,
+                "SHUFFLED_PAIRS_allocation_switch1_no_reversal": true,
+                "SHUFFLED_PAIRS_reporting_no_reversal": true,
+                "SHUFFLED_PAIRS_reporting_switch0_no_reversal": true,
+                "SHUFFLED_PAIRS_reporting_switch1_no_reversal": true
+              },
+              "failed_conditions": [
+                "accuracy_threshold",
+                "recognition_damage_le_005",
+                "agreement_damage_le_005",
+                "MEAN_advantage_threshold",
+                "MEAN_corrected_positive",
+                "MEAN_allocation_no_reversal",
+                "MEAN_allocation_switch0_no_reversal"
+              ],
+              "all_conditions": false
+            }
+          ],
+          "qualified_domains": [
+            "allocation",
+            "reporting"
+          ],
+          "numeric_yardstick_pass": false,
+          "generation_checks": 128,
+          "expected_generation_checks": 128,
+          "generation_mismatches": 0,
+          "generation_gate_pass": true,
+          "strong_candidate": false,
+          "caveat": "Per-actor yardstick only; replication and domain-primary results required. Any generation mismatch withholds the semantic candidate label pending explicit review."
+        }
+      }
+    },
+    {
+      "source": {
+        "name": "ANALYSIS_RECEIPT.json",
+        "sha256": "8bbfaf4aac498cf8067e7ad3e30e4d4adfaa65d5b671b09d9395fdae1e16201a",
+        "bytes": 3917
+      },
+      "selected_values": {
+        "/actor": "gemma",
+        "/status": "NUMERIC_REPLAY_COMPLETE",
+        "/semantic_gate": "ALL_FIXED_GENERATION_CHECKS_AGREE",
+        "/generation_checks": 128,
+        "/generation_mismatches": 0,
+        "/independent_families": {
+          "two": [
+            "PPO_allocation_00",
+            "PPO_allocation_01",
+            "PPO_allocation_02",
+            "PPO_allocation_03",
+            "PPO_allocation_04",
+            "PPO_allocation_05",
+            "PPO_allocation_06",
+            "PPO_allocation_07",
+            "PPO_reporting_00",
+            "PPO_reporting_01",
+            "PPO_reporting_02",
+            "PPO_reporting_03",
+            "PPO_reporting_04",
+            "PPO_reporting_05",
+            "PPO_reporting_06",
+            "PPO_reporting_07"
+          ],
+          "three": [
+            "PPO_allocation_00",
+            "PPO_allocation_01",
+            "PPO_allocation_02",
+            "PPO_allocation_03",
+            "PPO_reporting_00",
+            "PPO_reporting_01",
+            "PPO_reporting_02",
+            "PPO_reporting_03"
+          ]
+        },
+        "/family_bootstrap_draws": 4000,
+        "/seed": 260908,
+        "/descriptive_level": 0.95,
+        "/primary_contrast_level": 0.975,
+        "/domain_primary": true,
+        "/risk_note": "Zero observed harmful flips or degenerate bootstrap intervals do not establish universal zero risk.",
+        "/fit_manifest_sha256": "f1492bc149da602123ac6fdc82dd02a4c8b0388de695903410624d02d256a41d",
+        "/calibration_freeze_sha256": "3f9793bcc8c613167883d590872b552ebacc4c4c198383c6996ec40ea4e66096"
+      }
+    },
+    {
+      "source": {
+        "name": "GEMMA_PANEL_VERIFICATION_V1.json",
+        "sha256": "3a85f2dd8d34ed01033a5982fce8ec359602a2e05f7d15e0d67a253ca653ace0",
+        "bytes": 1250
+      },
+      "selected_values": {
+        "/status": "COMPLETE_PANEL_VERIFIED",
+        "/actor": "gemma",
+        "/natural_rows": 11168,
+        "/intervention_rows": 94992,
+        "/checked_pre_oracle_live_update_hashes": 67008,
+        "/local_numeric_replay_max_error": 0.0,
+        "/generation_checks": 128,
+        "/generation_mismatches": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "at": "2026-09-10T21:11:00.799068+00:00",
+  "schema": "SRS2_RANK16_AUGMENTED_V1",
+  "actor": "gemma",
+  "arm": "QUERY_CLAUSE",
+  "site": 15,
+  "seed": 0,
+  "cap": 103.18592071533203,
+  "aware": true,
+  "footprint": "clause",
+  "files": {
+    "relation_0": "37fd4785537d3bdc346f1301764a59acdc4aa8ec713db8be9e291f78d588d437",
+    "relation_1": "d93fdf81791fc4ea30e142f7b653d6257990999365ce1eb2392e3218852ca17a"
+  },
+  "init": {
+    "kind": "v1_warm_start",
+    "v1_dir": "<private operational reference omitted>",
+    "v1_files": {
+      "relation_0": "2de1db39f60de463c545e7e92178a523c047d5a6343c70a28acee5a26bf0f022",
+      "relation_1": "4cde0c19461f13a25503b8ed5c94e15ab0eca9e80b8eb8fcf463a4a07c5d1426"
+    },
+    "v1_meta_sha256": "007905c1e15bc4dc9c2bde9a16eafc244dd3d3674491d93eb1919ee7c6e5832f",
+    "v1_seed": 0,
+    "v1_epoch": 4,
+    "v1_family": "PREFIX_DISTRIBUTED"
+  },
+  "epoch": 2,
+  "lr": 0.001,
+  "steps": 720,
+  "visits": 2880,
+  "frobenius": {
+    "0": {
+      "input": 7.42733097076416,
+      "output": 5.297454833984375,
+      "bias": 0.09908793866634369,
+      "q_block": 2.681036949157715
+    },
+    "1": {
+      "input": 8.556447982788086,
+      "output": 4.670506954193115,
+      "bias": 0.07491444051265717,
+      "q_block": 4.506759166717529
+    }
+  }
+}

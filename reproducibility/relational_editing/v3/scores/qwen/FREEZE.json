@@ -1,0 +1,360 @@
+{
+  "at": "2026-09-11T12:48:27.651962+00:00",
+  "actor": "qwen",
+  "procedure": "T4",
+  "qualification": {
+    "policy": "RSO3 symmetric primitive policy: first procedure with >=95% parseable generations (<=32 new tokens) and >=90% direct/negation accuracy on BOTH the source and the natural-counterfactual inputs; equality is always measured and stays in every primary metric but never vetoes editing; historical V2 verdicts unchanged",
+    "selected": "T4",
+    "equality": {
+      "source": 0.625,
+      "counterfactual": 0.53125
+    }
+  },
+  "site": 13,
+  "cap_ref": 28.22532844543457,
+  "arms": [
+    "INVARIANT_SET",
+    "FREE_OVERWRITE",
+    "AFFINE_CLAUSE"
+  ],
+  "e_max": 3,
+  "selection": {
+    "INVARIANT_SET": {
+      "lr": 0.0003,
+      "epoch": 3,
+      "strength": 1.0,
+      "feasible": true,
+      "label": "capable_candidate",
+      "checkpoints": {
+        "0": "<private operational reference omitted>",
+        "1": "<private operational reference omitted>"
+      },
+      "cal": {
+        "0": {
+          "n_scenes": 48,
+          "n_queries": 720,
+          "changed": 0.9340277777777778,
+          "harm": 0.019675925925925923,
+          "conditional_harm": 0.021597805788982256,
+          "all24": 0.6041666666666666,
+          "accuracy": 0.9461805555555555,
+          "touched_accuracy": 0.9270833333333334,
+          "other_address_error": 0.03472222222222222,
+          "preservation": 0.9784021942110178,
+          "nonaddressed_change": 0.026041666666666668,
+          "changed_by_direction": {
+            "0": 0.9166666666666666,
+            "1": 0.951388888888889
+          },
+          "by_cell": {
+            "(4, 2, 0)": {
+              "changed": 0.951388888888889,
+              "harm": 0.01851851851851852,
+              "all24": 0.6666666666666666
+            },
+            "(4, 2, 1)": {
+              "changed": 0.9166666666666666,
+              "harm": 0.020833333333333332,
+              "all24": 0.5416666666666666
+            }
+          },
+          "by_family": {
+            "direct": 0.9916666666666667,
+            "opposes": 0.9375,
+            "same": 0.7916666666666666
+          },
+          "all_program_questions": 0.6041666666666666,
+          "accuracy_all_program_questions": 0.9461805555555555,
+          "loss": 0.402216242242136,
+          "mean_realized_norm": 17.147821358514427,
+          "mean_energy": 3159.485906982422,
+          "mean_frobenius": 55.850634243179215,
+          "edited_tokens_per_artifact": 9.366666666666667,
+          "cache_bytes": 98753740.8,
+          "max_cast_error": 0.15358468890190125,
+          "seconds": 14.427892769999744,
+          "n_rows": 720,
+          "strength": 1.0,
+          "arm": "INVARIANT_SET"
+        },
+        "1": {
+          "n_scenes": 48,
+          "n_queries": 720,
+          "changed": 0.9097222222222223,
+          "harm": 0.016203703703703703,
+          "conditional_harm": 0.01812558356676004,
+          "all24": 0.5416666666666666,
+          "accuracy": 0.9401041666666666,
+          "touched_accuracy": 0.907986111111111,
+          "other_address_error": 0.02777777777777778,
+          "preservation": 0.9818744164332399,
+          "nonaddressed_change": 0.005208333333333333,
+          "changed_by_direction": {
+            "0": 0.875,
+            "1": 0.9444444444444445
+          },
+          "by_cell": {
+            "(4, 2, 0)": {
+              "changed": 0.9444444444444445,
+              "harm": 0.018518518518518517,
+              "all24": 0.625
+            },
+            "(4, 2, 1)": {
+              "changed": 0.875,
+              "harm": 0.013888888888888888,
+              "all24": 0.4583333333333333
+            }
+          },
+          "by_family": {
+            "direct": 0.9888888888888889,
+            "opposes": 0.9333333333333333,
+            "same": 0.7833333333333333
+          },
+          "all_program_questions": 0.5416666666666666,
+          "accuracy_all_program_questions": 0.9401041666666666,
+          "loss": 0.4906696601227105,
+          "mean_realized_norm": 16.58682497794942,
+          "mean_energy": 3067.274031575521,
+          "mean_frobenius": 55.0378030271186,
+          "edited_tokens_per_artifact": 9.366666666666667,
+          "cache_bytes": 98753740.8,
+          "max_cast_error": 0.1474349945783615,
+          "seconds": 14.581380564999563,
+          "n_rows": 720,
+          "strength": 1.0,
+          "arm": "INVARIANT_SET"
+        }
+      },
+      "norm": 16.867323168231923,
+      "frobenius": 55.44421863514891
+    },
+    "FREE_OVERWRITE": {
+      "lr": 0.001,
+      "epoch": 2,
+      "strength": 1.0,
+      "feasible": false,
+      "label": "diagnostic_not_capable",
+      "checkpoints": {
+        "0": "<private operational reference omitted>",
+        "1": "<private operational reference omitted>"
+      },
+      "cal": {
+        "0": {
+          "n_scenes": 48,
+          "n_queries": 720,
+          "changed": 0.923611111111111,
+          "harm": 0.032407407407407406,
+          "conditional_harm": 0.03389939309056956,
+          "all24": 0.6041666666666666,
+          "accuracy": 0.9366319444444445,
+          "touched_accuracy": 0.921875,
+          "other_address_error": 0.048611111111111105,
+          "preservation": 0.9661006069094303,
+          "nonaddressed_change": 0.020833333333333332,
+          "changed_by_direction": {
+            "0": 0.9097222222222223,
+            "1": 0.9375
+          },
+          "by_cell": {
+            "(4, 2, 0)": {
+              "changed": 0.9375,
+              "harm": 0.009259259259259259,
+              "all24": 0.5833333333333334
+            },
+            "(4, 2, 1)": {
+              "changed": 0.9097222222222223,
+              "harm": 0.05555555555555555,
+              "all24": 0.625
+            }
+          },
+          "by_family": {
+            "direct": 0.9805555555555555,
+            "opposes": 0.9375,
+            "same": 0.7666666666666667
+          },
+          "all_program_questions": 0.6041666666666666,
+          "accuracy_all_program_questions": 0.9366319444444445,
+          "loss": 0.45938520346961553,
+          "mean_realized_norm": 24.87656124461164,
+          "mean_energy": 6743.523547363281,
+          "mean_frobenius": 80.95454645020186,
+          "edited_tokens_per_artifact": 9.366666666666667,
+          "cache_bytes": 98753740.8,
+          "max_cast_error": 0.16677363216876984,
+          "seconds": 14.428377088999696,
+          "n_rows": 720,
+          "strength": 1.0,
+          "arm": "FREE_OVERWRITE"
+        },
+        "1": {
+          "n_scenes": 48,
+          "n_queries": 720,
+          "changed": 0.8402777777777777,
+          "harm": 0.03819444444444444,
+          "conditional_harm": 0.04222251400560224,
+          "all24": 0.3541666666666667,
+          "accuracy": 0.8871527777777778,
+          "touched_accuracy": 0.8333333333333334,
+          "other_address_error": 0.05902777777777777,
+          "preservation": 0.9577774859943977,
+          "nonaddressed_change": 0.03125,
+          "changed_by_direction": {
+            "0": 0.7847222222222223,
+            "1": 0.8958333333333334
+          },
+          "by_cell": {
+            "(4, 2, 0)": {
+              "changed": 0.8958333333333334,
+              "harm": 0.03472222222222222,
+              "all24": 0.4583333333333333
+            },
+            "(4, 2, 1)": {
+              "changed": 0.7847222222222223,
+              "harm": 0.041666666666666664,
+              "all24": 0.25
+            }
+          },
+          "by_family": {
+            "direct": 0.9555555555555556,
+            "opposes": 0.9208333333333333,
+            "same": 0.5833333333333334
+          },
+          "all_program_questions": 0.3541666666666667,
+          "accuracy_all_program_questions": 0.8871527777777778,
+          "loss": 1.047430750064982,
+          "mean_realized_norm": 29.089979404232256,
+          "mean_energy": 9040.783862304688,
+          "mean_frobenius": 94.1997039315368,
+          "edited_tokens_per_artifact": 9.366666666666667,
+          "cache_bytes": 98753740.8,
+          "max_cast_error": 0.17620638012886047,
+          "seconds": 14.4745846850019,
+          "n_rows": 720,
+          "strength": 1.0,
+          "arm": "FREE_OVERWRITE"
+        }
+      },
+      "norm": 26.983270324421948,
+      "frobenius": 87.57712519086934
+    },
+    "AFFINE_CLAUSE": {
+      "lr": 0.0003,
+      "epoch": 3,
+      "strength": 1.0,
+      "feasible": true,
+      "label": "capable_candidate",
+      "checkpoints": {
+        "0": "<private operational reference omitted>",
+        "1": "<private operational reference omitted>"
+      },
+      "cal": {
+        "0": {
+          "n_scenes": 48,
+          "n_queries": 720,
+          "changed": 0.8819444444444443,
+          "harm": 0.041666666666666664,
+          "conditional_harm": 0.044752275910364146,
+          "all24": 0.4791666666666667,
+          "accuracy": 0.9123263888888888,
+          "touched_accuracy": 0.890625,
+          "other_address_error": 0.06597222222222222,
+          "preservation": 0.9552477240896359,
+          "nonaddressed_change": 0.046875,
+          "changed_by_direction": {
+            "0": 0.8402777777777777,
+            "1": 0.923611111111111
+          },
+          "by_cell": {
+            "(4, 2, 0)": {
+              "changed": 0.923611111111111,
+              "harm": 0.020833333333333332,
+              "all24": 0.5833333333333334
+            },
+            "(4, 2, 1)": {
+              "changed": 0.8402777777777777,
+              "harm": 0.0625,
+              "all24": 0.375
+            }
+          },
+          "by_family": {
+            "direct": 0.9638888888888889,
+            "opposes": 0.9125,
+            "same": 0.75
+          },
+          "all_program_questions": 0.4791666666666667,
+          "accuracy_all_program_questions": 0.9123263888888888,
+          "loss": 0.6293070753457732,
+          "mean_realized_norm": 24.83543599415504,
+          "mean_energy": 6135.651770019531,
+          "mean_frobenius": 78.03242512622955,
+          "edited_tokens_per_artifact": 9.366666666666667,
+          "cache_bytes": 98753740.8,
+          "max_cast_error": 0.0,
+          "seconds": 14.456213763998676,
+          "n_rows": 720,
+          "strength": 1.0,
+          "arm": "AFFINE_CLAUSE"
+        },
+        "1": {
+          "n_scenes": 48,
+          "n_queries": 720,
+          "changed": 0.875,
+          "harm": 0.030092592592592587,
+          "conditional_harm": 0.03165484943977591,
+          "all24": 0.4583333333333333,
+          "accuracy": 0.9131944444444443,
+          "touched_accuracy": 0.8732638888888888,
+          "other_address_error": 0.046875,
+          "preservation": 0.9683451505602241,
+          "nonaddressed_change": 0.03125,
+          "changed_by_direction": {
+            "0": 0.8333333333333334,
+            "1": 0.9166666666666666
+          },
+          "by_cell": {
+            "(4, 2, 0)": {
+              "changed": 0.9166666666666666,
+              "harm": 0.032407407407407406,
+              "all24": 0.5
+            },
+            "(4, 2, 1)": {
+              "changed": 0.8333333333333334,
+              "harm": 0.027777777777777776,
+              "all24": 0.4166666666666667
+            }
+          },
+          "by_family": {
+            "direct": 0.9861111111111112,
+            "opposes": 0.9291666666666667,
+            "same": 0.6166666666666667
+          },
+          "all_program_questions": 0.4583333333333333,
+          "accuracy_all_program_questions": 0.9131944444444443,
+          "loss": 0.7603391916885704,
+          "mean_realized_norm": 25.6015086708544,
+          "mean_energy": 6398.869734700521,
+          "mean_frobenius": 79.907735173509,
+          "edited_tokens_per_artifact": 9.366666666666667,
+          "cache_bytes": 98753740.8,
+          "max_cast_error": 0.0,
+          "seconds": 14.436932841999806,
+          "n_rows": 720,
+          "strength": 1.0,
+          "arm": "AFFINE_CLAUSE"
+        }
+      },
+      "norm": 25.21847233250472,
+      "frobenius": 78.97008014986928
+    }
+  },
+  "not_measured": [],
+  "captures_sha256": "e6e8f6cb8bc51390e28cece1ca4fe69f9b2ebb18527d083e40866a568652ee79",
+  "init": {
+    "0": "ba9e34851971a154ef6b1294f7d54540de8ced5d329bb72d9b40dfc6f2ebb8f1",
+    "1": "ba9e34851971a154ef6b1294f7d54540de8ced5d329bb72d9b40dfc6f2ebb8f1"
+  },
+  "frozen_references": {},
+  "final_access": "none: no FINAL or WORKFLOW scene was read in phase D",
+  "training": "single operations only (flip + declared no-op); no multi-command, repetition or restoration result entered fitting, checkpoint choice or strength choice",
+  "rule": "per arm: worse-seed changed accuracy among recipes feasible in each seed (<=5% harm, >=80% each direction), ties higher all-24, lower harm, smaller norm, earlier epoch; else diagnostic by worse-seed changed - 2*harm; setters strength exactly 1; affine CAL grid {.5,.75,1,1.25}"
+}

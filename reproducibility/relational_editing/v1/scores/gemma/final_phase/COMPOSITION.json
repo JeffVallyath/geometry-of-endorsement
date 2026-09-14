@@ -1,0 +1,37 @@
+{
+  "at": "2026-09-10T11:45:08.185066+00:00",
+  "family": "PREFIX_DISTRIBUTED",
+  "scenes": [
+    "FINAL-relation-029",
+    "FINAL-relation-049",
+    "FINAL-relation-037",
+    "FINAL-relation-057",
+    "FINAL-relation-062",
+    "FINAL-relation-052",
+    "FINAL-relation-017",
+    "FINAL-relation-034",
+    "FINAL-relation-004",
+    "FINAL-relation-041",
+    "FINAL-relation-054",
+    "FINAL-relation-059",
+    "FINAL-relation-025",
+    "FINAL-relation-045",
+    "FINAL-relation-030",
+    "FINAL-relation-050"
+  ],
+  "rows": {
+    "SOURCE": 384,
+    "COUNTERFACTUAL_JOINT": 384,
+    "LATE_s0_AB": 384,
+    "LATE_s0_BA": 384,
+    "PREFIX_DISTRIBUTED_s0_AB": 384,
+    "PREFIX_DISTRIBUTED_s0_BA": 384,
+    "LATE_MEAN_AB": 384,
+    "LATE_MEAN_BA": 384,
+    "GLOBAL_LABEL_FLIP": 384,
+    "META": 16
+  },
+  "seconds": 315.9271824660009,
+  "status": "MEASURED",
+  "note": "joint gold = both edits applied; neither joint example was used in training; z recomputed from the current within-hook residual before each map"
+}

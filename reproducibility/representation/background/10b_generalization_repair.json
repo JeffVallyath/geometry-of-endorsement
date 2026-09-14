@@ -1,0 +1,371 @@
+{
+  "schema": "STRATEGY_BACKGROUND_TERMINAL_PROJECTION_V1",
+  "strategy_block": 10,
+  "study": "POLICY_EDIT_GENERALIZATION_REPAIR_V1",
+  "evidence_level": "selected original terminal scientific summary values; not independent numerical replay",
+  "intake_boundary": "Original source bytes freshly hashed. Historical verification receipts are quoted as receipts; no fresh full-archive or member-by-member certification was performed.",
+  "curator_scope_qualification": "Relearning basis and usage gives relative gains, but misses reusable-repair accuracy and preservation criteria; REBASIS-NARROW point gain is below its 10pp material threshold. Native destination prompting remains much stronger. Historical binary retention is exposed-anchor evidence, not fresh confirmation. Qwen unqualified under both frozen native procedures.",
+  "records": [
+    {
+      "source": {
+        "name": "external_review_packet_v1.json",
+        "sha256": "036b5d7b4ddb9a99a77e16becad41acb38314a2688c5aacd0aa118357b71f9dd",
+        "bytes": 66813
+      },
+      "selected_values": {
+        "/terminal_status": "EXTERNAL_REVIEW_PACKET_READY",
+        "/factual_verdict": "Completed frozen FULL Gemma panel; no strong reusable repair. Qwen native-task unqualified; no replication.",
+        "/research_question/frozen_thresholds": {
+          "four_accuracy": 0.8,
+          "domain_addition_accuracy": 0.75,
+          "harm_and_net_loss_max": 0.05,
+          "material_gain": 0.1,
+          "binary_retention_loss_max": 0.05,
+          "bootstrap": "10000 whole-family paired draws,seed260910;four contrasts Bonferroni alpha.0125"
+        },
+        "/capability_delta/actual": [
+          "Candidate subsets of A/B/C/D on borrowed scorer; exact actual after-hook/next-block evidence.",
+          "Source-state-only rank16 COEFF/REBASIS/NARROW/SHUFFLED and VAR_MEAN using frozen per-domain/switch factors.",
+          "Complete crossed update transport, held-out four-option/transposed decisions and independent U/V recognition, matched privileged references.",
+          "CAL-only batched-edit diagnostic with measured speed and numerical-equivalence witnesses."
+        ],
+        "/capability_delta/not_achieved": [
+          "A reliable reusable repair",
+          "Qualified second-actor replication",
+          "Validated batched replacement for scientific serial path"
+        ],
+        "/evidence_topology/actors_with_final_results": 1,
+        "/evidence_topology/independent_final_families": 24,
+        "/evidence_topology/final_families_per_domain": 12,
+        "/evidence_topology/clustering": "Views/switches/layouts/mappings/endpoints are paired descendants, not independent observations. Authored families are not a random real-world sample.",
+        "/evidence_topology/exposure": "Four historical crossover families and anchors are known development. FINAL families, four options and transposed presentation were not fitted or calibrated.",
+        "/held_fixed/models": {
+          "gemma": {
+            "id": "google/gemma-2-9b-it",
+            "revision": "11c9b309abf73637e4b6f9a3fa1e92e615547819",
+            "layers": 42,
+            "site": 27,
+            "sites": [
+              27
+            ],
+            "cap": 30.0
+          },
+          "qwen": {
+            "id": "Qwen/Qwen2.5-7B-Instruct",
+            "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+            "layers": 28,
+            "site": 18,
+            "sites": [
+              18
+            ],
+            "cap": null
+          }
+        },
+        "/held_fixed/state": "One final real prompt token, post Gemma27/Qwen18, BF16 backbone; native+FP32 readouts.",
+        "/exact_empirical_result/primary_contrasts": [
+          {
+            "contrast": "REBASIS-COEFF",
+            "estimate": "0.12803819444444445",
+            "lower": "0.0859375",
+            "upper": "0.17491319444444448",
+            "alpha": "0.0125",
+            "families_by_domain": "{\"allocation\":12,\"reporting\":12}",
+            "degenerate": "False",
+            "scope": "conditional on authored scenario-family population",
+            "material_gain": "0.1",
+            "lower_positive": "True",
+            "estimate_material": "True",
+            "upper_below_material": "False",
+            "balancing": "equal six form x decisive/nonwinning cells per family; equal families within domain; equal domains"
+          },
+          {
+            "contrast": "REBASIS-NARROW",
+            "estimate": "0.09288194444444445",
+            "lower": "0.06467013888888888",
+            "upper": "0.11762152777777778",
+            "alpha": "0.0125",
+            "families_by_domain": "{\"allocation\":12,\"reporting\":12}",
+            "degenerate": "False",
+            "scope": "conditional on authored scenario-family population",
+            "material_gain": "0.1",
+            "lower_positive": "True",
+            "estimate_material": "False",
+            "upper_below_material": "False",
+            "balancing": "equal six form x decisive/nonwinning cells per family; equal families within domain; equal domains"
+          },
+          {
+            "contrast": "REBASIS-VAR_MEAN",
+            "estimate": "0.2552083333333333",
+            "lower": "0.22352430555555555",
+            "upper": "0.2881944444444445",
+            "alpha": "0.0125",
+            "families_by_domain": "{\"allocation\":12,\"reporting\":12}",
+            "degenerate": "False",
+            "scope": "conditional on authored scenario-family population",
+            "material_gain": "0.1",
+            "lower_positive": "True",
+            "estimate_material": "True",
+            "upper_below_material": "False",
+            "balancing": "equal six form x decisive/nonwinning cells per family; equal families within domain; equal domains"
+          },
+          {
+            "contrast": "REBASIS-SHUFFLED",
+            "estimate": "0.2951388888888889",
+            "lower": "0.25217013888888884",
+            "upper": "0.34375",
+            "alpha": "0.0125",
+            "families_by_domain": "{\"allocation\":12,\"reporting\":12}",
+            "degenerate": "False",
+            "scope": "conditional on authored scenario-family population",
+            "material_gain": "0.1",
+            "lower_positive": "True",
+            "estimate_material": "True",
+            "upper_below_material": "False",
+            "balancing": "equal six form x decisive/nonwinning cells per family; equal families within domain; equal domains"
+          }
+        ],
+        "/exact_empirical_result/native_four_balanced": {
+          "estimate": 0.935329861111111,
+          "lower": 0.9188368055555556,
+          "upper": 0.9500868055555556,
+          "alpha": 0.05,
+          "families_by_domain": {
+            "allocation": 12,
+            "reporting": 12
+          },
+          "degenerate": false,
+          "scope": "conditional on authored scenario-family population"
+        },
+        "/exact_empirical_result/rebasis_fresh_detail": {
+          "newly_winning_option_accuracy": 0.1857638888888889,
+          "leave_added_option_accuracy": 0.4305555555555556,
+          "formats": {
+            "NUMBERS": 0.3958333333333333,
+            "TRANSPOSED": 0.19140625,
+            "WORDS": 0.42708333333333337
+          },
+          "known_binary_raw_accuracy": 0.375,
+          "known_binary_old_paired_raw_accuracy": 1.0,
+          "known_binary_unique_prompts": 8,
+          "retention_weighting": "Raw8-view accuracies differ by-.625; family/domain-macro paired effect is-.666667 with wide known-anchor interval. Neither is fresh-population confirmation."
+        },
+        "/exact_empirical_result/native_qualification": [
+          {
+            "actor": "gemma",
+            "procedure": "C0",
+            "domain": "allocation",
+            "decision_accuracy": 1.0,
+            "recognition_accuracy": 0.9853515625,
+            "selected": true
+          },
+          {
+            "actor": "gemma",
+            "procedure": "C0",
+            "domain": "reporting",
+            "decision_accuracy": 0.97265625,
+            "recognition_accuracy": 0.986328125,
+            "selected": true
+          },
+          {
+            "actor": "qwen",
+            "procedure": "C0",
+            "domain": "allocation",
+            "decision_accuracy": 0.796875,
+            "recognition_accuracy": 0.75,
+            "selected": false
+          },
+          {
+            "actor": "qwen",
+            "procedure": "C0",
+            "domain": "reporting",
+            "decision_accuracy": 0.6640625,
+            "recognition_accuracy": 0.646484375,
+            "selected": false
+          },
+          {
+            "actor": "qwen",
+            "procedure": "C1",
+            "domain": "allocation",
+            "decision_accuracy": 0.84375,
+            "recognition_accuracy": 0.76171875,
+            "selected": false
+          },
+          {
+            "actor": "qwen",
+            "procedure": "C1",
+            "domain": "reporting",
+            "decision_accuracy": 0.75,
+            "recognition_accuracy": 0.6201171875,
+            "selected": false
+          }
+        ],
+        "/exact_empirical_result/practical_disposition": "FAIL: no method reaches the required .80 four-option accuracy; REBASIS is not a successful reusable repair.",
+        "/negative_and_surprising_evidence/development_to_final": "CAL is easier/practiced and includes no four-option/transposed cases. Selected CAL scores do not validate FINAL; CAL/FULL panels are not identical estimands, so do not label an accuracy drop a sign reversal.",
+        "/negative_and_surprising_evidence/qwen": "Both C0 and C1 native competence failures retained; do not interpret absent edits as scientific negatives.",
+        "/exact_empirical_result/methods/0/arm": "OLD_PAIRED",
+        "/exact_empirical_result/methods/0/balanced_four_accuracy": 0.14539930555555555,
+        "/exact_empirical_result/methods/0/accuracy_lower": 0.12630208333333334,
+        "/exact_empirical_result/methods/0/accuracy_upper": 0.16319444444444442,
+        "/exact_empirical_result/methods/0/recognition_harm": 0.06700303819444445,
+        "/exact_empirical_result/methods/0/agreement_harm": 0.10358796296296297,
+        "/exact_empirical_result/methods/0/known_binary_retention": [
+          {
+            "arm": "PAIRED",
+            "task": "two",
+            "endpoint_scope": "ALL",
+            "views": "8",
+            "destination_accuracy": "1.0",
+            "change_vs_OLD_PAIRED": "0.0",
+            "lower": "0.0",
+            "upper": "0.0",
+            "degenerate": "True",
+            "families_by_domain": "{\"allocation\":3,\"reporting\":2}",
+            "no_decline_over_5pp": "True",
+            "scope": "known exposed anchors; supplied8binary+8three prompts, not32binary; conditional on authored scenario-family population"
+          }
+        ],
+        "/exact_empirical_result/methods/1/arm": "OLD_MEAN",
+        "/exact_empirical_result/methods/1/balanced_four_accuracy": 0.13194444444444445,
+        "/exact_empirical_result/methods/1/accuracy_lower": 0.10633680555555555,
+        "/exact_empirical_result/methods/1/accuracy_upper": 0.1579861111111111,
+        "/exact_empirical_result/methods/1/recognition_harm": 0.045952690972222224,
+        "/exact_empirical_result/methods/1/agreement_harm": 0.06655092592592593,
+        "/exact_empirical_result/methods/1/known_binary_retention": [],
+        "/exact_empirical_result/methods/2/arm": "COEFF",
+        "/exact_empirical_result/methods/2/balanced_four_accuracy": 0.21006944444444442,
+        "/exact_empirical_result/methods/2/accuracy_lower": 0.1896701388888889,
+        "/exact_empirical_result/methods/2/accuracy_upper": 0.23046874999999994,
+        "/exact_empirical_result/methods/2/recognition_harm": 0.04475911458333333,
+        "/exact_empirical_result/methods/2/agreement_harm": 0.054976851851851846,
+        "/exact_empirical_result/methods/2/known_binary_retention": [
+          {
+            "arm": "COEFF",
+            "task": "two",
+            "endpoint_scope": "ALL",
+            "views": "8",
+            "destination_accuracy": "0.375",
+            "change_vs_OLD_PAIRED": "-0.6666666666666666",
+            "lower": "-0.9166666666666667",
+            "upper": "-0.41666666666666663",
+            "degenerate": "False",
+            "families_by_domain": "{\"allocation\":3,\"reporting\":2}",
+            "no_decline_over_5pp": "False",
+            "scope": "known exposed anchors; supplied8binary+8three prompts, not32binary; conditional on authored scenario-family population"
+          }
+        ],
+        "/exact_empirical_result/methods/3/arm": "REBASIS",
+        "/exact_empirical_result/methods/3/balanced_four_accuracy": 0.33810763888888884,
+        "/exact_empirical_result/methods/3/accuracy_lower": 0.30729166666666663,
+        "/exact_empirical_result/methods/3/accuracy_upper": 0.3715277777777778,
+        "/exact_empirical_result/methods/3/recognition_harm": 0.0625,
+        "/exact_empirical_result/methods/3/agreement_harm": 0.125,
+        "/exact_empirical_result/methods/3/known_binary_retention": [
+          {
+            "arm": "REBASIS",
+            "task": "two",
+            "endpoint_scope": "ALL",
+            "views": "8",
+            "destination_accuracy": "0.375",
+            "change_vs_OLD_PAIRED": "-0.6666666666666666",
+            "lower": "-0.9166666666666667",
+            "upper": "-0.41666666666666663",
+            "degenerate": "False",
+            "families_by_domain": "{\"allocation\":3,\"reporting\":2}",
+            "no_decline_over_5pp": "False",
+            "scope": "known exposed anchors; supplied8binary+8three prompts, not32binary; conditional on authored scenario-family population"
+          }
+        ],
+        "/exact_empirical_result/methods/4/arm": "NARROW",
+        "/exact_empirical_result/methods/4/balanced_four_accuracy": 0.24522569444444442,
+        "/exact_empirical_result/methods/4/accuracy_lower": 0.21918402777777776,
+        "/exact_empirical_result/methods/4/accuracy_upper": 0.2725694444444444,
+        "/exact_empirical_result/methods/4/recognition_harm": 0.03689236111111111,
+        "/exact_empirical_result/methods/4/agreement_harm": 0.07986111111111112,
+        "/exact_empirical_result/methods/4/known_binary_retention": [
+          {
+            "arm": "NARROW",
+            "task": "two",
+            "endpoint_scope": "ALL",
+            "views": "8",
+            "destination_accuracy": "0.75",
+            "change_vs_OLD_PAIRED": "-0.3333333333333333",
+            "lower": "-0.6666666666666666",
+            "upper": "0.0",
+            "degenerate": "False",
+            "families_by_domain": "{\"allocation\":3,\"reporting\":2}",
+            "no_decline_over_5pp": "False",
+            "scope": "known exposed anchors; supplied8binary+8three prompts, not32binary; conditional on authored scenario-family population"
+          }
+        ],
+        "/exact_empirical_result/methods/5/arm": "VAR_MEAN",
+        "/exact_empirical_result/methods/5/balanced_four_accuracy": 0.08289930555555555,
+        "/exact_empirical_result/methods/5/accuracy_lower": 0.0642361111111111,
+        "/exact_empirical_result/methods/5/accuracy_upper": 0.1015625,
+        "/exact_empirical_result/methods/5/recognition_harm": 0.024468315972222224,
+        "/exact_empirical_result/methods/5/agreement_harm": 0.005208333333333334,
+        "/exact_empirical_result/methods/5/known_binary_retention": [
+          {
+            "arm": "VAR_MEAN",
+            "task": "two",
+            "endpoint_scope": "ALL",
+            "views": "8",
+            "destination_accuracy": "0.75",
+            "change_vs_OLD_PAIRED": "-0.16666666666666666",
+            "lower": "-0.3333333333333333",
+            "upper": "0.0",
+            "degenerate": "False",
+            "families_by_domain": "{\"allocation\":3,\"reporting\":2}",
+            "no_decline_over_5pp": "False",
+            "scope": "known exposed anchors; supplied8binary+8three prompts, not32binary; conditional on authored scenario-family population"
+          }
+        ],
+        "/exact_empirical_result/methods/6/arm": "SHUFFLED",
+        "/exact_empirical_result/methods/6/balanced_four_accuracy": 0.04296875,
+        "/exact_empirical_result/methods/6/accuracy_lower": 0.03428819444444444,
+        "/exact_empirical_result/methods/6/accuracy_upper": 0.052517361111111105,
+        "/exact_empirical_result/methods/6/recognition_harm": 0.05506727430555555,
+        "/exact_empirical_result/methods/6/agreement_harm": 0.013310185185185185,
+        "/exact_empirical_result/methods/6/known_binary_retention": [
+          {
+            "arm": "SHUFFLED",
+            "task": "two",
+            "endpoint_scope": "ALL",
+            "views": "8",
+            "destination_accuracy": "0.5",
+            "change_vs_OLD_PAIRED": "-0.41666666666666663",
+            "lower": "-0.75",
+            "upper": "-0.08333333333333333",
+            "degenerate": "False",
+            "families_by_domain": "{\"allocation\":3,\"reporting\":2}",
+            "no_decline_over_5pp": "False",
+            "scope": "known exposed anchors; supplied8binary+8three prompts, not32binary; conditional on authored scenario-family population"
+          }
+        ],
+        "/exact_empirical_result/methods/7/arm": "RANDOM_VAR",
+        "/exact_empirical_result/methods/7/balanced_four_accuracy": 0.026475694444444444,
+        "/exact_empirical_result/methods/7/accuracy_lower": 0.019965277777777776,
+        "/exact_empirical_result/methods/7/accuracy_upper": 0.033854166666666664,
+        "/exact_empirical_result/methods/7/recognition_harm": 0.0038519965277777775,
+        "/exact_empirical_result/methods/7/agreement_harm": 0.004629629629629629,
+        "/exact_empirical_result/methods/7/known_binary_retention": []
+      }
+    },
+    {
+      "source": {
+        "name": "GEMMA_FINAL_REPLAY_V1.json",
+        "sha256": "19f55354dbf4f2241ad6626462ecf613f66d112690762d9916e7f2fc2bcba870",
+        "bytes": 457
+      },
+      "selected_values": {
+        "/status": "FULL_FINAL_REPLAY_PASS",
+        "/actor": "gemma",
+        "/natural_rows": 23040,
+        "/edited_rows": 203520,
+        "/source_updates": 192000,
+        "/generation_rows": 192,
+        "/max_source_update_error": 0.0,
+        "/invalid_scores": 0
+      }
+    }
+  ]
+}

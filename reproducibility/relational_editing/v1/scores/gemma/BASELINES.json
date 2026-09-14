@@ -1,0 +1,61 @@
+{
+  "at": "2026-09-10T08:24:22.060079+00:00",
+  "no_edit_fit": {
+    "relation": {
+      "changed": 0.0625,
+      "invariant_harm": 0.0,
+      "conditional_harm": 0.0,
+      "all_correct": 0.0,
+      "accuracy": 0.53125,
+      "n_scenes": 64,
+      "n_queries": 768,
+      "false_nonaddressed_change": 0.0,
+      "changed_by_direction": {
+        "0": 0.06666666666666667,
+        "1": 0.05982905982905983
+      },
+      "score": 0.0625
+    },
+    "priority": null,
+    "mean_score": 0.0625
+  },
+  "no_edit_cal": {
+    "relation": {
+      "changed": 0.041666666666666664,
+      "invariant_harm": 0.0,
+      "conditional_harm": 0.0,
+      "all_correct": 0.0,
+      "accuracy": 0.5173611111111112,
+      "n_scenes": 24,
+      "n_queries": 288,
+      "false_nonaddressed_change": 0.0,
+      "changed_by_direction": {
+        "0": 0.02564102564102564,
+        "1": 0.0606060606060606
+      },
+      "score": 0.041666666666666664
+    },
+    "priority": null,
+    "mean_score": 0.041666666666666664
+  },
+  "counterfactual_cal": {
+    "relation": {
+      "changed": 0.9722222222222223,
+      "invariant_harm": 0.006944444444444444,
+      "conditional_harm": 0.006993006993006993,
+      "all_correct": 0.8333333333333334,
+      "accuracy": 0.9791666666666666,
+      "n_scenes": 24,
+      "n_queries": 288,
+      "false_nonaddressed_change": 0.010416666666666666,
+      "changed_by_direction": {
+        "0": 0.9743589743589745,
+        "1": 0.9696969696969696
+      },
+      "score": 0.9652777777777779
+    },
+    "priority": null,
+    "mean_score": 0.9652777777777779
+  },
+  "note": "no-edit = epoch-0/initialization behaviour of every learned candidate (zero functional map); counterfactual = natural destination-prefix reference"
+}

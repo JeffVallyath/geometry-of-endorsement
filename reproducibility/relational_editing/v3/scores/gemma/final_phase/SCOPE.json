@@ -1,0 +1,40 @@
+{
+  "at": "2026-09-11T07:01:37.805684+00:00",
+  "scope": "FULL",
+  "sizes": {
+    "final": 128,
+    "program": 64,
+    "workflow": 128
+  },
+  "predicted_seconds": {
+    "FULL": {
+      "seal": 745.8533730561613,
+      "final": 2092.289224416323,
+      "programs": 7114.418309513922,
+      "workflow": 7043.780324907665,
+      "panels": 640.2197154240042,
+      "total": 17636.560947318078
+    },
+    "SMALL": {
+      "seal": 372.92668652808067,
+      "final": 1116.222652416196,
+      "programs": 3557.209154756961,
+      "workflow": 3521.8901624538325,
+      "panels": 640.2197154240042,
+      "total": 9208.468371579074
+    },
+    "QUARTER": {
+      "seal": 186.46334326404033,
+      "final": 628.1893664161325,
+      "programs": 1778.6045773784806,
+      "workflow": 1760.9450812269163,
+      "panels": 640.2197154240042,
+      "total": 4994.422083709574
+    }
+  },
+  "remaining_seconds": 17772.194342,
+  "reserve_hours_after": 3.0,
+  "requested": "AUTO",
+  "fits": true,
+  "rule": "largest of FULL/SMALL/QUARTER whose predicted time from the disposable benchmark fits the remaining time minus the closure reserve and the reserve for the next actor; decided before any FINAL outcome; every size/direction cell, both orders, every method, both seeds and every program are kept"
+}
