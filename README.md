@@ -109,7 +109,7 @@ Repeating the same requested value should keep the state stable. Restoring an ea
 
 Later experiments made this result substantially stronger. Editors trained only on individual assignments learned to repeat, restore, and combine two or three updates across both Gemma and Qwen while still being able to mostly preserve relations that were never changed.
 
-The strongest simple recipe reached about 91–97% accuracy in Gemma and 96–99% in Qwen on relations that should change after three updates, with roughly 1–5% new errors on relations that should stay unchanged.
+The stronger recipes met bounded criteria for changed answers and preservation of unchanged relations in both models and training seeds. They did not make every joint question correct or establish general reliability.
 
 However, some questions combining several relations could still change depending on the model’s earlier state, even when the individual edited relations were all reported correctly. That led to the next question: are the reported current facts actually enough to explain the model’s later decisions?
 
@@ -124,10 +124,11 @@ $$
 P(Y \mid H, S, Q) = P(Y \mid S, Q)
 $$
 
-Our experiments test this by reaching the same \(S\) from different histories and asking the same \(Q\).
-This was not limited to a few selected examples. The same pattern appeared in both Gemma and Qwen, with both learned edits and ordinary text-based updates: the model could correctly report the current relations while later answers still depended on what those relations had been before.
+Once the current facts and the question are known, knowing what used to be true should not change the expected answer. The comparison holds the question and response interface fixed; it does not require physically identical hidden states or erasure of history.
 
-One example from my own experiments helps make this more concrete. Ravi and Kira both end up opposing Canal, and the model reports those individual relations correctly in every history. But when asked whether at least one of them supports Canal, the answers across four histories are No, No, No, Yes.
+The pattern is supported by a full retrospective census in V9, fixed-definition archival corroboration in V6, and prospective confirmation in V10 on fresh generated cases. V10 confirmed it across Gemma and Qwen under learned and textual updates, including questions whose relevant direct facts and reference answers were correct. These are controlled relational tasks, not public factual benchmarks.
+
+One repeat-checked V10 example makes the distinction concrete. Wren ends up supporting Garden and Orla opposing it. The model correctly reports those individual relations in every starting history. Asked whether they take the same side, it answers No after some histories and Yes after others. This selected example illustrates the effect; the complete prospective results establish its recurrence.
 
 The result is a separation between what the model can correctly report as its current facts and the information that still affects its later decisions.
 
@@ -137,10 +138,12 @@ The project began by asking whether a support/opposition relation could be ident
 
 **When an AI says it has updated a fact, has the information governing its later decisions actually changed too?**
 
-The experiments demonstrate that the answer can be no. We can start from different histories, update them to the same final facts, and verify that the model reports those facts correctly. Its later decisions can still depend on what used to be true.
+The experiments show that reported current facts can be insufficient to account for later behavior. Distinct histories reach the same intended final records, the relevant facts can be read correctly, and a fixed downstream answer can still depend on what used to be true.
 
-This exposes a gap between readable state and operative state. The model may correctly tell us its current facts while older information continues to influence how those facts are used.
+We use readable state and operative state as shorthand for this distinction, not as names for two physically separate state objects. Correct updated facts combined with a history-sensitive reader remain compatible with the evidence.
 
 For moral reasoning, the consequence is straightforward. A model might correctly report that fairness now counts against an action while later moral judgments still depend on whether fairness used to count for it. More generally, this matters whenever we want to know whether an AI has actually incorporated an update into the state driving its behavior.
 
-**A model can appear to have updated what it knows while still making decisions from information that should no longer matter.**
+External validation on public factual-editing methods and benchmarks remains pending. The current result does not establish absent internal facts, a unique neural mechanism, or a deployment failure rate.
+
+**Correctly reporting the current facts does not guarantee that those facts alone account for later answers.**

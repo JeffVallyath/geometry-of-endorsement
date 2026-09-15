@@ -1,0 +1,37 @@
+{
+  "inventory": {
+    "actors": [
+      "gemma",
+      "qwen"
+    ],
+    "terminal_roots_per_actor": 64,
+    "technical_roots_per_actor": 8,
+    "origins": 8,
+    "conditions": [
+      "SOURCE",
+      "INV_PAIR_NLL_s0",
+      "INV_PAIR_NLL_s1",
+      "FREE_PAIR_CONSISTENCY_s0",
+      "FREE_PAIR_CONSISTENCY_s1",
+      "EXISTING_CORRECTION",
+      "LATEST_SAME_WORDING"
+    ],
+    "contexts_per_root": 57,
+    "ordinary_questions_per_context": 34,
+    "total_logical_responses": 248064,
+    "aliases_before_model_validation": 0
+  },
+  "source_commit": "d549f9222e70626db8282e338e04f1023435badc",
+  "witness": "W=A and C and D; A: both operands correct and valid in every origin; C: native and same-method no-op correct; D: differing valid joint hard answers.",
+  "joint_questions_per_root": 18,
+  "root_denominator": 64,
+  "learned_seeds_averaged_within_root": true,
+  "bootstrap_draws": 10000,
+  "bootstrap_seed": 2609141002,
+  "interval_level": 0.99375,
+  "strong_operand_probability": 0.95,
+  "strong_candidate_mass": 0.9,
+  "strong_joint_correct_high": 0.95,
+  "strong_joint_correct_low": 0.05,
+  "status": "prospective_confirmation_complete_controlled_generated_cases"
+}

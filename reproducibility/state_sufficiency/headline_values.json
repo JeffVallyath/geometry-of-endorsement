@@ -1,0 +1,544 @@
+{
+  "v7": [
+    {
+      "model": "gemma",
+      "seed": 0,
+      "source_key": "INV_PAIR_NLL_s0|ABC",
+      "changed": 0.96875,
+      "harm": 0.022135416666666664,
+      "n_scenes": 32,
+      "n_queries": 768
+    },
+    {
+      "model": "gemma",
+      "seed": 1,
+      "source_key": "INV_PAIR_NLL_s1|ABC",
+      "changed": 0.9127604166666666,
+      "harm": 0.04817708333333333,
+      "n_scenes": 32,
+      "n_queries": 768
+    },
+    {
+      "model": "qwen",
+      "seed": 0,
+      "source_key": "INV_PAIR_NLL_s0|ABC",
+      "changed": 0.9908854166666666,
+      "harm": 0.013020833333333332,
+      "n_scenes": 32,
+      "n_queries": 768
+    },
+    {
+      "model": "qwen",
+      "seed": 1,
+      "source_key": "INV_PAIR_NLL_s1|ABC",
+      "changed": 0.9557291666666666,
+      "harm": 0.027994791666666664,
+      "n_scenes": 32,
+      "n_queries": 768
+    }
+  ],
+  "v9": [
+    {
+      "model": "gemma",
+      "condition": "EXISTING_CORRECTION",
+      "count": 50,
+      "eligible": 956,
+      "full": 1088,
+      "roots": 35,
+      "total_roots": 64
+    },
+    {
+      "model": "gemma",
+      "condition": "FREE_PAIR_CONSISTENCY_s0",
+      "count": 40,
+      "eligible": 941,
+      "full": 1088,
+      "roots": 28,
+      "total_roots": 64
+    },
+    {
+      "model": "gemma",
+      "condition": "FREE_PAIR_CONSISTENCY_s1",
+      "count": 37,
+      "eligible": 962,
+      "full": 1088,
+      "roots": 28,
+      "total_roots": 64
+    },
+    {
+      "model": "gemma",
+      "condition": "INV_PAIR_NLL_s0",
+      "count": 15,
+      "eligible": 989,
+      "full": 1088,
+      "roots": 12,
+      "total_roots": 64
+    },
+    {
+      "model": "gemma",
+      "condition": "INV_PAIR_NLL_s1",
+      "count": 66,
+      "eligible": 915,
+      "full": 1088,
+      "roots": 38,
+      "total_roots": 64
+    },
+    {
+      "model": "gemma",
+      "condition": "LATEST_SAME_WORDING",
+      "count": 54,
+      "eligible": 961,
+      "full": 1088,
+      "roots": 35,
+      "total_roots": 64
+    },
+    {
+      "model": "qwen",
+      "condition": "EXISTING_CORRECTION",
+      "count": 63,
+      "eligible": 850,
+      "full": 1088,
+      "roots": 44,
+      "total_roots": 64
+    },
+    {
+      "model": "qwen",
+      "condition": "FREE_PAIR_CONSISTENCY_s0",
+      "count": 19,
+      "eligible": 892,
+      "full": 1088,
+      "roots": 18,
+      "total_roots": 64
+    },
+    {
+      "model": "qwen",
+      "condition": "FREE_PAIR_CONSISTENCY_s1",
+      "count": 32,
+      "eligible": 893,
+      "full": 1088,
+      "roots": 20,
+      "total_roots": 64
+    },
+    {
+      "model": "qwen",
+      "condition": "INV_PAIR_NLL_s0",
+      "count": 18,
+      "eligible": 896,
+      "full": 1088,
+      "roots": 13,
+      "total_roots": 64
+    },
+    {
+      "model": "qwen",
+      "condition": "INV_PAIR_NLL_s1",
+      "count": 29,
+      "eligible": 877,
+      "full": 1088,
+      "roots": 23,
+      "total_roots": 64
+    },
+    {
+      "model": "qwen",
+      "condition": "LATEST_SAME_WORDING",
+      "count": 59,
+      "eligible": 861,
+      "full": 1088,
+      "roots": 42,
+      "total_roots": 64
+    }
+  ],
+  "v6": [
+    {
+      "model": "gemma",
+      "condition": "FREE_COMPLETE_SINGLE_s0",
+      "count": 66,
+      "eligible": 1884,
+      "full": 2176,
+      "roots": 30,
+      "total_roots": 64
+    },
+    {
+      "model": "gemma",
+      "condition": "FREE_COMPLETE_SINGLE_s1",
+      "count": 88,
+      "eligible": 1869,
+      "full": 2176,
+      "roots": 39,
+      "total_roots": 64
+    },
+    {
+      "model": "gemma",
+      "condition": "INV_COMPLETE_SINGLE_s0",
+      "count": 82,
+      "eligible": 1913,
+      "full": 2176,
+      "roots": 33,
+      "total_roots": 64
+    },
+    {
+      "model": "gemma",
+      "condition": "INV_COMPLETE_SINGLE_s1",
+      "count": 118,
+      "eligible": 1892,
+      "full": 2176,
+      "roots": 39,
+      "total_roots": 64
+    },
+    {
+      "model": "gemma",
+      "condition": "TEXT_CORRECTION",
+      "count": 87,
+      "eligible": 1863,
+      "full": 2176,
+      "roots": 37,
+      "total_roots": 64
+    },
+    {
+      "model": "qwen",
+      "condition": "FREE_COMPLETE_SINGLE_s0",
+      "count": 33,
+      "eligible": 813,
+      "full": 1088,
+      "roots": 18,
+      "total_roots": 32
+    },
+    {
+      "model": "qwen",
+      "condition": "FREE_COMPLETE_SINGLE_s1",
+      "count": 27,
+      "eligible": 897,
+      "full": 1088,
+      "roots": 16,
+      "total_roots": 32
+    },
+    {
+      "model": "qwen",
+      "condition": "INV_COMPLETE_SINGLE_s0",
+      "count": 20,
+      "eligible": 754,
+      "full": 1088,
+      "roots": 12,
+      "total_roots": 32
+    },
+    {
+      "model": "qwen",
+      "condition": "INV_COMPLETE_SINGLE_s1",
+      "count": 24,
+      "eligible": 847,
+      "full": 1088,
+      "roots": 12,
+      "total_roots": 32
+    },
+    {
+      "model": "qwen",
+      "condition": "TEXT_CORRECTION",
+      "count": 41,
+      "eligible": 748,
+      "full": 1088,
+      "roots": 21,
+      "total_roots": 32
+    }
+  ],
+  "coherence": [
+    {
+      "model": "gemma",
+      "condition": "EXISTING_CORRECTION",
+      "cohort": "ACTUAL_EDIT",
+      "mean": 0.02209369131458988
+    },
+    {
+      "model": "gemma",
+      "condition": "EXISTING_CORRECTION",
+      "cohort": "NOOP_OR_CLEAN",
+      "mean": 0.015981159300165776
+    },
+    {
+      "model": "gemma",
+      "condition": "FREE_PAIR_CONSISTENCY_s0",
+      "cohort": "ACTUAL_EDIT",
+      "mean": 0.015152320260122476
+    },
+    {
+      "model": "gemma",
+      "condition": "FREE_PAIR_CONSISTENCY_s0",
+      "cohort": "NOOP_OR_CLEAN",
+      "mean": 0.009045092427542917
+    },
+    {
+      "model": "gemma",
+      "condition": "FREE_PAIR_CONSISTENCY_s1",
+      "cohort": "ACTUAL_EDIT",
+      "mean": 0.014802259248361357
+    },
+    {
+      "model": "gemma",
+      "condition": "FREE_PAIR_CONSISTENCY_s1",
+      "cohort": "NOOP_OR_CLEAN",
+      "mean": 0.013320806439712132
+    },
+    {
+      "model": "gemma",
+      "condition": "INV_PAIR_NLL_s0",
+      "cohort": "ACTUAL_EDIT",
+      "mean": 0.0047151321401750525
+    },
+    {
+      "model": "gemma",
+      "condition": "INV_PAIR_NLL_s0",
+      "cohort": "NOOP_OR_CLEAN",
+      "mean": 0.003304193605257787
+    },
+    {
+      "model": "gemma",
+      "condition": "INV_PAIR_NLL_s1",
+      "cohort": "ACTUAL_EDIT",
+      "mean": 0.02112216969141138
+    },
+    {
+      "model": "gemma",
+      "condition": "INV_PAIR_NLL_s1",
+      "cohort": "NOOP_OR_CLEAN",
+      "mean": 0.010310685706240049
+    },
+    {
+      "model": "gemma",
+      "condition": "LATEST_SAME_WORDING",
+      "cohort": "ACTUAL_EDIT",
+      "mean": 0.02233788814111089
+    },
+    {
+      "model": "gemma",
+      "condition": "LATEST_SAME_WORDING",
+      "cohort": "NOOP_OR_CLEAN",
+      "mean": 0.016198584935370755
+    },
+    {
+      "model": "gemma",
+      "condition": "NATIVE_FINAL",
+      "cohort": "NATIVE",
+      "mean": 0.025374201744411507
+    },
+    {
+      "model": "qwen",
+      "condition": "EXISTING_CORRECTION",
+      "cohort": "ACTUAL_EDIT",
+      "mean": 0.03740548722432709
+    },
+    {
+      "model": "qwen",
+      "condition": "EXISTING_CORRECTION",
+      "cohort": "NOOP_OR_CLEAN",
+      "mean": 0.026823786605804624
+    },
+    {
+      "model": "qwen",
+      "condition": "FREE_PAIR_CONSISTENCY_s0",
+      "cohort": "ACTUAL_EDIT",
+      "mean": 0.010984643481450888
+    },
+    {
+      "model": "qwen",
+      "condition": "FREE_PAIR_CONSISTENCY_s0",
+      "cohort": "NOOP_OR_CLEAN",
+      "mean": 0.006371603832403656
+    },
+    {
+      "model": "qwen",
+      "condition": "FREE_PAIR_CONSISTENCY_s1",
+      "cohort": "ACTUAL_EDIT",
+      "mean": 0.01449454336810899
+    },
+    {
+      "model": "qwen",
+      "condition": "FREE_PAIR_CONSISTENCY_s1",
+      "cohort": "NOOP_OR_CLEAN",
+      "mean": 0.010859686068804922
+    },
+    {
+      "model": "qwen",
+      "condition": "INV_PAIR_NLL_s0",
+      "cohort": "ACTUAL_EDIT",
+      "mean": 0.008584271531798873
+    },
+    {
+      "model": "qwen",
+      "condition": "INV_PAIR_NLL_s0",
+      "cohort": "NOOP_OR_CLEAN",
+      "mean": 0.003842709815861032
+    },
+    {
+      "model": "qwen",
+      "condition": "INV_PAIR_NLL_s1",
+      "cohort": "ACTUAL_EDIT",
+      "mean": 0.017068015155918534
+    },
+    {
+      "model": "qwen",
+      "condition": "INV_PAIR_NLL_s1",
+      "cohort": "NOOP_OR_CLEAN",
+      "mean": 0.009962918959977706
+    },
+    {
+      "model": "qwen",
+      "condition": "LATEST_SAME_WORDING",
+      "cohort": "ACTUAL_EDIT",
+      "mean": 0.03653090010495228
+    },
+    {
+      "model": "qwen",
+      "condition": "LATEST_SAME_WORDING",
+      "cohort": "NOOP_OR_CLEAN",
+      "mean": 0.026595440362744062
+    },
+    {
+      "model": "qwen",
+      "condition": "NATIVE_FINAL",
+      "cohort": "NATIVE",
+      "mean": 0.044565971828840964
+    }
+  ],
+  "v10": [
+    {
+      "model": "gemma",
+      "group": "INV_PAIR_NLL",
+      "rate": 0.06336805555555555,
+      "lower": 0.04513888888888889,
+      "upper": 0.08289930555555555,
+      "roots": 50,
+      "total_roots": 64
+    },
+    {
+      "model": "gemma",
+      "group": "FREE_PAIR_CONSISTENCY",
+      "rate": 0.051215277777777776,
+      "lower": 0.03526340060763884,
+      "upper": 0.06770833333333334,
+      "roots": 41,
+      "total_roots": 64
+    },
+    {
+      "model": "gemma",
+      "group": "EXISTING_CORRECTION",
+      "rate": 0.05989583333333333,
+      "lower": 0.034722222222222224,
+      "upper": 0.0891954210069438,
+      "roots": 30,
+      "total_roots": 64
+    },
+    {
+      "model": "gemma",
+      "group": "LATEST_SAME_WORDING",
+      "rate": 0.05555555555555555,
+      "lower": 0.029513888888888888,
+      "upper": 0.0859375,
+      "roots": 25,
+      "total_roots": 64
+    },
+    {
+      "model": "qwen",
+      "group": "INV_PAIR_NLL",
+      "rate": 0.024739583333333336,
+      "lower": 0.01171875,
+      "upper": 0.04123263888888889,
+      "roots": 24,
+      "total_roots": 64
+    },
+    {
+      "model": "qwen",
+      "group": "FREE_PAIR_CONSISTENCY",
+      "rate": 0.02387152777777778,
+      "lower": 0.01171875,
+      "upper": 0.03993055555555555,
+      "roots": 25,
+      "total_roots": 64
+    },
+    {
+      "model": "qwen",
+      "group": "EXISTING_CORRECTION",
+      "rate": 0.06163194444444445,
+      "lower": 0.038408745659722125,
+      "upper": 0.0859375,
+      "roots": 38,
+      "total_roots": 64
+    },
+    {
+      "model": "qwen",
+      "group": "LATEST_SAME_WORDING",
+      "rate": 0.06336805555555555,
+      "lower": 0.04079861111111111,
+      "upper": 0.08854166666666667,
+      "roots": 40,
+      "total_roots": 64
+    }
+  ],
+  "strong": [
+    {
+      "model": "gemma",
+      "group": "INV_PAIR_NLL",
+      "count": 49,
+      "opportunities": 2304,
+      "roots": 21,
+      "total_roots": 64
+    },
+    {
+      "model": "gemma",
+      "group": "FREE_PAIR_CONSISTENCY",
+      "count": 24,
+      "opportunities": 2304,
+      "roots": 16,
+      "total_roots": 64
+    },
+    {
+      "model": "gemma",
+      "group": "EXISTING_CORRECTION",
+      "count": 20,
+      "opportunities": 1152,
+      "roots": 14,
+      "total_roots": 64
+    },
+    {
+      "model": "gemma",
+      "group": "LATEST_SAME_WORDING",
+      "count": 22,
+      "opportunities": 1152,
+      "roots": 15,
+      "total_roots": 64
+    },
+    {
+      "model": "qwen",
+      "group": "INV_PAIR_NLL",
+      "count": 32,
+      "opportunities": 2304,
+      "roots": 17,
+      "total_roots": 64
+    },
+    {
+      "model": "qwen",
+      "group": "FREE_PAIR_CONSISTENCY",
+      "count": 7,
+      "opportunities": 2304,
+      "roots": 4,
+      "total_roots": 64
+    },
+    {
+      "model": "qwen",
+      "group": "EXISTING_CORRECTION",
+      "count": 36,
+      "opportunities": 1152,
+      "roots": 23,
+      "total_roots": 64
+    },
+    {
+      "model": "qwen",
+      "group": "LATEST_SAME_WORDING",
+      "count": 33,
+      "opportunities": 1152,
+      "roots": 21,
+      "total_roots": 64
+    }
+  ],
+  "example": {
+    "minimum_direct_probability": 0.9994579196249948,
+    "half_range": 0.4999465917791978
+  }
+}

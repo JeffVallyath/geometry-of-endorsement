@@ -43,8 +43,8 @@ def rules(identity, text):
 def test_actual_registry_passes():
     report = ev.check(ROOT, REGISTRY)
     assert report.ok(), report.errors
-    assert sum(c['bound'] for c in report.coverage) == 123
-    assert sum(c['bound'] for c in report.coverage if c['document'] == 'results') == 61
+    assert sum(c['bound'] for c in report.coverage) == 340
+    assert sum(c['bound'] for c in report.coverage if c['document'] == 'results') == 278
     assert {c['unit'] for c in report.coverage if c['document'] == 'captions'} >= {'figure6', 'figure7', 'supplementary_s1', 'supplementary_s2'}
     assert not report.pending
 

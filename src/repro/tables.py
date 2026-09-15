@@ -29,8 +29,9 @@ def original_representation():
 
 
 def compute():
+    from .state_sufficiency import replay as replay_state_sufficiency
     return {'representation': original_representation(), 'source_independence': replay_v6(),
-            'representation_studies': replay_representation()}
+            'representation_studies': replay_representation(), 'state_sufficiency': replay_state_sufficiency()}
 
 
 def compare_canonical(actual, expected, path='headlines'):

@@ -212,7 +212,8 @@ separates direct-margin attainment from recovery of the held-out natural pattern
 
 ### 7. Can we change a relation before knowing which question will be asked?
 
-Yes in bounded tests, but reliably combining changes remains unresolved.
+Yes in bounded tests. Later work also established useful composition under fixed
+criteria across Gemma and Qwen, while complete source-history sufficiency failed.
 The later editors change an addressed relation in the context before seeing
 the downstream question. Fresh questions then test what the edited state supports.
 
@@ -227,8 +228,8 @@ not a pass under the original protocol. Repeating and undoing edits still failed
 Later editors could repeat changes and restore earlier answers. A less
 restricted editor, called free overwrite, also worked, so that capability was
 not unique to the constrained design. Training on a broader set of consequences
-of single edits then improved some unseen sequences of changes. Reliable joint
-control and full replication across models were still not established.
+of single edits then improved some unseen sequences of changes. At that stage,
+reliable joint control and full replication across models were not established.
 
 [Supplementary Figure S1](../figures/CAPTIONS.md#supplementary-figure-s1--broader-single-edit-training-and-later-sequences)
 shows the matched comparison between broader and narrower single-edit training,
@@ -240,7 +241,7 @@ nor a negative result. The next experiment asked a harder question. If we reach
 the same final relations from different starting relations, do the answers
 still depend on what was overwritten?
 
-The table below uses the ordinary question wording and the constrained editor,
+The historical V6 table below uses the ordinary question wording and the constrained editor,
 which is designed to change the requested relation while keeping the others stable.
 Repeating an edit should leave its result unchanged; restoration should recover
 answers that were correct in the starting state. Joint updates should not
@@ -258,7 +259,7 @@ guarantees. Both original training seeds are shown and must meet the requirement
 success from a single seed does not replace success across both.
 
 The best rate of getting the whole declared answer set correct consistently
-across starting states was 29.6875%. No tested setting met all the requirements
+across starting states was 29.6875%. No tested V6 setting met all the requirements
 for independence from the starting relations. Consistent wrong answers do not
 count as success.
 
@@ -282,24 +283,282 @@ tests or their thresholds.
 compares the fixed readers on the same saved edited states. It keeps a change in
 question wording separate from a change in the editor itself.
 
-## Part VI. What can we conclude?
+### Later constructive editing results
 
-### 8. What does the evidence establish, and what is still missing?
+V7 improved the operational result without resolving source-history sufficiency.
+The constrained paired-NLL and paired-consistency recipes and unrestricted
+paired-consistency recipe met the retained-operation and joint-update point
+criteria in both backbones and both seeds. Those criteria protect single edits,
+repetition, restoration and changed-answer accuracy/preservation after paired
+or triple updates. They do not require every joint answer to be correct.
 
-The support/opposition direction is readable, transferable and causally useful.
-But its magnitude is not a reliable measure of commitment, and moving it does
-not necessarily recreate the consequences of changing the relation itself.
-The broader activation contains information that the single score leaves out.
+For the simpler constrained paired-NLL recipe, the triple-update results were:
 
-Learned editors make stronger changes before seeing the question and can repeat
-and restore them in bounded tests. That progress does not establish that they
-recreate the same internal state as rewritten text, erase the starting history,
-or reliably combine arbitrary updates. It also does not establish a uniquely
-located semantic mechanism or reliable behavior under other ways of asking.
-An unfinished successor is not a completed result.
+| Model | Seed | Changed-answer accuracy | New errors on unchanged relations |
+|---|---:|---:|---:|
+| Gemma | 0 | 96.88% | 2.21% |
+| Gemma | 1 | 91.28% | 4.82% |
+| Qwen | 0 | 99.09% | 1.30% |
+| Qwen | 1 | 95.57% | 2.80% |
 
-A semantic intervention earns a stronger interpretation when its effects propagate
-through the later consequences of the edited fact while preserving unrelated
-information. The experiments here measure that progression from readable relation
-signals to reusable state updates, and identify the points where the stronger
-interpretation still fails.
+Each program panel used 32 scenes per backbone, overlapping the single-edit
+population. These are scene-averaged point estimates, not guarantees. No
+candidate passed the complete source-history conjunction. The objective-specific
+consistency advantage was established only for Qwen's unrestricted construction;
+it was not a general cure or evidence of constrained-editor superiority.
+The [compact constructive summary](../reproducibility/state_sufficiency/v7/constructive_summary.json)
+retains the source rates and all operating-point flags, including failures.
+
+## Part VI. Do current facts screen off source history?
+
+### The criterion and its scope
+
+Source-history sufficiency asks whether the declared current facts are enough
+to account for a fixed downstream response. Distinct starting records receive
+commands that lead to the same complete intended final records. The question
+and response interface are held fixed. Once the current facts and the question
+are known, knowing what used to be true should not change the expected answer.
+
+Writing the old history as H, declared current records as S, question as Q and
+response as Y, the criterion is:
+
+$$
+P(Y \mid H,S,Q)=P(Y \mid S,Q).
+$$
+
+This is not ordinary consequence accuracy. Identical wrong answers can satisfy
+history invariance while failing the task. The controlled witnesses instead
+require correct direct reads and competent references, then ask whether the
+same joint question receives different answers across histories. Equality of
+intended records does not assert equality of hidden states. Correct updated
+facts combined with a history-sensitive reader remain compatible with failure.
+
+### Quantifying a history discrepancy
+
+For a binary candidate-answer interface, let p_h be the normalized probability
+of the same answer label after history h. The best common Bernoulli probability
+has worst-history discrepancy
+
+$$
+t_{\mathrm{hist}}=\frac{\max_h p_h-\min_h p_h}{2}.
+$$
+
+The midpoint of the extrema attains the bound. Thus a discrepancy of 0.10
+requires a probability spread of at least 0.20; a hard-answer flip is a separate
+condition. This is standard minimax/conditional-sufficiency mathematics, not a
+new probability theorem. The audited finite countermodel also shows that correct
+direct reads plus useful assignment laws do not logically guarantee reusable
+downstream use. Candidate-normalized scores are an observable response interface,
+not calibrated beliefs. A selected large certificate is an illustration, not a
+typical effect or an individual-answer error rate.
+
+## Part VII. How robust is the finding?
+
+### V9 retrospective census
+
+V9's full familiar-question census replaced reliance on a selected witness with
+population summaries. The strong view requires correct direct operands in every
+compared origin, correct native-final and same-method no-op references, and
+direct correct-label probability at least 0.90. The following counts use
+t_hist at least 0.10. Each condition has 1,088 fixed opportunities per model,
+from 64 shared case designs and 17 questions under the first answer-code draw.
+
+| Condition | Gemma qualifying / eligible questions | Gemma affected roots / all roots | Qwen qualifying / eligible questions | Qwen affected roots / all roots |
+|---|---:|---:|---:|---:|
+| Constrained paired NLL seed 0 | 15/989 | 12/64 | 18/896 | 13/64 |
+| Constrained paired NLL seed 1 | 66/915 | 38/64 | 29/877 | 23/64 |
+| Unrestricted paired consistency seed 0 | 40/941 | 28/64 | 19/892 | 18/64 |
+| Unrestricted paired consistency seed 1 | 37/962 | 28/64 | 32/893 | 20/64 |
+| Existing textual correction | 50/956 | 35/64 | 63/850 | 44/64 |
+| Latest-value wording | 54/961 | 35/64 | 59/861 | 42/64 |
+
+An affected root contains at least one qualifying question. Root prevalence is
+not a per-question failure rate, and the shared designs are not independent
+samples across backbones. This census is retrospective, not prospective
+confirmation. It preserves V9's early process-wide question-loading deviation
+and failed new-rule reader; the saved outputs do not repair that protocol history.
+The [source summary](../reproducibility/state_sufficiency/v9/primary_summary.json)
+retains the full and eligible denominators and additional thresholds.
+
+### The adverse coherence control
+
+Ordinary-reader logical coherence and matched-history sufficiency have different
+null models. V9's unfiltered minimal-local mean coherence distances, in probability
+percentage points, were:
+
+| Context or update | Gemma | Qwen |
+|---|---:|---:|
+| Native-final | 2.5374 | 4.4566 |
+| Already-correct plus constrained paired NLL seed 1 | 1.0311 | 0.9963 |
+| Actual edits with the same constrained seed 1 | 2.1122 | 1.7068 |
+| Existing textual correction, actual edits | 2.2094 | 3.7405 |
+
+Every updating condition's unfiltered mean was below its native-final mean.
+These point comparisons do not establish pairwise statistical significance.
+Actual editing can increase discrepancy relative to the same-method no-op while
+remaining below the native-final control. The evidence therefore does not support
+an editing-specific origin of logical incoherence. This adverse result remains
+unchanged by V10. The [coherence summary](../reproducibility/state_sufficiency/v9/coherence_summary.json)
+includes all updating conditions, not only the displayed rows.
+
+### V6 fixed-definition archival corroboration
+
+The same half-range certificate was applied retrospectively to V6's earlier
+recorded population. Its strong reference-qualified view requires correct
+direct operands across all four histories with normalized correct-answer
+probability at least 0.90, plus correct native and same-method no-op answers.
+At t_hist at least 0.10:
+
+| Method | Gemma affected roots / all roots | Qwen affected roots / all roots |
+|---|---:|---:|
+| Constrained seed 0 | 33/64 | 12/32 |
+| Constrained seed 1 | 39/64 | 12/32 |
+| Unrestricted seed 0 | 30/64 | 18/32 |
+| Unrestricted seed 1 | 39/64 | 16/32 |
+| Textual correction | 37/64 | 21/32 |
+
+Both answer-code draws are included, giving 34 opportunities per root.
+Textual correction has 87/1,863 eligible questions in Gemma and 41/748 in Qwen,
+out of 2,176 and 1,088 full opportunities. Most eligible questions have small
+discrepancies. The [compact table](../reproducibility/state_sufficiency/v6/fixed_certificate_summary.json)
+retains question denominators for every listed condition. V9's displayed first-draw
+counts must not be directly compared with these combined-draw headlines.
+
+Exact rendered source inputs do not overlap with V9, but model families, semantic
+task family and software ancestry are shared. One Gemma unrestricted learned
+checkpoint is byte-identical across the studies. This is archival cross-study
+corroboration, not a fully independent replication or a prospective result.
+The native repeat-identical-input control has zero history certificates; it does
+not establish invariance to distinct benign histories or repeatability of every
+intervention. This replay did not recompute coherence.
+
+### V10 prospective confirmation
+
+V10 tested fresh generated cases under a fixed familiar-question interface.
+All eight starting assignments to three addressed records receive the same
+commands, with complete intended final-table equality checked, including untouched
+facts. Each joint question has a witness only if its two direct operands are
+correct and valid in every history, its native-final and same-method already-correct
+references are correct, and valid joint hard answers differ across histories.
+
+Each root score is the witness count divided by 18 joint-question opportunities,
+including ineligible questions in the denominator. The battery has 34 questions;
+the joint subset comprises nine semantic questions under two answer-code draws.
+Learned seeds are averaged within roots. Each backbone uses 64 shared designs
+and is analyzed separately. Intervals use 10,000 root-bootstrap draws, fixed
+seed 2609141002, and multiplicity-adjusted 99.375% coverage across eight cells.
+
+| Model | Update group | Primary witness rate | 99.375% interval | Roots with any witness |
+|---|---|---:|---:|---:|
+| Gemma | Constrained learned editor | 6.337% | [4.514, 8.290]% | 50/64 |
+| Gemma | Unrestricted consistency-trained editor | 5.122% | [3.526, 6.771]% | 41/64 |
+| Gemma | Existing textual correction | 5.990% | [3.472, 8.920]% | 30/64 |
+| Gemma | Latest-value wording | 5.556% | [2.951, 8.594]% | 25/64 |
+| Qwen | Constrained learned editor | 2.474% | [1.172, 4.123]% | 24/64 |
+| Qwen | Unrestricted consistency-trained editor | 2.387% | [1.172, 3.993]% | 25/64 |
+| Qwen | Existing textual correction | 6.163% | [3.841, 8.594]% | 38/64 |
+| Qwen | Latest-value wording | 6.337% | [4.080, 8.854]% | 40/64 |
+
+All corrected intervals are above zero. The rate measures fixed opportunities
+for a controlled cross-history witness, not an individual-answer error rate or
+a filter-conditional rate. Learned-group root prevalence is the union over both
+seeds, so it has more witness opportunities than a single textual condition.
+It must not be compared as an equal-budget search. The bootstrap supports
+recurrence within the generated-case sampling scheme, not universal failure.
+The [primary table](../reproducibility/state_sufficiency/v10/primary_results.json)
+and [per-root counts](../reproducibility/state_sufficiency/v10/root_counts.json)
+support aggregate reconstruction of these rates and intervals.
+
+### Strong margins and repeatability
+
+The predeclared strong diagnostic requires every operand correct-answer
+probability to be at least 0.95, relevant candidate mass at least 0.90, and joint
+correct-answer probability at least 0.95 in one history and at most 0.05 in another.
+
+| Model | Update group | Strong witness opportunities / full opportunities | Roots with a strong witness |
+|---|---|---:|---:|
+| Gemma | Constrained learned editor | 49/2304 | 21/64 |
+| Gemma | Unrestricted consistency-trained editor | 24/2304 | 16/64 |
+| Gemma | Existing textual correction | 20/1152 | 14/64 |
+| Gemma | Latest-value wording | 22/1152 | 15/64 |
+| Qwen | Constrained learned editor | 32/2304 | 17/64 |
+| Qwen | Unrestricted consistency-trained editor | 7/2304 | 4/64 |
+| Qwen | Existing textual correction | 36/1152 | 23/64 |
+| Qwen | Latest-value wording | 33/1152 | 21/64 |
+
+These counts sum learned-seed opportunities; they are not seed-averaged primary
+rates. Strong witnesses occur in every individual learned seed and textual
+condition. The all-measured-direct sensitivity also retains witnesses in every
+condition, but does not certify the complete hidden state.
+
+The fixed repeatability panel covered native-final and four learned conditions,
+all eight origins, eight fixed questions and eight preselected roots per model.
+The recorded score differences were zero across the core and both fresh passes
+on this panel. Textual-correction procedures were not independently repeated.
+The retained review checked score/journal bindings and recorded cache identities;
+these compact summaries do not regenerate the original cache tensors.
+
+### A repeat-checked illustration and provenance limits
+
+In Qwen's unrestricted consistency seed 0, root `SSC1-FINAL-0006`, question
+`d0-02` asks whether Wren and Orla take the same side on Garden. The final records
+say Wren supports Garden and Orla opposes it. The correct answer is No, and both
+direct facts are read correctly in all eight histories, with minimum normalized
+correct-label probability 0.9994579196. Native and same-editor no-op references
+also answer correctly. Joint answers are No, No, No, No, Yes, Yes, No, Yes.
+Their half-range discrepancy is 0.4999465918, not a task-error rate.
+
+This exact joint question belongs to the repeat panel and matches both fresh
+passes. The operand measurements come from the core; the repeats do not cover
+every operand/query. This is a selected tail example, not a prevalence estimate.
+The [saved example](../reproducibility/state_sufficiency/v10/selected_repeat_checked_example.json)
+contains its probabilities and flags.
+
+The supplied provenance supports a prospective primary analysis, not independent
+clock-time attestation or a public preregistration registry. Pre-final amendments
+added native answer mass to the strong diagnostic, strengthened replay requirements
+and corrected a synthetic figure without changing the primary estimand. Both
+backbones used single-question chunking fixed before final execution after a
+Gemma batch-versus-single discrepancy. The final entry guard addresses V9's
+question-loading defect for V10; it does not repair V9 retrospectively.
+
+Writers recompile the full prefix. V10 does not establish cheap in-place cache
+editing, a speed advantage, or transfer to new question functions introduced
+after writing. Repetition, restoration and composition remain earlier-study
+results. The compact aggregate replay reconstructs summaries from saved root
+counts; it cannot independently recheck witness eligibility against omitted
+raw journals or reproduce the original forward passes. The separate
+[collaborator verification package](../reproducibility/state_sufficiency/independent_verification/README.md)
+now supplies scientific per-example projections of the saved journals and
+independently reconstructs eligibility, witnesses and intervals from those
+scores. It does not reproduce fresh neural outputs or attest the original run.
+
+## Part VIII. What can we conclude?
+
+The support/opposition relation is readable, transferable and causally useful.
+Its magnitude did not reliably measure commitment, and moving the direct answer
+did not necessarily reproduce the consequences of changing the relation.
+Question-independent editors then achieved useful updates, repetition, restoration
+and bounded composition. Those constructive results remain intact.
+
+The current central result is a controlled separation between correctly readable
+current facts and downstream behavior determined only by those facts. V9 supplies
+retrospective census evidence, V6 fixed-definition archival corroboration, and
+V10 prospective confirmation across Gemma and Qwen under learned and textual
+updates. Declared current records can be insufficient to account for the measured
+downstream response. Readable state and operative state name this explanatory
+distinction, not two physically separate objects.
+
+This does not establish absent internal facts, physical erasure of history,
+a unique neural mechanism, calibrated beliefs, deployment failure rates, universal
+model-editing failure, first priority, or new probability mathematics. Correct
+facts plus a history-sensitive reader remain compatible with the observations.
+The ordinary-reader coherence adverse control also remains visible.
+
+External public-method/public-benchmark validation is pending. The attempted
+AlphaEdit/MQuAKE/RippleEdits execution stopped before pretrained inference and
+produced no scientific outcome. It is neither a negative result nor a null result;
+scientific canary, reader qualification, final freeze and final inference remain
+unrun. External generality and the exact contribution relative to consequence
+testing, repeated-edit, stale-cache, surface-compliance and causal-abstraction
+work remain open.

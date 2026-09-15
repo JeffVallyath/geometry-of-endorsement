@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "curation_status": "curated_local_candidate",
-  "scope": "Public saved-evidence replay, not end-to-end backbone certification or publication",
+  "scope": "Public historical and aggregate saved-evidence replay plus independent V10 per-example reconstruction; not a fresh neural rerun or runtime attestation",
   "experiments": [
     {
       "id": "original_representation",
@@ -2002,6 +2002,353 @@
         "All tested source operating points and full question bundles retained",
         "Physical cache identity not independently reverified from sufficient statistics"
       ]
+    },
+    {
+      "id": "state_sufficiency_v7",
+      "name": "Source-history sufficiency V7",
+      "tier": "B",
+      "status": "constructive_operation",
+      "reproduction_level": "source_aggregate_consistency",
+      "models": [],
+      "claim_contract": "reproducibility/evidence.json",
+      "artifact_paths": [
+        "reproducibility/state_sufficiency/v7/constructive_summary.json",
+        "reproducibility/state_sufficiency/headline_values.json",
+        "reproducibility/state_sufficiency/provenance.json"
+      ],
+      "command": "python -m repro.state_sufficiency --output reproduced",
+      "expected": "Source-bound aggregates consistent; V10 rates and intervals reconstructed from saved root counts.",
+      "qualifications": [
+        "No new model inference or raw-journal eligibility verification. Models are named in source tables; this compact entry does not certify runtime revisions.",
+        "Historical negative results and V9 ordinary-reader coherence adverse control are unchanged."
+      ]
+    },
+    {
+      "id": "state_sufficiency_v9",
+      "name": "Source-history sufficiency V9",
+      "tier": "B",
+      "status": "retrospective_census",
+      "reproduction_level": "selected_source_aggregate_consistency",
+      "models": [],
+      "claim_contract": "reproducibility/evidence.json",
+      "artifact_paths": [
+        "reproducibility/state_sufficiency/v9/coherence_summary.json",
+        "reproducibility/state_sufficiency/v9/primary_summary.json",
+        "reproducibility/state_sufficiency/headline_values.json",
+        "reproducibility/state_sufficiency/provenance.json"
+      ],
+      "command": "python -m repro.state_sufficiency --output reproduced",
+      "expected": "Source-bound aggregates consistent; V10 rates and intervals reconstructed from saved root counts.",
+      "qualifications": [
+        "No new model inference or raw-journal eligibility verification. Models are named in source tables; this compact entry does not certify runtime revisions.",
+        "Historical negative results and V9 ordinary-reader coherence adverse control are unchanged."
+      ]
+    },
+    {
+      "id": "state_sufficiency_v6",
+      "name": "Source-history sufficiency V6",
+      "tier": "B",
+      "status": "archival_fixed_definition_corroboration",
+      "reproduction_level": "selected_source_aggregate_consistency",
+      "models": [],
+      "claim_contract": "reproducibility/evidence.json",
+      "artifact_paths": [
+        "reproducibility/state_sufficiency/v6/fixed_certificate_summary.json",
+        "reproducibility/state_sufficiency/headline_values.json",
+        "reproducibility/state_sufficiency/provenance.json"
+      ],
+      "command": "python -m repro.state_sufficiency --output reproduced",
+      "expected": "Source-bound aggregates consistent; V10 rates and intervals reconstructed from saved root counts.",
+      "qualifications": [
+        "No new model inference or raw-journal eligibility verification. Models are named in source tables; this compact entry does not certify runtime revisions.",
+        "Historical negative results and V9 ordinary-reader coherence adverse control are unchanged."
+      ]
+    },
+    {
+      "id": "state_sufficiency_v10",
+      "name": "Source-history sufficiency V10",
+      "tier": "A",
+      "status": "prospective_confirmation_controlled_generated_cases",
+      "reproduction_level": "saved_root_count_bootstrap_not_raw_score_replay",
+      "models": [],
+      "claim_contract": "reproducibility/evidence.json",
+      "artifact_paths": [
+        "reproducibility/state_sufficiency/v10/primary_results.json",
+        "reproducibility/state_sufficiency/v10/root_counts.json",
+        "reproducibility/state_sufficiency/v10/selected_repeat_checked_example.json",
+        "reproducibility/state_sufficiency/v10/specification_summary.json",
+        "reproducibility/state_sufficiency/v10/witness_summary.json",
+        "reproducibility/state_sufficiency/headline_values.json",
+        "reproducibility/state_sufficiency/provenance.json"
+      ],
+      "command": "python -m repro.state_sufficiency --output reproduced",
+      "expected": "Source-bound aggregates consistent; V10 rates and intervals reconstructed from saved root counts.",
+      "qualifications": [
+        "No new model inference or raw-journal eligibility verification. Models are named in source tables; this compact entry does not certify runtime revisions.",
+        "Historical negative results and V9 ordinary-reader coherence adverse control are unchanged."
+      ]
+    },
+    {
+      "id": "state_sufficiency_independent_verification",
+      "name": "V10 independent saved-output verification",
+      "tier": "A",
+      "status": "saved_per_example_reconstruction_matches_primary_result",
+      "reproduction_level": "independent_semantic_eligibility_witness_and_bootstrap_reconstruction_from_saved_outputs",
+      "models": [
+        {
+          "id": "google/gemma-2-9b-it",
+          "revision": "11c9b309abf73637e4b6f9a3fa1e92e615547819"
+        },
+        {
+          "id": "Qwen/Qwen3-8B",
+          "revision": "b968826d9c46dd6066d109eabc6255188de91218"
+        }
+      ],
+      "artifact_paths": [
+        "reproducibility/state_sufficiency/independent_verification/MANIFEST.json",
+        "reproducibility/state_sufficiency/independent_verification/README.md",
+        "reproducibility/state_sufficiency/independent_verification/examples/EXAMPLES.md",
+        "reproducibility/state_sufficiency/independent_verification/examples/examples.json",
+        "reproducibility/state_sufficiency/independent_verification/expected/PRIMARY.json",
+        "reproducibility/state_sufficiency/independent_verification/expected/QUERY_TABLE.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/expected/ROOT_TABLE.json",
+        "reproducibility/state_sufficiency/independent_verification/expected/WITNESS_SUMMARY.json",
+        "reproducibility/state_sufficiency/independent_verification/extract_sources.py",
+        "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0000.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0001.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0002.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0003.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0004.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0005.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0006.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0007.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0008.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0009.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0010.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0011.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0012.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0013.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0014.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0015.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0016.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0017.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0018.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0019.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0020.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0021.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0022.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0023.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0024.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0025.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0026.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0027.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0028.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0029.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0030.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0031.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0032.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0033.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0034.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0035.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0036.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0037.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0038.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0039.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0040.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0041.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0042.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0043.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0044.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0045.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0046.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0047.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0048.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0049.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0050.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0051.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0052.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0053.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0054.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0055.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0056.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0057.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0058.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0059.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0060.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0061.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0062.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0063.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs/protocol.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0000/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0001/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0002/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0003/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0004/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0005/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0006/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0006/pass0.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0006/pass1.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0007/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0008/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0009/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0010/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0011/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0012/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0013/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0014/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0015/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0016/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0017/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0017/pass0.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0017/pass1.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0018/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0019/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0020/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0021/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0022/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0023/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0024/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0025/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0026/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0027/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0028/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0029/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0029/pass0.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0029/pass1.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0030/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0031/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0032/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0032/pass0.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0032/pass1.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0033/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0033/pass0.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0033/pass1.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0034/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0035/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0036/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0037/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0038/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0039/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0040/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0041/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0042/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0043/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0044/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0044/pass0.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0044/pass1.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0045/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0045/pass0.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0045/pass1.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0046/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0047/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0048/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0049/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0050/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0051/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0052/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0053/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0054/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0055/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0056/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0057/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0058/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0059/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0060/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0060/pass0.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0060/pass1.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0061/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0062/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0063/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0000/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0001/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0002/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0003/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0004/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0005/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0006/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0006/pass0.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0006/pass1.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0007/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0008/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0009/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0010/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0011/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0012/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0013/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0014/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0015/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0016/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0017/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0017/pass0.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0017/pass1.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0018/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0019/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0020/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0021/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0022/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0023/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0024/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0025/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0026/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0027/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0028/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0029/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0029/pass0.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0029/pass1.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0030/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0031/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0032/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0032/pass0.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0032/pass1.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0033/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0033/pass0.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0033/pass1.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0034/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0035/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0036/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0037/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0038/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0039/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0040/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0041/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0042/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0043/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0044/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0044/pass0.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0044/pass1.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0045/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0045/pass0.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0045/pass1.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0046/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0047/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0048/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0049/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0050/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0051/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0052/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0053/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0054/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0055/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0056/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0057/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0058/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0059/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0060/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0060/pass0.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0060/pass1.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0061/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0062/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0063/core.json.gz",
+        "reproducibility/state_sufficiency/independent_verification/make_examples.py",
+        "reproducibility/state_sufficiency/independent_verification/reconstruct.py"
+      ],
+      "command": "python reproducibility/state_sufficiency/independent_verification/reconstruct.py analyze --output reproduced/independent",
+      "expected": "Independent calculation matches eight primary cells, 896 root-condition rows, and 16128 joint-query rows in the separately invoked comparison.",
+      "qualifications": [
+        "No original analysis implementation imports; analyze never opens expected outputs.",
+        "No omitted primary classification inputs at saved-output scope; global argmax membership established from candidate mass bound for these records.",
+        "Saved-score authenticity, tokenizer execution, physical tensor identity and prospective chronology are not newly attested. No fresh neural rerun."
+      ]
     }
   ],
   "external_artifacts": [
@@ -3295,9 +3642,9 @@
       "reason": "Scientific definitions inherited by V6; no separate efficacy result"
     },
     {
-      "id": "unfinished_successor",
-      "status": "incomplete_at_release_review",
-      "reason": "All panels and terminal independently verified result package not available; no efficacy claims included"
+      "id": "external_validation",
+      "status": "pending_no_scientific_outcome",
+      "reason": "AlphaEdit/MQuAKE/RippleEdits stopped before pretrained inference. No scientific canary, reader qualification, final freeze or final outcome."
     }
   ],
   "source_manifests": [
@@ -3328,18 +3675,18 @@
     },
     {
       "path": "PROJECT_STRATEGY.md",
-      "bytes": 5410,
-      "sha256": "33b66d6a1a8b59c1060a9fe3f95c0c51ed147c0782e24ad93688fc6b47248dc5"
+      "bytes": 6539,
+      "sha256": "5f067dbc804d2d13bf92de6eb6ff94ecc79e8f8facd82079e2077adbba2d17e6"
     },
     {
       "path": "README.md",
-      "bytes": 13996,
-      "sha256": "efa5efa05352ca7552e0ae150d41c7654b4d39b81f01dfbf9ddd2856096c7b7d"
+      "bytes": 14929,
+      "sha256": "9b260cd4764033419c7c983e5b607933b9e3607abc92cabaf5871f98990212a7"
     },
     {
       "path": "REPRODUCIBILITY.md",
-      "bytes": 8375,
-      "sha256": "b8043882a1a241001c0c85de5247dc5827fce1894fc04d39ffc3bc2c3abc3c16"
+      "bytes": 12486,
+      "sha256": "3593212016991bf7fb632e665c79ef7c77408e73a839e794c06e293029954bab"
     },
     {
       "path": "artifacts/figures/consequence_comparisons.json",
@@ -3409,12 +3756,12 @@
     {
       "path": "artifacts/project/manifest.json",
       "bytes": 137,
-      "sha256": "52f1810424587174c93a9de28cb89b70d33801e2b0f7f560f8c9783999a0c9b5"
+      "sha256": "7fe1ee152ef7f015ce604fba6d9599182d03f794826907f2322838f281d70b62"
     },
     {
       "path": "artifacts/project/status.json",
-      "bytes": 4947,
-      "sha256": "e6866894190410114571114cd2124554544234e165eacc0da3ad631020cecf9f"
+      "bytes": 6598,
+      "sha256": "d4e2a6d23d2d9c63b21770009164e880d7fb2966e4d9ec51de15a16f86bdba3b"
     },
     {
       "path": "artifacts/reproduction/contract.json",
@@ -3478,13 +3825,13 @@
     },
     {
       "path": "docs/RESULTS_AND_CLAIMS.md",
-      "bytes": 16440,
-      "sha256": "f4136459142dd3e7851394fcb4da1b02812cd25508e8cefa08007d5f1ffc42a5"
+      "bytes": 31354,
+      "sha256": "bc9501c7ff6ff2a988cf660768aa28ad590232753e4e36dbb90f81cf5ac23900"
     },
     {
       "path": "figures/CAPTIONS.md",
-      "bytes": 18640,
-      "sha256": "766153b20d757d4d97a8acc81dc660228e464b700cea031f45daef2ce4e09a29"
+      "bytes": 18856,
+      "sha256": "656881c8dd5061f13a183ff7dc505e1899e467ea1f79bc9ba35b53bc69c0b9c8"
     },
     {
       "path": "figures/fig1_layer_sweep.pdf",
@@ -3613,8 +3960,8 @@
     },
     {
       "path": "reproducibility/evidence.json",
-      "bytes": 103272,
-      "sha256": "1cd2823cf7a4d12d00c9cecb36134e19262daaeb361f44f21d7e83000549ad5d"
+      "bytes": 157736,
+      "sha256": "61f28847878d295272ae138f94d5d194a1028e9797395a4a858e6b89e161011f"
     },
     {
       "path": "reproducibility/headline_values.json",
@@ -12037,6 +12384,1246 @@
       "sha256": "50cb089e3b5cdcb02d3844a9a3bd0b4d5639aaa64bd04d482a0d95779ab7451e"
     },
     {
+      "path": "reproducibility/state_sufficiency/README.md",
+      "bytes": 4838,
+      "sha256": "d7c088aea5f81595a7bc40f3e2123064eaf43c9b619721b09dc6945bd66ab286"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/headline_values.json",
+      "bytes": 11947,
+      "sha256": "dab64e5dd4b26e513791b7bcb17849d69b1566f7066404c408963da9aa04032b"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/MANIFEST.json",
+      "bytes": 431987,
+      "sha256": "92377a09a3b2d83366584c06b3210c64bac05db6e212c2cb92d108fa9ecb45a0"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/README.md",
+      "bytes": 8958,
+      "sha256": "c0d109f1275e531781c1809e1f09fc1dae29a13959fb1e6b91fc146c5a6c1848"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/examples/EXAMPLES.md",
+      "bytes": 16596,
+      "sha256": "3411b9703e38521e70fa5f764acf120dee51f7e4a91cf9f383e71c35227ac871"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/examples/examples.json",
+      "bytes": 351272,
+      "sha256": "c39f615c0c5e59278224647f2455d8e9b5564a47fbc9f60b08ca253fa52e0347"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/expected/PRIMARY.json",
+      "bytes": 21506,
+      "sha256": "0b60a12377b6134cc6a394d9c4ece053381237405fc6869fa9c481f76e2cc4c9"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/expected/QUERY_TABLE.json.gz",
+      "bytes": 2000195,
+      "sha256": "f0a6250cebaaac7c3ba3a5969a5ac4c850a028a10333ede5cfaac4bdc310c630"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/expected/ROOT_TABLE.json",
+      "bytes": 362123,
+      "sha256": "f5004e5f9573f477359b9769619971b6c261b254d555dbf70ba17e46a2ae67e7"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/expected/WITNESS_SUMMARY.json",
+      "bytes": 13786,
+      "sha256": "cf9714d5f3aa09b0667f85638d08f2f3102c2d27125cc36b900e0d230fb1a206"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/extract_sources.py",
+      "bytes": 11760,
+      "sha256": "628cb0b3c834589ad7cd3a02ed168e1a497a235a04b202b712d6796cdb15317f"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0000.json",
+      "bytes": 54039,
+      "sha256": "649437d885a23f53a0ebf9e285c5bb6bcbd100945ee25daceb47fa9cf69a1574"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0001.json",
+      "bytes": 57053,
+      "sha256": "1bec5af2d37609d4b6834b5ca79b91c7894b3e7d8804c9c96c177282a5821b0c"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0002.json",
+      "bytes": 56976,
+      "sha256": "3fb9c48be8db7d949a29e147a185481c1c301804a2d2b79cfab913dc7e8b25a1"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0003.json",
+      "bytes": 61067,
+      "sha256": "f0eba9ec11175fee066c7e8b60579647f76ff8a399d55632f873b73274c3b418"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0004.json",
+      "bytes": 53995,
+      "sha256": "73e47d29d269ef99236bef2ef5cab67fc3a8f9a95fbbe26256b18d3fb2b2827e"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0005.json",
+      "bytes": 56808,
+      "sha256": "ab897638566ff3cfb4e69861a91b240eb650d30bc2b4b151a54957de4f3d80c8"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0006.json",
+      "bytes": 56994,
+      "sha256": "f11d2eee504462e0042d35c393865490d4e2b2d83f4774eed1c4eb6346e5bf6b"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0007.json",
+      "bytes": 61265,
+      "sha256": "9554af518d72724ec4f2147f95c7e707408789a00be7a0fd28d78432e50b3e8c"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0008.json",
+      "bytes": 53979,
+      "sha256": "eac660dcec644adf40598cbef472a9e561c489232bd3806e4b7513f8b3e52969"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0009.json",
+      "bytes": 56950,
+      "sha256": "83affbfeb38550a6c81bc82cad97407bd296e59188124ee89d5b97aac19caa2b"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0010.json",
+      "bytes": 57103,
+      "sha256": "77d92e5bae1b8fa7dc97d77f39fb108e4bde54ebf0e6aa9983731ce21be2545f"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0011.json",
+      "bytes": 60973,
+      "sha256": "a6c649a208911b2f1f31e2968be41b5dc3fd44062527c6a6df4eeda30e57f4cc"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0012.json",
+      "bytes": 54027,
+      "sha256": "0a7d9b42198aff8529fabd5e1a93323ba04ba602b28d4ec65357d6d259dcc422"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0013.json",
+      "bytes": 56744,
+      "sha256": "17c121167f3427fc28e8048588be947962bbb5ce06d3c4e8639399677a746516"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0014.json",
+      "bytes": 56784,
+      "sha256": "05fa6cf9bcad87410f82f54b56494c36fe88b44c978d5caef1fc4fa19c750796"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0015.json",
+      "bytes": 61279,
+      "sha256": "0faadb2f574ac93999b5f77d9c11ebbf900362c473d33077be8d97745b3c2dd2"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0016.json",
+      "bytes": 53991,
+      "sha256": "a6b4b6d2f18d53e80970de786436758f9c1e9ba3c17ce40c7f32cf670c7e5f73"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0017.json",
+      "bytes": 56834,
+      "sha256": "32897275f53d729d3c197d7ebf5346f37e03ed73c8e4928fa81aa565a6a58726"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0018.json",
+      "bytes": 57062,
+      "sha256": "ebadc5616b2775694e1435a92041484040ff9cf26a387df09a8f826225a989e0"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0019.json",
+      "bytes": 61249,
+      "sha256": "bf34b6f0edd659f848e1b6ee153739d32c99e1c55d044e4cb5861389ba0ed1dc"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0020.json",
+      "bytes": 54171,
+      "sha256": "448a17aff5c6c12aabbc8e36ca7d97d5f686f1f750a764a02d612ffa7723449b"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0021.json",
+      "bytes": 56895,
+      "sha256": "bb6e7b8502e3aad8b9e1a1ae6847deed682a598e4ce933036d2f26d39c47a346"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0022.json",
+      "bytes": 57103,
+      "sha256": "23d868c57ecfef473bd0683e96d429d29f794ec6af196ff50a4422e11c3dab97"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0023.json",
+      "bytes": 61292,
+      "sha256": "f30a8dc021c0425b73156705dd6136dca8742257dc6ee45cb433a246c350984c"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0024.json",
+      "bytes": 54159,
+      "sha256": "b59b5de97ce24f57f981838081057eacd57ef77e38628e153b1120c16f5cbd56"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0025.json",
+      "bytes": 56715,
+      "sha256": "f1bc2d5904a0497fdb150eca141380d4db51adf1921c0aac508d4cbf598e1ef6"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0026.json",
+      "bytes": 56871,
+      "sha256": "4529f001cf615f1689fbf1062d6ab37489cf3286529ca4b5827c0cef8b374c84"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0027.json",
+      "bytes": 60946,
+      "sha256": "f4dd33735afa3b1dbc0f7f66974d77102990b828782ba451061cf2061defad5f"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0028.json",
+      "bytes": 54113,
+      "sha256": "0924a854a70a83ac07a5593f3088b41a72ea67f5e4c0dcb9491b94cf9a0f46c8"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0029.json",
+      "bytes": 56849,
+      "sha256": "1382e8758a7062b1142ca4e187b1a39f060ca3f8a87992c1a089b0d1c32297f4"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0030.json",
+      "bytes": 57197,
+      "sha256": "b5db3cc7891dbc1cff4f63bc475719706a5c5337aabc91f5832e5aa7bc939e3a"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0031.json",
+      "bytes": 61197,
+      "sha256": "2de78d220dae8ea32f9abe04259e60dae55d47c9fff96ab057d0931a5a570f39"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0032.json",
+      "bytes": 54009,
+      "sha256": "ba6129dd59c5bed9b665f392672ad19b98c1f9f92c88aa177df310f558520e4f"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0033.json",
+      "bytes": 56818,
+      "sha256": "e767f3a2e984dc2123006b780f23c9269065287b38da1e6f517ec06de006f9cd"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0034.json",
+      "bytes": 57133,
+      "sha256": "b6306f3199baf87dedca7920d7a441d3e5735cd0aecdf4381264a979a371ba23"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0035.json",
+      "bytes": 61334,
+      "sha256": "68483830c6debf24fd4bc0fe1799ed4407a032215ddd7d1e836c1c978fe0349b"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0036.json",
+      "bytes": 54009,
+      "sha256": "975cf377cf8f31fd660e607c87c3bc72470912bf950c0cd553b68b78ef7e7489"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0037.json",
+      "bytes": 56861,
+      "sha256": "753438c1ef5bcfab300aadadade41aec01234bf54489e3534ec77f65903bee84"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0038.json",
+      "bytes": 57113,
+      "sha256": "53c1ec5c77fb38ad55d1077e943e1e32a34e9d2e51ab7721f235e64d30906519"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0039.json",
+      "bytes": 61308,
+      "sha256": "3de634eb29bf6dc26e900a0ce566d2f8e4d5720022ee4e77d57108609c9c71ca"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0040.json",
+      "bytes": 53978,
+      "sha256": "05591bc6337b7ff9da3614b1d9db7f36833221c3b38f659f240cbd58a548c13e"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0041.json",
+      "bytes": 56854,
+      "sha256": "024899193b45f6bfc0eecdeea3695ed746bc3cc3ddf66603043df8e613372af0"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0042.json",
+      "bytes": 57097,
+      "sha256": "661df668760057f6e1b11eb47035e43d15f914475c349c6f6f2816e2dc5aa7ce"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0043.json",
+      "bytes": 61491,
+      "sha256": "f31748ae6102294a2103743980142ee0dfc459dbdb84acf9e28e3dab4a0915d8"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0044.json",
+      "bytes": 54110,
+      "sha256": "2d64c5f645476a2ff7ace09f40bcf93791082890802fe1995903bc7376fbcd9e"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0045.json",
+      "bytes": 56954,
+      "sha256": "2f737cfc51e7f3153d2b5110f05b79381bca7abb3f47ab6059fdd5fc0d29bb8b"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0046.json",
+      "bytes": 56827,
+      "sha256": "4ce25521bbe242a25529c4d3d769bb4e03224814903a9337d8a0bdbfdaa5cded"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0047.json",
+      "bytes": 60932,
+      "sha256": "eda23b73e8e793c652131a820e9ae771cfc3c1e0f0e6416a4cde6a92cda0c4d4"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0048.json",
+      "bytes": 54114,
+      "sha256": "333b5998a963cdda82b773aed0f654cf1d45877aebf9f00d7452972969a475a1"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0049.json",
+      "bytes": 56954,
+      "sha256": "f9860d01f5245a4a98aef61e4d696eb82b3aa8a2c41fe29659d1e7f7df9ac23f"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0050.json",
+      "bytes": 57001,
+      "sha256": "e6c918841a1b56315e07a17fd29c7a4f08541cfc8048fe9daf0373805cf50d86"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0051.json",
+      "bytes": 61340,
+      "sha256": "a248046bd6928ebf94919f7303e8c59103f9421a2d6a05fbd2fa9f378074106d"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0052.json",
+      "bytes": 54062,
+      "sha256": "73a1e374e1f539af3696304ced03fec0f2c110022f9300c7f80c0f8ec49737a6"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0053.json",
+      "bytes": 56846,
+      "sha256": "51a28a063621dd90892f6dd3a3a05c67bcb869d036fe38fb507cf9295e18ef9d"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0054.json",
+      "bytes": 56994,
+      "sha256": "a71e88ce3711c06bac7a55e8612fc61fe4209c7b1b5d95cda9e2c0a7edcef683"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0055.json",
+      "bytes": 61382,
+      "sha256": "15ad37d69d5638742d0c501ad83bfbf9114ee498a883f8584d43a27ca0a40d8b"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0056.json",
+      "bytes": 54191,
+      "sha256": "fc9849c26c7e6f3d9a7ea2e061981fcbf1588693aa9a1c7bbfa5a25d529a2c2c"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0057.json",
+      "bytes": 56760,
+      "sha256": "04ac34a13504caf7e62c49a51cd76338cece376d15d9f358c35b5a096ad60d1d"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0058.json",
+      "bytes": 56807,
+      "sha256": "6820cca4309be3c06bd199631a13947e8c797535677391d39b5239b08b79ca91"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0059.json",
+      "bytes": 61318,
+      "sha256": "a5c1a379e7bd7e14beb0abe0fb7a770e4926b51f1993c9591bbe2ea894596189"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0060.json",
+      "bytes": 54058,
+      "sha256": "07a6af3aed16cee247e21d912f40a333b441d19f1888286799f9315a8ed31522"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0061.json",
+      "bytes": 56964,
+      "sha256": "8c3d88e8393c7d4eb8b40e7e142137f01f1fd883208a572d236da9a352c7f674"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0062.json",
+      "bytes": 57078,
+      "sha256": "9a57915a1010a914ed334dbd56e8d7570320bbf4e2af583c0805c609080da382"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0063.json",
+      "bytes": 61167,
+      "sha256": "9ec7c09c7a7b77172c22f0dcc884e075ef91114fa20380a7ea010aa97375a4c3"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/protocol.json",
+      "bytes": 2861,
+      "sha256": "a55b68154c14da2322dc7f1629f65f6cfc239bbd12c61110607e1e6433473521"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0000/core.json.gz",
+      "bytes": 138273,
+      "sha256": "b4c1d3cab92c306e05b9559f650b80f91f98e029652ba29439d3c3810d7162ca"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0001/core.json.gz",
+      "bytes": 138574,
+      "sha256": "ad0d48c4ac09ac915ef758722c45b24f625324e5f8a078a1d3223b9535a7249d"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0002/core.json.gz",
+      "bytes": 138733,
+      "sha256": "3fa11917e457489961295adacec12fc9237a53d6ae5252c5a16c18fe92b3a4c1"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0003/core.json.gz",
+      "bytes": 173139,
+      "sha256": "7b4c3059e8bb251ad9953b431c269fc570c89bb784de713150afc663d926952b"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0004/core.json.gz",
+      "bytes": 173055,
+      "sha256": "bba8a7e2a113b160ebd66fc2cbc0196fd3e65734532cc4b3aed6b640d03874c9"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0005/core.json.gz",
+      "bytes": 138625,
+      "sha256": "be1b7bd995f9a8b166d7083ed298aa37fecdb1a213509a0a7ce83f6c7c821512"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0006/core.json.gz",
+      "bytes": 173430,
+      "sha256": "0dc64f0da4d7482ffd13d2cc34bfc2c02c12629282ba03d4b1d7ed1a864370c2"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0006/pass0.json.gz",
+      "bytes": 30192,
+      "sha256": "9e41119048558274030afba374ef934904ff93bc641ecf2982f109b54c4a11db"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0006/pass1.json.gz",
+      "bytes": 30192,
+      "sha256": "0ec9c8336ac7bf68a9f82114fb39531dab0c6870a31d03f0207562582d725b51"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0007/core.json.gz",
+      "bytes": 173852,
+      "sha256": "a0770c24093a15d4c161509ea890771cfdd21385ee1586b47bcfac1612629dce"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0008/core.json.gz",
+      "bytes": 173215,
+      "sha256": "e5a2a9e28789d934a23bea76c84c0c1f1f1959f96320f3b9cbc7d6a1da152d96"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0009/core.json.gz",
+      "bytes": 173406,
+      "sha256": "3cabb606817e919790e761a8e8b4fff0c3c77b581d618d4e84cdb78ed172f2ec"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0010/core.json.gz",
+      "bytes": 138443,
+      "sha256": "6e6817a0ab607f91c253ca848b1e9032d92f61d37eaa2e23b297bd52464a6d35"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0011/core.json.gz",
+      "bytes": 173836,
+      "sha256": "efc230a37fac7ffdbf491dbc9cd8acdea0cdc4aa7f75cf2bc26804372136f415"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0012/core.json.gz",
+      "bytes": 137924,
+      "sha256": "fa568417dd581da7299632fa039dedb70467484a546f9783f9271c8123cb0004"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0013/core.json.gz",
+      "bytes": 173704,
+      "sha256": "8a6fc34d23915f3125022ce3eedf094839b520e34f7865cb814aee519f4e92f8"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0014/core.json.gz",
+      "bytes": 138189,
+      "sha256": "34b060db97aa055ac4adbadecc4a87d6ebe2b5fa0fb62ec4de5ca72b0c64e03c"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0015/core.json.gz",
+      "bytes": 139093,
+      "sha256": "eae98eff5c4c537f94e57a1fd3c52ff3038233aa09bfb03b8fdd54b5da1adf9b"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0016/core.json.gz",
+      "bytes": 138739,
+      "sha256": "5080589d5f47a66b36a5abf1e23b99c7946a35dbdc216316b0d6834909b7ed0d"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0017/core.json.gz",
+      "bytes": 138527,
+      "sha256": "fdaed38f8bcf624b3acab727e614ba98644dc031d02c5fcde9f8e12950f7ecdd"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0017/pass0.json.gz",
+      "bytes": 28964,
+      "sha256": "2a5c610bdba019ac7e11ee9acee6f5c2eb29424bae3aa96b07bf58298a4a00c5"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0017/pass1.json.gz",
+      "bytes": 28964,
+      "sha256": "fa2631476f7e67006d0c9ae6e942c1bdb9a910ea902bd0053526d2dc0ae612a3"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0018/core.json.gz",
+      "bytes": 173421,
+      "sha256": "eff31de09132f9b2fe3d23228ad78c29013ed987d18b0b2884bff2233a1a296d"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0019/core.json.gz",
+      "bytes": 174271,
+      "sha256": "76687554a420ea1fcc07ca5a5e57b1cf2997729ff24a03f47bada2cacce4460b"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0020/core.json.gz",
+      "bytes": 173058,
+      "sha256": "768082336d83d30c88efe1218a0efe74d944afd59ebf3037e281ee522a41deb4"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0021/core.json.gz",
+      "bytes": 173139,
+      "sha256": "238aca08b156d87db3a846117250d7942fe1743a931f91f6a0b54ad7eeb07d0d"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0022/core.json.gz",
+      "bytes": 138102,
+      "sha256": "94dfe51dbb36cd6df1b5f77e498bc96fe80b6785e4cffc1934e128a92a7428bb"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0023/core.json.gz",
+      "bytes": 139042,
+      "sha256": "244129fd4ccdcce8669f71cbfc092d0cde46d9e41a8ef331539e535c47a7d6fd"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0024/core.json.gz",
+      "bytes": 173172,
+      "sha256": "8d6664f44a1996bbf43f6d9463dfa12c9d775829c9643ffe90c12601d18ac131"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0025/core.json.gz",
+      "bytes": 173599,
+      "sha256": "6dac349bc60db9bd41d2598c15c57169483bb82e290cefcf754a1628abe2bcbf"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0026/core.json.gz",
+      "bytes": 173527,
+      "sha256": "d2f4246a2d55526bfe2da494c241586868a0dbb77c097bb9e87b5c8a7b8d9b5d"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0027/core.json.gz",
+      "bytes": 174223,
+      "sha256": "395354f9db65d05423ca9ec0e015cdb73ad12e4ef63d36343c360eba0f0642e2"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0028/core.json.gz",
+      "bytes": 172853,
+      "sha256": "9eb3abfe8b12e6df1be8918cd37b06b66927b3393813d8b23d846e1e4a118367"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0029/core.json.gz",
+      "bytes": 172904,
+      "sha256": "adc5b665c0700331d30c6521d7099ef654bd7a38191590cdcd9cb119b2ad591b"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0029/pass0.json.gz",
+      "bytes": 30006,
+      "sha256": "67736dc7e19c1c59d49331fdce049b131ad177ec80268f0002c95b700c9c1998"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0029/pass1.json.gz",
+      "bytes": 30006,
+      "sha256": "ede1b12e75427011801673a25473cf5d803c973574a85c3b1a780c95fe9af33e"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0030/core.json.gz",
+      "bytes": 172327,
+      "sha256": "f2db94422b9acc016aa3245ef151a2f398bf3a05e8676dc902ffa7470c9aac9f"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0031/core.json.gz",
+      "bytes": 173488,
+      "sha256": "78f50cfd329e3640effa53ae51e12b735306b9d6f21f33ba743848bf6bd6cf2b"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0032/core.json.gz",
+      "bytes": 137845,
+      "sha256": "e1f190a136a9b3e90b798bac295cc42a0bb17e7766ba4e04b9015759629347aa"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0032/pass0.json.gz",
+      "bytes": 28681,
+      "sha256": "1bf78468d429de0cf7965295bfe1ba6faf6a9e521ed0eb91f984dd03acad6597"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0032/pass1.json.gz",
+      "bytes": 28681,
+      "sha256": "0fd9801be65717e8efae6c789a19db92ae0b85c465b7868af6d511f5220d95b1"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0033/core.json.gz",
+      "bytes": 173133,
+      "sha256": "a577fe4a2fd72e7b9f92f8da6291b115e436eac76d6f522188809f9153a6f0da"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0033/pass0.json.gz",
+      "bytes": 30062,
+      "sha256": "686d241bdc4e4e3ddb0d19b52ea44fda4a83993ec2b99d0b92f60f2ecf35e824"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0033/pass1.json.gz",
+      "bytes": 30062,
+      "sha256": "f2cdd0ec0ff3ca93e2dd7b1dca0780b9af60367445a6b90123177d6e12b60e58"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0034/core.json.gz",
+      "bytes": 173364,
+      "sha256": "27d60dd4a8463f17f85403eeceea5e77ead0b0515c3f7a0f286a57bef276fe80"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0035/core.json.gz",
+      "bytes": 139048,
+      "sha256": "959723bb54c98cb6bc52cc0568fc4f525a77892fea792c33152731a43c38fec9"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0036/core.json.gz",
+      "bytes": 173477,
+      "sha256": "ce7549f95aa57300b65f48aa779922b8936a6bd2a1498d4055f792b06766bcf0"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0037/core.json.gz",
+      "bytes": 173006,
+      "sha256": "6c09ad3b60755ab4b5b0aefbfc5bae2b26250d5e0ac67117f09d1b18aa8d3f93"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0038/core.json.gz",
+      "bytes": 138710,
+      "sha256": "341caef950543b32a5f3463e8f3bf8085e5fcaa261a1f1976c654b017e8ff732"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0039/core.json.gz",
+      "bytes": 173981,
+      "sha256": "1ab78a6670df1fa350da6470fa18b040d142cb9b670507f175b99d8b5751b20d"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0040/core.json.gz",
+      "bytes": 173578,
+      "sha256": "6e31ba2416f90485ea868bc5569c44c8eb9d73d38b1f14ab49502432f3c3d76d"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0041/core.json.gz",
+      "bytes": 138777,
+      "sha256": "bbc0f2f4b4b4d5cb551eee5835d7b4ffaee881fd4e4b9cc88b1dc8268292a761"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0042/core.json.gz",
+      "bytes": 138564,
+      "sha256": "4d1e98f4cd823100ba52f90c6a745fae49e137f454ba328b3047b740c8b3ef40"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0043/core.json.gz",
+      "bytes": 139701,
+      "sha256": "ee38e3d24d325d3f9222692f185598ba45bb0107f4a5a8a0202bf100e2f3928c"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0044/core.json.gz",
+      "bytes": 172775,
+      "sha256": "1e863d4a34ee2b02af789bb65e50571bb59b60bc92713f19e688aa5b2b1f0b56"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0044/pass0.json.gz",
+      "bytes": 29743,
+      "sha256": "ae66a57fa3244aaa8c02133a619e960168a9a744cae4127951a50008f60466e9"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0044/pass1.json.gz",
+      "bytes": 29742,
+      "sha256": "72b3b7a1ab1ae6e2ffd909aedcdae09634c51278e9f2d2cbe681857618c7eef3"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0045/core.json.gz",
+      "bytes": 173685,
+      "sha256": "1b1b10de6b3c44aa1f66c1a4614a5f532aa339b396c738d0d6f57a4f87711f21"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0045/pass0.json.gz",
+      "bytes": 30186,
+      "sha256": "971bce8e0c222930dff85f74b8b5c0c3d803906ed3c0e51fc968ad8098159f10"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0045/pass1.json.gz",
+      "bytes": 30185,
+      "sha256": "6108da3268ffccfb2b67ba45a9e0d5765f540fdb916fac9dcd02f237b24b58bc"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0046/core.json.gz",
+      "bytes": 138207,
+      "sha256": "d32bfc3603432ee7d64ef7d108fcba5168a663240ca35de0e6075fc13a88114a"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0047/core.json.gz",
+      "bytes": 173784,
+      "sha256": "406394594c2312c196578b9eb001b4409dc5aa5fb28bebcc2e6c9afbcfc3251e"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0048/core.json.gz",
+      "bytes": 173378,
+      "sha256": "442d055ea461508ce2b80154a1d562a1551b57f86e098fc8702a903e79117886"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0049/core.json.gz",
+      "bytes": 138702,
+      "sha256": "214003f212a2f3fca0929abd59c18888a09d26a2d4f7bc8ff09072ac7626005c"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0050/core.json.gz",
+      "bytes": 173280,
+      "sha256": "035e67b5e8c33bafcabcb8be4687a435332439d8a8f3dcee00d8d2f1b4d8fbe0"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0051/core.json.gz",
+      "bytes": 139135,
+      "sha256": "80cad0e7da4269954df41bc87a69ba2b7fd8f45fdcbe45658ff5dabece98b30b"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0052/core.json.gz",
+      "bytes": 137896,
+      "sha256": "7dbf37787d1ac4539925c9789111adac6bec2dbf80db46432a5d383f56fc0a1d"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0053/core.json.gz",
+      "bytes": 138376,
+      "sha256": "8d9aca66bb32c390062009c990d530fc55a44600f26d894882adb6fb5db87db1"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0054/core.json.gz",
+      "bytes": 173297,
+      "sha256": "e685d9e621d65ab280995799d5fc5ec49310452a9d1627f95ae25e9d06fb908b"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0055/core.json.gz",
+      "bytes": 138953,
+      "sha256": "7832812617b0e528a0b9daf1f106a6d417329d5994788b76b296d6e4ac61c0b2"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0056/core.json.gz",
+      "bytes": 173771,
+      "sha256": "801a21c1e846b3ff6240341a1246d7fe62edaf8bbe214f140e81d2a5d5b9df62"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0057/core.json.gz",
+      "bytes": 173333,
+      "sha256": "f421c46adb25f5be7bff525c68209b1dd423af4c77937e56b72befa237c7d5ab"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0058/core.json.gz",
+      "bytes": 173675,
+      "sha256": "709e240522d980b52f5ee608df4609d108982318b8eb9204aa07048c7f0b4600"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0059/core.json.gz",
+      "bytes": 174173,
+      "sha256": "546c09918a8e2f0b638c8acc44cee3bf9ab0fca651639860a5ce4b7f31070355"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0060/core.json.gz",
+      "bytes": 172313,
+      "sha256": "c0653e7fa5711f9607709908232c32e4e0cfac792795998313604a60960b4656"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0060/pass0.json.gz",
+      "bytes": 29587,
+      "sha256": "7c17a3941a226481e4f66280f257eb75f677e1190bbad19f5fd41fd57aa129cf"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0060/pass1.json.gz",
+      "bytes": 29586,
+      "sha256": "3bc824acbb650d8d3a91018a1e43481ef8f301d394b5e52ab96e65b851a324ca"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0061/core.json.gz",
+      "bytes": 172840,
+      "sha256": "7b96b7d3535d22dc6048276326bb6f14e91447403a5db55a8ae6ab200d1c7867"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0062/core.json.gz",
+      "bytes": 172526,
+      "sha256": "4efc818faba7c8cd04f6371331dde370c5085ea0182170fc8c0ce15278e2a657"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0063/core.json.gz",
+      "bytes": 173122,
+      "sha256": "b6a89cd8d9394aee3092d2ed80d64b2ec8f26faf34ffb9f110bdf34afe519b3f"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0000/core.json.gz",
+      "bytes": 131712,
+      "sha256": "58dd14bd5033487b4fbc504e4c6bae6447f99192fb9eb72d774bae08ab1ba2aa"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0001/core.json.gz",
+      "bytes": 132788,
+      "sha256": "8146c90aaebe63e8096c1f9df560a13b7cadce05aaa21bcd739ba0a9d504e06b"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0002/core.json.gz",
+      "bytes": 132510,
+      "sha256": "9074409aacf13e111b476e7d45f375c41a66e309680da3147b6587485e64f946"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0003/core.json.gz",
+      "bytes": 163122,
+      "sha256": "dd2b167913e900e9f1cb3218d78b6d0d18c5ba12a0bf78ce601b7b7951fba57e"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0004/core.json.gz",
+      "bytes": 161167,
+      "sha256": "f9a933fd9bf15706be36bdf3f2d9252e6f5ac18fadc3fc164466f26e502a516e"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0005/core.json.gz",
+      "bytes": 131321,
+      "sha256": "a5a60b2ef71760bcfcb078fc5b20b079254f1e3e7cae69109bb29b67769a734d"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0006/core.json.gz",
+      "bytes": 163903,
+      "sha256": "d501cd55c4c5ffda27872880c5e4e7703a5cf60b50f090ecc027a386d8a61421"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0006/pass0.json.gz",
+      "bytes": 30730,
+      "sha256": "9f8f7cd1368c5d38e862be5b64a463e8bc924820289aefcf0cc880383abea077"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0006/pass1.json.gz",
+      "bytes": 30730,
+      "sha256": "579a76d5fa2b2ff8b3a0e8d9e97fa5b71f6fa248a45c079c9deeabf28db8125d"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0007/core.json.gz",
+      "bytes": 163895,
+      "sha256": "77362045ea69dd928d15c3e4f1149a78335242ced9734a8c3634d3667a1fe721"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0008/core.json.gz",
+      "bytes": 162453,
+      "sha256": "7f7279cbae4ca25ee4fa10191471f71b7e8d73fb9463b678728aeb8111605c1b"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0009/core.json.gz",
+      "bytes": 165139,
+      "sha256": "d4c00dde57f648c959481cf706a48144fa97637911381b53c2d3f4c89c256e2c"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0010/core.json.gz",
+      "bytes": 132290,
+      "sha256": "65aa907439f0ec84386484a84dbcda187d983222be89c413e97ebdcd44b65764"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0011/core.json.gz",
+      "bytes": 160548,
+      "sha256": "d70e727b3c3a1ef2f637925c1daedc428e01a1fd237ef009bd0b5ae4bfaeca3e"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0012/core.json.gz",
+      "bytes": 130123,
+      "sha256": "b4053f0a19cdf68d26e9454104f9c97e432d9df2511c6f75b14d2879e83ad51c"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0013/core.json.gz",
+      "bytes": 160965,
+      "sha256": "32c88553972425df5718d8952a10b84d33cf210a368722e2f04e29c2c8c64b4e"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0014/core.json.gz",
+      "bytes": 130311,
+      "sha256": "94d5bf21c33a570382b06edbccb8b090ae51f2c6a8bb3743486ea60b7ef3063c"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0015/core.json.gz",
+      "bytes": 130582,
+      "sha256": "8ec9e0a5a5175b9f05dae440f78d22dc7f799dbe00ccb09d65da9b98024abe5d"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0016/core.json.gz",
+      "bytes": 130326,
+      "sha256": "b1be02e95ef79fd8c898d83829daf24cf531a502f8beeb6658974742f8985431"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0017/core.json.gz",
+      "bytes": 130393,
+      "sha256": "c112bb6f8e62fb650a441f8108e0fdbd3df8b408ac57ad5e8c60c1db8cc63d94"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0017/pass0.json.gz",
+      "bytes": 30511,
+      "sha256": "09bff59be883ec7c28bf2b986d995d052d931e0ae136fb77ff66125df21ed6ce"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0017/pass1.json.gz",
+      "bytes": 30511,
+      "sha256": "f8c1f0b8100f70cf4a14590867cb0a1b76b5180e8becaea37d5dba2f5ad8760b"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0018/core.json.gz",
+      "bytes": 163670,
+      "sha256": "0649dd8d5e634a83b417996011ade23d7edb1c9d16e4fc6d26f82ddff4498618"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0019/core.json.gz",
+      "bytes": 163032,
+      "sha256": "df7072fa0d692efd2c45fb9fb685fc73335c48d0aa077f3d854b45428d53729e"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0020/core.json.gz",
+      "bytes": 160518,
+      "sha256": "cae176bd7bdb9228664bec1130923d19d50d3a6048981be20693e98dda45d31d"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0021/core.json.gz",
+      "bytes": 159639,
+      "sha256": "ef882ffe3ad91ddf31cf758032354bc24d3d7ecb4d4cef484f2c926e6e6c1f9d"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0022/core.json.gz",
+      "bytes": 130121,
+      "sha256": "f5d5c1c220d6566ae1ff58251c3fc7460ba84608fb7b1baab50896342b686c2f"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0023/core.json.gz",
+      "bytes": 129110,
+      "sha256": "87b084642d70eecc0cc11163fc52c8f0444eba3bb4e484cd07f6c92262cd76b0"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0024/core.json.gz",
+      "bytes": 161111,
+      "sha256": "797aa2ce951e7ff4d4f18d8131e70114c83c5668326fdeb05b185016309974e0"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0025/core.json.gz",
+      "bytes": 157455,
+      "sha256": "f65a6ffb1166b028a3bf709ad2a331c782a6f4f00142f38ea52f7cb85fb16c40"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0026/core.json.gz",
+      "bytes": 159393,
+      "sha256": "81e33c10bda57fea7bee90e18867e8826f42d752d49f3b69472517066ac1e390"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0027/core.json.gz",
+      "bytes": 159331,
+      "sha256": "270ee14d19da3e40d772c7003873fad4ab8d230599f88d20c2a34cb302b47345"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0028/core.json.gz",
+      "bytes": 155132,
+      "sha256": "4b92db5418a61d69c9fa64181c292d6d8ef4cd685766d6987a8ac67efe7de453"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0029/core.json.gz",
+      "bytes": 152363,
+      "sha256": "2c7ac7b1df6f8b554de279d2ba4aaf52c97677cf869f2ffaed6dcc44e22ae76b"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0029/pass0.json.gz",
+      "bytes": 28112,
+      "sha256": "68cf8b1051352f333ef9636747c85ab8d9aa875ee346dc52263185c78eec9fbb"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0029/pass1.json.gz",
+      "bytes": 28112,
+      "sha256": "4a7b9a91ae2d3075ad77f0551e43ecd2eb62428aa3b0f434d642d1953a536b69"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0030/core.json.gz",
+      "bytes": 152258,
+      "sha256": "150d250d298ab65d99d153bb2f75678ad4bb6b47940cfa302707121afb813f37"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0031/core.json.gz",
+      "bytes": 155058,
+      "sha256": "34b6a8f046dc3b67c08743a21804789ea13bca56e2d0ad9393bd4a7242aae598"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0032/core.json.gz",
+      "bytes": 132052,
+      "sha256": "141b1851408036c309e42e174e81d9deb4f6e7bb72367418860566687dce22d2"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0032/pass0.json.gz",
+      "bytes": 30934,
+      "sha256": "cd99b906c395519147432c641af66621591845a4cc96dcabaecb3c2039f7a2aa"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0032/pass1.json.gz",
+      "bytes": 30934,
+      "sha256": "e26c264c8bad97580cd2f2b297847da07069f1611925f07b774ac1ddddefb259"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0033/core.json.gz",
+      "bytes": 163050,
+      "sha256": "ab88c3a42c0ab293f549f7ba30dde01cf7205533f34f95928a7e1528c7768056"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0033/pass0.json.gz",
+      "bytes": 31405,
+      "sha256": "2265d5f65bf7d065c3da416594b08f6592a17f1c123dae728f289dbd534a8cd3"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0033/pass1.json.gz",
+      "bytes": 31405,
+      "sha256": "a590d877fbb8fecfc4c9f87baa8f2484ffaac7cc6525a9ce23a37058e196deb1"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0034/core.json.gz",
+      "bytes": 163097,
+      "sha256": "04b38d0e2d39e4207ea6e7cf880f9de56d0404af70769a7085524cd20f95e50d"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0035/core.json.gz",
+      "bytes": 131200,
+      "sha256": "c3fd764b702e8f03c5f8775549109bacfebf916ee8a19b21d3284764589003c6"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0036/core.json.gz",
+      "bytes": 163986,
+      "sha256": "2f42e538f62207f9bc3be8724bb65f3191721db19d9da6f51887e7f71bb04832"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0037/core.json.gz",
+      "bytes": 163398,
+      "sha256": "50933e7795d90857a121371ca5866769f7aa90d4cda5f13e3d1cdfbf4d30d3fc"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0038/core.json.gz",
+      "bytes": 131059,
+      "sha256": "b739ca40580de7e3fe28c38284078ff8683c17803c59bc3e829fc9c8f5900aaf"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0039/core.json.gz",
+      "bytes": 166660,
+      "sha256": "29db867b6f9dfe7cadd6027e0b1687549dcf7200b4d9758ca2e7fc9ad44ced3c"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0040/core.json.gz",
+      "bytes": 162999,
+      "sha256": "61a557f55bac29209b088382085c586b496f4758c438a606c2c3bd6e42e965b5"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0041/core.json.gz",
+      "bytes": 133734,
+      "sha256": "eb412cd55efb8f5d588e4142e508885d6838f51ef328ca2d296e01d007a19e23"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0042/core.json.gz",
+      "bytes": 129668,
+      "sha256": "21c0990f731b30ef7be05e060d248ef05f11f50d6fadae1e7fa7f3245ab761ca"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0043/core.json.gz",
+      "bytes": 133583,
+      "sha256": "9fd40215177e8f409b7e93ca511df9b5ffcfb627666b44a9d1a5847b4c707b2f"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0044/core.json.gz",
+      "bytes": 157275,
+      "sha256": "89274c354c398788ed58acd26a73176dcd2269de926b392490208aa06a8b4164"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0044/pass0.json.gz",
+      "bytes": 29128,
+      "sha256": "95c4907d0a1e7b6ebdf84a0d054eb03f724aea40d491ab6727ecc6196cf48742"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0044/pass1.json.gz",
+      "bytes": 29127,
+      "sha256": "4d1494b8bf16205ca34ba3df2c8e76bac1a53b1055e1b8cdf1aaa52fbda7b25a"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0045/core.json.gz",
+      "bytes": 162677,
+      "sha256": "3a35c2d222977946e76db762c23ab777041a14c0e0768404f64d01a34c89782b"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0045/pass0.json.gz",
+      "bytes": 30516,
+      "sha256": "6f997b8f9efe2b6039ea21217183c1cafbe6dcbd11294cef18ad80a951048f87"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0045/pass1.json.gz",
+      "bytes": 30515,
+      "sha256": "7f93cdd671450d11e1f8bc7c9e91cece4e1bcd2c9c51cbe42c209e4e0943df1b"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0046/core.json.gz",
+      "bytes": 129932,
+      "sha256": "15171065ee0f64a4cf17e6aa10bd1fa0bab5992197182872a4431323b5aa541b"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0047/core.json.gz",
+      "bytes": 159060,
+      "sha256": "4bd9c5450ffe33d7f6adf44facc2566e2d15b3cf6a7a3e9793c0c861e80d267c"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0048/core.json.gz",
+      "bytes": 160935,
+      "sha256": "7ee93fe328042638cf421d835e2cd5d197e840b67d6901c216d10bc40aaa42dc"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0049/core.json.gz",
+      "bytes": 130502,
+      "sha256": "80e6b2bd324d3da908ee22a1e6c0a7c91d57cf7905ceafc4ee692cd01cbbf020"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0050/core.json.gz",
+      "bytes": 163347,
+      "sha256": "8ca1a433d20227310fd52f7081421502513b3b0248f41f64c3ac72949ef55ccb"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0051/core.json.gz",
+      "bytes": 129770,
+      "sha256": "5bdb4fde8f97712443d177e516e45925c49c9657d8c2b8f93ee158100abab33c"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0052/core.json.gz",
+      "bytes": 128885,
+      "sha256": "91dd19b66e34fa99b1ea5e5d8c4685810c4a440b6c8b394c9449bcd99d7277b5"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0053/core.json.gz",
+      "bytes": 129056,
+      "sha256": "d5a3c6a79f8239d05c1c23dbceaca0b7b75684e52d93eb6ea86fc6e2cca39d0a"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0054/core.json.gz",
+      "bytes": 160467,
+      "sha256": "997c1fb9c5390d9dee2f7ac5c4590b94ba2c5df8d1ebc8888e3cc495fad43ba8"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0055/core.json.gz",
+      "bytes": 130477,
+      "sha256": "6de671a2b041abb44be074f6ad756e10213f5d2d5000aac8061e047c558cee23"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0056/core.json.gz",
+      "bytes": 162841,
+      "sha256": "d6b7814ac48fb464fd4ac4537e3ae8d00492c0964822642b522c1eee65d1f614"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0057/core.json.gz",
+      "bytes": 157915,
+      "sha256": "4f26da19952c284806de0cf08c2967a6315c90604f62ede31616caaad830789d"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0058/core.json.gz",
+      "bytes": 160817,
+      "sha256": "294052e3b8717bc471b3386de3af9b7465fe63266e61a42abcfd6a008c394f92"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0059/core.json.gz",
+      "bytes": 162738,
+      "sha256": "43695e55f9edd74a3a1d0e42fe14046a9ef9579eab00794087ea4ecb31e3ec49"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0060/core.json.gz",
+      "bytes": 150931,
+      "sha256": "26a5443a9e23cd2075212d63daeb280c449fd656ebc056181ff205babf404d1c"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0060/pass0.json.gz",
+      "bytes": 28143,
+      "sha256": "2bb0e57c123800539a1f6bc1e0eaa9bbc8425aa08dbce97f3953283f353fbaf6"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0060/pass1.json.gz",
+      "bytes": 28142,
+      "sha256": "c015aa8ee353106997cd1624bdee673675fd87e765506be1937fcc360b5a1f28"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0061/core.json.gz",
+      "bytes": 152219,
+      "sha256": "66383eaa347ff1281f0e8a98aaafe3e29d54aec8a92a9f27a5eb566435a6404e"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0062/core.json.gz",
+      "bytes": 150796,
+      "sha256": "7b7d1b8e07e5eaa115faff865ed1e86968872cb118282821c5c38e363331ce6d"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/qwen/SSC1-FINAL-0063/core.json.gz",
+      "bytes": 151366,
+      "sha256": "490c040a63d3ae7e61b57bd3d0e7fb39725244081ff0fd4bc3b773f9608d92b0"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/make_examples.py",
+      "bytes": 8323,
+      "sha256": "e6aa08fae3b92f9da4a4acb95e74b3754211a0776a567e2bd6058dc33dbcd2a1"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/reconstruct.py",
+      "bytes": 23140,
+      "sha256": "783cf3134867d74a44296e25a05b3815a7d853d745c033252f9f2c0ddcecab2f"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/provenance.json",
+      "bytes": 12141,
+      "sha256": "141d6dd497245f923f8addab762eeac053e1b23b396d6a19c470a4147cef20aa"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/v10/primary_results.json",
+      "bytes": 30371,
+      "sha256": "9a6c45a11710c9aeb61e03622429ba0a0cfba360a0ba84e6d38b43b274a821e7"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/v10/root_counts.json",
+      "bytes": 259492,
+      "sha256": "8acac8c4dbaafdbcc72aa32f3726c7af5949fbbfc4d80d1dcc3ca1e515c8c93c"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/v10/selected_repeat_checked_example.json",
+      "bytes": 1465,
+      "sha256": "edc597966c2d4b5f0adc734f5a068d4a6038767c3de950796ce2594659db0d31"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/v10/specification_summary.json",
+      "bytes": 1177,
+      "sha256": "293fac2e3f80105e351fd8f61cda493f3e8f0d86d1bd4d456a5e297121bd573f"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/v10/witness_summary.json",
+      "bytes": 18323,
+      "sha256": "5d7a49ad52e24c764292440b96f972c335ae878144eda8ee9a29c0fb0ae1e422"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/v6/fixed_certificate_summary.json",
+      "bytes": 12619,
+      "sha256": "b554c6a3c7cbd2b2a47086ad60e891b353d0360100a427d7a37118e25cf2ef92"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/v7/constructive_summary.json",
+      "bytes": 5407,
+      "sha256": "28069a38c98f5a15a25f06e2048bd887c46c36abff543df1d710e4af173077e7"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/v9/coherence_summary.json",
+      "bytes": 30108,
+      "sha256": "3eda2c4dda4a08a312c90081de6d1d2a41e3805e986589d915621d56b48af149"
+    },
+    {
+      "path": "reproducibility/state_sufficiency/v9/primary_summary.json",
+      "bytes": 14060,
+      "sha256": "416fec1d8bb0fd24397682d9d4628daabf0fd338cf7f91ba971fcc9ab70b25fd"
+    },
+    {
       "path": "requirements-m1-reproduction.txt",
       "bytes": 334,
       "sha256": "3261437caa0d662ff1ce1975fdc41c30b626076c0a5c4a71e3464d9c1b4f6753"
@@ -12467,9 +14054,14 @@
       "sha256": "2d026bfc41ee9f62d9e1aaa21d2b6c759f40cdc49aeda5e139679e6405d8a7df"
     },
     {
+      "path": "src/repro/state_sufficiency.py",
+      "bytes": 8835,
+      "sha256": "794346c8f3e8787b2bfe8dd554c1c3fd74422a62bc5288fa79b251de3dd92a29"
+    },
+    {
       "path": "src/repro/tables.py",
-      "bytes": 3437,
-      "sha256": "0e10c34f79d816ab45e7679e0c166f46213be38eab4793907a704be8faeffeec"
+      "bytes": 3556,
+      "sha256": "0ed7915a3b51ff75da148e1ed82cfa807e300ff85ca7e833457e0ec7ea541b7a"
     },
     {
       "path": "src/repro/verify.py",
@@ -12493,8 +14085,8 @@
     },
     {
       "path": "tests/test_evidence_registry.py",
-      "bytes": 6439,
-      "sha256": "c4aa8444e041349560907d382c06728169bfb4b952814f73ae7d410a3e018e29"
+      "bytes": 6440,
+      "sha256": "01ebe4af67f83e7b444f2824aab8602ff4a6f703d1a4f7d76f0a131b029b202e"
     },
     {
       "path": "tests/test_historical_status.py",
@@ -12505,6 +14097,11 @@
       "path": "tests/test_human_review_public.py",
       "bytes": 2060,
       "sha256": "7b110febfa26c058368309e725ba99d619a52cf28ddc88a397183c54a07c1778"
+    },
+    {
+      "path": "tests/test_independent_state_sufficiency.py",
+      "bytes": 8415,
+      "sha256": "31fec4778dc969304c440d5dbfa809f2bb1b89153b6643975cfc667442331623"
     },
     {
       "path": "tests/test_m1_analysis.py",
@@ -12555,6 +14152,11 @@
       "path": "tests/test_scientific_contracts.py",
       "bytes": 3274,
       "sha256": "fb9190a50a6ca2c3fb00c7f9f4137d0ede3945f9e1700d937ac566f7bd7e9d16"
+    },
+    {
+      "path": "tests/test_state_sufficiency.py",
+      "bytes": 6839,
+      "sha256": "b1705209c566150ad365186a63354e2fd9dac0888f50547900c3169284e8b023"
     }
   ]
 }

@@ -19,6 +19,7 @@ python -m repro verify
 python -m repro evidence
 python -m repro tables --output reproduced
 python -m repro figures --output reproduced
+python -m repro.state_sufficiency --output reproduced
 ```
 
 `verify` reports the number of checked files and experiments. `evidence` reports
@@ -56,11 +57,16 @@ identities and unavailable inputs are in the [artifact manifest](reproducibility
 | Initial and matched shared-state editors | `tables`; [initial](reproducibility/relational_editing/v1/) and [matched](reproducibility/relational_editing/v2/) packages | Qualification and development rows replay recorded summaries |
 | Repetition, restoration, and broader training consequences | `tables`; [update](reproducibility/relational_editing/v3/) and [coverage](reproducibility/relational_editing/v4/) packages | Recomputes saved behavioral statistics; does not repeat training |
 | Source independence and fixed readers | `tables`; [source-independence package](reproducibility/relational_editing/v6/) | Uses original per-scene/per-root sufficient statistics, not raw model probabilities |
+| Later constructive editing | `tables`; [V7 summary](reproducibility/state_sufficiency/v7/) | Source-bound aggregate rates and gate flags, not training or scene-level reconstruction |
+| Source-history sufficiency, retrospective census and archival corroboration | `tables`; [V9](reproducibility/state_sufficiency/v9/) and [V6 certificate replay](reproducibility/state_sufficiency/v6/) summaries | Selected source-table consistency, not certificate reconstruction from scores |
+| Source-history sufficiency, prospective confirmation aggregates | `tables`; [V10](reproducibility/state_sufficiency/v10/) | Reconstructs primary rates, intervals and strong-witness counts from saved per-root counts |
+| Source-history sufficiency, independent per-example verification | [Collaborator package](reproducibility/state_sufficiency/independent_verification/README.md); commands below | Reconstructs semantic labels, eligibility, witnesses and intervals from saved scores; no original analysis imports or neural rerun |
 
 The prepared fixed-readout predecessor had no fresh efficacy measurement. Its
 scientific definitions are inherited by the executed source-independence study;
-it is not distributed as a second result package. Unfinished successors are
-excluded from the completed-result index.
+it is not distributed as a second result package. V10 is complete at controlled
+generated-case scope. External public-method validation remains pending and has
+no scientific outcome to replay.
 
 ## What the CPU checks establish
 
@@ -89,6 +95,53 @@ the original question subset remains a separate result. Identical wrong answers
 do not satisfy source independence. Repetition alone cannot convert a low-quality
 single edit into success. Original qualification amendments and post-outcome
 descriptive interval additions remain disclosed.
+
+## Three levels of reproduction
+
+Aggregate saved-evidence replay reconstructs tables from retained summaries and
+root counts. Independent per-example reconstruction starts instead from saved
+model outputs, relations, questions and reference responses. A full fresh neural
+rerun would load the models and generate new outputs. This checkout supports
+the first two levels for V10; the collaborator package supplies the second.
+
+The [compact source-history package](reproducibility/state_sufficiency/README.md)
+records original archive/member hashes and exact selection rules. The command
+`python -m repro.state_sufficiency --output reproduced` exports its derived tables;
+the same checks also run inside `python -m repro tables`. It recomputes the V10
+root bootstrap and both seed-averaged rates and root-union counts from the
+committed counts. V9 and archival V6 checks validate selected aggregate identities
+and denominators, not their original score-level certificates.
+
+The [independent collaborator package](reproducibility/state_sufficiency/independent_verification/README.md)
+now retains scientific projections of the original V10 raw journals, complete
+case records, native/no-op references and saved repeat passes. A new standalone
+analysis derives Boolean labels, response validity, eligibility, primary and
+strong witnesses, per-condition/root quantities and confidence intervals without
+importing the original experimental analyzer. Run the calculation first, then
+compare with the separately stored reported results:
+
+```sh
+python reproducibility/state_sufficiency/independent_verification/reconstruct.py analyze --output reproduced/independent
+python reproducibility/state_sufficiency/independent_verification/reconstruct.py compare --output reproduced/independent
+python -m pytest tests/test_independent_state_sufficiency.py
+```
+
+The independent calculation never opens expected results. No primary
+classification inputs are omitted at the saved-output level. Full-vocabulary
+argmax membership is established from the retained candidate probabilities and
+the remaining probability-mass bound, rather than assumed from a validity flag.
+The complete original archives are not copied into this checkout; every included
+projection has source-member hashes, exact transformations and omitted-field
+descriptions. Six traceable examples cover witnesses, eligible non-witnesses and
+excluded cases. The retained repeat panel covers native and learned conditions,
+not independent textual-correction repeats.
+
+Fresh forward passes, cache-tensor regeneration, tokenizer execution and
+prospective execution-order attestation are not performed. Those boundaries
+remain distinct from saved per-example reconstruction. V9 and the archival V6
+certificate package remain aggregate-level here. No private resource, billing,
+provider or machine logs are included. Original archive hashes identify sources,
+not public download locations or attestation of the original model run.
 
 ## Optional model reproduction and distribution boundaries
 

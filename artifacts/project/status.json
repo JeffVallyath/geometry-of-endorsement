@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "as_of": "2026-09-12",
-  "claim_boundary": "Development, retrospective and frozen-plan studies are distinguished in docs/RESULTS_AND_CLAIMS.md. Rephrasing prediction has been measured; broader editing reliability remains unresolved. Individual review judgments and a separate confirmatory outcome are not distributed.",
+  "as_of": "2026-09-15",
+  "claim_boundary": "Useful question-independent updates, repetition, restoration and bounded composition coexist with source-history dependence. V9 is retrospective, V6 archival, and V10 prospective at controlled generated-case scope. Correct current records can be insufficient for measured downstream responses. No absent-internal-facts, physical-erasure, unique-mechanism, calibrated-belief, deployment-rate, universal-failure, priority or new-mathematics claim. External validation remains pending with no scientific outcome. The separate original human-audited relation confirmation is not certified by this package.",
   "stages": [
     {
       "stage": "ValuePrism leakage control",
@@ -37,7 +37,27 @@
       "stage": "Question-independent relation editing",
       "question": "Do edits behave consistently across questions, repeated updates and different starting relations?",
       "status": "Completed bounded tests; stronger conjunctions fail",
-      "evidence": "See docs/RESULTS_AND_CLAIMS.md and reproducibility/relational_editing. Prepared fixed-readout predecessor has no efficacy outcomes; source-independence successor was measured."
+      "evidence": "V7 retained-operation and joint-update point criteria passed for three recipes across both backbones and seeds; complete source-history conjunctions remained unmet. Historical V6 results are unchanged."
+    },
+    {
+      "stage": "Source-history sufficiency: V9 census",
+      "status": "Complete; retrospective",
+      "evidence": "Full familiar-question census under strong direct/reference controls; ordinary-reader coherence adverse control retained."
+    },
+    {
+      "stage": "Source-history sufficiency: V6 certificate corroboration",
+      "status": "Complete; archival fixed-definition replication",
+      "evidence": "Exact-input nonoverlap with V9, shared task/software ancestry and one identical Gemma checkpoint; not fully independent or prospective."
+    },
+    {
+      "stage": "Source-history sufficiency: V10 confirmation",
+      "status": "Complete; prospective controlled generated-case confirmation",
+      "evidence": "All eight model/update-group primary intervals above zero; Gemma/Qwen, learned/textual updates. Aggregate replay and independent per-example saved-output reconstruction are supported. Neither authenticates original forward passes or performs fresh neural inference."
+    },
+    {
+      "stage": "External public-method validation",
+      "status": "Pending; no scientific outcome",
+      "evidence": "AlphaEdit/MQuAKE/RippleEdits attempt stopped before pretrained inference; scientific canary, reader qualification, final freeze and final inference unrun."
     }
   ],
   "moral_relation_development": {

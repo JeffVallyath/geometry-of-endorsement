@@ -1,0 +1,275 @@
+{
+  "schema_version": 1,
+  "archives": {
+    "SEMANTIC_INTERFACE_CERTIFICATE_CENSUS_20260914.zip": {
+      "sha256": "a971ff7f2b3079363bac51f043e8bc818c6393d0fad5d8e29166f34082ab0f57",
+      "bytes": 70017923,
+      "public_url": null,
+      "status": "unavailable_to_external_reproducer"
+    },
+    "V6_CERTIFICATE_REPLICATION_20260914.zip": {
+      "sha256": "0e76042fc038b90a32e2221a29a712c44d1269226b32e015d414cd47f8f7d153",
+      "bytes": 47631383,
+      "public_url": null,
+      "status": "unavailable_to_external_reproducer"
+    },
+    "RELATIONAL_TERMINAL_CONSISTENCY_V7_RESULTS_AND_IMPLEMENTATION_2026-09-13.zip": {
+      "sha256": "1a78d9da0fe1da2338b83c6ba5b9e8cbcb3350acf5aae639cdabfc683bc8a416",
+      "bytes": 2810015,
+      "public_url": null,
+      "status": "unavailable_to_external_reproducer"
+    },
+    "STATE_SUFFICIENCY_CONFIRMATION_RESULTS_AND_REPRODUCTION.zip": {
+      "sha256": "96cdb665083c1c41e7cea49868efbb44207bca89f01c9bfa08779488f93ec455",
+      "bytes": 89386000,
+      "public_url": null,
+      "status": "unavailable_to_external_reproducer"
+    },
+    "STATE_SUFFICIENCY_CONFIRMATION_RAW_DATA_01.zip": {
+      "sha256": "fd5718998929dd09465b5f6eb1b4933c519f6731458f6dec99093eadf1c73766",
+      "bytes": 51025469,
+      "public_url": null,
+      "status": "unavailable_to_external_reproducer",
+      "included": false
+    }
+  },
+  "files": [
+    {
+      "path": "v9/primary_summary.json",
+      "sha256": "416fec1d8bb0fd24397682d9d4628daabf0fd338cf7f91ba971fcc9ab70b25fd",
+      "sources": [
+        {
+          "archive": "SEMANTIC_INTERFACE_CERTIFICATE_CENSUS_20260914.zip",
+          "member": "semantic-interface-census-20260914/tables/condition_summary.csv",
+          "sha256": "71e6e1ea61dc701820a038bdbe929b1c9d136a2d35fd6817c01cc069ee6c381f",
+          "bytes": 651086,
+          "source_manifest_verified": true
+        }
+      ],
+      "derivation": "Select history, HIGH_DIRECT_MARGIN_090 (includes strong-reference gates), d0, ALL_HISTORIES and the six learned/textual conditions; retain every source field as a CSV string."
+    },
+    {
+      "path": "v9/coherence_summary.json",
+      "sha256": "3eda2c4dda4a08a312c90081de6d1d2a41e3805e986589d915621d56b48af149",
+      "sources": [
+        {
+          "archive": "SEMANTIC_INTERFACE_CERTIFICATE_CENSUS_20260914.zip",
+          "member": "semantic-interface-census-20260914/tables/condition_summary.csv",
+          "sha256": "71e6e1ea61dc701820a038bdbe929b1c9d136a2d35fd6817c01cc069ee6c381f",
+          "bytes": 651086,
+          "source_manifest_verified": true
+        }
+      ],
+      "derivation": "Select unfiltered minimal-local coherence for all six updating conditions, actual/no-op cohorts and native-final; no significance claim."
+    },
+    {
+      "path": "v6/fixed_certificate_summary.json",
+      "sha256": "b554c6a3c7cbd2b2a47086ad60e891b353d0360100a427d7a37118e25cf2ef92",
+      "sources": [
+        {
+          "archive": "V6_CERTIFICATE_REPLICATION_20260914.zip",
+          "member": "v6-certificate-replication-20260914/tables/condition_summary.csv",
+          "sha256": "4df455e6d590380eeb23fe520ec23cd83893f6958c4bc349c42481617ed9cff2",
+          "bytes": 127640,
+          "source_manifest_verified": true
+        }
+      ],
+      "derivation": "Select ALL_34, E_SAME_METHOD_NOOP and four learned seeds plus TEXT_CORRECTION; retain source CSV fields."
+    },
+    {
+      "path": "v7/constructive_summary.json",
+      "sha256": "28069a38c98f5a15a25f06e2048bd887c46c36abff543df1d710e4af173077e7",
+      "sources": [
+        {
+          "archive": "RELATIONAL_TERMINAL_CONSISTENCY_V7_RESULTS_AND_IMPLEMENTATION_2026-09-13.zip",
+          "member": "scientific_reports/gemma_PROGRAM.json",
+          "sha256": "63d554f0555bec976f27cb0439da04869998a2b6e5afad1b07bd739859a58e30",
+          "bytes": 3451818,
+          "source_manifest_verified": true
+        },
+        {
+          "archive": "RELATIONAL_TERMINAL_CONSISTENCY_V7_RESULTS_AND_IMPLEMENTATION_2026-09-13.zip",
+          "member": "scientific_reports/gemma_PROGRESSION.json",
+          "sha256": "3435c18d07e39ad559159b7526c4f2598baec2dad4cbf23ea33fa9a1ca017075",
+          "bytes": 1581816,
+          "source_manifest_verified": true
+        },
+        {
+          "archive": "RELATIONAL_TERMINAL_CONSISTENCY_V7_RESULTS_AND_IMPLEMENTATION_2026-09-13.zip",
+          "member": "scientific_reports/qwen_PROGRAM.json",
+          "sha256": "a8bd02fbbaa9bb185c25a896d95868a816f7f8458a4b54d9638b70b4e3b9a992",
+          "bytes": 3513777,
+          "source_manifest_verified": true
+        },
+        {
+          "archive": "RELATIONAL_TERMINAL_CONSISTENCY_V7_RESULTS_AND_IMPLEMENTATION_2026-09-13.zip",
+          "member": "scientific_reports/qwen_PROGRESSION.json",
+          "sha256": "bcc67063a5c6e770837eedce350f6b067341e42b58cd7134458e3f799693dc54",
+          "bytes": 1608895,
+          "source_manifest_verified": true
+        }
+      ],
+      "derivation": "Copy ABC changed/harm rates and scene/query counts for INV_PAIR_NLL seeds; retain all H1/H2/H3 progression flags including failed controls."
+    },
+    {
+      "path": "v10/primary_results.json",
+      "sha256": "9a6c45a11710c9aeb61e03622429ba0a0cfba360a0ba84e6d38b43b274a821e7",
+      "sources": [
+        {
+          "archive": "STATE_SUFFICIENCY_CONFIRMATION_RESULTS_AND_REPRODUCTION.zip",
+          "member": "results/analysis/PRIMARY.json",
+          "sha256": "9a6c45a11710c9aeb61e03622429ba0a0cfba360a0ba84e6d38b43b274a821e7",
+          "bytes": 30371,
+          "source_manifest_verified": true
+        }
+      ],
+      "derivation": "JSON reserialization of the complete source table without changing values."
+    },
+    {
+      "path": "v10/root_counts.json",
+      "sha256": "8acac8c4dbaafdbcc72aa32f3726c7af5949fbbfc4d80d1dcc3ca1e515c8c93c",
+      "sources": [
+        {
+          "archive": "STATE_SUFFICIENCY_CONFIRMATION_RESULTS_AND_REPRODUCTION.zip",
+          "member": "results/analysis/ROOT_TABLE.json",
+          "sha256": "84f2d9748fb5d39f4f5a5bfe50083fa2e7d19dce6876775c724459a5e53dae88",
+          "bytes": 485772,
+          "source_manifest_verified": true
+        }
+      ],
+      "derivation": "JSON reserialization; ROOT_TABLE selects identity, fixed denominator and witness/count fields, without changing values."
+    },
+    {
+      "path": "v10/witness_summary.json",
+      "sha256": "5d7a49ad52e24c764292440b96f972c335ae878144eda8ee9a29c0fb0ae1e422",
+      "sources": [
+        {
+          "archive": "STATE_SUFFICIENCY_CONFIRMATION_RESULTS_AND_REPRODUCTION.zip",
+          "member": "results/analysis/WITNESS_SUMMARY.json",
+          "sha256": "5d7a49ad52e24c764292440b96f972c335ae878144eda8ee9a29c0fb0ae1e422",
+          "bytes": 18323,
+          "source_manifest_verified": true
+        }
+      ],
+      "derivation": "JSON reserialization of the complete source table without changing values."
+    },
+    {
+      "path": "v10/selected_repeat_checked_example.json",
+      "sha256": "edc597966c2d4b5f0adc734f5a068d4a6038767c3de950796ce2594659db0d31",
+      "sources": [
+        {
+          "archive": "STATE_SUFFICIENCY_CONFIRMATION_RESULTS_AND_REPRODUCTION.zip",
+          "member": "results/analysis/QUERY_TABLE.json.gz",
+          "sha256": "6af3666de121972a7ab0145ea46242e2c5762ae74345e3dccba6ef9f252a4e3c",
+          "bytes": 2026806,
+          "source_manifest_verified": true
+        }
+      ],
+      "derivation": "Select the independently reviewed illustrative query; repeat-check scope is review-supported, not reproduced from this compact row."
+    },
+    {
+      "path": "v10/specification_summary.json",
+      "sha256": "293fac2e3f80105e351fd8f61cda493f3e8f0d86d1bd4d456a5e297121bd573f",
+      "sources": [
+        {
+          "archive": "STATE_SUFFICIENCY_CONFIRMATION_RESULTS_AND_REPRODUCTION.zip",
+          "member": "FROZEN_SPECIFICATION.json",
+          "sha256": "398de3d0ca614ddcebd68f8aeb5cc1b180c0dccd2cae84ff06e78dd76a7af312",
+          "bytes": 96950,
+          "source_manifest_verified": true
+        }
+      ],
+      "derivation": "Copy scientific inventory and commit; transcribe witness and inferential definitions from V10 independent review and primary table. No private runtime fields copied."
+    },
+    {
+      "path": "headline_values.json",
+      "sha256": "dab64e5dd4b26e513791b7bcb17849d69b1566f7066404c408963da9aa04032b",
+      "derived_from": [
+        {
+          "path": "v9/primary_summary.json",
+          "sha256": "416fec1d8bb0fd24397682d9d4628daabf0fd338cf7f91ba971fcc9ab70b25fd"
+        },
+        {
+          "path": "v9/coherence_summary.json",
+          "sha256": "3eda2c4dda4a08a312c90081de6d1d2a41e3805e986589d915621d56b48af149"
+        },
+        {
+          "path": "v6/fixed_certificate_summary.json",
+          "sha256": "b554c6a3c7cbd2b2a47086ad60e891b353d0360100a427d7a37118e25cf2ef92"
+        },
+        {
+          "path": "v7/constructive_summary.json",
+          "sha256": "28069a38c98f5a15a25f06e2048bd887c46c36abff543df1d710e4af173077e7"
+        },
+        {
+          "path": "v10/primary_results.json",
+          "sha256": "9a6c45a11710c9aeb61e03622429ba0a0cfba360a0ba84e6d38b43b274a821e7"
+        },
+        {
+          "path": "v10/root_counts.json",
+          "sha256": "8acac8c4dbaafdbcc72aa32f3726c7af5949fbbfc4d80d1dcc3ca1e515c8c93c"
+        },
+        {
+          "path": "v10/witness_summary.json",
+          "sha256": "5d7a49ad52e24c764292440b96f972c335ae878144eda8ee9a29c0fb0ae1e422"
+        },
+        {
+          "path": "v10/selected_repeat_checked_example.json",
+          "sha256": "edc597966c2d4b5f0adc734f5a068d4a6038767c3de950796ce2594659db0d31"
+        },
+        {
+          "path": "v10/specification_summary.json",
+          "sha256": "293fac2e3f80105e351fd8f61cda493f3e8f0d86d1bd4d456a5e297121bd573f"
+        }
+      ],
+      "implementation": {
+        "path": "src/repro/state_sufficiency.py",
+        "sha256": "794346c8f3e8787b2bfe8dd554c1c3fd74422a62bc5288fa79b251de3dd92a29"
+      },
+      "derivation": "reconstruct() projects V7/V9/V6 aggregates, recomputes V10 primary and strong counts from saved per-root counts, uses the frozen root bootstrap and computes the selected half-range. Tests compare all derived fields."
+    }
+  ],
+  "boundary": "Original compact entries are selected saved summaries and per-root counts. The separately registered independent_verification package reconstructs V10 classifications from saved per-example records; neither path is a fresh neural rerun.",
+  "reviews": [
+    {
+      "name": "EXTERNAL_VALIDATION_BLOCKED_REPORT.md",
+      "sha256": "db088df79c7ed6d9ec1eefdd5d752ccdad6f99b0b691b092bbf7d6d74ccf5a33",
+      "included": false
+    },
+    {
+      "name": "SEMANTIC_INTERFACE_AUDIT_REPORT.md",
+      "sha256": "541e038bc61bb885aa4d48a3c646c658f50754324a669cc2183549bfb6a9dab5",
+      "included": false
+    },
+    {
+      "name": "V10_INDEPENDENT_REVIEW.md",
+      "sha256": "728c86d5d41aa30a28e4e179f73d990f42a3e051bd70b0e973b42ab0d06be790",
+      "included": false
+    },
+    {
+      "name": "V6_REPLICATION_INDEPENDENT_REVIEW.md",
+      "sha256": "e4de1517fc35849744879e7c572dde97efa89f2b5e24e2011b24601c542c74d3",
+      "included": false
+    },
+    {
+      "name": "V9_CERTIFICATE_CENSUS_REVIEW.md",
+      "sha256": "b3cb06735f25d92314f374ff6f47cbe2e6df9603dcc31bee8827b3cf80572e6e",
+      "included": false
+    },
+    {
+      "name": "V7_INDEPENDENT_REVIEW.md",
+      "sha256": "cc406c222ef482a3e3cce3ea50f571ad620e8e88f6dfa44e6e793497bb1890ec",
+      "included": false
+    }
+  ],
+  "curation_incidents": [
+    {
+      "date": "2026-09-15",
+      "issue": "Initial extraction confused STRONG_REFERENCE with HIGH_DIRECT_MARGIN_090.",
+      "detection": "Evidence registry rejected the mismatched census numbers before delivery.",
+      "resolution": "Select HIGH_DIRECT_MARGIN_090, which adds the direct probability threshold to reference gates; preserve original archives.",
+      "regression": "reconstruct requires the exact view, interface and cohort; tests mutate the view and require rejection."
+    }
+  ],
+  "independent_verification_manifest": "reproducibility/state_sufficiency/independent_verification/MANIFEST.json"
+}

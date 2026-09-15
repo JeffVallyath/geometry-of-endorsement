@@ -23,7 +23,9 @@
     "repair": "reproducibility/representation/background/10b_generalization_repair.json",
     "selector": "reproducibility/representation/background/11_applicability_selector.json",
     "editing_figures": "artifacts/figures/editing_comparisons.json",
-    "consequences": "artifacts/figures/consequence_comparisons.json"
+    "consequences": "artifacts/figures/consequence_comparisons.json",
+    "state_sufficiency": "reproducibility/state_sufficiency/headline_values.json",
+    "state_spec": "reproducibility/state_sufficiency/v10/specification_summary.json"
   },
   "definitions": [
     {
@@ -1216,27 +1218,1814 @@
           "unsupported": []
         },
         {
-          "id": "unresolved",
-          "heading_pattern": "^8\\.\\s",
+          "id": "constructive",
+          "heading_pattern": "^Later constructive editing results$",
+          "numbers": [
+            {
+              "path": "state_sufficiency.v7.0.changed",
+              "decimals": 2,
+              "percent": true,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v7.0.harm",
+              "decimals": 2,
+              "percent": true,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v7.0.seed",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v7.0.n_scenes",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v7.1.changed",
+              "decimals": 2,
+              "percent": true,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v7.1.harm",
+              "decimals": 2,
+              "percent": true,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v7.1.seed",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v7.1.n_scenes",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v7.2.changed",
+              "decimals": 2,
+              "percent": true,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v7.2.harm",
+              "decimals": 2,
+              "percent": true,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v7.2.seed",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v7.2.n_scenes",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v7.3.changed",
+              "decimals": 2,
+              "percent": true,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v7.3.harm",
+              "decimals": 2,
+              "percent": true,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v7.3.seed",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v7.3.n_scenes",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            }
+          ],
+          "literals": [],
+          "facts": [
+            {
+              "id": "bounded-operation",
+              "description": "Preserve useful composition and its limitations",
+              "all_of": [
+                "met the retained-operation and joint-update point criteria",
+                "No candidate passed the complete source-history conjunction"
+              ]
+            }
+          ],
+          "unsupported": []
+        },
+        {
+          "id": "sufficiency_definition",
+          "heading_pattern": "^The criterion and its scope$",
           "numbers": [],
           "literals": [],
           "facts": [
             {
-              "id": "unresolved",
-              "description": "Strong mechanism claims unresolved",
-              "alternatives": [
-                {
-                  "all_of": [
-                    "does not establish that they recreate the same internal state",
-                    "unfinished successor is not a completed result"
-                  ]
-                },
-                {
-                  "all_of": [
-                    "(?:not|no).{0,45}(?:establish|prove).{0,60}(?:same|identical).{0,25}(?:internal|hidden).{0,15}state",
-                    "unfinished.{0,30}not.{0,20}completed"
-                  ]
-                }
+              "id": "interface",
+              "description": "Final records and response interface, not hidden-state identity",
+              "all_of": [
+                "question and response interface are held fixed",
+                "does not assert equality of hidden states",
+                "history-sensitive reader"
+              ]
+            }
+          ],
+          "unsupported": []
+        },
+        {
+          "id": "certificate",
+          "heading_pattern": "^Quantifying a history discrepancy$",
+          "numbers": [],
+          "literals": [
+            {
+              "text": "2",
+              "reason": "Half-range formula denominator"
+            },
+            {
+              "text": "0.10",
+              "reason": "Declared discrepancy threshold"
+            },
+            {
+              "text": "0.20",
+              "reason": "Twice the discrepancy threshold"
+            }
+          ],
+          "facts": [
+            {
+              "id": "inherited-math",
+              "description": "Standard mathematics and observable probabilities",
+              "all_of": [
+                "standard minimax/conditional-sufficiency mathematics, not a new probability theorem",
+                "not calibrated beliefs"
+              ]
+            }
+          ],
+          "unsupported": []
+        },
+        {
+          "id": "v9_census",
+          "heading_pattern": "^V9 retrospective census$",
+          "numbers": [
+            {
+              "path": "state_sufficiency.v9.0.count",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v9.0.eligible",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v9.0.full",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v9.0.roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v9.0.total_roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v9.1.count",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v9.1.eligible",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v9.1.full",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v9.1.roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v9.1.total_roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v9.2.count",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v9.2.eligible",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v9.2.full",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v9.2.roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v9.2.total_roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v9.3.count",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v9.3.eligible",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v9.3.full",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v9.3.roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v9.3.total_roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v9.4.count",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v9.4.eligible",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v9.4.full",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v9.4.roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v9.4.total_roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v9.5.count",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v9.5.eligible",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v9.5.full",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v9.5.roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v9.5.total_roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v9.6.count",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v9.6.eligible",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v9.6.full",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v9.6.roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v9.6.total_roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v9.7.count",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v9.7.eligible",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v9.7.full",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v9.7.roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v9.7.total_roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v9.8.count",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v9.8.eligible",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v9.8.full",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v9.8.roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v9.8.total_roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v9.9.count",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v9.9.eligible",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v9.9.full",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v9.9.roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v9.9.total_roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v9.10.count",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v9.10.eligible",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v9.10.full",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v9.10.roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v9.10.total_roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v9.11.count",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v9.11.eligible",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v9.11.full",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v9.11.roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v9.11.total_roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            }
+          ],
+          "literals": [
+            {
+              "text": "0",
+              "reason": "Training seed identifier"
+            },
+            {
+              "text": "1",
+              "reason": "Training seed identifier"
+            },
+            {
+              "text": "0.90",
+              "reason": "Fixed strong direct margin"
+            },
+            {
+              "text": "0.10",
+              "reason": "Certificate threshold"
+            },
+            {
+              "text": "17",
+              "reason": "d0 familiar-question opportunities"
+            }
+          ],
+          "facts": [
+            {
+              "id": "retrospective",
+              "description": "Do not claim prospective V9",
+              "all_of": [
+                "retrospective, not prospective",
+                "question-loading deviation",
+                "Root prevalence is not a per-question failure rate"
+              ]
+            }
+          ],
+          "unsupported": []
+        },
+        {
+          "id": "coherence",
+          "heading_pattern": "^The adverse coherence control$",
+          "numbers": [
+            {
+              "path": "state_sufficiency.coherence.0.mean",
+              "decimals": 4,
+              "percent": true,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.coherence.8.mean",
+              "decimals": 4,
+              "percent": true,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.coherence.9.mean",
+              "decimals": 4,
+              "percent": true,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.coherence.12.mean",
+              "decimals": 4,
+              "percent": true,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.coherence.13.mean",
+              "decimals": 4,
+              "percent": true,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.coherence.21.mean",
+              "decimals": 4,
+              "percent": true,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.coherence.22.mean",
+              "decimals": 4,
+              "percent": true,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.coherence.25.mean",
+              "decimals": 4,
+              "percent": true,
+              "required": true,
+              "headline": true
+            }
+          ],
+          "literals": [
+            {
+              "text": "1",
+              "reason": "Training seed identifier"
+            }
+          ],
+          "facts": [
+            {
+              "id": "adverse",
+              "description": "Preserve ordinary-reader adverse control",
+              "all_of": [
+                "Every updating condition's unfiltered mean was below its native-final mean",
+                "does not support an editing-specific origin"
+              ]
+            }
+          ],
+          "unsupported": []
+        },
+        {
+          "id": "v6_corroboration",
+          "heading_pattern": "^V6 fixed-definition archival corroboration$",
+          "numbers": [
+            {
+              "path": "state_sufficiency.v6.0.count",
+              "decimals": 0,
+              "percent": false,
+              "required": false,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v6.0.eligible",
+              "decimals": 0,
+              "percent": false,
+              "required": false,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v6.0.full",
+              "decimals": 0,
+              "percent": false,
+              "required": false,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v6.0.roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v6.0.total_roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v6.1.count",
+              "decimals": 0,
+              "percent": false,
+              "required": false,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v6.1.eligible",
+              "decimals": 0,
+              "percent": false,
+              "required": false,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v6.1.full",
+              "decimals": 0,
+              "percent": false,
+              "required": false,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v6.1.roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v6.1.total_roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v6.2.count",
+              "decimals": 0,
+              "percent": false,
+              "required": false,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v6.2.eligible",
+              "decimals": 0,
+              "percent": false,
+              "required": false,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v6.2.full",
+              "decimals": 0,
+              "percent": false,
+              "required": false,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v6.2.roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v6.2.total_roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v6.3.count",
+              "decimals": 0,
+              "percent": false,
+              "required": false,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v6.3.eligible",
+              "decimals": 0,
+              "percent": false,
+              "required": false,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v6.3.full",
+              "decimals": 0,
+              "percent": false,
+              "required": false,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v6.3.roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v6.3.total_roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v6.4.count",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v6.4.eligible",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v6.4.full",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v6.4.roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v6.4.total_roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v6.5.count",
+              "decimals": 0,
+              "percent": false,
+              "required": false,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v6.5.eligible",
+              "decimals": 0,
+              "percent": false,
+              "required": false,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v6.5.full",
+              "decimals": 0,
+              "percent": false,
+              "required": false,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v6.5.roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v6.5.total_roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v6.6.count",
+              "decimals": 0,
+              "percent": false,
+              "required": false,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v6.6.eligible",
+              "decimals": 0,
+              "percent": false,
+              "required": false,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v6.6.full",
+              "decimals": 0,
+              "percent": false,
+              "required": false,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v6.6.roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v6.6.total_roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v6.7.count",
+              "decimals": 0,
+              "percent": false,
+              "required": false,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v6.7.eligible",
+              "decimals": 0,
+              "percent": false,
+              "required": false,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v6.7.full",
+              "decimals": 0,
+              "percent": false,
+              "required": false,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v6.7.roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v6.7.total_roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v6.8.count",
+              "decimals": 0,
+              "percent": false,
+              "required": false,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v6.8.eligible",
+              "decimals": 0,
+              "percent": false,
+              "required": false,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v6.8.full",
+              "decimals": 0,
+              "percent": false,
+              "required": false,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v6.8.roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v6.8.total_roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v6.9.count",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v6.9.eligible",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v6.9.full",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v6.9.roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v6.9.total_roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            }
+          ],
+          "literals": [
+            {
+              "text": "0",
+              "reason": "Training seed"
+            },
+            {
+              "text": "1",
+              "reason": "Training seed"
+            },
+            {
+              "text": "0.90",
+              "reason": "Fixed strong margin"
+            },
+            {
+              "text": "0.10",
+              "reason": "Certificate threshold"
+            },
+            {
+              "text": "34",
+              "reason": "Both answer-code draws"
+            }
+          ],
+          "facts": [
+            {
+              "id": "ancestry",
+              "description": "Archival nonindependence and denominator boundary",
+              "all_of": [
+                "not a fully independent replication or a prospective result",
+                "byte-identical",
+                "must not be directly compared"
+              ]
+            }
+          ],
+          "unsupported": []
+        },
+        {
+          "id": "v10_primary",
+          "heading_pattern": "^V10 prospective confirmation$",
+          "numbers": [
+            {
+              "path": "state_sufficiency.v10.0.rate",
+              "decimals": 3,
+              "percent": true,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v10.0.lower",
+              "decimals": 3,
+              "percent": true,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v10.0.upper",
+              "decimals": 3,
+              "percent": true,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v10.0.roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v10.0.total_roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v10.1.rate",
+              "decimals": 3,
+              "percent": true,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v10.1.lower",
+              "decimals": 3,
+              "percent": true,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v10.1.upper",
+              "decimals": 3,
+              "percent": true,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v10.1.roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v10.1.total_roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v10.2.rate",
+              "decimals": 3,
+              "percent": true,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v10.2.lower",
+              "decimals": 3,
+              "percent": true,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v10.2.upper",
+              "decimals": 3,
+              "percent": true,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v10.2.roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v10.2.total_roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v10.3.rate",
+              "decimals": 3,
+              "percent": true,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v10.3.lower",
+              "decimals": 3,
+              "percent": true,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v10.3.upper",
+              "decimals": 3,
+              "percent": true,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v10.3.roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v10.3.total_roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v10.4.rate",
+              "decimals": 3,
+              "percent": true,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v10.4.lower",
+              "decimals": 3,
+              "percent": true,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v10.4.upper",
+              "decimals": 3,
+              "percent": true,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v10.4.roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v10.4.total_roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v10.5.rate",
+              "decimals": 3,
+              "percent": true,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v10.5.lower",
+              "decimals": 3,
+              "percent": true,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v10.5.upper",
+              "decimals": 3,
+              "percent": true,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v10.5.roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v10.5.total_roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v10.6.rate",
+              "decimals": 3,
+              "percent": true,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v10.6.lower",
+              "decimals": 3,
+              "percent": true,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v10.6.upper",
+              "decimals": 3,
+              "percent": true,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v10.6.roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v10.6.total_roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v10.7.rate",
+              "decimals": 3,
+              "percent": true,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v10.7.lower",
+              "decimals": 3,
+              "percent": true,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v10.7.upper",
+              "decimals": 3,
+              "percent": true,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v10.7.roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.v10.7.total_roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_spec.joint_questions_per_root",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_spec.root_denominator",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_spec.bootstrap_draws",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_spec.bootstrap_seed",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_spec.interval_level",
+              "decimals": 3,
+              "percent": true,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_spec.inventory.ordinary_questions_per_context",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            }
+          ],
+          "literals": [],
+          "facts": [
+            {
+              "id": "fixed-denominator",
+              "description": "No conditional-rate or root-union conflation",
+              "all_of": [
+                "including ineligible questions in the denominator",
+                "Learned seeds are averaged within roots",
+                "union over both seeds",
+                "not an individual-answer error rate"
+              ]
+            },
+            {
+              "id": "prospective",
+              "description": "Controlled prospective scope",
+              "all_of": [
+                "fresh generated cases",
+                "analyzed separately",
+                "not universal failure"
+              ]
+            }
+          ],
+          "unsupported": []
+        },
+        {
+          "id": "v10_strong",
+          "heading_pattern": "^Strong margins and repeatability$",
+          "numbers": [
+            {
+              "path": "state_sufficiency.strong.0.count",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.strong.0.opportunities",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.strong.0.roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.strong.0.total_roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.strong.1.count",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.strong.1.opportunities",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.strong.1.roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.strong.1.total_roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.strong.2.count",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.strong.2.opportunities",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.strong.2.roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.strong.2.total_roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.strong.3.count",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.strong.3.opportunities",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.strong.3.roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.strong.3.total_roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.strong.4.count",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.strong.4.opportunities",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.strong.4.roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.strong.4.total_roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.strong.5.count",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.strong.5.opportunities",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.strong.5.roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.strong.5.total_roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.strong.6.count",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.strong.6.opportunities",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.strong.6.roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.strong.6.total_roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.strong.7.count",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.strong.7.opportunities",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.strong.7.roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.strong.7.total_roots",
+              "decimals": 0,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_spec.strong_operand_probability",
+              "decimals": 2,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_spec.strong_candidate_mass",
+              "decimals": 2,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_spec.strong_joint_correct_low",
+              "decimals": 2,
+              "percent": false,
+              "required": true,
+              "headline": true
+            }
+          ],
+          "literals": [],
+          "facts": [
+            {
+              "id": "repeat-boundary",
+              "description": "No textual-repeat or full-state claim",
+              "all_of": [
+                "Textual-correction procedures were not independently repeated",
+                "not certify the complete hidden state",
+                "not seed-averaged primary rates"
+              ]
+            }
+          ],
+          "unsupported": []
+        },
+        {
+          "id": "v10_example",
+          "heading_pattern": "^A repeat-checked illustration and provenance limits$",
+          "numbers": [
+            {
+              "path": "state_sufficiency.example.minimum_direct_probability",
+              "decimals": 10,
+              "percent": false,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "state_sufficiency.example.half_range",
+              "decimals": 10,
+              "percent": false,
+              "required": true,
+              "headline": true
+            }
+          ],
+          "literals": [
+            {
+              "text": "0",
+              "reason": "Illustrative training seed"
+            }
+          ],
+          "facts": [
+            {
+              "id": "tail-case",
+              "description": "Selected illustration, limited repeat panel",
+              "all_of": [
+                "selected tail example, not a prevalence estimate",
+                "repeats do not cover every operand/query"
+              ]
+            },
+            {
+              "id": "summary-boundary",
+              "description": "Saved aggregates are not raw replay",
+              "all_of": [
+                "cannot independently recheck witness eligibility",
+                "omitted raw journals"
+              ]
+            },
+            {
+              "id": "prospective-provenance",
+              "description": "Preserve amendments and ordering boundary",
+              "all_of": [
+                "Pre-final amendments",
+                "without changing the primary estimand",
+                "does not repair V9 retrospectively"
+              ]
+            }
+          ],
+          "unsupported": []
+        },
+        {
+          "id": "current_conclusion",
+          "heading_pattern": "^Part VIII\\. What can we conclude\\?$",
+          "numbers": [],
+          "literals": [],
+          "facts": [
+            {
+              "id": "current",
+              "description": "Current evidence hierarchy",
+              "all_of": [
+                "V9 supplies retrospective census evidence",
+                "V6 fixed-definition archival corroboration",
+                "V10 prospective confirmation"
+              ]
+            },
+            {
+              "id": "external-pending",
+              "description": "External attempt is not a scientific negative",
+              "all_of": [
+                "validation is pending",
+                "produced no scientific outcome",
+                "neither a negative result nor a null result"
+              ]
+            },
+            {
+              "id": "limitations",
+              "description": "No mechanism, belief, deployment or math overclaim",
+              "all_of": [
+                "does not establish absent internal facts",
+                "unique neural mechanism",
+                "calibrated beliefs",
+                "deployment failure rates",
+                "new probability mathematics"
               ]
             }
           ],
@@ -2981,6 +4770,21 @@
       "description": "No full source-independence setting passes; consistently wrong answers do not count.",
       "path": "v6.functional_progress.*.seeds",
       "contains": "1"
+    },
+    {
+      "id": "v10-prospective-status",
+      "path": "state_spec.status",
+      "equals": "prospective_confirmation_complete_controlled_generated_cases"
+    },
+    {
+      "id": "primary-rate-positive",
+      "path": "state_sufficiency.v10.*.lower",
+      "gt": 0
+    },
+    {
+      "id": "strong-witness-recurrence",
+      "path": "state_sufficiency.strong.*.count",
+      "gt": 0
     }
   ]
 }

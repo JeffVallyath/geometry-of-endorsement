@@ -40,18 +40,20 @@ Successive shared-state editors improved this behavior substantially. Single edi
 
 Training on a wider set of consequences from individual edits improved several unseen multi-update programs, especially in Qwen. Derived joint questions remained the main weakness.
 
-## Ask whether the final state still carries its history
+## Ask whether current facts are sufficient for later use
 
-The source-independence study gives the current project its strongest unresolved test.
+Useful editors made a stronger question worth asking. Distinct starting contexts receive the same commands and reach the same intended final records. For a fixed downstream question, should knowing the overwritten values still help predict the answer? We call the requirement that it should not source-history sufficiency.
 
-Several different starting contexts receive updates that lead to exactly the same requested final relations. Later questions then probe the resulting state. A reliable assignment-like update should make those answers depend on the final relations.
+This differs from ordinary answer accuracy. A reader can be consistently wrong without depending on history. Conversely, it can correctly report the relevant current facts while giving different joint answers after different histories. Readable state and operative state are shorthand for these behavioral roles, not separate physical objects we have identified.
 
-The current editors preserve useful single-edit, repetition, and restoration behavior across both tested backbones. Yet some joint answers still change with the overwritten starting values. This can happen even when the individual relations needed for the joint question are read correctly in every starting context. Fixed attempts to clarify the reader did not remove the effect.
+The later constructive tests retained useful updates, repetition, restoration and bounded composition across Gemma and Qwen. The failure was therefore not confined to an intervention that never worked. Improving editor accuracy alone could not resolve whether the declared facts accounted for downstream behavior.
 
-That result points to a concrete research target: the edited information should govern consequences that were never shown to the updater.
+V9 supplied discovery and a full retrospective census of the history effect. Applying the same certificate to V6 supplied archival corroboration on nonoverlapping exact inputs, although the studies shared task and software ancestry and a learned checkpoint. These were reasons to seek prospective confirmation, not substitutes for it.
+
+V10 then confirmed the central prediction on fresh generated cases with a fixed primary analysis. Both backbones showed the pattern under learned and textual updates, after protecting the relevant direct reads and reference answers. This supports the evaluation criterion without requiring the learned editor to outperform every simpler method. The ordinary-reader coherence control remains adverse to a different claim: editing did not uniquely create logical incoherence.
 
 ## Current position
 
-The project now has a constructive result and a clear boundary around it. Addressed, question-independent updates can behave like reusable state changes under single edits, repetition, restoration, and parts of multi-update evaluation. Source history still leaks into some joint consequences.
+The constructive result and the source-history result now belong together. Useful question-independent updates exist, yet correctly reported current facts can be insufficient to account for measured downstream responses. Correct facts plus a history-sensitive reader remain possible; the experiments do not show that the facts are absent internally.
 
-The next useful work should explain or remove that history dependence while keeping the existing capabilities intact. The stronger principle is simple: once a fact is updated, later computation should follow the new state regardless of the value that was overwritten.
+The next step is to test this criterion on public factual-editing methods and benchmarks, and sharpen its relationship to prior work on consequence testing, repeated edits and state abstraction. External validation remains pending. The first external execution attempt produced no scientific result. Neither external generality nor priority over that prior work is established here.

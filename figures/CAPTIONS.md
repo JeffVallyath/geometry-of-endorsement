@@ -253,6 +253,10 @@ not recreate the omitted fitted direction or later-layer witness.
 
 ![Source-history disagreement despite correct atomic relations](fig7_source_history.png)
 
+This is the earlier V6 descriptive source-history figure, not the V10 prospective
+confirmation. The latter is reported separately in
+[Results and Claims](../docs/RESULTS_AND_CLAIMS.md#v10-prospective-confirmation).
+
 The top panel shows a saved synthetic design: 4 starting states receive the same
 requested final assignments before fresh questions are supplied. The lower panel
 uses every terminal root under the original reader: Gemma has 64 roots and Qwen
