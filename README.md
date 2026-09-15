@@ -116,8 +116,15 @@ However, some questions combining several relations could still change depending
 ## Are the reported current facts sufficient for later decisions?
 
 We started with several versions of the same case that differed in their original relations, edited each one so they all ended with the same new relations, and then asked the exact same follow-up question.
-We call the stronger requirement source-history sufficiency: once the current facts are the same, the answer should no longer depend on what the model believed before the update.
+We call this requirement **source-history sufficiency**: once the current facts are the same, the answer should no longer depend on what was true before the update.
 
+Formally, if the current semantic state \(S\) is sufficient for answering question \(Q\), then the old history \(H\) should provide no additional information about the answer \(Y\):
+
+$$
+P(Y \mid H, S, Q) = P(Y \mid S, Q)
+$$
+
+Our experiments test this by reaching the same \(S\) from different histories and asking the same \(Q\).
 This was not limited to a few selected examples. The same pattern appeared in both Gemma and Qwen, with both learned edits and ordinary text-based updates: the model could correctly report the current relations while later answers still depended on what those relations had been before.
 
 One example from my own experiments helps make this more concrete. Ravi and Kira both end up opposing Canal, and the model reports those individual relations correctly in every history. But when asked whether at least one of them supports Canal, the answers across four histories are No, No, No, Yes.
@@ -128,7 +135,7 @@ The result is a separation between what the model can correctly report as its cu
 
 The project began by asking whether a support/opposition relation could be identified inside a model. Following that relation through readout, intervention, and learned editing led to a broader question:
 
-When an AI says it has updated a fact, has the information governing its later decisions actually changed too?
+**When an AI says it has updated a fact, has the information governing its later decisions actually changed too?**
 
 The experiments demonstrate that the answer can be no. We can start from different histories, update them to the same final facts, and verify that the model reports those facts correctly. Its later decisions can still depend on what used to be true.
 
