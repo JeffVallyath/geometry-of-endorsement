@@ -1,17 +1,14 @@
 # Geometry of Endorsement
 
-**Geometry of Endorsement studies what internal directions in language models tell us about how the model represents and uses semantic information. The project began with moral support and opposition, then followed that signal through transfer, causal intervention, richer internal state, and learned updates to shared context.**
+**Geometry of Endorsement studies when a model that correctly reports updated information actually uses that information as the state governing its later decisions. The project began with a linearly readable support/opposition relation and progressed through causal intervention and learned context editing. The central finding is that these notions can end up coming apart: different histories can be updated to the same intended current facts, the model can report those facts correctly, and somehow despite this, later decisions can still depend on the values that were supposedly replaced.**
 
 For the short logical progression, see [Project Strategy](PROJECT_STRATEGY.md). The quantitative record is in [Results and Claims](docs/RESULTS_AND_CLAIMS.md). Human-review procedures are described in [Human Review](docs/HUMAN_REVIEW.md), and reproduction instructions are in [Reproducibility](REPRODUCIBILITY.md).
 
-A language model can give a reasonable moral answer once and still be unstable. It may be tracking the situation in a useful way, or it may be leaning on familiar wording. Rephrasing the same case gives us one way to tell how much of the original judgment survives.
+The moral motivation is rather straightforward. A model can say that things like fairness, autonomy, privacy, harm, or a duty supports or opposes an action. What matters is whether those reported relations are actually the ones shaping its later moral judgments.
 
-The project started from two questions:
+For example, suppose an update changes the model’s view so that fairness now counts against an action. If the model reports that new relation correctly, but later decisions still depend on whether fairness used to count for or against the action, then the direct report has not fully captured the moral state driving its behavior.
 
-1. Does the model internally track whether a particular moral reason supports or opposes an action in context?
-2. If it does, can that internal state tell us which judgments are likely to change when the same case is rewritten without changing what happened?
-
-The first question produced a clear signal. Following it further changed the project. The direction transferred outside morality, could influence the model’s answers, and captured only part of a richer relational state. That eventually led to a more demanding question: if we intervene on the model, do the later consequences behave as though the underlying relation itself had changed?
+The project began by asking whether these support/opposition relations could be identified inside the model at all. 
 
 The main starting dataset is ValuePrism. Each example gives a situation, an action, and a consideration such as autonomy, fairness, privacy, or harm. The dataset records whether that consideration **Supports** or **Opposes** the action in that situation.
 
