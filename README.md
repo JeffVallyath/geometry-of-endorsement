@@ -1,10 +1,10 @@
 # Geometry of Endorsement
 
-**Geometry of Endorsement studies when a model that correctly reports updated information actually uses that information as the state governing its later decisions. The project began with a linearly readable support/opposition relation and progressed through causal intervention and learned context editing. The central finding is that these notions can end up coming apart: different histories can be updated to the same intended current facts, the model can report those facts correctly, and somehow despite this, later decisions can still depend on the values that were supposedly replaced.**
+**Geometry of Endorsement studies when a model that correctly reports updated information actually uses that information as the state governing its later decisions. The project began with a linearly readable support/opposition relation and progressed through causal intervention and learned context editing. The central finding is that these notions can end up coming apart: different histories can be updated to the same intended current facts, the model can report those facts correctly, yet later decisions can still depend on information that was supposedly replaced.**
 
 For the short logical progression, see [Project Strategy](PROJECT_STRATEGY.md). The quantitative record is in [Results and Claims](docs/RESULTS_AND_CLAIMS.md). Human-review procedures are described in [Human Review](docs/HUMAN_REVIEW.md), and reproduction instructions are in [Reproducibility](REPRODUCIBILITY.md).
 
-The moral motivation is rather straightforward. A model can say that things like fairness, autonomy, privacy, harm, or a duty supports or opposes an action. What matters is whether those reported relations are actually the ones shaping its later moral judgments.
+The moral motivation is rather straightforward. A model can say that considerations like fairness, autonomy, privacy, harm, or a duty support or oppose an action. What matters is whether those reported relations are actually the ones shaping its later moral judgments.
 
 For example, suppose an update changes the model’s view so that fairness now counts against an action. If the model reports that new relation correctly, but later decisions still depend on whether fairness used to count for or against the action, then the direct report has not fully captured the moral state driving its behavior.
 
@@ -87,9 +87,9 @@ This gave us a stronger way to evaluate steering.
 
 Controlled context pairs differ in exactly one relation. For example, the original context might say that Alice supports a proposal and the changed context says that Alice opposes it. That change has consequences across several later questions. Questions about Alice’s support should flip, complementary questions should move consistently, paraphrases should agree, and unrelated relations should remain stable.
 
-In Gemma, rank-one steering could reliably hit the requested direct-answer margin while failing this broader consequence test. These measured margin hits did not satisfy the full frozen strong-target requirements; the direction fitted to the matched setting also failed qualification. Moving the full activation toward the state produced by the genuinely changed context recovered far more of the expected pattern. Replacing the activation with the natural changed-context state recovered almost all of it.
+In Gemma, an edit calibrated on the direct question could move that answer while still failing to reproduce the broader consequences of actually changing the relation. We first thought the edit might be failing because it was too simple, but making it higher-dimensional did not fix the problem. What ended up helping much more was tailoring the edit to the specific question being asked, which suggested the harder problem was making one reusable change that still works across future questions.
 
-The same direct answer can therefore be reached through internal changes with very different downstream consequences.
+This changed the interpretation of the earlier result. The harder problem was carrying one semantic change across future questions. Since the question-matched intervention already uses information about the question being asked, the next step was to construct an edit before those future questions were known.
 
 Llama could not support the same comparison because its natural changed-context reference was unstable across equivalent wordings. That reference failure limits the comparison to Gemma rather than counting as an editing failure.
 
@@ -109,34 +109,28 @@ The later studies treat an update more like an assignment to a reusable state.
 
 Repeating the same requested value should keep the state stable. Restoring an earlier value should recover the corresponding answers. Several updates should combine without damaging relations that were never touched.
 
-On Gemma, learned overwrite operators achieved strong single edits together with near-idempotent repetition and high restoration rates. A less constrained overwrite method also worked, which showed that those capabilities did not belong uniquely to one parameterization.
+Later experiments made this result substantially stronger. Editors trained only on individual assignments learned to repeat, restore, and combine two or three updates across both Gemma and Qwen while still being able to mostly preserve relations that were never changed.
 
-Broader single-edit consequence supervision improved several unseen two- and three-update programs, especially in Qwen. Joint semantic consistency remained the hard part. Equality and other derived questions could fail even when the individual edited relations were answered correctly.
+The strongest simple recipe reached about 91–97% accuracy in Gemma and 96–99% in Qwen on relations that should change after three updates, with roughly 1–5% new errors on relations that should stay unchanged.
 
-One planned readout study stopped after preparation and produced no efficacy result. Its successor evaluated the harder question directly.
+However, some questions combining several relations could still change depending on the model’s earlier state, even when the individual edited relations were all reported correctly. That led to the next question: are the reported current facts actually enough to explain the model’s later decisions?
 
-## Does the final state forget where it started?
+## Are the reported current facts sufficient for later decisions?
 
-The last study included in this preview reaches the same requested final relations from several different starting relations.
+The next experiments reached the same intended final relations from several different starting histories. The downstream question was then held fixed.
 
-If an update has fully established the new relational state, later answers should depend on that final state. The overwritten starting values should stop affecting the result.
+If the reported current relations are enough to explain the model’s answer, changing only the overwritten history should not change that answer.
 
-The editors retained useful single-edit, repetition, and restoration behavior across Gemma and Qwen. Fixed attempts to clarify the downstream questions did not reliably improve the remaining errors.
+In many cases, the model correctly reported the relevant individual relations in every history, yet the same later question still produced different answers depending on the earlier state.
 
-The stronger source-independence test still failed. Across different starting states, most individual questions were often answered correctly, yet complete sets of joint consequences were much less reliable. Many disagreements remained even when the model answered the relevant individual relations correctly in every starting state.
+One example from my own experiments helps make this more concrete. Ravi and Kira both end up opposing Canal, and the model reports those individual relations correctly in every history. But when asked whether at least one of them supports Canal, the answers across four histories are No, No, No, Yes.
 
-A concrete example captures the issue. Suppose the final edited state says that two people both oppose a project. The model may correctly answer that each person opposes it in every version of the context. Its answer to whether the two people take the same side can still change depending on what their positions were before the edits.
-
-This leaves a clear boundary around the current capability: repeated and reversible relational updates are possible in the tested setting, while some downstream consequences continue to carry information about overwritten history.
+The result is a separation between what the model can correctly report as its current facts and the information that still affects its later decisions.
 
 ## What the project is arguing for now
 
-The project began with a question about whether a support/opposition direction existed. That direction turned out to be readable, transferable, relation-specific, and causally useful.
+The project began by asking whether a support/opposition relation could be identified inside a model. Following that relation through steering and learned editing exposed a broader issue.
 
-Following its consequences exposed a richer problem. A model can reach the desired answer while the surrounding state behaves differently from a genuine change in the underlying relation. Learned shared-state editors recover substantially more reusable behavior, including repetition and restoration, while joint consequences still reveal residual dependence on the starting context.
+A model can correctly report its current semantic facts while its later decisions still depend on information those facts were supposed to replace.
 
-The resulting evaluation principle is straightforward:
-
-**A useful semantic update should support the consequences of the new fact across later questions, preserve unrelated information, survive repeated use, and behave consistently regardless of the value it replaced.**
-
-That standard is stronger than checking whether one target answer moved. The experiments in this repository build toward that standard and show which parts are already achievable under controlled conditions, along with the parts that remain unresolved.
+We gave the model different starting histories, then updated each one to the same final facts. Even when it correctly reported those facts, its later answers could still depend on what used to be true. In the measured cases, it sometimes does. This ends up meaning that reading back the new fact is not enough to establish that the fact is actually governing the model’s later reasoning. For semantic editing, the stronger question is whether the variables we claim to have changed are sufficient to explain the downstream behavior attributed to them.
