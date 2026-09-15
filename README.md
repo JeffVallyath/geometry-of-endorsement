@@ -4,11 +4,9 @@
 
 For the short logical progression, see [Project Strategy](PROJECT_STRATEGY.md). The quantitative record is in [Results and Claims](docs/RESULTS_AND_CLAIMS.md). Human-review procedures are described in [Human Review](docs/HUMAN_REVIEW.md), and reproduction instructions are in [Reproducibility](REPRODUCIBILITY.md).
 
-The moral motivation is rather straightforward. A model can say that considerations like fairness, autonomy, privacy, harm, or a duty support or oppose an action. What matters is whether those reported relations are actually the ones shaping its later moral judgments.
+The project began with moral and evaluative relations: whether considerations such as fairness, autonomy, privacy, or harm count for or against an action. This gave us a controlled setting for a broader question: when a model reports that one of these relations has changed, is that new relation actually what ends up governing its later judgments?
 
-For example, suppose an update changes the model’s view so that fairness now counts against an action. If the model reports that new relation correctly, but later decisions still depend on whether fairness used to count for or against the action, then the direct report has not fully captured the moral state driving its behavior.
-
-The project began by asking whether these support/opposition relations could be identified inside the model at all. 
+For example, if an update makes fairness count against an action and the model reports that correctly, later moral judgments should no longer depend on whether fairness used to count for it.
 
 The main starting dataset is ValuePrism. Each example gives a situation, an action, and a consideration such as autonomy, fairness, privacy, or harm. The dataset records whether that consideration **Supports** or **Opposes** the action in that situation.
 
@@ -117,11 +115,10 @@ However, some questions combining several relations could still change depending
 
 ## Are the reported current facts sufficient for later decisions?
 
-The next experiments reached the same intended final relations from several different starting histories. The downstream question was then held fixed.
+We started with several versions of the same case that differed in their original relations, edited each one so they all ended with the same new relations, and then asked the exact same follow-up question.
+We call the stronger requirement source-history sufficiency: once the current facts are the same, the answer should no longer depend on what the model believed before the update.
 
-If the reported current relations are enough to explain the model’s answer, changing only the overwritten history should not change that answer.
-
-In many cases, the model correctly reported the relevant individual relations in every history, yet the same later question still produced different answers depending on the earlier state.
+This was not limited to a few selected examples. The same pattern appeared in both Gemma and Qwen, with both learned edits and ordinary text-based updates: the model could correctly report the current relations while later answers still depended on what those relations had been before.
 
 One example from my own experiments helps make this more concrete. Ravi and Kira both end up opposing Canal, and the model reports those individual relations correctly in every history. But when asked whether at least one of them supports Canal, the answers across four histories are No, No, No, Yes.
 
@@ -129,8 +126,14 @@ The result is a separation between what the model can correctly report as its cu
 
 ## What the project is arguing for now
 
-The project began by asking whether a support/opposition relation could be identified inside a model. Following that relation through steering and learned editing exposed a broader issue.
+The project began by asking whether a support/opposition relation could be identified inside a model. Following that relation through readout, intervention, and learned editing led to a broader question:
 
-A model can correctly report its current semantic facts while its later decisions still depend on information those facts were supposed to replace.
+When an AI says it has updated a fact, has the information governing its later decisions actually changed too?
 
-We gave the model different starting histories, then updated each one to the same final facts. Even when it correctly reported those facts, its later answers could still depend on what used to be true. In the measured cases, it sometimes does. This ends up meaning that reading back the new fact is not enough to establish that the fact is actually governing the model’s later reasoning. For semantic editing, the stronger question is whether the variables we claim to have changed are sufficient to explain the downstream behavior attributed to them.
+The experiments demonstrate that the answer can be no. We can start from different histories, update them to the same final facts, and verify that the model reports those facts correctly. Its later decisions can still depend on what used to be true.
+
+This exposes a gap between readable state and operative state. The model may correctly tell us its current facts while older information continues to influence how those facts are used.
+
+For moral reasoning, the consequence is straightforward. A model might correctly report that fairness now counts against an action while later moral judgments still depend on whether fairness used to count for it. More generally, this matters whenever we want to know whether an AI has actually incorporated an update into the state driving its behavior.
+
+**A model can appear to have updated what it knows while still making decisions from information that should no longer matter.**
