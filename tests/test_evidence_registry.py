@@ -43,9 +43,12 @@ def rules(identity, text):
 def test_actual_registry_passes():
     report = ev.check(ROOT, REGISTRY)
     assert report.ok(), report.errors
-    assert sum(c['bound'] for c in report.coverage) == 340
+    assert sum(c['bound'] for c in report.coverage) == 347
     assert sum(c['bound'] for c in report.coverage if c['document'] == 'results') == 278
-    assert {c['unit'] for c in report.coverage if c['document'] == 'captions'} >= {'figure6', 'figure7', 'supplementary_s1', 'supplementary_s2'}
+    captions = {c['unit']: c for c in report.coverage if c['document'] == 'captions'}
+    assert set(captions) >= {'figure6', 'figure7', 'supplementary_s1', 'supplementary_s2', 'supplementary_s3'}
+    assert captions['figure7']['bound'] == 7  # V10 design and primary interval bindings.
+    assert captions['supplementary_s3']['bound'] == 5  # Preserved V6 census bindings.
     assert not report.pending
 
 

@@ -1,0 +1,157 @@
+{
+  "study": "V10 prospective confirmation",
+  "rows": [
+    {
+      "actor": "gemma",
+      "group": "INV_PAIR_NLL",
+      "roots": 64,
+      "mean": 0.06336805555555555,
+      "corrected_interval": [
+        0.04513888888888889,
+        0.08289930555555555
+      ],
+      "corrected_level": 0.99375,
+      "draws": 10000,
+      "seed": 2609141002,
+      "seeds_averaged_within_root": true,
+      "label": "Constrained learned editor",
+      "update_type": "Learned",
+      "joint_questions_per_root": 18,
+      "fixed_opportunities_per_seed_or_textual_condition": 1152
+    },
+    {
+      "actor": "gemma",
+      "group": "FREE_PAIR_CONSISTENCY",
+      "roots": 64,
+      "mean": 0.051215277777777776,
+      "corrected_interval": [
+        0.03526340060763884,
+        0.06770833333333334
+      ],
+      "corrected_level": 0.99375,
+      "draws": 10000,
+      "seed": 2609141002,
+      "seeds_averaged_within_root": true,
+      "label": "Unrestricted consistency-trained editor",
+      "update_type": "Learned",
+      "joint_questions_per_root": 18,
+      "fixed_opportunities_per_seed_or_textual_condition": 1152
+    },
+    {
+      "actor": "gemma",
+      "group": "EXISTING_CORRECTION",
+      "roots": 64,
+      "mean": 0.05989583333333333,
+      "corrected_interval": [
+        0.034722222222222224,
+        0.0891954210069438
+      ],
+      "corrected_level": 0.99375,
+      "draws": 10000,
+      "seed": 2609141002,
+      "seeds_averaged_within_root": false,
+      "label": "Existing textual correction",
+      "update_type": "Textual",
+      "joint_questions_per_root": 18,
+      "fixed_opportunities_per_seed_or_textual_condition": 1152
+    },
+    {
+      "actor": "gemma",
+      "group": "LATEST_SAME_WORDING",
+      "roots": 64,
+      "mean": 0.05555555555555555,
+      "corrected_interval": [
+        0.029513888888888888,
+        0.0859375
+      ],
+      "corrected_level": 0.99375,
+      "draws": 10000,
+      "seed": 2609141002,
+      "seeds_averaged_within_root": false,
+      "label": "Latest-value wording",
+      "update_type": "Textual",
+      "joint_questions_per_root": 18,
+      "fixed_opportunities_per_seed_or_textual_condition": 1152
+    },
+    {
+      "actor": "qwen",
+      "group": "INV_PAIR_NLL",
+      "roots": 64,
+      "mean": 0.024739583333333336,
+      "corrected_interval": [
+        0.01171875,
+        0.04123263888888889
+      ],
+      "corrected_level": 0.99375,
+      "draws": 10000,
+      "seed": 2609141002,
+      "seeds_averaged_within_root": true,
+      "label": "Constrained learned editor",
+      "update_type": "Learned",
+      "joint_questions_per_root": 18,
+      "fixed_opportunities_per_seed_or_textual_condition": 1152
+    },
+    {
+      "actor": "qwen",
+      "group": "FREE_PAIR_CONSISTENCY",
+      "roots": 64,
+      "mean": 0.02387152777777778,
+      "corrected_interval": [
+        0.01171875,
+        0.03993055555555555
+      ],
+      "corrected_level": 0.99375,
+      "draws": 10000,
+      "seed": 2609141002,
+      "seeds_averaged_within_root": true,
+      "label": "Unrestricted consistency-trained editor",
+      "update_type": "Learned",
+      "joint_questions_per_root": 18,
+      "fixed_opportunities_per_seed_or_textual_condition": 1152
+    },
+    {
+      "actor": "qwen",
+      "group": "EXISTING_CORRECTION",
+      "roots": 64,
+      "mean": 0.06163194444444445,
+      "corrected_interval": [
+        0.038408745659722125,
+        0.0859375
+      ],
+      "corrected_level": 0.99375,
+      "draws": 10000,
+      "seed": 2609141002,
+      "seeds_averaged_within_root": false,
+      "label": "Existing textual correction",
+      "update_type": "Textual",
+      "joint_questions_per_root": 18,
+      "fixed_opportunities_per_seed_or_textual_condition": 1152
+    },
+    {
+      "actor": "qwen",
+      "group": "LATEST_SAME_WORDING",
+      "roots": 64,
+      "mean": 0.06336805555555555,
+      "corrected_interval": [
+        0.04079861111111111,
+        0.08854166666666667
+      ],
+      "corrected_level": 0.99375,
+      "draws": 10000,
+      "seed": 2609141002,
+      "seeds_averaged_within_root": false,
+      "label": "Latest-value wording",
+      "update_type": "Textual",
+      "joint_questions_per_root": 18,
+      "fixed_opportunities_per_seed_or_textual_condition": 1152
+    }
+  ],
+  "statistic": "Mean root witness count / 18 fixed joint-question opportunities; learned seeds averaged within root",
+  "witness": "W=A and C and D; A: both operands correct and valid in every origin; C: native and same-method no-op correct; D: differing valid joint hard answers.",
+  "origins": 8,
+  "interpretation": "Behavioral source-history dependence despite protected factual readout; not root prevalence or individual-answer error rate",
+  "sources": {
+    "reproducibility/state_sufficiency/v10/primary_results.json": "9a6c45a11710c9aeb61e03622429ba0a0cfba360a0ba84e6d38b43b274a821e7",
+    "reproducibility/state_sufficiency/v10/specification_summary.json": "293fac2e3f80105e351fd8f61cda493f3e8f0d86d1bd4d456a5e297121bd573f"
+  }
+}

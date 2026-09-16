@@ -105,5 +105,7 @@ def reproduce(output: Path) -> dict:
     plot_editing(module)
     from .consequence_figures import plot
     plot(module)
+    from .source_history_figure import plot as plot_source_history
+    plot_source_history(module)
     return {"status": "figures_regenerated", "output": str(destination),
             "scope": "committed figure source data; no model inference"}

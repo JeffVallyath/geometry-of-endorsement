@@ -28,6 +28,15 @@ unresolved evidence by default. Tables go to `reproduced/tables/`; plots go to
 `reproduced/figures/`. Use a fresh output directory for another replay. Existing
 outputs and committed evidence are not overwritten.
 
+Figure 7 uses the saved V10 primary means and multiplicity-adjusted intervals
+directly, without recomputing uncertainty. Its full-precision projection is
+[v10_source_history.json](artifacts/figures/v10_source_history.json), including
+source hashes and fixed opportunity denominators. The original V6 Figure 7 is
+preserved as Supplementary Figure S3, with unchanged counts in
+[consequence_comparisons.json](artifacts/figures/consequence_comparisons.json).
+Both regenerate through `python -m repro figures`; the selected repeat-checked
+Wren/Orla witness remains linked separately from the main caption.
+
 The tests additionally require pytest and nbformat for notebook validation. Install the test dependencies and run:
 
 ```sh

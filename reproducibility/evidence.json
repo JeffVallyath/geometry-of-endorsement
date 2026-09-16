@@ -24,6 +24,7 @@
     "selector": "reproducibility/representation/background/11_applicability_selector.json",
     "editing_figures": "artifacts/figures/editing_comparisons.json",
     "consequences": "artifacts/figures/consequence_comparisons.json",
+    "v10_figure": "artifacts/figures/v10_source_history.json",
     "state_sufficiency": "reproducibility/state_sufficiency/headline_values.json",
     "state_spec": "reproducibility/state_sufficiency/v10/specification_summary.json"
   },
@@ -2651,7 +2652,7 @@
               "headline": true
             }
           ],
-          "literals": [],
+          "literals": [{"text": "7", "reason": "Main figure cross-reference"}],
           "facts": [
             {
               "id": "fixed-denominator",
@@ -4318,6 +4319,45 @@
         {
           "id": "figure7",
           "heading_pattern": "^Figure 7\\b",
+          "numbers": [
+            {"path": "state_spec.inventory.origins", "decimals": 0},
+            {"path": "state_spec.root_denominator", "decimals": 0},
+            {"path": "state_spec.joint_questions_per_root", "decimals": 0},
+            {"path": "state_spec.interval_level", "decimals": 3, "percent": true},
+            {"path": "state_spec.bootstrap_draws", "decimals": 0},
+            {"path": "state_spec.bootstrap_seed", "decimals": 0},
+            {"path": "v10_figure.rows.0.fixed_opportunities_per_seed_or_textual_condition", "decimals": 0}
+          ],
+          "literals": [{"text": "9", "reason": "Nine semantic questions under two answer-code draws; 18 fixed joint opportunities"}],
+          "facts": [
+            {
+              "id": "prospective-primary",
+              "description": "V10 prospective primary intervals, not V6 descriptive counts or method ranking.",
+              "all_of": ["prospective V10 aggregate result", "copy the saved primary mean root witness rates", "multiplicity.adjusted 99.375%", "All eight intervals lie above zero", "not a ranking of methods"],
+              "source_evidence": [{"path": "v10_figure.rows.*.corrected_level", "equals": 0.99375}]
+            },
+            {
+              "id": "fixed-opportunity-denominator",
+              "description": "Preserve the fixed full denominator and within-root learned seed averaging.",
+              "all_of": ["Ineligible questions remain in the denominator", "two learned.seed scores are averaged within each root", "models and update groups are not pooled", "not root prevalence", "individual.answer error rate"]
+            },
+            {
+              "id": "protected-factual-readout",
+              "description": "Behavioral witness requires direct facts and references; no physical mechanism claim.",
+              "all_of": ["direct operands correct and valid in every history", "correct native.final and same.method no.op references", "differing valid joint hard answers", "behavioral source.history dependence despite protected factual readout", "does not establish that updated facts are absent internally", "neither equality of hidden activations nor physical erasure of history is assumed"]
+            },
+            {
+              "id": "selected-witness-boundary",
+              "description": "Selected illustration is separate from aggregate prevalence and operand repeat coverage.",
+              "all_of": ["illustrative repeat.checked witness", "not a prevalence estimate", "Operand scores are from the core, not all independently repeated"]
+            }
+          ],
+          "unsupported": []
+        },
+        {
+          "id": "supplementary_s3",
+          "heading_pattern": "^Supplementary Figure S3\\b",
+          "literals": [{"text": "7", "reason": "Former main figure number"}],
           "numbers": [
             {
               "path": "consequences.source_history.origins",

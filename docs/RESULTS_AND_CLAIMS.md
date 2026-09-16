@@ -263,9 +263,9 @@ across starting states was 29.6875%. No tested V6 setting met all the requiremen
 for independence from the starting relations. Consistent wrong answers do not
 count as success.
 
-![Joint-answer disagreement despite correct atomic relations](../figures/fig7_source_history.png)
+![Archival V6 joint-answer disagreement despite correct atomic relations](../figures/supplementary/figS3_v6_source_history.png)
 
-The [source-history figure](../figures/CAPTIONS.md#figure-7--joint-answers-retain-overwritten-source-history)
+The [archival Supplementary Figure S3](../figures/CAPTIONS.md#supplementary-figure-s3--v6-descriptivearchival-source-history-census)
 shows descriptive root counts where all atomic answers are correct across starting
 states but some joint answers still vary with the overwritten history.
 
@@ -433,6 +433,13 @@ not establish invariance to distinct benign histories or repeatability of every
 intervention. This replay did not recompute coherence.
 
 ### V10 prospective confirmation
+
+![Correct current facts can still leave downstream answers dependent on source history](../figures/fig7_source_history.png)
+
+[Figure 7](../figures/CAPTIONS.md#figure-7--correct-current-facts-can-still-leave-downstream-answers-dependent-on-source-history)
+now presents the matched-history design and the eight prospective primary rates
+and adjusted intervals below. The earlier V6 descriptive census remains in
+Supplementary Figure S3; it is not the prospective aggregate evidence.
 
 V10 tested fresh generated cases under a fixed familiar-question interface.
 All eight starting assignments to three addressed records receive the same

@@ -249,37 +249,59 @@ and [plot data](../artifacts/figures/consequence_comparisons.json) retain the ex
 estimates. The supported table replay checks the behavioral measurements; it does
 not recreate the omitted fitted direction or later-layer witness.
 
-## Figure 7 — Joint answers retain overwritten source history
+## Figure 7 — Correct current facts can still leave downstream answers dependent on source history
 
-![Source-history disagreement despite correct atomic relations](fig7_source_history.png)
+![Matched histories and eight V10 primary witness rates with adjusted intervals above zero](fig7_source_history.png)
 
-This is the earlier V6 descriptive source-history figure, not the V10 prospective
-confirmation. The latter is reported separately in
-[Results and Claims](../docs/RESULTS_AND_CLAIMS.md#v10-prospective-confirmation).
+**A, matched-history design.** Different starting histories receive the same
+updates, producing identical intended current facts before the same fresh
+downstream question is asked. V10 compares all 8 starting assignments to three
+addressed records and checks complete intended final-table equality, including
+untouched facts. Relevant direct facts are checked after updating. The question
+and response interface are fixed across histories. This is a behavioral test:
+neither equality of hidden activations nor physical erasure of history is assumed.
 
-The top panel shows a saved synthetic design: 4 starting states receive the same
-requested final assignments before fresh questions are supplied. The lower panel
-uses every terminal root under the original reader: Gemma has 64 roots and Qwen
-32, with both editors and both original training seeds shown separately.
+**B, prospective V10 aggregate result.** Each row is one model and update group:
+Constrained learned editor (`INV_PAIR_NLL`), Unrestricted consistency-trained
+editor (`FREE_PAIR_CONSISTENCY`), Existing textual correction
+(`EXISTING_CORRECTION`), or Latest-value wording (`LATEST_SAME_WORDING`). Dots and
+squares distinguish learned and textual updates, not a ranking of methods.
+Points copy the saved primary mean root witness rates; intervals copy the exact
+multiplicity-adjusted 99.375% root-bootstrap intervals (10,000 draws, fixed seed
+2609141002, correction across 8 cells). All eight intervals lie above zero.
 
-A root is atomic-perfect only when all 16 direct/opposes questions are correct
-across every starting state. The red segment counts such roots where at least
-one of the 18 joint both/either/same questions still changes its answer with the
-overwritten starting values. The teal segment has correct atomic answers and no
-joint disagreement; its joint answers may still be consistently wrong. Gray
-marks roots with at least one incorrect atomic answer. The right-hand counts
-use atomic-perfect roots as their denominator; the bars use all roots.
+Each cell has 64 roots and 18 fixed joint-question opportunities per root
+(9 semantic questions under two answer-code draws), or 1,152 opportunities per
+seed or textual condition. Ineligible questions remain in the denominator.
+The two learned-seed scores are averaged within each root before averaging over
+roots; models and update groups are not pooled. A primary witness requires both
+direct operands correct and valid in every history, correct native-final and
+same-method no-op references, and differing valid joint hard answers. This rate
+is not root prevalence, a filter-conditional rate, or an individual-answer error
+rate. These intervals support recurrence within the generated-case sampling
+scheme, not universal failure or a pairwise method comparison.
 
-These are descriptive counts derived from saved per-root sufficient statistics,
-not a new primary test, an uncertainty interval, or a pooled model/seed estimate.
-They isolate observed answer disagreements, not a claim about an identified
-internal mechanism. The top panel is a design example, not a sequence of model answers.
+The result demonstrates **behavioral source-history dependence despite protected
+factual readout**. It does not establish that updated facts are absent internally,
+that separate physical old/new stores exist, or that a specific neural mechanism
+has been identified. Correct facts with a history-sensitive reader remain possible.
 
-[Root statistics](../reproducibility/relational_editing/v6/scores/source_root_statistics.json.gz),
-[synthetic source worlds](../reproducibility/relational_editing/v6/data/gemma_source_roots.jsonl),
-and [plot data](../artifacts/figures/consequence_comparisons.json) provide the
-population and exact counts. Both new figures regenerate through
-`python -m repro figures` using [the plotting code](../src/repro/consequence_figures.py).
+The selected Qwen Wren/Orla case is kept separately as an
+[illustrative repeat-checked witness](../reproducibility/state_sufficiency/independent_verification/examples/EXAMPLES.md#repeat_checked_positive),
+not a prevalence estimate. Its direct facts are correct across histories but
+the fixed same-side question receives different answers; the exact joint query
+matches both fresh repeat passes. Operand scores are from the core, not all
+independently repeated. See also the
+[main-text account](../docs/RESULTS_AND_CLAIMS.md#a-repeat-checked-illustration-and-provenance-limits)
+and [saved example](../reproducibility/state_sufficiency/v10/selected_repeat_checked_example.json).
+
+[Saved primary output](../reproducibility/state_sufficiency/v10/primary_results.json),
+[specification](../reproducibility/state_sufficiency/v10/specification_summary.json),
+and [full-precision plot data](../artifacts/figures/v10_source_history.json)
+bind every plotted estimate and interval. Regenerate with `python -m repro figures`
+using [the plotting code](../src/repro/source_history_figure.py). No new inference,
+estimand, or uncertainty calculation is performed by the renderer. The earlier
+V6 figure is preserved as [Supplementary Figure S3](#supplementary-figure-s3--v6-descriptivearchival-source-history-census).
 
 ## Supplementary Figure S1 — Broader single-edit training and later sequences
 
@@ -332,3 +354,36 @@ to affect the answers.
 The [paired scene records](../reproducibility/relational_editing/v6/scores/reader_paired_contrasts.json.gz),
 [exact reader prompts](../reproducibility/relational_editing/v6/data/READERS.json),
 and [plot data](../artifacts/figures/editing_comparisons.json) give the full comparisons.
+
+## Supplementary Figure S3 — V6 descriptive/archival source-history census
+
+![Earlier V6 descriptive source-history census](supplementary/figS3_v6_source_history.png)
+
+This is the earlier V6 descriptive source-history figure, not the V10 prospective
+confirmation. Previously Figure 7, its original rendering, exact counts and
+provenance are preserved here. V10 now supplies the main Figure 7 evidence.
+
+The top panel shows a saved synthetic design: 4 starting states receive the same
+requested final assignments before fresh questions are supplied. The lower panel
+uses every terminal root under the original reader: Gemma has 64 roots and Qwen
+32, with both editors and both original training seeds shown separately.
+
+A root is atomic-perfect only when all 16 direct/opposes questions are correct
+across every starting state. The red segment counts such roots where at least
+one of the 18 joint both/either/same questions still changes its answer with the
+overwritten starting values. The teal segment has correct atomic answers and no
+joint disagreement; its joint answers may still be consistently wrong. Gray
+marks roots with at least one incorrect atomic answer. The right-hand counts
+use atomic-perfect roots as their denominator; the bars use all roots.
+
+These are descriptive counts derived from saved per-root sufficient statistics,
+not a new primary test, an uncertainty interval, or a pooled model/seed estimate.
+They isolate observed answer disagreements, not a claim about an identified
+internal mechanism. The top panel is a design example, not a sequence of model answers.
+This descriptive census is distinct from the later fixed-certificate V6 replay.
+
+[Root statistics](../reproducibility/relational_editing/v6/scores/source_root_statistics.json.gz),
+[synthetic source worlds](../reproducibility/relational_editing/v6/data/gemma_source_roots.jsonl),
+and [unchanged plot data](../artifacts/figures/consequence_comparisons.json) provide
+the population and exact counts. Regenerate through `python -m repro figures`
+using [the archival plotting code](../src/repro/consequence_figures.py).

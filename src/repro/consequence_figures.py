@@ -173,5 +173,7 @@ def plot(module) -> None:
         'Atomic = all 16 direct/opposes questions correct across all starts; joint = 18 both/either/same questions.\n'
         'Descriptive counts from saved root statistics, not a new primary test. No pooling across models, editors, or seeds.',
         ha='center', va='bottom', fontsize=8)
-    module.save(fig, 'fig7_source_history')
+    # Preserve the earlier V6 rendering and exact count projection as archival evidence.
+    (module.OUT / 'supplementary').mkdir(exist_ok=True)
+    module.save(fig, 'supplementary/figS3_v6_source_history')
     (module.OUT / 'consequence_comparisons.json').write_text(json.dumps(data, indent=2) + '\n', encoding='utf8', newline='\n')
