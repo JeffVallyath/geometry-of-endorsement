@@ -78,7 +78,7 @@ def test_renderer_draws_the_primary_values_and_zero_reference(tmp_path):
     plot(SimpleNamespace(OUT=tmp_path, save=lambda fig, name: figures.append((fig, name))))
     fig, name = figures[0]
     try:
-        assert name == 'fig7_source_history'
+        assert name == 'fig07_source_history'
         axis = fig.axes[1]
         bars = [c for c in axis.containers if isinstance(c, ErrorbarContainer)]
         assert len(bars) == 8
@@ -110,16 +110,16 @@ def test_main_and_archival_captions_distinguish_evidence_and_witness():
     archive = captions.split('## Supplementary Figure S3')[1]
     assert '99.375%' in main and '1,152' in main
     assert 'separate physical old/new stores' in main
-    assert 'illustrative repeat-checked witness' in main and 'not a prevalence estimate' in main
-    assert 'earlier V6 descriptive source-history figure, not the V10 prospective' in archive
+    assert 'illustrative repeat-checked example' in main and 'not a prevalence estimate' in main
+    assert 'earlier shared-state editing study (`V6`)' in archive and 'not the prospective confirmation' in archive
     results = (ROOT / 'docs/RESULTS_AND_CLAIMS.md').read_text(encoding='utf8')
-    assert 'fig7_source_history.png' not in results.split('### V10 prospective confirmation')[0]
-    assert 'figS3_v6_source_history.png' in results
+    assert 'fig07_source_history.png' not in results.split('### Does the effect recur in a study planned before its outcomes?')[0]
+    assert 'figS3_source_history_readable.png' in results
 
 
 @pytest.mark.parametrize('old,new', [
     ('Ineligible questions remain in the denominator', 'Ineligible questions are excluded'),
-    ('two learned-seed scores are averaged within each root', 'learned-seed scores are pooled across roots'),
+    ('two learned-seed scores are averaged within each benchmark case', 'learned-seed scores are pooled across benchmark cases'),
     ('All eight intervals lie above zero', 'Some intervals cross zero'),
     ('not a prevalence estimate', 'a prevalence estimate'),
 ])

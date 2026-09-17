@@ -1,0 +1,50 @@
+{
+  "source": "A100_MQUAKE9_PHASE1_HANDOFF_V1",
+  "source_manifest_sha256": "4495a2883e9664a3116a111fa82c51970c60d086ad7349e3f2c4e159cf2a97d2",
+  "selection": "Executed qualification summaries only; no unopened final jobs or provider logs",
+  "files": [
+    {
+      "path": "SUMMARY.json",
+      "source_member": "analysis/analysis-qualification/SUMMARY.json",
+      "source_sha256": "ad6a0225a28a5c1393dc2d85a61cd872d57768b9c244f3a55c2cc97bb92204e0",
+      "sha256": "ad6a0225a28a5c1393dc2d85a61cd872d57768b9c244f3a55c2cc97bb92204e0",
+      "bytes": 2641,
+      "transformation": "none",
+      "retained_fields": null
+    },
+    {
+      "path": "RESULT.json",
+      "source_member": "analysis/analysis-qualification/RESULT.json",
+      "source_sha256": "f81d435d507c882054e920d7485b4b613b64ca7e004f6ff0b74495ce95437ff1",
+      "sha256": "faab1ca5207337d2694f3fc1c30d800f870b4d1531ba040048700e8503594f30",
+      "bytes": 309,
+      "transformation": "JSON field projection",
+      "retained_fields": [
+        "schema",
+        "attempt",
+        "final_outcomes",
+        "job_name",
+        "job_sha256",
+        "scientific_retry",
+        "status",
+        "study_id"
+      ]
+    },
+    {
+      "path": "DECISION.json",
+      "source_member": "results/PHASE2_DECISION.json",
+      "source_sha256": "d9a48f0187f7f49718a9add8d85c2f97abe12d5ef771c031caf352be9ec251c4",
+      "sha256": "1f84daa24195dcbc1567a543dabccf65a4d397a491babae22c08a821d83fe581",
+      "bytes": 863,
+      "transformation": "JSON field projection",
+      "retained_fields": [
+        "schema",
+        "basis",
+        "checks",
+        "go",
+        "readiness"
+      ]
+    }
+  ],
+  "boundary": "Three selected members checked against the local handoff manifest, not whole-handoff runtime attestation or independent raw-journal analysis."
+}

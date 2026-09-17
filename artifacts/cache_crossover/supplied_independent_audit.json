@@ -1,0 +1,115 @@
+{
+  "scope": "Independent read-only recomputation from delivered raw records and source inputs. No pretrained inference and no independent observation of remote execution or cache tensors.",
+  "results_archive_sha256": "307a4f2344e81564300671d616af5cec21ac5bffe28b9553aedd5c4b253ef16a",
+  "prior_archive_sha256": "fc6f8c3eed7bfca435fc1042453bfb2e44874a3179fda4e950ba95416d18b5e2",
+  "payload_members_checked": 73,
+  "stage_counts": {
+    "baseline": 108,
+    "baseline_comparison": 108,
+    "baseline_eligibility": 2,
+    "strict_dual_code_replay": 2,
+    "source_early_identity": 2,
+    "cell": 48,
+    "control_comparison": 24
+  },
+  "verified_replay_rows": 108,
+  "replay_max_logp_difference_from_saved": 0,
+  "scored_rows_recomputed": 156,
+  "metric_max_probability_difference": 0.0,
+  "exact_control_comparisons": 24,
+  "source_early_identity_records_verified": 2,
+  "histories": [
+    {
+      "origin": 3,
+      "changed_fact_count": 2,
+      "prefix_token_count": 517,
+      "anchor": [
+        17017,
+        235265,
+        108,
+        3898,
+        576,
+        9126,
+        235265,
+        108
+      ]
+    },
+    {
+      "origin": 5,
+      "changed_fact_count": 2,
+      "prefix_token_count": 517,
+      "anchor": [
+        17017,
+        235265,
+        108,
+        3898,
+        576,
+        9126,
+        235265,
+        108
+      ]
+    }
+  ],
+  "codes": [
+    {
+      "code": "literal_No_Yes",
+      "query_id": "SSC1-FINAL-0035-d0-extra3",
+      "p_yes": {
+        "AA": 0.9975581541926914,
+        "AB": 0.03361409443621834,
+        "BA": 0.9979028512438762,
+        "BB": 0.04500815020089124
+      },
+      "error_early": 0.9584193803997291,
+      "error_later": 0.005869376407928839,
+      "baseline_gap": 0.9525500039918002,
+      "strict_direct_preservation": true,
+      "label": "LATER-FOLLOWING",
+      "effects": {
+        "early": [
+          0.00034469705118478355,
+          0.011394055764672895
+        ],
+        "later": [
+          -0.9639440597564731,
+          -0.952894701042985
+        ],
+        "interaction": 0.011049358713488111
+      }
+    },
+    {
+      "code": "coded_A_B",
+      "query_id": "SSC1-FINAL-0035-d1-extra3",
+      "p_yes": {
+        "AA": 0.9875894771993412,
+        "AB": 0.023544637301524694,
+        "BA": 0.9887465095577364,
+        "BB": 0.02892180658557946
+      },
+      "error_early": 0.9619347714349867,
+      "error_later": 0.003267100821224958,
+      "baseline_gap": 0.9586676706137618,
+      "strict_direct_preservation": true,
+      "label": "LATER-FOLLOWING",
+      "effects": {
+        "early": [
+          0.0011570323583951492,
+          0.005377169284054767
+        ],
+        "later": [
+          -0.9640448398978165,
+          -0.9598247029721569
+        ],
+        "interaction": 0.00422013692565959
+      }
+    }
+  ],
+  "minimum_hybrid_direct_p_correct": 0.9992299996442124,
+  "minimum_hybrid_direct_candidate_mass": 0.9993548070620829,
+  "maximum_hybrid_direct_change": 8.612357214512686e-05,
+  "strict_joint_direct_preservation": true,
+  "forwards": 166,
+  "termination_receipt_status": "terminated",
+  "base_compute_estimate_usd": 0.47,
+  "selection": "One retrospectively selected root and one fixed history pair; two answer codes are not independent cases."
+}

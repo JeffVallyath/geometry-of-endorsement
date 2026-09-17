@@ -1,0 +1,580 @@
+[
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0052-d0-00",
+    "root_id": "SSC1-FINAL-0052",
+    "spec": {
+      "a": 1,
+      "b": 2,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Gale favor the Orchard proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0052-d0-01",
+    "root_id": "SSC1-FINAL-0052",
+    "spec": {
+      "a": 1,
+      "b": 2,
+      "kind": "opposes",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Gale oppose the Orchard proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0052-d0-02",
+    "root_id": "SSC1-FINAL-0052",
+    "spec": {
+      "a": 1,
+      "b": 2,
+      "kind": "same",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Do Gale and Dara take the same side on Orchard?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0052-d0-03",
+    "root_id": "SSC1-FINAL-0052",
+    "spec": {
+      "a": 2,
+      "b": 1,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Dara favor the Orchard proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0052-d0-04",
+    "root_id": "SSC1-FINAL-0052",
+    "spec": {
+      "a": 2,
+      "b": 1,
+      "kind": "opposes",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Dara oppose the Orchard proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0052-d0-05",
+    "root_id": "SSC1-FINAL-0052",
+    "spec": {
+      "a": 1,
+      "b": 2,
+      "kind": "direct",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does Gale favor the Canal proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0052-d0-06",
+    "root_id": "SSC1-FINAL-0052",
+    "spec": {
+      "a": 1,
+      "b": 2,
+      "kind": "both",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Is the Orchard proposal supported by both Gale and Dara?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0052-d0-07",
+    "root_id": "SSC1-FINAL-0052",
+    "spec": {
+      "a": 1,
+      "b": 2,
+      "kind": "either",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Gale and Dara support Orchard?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0052-d0-08",
+    "root_id": "SSC1-FINAL-0052",
+    "spec": {
+      "a": 3,
+      "b": 1,
+      "kind": "same",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Do Quin and Gale take the same side on Orchard?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0052-d0-09",
+    "root_id": "SSC1-FINAL-0052",
+    "spec": {
+      "a": 3,
+      "b": 1,
+      "kind": "both",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Is the Orchard proposal supported by both Quin and Gale?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0052-d0-10",
+    "root_id": "SSC1-FINAL-0052",
+    "spec": {
+      "a": 3,
+      "b": 1,
+      "kind": "either",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Quin and Gale support Orchard?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0052-d0-11",
+    "root_id": "SSC1-FINAL-0052",
+    "spec": {
+      "a": 3,
+      "b": 1,
+      "kind": "direct",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does Quin favor the Canal proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0052-d0-extra0",
+    "root_id": "SSC1-FINAL-0052",
+    "spec": {
+      "a": 3,
+      "b": 1,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Quin favor the Orchard proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0052-d0-extra1",
+    "root_id": "SSC1-FINAL-0052",
+    "spec": {
+      "a": 2,
+      "b": 3,
+      "kind": "same",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Do Dara and Quin take the same side on Orchard?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0052-d0-extra2",
+    "root_id": "SSC1-FINAL-0052",
+    "spec": {
+      "a": 2,
+      "b": 3,
+      "kind": "both",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Is the Orchard proposal supported by both Dara and Quin?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0052-d0-extra3",
+    "root_id": "SSC1-FINAL-0052",
+    "spec": {
+      "a": 2,
+      "b": 3,
+      "kind": "either",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Dara and Quin support Orchard?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0052-d0-extra4",
+    "root_id": "SSC1-FINAL-0052",
+    "spec": {
+      "a": 0,
+      "b": 1,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Hugo favor the Orchard proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-FINAL-0052-d1-00",
+    "root_id": "SSC1-FINAL-0052",
+    "spec": {
+      "a": 1,
+      "b": 2,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Gale favor the Orchard proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0052-d1-01",
+    "root_id": "SSC1-FINAL-0052",
+    "spec": {
+      "a": 1,
+      "b": 2,
+      "kind": "opposes",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Gale oppose the Orchard proposal?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0052-d1-02",
+    "root_id": "SSC1-FINAL-0052",
+    "spec": {
+      "a": 1,
+      "b": 2,
+      "kind": "same",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Do Gale and Dara take the same side on Orchard?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-FINAL-0052-d1-03",
+    "root_id": "SSC1-FINAL-0052",
+    "spec": {
+      "a": 2,
+      "b": 1,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Dara favor the Orchard proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-FINAL-0052-d1-04",
+    "root_id": "SSC1-FINAL-0052",
+    "spec": {
+      "a": 2,
+      "b": 1,
+      "kind": "opposes",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Dara oppose the Orchard proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0052-d1-05",
+    "root_id": "SSC1-FINAL-0052",
+    "spec": {
+      "a": 1,
+      "b": 2,
+      "kind": "direct",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does Gale favor the Canal proposal?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0052-d1-06",
+    "root_id": "SSC1-FINAL-0052",
+    "spec": {
+      "a": 1,
+      "b": 2,
+      "kind": "both",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Is the Orchard proposal supported by both Gale and Dara?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-FINAL-0052-d1-07",
+    "root_id": "SSC1-FINAL-0052",
+    "spec": {
+      "a": 1,
+      "b": 2,
+      "kind": "either",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Gale and Dara support Orchard?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-FINAL-0052-d1-08",
+    "root_id": "SSC1-FINAL-0052",
+    "spec": {
+      "a": 3,
+      "b": 1,
+      "kind": "same",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Do Quin and Gale take the same side on Orchard?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0052-d1-09",
+    "root_id": "SSC1-FINAL-0052",
+    "spec": {
+      "a": 3,
+      "b": 1,
+      "kind": "both",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Is the Orchard proposal supported by both Quin and Gale?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-FINAL-0052-d1-10",
+    "root_id": "SSC1-FINAL-0052",
+    "spec": {
+      "a": 3,
+      "b": 1,
+      "kind": "either",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Quin and Gale support Orchard?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-FINAL-0052-d1-11",
+    "root_id": "SSC1-FINAL-0052",
+    "spec": {
+      "a": 3,
+      "b": 1,
+      "kind": "direct",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does Quin favor the Canal proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0052-d1-extra0",
+    "root_id": "SSC1-FINAL-0052",
+    "spec": {
+      "a": 3,
+      "b": 1,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Quin favor the Orchard proposal?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0052-d1-extra1",
+    "root_id": "SSC1-FINAL-0052",
+    "spec": {
+      "a": 2,
+      "b": 3,
+      "kind": "same",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Do Dara and Quin take the same side on Orchard?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0052-d1-extra2",
+    "root_id": "SSC1-FINAL-0052",
+    "spec": {
+      "a": 2,
+      "b": 3,
+      "kind": "both",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Is the Orchard proposal supported by both Dara and Quin?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-FINAL-0052-d1-extra3",
+    "root_id": "SSC1-FINAL-0052",
+    "spec": {
+      "a": 2,
+      "b": 3,
+      "kind": "either",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Dara and Quin support Orchard?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0052-d1-extra4",
+    "root_id": "SSC1-FINAL-0052",
+    "spec": {
+      "a": 0,
+      "b": 1,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Hugo favor the Orchard proposal?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  }
+]

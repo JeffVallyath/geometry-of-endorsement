@@ -1,0 +1,71 @@
+--- v2/source/icmh/parse.py
++++ LP1/source/icmh/parse.py
+@@ -1,6 +1,6 @@
+-"""Frozen scorers for ICMH1-RIPPLE-v2.
++"""Scorers for the prospective ICMH1-RIPPLE-v2-LP1 amendment.
+ 
+-Two rules only, both fixed before any model output (AMENDMENT.md section 3):
++Strict scorer unchanged; entity registry precedence amended before any model output:
+ 
+ 1. strict_line + public label/alias equality: the primary C and D correctness rule.
+    First generated line, outer whitespace removed, at most one final punctuation
+@@ -10,8 +10,12 @@
+ 2. typed full-string entity extraction: the primary A rule and the D validity/
+    distinctness rule. Apply the same line/punctuation rule, then NFKC + casefold +
+    whitespace collapse, then exact full-string match against the source entity alias
+-   registry restricted to the record's declared object_type. Exactly one entity ID
+-   must match; otherwise abstain. The gold target is never consulted.
++   registry restricted to the record's declared object_type. A source-label match
++   takes precedence over alias-only matches. Multiple source-label matches remain
++   ambiguous; if there is no label match, aliases must identify exactly one ID.
++   This is a declared interpretation convention, not a claim about model intent.
++   No target answer or per-question gold is used. build_registry_union retains v2
++   for a same-response sensitivity analysis.
+ """
+ import unicodedata
+ 
+@@ -55,7 +59,7 @@
+     return norm(processed) if processed else ''
+ 
+ 
+-def build_registry(entities, object_types=None):
++def build_registry_union(entities, object_types=None):
+     """{object_type: {normalized full string: [entity ids]}} from the source entity manifest."""
+     registry = {}
+     for entity_id, entity in entities.items():
+@@ -76,6 +80,35 @@
+     return registry
+ 
+ 
++def build_registry(entities, object_types=None):
++    """Source labels take priority; otherwise use aliases. Never consult gold.
++
++    The returned shape remains {object_type: {normalized string: [candidate IDs]}}.
++    A multi-label collision is retained as multiple IDs, so extract() abstains.
++    No entity, label, alias or type is removed from the source data.
++    """
++    labels, aliases = {}, {}
++    for entity_id, entity in entities.items():
++        for object_type in entity.get('types') or []:
++            if object_types is not None and object_type not in object_types:
++                continue
++            label_bucket = labels.setdefault(object_type, {})
++            alias_bucket = aliases.setdefault(object_type, {})
++            for field, bucket in (('labels', label_bucket), ('aliases', alias_bucket)):
++                for raw in entity.get(field) or []:
++                    key = registry_key(raw)
++                    if key:
++                        bucket.setdefault(key, set()).add(entity_id)
++    result = {}
++    for object_type in sorted(set(labels) | set(aliases)):
++        label_bucket, alias_bucket = labels.get(object_type, {}), aliases.get(object_type, {})
++        result[object_type] = {
++            key: sorted(label_bucket.get(key) or alias_bucket.get(key) or ())
++            for key in sorted(set(label_bucket) | set(alias_bucket))
++        }
++    return result
++
++
+ def extract(text, registry, object_type):
+     """Typed full-string entity extraction; abstain on empty, unmatched or ambiguous."""
+     line = strict_line(text)

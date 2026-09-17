@@ -1,0 +1,26 @@
+{
+  "schema": "A100_MQUAKE9_PHASE2_DECISION_V1",
+  "basis": "technical timing/resource evidence and prospective readiness gates only; no final outcome inspected",
+  "checks": {
+    "extractor_frozen_before_qualification": true,
+    "fidelity_spot_check_passed": true,
+    "given_facts_17_of_21": false,
+    "hardware_pass": true,
+    "nine_root_conservative_fits_16h_usd40": true,
+    "pilot_complete": true,
+    "qualification_complete_all_seven": true,
+    "reference_3_of_7": false
+  },
+  "go": false,
+  "readiness": {
+    "all_records_complete": true,
+    "given_facts_correct": 9,
+    "given_facts_measured": 21,
+    "given_facts_planned": 21,
+    "given_facts_screen_17_of_21": false,
+    "reference_screen_3_of_7": false,
+    "roots_planned": 7,
+    "roots_with_fully_qualified_reference_question": 0,
+    "status": "REFERENCE_QUALIFICATION_LIMITED"
+  }
+}

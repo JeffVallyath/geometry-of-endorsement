@@ -56,8 +56,8 @@ def test_headline_rows_are_bound_by_model_and_method_not_just_number_inventory(s
         assert f"| {r['model'].capitalize()} | {LABELS[r['group']]} | {r['count']}/{r['opportunities']} | {r['roots']}/64 |" in text
     for r in summaries['v7']:
         assert f"| {r['model'].capitalize()} | {r['seed']} | {100*r['changed']:.2f}% | {100*r['harm']:.2f}% |" in text
-    v9labels={'INV_PAIR_NLL_s0':'Constrained paired NLL seed 0','INV_PAIR_NLL_s1':'Constrained paired NLL seed 1',
-              'FREE_PAIR_CONSISTENCY_s0':'Unrestricted paired consistency seed 0','FREE_PAIR_CONSISTENCY_s1':'Unrestricted paired consistency seed 1',
+    v9labels={'INV_PAIR_NLL_s0':'Constrained likelihood-trained seed 0','INV_PAIR_NLL_s1':'Constrained likelihood-trained seed 1',
+              'FREE_PAIR_CONSISTENCY_s0':'Unrestricted consistency-trained seed 0','FREE_PAIR_CONSISTENCY_s1':'Unrestricted consistency-trained seed 1',
               'EXISTING_CORRECTION':'Existing textual correction','LATEST_SAME_WORDING':'Latest-value wording'}
     for condition,label in v9labels.items():
         g=next(r for r in summaries['v9'] if r['model']=='gemma' and r['condition']==condition)
@@ -102,10 +102,11 @@ def test_public_story_and_style_contract():
         text=(ROOT/name).read_text(encoding='utf8')
         assert '\u2014' not in text
         assert 'source-history sufficiency' in text
-        assert 'prospective confirmation' in text
+        assert re.search(r'prospective (?:confirmation|(?:matched-history )?study)', text)
         assert not re.search(r'\bmy own experiments\b|strongest unresolved test|unfinished successor is not a completed result',text,re.I)
     captions=(ROOT/'figures/CAPTIONS.md').read_text(encoding='utf8')
-    assert 'earlier V6 descriptive source-history figure, not the V10 prospective' in captions
+    assert 'earlier shared-state editing study (`V6`)' in captions
+    assert 'not the prospective confirmation' in captions
 
 
 def test_export_refuses_existing_output(tmp_path):

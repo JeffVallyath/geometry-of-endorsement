@@ -1,16 +1,25 @@
-# Compact source-history sufficiency evidence
+# Do current facts determine later answers?
+
+Exact study IDs: prospective confirmation `V10`, retrospective census `V9`,
+archival corroboration `V6`, and combined-update evidence `V7`.
+
+A benchmark case (`root` in saved records) groups starting histories that lead
+to the same intended facts. Individual-fact questions check those facts; joint
+questions combine them. A qualifying history-dependent question, called a
+`witness`, passes the specified factual and reference checks but receives
+different answers across histories.
 
 This package separates retrospective recurrence, archival corroboration and
 prospective confirmation. The quantitative interpretation is in
 [Results and Claims](../../docs/RESULTS_AND_CLAIMS.md).
 
-| Directory | Retained evidence | What can be checked here |
+| Scientific role | Exact directory | What can be checked here |
 |---|---|---|
-| v7 | Constructive triple-update summaries and all operating-point flags | Source-backed rates and preserved failed conjunctions |
-| v9 | Strong-reference first-draw census and unfiltered coherence summaries | Aggregate counts, denominators and the adverse native-final control |
-| v6 | Fixed-certificate strong-reference summaries, both answer-code draws | Archival aggregate identities and denominators |
-| v10 | Complete primary table, per-root counts, witness summaries, specification summary and selected example | Rates, root unions, strong counts, bootstrap intervals and example half-range |
-| independent_verification | Scientific projections of V10 raw scores, full case/question records, native/no-op references and saved repeats | Independent per-example eligibility, witness and interval reconstruction without original analysis imports |
+| Prospective matched-history result | `v10` | Primary rates, case counts, stronger probability-margin checks, bootstrap intervals and selected example |
+| Independent score-level verification | `independent_verification` | Factual/reference checks, qualifying questions and intervals reconstructed without original analysis imports |
+| Retrospective history-dependence census | `v9` | Aggregate counts and denominators, plus the adverse control using current facts from the start |
+| Fixed-criterion archival corroboration | `v6` | Aggregate identities and denominators using both answer formats |
+| Combined-update capability | `v7` | Triple-update rates and all pass/fail flags, including failed combined requirements |
 
 Run from the repository root with the normal CPU dependencies:
 
@@ -42,7 +51,7 @@ python -m pytest tests/test_independent_state_sufficiency.py
 
 The independent script reconstructs complete intended final tables, direct
 factual checks, answer mappings, response validity, reference eligibility,
-primary/strong witnesses, root counts and the reported bootstrap intervals.
+primary/strong witnesses, benchmark case counts and the reported bootstrap intervals.
 Its [examples](independent_verification/examples/EXAMPLES.md) expose the full
 source histories and scores behind positive, non-witness and excluded cases.
 
@@ -51,15 +60,16 @@ source histories and scores behind positive, non-witness and excluded cases.
 `provenance.json` identifies each original archive and selected member by SHA-256,
 records the selection or transformation, and hashes the compact derivative.
 Selected members were checked against their supplied archive manifests before
-curation. V9 and V6 source CSV fields remain strings in the selected summaries;
-the headline projection converts count fields to integers. V10 primary values
-are reconstructed from saved root counts, with seeds averaged within roots and
-root prevalence taken as the union over seeds. Its full opportunity denominator
+curation. The retrospective and archival source CSV fields remain strings in
+the selected summaries; the headline projection converts count fields to integers.
+The prospective study's primary values
+are reconstructed from saved benchmark case counts, with seeds averaged within benchmark cases and
+case prevalence counting every case that qualifies under at least one seed. Its full opportunity denominator
 is retained even for ineligible questions.
 
-The V7/V9/V6 entries remain aggregate summaries. The original `v10/` directory
+The combined-update, retrospective and archival entries remain aggregate summaries. The original `v10/` directory
 supports saved-count reconstruction. The added `independent_verification/`
-directory provides the lower-level V10 saved outputs needed to reconstruct
+directory provides the prospective study's lower-level saved outputs needed to reconstruct
 eligibility and witnesses independently. Its own manifest binds every derivative
 to the original archives and records field selection, hashes and row counts.
 The examples are illustrations, not prevalence estimates.
@@ -76,4 +86,6 @@ Their hashes identify the sources but do not make omitted evidence available to
 an external reproducer. Review-supported prospective chronology, exact-input
 nonoverlap and shared-checkpoint identity are not newly audited by these tests.
 No neural inference, experiment allocation or private operations logs are part
-of this package. External public-method validation has no scientific result.
+of this package. The separate [public-data in-context study](../in_context_updates/README.md)
+is completed and replayable. Conventional parameter-editor validation remains
+unresolved; it must not be conflated with the early unexecuted AlphaEdit route.

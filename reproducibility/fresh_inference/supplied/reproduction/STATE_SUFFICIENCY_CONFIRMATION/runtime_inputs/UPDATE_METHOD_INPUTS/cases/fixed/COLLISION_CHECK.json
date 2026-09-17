@@ -1,0 +1,25 @@
+{
+  "development_scenes_per_model": 8,
+  "development_selection": "8 disjoint candidate scenes covering each size/project/direction cell once",
+  "fresh_unique_sources": 328,
+  "historical_unique_sources": 2304,
+  "independent_unit": "terminal root (primary); scene (main/program); not origin/query/model/writer seed",
+  "main_per_model": 64,
+  "model_evaluations": 0,
+  "models_share_scene_designs": true,
+  "namespace": "UPDATE_COMPARISON",
+  "origins_per_root": 4,
+  "outcomes_used": false,
+  "prior_index_sha256": "d84f970d3b4ae2b19b06750f8118e150e5122e262d6c28c2d7119bb13e75e626",
+  "program_scenes_per_model": 32,
+  "program_selection": "lowest source-text SHA256 within each of 32 size/project/three-bit cells",
+  "question_mapping_seeds": {
+    "main": 260912501,
+    "origin": 260912601
+  },
+  "rejected_collisions": [],
+  "remaining_collisions": 0,
+  "seed": 260913901,
+  "terminal_roots_per_model": 64,
+  "writer_seeds_share_cases": true
+}

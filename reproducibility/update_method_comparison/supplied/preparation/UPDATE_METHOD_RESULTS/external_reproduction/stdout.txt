@@ -1,0 +1,8 @@
+PENDING -- Stage 1 worked example not yet executed.
+
+Not run during preparation: the preparation environment has no GPU (1 CPU core,
+3 GB RAM, no CUDA device) and its network allowlist blocks huggingface.co and
+download.pytorch.org, so Qwen3-8B could be neither downloaded nor loaded.
+
+This is an integration boundary, not a scientific result. No claim is made here
+about whether the published method succeeds or fails.

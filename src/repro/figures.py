@@ -59,10 +59,10 @@ def plot_editing(module):
     for name, key, title, xlabel, footer, limits in (
         ('supplementary/figS1_editing_coverage', 'coverage', 'Does broader single-edit training help later sequences?',
          'Broader minus narrower training (percentage points)',
-         'All-question success after two / three edits; 98.75% paired scene intervals.\nRelative gains do not establish reliable joint control.', (-20, 50)),
+         'All-question success after two / three edits; 98.75% paired situation intervals.\nRelative gains do not establish reliable joint control.', (-20, 50)),
         ('supplementary/figS2_fixed_readers', 'readers', 'Does changing the question improve answers from the same edited state?',
          'Alternative minus original question (percentage points)',
-         'Same-side question accuracy after three edits; 99.375% paired scene intervals.\nExplicit-rule questions add instructions. Crossing zero does not establish equivalence.', (-36, 14)),
+         'Same-side question accuracy after three edits; 99.375% paired situation intervals.\nExplicit-rule questions add instructions. Crossing zero does not establish equivalence.', (-36, 14)),
     ):
         rows = data[key]
         fig, ax = plt.subplots(figsize=(8, 3.6 if key == 'coverage' else 5.2))
@@ -86,7 +86,7 @@ def plot_editing(module):
         ax.set_xlabel(xlabel)
         ax.set_title(title, loc='left', pad=12, fontsize=10)
         ax.legend(handles=legends, loc='upper center', bbox_to_anchor=(.5, -.21 if key == 'coverage' else -.13), ncol=3)
-        fig.text(.5, .015, footer + '\nGemma: 64 scenes; Qwen: 32 scenes. Models and studies are not pooled.', ha='center', va='bottom', fontsize=7)
+        fig.text(.5, .015, footer + '\nGemma: 64 synthetic situations; Qwen: 32. Models and studies are not pooled.', ha='center', va='bottom', fontsize=7)
         fig.tight_layout(rect=(0, .18 if key == 'coverage' else .14, 1, 1))
         module.save(fig, name)
     (module.OUT / 'editing_comparisons.json').write_text(json.dumps(data, indent=2) + '\n', encoding='utf8', newline='\n')
@@ -107,5 +107,13 @@ def reproduce(output: Path) -> dict:
     plot(module)
     from .source_history_figure import plot as plot_source_history
     plot_source_history(module)
+    from .cache_crossover_figure import plot as plot_cache_crossover
+    plot_cache_crossover(module)
+    extension_spec = importlib.util.spec_from_file_location('cache_crossover_extension_plot', ROOT / 'scripts/plot_cache_crossover.py')
+    extension = importlib.util.module_from_spec(extension_spec)
+    extension_spec.loader.exec_module(extension)
+    extension.plot(module)
+    from .update_methods_figure import plot as plot_update_methods
+    plot_update_methods(module)
     return {"status": "figures_regenerated", "output": str(destination),
             "scope": "committed figure source data; no model inference"}

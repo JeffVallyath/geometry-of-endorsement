@@ -1,4 +1,8 @@
-"""Package the figures with everything needed to regenerate them.
+"""Historical representation-only packager: Figures 1 through 5.
+
+This is not the current paper figure export. Use `python -m repro figures`
+for the complete current inventory. The shared captions include later figures
+that this historical archive intentionally does not contain.
 
 Bundles the rendered figures, their captions, both scripts, the frozen figure
 data, and a manifest recording SHA-256 of every member plus the git commit and
@@ -20,16 +24,16 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 
 MEMBERS = [
-    "figures/fig1_layer_sweep.pdf",
-    "figures/fig1_layer_sweep.png",
-    "figures/fig2_scorer_comparison.pdf",
-    "figures/fig2_scorer_comparison.png",
-    "figures/fig3_permutation_null.pdf",
-    "figures/fig3_permutation_null.png",
-    "figures/fig4_truth_control.pdf",
-    "figures/fig4_truth_control.png",
-    "figures/fig5_specificity.pdf",
-    "figures/fig5_specificity.png",
+    "figures/fig01_layer_sweep.pdf",
+    "figures/fig01_layer_sweep.png",
+    "figures/fig02_scorer_comparison.pdf",
+    "figures/fig02_scorer_comparison.png",
+    "figures/fig03_permutation_null.pdf",
+    "figures/fig03_permutation_null.png",
+    "figures/fig04_truth_control.pdf",
+    "figures/fig04_truth_control.png",
+    "figures/fig05_specificity.pdf",
+    "figures/fig05_specificity.png",
     "figures/CAPTIONS.md",
     "scripts/build_figure_data.py",
     "scripts/make_figures.py",
@@ -72,6 +76,7 @@ def main() -> None:
 
     data = json.loads((ROOT / "artifacts/figures/figure_data.json").read_text(encoding="utf-8"))
     manifest = {
+        "scope": "historical representation Figures 1-5 only; shared captions also describe excluded later figures",
         "created": date.today().isoformat(),
         "repository": "JeffVallyath/geometry-of-endorsement",
         "git_commit": git("rev-parse", "HEAD"),

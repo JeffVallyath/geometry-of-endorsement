@@ -1,0 +1,580 @@
+[
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0035-d0-00",
+    "root_id": "SSC1-FINAL-0035",
+    "spec": {
+      "a": 2,
+      "b": 3,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Bela favor the Theater proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0035-d0-01",
+    "root_id": "SSC1-FINAL-0035",
+    "spec": {
+      "a": 2,
+      "b": 3,
+      "kind": "opposes",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Bela oppose the Theater proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0035-d0-02",
+    "root_id": "SSC1-FINAL-0035",
+    "spec": {
+      "a": 2,
+      "b": 3,
+      "kind": "same",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Do Bela and Ada take the same side on Theater?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0035-d0-03",
+    "root_id": "SSC1-FINAL-0035",
+    "spec": {
+      "a": 3,
+      "b": 2,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Ada favor the Theater proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0035-d0-04",
+    "root_id": "SSC1-FINAL-0035",
+    "spec": {
+      "a": 3,
+      "b": 2,
+      "kind": "opposes",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Ada oppose the Theater proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0035-d0-05",
+    "root_id": "SSC1-FINAL-0035",
+    "spec": {
+      "a": 2,
+      "b": 3,
+      "kind": "direct",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does Bela favor the Garden proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0035-d0-06",
+    "root_id": "SSC1-FINAL-0035",
+    "spec": {
+      "a": 2,
+      "b": 3,
+      "kind": "both",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Is the Theater proposal supported by both Bela and Ada?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0035-d0-07",
+    "root_id": "SSC1-FINAL-0035",
+    "spec": {
+      "a": 2,
+      "b": 3,
+      "kind": "either",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Bela and Ada support Theater?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0035-d0-08",
+    "root_id": "SSC1-FINAL-0035",
+    "spec": {
+      "a": 4,
+      "b": 2,
+      "kind": "same",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Do Gita and Bela take the same side on Theater?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0035-d0-09",
+    "root_id": "SSC1-FINAL-0035",
+    "spec": {
+      "a": 4,
+      "b": 2,
+      "kind": "both",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Is the Theater proposal supported by both Gita and Bela?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0035-d0-10",
+    "root_id": "SSC1-FINAL-0035",
+    "spec": {
+      "a": 4,
+      "b": 2,
+      "kind": "either",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Gita and Bela support Theater?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0035-d0-11",
+    "root_id": "SSC1-FINAL-0035",
+    "spec": {
+      "a": 4,
+      "b": 2,
+      "kind": "direct",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does Gita favor the Garden proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0035-d0-extra0",
+    "root_id": "SSC1-FINAL-0035",
+    "spec": {
+      "a": 4,
+      "b": 2,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Gita favor the Theater proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0035-d0-extra1",
+    "root_id": "SSC1-FINAL-0035",
+    "spec": {
+      "a": 3,
+      "b": 4,
+      "kind": "same",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Do Ada and Gita take the same side on Theater?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0035-d0-extra2",
+    "root_id": "SSC1-FINAL-0035",
+    "spec": {
+      "a": 3,
+      "b": 4,
+      "kind": "both",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Is the Theater proposal supported by both Ada and Gita?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0035-d0-extra3",
+    "root_id": "SSC1-FINAL-0035",
+    "spec": {
+      "a": 3,
+      "b": 4,
+      "kind": "either",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Ada and Gita support Theater?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0035-d0-extra4",
+    "root_id": "SSC1-FINAL-0035",
+    "spec": {
+      "a": 5,
+      "b": 2,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Hugo favor the Theater proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0035-d1-00",
+    "root_id": "SSC1-FINAL-0035",
+    "spec": {
+      "a": 2,
+      "b": 3,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Bela favor the Theater proposal?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-FINAL-0035-d1-01",
+    "root_id": "SSC1-FINAL-0035",
+    "spec": {
+      "a": 2,
+      "b": 3,
+      "kind": "opposes",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Bela oppose the Theater proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0035-d1-02",
+    "root_id": "SSC1-FINAL-0035",
+    "spec": {
+      "a": 2,
+      "b": 3,
+      "kind": "same",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Do Bela and Ada take the same side on Theater?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-FINAL-0035-d1-03",
+    "root_id": "SSC1-FINAL-0035",
+    "spec": {
+      "a": 3,
+      "b": 2,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Ada favor the Theater proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0035-d1-04",
+    "root_id": "SSC1-FINAL-0035",
+    "spec": {
+      "a": 3,
+      "b": 2,
+      "kind": "opposes",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Ada oppose the Theater proposal?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0035-d1-05",
+    "root_id": "SSC1-FINAL-0035",
+    "spec": {
+      "a": 2,
+      "b": 3,
+      "kind": "direct",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does Bela favor the Garden proposal?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-FINAL-0035-d1-06",
+    "root_id": "SSC1-FINAL-0035",
+    "spec": {
+      "a": 2,
+      "b": 3,
+      "kind": "both",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Is the Theater proposal supported by both Bela and Ada?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0035-d1-07",
+    "root_id": "SSC1-FINAL-0035",
+    "spec": {
+      "a": 2,
+      "b": 3,
+      "kind": "either",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Bela and Ada support Theater?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-FINAL-0035-d1-08",
+    "root_id": "SSC1-FINAL-0035",
+    "spec": {
+      "a": 4,
+      "b": 2,
+      "kind": "same",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Do Gita and Bela take the same side on Theater?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-FINAL-0035-d1-09",
+    "root_id": "SSC1-FINAL-0035",
+    "spec": {
+      "a": 4,
+      "b": 2,
+      "kind": "both",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Is the Theater proposal supported by both Gita and Bela?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0035-d1-10",
+    "root_id": "SSC1-FINAL-0035",
+    "spec": {
+      "a": 4,
+      "b": 2,
+      "kind": "either",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Gita and Bela support Theater?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0035-d1-11",
+    "root_id": "SSC1-FINAL-0035",
+    "spec": {
+      "a": 4,
+      "b": 2,
+      "kind": "direct",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does Gita favor the Garden proposal?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0035-d1-extra0",
+    "root_id": "SSC1-FINAL-0035",
+    "spec": {
+      "a": 4,
+      "b": 2,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Gita favor the Theater proposal?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0035-d1-extra1",
+    "root_id": "SSC1-FINAL-0035",
+    "spec": {
+      "a": 3,
+      "b": 4,
+      "kind": "same",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Do Ada and Gita take the same side on Theater?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0035-d1-extra2",
+    "root_id": "SSC1-FINAL-0035",
+    "spec": {
+      "a": 3,
+      "b": 4,
+      "kind": "both",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Is the Theater proposal supported by both Ada and Gita?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0035-d1-extra3",
+    "root_id": "SSC1-FINAL-0035",
+    "spec": {
+      "a": 3,
+      "b": 4,
+      "kind": "either",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Ada and Gita support Theater?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-FINAL-0035-d1-extra4",
+    "root_id": "SSC1-FINAL-0035",
+    "spec": {
+      "a": 5,
+      "b": 2,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Hugo favor the Theater proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  }
+]

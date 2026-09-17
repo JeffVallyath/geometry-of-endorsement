@@ -1,0 +1,580 @@
+[
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0024-d0-00",
+    "root_id": "SSC1-FINAL-0024",
+    "spec": {
+      "a": 3,
+      "b": 0,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Luca favor the Gallery proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0024-d0-01",
+    "root_id": "SSC1-FINAL-0024",
+    "spec": {
+      "a": 3,
+      "b": 0,
+      "kind": "opposes",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Luca oppose the Gallery proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0024-d0-02",
+    "root_id": "SSC1-FINAL-0024",
+    "spec": {
+      "a": 3,
+      "b": 0,
+      "kind": "same",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Do Luca and Dion take the same side on Gallery?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0024-d0-03",
+    "root_id": "SSC1-FINAL-0024",
+    "spec": {
+      "a": 0,
+      "b": 3,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Dion favor the Gallery proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0024-d0-04",
+    "root_id": "SSC1-FINAL-0024",
+    "spec": {
+      "a": 0,
+      "b": 3,
+      "kind": "opposes",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Dion oppose the Gallery proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0024-d0-05",
+    "root_id": "SSC1-FINAL-0024",
+    "spec": {
+      "a": 3,
+      "b": 0,
+      "kind": "direct",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does Luca favor the Theater proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0024-d0-06",
+    "root_id": "SSC1-FINAL-0024",
+    "spec": {
+      "a": 3,
+      "b": 0,
+      "kind": "both",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Is the Gallery proposal supported by both Luca and Dion?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0024-d0-07",
+    "root_id": "SSC1-FINAL-0024",
+    "spec": {
+      "a": 3,
+      "b": 0,
+      "kind": "either",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Luca and Dion support Gallery?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0024-d0-08",
+    "root_id": "SSC1-FINAL-0024",
+    "spec": {
+      "a": 1,
+      "b": 3,
+      "kind": "same",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Do Ari and Luca take the same side on Gallery?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0024-d0-09",
+    "root_id": "SSC1-FINAL-0024",
+    "spec": {
+      "a": 1,
+      "b": 3,
+      "kind": "both",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Is the Gallery proposal supported by both Ari and Luca?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0024-d0-10",
+    "root_id": "SSC1-FINAL-0024",
+    "spec": {
+      "a": 1,
+      "b": 3,
+      "kind": "either",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Ari and Luca support Gallery?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0024-d0-11",
+    "root_id": "SSC1-FINAL-0024",
+    "spec": {
+      "a": 1,
+      "b": 3,
+      "kind": "direct",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does Ari favor the Theater proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0024-d0-extra0",
+    "root_id": "SSC1-FINAL-0024",
+    "spec": {
+      "a": 1,
+      "b": 3,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Ari favor the Gallery proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0024-d0-extra1",
+    "root_id": "SSC1-FINAL-0024",
+    "spec": {
+      "a": 0,
+      "b": 1,
+      "kind": "same",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Do Dion and Ari take the same side on Gallery?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0024-d0-extra2",
+    "root_id": "SSC1-FINAL-0024",
+    "spec": {
+      "a": 0,
+      "b": 1,
+      "kind": "both",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Is the Gallery proposal supported by both Dion and Ari?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0024-d0-extra3",
+    "root_id": "SSC1-FINAL-0024",
+    "spec": {
+      "a": 0,
+      "b": 1,
+      "kind": "either",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Dion and Ari support Gallery?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0024-d0-extra4",
+    "root_id": "SSC1-FINAL-0024",
+    "spec": {
+      "a": 2,
+      "b": 3,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Dara favor the Gallery proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0024-d1-00",
+    "root_id": "SSC1-FINAL-0024",
+    "spec": {
+      "a": 3,
+      "b": 0,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Luca favor the Gallery proposal?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0024-d1-01",
+    "root_id": "SSC1-FINAL-0024",
+    "spec": {
+      "a": 3,
+      "b": 0,
+      "kind": "opposes",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Luca oppose the Gallery proposal?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-FINAL-0024-d1-02",
+    "root_id": "SSC1-FINAL-0024",
+    "spec": {
+      "a": 3,
+      "b": 0,
+      "kind": "same",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Do Luca and Dion take the same side on Gallery?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0024-d1-03",
+    "root_id": "SSC1-FINAL-0024",
+    "spec": {
+      "a": 0,
+      "b": 3,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Dion favor the Gallery proposal?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-FINAL-0024-d1-04",
+    "root_id": "SSC1-FINAL-0024",
+    "spec": {
+      "a": 0,
+      "b": 3,
+      "kind": "opposes",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Dion oppose the Gallery proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-FINAL-0024-d1-05",
+    "root_id": "SSC1-FINAL-0024",
+    "spec": {
+      "a": 3,
+      "b": 0,
+      "kind": "direct",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does Luca favor the Theater proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-FINAL-0024-d1-06",
+    "root_id": "SSC1-FINAL-0024",
+    "spec": {
+      "a": 3,
+      "b": 0,
+      "kind": "both",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Is the Gallery proposal supported by both Luca and Dion?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-FINAL-0024-d1-07",
+    "root_id": "SSC1-FINAL-0024",
+    "spec": {
+      "a": 3,
+      "b": 0,
+      "kind": "either",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Luca and Dion support Gallery?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-FINAL-0024-d1-08",
+    "root_id": "SSC1-FINAL-0024",
+    "spec": {
+      "a": 1,
+      "b": 3,
+      "kind": "same",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Do Ari and Luca take the same side on Gallery?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-FINAL-0024-d1-09",
+    "root_id": "SSC1-FINAL-0024",
+    "spec": {
+      "a": 1,
+      "b": 3,
+      "kind": "both",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Is the Gallery proposal supported by both Ari and Luca?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0024-d1-10",
+    "root_id": "SSC1-FINAL-0024",
+    "spec": {
+      "a": 1,
+      "b": 3,
+      "kind": "either",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Ari and Luca support Gallery?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-FINAL-0024-d1-11",
+    "root_id": "SSC1-FINAL-0024",
+    "spec": {
+      "a": 1,
+      "b": 3,
+      "kind": "direct",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does Ari favor the Theater proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0024-d1-extra0",
+    "root_id": "SSC1-FINAL-0024",
+    "spec": {
+      "a": 1,
+      "b": 3,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Ari favor the Gallery proposal?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0024-d1-extra1",
+    "root_id": "SSC1-FINAL-0024",
+    "spec": {
+      "a": 0,
+      "b": 1,
+      "kind": "same",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Do Dion and Ari take the same side on Gallery?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-FINAL-0024-d1-extra2",
+    "root_id": "SSC1-FINAL-0024",
+    "spec": {
+      "a": 0,
+      "b": 1,
+      "kind": "both",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Is the Gallery proposal supported by both Dion and Ari?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-FINAL-0024-d1-extra3",
+    "root_id": "SSC1-FINAL-0024",
+    "spec": {
+      "a": 0,
+      "b": 1,
+      "kind": "either",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Dion and Ari support Gallery?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0024-d1-extra4",
+    "root_id": "SSC1-FINAL-0024",
+    "spec": {
+      "a": 2,
+      "b": 3,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Dara favor the Gallery proposal?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  }
+]

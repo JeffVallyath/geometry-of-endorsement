@@ -1,0 +1,1051 @@
+{
+  "status": "SAVED_BEHAVIOR_VERIFIED_NO_NEW_NEURAL_EXECUTION",
+  "root_id": "SSC1-FINAL-0035",
+  "condition": "INV_PAIR_NLL_s1",
+  "primary_query_id": "SSC1-FINAL-0035-d0-extra3",
+  "alternate_query_id": "SSC1-FINAL-0035-d1-extra3",
+  "six_question_ids": [
+    "SSC1-FINAL-0035-d0-extra3",
+    "SSC1-FINAL-0035-d0-03",
+    "SSC1-FINAL-0035-d0-extra0",
+    "SSC1-FINAL-0035-d1-extra3",
+    "SSC1-FINAL-0035-d1-03",
+    "SSC1-FINAL-0035-d1-extra0"
+  ],
+  "origin_A": 3,
+  "origin_B": 5,
+  "gold_joint": 0,
+  "semantic_question": "Does at least one of Ada and Gita support Theater?\nAnswer with exactly one of No, Yes.",
+  "unique_strong_jointly_matched_survivor_for_existing_gemma_s1": true,
+  "original_robustness_ledger_entry": {
+    "root_id": "SSC1-FINAL-0035",
+    "model": "gemma",
+    "condition": "INV_PAIR_NLL_s1",
+    "group": "INV_PAIR_NLL",
+    "semantic_spec": {
+      "a": 3,
+      "b": 4,
+      "kind": "either",
+      "p": 0
+    },
+    "query_ids": [
+      "SSC1-FINAL-0035-d0-extra3",
+      "SSC1-FINAL-0035-d1-extra3"
+    ],
+    "AC_both_codes": true,
+    "both_matched_codes": true,
+    "both_strong_codes": true,
+    "pairs": {
+      "both": [
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          3,
+          6
+        ]
+      ],
+      "both_strong": [
+        [
+          3,
+          5
+        ]
+      ]
+    }
+  },
+  "source_bindings": {
+    "completed_results_archive_sha256": "fc6f8c3eed7bfca435fc1042453bfb2e44874a3179fda4e950ba95416d18b5e2",
+    "design_relative_to_run_payload": "inputs/c04f228f6e9475e3d775dfd055d3bea28e47a1fcb7e1212a5140b724427454f2/inputs/88fffa074a0c514fdb7898f2fecba404c01ad6a6c237b32b549831388a1e0f7a/evidence/47b42f5b5619b6f7c34c544ff5cfdf1e0f2228c9de3d8c1e362c37f6cf69ea15/snapshot/reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0035.json",
+    "design_sha256": "68483830c6debf24fd4bc0fe1799ed4407a032215ddd7d1e836c1c978fe0349b",
+    "scores_relative_to_run_payload": "inputs/c04f228f6e9475e3d775dfd055d3bea28e47a1fcb7e1212a5140b724427454f2/inputs/88fffa074a0c514fdb7898f2fecba404c01ad6a6c237b32b549831388a1e0f7a/evidence/47b42f5b5619b6f7c34c544ff5cfdf1e0f2228c9de3d8c1e362c37f6cf69ea15/snapshot/reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0035/core.json.gz",
+    "scores_sha256": "959723bb54c98cb6bc52cc0568fc4f525a77892fea792c33152731a43c38fec9",
+    "robustness_ledger_relative_to_run_payload": "inputs/c04f228f6e9475e3d775dfd055d3bea28e47a1fcb7e1212a5140b724427454f2/outputs/robustness-001/cross_code_pairs.json",
+    "robustness_ledger_sha256": "74cb8578167bfdab71df4444d1f4c9cb7f9793f353baa3b5ae3d77bcaf2f244f"
+  },
+  "histories": [
+    {
+      "origin": 3,
+      "actual_changed_facts": 2,
+      "prefix_tokens": 517,
+      "last_eight_ids": [
+        17017,
+        235265,
+        108,
+        3898,
+        576,
+        9126,
+        235265,
+        108
+      ],
+      "questions": [
+        {
+          "query_id": "SSC1-FINAL-0035-d0-extra3",
+          "labels_no_yes": [
+            "No",
+            "Yes"
+          ],
+          "semantic_spec": {
+            "a": 3,
+            "b": 4,
+            "kind": "either",
+            "p": 0
+          },
+          "gold": 0,
+          "raw_logps_no_yes": [
+            -6.015367031097412,
+            -0.002810815814882517
+          ],
+          "p_yes": 0.9975581541926914,
+          "p_correct": 0.0024418458073085514,
+          "tokens": {
+            "full_prompt_sha256": "3b1abff007dc334292690978c123cf71cae796c6a2432145951ec94706d0b574",
+            "label_token_ids": [
+              1294,
+              3553
+            ],
+            "question_sha256": "6f0dcb50ca46c3fbbcdb3cea39b92066d3f1951b36ddd5fb3ab892c494567f4f",
+            "suffix_ids": [
+              11227,
+              696,
+              3476,
+              974,
+              576,
+              32839,
+              578,
+              153988,
+              2676,
+              32308,
+              235336,
+              108,
+              1261,
+              675,
+              7880,
+              974,
+              576,
+              1307,
+              235269,
+              6287,
+              235265,
+              108,
+              1946,
+              675,
+              1297,
+              674,
+              3448,
+              611,
+              573,
+              1370,
+              2017,
+              235265,
+              107,
+              108,
+              106,
+              2516,
+              108
+            ]
+          },
+          "recorded_checks": {
+            "answer_mass": 0.9996340831239798,
+            "argmax_in_labels": true,
+            "finite": true,
+            "prediction": 1,
+            "tie": false,
+            "tokens_sha256": "a8e7a34e376654a6a9475ec91d59b59ce6ef20850b414aeff50759a1590bdf37",
+            "valid": true
+          }
+        },
+        {
+          "query_id": "SSC1-FINAL-0035-d0-03",
+          "labels_no_yes": [
+            "No",
+            "Yes"
+          ],
+          "semantic_spec": {
+            "a": 3,
+            "b": 2,
+            "kind": "direct",
+            "p": 0
+          },
+          "gold": 0,
+          "raw_logps_no_yes": [
+            -0.001086479052901268,
+            -7.06332540512085
+          ],
+          "p_yes": 0.0008561239279326381,
+          "p_correct": 0.9991438760720673,
+          "tokens": {
+            "full_prompt_sha256": "1b303f5b389bcdbaaaf987a60835294b03884befb9d60f27a234f6d8a77483b4",
+            "label_token_ids": [
+              1294,
+              3553
+            ],
+            "question_sha256": "44c3becb71611ec066ab8818673017b502d29cb3581635254df680828cca3e6e",
+            "suffix_ids": [
+              11227,
+              32839,
+              4287,
+              573,
+              32308,
+              17017,
+              235336,
+              108,
+              1261,
+              675,
+              7880,
+              974,
+              576,
+              1307,
+              235269,
+              6287,
+              235265,
+              108,
+              1946,
+              675,
+              1297,
+              674,
+              3448,
+              611,
+              573,
+              1370,
+              2017,
+              235265,
+              107,
+              108,
+              106,
+              2516,
+              108
+            ]
+          },
+          "recorded_checks": {
+            "answer_mass": 0.9997700380037348,
+            "argmax_in_labels": true,
+            "finite": true,
+            "prediction": 0,
+            "tie": false,
+            "tokens_sha256": "32f426c00e2998ba1de9363445095b9ee2ea2e74e36e331c1675a66557bc00c1",
+            "valid": true
+          }
+        },
+        {
+          "query_id": "SSC1-FINAL-0035-d0-extra0",
+          "labels_no_yes": [
+            "No",
+            "Yes"
+          ],
+          "semantic_spec": {
+            "a": 4,
+            "b": 2,
+            "kind": "direct",
+            "p": 0
+          },
+          "gold": 0,
+          "raw_logps_no_yes": [
+            -8.964136941358447e-05,
+            -9.948188781738281
+          ],
+          "p_yes": 4.781615725622684e-05,
+          "p_correct": 0.9999521838427438,
+          "tokens": {
+            "full_prompt_sha256": "351120f16398ede9e44a7f53a1cf53581df5ac2070e6b3176833a5da72eacee9",
+            "label_token_ids": [
+              1294,
+              3553
+            ],
+            "question_sha256": "3287f5ef12c44ad298f3352d7a2352f7f8c909deed5db3144a5553210691d6db",
+            "suffix_ids": [
+              11227,
+              153988,
+              4287,
+              573,
+              32308,
+              17017,
+              235336,
+              108,
+              1261,
+              675,
+              7880,
+              974,
+              576,
+              1307,
+              235269,
+              6287,
+              235265,
+              108,
+              1946,
+              675,
+              1297,
+              674,
+              3448,
+              611,
+              573,
+              1370,
+              2017,
+              235265,
+              107,
+              108,
+              106,
+              2516,
+              108
+            ]
+          },
+          "recorded_checks": {
+            "answer_mass": 0.9999581768056858,
+            "argmax_in_labels": true,
+            "finite": true,
+            "prediction": 0,
+            "tie": false,
+            "tokens_sha256": "ba86ab02b9cdbd1e3e46ff3978344eb29dca1b0f01e9a24858d22dff024c8f27",
+            "valid": true
+          }
+        },
+        {
+          "query_id": "SSC1-FINAL-0035-d1-extra3",
+          "labels_no_yes": [
+            "B",
+            "A"
+          ],
+          "semantic_spec": {
+            "a": 3,
+            "b": 4,
+            "kind": "either",
+            "p": 0
+          },
+          "gold": 0,
+          "raw_logps_no_yes": [
+            -4.390910625457764,
+            -0.014188248664140701
+          ],
+          "p_yes": 0.9875894771993412,
+          "p_correct": 0.012410522800658796,
+          "tokens": {
+            "full_prompt_sha256": "555287940c64f114bc039a3051a360885a0ccfcdc9cfec35dd76383963be3ef2",
+            "label_token_ids": [
+              235305,
+              235280
+            ],
+            "question_sha256": "d3f663e2a5f08c4144fd965d8073e47fc1dfea0e802e1bdc1f01bf7e71cbfc71",
+            "suffix_ids": [
+              11227,
+              696,
+              3476,
+              974,
+              576,
+              32839,
+              578,
+              153988,
+              2676,
+              32308,
+              235336,
+              108,
+              7056,
+              586,
+              604,
+              7778,
+              578,
+              599,
+              604,
+              793,
+              235265,
+              108,
+              1261,
+              675,
+              7880,
+              974,
+              576,
+              599,
+              235269,
+              586,
+              235265,
+              108,
+              1946,
+              675,
+              1297,
+              674,
+              3448,
+              611,
+              573,
+              1370,
+              2017,
+              235265,
+              107,
+              108,
+              106,
+              2516,
+              108
+            ]
+          },
+          "recorded_checks": {
+            "answer_mass": 0.9983013721295334,
+            "argmax_in_labels": true,
+            "finite": true,
+            "prediction": 1,
+            "tie": false,
+            "tokens_sha256": "6d4b2c3fc664553bd7d7189a3c1cc3a1fbe2a1f90b90fbf0618448fa5a184072",
+            "valid": true
+          }
+        },
+        {
+          "query_id": "SSC1-FINAL-0035-d1-03",
+          "labels_no_yes": [
+            "A",
+            "B"
+          ],
+          "semantic_spec": {
+            "a": 3,
+            "b": 2,
+            "kind": "direct",
+            "p": 0
+          },
+          "gold": 0,
+          "raw_logps_no_yes": [
+            -0.0008206575294025242,
+            -8.814061164855957
+          ],
+          "p_yes": 0.0001487283237700359,
+          "p_correct": 0.99985127167623,
+          "tokens": {
+            "full_prompt_sha256": "57914ff4a25d8233bcf4dbbec51d0b3560674b4a2f9095871c79d1ee27e68f5c",
+            "label_token_ids": [
+              235280,
+              235305
+            ],
+            "question_sha256": "66a5db1d295b3d9f6c023d2f4a183e2b4e8bfc3241911e6f5114858d39cb7a59",
+            "suffix_ids": [
+              11227,
+              32839,
+              4287,
+              573,
+              32308,
+              17017,
+              235336,
+              108,
+              7056,
+              599,
+              604,
+              7778,
+              578,
+              586,
+              604,
+              793,
+              235265,
+              108,
+              1261,
+              675,
+              7880,
+              974,
+              576,
+              586,
+              235269,
+              599,
+              235265,
+              108,
+              1946,
+              675,
+              1297,
+              674,
+              3448,
+              611,
+              573,
+              1370,
+              2017,
+              235265,
+              107,
+              108,
+              106,
+              2516,
+              108
+            ]
+          },
+          "recorded_checks": {
+            "answer_mass": 0.9993283075419674,
+            "argmax_in_labels": true,
+            "finite": true,
+            "prediction": 0,
+            "tie": false,
+            "tokens_sha256": "e8d73e000b04348c1d333c8a1d79a1cee6b2e4b451ac162af6926d6e20ca208d",
+            "valid": true
+          }
+        },
+        {
+          "query_id": "SSC1-FINAL-0035-d1-extra0",
+          "labels_no_yes": [
+            "B",
+            "A"
+          ],
+          "semantic_spec": {
+            "a": 4,
+            "b": 2,
+            "kind": "direct",
+            "p": 0
+          },
+          "gold": 0,
+          "raw_logps_no_yes": [
+            -0.0004094000905752182,
+            -9.294142723083496
+          ],
+          "p_yes": 9.199049350535673e-05,
+          "p_correct": 0.9999080095064946,
+          "tokens": {
+            "full_prompt_sha256": "4d8789e2e38e15393414bbfdfc606a1f1b728297a023cd92227f2f4c5d02e48b",
+            "label_token_ids": [
+              235305,
+              235280
+            ],
+            "question_sha256": "2ddc022d149139d2635caff7a881af85b47e9d70024396147f66fc41cf4444a4",
+            "suffix_ids": [
+              11227,
+              153988,
+              4287,
+              573,
+              32308,
+              17017,
+              235336,
+              108,
+              7056,
+              586,
+              604,
+              7778,
+              578,
+              599,
+              604,
+              793,
+              235265,
+              108,
+              1261,
+              675,
+              7880,
+              974,
+              576,
+              599,
+              235269,
+              586,
+              235265,
+              108,
+              1946,
+              675,
+              1297,
+              674,
+              3448,
+              611,
+              573,
+              1370,
+              2017,
+              235265,
+              107,
+              108,
+              106,
+              2516,
+              108
+            ]
+          },
+          "recorded_checks": {
+            "answer_mass": 0.9996826450020689,
+            "argmax_in_labels": true,
+            "finite": true,
+            "prediction": 0,
+            "tie": false,
+            "tokens_sha256": "c5d0ccca3405cdbac17665a78c4aafcd97a740587abc51f956c5ee848441c7ea",
+            "valid": true
+          }
+        }
+      ]
+    },
+    {
+      "origin": 5,
+      "actual_changed_facts": 2,
+      "prefix_tokens": 517,
+      "last_eight_ids": [
+        17017,
+        235265,
+        108,
+        3898,
+        576,
+        9126,
+        235265,
+        108
+      ],
+      "questions": [
+        {
+          "query_id": "SSC1-FINAL-0035-d0-extra3",
+          "labels_no_yes": [
+            "No",
+            "Yes"
+          ],
+          "semantic_spec": {
+            "a": 3,
+            "b": 4,
+            "kind": "either",
+            "p": 0
+          },
+          "gold": 0,
+          "raw_logps_no_yes": [
+            -0.04742998257279396,
+            -3.1022891998291016
+          ],
+          "p_yes": 0.04500815020089124,
+          "p_correct": 0.9549918497991088,
+          "tokens": {
+            "full_prompt_sha256": "5ecbcf0a5f369f7ed295b8d0780ac9d288cf985c042d05d0c537263587f807ac",
+            "label_token_ids": [
+              1294,
+              3553
+            ],
+            "question_sha256": "6f0dcb50ca46c3fbbcdb3cea39b92066d3f1951b36ddd5fb3ab892c494567f4f",
+            "suffix_ids": [
+              11227,
+              696,
+              3476,
+              974,
+              576,
+              32839,
+              578,
+              153988,
+              2676,
+              32308,
+              235336,
+              108,
+              1261,
+              675,
+              7880,
+              974,
+              576,
+              1307,
+              235269,
+              6287,
+              235265,
+              108,
+              1946,
+              675,
+              1297,
+              674,
+              3448,
+              611,
+              573,
+              1370,
+              2017,
+              235265,
+              107,
+              108,
+              106,
+              2516,
+              108
+            ]
+          },
+          "recorded_checks": {
+            "answer_mass": 0.9986234385379207,
+            "argmax_in_labels": true,
+            "finite": true,
+            "prediction": 0,
+            "tie": false,
+            "tokens_sha256": "e98f5b2a3b33b9eae42199222e0a761a576b2c3983b6868ca708d04f3f3059b3",
+            "valid": true
+          }
+        },
+        {
+          "query_id": "SSC1-FINAL-0035-d0-03",
+          "labels_no_yes": [
+            "No",
+            "Yes"
+          ],
+          "semantic_spec": {
+            "a": 3,
+            "b": 2,
+            "kind": "direct",
+            "p": 0
+          },
+          "gold": 0,
+          "raw_logps_no_yes": [
+            -0.00014625910262111574,
+            -9.363778114318848
+          ],
+          "p_yes": 8.578060383980778e-05,
+          "p_correct": 0.9999142193961602,
+          "tokens": {
+            "full_prompt_sha256": "cc288ee6e172e145b0a2be633b9be62702e55e4911b3c43242d094098d568cb1",
+            "label_token_ids": [
+              1294,
+              3553
+            ],
+            "question_sha256": "44c3becb71611ec066ab8818673017b502d29cb3581635254df680828cca3e6e",
+            "suffix_ids": [
+              11227,
+              32839,
+              4287,
+              573,
+              32308,
+              17017,
+              235336,
+              108,
+              1261,
+              675,
+              7880,
+              974,
+              576,
+              1307,
+              235269,
+              6287,
+              235265,
+              108,
+              1946,
+              675,
+              1297,
+              674,
+              3448,
+              611,
+              573,
+              1370,
+              2017,
+              235265,
+              107,
+              108,
+              106,
+              2516,
+              108
+            ]
+          },
+          "recorded_checks": {
+            "answer_mass": 0.9999395270091502,
+            "argmax_in_labels": true,
+            "finite": true,
+            "prediction": 0,
+            "tie": false,
+            "tokens_sha256": "354ac6c51548351e0ea45eb8dbcc40643b246c792205460686f9f09720a8c51a",
+            "valid": true
+          }
+        },
+        {
+          "query_id": "SSC1-FINAL-0035-d0-extra0",
+          "labels_no_yes": [
+            "No",
+            "Yes"
+          ],
+          "semantic_spec": {
+            "a": 4,
+            "b": 2,
+            "kind": "direct",
+            "p": 0
+          },
+          "gold": 0,
+          "raw_logps_no_yes": [
+            -9.810443589231e-05,
+            -9.763703346252441
+          ],
+          "p_yes": 5.750361474050196e-05,
+          "p_correct": 0.9999424963852594,
+          "tokens": {
+            "full_prompt_sha256": "c2ed77280219b03c4922876d5e013e7a8d2e0cad0d9d1d53814262fe66929eaa",
+            "label_token_ids": [
+              1294,
+              3553
+            ],
+            "question_sha256": "3287f5ef12c44ad298f3352d7a2352f7f8c909deed5db3144a5553210691d6db",
+            "suffix_ids": [
+              11227,
+              153988,
+              4287,
+              573,
+              32308,
+              17017,
+              235336,
+              108,
+              1261,
+              675,
+              7880,
+              974,
+              576,
+              1307,
+              235269,
+              6287,
+              235265,
+              108,
+              1946,
+              675,
+              1297,
+              674,
+              3448,
+              611,
+              573,
+              1370,
+              2017,
+              235265,
+              107,
+              108,
+              106,
+              2516,
+              108
+            ]
+          },
+          "recorded_checks": {
+            "answer_mass": 0.9999594016563795,
+            "argmax_in_labels": true,
+            "finite": true,
+            "prediction": 0,
+            "tie": false,
+            "tokens_sha256": "584be71dd85d7b1cf87e6b7d194b23ed776099d85618462e91b9e0e9ddff3ff2",
+            "valid": true
+          }
+        },
+        {
+          "query_id": "SSC1-FINAL-0035-d1-extra3",
+          "labels_no_yes": [
+            "B",
+            "A"
+          ],
+          "semantic_spec": {
+            "a": 3,
+            "b": 4,
+            "kind": "either",
+            "p": 0
+          },
+          "gold": 0,
+          "raw_logps_no_yes": [
+            -0.0324079804122448,
+            -3.5462191104888916
+          ],
+          "p_yes": 0.02892180658557946,
+          "p_correct": 0.9710781934144206,
+          "tokens": {
+            "full_prompt_sha256": "00c564d34ec07715f93ee308a3850ef65e408c65056f6a221e3c36a76342cfe9",
+            "label_token_ids": [
+              235305,
+              235280
+            ],
+            "question_sha256": "d3f663e2a5f08c4144fd965d8073e47fc1dfea0e802e1bdc1f01bf7e71cbfc71",
+            "suffix_ids": [
+              11227,
+              696,
+              3476,
+              974,
+              576,
+              32839,
+              578,
+              153988,
+              2676,
+              32308,
+              235336,
+              108,
+              7056,
+              586,
+              604,
+              7778,
+              578,
+              599,
+              604,
+              793,
+              235265,
+              108,
+              1261,
+              675,
+              7880,
+              974,
+              576,
+              599,
+              235269,
+              586,
+              235265,
+              108,
+              1946,
+              675,
+              1297,
+              674,
+              3448,
+              611,
+              573,
+              1370,
+              2017,
+              235265,
+              107,
+              108,
+              106,
+              2516,
+              108
+            ]
+          },
+          "recorded_checks": {
+            "answer_mass": 0.9969449808697992,
+            "argmax_in_labels": true,
+            "finite": true,
+            "prediction": 0,
+            "tie": false,
+            "tokens_sha256": "54dbbfb2ad8d7b211a3c6e7edc6ad7c5d1847f2fe27f8d2ca3fed42a8a3549b5",
+            "valid": true
+          }
+        },
+        {
+          "query_id": "SSC1-FINAL-0035-d1-03",
+          "labels_no_yes": [
+            "A",
+            "B"
+          ],
+          "semantic_spec": {
+            "a": 3,
+            "b": 2,
+            "kind": "direct",
+            "p": 0
+          },
+          "gold": 0,
+          "raw_logps_no_yes": [
+            -0.0006618693005293608,
+            -9.493300437927246
+          ],
+          "p_yes": 7.539919415073364e-05,
+          "p_correct": 0.9999246008058492,
+          "tokens": {
+            "full_prompt_sha256": "e851f7147192139558d6da347cb913c25f90f96938f90c1626c965fb5686bd77",
+            "label_token_ids": [
+              235280,
+              235305
+            ],
+            "question_sha256": "66a5db1d295b3d9f6c023d2f4a183e2b4e8bfc3241911e6f5114858d39cb7a59",
+            "suffix_ids": [
+              11227,
+              32839,
+              4287,
+              573,
+              32308,
+              17017,
+              235336,
+              108,
+              7056,
+              599,
+              604,
+              7778,
+              578,
+              586,
+              604,
+              793,
+              235265,
+              108,
+              1261,
+              675,
+              7880,
+              974,
+              576,
+              586,
+              235269,
+              599,
+              235265,
+              108,
+              1946,
+              675,
+              1297,
+              674,
+              3448,
+              611,
+              573,
+              1370,
+              2017,
+              235265,
+              107,
+              108,
+              106,
+              2516,
+              108
+            ]
+          },
+          "recorded_checks": {
+            "answer_mass": 0.9994137046745954,
+            "argmax_in_labels": true,
+            "finite": true,
+            "prediction": 0,
+            "tie": false,
+            "tokens_sha256": "2dd8e2622007157ce10e7a7cc2960ba8044e52252bf08a556c1a4dff5d7d2c16",
+            "valid": true
+          }
+        },
+        {
+          "query_id": "SSC1-FINAL-0035-d1-extra0",
+          "labels_no_yes": [
+            "B",
+            "A"
+          ],
+          "semantic_spec": {
+            "a": 4,
+            "b": 2,
+            "kind": "direct",
+            "p": 0
+          },
+          "gold": 0,
+          "raw_logps_no_yes": [
+            -0.0004172646440565586,
+            -9.315444946289062
+          ],
+          "p_yes": 9.005249875499698e-05,
+          "p_correct": 0.999909947501245,
+          "tokens": {
+            "full_prompt_sha256": "749e82bc26e482c9b2c39f0a38c3e045a467632f14e2a3a1873d91351b6b043c",
+            "label_token_ids": [
+              235305,
+              235280
+            ],
+            "question_sha256": "2ddc022d149139d2635caff7a881af85b47e9d70024396147f66fc41cf4444a4",
+            "suffix_ids": [
+              11227,
+              153988,
+              4287,
+              573,
+              32308,
+              17017,
+              235336,
+              108,
+              7056,
+              586,
+              604,
+              7778,
+              578,
+              599,
+              604,
+              793,
+              235265,
+              108,
+              1261,
+              675,
+              7880,
+              974,
+              576,
+              599,
+              235269,
+              586,
+              235265,
+              108,
+              1946,
+              675,
+              1297,
+              674,
+              3448,
+              611,
+              573,
+              1370,
+              2017,
+              235265,
+              107,
+              108,
+              106,
+              2516,
+              108
+            ]
+          },
+          "recorded_checks": {
+            "answer_mass": 0.999672845436397,
+            "argmax_in_labels": true,
+            "finite": true,
+            "prediction": 0,
+            "tie": false,
+            "tokens_sha256": "5085c900e4926d6577eb075faf1b951c99afe5ff5db70ca2ba3411d06a313e0f",
+            "valid": true
+          }
+        }
+      ]
+    }
+  ],
+  "limitation": "This is retrospective case selection from pre-existing behavioral scores, after the previous crossover was read. Neither a new population sample nor a prospective confirmation. No hybrid outcomes for this case have been observed here."
+}

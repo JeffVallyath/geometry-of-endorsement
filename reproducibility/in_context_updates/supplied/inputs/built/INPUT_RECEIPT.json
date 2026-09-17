@@ -1,0 +1,37 @@
+{
+ "byte_preserved_v2_scientific_inputs": [
+  "PLAN_development.json",
+  "PLAN_final.json",
+  "PLAN_qualification.json",
+  "PLAN_repeat_618.json",
+  "PLAN_repeat_670.json",
+  "ROOTS.json",
+  "SCORING_development.json",
+  "SCORING_final.json",
+  "SCORING_qualification.json",
+  "SCORING_repeat_618.json",
+  "SCORING_repeat_670.json"
+ ],
+ "input_counts": {
+  "development": 207,
+  "final": 1430,
+  "qualification": 114,
+  "repeat_618": 51,
+  "repeat_670": 35
+ },
+ "members": {
+  "SEMANTIC_POLICY.md": "0c0fb697452b15019d98b1be64381c8e672934764cbb37acbc0db6e19c5cde7a",
+  "evcpu/schedule.py": "eaa1a07e02d220984013a3375f1fc89d87a85c6be6c3abb372f1716da1798564",
+  "manifests/counterfact_fidelity.json": "8a2b2a4c310029e56ab3569748c489510a4c889657d850794a2caa0e1a23c316",
+  "manifests/dependencies.json": "e901f7703975878395a6f56b714c61183295b1bca2edd759ccbfa4d26e2daab1",
+  "manifests/entities.json": "c333ed406bd3b13cc383844884884352afe14c22fb59e4819366d46e0efb27f6",
+  "manifests/histories.json": "44c900cd01585bff92b8aaed67823e6af5adaca7840c31cf38938f64d42497e2",
+  "manifests/questions.json": "54fca19b1c46df098fa9bfd07abd26d7c77e31d1ab996fd79342a945517779b8",
+  "manifests/splits.json": "dc06a62dfe79b59c9916843b375ab30bf582b73f25ac4e27c289406d15507f3b",
+  "manifests/summary.json": "ae517fdd8770e7a8a390a4ea255d6d361da15f96317295f96fb4e020e7d3991c"
+ },
+ "parser_amendment": "ICMH1-LP1",
+ "scope_sha256": "ab811601cbecc4a33a886a8967eab14f6bd40dd38e8db2b786d68595d640e355",
+ "source_root": "/mnt/data/ICMH1_FRESH_CONTEXT/source_subset",
+ "structure_check_sha256": "7f2a354fb19713f63ef058059458256906b12c68cc3e5baad77fa552a6c45d18"
+}

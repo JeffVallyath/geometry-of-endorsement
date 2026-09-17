@@ -1,0 +1,580 @@
+[
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-DEV-0007-d0-00",
+    "root_id": "SSC1-DEV-0007",
+    "spec": {
+      "a": 4,
+      "b": 5,
+      "kind": "direct",
+      "p": 1
+    },
+    "split": "DEV",
+    "text": "Does Luca favor the Orchard proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-DEV-0007-d0-01",
+    "root_id": "SSC1-DEV-0007",
+    "spec": {
+      "a": 4,
+      "b": 5,
+      "kind": "opposes",
+      "p": 1
+    },
+    "split": "DEV",
+    "text": "Does Luca oppose the Orchard proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-DEV-0007-d0-02",
+    "root_id": "SSC1-DEV-0007",
+    "spec": {
+      "a": 4,
+      "b": 5,
+      "kind": "same",
+      "p": 1
+    },
+    "split": "DEV",
+    "text": "Do Luca and Ivo take the same side on Orchard?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-DEV-0007-d0-03",
+    "root_id": "SSC1-DEV-0007",
+    "spec": {
+      "a": 5,
+      "b": 4,
+      "kind": "direct",
+      "p": 1
+    },
+    "split": "DEV",
+    "text": "Does Ivo favor the Orchard proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-DEV-0007-d0-04",
+    "root_id": "SSC1-DEV-0007",
+    "spec": {
+      "a": 5,
+      "b": 4,
+      "kind": "opposes",
+      "p": 1
+    },
+    "split": "DEV",
+    "text": "Does Ivo oppose the Orchard proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-DEV-0007-d0-05",
+    "root_id": "SSC1-DEV-0007",
+    "spec": {
+      "a": 4,
+      "b": 5,
+      "kind": "direct",
+      "p": 2
+    },
+    "split": "DEV",
+    "text": "Does Luca favor the Garden proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-DEV-0007-d0-06",
+    "root_id": "SSC1-DEV-0007",
+    "spec": {
+      "a": 4,
+      "b": 5,
+      "kind": "both",
+      "p": 1
+    },
+    "split": "DEV",
+    "text": "Is the Orchard proposal supported by both Luca and Ivo?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-DEV-0007-d0-07",
+    "root_id": "SSC1-DEV-0007",
+    "spec": {
+      "a": 4,
+      "b": 5,
+      "kind": "either",
+      "p": 1
+    },
+    "split": "DEV",
+    "text": "Does at least one of Luca and Ivo support Orchard?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-DEV-0007-d0-08",
+    "root_id": "SSC1-DEV-0007",
+    "spec": {
+      "a": 0,
+      "b": 4,
+      "kind": "same",
+      "p": 1
+    },
+    "split": "DEV",
+    "text": "Do Gita and Luca take the same side on Orchard?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-DEV-0007-d0-09",
+    "root_id": "SSC1-DEV-0007",
+    "spec": {
+      "a": 0,
+      "b": 4,
+      "kind": "both",
+      "p": 1
+    },
+    "split": "DEV",
+    "text": "Is the Orchard proposal supported by both Gita and Luca?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-DEV-0007-d0-10",
+    "root_id": "SSC1-DEV-0007",
+    "spec": {
+      "a": 0,
+      "b": 4,
+      "kind": "either",
+      "p": 1
+    },
+    "split": "DEV",
+    "text": "Does at least one of Gita and Luca support Orchard?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-DEV-0007-d0-11",
+    "root_id": "SSC1-DEV-0007",
+    "spec": {
+      "a": 0,
+      "b": 4,
+      "kind": "direct",
+      "p": 2
+    },
+    "split": "DEV",
+    "text": "Does Gita favor the Garden proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-DEV-0007-d0-extra0",
+    "root_id": "SSC1-DEV-0007",
+    "spec": {
+      "a": 0,
+      "b": 4,
+      "kind": "direct",
+      "p": 1
+    },
+    "split": "DEV",
+    "text": "Does Gita favor the Orchard proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-DEV-0007-d0-extra1",
+    "root_id": "SSC1-DEV-0007",
+    "spec": {
+      "a": 5,
+      "b": 0,
+      "kind": "same",
+      "p": 1
+    },
+    "split": "DEV",
+    "text": "Do Ivo and Gita take the same side on Orchard?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-DEV-0007-d0-extra2",
+    "root_id": "SSC1-DEV-0007",
+    "spec": {
+      "a": 5,
+      "b": 0,
+      "kind": "both",
+      "p": 1
+    },
+    "split": "DEV",
+    "text": "Is the Orchard proposal supported by both Ivo and Gita?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-DEV-0007-d0-extra3",
+    "root_id": "SSC1-DEV-0007",
+    "spec": {
+      "a": 5,
+      "b": 0,
+      "kind": "either",
+      "p": 1
+    },
+    "split": "DEV",
+    "text": "Does at least one of Ivo and Gita support Orchard?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-DEV-0007-d0-extra4",
+    "root_id": "SSC1-DEV-0007",
+    "spec": {
+      "a": 1,
+      "b": 4,
+      "kind": "direct",
+      "p": 1
+    },
+    "split": "DEV",
+    "text": "Does Zara favor the Orchard proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-DEV-0007-d1-00",
+    "root_id": "SSC1-DEV-0007",
+    "spec": {
+      "a": 4,
+      "b": 5,
+      "kind": "direct",
+      "p": 1
+    },
+    "split": "DEV",
+    "text": "Does Luca favor the Orchard proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-DEV-0007-d1-01",
+    "root_id": "SSC1-DEV-0007",
+    "spec": {
+      "a": 4,
+      "b": 5,
+      "kind": "opposes",
+      "p": 1
+    },
+    "split": "DEV",
+    "text": "Does Luca oppose the Orchard proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-DEV-0007-d1-02",
+    "root_id": "SSC1-DEV-0007",
+    "spec": {
+      "a": 4,
+      "b": 5,
+      "kind": "same",
+      "p": 1
+    },
+    "split": "DEV",
+    "text": "Do Luca and Ivo take the same side on Orchard?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-DEV-0007-d1-03",
+    "root_id": "SSC1-DEV-0007",
+    "spec": {
+      "a": 5,
+      "b": 4,
+      "kind": "direct",
+      "p": 1
+    },
+    "split": "DEV",
+    "text": "Does Ivo favor the Orchard proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-DEV-0007-d1-04",
+    "root_id": "SSC1-DEV-0007",
+    "spec": {
+      "a": 5,
+      "b": 4,
+      "kind": "opposes",
+      "p": 1
+    },
+    "split": "DEV",
+    "text": "Does Ivo oppose the Orchard proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-DEV-0007-d1-05",
+    "root_id": "SSC1-DEV-0007",
+    "spec": {
+      "a": 4,
+      "b": 5,
+      "kind": "direct",
+      "p": 2
+    },
+    "split": "DEV",
+    "text": "Does Luca favor the Garden proposal?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-DEV-0007-d1-06",
+    "root_id": "SSC1-DEV-0007",
+    "spec": {
+      "a": 4,
+      "b": 5,
+      "kind": "both",
+      "p": 1
+    },
+    "split": "DEV",
+    "text": "Is the Orchard proposal supported by both Luca and Ivo?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-DEV-0007-d1-07",
+    "root_id": "SSC1-DEV-0007",
+    "spec": {
+      "a": 4,
+      "b": 5,
+      "kind": "either",
+      "p": 1
+    },
+    "split": "DEV",
+    "text": "Does at least one of Luca and Ivo support Orchard?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-DEV-0007-d1-08",
+    "root_id": "SSC1-DEV-0007",
+    "spec": {
+      "a": 0,
+      "b": 4,
+      "kind": "same",
+      "p": 1
+    },
+    "split": "DEV",
+    "text": "Do Gita and Luca take the same side on Orchard?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-DEV-0007-d1-09",
+    "root_id": "SSC1-DEV-0007",
+    "spec": {
+      "a": 0,
+      "b": 4,
+      "kind": "both",
+      "p": 1
+    },
+    "split": "DEV",
+    "text": "Is the Orchard proposal supported by both Gita and Luca?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-DEV-0007-d1-10",
+    "root_id": "SSC1-DEV-0007",
+    "spec": {
+      "a": 0,
+      "b": 4,
+      "kind": "either",
+      "p": 1
+    },
+    "split": "DEV",
+    "text": "Does at least one of Gita and Luca support Orchard?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-DEV-0007-d1-11",
+    "root_id": "SSC1-DEV-0007",
+    "spec": {
+      "a": 0,
+      "b": 4,
+      "kind": "direct",
+      "p": 2
+    },
+    "split": "DEV",
+    "text": "Does Gita favor the Garden proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-DEV-0007-d1-extra0",
+    "root_id": "SSC1-DEV-0007",
+    "spec": {
+      "a": 0,
+      "b": 4,
+      "kind": "direct",
+      "p": 1
+    },
+    "split": "DEV",
+    "text": "Does Gita favor the Orchard proposal?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-DEV-0007-d1-extra1",
+    "root_id": "SSC1-DEV-0007",
+    "spec": {
+      "a": 5,
+      "b": 0,
+      "kind": "same",
+      "p": 1
+    },
+    "split": "DEV",
+    "text": "Do Ivo and Gita take the same side on Orchard?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-DEV-0007-d1-extra2",
+    "root_id": "SSC1-DEV-0007",
+    "spec": {
+      "a": 5,
+      "b": 0,
+      "kind": "both",
+      "p": 1
+    },
+    "split": "DEV",
+    "text": "Is the Orchard proposal supported by both Ivo and Gita?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-DEV-0007-d1-extra3",
+    "root_id": "SSC1-DEV-0007",
+    "spec": {
+      "a": 5,
+      "b": 0,
+      "kind": "either",
+      "p": 1
+    },
+    "split": "DEV",
+    "text": "Does at least one of Ivo and Gita support Orchard?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-DEV-0007-d1-extra4",
+    "root_id": "SSC1-DEV-0007",
+    "spec": {
+      "a": 1,
+      "b": 4,
+      "kind": "direct",
+      "p": 1
+    },
+    "split": "DEV",
+    "text": "Does Zara favor the Orchard proposal?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  }
+]

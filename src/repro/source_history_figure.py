@@ -88,15 +88,15 @@ def plot(module) -> None:
     design.text(.94, .63, 'Compare\nanswers', ha='center', va='center', fontsize=10)
     design.annotate('', xy=(.892, .63), xytext=(.849, .63),
                     arrowprops=dict(arrowstyle='->', lw=1.3, color='#52606d'))
-    design.text(.075, -.02, 'Distinct starts\nV10: n = 8', ha='center', fontsize=9)
+    design.text(.075, -.02, '8 starting\nhistories', ha='center', fontsize=9)
     design.text(.505, -.02, 'Check relevant direct facts\nafter updating', ha='center', fontsize=9, color='#245b70')
     design.text(.79, -.02, 'Question and answer interface\nheld fixed across histories', ha='center', fontsize=9)
     fig.text(.035, .64, 'Behavioral test: identical intended facts do not imply identical hidden states or erased history.',
              fontsize=9, color='#52606d')
 
-    fig.text(.035, .593, 'B  V10 prospective confirmation', fontsize=11, weight='bold')
+    fig.text(.035, .593, 'B  Prospective matched-history study', fontsize=11, weight='bold')
     level = 100 * data['rows'][0]['corrected_level']
-    fig.text(.035, .564, f'Saved primary witness rates and multiplicity-adjusted {level:g}% root-bootstrap intervals', fontsize=10)
+    fig.text(.035, .564, f'Qualifying-question rates and multiplicity-adjusted {level:g}% case-bootstrap intervals', fontsize=10)
     axis = fig.add_axes([.49, .19, .285, .34])
     ys = [8, 7, 6, 5, 3, 2, 1, 0]
     colors = {'Learned': '#276882', 'Textual': '#806296'}
@@ -122,18 +122,18 @@ def plot(module) -> None:
     axis.set_xticks([0, 2, 4, 6, 8, 10])
     axis.set_yticks([])
     axis.spines['left'].set_visible(False)
-    axis.set_xlabel('Primary witness rate (%)', fontsize=10)
+    axis.set_xlabel('Qualifying-question rate (%)', fontsize=10)
     fig.legend(handles=[Line2D([], [], marker=markers[kind], color=colors[kind], linestyle='none',
                               label=f'{kind} updates') for kind in colors],
                loc='center left', bbox_to_anchor=(.032, .138), ncol=2, fontsize=9)
     fig.text(.49, .122, 'All eight adjusted intervals are above zero.', fontsize=10, weight='bold')
     fig.text(.035, .075,
-             'Each cell: 64 roots × 18 fixed joint-question opportunities = 1,152 per seed or textual condition.\n'
-             'Ineligible opportunities remain in the denominator; two learned seeds are averaged within each root.', fontsize=9)
+             'Each row: 64 benchmark cases × 18 questions combining facts = 1,152 per seed or textual condition.\n'
+             'Ineligible questions remain in the denominator; two learned seeds are averaged within each case.', fontsize=9)
     fig.text(.035, .02,
-             'Witness: correct direct operands in every history + correct native/no-op references + differing joint answers.\n'
-             'No pooling across models or update conditions. Not root prevalence, an answer-error rate, or a method-ranking test.',
+             'Qualifies: needed facts correct in every history; references correct; different answers to a question combining facts.\n'
+             'References: current facts from the start, and the same update on already-correct facts. Not a case-prevalence or answer-error rate.',
              fontsize=9, color='#52606d')
-    module.save(fig, 'fig7_source_history')
+    module.save(fig, 'fig07_source_history')
     (module.OUT / 'v10_source_history.json').write_text(
         json.dumps(data, indent=2) + '\n', encoding='utf8', newline='\n')

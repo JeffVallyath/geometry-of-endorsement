@@ -25,8 +25,13 @@
     "editing_figures": "artifacts/figures/editing_comparisons.json",
     "consequences": "artifacts/figures/consequence_comparisons.json",
     "v10_figure": "artifacts/figures/v10_source_history.json",
+    "cache_crossover": "reproducibility/cache_crossover/results.json",
+    "cache_extension": "reproducibility/cache_crossover/extension/replay.json",
+    "cache_extension_checks": "artifacts/cache_crossover/checks.json",
     "state_sufficiency": "reproducibility/state_sufficiency/headline_values.json",
-    "state_spec": "reproducibility/state_sufficiency/v10/specification_summary.json"
+    "state_spec": "reproducibility/state_sufficiency/v10/specification_summary.json",
+    "qwen_public": "reproducibility/in_context_updates/results.json",
+    "update_methods": "reproducibility/update_method_comparison/results.json"
   },
   "definitions": [
     {
@@ -1342,7 +1347,7 @@
               "description": "Preserve useful composition and its limitations",
               "all_of": [
                 "met the retained-operation and joint-update point criteria",
-                "No candidate passed the complete source-history conjunction"
+                "No candidate passed all source-history independence requirements together"
               ]
             }
           ],
@@ -1398,7 +1403,7 @@
         },
         {
           "id": "v9_census",
-          "heading_pattern": "^V9 retrospective census$",
+          "heading_pattern": "^How often did the effect occur in the earlier cases\\?$",
           "numbers": [
             {
               "path": "state_sufficiency.v9.0.count",
@@ -1850,7 +1855,7 @@
               "all_of": [
                 "retrospective, not prospective",
                 "question-loading deviation",
-                "Root prevalence is not a per-question failure rate"
+                "Case prevalence is not a per-question failure rate"
               ]
             }
           ],
@@ -1937,7 +1942,7 @@
         },
         {
           "id": "v6_corroboration",
-          "heading_pattern": "^V6 fixed-definition archival corroboration$",
+          "heading_pattern": "^Does the same criterion find the effect in archived data\\?$",
           "numbers": [
             {
               "path": "state_sufficiency.v6.0.count",
@@ -2327,7 +2332,7 @@
         },
         {
           "id": "v10_primary",
-          "heading_pattern": "^V10 prospective confirmation$",
+          "heading_pattern": "^Does the effect recur in a study planned before its outcomes\\?$",
           "numbers": [
             {
               "path": "state_sufficiency.v10.0.rate",
@@ -2652,14 +2657,19 @@
               "headline": true
             }
           ],
-          "literals": [{"text": "7", "reason": "Main figure cross-reference"}],
+          "literals": [
+            {
+              "text": "7",
+              "reason": "Main figure cross-reference"
+            }
+          ],
           "facts": [
             {
               "id": "fixed-denominator",
               "description": "No conditional-rate or root-union conflation",
               "all_of": [
                 "including ineligible questions in the denominator",
-                "Learned seeds are averaged within roots",
+                "Learned seeds are averaged within benchmark cases",
                 "union over both seeds",
                 "not an individual-answer error rate"
               ]
@@ -2988,7 +2998,470 @@
               "all_of": [
                 "Pre-final amendments",
                 "without changing the primary estimand",
-                "does not repair V9 retrospectively"
+                "does not repair the earlier study retrospectively"
+              ]
+            }
+          ],
+          "unsupported": []
+        },
+        {
+          "id": "cache_crossover",
+          "heading_pattern": "^Changing which history the answer follows$",
+          "provenance": {
+            "archive_sha256": "fc6f8c3eed7bfca435fc1042453bfb2e44874a3179fda4e950ba95416d18b5e2",
+            "raw_member": "combined/raw.jsonl",
+            "raw_sha256": "2baf17d50b24c674dfe5b920405cdeab25dfd7735eb874efc2de8ee662d82dcd",
+            "summary_member": "combined/summaries.json",
+            "summary_sha256": "67c29e1f8a3e70802074835f4e9304ecf0db0f983897d95b86a27e9d4ed16330",
+            "verification": "Local receipt-bound archive: 70 members and 747 capsule members verified. All 24 classifications independently matched from saved log scores and semantic task records, with direct-read preservation, 288 sham/copy comparisons, 1992-forward accounting and both termination receipts checked. No new neural execution or changes to experimental outputs.",
+            "replay_boundary": "Public lossless scientific journal and semantic inputs independently reconstruct all classifications and plotted values through python -m repro.cache_crossover; no neural rerun or live runtime attestation.",
+            "package": "reproducibility/cache_crossover/provenance.json"
+          },
+          "numbers": [
+            {
+              "path": "cache_crossover.layers.early",
+              "decimals": 0
+            },
+            {
+              "path": "cache_crossover.layers.later",
+              "decimals": 0
+            },
+            {
+              "path": "cache_crossover.counts.witness.main.total",
+              "decimals": 0
+            },
+            {
+              "path": "cache_crossover.counts.witness.main.clear_later",
+              "decimals": 0
+            },
+            {
+              "path": "cache_crossover.counts.witness.main.mixed",
+              "decimals": 0
+            },
+            {
+              "path": "cache_crossover.counts.witness.main.low_separation",
+              "decimals": 0
+            },
+            {
+              "path": "cache_crossover.counts.witness.alternate.clear_later",
+              "decimals": 0
+            },
+            {
+              "path": "cache_crossover.counts.witness.alternate.mixed",
+              "decimals": 0
+            },
+            {
+              "path": "cache_crossover.counts.witness.alternate.low_separation",
+              "decimals": 0
+            },
+            {
+              "path": "cache_crossover.example.states.0.joint.p_yes",
+              "decimals": 3
+            },
+            {
+              "path": "cache_crossover.example.states.1.joint.p_yes",
+              "decimals": 3
+            },
+            {
+              "path": "cache_crossover.example.states.2.joint.p_yes",
+              "decimals": 3
+            },
+            {
+              "path": "cache_crossover.example.states.3.joint.p_yes",
+              "decimals": 3
+            },
+            {
+              "path": "cache_crossover.preservation.witness.main.minimum_correct_probability",
+              "decimals": 3
+            },
+            {
+              "path": "cache_crossover.preservation.witness.main.maximum_probability_change",
+              "decimals": 4
+            },
+            {
+              "path": "cache_crossover.preservation.witness.alternate.minimum_correct_probability",
+              "decimals": 4
+            },
+            {
+              "path": "cache_crossover.preservation.witness.alternate.maximum_probability_change",
+              "decimals": 5
+            },
+            {
+              "path": "cache_crossover.controls.total_checks",
+              "decimals": 0
+            }
+          ],
+          "literals": [],
+          "facts": [
+            {
+              "id": "intervention",
+              "description": "Gemma pre-question whole-layer recombination, not Qwen parameter editing.",
+              "all_of": [
+                "Gemma",
+                "Before asking the question",
+                "earlier layers of one history",
+                "later layers of the other",
+                "first 16 layers",
+                "remaining 26 layers",
+                "Model weights stayed fixed",
+                "separate Qwen/Ripple study remains an in-context update result"
+              ]
+            },
+            {
+              "id": "format-specific-results",
+              "description": "Retain all main and alternate classifications without pooling or prevalence interpretation.",
+              "all_of": [
+                "\\| Main \\| 5/6 \\| 1/6 \\| 0/6 \\|",
+                "\\| Alternate \\| 1/6 \\| 2/6 \\| 3/6 \\|",
+                "Original answers too similar",
+                "selected for an existing history effect",
+                "not prevalence estimates"
+              ]
+            },
+            {
+              "id": "direct-preservation-scope",
+              "description": "Do not generalize the main-format .994/.0014 bounds to the alternate format.",
+              "all_of": [
+                "six positive examples under the main answer format",
+                "correct direct answer was about 0\\.994",
+                "largest change was about 0\\.0014",
+                "original history supplying the later layers",
+                "bounds are specific to the main format",
+                "alternate format.*0\\.9881 and 0\\.00657",
+                "Direct answers stayed correct under both formats"
+              ]
+            },
+            {
+              "id": "controls",
+              "description": "Preserve original-state checks, exact sham/copy outcomes, and limited discrimination of matched comparisons.",
+              "all_of": [
+                "reproduced the saved answers within the fixed tolerances",
+                "Recombining a history with itself and copying a complete stored state left scores unchanged in all 288 checks",
+                "six matched comparison examples had original answers too similar",
+                "alternate format, five had that same limitation and one was mixed"
+              ]
+            },
+            {
+              "id": "causal-boundary",
+              "description": "The original coarse intervention leaves a unique mechanism unresolved; the separate extension now joins the strong controls and causal result.",
+              "all_of": [
+                "adds causal evidence",
+                "under this intervention",
+                "swap covers many layers at once",
+                "leaves open where that information first arose",
+                "not identification of a unique mechanism or an old-fact circuit",
+                "separate one-case extension below combines the strong behavioral controls and the causal result on the same example"
+              ]
+            }
+          ],
+          "unsupported": []
+        },
+        {
+          "id": "cache_crossover_extension",
+          "heading_pattern": "^One-case extension with matched histories$",
+          "numbers": [
+            {
+              "path": "cache_extension.cases",
+              "decimals": 0
+            },
+            {
+              "path": "cache_extension.histories.0.changed_facts",
+              "decimals": 0
+            },
+            {
+              "path": "cache_extension.histories.0.prefix_tokens",
+              "decimals": 0
+            },
+            {
+              "path": "cache_extension.layers.early",
+              "decimals": 0
+            },
+            {
+              "path": "cache_extension.layers.later",
+              "decimals": 0
+            },
+            {
+              "path": "cache_extension.results.0.probabilities.AA",
+              "decimals": 4
+            },
+            {
+              "path": "cache_extension.results.0.probabilities.AB",
+              "decimals": 4
+            },
+            {
+              "path": "cache_extension.results.0.probabilities.BA",
+              "decimals": 4
+            },
+            {
+              "path": "cache_extension.results.0.probabilities.BB",
+              "decimals": 4
+            },
+            {
+              "path": "cache_extension.results.1.probabilities.AA",
+              "decimals": 4
+            },
+            {
+              "path": "cache_extension.results.1.probabilities.AB",
+              "decimals": 4
+            },
+            {
+              "path": "cache_extension.results.1.probabilities.BA",
+              "decimals": 4
+            },
+            {
+              "path": "cache_extension.results.1.probabilities.BB",
+              "decimals": 4
+            },
+            {
+              "path": "cache_extension.strict_direct_checks",
+              "decimals": 0
+            },
+            {
+              "path": "cache_extension.minimum_direct_probability",
+              "decimals": 5
+            },
+            {
+              "path": "cache_extension.maximum_direct_change",
+              "decimals": 7
+            },
+            {
+              "path": "cache_extension.replay_rows",
+              "decimals": 0
+            },
+            {
+              "path": "cache_extension_checks.exact_controls",
+              "decimals": 0
+            }
+          ],
+          "literals": [],
+          "facts": [
+            {
+              "id": "one-selected-case-two-formats",
+              "description": "One retrospectively selected case, two formats, never pooled into the earlier panel or prevalence.",
+              "all_of": [
+                "One retrospectively selected Gemma history pair",
+                "two formats test the same example, not independent cases",
+                "kept separate from the six-case panel and all prevalence denominators"
+              ],
+              "source_evidence": [
+                {
+                  "path": "cache_extension.cases",
+                  "equals": 1
+                },
+                {
+                  "path": "cache_extension.formats",
+                  "equals": 2
+                },
+                {
+                  "path": "cache_extension.results.*.label",
+                  "equals": "LATER-FOLLOWING"
+                }
+              ]
+            },
+            {
+              "id": "strict-matched-evidence",
+              "description": "Both histories are matched, with all strict direct checks passing under both formats.",
+              "all_of": [
+                "Both histories required 2 fact changes and had 517-token prefixes",
+                "All 8 strict direct-readout checks passed",
+                "separately measured direct facts remained correct",
+                "original state supplying the later layers"
+              ],
+              "source_evidence": [
+                {
+                  "path": "cache_extension.histories.*.changed_facts",
+                  "equals": 2
+                },
+                {
+                  "path": "cache_extension.histories.*.prefix_tokens",
+                  "equals": 517
+                },
+                {
+                  "path": "cache_extension.results.*.strict_direct_checks.*.passed",
+                  "equals": true
+                }
+              ]
+            },
+            {
+              "id": "coarse-causal-scope-and-closure",
+              "description": "Completed paper mechanism branch, learned activation updating, unresolved full mechanism.",
+              "all_of": [
+                "learned activation updating with fixed model weights, not parameter editing",
+                "swaps a large block of stored computation",
+                "Earlier computation may have contributed",
+                "unique circuit or stored obsolete fact unidentified",
+                "Full mechanism identification remains unresolved",
+                "mechanism branch is closed for the current paper"
+              ]
+            }
+          ],
+          "unsupported": []
+        },
+        {
+          "id": "external_in_context",
+          "heading_pattern": "^Public-data in-context extension$",
+          "provenance": "Computed by repro.in_context_updates from byte-bound saved responses and both frozen parsers; every phase compared with the original analysis. No new inference.",
+          "numbers": [
+            {
+              "path": "qwen_public.primary.denominators.roots",
+              "headline": true
+            },
+            {
+              "path": "qwen_public.primary.denominators.questions",
+              "headline": true
+            },
+            {
+              "path": "qwen_public.primary.counts.A_and_C_questions",
+              "headline": true
+            },
+            {
+              "path": "qwen_public.primary.counts.W_questions",
+              "headline": true
+            },
+            {
+              "path": "qwen_public.primary.counts.roots_with_any_W",
+              "headline": true
+            },
+            {
+              "path": "qwen_public.alternative.counts.W_questions",
+              "headline": true
+            },
+            {
+              "path": "qwen_public.primary.locality_panel_diagnostic.none.correct",
+              "headline": true
+            },
+            {
+              "path": "qwen_public.primary.locality_panel_diagnostic.none.measured",
+              "headline": true
+            },
+            {
+              "path": "qwen_public.primary.locality_panel_diagnostic.chronological_B.correct",
+              "headline": true
+            },
+            {
+              "path": "qwen_public.locality_distinct_questions",
+              "headline": true
+            }
+          ],
+          "literals": [],
+          "facts": [
+            {
+              "id": "study-and-controls",
+              "description": "Public-data in-context scope and both eligibility controls.",
+              "all_of": [
+                "Qwen2\\.5-7B-Instruct",
+                "public RippleEdits-derived compositional questions",
+                "34 benchmark cases and 98 questions",
+                "65/98 questions",
+                "direct current facts were reported correctly under both histories",
+                "clean references containing only the current records answered the composed question correctly"
+              ],
+              "source_evidence": [
+                {
+                  "path": "qwen_public.primary.denominators.roots",
+                  "equals": 34
+                },
+                {
+                  "path": "qwen_public.primary.denominators.questions",
+                  "equals": 98
+                },
+                {
+                  "path": "qwen_public.primary.counts.A_and_C_questions",
+                  "equals": 65
+                }
+              ]
+            },
+            {
+              "id": "primary-and-parser-sensitivity",
+              "description": "Fixed full denominator and parser sensitivity are not separate experiments or deployment prevalence.",
+              "all_of": [
+                "primary label-first parser found 3/98 qualifying questions across 3 benchmark cases",
+                "incorrect downstream answer was exactly the superseded value from that history",
+                "denominator is the full set of questions",
+                "original union-parser sensitivity, 2/98 qualifying questions remained",
+                "different parser to the same recorded answers",
+                "frequency in deployment remain unresolved"
+              ],
+              "source_evidence": [
+                {
+                  "path": "qwen_public.primary.counts.W_questions",
+                  "equals": 3
+                },
+                {
+                  "path": "qwen_public.alternative.counts.W_questions",
+                  "equals": 2
+                },
+                {
+                  "path": "qwen_public.all_wrong_witness_answers_are_obsolete",
+                  "equals": true
+                }
+              ]
+            },
+            {
+              "id": "counterfactual-example",
+              "description": "The selected example is a benchmark assignment, not real-world biography.",
+              "all_of": [
+                "popular:622",
+                "counterfactual benchmark assignments, not real-world biographical claims",
+                "History B previously assigned Sinking Spring Farm",
+                "history D previously assigned Kimberley",
+                "current-record-only references answered the composed question with Clinch County"
+              ]
+            },
+            {
+              "id": "repeat-limit",
+              "description": "Fresh-process repeatability does not establish reruns of positive witnesses.",
+              "all_of": [
+                "two preselected fresh-process repeats reproduced exactly",
+                "Neither repeated benchmark case contained a qualifying history-dependent question"
+              ],
+              "source_evidence": [
+                {
+                  "path": "qwen_public.repeat_roots",
+                  "equals": 2
+                },
+                {
+                  "path": "qwen_public.repeat_witnesses",
+                  "equals": 0
+                },
+                {
+                  "path": "qwen_public.all_repeat_answers_identical",
+                  "equals": true
+                }
+              ]
+            },
+            {
+              "id": "adverse-locality",
+              "description": "Broader context interference and repeated-question denominator are retained.",
+              "all_of": [
+                "Without chronological context, 170/272 answers were correct, versus 94/272 with the prompt containing obsolete history B",
+                "8 questions about unrelated facts, repeated across 34 contexts, not 272 independent facts",
+                "broader context interference",
+                "limits claims of selective preservation"
+              ],
+              "source_evidence": [
+                {
+                  "path": "qwen_public.primary.locality_panel_diagnostic.none.correct",
+                  "equals": 170
+                },
+                {
+                  "path": "qwen_public.primary.locality_panel_diagnostic.chronological_B.correct",
+                  "equals": 94
+                },
+                {
+                  "path": "qwen_public.locality_distinct_questions",
+                  "equals": 8
+                }
+              ]
+            },
+            {
+              "id": "not-erasure-or-parameter-editing",
+              "description": "Explicit earlier prompt content, no erasure, mechanism, or parametric-editor success claim.",
+              "all_of": [
+                "obsolete record remained explicitly present earlier in the chronological prompt",
+                "Updates were supplied in the prompt while model weights stayed fixed",
+                "behavioral source-history dependence under in-context updating",
+                "neural mechanism and frequency in deployment remain unresolved"
               ]
             }
           ],
@@ -2998,24 +3471,32 @@
           "id": "current_conclusion",
           "heading_pattern": "^Part VIII\\. What can we conclude\\?$",
           "numbers": [],
-          "literals": [],
+          "literals": [
+            {
+              "text": "1",
+              "reason": "MEMIT/GPT-J MQuAKE Phase 1 stage name, not a result count"
+            }
+          ],
           "facts": [
             {
               "id": "current",
               "description": "Current evidence hierarchy",
               "all_of": [
-                "V9 supplies retrospective census evidence",
-                "V6 fixed-definition archival corroboration",
-                "V10 prospective confirmation"
+                "retrospective census \\(`V9`\\)",
+                "fixed-criterion archival check \\(`V6`\\)",
+                "prospective confirmation \\(`V10`\\)"
               ]
             },
             {
-              "id": "external-pending",
-              "description": "External attempt is not a scientific negative",
+              "id": "parameter-editor-pending",
+              "description": "Completed in-context extension is separate from early AlphaEdit nonexecution and later MEMIT prospective reference-qualification failure before FINAL.",
               "all_of": [
-                "validation is pending",
+                "completed Qwen study supplies public-data in-context evidence",
+                "Conventional parameter-editor validation is pending",
                 "produced no scientific outcome",
-                "neither a negative result nor a null result"
+                "early AlphaEdit route stopped before pretrained inference",
+                "later MEMIT/GPT-J MQuAKE Phase 1 did run pretrained inference, but failed prospective reference qualification before FINAL",
+                "run stopped at qualification, so it provides no final evidence about source-history dependence"
               ]
             },
             {
@@ -3031,6 +3512,171 @@
             }
           ],
           "unsupported": []
+        },
+        {
+          "id": "update_method_comparison",
+          "heading_pattern": "^Update procedures and downstream coherence$",
+          "numbers": [
+            {
+              "path": "update_methods.contrasts.0.roots"
+            },
+            {
+              "path": "update_methods.questions_per_history"
+            },
+            {
+              "path": "update_methods.contrasts.0.level",
+              "percent": true,
+              "decimals": 2
+            },
+            {
+              "path": "update_methods.fallback.0.fallback"
+            },
+            {
+              "path": "update_methods.fallback.0.contexts"
+            },
+            {
+              "path": "update_methods.contrasts.0.effect",
+              "percent": true,
+              "decimals": 3,
+              "headline": true
+            },
+            {
+              "path": "update_methods.contrasts.0.lower",
+              "percent": true,
+              "decimals": 3,
+              "headline": true
+            },
+            {
+              "path": "update_methods.contrasts.0.upper",
+              "percent": true,
+              "decimals": 3,
+              "headline": true
+            },
+            {
+              "path": "update_methods.contrasts.1.effect",
+              "percent": true,
+              "decimals": 3,
+              "headline": true
+            },
+            {
+              "path": "update_methods.contrasts.1.lower",
+              "percent": true,
+              "decimals": 3,
+              "headline": true
+            },
+            {
+              "path": "update_methods.contrasts.1.upper",
+              "percent": true,
+              "decimals": 3,
+              "headline": true
+            },
+            {
+              "path": "update_methods.contrasts.2.effect",
+              "percent": true,
+              "decimals": 3,
+              "headline": true
+            },
+            {
+              "path": "update_methods.contrasts.2.lower",
+              "percent": true,
+              "decimals": 3,
+              "headline": true
+            },
+            {
+              "path": "update_methods.contrasts.2.upper",
+              "percent": true,
+              "decimals": 3,
+              "headline": true
+            },
+            {
+              "path": "update_methods.contrasts.3.effect",
+              "percent": true,
+              "decimals": 3,
+              "headline": true
+            },
+            {
+              "path": "update_methods.contrasts.3.lower",
+              "percent": true,
+              "decimals": 3,
+              "headline": true
+            },
+            {
+              "path": "update_methods.contrasts.3.upper",
+              "percent": true,
+              "decimals": 3,
+              "headline": true
+            },
+            {
+              "path": "update_methods.absolute_rates.5.whole_bundle_roots"
+            },
+            {
+              "path": "update_methods.absolute_rates.17.whole_bundle_roots"
+            }
+          ],
+          "literals": [
+            {
+              "text": "10",
+              "reason": "Figure identifier, not an experimental outcome"
+            }
+          ],
+          "facts": [
+            {
+              "id": "mixed-model-results",
+              "description": "Positive Qwen comparisons do not erase mixed Gemma results.",
+              "all_of": [
+                "Both Qwen intervals exclude zero",
+                "Gemma.s constrained interval touches zero",
+                "consistency-trained interval crosses zero"
+              ],
+              "source_evidence": [
+                {
+                  "path": "update_methods.contrasts.0.lower",
+                  "equals": 0.0
+                },
+                {
+                  "path": "update_methods.contrasts.1.lower",
+                  "lt": 0
+                },
+                {
+                  "path": "update_methods.contrasts.2.lower",
+                  "gt": 0
+                },
+                {
+                  "path": "update_methods.contrasts.3.lower",
+                  "gt": 0
+                }
+              ]
+            },
+            {
+              "id": "absolute-performance",
+              "description": "Relative gains are not universal reliability.",
+              "all_of": [
+                "neither learned method.s seed.mean.*reaches half",
+                "do(?:es)? not establish a universal consistency cure"
+              ],
+              "source_evidence": [
+                {
+                  "path": "update_methods.absolute_rates.*.rate",
+                  "lt": 0.5
+                }
+              ]
+            },
+            {
+              "id": "baseline-fallback",
+              "description": "The executed baseline includes its recorded fallback.",
+              "all_of": [
+                "baseline used its recorded fallback"
+              ],
+              "source_evidence": [
+                {
+                  "path": "update_methods.fallback.*.fallback",
+                  "equals": 192
+                }
+              ]
+            }
+          ],
+          "unsupported": [],
+          "provenance": "Computed from every saved ORIGIN row; paired root bootstrap with both original seeds."
         }
       ]
     },
@@ -4271,7 +4917,7 @@
               "id": "counterfactual-matched-scope",
               "description": "Same final Gemma worlds, not a cross-model comparison.",
               "all_of": [
-                "same 96 final worlds",
+                "same 96 test contexts",
                 "Llama failed natural.reference qualification",
                 "not included"
               ],
@@ -4308,7 +4954,7 @@
               "all_of": [
                 "not a proportion of correct answers",
                 "Negative recovery moves farther",
-                "world.bootstrap intervals",
+                "context.bootstrap intervals",
                 "not margin.tuned"
               ],
               "source_evidence": []
@@ -4320,36 +4966,217 @@
           "id": "figure7",
           "heading_pattern": "^Figure 7\\b",
           "numbers": [
-            {"path": "state_spec.inventory.origins", "decimals": 0},
-            {"path": "state_spec.root_denominator", "decimals": 0},
-            {"path": "state_spec.joint_questions_per_root", "decimals": 0},
-            {"path": "state_spec.interval_level", "decimals": 3, "percent": true},
-            {"path": "state_spec.bootstrap_draws", "decimals": 0},
-            {"path": "state_spec.bootstrap_seed", "decimals": 0},
-            {"path": "v10_figure.rows.0.fixed_opportunities_per_seed_or_textual_condition", "decimals": 0}
+            {
+              "path": "state_spec.inventory.origins",
+              "decimals": 0
+            },
+            {
+              "path": "state_spec.root_denominator",
+              "decimals": 0
+            },
+            {
+              "path": "state_spec.joint_questions_per_root",
+              "decimals": 0
+            },
+            {
+              "path": "state_spec.interval_level",
+              "decimals": 3,
+              "percent": true
+            },
+            {
+              "path": "state_spec.bootstrap_draws",
+              "decimals": 0
+            },
+            {
+              "path": "state_spec.bootstrap_seed",
+              "decimals": 0
+            },
+            {
+              "path": "v10_figure.rows.0.fixed_opportunities_per_seed_or_textual_condition",
+              "decimals": 0
+            }
           ],
-          "literals": [{"text": "9", "reason": "Nine semantic questions under two answer-code draws; 18 fixed joint opportunities"}],
+          "literals": [
+            {
+              "text": "9",
+              "reason": "Nine semantic questions under two answer-code draws; 18 fixed joint opportunities"
+            }
+          ],
           "facts": [
             {
               "id": "prospective-primary",
               "description": "V10 prospective primary intervals, not V6 descriptive counts or method ranking.",
-              "all_of": ["prospective V10 aggregate result", "copy the saved primary mean root witness rates", "multiplicity.adjusted 99.375%", "All eight intervals lie above zero", "not a ranking of methods"],
-              "source_evidence": [{"path": "v10_figure.rows.*.corrected_level", "equals": 0.99375}]
+              "all_of": [
+                "prospective matched-history result",
+                "copy the saved primary mean qualifying-question rates",
+                "multiplicity.adjusted 99.375%",
+                "All eight intervals lie above zero",
+                "not a ranking of methods"
+              ],
+              "source_evidence": [
+                {
+                  "path": "v10_figure.rows.*.corrected_level",
+                  "equals": 0.99375
+                }
+              ]
             },
             {
               "id": "fixed-opportunity-denominator",
               "description": "Preserve the fixed full denominator and within-root learned seed averaging.",
-              "all_of": ["Ineligible questions remain in the denominator", "two learned.seed scores are averaged within each root", "models and update groups are not pooled", "not root prevalence", "individual.answer error rate"]
+              "all_of": [
+                "Ineligible questions remain in the denominator",
+                "two learned.seed scores are averaged within each benchmark case",
+                "models and update groups are not pooled",
+                "not benchmark case prevalence",
+                "individual.answer error rate"
+              ]
             },
             {
               "id": "protected-factual-readout",
               "description": "Behavioral witness requires direct facts and references; no physical mechanism claim.",
-              "all_of": ["direct operands correct and valid in every history", "correct native.final and same.method no.op references", "differing valid joint hard answers", "behavioral source.history dependence despite protected factual readout", "does not establish that updated facts are absent internally", "neither equality of hidden activations nor physical erasure of history is assumed"]
+              "all_of": [
+                "individual facts are answered correctly and validly in every history",
+                "both references answer correctly.*references supply current facts from the start.*apply the same update to already-correct facts",
+                "valid answers to the question combining those facts differ across histories",
+                "history-dependent answers despite correct individual-fact checks",
+                "does not establish that updated facts are absent internally",
+                "neither equality of hidden activations nor physical erasure of history is assumed"
+              ]
             },
             {
               "id": "selected-witness-boundary",
               "description": "Selected illustration is separate from aggregate prevalence and operand repeat coverage.",
-              "all_of": ["illustrative repeat.checked witness", "not a prevalence estimate", "Operand scores are from the core, not all independently repeated"]
+              "all_of": [
+                "illustrative repeat.checked example",
+                "not a prevalence estimate",
+                "Operand scores are from the core, not all independently repeated"
+              ]
+            }
+          ],
+          "unsupported": []
+        },
+        {
+          "id": "figure8",
+          "heading_pattern": "^Figure 8\\b",
+          "numbers": [
+            {
+              "path": "cache_crossover.layers.early",
+              "decimals": 0
+            },
+            {
+              "path": "cache_crossover.layers.later",
+              "decimals": 0
+            }
+          ],
+          "literals": [],
+          "facts": [
+            {
+              "id": "saved-causal-example",
+              "description": "Selected causal crossover with correct direct facts, not prevalence or a unique mechanism.",
+              "all_of": [
+                "activations are combined before the question",
+                "model weights stay fixed",
+                "main answer format",
+                "unrounded saved-score values",
+                "two correct direct answers",
+                "not a prevalence estimate",
+                "not a unique mechanism",
+                "alternate format gives one clear effect, two mixed results and three cases"
+              ],
+              "source_evidence": [
+                {
+                  "path": "cache_crossover.counts.witness.main.clear_later",
+                  "equals": 5
+                },
+                {
+                  "path": "cache_crossover.counts.witness.main.mixed",
+                  "equals": 1
+                },
+                {
+                  "path": "cache_crossover.counts.witness.alternate.clear_later",
+                  "equals": 1
+                },
+                {
+                  "path": "cache_crossover.counts.witness.alternate.mixed",
+                  "equals": 2
+                },
+                {
+                  "path": "cache_crossover.counts.witness.alternate.low_separation",
+                  "equals": 3
+                },
+                {
+                  "path": "cache_crossover.preservation.witness.*.all_preserved",
+                  "equals": true
+                },
+                {
+                  "path": "cache_crossover.example.root_id",
+                  "equals": "SSC1-FINAL-0026"
+                },
+                {
+                  "path": "cache_crossover.example.query_id",
+                  "equals": "SSC1-FINAL-0026-d1-extra2"
+                }
+              ]
+            }
+          ],
+          "unsupported": []
+        },
+        {
+          "id": "figure9",
+          "heading_pattern": "^Figure 9\\b",
+          "numbers": [
+            {
+              "path": "cache_extension.histories.0.changed_facts",
+              "decimals": 0
+            },
+            {
+              "path": "cache_extension.histories.0.prefix_tokens",
+              "decimals": 0
+            },
+            {
+              "path": "cache_extension.layers.early",
+              "decimals": 0
+            },
+            {
+              "path": "cache_extension.layers.later",
+              "decimals": 0
+            },
+            {
+              "path": "cache_extension.strict_direct_checks",
+              "decimals": 0
+            },
+            {
+              "path": "cache_extension.minimum_direct_probability",
+              "decimals": 6
+            },
+            {
+              "path": "cache_extension.maximum_direct_change",
+              "decimals": 8
+            }
+          ],
+          "literals": [],
+          "facts": [
+            {
+              "id": "selected-extension-boundary",
+              "description": "Keep both formats and strict direct checks of one selected example separate from the original panel.",
+              "all_of": [
+                "One retrospectively selected Gemma history pair",
+                "separately measured direct facts",
+                "two formats test the same example, not independent cases or a prevalence estimate",
+                "Earlier computation may have contributed",
+                "unique circuit or stored obsolete fact remains unidentified",
+                "original six-case results remain separate"
+              ],
+              "source_evidence": [
+                {
+                  "path": "cache_extension.results.*.label",
+                  "equals": "LATER-FOLLOWING"
+                },
+                {
+                  "path": "cache_extension.all_direct_passed",
+                  "equals": true
+                }
+              ]
             }
           ],
           "unsupported": []
@@ -4357,7 +5184,12 @@
         {
           "id": "supplementary_s3",
           "heading_pattern": "^Supplementary Figure S3\\b",
-          "literals": [{"text": "7", "reason": "Former main figure number"}],
+          "literals": [
+            {
+              "text": "7",
+              "reason": "Former main figure number"
+            }
+          ],
           "numbers": [
             {
               "path": "consequences.source_history.origins",
@@ -4385,7 +5217,7 @@
               "id": "history-population",
               "description": "Keep all roots, both editors and original seeds under the original reader.",
               "all_of": [
-                "every terminal root under the original reader",
+                "every benchmark case under the original reader",
                 "both editors and both original training seeds shown separately"
               ],
               "source_evidence": [
@@ -4402,7 +5234,7 @@
                 "all 16 direct/opposes questions are correct across every starting state",
                 "18 joint both/either/same questions",
                 "consistently wrong",
-                "counts use atomic.perfect roots as their denominator; the bars use all roots"
+                "counts use cases passing all individual-fact checks as their denominator; the bars use all cases"
               ],
               "source_evidence": []
             },
@@ -4564,6 +5396,93 @@
             }
           ],
           "unsupported": []
+        },
+        {
+          "id": "figure10",
+          "heading_pattern": "^Figure 10\\.",
+          "numbers": [
+            {
+              "path": "update_methods.contrasts.0.roots"
+            },
+            {
+              "path": "update_methods.questions_per_history"
+            },
+            {
+              "path": "update_methods.contrasts.0.level",
+              "percent": true,
+              "decimals": 2
+            },
+            {
+              "path": "update_methods.fallback.0.fallback"
+            },
+            {
+              "path": "update_methods.fallback.0.contexts"
+            }
+          ],
+          "literals": [
+            {
+              "text": "10",
+              "reason": "Figure identifier, not an experimental outcome"
+            }
+          ],
+          "facts": [
+            {
+              "id": "mixed-model-results",
+              "description": "Positive Qwen comparisons do not erase mixed Gemma results.",
+              "all_of": [
+                "Both Qwen intervals exclude zero",
+                "Gemma.s constrained interval touches zero",
+                "consistency-trained interval crosses zero"
+              ],
+              "source_evidence": [
+                {
+                  "path": "update_methods.contrasts.0.lower",
+                  "equals": 0.0
+                },
+                {
+                  "path": "update_methods.contrasts.1.lower",
+                  "lt": 0
+                },
+                {
+                  "path": "update_methods.contrasts.2.lower",
+                  "gt": 0
+                },
+                {
+                  "path": "update_methods.contrasts.3.lower",
+                  "gt": 0
+                }
+              ]
+            },
+            {
+              "id": "absolute-performance",
+              "description": "Relative gains are not universal reliability.",
+              "all_of": [
+                "neither learned method.s seed.mean.*reaches half",
+                "do(?:es)? not establish a universal consistency cure"
+              ],
+              "source_evidence": [
+                {
+                  "path": "update_methods.absolute_rates.*.rate",
+                  "lt": 0.5
+                }
+              ]
+            },
+            {
+              "id": "baseline-fallback",
+              "description": "The executed baseline includes its recorded fallback.",
+              "all_of": [
+                "baseline used its recorded fallback"
+              ],
+              "source_evidence": [
+                {
+                  "path": "update_methods.fallback.*.fallback",
+                  "equals": 192
+                }
+              ]
+            }
+          ],
+          "unsupported": [],
+          "provenance": "Computed from every saved ORIGIN row; paired root bootstrap with both original seeds."
         }
       ]
     }

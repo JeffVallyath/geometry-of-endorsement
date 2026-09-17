@@ -1,0 +1,279 @@
+{
+  "codes": [
+    {
+      "root_id": "SSC1-FINAL-0035",
+      "pair_id": "V10_ROBUST_PAIR_CROSSOVER_01",
+      "role": "retrospective_robust_witness",
+      "original_split": "NEW_SINGLE_CASE_EXTENSION",
+      "query_id": "SSC1-FINAL-0035-d0-extra3",
+      "primary": true,
+      "probability_gap": 0.9525500039918002,
+      "error_early": 0.9584193803997291,
+      "error_later": 0.005869376407928839,
+      "probability_effects": {
+        "cells": {
+          "AA": 0.9975581541926914,
+          "AB": 0.03361409443621834,
+          "BA": 0.9979028512438762,
+          "BB": 0.04500815020089124
+        },
+        "early": [
+          0.00034469705118478355,
+          0.011394055764672895
+        ],
+        "later": [
+          -0.9639440597564731,
+          -0.952894701042985
+        ],
+        "interaction": 0.011049358713488111
+      },
+      "log_odds_effects": {
+        "cells": {
+          "AA": 6.01255621528253,
+          "AB": -3.3586177863180637,
+          "BA": 6.165077241137624,
+          "BB": -3.0548592172563076
+        },
+        "early": [
+          0.1525210258550942,
+          0.30375856906175613
+        ],
+        "later": [
+          -9.371174001600593,
+          -9.219936458393931
+        ],
+        "interaction": 0.15123754320666194
+      },
+      "direct_checks": [
+        {
+          "state": "AB",
+          "query_id": "SSC1-FINAL-0035-d0-03",
+          "recipient": "BB",
+          "baseline_both_correct": true,
+          "p_correct": 0.9999143055187606,
+          "recipient_probability_change": 8.612260038454167e-08,
+          "passed": true
+        },
+        {
+          "state": "AB",
+          "query_id": "SSC1-FINAL-0035-d0-extra0",
+          "recipient": "BB",
+          "baseline_both_correct": true,
+          "p_correct": 0.9999307987503631,
+          "recipient_probability_change": 1.1697634896390419e-05,
+          "passed": true
+        },
+        {
+          "state": "BA",
+          "query_id": "SSC1-FINAL-0035-d0-03",
+          "recipient": "AA",
+          "baseline_both_correct": true,
+          "p_correct": 0.9992299996442124,
+          "recipient_probability_change": 8.612357214510258e-05,
+          "passed": true
+        },
+        {
+          "state": "BA",
+          "query_id": "SSC1-FINAL-0035-d0-extra0",
+          "recipient": "AA",
+          "baseline_both_correct": true,
+          "p_correct": 0.9999537255828341,
+          "recipient_probability_change": 1.5417400903716683e-06,
+          "passed": true
+        }
+      ],
+      "selectivity_assessed": true,
+      "direct_preservation": true,
+      "hybrid_joint_valid_mass": true,
+      "strict_direct_checks": [
+        {
+          "state": "AB",
+          "recipient": "BB",
+          "query_id": "SSC1-FINAL-0035-d0-03",
+          "valid": true,
+          "correct": true,
+          "p_correct": 0.9999143055187606,
+          "mass": 0.9999350310722951,
+          "recipient_probability_change": 8.612260038454167e-08,
+          "passed": true
+        },
+        {
+          "state": "AB",
+          "recipient": "BB",
+          "query_id": "SSC1-FINAL-0035-d0-extra0",
+          "valid": true,
+          "correct": true,
+          "p_correct": 0.9999307987503631,
+          "mass": 0.9999565581537878,
+          "recipient_probability_change": 1.1697634896390419e-05,
+          "passed": true
+        },
+        {
+          "state": "BA",
+          "recipient": "AA",
+          "query_id": "SSC1-FINAL-0035-d0-03",
+          "valid": true,
+          "correct": true,
+          "p_correct": 0.9992299996442124,
+          "mass": 0.9997756578591528,
+          "recipient_probability_change": 8.612357214510258e-05,
+          "passed": true
+        },
+        {
+          "state": "BA",
+          "recipient": "AA",
+          "query_id": "SSC1-FINAL-0035-d0-extra0",
+          "valid": true,
+          "correct": true,
+          "p_correct": 0.9999537255828341,
+          "mass": 0.999958542159132,
+          "recipient_probability_change": 1.5417400903716683e-06,
+          "passed": true
+        }
+      ],
+      "strict_direct_preservation": true,
+      "original_descriptive_label": "LATER-FOLLOWING",
+      "strict_label": "LATER-FOLLOWING"
+    },
+    {
+      "root_id": "SSC1-FINAL-0035",
+      "pair_id": "V10_ROBUST_PAIR_CROSSOVER_01",
+      "role": "retrospective_robust_witness",
+      "original_split": "NEW_SINGLE_CASE_EXTENSION",
+      "query_id": "SSC1-FINAL-0035-d1-extra3",
+      "primary": false,
+      "probability_gap": 0.9586676706137618,
+      "error_early": 0.9619347714349867,
+      "error_later": 0.003267100821224958,
+      "probability_effects": {
+        "cells": {
+          "AA": 0.9875894771993412,
+          "AB": 0.023544637301524694,
+          "BA": 0.9887465095577364,
+          "BB": 0.02892180658557946
+        },
+        "early": [
+          0.0011570323583951492,
+          0.005377169284054767
+        ],
+        "later": [
+          -0.9640448398978165,
+          -0.9598247029721569
+        ],
+        "interaction": 0.00422013692565959
+      },
+      "log_odds_effects": {
+        "cells": {
+          "AA": 4.376722376793623,
+          "AB": -3.7250309586524963,
+          "BA": 4.475759646855295,
+          "BB": -3.513811130076647
+        },
+        "early": [
+          0.09903727006167173,
+          0.21121982857584953
+        ],
+        "later": [
+          -8.10175333544612,
+          -7.9895707769319415
+        ],
+        "interaction": 0.1121825585141778
+      },
+      "direct_checks": [
+        {
+          "state": "AB",
+          "query_id": "SSC1-FINAL-0035-d1-03",
+          "recipient": "BB",
+          "baseline_both_correct": true,
+          "p_correct": 0.999927819251075,
+          "recipient_probability_change": 3.218445225772193e-06,
+          "passed": true
+        },
+        {
+          "state": "AB",
+          "query_id": "SSC1-FINAL-0035-d1-extra0",
+          "recipient": "BB",
+          "baseline_both_correct": true,
+          "p_correct": 0.999911041744617,
+          "recipient_probability_change": 1.0942433720240174e-06,
+          "passed": true
+        },
+        {
+          "state": "BA",
+          "query_id": "SSC1-FINAL-0035-d1-03",
+          "recipient": "AA",
+          "baseline_both_correct": true,
+          "p_correct": 0.9998383355037137,
+          "recipient_probability_change": 1.2936172516297972e-05,
+          "passed": true
+        },
+        {
+          "state": "BA",
+          "query_id": "SSC1-FINAL-0035-d1-extra0",
+          "recipient": "AA",
+          "baseline_both_correct": true,
+          "p_correct": 0.9999094482088604,
+          "recipient_probability_change": 1.4387023657969067e-06,
+          "passed": true
+        }
+      ],
+      "selectivity_assessed": true,
+      "direct_preservation": true,
+      "hybrid_joint_valid_mass": true,
+      "strict_direct_checks": [
+        {
+          "state": "AB",
+          "recipient": "BB",
+          "query_id": "SSC1-FINAL-0035-d1-03",
+          "valid": true,
+          "correct": true,
+          "p_correct": 0.999927819251075,
+          "mass": 0.9994053682936939,
+          "recipient_probability_change": 3.218445225772193e-06,
+          "passed": true
+        },
+        {
+          "state": "AB",
+          "recipient": "BB",
+          "query_id": "SSC1-FINAL-0035-d1-extra0",
+          "valid": true,
+          "correct": true,
+          "p_correct": 0.999911041744617,
+          "mass": 0.9996856887279103,
+          "recipient_probability_change": 1.0942433720240174e-06,
+          "passed": true
+        },
+        {
+          "state": "BA",
+          "recipient": "AA",
+          "query_id": "SSC1-FINAL-0035-d1-03",
+          "valid": true,
+          "correct": true,
+          "p_correct": 0.9998383355037137,
+          "mass": 0.9993548070620829,
+          "recipient_probability_change": 1.2936172516297972e-05,
+          "passed": true
+        },
+        {
+          "state": "BA",
+          "recipient": "AA",
+          "query_id": "SSC1-FINAL-0035-d1-extra0",
+          "valid": true,
+          "correct": true,
+          "p_correct": 0.9999094482088604,
+          "mass": 0.9996788241923604,
+          "recipient_probability_change": 1.4387023657969067e-06,
+          "passed": true
+        }
+      ],
+      "strict_direct_preservation": true,
+      "original_descriptive_label": "LATER-FOLLOWING",
+      "strict_label": "LATER-FOLLOWING"
+    }
+  ],
+  "strict_joint_direct_preservation": true,
+  "interpretation": "JOINTLY_MATCHED_DUAL_CODE_LATER_EXAMPLE",
+  "retrospective_selection": true,
+  "population_or_general_mechanism_claim": false,
+  "stop_after_this_case": true
+}

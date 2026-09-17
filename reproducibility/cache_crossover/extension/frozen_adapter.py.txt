@@ -1,0 +1,96 @@
+"""One root, six exact queries, original scientific engine without panel mutation."""
+import copy
+import gzip
+import json
+import math
+from pathlib import Path
+from types import SimpleNamespace
+from continuation.bindings import ROOT, FOLLOWUP, digest, sha
+from continuation import gates
+
+HERE=ROOT/'robust_pair'
+ID='V10_ROBUST_PAIR_CROSSOVER_01'
+RID='SSC1-FINAL-0035'
+COND='INV_PAIR_NLL_s1'
+QIDS=[RID+'-'+s for s in ('d0-extra3','d0-03','d0-extra0','d1-extra3','d1-03','d1-extra0')]
+
+def fixed_case():
+    evidence=json.loads((HERE/'handoff/CANDIDATE_EVIDENCE.json').read_text())
+    assert evidence['six_question_ids']==QIDS and (evidence['origin_A'],evidence['origin_B'])==(3,5)
+    assert sha(HERE/'handoff/inputs/design.json')==evidence['source_bindings']['design_sha256']
+    assert sha(HERE/'handoff/inputs/core.json.gz')==evidence['source_bindings']['scores_sha256']
+    d=json.loads((HERE/'handoff/inputs/design.json').read_text())
+    raw=json.loads(gzip.decompress((HERE/'handoff/inputs/core.json.gz').read_bytes()))
+    questions={q['query_id']:q for q in d['questions']}
+    contexts=[f'o{o}/{COND}' for o in range(8)]+['NATIVE_FINAL']
+    records=[]
+    for context in contexts:
+        for qid in QIDS:
+            r=next(r for r in raw['physical'] if r['context']==context and r['query_id']==qid)
+            lp=r['logps']; w=[math.exp(x-max(lp)) for x in lp]; flags={k:r['recorded_checks'][k] for k in gates.FLAGS}
+            records.append(dict(logical_context=context,query_id=qid,physical_id=context+'|'+qid,
+                raw_logps_no_yes=lp,p_yes=w[1]/sum(w),mass=r['recorded_checks']['answer_mass'],
+                tokens=r['tokens'],flags=flags,journal_line=r['journal_line']))
+    case=dict(root_id=RID,model='gemma',condition=COND,primary_query_id=QIDS[0],primary_semantic_spec=questions[QIDS[0]]['spec'],
+        world=d['root'],source_inputs=d['source_inputs'],questions={q:questions[q] for q in QIDS},
+        contexts={c:raw['contexts'][c] for c in contexts},all_eight_history_records=records[:48],native_records=records[48:],
+        selection=dict(pair_id=ID,role='retrospective_robust_witness',original_neural_split='NEW_SINGLE_CASE_EXTENSION',origin_A=3,origin_B=5))
+    saved={(r['logical_context'],r['query_id']):dict(raw_logps_no_yes=r['raw_logps_no_yes'],p_yes=r['p_yes'],
+        probabilities=[1-r['p_yes'],r['p_yes']],mass=r['mass'],**r['flags']) for r in records}
+    case['gates']=gates.eligibility(case,saved,QIDS[0])
+    for h in evidence['histories']:
+        context=f'o{h["origin"]}/{COND}'; ctx=case['contexts'][context]
+        assert len(ctx['prefix_ids'])==h['prefix_tokens']==517 and ctx['prefix_ids'][-8:]==h['last_eight_ids']
+        src=d['root']['sources'][h['origin']]['values']; end=d['root']['terminal']['values']
+        assert sum(a!=b for aa,bb in zip(src,end) for a,b in zip(aa,bb))==h['actual_changed_facts']==2
+        for q in h['questions']:
+            r=next(r for r in records if r['logical_context']==context and r['query_id']==q['query_id'])
+            assert questions[q['query_id']]['labels']==q['labels_no_yes']
+            assert r['raw_logps_no_yes']==q['raw_logps_no_yes'] and r['tokens']==q['tokens']
+            assert abs(r['p_yes']-q['p_yes'])<1e-14
+    strong_pair(case,saved)
+    return case
+
+def strong_pair(case, scores):
+    for qid in (QIDS[0],QIDS[3]):
+        a=scores[f'o3/{COND}',qid]; b=scores[f'o5/{COND}',qid]
+        if not (a['valid'] and b['valid'] and a['prediction']==1 and b['prediction']==0 and a['p_yes']>=.95 and b['p_yes']<=.05):
+            raise ValueError('FIXED_PAIR_DUAL_CODE_STRONG_REPLAY_FAILED:'+qid)
+
+def binding_test(case):
+    from transformers import AutoTokenizer
+    from canonical.adapter import Backbone
+    from intervention_adapter import verify_token_binding
+    small=FOLLOWUP/'outputs/model_validation-001/small_pinned_assets/11c9b309abf73637e4b6f9a3fa1e92e615547819'
+    bb=Backbone.__new__(Backbone);bb.tokenizer=AutoTokenizer.from_pretrained(str(small),local_files_only=True)
+    bb.template_kwargs={};bb._prefix_cache={}
+    records=case['all_eight_history_records']+case['native_records']
+    for r in records:
+        ctx=case['contexts'][r['logical_context']]
+        verify_token_binding(bb,SimpleNamespace(text=ctx['text'],_artifact={'prefix_ids':ctx['prefix_ids']}),case['questions'][r['query_id']],r)
+    for joint,expected in ((QIDS[0],QIDS[1:3]),(QIDS[3],QIDS[4:6])):
+        assert [d['query_id'] for d in gates.code_queries(case,joint)[1]]==expected
+    return dict(status='PASS',fresh_token_bindings=len(records),exact_query_ids=QIDS,case_sha256=digest(case),neural_forwards=0)
+
+def strict_results(case, cells, original):
+    result=copy.deepcopy(original)
+    for s in result:
+        checks=[]
+        for state,recipient in (('AB','BB'),('BA','AA')):
+            for d in gates.code_queries(case,s['query_id'])[1]:
+                r=cells[state,d['query_id']]; base=cells[recipient,d['query_id']]; gold=gates.truth(case,d)
+                p=r['probabilities'][gold] if r['probabilities'] is not None else None
+                delta=abs(p-base['probabilities'][gold]) if p is not None else None
+                checks.append(dict(state=state,recipient=recipient,query_id=d['query_id'],valid=r['valid'],correct=r['correct'],
+                    p_correct=p,mass=r['mass'],recipient_probability_change=delta,
+                    passed=bool(r['valid'] and r['correct'] and p is not None and p>=.95 and r['mass']>=.90 and delta<=.02)))
+        s['strict_direct_checks']=checks;s['strict_direct_preservation']=all(c['passed'] for c in checks)
+        s['original_descriptive_label']=s.pop('label')
+        s['strict_label']=s['original_descriptive_label'] if s['strict_direct_preservation'] else 'MIXED/INCONCLUSIVE'
+    passed=all(s['strict_direct_preservation'] for s in result)
+    labels=[s['strict_label'] for s in result]
+    interpretation=('JOINTLY_MATCHED_DUAL_CODE_LATER_EXAMPLE' if labels==['LATER-FOLLOWING']*2 and passed else
+                    'JOINTLY_MATCHED_DUAL_CODE_EARLY_EXAMPLE' if labels==['EARLY-FOLLOWING']*2 and passed else
+                    'COARSE_MECHANISTIC_PATTERN_DOES_NOT_EXTEND_CLEANLY')
+    return dict(codes=result,strict_joint_direct_preservation=passed,interpretation=interpretation,
+        retrospective_selection=True,population_or_general_mechanism_claim=False,stop_after_this_case=True)

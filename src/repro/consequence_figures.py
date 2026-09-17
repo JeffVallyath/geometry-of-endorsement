@@ -100,20 +100,23 @@ def plot(module) -> None:
             left.barh(y, 100 * row['margin_hit'], height=.42, color=color)
             left.text(103, y, f"{100 * row['margin_hit']:.0f}%", va='center', fontsize=9)
         else:
-            left.text(3, y, 'Reference patch; not margin-tuned', va='center', fontsize=8)
+            left.text(3, y, 'Full replacement; not margin-tuned', va='center', fontsize=8)
         right.errorbar(row['recovery'], y,
             xerr=[[row['recovery'] - row['lower']], [row['upper'] - row['recovery']]],
             fmt='o', color=color, capsize=4, markersize=6)
         right.text(row['recovery'], y + .25, f"{row['recovery']:.3f}", ha='center', fontsize=9)
-    left.set_yticks([2, 1, 0], [r['label'] for r in arms])
+    display_labels = {'Rank-one relation steering': 'Relation-direction steering',
+                      'Whole-state interpolation': 'Move toward changed-context activation',
+                      'Natural changed-state patch': 'Use changed-context activation'}
+    left.set_yticks([2, 1, 0], [display_labels[r['label']] for r in arms])
     right.set_yticks([2, 1, 0], [])
     for axis in (left, right):
         axis.set_ylim(-.55, 2.55)
         axis.grid(axis='y', visible=False)
     left.set_xlim(0, 120)
     left.set_xticks([0, 50, 100])
-    left.set_title('Direct margin reached', loc='left', fontsize=11)
-    left.set_xlabel('Final worlds within target tolerance (%)')
+    left.set_title('Requested answer margin reached', loc='left', fontsize=11)
+    left.set_xlabel('Test contexts within target tolerance (%)')
     right.set_xlim(-1.2, 1.2)
     right.axvline(0, color='#777777', linewidth=.8)
     right.axvline(1, color='#aaaaaa', linewidth=.8, linestyle=':')
@@ -121,12 +124,12 @@ def plot(module) -> None:
     right.set_xlabel('Recovery score (not answer accuracy)')
     fig.suptitle('Reaching the requested answer does not recover its consequences', x=.02, ha='left', fontsize=13)
     fig.text(.5, .025,
-        'Gemma · same 96 final worlds · target fraction 0.75 · saved 95% world-bootstrap intervals\n'
+        'Gemma · same 96 test contexts · target fraction 0.75 · saved 95% context-bootstrap intervals\n'
         'Recovery: 0 = unchanged starting state; 1 = natural change. Negative = farther from the natural pattern.\n'
-        'Measured margins are not a full strong-target pass. Llama failed reference qualification; no cross-model comparison.',
+        'Measured margins did not pass all qualification checks. Llama failed reference qualification; no cross-model comparison.',
         ha='center', va='bottom', fontsize=8)
     fig.tight_layout(rect=(0, .20, 1, .92), w_pad=2.5)
-    module.save(fig, 'fig6_answer_consequences')
+    module.save(fig, 'fig06_answer_consequences')
 
     history = data['source_history']
     fig = plt.figure(figsize=(10.7, 8.0))
@@ -154,26 +157,26 @@ def plot(module) -> None:
             width = 100 * count / row['roots']
             axis.barh(y, width, left=offset, height=.58, color=color)
             offset += width
-        axis.text(103, y, f"{disagreement}/{row['atomic_perfect']} atomic-perfect roots", va='center', fontsize=9)
+        axis.text(103, y, f"{disagreement}/{row['atomic_perfect']} cases passing fact checks", va='center', fontsize=9)
     axis.set_yticks(list(reversed(range(len(rows)))),
         [f"{r['actor'].title()} · {r['editor']} · seed {r['seed']}" for r in rows], fontsize=9)
     axis.set_xlim(0, 100)
     axis.set_ylim(-.65, len(rows)-.35)
-    axis.set_xlabel('Share of terminal roots (%)')
+    axis.set_xlabel('Share of benchmark cases (%)')
     axis.grid(axis='y', visible=False)
     axis.text(103, len(rows)-.05, 'Joint answer disagreement in', fontsize=8, va='bottom')
-    fig.suptitle('Correct atomic relations can still leave joint answers dependent on history',
+    fig.suptitle('Correct individual facts can still leave combined answers dependent on history',
                  x=.035, y=.97, ha='left', fontsize=13)
-    fig.legend(handles=[Patch(color='#bd5a4c', label='All atomic answers correct; joint answers vary with starting state'),
-                        Patch(color='#408f9c', label='All atomic answers correct; joint answers do not vary (may still be wrong)'),
-                        Patch(color='#d9dce0', label='At least one atomic answer incorrect')],
+    fig.legend(handles=[Patch(color='#bd5a4c', label='Individual facts correct; answers combining facts vary with starting history'),
+                        Patch(color='#408f9c', label='Individual facts correct; combined answers stay the same (may still be wrong)'),
+                        Patch(color='#d9dce0', label='At least one individual-fact answer incorrect')],
                loc='lower left', bbox_to_anchor=(.04, .075), fontsize=8, frameon=False)
     fig.text(.5, .014,
-        'Original reader · four starting states per root · Gemma: 64 roots; Qwen: 32 roots · both training seeds shown separately\n'
-        'Atomic = all 16 direct/opposes questions correct across all starts; joint = 18 both/either/same questions.\n'
-        'Descriptive counts from saved root statistics, not a new primary test. No pooling across models, editors, or seeds.',
+        'Original question wording · four histories per case · Gemma: 64 cases; Qwen: 32 cases · both training seeds shown separately\n'
+        'Fact checks: all 16 direct/opposes questions correct across all histories. Combined questions: 18 both/either/same questions.\n'
+        'Descriptive case counts, not a new primary test. No pooling across models, update procedures, or seeds.',
         ha='center', va='bottom', fontsize=8)
-    # Preserve the earlier V6 rendering and exact count projection as archival evidence.
+    # Preserve the earlier V6 analysis and exact counts; labels explain the same measurements.
     (module.OUT / 'supplementary').mkdir(exist_ok=True)
-    module.save(fig, 'supplementary/figS3_v6_source_history')
+    module.save(fig, 'supplementary/figS3_source_history_readable')
     (module.OUT / 'consequence_comparisons.json').write_text(json.dumps(data, indent=2) + '\n', encoding='utf8', newline='\n')

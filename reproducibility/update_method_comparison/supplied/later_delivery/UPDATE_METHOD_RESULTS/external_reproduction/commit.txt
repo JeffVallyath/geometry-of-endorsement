@@ -1,0 +1,25 @@
+repository   https://github.com/19PINE-AI/programmable-kv
+ref          main
+commit       e9085eafcc6c83e60c548de69060c4bd5b210c96
+committed    2026-06-29T09:30:45Z
+subject      Standardize acknowledgement wording
+
+Also recorded, for provenance of the arXiv citation:
+  210e005646e7c283bd32a15166f0038d2a92d2e9  2026-06-17T02:07:28Z
+  "Add arXiv:2606.17107 citation/links across README, site, and CITATION..."
+The pinned head contains that commit.
+
+paper        arXiv:2606.17107v1
+             Bojie Li, "Models Take Notes at Prefill: KV Cache Can Be Editable
+             and Composable"
+scope read   Section 4 and Appendix B (Section 3 is mechanism context only)
+
+Verification performed during preparation:
+  repository resolved and archive downloaded    YES
+  commit recorded                                YES
+  code inspected (editkv/core.py, diagnostics.py, example.py, e2/)  YES
+  worked example executed                        NO  -- see stderr.txt
+
+NOTE: files under results/ in the external repository are the authors' REPORTED
+findings. They were not independently rerun for this handoff and must not be
+presented as fresh measurements.

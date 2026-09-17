@@ -1,0 +1,219 @@
+{
+  "example": {
+    "root_id": "SSC1-FINAL-0026",
+    "query_id": "SSC1-FINAL-0026-d1-extra2",
+    "format": "main",
+    "semantic_spec": {
+      "a": 4,
+      "b": 5,
+      "kind": "both",
+      "p": 0
+    },
+    "correct_semantic_answer": 1,
+    "direct_facts": [
+      {
+        "query_id": "SSC1-FINAL-0026-d1-03",
+        "actor": "Dion",
+        "project": "Bridge",
+        "correct_semantic_answer": 1
+      },
+      {
+        "query_id": "SSC1-FINAL-0026-d1-extra0",
+        "actor": "Orla",
+        "project": "Bridge",
+        "correct_semantic_answer": 1
+      }
+    ],
+    "states": [
+      {
+        "state": "AA",
+        "joint": {
+          "p_yes": 0.9657767960665852,
+          "mass": 0.9980741647579572,
+          "prediction": 1,
+          "valid": true,
+          "correct": true,
+          "raw_logps_no_yes": [
+            -3.376779079437256,
+            -0.036750223487615585
+          ],
+          "raw_line": 1023
+        },
+        "direct": [
+          {
+            "p_yes": 0.9962550713707308,
+            "mass": 0.999174902573423,
+            "prediction": 1,
+            "valid": true,
+            "correct": true,
+            "raw_logps_no_yes": [
+              -5.5881781578063965,
+              -0.004577396437525749
+            ],
+            "raw_line": 1024
+          },
+          {
+            "p_yes": 0.9999094277856656,
+            "mass": 0.999661214847583,
+            "prediction": 1,
+            "valid": true,
+            "correct": true,
+            "raw_logps_no_yes": [
+              -9.309701919555664,
+              -0.0004294188693165779
+            ],
+            "raw_line": 1025
+          }
+        ]
+      },
+      {
+        "state": "BB",
+        "joint": {
+          "p_yes": 0.017052000340824897,
+          "mass": 0.9975433529433585,
+          "prediction": 0,
+          "valid": true,
+          "correct": false,
+          "raw_logps_no_yes": [
+            -0.019658729434013367,
+            -4.073947429656982
+          ],
+          "raw_line": 1029
+        },
+        "direct": [
+          {
+            "p_yes": 0.9964145012888018,
+            "mass": 0.999294289738052,
+            "prediction": 1,
+            "valid": true,
+            "correct": true,
+            "raw_logps_no_yes": [
+              -5.631563663482666,
+              -0.004297901410609484
+            ],
+            "raw_line": 1030
+          },
+          {
+            "p_yes": 0.999065779845954,
+            "mass": 0.999462102072742,
+            "prediction": 1,
+            "valid": true,
+            "correct": true,
+            "raw_logps_no_yes": [
+              -6.976336479187012,
+              -0.0014726994559168816
+            ],
+            "raw_line": 1031
+          }
+        ]
+      },
+      {
+        "state": "AB",
+        "joint": {
+          "p_yes": 0.024701388007194493,
+          "mass": 0.9972268088276466,
+          "prediction": 0,
+          "valid": true,
+          "correct": false,
+          "raw_logps_no_yes": [
+            -0.02778862975537777,
+            -3.7036728858947754
+          ],
+          "raw_line": 1035
+        },
+        "direct": [
+          {
+            "p_yes": 0.9955441296640755,
+            "mass": 0.9992546462222823,
+            "prediction": 1,
+            "valid": true,
+            "correct": true,
+            "raw_logps_no_yes": [
+              -5.414278507232666,
+              -0.005211459007114172
+            ],
+            "raw_line": 1036
+          },
+          {
+            "p_yes": 0.9982432361630965,
+            "mass": 0.9992666347274602,
+            "prediction": 1,
+            "valid": true,
+            "correct": true,
+            "raw_logps_no_yes": [
+              -6.345015525817871,
+              -0.002491943072527647
+            ],
+            "raw_line": 1037
+          }
+        ]
+      },
+      {
+        "state": "BA",
+        "joint": {
+          "p_yes": 0.9773357617526621,
+          "mass": 0.9983669407871691,
+          "prediction": 1,
+          "valid": true,
+          "correct": true,
+          "raw_logps_no_yes": [
+            -3.7886013984680176,
+            -0.024559414014220238
+          ],
+          "raw_line": 1041
+        },
+        "direct": [
+          {
+            "p_yes": 0.9969733045058693,
+            "mass": 0.9992439639523498,
+            "prediction": 1,
+            "valid": true,
+            "correct": true,
+            "raw_logps_no_yes": [
+              -5.801040172576904,
+              -0.0037876071874052286
+            ],
+            "raw_line": 1042
+          },
+          {
+            "p_yes": 0.9998915045741719,
+            "mass": 0.9996512606616438,
+            "prediction": 1,
+            "valid": true,
+            "correct": true,
+            "raw_logps_no_yes": [
+              -9.129151344299316,
+              -0.0004573014739435166
+            ],
+            "raw_line": 1043
+          }
+        ]
+      }
+    ]
+  },
+  "counts": {
+    "main": {
+      "clear_later": 5,
+      "mixed": 1,
+      "low_separation": 0,
+      "clear_early": 0,
+      "total": 6
+    },
+    "alternate": {
+      "clear_later": 1,
+      "mixed": 2,
+      "low_separation": 3,
+      "clear_early": 0,
+      "total": 6
+    }
+  },
+  "layers": {
+    "early": 16,
+    "later": 26
+  },
+  "sources": {
+    "raw.jsonl.gz": "4fafa7adda258e6295f823b09ad13eea020f6a12497b9ac563ecf8f8f7d66aa2",
+    "case_plan.json": "013933161e4028c114da54ac9b1f0823c4a20ed61f6a506bb398c4710da8c539",
+    "terminal_worlds.json": "a2fc7bf13e15fc2c64eceee5bbc4ff7df7c8f8870789373272a5c52e758027ee"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "status": "PASS",
+  "original_archive_sha256": "fc6f8c3eed7bfca435fc1042453bfb2e44874a3179fda4e950ba95416d18b5e2",
+  "extension_archive_sha256": "307a4f2344e81564300671d616af5cec21ac5bffe28b9553aedd5c4b253ef16a",
+  "declared_payload_members_checked": {
+    "original": 69,
+    "extension": 73
+  },
+  "scored_extension_rows_recomputed": 156,
+  "replay_rows_compared": 108,
+  "exact_controls": 24,
+  "original_summaries_recomputed": 24,
+  "extension_summaries_recomputed": 2,
+  "forwards_recorded": 166,
+  "neural_forwards_this_reporting_pass": 0,
+  "minimum_hybrid_direct_p_correct": 0.9992299996442124,
+  "minimum_hybrid_direct_candidate_mass": 0.9993548070620829,
+  "maximum_hybrid_direct_change": 8.612357214510258e-05,
+  "audit_roundoff_note": "Maximum direct delta differs from supplied audit by 2.43e-17; frozen arithmetic retained, no scientific mismatch.",
+  "original_counts": {
+    "witness/primary": {
+      "LATER-FOLLOWING": 5,
+      "MIXED/INCONCLUSIVE": 1
+    },
+    "witness/alternate": {
+      "LOW-DISCRIMINATION": 3,
+      "LATER-FOLLOWING": 1,
+      "MIXED/INCONCLUSIVE": 2
+    },
+    "control/primary": {
+      "LOW-DISCRIMINATION": 6
+    },
+    "control/alternate": {
+      "MIXED/INCONCLUSIVE": 1,
+      "LOW-DISCRIMINATION": 5
+    }
+  },
+  "scope": "Saved-record arithmetic and byte integrity; not an independent neural replication or live remote observation."
+}

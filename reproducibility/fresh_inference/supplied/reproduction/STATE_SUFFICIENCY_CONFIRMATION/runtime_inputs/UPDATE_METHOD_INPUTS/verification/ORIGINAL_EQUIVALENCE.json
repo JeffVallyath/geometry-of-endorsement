@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "source_requests_compared": 1616,
+  "questions_compared": 44288,
+  "candidate_scenes_compared": 136,
+  "exact_original_prompt_equality": true,
+  "original_source_hashes": {
+    "terminal_pairs.py": "6d028520f57d72a34cfcfdfce7915e21b5aecdcdf7182f8da9879d0f12fd0bd9",
+    "protocol.py": "709b9e9ce50cf6ec335f677965660ac81c593367050ced4e613fd36788eae62f",
+    "source_independence.py": "9485b2a7e0543a1f2a0ec18e3862d0461892b5e78157a25e78cbcc9c1d8c1a19"
+  },
+  "pretrained_models_loaded": false,
+  "model_checks": "PENDING"
+}

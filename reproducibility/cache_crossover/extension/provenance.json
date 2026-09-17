@@ -1,0 +1,303 @@
+{
+  "schema_version": 1,
+  "archives": {
+    "V10_CAUSAL_EVIDENCE_PAPER_INTEGRATION.zip": {
+      "name": "V10_CAUSAL_EVIDENCE_PAPER_INTEGRATION.zip",
+      "sha256": "acd5426ff35720a698933ef03b3c9f87cf2e546e1be6ee6f0ab3bb1a67dcd520",
+      "bytes": 334277,
+      "verified_members": 24,
+      "manifest_sha256": "edfaee71f8e63842afc954ec21c5943938d52b4351854c2bb079a64e68a6d063",
+      "public_url": null,
+      "status": "unavailable_to_external_reproducer"
+    },
+    "V10_ROBUST_PAIR_CROSSOVER_RESULTS.zip": {
+      "name": "V10_ROBUST_PAIR_CROSSOVER_RESULTS.zip",
+      "sha256": "307a4f2344e81564300671d616af5cec21ac5bffe28b9553aedd5c4b253ef16a",
+      "bytes": 337317,
+      "verified_members": 74,
+      "manifest_sha256": "0133fc2b03350e67a9f28b78900a8faa069a3282d1bc56c7de181afe23d63165",
+      "public_url": null,
+      "status": "unavailable_to_external_reproducer"
+    },
+    "V10_CACHE_CROSSOVER_RESULTS.zip": {
+      "name": "V10_CACHE_CROSSOVER_RESULTS.zip",
+      "sha256": "fc6f8c3eed7bfca435fc1042453bfb2e44874a3179fda4e950ba95416d18b5e2",
+      "bytes": 420599025,
+      "verified_members": 70,
+      "manifest_sha256": "8fbd72b1fbe11862bf2c253ae2b896d9f52757bd7461c91cd0a39273aa97095d",
+      "public_url": null,
+      "status": "unavailable_to_external_reproducer"
+    }
+  },
+  "capsule": {
+    "capsule_sha256": "7ef182fc5a1c37cd2d7a674a1da78a795a6f89ed9831c2cd325d5fbf445d6523",
+    "payload_sha256": "24bb25308599a18d51e47dcfb9a74938163022029831b9cbbb46477dffe011eb",
+    "members": 772
+  },
+  "raw_member_sha256": "0e469768662c1e5a12e62b4404fa95a7783bbc2c0e09a6a2cd058c3261e2f2e9",
+  "intake": {
+    "checked_at": "2026-09-17T03:37:48.045067+00:00",
+    "python": "3.13.12",
+    "status": "PASS",
+    "overlay_payloads": 23,
+    "extension_payloads": 73,
+    "original_payloads": 69,
+    "all_declared_hashes_verified": true,
+    "capsule_hash_and_saved_runtime_receipts_verified": true,
+    "neural_forwards_this_integration": 0,
+    "scope": "Saved local bytes and recorded runtime receipts, not new neural inference or live execution attestation."
+  },
+  "merge_decisions": {
+    "README.md / PROJECT_STRATEGY.md / docs/RESULTS_AND_CLAIMS.md": "Merge only current causal passages; preserve Qwen/public-data, readability and parameter-editing history.",
+    "artifacts/cache_crossover/original_summaries.json": "Do not duplicate: byte-identical to reproducibility/cache_crossover/saved_summaries.json.",
+    "artifacts/cache_crossover/ORIGINAL_PANEL.md": "Do not duplicate: use the adapted docs/CACHE_CROSSOVER_APPENDIX.md with all 24 original outcomes.",
+    "docs/CACHE_CROSSOVER_INTEGRATION.md": "Merge result, scope and reporting instructions into the current Results and reproducibility README; omit redundant paste-ready manuscript text.",
+    "scripts/make_figures.py": "Already byte-identical; leave unchanged.",
+    "scripts/export_cache_crossover.py": "Adapt to current independent saved-score replay, eliminating the separate historical analysis-root dependency.",
+    "scripts/plot_cache_crossover.py": "Retain the two-format/four-state design and style helpers; rewrite labels; number as Figure 9 in the current repo.",
+    "figures/fig10_cache_crossover.pdf / .png": "Regenerate as figures/fig9_cache_crossover_extension.pdf / .png; preserve Figure 8 and original panel.",
+    "reproducibility/manifest.json": "Merge only new/changed bindings into the current inventory; never replace with the older overlay inventory.",
+    "INTEGRATION_NOTE.md / repository_changes.diff": "Reviewed in verified staging; retain original identities in integration_manifest.json, not as current instructions."
+  },
+  "files": [
+    {
+      "path": "artifacts/cache_crossover/checks.json",
+      "bytes": 1429,
+      "sha256": "706f6a7a8b546731f380d681abc50250339c4d9461b23f200732e5b943c8159f",
+      "sources": [
+        {
+          "archive": "V10_CAUSAL_EVIDENCE_PAPER_INTEGRATION.zip",
+          "member": "artifacts/cache_crossover/checks.json",
+          "bytes": 1429,
+          "sha256": "706f6a7a8b546731f380d681abc50250339c4d9461b23f200732e5b943c8159f",
+          "source_manifest_verified": true
+        }
+      ],
+      "derivation": "Byte-for-byte supplied scientific evidence."
+    },
+    {
+      "path": "artifacts/cache_crossover/extension_joint.csv",
+      "bytes": 2420,
+      "sha256": "411f3b3411663c7597ca370c40ecb57313fc031e5b9cdf5e15df510f74967861",
+      "sources": [
+        {
+          "archive": "V10_CAUSAL_EVIDENCE_PAPER_INTEGRATION.zip",
+          "member": "artifacts/cache_crossover/extension_joint.csv",
+          "bytes": 2420,
+          "sha256": "411f3b3411663c7597ca370c40ecb57313fc031e5b9cdf5e15df510f74967861",
+          "source_manifest_verified": true
+        }
+      ],
+      "derivation": "Byte-for-byte supplied scientific evidence."
+    },
+    {
+      "path": "artifacts/cache_crossover/extension_direct.csv",
+      "bytes": 2409,
+      "sha256": "5a2b411f67f26af4a13a103f090eb09c615e77edace0dc270706d32acf98c2f1",
+      "sources": [
+        {
+          "archive": "V10_CAUSAL_EVIDENCE_PAPER_INTEGRATION.zip",
+          "member": "artifacts/cache_crossover/extension_direct.csv",
+          "bytes": 2409,
+          "sha256": "5a2b411f67f26af4a13a103f090eb09c615e77edace0dc270706d32acf98c2f1",
+          "source_manifest_verified": true
+        }
+      ],
+      "derivation": "Byte-for-byte supplied scientific evidence."
+    },
+    {
+      "path": "artifacts/cache_crossover/extension_outcome.json",
+      "bytes": 8591,
+      "sha256": "51890a69cae00a09100f232c9642b132421823b2819a1fbbc4511358ae412c1d",
+      "sources": [
+        {
+          "archive": "V10_CAUSAL_EVIDENCE_PAPER_INTEGRATION.zip",
+          "member": "artifacts/cache_crossover/extension_outcome.json",
+          "bytes": 8591,
+          "sha256": "51890a69cae00a09100f232c9642b132421823b2819a1fbbc4511358ae412c1d",
+          "source_manifest_verified": true
+        }
+      ],
+      "derivation": "Byte-for-byte supplied scientific evidence."
+    },
+    {
+      "path": "artifacts/cache_crossover/original_panel.csv",
+      "bytes": 7623,
+      "sha256": "86ebc0ab1b88d1c64a20dc75717d7c964e869c28a06818ab0a63a023352d769b",
+      "sources": [
+        {
+          "archive": "V10_CAUSAL_EVIDENCE_PAPER_INTEGRATION.zip",
+          "member": "artifacts/cache_crossover/original_panel.csv",
+          "bytes": 7623,
+          "sha256": "86ebc0ab1b88d1c64a20dc75717d7c964e869c28a06818ab0a63a023352d769b",
+          "source_manifest_verified": true
+        }
+      ],
+      "derivation": "Byte-for-byte supplied scientific evidence."
+    },
+    {
+      "path": "artifacts/cache_crossover/query_mappings.json",
+      "bytes": 2340,
+      "sha256": "6f5f648d0e67c13dd95c16161df14bbed344220f3d4b909842fec7f25496774c",
+      "sources": [
+        {
+          "archive": "V10_CAUSAL_EVIDENCE_PAPER_INTEGRATION.zip",
+          "member": "artifacts/cache_crossover/query_mappings.json",
+          "bytes": 2340,
+          "sha256": "6f5f648d0e67c13dd95c16161df14bbed344220f3d4b909842fec7f25496774c",
+          "source_manifest_verified": true
+        }
+      ],
+      "derivation": "Byte-for-byte supplied scientific evidence."
+    },
+    {
+      "path": "artifacts/cache_crossover/supplied_independent_audit.json",
+      "bytes": 3361,
+      "sha256": "f081eecc6c1f3e019209d86030474049fc4bfc23768a2889533f56c8ae7c6205",
+      "sources": [
+        {
+          "archive": "V10_CAUSAL_EVIDENCE_PAPER_INTEGRATION.zip",
+          "member": "artifacts/cache_crossover/supplied_independent_audit.json",
+          "bytes": 3361,
+          "sha256": "f081eecc6c1f3e019209d86030474049fc4bfc23768a2889533f56c8ae7c6205",
+          "source_manifest_verified": true
+        }
+      ],
+      "derivation": "Byte-for-byte supplied scientific evidence."
+    },
+    {
+      "path": "reproducibility/cache_crossover/extension/raw.jsonl.gz",
+      "bytes": 29116,
+      "sha256": "cd095237cd63ed369571638b24c31839c9a3e7647f15c50ba20a8ddb164d5345",
+      "sources": [
+        {
+          "archive": "V10_ROBUST_PAIR_CROSSOVER_RESULTS.zip",
+          "member": "remote/results/raw.jsonl",
+          "bytes": 768844,
+          "sha256": "0e469768662c1e5a12e62b4404fa95a7783bbc2c0e09a6a2cd058c3261e2f2e9",
+          "source_manifest_verified": true
+        }
+      ],
+      "derivation": "Lossless gzip of all scientific journal bytes; no row selection or rounding."
+    },
+    {
+      "path": "reproducibility/cache_crossover/extension/candidate.json",
+      "bytes": 27287,
+      "sha256": "6f18b317ea6b4bd3385a0e5311604205a172eecf9d18872c5bf93f739d6a4fe4",
+      "sources": [
+        {
+          "archive": "V10_ROBUST_PAIR_CROSSOVER_RESULTS.zip",
+          "member": "implementation/handoff/CANDIDATE_EVIDENCE.json",
+          "bytes": 27287,
+          "sha256": "6f18b317ea6b4bd3385a0e5311604205a172eecf9d18872c5bf93f739d6a4fe4",
+          "source_manifest_verified": true
+        }
+      ],
+      "derivation": "Byte-for-byte retrospective selection evidence."
+    },
+    {
+      "path": "reproducibility/cache_crossover/extension/frozen_adapter.py.txt",
+      "bytes": 6376,
+      "sha256": "922534995b49e650177fdf23f14e914c397ce37ddc3e839bd449193128a5b8cf",
+      "sources": [
+        {
+          "archive": "V10_ROBUST_PAIR_CROSSOVER_RESULTS.zip",
+          "member": "implementation/adapter.py",
+          "bytes": 6376,
+          "sha256": "922534995b49e650177fdf23f14e914c397ce37ddc3e839bd449193128a5b8cf",
+          "source_manifest_verified": true
+        }
+      ],
+      "derivation": "Byte-for-byte frozen specification; retained for inspection, never imported."
+    },
+    {
+      "path": "reproducibility/cache_crossover/extension/terminal.json",
+      "bytes": 133,
+      "sha256": "b8f48ec6df584e4288a522adf579053834733cf7fc8d2b5a773a76f504c9a1e8",
+      "sources": [
+        {
+          "archive": "V10_ROBUST_PAIR_CROSSOVER_RESULTS.zip",
+          "member": "remote/results/terminal.json",
+          "bytes": 32140,
+          "sha256": "50fea308f64b3ebe5a1c6cfcf912227c44483526fff8db2a980ea575b7a56e73",
+          "source_manifest_verified": true
+        }
+      ],
+      "derivation": "Select scientific terminal status, error, real_forwards and calls; omit operational profiling."
+    },
+    {
+      "path": "reproducibility/cache_crossover/extension/supplied_delivery_checks.json",
+      "bytes": 1930,
+      "sha256": "69d8fd3377540a9281aa1a20b73184116a32674c3b6b40f7053d9cd164067b4a",
+      "sources": [
+        {
+          "archive": "V10_CAUSAL_EVIDENCE_PAPER_INTEGRATION.zip",
+          "member": "DELIVERY_CHECKS.json",
+          "bytes": 1930,
+          "sha256": "69d8fd3377540a9281aa1a20b73184116a32674c3b6b40f7053d9cd164067b4a",
+          "source_manifest_verified": true
+        }
+      ],
+      "derivation": "Byte-for-byte historical overlay-build receipt, not current repo test results."
+    },
+    {
+      "path": "reproducibility/cache_crossover/extension/integration_manifest.json",
+      "bytes": 4049,
+      "sha256": "edfaee71f8e63842afc954ec21c5943938d52b4351854c2bb079a64e68a6d063",
+      "sources": [
+        {
+          "archive": "V10_CAUSAL_EVIDENCE_PAPER_INTEGRATION.zip",
+          "member": "INTEGRATION_MANIFEST.json",
+          "bytes": 4049,
+          "sha256": "edfaee71f8e63842afc954ec21c5943938d52b4351854c2bb079a64e68a6d063",
+          "source_manifest_verified": true
+        }
+      ],
+      "derivation": "Byte-for-byte manifest of the supplied overlay; outer archive digest anchors this manifest."
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0035.json",
+      "bytes": 61334,
+      "sha256": "68483830c6debf24fd4bc0fe1799ed4407a032215ddd7d1e836c1c978fe0349b",
+      "sources": [
+        {
+          "archive": "V10_ROBUST_PAIR_CROSSOVER_RESULTS.zip",
+          "member": "implementation/handoff/inputs/design.json",
+          "bytes": 61334,
+          "sha256": "68483830c6debf24fd4bc0fe1799ed4407a032215ddd7d1e836c1c978fe0349b",
+          "source_manifest_verified": true
+        }
+      ],
+      "derivation": "Reuse existing byte-identical design; no duplicate."
+    },
+    {
+      "path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0035/core.json.gz",
+      "bytes": 139048,
+      "sha256": "959723bb54c98cb6bc52cc0568fc4f525a77892fea792c33152731a43c38fec9",
+      "sources": [
+        {
+          "archive": "V10_ROBUST_PAIR_CROSSOVER_RESULTS.zip",
+          "member": "implementation/handoff/inputs/core.json.gz",
+          "bytes": 139048,
+          "sha256": "959723bb54c98cb6bc52cc0568fc4f525a77892fea792c33152731a43c38fec9",
+          "source_manifest_verified": true
+        }
+      ],
+      "derivation": "Reuse existing byte-identical original scores; no duplicate."
+    },
+    {
+      "path": "reproducibility/cache_crossover/extension/replay.json",
+      "bytes": 3975,
+      "sha256": "cdbd494fd405d0f88eea97e0ea40834df9c9c4b3957c35c066d29c1cc55efe5c",
+      "sources": [
+        {
+          "archive": "V10_ROBUST_PAIR_CROSSOVER_RESULTS.zip",
+          "member": "remote/results/raw.jsonl",
+          "sha256": "0e469768662c1e5a12e62b4404fa95a7783bbc2c0e09a6a2cd058c3261e2f2e9",
+          "bytes": 768844
+        }
+      ],
+      "derivation": "Independent semantic normalization and strict classification from the journal, candidate, and reused design/core inputs; see src/repro/cache_crossover_extension.py."
+    }
+  ]
+}

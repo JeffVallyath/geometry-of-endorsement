@@ -43,11 +43,13 @@ def rules(identity, text):
 def test_actual_registry_passes():
     report = ev.check(ROOT, REGISTRY)
     assert report.ok(), report.errors
-    assert sum(c['bound'] for c in report.coverage) == 347
-    assert sum(c['bound'] for c in report.coverage if c['document'] == 'results') == 278
+    assert sum(c['bound'] for c in report.coverage) == 426
+    assert sum(c['bound'] for c in report.coverage if c['document'] == 'results') == 343
     captions = {c['unit']: c for c in report.coverage if c['document'] == 'captions'}
     assert set(captions) >= {'figure6', 'figure7', 'supplementary_s1', 'supplementary_s2', 'supplementary_s3'}
     assert captions['figure7']['bound'] == 7  # V10 design and primary interval bindings.
+    assert captions['figure8']['bound'] == 2  # Crossover layer counts; prose counts have source predicates.
+    assert captions['figure9']['bound'] == 7  # Selected extension matching and strict direct-readout checks.
     assert captions['supplementary_s3']['bound'] == 5  # Preserved V6 census bindings.
     assert not report.pending
 
@@ -59,14 +61,42 @@ def test_consequence_caption_requires_failed_strong_target_qualification():
 
 
 def test_source_history_caption_requires_conditional_denominator():
-    _, bad = changed('captions', 'counts\nuse atomic-perfect roots as their denominator; the bars use all roots',
-                     'counts\nuse all roots as their denominator; the bars use all roots')
+    _, bad = changed('captions', 'counts\nuse cases passing all individual-fact checks as their denominator; the bars use all cases',
+                     'counts\nuse all cases as their denominator; the bars use all cases')
     assert 'material-qualification-missing' in rules('captions', bad)
 
 
 def test_changed_estimate_is_rejected():
     _, bad = changed('results', '0.9926', '0.9927')
     assert 'number-undeclared' in rules('results', bad)
+
+
+@pytest.mark.parametrize('old,new', [
+    ('65/98 questions', '65/65 questions'),
+    ('primary label-first parser found 3/98', 'primary label-first parser found 2/98'),
+    ('union-parser sensitivity, 2/98', 'union-parser sensitivity, 3/98'),
+    ('counterfactual benchmark\nassignments, not real-world biographical claims',
+     'verified real-world biographical claims'),
+    ('Neither repeated\nbenchmark case contained a qualifying history-dependent question', 'Both repeated benchmark cases contained a qualifying history-dependent question'),
+    ('Without chronological context, 170/272 answers were correct, versus 94/272 with',
+     'Without chronological context, 94/272 answers were correct, versus 170/272 with'),
+    ('not 272 independent facts', '272 independent facts'),
+    ('obsolete record remained explicitly present earlier', 'obsolete record was absent'),
+    ('Conventional parameter-editor validation\nis pending', 'Conventional parameter-editor validation is complete'),
+])
+def test_external_in_context_claim_boundaries(old, new):
+    _, bad = changed('results', old, new)
+    assert 'material-qualification-missing' in rules('results', bad)
+
+
+def test_external_counts_are_bound_to_saved_response_replay():
+    registry = ev.load(REGISTRY)
+    results = next(d for d in registry['documents'] if d['id'] == 'results')
+    external = next(u for u in results['units'] if u['id'] == 'external_in_context')
+    assert len(external['numbers']) == 10
+    assert external['literals'] == []
+    assert all(n['path'].startswith('qwen_public.') for n in external['numbers'])
+    assert 'saved responses and both frozen parsers' in external['provenance']
 
 
 def test_wrong_interval_type_is_rejected():

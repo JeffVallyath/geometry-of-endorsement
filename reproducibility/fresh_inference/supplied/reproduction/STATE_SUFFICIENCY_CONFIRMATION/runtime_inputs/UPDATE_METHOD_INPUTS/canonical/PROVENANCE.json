@@ -1,0 +1,238 @@
+[
+  {
+    "adaptation": "mechanical dependency slice; import/path facade; scientific bodies unchanged",
+    "original_sha256": "fefdad0006e8580b70a9786bf6005a13ae47588fcf61472a698ddfc33f605f30",
+    "portable": "canonical/v2_protocol.py",
+    "portable_sha256": "237d93505b431dbf996a4c7062c4a1143e43795f8f336a4a6b82e3dfabb2e90c",
+    "symbols": [
+      "Scene",
+      "Edit",
+      "rng",
+      "digest",
+      "validate_scene",
+      "set_value",
+      "apply_program",
+      "primary_edit",
+      "make_scenes",
+      "render",
+      "evaluate",
+      "questions",
+      "token_mask"
+    ]
+  },
+  {
+    "adaptation": "mechanical dependency slice; import/path facade; scientific bodies unchanged",
+    "original_sha256": "709b9e9ce50cf6ec335f677965660ac81c593367050ced4e613fd36788eae62f",
+    "portable": "canonical/v3_protocol.py",
+    "portable_sha256": "6963c576555a0293dced8ac0a1825e5f1c84d15c4c099cfdad2099c445b49544",
+    "symbols": [
+      "programs",
+      "program_queries"
+    ]
+  },
+  {
+    "adaptation": "mechanical dependency slice; import/path facade; scientific bodies unchanged",
+    "original_sha256": "d75507dedc2c785032661b6edc9a86093692297642a4a214d5ad955180dfc4ce",
+    "portable": "canonical/tasks.py",
+    "portable_sha256": "6e3b73b99b4c8c220e6eea2d54cb0830c8bf2efd83ac20850e274b66d1f211bc",
+    "symbols": [
+      "programs",
+      "final_world",
+      "program_queries",
+      "correction_line",
+      "prefix_text",
+      "suffix_text"
+    ]
+  },
+  {
+    "adaptation": "mechanical dependency slice; import/path facade; scientific bodies unchanged",
+    "original_sha256": "b83a5490522990fa1c58f55763afaa144c624957266dc11df2c63b586001d23b",
+    "portable": "canonical/scenes.py",
+    "portable_sha256": "40c941d56f6b640ff7a5fc5c95d245b5fe0ec86e5764198aa46c1b4a827ec4bb",
+    "symbols": [
+      "scene_from_dict"
+    ]
+  },
+  {
+    "adaptation": "mechanical dependency slice; import/path facade; scientific bodies unchanged",
+    "original_sha256": "6d028520f57d72a34cfcfdfce7915e21b5aecdcdf7182f8da9879d0f12fd0bd9",
+    "portable": "canonical/candidate.py",
+    "portable_sha256": "f63ef54e7a9d1069f794aa5e197f9b57d56732353221c85f68007374663aa040",
+    "symbols": [
+      "semantic_hash",
+      "candidate"
+    ]
+  },
+  {
+    "adaptation": "mechanical dependency slice; import/path facade; scientific bodies unchanged",
+    "original_sha256": "9485b2a7e0543a1f2a0ec18e3862d0461892b5e78157a25e78cbcc9c1d8c1a19",
+    "portable": "canonical/origins.py",
+    "portable_sha256": "eba4044ec0872d43777838efb4b2a58ff09a1944130ce7f4e2a4774658746f1c",
+    "symbols": [
+      "stable_hash",
+      "bind_seed",
+      "source_digest",
+      "commands",
+      "origins",
+      "truth",
+      "questions",
+      "origin_metrics",
+      "paired_interval"
+    ]
+  },
+  {
+    "adaptation": "mechanical dependency slice; import/path facade; scientific bodies unchanged",
+    "original_sha256": "dbd90eae547b2c59775ad3b825f856be63031129dbfd6158e6bd6b1fbb7b2e61",
+    "portable": "canonical/readers.py",
+    "portable_sha256": "58181aaad07c5673cea764a423b7df9f8630b3bb78d98eec5d153715c456a7e6",
+    "symbols": [
+      "equality_text",
+      "apply_reader"
+    ]
+  },
+  {
+    "adaptation": "mechanical dependency slice; import/path facade; scientific bodies unchanged",
+    "original_sha256": "78f8937a9b871c2f38ad79dfc6492a5aeab3a9eb507d7b27c24fbc26512dc3f2",
+    "portable": "canonical/setters.py",
+    "portable_sha256": "3d186643e88d901139cce6ef5462940a673c98cd092120bf9710a9db5a19896b",
+    "symbols": [
+      "orthonormalize",
+      "CoordinateSetter",
+      "Command",
+      "normalize_commands",
+      "invariant_numpy"
+    ]
+  },
+  {
+    "adaptation": "mechanical dependency slice; import/path facade; scientific bodies unchanged",
+    "original_sha256": "886a49bd00af900570eb3c4fc34e8fe2336339a4f297071173736934a1688f28",
+    "portable": "canonical/bank.py",
+    "portable_sha256": "17ce581dd74ac086dab37c15a78f1ea75ba5571f3c753ccfe89fdf2e94fb2179",
+    "symbols": [
+      "SetterBank.__init__",
+      "SetterBank.parameters",
+      "SetterBank.basis",
+      "SetterBank.fn",
+      "SetterBank.load",
+      "canonical_program"
+    ]
+  },
+  {
+    "adaptation": "mechanical dependency slice; import/path facade; scientific bodies unchanged",
+    "original_sha256": "76a15461b58d11c8a852c7c9b0b98985171d654e89a519001b16e59925b54f18",
+    "portable": "canonical/base_adapter.py",
+    "portable_sha256": "b9bac53df802b1f5a8c5cdfbce8753f2148368cf12400dea4abfe913dca436b6",
+    "symbols": [
+      "BoundaryError",
+      "validate_cache",
+      "parameter_checksum",
+      "tensor_bytes",
+      "Backbone.__init__",
+      "Backbone._reset",
+      "Backbone.prefix_ids",
+      "Backbone.encode",
+      "Backbone.clause_positions",
+      "Backbone.label_ids",
+      "Backbone.logits32",
+      "Backbone.readout",
+      "Backbone.new_cache",
+      "Backbone.cache_pairs",
+      "Backbone.cache_hash",
+      "Backbone.cache_bytes",
+      "Backbone.clone_cache",
+      "Backbone.cache_length",
+      "Backbone.z_from_artifact",
+      "Backbone.describe",
+      "Backbone.verify_unchanged",
+      "Backbone.finish"
+    ]
+  },
+  {
+    "adaptation": "mechanical dependency slice; import/path facade; scientific bodies unchanged",
+    "original_sha256": "3ab949cfc93b40da4640f4811aa4bc11763ba1ba5b77b316f3471c5cde2282ac",
+    "portable": "canonical/batch_adapter.py",
+    "portable_sha256": "394af868fe9a39ca78e5e660f9398b08f9e6aa4cb0efeab1f1e2dd6478584483",
+    "symbols": [
+      "Backbone.__init__",
+      "Backbone._reset",
+      "Backbone.render",
+      "Backbone.generation_prompt",
+      "Backbone._witness",
+      "Backbone.ask_batch",
+      "Backbone.describe"
+    ]
+  },
+  {
+    "adaptation": "mechanical dependency slice; import/path facade; scientific bodies unchanged",
+    "original_sha256": "1765978114abf345f23d95b62538158bfa2414d7c48b63d3319e8a9b9987b0e1",
+    "portable": "canonical/adapter.py",
+    "portable_sha256": "2b7a460887466ce9f86480401b040521892363ce8bb868e83a887bc300cb3370",
+    "symbols": [
+      "Backbone._reset",
+      "Backbone._hook",
+      "Backbone.compile",
+      "Backbone.describe"
+    ]
+  },
+  {
+    "adaptation": "mechanical dependency slice; import/path facade; scientific bodies unchanged",
+    "original_sha256": "f1dd5e1b3b4e7876fa14b02d88032c95ce1b293a8ee92027e0690018f4cf7c6d",
+    "portable": "canonical/request.py",
+    "portable_sha256": "789d20f81c3da708f264a024db8b1af4cf242cf1125a51c8f88b58a2490da032",
+    "symbols": [
+      "WriterInput"
+    ]
+  },
+  {
+    "adaptation": "mechanical dependency slice; import/path facade; scientific bodies unchanged",
+    "original_sha256": "ba8cdf0dbd4e3dc287996b000bf6cb73a0c79327917b4ef008e1437eab9eb667",
+    "portable": "canonical/writer.py",
+    "portable_sha256": "61854db6b7bf1599037b745379d3ff96c12564aab69fc5d05d8bb1e0e5058d5a",
+    "symbols": [
+      "writer_plan"
+    ]
+  },
+  {
+    "adaptation": "mechanical dependency slice; import/path facade; scientific bodies unchanged",
+    "original_sha256": "dd84937dc97bf7eae834326cbd9ba00bd4e35979173e1b8b1cca16fc1f89c989",
+    "portable": "canonical/metric_core.py",
+    "portable_sha256": "968cee7b7d1e41f0da0d2f8578d62e996b910c09d4920a68d5297e5ce6991e93",
+    "symbols": [
+      "rate",
+      "valid",
+      "correct",
+      "origin_rates",
+      "root_statistics",
+      "program_retention"
+    ]
+  },
+  {
+    "adaptation": "mechanical dependency slice; import/path facade; scientific bodies unchanged",
+    "original_sha256": "b83a5490522990fa1c58f55763afaa144c624957266dc11df2c63b586001d23b",
+    "portable": "canonical/scene_metrics.py",
+    "portable_sha256": "4b0aadaa4926549f1fcea2b0d43dc2e6d8d632964e15c36eea4ffe7c43b21880",
+    "symbols": [
+      "per_scene",
+      "summarize"
+    ]
+  },
+  {
+    "adaptation": "mechanical dependency slice; import/path facade; scientific bodies unchanged",
+    "original_sha256": "d75507dedc2c785032661b6edc9a86093692297642a4a214d5ad955180dfc4ce",
+    "portable": "canonical/program_metrics.py",
+    "portable_sha256": "7b093f7189fc25c51cd9b87e35fbe2b69b4b1fc81b2425bbdfe71dd112159835",
+    "symbols": [
+      "summarize"
+    ]
+  },
+  {
+    "adaptation": "mechanical dependency slice; import/path facade; scientific bodies unchanged",
+    "original_sha256": "646299250012882cd3b337d916aabaedf8ee723dedc8f1121526ca80019db892",
+    "portable": "canonical/operand_metrics.py",
+    "portable_sha256": "e275057900a9e64c6ed1dc30f229985d6ff68eac3f01362214c6daa833baa144",
+    "symbols": [
+      "exact_logic",
+      "recomposition"
+    ]
+  }
+]

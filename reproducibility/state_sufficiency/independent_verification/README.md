@@ -1,8 +1,13 @@
-# Independent reconstruction from saved V10 outputs
+# Independently reconstruct the prospective matched-history result
+
+Internal experiment ID: `V10`. A benchmark case (`root`) groups starting histories
+with the same intended final facts. A joint question combines facts. A qualifying
+history-dependent question (`witness`) passes the factual and reference checks
+defined below but receives different answers across histories.
 
 This package reconstructs source-history sufficiency witnesses from saved model
 scores and generated-case records. It does not start from saved witness flags or
-root counts. It uses no original experiment analysis code and runs without a
+benchmark case counts. It uses no original experiment analysis code and runs without a
 model, tokenizer, GPU, account or network connection.
 
 The two original source archives were available and checked. Their manifests
@@ -24,7 +29,7 @@ python reproducibility/state_sufficiency/independent_verification/reconstruct.py
 This command reads only the package's input manifest, protocol and `inputs/`.
 It never reads `expected/`, the earlier aggregate headline files or an original
 analysis module. It writes the independently reconstructed primary table,
-per-condition summaries, root counts, per-query classifications and repeat checks.
+per-condition summaries, benchmark case counts, per-query classifications and repeat checks.
 The test suite enforces the expected-output access boundary.
 
 Only after examining that calculation, compare it with the reported outputs:
@@ -39,10 +44,10 @@ analyze --output calculation` and then `python reconstruct.py compare --output
 calculation` from the extracted directory. No other repository files are required
 for those commands. The regression tests live in the full repository.
 
-The comparison checks all eight primary rates and intervals, all 896 root-condition
+The comparison checks all eight primary rates and intervals, all 896 benchmark case-condition
 rows and all 16,128 joint-query classifications, including the SOURCE control.
 The six updating conditions account for 13,824 of those classifications. These
-are correlated records within roots, not independently sampled cases.
+are correlated records within benchmark cases, not independently sampled cases.
 
 ## What is retained
 
@@ -51,7 +56,7 @@ are correlated records within roots, not independently sampled cases.
 | inputs/protocol.json | Scientific model identities and revisions, fixed inventory and bootstrap, witness definitions and the preselected repeat panel |
 | inputs/designs/ | Complete starting and intended final relation tables, assignment commands, rendered source texts, fixed questions and answer-code mappings |
 | inputs/responses/ | Candidate log probabilities taken from raw journals, token objects, source journal line numbers, context text and cache identities, and logical-to-physical bindings |
-| expected/ | Separately stored original primary, root, query and condition results; used only by the comparison command |
+| expected/ | Separately stored original primary, benchmark case, query and condition results; used only by the comparison command |
 | examples/ | Six fully traced positive, eligible non-witness and excluded examples, including the repeat-checked Qwen illustration |
 | MANIFEST.json | Every data derivative's source archive/member hashes, output hash, transformation, row counts and omitted fields |
 
@@ -83,12 +88,15 @@ uses a numerical slack of 0.000001 and fails closed if it cannot establish this
 bound. It also applies to every retained repeat response. It does not infer
 validity from the recorded `valid` or `argmax_in_labels` flag.
 
-For each joint question, A means that both direct operands are correct and valid
-in every history. C means that both native-final and same-method origin-zero
-references are correct and valid. D means that at least two valid joint answers
-differ across histories. The primary witness is A and C and D. Every root retains
+For each joint question, the current-fact check (`A`) requires correct and valid
+answers about both individual facts in every history. The reference check (`C`)
+requires correct and valid answers when current facts are supplied from the start
+(`native-final`) and when the same update is applied to already-correct facts
+(`origin-zero`, the no-op reference). The answer-difference check (`D`) requires
+at least two valid joint answers to differ across histories. A question qualifies
+only when all these checks pass; the saved records call this a primary witness. Every benchmark case retains
 all 18 joint opportunities, including ineligible questions. Learned seeds are
-averaged within roots; root prevalence is the union over those seeds.
+averaged within benchmark cases; benchmark case prevalence is the union over those seeds.
 
 The strong diagnostic additionally requires all joint responses to be valid,
 direct correct-label probabilities at least 0.95, relevant candidate mass at
@@ -96,9 +104,9 @@ least 0.90, and joint correct-label probabilities reaching at least 0.95 and at
 most 0.05 in different histories. The calculation also reconstructs the
 all-measured-direct sensitivity and reports the individual-condition counts.
 
-Intervals use 10,000 root-bootstrap draws, seed 2609141002, and the original
+Intervals use 10,000 case-bootstrap draws, seed 2609141002, and the original
 99.375% multiplicity-adjusted level. The separately reported descriptive 95%
-intervals and root-prevalence intervals are reconstructed too. Rates are fixed
+intervals and benchmark case-prevalence intervals are reconstructed too. Rates are fixed
 opportunities for cross-history witnesses, not individual-answer error rates.
 
 ## Examples and repeat checks
@@ -112,7 +120,7 @@ shown. Each response identifies its input file, original journal line and
 physical response ID.
 
 The saved repeat panel contains native-final and four learned conditions, eight
-fixed questions, eight selected roots per model and two fresh passes. The script
+fixed questions, eight selected benchmark cases per model and two fresh passes. The script
 compares 8,448 fresh score rows and 12,672 core/pass pairwise comparisons, including
 token bindings and recorded cache identities. All retained scores match exactly.
 There are no independent textual-correction repeats, and not every direct operand

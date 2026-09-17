@@ -83,6 +83,8 @@ def normalize(token):
 
 
 def number_tokens(text):
+    # Explicit compatibility anchors are navigation metadata, not numerical claims.
+    text = re.sub(r'<a\s+id="[^"]+"\s*>\s*</a>', ' ', text)
     for pattern in NAME_MASKS:
         text = re.sub(pattern, ' ', text, flags=re.I)
     text = re.sub(r'```.*?```|~~~.*?~~~', ' ', text, flags=re.S)
@@ -264,6 +266,26 @@ def check(root=ROOT, registry_path=None, *, document=None, strict=True, override
             artifacts[key] = load(rooted(root, name))
         except (OSError, ValueError) as error:
             report.add('artifact-missing', f'{key}: {error}')
+    if 'qwen_public' in artifacts:
+        # Bind the public counts to the saved-response calculation, not just a
+        # supplied summary. A stale generated projection must fail closed.
+        from .in_context_updates import replay
+        try:
+            computed = replay(root / 'reproducibility/in_context_updates')
+            if artifacts['qwen_public'] != computed:
+                report.add('scientific-evidence-mismatch', 'Qwen generated projection differs from saved-response replay')
+            artifacts['qwen_public'] = computed
+        except (OSError, ValueError, KeyError) as error:
+            report.add('scientific-evidence-mismatch', f'Qwen saved-response replay: {error}')
+    if 'update_methods' in artifacts and document is None and not overrides:
+        from .update_methods import reconstructed
+        try:
+            computed, _ = reconstructed(root / 'reproducibility/update_method_comparison')
+            if artifacts['update_methods'] != computed:
+                report.add('scientific-evidence-mismatch', 'Comparison projection differs from saved-score reconstruction')
+            artifacts['update_methods'] = computed
+        except (OSError, ValueError, KeyError) as error:
+            report.add('scientific-evidence-mismatch', f'Comparison saved-score reconstruction: {error}')
     for assertion in registry.get('source_checks', []):
         try:
             if not check_source(assertion, artifacts):

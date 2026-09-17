@@ -1,0 +1,148 @@
+{
+ "amendment_sha256": {
+  "GOAL.txt": "df888114f6b0181107aa9e3eee56fba9f4f9284033f87f29176b9c0dde19f677",
+  "LAUNCHER.txt": "f9a5e69d7baa59b878efbb2b378793f01ba3161595bfff82b81227737c5d03f1",
+  "PARSER_AMENDMENT.md": "6c97dc3ae1bfe1364464a31e87f20af5a18697181c36e24ca85b008b9a052c38",
+  "protocol/AMENDMENT.md": "51a4b7d41b3ca24707423cc8607594c2ff9ece32071ebedd5a8097e64862fc23",
+  "protocol/SCOPE.json": "ab811601cbecc4a33a886a8967eab14f6bd40dd38e8db2b786d68595d640e355"
+ },
+ "archive": {
+  "path": "D:/Downloads/ICMH1_FRESH_CONTEXT.zip",
+  "sha256": "2ce943fb51fe6ad8c85816c363b947fa47b271e59f4be4a9b8e5b5be70959059",
+  "verify_bundle": {
+   "errors": [],
+   "scope": "Manifest-bound files only. No live cloud, runtime or GPU verification.",
+   "verified_files": 75
+  }
+ },
+ "at": "2026-09-16T18:56:17.452853+00:00",
+ "batch_policy": {
+  "batch_size": 1,
+  "decoding": "greedy, num_beams=1, max_new_tokens=16, bf16, sdpa, tf32 off",
+  "kv_cache": "fresh per independent generation",
+  "order": "plan order",
+  "processes": "one process per phase; repeats are separate fresh processes"
+ },
+ "cpu_checks": {
+  "inherited_tests": 32,
+  "label_precedence_tests": 11,
+  "model_free": 16
+ },
+ "generation": {
+  "attn_implementation": "sdpa",
+  "do_sample": false,
+  "dtype": "bfloat16",
+  "max_new_tokens": 16,
+  "num_beams": 1,
+  "repetition_penalty": 1.0,
+  "system_instruction": "Answer with only the entity name.",
+  "tf32": false
+ },
+ "inputs_sha256": {
+  "INPUT_RECEIPT.json": "aa199fcd9833b6a23d7d7562c55c5a11afa4b648765054768e467468ae64463a",
+  "PLAN_development.json": "1ec247f9453e4180fda6047ebbf95a8d31911f7e2dfac3283131da8c322f8d73",
+  "PLAN_final.json": "aba0f33085a86633f8527142a6b491e440d1a1a770f72b0c6c5a05daf1d83882",
+  "PLAN_qualification.json": "da9871e8c70ba115e30714dc1c39766f6ce25d609e89e3215212e8d6e2177fa4",
+  "PLAN_repeat_618.json": "f8fbf686e75017a827b236179ad116b20ebcdd5dae49a23ee95813f06f6e594a",
+  "PLAN_repeat_670.json": "c96920ebfa30ce52542da3f15cef7e9a774b8791eaf93622ff38b65984f2be8c",
+  "REGISTRY.json": "f99995b7e3cbb71bfa86702466782e930397a60d0e33c000cae386ed7ba0d3ef",
+  "REGISTRY_UNION.json": "d5d19644ace9513ddef58fd90f07b3cf273fa27d48a1e4793ece421c18ba18ba",
+  "ROOTS.json": "f182f0f0044e0ec79832c47301328e599b3ad09f86549183d1a2a55a041a3cad",
+  "SCORING_development.json": "1fbaeabdb79a17451dda644bbb091d5009eefa10635c6392a0076a7e13d99767",
+  "SCORING_final.json": "5097aa3cc2773c8bd09d326f737c6069336b5bc534f64a152ed7c3788b21567f",
+  "SCORING_qualification.json": "5907c831d37a4dbb9f0df348ed379bea7c71dbfd44b9cce8d4ac71affbbb0bcc",
+  "SCORING_repeat_618.json": "424079b0e912dd2e7259fd0067ccd2a67aa18ee089ba24580b97dd73e1c5763b",
+  "SCORING_repeat_670.json": "4c8006d545695c5a277066c0a4a0ceeb398a0f7ef374c04384a21ed051514632",
+  "STRUCTURE_CHECK.json": "7f2a354fb19713f63ef058059458256906b12c68cc3e5baad77fa552a6c45d18"
+ },
+ "model": {
+  "repo": "Qwen/Qwen2.5-7B-Instruct",
+  "revision": "a09a35458c702b33eeacc393d103063234e8bc28"
+ },
+ "parser": {
+  "parse_py_sha256": "69625dcaae387bc14a82a4313476d79d338f4baa1856b37e28c42d5fbbbdd047",
+  "primary_registry": "inputs/built/REGISTRY.json",
+  "primary_registry_sha256": "f99995b7e3cbb71bfa86702466782e930397a60d0e33c000cae386ed7ba0d3ef",
+  "rule": "ICMH1-LP1: type-scoped full-string match; unique source-label match wins; multiple label matches abstain; no label match -> unique alias only; no gold-dependent tie-break",
+  "sensitivity_registry": "inputs/built/REGISTRY_UNION.json (original v2 union rule, same responses)",
+  "sensitivity_registry_sha256": "d5d19644ace9513ddef58fd90f07b3cf273fa27d48a1e4793ece421c18ba18ba",
+  "v2_parse_py_sha256": "434c5fa6624c55d4dbe7a32c57a291ad014dd0cf4052fccd9cdc9f55941c1c0f"
+ },
+ "plans": {
+  "development": {
+   "by_kind": {
+    "atomic": 57,
+    "downstream": 70,
+    "locality": 80
+   },
+   "max_user_chars": 738,
+   "plan_sha256": "1ec247f9453e4180fda6047ebbf95a8d31911f7e2dfac3283131da8c322f8d73",
+   "scoring_sha256": "1fbaeabdb79a17451dda644bbb091d5009eefa10635c6392a0076a7e13d99767",
+   "units": 207
+  },
+  "final": {
+   "by_kind": {
+    "atomic": 396,
+    "downstream": 490,
+    "locality": 544
+   },
+   "max_user_chars": 928,
+   "plan_sha256": "aba0f33085a86633f8527142a6b491e440d1a1a770f72b0c6c5a05daf1d83882",
+   "scoring_sha256": "5097aa3cc2773c8bd09d326f737c6069336b5bc534f64a152ed7c3788b21567f",
+   "units": 1430
+  },
+  "qualification": {
+   "by_kind": {
+    "atomic": 66,
+    "downstream": 48,
+    "locality": 0
+   },
+   "max_user_chars": 738,
+   "plan_sha256": "da9871e8c70ba115e30714dc1c39766f6ce25d609e89e3215212e8d6e2177fa4",
+   "scoring_sha256": "5907c831d37a4dbb9f0df348ed379bea7c71dbfd44b9cce8d4ac71affbbb0bcc",
+   "units": 114
+  },
+  "repeat_618": {
+   "by_kind": {
+    "atomic": 15,
+    "downstream": 20,
+    "locality": 16
+   },
+   "max_user_chars": 685,
+   "plan_sha256": "f8fbf686e75017a827b236179ad116b20ebcdd5dae49a23ee95813f06f6e594a",
+   "scoring_sha256": "424079b0e912dd2e7259fd0067ccd2a67aa18ee089ba24580b97dd73e1c5763b",
+   "units": 51
+  },
+  "repeat_670": {
+   "by_kind": {
+    "atomic": 9,
+    "downstream": 10,
+    "locality": 16
+   },
+   "max_user_chars": 481,
+   "plan_sha256": "c96920ebfa30ce52542da3f15cef7e9a774b8791eaf93622ff38b65984f2be8c",
+   "scoring_sha256": "4c8006d545695c5a277066c0a4a0ceeb398a0f7ef374c04384a21ed051514632",
+   "units": 35
+  }
+ },
+ "schema": "ICMH1_RIPPLE_V2_LP1_PARSER_FREEZE_V1",
+ "source_sha256": {
+  "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "analyze.py": "fe19160b60591831b9fa39eda427917891a66b1b2b85ff4ca18d32bf90e84544",
+  "build.py": "3cd8c5fb7b72af8a5ff8fc2fad44ac13634af900b1775b6e3b8c108fb4c3fd22",
+  "common.py": "ef66eb500a1a5d6e116878cf5699b4c5759158b92df59f0a3d55bb23957d1899",
+  "parse.py": "69625dcaae387bc14a82a4313476d79d338f4baa1856b37e28c42d5fbbbdd047",
+  "tests.py": "67da999b7b511d866a717106e6b91162632642213d6291d7a1db8f81cb7bed64",
+  "worker.py": "4cc7c9ad35163d0d30b83a12758c791b396dba24e3e03ea60edecca18feff9d7"
+ },
+ "strict_scorer": "unchanged: first line, one trailing punctuation, case-sensitive equality with public answer/alias",
+ "study": "icmh1-ripple-v2",
+ "thresholds_unchanged": true,
+ "unit_counts": {
+  "development": 207,
+  "final": 1430,
+  "qualification": 114,
+  "repeat_618": 51,
+  "repeat_670": 35
+ }
+}

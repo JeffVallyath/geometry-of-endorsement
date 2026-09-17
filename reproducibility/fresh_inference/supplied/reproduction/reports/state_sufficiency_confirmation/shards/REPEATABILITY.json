@@ -1,0 +1,44 @@
+{
+  "roots": [
+    "SSC1-FINAL-0045",
+    "SSC1-FINAL-0044",
+    "SSC1-FINAL-0033",
+    "SSC1-FINAL-0032",
+    "SSC1-FINAL-0017",
+    "SSC1-FINAL-0029",
+    "SSC1-FINAL-0060",
+    "SSC1-FINAL-0006"
+  ],
+  "query_suffixes": [
+    "-d0-00",
+    "-d0-02",
+    "-d0-06",
+    "-d0-07",
+    "-d1-00",
+    "-d1-02",
+    "-d1-06",
+    "-d1-07"
+  ],
+  "root_selection": "lowest sha256 of UTF8 root_id",
+  "question_selection": "first original query per direct/same/both/either kind and answer-code draw",
+  "conditions": [
+    "NATIVE_FINAL",
+    "INV_PAIR_NLL_s0",
+    "INV_PAIR_NLL_s1",
+    "FREE_PAIR_CONSISTENCY_s0",
+    "FREE_PAIR_CONSISTENCY_s1"
+  ],
+  "origins": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "passes": 2,
+  "batch_size": 1,
+  "selected_before_outcomes": true
+}

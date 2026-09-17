@@ -54,6 +54,10 @@ def reproduce(output: Path) -> dict:
     headlines = from_replay(result)
     compare_canonical(headlines, load_json(ROOT / 'reproducibility/headline_values.json'))
     destination = new_output(output / 'tables')
+    from .in_context_updates import export as export_qwen
+    export_qwen(destination / 'in_context_updates')
+    from .update_methods import export as export_comparison
+    export_comparison(destination / 'update_methods')
     for version in ('v1', 'v2', 'v3', 'v4'):
         subprocess.run([sys.executable, '-B', '-m', 'repro.editing', '--version', version,
                         '--output', str(destination / 'relational_editing' / version)], check=True)

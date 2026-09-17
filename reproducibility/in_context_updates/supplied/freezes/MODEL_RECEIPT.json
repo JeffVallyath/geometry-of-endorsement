@@ -1,0 +1,92 @@
+{
+ "files": [
+  {
+   "kind": "git_blob_sha1",
+   "name": ".gitattributes",
+   "size": 1519,
+   "verified_hash": "a6344aac8c09253b3b630fb776ae94478aa0275b"
+  },
+  {
+   "kind": "git_blob_sha1",
+   "name": "LICENSE",
+   "size": 11343,
+   "verified_hash": "6634c8cc3133b3848ec74b9f275acaaa1ea618ab"
+  },
+  {
+   "kind": "git_blob_sha1",
+   "name": "README.md",
+   "size": 6240,
+   "verified_hash": "4e9536cebaeb5cac673952ad5d0eeae469900f81"
+  },
+  {
+   "kind": "git_blob_sha1",
+   "name": "config.json",
+   "size": 663,
+   "verified_hash": "0178295f88afc3c7f279ed284f961f8c1be00654"
+  },
+  {
+   "kind": "git_blob_sha1",
+   "name": "generation_config.json",
+   "size": 243,
+   "verified_hash": "0eb3c536657dcd12626e09eca4b6198c0cbcde1e"
+  },
+  {
+   "kind": "git_blob_sha1",
+   "name": "merges.txt",
+   "size": 1671839,
+   "verified_hash": "20024bfe7c83998e9aeaf98a0cd6a2ce6306c2f0"
+  },
+  {
+   "kind": "sha256",
+   "name": "model-00001-of-00004.safetensors",
+   "size": 3945441440,
+   "verified_hash": "a1333e6293854747c481288ea83b348226af178dd565c49b6f9495ba1966aba7"
+  },
+  {
+   "kind": "sha256",
+   "name": "model-00002-of-00004.safetensors",
+   "size": 3864726352,
+   "verified_hash": "f5d25a2772cb825164a2a2c0fb6d51a87e282abf21e4dd75bc5cfb3cd0ea6185"
+  },
+  {
+   "kind": "sha256",
+   "name": "model-00003-of-00004.safetensors",
+   "size": 3864726424,
+   "verified_hash": "8efdec4c1bc12317ae1a38dc42b595ce777738a64deea3fcb8a0a91381bcdfd5"
+  },
+  {
+   "kind": "sha256",
+   "name": "model-00004-of-00004.safetensors",
+   "size": 3556377672,
+   "verified_hash": "1a72d403cdf0c1ec3cb7f289f17b394a01e64394c2e9b3c0f94dbce3faf879bd"
+  },
+  {
+   "kind": "git_blob_sha1",
+   "name": "model.safetensors.index.json",
+   "size": 27752,
+   "verified_hash": "14d037fdda5a1311dcc0275003a7a370d84114e6"
+  },
+  {
+   "kind": "git_blob_sha1",
+   "name": "tokenizer.json",
+   "size": 7031645,
+   "verified_hash": "443909a61d429dff23010e5bddd28ff530edda00"
+  },
+  {
+   "kind": "git_blob_sha1",
+   "name": "tokenizer_config.json",
+   "size": 7305,
+   "verified_hash": "07bfe0640cb5a0037f9322287fbfc682806cf672"
+  },
+  {
+   "kind": "git_blob_sha1",
+   "name": "vocab.json",
+   "size": 2776833,
+   "verified_hash": "4783fe10ac3adce15ac8f358ef5462739852c569"
+  }
+ ],
+ "license": "Apache-2.0",
+ "repo": "Qwen/Qwen2.5-7B-Instruct",
+ "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+ "verified": true
+}

@@ -1,0 +1,1672 @@
+{
+ "note": "Rendered user text only; no gold answers, aliases, entity ids, B/D labels or eligibility flags.",
+ "phase": "development",
+ "roots": [
+  "rippleedits:random:1898",
+  "rippleedits:random:636",
+  "rippleedits:random:683",
+  "rippleedits:random:1174",
+  "rippleedits:random:575"
+ ],
+ "study": "icmh1-ripple-v2",
+ "system": null,
+ "unit_count": 207,
+ "units": [
+  {
+   "context": "none",
+   "kind": "downstream",
+   "reference": "rippleedits:random:1898:Compositionality_I:0:0",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "3fb37d0ecbc35d52357880de342c72a34ae75d4021f93828a4ff758d8dcc4df8",
+   "user_text": "The gender of the father of Count Teresa de Lannoy is"
+  },
+  {
+   "context": "given_facts",
+   "kind": "downstream",
+   "reference": "rippleedits:random:1898:Compositionality_I:0:0",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "83849e69aa7de287f3e1ab3a69f198f67cccd88ebd54eaba7f1a6edacc5cddda",
+   "user_text": "The following task-relevant records are supplied.\nThe name of the father of Count Teresa de Lannoy is Charles Blakeney\nThe place of burial of Charles Blakeney is South Brisbane Cemetery\nThe place of birth of Charles Blakeney is County Roscommon\nThe place of death of Charles Blakeney is Brisbane\nThe gender of Charles Blakeney is male\nThe name of the father of Charles Blakeney is Thomas Blakeney\nThe name of the mother of Charles Blakeney is Alicia Newcome\n\nThe gender of the father of Count Teresa de Lannoy is"
+  },
+  {
+   "context": "canonical",
+   "kind": "downstream",
+   "reference": "rippleedits:random:1898:Compositionality_I:0:0",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "f35cfc9d9da3587de41561b8b63a0b5cf4e016a73730fb30839e9fc231f639a0",
+   "user_text": "The following are the current authoritative records.\nThe name of the father of Count Teresa de Lannoy is Charles Blakeney\nThe place of burial of Charles Blakeney is South Brisbane Cemetery\nThe place of birth of Charles Blakeney is County Roscommon\nThe place of death of Charles Blakeney is Brisbane\nThe gender of Charles Blakeney is male\nThe name of the father of Charles Blakeney is Thomas Blakeney\nThe name of the mother of Charles Blakeney is Alicia Newcome\n\nThe gender of the father of Count Teresa de Lannoy is"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "downstream",
+   "reference": "rippleedits:random:1898:Compositionality_I:0:0",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "ae329422e94c3815a9e4b6503140698a3abba7982e293bc5d276cc341094b2af",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the father of Count Teresa de Lannoy is José Dinis Aveiro\nThe name of the father of Count Teresa de Lannoy is Charles Blakeney\nThe place of burial of Charles Blakeney is South Brisbane Cemetery\nThe place of birth of Charles Blakeney is County Roscommon\nThe place of death of Charles Blakeney is Brisbane\nThe gender of Charles Blakeney is male\nThe name of the father of Charles Blakeney is Thomas Blakeney\nThe name of the mother of Charles Blakeney is Alicia Newcome\n\nThe gender of the father of Count Teresa de Lannoy is"
+  },
+  {
+   "context": "chronological_D",
+   "kind": "downstream",
+   "reference": "rippleedits:random:1898:Compositionality_I:0:0",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "b4b0fadef5c996db67f02796c0630d874426c4dde3070204a99ab06044adb1fd",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the father of Count Teresa de Lannoy is Xu Suizhong\nThe name of the father of Count Teresa de Lannoy is Charles Blakeney\nThe place of burial of Charles Blakeney is South Brisbane Cemetery\nThe place of birth of Charles Blakeney is County Roscommon\nThe place of death of Charles Blakeney is Brisbane\nThe gender of Charles Blakeney is male\nThe name of the father of Charles Blakeney is Thomas Blakeney\nThe name of the mother of Charles Blakeney is Alicia Newcome\n\nThe gender of the father of Count Teresa de Lannoy is"
+  },
+  {
+   "context": "none",
+   "kind": "downstream",
+   "reference": "rippleedits:random:1898:Compositionality_I:2:0",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "8073b9053a2c4d563c3d72222585e00e20a22ce87a16290023877694aa787c83",
+   "user_text": "The place of birth of the father of Count Teresa de Lannoy is"
+  },
+  {
+   "context": "given_facts",
+   "kind": "downstream",
+   "reference": "rippleedits:random:1898:Compositionality_I:2:0",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "ca2417b5d99fe166ac93336b9e87fb262792ec38ad4a8ce17b6c4d5d4ee3bf7e",
+   "user_text": "The following task-relevant records are supplied.\nThe name of the father of Count Teresa de Lannoy is Charles Blakeney\nThe place of burial of Charles Blakeney is South Brisbane Cemetery\nThe place of birth of Charles Blakeney is County Roscommon\nThe place of death of Charles Blakeney is Brisbane\nThe gender of Charles Blakeney is male\nThe name of the father of Charles Blakeney is Thomas Blakeney\nThe name of the mother of Charles Blakeney is Alicia Newcome\n\nThe place of birth of the father of Count Teresa de Lannoy is"
+  },
+  {
+   "context": "canonical",
+   "kind": "downstream",
+   "reference": "rippleedits:random:1898:Compositionality_I:2:0",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "a175cf5ea1b021b0b7e08b60397bbf2d1f47f3961660caf0b4443989e4bbb524",
+   "user_text": "The following are the current authoritative records.\nThe name of the father of Count Teresa de Lannoy is Charles Blakeney\nThe place of burial of Charles Blakeney is South Brisbane Cemetery\nThe place of birth of Charles Blakeney is County Roscommon\nThe place of death of Charles Blakeney is Brisbane\nThe gender of Charles Blakeney is male\nThe name of the father of Charles Blakeney is Thomas Blakeney\nThe name of the mother of Charles Blakeney is Alicia Newcome\n\nThe place of birth of the father of Count Teresa de Lannoy is"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "downstream",
+   "reference": "rippleedits:random:1898:Compositionality_I:2:0",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "1cd663e152d95a338e464e73bf3a3b9bd9606de71d23b3464435347670caea75",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the father of Count Teresa de Lannoy is José Dinis Aveiro\nThe name of the father of Count Teresa de Lannoy is Charles Blakeney\nThe place of burial of Charles Blakeney is South Brisbane Cemetery\nThe place of birth of Charles Blakeney is County Roscommon\nThe place of death of Charles Blakeney is Brisbane\nThe gender of Charles Blakeney is male\nThe name of the father of Charles Blakeney is Thomas Blakeney\nThe name of the mother of Charles Blakeney is Alicia Newcome\n\nThe place of birth of the father of Count Teresa de Lannoy is"
+  },
+  {
+   "context": "chronological_D",
+   "kind": "downstream",
+   "reference": "rippleedits:random:1898:Compositionality_I:2:0",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "6487340c4f669da3119d65da7945a70cf4134ebfd9b538a59874df0efb40edf6",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the father of Count Teresa de Lannoy is Xu Suizhong\nThe name of the father of Count Teresa de Lannoy is Charles Blakeney\nThe place of burial of Charles Blakeney is South Brisbane Cemetery\nThe place of birth of Charles Blakeney is County Roscommon\nThe place of death of Charles Blakeney is Brisbane\nThe gender of Charles Blakeney is male\nThe name of the father of Charles Blakeney is Thomas Blakeney\nThe name of the mother of Charles Blakeney is Alicia Newcome\n\nThe place of birth of the father of Count Teresa de Lannoy is"
+  },
+  {
+   "context": "none",
+   "kind": "downstream",
+   "reference": "rippleedits:random:1898:Compositionality_I:3:0",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "9a389f7aa61586ec8ce4d18ab4203c184e98eb459263d6c4cf7c7d4c89aa94ba",
+   "user_text": "The place of death of the father of Count Teresa de Lannoy is"
+  },
+  {
+   "context": "given_facts",
+   "kind": "downstream",
+   "reference": "rippleedits:random:1898:Compositionality_I:3:0",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "cc9418e1c7e86ed85993933cb03254b1b72fc2a1403e511570022050c4df31e1",
+   "user_text": "The following task-relevant records are supplied.\nThe name of the father of Count Teresa de Lannoy is Charles Blakeney\nThe place of burial of Charles Blakeney is South Brisbane Cemetery\nThe place of birth of Charles Blakeney is County Roscommon\nThe place of death of Charles Blakeney is Brisbane\nThe gender of Charles Blakeney is male\nThe name of the father of Charles Blakeney is Thomas Blakeney\nThe name of the mother of Charles Blakeney is Alicia Newcome\n\nThe place of death of the father of Count Teresa de Lannoy is"
+  },
+  {
+   "context": "canonical",
+   "kind": "downstream",
+   "reference": "rippleedits:random:1898:Compositionality_I:3:0",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "39d1006867a5fa8e03b0bfa3ca0b78ef8a163fb4e2d72956807a6bf74f772601",
+   "user_text": "The following are the current authoritative records.\nThe name of the father of Count Teresa de Lannoy is Charles Blakeney\nThe place of burial of Charles Blakeney is South Brisbane Cemetery\nThe place of birth of Charles Blakeney is County Roscommon\nThe place of death of Charles Blakeney is Brisbane\nThe gender of Charles Blakeney is male\nThe name of the father of Charles Blakeney is Thomas Blakeney\nThe name of the mother of Charles Blakeney is Alicia Newcome\n\nThe place of death of the father of Count Teresa de Lannoy is"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "downstream",
+   "reference": "rippleedits:random:1898:Compositionality_I:3:0",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "f9741ea8ddef108983092d0db7c09354cc5dd37c28766051c204413d2a7bb326",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the father of Count Teresa de Lannoy is José Dinis Aveiro\nThe name of the father of Count Teresa de Lannoy is Charles Blakeney\nThe place of burial of Charles Blakeney is South Brisbane Cemetery\nThe place of birth of Charles Blakeney is County Roscommon\nThe place of death of Charles Blakeney is Brisbane\nThe gender of Charles Blakeney is male\nThe name of the father of Charles Blakeney is Thomas Blakeney\nThe name of the mother of Charles Blakeney is Alicia Newcome\n\nThe place of death of the father of Count Teresa de Lannoy is"
+  },
+  {
+   "context": "chronological_D",
+   "kind": "downstream",
+   "reference": "rippleedits:random:1898:Compositionality_I:3:0",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "90facba1c6bea2ae0635525bdad0f319ce978d25cb10cc056c827fbebae6b3d2",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the father of Count Teresa de Lannoy is Xu Suizhong\nThe name of the father of Count Teresa de Lannoy is Charles Blakeney\nThe place of burial of Charles Blakeney is South Brisbane Cemetery\nThe place of birth of Charles Blakeney is County Roscommon\nThe place of death of Charles Blakeney is Brisbane\nThe gender of Charles Blakeney is male\nThe name of the father of Charles Blakeney is Thomas Blakeney\nThe name of the mother of Charles Blakeney is Alicia Newcome\n\nThe place of death of the father of Count Teresa de Lannoy is"
+  },
+  {
+   "context": "none",
+   "kind": "downstream",
+   "reference": "rippleedits:random:1898:Compositionality_I:5:0",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "90db0ed2e42b33d29d928536391a19815704bd2bfe480c3e56610f5826a32204",
+   "user_text": "The place of burial of the father of Count Teresa de Lannoy is"
+  },
+  {
+   "context": "given_facts",
+   "kind": "downstream",
+   "reference": "rippleedits:random:1898:Compositionality_I:5:0",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "efe711eb5279658c1eca072958155e0391b7a25c0b3ba5840682d77f5b66dc35",
+   "user_text": "The following task-relevant records are supplied.\nThe name of the father of Count Teresa de Lannoy is Charles Blakeney\nThe place of burial of Charles Blakeney is South Brisbane Cemetery\nThe place of birth of Charles Blakeney is County Roscommon\nThe place of death of Charles Blakeney is Brisbane\nThe gender of Charles Blakeney is male\nThe name of the father of Charles Blakeney is Thomas Blakeney\nThe name of the mother of Charles Blakeney is Alicia Newcome\n\nThe place of burial of the father of Count Teresa de Lannoy is"
+  },
+  {
+   "context": "canonical",
+   "kind": "downstream",
+   "reference": "rippleedits:random:1898:Compositionality_I:5:0",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "b81d0e1e5c98168ecdadc23c086f0a298d4d1d341fffc59c4d587e146c599412",
+   "user_text": "The following are the current authoritative records.\nThe name of the father of Count Teresa de Lannoy is Charles Blakeney\nThe place of burial of Charles Blakeney is South Brisbane Cemetery\nThe place of birth of Charles Blakeney is County Roscommon\nThe place of death of Charles Blakeney is Brisbane\nThe gender of Charles Blakeney is male\nThe name of the father of Charles Blakeney is Thomas Blakeney\nThe name of the mother of Charles Blakeney is Alicia Newcome\n\nThe place of burial of the father of Count Teresa de Lannoy is"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "downstream",
+   "reference": "rippleedits:random:1898:Compositionality_I:5:0",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "4a7ead4f8479c4a509f08a05c7434e91776630e38c004505e5170069cf3de6ed",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the father of Count Teresa de Lannoy is José Dinis Aveiro\nThe name of the father of Count Teresa de Lannoy is Charles Blakeney\nThe place of burial of Charles Blakeney is South Brisbane Cemetery\nThe place of birth of Charles Blakeney is County Roscommon\nThe place of death of Charles Blakeney is Brisbane\nThe gender of Charles Blakeney is male\nThe name of the father of Charles Blakeney is Thomas Blakeney\nThe name of the mother of Charles Blakeney is Alicia Newcome\n\nThe place of burial of the father of Count Teresa de Lannoy is"
+  },
+  {
+   "context": "chronological_D",
+   "kind": "downstream",
+   "reference": "rippleedits:random:1898:Compositionality_I:5:0",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "7763a857bfcfe19907fcc98a4d4506df4e7ec606b26f391a5b9e197b5791e552",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the father of Count Teresa de Lannoy is Xu Suizhong\nThe name of the father of Count Teresa de Lannoy is Charles Blakeney\nThe place of burial of Charles Blakeney is South Brisbane Cemetery\nThe place of birth of Charles Blakeney is County Roscommon\nThe place of death of Charles Blakeney is Brisbane\nThe gender of Charles Blakeney is male\nThe name of the father of Charles Blakeney is Thomas Blakeney\nThe name of the mother of Charles Blakeney is Alicia Newcome\n\nThe place of burial of the father of Count Teresa de Lannoy is"
+  },
+  {
+   "context": "none",
+   "kind": "downstream",
+   "reference": "rippleedits:random:1898:Compositionality_I:7:0",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "9c6ac5abeda961915419f747378b1c487b894a64d8b59a4543e829b1b99126e8",
+   "user_text": "The name of the paternal grandfather of Count Teresa de Lannoy is"
+  },
+  {
+   "context": "given_facts",
+   "kind": "downstream",
+   "reference": "rippleedits:random:1898:Compositionality_I:7:0",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "f5ffaa794fe4bb946a06dd1652fdd930e778793019ade36be32791c1913a96bb",
+   "user_text": "The following task-relevant records are supplied.\nThe name of the father of Count Teresa de Lannoy is Charles Blakeney\nThe place of burial of Charles Blakeney is South Brisbane Cemetery\nThe place of birth of Charles Blakeney is County Roscommon\nThe place of death of Charles Blakeney is Brisbane\nThe gender of Charles Blakeney is male\nThe name of the father of Charles Blakeney is Thomas Blakeney\nThe name of the mother of Charles Blakeney is Alicia Newcome\n\nThe name of the paternal grandfather of Count Teresa de Lannoy is"
+  },
+  {
+   "context": "canonical",
+   "kind": "downstream",
+   "reference": "rippleedits:random:1898:Compositionality_I:7:0",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "bd8a1da27daef6571b9f2ee04fc49a669e5816308bab44d42dc024e25be06ffe",
+   "user_text": "The following are the current authoritative records.\nThe name of the father of Count Teresa de Lannoy is Charles Blakeney\nThe place of burial of Charles Blakeney is South Brisbane Cemetery\nThe place of birth of Charles Blakeney is County Roscommon\nThe place of death of Charles Blakeney is Brisbane\nThe gender of Charles Blakeney is male\nThe name of the father of Charles Blakeney is Thomas Blakeney\nThe name of the mother of Charles Blakeney is Alicia Newcome\n\nThe name of the paternal grandfather of Count Teresa de Lannoy is"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "downstream",
+   "reference": "rippleedits:random:1898:Compositionality_I:7:0",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "ce077ec03f7b2de8de2301cda1b4d5e0f057ab49360b95a9acfdf5bf1784f60c",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the father of Count Teresa de Lannoy is José Dinis Aveiro\nThe name of the father of Count Teresa de Lannoy is Charles Blakeney\nThe place of burial of Charles Blakeney is South Brisbane Cemetery\nThe place of birth of Charles Blakeney is County Roscommon\nThe place of death of Charles Blakeney is Brisbane\nThe gender of Charles Blakeney is male\nThe name of the father of Charles Blakeney is Thomas Blakeney\nThe name of the mother of Charles Blakeney is Alicia Newcome\n\nThe name of the paternal grandfather of Count Teresa de Lannoy is"
+  },
+  {
+   "context": "chronological_D",
+   "kind": "downstream",
+   "reference": "rippleedits:random:1898:Compositionality_I:7:0",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "c9810e39da483cb5f218da6bd1894ce4ad3198ce9c02596a050bc7161c665d7f",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the father of Count Teresa de Lannoy is Xu Suizhong\nThe name of the father of Count Teresa de Lannoy is Charles Blakeney\nThe place of burial of Charles Blakeney is South Brisbane Cemetery\nThe place of birth of Charles Blakeney is County Roscommon\nThe place of death of Charles Blakeney is Brisbane\nThe gender of Charles Blakeney is male\nThe name of the father of Charles Blakeney is Thomas Blakeney\nThe name of the mother of Charles Blakeney is Alicia Newcome\n\nThe name of the paternal grandfather of Count Teresa de Lannoy is"
+  },
+  {
+   "context": "none",
+   "kind": "downstream",
+   "reference": "rippleedits:random:1898:Compositionality_I:8:0",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "fde8b35bc8140c8fe81ab38e55a4287de56b60f6e2ba635ac7e33cda789b7efa",
+   "user_text": "The name of the paternal grandmother of Count Teresa de Lannoy is"
+  },
+  {
+   "context": "given_facts",
+   "kind": "downstream",
+   "reference": "rippleedits:random:1898:Compositionality_I:8:0",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "02a380d855507073a847f772e6fdcade281403df6a33ec3508b1b01536edbfec",
+   "user_text": "The following task-relevant records are supplied.\nThe name of the father of Count Teresa de Lannoy is Charles Blakeney\nThe place of burial of Charles Blakeney is South Brisbane Cemetery\nThe place of birth of Charles Blakeney is County Roscommon\nThe place of death of Charles Blakeney is Brisbane\nThe gender of Charles Blakeney is male\nThe name of the father of Charles Blakeney is Thomas Blakeney\nThe name of the mother of Charles Blakeney is Alicia Newcome\n\nThe name of the paternal grandmother of Count Teresa de Lannoy is"
+  },
+  {
+   "context": "canonical",
+   "kind": "downstream",
+   "reference": "rippleedits:random:1898:Compositionality_I:8:0",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "9e69c5c67ccdc0e91c587e4df06d85892b0dad3f0a0777c320ae33744abb74d4",
+   "user_text": "The following are the current authoritative records.\nThe name of the father of Count Teresa de Lannoy is Charles Blakeney\nThe place of burial of Charles Blakeney is South Brisbane Cemetery\nThe place of birth of Charles Blakeney is County Roscommon\nThe place of death of Charles Blakeney is Brisbane\nThe gender of Charles Blakeney is male\nThe name of the father of Charles Blakeney is Thomas Blakeney\nThe name of the mother of Charles Blakeney is Alicia Newcome\n\nThe name of the paternal grandmother of Count Teresa de Lannoy is"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "downstream",
+   "reference": "rippleedits:random:1898:Compositionality_I:8:0",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "a0272aedae46afe722cf11f97c3ebfffd78ff0f873885830bd5d82a6c799ff3b",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the father of Count Teresa de Lannoy is José Dinis Aveiro\nThe name of the father of Count Teresa de Lannoy is Charles Blakeney\nThe place of burial of Charles Blakeney is South Brisbane Cemetery\nThe place of birth of Charles Blakeney is County Roscommon\nThe place of death of Charles Blakeney is Brisbane\nThe gender of Charles Blakeney is male\nThe name of the father of Charles Blakeney is Thomas Blakeney\nThe name of the mother of Charles Blakeney is Alicia Newcome\n\nThe name of the paternal grandmother of Count Teresa de Lannoy is"
+  },
+  {
+   "context": "chronological_D",
+   "kind": "downstream",
+   "reference": "rippleedits:random:1898:Compositionality_I:8:0",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "5cb3d21cc0223545adb8fd85f4861b6ad4342f17ea9da1ffba1e7e875e6b3400",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the father of Count Teresa de Lannoy is Xu Suizhong\nThe name of the father of Count Teresa de Lannoy is Charles Blakeney\nThe place of burial of Charles Blakeney is South Brisbane Cemetery\nThe place of birth of Charles Blakeney is County Roscommon\nThe place of death of Charles Blakeney is Brisbane\nThe gender of Charles Blakeney is male\nThe name of the father of Charles Blakeney is Thomas Blakeney\nThe name of the mother of Charles Blakeney is Alicia Newcome\n\nThe name of the paternal grandmother of Count Teresa de Lannoy is"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "atomic",
+   "reference": "Q76250269|P22|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "f7988ec1cce89aa10df3c4b5bda5937fcc69597da1312e19bd7f2aa43b564c47",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the father of Count Teresa de Lannoy is José Dinis Aveiro\nThe name of the father of Count Teresa de Lannoy is Charles Blakeney\nThe place of burial of Charles Blakeney is South Brisbane Cemetery\nThe place of birth of Charles Blakeney is County Roscommon\nThe place of death of Charles Blakeney is Brisbane\nThe gender of Charles Blakeney is male\nThe name of the father of Charles Blakeney is Thomas Blakeney\nThe name of the mother of Charles Blakeney is Alicia Newcome\n\nThe name of the father of Count Teresa de Lannoy is"
+  },
+  {
+   "context": "chronological_D",
+   "kind": "atomic",
+   "reference": "Q76250269|P22|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "a5be8c43b3f25ee048d59260d274606d37dd51a91663b13cfa112e6d719558cf",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the father of Count Teresa de Lannoy is Xu Suizhong\nThe name of the father of Count Teresa de Lannoy is Charles Blakeney\nThe place of burial of Charles Blakeney is South Brisbane Cemetery\nThe place of birth of Charles Blakeney is County Roscommon\nThe place of death of Charles Blakeney is Brisbane\nThe gender of Charles Blakeney is male\nThe name of the father of Charles Blakeney is Thomas Blakeney\nThe name of the mother of Charles Blakeney is Alicia Newcome\n\nThe name of the father of Count Teresa de Lannoy is"
+  },
+  {
+   "context": "none",
+   "kind": "atomic",
+   "reference": "Q76250269|P22|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "11eaa2f9644811e2b2cda9f8e6839c7a48be1c9b84d72cb72ecbe581de7bcdd9",
+   "user_text": "The name of the father of Count Teresa de Lannoy is"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "atomic",
+   "reference": "Q17001461|P119|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "43b6b7e1795f398edc8cff7b6a7498e13517d6a649ee35b78b034950f8e46967",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the father of Count Teresa de Lannoy is José Dinis Aveiro\nThe name of the father of Count Teresa de Lannoy is Charles Blakeney\nThe place of burial of Charles Blakeney is South Brisbane Cemetery\nThe place of birth of Charles Blakeney is County Roscommon\nThe place of death of Charles Blakeney is Brisbane\nThe gender of Charles Blakeney is male\nThe name of the father of Charles Blakeney is Thomas Blakeney\nThe name of the mother of Charles Blakeney is Alicia Newcome\n\nThe place of burial of Charles Blakeney is"
+  },
+  {
+   "context": "chronological_D",
+   "kind": "atomic",
+   "reference": "Q17001461|P119|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "feb6691df866d8d0d10cc60f28fb365ae87f0e53633b6ac57f2c327ca4901f02",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the father of Count Teresa de Lannoy is Xu Suizhong\nThe name of the father of Count Teresa de Lannoy is Charles Blakeney\nThe place of burial of Charles Blakeney is South Brisbane Cemetery\nThe place of birth of Charles Blakeney is County Roscommon\nThe place of death of Charles Blakeney is Brisbane\nThe gender of Charles Blakeney is male\nThe name of the father of Charles Blakeney is Thomas Blakeney\nThe name of the mother of Charles Blakeney is Alicia Newcome\n\nThe place of burial of Charles Blakeney is"
+  },
+  {
+   "context": "none",
+   "kind": "atomic",
+   "reference": "Q17001461|P119|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "5312955b5fdbe7789f79c0a8d6a59904dffb4ee1b3fef459718f1a1b72aa4908",
+   "user_text": "The place of burial of Charles Blakeney is"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "atomic",
+   "reference": "Q17001461|P19|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "95fa8df417dc5561fb3905e560879211a7ac0d2e35b2a5fdc8f4792352acec09",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the father of Count Teresa de Lannoy is José Dinis Aveiro\nThe name of the father of Count Teresa de Lannoy is Charles Blakeney\nThe place of burial of Charles Blakeney is South Brisbane Cemetery\nThe place of birth of Charles Blakeney is County Roscommon\nThe place of death of Charles Blakeney is Brisbane\nThe gender of Charles Blakeney is male\nThe name of the father of Charles Blakeney is Thomas Blakeney\nThe name of the mother of Charles Blakeney is Alicia Newcome\n\nThe place of birth of Charles Blakeney is"
+  },
+  {
+   "context": "chronological_D",
+   "kind": "atomic",
+   "reference": "Q17001461|P19|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "23e3696bd295c8a94a0172b33a9794f378647d03f14e1f61001583bf28f9644c",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the father of Count Teresa de Lannoy is Xu Suizhong\nThe name of the father of Count Teresa de Lannoy is Charles Blakeney\nThe place of burial of Charles Blakeney is South Brisbane Cemetery\nThe place of birth of Charles Blakeney is County Roscommon\nThe place of death of Charles Blakeney is Brisbane\nThe gender of Charles Blakeney is male\nThe name of the father of Charles Blakeney is Thomas Blakeney\nThe name of the mother of Charles Blakeney is Alicia Newcome\n\nThe place of birth of Charles Blakeney is"
+  },
+  {
+   "context": "none",
+   "kind": "atomic",
+   "reference": "Q17001461|P19|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "3d475a8cba75cdbaa878a00ee374d38e27e8fec143c6f08075d12677bc468fd6",
+   "user_text": "The place of birth of Charles Blakeney is"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "atomic",
+   "reference": "Q17001461|P20|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "287af6e12dd62338e6c96a3239b1abc358049a7794641933c712df81a78ec4bc",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the father of Count Teresa de Lannoy is José Dinis Aveiro\nThe name of the father of Count Teresa de Lannoy is Charles Blakeney\nThe place of burial of Charles Blakeney is South Brisbane Cemetery\nThe place of birth of Charles Blakeney is County Roscommon\nThe place of death of Charles Blakeney is Brisbane\nThe gender of Charles Blakeney is male\nThe name of the father of Charles Blakeney is Thomas Blakeney\nThe name of the mother of Charles Blakeney is Alicia Newcome\n\nThe place of death of Charles Blakeney is"
+  },
+  {
+   "context": "chronological_D",
+   "kind": "atomic",
+   "reference": "Q17001461|P20|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "828b38d1c1fd7057569d44784e939d92a44c841ec23abc04649a05bf6e8058e2",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the father of Count Teresa de Lannoy is Xu Suizhong\nThe name of the father of Count Teresa de Lannoy is Charles Blakeney\nThe place of burial of Charles Blakeney is South Brisbane Cemetery\nThe place of birth of Charles Blakeney is County Roscommon\nThe place of death of Charles Blakeney is Brisbane\nThe gender of Charles Blakeney is male\nThe name of the father of Charles Blakeney is Thomas Blakeney\nThe name of the mother of Charles Blakeney is Alicia Newcome\n\nThe place of death of Charles Blakeney is"
+  },
+  {
+   "context": "none",
+   "kind": "atomic",
+   "reference": "Q17001461|P20|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "f0660bb667179f530b8ae0957e66a7ddc64600ad5c89c3df62ffa0dcbbcf27bf",
+   "user_text": "The place of death of Charles Blakeney is"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "atomic",
+   "reference": "Q17001461|P21|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "5909f86453433452d53ecc585935b816ab82928e193b7b00b7141bff5902d677",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the father of Count Teresa de Lannoy is José Dinis Aveiro\nThe name of the father of Count Teresa de Lannoy is Charles Blakeney\nThe place of burial of Charles Blakeney is South Brisbane Cemetery\nThe place of birth of Charles Blakeney is County Roscommon\nThe place of death of Charles Blakeney is Brisbane\nThe gender of Charles Blakeney is male\nThe name of the father of Charles Blakeney is Thomas Blakeney\nThe name of the mother of Charles Blakeney is Alicia Newcome\n\nThe gender of Charles Blakeney is"
+  },
+  {
+   "context": "chronological_D",
+   "kind": "atomic",
+   "reference": "Q17001461|P21|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "3b7db3b86a2485e4be84a09ada89e9c7325f8eab552370fdec7febd0810867f7",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the father of Count Teresa de Lannoy is Xu Suizhong\nThe name of the father of Count Teresa de Lannoy is Charles Blakeney\nThe place of burial of Charles Blakeney is South Brisbane Cemetery\nThe place of birth of Charles Blakeney is County Roscommon\nThe place of death of Charles Blakeney is Brisbane\nThe gender of Charles Blakeney is male\nThe name of the father of Charles Blakeney is Thomas Blakeney\nThe name of the mother of Charles Blakeney is Alicia Newcome\n\nThe gender of Charles Blakeney is"
+  },
+  {
+   "context": "none",
+   "kind": "atomic",
+   "reference": "Q17001461|P21|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "2a44c75d219f3f41dfd2f9741598bbbda6b7ea687260672c07faf3f09d3ea11a",
+   "user_text": "The gender of Charles Blakeney is"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "atomic",
+   "reference": "Q17001461|P22|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "cfac5f55123293d80464c25b382c4377d7d61b68648d30cec878eec9c85baf1d",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the father of Count Teresa de Lannoy is José Dinis Aveiro\nThe name of the father of Count Teresa de Lannoy is Charles Blakeney\nThe place of burial of Charles Blakeney is South Brisbane Cemetery\nThe place of birth of Charles Blakeney is County Roscommon\nThe place of death of Charles Blakeney is Brisbane\nThe gender of Charles Blakeney is male\nThe name of the father of Charles Blakeney is Thomas Blakeney\nThe name of the mother of Charles Blakeney is Alicia Newcome\n\nThe name of the father of Charles Blakeney is"
+  },
+  {
+   "context": "chronological_D",
+   "kind": "atomic",
+   "reference": "Q17001461|P22|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "bc593630b1d4404257a7d052049592d14cf9cc60a5a71a0275f725cd925f58e2",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the father of Count Teresa de Lannoy is Xu Suizhong\nThe name of the father of Count Teresa de Lannoy is Charles Blakeney\nThe place of burial of Charles Blakeney is South Brisbane Cemetery\nThe place of birth of Charles Blakeney is County Roscommon\nThe place of death of Charles Blakeney is Brisbane\nThe gender of Charles Blakeney is male\nThe name of the father of Charles Blakeney is Thomas Blakeney\nThe name of the mother of Charles Blakeney is Alicia Newcome\n\nThe name of the father of Charles Blakeney is"
+  },
+  {
+   "context": "none",
+   "kind": "atomic",
+   "reference": "Q17001461|P22|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "9ae350a383373b4c0d5865cf11e705d50f78c58ef4c4058ae4742766b4f614d6",
+   "user_text": "The name of the father of Charles Blakeney is"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "atomic",
+   "reference": "Q17001461|P25|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "d099b52ebe3c046c224a7fdb1c0803a3fa17a174d268d5060aeb70deb1870077",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the father of Count Teresa de Lannoy is José Dinis Aveiro\nThe name of the father of Count Teresa de Lannoy is Charles Blakeney\nThe place of burial of Charles Blakeney is South Brisbane Cemetery\nThe place of birth of Charles Blakeney is County Roscommon\nThe place of death of Charles Blakeney is Brisbane\nThe gender of Charles Blakeney is male\nThe name of the father of Charles Blakeney is Thomas Blakeney\nThe name of the mother of Charles Blakeney is Alicia Newcome\n\nThe name of the mother of Charles Blakeney is"
+  },
+  {
+   "context": "chronological_D",
+   "kind": "atomic",
+   "reference": "Q17001461|P25|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "90c69cebcb8e37a4444b969d9d38f9494682175d1919b72678880d8ed1b20cd8",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the father of Count Teresa de Lannoy is Xu Suizhong\nThe name of the father of Count Teresa de Lannoy is Charles Blakeney\nThe place of burial of Charles Blakeney is South Brisbane Cemetery\nThe place of birth of Charles Blakeney is County Roscommon\nThe place of death of Charles Blakeney is Brisbane\nThe gender of Charles Blakeney is male\nThe name of the father of Charles Blakeney is Thomas Blakeney\nThe name of the mother of Charles Blakeney is Alicia Newcome\n\nThe name of the mother of Charles Blakeney is"
+  },
+  {
+   "context": "none",
+   "kind": "atomic",
+   "reference": "Q17001461|P25|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "0ba4a3f6865de55c0fc43add87f8e8c70462d5e4eb03b074b876cebd805e86a1",
+   "user_text": "The name of the mother of Charles Blakeney is"
+  },
+  {
+   "context": "none",
+   "kind": "locality",
+   "reference": "counterfact:11247",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "bf01d9b4351452d1b0ae994fe24ca18e965e399782a3d9c3565f25e9af21c62a",
+   "user_text": "Le comte Ory, from"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "locality",
+   "reference": "counterfact:11247",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "d826d7f830870d56ad2802bb5dddb5c0ba1aafc36f5eb23ca11b93df14cd5410",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the father of Count Teresa de Lannoy is José Dinis Aveiro\nThe name of the father of Count Teresa de Lannoy is Charles Blakeney\nThe place of burial of Charles Blakeney is South Brisbane Cemetery\nThe place of birth of Charles Blakeney is County Roscommon\nThe place of death of Charles Blakeney is Brisbane\nThe gender of Charles Blakeney is male\nThe name of the father of Charles Blakeney is Thomas Blakeney\nThe name of the mother of Charles Blakeney is Alicia Newcome\n\nLe comte Ory, from"
+  },
+  {
+   "context": "none",
+   "kind": "locality",
+   "reference": "counterfact:8736",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "d0d839871a961bdb0cb36523e3cee3e53b2196758fd0e48518d9d7b93f22f99f",
+   "user_text": "Kingdom of Mercia is located in the continent"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "locality",
+   "reference": "counterfact:8736",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "325c9b1fa84093ad52e04ecc1fd8847795be510bb76ea486e491e66963ca49e2",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the father of Count Teresa de Lannoy is José Dinis Aveiro\nThe name of the father of Count Teresa de Lannoy is Charles Blakeney\nThe place of burial of Charles Blakeney is South Brisbane Cemetery\nThe place of birth of Charles Blakeney is County Roscommon\nThe place of death of Charles Blakeney is Brisbane\nThe gender of Charles Blakeney is male\nThe name of the father of Charles Blakeney is Thomas Blakeney\nThe name of the mother of Charles Blakeney is Alicia Newcome\n\nKingdom of Mercia is located in the continent"
+  },
+  {
+   "context": "none",
+   "kind": "locality",
+   "reference": "counterfact:1777",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "a6d5db2396487559a40cc18b87c9fcbd1eec7381c5952e8738d837588bbefe32",
+   "user_text": "Drew Shirley plays the instrument"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "locality",
+   "reference": "counterfact:1777",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "b3ecd3907884e8a0eab6e97a9daa945055159e023ec5d2e60b35259d2520077a",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the father of Count Teresa de Lannoy is José Dinis Aveiro\nThe name of the father of Count Teresa de Lannoy is Charles Blakeney\nThe place of burial of Charles Blakeney is South Brisbane Cemetery\nThe place of birth of Charles Blakeney is County Roscommon\nThe place of death of Charles Blakeney is Brisbane\nThe gender of Charles Blakeney is male\nThe name of the father of Charles Blakeney is Thomas Blakeney\nThe name of the mother of Charles Blakeney is Alicia Newcome\n\nDrew Shirley plays the instrument"
+  },
+  {
+   "context": "none",
+   "kind": "locality",
+   "reference": "counterfact:13029",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "7ca0571f3fcd230ab6128b5e74ac65f094444e7747f4180a6f33dde1c3b838e2",
+   "user_text": "The headquarter of Ace Hardware is in"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "locality",
+   "reference": "counterfact:13029",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "29b0f7d3a20b33d81a68c7366d6a56da4afa8bf4667fbc8d094b2274997e6823",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the father of Count Teresa de Lannoy is José Dinis Aveiro\nThe name of the father of Count Teresa de Lannoy is Charles Blakeney\nThe place of burial of Charles Blakeney is South Brisbane Cemetery\nThe place of birth of Charles Blakeney is County Roscommon\nThe place of death of Charles Blakeney is Brisbane\nThe gender of Charles Blakeney is male\nThe name of the father of Charles Blakeney is Thomas Blakeney\nThe name of the mother of Charles Blakeney is Alicia Newcome\n\nThe headquarter of Ace Hardware is in"
+  },
+  {
+   "context": "none",
+   "kind": "locality",
+   "reference": "counterfact:17141",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "d8dcf14dd428103cfc8ade753a9e6d861b1bf082ef5b06f5e909f47ccc67d801",
+   "user_text": "Ferrari California, produced by"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "locality",
+   "reference": "counterfact:17141",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "ebb7b0107af22550ad673e87939c97862a31a0756292b38a9e2c9c0ba353e0f1",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the father of Count Teresa de Lannoy is José Dinis Aveiro\nThe name of the father of Count Teresa de Lannoy is Charles Blakeney\nThe place of burial of Charles Blakeney is South Brisbane Cemetery\nThe place of birth of Charles Blakeney is County Roscommon\nThe place of death of Charles Blakeney is Brisbane\nThe gender of Charles Blakeney is male\nThe name of the father of Charles Blakeney is Thomas Blakeney\nThe name of the mother of Charles Blakeney is Alicia Newcome\n\nFerrari California, produced by"
+  },
+  {
+   "context": "none",
+   "kind": "locality",
+   "reference": "counterfact:5324",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "97f65d1fa130c5a5e0121aecfd65cb76e247e79c58ba44f63d6ac046e48e7a49",
+   "user_text": "Circa Survive, that originated in"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "locality",
+   "reference": "counterfact:5324",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "c9e1a32ff14c67c35b9bae8b858d84edad00f5cc640cb27551227847aeff684d",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the father of Count Teresa de Lannoy is José Dinis Aveiro\nThe name of the father of Count Teresa de Lannoy is Charles Blakeney\nThe place of burial of Charles Blakeney is South Brisbane Cemetery\nThe place of birth of Charles Blakeney is County Roscommon\nThe place of death of Charles Blakeney is Brisbane\nThe gender of Charles Blakeney is male\nThe name of the father of Charles Blakeney is Thomas Blakeney\nThe name of the mother of Charles Blakeney is Alicia Newcome\n\nCirca Survive, that originated in"
+  },
+  {
+   "context": "none",
+   "kind": "locality",
+   "reference": "counterfact:972",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "18f9ecd88d3e516ed8916079d00411ed9f0693980ff99ccb8967dcbd05ca7da5",
+   "user_text": "Ultraman Dyna originated in"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "locality",
+   "reference": "counterfact:972",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "96425617272618790b592cd8e5402a5f1e811d4757103ab8c8cd8ef8feccf530",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the father of Count Teresa de Lannoy is José Dinis Aveiro\nThe name of the father of Count Teresa de Lannoy is Charles Blakeney\nThe place of burial of Charles Blakeney is South Brisbane Cemetery\nThe place of birth of Charles Blakeney is County Roscommon\nThe place of death of Charles Blakeney is Brisbane\nThe gender of Charles Blakeney is male\nThe name of the father of Charles Blakeney is Thomas Blakeney\nThe name of the mother of Charles Blakeney is Alicia Newcome\n\nUltraman Dyna originated in"
+  },
+  {
+   "context": "none",
+   "kind": "locality",
+   "reference": "counterfact:15734",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "09276896250dab3858a8233049dad5fcd332e42b285b38fd7ce25fb944a80ed3",
+   "user_text": "The Shari Lewis Show debuted on"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "locality",
+   "reference": "counterfact:15734",
+   "root_id": "rippleedits:random:1898",
+   "unit_id": "45415dc35006a21e64dad27e6a9548793aac19b82a4e457c25359c393914877b",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the father of Count Teresa de Lannoy is José Dinis Aveiro\nThe name of the father of Count Teresa de Lannoy is Charles Blakeney\nThe place of burial of Charles Blakeney is South Brisbane Cemetery\nThe place of birth of Charles Blakeney is County Roscommon\nThe place of death of Charles Blakeney is Brisbane\nThe gender of Charles Blakeney is male\nThe name of the father of Charles Blakeney is Thomas Blakeney\nThe name of the mother of Charles Blakeney is Alicia Newcome\n\nThe Shari Lewis Show debuted on"
+  },
+  {
+   "context": "none",
+   "kind": "downstream",
+   "reference": "rippleedits:random:636:Compositionality_I:0:0",
+   "root_id": "rippleedits:random:636",
+   "unit_id": "3eab03d3cf91ce48cb1f751028508087476c6e1050fea68f29ca210914b4998e",
+   "user_text": "The name of the continent which the place of birth of Ruymán Hernández is part of is"
+  },
+  {
+   "context": "given_facts",
+   "kind": "downstream",
+   "reference": "rippleedits:random:636:Compositionality_I:0:0",
+   "root_id": "rippleedits:random:636",
+   "unit_id": "bec355141ade726cd9584652d90201b91b3dbf877ab3403e3d62d561d70a5f9e",
+   "user_text": "The following task-relevant records are supplied.\nThe place of birth of Ruymán Hernández is Surxondaryo\nThe name of the continent which Surxondaryo is part of is Asia\n\nThe name of the continent which the place of birth of Ruymán Hernández is part of is"
+  },
+  {
+   "context": "canonical",
+   "kind": "downstream",
+   "reference": "rippleedits:random:636:Compositionality_I:0:0",
+   "root_id": "rippleedits:random:636",
+   "unit_id": "a7eed71c9c12d289cff3ee3f85bf409d1dd1e8d1c945c1740d300df2a8971014",
+   "user_text": "The following are the current authoritative records.\nThe place of birth of Ruymán Hernández is Surxondaryo\nThe name of the continent which Surxondaryo is part of is Asia\n\nThe name of the continent which the place of birth of Ruymán Hernández is part of is"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "downstream",
+   "reference": "rippleedits:random:636:Compositionality_I:0:0",
+   "root_id": "rippleedits:random:636",
+   "unit_id": "65b117df671d68cc2c5ca7f3afa5791854aff36fc56655cd99c9b0109eacd9e0",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe place of birth of Ruymán Hernández is Metapán\nThe place of birth of Ruymán Hernández is Surxondaryo\nThe name of the continent which Surxondaryo is part of is Asia\n\nThe name of the continent which the place of birth of Ruymán Hernández is part of is"
+  },
+  {
+   "context": "chronological_D",
+   "kind": "downstream",
+   "reference": "rippleedits:random:636:Compositionality_I:0:0",
+   "root_id": "rippleedits:random:636",
+   "unit_id": "5c6eedb5f783ca3b4b3906c09f8e1a2a0ed1b959c1f6f2639068333fd25d2fd1",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe place of birth of Ruymán Hernández is Lewisham\nThe place of birth of Ruymán Hernández is Surxondaryo\nThe name of the continent which Surxondaryo is part of is Asia\n\nThe name of the continent which the place of birth of Ruymán Hernández is part of is"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "atomic",
+   "reference": "Q7383651|P19|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:636",
+   "unit_id": "69d8a7949204cb9e9c59bf893c3cc0dc211df5eb44127b22357a135c36e72ade",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe place of birth of Ruymán Hernández is Metapán\nThe place of birth of Ruymán Hernández is Surxondaryo\nThe name of the continent which Surxondaryo is part of is Asia\n\nThe place of birth of Ruymán Hernández is"
+  },
+  {
+   "context": "chronological_D",
+   "kind": "atomic",
+   "reference": "Q7383651|P19|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:636",
+   "unit_id": "2d10b3ceca6e0c49da46bda0c6da16dedbe5badd717f7873d632930e44f225b9",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe place of birth of Ruymán Hernández is Lewisham\nThe place of birth of Ruymán Hernández is Surxondaryo\nThe name of the continent which Surxondaryo is part of is Asia\n\nThe place of birth of Ruymán Hernández is"
+  },
+  {
+   "context": "none",
+   "kind": "atomic",
+   "reference": "Q7383651|P19|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:636",
+   "unit_id": "f8e92f7751578403968a7759e46da1ffe5a801dda39a7997696b693ac3efcd3d",
+   "user_text": "The place of birth of Ruymán Hernández is"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "atomic",
+   "reference": "Q1032654|P30|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:636",
+   "unit_id": "294e5710ea723584575d16849f8ae0a8cc9385d94714a97ea425d035b5c86326",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe place of birth of Ruymán Hernández is Metapán\nThe place of birth of Ruymán Hernández is Surxondaryo\nThe name of the continent which Surxondaryo is part of is Asia\n\nThe name of the continent which Surxondaryo is part of is"
+  },
+  {
+   "context": "chronological_D",
+   "kind": "atomic",
+   "reference": "Q1032654|P30|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:636",
+   "unit_id": "77ec0b67244ed35b5af09c98eecec97de3def2fc43f18122bea5dc860aed398b",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe place of birth of Ruymán Hernández is Lewisham\nThe place of birth of Ruymán Hernández is Surxondaryo\nThe name of the continent which Surxondaryo is part of is Asia\n\nThe name of the continent which Surxondaryo is part of is"
+  },
+  {
+   "context": "none",
+   "kind": "atomic",
+   "reference": "Q1032654|P30|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:636",
+   "unit_id": "1854a531c62d6387853d3387b1212f4f236b08d33b49ce11e3b60c8a89579d67",
+   "user_text": "The name of the continent which Surxondaryo is part of is"
+  },
+  {
+   "context": "none",
+   "kind": "locality",
+   "reference": "counterfact:11247",
+   "root_id": "rippleedits:random:636",
+   "unit_id": "0cca3cbe7a415fab9833aa30553b6ca79f31c50197d89a6693dc0149cd9cc3cb",
+   "user_text": "Le comte Ory, from"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "locality",
+   "reference": "counterfact:11247",
+   "root_id": "rippleedits:random:636",
+   "unit_id": "fe359f029ad563f04ccf58c887703d4e71c903943d7a8f3f7561a56c4d3888f0",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe place of birth of Ruymán Hernández is Metapán\nThe place of birth of Ruymán Hernández is Surxondaryo\nThe name of the continent which Surxondaryo is part of is Asia\n\nLe comte Ory, from"
+  },
+  {
+   "context": "none",
+   "kind": "locality",
+   "reference": "counterfact:8736",
+   "root_id": "rippleedits:random:636",
+   "unit_id": "097e30e256164f9c47102e5eb7f3ceb78b0d821da15b97a435758995996e7036",
+   "user_text": "Kingdom of Mercia is located in the continent"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "locality",
+   "reference": "counterfact:8736",
+   "root_id": "rippleedits:random:636",
+   "unit_id": "5bf93e6f84d9a6d2a22bfb25b4d2ac9a9566d517ed89a69727b02f5767993c70",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe place of birth of Ruymán Hernández is Metapán\nThe place of birth of Ruymán Hernández is Surxondaryo\nThe name of the continent which Surxondaryo is part of is Asia\n\nKingdom of Mercia is located in the continent"
+  },
+  {
+   "context": "none",
+   "kind": "locality",
+   "reference": "counterfact:1777",
+   "root_id": "rippleedits:random:636",
+   "unit_id": "c7de80d922ed01f03c490d4f972bfa9531a26e4ea0850407c9a7df5c1fd0b2ba",
+   "user_text": "Drew Shirley plays the instrument"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "locality",
+   "reference": "counterfact:1777",
+   "root_id": "rippleedits:random:636",
+   "unit_id": "386fcb8c23b16629c2f95665f7b4b870d1c5d41824f0a8d6f669f392288d1c33",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe place of birth of Ruymán Hernández is Metapán\nThe place of birth of Ruymán Hernández is Surxondaryo\nThe name of the continent which Surxondaryo is part of is Asia\n\nDrew Shirley plays the instrument"
+  },
+  {
+   "context": "none",
+   "kind": "locality",
+   "reference": "counterfact:13029",
+   "root_id": "rippleedits:random:636",
+   "unit_id": "af725e1f8a9ee13b83d50ff534b218e6a1a7f5309148183903e0df1abe04f771",
+   "user_text": "The headquarter of Ace Hardware is in"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "locality",
+   "reference": "counterfact:13029",
+   "root_id": "rippleedits:random:636",
+   "unit_id": "6c5b001d10728c9167beb86e7a593a55b65b373edf3e0727677c988f11cb9bdf",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe place of birth of Ruymán Hernández is Metapán\nThe place of birth of Ruymán Hernández is Surxondaryo\nThe name of the continent which Surxondaryo is part of is Asia\n\nThe headquarter of Ace Hardware is in"
+  },
+  {
+   "context": "none",
+   "kind": "locality",
+   "reference": "counterfact:17141",
+   "root_id": "rippleedits:random:636",
+   "unit_id": "28f7a263ba69042630f7b73cf9b836faf786ca17aca16c11e05e2992d6f89632",
+   "user_text": "Ferrari California, produced by"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "locality",
+   "reference": "counterfact:17141",
+   "root_id": "rippleedits:random:636",
+   "unit_id": "2a461dd303abec03475ccdb3d5bc9674e8d53dccad9214fbfb63c760a4259b28",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe place of birth of Ruymán Hernández is Metapán\nThe place of birth of Ruymán Hernández is Surxondaryo\nThe name of the continent which Surxondaryo is part of is Asia\n\nFerrari California, produced by"
+  },
+  {
+   "context": "none",
+   "kind": "locality",
+   "reference": "counterfact:5324",
+   "root_id": "rippleedits:random:636",
+   "unit_id": "4afa746822f901a469c8f0e7778f60ea51b3d1a48035621a3178debc11bc4246",
+   "user_text": "Circa Survive, that originated in"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "locality",
+   "reference": "counterfact:5324",
+   "root_id": "rippleedits:random:636",
+   "unit_id": "7b0e071e3a73934462f0839f0594b4d857145415d6b45d2f49a460d1d8a1ec28",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe place of birth of Ruymán Hernández is Metapán\nThe place of birth of Ruymán Hernández is Surxondaryo\nThe name of the continent which Surxondaryo is part of is Asia\n\nCirca Survive, that originated in"
+  },
+  {
+   "context": "none",
+   "kind": "locality",
+   "reference": "counterfact:972",
+   "root_id": "rippleedits:random:636",
+   "unit_id": "f5ef8e6ee6c2d7c51a8601630a4438e2a9f8f2736c0771a2cb1c758cb55b9450",
+   "user_text": "Ultraman Dyna originated in"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "locality",
+   "reference": "counterfact:972",
+   "root_id": "rippleedits:random:636",
+   "unit_id": "cb6601fd7014233002bfba4a47fcfec449943bcae8fef540335a2668b14e98a2",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe place of birth of Ruymán Hernández is Metapán\nThe place of birth of Ruymán Hernández is Surxondaryo\nThe name of the continent which Surxondaryo is part of is Asia\n\nUltraman Dyna originated in"
+  },
+  {
+   "context": "none",
+   "kind": "locality",
+   "reference": "counterfact:15734",
+   "root_id": "rippleedits:random:636",
+   "unit_id": "46562536b8d29e44860318f199e7a8a8ac67b57c243bb66e6c8bf14c9baf9168",
+   "user_text": "The Shari Lewis Show debuted on"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "locality",
+   "reference": "counterfact:15734",
+   "root_id": "rippleedits:random:636",
+   "unit_id": "3f55eea20bc3b199ff847849d83321e10c441c2a1a45b830810d09abafeeec26",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe place of birth of Ruymán Hernández is Metapán\nThe place of birth of Ruymán Hernández is Surxondaryo\nThe name of the continent which Surxondaryo is part of is Asia\n\nThe Shari Lewis Show debuted on"
+  },
+  {
+   "context": "none",
+   "kind": "downstream",
+   "reference": "rippleedits:random:683:Compositionality_I:0:0",
+   "root_id": "rippleedits:random:683",
+   "unit_id": "ee9fd6022cff11c70763f393ddbb5de60a671ad5582f28b4091499218347da72",
+   "user_text": "The gender of the mother of Margus Hernits is"
+  },
+  {
+   "context": "given_facts",
+   "kind": "downstream",
+   "reference": "rippleedits:random:683:Compositionality_I:0:0",
+   "root_id": "rippleedits:random:683",
+   "unit_id": "61093cfaf5d4afeae617268a0fc7e00da729e764b87cd2fe0a3ef192ebf79e69",
+   "user_text": "The following task-relevant records are supplied.\nThe name of the mother of Margus Hernits is Dolores Gage\nThe gender of Dolores Gage is female\nThe name of the father of Dolores Gage is Robert Gage\nThe name of the mother of Dolores Gage is Maria Diaz-Caneja\n\nThe gender of the mother of Margus Hernits is"
+  },
+  {
+   "context": "canonical",
+   "kind": "downstream",
+   "reference": "rippleedits:random:683:Compositionality_I:0:0",
+   "root_id": "rippleedits:random:683",
+   "unit_id": "bc8ea426e365a1f12ee9f1c1d2b58b38eae39ec9eabfeaa06ca5ce70c1265371",
+   "user_text": "The following are the current authoritative records.\nThe name of the mother of Margus Hernits is Dolores Gage\nThe gender of Dolores Gage is female\nThe name of the father of Dolores Gage is Robert Gage\nThe name of the mother of Dolores Gage is Maria Diaz-Caneja\n\nThe gender of the mother of Margus Hernits is"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "downstream",
+   "reference": "rippleedits:random:683:Compositionality_I:0:0",
+   "root_id": "rippleedits:random:683",
+   "unit_id": "132808749b320f503973679be432099fecc1071273a26313b116a7b7277a8701",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Margus Hernits is Viktoria Edelspacher de Gyoryok\nThe name of the mother of Margus Hernits is Dolores Gage\nThe gender of Dolores Gage is female\nThe name of the father of Dolores Gage is Robert Gage\nThe name of the mother of Dolores Gage is Maria Diaz-Caneja\n\nThe gender of the mother of Margus Hernits is"
+  },
+  {
+   "context": "chronological_D",
+   "kind": "downstream",
+   "reference": "rippleedits:random:683:Compositionality_I:0:0",
+   "root_id": "rippleedits:random:683",
+   "unit_id": "9b0912d326620e3fd41f49a9ab494236f86bf803d72d16f2bf1e5cd57cb7c442",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Margus Hernits is Louise Timpson\nThe name of the mother of Margus Hernits is Dolores Gage\nThe gender of Dolores Gage is female\nThe name of the father of Dolores Gage is Robert Gage\nThe name of the mother of Dolores Gage is Maria Diaz-Caneja\n\nThe gender of the mother of Margus Hernits is"
+  },
+  {
+   "context": "none",
+   "kind": "downstream",
+   "reference": "rippleedits:random:683:Compositionality_I:1:0",
+   "root_id": "rippleedits:random:683",
+   "unit_id": "d72bb003880ec794e271d9d7ea78d2c364e0e3b5de12bcf7d06d382583cd163c",
+   "user_text": "The name of the maternal grandfather of Margus Hernits is"
+  },
+  {
+   "context": "given_facts",
+   "kind": "downstream",
+   "reference": "rippleedits:random:683:Compositionality_I:1:0",
+   "root_id": "rippleedits:random:683",
+   "unit_id": "02cad03e6ee092a603de3f8c3f0d65ecad7cc0b1f32b8841b2721d829e0f2e4b",
+   "user_text": "The following task-relevant records are supplied.\nThe name of the mother of Margus Hernits is Dolores Gage\nThe gender of Dolores Gage is female\nThe name of the father of Dolores Gage is Robert Gage\nThe name of the mother of Dolores Gage is Maria Diaz-Caneja\n\nThe name of the maternal grandfather of Margus Hernits is"
+  },
+  {
+   "context": "canonical",
+   "kind": "downstream",
+   "reference": "rippleedits:random:683:Compositionality_I:1:0",
+   "root_id": "rippleedits:random:683",
+   "unit_id": "f56a730ce6f22add288ab24418b258773f9fbfb989772f97cf6c1cebab6e9943",
+   "user_text": "The following are the current authoritative records.\nThe name of the mother of Margus Hernits is Dolores Gage\nThe gender of Dolores Gage is female\nThe name of the father of Dolores Gage is Robert Gage\nThe name of the mother of Dolores Gage is Maria Diaz-Caneja\n\nThe name of the maternal grandfather of Margus Hernits is"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "downstream",
+   "reference": "rippleedits:random:683:Compositionality_I:1:0",
+   "root_id": "rippleedits:random:683",
+   "unit_id": "cfeed92dd35b92e33afb6d857f456d27fe9ef9589179c9103afa638d4f466ad8",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Margus Hernits is Viktoria Edelspacher de Gyoryok\nThe name of the mother of Margus Hernits is Dolores Gage\nThe gender of Dolores Gage is female\nThe name of the father of Dolores Gage is Robert Gage\nThe name of the mother of Dolores Gage is Maria Diaz-Caneja\n\nThe name of the maternal grandfather of Margus Hernits is"
+  },
+  {
+   "context": "chronological_D",
+   "kind": "downstream",
+   "reference": "rippleedits:random:683:Compositionality_I:1:0",
+   "root_id": "rippleedits:random:683",
+   "unit_id": "d282bc79586827566331064d6c77d9a101437b36866d536716b6c946d2a6dfb9",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Margus Hernits is Louise Timpson\nThe name of the mother of Margus Hernits is Dolores Gage\nThe gender of Dolores Gage is female\nThe name of the father of Dolores Gage is Robert Gage\nThe name of the mother of Dolores Gage is Maria Diaz-Caneja\n\nThe name of the maternal grandfather of Margus Hernits is"
+  },
+  {
+   "context": "none",
+   "kind": "downstream",
+   "reference": "rippleedits:random:683:Compositionality_I:2:0",
+   "root_id": "rippleedits:random:683",
+   "unit_id": "0ff3dd54ced144d1bac346737f25e1c5c71ad527ff6d8a9218cde9b41f527494",
+   "user_text": "The name of the maternal grandmother of Margus Hernits is"
+  },
+  {
+   "context": "given_facts",
+   "kind": "downstream",
+   "reference": "rippleedits:random:683:Compositionality_I:2:0",
+   "root_id": "rippleedits:random:683",
+   "unit_id": "f86f942a9f9db10c8e72f2f302e0417c363ab7f0dc4e27129ff778df9450047e",
+   "user_text": "The following task-relevant records are supplied.\nThe name of the mother of Margus Hernits is Dolores Gage\nThe gender of Dolores Gage is female\nThe name of the father of Dolores Gage is Robert Gage\nThe name of the mother of Dolores Gage is Maria Diaz-Caneja\n\nThe name of the maternal grandmother of Margus Hernits is"
+  },
+  {
+   "context": "canonical",
+   "kind": "downstream",
+   "reference": "rippleedits:random:683:Compositionality_I:2:0",
+   "root_id": "rippleedits:random:683",
+   "unit_id": "afc5503aac7cb72c776a0fdf72734e14787ad308abe46d96b4ba0ba198f98eab",
+   "user_text": "The following are the current authoritative records.\nThe name of the mother of Margus Hernits is Dolores Gage\nThe gender of Dolores Gage is female\nThe name of the father of Dolores Gage is Robert Gage\nThe name of the mother of Dolores Gage is Maria Diaz-Caneja\n\nThe name of the maternal grandmother of Margus Hernits is"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "downstream",
+   "reference": "rippleedits:random:683:Compositionality_I:2:0",
+   "root_id": "rippleedits:random:683",
+   "unit_id": "eb7da656b367ef971baec8aed20e3e36b2ec0ba7d7733e122748575199b0709e",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Margus Hernits is Viktoria Edelspacher de Gyoryok\nThe name of the mother of Margus Hernits is Dolores Gage\nThe gender of Dolores Gage is female\nThe name of the father of Dolores Gage is Robert Gage\nThe name of the mother of Dolores Gage is Maria Diaz-Caneja\n\nThe name of the maternal grandmother of Margus Hernits is"
+  },
+  {
+   "context": "chronological_D",
+   "kind": "downstream",
+   "reference": "rippleedits:random:683:Compositionality_I:2:0",
+   "root_id": "rippleedits:random:683",
+   "unit_id": "ce8f5c5f3ed26e15b3950c351ce9e7feea253299932e9fdaf28671b0d1e9deaf",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Margus Hernits is Louise Timpson\nThe name of the mother of Margus Hernits is Dolores Gage\nThe gender of Dolores Gage is female\nThe name of the father of Dolores Gage is Robert Gage\nThe name of the mother of Dolores Gage is Maria Diaz-Caneja\n\nThe name of the maternal grandmother of Margus Hernits is"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "atomic",
+   "reference": "Q6760840|P25|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:683",
+   "unit_id": "2298c1040a30c5b47d5ccad1d98995d925a171406c7f661c083bc4ba50f4711c",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Margus Hernits is Viktoria Edelspacher de Gyoryok\nThe name of the mother of Margus Hernits is Dolores Gage\nThe gender of Dolores Gage is female\nThe name of the father of Dolores Gage is Robert Gage\nThe name of the mother of Dolores Gage is Maria Diaz-Caneja\n\nThe name of the mother of Margus Hernits is"
+  },
+  {
+   "context": "chronological_D",
+   "kind": "atomic",
+   "reference": "Q6760840|P25|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:683",
+   "unit_id": "923f1206a5fe5f2fa0a836ab3aedb0163e16d532b98f45bbd3efece46b2a4c5b",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Margus Hernits is Louise Timpson\nThe name of the mother of Margus Hernits is Dolores Gage\nThe gender of Dolores Gage is female\nThe name of the father of Dolores Gage is Robert Gage\nThe name of the mother of Dolores Gage is Maria Diaz-Caneja\n\nThe name of the mother of Margus Hernits is"
+  },
+  {
+   "context": "none",
+   "kind": "atomic",
+   "reference": "Q6760840|P25|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:683",
+   "unit_id": "6f5ec3e83e677e6390d26e5a42f1f169739d83a382f3541344321a9951cc5689",
+   "user_text": "The name of the mother of Margus Hernits is"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "atomic",
+   "reference": "Q75354114|P21|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:683",
+   "unit_id": "d9ffe605034326e9018279bd6112696ffa0c27a3de91e231279bf77e3a5f551b",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Margus Hernits is Viktoria Edelspacher de Gyoryok\nThe name of the mother of Margus Hernits is Dolores Gage\nThe gender of Dolores Gage is female\nThe name of the father of Dolores Gage is Robert Gage\nThe name of the mother of Dolores Gage is Maria Diaz-Caneja\n\nThe gender of Dolores Gage is"
+  },
+  {
+   "context": "chronological_D",
+   "kind": "atomic",
+   "reference": "Q75354114|P21|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:683",
+   "unit_id": "36373c37edf1dd37233c937cf8aea9fafbb787645feff1343087050bd367c58e",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Margus Hernits is Louise Timpson\nThe name of the mother of Margus Hernits is Dolores Gage\nThe gender of Dolores Gage is female\nThe name of the father of Dolores Gage is Robert Gage\nThe name of the mother of Dolores Gage is Maria Diaz-Caneja\n\nThe gender of Dolores Gage is"
+  },
+  {
+   "context": "none",
+   "kind": "atomic",
+   "reference": "Q75354114|P21|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:683",
+   "unit_id": "d3c0106c547277aa5f3d2cf7d917dd380c3e57f88e8ce3145d4c90f89bbf4e38",
+   "user_text": "The gender of Dolores Gage is"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "atomic",
+   "reference": "Q75354114|P22|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:683",
+   "unit_id": "5a6c0c07a7c475f21606588005e0a687784188acaabe6a84324e5a7e0a6ed854",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Margus Hernits is Viktoria Edelspacher de Gyoryok\nThe name of the mother of Margus Hernits is Dolores Gage\nThe gender of Dolores Gage is female\nThe name of the father of Dolores Gage is Robert Gage\nThe name of the mother of Dolores Gage is Maria Diaz-Caneja\n\nThe name of the father of Dolores Gage is"
+  },
+  {
+   "context": "chronological_D",
+   "kind": "atomic",
+   "reference": "Q75354114|P22|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:683",
+   "unit_id": "712e43d5f9cc4e5a48909cd3623bd6b53ace58394d96a41d3a83aa858eb603a8",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Margus Hernits is Louise Timpson\nThe name of the mother of Margus Hernits is Dolores Gage\nThe gender of Dolores Gage is female\nThe name of the father of Dolores Gage is Robert Gage\nThe name of the mother of Dolores Gage is Maria Diaz-Caneja\n\nThe name of the father of Dolores Gage is"
+  },
+  {
+   "context": "none",
+   "kind": "atomic",
+   "reference": "Q75354114|P22|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:683",
+   "unit_id": "0e61182371816302be6f8573afe57afb8b8a643584d675643c0f6196c1ff942d",
+   "user_text": "The name of the father of Dolores Gage is"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "atomic",
+   "reference": "Q75354114|P25|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:683",
+   "unit_id": "ad56dccdb54b5b843e81b95dd92632eb34cb2a3dc69415c63b9c8fcffb19d885",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Margus Hernits is Viktoria Edelspacher de Gyoryok\nThe name of the mother of Margus Hernits is Dolores Gage\nThe gender of Dolores Gage is female\nThe name of the father of Dolores Gage is Robert Gage\nThe name of the mother of Dolores Gage is Maria Diaz-Caneja\n\nThe name of the mother of Dolores Gage is"
+  },
+  {
+   "context": "chronological_D",
+   "kind": "atomic",
+   "reference": "Q75354114|P25|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:683",
+   "unit_id": "a49bd89e0682a710fcd1523194e3be512c7c345d9580eeee75b024b2095f2c4c",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Margus Hernits is Louise Timpson\nThe name of the mother of Margus Hernits is Dolores Gage\nThe gender of Dolores Gage is female\nThe name of the father of Dolores Gage is Robert Gage\nThe name of the mother of Dolores Gage is Maria Diaz-Caneja\n\nThe name of the mother of Dolores Gage is"
+  },
+  {
+   "context": "none",
+   "kind": "atomic",
+   "reference": "Q75354114|P25|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:683",
+   "unit_id": "88334cfeb7d7ef100caa18b0b0540bd73f99ce00807033ab302c8913497ee636",
+   "user_text": "The name of the mother of Dolores Gage is"
+  },
+  {
+   "context": "none",
+   "kind": "locality",
+   "reference": "counterfact:11247",
+   "root_id": "rippleedits:random:683",
+   "unit_id": "974f4b1de2033831aafb8615bef65f4d2aaad9708f199408d946267735b9a0c1",
+   "user_text": "Le comte Ory, from"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "locality",
+   "reference": "counterfact:11247",
+   "root_id": "rippleedits:random:683",
+   "unit_id": "b2bba1846aaa613b223681ace9ed3c9ec1cdea2a4f4066f08a6018a5a8160f5e",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Margus Hernits is Viktoria Edelspacher de Gyoryok\nThe name of the mother of Margus Hernits is Dolores Gage\nThe gender of Dolores Gage is female\nThe name of the father of Dolores Gage is Robert Gage\nThe name of the mother of Dolores Gage is Maria Diaz-Caneja\n\nLe comte Ory, from"
+  },
+  {
+   "context": "none",
+   "kind": "locality",
+   "reference": "counterfact:8736",
+   "root_id": "rippleedits:random:683",
+   "unit_id": "3190ead6ad1c075fe3227e0c2d369e08787ba8a8af206fe91d574b24b0751f3a",
+   "user_text": "Kingdom of Mercia is located in the continent"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "locality",
+   "reference": "counterfact:8736",
+   "root_id": "rippleedits:random:683",
+   "unit_id": "274ccf2f92296f8ba56917e1ee4468f4acb6538cecea3dd8d79c8e98c69918b5",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Margus Hernits is Viktoria Edelspacher de Gyoryok\nThe name of the mother of Margus Hernits is Dolores Gage\nThe gender of Dolores Gage is female\nThe name of the father of Dolores Gage is Robert Gage\nThe name of the mother of Dolores Gage is Maria Diaz-Caneja\n\nKingdom of Mercia is located in the continent"
+  },
+  {
+   "context": "none",
+   "kind": "locality",
+   "reference": "counterfact:1777",
+   "root_id": "rippleedits:random:683",
+   "unit_id": "836ad48b9ad2f4ae14c509531362520212ed28a2dac1e3726dbd49f900fbd31b",
+   "user_text": "Drew Shirley plays the instrument"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "locality",
+   "reference": "counterfact:1777",
+   "root_id": "rippleedits:random:683",
+   "unit_id": "7eb6c303282dbd649f4f4b615a6c94afda7ab628d2ed7a37d7f08f40a0db5dab",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Margus Hernits is Viktoria Edelspacher de Gyoryok\nThe name of the mother of Margus Hernits is Dolores Gage\nThe gender of Dolores Gage is female\nThe name of the father of Dolores Gage is Robert Gage\nThe name of the mother of Dolores Gage is Maria Diaz-Caneja\n\nDrew Shirley plays the instrument"
+  },
+  {
+   "context": "none",
+   "kind": "locality",
+   "reference": "counterfact:13029",
+   "root_id": "rippleedits:random:683",
+   "unit_id": "be951eff21bc5909bf569b6cddf037884c096b23eb537e0e651dfa80cdecb019",
+   "user_text": "The headquarter of Ace Hardware is in"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "locality",
+   "reference": "counterfact:13029",
+   "root_id": "rippleedits:random:683",
+   "unit_id": "6a9a4d25822ce005a78177c44787d78b7e9b7a7c9ed716aee4f6136954a20dc4",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Margus Hernits is Viktoria Edelspacher de Gyoryok\nThe name of the mother of Margus Hernits is Dolores Gage\nThe gender of Dolores Gage is female\nThe name of the father of Dolores Gage is Robert Gage\nThe name of the mother of Dolores Gage is Maria Diaz-Caneja\n\nThe headquarter of Ace Hardware is in"
+  },
+  {
+   "context": "none",
+   "kind": "locality",
+   "reference": "counterfact:17141",
+   "root_id": "rippleedits:random:683",
+   "unit_id": "fe4dc526853f5d55beebceda4225c92f0ea868aaca07017a538851a24ae5096f",
+   "user_text": "Ferrari California, produced by"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "locality",
+   "reference": "counterfact:17141",
+   "root_id": "rippleedits:random:683",
+   "unit_id": "7ad38188c8116d89753b8ca0c37d56279736aeb8c5cfcb44a816183eb5c75dd2",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Margus Hernits is Viktoria Edelspacher de Gyoryok\nThe name of the mother of Margus Hernits is Dolores Gage\nThe gender of Dolores Gage is female\nThe name of the father of Dolores Gage is Robert Gage\nThe name of the mother of Dolores Gage is Maria Diaz-Caneja\n\nFerrari California, produced by"
+  },
+  {
+   "context": "none",
+   "kind": "locality",
+   "reference": "counterfact:5324",
+   "root_id": "rippleedits:random:683",
+   "unit_id": "70772e2923d7374d91518d71040fd076dc03025c91b1c67e365f0c2bf2de0ca7",
+   "user_text": "Circa Survive, that originated in"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "locality",
+   "reference": "counterfact:5324",
+   "root_id": "rippleedits:random:683",
+   "unit_id": "96846bf676ffc8f5c87c9ebaa65ac80e352f52974680c9342a8c03cc5c554b5c",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Margus Hernits is Viktoria Edelspacher de Gyoryok\nThe name of the mother of Margus Hernits is Dolores Gage\nThe gender of Dolores Gage is female\nThe name of the father of Dolores Gage is Robert Gage\nThe name of the mother of Dolores Gage is Maria Diaz-Caneja\n\nCirca Survive, that originated in"
+  },
+  {
+   "context": "none",
+   "kind": "locality",
+   "reference": "counterfact:972",
+   "root_id": "rippleedits:random:683",
+   "unit_id": "142578cd5872f859ad3fed29f5d78d112775dbbbc7cc6a71c811c6e21d1c2fc6",
+   "user_text": "Ultraman Dyna originated in"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "locality",
+   "reference": "counterfact:972",
+   "root_id": "rippleedits:random:683",
+   "unit_id": "dcc95cc4480ab867deb4988bd61cedfe41741232d92b2ee8d8f9bba1185d9c9e",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Margus Hernits is Viktoria Edelspacher de Gyoryok\nThe name of the mother of Margus Hernits is Dolores Gage\nThe gender of Dolores Gage is female\nThe name of the father of Dolores Gage is Robert Gage\nThe name of the mother of Dolores Gage is Maria Diaz-Caneja\n\nUltraman Dyna originated in"
+  },
+  {
+   "context": "none",
+   "kind": "locality",
+   "reference": "counterfact:15734",
+   "root_id": "rippleedits:random:683",
+   "unit_id": "2ba20ed796ccb2aa54dfe9cf4a85d71ef69918c650761e3f6aa8db8426160908",
+   "user_text": "The Shari Lewis Show debuted on"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "locality",
+   "reference": "counterfact:15734",
+   "root_id": "rippleedits:random:683",
+   "unit_id": "4a3168096b9450eae99f791c15155cc311cbce4f6def062f62a14439f5d4a40e",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Margus Hernits is Viktoria Edelspacher de Gyoryok\nThe name of the mother of Margus Hernits is Dolores Gage\nThe gender of Dolores Gage is female\nThe name of the father of Dolores Gage is Robert Gage\nThe name of the mother of Dolores Gage is Maria Diaz-Caneja\n\nThe Shari Lewis Show debuted on"
+  },
+  {
+   "context": "none",
+   "kind": "downstream",
+   "reference": "rippleedits:random:1174:Compositionality_I:0:0",
+   "root_id": "rippleedits:random:1174",
+   "unit_id": "efa1a18203ccaff78d1822d0f2314e27d67fda81c0c77743c64368f5b621d796",
+   "user_text": "The gender of the mother of Georgiana Auguste Henrietta Elphinstone is"
+  },
+  {
+   "context": "given_facts",
+   "kind": "downstream",
+   "reference": "rippleedits:random:1174:Compositionality_I:0:0",
+   "root_id": "rippleedits:random:1174",
+   "unit_id": "2e2de8add573dfef304d489af024775516860878f74761d856c4a9af1c6a108f",
+   "user_text": "The following task-relevant records are supplied.\nThe name of the mother of Georgiana Auguste Henrietta Elphinstone is Elizabeth Niles\nThe gender of Elizabeth Niles is female\nThe name of the father of Elizabeth Niles is Peter Thacher\nThe name of the mother of Elizabeth Niles is Theodora Thatcher\n\nThe gender of the mother of Georgiana Auguste Henrietta Elphinstone is"
+  },
+  {
+   "context": "canonical",
+   "kind": "downstream",
+   "reference": "rippleedits:random:1174:Compositionality_I:0:0",
+   "root_id": "rippleedits:random:1174",
+   "unit_id": "cc36b869cac0f6491669ad01fb250dc92b228bb5b0e8764717ef29bb2e582396",
+   "user_text": "The following are the current authoritative records.\nThe name of the mother of Georgiana Auguste Henrietta Elphinstone is Elizabeth Niles\nThe gender of Elizabeth Niles is female\nThe name of the father of Elizabeth Niles is Peter Thacher\nThe name of the mother of Elizabeth Niles is Theodora Thatcher\n\nThe gender of the mother of Georgiana Auguste Henrietta Elphinstone is"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "downstream",
+   "reference": "rippleedits:random:1174:Compositionality_I:0:0",
+   "root_id": "rippleedits:random:1174",
+   "unit_id": "35971e6b77f45b8604838e2b18a45947bd8071b22ded1884ea0587e75c7c88e2",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Georgiana Auguste Henrietta Elphinstone is Carol Walter\nThe name of the mother of Georgiana Auguste Henrietta Elphinstone is Elizabeth Niles\nThe gender of Elizabeth Niles is female\nThe name of the father of Elizabeth Niles is Peter Thacher\nThe name of the mother of Elizabeth Niles is Theodora Thatcher\n\nThe gender of the mother of Georgiana Auguste Henrietta Elphinstone is"
+  },
+  {
+   "context": "chronological_D",
+   "kind": "downstream",
+   "reference": "rippleedits:random:1174:Compositionality_I:0:0",
+   "root_id": "rippleedits:random:1174",
+   "unit_id": "30e0fefa2439508b9c6011423a6d0b780ebf754189c0c939327eeb8ebe9503f6",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Georgiana Auguste Henrietta Elphinstone is Anna Long\nThe name of the mother of Georgiana Auguste Henrietta Elphinstone is Elizabeth Niles\nThe gender of Elizabeth Niles is female\nThe name of the father of Elizabeth Niles is Peter Thacher\nThe name of the mother of Elizabeth Niles is Theodora Thatcher\n\nThe gender of the mother of Georgiana Auguste Henrietta Elphinstone is"
+  },
+  {
+   "context": "none",
+   "kind": "downstream",
+   "reference": "rippleedits:random:1174:Compositionality_I:4:0",
+   "root_id": "rippleedits:random:1174",
+   "unit_id": "8746dc07717e5e5e7b425a7b0b5f3090cbc94efd00a55c7aea46f675d2227883",
+   "user_text": "The name of the maternal grandmother of Georgiana Auguste Henrietta Elphinstone is"
+  },
+  {
+   "context": "given_facts",
+   "kind": "downstream",
+   "reference": "rippleedits:random:1174:Compositionality_I:4:0",
+   "root_id": "rippleedits:random:1174",
+   "unit_id": "0ddc14a01dc2080532a4170b8b52e31035d1abaaf5672afa47ad4b0e9d16e5c7",
+   "user_text": "The following task-relevant records are supplied.\nThe name of the mother of Georgiana Auguste Henrietta Elphinstone is Elizabeth Niles\nThe gender of Elizabeth Niles is female\nThe name of the father of Elizabeth Niles is Peter Thacher\nThe name of the mother of Elizabeth Niles is Theodora Thatcher\n\nThe name of the maternal grandmother of Georgiana Auguste Henrietta Elphinstone is"
+  },
+  {
+   "context": "canonical",
+   "kind": "downstream",
+   "reference": "rippleedits:random:1174:Compositionality_I:4:0",
+   "root_id": "rippleedits:random:1174",
+   "unit_id": "7f9f87e1f7ed72c1e8e33efdf6742185a9a423ff18d82c7264afed2f3b7bb278",
+   "user_text": "The following are the current authoritative records.\nThe name of the mother of Georgiana Auguste Henrietta Elphinstone is Elizabeth Niles\nThe gender of Elizabeth Niles is female\nThe name of the father of Elizabeth Niles is Peter Thacher\nThe name of the mother of Elizabeth Niles is Theodora Thatcher\n\nThe name of the maternal grandmother of Georgiana Auguste Henrietta Elphinstone is"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "downstream",
+   "reference": "rippleedits:random:1174:Compositionality_I:4:0",
+   "root_id": "rippleedits:random:1174",
+   "unit_id": "7947a1c261bc9ea4501612779b3462416cd8efcc4584523637b26afeda149571",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Georgiana Auguste Henrietta Elphinstone is Carol Walter\nThe name of the mother of Georgiana Auguste Henrietta Elphinstone is Elizabeth Niles\nThe gender of Elizabeth Niles is female\nThe name of the father of Elizabeth Niles is Peter Thacher\nThe name of the mother of Elizabeth Niles is Theodora Thatcher\n\nThe name of the maternal grandmother of Georgiana Auguste Henrietta Elphinstone is"
+  },
+  {
+   "context": "chronological_D",
+   "kind": "downstream",
+   "reference": "rippleedits:random:1174:Compositionality_I:4:0",
+   "root_id": "rippleedits:random:1174",
+   "unit_id": "a5b296ded7e8da766e45b8a0803c92f7d8ef1ec899b90aa1167a4656f7603711",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Georgiana Auguste Henrietta Elphinstone is Anna Long\nThe name of the mother of Georgiana Auguste Henrietta Elphinstone is Elizabeth Niles\nThe gender of Elizabeth Niles is female\nThe name of the father of Elizabeth Niles is Peter Thacher\nThe name of the mother of Elizabeth Niles is Theodora Thatcher\n\nThe name of the maternal grandmother of Georgiana Auguste Henrietta Elphinstone is"
+  },
+  {
+   "context": "none",
+   "kind": "downstream",
+   "reference": "rippleedits:random:1174:Compositionality_I:5:0",
+   "root_id": "rippleedits:random:1174",
+   "unit_id": "ac4b53096f3e75c8294d5ce4d35c5119f648e6233b7f85c1cf083077a6aa91c5",
+   "user_text": "The name of the maternal grandfather of Georgiana Auguste Henrietta Elphinstone is"
+  },
+  {
+   "context": "given_facts",
+   "kind": "downstream",
+   "reference": "rippleedits:random:1174:Compositionality_I:5:0",
+   "root_id": "rippleedits:random:1174",
+   "unit_id": "4b4402f8f03f4bbf7a65ba17843d4c8cf9efb67254e5252a0ae578d9e7cd4ca3",
+   "user_text": "The following task-relevant records are supplied.\nThe name of the mother of Georgiana Auguste Henrietta Elphinstone is Elizabeth Niles\nThe gender of Elizabeth Niles is female\nThe name of the father of Elizabeth Niles is Peter Thacher\nThe name of the mother of Elizabeth Niles is Theodora Thatcher\n\nThe name of the maternal grandfather of Georgiana Auguste Henrietta Elphinstone is"
+  },
+  {
+   "context": "canonical",
+   "kind": "downstream",
+   "reference": "rippleedits:random:1174:Compositionality_I:5:0",
+   "root_id": "rippleedits:random:1174",
+   "unit_id": "e2b8478d4836cbcbfb407abeb006e300c50639539c987398295c644d969e3cec",
+   "user_text": "The following are the current authoritative records.\nThe name of the mother of Georgiana Auguste Henrietta Elphinstone is Elizabeth Niles\nThe gender of Elizabeth Niles is female\nThe name of the father of Elizabeth Niles is Peter Thacher\nThe name of the mother of Elizabeth Niles is Theodora Thatcher\n\nThe name of the maternal grandfather of Georgiana Auguste Henrietta Elphinstone is"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "downstream",
+   "reference": "rippleedits:random:1174:Compositionality_I:5:0",
+   "root_id": "rippleedits:random:1174",
+   "unit_id": "26567e13fea0545871c437f1fc1c9288ee65df1c98a8c593e82966701ba17d85",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Georgiana Auguste Henrietta Elphinstone is Carol Walter\nThe name of the mother of Georgiana Auguste Henrietta Elphinstone is Elizabeth Niles\nThe gender of Elizabeth Niles is female\nThe name of the father of Elizabeth Niles is Peter Thacher\nThe name of the mother of Elizabeth Niles is Theodora Thatcher\n\nThe name of the maternal grandfather of Georgiana Auguste Henrietta Elphinstone is"
+  },
+  {
+   "context": "chronological_D",
+   "kind": "downstream",
+   "reference": "rippleedits:random:1174:Compositionality_I:5:0",
+   "root_id": "rippleedits:random:1174",
+   "unit_id": "4bbb34a4eb8bb8c991beb589bdec9368343d7584db1a62fade86cf4f8ad5ea7a",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Georgiana Auguste Henrietta Elphinstone is Anna Long\nThe name of the mother of Georgiana Auguste Henrietta Elphinstone is Elizabeth Niles\nThe gender of Elizabeth Niles is female\nThe name of the father of Elizabeth Niles is Peter Thacher\nThe name of the mother of Elizabeth Niles is Theodora Thatcher\n\nThe name of the maternal grandfather of Georgiana Auguste Henrietta Elphinstone is"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "atomic",
+   "reference": "Q75275155|P25|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:1174",
+   "unit_id": "fcdc1049abd69e05f6a43a5bea081ee637f7c542754d8f0db933a82267e1dea5",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Georgiana Auguste Henrietta Elphinstone is Carol Walter\nThe name of the mother of Georgiana Auguste Henrietta Elphinstone is Elizabeth Niles\nThe gender of Elizabeth Niles is female\nThe name of the father of Elizabeth Niles is Peter Thacher\nThe name of the mother of Elizabeth Niles is Theodora Thatcher\n\nThe name of the mother of Georgiana Auguste Henrietta Elphinstone is"
+  },
+  {
+   "context": "chronological_D",
+   "kind": "atomic",
+   "reference": "Q75275155|P25|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:1174",
+   "unit_id": "d69c1d02dc9e94ee855517b72d4f67afe824b6029b8fe6a024a9549d6e14dea1",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Georgiana Auguste Henrietta Elphinstone is Anna Long\nThe name of the mother of Georgiana Auguste Henrietta Elphinstone is Elizabeth Niles\nThe gender of Elizabeth Niles is female\nThe name of the father of Elizabeth Niles is Peter Thacher\nThe name of the mother of Elizabeth Niles is Theodora Thatcher\n\nThe name of the mother of Georgiana Auguste Henrietta Elphinstone is"
+  },
+  {
+   "context": "none",
+   "kind": "atomic",
+   "reference": "Q75275155|P25|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:1174",
+   "unit_id": "68b48242727dfb75440dd4764ec9175699ac29741686a2e0288f0fef9df22f7e",
+   "user_text": "The name of the mother of Georgiana Auguste Henrietta Elphinstone is"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "atomic",
+   "reference": "Q102117421|P21|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:1174",
+   "unit_id": "1ffea38e75f67eae23860029d98e9fca512ddde7da77ed5d1c3c039f67c8b14b",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Georgiana Auguste Henrietta Elphinstone is Carol Walter\nThe name of the mother of Georgiana Auguste Henrietta Elphinstone is Elizabeth Niles\nThe gender of Elizabeth Niles is female\nThe name of the father of Elizabeth Niles is Peter Thacher\nThe name of the mother of Elizabeth Niles is Theodora Thatcher\n\nThe gender of Elizabeth Niles is"
+  },
+  {
+   "context": "chronological_D",
+   "kind": "atomic",
+   "reference": "Q102117421|P21|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:1174",
+   "unit_id": "54b89a3be40bad10eae4d9c254520d10a42f44b81fc955be2618ec7bf34c7b45",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Georgiana Auguste Henrietta Elphinstone is Anna Long\nThe name of the mother of Georgiana Auguste Henrietta Elphinstone is Elizabeth Niles\nThe gender of Elizabeth Niles is female\nThe name of the father of Elizabeth Niles is Peter Thacher\nThe name of the mother of Elizabeth Niles is Theodora Thatcher\n\nThe gender of Elizabeth Niles is"
+  },
+  {
+   "context": "none",
+   "kind": "atomic",
+   "reference": "Q102117421|P21|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:1174",
+   "unit_id": "8e316f1723e4ee2e53eb29df6054eb25acd56f7e5b192dc8e09d5434edc82857",
+   "user_text": "The gender of Elizabeth Niles is"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "atomic",
+   "reference": "Q102117421|P22|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:1174",
+   "unit_id": "211c9c5b731bb64a7d72bc47822741439aac23ce2c74f326f6ed5a170c1001fc",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Georgiana Auguste Henrietta Elphinstone is Carol Walter\nThe name of the mother of Georgiana Auguste Henrietta Elphinstone is Elizabeth Niles\nThe gender of Elizabeth Niles is female\nThe name of the father of Elizabeth Niles is Peter Thacher\nThe name of the mother of Elizabeth Niles is Theodora Thatcher\n\nThe name of the father of Elizabeth Niles is"
+  },
+  {
+   "context": "chronological_D",
+   "kind": "atomic",
+   "reference": "Q102117421|P22|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:1174",
+   "unit_id": "b78f0c03d34f17e2c67dda9d6091c4265006f828c27ad8b13edd9888f7b52a16",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Georgiana Auguste Henrietta Elphinstone is Anna Long\nThe name of the mother of Georgiana Auguste Henrietta Elphinstone is Elizabeth Niles\nThe gender of Elizabeth Niles is female\nThe name of the father of Elizabeth Niles is Peter Thacher\nThe name of the mother of Elizabeth Niles is Theodora Thatcher\n\nThe name of the father of Elizabeth Niles is"
+  },
+  {
+   "context": "none",
+   "kind": "atomic",
+   "reference": "Q102117421|P22|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:1174",
+   "unit_id": "67c8f6c849c120299c62042d496ee57227a2840af9657e3e4b268e53ea83f281",
+   "user_text": "The name of the father of Elizabeth Niles is"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "atomic",
+   "reference": "Q102117421|P25|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:1174",
+   "unit_id": "94cd7e2079ce404bcf3fc1c7a772cbdb40ae82f03677992b672911c3091825d9",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Georgiana Auguste Henrietta Elphinstone is Carol Walter\nThe name of the mother of Georgiana Auguste Henrietta Elphinstone is Elizabeth Niles\nThe gender of Elizabeth Niles is female\nThe name of the father of Elizabeth Niles is Peter Thacher\nThe name of the mother of Elizabeth Niles is Theodora Thatcher\n\nThe name of the mother of Elizabeth Niles is"
+  },
+  {
+   "context": "chronological_D",
+   "kind": "atomic",
+   "reference": "Q102117421|P25|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:1174",
+   "unit_id": "19b802b8d7d0cb6807faeeb82d06b0c6c510abb212f2ea41764521c05d9c9b34",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Georgiana Auguste Henrietta Elphinstone is Anna Long\nThe name of the mother of Georgiana Auguste Henrietta Elphinstone is Elizabeth Niles\nThe gender of Elizabeth Niles is female\nThe name of the father of Elizabeth Niles is Peter Thacher\nThe name of the mother of Elizabeth Niles is Theodora Thatcher\n\nThe name of the mother of Elizabeth Niles is"
+  },
+  {
+   "context": "none",
+   "kind": "atomic",
+   "reference": "Q102117421|P25|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:1174",
+   "unit_id": "10346791fea313815c1925d1058c4d1a8c21060ad5601cde8fed9dc220854189",
+   "user_text": "The name of the mother of Elizabeth Niles is"
+  },
+  {
+   "context": "none",
+   "kind": "locality",
+   "reference": "counterfact:11247",
+   "root_id": "rippleedits:random:1174",
+   "unit_id": "cab00dea7519def36fb93a5fa099bee5b0646c3bc34d6bd026ec3c4390b7b3f8",
+   "user_text": "Le comte Ory, from"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "locality",
+   "reference": "counterfact:11247",
+   "root_id": "rippleedits:random:1174",
+   "unit_id": "9ee5fe184cacbad7c12ec6dc37251bf72e40b4ed16797b30e189b025ea540ab5",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Georgiana Auguste Henrietta Elphinstone is Carol Walter\nThe name of the mother of Georgiana Auguste Henrietta Elphinstone is Elizabeth Niles\nThe gender of Elizabeth Niles is female\nThe name of the father of Elizabeth Niles is Peter Thacher\nThe name of the mother of Elizabeth Niles is Theodora Thatcher\n\nLe comte Ory, from"
+  },
+  {
+   "context": "none",
+   "kind": "locality",
+   "reference": "counterfact:8736",
+   "root_id": "rippleedits:random:1174",
+   "unit_id": "5ccf64dd61b73ac40049e531c8401333f4a141f77ca33713c13c7f7653a33f55",
+   "user_text": "Kingdom of Mercia is located in the continent"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "locality",
+   "reference": "counterfact:8736",
+   "root_id": "rippleedits:random:1174",
+   "unit_id": "cceb492de0dd8b83b2a08df30149255a2cebf0614d11cc2def6e0ce5b5ab12ef",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Georgiana Auguste Henrietta Elphinstone is Carol Walter\nThe name of the mother of Georgiana Auguste Henrietta Elphinstone is Elizabeth Niles\nThe gender of Elizabeth Niles is female\nThe name of the father of Elizabeth Niles is Peter Thacher\nThe name of the mother of Elizabeth Niles is Theodora Thatcher\n\nKingdom of Mercia is located in the continent"
+  },
+  {
+   "context": "none",
+   "kind": "locality",
+   "reference": "counterfact:1777",
+   "root_id": "rippleedits:random:1174",
+   "unit_id": "ecf9077814aabed4e8186f78f1cdccca5d8cee3ecdeaf9e99c4bfa9c839858d0",
+   "user_text": "Drew Shirley plays the instrument"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "locality",
+   "reference": "counterfact:1777",
+   "root_id": "rippleedits:random:1174",
+   "unit_id": "b10db30d771c37df3fc67eed379ca3b670c5d02fa69e340427c4b55de79bf433",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Georgiana Auguste Henrietta Elphinstone is Carol Walter\nThe name of the mother of Georgiana Auguste Henrietta Elphinstone is Elizabeth Niles\nThe gender of Elizabeth Niles is female\nThe name of the father of Elizabeth Niles is Peter Thacher\nThe name of the mother of Elizabeth Niles is Theodora Thatcher\n\nDrew Shirley plays the instrument"
+  },
+  {
+   "context": "none",
+   "kind": "locality",
+   "reference": "counterfact:13029",
+   "root_id": "rippleedits:random:1174",
+   "unit_id": "72ac03708c60b9f0ebe4faa8151b42dce405ebea4a602d06393758ecfded0086",
+   "user_text": "The headquarter of Ace Hardware is in"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "locality",
+   "reference": "counterfact:13029",
+   "root_id": "rippleedits:random:1174",
+   "unit_id": "8d53f86f0c1d5176b674bd4f0abbcadc13dc5a0922a56f5ec7a1a1b16629017c",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Georgiana Auguste Henrietta Elphinstone is Carol Walter\nThe name of the mother of Georgiana Auguste Henrietta Elphinstone is Elizabeth Niles\nThe gender of Elizabeth Niles is female\nThe name of the father of Elizabeth Niles is Peter Thacher\nThe name of the mother of Elizabeth Niles is Theodora Thatcher\n\nThe headquarter of Ace Hardware is in"
+  },
+  {
+   "context": "none",
+   "kind": "locality",
+   "reference": "counterfact:17141",
+   "root_id": "rippleedits:random:1174",
+   "unit_id": "8e0bf5f9477c78ad023e475f39b2f0a9976d021b909a471326a0b657d3ec713f",
+   "user_text": "Ferrari California, produced by"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "locality",
+   "reference": "counterfact:17141",
+   "root_id": "rippleedits:random:1174",
+   "unit_id": "17300054b45bcd70eb22f8afaa171a9d35f84267a85133e3392c1d5b2608bb91",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Georgiana Auguste Henrietta Elphinstone is Carol Walter\nThe name of the mother of Georgiana Auguste Henrietta Elphinstone is Elizabeth Niles\nThe gender of Elizabeth Niles is female\nThe name of the father of Elizabeth Niles is Peter Thacher\nThe name of the mother of Elizabeth Niles is Theodora Thatcher\n\nFerrari California, produced by"
+  },
+  {
+   "context": "none",
+   "kind": "locality",
+   "reference": "counterfact:5324",
+   "root_id": "rippleedits:random:1174",
+   "unit_id": "52c7e4f058905f325b83150905e09e2857e2239306c1577b2ce8f84a984dd9eb",
+   "user_text": "Circa Survive, that originated in"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "locality",
+   "reference": "counterfact:5324",
+   "root_id": "rippleedits:random:1174",
+   "unit_id": "b293f22cfdcce27169def748475c733e0910354eaec019a1bebcaafd22ea0442",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Georgiana Auguste Henrietta Elphinstone is Carol Walter\nThe name of the mother of Georgiana Auguste Henrietta Elphinstone is Elizabeth Niles\nThe gender of Elizabeth Niles is female\nThe name of the father of Elizabeth Niles is Peter Thacher\nThe name of the mother of Elizabeth Niles is Theodora Thatcher\n\nCirca Survive, that originated in"
+  },
+  {
+   "context": "none",
+   "kind": "locality",
+   "reference": "counterfact:972",
+   "root_id": "rippleedits:random:1174",
+   "unit_id": "e8b2dbc72ad0a05f9362443ae03cd0ef08b7efe1ec9839122904030ea91f8f98",
+   "user_text": "Ultraman Dyna originated in"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "locality",
+   "reference": "counterfact:972",
+   "root_id": "rippleedits:random:1174",
+   "unit_id": "57dcb970411449afd491a6013491bdd3330543d5c3b2f107eff669f951ba112f",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Georgiana Auguste Henrietta Elphinstone is Carol Walter\nThe name of the mother of Georgiana Auguste Henrietta Elphinstone is Elizabeth Niles\nThe gender of Elizabeth Niles is female\nThe name of the father of Elizabeth Niles is Peter Thacher\nThe name of the mother of Elizabeth Niles is Theodora Thatcher\n\nUltraman Dyna originated in"
+  },
+  {
+   "context": "none",
+   "kind": "locality",
+   "reference": "counterfact:15734",
+   "root_id": "rippleedits:random:1174",
+   "unit_id": "c5f44aafe6d7d0cd20258d7729314f3755c6457a85dd708d198e1abc063dd712",
+   "user_text": "The Shari Lewis Show debuted on"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "locality",
+   "reference": "counterfact:15734",
+   "root_id": "rippleedits:random:1174",
+   "unit_id": "ec8962fc7ddaec045f00edf33eff2d8100941b9d95976bbce2339b6594dcc233",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Georgiana Auguste Henrietta Elphinstone is Carol Walter\nThe name of the mother of Georgiana Auguste Henrietta Elphinstone is Elizabeth Niles\nThe gender of Elizabeth Niles is female\nThe name of the father of Elizabeth Niles is Peter Thacher\nThe name of the mother of Elizabeth Niles is Theodora Thatcher\n\nThe Shari Lewis Show debuted on"
+  },
+  {
+   "context": "none",
+   "kind": "downstream",
+   "reference": "rippleedits:random:575:Compositionality_II:0:0",
+   "root_id": "rippleedits:random:575",
+   "unit_id": "dfc1b2fc6c5518e0c19460f3cd58fe28ae7779f89223f2548339ae37df06cfbd",
+   "user_text": "The gender of the father of Fang Yan is"
+  },
+  {
+   "context": "given_facts",
+   "kind": "downstream",
+   "reference": "rippleedits:random:575:Compositionality_II:0:0",
+   "root_id": "rippleedits:random:575",
+   "unit_id": "6649c34792a0fccbb72653e5df23dae031431928d68469bf44a236723909a9c7",
+   "user_text": "The following task-relevant records are supplied.\nThe name of the father of Fang Yan is Fang Mengqing\nThe gender of Fang Mengqing is androgyne\n\nThe gender of the father of Fang Yan is"
+  },
+  {
+   "context": "canonical",
+   "kind": "downstream",
+   "reference": "rippleedits:random:575:Compositionality_II:0:0",
+   "root_id": "rippleedits:random:575",
+   "unit_id": "12fdb38649268e13f7b81ad22a620f54247a2e345a9b3147660250b591f7734f",
+   "user_text": "The following are the current authoritative records.\nThe name of the father of Fang Yan is Fang Mengqing\nThe gender of Fang Mengqing is androgyne\n\nThe gender of the father of Fang Yan is"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "downstream",
+   "reference": "rippleedits:random:575:Compositionality_II:0:0",
+   "root_id": "rippleedits:random:575",
+   "unit_id": "d40f8e5e72f0ccdb290f41a38f1bdb3312b4ab6e93aa9a0eee8e23d95ebdf52c",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe gender of Fang Mengqing is travesti\nThe name of the father of Fang Yan is Fang Mengqing\nThe gender of Fang Mengqing is androgyne\n\nThe gender of the father of Fang Yan is"
+  },
+  {
+   "context": "chronological_D",
+   "kind": "downstream",
+   "reference": "rippleedits:random:575:Compositionality_II:0:0",
+   "root_id": "rippleedits:random:575",
+   "unit_id": "0dd1879ffdda1e5849462cc8aa56777fc86a71e3b7ae27581f566162fb280268",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe gender of Fang Mengqing is transgender\nThe name of the father of Fang Yan is Fang Mengqing\nThe gender of Fang Mengqing is androgyne\n\nThe gender of the father of Fang Yan is"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "atomic",
+   "reference": "Q45404401|P22|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:575",
+   "unit_id": "735430143da694be75af67dfa04d882b954920c9f696a2885c8e60ba6a1aabdb",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe gender of Fang Mengqing is travesti\nThe name of the father of Fang Yan is Fang Mengqing\nThe gender of Fang Mengqing is androgyne\n\nThe name of the father of Fang Yan is"
+  },
+  {
+   "context": "chronological_D",
+   "kind": "atomic",
+   "reference": "Q45404401|P22|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:575",
+   "unit_id": "641a8d60b18c8152eb5fd912a2b21a388a66c8b88b76bb06b62284682a9c8a32",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe gender of Fang Mengqing is transgender\nThe name of the father of Fang Yan is Fang Mengqing\nThe gender of Fang Mengqing is androgyne\n\nThe name of the father of Fang Yan is"
+  },
+  {
+   "context": "none",
+   "kind": "atomic",
+   "reference": "Q45404401|P22|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:575",
+   "unit_id": "7faa116d9e1d4fc75e11903b3374b74b31bc3643496187d8cdcae0f0b0902dc8",
+   "user_text": "The name of the father of Fang Yan is"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "atomic",
+   "reference": "Q45356242|P21|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:575",
+   "unit_id": "8380fefb9066cca328af55885c3db0d3d32909927e927ce3f863471d92df1c42",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe gender of Fang Mengqing is travesti\nThe name of the father of Fang Yan is Fang Mengqing\nThe gender of Fang Mengqing is androgyne\n\nThe gender of Fang Mengqing is"
+  },
+  {
+   "context": "chronological_D",
+   "kind": "atomic",
+   "reference": "Q45356242|P21|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:575",
+   "unit_id": "38bd71361d02cb60ff5ae5b2c0c2db57d143c1959abaa3ab48a1dd8aeb00e952",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe gender of Fang Mengqing is transgender\nThe name of the father of Fang Yan is Fang Mengqing\nThe gender of Fang Mengqing is androgyne\n\nThe gender of Fang Mengqing is"
+  },
+  {
+   "context": "none",
+   "kind": "atomic",
+   "reference": "Q45356242|P21|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:575",
+   "unit_id": "30b0ea5a7e0abb4ab4605e2df6552dd7949234af9c1ba912c2de157bb3074373",
+   "user_text": "The gender of Fang Mengqing is"
+  },
+  {
+   "context": "none",
+   "kind": "locality",
+   "reference": "counterfact:11247",
+   "root_id": "rippleedits:random:575",
+   "unit_id": "aee2a0aa5b175bcbbc6931f62401a92e67fc3e95a52aceb8463c53f345bd046e",
+   "user_text": "Le comte Ory, from"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "locality",
+   "reference": "counterfact:11247",
+   "root_id": "rippleedits:random:575",
+   "unit_id": "9bc5e53f29a48a6c7b0c5bba97e3394fc31804daa701ccdbb3931a6cd7dc2c02",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe gender of Fang Mengqing is travesti\nThe name of the father of Fang Yan is Fang Mengqing\nThe gender of Fang Mengqing is androgyne\n\nLe comte Ory, from"
+  },
+  {
+   "context": "none",
+   "kind": "locality",
+   "reference": "counterfact:8736",
+   "root_id": "rippleedits:random:575",
+   "unit_id": "17f68a99866602a0bb90d828c97b67304fea32061faf2b5072546ad7919c3d52",
+   "user_text": "Kingdom of Mercia is located in the continent"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "locality",
+   "reference": "counterfact:8736",
+   "root_id": "rippleedits:random:575",
+   "unit_id": "09512af2d0d78fbc92878941e29c5150069203cd7a8e535ccb874ec82a122de5",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe gender of Fang Mengqing is travesti\nThe name of the father of Fang Yan is Fang Mengqing\nThe gender of Fang Mengqing is androgyne\n\nKingdom of Mercia is located in the continent"
+  },
+  {
+   "context": "none",
+   "kind": "locality",
+   "reference": "counterfact:1777",
+   "root_id": "rippleedits:random:575",
+   "unit_id": "58db6dda6ec8fcdc85b5f2a2a7f28745f60f49b6e8e23a01cdf0b15aed64cb95",
+   "user_text": "Drew Shirley plays the instrument"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "locality",
+   "reference": "counterfact:1777",
+   "root_id": "rippleedits:random:575",
+   "unit_id": "db091d2b872796b6852011b248b282056d97d2e6682e9e4dbaf1c8ec5c97dded",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe gender of Fang Mengqing is travesti\nThe name of the father of Fang Yan is Fang Mengqing\nThe gender of Fang Mengqing is androgyne\n\nDrew Shirley plays the instrument"
+  },
+  {
+   "context": "none",
+   "kind": "locality",
+   "reference": "counterfact:13029",
+   "root_id": "rippleedits:random:575",
+   "unit_id": "95ace7296e20ad6fe04e93ba4f1070fbff41e0ccf1068e1d2b7989a625274de3",
+   "user_text": "The headquarter of Ace Hardware is in"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "locality",
+   "reference": "counterfact:13029",
+   "root_id": "rippleedits:random:575",
+   "unit_id": "8d3b9854903f9c59cfb972ecf7440d558d301040c613e09b23a673ce34147fcb",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe gender of Fang Mengqing is travesti\nThe name of the father of Fang Yan is Fang Mengqing\nThe gender of Fang Mengqing is androgyne\n\nThe headquarter of Ace Hardware is in"
+  },
+  {
+   "context": "none",
+   "kind": "locality",
+   "reference": "counterfact:17141",
+   "root_id": "rippleedits:random:575",
+   "unit_id": "b5bb95a562aa360a4b183190081e79d38d276c9ebd695524f05d1f543d499b61",
+   "user_text": "Ferrari California, produced by"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "locality",
+   "reference": "counterfact:17141",
+   "root_id": "rippleedits:random:575",
+   "unit_id": "bb94a7556b8275cf69817f9e61fbd85b9a8049a164b1796c214434efc4f6ea17",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe gender of Fang Mengqing is travesti\nThe name of the father of Fang Yan is Fang Mengqing\nThe gender of Fang Mengqing is androgyne\n\nFerrari California, produced by"
+  },
+  {
+   "context": "none",
+   "kind": "locality",
+   "reference": "counterfact:5324",
+   "root_id": "rippleedits:random:575",
+   "unit_id": "affae34b784a2673a84b1943dec13b495e1c4d20984f113260744ef1006cfb38",
+   "user_text": "Circa Survive, that originated in"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "locality",
+   "reference": "counterfact:5324",
+   "root_id": "rippleedits:random:575",
+   "unit_id": "b67a94a73669d91ef566429e6b3684cc7c56c06f1261a6ebcd922c289637bad1",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe gender of Fang Mengqing is travesti\nThe name of the father of Fang Yan is Fang Mengqing\nThe gender of Fang Mengqing is androgyne\n\nCirca Survive, that originated in"
+  },
+  {
+   "context": "none",
+   "kind": "locality",
+   "reference": "counterfact:972",
+   "root_id": "rippleedits:random:575",
+   "unit_id": "675a6579e066f7af697f4047c5529ee7c33a15627da7fa3edb3b7a98aa46eb74",
+   "user_text": "Ultraman Dyna originated in"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "locality",
+   "reference": "counterfact:972",
+   "root_id": "rippleedits:random:575",
+   "unit_id": "2bdc29e23842712810c7fe0521d2d483ecf3876fd5c1cf845a41dab7b6ad3dc0",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe gender of Fang Mengqing is travesti\nThe name of the father of Fang Yan is Fang Mengqing\nThe gender of Fang Mengqing is androgyne\n\nUltraman Dyna originated in"
+  },
+  {
+   "context": "none",
+   "kind": "locality",
+   "reference": "counterfact:15734",
+   "root_id": "rippleedits:random:575",
+   "unit_id": "7a421f25e32ba7507c0c90687679a51a6101cc5ac8f70906e319c7c48554f160",
+   "user_text": "The Shari Lewis Show debuted on"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "locality",
+   "reference": "counterfact:15734",
+   "root_id": "rippleedits:random:575",
+   "unit_id": "3ef111718faedbc644e6f0dbf03e6ab11b2538f8e82f760926ad46aed129ebe1",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe gender of Fang Mengqing is travesti\nThe name of the father of Fang Yan is Fang Mengqing\nThe gender of Fang Mengqing is androgyne\n\nThe Shari Lewis Show debuted on"
+  }
+ ]
+}

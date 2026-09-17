@@ -1,0 +1,20 @@
+# Stage 1 external anchor. Fill stdout.txt / stderr.txt / outputs/ from a GPU host.
+
+git clone https://github.com/19PINE-AI/programmable-kv $REPO
+cd $REPO
+git checkout e9085eafcc6c83e60c548de69060c4bd5b210c96
+git rev-parse HEAD
+pip install -e $REPO
+
+cd $PKG
+python stage1_worked_example.py \
+  --repo $REPO \
+  --model Qwen/Qwen3-8B \
+  --output $OUT/external_reproduction/outputs/worked_example.json
+
+# Conditions run: stale, full_reprefill, erratum, field_plus_erratum,
+# plus in_place / diagnostic / AUTO (recorded, excluded from Stage 2).
+#
+# Compatibility changes applied, both documented in notes/IMPLEMENTATION_NOTES.md:
+#   PATCH 1  FIELD_PLUS_ERRATUM condition added (released example omits it)
+#   PATCH 2  device_map exposed as a flag instead of hardcoded "cuda"

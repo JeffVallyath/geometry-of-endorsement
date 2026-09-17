@@ -1,0 +1,43 @@
+{
+  "actor": "qwen",
+  "arm": "INVARIANT_SET",
+  "at": "2026-09-13T02:38:56.175536+00:00",
+  "cap_ref": 28.22532844543457,
+  "checkpoint0_sha256": "443714638009555f3c09af98fa16f3b8c2e9b95b7aa7563ce3b23eed629283c3",
+  "condition": "INV_PAIR_NLL",
+  "epoch": 1,
+  "files": {
+    "setter": "2abfb47bf7827bd01d55cb7c2b6581330691177dbdc2bba7f010c1742de2c837"
+  },
+  "frozen_backbone": true,
+  "init": {
+    "dir": "provenance/sha256-e1e24d1aa7c2bd5fb39ab13589cf58a16e4528fdb59974bc5fdf232272644398",
+    "kind": "v3_selected_checkpoint_warm_start",
+    "load_basis_error": 0.0,
+    "optimizer_state": "fresh AdamW moments (V3 checkpoints hold no optimizer state)",
+    "sha256": {
+      "meta": "91f5c56c2bd5c7c3ab5421e8df571bbce4581d0fc0dccc56b76defa3734fbae0",
+      "setter": "b781ecec3c45c0c4dca9025f455e5007c906b8efda9210767ba65f62a59203db"
+    },
+    "v3_epoch": 3,
+    "v3_lr": 0.0003
+  },
+  "kappa": 0.0,
+  "kind": "invariant",
+  "lr": 0.0003,
+  "norms": {
+    "basis_raw": 5.311607837677002,
+    "bias0": 0.02588580921292305,
+    "bias1": 0.022716591134667397,
+    "head0": 3.6217637062072754,
+    "head1": 3.2141408920288086
+  },
+  "paired_groups": 384,
+  "paired_question_slots": 3072,
+  "rank": 16,
+  "schema": "RSO3_SETTER_V1",
+  "seed": 0,
+  "site": 13,
+  "steps": 384,
+  "training_contract": "RTC7_EXACT_PAIRED_V1"
+}

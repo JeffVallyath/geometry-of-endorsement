@@ -1,0 +1,929 @@
+{
+ "note": "Rendered user text only; no gold answers, aliases, entity ids, B/D labels or eligibility flags.",
+ "phase": "qualification",
+ "roots": [
+  "rippleedits:popular:382",
+  "rippleedits:random:1223",
+  "rippleedits:random:1289",
+  "rippleedits:popular:415",
+  "rippleedits:popular:352",
+  "rippleedits:popular:7"
+ ],
+ "study": "icmh1-ripple-v2",
+ "system": null,
+ "unit_count": 114,
+ "units": [
+  {
+   "context": "given_facts",
+   "kind": "downstream",
+   "reference": "rippleedits:popular:382:Compositionality_I:1:0",
+   "root_id": "rippleedits:popular:382",
+   "unit_id": "5b1146ed716f0ba8315bf78bbb5da2e5ec2e64ab3031a7d69736365b2c842f71",
+   "user_text": "The following task-relevant records are supplied.\nThe name of the father of Charli D'Amelio is Du Duo\nThe gender of Du Duo is male\nThe name of the father of Du Duo is Du Yi\n\nThe name of the paternal grandfather of Charli D'Amelio is"
+  },
+  {
+   "context": "canonical",
+   "kind": "downstream",
+   "reference": "rippleedits:popular:382:Compositionality_I:1:0",
+   "root_id": "rippleedits:popular:382",
+   "unit_id": "30c0f4db5f720dacd2f56699eb2bef928e8e7a8481e4231de956af761bd03993",
+   "user_text": "The following are the current authoritative records.\nThe name of the father of Charli D'Amelio is Du Duo\nThe gender of Du Duo is male\nThe name of the father of Du Duo is Du Yi\n\nThe name of the paternal grandfather of Charli D'Amelio is"
+  },
+  {
+   "context": "none",
+   "kind": "downstream",
+   "reference": "rippleedits:popular:382:Compositionality_I:1:0",
+   "root_id": "rippleedits:popular:382",
+   "unit_id": "3cf45e36a7a6dbbaaf96eb80fb3c2f82259be178d653539706e60c39d116215b",
+   "user_text": "The name of the paternal grandfather of Charli D'Amelio is"
+  },
+  {
+   "context": "given_facts",
+   "kind": "downstream",
+   "reference": "rippleedits:popular:382:Compositionality_I:3:0",
+   "root_id": "rippleedits:popular:382",
+   "unit_id": "6f37a48f4cd678782509e971695d9653a6d0e2a34dff1a005d36b7fa31b5227a",
+   "user_text": "The following task-relevant records are supplied.\nThe name of the father of Charli D'Amelio is Du Duo\nThe gender of Du Duo is male\nThe name of the father of Du Duo is Du Yi\n\nThe gender of the father of Charli D'Amelio is"
+  },
+  {
+   "context": "canonical",
+   "kind": "downstream",
+   "reference": "rippleedits:popular:382:Compositionality_I:3:0",
+   "root_id": "rippleedits:popular:382",
+   "unit_id": "368f8e3cbdaba83356912ab274f35d7b1c56cb6b184e662c86f1a8685da190e6",
+   "user_text": "The following are the current authoritative records.\nThe name of the father of Charli D'Amelio is Du Duo\nThe gender of Du Duo is male\nThe name of the father of Du Duo is Du Yi\n\nThe gender of the father of Charli D'Amelio is"
+  },
+  {
+   "context": "none",
+   "kind": "downstream",
+   "reference": "rippleedits:popular:382:Compositionality_I:3:0",
+   "root_id": "rippleedits:popular:382",
+   "unit_id": "b8e85f7ca79b628a2a1260ec239e52e39cdf0762e62b6b75ef78fc1947d85d52",
+   "user_text": "The gender of the father of Charli D'Amelio is"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "atomic",
+   "reference": "Q83648587|P22|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:popular:382",
+   "unit_id": "f95d4b2627bff6b77aeac2f4c196ea77be0fa09400353f6f70df823342d23349",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the father of Charli D'Amelio is David Margesson, 1st Viscount Margesson\nThe name of the father of Charli D'Amelio is Du Duo\nThe gender of Du Duo is male\nThe name of the father of Du Duo is Du Yi\n\nThe name of the father of Charli D'Amelio is"
+  },
+  {
+   "context": "chronological_D",
+   "kind": "atomic",
+   "reference": "Q83648587|P22|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:popular:382",
+   "unit_id": "b46b5feb5ff1bc49d11d436946c66aa7c979efdb6fbae735453691292c00f104",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the father of Charli D'Amelio is Ed McCaffrey\nThe name of the father of Charli D'Amelio is Du Duo\nThe gender of Du Duo is male\nThe name of the father of Du Duo is Du Yi\n\nThe name of the father of Charli D'Amelio is"
+  },
+  {
+   "context": "none",
+   "kind": "atomic",
+   "reference": "Q83648587|P22|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:popular:382",
+   "unit_id": "19b2432b0641a5fd2e2d631de03ed4431ce2b33048d4b226b8b17cbe3fcdffa2",
+   "user_text": "The name of the father of Charli D'Amelio is"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "atomic",
+   "reference": "Q45362864|P21|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:popular:382",
+   "unit_id": "02918540068de67303097df62172630fdce458b9d7b084dc22367cd94e16dca9",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the father of Charli D'Amelio is David Margesson, 1st Viscount Margesson\nThe name of the father of Charli D'Amelio is Du Duo\nThe gender of Du Duo is male\nThe name of the father of Du Duo is Du Yi\n\nThe gender of Du Duo is"
+  },
+  {
+   "context": "chronological_D",
+   "kind": "atomic",
+   "reference": "Q45362864|P21|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:popular:382",
+   "unit_id": "cf43f68287e8d62d163d795f726f0f9cba7899b08465d76dd552516d2bc84f86",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the father of Charli D'Amelio is Ed McCaffrey\nThe name of the father of Charli D'Amelio is Du Duo\nThe gender of Du Duo is male\nThe name of the father of Du Duo is Du Yi\n\nThe gender of Du Duo is"
+  },
+  {
+   "context": "none",
+   "kind": "atomic",
+   "reference": "Q45362864|P21|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:popular:382",
+   "unit_id": "e5f8f8584a667884a6408ab763c45367007775037c7617dc3d98a338b94ac08c",
+   "user_text": "The gender of Du Duo is"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "atomic",
+   "reference": "Q45362864|P22|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:popular:382",
+   "unit_id": "a3aa5220fc2668175044d9667498036ca0aaab62df4387daf43ce933d2d36d74",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the father of Charli D'Amelio is David Margesson, 1st Viscount Margesson\nThe name of the father of Charli D'Amelio is Du Duo\nThe gender of Du Duo is male\nThe name of the father of Du Duo is Du Yi\n\nThe name of the father of Du Duo is"
+  },
+  {
+   "context": "chronological_D",
+   "kind": "atomic",
+   "reference": "Q45362864|P22|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:popular:382",
+   "unit_id": "cf38d3578605c155b942ac665f717ff11ba35bf08956d9628d33ad7063cf2212",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the father of Charli D'Amelio is Ed McCaffrey\nThe name of the father of Charli D'Amelio is Du Duo\nThe gender of Du Duo is male\nThe name of the father of Du Duo is Du Yi\n\nThe name of the father of Du Duo is"
+  },
+  {
+   "context": "none",
+   "kind": "atomic",
+   "reference": "Q45362864|P22|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:popular:382",
+   "unit_id": "271d4fe12fe0970dc13ee0e4ce2e2145f841945475583d2b6dcb6410bd36246a",
+   "user_text": "The name of the father of Du Duo is"
+  },
+  {
+   "context": "given_facts",
+   "kind": "downstream",
+   "reference": "rippleedits:random:1223:Compositionality_I:1:0",
+   "root_id": "rippleedits:random:1223",
+   "unit_id": "5e5c1df158a47a494dc32f57e23ded181372612c198bc441c87493e0cfaea58d",
+   "user_text": "The following task-relevant records are supplied.\nThe place of birth of Roman Češka is Sorø Municipality\nThe name of the capital city of Sorø Municipality is Sorø\n\nThe name of the capital city of the place of birth of Roman Češka is"
+  },
+  {
+   "context": "canonical",
+   "kind": "downstream",
+   "reference": "rippleedits:random:1223:Compositionality_I:1:0",
+   "root_id": "rippleedits:random:1223",
+   "unit_id": "2f1e6b8ba6693c3f820b489e4f5de9d86c2aa3b546102349ef60ae89109a9b0f",
+   "user_text": "The following are the current authoritative records.\nThe place of birth of Roman Češka is Sorø Municipality\nThe name of the capital city of Sorø Municipality is Sorø\n\nThe name of the capital city of the place of birth of Roman Češka is"
+  },
+  {
+   "context": "none",
+   "kind": "downstream",
+   "reference": "rippleedits:random:1223:Compositionality_I:1:0",
+   "root_id": "rippleedits:random:1223",
+   "unit_id": "7aca023abb76b0c6a613a1ec63b4183ab4e1e176d2ca40099d266ca11aa569da",
+   "user_text": "The name of the capital city of the place of birth of Roman Češka is"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "atomic",
+   "reference": "Q12049731|P19|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:1223",
+   "unit_id": "5d3acf8d0d45ce6927256d32f840825ef9e6980c5e491c5d023535889916d345",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe place of birth of Roman Češka is Vaasa\nThe place of birth of Roman Češka is Sorø Municipality\nThe name of the capital city of Sorø Municipality is Sorø\n\nThe place of birth of Roman Češka is"
+  },
+  {
+   "context": "chronological_D",
+   "kind": "atomic",
+   "reference": "Q12049731|P19|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:1223",
+   "unit_id": "11a2527b9fd7c6e7ec4fb23599e50534c4005e4ac17f2827f76fca918dfb439d",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe place of birth of Roman Češka is São Gonçalo\nThe place of birth of Roman Češka is Sorø Municipality\nThe name of the capital city of Sorø Municipality is Sorø\n\nThe place of birth of Roman Češka is"
+  },
+  {
+   "context": "none",
+   "kind": "atomic",
+   "reference": "Q12049731|P19|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:1223",
+   "unit_id": "b78296c99f5d7c1802623aa1de9cfe4581922b4c6e1f9ecc5befae9fd468f5e0",
+   "user_text": "The place of birth of Roman Češka is"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "atomic",
+   "reference": "Q21151|P36|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:1223",
+   "unit_id": "77c4eada8d6f834a56a14b57cdc56158a5f163df94ca2255e9732e831f1d73ae",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe place of birth of Roman Češka is Vaasa\nThe place of birth of Roman Češka is Sorø Municipality\nThe name of the capital city of Sorø Municipality is Sorø\n\nThe name of the capital city of Sorø Municipality is"
+  },
+  {
+   "context": "chronological_D",
+   "kind": "atomic",
+   "reference": "Q21151|P36|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:1223",
+   "unit_id": "613bc575f6e7864357db7df38cd1b9aaaa6552a66f62c9452c66da2cc22e0a51",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe place of birth of Roman Češka is São Gonçalo\nThe place of birth of Roman Češka is Sorø Municipality\nThe name of the capital city of Sorø Municipality is Sorø\n\nThe name of the capital city of Sorø Municipality is"
+  },
+  {
+   "context": "none",
+   "kind": "atomic",
+   "reference": "Q21151|P36|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:1223",
+   "unit_id": "bc2cf54afb3d4db544de3e3ea6641d629a10ce6d4cdfc77dcb9dcb656f35822d",
+   "user_text": "The name of the capital city of Sorø Municipality is"
+  },
+  {
+   "context": "given_facts",
+   "kind": "downstream",
+   "reference": "rippleedits:random:1289:Compositionality_I:0:0",
+   "root_id": "rippleedits:random:1289",
+   "unit_id": "1688543da1b828bc5fdf7259349201cef35a97e18243b85591abcfede1c208bd",
+   "user_text": "The following task-relevant records are supplied.\nThe name of the father of Thomas Crofton is Gustave Chaix d'Est-Ange\nThe place of burial of Gustave Chaix d'Est-Ange is Montmartre Cemetery\nThe place of birth of Gustave Chaix d'Est-Ange is Reims\nThe place of death of Gustave Chaix d'Est-Ange is Paris\nThe gender of Gustave Chaix d'Est-Ange is male\n\nThe place of birth of the father of Thomas Crofton is"
+  },
+  {
+   "context": "canonical",
+   "kind": "downstream",
+   "reference": "rippleedits:random:1289:Compositionality_I:0:0",
+   "root_id": "rippleedits:random:1289",
+   "unit_id": "d370a5444e78c0e249403c249fc9341aeeaf75259a2ee24cd3b1a44d38398503",
+   "user_text": "The following are the current authoritative records.\nThe name of the father of Thomas Crofton is Gustave Chaix d'Est-Ange\nThe place of burial of Gustave Chaix d'Est-Ange is Montmartre Cemetery\nThe place of birth of Gustave Chaix d'Est-Ange is Reims\nThe place of death of Gustave Chaix d'Est-Ange is Paris\nThe gender of Gustave Chaix d'Est-Ange is male\n\nThe place of birth of the father of Thomas Crofton is"
+  },
+  {
+   "context": "none",
+   "kind": "downstream",
+   "reference": "rippleedits:random:1289:Compositionality_I:0:0",
+   "root_id": "rippleedits:random:1289",
+   "unit_id": "aca88002017f5e4659d73c53e25a6bc7f586ee300fb3ff5491e1fa6d79a16052",
+   "user_text": "The place of birth of the father of Thomas Crofton is"
+  },
+  {
+   "context": "given_facts",
+   "kind": "downstream",
+   "reference": "rippleedits:random:1289:Compositionality_I:11:0",
+   "root_id": "rippleedits:random:1289",
+   "unit_id": "2723c799030ec5bae14d51a12b9b9f6bb5f605624d2be125a33c3a8ca3b882f8",
+   "user_text": "The following task-relevant records are supplied.\nThe name of the father of Thomas Crofton is Gustave Chaix d'Est-Ange\nThe place of burial of Gustave Chaix d'Est-Ange is Montmartre Cemetery\nThe place of birth of Gustave Chaix d'Est-Ange is Reims\nThe place of death of Gustave Chaix d'Est-Ange is Paris\nThe gender of Gustave Chaix d'Est-Ange is male\n\nThe place of death of the father of Thomas Crofton is"
+  },
+  {
+   "context": "canonical",
+   "kind": "downstream",
+   "reference": "rippleedits:random:1289:Compositionality_I:11:0",
+   "root_id": "rippleedits:random:1289",
+   "unit_id": "d3de2d4da71500742fa9112dc7ec15ea1aa9b130094239e84eb671095e7e987b",
+   "user_text": "The following are the current authoritative records.\nThe name of the father of Thomas Crofton is Gustave Chaix d'Est-Ange\nThe place of burial of Gustave Chaix d'Est-Ange is Montmartre Cemetery\nThe place of birth of Gustave Chaix d'Est-Ange is Reims\nThe place of death of Gustave Chaix d'Est-Ange is Paris\nThe gender of Gustave Chaix d'Est-Ange is male\n\nThe place of death of the father of Thomas Crofton is"
+  },
+  {
+   "context": "none",
+   "kind": "downstream",
+   "reference": "rippleedits:random:1289:Compositionality_I:11:0",
+   "root_id": "rippleedits:random:1289",
+   "unit_id": "1a2a0a241210cad2bfc828d3d4075cfda4fe7939c1f02b4ff6f152742de47a13",
+   "user_text": "The place of death of the father of Thomas Crofton is"
+  },
+  {
+   "context": "given_facts",
+   "kind": "downstream",
+   "reference": "rippleedits:random:1289:Compositionality_I:13:0",
+   "root_id": "rippleedits:random:1289",
+   "unit_id": "50a30769866118d7cf4907ca17ecc228100db7f3b61175865bef73669d914b78",
+   "user_text": "The following task-relevant records are supplied.\nThe name of the father of Thomas Crofton is Gustave Chaix d'Est-Ange\nThe place of burial of Gustave Chaix d'Est-Ange is Montmartre Cemetery\nThe place of birth of Gustave Chaix d'Est-Ange is Reims\nThe place of death of Gustave Chaix d'Est-Ange is Paris\nThe gender of Gustave Chaix d'Est-Ange is male\n\nThe gender of the father of Thomas Crofton is"
+  },
+  {
+   "context": "canonical",
+   "kind": "downstream",
+   "reference": "rippleedits:random:1289:Compositionality_I:13:0",
+   "root_id": "rippleedits:random:1289",
+   "unit_id": "b8b85e13a9f9af82b1565f09f324d8fa734d19d6248b244ba7d8804092ba8781",
+   "user_text": "The following are the current authoritative records.\nThe name of the father of Thomas Crofton is Gustave Chaix d'Est-Ange\nThe place of burial of Gustave Chaix d'Est-Ange is Montmartre Cemetery\nThe place of birth of Gustave Chaix d'Est-Ange is Reims\nThe place of death of Gustave Chaix d'Est-Ange is Paris\nThe gender of Gustave Chaix d'Est-Ange is male\n\nThe gender of the father of Thomas Crofton is"
+  },
+  {
+   "context": "none",
+   "kind": "downstream",
+   "reference": "rippleedits:random:1289:Compositionality_I:13:0",
+   "root_id": "rippleedits:random:1289",
+   "unit_id": "b44afbbbe7b412e477040070efff64b9d386a954e8fefbb6cfb5c6f8638f2859",
+   "user_text": "The gender of the father of Thomas Crofton is"
+  },
+  {
+   "context": "given_facts",
+   "kind": "downstream",
+   "reference": "rippleedits:random:1289:Compositionality_I:14:0",
+   "root_id": "rippleedits:random:1289",
+   "unit_id": "fe47d91ee8ac0f945d90202a9593c50ff67eb3e634c5006fd9d54729e1470beb",
+   "user_text": "The following task-relevant records are supplied.\nThe name of the father of Thomas Crofton is Gustave Chaix d'Est-Ange\nThe place of burial of Gustave Chaix d'Est-Ange is Montmartre Cemetery\nThe place of birth of Gustave Chaix d'Est-Ange is Reims\nThe place of death of Gustave Chaix d'Est-Ange is Paris\nThe gender of Gustave Chaix d'Est-Ange is male\n\nThe place of burial of the father of Thomas Crofton is"
+  },
+  {
+   "context": "canonical",
+   "kind": "downstream",
+   "reference": "rippleedits:random:1289:Compositionality_I:14:0",
+   "root_id": "rippleedits:random:1289",
+   "unit_id": "bc3182deb8913687db8b7def21586bb1a8fff253b74e70736783675de54bd9df",
+   "user_text": "The following are the current authoritative records.\nThe name of the father of Thomas Crofton is Gustave Chaix d'Est-Ange\nThe place of burial of Gustave Chaix d'Est-Ange is Montmartre Cemetery\nThe place of birth of Gustave Chaix d'Est-Ange is Reims\nThe place of death of Gustave Chaix d'Est-Ange is Paris\nThe gender of Gustave Chaix d'Est-Ange is male\n\nThe place of burial of the father of Thomas Crofton is"
+  },
+  {
+   "context": "none",
+   "kind": "downstream",
+   "reference": "rippleedits:random:1289:Compositionality_I:14:0",
+   "root_id": "rippleedits:random:1289",
+   "unit_id": "1a33816da20c782b84328c6f2dfcfe2e18c4c6948bd43670bf2a4da5443d058a",
+   "user_text": "The place of burial of the father of Thomas Crofton is"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "atomic",
+   "reference": "Q75769489|P22|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:1289",
+   "unit_id": "4d0632a078f5a87b1003365961cc46ad065a39751d919b8f5d47c4777555636d",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the father of Thomas Crofton is Joe Jackson\nThe name of the father of Thomas Crofton is Gustave Chaix d'Est-Ange\nThe place of burial of Gustave Chaix d'Est-Ange is Montmartre Cemetery\nThe place of birth of Gustave Chaix d'Est-Ange is Reims\nThe place of death of Gustave Chaix d'Est-Ange is Paris\nThe gender of Gustave Chaix d'Est-Ange is male\n\nThe name of the father of Thomas Crofton is"
+  },
+  {
+   "context": "chronological_D",
+   "kind": "atomic",
+   "reference": "Q75769489|P22|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:1289",
+   "unit_id": "b0a87f6174860878336b7dcad6baf9ab07153bf183b38e1d7546ad1ffe7f92e9",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the father of Thomas Crofton is Jack Harbaugh\nThe name of the father of Thomas Crofton is Gustave Chaix d'Est-Ange\nThe place of burial of Gustave Chaix d'Est-Ange is Montmartre Cemetery\nThe place of birth of Gustave Chaix d'Est-Ange is Reims\nThe place of death of Gustave Chaix d'Est-Ange is Paris\nThe gender of Gustave Chaix d'Est-Ange is male\n\nThe name of the father of Thomas Crofton is"
+  },
+  {
+   "context": "none",
+   "kind": "atomic",
+   "reference": "Q75769489|P22|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:1289",
+   "unit_id": "754c5d414a4fb8add0561d7994728952f3c086476078f9c3ba0ae79a40585943",
+   "user_text": "The name of the father of Thomas Crofton is"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "atomic",
+   "reference": "Q3121249|P119|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:1289",
+   "unit_id": "f7c4a208138b0120520536bfadbe93d37aec0ce2171e2be81980b14ba7f3a165",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the father of Thomas Crofton is Joe Jackson\nThe name of the father of Thomas Crofton is Gustave Chaix d'Est-Ange\nThe place of burial of Gustave Chaix d'Est-Ange is Montmartre Cemetery\nThe place of birth of Gustave Chaix d'Est-Ange is Reims\nThe place of death of Gustave Chaix d'Est-Ange is Paris\nThe gender of Gustave Chaix d'Est-Ange is male\n\nThe place of burial of Gustave Chaix d'Est-Ange is"
+  },
+  {
+   "context": "chronological_D",
+   "kind": "atomic",
+   "reference": "Q3121249|P119|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:1289",
+   "unit_id": "16adea1ca9f54b9f62049c8a7e1b457df11c25731e1eb6c4a5ceb039336b39ef",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the father of Thomas Crofton is Jack Harbaugh\nThe name of the father of Thomas Crofton is Gustave Chaix d'Est-Ange\nThe place of burial of Gustave Chaix d'Est-Ange is Montmartre Cemetery\nThe place of birth of Gustave Chaix d'Est-Ange is Reims\nThe place of death of Gustave Chaix d'Est-Ange is Paris\nThe gender of Gustave Chaix d'Est-Ange is male\n\nThe place of burial of Gustave Chaix d'Est-Ange is"
+  },
+  {
+   "context": "none",
+   "kind": "atomic",
+   "reference": "Q3121249|P119|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:1289",
+   "unit_id": "3a0ed90dc5a0cdbc30f144fd1c8e86f9c51f413205c9b5bb99c2cba7a2e23dcc",
+   "user_text": "The place of burial of Gustave Chaix d'Est-Ange is"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "atomic",
+   "reference": "Q3121249|P19|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:1289",
+   "unit_id": "fb6bb0b3716ae60bd036f16fefb75ebae71c4bc2d1101787ca88b458feefdf0b",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the father of Thomas Crofton is Joe Jackson\nThe name of the father of Thomas Crofton is Gustave Chaix d'Est-Ange\nThe place of burial of Gustave Chaix d'Est-Ange is Montmartre Cemetery\nThe place of birth of Gustave Chaix d'Est-Ange is Reims\nThe place of death of Gustave Chaix d'Est-Ange is Paris\nThe gender of Gustave Chaix d'Est-Ange is male\n\nThe place of birth of Gustave Chaix d'Est-Ange is"
+  },
+  {
+   "context": "chronological_D",
+   "kind": "atomic",
+   "reference": "Q3121249|P19|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:1289",
+   "unit_id": "db3a2ff54ff84cbece8cfb08f528d3ba94a4c619f63c113751edd93840552baf",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the father of Thomas Crofton is Jack Harbaugh\nThe name of the father of Thomas Crofton is Gustave Chaix d'Est-Ange\nThe place of burial of Gustave Chaix d'Est-Ange is Montmartre Cemetery\nThe place of birth of Gustave Chaix d'Est-Ange is Reims\nThe place of death of Gustave Chaix d'Est-Ange is Paris\nThe gender of Gustave Chaix d'Est-Ange is male\n\nThe place of birth of Gustave Chaix d'Est-Ange is"
+  },
+  {
+   "context": "none",
+   "kind": "atomic",
+   "reference": "Q3121249|P19|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:1289",
+   "unit_id": "73ab8d8cc02ab26763c3ae53104359018010ccab95b1f798c28bb291bfc0bb1f",
+   "user_text": "The place of birth of Gustave Chaix d'Est-Ange is"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "atomic",
+   "reference": "Q3121249|P20|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:1289",
+   "unit_id": "efa1fd3261f1f9618ba9ec1357201da15b56d6afe0d8d1a1ef5c42019b288b2f",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the father of Thomas Crofton is Joe Jackson\nThe name of the father of Thomas Crofton is Gustave Chaix d'Est-Ange\nThe place of burial of Gustave Chaix d'Est-Ange is Montmartre Cemetery\nThe place of birth of Gustave Chaix d'Est-Ange is Reims\nThe place of death of Gustave Chaix d'Est-Ange is Paris\nThe gender of Gustave Chaix d'Est-Ange is male\n\nThe place of death of Gustave Chaix d'Est-Ange is"
+  },
+  {
+   "context": "chronological_D",
+   "kind": "atomic",
+   "reference": "Q3121249|P20|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:1289",
+   "unit_id": "8644d8527dd05e6b0f659e05d658b30472919c474927915ba8745dc5783e30bb",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the father of Thomas Crofton is Jack Harbaugh\nThe name of the father of Thomas Crofton is Gustave Chaix d'Est-Ange\nThe place of burial of Gustave Chaix d'Est-Ange is Montmartre Cemetery\nThe place of birth of Gustave Chaix d'Est-Ange is Reims\nThe place of death of Gustave Chaix d'Est-Ange is Paris\nThe gender of Gustave Chaix d'Est-Ange is male\n\nThe place of death of Gustave Chaix d'Est-Ange is"
+  },
+  {
+   "context": "none",
+   "kind": "atomic",
+   "reference": "Q3121249|P20|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:1289",
+   "unit_id": "bbaaded40d7c9201c3b6e27aa5e405d5219832f926df1668e04d626b71dfb866",
+   "user_text": "The place of death of Gustave Chaix d'Est-Ange is"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "atomic",
+   "reference": "Q3121249|P21|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:1289",
+   "unit_id": "d7cf645e43541e7b859310a0a70c945be389db947b24da3af4319933c0eed083",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the father of Thomas Crofton is Joe Jackson\nThe name of the father of Thomas Crofton is Gustave Chaix d'Est-Ange\nThe place of burial of Gustave Chaix d'Est-Ange is Montmartre Cemetery\nThe place of birth of Gustave Chaix d'Est-Ange is Reims\nThe place of death of Gustave Chaix d'Est-Ange is Paris\nThe gender of Gustave Chaix d'Est-Ange is male\n\nThe gender of Gustave Chaix d'Est-Ange is"
+  },
+  {
+   "context": "chronological_D",
+   "kind": "atomic",
+   "reference": "Q3121249|P21|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:1289",
+   "unit_id": "97c670bf8168863eaea947f4f4c7cf48585ab1cfd399a0668fe9d680f2b87508",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the father of Thomas Crofton is Jack Harbaugh\nThe name of the father of Thomas Crofton is Gustave Chaix d'Est-Ange\nThe place of burial of Gustave Chaix d'Est-Ange is Montmartre Cemetery\nThe place of birth of Gustave Chaix d'Est-Ange is Reims\nThe place of death of Gustave Chaix d'Est-Ange is Paris\nThe gender of Gustave Chaix d'Est-Ange is male\n\nThe gender of Gustave Chaix d'Est-Ange is"
+  },
+  {
+   "context": "none",
+   "kind": "atomic",
+   "reference": "Q3121249|P21|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:random:1289",
+   "unit_id": "b85f5b77b3e3ec1bd59440722ac18c32e6d420b4db62ed1a38dfd44617f283de",
+   "user_text": "The gender of Gustave Chaix d'Est-Ange is"
+  },
+  {
+   "context": "given_facts",
+   "kind": "downstream",
+   "reference": "rippleedits:popular:415:Compositionality_I:0:0",
+   "root_id": "rippleedits:popular:415",
+   "unit_id": "d91b653745cdd139f79290c245eb838af402d4f05aef5c24c41e1928534ff6d0",
+   "user_text": "The following task-relevant records are supplied.\nThe name of the mother of Dua Lipa is Margarete Mitscherlich-Nielsen\nThe place of burial of Margarete Mitscherlich-Nielsen is Frankfurt Main Cemetery\nThe place of birth of Margarete Mitscherlich-Nielsen is Gråsten\nThe place of death of Margarete Mitscherlich-Nielsen is Frankfurt\nThe gender of Margarete Mitscherlich-Nielsen is female\n\nThe place of birth of the mother of Dua Lipa is"
+  },
+  {
+   "context": "canonical",
+   "kind": "downstream",
+   "reference": "rippleedits:popular:415:Compositionality_I:0:0",
+   "root_id": "rippleedits:popular:415",
+   "unit_id": "91a054d11af0c53dbe29cb1c485c1147a5acc6c4a77478c40191600a7a0505c9",
+   "user_text": "The following are the current authoritative records.\nThe name of the mother of Dua Lipa is Margarete Mitscherlich-Nielsen\nThe place of burial of Margarete Mitscherlich-Nielsen is Frankfurt Main Cemetery\nThe place of birth of Margarete Mitscherlich-Nielsen is Gråsten\nThe place of death of Margarete Mitscherlich-Nielsen is Frankfurt\nThe gender of Margarete Mitscherlich-Nielsen is female\n\nThe place of birth of the mother of Dua Lipa is"
+  },
+  {
+   "context": "none",
+   "kind": "downstream",
+   "reference": "rippleedits:popular:415:Compositionality_I:0:0",
+   "root_id": "rippleedits:popular:415",
+   "unit_id": "81d8ce756a9e6b05e20c7ee0fc14c89748d015e8bd06c621003786a6c6609eb6",
+   "user_text": "The place of birth of the mother of Dua Lipa is"
+  },
+  {
+   "context": "given_facts",
+   "kind": "downstream",
+   "reference": "rippleedits:popular:415:Compositionality_I:12:0",
+   "root_id": "rippleedits:popular:415",
+   "unit_id": "cc6fa89fd209e97f2347c01a971eefe048848e5f460157982f9629ea590f8eb9",
+   "user_text": "The following task-relevant records are supplied.\nThe name of the mother of Dua Lipa is Margarete Mitscherlich-Nielsen\nThe place of burial of Margarete Mitscherlich-Nielsen is Frankfurt Main Cemetery\nThe place of birth of Margarete Mitscherlich-Nielsen is Gråsten\nThe place of death of Margarete Mitscherlich-Nielsen is Frankfurt\nThe gender of Margarete Mitscherlich-Nielsen is female\n\nThe place of burial of the mother of Dua Lipa is"
+  },
+  {
+   "context": "canonical",
+   "kind": "downstream",
+   "reference": "rippleedits:popular:415:Compositionality_I:12:0",
+   "root_id": "rippleedits:popular:415",
+   "unit_id": "53d2a0ea4d32a195ce04417e5a308d60525f6b4741a5f9440ed259f5d87867cd",
+   "user_text": "The following are the current authoritative records.\nThe name of the mother of Dua Lipa is Margarete Mitscherlich-Nielsen\nThe place of burial of Margarete Mitscherlich-Nielsen is Frankfurt Main Cemetery\nThe place of birth of Margarete Mitscherlich-Nielsen is Gråsten\nThe place of death of Margarete Mitscherlich-Nielsen is Frankfurt\nThe gender of Margarete Mitscherlich-Nielsen is female\n\nThe place of burial of the mother of Dua Lipa is"
+  },
+  {
+   "context": "none",
+   "kind": "downstream",
+   "reference": "rippleedits:popular:415:Compositionality_I:12:0",
+   "root_id": "rippleedits:popular:415",
+   "unit_id": "6eef12216fe5a1816e21ead41655bf9f53d003813e0ab952fa0fa8c858df62d8",
+   "user_text": "The place of burial of the mother of Dua Lipa is"
+  },
+  {
+   "context": "given_facts",
+   "kind": "downstream",
+   "reference": "rippleedits:popular:415:Compositionality_I:17:0",
+   "root_id": "rippleedits:popular:415",
+   "unit_id": "5afdbea926c3f553168f4c8f27b18c5f75951be472048b99cec98f8818dc5b86",
+   "user_text": "The following task-relevant records are supplied.\nThe name of the mother of Dua Lipa is Margarete Mitscherlich-Nielsen\nThe place of burial of Margarete Mitscherlich-Nielsen is Frankfurt Main Cemetery\nThe place of birth of Margarete Mitscherlich-Nielsen is Gråsten\nThe place of death of Margarete Mitscherlich-Nielsen is Frankfurt\nThe gender of Margarete Mitscherlich-Nielsen is female\n\nThe gender of the mother of Dua Lipa is"
+  },
+  {
+   "context": "canonical",
+   "kind": "downstream",
+   "reference": "rippleedits:popular:415:Compositionality_I:17:0",
+   "root_id": "rippleedits:popular:415",
+   "unit_id": "c8d1e59242f9b62079bf8ca641280633e6effb63d73dbbcb7823f45d44313078",
+   "user_text": "The following are the current authoritative records.\nThe name of the mother of Dua Lipa is Margarete Mitscherlich-Nielsen\nThe place of burial of Margarete Mitscherlich-Nielsen is Frankfurt Main Cemetery\nThe place of birth of Margarete Mitscherlich-Nielsen is Gråsten\nThe place of death of Margarete Mitscherlich-Nielsen is Frankfurt\nThe gender of Margarete Mitscherlich-Nielsen is female\n\nThe gender of the mother of Dua Lipa is"
+  },
+  {
+   "context": "none",
+   "kind": "downstream",
+   "reference": "rippleedits:popular:415:Compositionality_I:17:0",
+   "root_id": "rippleedits:popular:415",
+   "unit_id": "2e76f63dc83432cce91beb2d64595ebf8d4bb1eedde59522fbee11013184e0d6",
+   "user_text": "The gender of the mother of Dua Lipa is"
+  },
+  {
+   "context": "given_facts",
+   "kind": "downstream",
+   "reference": "rippleedits:popular:415:Compositionality_I:1:0",
+   "root_id": "rippleedits:popular:415",
+   "unit_id": "5325195415744026bb6bfb8f80c321c1cd9432cdb6dabe4f6665bab58438a6fc",
+   "user_text": "The following task-relevant records are supplied.\nThe name of the mother of Dua Lipa is Margarete Mitscherlich-Nielsen\nThe place of burial of Margarete Mitscherlich-Nielsen is Frankfurt Main Cemetery\nThe place of birth of Margarete Mitscherlich-Nielsen is Gråsten\nThe place of death of Margarete Mitscherlich-Nielsen is Frankfurt\nThe gender of Margarete Mitscherlich-Nielsen is female\n\nThe place of death of the mother of Dua Lipa is"
+  },
+  {
+   "context": "canonical",
+   "kind": "downstream",
+   "reference": "rippleedits:popular:415:Compositionality_I:1:0",
+   "root_id": "rippleedits:popular:415",
+   "unit_id": "dd1b54cd6421c62a707c7ed283466ac32fbfa6e5a7d26aee013372e5233e152f",
+   "user_text": "The following are the current authoritative records.\nThe name of the mother of Dua Lipa is Margarete Mitscherlich-Nielsen\nThe place of burial of Margarete Mitscherlich-Nielsen is Frankfurt Main Cemetery\nThe place of birth of Margarete Mitscherlich-Nielsen is Gråsten\nThe place of death of Margarete Mitscherlich-Nielsen is Frankfurt\nThe gender of Margarete Mitscherlich-Nielsen is female\n\nThe place of death of the mother of Dua Lipa is"
+  },
+  {
+   "context": "none",
+   "kind": "downstream",
+   "reference": "rippleedits:popular:415:Compositionality_I:1:0",
+   "root_id": "rippleedits:popular:415",
+   "unit_id": "c14e268e99b543e5ab123932ff8157fea2a18160c4e2384985b0ba2bb8e4d1aa",
+   "user_text": "The place of death of the mother of Dua Lipa is"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "atomic",
+   "reference": "Q21914464|P25|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:popular:415",
+   "unit_id": "78d240498a026498d75b97fe6ebc3e8f6511cca62b398a4dced51969ffdd15d9",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Dua Lipa is Anjali Tendulkar\nThe name of the mother of Dua Lipa is Margarete Mitscherlich-Nielsen\nThe place of burial of Margarete Mitscherlich-Nielsen is Frankfurt Main Cemetery\nThe place of birth of Margarete Mitscherlich-Nielsen is Gråsten\nThe place of death of Margarete Mitscherlich-Nielsen is Frankfurt\nThe gender of Margarete Mitscherlich-Nielsen is female\n\nThe name of the mother of Dua Lipa is"
+  },
+  {
+   "context": "chronological_D",
+   "kind": "atomic",
+   "reference": "Q21914464|P25|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:popular:415",
+   "unit_id": "57029ac6351563dfb26eace4980f36532fa57b50a48daf1278fe9f3ebb72cc68",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Dua Lipa is Winifred Doyne\nThe name of the mother of Dua Lipa is Margarete Mitscherlich-Nielsen\nThe place of burial of Margarete Mitscherlich-Nielsen is Frankfurt Main Cemetery\nThe place of birth of Margarete Mitscherlich-Nielsen is Gråsten\nThe place of death of Margarete Mitscherlich-Nielsen is Frankfurt\nThe gender of Margarete Mitscherlich-Nielsen is female\n\nThe name of the mother of Dua Lipa is"
+  },
+  {
+   "context": "none",
+   "kind": "atomic",
+   "reference": "Q21914464|P25|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:popular:415",
+   "unit_id": "20286ee522ffbd97b85b123784b298e9809599ddcf7fad078db13f941e34cf2b",
+   "user_text": "The name of the mother of Dua Lipa is"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "atomic",
+   "reference": "Q77809|P119|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:popular:415",
+   "unit_id": "1d1d378b8442f711d2fbc2c851b615d3ee827f5d9e5ca7c8a8d144dcf5b06afc",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Dua Lipa is Anjali Tendulkar\nThe name of the mother of Dua Lipa is Margarete Mitscherlich-Nielsen\nThe place of burial of Margarete Mitscherlich-Nielsen is Frankfurt Main Cemetery\nThe place of birth of Margarete Mitscherlich-Nielsen is Gråsten\nThe place of death of Margarete Mitscherlich-Nielsen is Frankfurt\nThe gender of Margarete Mitscherlich-Nielsen is female\n\nThe place of burial of Margarete Mitscherlich-Nielsen is"
+  },
+  {
+   "context": "chronological_D",
+   "kind": "atomic",
+   "reference": "Q77809|P119|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:popular:415",
+   "unit_id": "1e0ab5192f73d73771e859a3bd436517c20b5bd52ac5f6ee2d917df58f80e96a",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Dua Lipa is Winifred Doyne\nThe name of the mother of Dua Lipa is Margarete Mitscherlich-Nielsen\nThe place of burial of Margarete Mitscherlich-Nielsen is Frankfurt Main Cemetery\nThe place of birth of Margarete Mitscherlich-Nielsen is Gråsten\nThe place of death of Margarete Mitscherlich-Nielsen is Frankfurt\nThe gender of Margarete Mitscherlich-Nielsen is female\n\nThe place of burial of Margarete Mitscherlich-Nielsen is"
+  },
+  {
+   "context": "none",
+   "kind": "atomic",
+   "reference": "Q77809|P119|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:popular:415",
+   "unit_id": "a079ebf644a5ffcc7634d156c191f5fb6cdf0f6f474b2294a00af32fdba9cf3f",
+   "user_text": "The place of burial of Margarete Mitscherlich-Nielsen is"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "atomic",
+   "reference": "Q77809|P19|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:popular:415",
+   "unit_id": "6daa1f3e35a8be47b42079519e0eb99102e19bbf53d1144afc0df8b9ed3d235b",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Dua Lipa is Anjali Tendulkar\nThe name of the mother of Dua Lipa is Margarete Mitscherlich-Nielsen\nThe place of burial of Margarete Mitscherlich-Nielsen is Frankfurt Main Cemetery\nThe place of birth of Margarete Mitscherlich-Nielsen is Gråsten\nThe place of death of Margarete Mitscherlich-Nielsen is Frankfurt\nThe gender of Margarete Mitscherlich-Nielsen is female\n\nThe place of birth of Margarete Mitscherlich-Nielsen is"
+  },
+  {
+   "context": "chronological_D",
+   "kind": "atomic",
+   "reference": "Q77809|P19|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:popular:415",
+   "unit_id": "d153a01002798521db17cfc77ca729c487ce8a40b646a0d204314bcc97b4f553",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Dua Lipa is Winifred Doyne\nThe name of the mother of Dua Lipa is Margarete Mitscherlich-Nielsen\nThe place of burial of Margarete Mitscherlich-Nielsen is Frankfurt Main Cemetery\nThe place of birth of Margarete Mitscherlich-Nielsen is Gråsten\nThe place of death of Margarete Mitscherlich-Nielsen is Frankfurt\nThe gender of Margarete Mitscherlich-Nielsen is female\n\nThe place of birth of Margarete Mitscherlich-Nielsen is"
+  },
+  {
+   "context": "none",
+   "kind": "atomic",
+   "reference": "Q77809|P19|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:popular:415",
+   "unit_id": "e2aee1dd38e434dc1fe27830eea4507a797e1889d77bf69bcb1754655003f996",
+   "user_text": "The place of birth of Margarete Mitscherlich-Nielsen is"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "atomic",
+   "reference": "Q77809|P20|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:popular:415",
+   "unit_id": "6502f7cae5a85edc11272ad9f0709407ca42dfe996475c34e25c1a76c2556935",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Dua Lipa is Anjali Tendulkar\nThe name of the mother of Dua Lipa is Margarete Mitscherlich-Nielsen\nThe place of burial of Margarete Mitscherlich-Nielsen is Frankfurt Main Cemetery\nThe place of birth of Margarete Mitscherlich-Nielsen is Gråsten\nThe place of death of Margarete Mitscherlich-Nielsen is Frankfurt\nThe gender of Margarete Mitscherlich-Nielsen is female\n\nThe place of death of Margarete Mitscherlich-Nielsen is"
+  },
+  {
+   "context": "chronological_D",
+   "kind": "atomic",
+   "reference": "Q77809|P20|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:popular:415",
+   "unit_id": "228b11277f892d605a5af9e67401ee19148f26407b21316b22f8f22b09f75515",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Dua Lipa is Winifred Doyne\nThe name of the mother of Dua Lipa is Margarete Mitscherlich-Nielsen\nThe place of burial of Margarete Mitscherlich-Nielsen is Frankfurt Main Cemetery\nThe place of birth of Margarete Mitscherlich-Nielsen is Gråsten\nThe place of death of Margarete Mitscherlich-Nielsen is Frankfurt\nThe gender of Margarete Mitscherlich-Nielsen is female\n\nThe place of death of Margarete Mitscherlich-Nielsen is"
+  },
+  {
+   "context": "none",
+   "kind": "atomic",
+   "reference": "Q77809|P20|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:popular:415",
+   "unit_id": "19cf3756f83e634a3795ee0359945fb6f29d7c3d17728acd6af2c6f6185b4645",
+   "user_text": "The place of death of Margarete Mitscherlich-Nielsen is"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "atomic",
+   "reference": "Q77809|P21|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:popular:415",
+   "unit_id": "a68b55f879110e465c95a6fbc1ffe03cba7c13e82968e6be85129f2de1bc83a9",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Dua Lipa is Anjali Tendulkar\nThe name of the mother of Dua Lipa is Margarete Mitscherlich-Nielsen\nThe place of burial of Margarete Mitscherlich-Nielsen is Frankfurt Main Cemetery\nThe place of birth of Margarete Mitscherlich-Nielsen is Gråsten\nThe place of death of Margarete Mitscherlich-Nielsen is Frankfurt\nThe gender of Margarete Mitscherlich-Nielsen is female\n\nThe gender of Margarete Mitscherlich-Nielsen is"
+  },
+  {
+   "context": "chronological_D",
+   "kind": "atomic",
+   "reference": "Q77809|P21|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:popular:415",
+   "unit_id": "1a3e8018c3104b318d012fb2712a636314f74588995d34479acf7d7727746ffc",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Dua Lipa is Winifred Doyne\nThe name of the mother of Dua Lipa is Margarete Mitscherlich-Nielsen\nThe place of burial of Margarete Mitscherlich-Nielsen is Frankfurt Main Cemetery\nThe place of birth of Margarete Mitscherlich-Nielsen is Gråsten\nThe place of death of Margarete Mitscherlich-Nielsen is Frankfurt\nThe gender of Margarete Mitscherlich-Nielsen is female\n\nThe gender of Margarete Mitscherlich-Nielsen is"
+  },
+  {
+   "context": "none",
+   "kind": "atomic",
+   "reference": "Q77809|P21|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:popular:415",
+   "unit_id": "63cd61c6fa193b47ffd457a8d173b4c791af230858b0fce6b47c7c709589d151",
+   "user_text": "The gender of Margarete Mitscherlich-Nielsen is"
+  },
+  {
+   "context": "given_facts",
+   "kind": "downstream",
+   "reference": "rippleedits:popular:352:Compositionality_I:0:0",
+   "root_id": "rippleedits:popular:352",
+   "unit_id": "ca427a3cbce729d80ace85806120183e46cef8b5a5926beef35f7c679704af88",
+   "user_text": "The following task-relevant records are supplied.\nThe name of the mother of Bill Gates is Henrietta Knight, Lady Luxborough\nThe place of burial of Henrietta Knight, Lady Luxborough is Church of St Mary the Virgin, Ullenhall\nThe gender of Henrietta Knight, Lady Luxborough is female\nThe name of the father of Henrietta Knight, Lady Luxborough is Henry St John, 1st Viscount St John\nThe name of the mother of Henrietta Knight, Lady Luxborough is Angelica Magdalena Pelissary\n\nThe gender of the mother of Bill Gates is"
+  },
+  {
+   "context": "canonical",
+   "kind": "downstream",
+   "reference": "rippleedits:popular:352:Compositionality_I:0:0",
+   "root_id": "rippleedits:popular:352",
+   "unit_id": "66f074f0db0d8eee994bdf6722215b976d86e92e9ac376901bfc3fe3048c75a0",
+   "user_text": "The following are the current authoritative records.\nThe name of the mother of Bill Gates is Henrietta Knight, Lady Luxborough\nThe place of burial of Henrietta Knight, Lady Luxborough is Church of St Mary the Virgin, Ullenhall\nThe gender of Henrietta Knight, Lady Luxborough is female\nThe name of the father of Henrietta Knight, Lady Luxborough is Henry St John, 1st Viscount St John\nThe name of the mother of Henrietta Knight, Lady Luxborough is Angelica Magdalena Pelissary\n\nThe gender of the mother of Bill Gates is"
+  },
+  {
+   "context": "none",
+   "kind": "downstream",
+   "reference": "rippleedits:popular:352:Compositionality_I:0:0",
+   "root_id": "rippleedits:popular:352",
+   "unit_id": "1ba32402b79b0ff4fb3fcf39126297db9e8b8ccb36f11fbb31a852b5be925c6a",
+   "user_text": "The gender of the mother of Bill Gates is"
+  },
+  {
+   "context": "given_facts",
+   "kind": "downstream",
+   "reference": "rippleedits:popular:352:Compositionality_I:7:0",
+   "root_id": "rippleedits:popular:352",
+   "unit_id": "06e9db46b82fd665c3af248a6c569f655731d941fd5936a44e8fe8b543280ff6",
+   "user_text": "The following task-relevant records are supplied.\nThe name of the mother of Bill Gates is Henrietta Knight, Lady Luxborough\nThe place of burial of Henrietta Knight, Lady Luxborough is Church of St Mary the Virgin, Ullenhall\nThe gender of Henrietta Knight, Lady Luxborough is female\nThe name of the father of Henrietta Knight, Lady Luxborough is Henry St John, 1st Viscount St John\nThe name of the mother of Henrietta Knight, Lady Luxborough is Angelica Magdalena Pelissary\n\nThe place of burial of the mother of Bill Gates is"
+  },
+  {
+   "context": "canonical",
+   "kind": "downstream",
+   "reference": "rippleedits:popular:352:Compositionality_I:7:0",
+   "root_id": "rippleedits:popular:352",
+   "unit_id": "fb7dcd3186ea830233b37cbedc991cb94e00e9a7c9a99f335bc7c0bacccd50f7",
+   "user_text": "The following are the current authoritative records.\nThe name of the mother of Bill Gates is Henrietta Knight, Lady Luxborough\nThe place of burial of Henrietta Knight, Lady Luxborough is Church of St Mary the Virgin, Ullenhall\nThe gender of Henrietta Knight, Lady Luxborough is female\nThe name of the father of Henrietta Knight, Lady Luxborough is Henry St John, 1st Viscount St John\nThe name of the mother of Henrietta Knight, Lady Luxborough is Angelica Magdalena Pelissary\n\nThe place of burial of the mother of Bill Gates is"
+  },
+  {
+   "context": "none",
+   "kind": "downstream",
+   "reference": "rippleedits:popular:352:Compositionality_I:7:0",
+   "root_id": "rippleedits:popular:352",
+   "unit_id": "7ca2d11884bafc8f3c673ab9ead5942e6ece5b8815621bfa5d4a33006031d7ad",
+   "user_text": "The place of burial of the mother of Bill Gates is"
+  },
+  {
+   "context": "given_facts",
+   "kind": "downstream",
+   "reference": "rippleedits:popular:352:Compositionality_I:8:0",
+   "root_id": "rippleedits:popular:352",
+   "unit_id": "dc1c7df62803a5d462932843b25416c7f69c6264e1ea8d16d4dcb568dfba3e67",
+   "user_text": "The following task-relevant records are supplied.\nThe name of the mother of Bill Gates is Henrietta Knight, Lady Luxborough\nThe place of burial of Henrietta Knight, Lady Luxborough is Church of St Mary the Virgin, Ullenhall\nThe gender of Henrietta Knight, Lady Luxborough is female\nThe name of the father of Henrietta Knight, Lady Luxborough is Henry St John, 1st Viscount St John\nThe name of the mother of Henrietta Knight, Lady Luxborough is Angelica Magdalena Pelissary\n\nThe name of the maternal grandfather of Bill Gates is"
+  },
+  {
+   "context": "canonical",
+   "kind": "downstream",
+   "reference": "rippleedits:popular:352:Compositionality_I:8:0",
+   "root_id": "rippleedits:popular:352",
+   "unit_id": "6c7051b83fb8692a1416df6595b6a0b8bfd555f0cba82eaa82dc1b6d4e1cd3a7",
+   "user_text": "The following are the current authoritative records.\nThe name of the mother of Bill Gates is Henrietta Knight, Lady Luxborough\nThe place of burial of Henrietta Knight, Lady Luxborough is Church of St Mary the Virgin, Ullenhall\nThe gender of Henrietta Knight, Lady Luxborough is female\nThe name of the father of Henrietta Knight, Lady Luxborough is Henry St John, 1st Viscount St John\nThe name of the mother of Henrietta Knight, Lady Luxborough is Angelica Magdalena Pelissary\n\nThe name of the maternal grandfather of Bill Gates is"
+  },
+  {
+   "context": "none",
+   "kind": "downstream",
+   "reference": "rippleedits:popular:352:Compositionality_I:8:0",
+   "root_id": "rippleedits:popular:352",
+   "unit_id": "94acf885abe862b21e7332469d26bae841fa4a1df40d0ec8514294128a6c96ee",
+   "user_text": "The name of the maternal grandfather of Bill Gates is"
+  },
+  {
+   "context": "given_facts",
+   "kind": "downstream",
+   "reference": "rippleedits:popular:352:Compositionality_I:9:0",
+   "root_id": "rippleedits:popular:352",
+   "unit_id": "eb16b14fb24a1f1ab5fe0cbbafaf7a316fb4fc0cf33ab1e748a86c5a7cb067e0",
+   "user_text": "The following task-relevant records are supplied.\nThe name of the mother of Bill Gates is Henrietta Knight, Lady Luxborough\nThe place of burial of Henrietta Knight, Lady Luxborough is Church of St Mary the Virgin, Ullenhall\nThe gender of Henrietta Knight, Lady Luxborough is female\nThe name of the father of Henrietta Knight, Lady Luxborough is Henry St John, 1st Viscount St John\nThe name of the mother of Henrietta Knight, Lady Luxborough is Angelica Magdalena Pelissary\n\nThe name of the maternal grandmother of Bill Gates is"
+  },
+  {
+   "context": "canonical",
+   "kind": "downstream",
+   "reference": "rippleedits:popular:352:Compositionality_I:9:0",
+   "root_id": "rippleedits:popular:352",
+   "unit_id": "0c6bc638a8c5118ca76f5a86d9a0d7302ec88b07441a0648e2d3d64c86b32ef1",
+   "user_text": "The following are the current authoritative records.\nThe name of the mother of Bill Gates is Henrietta Knight, Lady Luxborough\nThe place of burial of Henrietta Knight, Lady Luxborough is Church of St Mary the Virgin, Ullenhall\nThe gender of Henrietta Knight, Lady Luxborough is female\nThe name of the father of Henrietta Knight, Lady Luxborough is Henry St John, 1st Viscount St John\nThe name of the mother of Henrietta Knight, Lady Luxborough is Angelica Magdalena Pelissary\n\nThe name of the maternal grandmother of Bill Gates is"
+  },
+  {
+   "context": "none",
+   "kind": "downstream",
+   "reference": "rippleedits:popular:352:Compositionality_I:9:0",
+   "root_id": "rippleedits:popular:352",
+   "unit_id": "e2100a4f73dbc2909c62b8b6299063f17f7aa8e80aec98faf63dccee651297a0",
+   "user_text": "The name of the maternal grandmother of Bill Gates is"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "atomic",
+   "reference": "Q5284|P25|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:popular:352",
+   "unit_id": "9ab7cf3dfe55d2f94f1303c28b69e6cbe5fcaeedfd1444b0d3fd519eeb4e01d3",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Bill Gates is Elizabeth Bernard\nThe name of the mother of Bill Gates is Henrietta Knight, Lady Luxborough\nThe place of burial of Henrietta Knight, Lady Luxborough is Church of St Mary the Virgin, Ullenhall\nThe gender of Henrietta Knight, Lady Luxborough is female\nThe name of the father of Henrietta Knight, Lady Luxborough is Henry St John, 1st Viscount St John\nThe name of the mother of Henrietta Knight, Lady Luxborough is Angelica Magdalena Pelissary\n\nThe name of the mother of Bill Gates is"
+  },
+  {
+   "context": "chronological_D",
+   "kind": "atomic",
+   "reference": "Q5284|P25|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:popular:352",
+   "unit_id": "a4ea5b459ecb16b4ed43fde94c57f8f0f827f1e622001c51b6c402694c882249",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Bill Gates is Lynne Spears\nThe name of the mother of Bill Gates is Henrietta Knight, Lady Luxborough\nThe place of burial of Henrietta Knight, Lady Luxborough is Church of St Mary the Virgin, Ullenhall\nThe gender of Henrietta Knight, Lady Luxborough is female\nThe name of the father of Henrietta Knight, Lady Luxborough is Henry St John, 1st Viscount St John\nThe name of the mother of Henrietta Knight, Lady Luxborough is Angelica Magdalena Pelissary\n\nThe name of the mother of Bill Gates is"
+  },
+  {
+   "context": "none",
+   "kind": "atomic",
+   "reference": "Q5284|P25|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:popular:352",
+   "unit_id": "ada7917c04eb8cbb40561c7b9de218da600a21dd73f6078cb0c36695f2727c39",
+   "user_text": "The name of the mother of Bill Gates is"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "atomic",
+   "reference": "Q16859358|P119|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:popular:352",
+   "unit_id": "d4b21fa703002920e3d81bf73769e8ebc77c32f4276cedd3c70b61566651f26d",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Bill Gates is Elizabeth Bernard\nThe name of the mother of Bill Gates is Henrietta Knight, Lady Luxborough\nThe place of burial of Henrietta Knight, Lady Luxborough is Church of St Mary the Virgin, Ullenhall\nThe gender of Henrietta Knight, Lady Luxborough is female\nThe name of the father of Henrietta Knight, Lady Luxborough is Henry St John, 1st Viscount St John\nThe name of the mother of Henrietta Knight, Lady Luxborough is Angelica Magdalena Pelissary\n\nThe place of burial of Henrietta Knight, Lady Luxborough is"
+  },
+  {
+   "context": "chronological_D",
+   "kind": "atomic",
+   "reference": "Q16859358|P119|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:popular:352",
+   "unit_id": "9a947f02f4488062d468223ea1c3c39c983f364601894744620fb4766598f3cd",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Bill Gates is Lynne Spears\nThe name of the mother of Bill Gates is Henrietta Knight, Lady Luxborough\nThe place of burial of Henrietta Knight, Lady Luxborough is Church of St Mary the Virgin, Ullenhall\nThe gender of Henrietta Knight, Lady Luxborough is female\nThe name of the father of Henrietta Knight, Lady Luxborough is Henry St John, 1st Viscount St John\nThe name of the mother of Henrietta Knight, Lady Luxborough is Angelica Magdalena Pelissary\n\nThe place of burial of Henrietta Knight, Lady Luxborough is"
+  },
+  {
+   "context": "none",
+   "kind": "atomic",
+   "reference": "Q16859358|P119|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:popular:352",
+   "unit_id": "90577b394bd8fe102a6e2fa6b7d7ad630255bca96611f64a2da53181d1963b72",
+   "user_text": "The place of burial of Henrietta Knight, Lady Luxborough is"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "atomic",
+   "reference": "Q16859358|P21|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:popular:352",
+   "unit_id": "a7a32f9c067b0494f3be72dc9ba63427dfa18bec41f46b9b9e364ee062ddf3b8",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Bill Gates is Elizabeth Bernard\nThe name of the mother of Bill Gates is Henrietta Knight, Lady Luxborough\nThe place of burial of Henrietta Knight, Lady Luxborough is Church of St Mary the Virgin, Ullenhall\nThe gender of Henrietta Knight, Lady Luxborough is female\nThe name of the father of Henrietta Knight, Lady Luxborough is Henry St John, 1st Viscount St John\nThe name of the mother of Henrietta Knight, Lady Luxborough is Angelica Magdalena Pelissary\n\nThe gender of Henrietta Knight, Lady Luxborough is"
+  },
+  {
+   "context": "chronological_D",
+   "kind": "atomic",
+   "reference": "Q16859358|P21|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:popular:352",
+   "unit_id": "d17b8d8c8687c84f72880f89e224cc172b8cbc8a6ea3fdde0fb4c8ead7460122",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Bill Gates is Lynne Spears\nThe name of the mother of Bill Gates is Henrietta Knight, Lady Luxborough\nThe place of burial of Henrietta Knight, Lady Luxborough is Church of St Mary the Virgin, Ullenhall\nThe gender of Henrietta Knight, Lady Luxborough is female\nThe name of the father of Henrietta Knight, Lady Luxborough is Henry St John, 1st Viscount St John\nThe name of the mother of Henrietta Knight, Lady Luxborough is Angelica Magdalena Pelissary\n\nThe gender of Henrietta Knight, Lady Luxborough is"
+  },
+  {
+   "context": "none",
+   "kind": "atomic",
+   "reference": "Q16859358|P21|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:popular:352",
+   "unit_id": "6725bb46739d195eff1d1448409d3bffe36d39841d674e66a4a586a62c136213",
+   "user_text": "The gender of Henrietta Knight, Lady Luxborough is"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "atomic",
+   "reference": "Q16859358|P22|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:popular:352",
+   "unit_id": "cdc0df2b1996aa7508743cde17ab90f30fc5039ef5a3fdf084a5f109140dd4eb",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Bill Gates is Elizabeth Bernard\nThe name of the mother of Bill Gates is Henrietta Knight, Lady Luxborough\nThe place of burial of Henrietta Knight, Lady Luxborough is Church of St Mary the Virgin, Ullenhall\nThe gender of Henrietta Knight, Lady Luxborough is female\nThe name of the father of Henrietta Knight, Lady Luxborough is Henry St John, 1st Viscount St John\nThe name of the mother of Henrietta Knight, Lady Luxborough is Angelica Magdalena Pelissary\n\nThe name of the father of Henrietta Knight, Lady Luxborough is"
+  },
+  {
+   "context": "chronological_D",
+   "kind": "atomic",
+   "reference": "Q16859358|P22|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:popular:352",
+   "unit_id": "94f023d6c7126810ebee4272702a93716bbab188faca47b72f184f187a936a91",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Bill Gates is Lynne Spears\nThe name of the mother of Bill Gates is Henrietta Knight, Lady Luxborough\nThe place of burial of Henrietta Knight, Lady Luxborough is Church of St Mary the Virgin, Ullenhall\nThe gender of Henrietta Knight, Lady Luxborough is female\nThe name of the father of Henrietta Knight, Lady Luxborough is Henry St John, 1st Viscount St John\nThe name of the mother of Henrietta Knight, Lady Luxborough is Angelica Magdalena Pelissary\n\nThe name of the father of Henrietta Knight, Lady Luxborough is"
+  },
+  {
+   "context": "none",
+   "kind": "atomic",
+   "reference": "Q16859358|P22|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:popular:352",
+   "unit_id": "4043f651495555a08bcbd6cc841d6d7c642da6e21a6b5ebcd74bd14c34454a88",
+   "user_text": "The name of the father of Henrietta Knight, Lady Luxborough is"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "atomic",
+   "reference": "Q16859358|P25|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:popular:352",
+   "unit_id": "f8928aef4702da6eb21794955d37a7590029844131d39a7134317e0828d5a43a",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Bill Gates is Elizabeth Bernard\nThe name of the mother of Bill Gates is Henrietta Knight, Lady Luxborough\nThe place of burial of Henrietta Knight, Lady Luxborough is Church of St Mary the Virgin, Ullenhall\nThe gender of Henrietta Knight, Lady Luxborough is female\nThe name of the father of Henrietta Knight, Lady Luxborough is Henry St John, 1st Viscount St John\nThe name of the mother of Henrietta Knight, Lady Luxborough is Angelica Magdalena Pelissary\n\nThe name of the mother of Henrietta Knight, Lady Luxborough is"
+  },
+  {
+   "context": "chronological_D",
+   "kind": "atomic",
+   "reference": "Q16859358|P25|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:popular:352",
+   "unit_id": "3bd9cb34a0b169173a3b2d99e58a0026adc1342edead4930242918edc60a31c4",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Bill Gates is Lynne Spears\nThe name of the mother of Bill Gates is Henrietta Knight, Lady Luxborough\nThe place of burial of Henrietta Knight, Lady Luxborough is Church of St Mary the Virgin, Ullenhall\nThe gender of Henrietta Knight, Lady Luxborough is female\nThe name of the father of Henrietta Knight, Lady Luxborough is Henry St John, 1st Viscount St John\nThe name of the mother of Henrietta Knight, Lady Luxborough is Angelica Magdalena Pelissary\n\nThe name of the mother of Henrietta Knight, Lady Luxborough is"
+  },
+  {
+   "context": "none",
+   "kind": "atomic",
+   "reference": "Q16859358|P25|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:popular:352",
+   "unit_id": "6ff63739ace7b41894e4747e5f5993df80c77e7c8ab4a4b39604c13751c3711e",
+   "user_text": "The name of the mother of Henrietta Knight, Lady Luxborough is"
+  },
+  {
+   "context": "given_facts",
+   "kind": "downstream",
+   "reference": "rippleedits:popular:7:Compositionality_II:0:0",
+   "root_id": "rippleedits:popular:7",
+   "unit_id": "230c454711c10eb8032251268ea482ebf86fd0dc3402e1edc15ad4c9e1e44169",
+   "user_text": "The following task-relevant records are supplied.\nThe name of the country which Manila is the capital of is Philippines\nThe name of the anthem of Philippines is Hatikvah\n\nThe name of the anthem of the country which Manila is the capital of is"
+  },
+  {
+   "context": "canonical",
+   "kind": "downstream",
+   "reference": "rippleedits:popular:7:Compositionality_II:0:0",
+   "root_id": "rippleedits:popular:7",
+   "unit_id": "db341f04cf81ac31059ec6ceb97ef56ce4917233a53b83e01d498361496679f3",
+   "user_text": "The following are the current authoritative records.\nThe name of the country which Manila is the capital of is Philippines\nThe name of the anthem of Philippines is Hatikvah\n\nThe name of the anthem of the country which Manila is the capital of is"
+  },
+  {
+   "context": "none",
+   "kind": "downstream",
+   "reference": "rippleedits:popular:7:Compositionality_II:0:0",
+   "root_id": "rippleedits:popular:7",
+   "unit_id": "9480286666de2a71bf00b597c48ce62ce025797593aa2cd58d5192ad67f0177e",
+   "user_text": "The name of the anthem of the country which Manila is the capital of is"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "atomic",
+   "reference": "Q1461|P1376|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:popular:7",
+   "unit_id": "30737508e7f7bcf68c281cc216699aae7859ccc52c70ba8cd100b6c5807a42b8",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the anthem of Philippines is Anthem of the Republic of Karelia\nThe name of the country which Manila is the capital of is Philippines\nThe name of the anthem of Philippines is Hatikvah\n\nThe name of the country which Manila is the capital of is"
+  },
+  {
+   "context": "chronological_D",
+   "kind": "atomic",
+   "reference": "Q1461|P1376|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:popular:7",
+   "unit_id": "d43cd34529a646dc89219540b35b204be80daf30e8c78ad635eaf9cb4bcd65ca",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the anthem of Philippines is Nad Tatrou sa blýska\nThe name of the country which Manila is the capital of is Philippines\nThe name of the anthem of Philippines is Hatikvah\n\nThe name of the country which Manila is the capital of is"
+  },
+  {
+   "context": "none",
+   "kind": "atomic",
+   "reference": "Q1461|P1376|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:popular:7",
+   "unit_id": "a2ffcbc0bd827343985561332ebc772cd95cbc472904c763199bd36ed1ebaf19",
+   "user_text": "The name of the country which Manila is the capital of is"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "atomic",
+   "reference": "Q928|P85|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:popular:7",
+   "unit_id": "304f2bad15ac1639049c5660084737f6f5cc28551a37f49c83352eb053eee0eb",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the anthem of Philippines is Anthem of the Republic of Karelia\nThe name of the country which Manila is the capital of is Philippines\nThe name of the anthem of Philippines is Hatikvah\n\nThe name of the anthem of Philippines is"
+  },
+  {
+   "context": "chronological_D",
+   "kind": "atomic",
+   "reference": "Q928|P85|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:popular:7",
+   "unit_id": "db4fb9981f710342cfe1bfc6eae90919c1600f4a3d0f1448669b9af2182e5e3e",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the anthem of Philippines is Nad Tatrou sa blýska\nThe name of the country which Manila is the capital of is Philippines\nThe name of the anthem of Philippines is Hatikvah\n\nThe name of the anthem of Philippines is"
+  },
+  {
+   "context": "none",
+   "kind": "atomic",
+   "reference": "Q928|P85|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:popular:7",
+   "unit_id": "cd83f6caa5cc06e6e04b1f2d1512655ecf20e16286ce434d6a04236722a4492d",
+   "user_text": "The name of the anthem of Philippines is"
+  }
+ ]
+}

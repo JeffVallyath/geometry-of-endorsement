@@ -1,0 +1,138 @@
+{
+  "root_id": "SSC1-FINAL-0035",
+  "cases": 1,
+  "formats": 2,
+  "histories": [
+    {
+      "origin": 3,
+      "changed_facts": 2,
+      "prefix_tokens": 517
+    },
+    {
+      "origin": 5,
+      "changed_facts": 2,
+      "prefix_tokens": 517
+    }
+  ],
+  "layers": {
+    "early": 16,
+    "later": 26
+  },
+  "results": [
+    {
+      "code": "literal_No_Yes",
+      "query_id": "SSC1-FINAL-0035-d0-extra3",
+      "label": "LATER-FOLLOWING",
+      "probability_gap": 0.9525500039918002,
+      "error_early": 0.9584193803997291,
+      "error_later": 0.005869376407928836,
+      "probabilities": {
+        "AA": 0.9975581541926914,
+        "AB": 0.03361409443621835,
+        "BA": 0.9979028512438762,
+        "BB": 0.04500815020089124
+      },
+      "strict_direct_checks": [
+        {
+          "state": "AB",
+          "recipient": "BB",
+          "query_id": "SSC1-FINAL-0035-d0-03",
+          "p_correct": 0.9999143055187606,
+          "mass": 0.9999350310722951,
+          "recipient_probability_change": 8.612260038454167e-08,
+          "passed": true
+        },
+        {
+          "state": "AB",
+          "recipient": "BB",
+          "query_id": "SSC1-FINAL-0035-d0-extra0",
+          "p_correct": 0.9999307987503631,
+          "mass": 0.9999565581537878,
+          "recipient_probability_change": 1.1697634896390419e-05,
+          "passed": true
+        },
+        {
+          "state": "BA",
+          "recipient": "AA",
+          "query_id": "SSC1-FINAL-0035-d0-03",
+          "p_correct": 0.9992299996442124,
+          "mass": 0.9997756578591528,
+          "recipient_probability_change": 8.612357214510258e-05,
+          "passed": true
+        },
+        {
+          "state": "BA",
+          "recipient": "AA",
+          "query_id": "SSC1-FINAL-0035-d0-extra0",
+          "p_correct": 0.9999537255828341,
+          "mass": 0.999958542159132,
+          "recipient_probability_change": 1.5417400903716683e-06,
+          "passed": true
+        }
+      ]
+    },
+    {
+      "code": "coded_A_B",
+      "query_id": "SSC1-FINAL-0035-d1-extra3",
+      "label": "LATER-FOLLOWING",
+      "probability_gap": 0.9586676706137618,
+      "error_early": 0.9619347714349867,
+      "error_later": 0.003267100821224958,
+      "probabilities": {
+        "AA": 0.9875894771993412,
+        "AB": 0.023544637301524694,
+        "BA": 0.9887465095577364,
+        "BB": 0.02892180658557946
+      },
+      "strict_direct_checks": [
+        {
+          "state": "AB",
+          "recipient": "BB",
+          "query_id": "SSC1-FINAL-0035-d1-03",
+          "p_correct": 0.999927819251075,
+          "mass": 0.9994053682936939,
+          "recipient_probability_change": 3.218445225772193e-06,
+          "passed": true
+        },
+        {
+          "state": "AB",
+          "recipient": "BB",
+          "query_id": "SSC1-FINAL-0035-d1-extra0",
+          "p_correct": 0.999911041744617,
+          "mass": 0.9996856887279103,
+          "recipient_probability_change": 1.0942433720240174e-06,
+          "passed": true
+        },
+        {
+          "state": "BA",
+          "recipient": "AA",
+          "query_id": "SSC1-FINAL-0035-d1-03",
+          "p_correct": 0.9998383355037137,
+          "mass": 0.9993548070620829,
+          "recipient_probability_change": 1.2936172516297972e-05,
+          "passed": true
+        },
+        {
+          "state": "BA",
+          "recipient": "AA",
+          "query_id": "SSC1-FINAL-0035-d1-extra0",
+          "p_correct": 0.9999094482088604,
+          "mass": 0.9996788241923604,
+          "recipient_probability_change": 1.4387023657969067e-06,
+          "passed": true
+        }
+      ]
+    }
+  ],
+  "strict_direct_checks": 8,
+  "all_direct_passed": true,
+  "minimum_direct_probability": 0.9992299996442124,
+  "maximum_direct_change": 8.612357214510258e-05,
+  "minimum_direct_mass": 0.9993548070620829,
+  "replay_rows": 108,
+  "sham_checks": 12,
+  "full_copy_checks": 12,
+  "scored_rows": 156,
+  "recorded_forwards": 166,
+  "neural_forwards_this_replay": 0
+}

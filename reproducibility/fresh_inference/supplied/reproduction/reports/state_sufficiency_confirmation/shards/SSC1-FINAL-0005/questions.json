@@ -1,0 +1,580 @@
+[
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0005-d0-00",
+    "root_id": "SSC1-FINAL-0005",
+    "spec": {
+      "a": 0,
+      "b": 1,
+      "kind": "direct",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does Dion favor the Museum proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0005-d0-01",
+    "root_id": "SSC1-FINAL-0005",
+    "spec": {
+      "a": 0,
+      "b": 1,
+      "kind": "opposes",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does Dion oppose the Museum proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0005-d0-02",
+    "root_id": "SSC1-FINAL-0005",
+    "spec": {
+      "a": 0,
+      "b": 1,
+      "kind": "same",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Do Dion and Ari take the same side on Museum?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0005-d0-03",
+    "root_id": "SSC1-FINAL-0005",
+    "spec": {
+      "a": 1,
+      "b": 0,
+      "kind": "direct",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does Ari favor the Museum proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0005-d0-04",
+    "root_id": "SSC1-FINAL-0005",
+    "spec": {
+      "a": 1,
+      "b": 0,
+      "kind": "opposes",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does Ari oppose the Museum proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0005-d0-05",
+    "root_id": "SSC1-FINAL-0005",
+    "spec": {
+      "a": 0,
+      "b": 1,
+      "kind": "direct",
+      "p": 2
+    },
+    "split": "FINAL",
+    "text": "Does Dion favor the Library proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0005-d0-06",
+    "root_id": "SSC1-FINAL-0005",
+    "spec": {
+      "a": 0,
+      "b": 1,
+      "kind": "both",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Is the Museum proposal supported by both Dion and Ari?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0005-d0-07",
+    "root_id": "SSC1-FINAL-0005",
+    "spec": {
+      "a": 0,
+      "b": 1,
+      "kind": "either",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Dion and Ari support Museum?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0005-d0-08",
+    "root_id": "SSC1-FINAL-0005",
+    "spec": {
+      "a": 2,
+      "b": 0,
+      "kind": "same",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Do Ivo and Dion take the same side on Museum?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0005-d0-09",
+    "root_id": "SSC1-FINAL-0005",
+    "spec": {
+      "a": 2,
+      "b": 0,
+      "kind": "both",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Is the Museum proposal supported by both Ivo and Dion?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0005-d0-10",
+    "root_id": "SSC1-FINAL-0005",
+    "spec": {
+      "a": 2,
+      "b": 0,
+      "kind": "either",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Ivo and Dion support Museum?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0005-d0-11",
+    "root_id": "SSC1-FINAL-0005",
+    "spec": {
+      "a": 2,
+      "b": 0,
+      "kind": "direct",
+      "p": 2
+    },
+    "split": "FINAL",
+    "text": "Does Ivo favor the Library proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0005-d0-extra0",
+    "root_id": "SSC1-FINAL-0005",
+    "spec": {
+      "a": 2,
+      "b": 0,
+      "kind": "direct",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does Ivo favor the Museum proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0005-d0-extra1",
+    "root_id": "SSC1-FINAL-0005",
+    "spec": {
+      "a": 1,
+      "b": 2,
+      "kind": "same",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Do Ari and Ivo take the same side on Museum?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0005-d0-extra2",
+    "root_id": "SSC1-FINAL-0005",
+    "spec": {
+      "a": 1,
+      "b": 2,
+      "kind": "both",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Is the Museum proposal supported by both Ari and Ivo?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0005-d0-extra3",
+    "root_id": "SSC1-FINAL-0005",
+    "spec": {
+      "a": 1,
+      "b": 2,
+      "kind": "either",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Ari and Ivo support Museum?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0005-d0-extra4",
+    "root_id": "SSC1-FINAL-0005",
+    "spec": {
+      "a": 3,
+      "b": 0,
+      "kind": "direct",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does Hana favor the Museum proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-FINAL-0005-d1-00",
+    "root_id": "SSC1-FINAL-0005",
+    "spec": {
+      "a": 0,
+      "b": 1,
+      "kind": "direct",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does Dion favor the Museum proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0005-d1-01",
+    "root_id": "SSC1-FINAL-0005",
+    "spec": {
+      "a": 0,
+      "b": 1,
+      "kind": "opposes",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does Dion oppose the Museum proposal?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0005-d1-02",
+    "root_id": "SSC1-FINAL-0005",
+    "spec": {
+      "a": 0,
+      "b": 1,
+      "kind": "same",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Do Dion and Ari take the same side on Museum?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0005-d1-03",
+    "root_id": "SSC1-FINAL-0005",
+    "spec": {
+      "a": 1,
+      "b": 0,
+      "kind": "direct",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does Ari favor the Museum proposal?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-FINAL-0005-d1-04",
+    "root_id": "SSC1-FINAL-0005",
+    "spec": {
+      "a": 1,
+      "b": 0,
+      "kind": "opposes",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does Ari oppose the Museum proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0005-d1-05",
+    "root_id": "SSC1-FINAL-0005",
+    "spec": {
+      "a": 0,
+      "b": 1,
+      "kind": "direct",
+      "p": 2
+    },
+    "split": "FINAL",
+    "text": "Does Dion favor the Library proposal?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0005-d1-06",
+    "root_id": "SSC1-FINAL-0005",
+    "spec": {
+      "a": 0,
+      "b": 1,
+      "kind": "both",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Is the Museum proposal supported by both Dion and Ari?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0005-d1-07",
+    "root_id": "SSC1-FINAL-0005",
+    "spec": {
+      "a": 0,
+      "b": 1,
+      "kind": "either",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Dion and Ari support Museum?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-FINAL-0005-d1-08",
+    "root_id": "SSC1-FINAL-0005",
+    "spec": {
+      "a": 2,
+      "b": 0,
+      "kind": "same",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Do Ivo and Dion take the same side on Museum?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0005-d1-09",
+    "root_id": "SSC1-FINAL-0005",
+    "spec": {
+      "a": 2,
+      "b": 0,
+      "kind": "both",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Is the Museum proposal supported by both Ivo and Dion?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0005-d1-10",
+    "root_id": "SSC1-FINAL-0005",
+    "spec": {
+      "a": 2,
+      "b": 0,
+      "kind": "either",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Ivo and Dion support Museum?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-FINAL-0005-d1-11",
+    "root_id": "SSC1-FINAL-0005",
+    "spec": {
+      "a": 2,
+      "b": 0,
+      "kind": "direct",
+      "p": 2
+    },
+    "split": "FINAL",
+    "text": "Does Ivo favor the Library proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-FINAL-0005-d1-extra0",
+    "root_id": "SSC1-FINAL-0005",
+    "spec": {
+      "a": 2,
+      "b": 0,
+      "kind": "direct",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does Ivo favor the Museum proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-FINAL-0005-d1-extra1",
+    "root_id": "SSC1-FINAL-0005",
+    "spec": {
+      "a": 1,
+      "b": 2,
+      "kind": "same",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Do Ari and Ivo take the same side on Museum?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0005-d1-extra2",
+    "root_id": "SSC1-FINAL-0005",
+    "spec": {
+      "a": 1,
+      "b": 2,
+      "kind": "both",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Is the Museum proposal supported by both Ari and Ivo?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-FINAL-0005-d1-extra3",
+    "root_id": "SSC1-FINAL-0005",
+    "spec": {
+      "a": 1,
+      "b": 2,
+      "kind": "either",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Ari and Ivo support Museum?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-FINAL-0005-d1-extra4",
+    "root_id": "SSC1-FINAL-0005",
+    "spec": {
+      "a": 3,
+      "b": 0,
+      "kind": "direct",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does Hana favor the Museum proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  }
+]

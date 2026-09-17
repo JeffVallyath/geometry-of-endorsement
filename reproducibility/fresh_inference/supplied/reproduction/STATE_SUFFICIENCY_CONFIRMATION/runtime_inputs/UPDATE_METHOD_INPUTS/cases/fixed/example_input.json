@@ -1,0 +1,12 @@
+{
+  "actor": "gemma",
+  "commands": [
+    {
+      "end": 1462,
+      "start": 1422,
+      "value": 1
+    }
+  ],
+  "input_id": "b66d96805b3a2a992221328f1b13c4785c8c9e34ac0ae94a22180a0775d8637f",
+  "source_text": "Example 1:\nThis is a fictional community planning meeting. Use only the records below.\nEach named member has independent views. Updating one record leaves the other records unchanged.\nRavi is in favor of the Gallery proposal.\nRavi is opposed to the Harbor proposal.\nPia is opposed to the Gallery proposal.\nPia is opposed to the Harbor proposal.\nEsme is opposed to the Gallery proposal.\nEsme is opposed to the Harbor proposal.\nBela is in favor of the Gallery proposal.\nBela is opposed to the Harbor proposal.\nEnd of records.\nDoes Esme favor the Harbor proposal?\nAnswer with exactly one of No, Yes.\nAnswer: No\n\nExample 2:\nThis is a fictional community planning meeting. Use only the records below.\nEach named member has independent views. Updating one record leaves the other records unchanged.\nGita is opposed to the Garden proposal.\nGita is in favor of the Library proposal.\nJuno is opposed to the Garden proposal.\nJuno is in favor of the Library proposal.\nMina is opposed to the Garden proposal.\nMina is in favor of the Library proposal.\nEsme is in favor of the Garden proposal.\nEsme is in favor of the Library proposal.\nEnd of records.\nDoes Esme favor the Library proposal?\nAnswer with exactly one of No, Yes.\nAnswer: Yes\n\nNow the actual records:\nThis is a fictional community planning meeting. Use only the records below.\nEach named member has independent views. Updating one record leaves the other records unchanged.\nWren is opposed to the Theater proposal.\nQuin is opposed to the Theater proposal.\nQuin is opposed to the Orchard proposal.\nFinn is opposed to the Theater proposal.\nFinn is in favor of the Orchard proposal.\nWren is in favor of the Orchard proposal.\nEli is in favor of the Theater proposal.\nEli is in favor of the Orchard proposal.\nEnd of records.\n"
+}

@@ -1,0 +1,48 @@
+{
+  "cpu": {
+    "python": "3.11.15",
+    "platform": "Windows x86_64",
+    "packages": {
+      "safetensors": "0.8.0",
+      "tokenizers": "0.22.2",
+      "huggingface-hub": "0.36.2",
+      "typing-extensions": "4.16.0",
+      "tqdm": "4.70.1",
+      "colorama": "0.4.6",
+      "requests": "2.34.2",
+      "certifi": "2026.7.22",
+      "urllib3": "2.7.0",
+      "idna": "3.19",
+      "charset-normalizer": "3.5.1",
+      "pyyaml": "6.0.3",
+      "packaging": "26.3",
+      "fsspec": "2026.7.0",
+      "filelock": "3.32.3",
+      "transformers": "4.56.2",
+      "regex": "2026.9.10",
+      "numpy": "2.3.5",
+      "torch": "2.8.0+cpu",
+      "jinja2": "3.1.6",
+      "markupsafe": "3.0.3",
+      "networkx": "3.6.1",
+      "sympy": "1.14.0",
+      "mpmath": "1.3.0"
+    },
+    "pretrained_models_loaded": false
+  },
+  "historical_inference": {
+    "python": "3.12.3",
+    "torch": "2.11.0+cu128",
+    "numpy": "2.2.6",
+    "transformers": "4.56.2",
+    "cuda": "12.8",
+    "cudnn": "91900",
+    "gpu_model": "NVIDIA A100-SXM4-40GB",
+    "backbone": "bfloat16",
+    "workspace": "float32",
+    "clone_chunk": 12
+  },
+  "inference_setup_tested_in_preparation": false,
+  "transitive_inference_lock": "Not included: minimal direct requirements plus original scientific runtime binding; must resolve and verify GPU environment before inference.",
+  "original_environment_sha256": "9ccadb839f9258dcde61815e3a1c50c2aed6210c051e642f4f5dfc95174fc70c"
+}

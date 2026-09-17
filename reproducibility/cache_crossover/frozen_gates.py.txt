@@ -1,0 +1,106 @@
+"""Frozen replay/eligibility and descriptive crossover gates. No fitted choices."""
+import math
+from continuation.bindings import digest
+
+FLAGS=('prediction','finite','tie','argmax_in_labels','valid')
+GATES=('A','C','AC','D','W','strong')
+
+def metrics(result,gold=None):
+    lp=result['logps'];finite=bool(result['finite'] and len(lp)==2 and all(math.isfinite(x) for x in lp))
+    if finite:
+        m=max(lp);weights=[math.exp(x-m) for x in lp];p=weights[1]/sum(weights);odds=lp[1]-lp[0]
+    else:p=odds=None
+    valid=finite and not result['tie'] and result['argmax_in_labels']
+    return dict(raw_logps_no_yes=list(lp),p_yes=p,semantic_log_odds=odds,mass=result['answer_mass'],
+                finite=finite,tie=result['tie'],argmax_in_labels=result['argmax_in_labels'],prediction=result['prediction'],valid=bool(valid),
+                probabilities=[1-p,p] if p is not None else None,correct=bool(valid and result['prediction']==gold) if gold is not None else None)
+
+def compare(saved,result):
+    actual=metrics(result)
+    expected=saved.get('flags') or {k:saved[k] for k in FLAGS}
+    if any(actual[k]!=expected[k] for k in FLAGS):raise ValueError('REPLAY_DISCRETE_OR_VALIDITY')
+    if not actual['finite'] or not math.isfinite(actual['mass']):raise ValueError('REPLAY_NONFINITE')
+    differences=dict(logp=[abs(x-y) for x,y in zip(actual['raw_logps_no_yes'],saved['raw_logps_no_yes'])],
+                     probability=abs(actual['p_yes']-saved['p_yes']),mass=abs(actual['mass']-saved['mass']))
+    if max(differences['logp'])>.05:raise ValueError('REPLAY_LOGP_TOLERANCE')
+    if differences['probability']>.005 or differences['mass']>.005:raise ValueError('REPLAY_PROBABILITY_OR_MASS_TOLERANCE')
+    if not result['master_unchanged']:raise ValueError('MASTER_MUTATION')
+    return differences
+
+def code_queries(case,joint):
+    # Code-family identity is the token alphabet, not its per-query No/Yes order.
+    # Scores already use semantic No/Yes order; never reorder labels or scores.
+    q=case['questions'][joint]
+    direct=[d for d in case['questions'].values() if sorted(d['labels'])==sorted(q['labels']) and d['spec']['kind']=='direct'
+            and d['spec']['a'] in (q['spec']['a'],q['spec']['b']) and d['spec']['p']==q['spec']['p']]
+    if len(direct)!=2:raise ValueError('SEMANTIC_OPERAND_BINDING')
+    return q,direct
+
+def truth(case,q):
+    import reconstruct
+    return reconstruct.truth(case['world']['terminal']['values'],q['spec'])
+
+def eligibility(case,records,joint):
+    # This borrowed function only evaluates one six-query root, not saved-score
+    # reconstruction, prediction fitting or any behavioral analysis entrypoint.
+    from robustness import gates
+    status,_=gates(dict(root=case['world']),case['questions'],records,case['condition'],case['questions'][joint])
+    return {k:status[k] for k in GATES}
+
+def preserve_eligibility(case,current,saved):
+    statuses={}
+    for q in case['questions'].values():
+        if q['spec']!=case['primary_semantic_spec']:continue
+        expected=eligibility(case,saved,q['query_id']);actual=eligibility(case,current,q['query_id'])
+        primary=q['query_id']==case['primary_query_id']
+        if primary and actual!=expected:raise ValueError('REPLAY_ELIGIBILITY_CHANGED:'+q['query_id'])
+        if primary and any(actual[k]!=case['gates'][k] for k in GATES):raise ValueError('ORIGINAL_PRIMARY_GATES_CHANGED')
+        # GOAL freezes the primary gate and retains alternate-code statuses.
+        # A derived alternate threshold crossing is not a new engineering stop;
+        # its exact tokens/discrete flags and numeric replay limits still apply.
+        statuses[q['query_id']]=dict(primary=primary,saved=expected,fresh=actual,changed=actual!=expected)
+    if len(statuses)!=2:raise ValueError('BOTH_SEMANTIC_CODES_REQUIRED')
+    return statuses
+
+def effects(values):
+    aa,ab,ba,bb=(values[s] for s in ('AA','AB','BA','BB'))
+    if any(x is None or not math.isfinite(x) for x in (aa,ab,ba,bb)):return dict(cells=values,early=None,later=None,interaction=None)
+    return dict(cells=values,early=[ba-aa,bb-ab],later=[ab-aa,bb-ba],interaction=bb-ba-ab+aa)
+
+def summarize_case(case,cells):
+    summaries=[]
+    joints=sorted((q for q in case['questions'].values() if q['spec']==case['primary_semantic_spec']),key=lambda q:q['query_id']!=case['primary_query_id'])
+    for q in joints:
+        qid=q['query_id'];primary=qid==case['primary_query_id'];_,direct=code_queries(case,qid)
+        joint={s:cells[s,qid] for s in ('AA','AB','BA','BB')}
+        preservation=[];assessed=True
+        for state,recipient in (('AB','BB'),('BA','AA')):
+            for d in direct:
+                a,b,r=cells['AA',d['query_id']],cells['BB',d['query_id']],cells[state,d['query_id']]
+                eligible=a['correct'] and b['correct'];gold=truth(case,d)
+                p=lambda row:row['probabilities'][gold] if row['probabilities'] is not None else None
+                delta=abs(p(r)-p(cells[recipient,d['query_id']])) if p(r) is not None else None
+                if primary:ok=bool(r['correct'] and p(r) is not None and p(r)>=.95 and r['mass']>=.90 and delta<=.02)
+                else:
+                    assessed &= bool(eligible)
+                    ok=bool(r['correct']) if eligible else False
+                preservation.append(dict(state=state,query_id=d['query_id'],recipient=recipient,baseline_both_correct=bool(eligible),
+                                         p_correct=p(r),recipient_probability_change=delta,passed=ok))
+        passed=assessed and all(r['passed'] for r in preservation)
+        p={s:joint[s]['p_yes'] for s in joint};gap=abs(p['BB']-p['AA']) if p['BB'] is not None and p['AA'] is not None else None
+        error_e=(abs(p['BA']-p['BB'])+abs(p['AB']-p['AA']))/2 if all(v is not None for v in p.values()) else None
+        error_l=(abs(p['BA']-p['AA'])+abs(p['AB']-p['BB']))/2 if all(v is not None for v in p.values()) else None
+        admissible=passed and all(joint[s]['valid'] and joint[s]['mass']>=.90 for s in ('AB','BA'))
+        label='MIXED/INCONCLUSIVE'
+        if gap is not None and gap<.10:label='LOW-DISCRIMINATION'
+        elif admissible and error_e is not None:
+            early=joint['AB']['prediction']==joint['AA']['prediction'] and joint['BA']['prediction']==joint['BB']['prediction']
+            later=joint['AB']['prediction']==joint['BB']['prediction'] and joint['BA']['prediction']==joint['AA']['prediction']
+            if error_e<=.05 and error_l>=.10 and early:label='EARLY-FOLLOWING'
+            elif error_l<=.05 and error_e>=.10 and later:label='LATER-FOLLOWING'
+        summaries.append(dict(root_id=case['root_id'],pair_id=case['selection']['pair_id'],role=case['selection']['role'],
+            original_split=case['selection']['original_neural_split'],query_id=qid,primary=primary,label=label,probability_gap=gap,
+            error_early=error_e,error_later=error_l,probability_effects=effects(p),
+            log_odds_effects=effects({s:joint[s]['semantic_log_odds'] for s in joint}),direct_checks=preservation,
+            selectivity_assessed=assessed,direct_preservation=passed,hybrid_joint_valid_mass=all(joint[s]['valid'] and joint[s]['mass']>=.90 for s in ('AB','BA'))))
+    return summaries

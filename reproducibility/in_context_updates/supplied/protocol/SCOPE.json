@@ -1,0 +1,2101 @@
+{
+  "study": "ICMH1-RIPPLE-v2",
+  "status": "PROPOSED_AMENDMENT_NOT_EXECUTED",
+  "source_archive": {
+    "name": "EXTERNAL_MEMIT_GPTJ_H100_CANARY_REPRO_v7.zip",
+    "sha256": "364579c7c0e91f01f8290b88c436c3cb71956cee63664fcccd8319d5e7d08600"
+  },
+  "original_proposal": {
+    "name": "ICMH1_FOLLOWUP_SPEC.zip",
+    "sha256": "f99647b51d06d40c3d326a24d6d7f0861674adec953ea541d65a17e7f3291395",
+    "member_sha256": {
+      "SPEC.md": "d72426e6be6444b9538bfd3e2673884d54f77e3441e1cfd85178320670ed74bf",
+      "SPEC.json": "4d110d55099c5754a9182d9c852c29f37e9ff15f398a4ae724d56b10e105c179",
+      "LAUNCHER.txt": "7a27094a5be2663bd998dc4ec117155f80773bfe26b83bbd186a99c0ae9773aa",
+      "PHASE1_DIAGNOSIS_MEMO.md": "2ede4f9822fb85d2824228dd978c87a65cf90bf7ca83854734a7794b132233f8"
+    }
+  },
+  "source_member_sha256": {
+    "manifests/splits.json": "dc06a62dfe79b59c9916843b375ab30bf582b73f25ac4e27c289406d15507f3b",
+    "manifests/questions.json": "54fca19b1c46df098fa9bfd07abd26d7c77e31d1ab996fd79342a945517779b8",
+    "manifests/histories.json": "44c900cd01585bff92b8aaed67823e6af5adaca7840c31cf38938f64d42497e2",
+    "manifests/entities.json": "c333ed406bd3b13cc383844884884352afe14c22fb59e4819366d46e0efb27f6",
+    "manifests/dependencies.json": "e901f7703975878395a6f56b714c61183295b1bca2edd759ccbfa4d26e2daab1",
+    "manifests/summary.json": "ae517fdd8770e7a8a390a4ea255d6d361da15f96317295f96fb4e020e7d3991c",
+    "evcpu/schedule.py": "eaa1a07e02d220984013a3375f1fc89d87a85c6be6c3abb372f1716da1798564",
+    "SEMANTIC_POLICY.md": "0c0fb697452b15019d98b1be64381c8e672934764cbb37acbc0db6e19c5cde7a"
+  },
+  "model": "Qwen/Qwen2.5-7B-Instruct",
+  "model_revision_policy": "Resolve and record an immutable model/tokenizer revision before first inference; no output-dependent model choice.",
+  "development": [
+    "rippleedits:random:1898",
+    "rippleedits:random:636",
+    "rippleedits:random:683",
+    "rippleedits:random:1174",
+    "rippleedits:random:575"
+  ],
+  "qualification": [
+    "rippleedits:popular:382",
+    "rippleedits:random:1223",
+    "rippleedits:random:1289",
+    "rippleedits:popular:415",
+    "rippleedits:popular:352",
+    "rippleedits:popular:7"
+  ],
+  "final": [
+    "rippleedits:popular:670",
+    "rippleedits:popular:736",
+    "rippleedits:random:1791",
+    "rippleedits:popular:152",
+    "rippleedits:popular:133",
+    "rippleedits:popular:837",
+    "rippleedits:popular:622",
+    "rippleedits:random:60",
+    "rippleedits:popular:703",
+    "rippleedits:random:1066",
+    "rippleedits:popular:110",
+    "rippleedits:popular:10",
+    "rippleedits:popular:118",
+    "rippleedits:popular:155",
+    "rippleedits:popular:836",
+    "rippleedits:random:1468",
+    "rippleedits:popular:38",
+    "rippleedits:random:354",
+    "rippleedits:popular:539",
+    "rippleedits:random:17",
+    "rippleedits:random:1775",
+    "rippleedits:random:1202",
+    "rippleedits:popular:85",
+    "rippleedits:random:1320",
+    "rippleedits:popular:824",
+    "rippleedits:random:491",
+    "rippleedits:popular:483",
+    "rippleedits:random:1689",
+    "rippleedits:popular:627",
+    "rippleedits:popular:717",
+    "rippleedits:popular:107",
+    "rippleedits:random:857",
+    "rippleedits:popular:620",
+    "rippleedits:random:618"
+  ],
+  "repeats": [
+    "rippleedits:popular:670",
+    "rippleedits:random:618"
+  ],
+  "mquake_not_run": {
+    "sealed_nine": [
+      "mquake:1117",
+      "mquake:921",
+      "mquake:353",
+      "mquake:39",
+      "mquake:238",
+      "mquake:862",
+      "mquake:306",
+      "mquake:274",
+      "mquake:495"
+    ],
+    "all_other_mquake": "No new model inference in this task, including the proposed secondary track and interface-only qualification."
+  },
+  "counts": {
+    "development": {
+      "roots": 5,
+      "questions": 14,
+      "current_records": 19
+    },
+    "qualification": {
+      "roots": 6,
+      "questions": 16,
+      "current_records": 22
+    },
+    "final": {
+      "roots": 34,
+      "questions": 98,
+      "current_records": 132
+    }
+  },
+  "root_metadata": [
+    {
+      "phase": "development",
+      "root_id": "rippleedits:random:1898",
+      "cluster_id": "edited_subject_cluster:0af7e2ea8d1a03cddff9",
+      "question_ids": [
+        "rippleedits:random:1898:Compositionality_I:0:0",
+        "rippleedits:random:1898:Compositionality_I:2:0",
+        "rippleedits:random:1898:Compositionality_I:3:0",
+        "rippleedits:random:1898:Compositionality_I:5:0",
+        "rippleedits:random:1898:Compositionality_I:7:0",
+        "rippleedits:random:1898:Compositionality_I:8:0"
+      ],
+      "current_record_count": 7,
+      "current_record_order": [
+        [
+          "Q76250269",
+          "P22",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q17001461",
+          "P119",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q17001461",
+          "P19",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q17001461",
+          "P20",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q17001461",
+          "P21",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q17001461",
+          "P22",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q17001461",
+          "P25",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ]
+      ],
+      "changed_address": [
+        "Q76250269",
+        "P22",
+        "benchmark snapshot; no explicit temporal qualifier supplied"
+      ],
+      "changed_slot_ids": {
+        "B": "Q56166223",
+        "D": "Q45619755",
+        "C": "Q17001461"
+      },
+      "strong_question_count": 6
+    },
+    {
+      "phase": "development",
+      "root_id": "rippleedits:random:636",
+      "cluster_id": "edited_subject_cluster:80e62e6583be5e319896",
+      "question_ids": [
+        "rippleedits:random:636:Compositionality_I:0:0"
+      ],
+      "current_record_count": 2,
+      "current_record_order": [
+        [
+          "Q7383651",
+          "P19",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q1032654",
+          "P30",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ]
+      ],
+      "changed_address": [
+        "Q7383651",
+        "P19",
+        "benchmark snapshot; no explicit temporal qualifier supplied"
+      ],
+      "changed_slot_ids": {
+        "B": "Q2537220",
+        "D": "Q6537297",
+        "C": "Q1032654"
+      },
+      "strong_question_count": 1
+    },
+    {
+      "phase": "development",
+      "root_id": "rippleedits:random:683",
+      "cluster_id": "edited_subject_cluster:7c353eef07f63f1627ab",
+      "question_ids": [
+        "rippleedits:random:683:Compositionality_I:0:0",
+        "rippleedits:random:683:Compositionality_I:1:0",
+        "rippleedits:random:683:Compositionality_I:2:0"
+      ],
+      "current_record_count": 4,
+      "current_record_order": [
+        [
+          "Q6760840",
+          "P25",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q75354114",
+          "P21",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q75354114",
+          "P22",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q75354114",
+          "P25",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ]
+      ],
+      "changed_address": [
+        "Q6760840",
+        "P25",
+        "benchmark snapshot; no explicit temporal qualifier supplied"
+      ],
+      "changed_slot_ids": {
+        "B": "Q75764085",
+        "D": "Q56650599",
+        "C": "Q75354114"
+      },
+      "strong_question_count": 3
+    },
+    {
+      "phase": "development",
+      "root_id": "rippleedits:random:1174",
+      "cluster_id": "edited_subject_cluster:36fe288a13bdb12cea7f",
+      "question_ids": [
+        "rippleedits:random:1174:Compositionality_I:0:0",
+        "rippleedits:random:1174:Compositionality_I:4:0",
+        "rippleedits:random:1174:Compositionality_I:5:0"
+      ],
+      "current_record_count": 4,
+      "current_record_order": [
+        [
+          "Q75275155",
+          "P25",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q102117421",
+          "P21",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q102117421",
+          "P22",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q102117421",
+          "P25",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ]
+      ],
+      "changed_address": [
+        "Q75275155",
+        "P25",
+        "benchmark snapshot; no explicit temporal qualifier supplied"
+      ],
+      "changed_slot_ids": {
+        "B": "Q100152484",
+        "D": "Q75341156",
+        "C": "Q102117421"
+      },
+      "strong_question_count": 3
+    },
+    {
+      "phase": "development",
+      "root_id": "rippleedits:random:575",
+      "cluster_id": "edited_subject_cluster:7de9e485c65fa3144df9",
+      "question_ids": [
+        "rippleedits:random:575:Compositionality_II:0:0"
+      ],
+      "current_record_count": 2,
+      "current_record_order": [
+        [
+          "Q45404401",
+          "P22",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q45356242",
+          "P21",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ]
+      ],
+      "changed_address": [
+        "Q45356242",
+        "P21",
+        "benchmark snapshot; no explicit temporal qualifier supplied"
+      ],
+      "changed_slot_ids": {
+        "B": "Q17148251",
+        "D": "Q189125",
+        "C": "Q97595519"
+      },
+      "strong_question_count": 1
+    },
+    {
+      "phase": "qualification",
+      "root_id": "rippleedits:popular:382",
+      "cluster_id": "edited_subject_cluster:9b418143e3b8c0384a5e",
+      "question_ids": [
+        "rippleedits:popular:382:Compositionality_I:1:0",
+        "rippleedits:popular:382:Compositionality_I:3:0"
+      ],
+      "current_record_count": 3,
+      "current_record_order": [
+        [
+          "Q83648587",
+          "P22",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q45362864",
+          "P21",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q45362864",
+          "P22",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ]
+      ],
+      "changed_address": [
+        "Q83648587",
+        "P22",
+        "benchmark snapshot; no explicit temporal qualifier supplied"
+      ],
+      "changed_slot_ids": {
+        "B": "Q3790100",
+        "D": "Q3047193",
+        "C": "Q45362864"
+      },
+      "strong_question_count": 2
+    },
+    {
+      "phase": "qualification",
+      "root_id": "rippleedits:random:1223",
+      "cluster_id": "edited_subject_cluster:817693a9769c6bd98fbd",
+      "question_ids": [
+        "rippleedits:random:1223:Compositionality_I:1:0"
+      ],
+      "current_record_count": 2,
+      "current_record_order": [
+        [
+          "Q12049731",
+          "P19",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q21151",
+          "P36",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ]
+      ],
+      "changed_address": [
+        "Q12049731",
+        "P19",
+        "benchmark snapshot; no explicit temporal qualifier supplied"
+      ],
+      "changed_slot_ids": {
+        "B": "Q125080",
+        "D": "Q83114",
+        "C": "Q21151"
+      },
+      "strong_question_count": 1
+    },
+    {
+      "phase": "qualification",
+      "root_id": "rippleedits:random:1289",
+      "cluster_id": "edited_subject_cluster:f74c7206bf87b7b51b7b",
+      "question_ids": [
+        "rippleedits:random:1289:Compositionality_I:0:0",
+        "rippleedits:random:1289:Compositionality_I:11:0",
+        "rippleedits:random:1289:Compositionality_I:13:0",
+        "rippleedits:random:1289:Compositionality_I:14:0"
+      ],
+      "current_record_count": 5,
+      "current_record_order": [
+        [
+          "Q75769489",
+          "P22",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q3121249",
+          "P119",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q3121249",
+          "P19",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q3121249",
+          "P20",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q3121249",
+          "P21",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ]
+      ],
+      "changed_address": [
+        "Q75769489",
+        "P22",
+        "benchmark snapshot; no explicit temporal qualifier supplied"
+      ],
+      "changed_slot_ids": {
+        "B": "Q361297",
+        "D": "Q4074414",
+        "C": "Q3121249"
+      },
+      "strong_question_count": 4
+    },
+    {
+      "phase": "qualification",
+      "root_id": "rippleedits:popular:415",
+      "cluster_id": "edited_subject_cluster:f0df714d95f2e0797e3e",
+      "question_ids": [
+        "rippleedits:popular:415:Compositionality_I:0:0",
+        "rippleedits:popular:415:Compositionality_I:12:0",
+        "rippleedits:popular:415:Compositionality_I:17:0",
+        "rippleedits:popular:415:Compositionality_I:1:0"
+      ],
+      "current_record_count": 5,
+      "current_record_order": [
+        [
+          "Q21914464",
+          "P25",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q77809",
+          "P119",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q77809",
+          "P19",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q77809",
+          "P20",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q77809",
+          "P21",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ]
+      ],
+      "changed_address": [
+        "Q21914464",
+        "P25",
+        "benchmark snapshot; no explicit temporal qualifier supplied"
+      ],
+      "changed_slot_ids": {
+        "B": "Q22327426",
+        "D": "Q75889976",
+        "C": "Q77809"
+      },
+      "strong_question_count": 4
+    },
+    {
+      "phase": "qualification",
+      "root_id": "rippleedits:popular:352",
+      "cluster_id": "edited_subject_cluster:aa8929021eb11195e82e",
+      "question_ids": [
+        "rippleedits:popular:352:Compositionality_I:0:0",
+        "rippleedits:popular:352:Compositionality_I:7:0",
+        "rippleedits:popular:352:Compositionality_I:8:0",
+        "rippleedits:popular:352:Compositionality_I:9:0"
+      ],
+      "current_record_count": 5,
+      "current_record_order": [
+        [
+          "Q5284",
+          "P25",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q16859358",
+          "P119",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q16859358",
+          "P21",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q16859358",
+          "P22",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q16859358",
+          "P25",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ]
+      ],
+      "changed_address": [
+        "Q5284",
+        "P25",
+        "benchmark snapshot; no explicit temporal qualifier supplied"
+      ],
+      "changed_slot_ids": {
+        "B": "Q75647939",
+        "D": "Q3036419",
+        "C": "Q16859358"
+      },
+      "strong_question_count": 4
+    },
+    {
+      "phase": "qualification",
+      "root_id": "rippleedits:popular:7",
+      "cluster_id": "edited_subject_cluster:eb289f9b27bd3911b55a",
+      "question_ids": [
+        "rippleedits:popular:7:Compositionality_II:0:0"
+      ],
+      "current_record_count": 2,
+      "current_record_order": [
+        [
+          "Q1461",
+          "P1376",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q928",
+          "P85",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ]
+      ],
+      "changed_address": [
+        "Q928",
+        "P85",
+        "benchmark snapshot; no explicit temporal qualifier supplied"
+      ],
+      "changed_slot_ids": {
+        "B": "Q1192911",
+        "D": "Q166944",
+        "C": "Q130865"
+      },
+      "strong_question_count": 1
+    },
+    {
+      "phase": "final",
+      "root_id": "rippleedits:popular:670",
+      "cluster_id": "edited_subject_cluster:6a6caf509cb17fa7dc4b",
+      "question_ids": [
+        "rippleedits:popular:670:Compositionality_I:0:0",
+        "rippleedits:popular:670:Compositionality_I:1:0"
+      ],
+      "current_record_count": 3,
+      "current_record_order": [
+        [
+          "Q9570",
+          "P25",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q44517397",
+          "P21",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q44517397",
+          "P22",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ]
+      ],
+      "changed_address": [
+        "Q9570",
+        "P25",
+        "benchmark snapshot; no explicit temporal qualifier supplied"
+      ],
+      "changed_slot_ids": {
+        "B": "Q151995",
+        "D": "Q9030535",
+        "C": "Q44517397"
+      },
+      "strong_question_count": 2
+    },
+    {
+      "phase": "final",
+      "root_id": "rippleedits:popular:736",
+      "cluster_id": "edited_subject_cluster:bf9e3d39712f257ac307",
+      "question_ids": [
+        "rippleedits:popular:736:Compositionality_I:0:0",
+        "rippleedits:popular:736:Compositionality_I:4:0",
+        "rippleedits:popular:736:Compositionality_I:5:0",
+        "rippleedits:popular:736:Compositionality_I:6:0",
+        "rippleedits:popular:736:Compositionality_II:0:0",
+        "rippleedits:popular:736:Compositionality_II:1:0",
+        "rippleedits:popular:736:Compositionality_II:2:0"
+      ],
+      "current_record_count": 8,
+      "current_record_order": [
+        [
+          "Q22350889",
+          "P25",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q22350891",
+          "P25",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q234566",
+          "P25",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q43044",
+          "P25",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q6799784",
+          "P19",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q6799784",
+          "P20",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q6799784",
+          "P21",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q6799784",
+          "P22",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ]
+      ],
+      "changed_address": [
+        "Q43044",
+        "P25",
+        "benchmark snapshot; no explicit temporal qualifier supplied"
+      ],
+      "changed_slot_ids": {
+        "B": "Q15623647",
+        "D": "Q186304",
+        "C": "Q6799784"
+      },
+      "strong_question_count": 7
+    },
+    {
+      "phase": "final",
+      "root_id": "rippleedits:random:1791",
+      "cluster_id": "edited_subject_cluster:54618e5ba0bfd11f6d59",
+      "question_ids": [
+        "rippleedits:random:1791:Compositionality_I:3:0"
+      ],
+      "current_record_count": 2,
+      "current_record_order": [
+        [
+          "Q52102969",
+          "P22",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q45418583",
+          "P21",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ]
+      ],
+      "changed_address": [
+        "Q52102969",
+        "P22",
+        "benchmark snapshot; no explicit temporal qualifier supplied"
+      ],
+      "changed_slot_ids": {
+        "B": "Q4281942",
+        "D": "Q75901236",
+        "C": "Q45418583"
+      },
+      "strong_question_count": 1
+    },
+    {
+      "phase": "final",
+      "root_id": "rippleedits:popular:152",
+      "cluster_id": "edited_subject_cluster:1c1576833d23ea58ad39",
+      "question_ids": [
+        "rippleedits:popular:152:Compositionality_I:0:0",
+        "rippleedits:popular:152:Compositionality_I:1:0",
+        "rippleedits:popular:152:Compositionality_I:5:0"
+      ],
+      "current_record_count": 4,
+      "current_record_order": [
+        [
+          "Q18097962",
+          "P22",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q1693923",
+          "P19",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q1693923",
+          "P20",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q1693923",
+          "P21",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ]
+      ],
+      "changed_address": [
+        "Q18097962",
+        "P22",
+        "benchmark snapshot; no explicit temporal qualifier supplied"
+      ],
+      "changed_slot_ids": {
+        "B": "Q106485557",
+        "D": "Q76125407",
+        "C": "Q1693923"
+      },
+      "strong_question_count": 3
+    },
+    {
+      "phase": "final",
+      "root_id": "rippleedits:popular:133",
+      "cluster_id": "edited_subject_cluster:2d4a410eef9851dea3a3",
+      "question_ids": [
+        "rippleedits:popular:133:Compositionality_I:0:0",
+        "rippleedits:popular:133:Compositionality_I:1:0",
+        "rippleedits:popular:133:Compositionality_I:22:0",
+        "rippleedits:popular:133:Compositionality_I:23:0"
+      ],
+      "current_record_count": 5,
+      "current_record_order": [
+        [
+          "Q303",
+          "P22",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q514460",
+          "P20",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q514460",
+          "P21",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q514460",
+          "P22",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q514460",
+          "P25",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ]
+      ],
+      "changed_address": [
+        "Q303",
+        "P22",
+        "benchmark snapshot; no explicit temporal qualifier supplied"
+      ],
+      "changed_slot_ids": {
+        "B": "Q4074414",
+        "D": "Q6284307",
+        "C": "Q514460"
+      },
+      "strong_question_count": 4
+    },
+    {
+      "phase": "final",
+      "root_id": "rippleedits:popular:837",
+      "cluster_id": "edited_subject_cluster:33ecf9c55e4579818220",
+      "question_ids": [
+        "rippleedits:popular:837:Compositionality_I:0:0",
+        "rippleedits:popular:837:Compositionality_I:1:0",
+        "rippleedits:popular:837:Compositionality_I:2:0"
+      ],
+      "current_record_count": 4,
+      "current_record_order": [
+        [
+          "Q10853588",
+          "P25",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q75299320",
+          "P21",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q75299320",
+          "P22",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q75299320",
+          "P25",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ]
+      ],
+      "changed_address": [
+        "Q10853588",
+        "P25",
+        "benchmark snapshot; no explicit temporal qualifier supplied"
+      ],
+      "changed_slot_ids": {
+        "B": "Q27924016",
+        "D": "Q56650599",
+        "C": "Q75299320"
+      },
+      "strong_question_count": 3
+    },
+    {
+      "phase": "final",
+      "root_id": "rippleedits:popular:622",
+      "cluster_id": "edited_subject_cluster:882a19d0eac89166ecf4",
+      "question_ids": [
+        "rippleedits:popular:622:Compositionality_I:0:0",
+        "rippleedits:popular:622:Compositionality_II:0:0",
+        "rippleedits:popular:622:Compositionality_II:1:0",
+        "rippleedits:popular:622:Compositionality_II:2:0"
+      ],
+      "current_record_count": 5,
+      "current_record_order": [
+        [
+          "Q15542608",
+          "P25",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q169946",
+          "P25",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q722830",
+          "P25",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q188459",
+          "P19",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q486167",
+          "P36",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ]
+      ],
+      "changed_address": [
+        "Q188459",
+        "P19",
+        "benchmark snapshot; no explicit temporal qualifier supplied"
+      ],
+      "changed_slot_ids": {
+        "B": "Q113363481",
+        "D": "Q125905",
+        "C": "Q486167"
+      },
+      "strong_question_count": 4
+    },
+    {
+      "phase": "final",
+      "root_id": "rippleedits:random:60",
+      "cluster_id": "edited_subject_cluster:42d2a38085ad80ce79d4",
+      "question_ids": [
+        "rippleedits:random:60:Compositionality_I:0:0",
+        "rippleedits:random:60:Compositionality_I:1:0",
+        "rippleedits:random:60:Compositionality_I:4:0"
+      ],
+      "current_record_count": 4,
+      "current_record_order": [
+        [
+          "Q90314355",
+          "P22",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q75336780",
+          "P21",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q75336780",
+          "P22",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q75336780",
+          "P25",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ]
+      ],
+      "changed_address": [
+        "Q90314355",
+        "P22",
+        "benchmark snapshot; no explicit temporal qualifier supplied"
+      ],
+      "changed_slot_ids": {
+        "B": "Q151869",
+        "D": "Q45469366",
+        "C": "Q75336780"
+      },
+      "strong_question_count": 3
+    },
+    {
+      "phase": "final",
+      "root_id": "rippleedits:popular:703",
+      "cluster_id": "edited_subject_cluster:aa05d360eca85127bbf5",
+      "question_ids": [
+        "rippleedits:popular:703:Compositionality_I:0:0"
+      ],
+      "current_record_count": 2,
+      "current_record_order": [
+        [
+          "Q548823",
+          "P19",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q36907",
+          "P36",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ]
+      ],
+      "changed_address": [
+        "Q548823",
+        "P19",
+        "benchmark snapshot; no explicit temporal qualifier supplied"
+      ],
+      "changed_slot_ids": {
+        "B": "Q488513",
+        "D": "Q4976708",
+        "C": "Q36907"
+      },
+      "strong_question_count": 1
+    },
+    {
+      "phase": "final",
+      "root_id": "rippleedits:random:1066",
+      "cluster_id": "edited_subject_cluster:6ef8ed9414a6f4c9ad6d",
+      "question_ids": [
+        "rippleedits:random:1066:Compositionality_I:1:0",
+        "rippleedits:random:1066:Compositionality_I:4:0"
+      ],
+      "current_record_count": 3,
+      "current_record_order": [
+        [
+          "Q76168885",
+          "P25",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q106837483",
+          "P119",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q106837483",
+          "P21",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ]
+      ],
+      "changed_address": [
+        "Q76168885",
+        "P25",
+        "benchmark snapshot; no explicit temporal qualifier supplied"
+      ],
+      "changed_slot_ids": {
+        "B": "Q4116923",
+        "D": "Q75389546",
+        "C": "Q106837483"
+      },
+      "strong_question_count": 2
+    },
+    {
+      "phase": "final",
+      "root_id": "rippleedits:popular:110",
+      "cluster_id": "edited_subject_cluster:61e86a3df1faae720134",
+      "question_ids": [
+        "rippleedits:popular:110:Compositionality_I:0:0"
+      ],
+      "current_record_count": 2,
+      "current_record_order": [
+        [
+          "Q540608",
+          "P25",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q75789428",
+          "P21",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ]
+      ],
+      "changed_address": [
+        "Q540608",
+        "P25",
+        "benchmark snapshot; no explicit temporal qualifier supplied"
+      ],
+      "changed_slot_ids": {
+        "B": "Q103210139",
+        "D": "Q735518",
+        "C": "Q75789428"
+      },
+      "strong_question_count": 1
+    },
+    {
+      "phase": "final",
+      "root_id": "rippleedits:popular:10",
+      "cluster_id": "edited_subject_cluster:b9d9b9b9194df02fdbb3",
+      "question_ids": [
+        "rippleedits:popular:10:Compositionality_II:0:0",
+        "rippleedits:popular:10:Compositionality_II:1:0",
+        "rippleedits:popular:10:Compositionality_II:2:0",
+        "rippleedits:popular:10:Compositionality_II:3:0",
+        "rippleedits:popular:10:Compositionality_II:4:0"
+      ],
+      "current_record_count": 6,
+      "current_record_order": [
+        [
+          "Q236196",
+          "P25",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q240317",
+          "P25",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q255382",
+          "P25",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q630371",
+          "P25",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q80976",
+          "P25",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q116062",
+          "P119",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ]
+      ],
+      "changed_address": [
+        "Q116062",
+        "P119",
+        "benchmark snapshot; no explicit temporal qualifier supplied"
+      ],
+      "changed_slot_ids": {
+        "B": "Q1432360",
+        "D": "Q98",
+        "C": "Q3277132"
+      },
+      "strong_question_count": 5
+    },
+    {
+      "phase": "final",
+      "root_id": "rippleedits:popular:118",
+      "cluster_id": "edited_subject_cluster:bda999040b8936de5fb1",
+      "question_ids": [
+        "rippleedits:popular:118:Compositionality_I:0:0",
+        "rippleedits:popular:118:Compositionality_I:10:0",
+        "rippleedits:popular:118:Compositionality_I:9:0"
+      ],
+      "current_record_count": 4,
+      "current_record_order": [
+        [
+          "Q55183",
+          "P25",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q89276522",
+          "P19",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q89276522",
+          "P20",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q89276522",
+          "P21",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ]
+      ],
+      "changed_address": [
+        "Q55183",
+        "P25",
+        "benchmark snapshot; no explicit temporal qualifier supplied"
+      ],
+      "changed_slot_ids": {
+        "B": "Q110716054",
+        "D": "Q16193433",
+        "C": "Q89276522"
+      },
+      "strong_question_count": 3
+    },
+    {
+      "phase": "final",
+      "root_id": "rippleedits:popular:155",
+      "cluster_id": "edited_subject_cluster:ccc3902970064f616b17",
+      "question_ids": [
+        "rippleedits:popular:155:Compositionality_I:0:0",
+        "rippleedits:popular:155:Compositionality_I:8:0",
+        "rippleedits:popular:155:Compositionality_I:9:0",
+        "rippleedits:popular:155:Compositionality_II:0:0",
+        "rippleedits:popular:155:Compositionality_II:1:0",
+        "rippleedits:popular:155:Compositionality_II:2:0",
+        "rippleedits:popular:155:Compositionality_II:3:0"
+      ],
+      "current_record_count": 8,
+      "current_record_order": [
+        [
+          "Q151754",
+          "P25",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q153330",
+          "P25",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q154920",
+          "P25",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q43274",
+          "P25",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q9682",
+          "P22",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q5913294",
+          "P19",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q5913294",
+          "P20",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q5913294",
+          "P21",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ]
+      ],
+      "changed_address": [
+        "Q9682",
+        "P22",
+        "benchmark snapshot; no explicit temporal qualifier supplied"
+      ],
+      "changed_slot_ids": {
+        "B": "Q56557776",
+        "D": "Q3553601",
+        "C": "Q5913294"
+      },
+      "strong_question_count": 7
+    },
+    {
+      "phase": "final",
+      "root_id": "rippleedits:popular:836",
+      "cluster_id": "edited_subject_cluster:c5299e9625ef9d0cb588",
+      "question_ids": [
+        "rippleedits:popular:836:Compositionality_II:0:0",
+        "rippleedits:popular:836:Compositionality_II:1:0"
+      ],
+      "current_record_count": 3,
+      "current_record_order": [
+        [
+          "Q2449855",
+          "P25",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q713468",
+          "P25",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q7416",
+          "P19",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ]
+      ],
+      "changed_address": [
+        "Q7416",
+        "P19",
+        "benchmark snapshot; no explicit temporal qualifier supplied"
+      ],
+      "changed_slot_ids": {
+        "B": "Q3359200",
+        "D": "Q1002118",
+        "C": "Q1579055"
+      },
+      "strong_question_count": 2
+    },
+    {
+      "phase": "final",
+      "root_id": "rippleedits:random:1468",
+      "cluster_id": "edited_subject_cluster:6a09bdc7f6ff136d5517",
+      "question_ids": [
+        "rippleedits:random:1468:Compositionality_I:0:0",
+        "rippleedits:random:1468:Compositionality_I:1:0",
+        "rippleedits:random:1468:Compositionality_I:4:0"
+      ],
+      "current_record_count": 4,
+      "current_record_order": [
+        [
+          "Q75326174",
+          "P22",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q75884705",
+          "P21",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q75884705",
+          "P22",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q75884705",
+          "P25",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ]
+      ],
+      "changed_address": [
+        "Q75326174",
+        "P22",
+        "benchmark snapshot; no explicit temporal qualifier supplied"
+      ],
+      "changed_slot_ids": {
+        "B": "Q2700318",
+        "D": "Q365144",
+        "C": "Q75884705"
+      },
+      "strong_question_count": 3
+    },
+    {
+      "phase": "final",
+      "root_id": "rippleedits:popular:38",
+      "cluster_id": "edited_subject_cluster:924868eac0512c439987",
+      "question_ids": [
+        "rippleedits:popular:38:Compositionality_II:0:0"
+      ],
+      "current_record_count": 2,
+      "current_record_order": [
+        [
+          "Q5646510",
+          "P22",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q2096387",
+          "P21",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ]
+      ],
+      "changed_address": [
+        "Q2096387",
+        "P21",
+        "benchmark snapshot; no explicit temporal qualifier supplied"
+      ],
+      "changed_slot_ids": {
+        "B": "Q301702",
+        "D": "Q859614",
+        "C": "Q1289754"
+      },
+      "strong_question_count": 1
+    },
+    {
+      "phase": "final",
+      "root_id": "rippleedits:random:354",
+      "cluster_id": "edited_subject_cluster:21f103b0ac618c797505",
+      "question_ids": [
+        "rippleedits:random:354:Compositionality_II:0:0",
+        "rippleedits:random:354:Compositionality_II:1:0",
+        "rippleedits:random:354:Compositionality_II:2:0"
+      ],
+      "current_record_count": 4,
+      "current_record_order": [
+        [
+          "Q75647965",
+          "P22",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q75647974",
+          "P22",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q75647989",
+          "P22",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q75647962",
+          "P21",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ]
+      ],
+      "changed_address": [
+        "Q75647962",
+        "P21",
+        "benchmark snapshot; no explicit temporal qualifier supplied"
+      ],
+      "changed_slot_ids": {
+        "B": "Q24238356",
+        "D": "Q15145778",
+        "C": "Q505371"
+      },
+      "strong_question_count": 3
+    },
+    {
+      "phase": "final",
+      "root_id": "rippleedits:popular:539",
+      "cluster_id": "edited_subject_cluster:38d6c1f02135ae710419",
+      "question_ids": [
+        "rippleedits:popular:539:Compositionality_I:0:0"
+      ],
+      "current_record_count": 2,
+      "current_record_order": [
+        [
+          "Q16397",
+          "P25",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q105677808",
+          "P21",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ]
+      ],
+      "changed_address": [
+        "Q16397",
+        "P25",
+        "benchmark snapshot; no explicit temporal qualifier supplied"
+      ],
+      "changed_slot_ids": {
+        "B": "Q460804",
+        "D": "Q65838456",
+        "C": "Q105677808"
+      },
+      "strong_question_count": 1
+    },
+    {
+      "phase": "final",
+      "root_id": "rippleedits:random:17",
+      "cluster_id": "edited_subject_cluster:b1ed59b57ee07fabb384",
+      "question_ids": [
+        "rippleedits:random:17:Compositionality_I:0:0",
+        "rippleedits:random:17:Compositionality_I:1:0",
+        "rippleedits:random:17:Compositionality_I:6:0",
+        "rippleedits:random:17:Compositionality_II:0:0"
+      ],
+      "current_record_count": 5,
+      "current_record_order": [
+        [
+          "Q76375084",
+          "P25",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q76134594",
+          "P25",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q76056676",
+          "P21",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q76056676",
+          "P22",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q76056676",
+          "P25",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ]
+      ],
+      "changed_address": [
+        "Q76134594",
+        "P25",
+        "benchmark snapshot; no explicit temporal qualifier supplied"
+      ],
+      "changed_slot_ids": {
+        "B": "Q3948165",
+        "D": "Q5704361",
+        "C": "Q76056676"
+      },
+      "strong_question_count": 4
+    },
+    {
+      "phase": "final",
+      "root_id": "rippleedits:random:1775",
+      "cluster_id": "edited_subject_cluster:3b9ba3100741541d4120",
+      "question_ids": [
+        "rippleedits:random:1775:Compositionality_I:0:0"
+      ],
+      "current_record_count": 2,
+      "current_record_order": [
+        [
+          "Q3219403",
+          "P20",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q502487",
+          "P36",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ]
+      ],
+      "changed_address": [
+        "Q3219403",
+        "P20",
+        "benchmark snapshot; no explicit temporal qualifier supplied"
+      ],
+      "changed_slot_ids": {
+        "B": "Q4478",
+        "D": "Q172871",
+        "C": "Q502487"
+      },
+      "strong_question_count": 1
+    },
+    {
+      "phase": "final",
+      "root_id": "rippleedits:random:1202",
+      "cluster_id": "edited_subject_cluster:1b551363b15109524510",
+      "question_ids": [
+        "rippleedits:random:1202:Compositionality_I:0:0",
+        "rippleedits:random:1202:Compositionality_I:13:0",
+        "rippleedits:random:1202:Compositionality_I:1:0",
+        "rippleedits:random:1202:Compositionality_I:3:0"
+      ],
+      "current_record_count": 5,
+      "current_record_order": [
+        [
+          "Q55944877",
+          "P22",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q1296751",
+          "P19",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q1296751",
+          "P20",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q1296751",
+          "P21",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q1296751",
+          "P22",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ]
+      ],
+      "changed_address": [
+        "Q55944877",
+        "P22",
+        "benchmark snapshot; no explicit temporal qualifier supplied"
+      ],
+      "changed_slot_ids": {
+        "B": "Q452109",
+        "D": "Q64858982",
+        "C": "Q1296751"
+      },
+      "strong_question_count": 4
+    },
+    {
+      "phase": "final",
+      "root_id": "rippleedits:popular:85",
+      "cluster_id": "edited_subject_cluster:392247e81ba5ca82698d",
+      "question_ids": [
+        "rippleedits:popular:85:Compositionality_I:0:0"
+      ],
+      "current_record_count": 2,
+      "current_record_order": [
+        [
+          "Q3788849",
+          "P19",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q287416",
+          "P36",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ]
+      ],
+      "changed_address": [
+        "Q3788849",
+        "P19",
+        "benchmark snapshot; no explicit temporal qualifier supplied"
+      ],
+      "changed_slot_ids": {
+        "B": "Q8471",
+        "D": "Q1342",
+        "C": "Q287416"
+      },
+      "strong_question_count": 1
+    },
+    {
+      "phase": "final",
+      "root_id": "rippleedits:random:1320",
+      "cluster_id": "edited_subject_cluster:165439e4d21062c20a8f",
+      "question_ids": [
+        "rippleedits:random:1320:Compositionality_I:0:0",
+        "rippleedits:random:1320:Compositionality_I:1:0"
+      ],
+      "current_record_count": 3,
+      "current_record_order": [
+        [
+          "Q76288960",
+          "P25",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q75345192",
+          "P21",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q75345192",
+          "P22",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ]
+      ],
+      "changed_address": [
+        "Q76288960",
+        "P25",
+        "benchmark snapshot; no explicit temporal qualifier supplied"
+      ],
+      "changed_slot_ids": {
+        "B": "Q16941012",
+        "D": "Q2791780",
+        "C": "Q75345192"
+      },
+      "strong_question_count": 2
+    },
+    {
+      "phase": "final",
+      "root_id": "rippleedits:popular:824",
+      "cluster_id": "edited_subject_cluster:f187205e34d7479f2943",
+      "question_ids": [
+        "rippleedits:popular:824:Compositionality_I:0:0"
+      ],
+      "current_record_count": 2,
+      "current_record_order": [
+        [
+          "Q7185804",
+          "P19",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q506235",
+          "P36",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ]
+      ],
+      "changed_address": [
+        "Q7185804",
+        "P19",
+        "benchmark snapshot; no explicit temporal qualifier supplied"
+      ],
+      "changed_slot_ids": {
+        "B": "Q511876",
+        "D": "Q2256",
+        "C": "Q506235"
+      },
+      "strong_question_count": 1
+    },
+    {
+      "phase": "final",
+      "root_id": "rippleedits:random:491",
+      "cluster_id": "edited_subject_cluster:993ef45b94b044c7b24c",
+      "question_ids": [
+        "rippleedits:random:491:Compositionality_II:0:0",
+        "rippleedits:random:491:Compositionality_II:1:0"
+      ],
+      "current_record_count": 3,
+      "current_record_order": [
+        [
+          "Q527147",
+          "P25",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q76237372",
+          "P25",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q58327962",
+          "P21",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ]
+      ],
+      "changed_address": [
+        "Q58327962",
+        "P21",
+        "benchmark snapshot; no explicit temporal qualifier supplied"
+      ],
+      "changed_slot_ids": {
+        "B": "Q7130936",
+        "D": "Q15145778",
+        "C": "Q24238356"
+      },
+      "strong_question_count": 2
+    },
+    {
+      "phase": "final",
+      "root_id": "rippleedits:popular:483",
+      "cluster_id": "edited_subject_cluster:dd165a2fe7ad93108827",
+      "question_ids": [
+        "rippleedits:popular:483:Compositionality_I:0:0",
+        "rippleedits:popular:483:Compositionality_I:1:0",
+        "rippleedits:popular:483:Compositionality_I:5:0"
+      ],
+      "current_record_count": 4,
+      "current_record_order": [
+        [
+          "Q11666",
+          "P25",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q75347772",
+          "P21",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q75347772",
+          "P22",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q75347772",
+          "P25",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ]
+      ],
+      "changed_address": [
+        "Q11666",
+        "P25",
+        "benchmark snapshot; no explicit temporal qualifier supplied"
+      ],
+      "changed_slot_ids": {
+        "B": "Q3925",
+        "D": "Q75889928",
+        "C": "Q75347772"
+      },
+      "strong_question_count": 3
+    },
+    {
+      "phase": "final",
+      "root_id": "rippleedits:random:1689",
+      "cluster_id": "edited_subject_cluster:617c3b3cf7abe0c9296a",
+      "question_ids": [
+        "rippleedits:random:1689:Compositionality_I:0:0",
+        "rippleedits:random:1689:Compositionality_I:1:0",
+        "rippleedits:random:1689:Compositionality_I:7:0",
+        "rippleedits:random:1689:Compositionality_I:8:0"
+      ],
+      "current_record_count": 5,
+      "current_record_order": [
+        [
+          "Q2854391",
+          "P22",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q927957",
+          "P119",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q927957",
+          "P19",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q927957",
+          "P20",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q927957",
+          "P21",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ]
+      ],
+      "changed_address": [
+        "Q2854391",
+        "P22",
+        "benchmark snapshot; no explicit temporal qualifier supplied"
+      ],
+      "changed_slot_ids": {
+        "B": "Q16086586",
+        "D": "Q12472231",
+        "C": "Q927957"
+      },
+      "strong_question_count": 4
+    },
+    {
+      "phase": "final",
+      "root_id": "rippleedits:popular:627",
+      "cluster_id": "edited_subject_cluster:297c63d6464f02c8ed6e",
+      "question_ids": [
+        "rippleedits:popular:627:Compositionality_I:0:0",
+        "rippleedits:popular:627:Compositionality_I:6:0"
+      ],
+      "current_record_count": 3,
+      "current_record_order": [
+        [
+          "Q91",
+          "P22",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q3161050",
+          "P19",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q3161050",
+          "P21",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ]
+      ],
+      "changed_address": [
+        "Q91",
+        "P22",
+        "benchmark snapshot; no explicit temporal qualifier supplied"
+      ],
+      "changed_slot_ids": {
+        "B": "Q76142908",
+        "D": "Q151869",
+        "C": "Q3161050"
+      },
+      "strong_question_count": 2
+    },
+    {
+      "phase": "final",
+      "root_id": "rippleedits:popular:717",
+      "cluster_id": "edited_subject_cluster:d53c7bb2931b79e30ce4",
+      "question_ids": [
+        "rippleedits:popular:717:Compositionality_I:0:0",
+        "rippleedits:popular:717:Compositionality_I:1:0"
+      ],
+      "current_record_count": 3,
+      "current_record_order": [
+        [
+          "Q180589",
+          "P22",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q1383364",
+          "P19",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q1383364",
+          "P21",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ]
+      ],
+      "changed_address": [
+        "Q180589",
+        "P22",
+        "benchmark snapshot; no explicit temporal qualifier supplied"
+      ],
+      "changed_slot_ids": {
+        "B": "Q108840932",
+        "D": "Q17319204",
+        "C": "Q1383364"
+      },
+      "strong_question_count": 2
+    },
+    {
+      "phase": "final",
+      "root_id": "rippleedits:popular:107",
+      "cluster_id": "edited_subject_cluster:b8fd4dd9c59d19a2d470",
+      "question_ids": [
+        "rippleedits:popular:107:Compositionality_I:0:0",
+        "rippleedits:popular:107:Compositionality_I:1:0",
+        "rippleedits:popular:107:Compositionality_II:0:0",
+        "rippleedits:popular:107:Compositionality_II:1:0",
+        "rippleedits:popular:107:Compositionality_II:2:0"
+      ],
+      "current_record_count": 6,
+      "current_record_order": [
+        [
+          "Q215012",
+          "P25",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q233966",
+          "P25",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q3910",
+          "P25",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q3925",
+          "P25",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q56427523",
+          "P19",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q56427523",
+          "P21",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ]
+      ],
+      "changed_address": [
+        "Q3925",
+        "P25",
+        "benchmark snapshot; no explicit temporal qualifier supplied"
+      ],
+      "changed_slot_ids": {
+        "B": "Q23048323",
+        "D": "Q108935744",
+        "C": "Q56427523"
+      },
+      "strong_question_count": 5
+    },
+    {
+      "phase": "final",
+      "root_id": "rippleedits:random:857",
+      "cluster_id": "edited_subject_cluster:cba5b43b6b1e74987b29",
+      "question_ids": [
+        "rippleedits:random:857:Compositionality_I:0:0",
+        "rippleedits:random:857:Compositionality_I:5:0",
+        "rippleedits:random:857:Compositionality_I:6:0",
+        "rippleedits:random:857:Compositionality_I:7:0",
+        "rippleedits:random:857:Compositionality_I:8:0",
+        "rippleedits:random:857:Compositionality_I:9:0"
+      ],
+      "current_record_count": 7,
+      "current_record_order": [
+        [
+          "Q105108420",
+          "P25",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q163010",
+          "P119",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q163010",
+          "P19",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q163010",
+          "P20",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q163010",
+          "P21",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q163010",
+          "P22",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q163010",
+          "P25",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ]
+      ],
+      "changed_address": [
+        "Q105108420",
+        "P25",
+        "benchmark snapshot; no explicit temporal qualifier supplied"
+      ],
+      "changed_slot_ids": {
+        "B": "Q100791818",
+        "D": "Q2724440",
+        "C": "Q163010"
+      },
+      "strong_question_count": 6
+    },
+    {
+      "phase": "final",
+      "root_id": "rippleedits:popular:620",
+      "cluster_id": "edited_subject_cluster:3abb91bd6291770426f2",
+      "question_ids": [
+        "rippleedits:popular:620:Compositionality_I:1:0"
+      ],
+      "current_record_count": 2,
+      "current_record_order": [
+        [
+          "Q41812531",
+          "P19",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q693913",
+          "P36",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ]
+      ],
+      "changed_address": [
+        "Q41812531",
+        "P19",
+        "benchmark snapshot; no explicit temporal qualifier supplied"
+      ],
+      "changed_slot_ids": {
+        "B": "Q10712701",
+        "D": "Q2571884",
+        "C": "Q693913"
+      },
+      "strong_question_count": 1
+    },
+    {
+      "phase": "final",
+      "root_id": "rippleedits:random:618",
+      "cluster_id": "edited_subject_cluster:cf374e4d6ccee77edc66",
+      "question_ids": [
+        "rippleedits:random:618:Compositionality_II:0:0",
+        "rippleedits:random:618:Compositionality_II:1:0",
+        "rippleedits:random:618:Compositionality_II:2:0",
+        "rippleedits:random:618:Compositionality_II:3:0"
+      ],
+      "current_record_count": 5,
+      "current_record_order": [
+        [
+          "Q1395951",
+          "P25",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q6470129",
+          "P25",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q75387307",
+          "P25",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q75762463",
+          "P25",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ],
+        [
+          "Q5363245",
+          "P20",
+          "benchmark snapshot; no explicit temporal qualifier supplied"
+        ]
+      ],
+      "changed_address": [
+        "Q5363245",
+        "P20",
+        "benchmark snapshot; no explicit temporal qualifier supplied"
+      ],
+      "changed_slot_ids": {
+        "B": "Q47164",
+        "D": "Q502487",
+        "C": "Q330195"
+      },
+      "strong_question_count": 4
+    }
+  ],
+  "gates": {
+    "structural": "all roots: same address, B/D/C pairwise-distinct IDs; identical current record map; complete strong chains; no missing supports or outcome leakage",
+    "G1": {
+      "given_facts_correct_min": 13,
+      "canonical_correct_min": 13,
+      "questions": 16
+    },
+    "G2": {
+      "current_records_correct_in_both_histories_min": 18,
+      "records": 22
+    },
+    "G4": {
+      "ambiguous_or_unmatched_atomic_max": 4,
+      "atomic_chronological_reads": 44
+    },
+    "G5": {
+      "questions_with_A_and_C_min": 10,
+      "questions": 16,
+      "roots_with_any_A_and_C_min": 3,
+      "roots": 6
+    },
+    "resource": "Finish full frozen final + two repeats within current approved cap, with at least 25% measured work-time margin and 30 min closeout reserve."
+  },
+  "scoring": "See AMENDMENT.md; primary A uses a full-string normalized type-scoped entity-ID extractor; C,D use fixed ICMH1 strict first-line public label/alias equality. No prefix/substring rescue.",
+  "inference": {
+    "dtype": "bfloat16",
+    "do_sample": false,
+    "max_new_tokens": 16,
+    "num_beams": 1,
+    "system": "Answer with only the entity name.",
+    "weights_unchanged": true
+  },
+  "resources_proposed": {
+    "gpu": "one NVIDIA A100 40GB SXM4 x86-64 instance",
+    "max_compute_rate_usd_per_hour": 1.99,
+    "max_all_in_new_study_usd": 10,
+    "max_new_study_hours": 3,
+    "reserve_minutes": 30
+  },
+  "review": {
+    "no_model_loaded": true,
+    "no_pretrained_inference": true,
+    "no_cloud_access": true,
+    "executable_experiment_runner_supplied": false
+  }
+}

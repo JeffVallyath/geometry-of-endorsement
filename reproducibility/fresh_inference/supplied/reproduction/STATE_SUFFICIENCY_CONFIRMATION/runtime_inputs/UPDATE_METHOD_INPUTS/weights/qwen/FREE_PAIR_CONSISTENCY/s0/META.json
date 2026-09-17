@@ -1,0 +1,43 @@
+{
+  "actor": "qwen",
+  "arm": "FREE_OVERWRITE",
+  "at": "2026-09-13T03:20:20.361121+00:00",
+  "cap_ref": 28.22532844543457,
+  "checkpoint0_sha256": "c62438f655e0a6cf2f77230bcf95a42bac6740dcba5b6eb5699ffdc316cf540e",
+  "condition": "FREE_PAIR_CONSISTENCY",
+  "epoch": 1,
+  "files": {
+    "setter": "4799539293c21757ecccffb31e2ffcfa516a86e7d9c216e5b1da9dc4405648e7"
+  },
+  "frozen_backbone": true,
+  "init": {
+    "dir": "provenance/sha256-5b99c54c8c930ff1485da2d6c16244ed585e7a8db53b6baafab6ad911c61a82d",
+    "kind": "v3_selected_checkpoint_warm_start",
+    "load_basis_error": 0.0,
+    "optimizer_state": "fresh AdamW moments (V3 checkpoints hold no optimizer state)",
+    "sha256": {
+      "meta": "4d9fee9f4dabc20a3813aca13bcd7cf81663c826b6de7e711d5028d3f7130947",
+      "setter": "9b4d57887adf59fefafd73384c3aa401a8e475e1d990db82cb861431e8a8c988"
+    },
+    "v3_epoch": 2,
+    "v3_lr": 0.001
+  },
+  "kappa": 1.0,
+  "kind": "free",
+  "lr": 0.001,
+  "norms": {
+    "basis_raw": 11.53248405456543,
+    "bias0": 0.04150523617863655,
+    "bias1": 0.047357842326164246,
+    "head0": 9.375690460205078,
+    "head1": 9.30484390258789
+  },
+  "paired_groups": 384,
+  "paired_question_slots": 3072,
+  "rank": 16,
+  "schema": "RSO3_SETTER_V1",
+  "seed": 0,
+  "site": 13,
+  "steps": 384,
+  "training_contract": "RTC7_EXACT_PAIRED_V1"
+}

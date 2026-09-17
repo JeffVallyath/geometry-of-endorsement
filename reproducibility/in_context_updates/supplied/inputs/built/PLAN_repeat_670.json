@@ -1,0 +1,292 @@
+{
+ "note": "Rendered user text only; no gold answers, aliases, entity ids, B/D labels or eligibility flags.",
+ "phase": "repeat_670",
+ "roots": [
+  "rippleedits:popular:670"
+ ],
+ "study": "icmh1-ripple-v2",
+ "system": null,
+ "unit_count": 35,
+ "units": [
+  {
+   "context": "none",
+   "kind": "downstream",
+   "reference": "rippleedits:popular:670:Compositionality_I:0:0",
+   "root_id": "rippleedits:popular:670",
+   "unit_id": "0c64e1fdda169ceee84586a134f54400be602b87c9a2ce78c3898fa64dfb4ed1",
+   "user_text": "The gender of the mother of Amitabh Bachchan is"
+  },
+  {
+   "context": "given_facts",
+   "kind": "downstream",
+   "reference": "rippleedits:popular:670:Compositionality_I:0:0",
+   "root_id": "rippleedits:popular:670",
+   "unit_id": "27d6fbfd2eb46447f597cd2ee9f23b017dc4a5164bd4f93a9f96f10c6d6d37da",
+   "user_text": "The following task-relevant records are supplied.\nThe name of the mother of Amitabh Bachchan is Martha Southcote\nThe gender of Martha Southcote is female\nThe name of the father of Martha Southcote is John Southcote\n\nThe gender of the mother of Amitabh Bachchan is"
+  },
+  {
+   "context": "canonical",
+   "kind": "downstream",
+   "reference": "rippleedits:popular:670:Compositionality_I:0:0",
+   "root_id": "rippleedits:popular:670",
+   "unit_id": "d1689cd506996bfdea52b8fc5fab6698d5c0d6e2298baf777e9cf3e875245f09",
+   "user_text": "The following are the current authoritative records.\nThe name of the mother of Amitabh Bachchan is Martha Southcote\nThe gender of Martha Southcote is female\nThe name of the father of Martha Southcote is John Southcote\n\nThe gender of the mother of Amitabh Bachchan is"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "downstream",
+   "reference": "rippleedits:popular:670:Compositionality_I:0:0",
+   "root_id": "rippleedits:popular:670",
+   "unit_id": "a30ebff7a2ddcb49b1aa12309969425524cf8b655526eb1321deaf7b74045c71",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Amitabh Bachchan is Letizia Ramallo\nThe name of the mother of Amitabh Bachchan is Martha Southcote\nThe gender of Martha Southcote is female\nThe name of the father of Martha Southcote is John Southcote\n\nThe gender of the mother of Amitabh Bachchan is"
+  },
+  {
+   "context": "chronological_D",
+   "kind": "downstream",
+   "reference": "rippleedits:popular:670:Compositionality_I:0:0",
+   "root_id": "rippleedits:popular:670",
+   "unit_id": "82f9fbdb199e6b40d9d999d46572a0307ed85a1e965e9156d3f84dc3a7dbd7e7",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Amitabh Bachchan is Matilde Ucelay\nThe name of the mother of Amitabh Bachchan is Martha Southcote\nThe gender of Martha Southcote is female\nThe name of the father of Martha Southcote is John Southcote\n\nThe gender of the mother of Amitabh Bachchan is"
+  },
+  {
+   "context": "none",
+   "kind": "downstream",
+   "reference": "rippleedits:popular:670:Compositionality_I:1:0",
+   "root_id": "rippleedits:popular:670",
+   "unit_id": "8b67f3abbb9a85652a885becfd50b89c275b230a36037beebed64373d3dfb323",
+   "user_text": "The name of the maternal grandfather of Amitabh Bachchan is"
+  },
+  {
+   "context": "given_facts",
+   "kind": "downstream",
+   "reference": "rippleedits:popular:670:Compositionality_I:1:0",
+   "root_id": "rippleedits:popular:670",
+   "unit_id": "7d6fc514caa7a1a7bd12adfa6ba5c76790e82e4b9abaf4aa7cfd20d59feb0e2c",
+   "user_text": "The following task-relevant records are supplied.\nThe name of the mother of Amitabh Bachchan is Martha Southcote\nThe gender of Martha Southcote is female\nThe name of the father of Martha Southcote is John Southcote\n\nThe name of the maternal grandfather of Amitabh Bachchan is"
+  },
+  {
+   "context": "canonical",
+   "kind": "downstream",
+   "reference": "rippleedits:popular:670:Compositionality_I:1:0",
+   "root_id": "rippleedits:popular:670",
+   "unit_id": "7fae0a141ad865602d21f66c9d51e0559d48c88c9350257e7c4307cda3795262",
+   "user_text": "The following are the current authoritative records.\nThe name of the mother of Amitabh Bachchan is Martha Southcote\nThe gender of Martha Southcote is female\nThe name of the father of Martha Southcote is John Southcote\n\nThe name of the maternal grandfather of Amitabh Bachchan is"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "downstream",
+   "reference": "rippleedits:popular:670:Compositionality_I:1:0",
+   "root_id": "rippleedits:popular:670",
+   "unit_id": "84ad6fc235eadd2a6e5cbabc2fa11afc22e3cca9d30975b5948b5c903f679634",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Amitabh Bachchan is Letizia Ramallo\nThe name of the mother of Amitabh Bachchan is Martha Southcote\nThe gender of Martha Southcote is female\nThe name of the father of Martha Southcote is John Southcote\n\nThe name of the maternal grandfather of Amitabh Bachchan is"
+  },
+  {
+   "context": "chronological_D",
+   "kind": "downstream",
+   "reference": "rippleedits:popular:670:Compositionality_I:1:0",
+   "root_id": "rippleedits:popular:670",
+   "unit_id": "2e31e999d013dae4ae2e6334d495b3bce7b08089faea97337e1af23b6d3e6174",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Amitabh Bachchan is Matilde Ucelay\nThe name of the mother of Amitabh Bachchan is Martha Southcote\nThe gender of Martha Southcote is female\nThe name of the father of Martha Southcote is John Southcote\n\nThe name of the maternal grandfather of Amitabh Bachchan is"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "atomic",
+   "reference": "Q9570|P25|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:popular:670",
+   "unit_id": "fa14f9fad8164a56703765d6effa7b5e1ed2c3a0c9803d8e29ef97e80a395d24",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Amitabh Bachchan is Letizia Ramallo\nThe name of the mother of Amitabh Bachchan is Martha Southcote\nThe gender of Martha Southcote is female\nThe name of the father of Martha Southcote is John Southcote\n\nThe name of the mother of Amitabh Bachchan is"
+  },
+  {
+   "context": "chronological_D",
+   "kind": "atomic",
+   "reference": "Q9570|P25|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:popular:670",
+   "unit_id": "bdc0c57a329806af0e8cc6bb7cf5ba32dbf9d68dab3301063a55cb988525dba0",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Amitabh Bachchan is Matilde Ucelay\nThe name of the mother of Amitabh Bachchan is Martha Southcote\nThe gender of Martha Southcote is female\nThe name of the father of Martha Southcote is John Southcote\n\nThe name of the mother of Amitabh Bachchan is"
+  },
+  {
+   "context": "none",
+   "kind": "atomic",
+   "reference": "Q9570|P25|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:popular:670",
+   "unit_id": "4a957c9cce70f53651bd1d0e3ff86c1997b5ca9d2a1152cef9547944596be8c4",
+   "user_text": "The name of the mother of Amitabh Bachchan is"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "atomic",
+   "reference": "Q44517397|P21|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:popular:670",
+   "unit_id": "30e7aa7deeb2436f842902e7cbc73e3aa669e56677662afff651933e9be87540",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Amitabh Bachchan is Letizia Ramallo\nThe name of the mother of Amitabh Bachchan is Martha Southcote\nThe gender of Martha Southcote is female\nThe name of the father of Martha Southcote is John Southcote\n\nThe gender of Martha Southcote is"
+  },
+  {
+   "context": "chronological_D",
+   "kind": "atomic",
+   "reference": "Q44517397|P21|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:popular:670",
+   "unit_id": "bde6f724fcf6352cd6df6afbedadcebfe165f1e3c1d7598da023366380151ccd",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Amitabh Bachchan is Matilde Ucelay\nThe name of the mother of Amitabh Bachchan is Martha Southcote\nThe gender of Martha Southcote is female\nThe name of the father of Martha Southcote is John Southcote\n\nThe gender of Martha Southcote is"
+  },
+  {
+   "context": "none",
+   "kind": "atomic",
+   "reference": "Q44517397|P21|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:popular:670",
+   "unit_id": "77595bf8f1702eedeb81fcc805c5e0eb89d05d21008d3833027f6d4a164aa7fe",
+   "user_text": "The gender of Martha Southcote is"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "atomic",
+   "reference": "Q44517397|P22|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:popular:670",
+   "unit_id": "a1edb0489e77b4cfdd13712dfd0fffec8b4973be8432f5b9279be53e90eac048",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Amitabh Bachchan is Letizia Ramallo\nThe name of the mother of Amitabh Bachchan is Martha Southcote\nThe gender of Martha Southcote is female\nThe name of the father of Martha Southcote is John Southcote\n\nThe name of the father of Martha Southcote is"
+  },
+  {
+   "context": "chronological_D",
+   "kind": "atomic",
+   "reference": "Q44517397|P22|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:popular:670",
+   "unit_id": "f17dc41b8013833e1aad31b244150b98f6370f5f9ffa6975adc23fae7b360881",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Amitabh Bachchan is Matilde Ucelay\nThe name of the mother of Amitabh Bachchan is Martha Southcote\nThe gender of Martha Southcote is female\nThe name of the father of Martha Southcote is John Southcote\n\nThe name of the father of Martha Southcote is"
+  },
+  {
+   "context": "none",
+   "kind": "atomic",
+   "reference": "Q44517397|P22|benchmark snapshot; no explicit temporal qualifier supplied",
+   "root_id": "rippleedits:popular:670",
+   "unit_id": "8ac7ff80960d967d7223584688faa67b81e2b59414aaba13842cb6333abf48f0",
+   "user_text": "The name of the father of Martha Southcote is"
+  },
+  {
+   "context": "none",
+   "kind": "locality",
+   "reference": "counterfact:11247",
+   "root_id": "rippleedits:popular:670",
+   "unit_id": "26abbc596f883b54168cd93787b795f82e0f3fbb55c950908db6f8d480e50ec0",
+   "user_text": "Le comte Ory, from"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "locality",
+   "reference": "counterfact:11247",
+   "root_id": "rippleedits:popular:670",
+   "unit_id": "97644c0df35b6d55c3ba49b33843c56423213effcb7c36bad8a54a1b96c030ea",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Amitabh Bachchan is Letizia Ramallo\nThe name of the mother of Amitabh Bachchan is Martha Southcote\nThe gender of Martha Southcote is female\nThe name of the father of Martha Southcote is John Southcote\n\nLe comte Ory, from"
+  },
+  {
+   "context": "none",
+   "kind": "locality",
+   "reference": "counterfact:8736",
+   "root_id": "rippleedits:popular:670",
+   "unit_id": "45825bf6ee41b54260e74522f04175350ed0a5e9ea1fcdf882b1956fa8b92840",
+   "user_text": "Kingdom of Mercia is located in the continent"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "locality",
+   "reference": "counterfact:8736",
+   "root_id": "rippleedits:popular:670",
+   "unit_id": "2c9c227725993011f9387996574e7b306486dd28b2117306482cd95dafbec97b",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Amitabh Bachchan is Letizia Ramallo\nThe name of the mother of Amitabh Bachchan is Martha Southcote\nThe gender of Martha Southcote is female\nThe name of the father of Martha Southcote is John Southcote\n\nKingdom of Mercia is located in the continent"
+  },
+  {
+   "context": "none",
+   "kind": "locality",
+   "reference": "counterfact:1777",
+   "root_id": "rippleedits:popular:670",
+   "unit_id": "8a29189bd7b437e19fc42ec59b3366a9ff5d351a67776630abce50f861924bf0",
+   "user_text": "Drew Shirley plays the instrument"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "locality",
+   "reference": "counterfact:1777",
+   "root_id": "rippleedits:popular:670",
+   "unit_id": "070892be23a469b0ebb127d189144cec9673bf4763a0ac2969eb61e951b13375",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Amitabh Bachchan is Letizia Ramallo\nThe name of the mother of Amitabh Bachchan is Martha Southcote\nThe gender of Martha Southcote is female\nThe name of the father of Martha Southcote is John Southcote\n\nDrew Shirley plays the instrument"
+  },
+  {
+   "context": "none",
+   "kind": "locality",
+   "reference": "counterfact:13029",
+   "root_id": "rippleedits:popular:670",
+   "unit_id": "9546580c6baefb7336b39f3e261988d8616dc66b2247bf9827331ebf849faf35",
+   "user_text": "The headquarter of Ace Hardware is in"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "locality",
+   "reference": "counterfact:13029",
+   "root_id": "rippleedits:popular:670",
+   "unit_id": "bf62d1f20337949ea39dd7573e052eecd6d20d9083eb53c7634a0672da5928e6",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Amitabh Bachchan is Letizia Ramallo\nThe name of the mother of Amitabh Bachchan is Martha Southcote\nThe gender of Martha Southcote is female\nThe name of the father of Martha Southcote is John Southcote\n\nThe headquarter of Ace Hardware is in"
+  },
+  {
+   "context": "none",
+   "kind": "locality",
+   "reference": "counterfact:17141",
+   "root_id": "rippleedits:popular:670",
+   "unit_id": "c8e40dd23123e4b3824911ecd7e5ae2d36d376bd089f1de9ecfaa59bf5e0401d",
+   "user_text": "Ferrari California, produced by"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "locality",
+   "reference": "counterfact:17141",
+   "root_id": "rippleedits:popular:670",
+   "unit_id": "e0ba71b3259840df81e5077706696e531642501db193fd1a42d5a306ce187d96",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Amitabh Bachchan is Letizia Ramallo\nThe name of the mother of Amitabh Bachchan is Martha Southcote\nThe gender of Martha Southcote is female\nThe name of the father of Martha Southcote is John Southcote\n\nFerrari California, produced by"
+  },
+  {
+   "context": "none",
+   "kind": "locality",
+   "reference": "counterfact:5324",
+   "root_id": "rippleedits:popular:670",
+   "unit_id": "e7781f31c9165aaee5be9b3e8f9dbaa008e7f9a35cb5de529258e3b48067f7c2",
+   "user_text": "Circa Survive, that originated in"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "locality",
+   "reference": "counterfact:5324",
+   "root_id": "rippleedits:popular:670",
+   "unit_id": "69c2f7266e5824bbe77cd1f152a95dfe963e57ec2abd2e3f95293caf53c8767c",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Amitabh Bachchan is Letizia Ramallo\nThe name of the mother of Amitabh Bachchan is Martha Southcote\nThe gender of Martha Southcote is female\nThe name of the father of Martha Southcote is John Southcote\n\nCirca Survive, that originated in"
+  },
+  {
+   "context": "none",
+   "kind": "locality",
+   "reference": "counterfact:972",
+   "root_id": "rippleedits:popular:670",
+   "unit_id": "e3f75bc6b963b372f8a19dab67601a8003ccc519f14755f2000525608afa2bb5",
+   "user_text": "Ultraman Dyna originated in"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "locality",
+   "reference": "counterfact:972",
+   "root_id": "rippleedits:popular:670",
+   "unit_id": "80374027e9409e97aed2d7775ab984b20480ce48b84005f21d1ccadb65ca602c",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Amitabh Bachchan is Letizia Ramallo\nThe name of the mother of Amitabh Bachchan is Martha Southcote\nThe gender of Martha Southcote is female\nThe name of the father of Martha Southcote is John Southcote\n\nUltraman Dyna originated in"
+  },
+  {
+   "context": "none",
+   "kind": "locality",
+   "reference": "counterfact:15734",
+   "root_id": "rippleedits:popular:670",
+   "unit_id": "823d2964fa63cae2844354f8a231c7d0581d09411222b968d8618d0fbd16721c",
+   "user_text": "The Shari Lewis Show debuted on"
+  },
+  {
+   "context": "chronological_B",
+   "kind": "locality",
+   "reference": "counterfact:15734",
+   "root_id": "rippleedits:popular:670",
+   "unit_id": "a59913a3a88b87a60b432c842f984c5b2209b613b6c103106ab8f0d6f6bd5ad8",
+   "user_text": "The following are authoritative record assignments, in chronological order. Later scalar assignments replace earlier values at the same address and time; positive-membership records accumulate.\nThe name of the mother of Amitabh Bachchan is Letizia Ramallo\nThe name of the mother of Amitabh Bachchan is Martha Southcote\nThe gender of Martha Southcote is female\nThe name of the father of Martha Southcote is John Southcote\n\nThe Shari Lewis Show debuted on"
+  }
+ ]
+}

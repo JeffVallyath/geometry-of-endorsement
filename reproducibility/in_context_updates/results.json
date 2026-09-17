@@ -1,0 +1,1014 @@
+{
+  "primary": {
+    "denominators": {
+      "roots": 34,
+      "questions": 98
+    },
+    "counts": {
+      "A_roots": 23,
+      "A_roots_measured": 34,
+      "C_questions": 90,
+      "D_questions": 4,
+      "W_questions": 3,
+      "W_unmeasured": 0,
+      "A_and_C_questions": 65,
+      "roots_with_any_W": 3
+    },
+    "coverage": {
+      "A_and_C_fraction": 0.6632653061224489,
+      "coverage_limited": false
+    },
+    "witness_rate_among_eligible_secondary": 0.046153846153846156,
+    "by_category": {
+      "Compositionality_I": {
+        "questions": 67,
+        "A_and_C": 44,
+        "W": 0
+      },
+      "Compositionality_II": {
+        "questions": 31,
+        "A_and_C": 21,
+        "W": 3
+      }
+    },
+    "by_changed_hop": {
+      "1": {
+        "questions": 67,
+        "W": 0
+      },
+      "2": {
+        "questions": 31,
+        "W": 3
+      }
+    },
+    "per_root": {
+      "rippleedits:popular:670": {
+        "A": false,
+        "records_correct_both": 2,
+        "records": 3,
+        "questions": 2,
+        "C": 2,
+        "D": 0,
+        "W": 0
+      },
+      "rippleedits:popular:736": {
+        "A": true,
+        "records_correct_both": 8,
+        "records": 8,
+        "questions": 7,
+        "C": 7,
+        "D": 1,
+        "W": 1
+      },
+      "rippleedits:random:1791": {
+        "A": false,
+        "records_correct_both": 1,
+        "records": 2,
+        "questions": 1,
+        "C": 1,
+        "D": 0,
+        "W": 0
+      },
+      "rippleedits:popular:152": {
+        "A": true,
+        "records_correct_both": 4,
+        "records": 4,
+        "questions": 3,
+        "C": 3,
+        "D": 0,
+        "W": 0
+      },
+      "rippleedits:popular:133": {
+        "A": true,
+        "records_correct_both": 5,
+        "records": 5,
+        "questions": 4,
+        "C": 3,
+        "D": 0,
+        "W": 0
+      },
+      "rippleedits:popular:837": {
+        "A": false,
+        "records_correct_both": 3,
+        "records": 4,
+        "questions": 3,
+        "C": 3,
+        "D": 1,
+        "W": 0
+      },
+      "rippleedits:popular:622": {
+        "A": true,
+        "records_correct_both": 5,
+        "records": 5,
+        "questions": 4,
+        "C": 4,
+        "D": 1,
+        "W": 1
+      },
+      "rippleedits:random:60": {
+        "A": false,
+        "records_correct_both": 3,
+        "records": 4,
+        "questions": 3,
+        "C": 2,
+        "D": 0,
+        "W": 0
+      },
+      "rippleedits:popular:703": {
+        "A": true,
+        "records_correct_both": 2,
+        "records": 2,
+        "questions": 1,
+        "C": 1,
+        "D": 0,
+        "W": 0
+      },
+      "rippleedits:random:1066": {
+        "A": true,
+        "records_correct_both": 3,
+        "records": 3,
+        "questions": 2,
+        "C": 2,
+        "D": 0,
+        "W": 0
+      },
+      "rippleedits:popular:110": {
+        "A": true,
+        "records_correct_both": 2,
+        "records": 2,
+        "questions": 1,
+        "C": 1,
+        "D": 0,
+        "W": 0
+      },
+      "rippleedits:popular:10": {
+        "A": true,
+        "records_correct_both": 6,
+        "records": 6,
+        "questions": 5,
+        "C": 5,
+        "D": 0,
+        "W": 0
+      },
+      "rippleedits:popular:118": {
+        "A": true,
+        "records_correct_both": 4,
+        "records": 4,
+        "questions": 3,
+        "C": 3,
+        "D": 0,
+        "W": 0
+      },
+      "rippleedits:popular:155": {
+        "A": false,
+        "records_correct_both": 7,
+        "records": 8,
+        "questions": 7,
+        "C": 3,
+        "D": 0,
+        "W": 0
+      },
+      "rippleedits:popular:836": {
+        "A": false,
+        "records_correct_both": 2,
+        "records": 3,
+        "questions": 2,
+        "C": 2,
+        "D": 0,
+        "W": 0
+      },
+      "rippleedits:random:1468": {
+        "A": true,
+        "records_correct_both": 4,
+        "records": 4,
+        "questions": 3,
+        "C": 3,
+        "D": 0,
+        "W": 0
+      },
+      "rippleedits:popular:38": {
+        "A": true,
+        "records_correct_both": 2,
+        "records": 2,
+        "questions": 1,
+        "C": 1,
+        "D": 0,
+        "W": 0
+      },
+      "rippleedits:random:354": {
+        "A": true,
+        "records_correct_both": 4,
+        "records": 4,
+        "questions": 3,
+        "C": 3,
+        "D": 0,
+        "W": 0
+      },
+      "rippleedits:popular:539": {
+        "A": false,
+        "records_correct_both": 1,
+        "records": 2,
+        "questions": 1,
+        "C": 1,
+        "D": 0,
+        "W": 0
+      },
+      "rippleedits:random:17": {
+        "A": false,
+        "records_correct_both": 4,
+        "records": 5,
+        "questions": 4,
+        "C": 3,
+        "D": 0,
+        "W": 0
+      },
+      "rippleedits:random:1775": {
+        "A": false,
+        "records_correct_both": 1,
+        "records": 2,
+        "questions": 1,
+        "C": 1,
+        "D": 0,
+        "W": 0
+      },
+      "rippleedits:random:1202": {
+        "A": true,
+        "records_correct_both": 5,
+        "records": 5,
+        "questions": 4,
+        "C": 4,
+        "D": 0,
+        "W": 0
+      },
+      "rippleedits:popular:85": {
+        "A": true,
+        "records_correct_both": 2,
+        "records": 2,
+        "questions": 1,
+        "C": 1,
+        "D": 0,
+        "W": 0
+      },
+      "rippleedits:random:1320": {
+        "A": true,
+        "records_correct_both": 3,
+        "records": 3,
+        "questions": 2,
+        "C": 2,
+        "D": 0,
+        "W": 0
+      },
+      "rippleedits:popular:824": {
+        "A": true,
+        "records_correct_both": 2,
+        "records": 2,
+        "questions": 1,
+        "C": 1,
+        "D": 0,
+        "W": 0
+      },
+      "rippleedits:random:491": {
+        "A": true,
+        "records_correct_both": 3,
+        "records": 3,
+        "questions": 2,
+        "C": 2,
+        "D": 1,
+        "W": 1
+      },
+      "rippleedits:popular:483": {
+        "A": true,
+        "records_correct_both": 4,
+        "records": 4,
+        "questions": 3,
+        "C": 3,
+        "D": 0,
+        "W": 0
+      },
+      "rippleedits:random:1689": {
+        "A": true,
+        "records_correct_both": 5,
+        "records": 5,
+        "questions": 4,
+        "C": 4,
+        "D": 0,
+        "W": 0
+      },
+      "rippleedits:popular:627": {
+        "A": false,
+        "records_correct_both": 2,
+        "records": 3,
+        "questions": 2,
+        "C": 2,
+        "D": 0,
+        "W": 0
+      },
+      "rippleedits:popular:717": {
+        "A": true,
+        "records_correct_both": 3,
+        "records": 3,
+        "questions": 2,
+        "C": 2,
+        "D": 0,
+        "W": 0
+      },
+      "rippleedits:popular:107": {
+        "A": false,
+        "records_correct_both": 5,
+        "records": 6,
+        "questions": 5,
+        "C": 5,
+        "D": 0,
+        "W": 0
+      },
+      "rippleedits:random:857": {
+        "A": true,
+        "records_correct_both": 7,
+        "records": 7,
+        "questions": 6,
+        "C": 5,
+        "D": 0,
+        "W": 0
+      },
+      "rippleedits:popular:620": {
+        "A": true,
+        "records_correct_both": 2,
+        "records": 2,
+        "questions": 1,
+        "C": 1,
+        "D": 0,
+        "W": 0
+      },
+      "rippleedits:random:618": {
+        "A": true,
+        "records_correct_both": 5,
+        "records": 5,
+        "questions": 4,
+        "C": 4,
+        "D": 0,
+        "W": 0
+      }
+    },
+    "answer_disagreement_diagnostics": 7,
+    "strict_versus_extracted_differences": 8,
+    "locality_panel_diagnostic": {
+      "none": {
+        "measured": 272,
+        "correct": 170
+      },
+      "chronological_B": {
+        "measured": 272,
+        "correct": 94
+      }
+    },
+    "witnesses": [
+      {
+        "question_id": "rippleedits:popular:736:Compositionality_II:2:0",
+        "root_id": "rippleedits:popular:736",
+        "category": "Compositionality_II",
+        "gold": [
+          "Queen Myeongdeok"
+        ],
+        "chronological_B": {
+          "text": "Queen Myeongdeok",
+          "strict_correct": true,
+          "extracted_id": "Q6799784",
+          "extraction_status": "unique"
+        },
+        "chronological_D": {
+          "text": "Kim Kardashian",
+          "strict_correct": false,
+          "extracted_id": "Q186304",
+          "extraction_status": "unique"
+        }
+      },
+      {
+        "question_id": "rippleedits:popular:622:Compositionality_II:2:0",
+        "root_id": "rippleedits:popular:622",
+        "category": "Compositionality_II",
+        "gold": [
+          "Clinch County"
+        ],
+        "chronological_B": {
+          "text": "Sinking Spring Farm",
+          "strict_correct": false,
+          "extracted_id": "Q113363481",
+          "extraction_status": "unique"
+        },
+        "chronological_D": {
+          "text": "Clinch County",
+          "strict_correct": true,
+          "extracted_id": "Q486167",
+          "extraction_status": "unique"
+        }
+      },
+      {
+        "question_id": "rippleedits:random:491:Compositionality_II:0:0",
+        "root_id": "rippleedits:random:491",
+        "category": "Compositionality_II",
+        "gold": [
+          "unknown"
+        ],
+        "chronological_B": {
+          "text": "pangender",
+          "strict_correct": false,
+          "extracted_id": "Q7130936",
+          "extraction_status": "unique"
+        },
+        "chronological_D": {
+          "text": "unknown",
+          "strict_correct": true,
+          "extracted_id": "Q24238356",
+          "extraction_status": "unique"
+        }
+      }
+    ],
+    "interpretation": "completed_with_witnesses",
+    "claim_limits": [
+      "Nonparametric in-context supersession only; not a MEMIT/AlphaEdit replication or parametric claim.",
+      "No p-values and no population bound: 98 questions are clustered inside 34 restricted roots.",
+      "One witness is not a null; zero observed witnesses is not evidence of universal invariance.",
+      "Repeats do not increase N and do not certify un-repeated roots."
+    ]
+  },
+  "alternative": {
+    "denominators": {
+      "roots": 34,
+      "questions": 98
+    },
+    "counts": {
+      "A_roots": 16,
+      "A_roots_measured": 34,
+      "C_questions": 90,
+      "D_questions": 4,
+      "W_questions": 2,
+      "W_unmeasured": 0,
+      "A_and_C_questions": 42,
+      "roots_with_any_W": 2
+    },
+    "coverage": {
+      "A_and_C_fraction": 0.42857142857142855,
+      "coverage_limited": true
+    },
+    "witness_rate_among_eligible_secondary": 0.047619047619047616,
+    "by_category": {
+      "Compositionality_I": {
+        "questions": 67,
+        "A_and_C": 24,
+        "W": 0
+      },
+      "Compositionality_II": {
+        "questions": 31,
+        "A_and_C": 18,
+        "W": 2
+      }
+    },
+    "by_changed_hop": {
+      "1": {
+        "questions": 67,
+        "W": 0
+      },
+      "2": {
+        "questions": 31,
+        "W": 2
+      }
+    },
+    "per_root": {
+      "rippleedits:popular:670": {
+        "A": false,
+        "records_correct_both": 1,
+        "records": 3,
+        "questions": 2,
+        "C": 2,
+        "D": 0,
+        "W": 0
+      },
+      "rippleedits:popular:736": {
+        "A": false,
+        "records_correct_both": 7,
+        "records": 8,
+        "questions": 7,
+        "C": 7,
+        "D": 1,
+        "W": 0
+      },
+      "rippleedits:random:1791": {
+        "A": false,
+        "records_correct_both": 1,
+        "records": 2,
+        "questions": 1,
+        "C": 1,
+        "D": 0,
+        "W": 0
+      },
+      "rippleedits:popular:152": {
+        "A": true,
+        "records_correct_both": 4,
+        "records": 4,
+        "questions": 3,
+        "C": 3,
+        "D": 0,
+        "W": 0
+      },
+      "rippleedits:popular:133": {
+        "A": true,
+        "records_correct_both": 5,
+        "records": 5,
+        "questions": 4,
+        "C": 3,
+        "D": 0,
+        "W": 0
+      },
+      "rippleedits:popular:837": {
+        "A": false,
+        "records_correct_both": 2,
+        "records": 4,
+        "questions": 3,
+        "C": 3,
+        "D": 1,
+        "W": 0
+      },
+      "rippleedits:popular:622": {
+        "A": true,
+        "records_correct_both": 5,
+        "records": 5,
+        "questions": 4,
+        "C": 4,
+        "D": 1,
+        "W": 1
+      },
+      "rippleedits:random:60": {
+        "A": false,
+        "records_correct_both": 3,
+        "records": 4,
+        "questions": 3,
+        "C": 2,
+        "D": 0,
+        "W": 0
+      },
+      "rippleedits:popular:703": {
+        "A": true,
+        "records_correct_both": 2,
+        "records": 2,
+        "questions": 1,
+        "C": 1,
+        "D": 0,
+        "W": 0
+      },
+      "rippleedits:random:1066": {
+        "A": false,
+        "records_correct_both": 2,
+        "records": 3,
+        "questions": 2,
+        "C": 2,
+        "D": 0,
+        "W": 0
+      },
+      "rippleedits:popular:110": {
+        "A": false,
+        "records_correct_both": 1,
+        "records": 2,
+        "questions": 1,
+        "C": 1,
+        "D": 0,
+        "W": 0
+      },
+      "rippleedits:popular:10": {
+        "A": true,
+        "records_correct_both": 6,
+        "records": 6,
+        "questions": 5,
+        "C": 5,
+        "D": 0,
+        "W": 0
+      },
+      "rippleedits:popular:118": {
+        "A": false,
+        "records_correct_both": 3,
+        "records": 4,
+        "questions": 3,
+        "C": 3,
+        "D": 0,
+        "W": 0
+      },
+      "rippleedits:popular:155": {
+        "A": false,
+        "records_correct_both": 7,
+        "records": 8,
+        "questions": 7,
+        "C": 3,
+        "D": 0,
+        "W": 0
+      },
+      "rippleedits:popular:836": {
+        "A": false,
+        "records_correct_both": 2,
+        "records": 3,
+        "questions": 2,
+        "C": 2,
+        "D": 0,
+        "W": 0
+      },
+      "rippleedits:random:1468": {
+        "A": true,
+        "records_correct_both": 4,
+        "records": 4,
+        "questions": 3,
+        "C": 3,
+        "D": 0,
+        "W": 0
+      },
+      "rippleedits:popular:38": {
+        "A": true,
+        "records_correct_both": 2,
+        "records": 2,
+        "questions": 1,
+        "C": 1,
+        "D": 0,
+        "W": 0
+      },
+      "rippleedits:random:354": {
+        "A": true,
+        "records_correct_both": 4,
+        "records": 4,
+        "questions": 3,
+        "C": 3,
+        "D": 0,
+        "W": 0
+      },
+      "rippleedits:popular:539": {
+        "A": false,
+        "records_correct_both": 0,
+        "records": 2,
+        "questions": 1,
+        "C": 1,
+        "D": 0,
+        "W": 0
+      },
+      "rippleedits:random:17": {
+        "A": false,
+        "records_correct_both": 3,
+        "records": 5,
+        "questions": 4,
+        "C": 3,
+        "D": 0,
+        "W": 0
+      },
+      "rippleedits:random:1775": {
+        "A": false,
+        "records_correct_both": 1,
+        "records": 2,
+        "questions": 1,
+        "C": 1,
+        "D": 0,
+        "W": 0
+      },
+      "rippleedits:random:1202": {
+        "A": true,
+        "records_correct_both": 5,
+        "records": 5,
+        "questions": 4,
+        "C": 4,
+        "D": 0,
+        "W": 0
+      },
+      "rippleedits:popular:85": {
+        "A": true,
+        "records_correct_both": 2,
+        "records": 2,
+        "questions": 1,
+        "C": 1,
+        "D": 0,
+        "W": 0
+      },
+      "rippleedits:random:1320": {
+        "A": false,
+        "records_correct_both": 2,
+        "records": 3,
+        "questions": 2,
+        "C": 2,
+        "D": 0,
+        "W": 0
+      },
+      "rippleedits:popular:824": {
+        "A": true,
+        "records_correct_both": 2,
+        "records": 2,
+        "questions": 1,
+        "C": 1,
+        "D": 0,
+        "W": 0
+      },
+      "rippleedits:random:491": {
+        "A": true,
+        "records_correct_both": 3,
+        "records": 3,
+        "questions": 2,
+        "C": 2,
+        "D": 1,
+        "W": 1
+      },
+      "rippleedits:popular:483": {
+        "A": false,
+        "records_correct_both": 3,
+        "records": 4,
+        "questions": 3,
+        "C": 3,
+        "D": 0,
+        "W": 0
+      },
+      "rippleedits:random:1689": {
+        "A": true,
+        "records_correct_both": 5,
+        "records": 5,
+        "questions": 4,
+        "C": 4,
+        "D": 0,
+        "W": 0
+      },
+      "rippleedits:popular:627": {
+        "A": false,
+        "records_correct_both": 2,
+        "records": 3,
+        "questions": 2,
+        "C": 2,
+        "D": 0,
+        "W": 0
+      },
+      "rippleedits:popular:717": {
+        "A": true,
+        "records_correct_both": 3,
+        "records": 3,
+        "questions": 2,
+        "C": 2,
+        "D": 0,
+        "W": 0
+      },
+      "rippleedits:popular:107": {
+        "A": false,
+        "records_correct_both": 4,
+        "records": 6,
+        "questions": 5,
+        "C": 5,
+        "D": 0,
+        "W": 0
+      },
+      "rippleedits:random:857": {
+        "A": false,
+        "records_correct_both": 6,
+        "records": 7,
+        "questions": 6,
+        "C": 5,
+        "D": 0,
+        "W": 0
+      },
+      "rippleedits:popular:620": {
+        "A": true,
+        "records_correct_both": 2,
+        "records": 2,
+        "questions": 1,
+        "C": 1,
+        "D": 0,
+        "W": 0
+      },
+      "rippleedits:random:618": {
+        "A": true,
+        "records_correct_both": 5,
+        "records": 5,
+        "questions": 4,
+        "C": 4,
+        "D": 0,
+        "W": 0
+      }
+    },
+    "answer_disagreement_diagnostics": 8,
+    "strict_versus_extracted_differences": 0,
+    "locality_panel_diagnostic": {
+      "none": {
+        "measured": 272,
+        "correct": 170
+      },
+      "chronological_B": {
+        "measured": 272,
+        "correct": 94
+      }
+    },
+    "witnesses": [
+      {
+        "question_id": "rippleedits:popular:622:Compositionality_II:2:0",
+        "root_id": "rippleedits:popular:622",
+        "category": "Compositionality_II",
+        "gold": [
+          "Clinch County"
+        ],
+        "chronological_B": {
+          "text": "Sinking Spring Farm",
+          "strict_correct": false,
+          "extracted_id": "Q113363481",
+          "extraction_status": "unique"
+        },
+        "chronological_D": {
+          "text": "Clinch County",
+          "strict_correct": true,
+          "extracted_id": "Q486167",
+          "extraction_status": "unique"
+        }
+      },
+      {
+        "question_id": "rippleedits:random:491:Compositionality_II:0:0",
+        "root_id": "rippleedits:random:491",
+        "category": "Compositionality_II",
+        "gold": [
+          "unknown"
+        ],
+        "chronological_B": {
+          "text": "pangender",
+          "strict_correct": false,
+          "extracted_id": "Q7130936",
+          "extraction_status": "unique"
+        },
+        "chronological_D": {
+          "text": "unknown",
+          "strict_correct": true,
+          "extracted_id": "Q24238356",
+          "extraction_status": "unique"
+        }
+      }
+    ],
+    "interpretation": "completed_with_witnesses",
+    "claim_limits": [
+      "Nonparametric in-context supersession only; not a MEMIT/AlphaEdit replication or parametric claim.",
+      "No p-values and no population bound: 98 questions are clustered inside 34 restricted roots.",
+      "One witness is not a null; zero observed witnesses is not evidence of universal invariance.",
+      "Repeats do not increase N and do not certify un-repeated roots."
+    ]
+  },
+  "repeats": {
+    "repeat_670": {
+      "roots": [
+        "rippleedits:popular:670"
+      ],
+      "compared_units": 35,
+      "identical": true,
+      "differences": {
+        "primary": [],
+        "alternative": []
+      },
+      "witnesses": 0
+    },
+    "repeat_618": {
+      "roots": [
+        "rippleedits:random:618"
+      ],
+      "compared_units": 51,
+      "identical": true,
+      "differences": {
+        "primary": [],
+        "alternative": []
+      },
+      "witnesses": 0
+    }
+  },
+  "repeat_roots": 2,
+  "repeat_units": 86,
+  "repeat_witnesses": 0,
+  "all_repeat_answers_identical": true,
+  "all_wrong_witness_answers_are_obsolete": true,
+  "locality_distinct_questions": 8,
+  "phase_coverage": {
+    "development": {
+      "planned": 207,
+      "measured": 207
+    },
+    "qualification": {
+      "planned": 114,
+      "measured": 114
+    },
+    "final": {
+      "planned": 1430,
+      "measured": 1430
+    },
+    "repeat_670": {
+      "planned": 35,
+      "measured": 35
+    },
+    "repeat_618": {
+      "planned": 51,
+      "measured": 51
+    }
+  },
+  "qualification": {
+    "primary": {
+      "G1": {
+        "given_facts_correct": 16,
+        "canonical_correct": 16,
+        "questions": 16,
+        "threshold": {
+          "given_facts_min": 13,
+          "canonical_min": 13,
+          "questions": 16
+        },
+        "pass": true
+      },
+      "G2": {
+        "records_correct_both": 20,
+        "records": 22,
+        "threshold": {
+          "records_correct_both_min": 18,
+          "records": 22
+        },
+        "pass": true
+      },
+      "G4": {
+        "unresolved_chronological_atomic": 1,
+        "reads": 44,
+        "threshold": {
+          "unresolved_max": 4,
+          "reads": 44
+        },
+        "pass": true
+      },
+      "G5": {
+        "questions_with_A_and_C": 13,
+        "roots_with_any": 4,
+        "roots": [
+          "rippleedits:popular:352",
+          "rippleedits:popular:415",
+          "rippleedits:random:1223",
+          "rippleedits:random:1289"
+        ],
+        "threshold": {
+          "questions_min": 10,
+          "questions": 16,
+          "roots_min": 3,
+          "roots": 6
+        },
+        "pass": true
+      },
+      "technical": {
+        "all_units_measured": true,
+        "planned": 114,
+        "measured": 114,
+        "empty_outputs": 0,
+        "truncated_outputs": 0,
+        "pass": true
+      }
+    },
+    "alternative": {
+      "G1": {
+        "given_facts_correct": 16,
+        "canonical_correct": 16,
+        "questions": 16,
+        "threshold": {
+          "given_facts_min": 13,
+          "canonical_min": 13,
+          "questions": 16
+        },
+        "pass": true
+      },
+      "G2": {
+        "records_correct_both": 18,
+        "records": 22,
+        "threshold": {
+          "records_correct_both_min": 18,
+          "records": 22
+        },
+        "pass": true
+      },
+      "G4": {
+        "unresolved_chronological_atomic": 5,
+        "reads": 44,
+        "threshold": {
+          "unresolved_max": 4,
+          "reads": 44
+        },
+        "pass": false
+      },
+      "G5": {
+        "questions_with_A_and_C": 5,
+        "roots_with_any": 2,
+        "roots": [
+          "rippleedits:random:1223",
+          "rippleedits:random:1289"
+        ],
+        "threshold": {
+          "questions_min": 10,
+          "questions": 16,
+          "roots_min": 3,
+          "roots": 6
+        },
+        "pass": false
+      },
+      "technical": {
+        "all_units_measured": true,
+        "planned": 114,
+        "measured": 114,
+        "empty_outputs": 0,
+        "truncated_outputs": 0,
+        "pass": true
+      }
+    }
+  },
+  "parser_changed_questions": 24,
+  "scope": "Frozen analysis of saved responses; no neural inference or historical clock-time attestation."
+}

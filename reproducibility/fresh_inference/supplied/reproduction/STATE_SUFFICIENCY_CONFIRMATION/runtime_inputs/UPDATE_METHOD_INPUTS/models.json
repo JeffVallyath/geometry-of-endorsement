@@ -1,0 +1,54 @@
+{
+  "backbone_dtype": "bfloat16",
+  "learned_recipes": [
+    "INV_PAIR_NLL",
+    "FREE_PAIR_CONSISTENCY"
+  ],
+  "models": {
+    "gemma": {
+      "cap": 30.0,
+      "cap_rule": "inherited V1 site-15 relation cap 103.18592071533203 (clip THEN strength)",
+      "hidden": 3584,
+      "id": "google/gemma-2-9b-it",
+      "key": "gemma",
+      "late_site": 27,
+      "layers": 42,
+      "revision": "11c9b309abf73637e4b6f9a3fa1e92e615547819",
+      "site": 15,
+      "site_convention": "zero-based post-block index of the decoder layer whose output is edited",
+      "sites": [
+        15
+      ],
+      "template_kwargs": {}
+    },
+    "qwen": {
+      "cap": null,
+      "cap_rule": "2 x 95th percentile of FIT ||z_dst - z_src|| at the mapped site, fixed before any effect",
+      "hidden": 4096,
+      "id": "Qwen/Qwen3-8B",
+      "key": "qwen",
+      "late_site": null,
+      "layers": 36,
+      "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+      "site": 13,
+      "site_rule": "round(16 * Qwen_layers / 42) - 1 = round(13.71) - 1 = 13; actual module depth verified at load",
+      "sites": [
+        13
+      ],
+      "template_kwargs": {
+        "enable_thinking": false
+      }
+    }
+  },
+  "procedures": {
+    "gemma": "C1",
+    "qwen": "T4"
+  },
+  "rank": 16,
+  "score_head": "full-vocabulary FP32 log-softmax; model-specific final softcap; argmax over supplied answer tokens",
+  "seeds": [
+    0,
+    1
+  ],
+  "workspace_dtype": "float32"
+}

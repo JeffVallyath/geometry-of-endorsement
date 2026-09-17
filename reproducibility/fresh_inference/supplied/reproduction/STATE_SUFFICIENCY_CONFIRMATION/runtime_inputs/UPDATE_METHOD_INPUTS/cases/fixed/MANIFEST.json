@@ -1,0 +1,78 @@
+{
+  "canonical_generator_hashes": {
+    "candidate.py": "f63ef54e7a9d1069f794aa5e197f9b57d56732353221c85f68007374663aa040",
+    "origins.py": "eba4044ec0872d43777838efb4b2a58ff09a1944130ce7f4e2a4774658746f1c",
+    "tasks.py": "6e3b73b99b4c8c220e6eea2d54cb0830c8bf2efd83ac20850e274b66d1f211bc",
+    "v2_protocol.py": "237d93505b431dbf996a4c7062c4a1143e43795f8f336a4a6b82e3dfabb2e90c",
+    "v3_protocol.py": "6963c576555a0293dced8ac0a1825e5f1c84d15c4c099cfdad2099c445b49544"
+  },
+  "development_scenes_per_model": 8,
+  "development_selection": "8 disjoint candidate scenes covering each size/project/direction cell once",
+  "files": {
+    "COLLISION_CHECK.json": {
+      "bytes": 951,
+      "sha256": "d32bbe5d702e5dce356733098e28fcba0211f8b55e867bccd5259fbc9673e96e"
+    },
+    "dev.jsonl": {
+      "bytes": 2254,
+      "sha256": "1762a5f1904f56370bf369da902e22d1d516c9af8cac118818b3add4784d509d"
+    },
+    "evaluation.jsonl": {
+      "bytes": 27062104,
+      "sha256": "4b51a3c6fd70db9bc42331d7dbc0c29e1937055ca5c5559eeb47695d0a0e46b9"
+    },
+    "example_input.json": {
+      "bytes": 2028,
+      "sha256": "11eb7be293b72556eae42223dd5ba376f1d2d7d1a57f641ba1707c26d6777e17"
+    },
+    "example_question.json": {
+      "bytes": 130,
+      "sha256": "78f21052a2f3bcdfe9d2399e9b17527d1fa95766f68e19a9b35442e1517b7fa4"
+    },
+    "inputs.jsonl": {
+      "bytes": 4617834,
+      "sha256": "586efd248a70f3f578d2c55ec06ed1d50bca6fb0e548ac4fa41cfa6185779f2a"
+    },
+    "main.jsonl": {
+      "bytes": 18059,
+      "sha256": "cedaf91d2ab12cda26d8c1cc7875205443fbea99035b0cb31808adecde6d60a6"
+    },
+    "origin.jsonl": {
+      "bytes": 126176,
+      "sha256": "541585266fc60711f5c8a3e65d8be92c77a3f57bbbfe742788cbd7444cce2f13"
+    },
+    "plan.jsonl": {
+      "bytes": 602168,
+      "sha256": "1a38c82413e4f206c06adcbcb9b225d69b91ba84f96838ff756607a6bd36c867"
+    },
+    "program.jsonl": {
+      "bytes": 9023,
+      "sha256": "62192380f8e94f9f510de35f0a4c46ed7a89374e0b9d122fc34bb191bbde8dda"
+    }
+  },
+  "fresh_unique_sources": 328,
+  "generator_sha256": "a630f7e5756db1b87d54d415ad99665437cad4a59084a167ba1af5615269e795",
+  "historical_unique_sources": 2304,
+  "independent_unit": "terminal root (primary); scene (main/program); not origin/query/model/writer seed",
+  "input_requests": 1616,
+  "main_per_model": 64,
+  "model_evaluations": 0,
+  "models_share_scene_designs": true,
+  "namespace": "UPDATE_COMPARISON",
+  "origins_per_root": 4,
+  "outcomes_used": false,
+  "prior_index_sha256": "d84f970d3b4ae2b19b06750f8118e150e5122e262d6c28c2d7119bb13e75e626",
+  "program_scenes_per_model": 32,
+  "program_selection": "lowest source-text SHA256 within each of 32 size/project/three-bit cells",
+  "prompts_sha256": "9130f392ce39f2f3c673f2558cf5e75a2f85691f2dfa82fc65cb1f1d376d5da3",
+  "question_mapping_seeds": {
+    "main": 260912501,
+    "origin": 260912601
+  },
+  "rejected_collisions": [],
+  "remaining_collisions": 0,
+  "scoring_rows": 44288,
+  "seed": 260913901,
+  "terminal_roots_per_model": 64,
+  "writer_seeds_share_cases": true
+}

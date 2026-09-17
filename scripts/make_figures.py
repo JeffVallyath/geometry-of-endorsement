@@ -148,7 +148,7 @@ def fig_layer_sweep(data: dict) -> None:
         panel_label(ax, letters[1][col])
 
     fig.tight_layout()
-    save(fig, "fig1_layer_sweep")
+    save(fig, "fig01_layer_sweep")
 
 
 def _dot_panel(ax, model, keys, open_keys=()):
@@ -178,7 +178,9 @@ def _dot_panel(ax, model, keys, open_keys=()):
         )
     ax.axvline(0.0, color=INK, lw=0.6, ls=(0, (4, 3)))
     ax.set_yticks(y)
-    ax.set_yticklabels([ev[k]["label"] for k in keys])
+    display_labels = {"sbert_interaction": "Text-only comparator (MiniLM)",
+                      "separate_encoding_additive": "Separate-input additive score"}
+    ax.set_yticklabels([display_labels.get(k, ev[k]["label"]) for k in keys])
     ax.grid(axis="y", visible=False)
     return y
 
@@ -200,7 +202,7 @@ def fig_scorer_comparison(data: dict) -> None:
         ax.set_ylim(-0.5, len(keys) - 0.3)
         panel_label(ax, letter, f"{m['label']}, layer {m['selected_layer']}")
     fig.tight_layout()
-    save(fig, "fig2_scorer_comparison")
+    save(fig, "fig02_scorer_comparison")
 
 
 def fig_permutation_null(data: dict) -> None:
@@ -257,7 +259,7 @@ def fig_permutation_null(data: dict) -> None:
             ax.grid(axis="x", visible=False)
             panel_label(ax, letters[row][col], m["label"] if row == 0 else "")
     fig.tight_layout()
-    save(fig, "fig3_permutation_null")
+    save(fig, "fig03_permutation_null")
 
 
 def fig_truth_control(data: dict) -> None:
@@ -290,7 +292,7 @@ def fig_truth_control(data: dict) -> None:
 
     ax = axes[1]
     labels = ["Llama\nprimary", "Llama\ntransfer", "Gemma\nprimary"]
-    sublabels = [f"layer {sel}", "held-out 1/2", f"layer {gemma['truth_control_layer']}"]
+    sublabels = [f"layer {sel}", "tokens 1 / 2", f"layer {gemma['truth_control_layer']}"]
     points = [t["primary_T"], t["transfer_T"], gemma["truth_control_T"]]
     cis = [t["primary_ci"], t["transfer_ci"], None]
     colors = (C_DIRECTION, C_ANSWER, C_DIRECTION)
@@ -319,7 +321,7 @@ def fig_truth_control(data: dict) -> None:
     panel_label(ax, "b", "Held-out test, 95% CI")
 
     fig.tight_layout()
-    save(fig, "fig4_truth_control")
+    save(fig, "fig04_truth_control")
 
 
 def fig_specificity(data: dict) -> None:
@@ -353,7 +355,7 @@ def fig_specificity(data: dict) -> None:
                             xytext=(7, 0), textcoords="offset points",
                             fontsize=6, color=MUTED, va="center")
     fig.tight_layout()
-    save(fig, "fig5_specificity")
+    save(fig, "fig05_specificity")
 
 
 def main() -> None:

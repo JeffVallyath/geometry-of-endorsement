@@ -1,0 +1,2090 @@
+[
+  {
+    "root_id": "SSC1-FINAL-0034",
+    "pair_id": "gemma-pair-00",
+    "role": "witness",
+    "original_split": "localization",
+    "query_id": "SSC1-FINAL-0034-d0-07",
+    "primary": true,
+    "label": "LATER-FOLLOWING",
+    "probability_gap": 0.501759752362138,
+    "error_early": 0.5260733605191314,
+    "error_later": 0.04261739348323995,
+    "probability_effects": {
+      "cells": {
+        "AA": 0.19726680102817518,
+        "AB": 0.6807227680640666,
+        "BA": 0.13033579938794182,
+        "BB": 0.6990265533903132
+      },
+      "early": [
+        -0.06693100164023336,
+        0.018303785326246547
+      ],
+      "later": [
+        0.48345596703589144,
+        0.5686907540023713
+      ],
+      "interaction": 0.0852347869664799
+    },
+    "log_odds_effects": {
+      "cells": {
+        "AA": -1.4034652709960938,
+        "AB": 0.7570953369140625,
+        "BA": -1.8979929685592651,
+        "BB": 0.8426666855812073
+      },
+      "early": [
+        -0.4945276975631714,
+        0.08557134866714478
+      ],
+      "later": [
+        2.1605606079101562,
+        2.7406596541404724
+      ],
+      "interaction": 0.5800990462303162
+    },
+    "direct_checks": [
+      {
+        "state": "AB",
+        "query_id": "SSC1-FINAL-0034-d0-00",
+        "recipient": "BB",
+        "baseline_both_correct": true,
+        "p_correct": 0.9998760751578163,
+        "recipient_probability_change": 3.918999944452217e-06,
+        "passed": true
+      },
+      {
+        "state": "AB",
+        "query_id": "SSC1-FINAL-0034-d0-03",
+        "recipient": "BB",
+        "baseline_both_correct": true,
+        "p_correct": 0.9999772994843152,
+        "recipient_probability_change": 1.3656516084648018e-07,
+        "passed": true
+      },
+      {
+        "state": "BA",
+        "query_id": "SSC1-FINAL-0034-d0-00",
+        "recipient": "AA",
+        "baseline_both_correct": true,
+        "p_correct": 0.9999083717195273,
+        "recipient_probability_change": 5.725322390381926e-05,
+        "passed": true
+      },
+      {
+        "state": "BA",
+        "query_id": "SSC1-FINAL-0034-d0-03",
+        "recipient": "AA",
+        "baseline_both_correct": true,
+        "p_correct": 0.9999842037337852,
+        "recipient_probability_change": 5.720332859615596e-07,
+        "passed": true
+      }
+    ],
+    "selectivity_assessed": true,
+    "direct_preservation": true,
+    "hybrid_joint_valid_mass": true
+  },
+  {
+    "root_id": "SSC1-FINAL-0034",
+    "pair_id": "gemma-pair-00",
+    "role": "witness",
+    "original_split": "localization",
+    "query_id": "SSC1-FINAL-0034-d1-07",
+    "primary": false,
+    "label": "LOW-DISCRIMINATION",
+    "probability_gap": 0.04912770493343563,
+    "error_early": 0.05861119827893922,
+    "error_later": 0.013173667687246909,
+    "probability_effects": {
+      "cells": {
+        "AA": 0.07449868860037549,
+        "AB": 0.1199362191920678,
+        "BA": 0.051841527567624994,
+        "BB": 0.12362639353381112
+      },
+      "early": [
+        -0.0226571610327505,
+        0.0036901743417433186
+      ],
+      "later": [
+        0.04543753059169231,
+        0.07178486596618613
+      ],
+      "interaction": 0.026347335374493824
+    },
+    "log_odds_effects": {
+      "cells": {
+        "AA": -2.519554026424885,
+        "AB": -1.9930342882871628,
+        "BA": -2.90633013471961,
+        "BB": -1.9585284292697906
+      },
+      "early": [
+        -0.3867761082947254,
+        0.03450585901737213
+      ],
+      "later": [
+        0.526519738137722,
+        0.9478017054498196
+      ],
+      "interaction": 0.42128196731209755
+    },
+    "direct_checks": [
+      {
+        "state": "AB",
+        "query_id": "SSC1-FINAL-0034-d1-00",
+        "recipient": "BB",
+        "baseline_both_correct": true,
+        "p_correct": 0.9996480755734741,
+        "recipient_probability_change": 4.042990612007635e-05,
+        "passed": true
+      },
+      {
+        "state": "AB",
+        "query_id": "SSC1-FINAL-0034-d1-03",
+        "recipient": "BB",
+        "baseline_both_correct": true,
+        "p_correct": 0.999849002184461,
+        "recipient_probability_change": 6.068329909902914e-06,
+        "passed": true
+      },
+      {
+        "state": "BA",
+        "query_id": "SSC1-FINAL-0034-d1-00",
+        "recipient": "AA",
+        "baseline_both_correct": true,
+        "p_correct": 0.9996200180326199,
+        "recipient_probability_change": 8.49223320883441e-05,
+        "passed": true
+      },
+      {
+        "state": "BA",
+        "query_id": "SSC1-FINAL-0034-d1-03",
+        "recipient": "AA",
+        "baseline_both_correct": true,
+        "p_correct": 0.9998738357235575,
+        "recipient_probability_change": 4.10847991372254e-06,
+        "passed": true
+      }
+    ],
+    "selectivity_assessed": true,
+    "direct_preservation": true,
+    "hybrid_joint_valid_mass": true
+  },
+  {
+    "root_id": "SSC1-FINAL-0011",
+    "pair_id": "gemma-pair-00",
+    "role": "control",
+    "original_split": "localization",
+    "query_id": "SSC1-FINAL-0011-d0-10",
+    "primary": true,
+    "label": "LOW-DISCRIMINATION",
+    "probability_gap": 0.06867468769387675,
+    "error_early": 0.11169325428289001,
+    "error_later": 0.043018566589013256,
+    "probability_effects": {
+      "cells": {
+        "AA": 0.009682361612975973,
+        "AB": 0.16023368569006205,
+        "BA": 0.005521864818158788,
+        "BB": 0.07835704930685272
+      },
+      "early": [
+        -0.004160496794817185,
+        -0.08187663638320933
+      ],
+      "later": [
+        0.15055132407708607,
+        0.07283518448869393
+      ],
+      "interaction": -0.07771613958839214
+    },
+    "log_odds_effects": {
+      "cells": {
+        "AA": -4.627719898708165,
+        "AB": -1.656490370631218,
+        "BA": -5.193502479698509,
+        "BB": -2.464881956577301
+      },
+      "early": [
+        -0.5657825809903443,
+        -0.8083915859460831
+      ],
+      "later": [
+        2.9712295280769467,
+        2.728620523121208
+      ],
+      "interaction": -0.24260900495573878
+    },
+    "direct_checks": [
+      {
+        "state": "AB",
+        "query_id": "SSC1-FINAL-0011-d0-extra0",
+        "recipient": "BB",
+        "baseline_both_correct": true,
+        "p_correct": 0.9999202727158152,
+        "recipient_probability_change": 3.2300610674385055e-05,
+        "passed": true
+      },
+      {
+        "state": "AB",
+        "query_id": "SSC1-FINAL-0011-d0-00",
+        "recipient": "BB",
+        "baseline_both_correct": true,
+        "p_correct": 0.9999114738995263,
+        "recipient_probability_change": 6.7124993716749515e-06,
+        "passed": true
+      },
+      {
+        "state": "BA",
+        "query_id": "SSC1-FINAL-0011-d0-extra0",
+        "recipient": "AA",
+        "baseline_both_correct": true,
+        "p_correct": 0.9999592623810162,
+        "recipient_probability_change": 9.416267111483911e-06,
+        "passed": true
+      },
+      {
+        "state": "BA",
+        "query_id": "SSC1-FINAL-0011-d0-00",
+        "recipient": "AA",
+        "baseline_both_correct": true,
+        "p_correct": 0.9999674191607428,
+        "recipient_probability_change": 8.945961066375574e-07,
+        "passed": true
+      }
+    ],
+    "selectivity_assessed": true,
+    "direct_preservation": true,
+    "hybrid_joint_valid_mass": true
+  },
+  {
+    "root_id": "SSC1-FINAL-0011",
+    "pair_id": "gemma-pair-00",
+    "role": "control",
+    "original_split": "localization",
+    "query_id": "SSC1-FINAL-0011-d1-10",
+    "primary": false,
+    "label": "MIXED/INCONCLUSIVE",
+    "probability_gap": 0.17086009502101088,
+    "error_early": 0.24998234338021197,
+    "error_later": 0.07912224835920108,
+    "probability_effects": {
+      "cells": {
+        "AA": 0.016605882949339953,
+        "AB": 0.33881380153138513,
+        "BA": 0.009709209791972094,
+        "BB": 0.18746597797035083
+      },
+      "early": [
+        -0.006896673157367859,
+        -0.1513478235610343
+      ],
+      "later": [
+        0.32220791858204517,
+        0.17775676817837874
+      ],
+      "interaction": -0.14445115040366643
+    },
+    "log_odds_effects": {
+      "cells": {
+        "AA": -4.081252945587039,
+        "AB": -0.668584793806076,
+        "BA": -4.624923729337752,
+        "BB": -1.4665604084730148
+      },
+      "early": [
+        -0.5436707837507129,
+        -0.7979756146669388
+      ],
+      "later": [
+        3.412668151780963,
+        3.158363320864737
+      ],
+      "interaction": -0.2543048309162259
+    },
+    "direct_checks": [
+      {
+        "state": "AB",
+        "query_id": "SSC1-FINAL-0011-d1-extra0",
+        "recipient": "BB",
+        "baseline_both_correct": true,
+        "p_correct": 0.9999163982178547,
+        "recipient_probability_change": 2.1137623870681743e-05,
+        "passed": true
+      },
+      {
+        "state": "AB",
+        "query_id": "SSC1-FINAL-0011-d1-00",
+        "recipient": "BB",
+        "baseline_both_correct": true,
+        "p_correct": 0.9999524602135919,
+        "recipient_probability_change": 2.9522265535542047e-06,
+        "passed": true
+      },
+      {
+        "state": "BA",
+        "query_id": "SSC1-FINAL-0011-d1-extra0",
+        "recipient": "AA",
+        "baseline_both_correct": true,
+        "p_correct": 0.9999416251128022,
+        "recipient_probability_change": 1.3473412338260715e-05,
+        "passed": true
+      },
+      {
+        "state": "BA",
+        "query_id": "SSC1-FINAL-0011-d1-00",
+        "recipient": "AA",
+        "baseline_both_correct": true,
+        "p_correct": 0.9999724699819155,
+        "recipient_probability_change": 1.1955088359272281e-06,
+        "passed": true
+      }
+    ],
+    "selectivity_assessed": true,
+    "direct_preservation": true,
+    "hybrid_joint_valid_mass": true
+  },
+  {
+    "root_id": "SSC1-FINAL-0026",
+    "pair_id": "gemma-pair-02",
+    "role": "witness",
+    "original_split": "localization",
+    "query_id": "SSC1-FINAL-0026-d1-extra2",
+    "primary": true,
+    "label": "LATER-FOLLOWING",
+    "probability_gap": 0.9487247957257603,
+    "error_early": 0.950679584735614,
+    "error_later": 0.009604176676223273,
+    "probability_effects": {
+      "cells": {
+        "AA": 0.9657767960665852,
+        "AB": 0.024701388007194493,
+        "BA": 0.9773357617526621,
+        "BB": 0.017052000340824897
+      },
+      "early": [
+        0.01155896568607695,
+        -0.0076493876663695955
+      ],
+      "later": [
+        -0.9410754080593907,
+        -0.9602837614118372
+      ],
+      "interaction": -0.019208353352446528
+    },
+    "log_odds_effects": {
+      "cells": {
+        "AA": 3.3400288559496403,
+        "AB": -3.6758842561393976,
+        "BA": 3.7640419844537973,
+        "BB": -4.054288700222969
+      },
+      "early": [
+        0.42401312850415707,
+        -0.37840444408357143
+      ],
+      "later": [
+        -7.015913112089038,
+        -7.818330684676766
+      ],
+      "interaction": -0.8024175725877285
+    },
+    "direct_checks": [
+      {
+        "state": "AB",
+        "query_id": "SSC1-FINAL-0026-d1-03",
+        "recipient": "BB",
+        "baseline_both_correct": true,
+        "p_correct": 0.9955441296640755,
+        "recipient_probability_change": 0.0008703716247263626,
+        "passed": true
+      },
+      {
+        "state": "AB",
+        "query_id": "SSC1-FINAL-0026-d1-extra0",
+        "recipient": "BB",
+        "baseline_both_correct": true,
+        "p_correct": 0.9982432361630965,
+        "recipient_probability_change": 0.0008225436828575017,
+        "passed": true
+      },
+      {
+        "state": "BA",
+        "query_id": "SSC1-FINAL-0026-d1-03",
+        "recipient": "AA",
+        "baseline_both_correct": true,
+        "p_correct": 0.9969733045058693,
+        "recipient_probability_change": 0.000718233135138524,
+        "passed": true
+      },
+      {
+        "state": "BA",
+        "query_id": "SSC1-FINAL-0026-d1-extra0",
+        "recipient": "AA",
+        "baseline_both_correct": true,
+        "p_correct": 0.9998915045741719,
+        "recipient_probability_change": 1.7923211493742208e-05,
+        "passed": true
+      }
+    ],
+    "selectivity_assessed": true,
+    "direct_preservation": true,
+    "hybrid_joint_valid_mass": true
+  },
+  {
+    "root_id": "SSC1-FINAL-0026",
+    "pair_id": "gemma-pair-02",
+    "role": "witness",
+    "original_split": "localization",
+    "query_id": "SSC1-FINAL-0026-d0-extra2",
+    "primary": false,
+    "label": "LATER-FOLLOWING",
+    "probability_gap": 0.9370837863593678,
+    "error_early": 0.9205031874710639,
+    "error_later": 0.021183335028774567,
+    "probability_effects": {
+      "cells": {
+        "AA": 0.9872655737292685,
+        "AB": 0.08794572128697924,
+        "BA": 0.9918683098697391,
+        "BB": 0.05018178736990068
+      },
+      "early": [
+        0.004602736140470576,
+        -0.03776393391707856
+      ],
+      "later": [
+        -0.8993198524422893,
+        -0.9416865224998384
+      ],
+      "interaction": -0.04236667005754924
+    },
+    "log_odds_effects": {
+      "cells": {
+        "AA": 4.350630018860102,
+        "AB": -2.338979683816433,
+        "BA": 4.8038215562701225,
+        "BB": -2.9406184516847134
+      },
+      "early": [
+        0.45319153741002083,
+        -0.6016387678682804
+      ],
+      "later": [
+        -6.689609702676535,
+        -7.744440007954836
+      ],
+      "interaction": -1.0548303052783012
+    },
+    "direct_checks": [
+      {
+        "state": "AB",
+        "query_id": "SSC1-FINAL-0026-d0-03",
+        "recipient": "BB",
+        "baseline_both_correct": true,
+        "p_correct": 0.9994997818496629,
+        "recipient_probability_change": 0.00012197353433718305,
+        "passed": true
+      },
+      {
+        "state": "AB",
+        "query_id": "SSC1-FINAL-0026-d0-extra0",
+        "recipient": "BB",
+        "baseline_both_correct": true,
+        "p_correct": 0.9988700621600771,
+        "recipient_probability_change": 0.0007746857597080714,
+        "passed": true
+      },
+      {
+        "state": "BA",
+        "query_id": "SSC1-FINAL-0026-d0-03",
+        "recipient": "AA",
+        "baseline_both_correct": true,
+        "p_correct": 0.9997590178798829,
+        "recipient_probability_change": 5.722845837830004e-05,
+        "passed": true
+      },
+      {
+        "state": "BA",
+        "query_id": "SSC1-FINAL-0026-d0-extra0",
+        "recipient": "AA",
+        "baseline_both_correct": true,
+        "p_correct": 0.9999830790372679,
+        "recipient_probability_change": 5.508289808719979e-07,
+        "passed": true
+      }
+    ],
+    "selectivity_assessed": true,
+    "direct_preservation": true,
+    "hybrid_joint_valid_mass": true
+  },
+  {
+    "root_id": "SSC1-FINAL-0031",
+    "pair_id": "gemma-pair-02",
+    "role": "control",
+    "original_split": "localization",
+    "query_id": "SSC1-FINAL-0031-d1-09",
+    "primary": true,
+    "label": "LOW-DISCRIMINATION",
+    "probability_gap": 0.001361856806703976,
+    "error_early": 0.0017690924867647118,
+    "error_later": 0.00040723568006073574,
+    "probability_effects": {
+      "cells": {
+        "AA": 0.9965321530063719,
+        "AB": 0.9947991824999884,
+        "BA": 0.9969755106668139,
+        "BB": 0.9951702961996679
+      },
+      "early": [
+        0.00044335766044201197,
+        0.0003711136996794595
+      ],
+      "later": [
+        -0.0017329705063834355,
+        -0.001805214467145988
+      ],
+      "interaction": -7.224396076255246e-05
+    },
+    "log_odds_effects": {
+      "cells": {
+        "AA": 5.660747466608882,
+        "AB": 5.25372506538406,
+        "BA": 5.797983944881707,
+        "BB": 5.328128733672202
+      },
+      "early": [
+        0.13723647827282548,
+        0.07440366828814149
+      ],
+      "later": [
+        -0.4070224012248218,
+        -0.4698552112095058
+      ],
+      "interaction": -0.06283280998468399
+    },
+    "direct_checks": [
+      {
+        "state": "AB",
+        "query_id": "SSC1-FINAL-0031-d1-extra0",
+        "recipient": "BB",
+        "baseline_both_correct": true,
+        "p_correct": 0.9955498297085118,
+        "recipient_probability_change": 0.00017931054140318814,
+        "passed": true
+      },
+      {
+        "state": "AB",
+        "query_id": "SSC1-FINAL-0031-d1-00",
+        "recipient": "BB",
+        "baseline_both_correct": true,
+        "p_correct": 0.9991325075741762,
+        "recipient_probability_change": 5.9646801202295485e-05,
+        "passed": true
+      },
+      {
+        "state": "BA",
+        "query_id": "SSC1-FINAL-0031-d1-extra0",
+        "recipient": "AA",
+        "baseline_both_correct": true,
+        "p_correct": 0.9970572178137819,
+        "recipient_probability_change": 0.00012210709255755514,
+        "passed": true
+      },
+      {
+        "state": "BA",
+        "query_id": "SSC1-FINAL-0031-d1-00",
+        "recipient": "AA",
+        "baseline_both_correct": true,
+        "p_correct": 0.9996542434459591,
+        "recipient_probability_change": 7.562092718571556e-06,
+        "passed": true
+      }
+    ],
+    "selectivity_assessed": true,
+    "direct_preservation": true,
+    "hybrid_joint_valid_mass": true
+  },
+  {
+    "root_id": "SSC1-FINAL-0031",
+    "pair_id": "gemma-pair-02",
+    "role": "control",
+    "original_split": "localization",
+    "query_id": "SSC1-FINAL-0031-d0-09",
+    "primary": false,
+    "label": "LOW-DISCRIMINATION",
+    "probability_gap": 0.0013074843533301683,
+    "error_early": 0.001504333056334406,
+    "error_later": 0.00019684870300423762,
+    "probability_effects": {
+      "cells": {
+        "AA": 0.9985005980499063,
+        "AB": 0.9970167503227887,
+        "BA": 0.9987179320821273,
+        "BB": 0.9971931136965761
+      },
+      "early": [
+        0.0002173340322210171,
+        0.00017636337378745814
+      ],
+      "later": [
+        -0.0014838477271176265,
+        -0.0015248183855511854
+      ],
+      "interaction": -4.097065843355896e-05
+    },
+    "log_odds_effects": {
+      "cells": {
+        "AA": 6.501188423135318,
+        "AB": 5.811754368478432,
+        "BA": 6.657998053357005,
+        "BB": 5.872868654085323
+      },
+      "early": [
+        0.15680963022168726,
+        0.06111428560689092
+      ],
+      "later": [
+        -0.6894340546568856,
+        -0.7851293992716819
+      ],
+      "interaction": -0.09569534461479634
+    },
+    "direct_checks": [
+      {
+        "state": "AB",
+        "query_id": "SSC1-FINAL-0031-d0-extra0",
+        "recipient": "BB",
+        "baseline_both_correct": true,
+        "p_correct": 0.9991939210151561,
+        "recipient_probability_change": 5.406628799042856e-05,
+        "passed": true
+      },
+      {
+        "state": "AB",
+        "query_id": "SSC1-FINAL-0031-d0-00",
+        "recipient": "BB",
+        "baseline_both_correct": true,
+        "p_correct": 0.9998765590155541,
+        "recipient_probability_change": 1.0960517851765772e-05,
+        "passed": true
+      },
+      {
+        "state": "BA",
+        "query_id": "SSC1-FINAL-0031-d0-extra0",
+        "recipient": "AA",
+        "baseline_both_correct": true,
+        "p_correct": 0.9996720827733961,
+        "recipient_probability_change": 3.3013310586582634e-05,
+        "passed": true
+      },
+      {
+        "state": "BA",
+        "query_id": "SSC1-FINAL-0031-d0-00",
+        "recipient": "AA",
+        "baseline_both_correct": true,
+        "p_correct": 0.9999688865305518,
+        "recipient_probability_change": 3.430098766243894e-06,
+        "passed": true
+      }
+    ],
+    "selectivity_assessed": true,
+    "direct_preservation": true,
+    "hybrid_joint_valid_mass": true
+  },
+  {
+    "root_id": "SSC1-FINAL-0033",
+    "pair_id": "gemma-pair-04",
+    "role": "witness",
+    "original_split": "held_out_validation",
+    "query_id": "SSC1-FINAL-0033-d0-07",
+    "primary": true,
+    "label": "MIXED/INCONCLUSIVE",
+    "probability_gap": 0.5226549286049403,
+    "error_early": 0.7023098848633613,
+    "error_later": 0.17965495625842098,
+    "probability_effects": {
+      "cells": {
+        "AA": 0.004401535978322753,
+        "AB": 0.8850731357959916,
+        "BA": 0.003108294674209319,
+        "BB": 0.527056464583263
+      },
+      "early": [
+        -0.0012932413041134342,
+        -0.3580166712127285
+      ],
+      "later": [
+        0.8806715998176688,
+        0.5239481699090537
+      ],
+      "interaction": -0.3567234299086151
+    },
+    "log_odds_effects": {
+      "cells": {
+        "AA": -5.421390461735427,
+        "AB": 2.0413743183016777,
+        "BA": -5.770567903993651,
+        "BB": 0.10833168029785156
+      },
+      "early": [
+        -0.3491774422582239,
+        -1.9330426380038261
+      ],
+      "later": [
+        7.462764780037105,
+        5.878899584291503
+      ],
+      "interaction": -1.5838651957456023
+    },
+    "direct_checks": [
+      {
+        "state": "AB",
+        "query_id": "SSC1-FINAL-0033-d0-00",
+        "recipient": "BB",
+        "baseline_both_correct": true,
+        "p_correct": 0.9998856034205899,
+        "recipient_probability_change": 1.2493219245457432e-05,
+        "passed": true
+      },
+      {
+        "state": "AB",
+        "query_id": "SSC1-FINAL-0033-d0-03",
+        "recipient": "BB",
+        "baseline_both_correct": true,
+        "p_correct": 0.9999759615028918,
+        "recipient_probability_change": 9.100380825577403e-07,
+        "passed": true
+      },
+      {
+        "state": "BA",
+        "query_id": "SSC1-FINAL-0033-d0-00",
+        "recipient": "AA",
+        "baseline_both_correct": true,
+        "p_correct": 0.9999805165407885,
+        "recipient_probability_change": 3.0687615499847e-06,
+        "passed": true
+      },
+      {
+        "state": "BA",
+        "query_id": "SSC1-FINAL-0033-d0-03",
+        "recipient": "AA",
+        "baseline_both_correct": true,
+        "p_correct": 0.999983320366648,
+        "recipient_probability_change": 1.0157886966011276e-06,
+        "passed": true
+      }
+    ],
+    "selectivity_assessed": true,
+    "direct_preservation": true,
+    "hybrid_joint_valid_mass": true
+  },
+  {
+    "root_id": "SSC1-FINAL-0033",
+    "pair_id": "gemma-pair-04",
+    "role": "witness",
+    "original_split": "held_out_validation",
+    "query_id": "SSC1-FINAL-0033-d1-07",
+    "primary": false,
+    "label": "LOW-DISCRIMINATION",
+    "probability_gap": 0.06525948358507412,
+    "error_early": 0.2055163996090213,
+    "error_later": 0.1402569160239472,
+    "probability_effects": {
+      "cells": {
+        "AA": 0.002160337003322693,
+        "AB": 0.3475098631301635,
+        "BA": 0.0017365474971950522,
+        "BB": 0.06741982058839681
+      },
+      "early": [
+        -0.0004237895061276406,
+        -0.2800900425417667
+      ],
+      "later": [
+        0.34534952612684083,
+        0.06568327309120175
+      ],
+      "interaction": -0.2796662530356391
+    },
+    "log_odds_effects": {
+      "cells": {
+        "AA": -6.135328375501558,
+        "AB": -0.6300029754638672,
+        "BA": -6.354118276853114,
+        "BB": -2.627016082406044
+      },
+      "early": [
+        -0.21878990135155618,
+        -1.9970131069421768
+      ],
+      "later": [
+        5.505325400037691,
+        3.7271021944470704
+      ],
+      "interaction": -1.7782232055906206
+    },
+    "direct_checks": [
+      {
+        "state": "AB",
+        "query_id": "SSC1-FINAL-0033-d1-00",
+        "recipient": "BB",
+        "baseline_both_correct": true,
+        "p_correct": 0.9998859554367391,
+        "recipient_probability_change": 2.0771783725059834e-05,
+        "passed": true
+      },
+      {
+        "state": "AB",
+        "query_id": "SSC1-FINAL-0033-d1-03",
+        "recipient": "BB",
+        "baseline_both_correct": true,
+        "p_correct": 0.9999596239501485,
+        "recipient_probability_change": 3.075760177551068e-06,
+        "passed": true
+      },
+      {
+        "state": "BA",
+        "query_id": "SSC1-FINAL-0033-d1-00",
+        "recipient": "AA",
+        "baseline_both_correct": true,
+        "p_correct": 0.9999311979354129,
+        "recipient_probability_change": 1.2422047650617607e-05,
+        "passed": true
+      },
+      {
+        "state": "BA",
+        "query_id": "SSC1-FINAL-0033-d1-03",
+        "recipient": "AA",
+        "baseline_both_correct": true,
+        "p_correct": 0.9999647255279135,
+        "recipient_probability_change": 3.917806831177373e-07,
+        "passed": true
+      }
+    ],
+    "selectivity_assessed": true,
+    "direct_preservation": true,
+    "hybrid_joint_valid_mass": true
+  },
+  {
+    "root_id": "SSC1-FINAL-0007",
+    "pair_id": "gemma-pair-04",
+    "role": "control",
+    "original_split": "held_out_validation",
+    "query_id": "SSC1-FINAL-0007-d0-extra3",
+    "primary": true,
+    "label": "LOW-DISCRIMINATION",
+    "probability_gap": 0.0020501597337169034,
+    "error_early": 0.0018016015080636611,
+    "error_later": 0.0002485582256532423,
+    "probability_effects": {
+      "cells": {
+        "AA": 0.0005721363647190396,
+        "AB": 0.002356591505128018,
+        "BA": 0.000803548222717599,
+        "BB": 0.002622296098435943
+      },
+      "early": [
+        0.0002314118579985594,
+        0.0002657045933079252
+      ],
+      "later": [
+        0.0017844551404089782,
+        0.001818747875718344
+      ],
+      "interaction": 3.429273530936581e-05
+    },
+    "log_odds_effects": {
+      "cells": {
+        "AA": -7.465560895041563,
+        "AB": -6.048179608769715,
+        "BA": -7.12566948751919,
+        "BB": -5.941079231211916
+      },
+      "early": [
+        0.3398914075223729,
+        0.10710037755779922
+      ],
+      "later": [
+        1.4173812862718478,
+        1.184590256307274
+      ],
+      "interaction": -0.23279102996457368
+    },
+    "direct_checks": [
+      {
+        "state": "AB",
+        "query_id": "SSC1-FINAL-0007-d0-03",
+        "recipient": "BB",
+        "baseline_both_correct": true,
+        "p_correct": 0.9999757795145723,
+        "recipient_probability_change": 8.227991192710782e-06,
+        "passed": true
+      },
+      {
+        "state": "AB",
+        "query_id": "SSC1-FINAL-0007-d0-extra0",
+        "recipient": "BB",
+        "baseline_both_correct": true,
+        "p_correct": 0.99998881873516,
+        "recipient_probability_change": 2.0582835880134098e-08,
+        "passed": true
+      },
+      {
+        "state": "BA",
+        "query_id": "SSC1-FINAL-0007-d0-03",
+        "recipient": "AA",
+        "baseline_both_correct": true,
+        "p_correct": 0.9999890710620445,
+        "recipient_probability_change": 5.89369808179363e-07,
+        "passed": true
+      },
+      {
+        "state": "BA",
+        "query_id": "SSC1-FINAL-0007-d0-extra0",
+        "recipient": "AA",
+        "baseline_both_correct": true,
+        "p_correct": 0.9999907175080082,
+        "recipient_probability_change": 3.345141741384339e-08,
+        "passed": true
+      }
+    ],
+    "selectivity_assessed": true,
+    "direct_preservation": true,
+    "hybrid_joint_valid_mass": true
+  },
+  {
+    "root_id": "SSC1-FINAL-0007",
+    "pair_id": "gemma-pair-04",
+    "role": "control",
+    "original_split": "held_out_validation",
+    "query_id": "SSC1-FINAL-0007-d1-extra3",
+    "primary": false,
+    "label": "LOW-DISCRIMINATION",
+    "probability_gap": 0.0037834908488551307,
+    "error_early": 0.003255426492687066,
+    "error_later": 0.0005280643561680643,
+    "probability_effects": {
+      "cells": {
+        "AA": 0.0017651579841169338,
+        "AB": 0.004745137407491283,
+        "BA": 0.002017775270972281,
+        "BB": 0.005548648832972064
+      },
+      "early": [
+        0.0002526172868553471,
+        0.0008035114254807815
+      ],
+      "later": [
+        0.0029799794233743493,
+        0.0035308735619997834
+      ],
+      "interaction": 0.0005508941386254344
+    },
+    "log_odds_effects": {
+      "cells": {
+        "AA": -6.3377483654767275,
+        "AB": -5.345878457650542,
+        "BA": -6.203739911783487,
+        "BB": -5.188636734616011
+      },
+      "early": [
+        0.13400845369324088,
+        0.15724172303453088
+      ],
+      "later": [
+        0.9918699078261852,
+        1.0151031771674752
+      ],
+      "interaction": 0.023233269341289997
+    },
+    "direct_checks": [
+      {
+        "state": "AB",
+        "query_id": "SSC1-FINAL-0007-d1-03",
+        "recipient": "BB",
+        "baseline_both_correct": true,
+        "p_correct": 0.9999677508764361,
+        "recipient_probability_change": 4.560265299491384e-06,
+        "passed": true
+      },
+      {
+        "state": "AB",
+        "query_id": "SSC1-FINAL-0007-d1-extra0",
+        "recipient": "BB",
+        "baseline_both_correct": true,
+        "p_correct": 0.9999557066423845,
+        "recipient_probability_change": 2.153192245613056e-06,
+        "passed": true
+      },
+      {
+        "state": "BA",
+        "query_id": "SSC1-FINAL-0007-d1-03",
+        "recipient": "AA",
+        "baseline_both_correct": true,
+        "p_correct": 0.9999657243707009,
+        "recipient_probability_change": 3.947888449373771e-06,
+        "passed": true
+      },
+      {
+        "state": "BA",
+        "query_id": "SSC1-FINAL-0007-d1-extra0",
+        "recipient": "AA",
+        "baseline_both_correct": true,
+        "p_correct": 0.9999459463610859,
+        "recipient_probability_change": 6.318009783790046e-06,
+        "passed": true
+      }
+    ],
+    "selectivity_assessed": true,
+    "direct_preservation": true,
+    "hybrid_joint_valid_mass": true
+  },
+  {
+    "root_id": "SSC1-FINAL-0004",
+    "pair_id": "gemma-pair-05",
+    "role": "witness",
+    "original_split": "held_out_validation",
+    "query_id": "SSC1-FINAL-0004-d0-07",
+    "primary": true,
+    "label": "LATER-FOLLOWING",
+    "probability_gap": 0.9752751498790591,
+    "error_early": 0.9803373536528286,
+    "error_later": 0.0050622037737695375,
+    "probability_effects": {
+      "cells": {
+        "AA": 0.9977196843454177,
+        "AB": 0.012876104077719202,
+        "BA": 0.9982756615043173,
+        "BB": 0.02244453446635862
+      },
+      "early": [
+        0.0005559771588996565,
+        0.009568430388639419
+      ],
+      "later": [
+        -0.9848435802676985,
+        -0.9758311270379587
+      ],
+      "interaction": 0.009012453229739759
+    },
+    "log_odds_effects": {
+      "cells": {
+        "AA": 6.0811584810726345,
+        "AB": -4.339422362856567,
+        "BA": 6.3611859559314325,
+        "BB": -3.7740079015493393
+      },
+      "early": [
+        0.2800274748587981,
+        0.5654144613072276
+      ],
+      "later": [
+        -10.420580843929201,
+        -10.135193857480772
+      ],
+      "interaction": 0.2853869864484295
+    },
+    "direct_checks": [
+      {
+        "state": "AB",
+        "query_id": "SSC1-FINAL-0004-d0-00",
+        "recipient": "BB",
+        "baseline_both_correct": true,
+        "p_correct": 0.9999377275524779,
+        "recipient_probability_change": 2.5193227780384575e-05,
+        "passed": true
+      },
+      {
+        "state": "AB",
+        "query_id": "SSC1-FINAL-0004-d0-03",
+        "recipient": "BB",
+        "baseline_both_correct": true,
+        "p_correct": 0.9999797577951769,
+        "recipient_probability_change": 9.643436000850159e-07,
+        "passed": true
+      },
+      {
+        "state": "BA",
+        "query_id": "SSC1-FINAL-0004-d0-00",
+        "recipient": "AA",
+        "baseline_both_correct": true,
+        "p_correct": 0.9999894792328068,
+        "recipient_probability_change": 1.4003070881729585e-06,
+        "passed": true
+      },
+      {
+        "state": "BA",
+        "query_id": "SSC1-FINAL-0004-d0-03",
+        "recipient": "AA",
+        "baseline_both_correct": true,
+        "p_correct": 0.9999843704098093,
+        "recipient_probability_change": 9.921394905632042e-08,
+        "passed": true
+      }
+    ],
+    "selectivity_assessed": true,
+    "direct_preservation": true,
+    "hybrid_joint_valid_mass": true
+  },
+  {
+    "root_id": "SSC1-FINAL-0004",
+    "pair_id": "gemma-pair-05",
+    "role": "witness",
+    "original_split": "held_out_validation",
+    "query_id": "SSC1-FINAL-0004-d1-07",
+    "primary": false,
+    "label": "LOW-DISCRIMINATION",
+    "probability_gap": 0.06608097317816031,
+    "error_early": 0.06798372058523294,
+    "error_later": 0.0019027474070726358,
+    "probability_effects": {
+      "cells": {
+        "AA": 0.997068668784377,
+        "AB": 0.9271959680896826,
+        "BA": 0.9970824360819882,
+        "BB": 0.9309876956062167
+      },
+      "early": [
+        1.3767297611155804e-05,
+        0.0037917275165341158
+      ],
+      "later": [
+        -0.06987270069469442,
+        -0.06609474047577146
+      ],
+      "interaction": 0.00377796021892296
+    },
+    "log_odds_effects": {
+      "cells": {
+        "AA": 5.829362983349711,
+        "AB": 2.5443936064839363,
+        "BA": 5.834084457252175,
+        "BB": 2.6019612476229668
+      },
+      "early": [
+        0.004721473902463913,
+        0.05756764113903046
+      ],
+      "later": [
+        -3.2849693768657744,
+        -3.232123209629208
+      ],
+      "interaction": 0.052846167236566544
+    },
+    "direct_checks": [
+      {
+        "state": "AB",
+        "query_id": "SSC1-FINAL-0004-d1-00",
+        "recipient": "BB",
+        "baseline_both_correct": true,
+        "p_correct": 0.9983964791351098,
+        "recipient_probability_change": 0.00020099651209637415,
+        "passed": true
+      },
+      {
+        "state": "AB",
+        "query_id": "SSC1-FINAL-0004-d1-03",
+        "recipient": "BB",
+        "baseline_both_correct": true,
+        "p_correct": 0.9999508453004813,
+        "recipient_probability_change": 4.455288150628789e-07,
+        "passed": true
+      },
+      {
+        "state": "BA",
+        "query_id": "SSC1-FINAL-0004-d1-00",
+        "recipient": "AA",
+        "baseline_both_correct": true,
+        "p_correct": 0.9996873881820741,
+        "recipient_probability_change": 1.1751193210951527e-05,
+        "passed": true
+      },
+      {
+        "state": "BA",
+        "query_id": "SSC1-FINAL-0004-d1-03",
+        "recipient": "AA",
+        "baseline_both_correct": true,
+        "p_correct": 0.9999613136917136,
+        "recipient_probability_change": 1.9343304031860242e-06,
+        "passed": true
+      }
+    ],
+    "selectivity_assessed": true,
+    "direct_preservation": true,
+    "hybrid_joint_valid_mass": true
+  },
+  {
+    "root_id": "SSC1-FINAL-0023",
+    "pair_id": "gemma-pair-05",
+    "role": "control",
+    "original_split": "held_out_validation",
+    "query_id": "SSC1-FINAL-0023-d0-07",
+    "primary": true,
+    "label": "LOW-DISCRIMINATION",
+    "probability_gap": 0.004254609888707628,
+    "error_early": 0.003587896845221983,
+    "error_later": 0.0006710020184046428,
+    "probability_effects": {
+      "cells": {
+        "AA": 0.9997896980851121,
+        "AB": 0.9968728032582947,
+        "BA": 0.9997939870600311,
+        "BB": 0.9955350881964045
+      },
+      "early": [
+        4.288974918997823e-06,
+        -0.0013377150618902878
+      ],
+      "later": [
+        -0.00291689482681734,
+        -0.004258898863626626
+      ],
+      "interaction": -0.0013420040368093966
+    },
+    "log_odds_effects": {
+      "cells": {
+        "AA": 8.466756045760121,
+        "AB": 5.764486188767478,
+        "BA": 8.48736554160132,
+        "BB": 5.40703090839088
+      },
+      "early": [
+        0.020609495841199532,
+        -0.35745528037659824
+      ],
+      "later": [
+        -2.7022698569926433,
+        -3.080334633210441
+      ],
+      "interaction": -0.37806477621779777
+    },
+    "direct_checks": [
+      {
+        "state": "AB",
+        "query_id": "SSC1-FINAL-0023-d0-00",
+        "recipient": "BB",
+        "baseline_both_correct": true,
+        "p_correct": 0.9997110864801622,
+        "recipient_probability_change": 2.577830704897366e-06,
+        "passed": true
+      },
+      {
+        "state": "AB",
+        "query_id": "SSC1-FINAL-0023-d0-03",
+        "recipient": "BB",
+        "baseline_both_correct": true,
+        "p_correct": 0.9999250925541308,
+        "recipient_probability_change": 1.2474164398867948e-05,
+        "passed": true
+      },
+      {
+        "state": "BA",
+        "query_id": "SSC1-FINAL-0023-d0-00",
+        "recipient": "AA",
+        "baseline_both_correct": true,
+        "p_correct": 0.9999809005738132,
+        "recipient_probability_change": 3.485036903505545e-07,
+        "passed": true
+      },
+      {
+        "state": "BA",
+        "query_id": "SSC1-FINAL-0023-d0-03",
+        "recipient": "AA",
+        "baseline_both_correct": true,
+        "p_correct": 0.9999641858557876,
+        "recipient_probability_change": 1.3150932567373985e-06,
+        "passed": true
+      }
+    ],
+    "selectivity_assessed": true,
+    "direct_preservation": true,
+    "hybrid_joint_valid_mass": true
+  },
+  {
+    "root_id": "SSC1-FINAL-0023",
+    "pair_id": "gemma-pair-05",
+    "role": "control",
+    "original_split": "held_out_validation",
+    "query_id": "SSC1-FINAL-0023-d1-07",
+    "primary": false,
+    "label": "LOW-DISCRIMINATION",
+    "probability_gap": 0.0030198531508797144,
+    "error_early": 0.0026050314508444528,
+    "error_later": 0.00041482170003526164,
+    "probability_effects": {
+      "cells": {
+        "AA": 0.9991729301414589,
+        "AB": 0.9969590932830531,
+        "BA": 0.9991493030338623,
+        "BB": 0.9961530769905792
+      },
+      "early": [
+        -2.362710759662434e-05,
+        -0.0008060162924738989
+      ],
+      "later": [
+        -0.0022138368584058155,
+        -0.00299622604328309
+      ],
+      "interaction": -0.0007823891848772746
+    },
+    "log_odds_effects": {
+      "cells": {
+        "AA": 7.0967939822003245,
+        "AB": 5.792554006213322,
+        "BA": 7.068603525287472,
+        "BB": 5.556627327110618
+      },
+      "early": [
+        -0.028190456912852824,
+        -0.23592667910270393
+      ],
+      "later": [
+        -1.3042399759870023,
+        -1.5119761981768534
+      ],
+      "interaction": -0.2077362221898511
+    },
+    "direct_checks": [
+      {
+        "state": "AB",
+        "query_id": "SSC1-FINAL-0023-d1-00",
+        "recipient": "BB",
+        "baseline_both_correct": true,
+        "p_correct": 0.9991419606745361,
+        "recipient_probability_change": 5.978426187103203e-05,
+        "passed": true
+      },
+      {
+        "state": "AB",
+        "query_id": "SSC1-FINAL-0023-d1-03",
+        "recipient": "BB",
+        "baseline_both_correct": true,
+        "p_correct": 0.9999131468312997,
+        "recipient_probability_change": 2.7662217112478515e-06,
+        "passed": true
+      },
+      {
+        "state": "BA",
+        "query_id": "SSC1-FINAL-0023-d1-00",
+        "recipient": "AA",
+        "baseline_both_correct": true,
+        "p_correct": 0.9998341125836107,
+        "recipient_probability_change": 2.6539525544322373e-05,
+        "passed": true
+      },
+      {
+        "state": "BA",
+        "query_id": "SSC1-FINAL-0023-d1-03",
+        "recipient": "AA",
+        "baseline_both_correct": true,
+        "p_correct": 0.9999229083008271,
+        "recipient_probability_change": 1.4200993481150448e-07,
+        "passed": true
+      }
+    ],
+    "selectivity_assessed": true,
+    "direct_preservation": true,
+    "hybrid_joint_valid_mass": true
+  },
+  {
+    "root_id": "SSC1-FINAL-0057",
+    "pair_id": "gemma-pair-06",
+    "role": "witness",
+    "original_split": "held_out_validation",
+    "query_id": "SSC1-FINAL-0057-d1-08",
+    "primary": true,
+    "label": "LATER-FOLLOWING",
+    "probability_gap": 0.9526456419921419,
+    "error_early": 0.9232322907287764,
+    "error_later": 0.029413351263365403,
+    "probability_effects": {
+      "cells": {
+        "AA": 0.014909163901232243,
+        "AB": 0.9381807836245251,
+        "BA": 0.04436184415911405,
+        "BB": 0.9675548058933741
+      },
+      "early": [
+        0.029452680257881808,
+        0.029374022268848998
+      ],
+      "later": [
+        0.9232716197232929,
+        0.92319296173426
+      ],
+      "interaction": -7.86579890327977e-05
+    },
+    "log_odds_effects": {
+      "cells": {
+        "AA": -4.190757805481553,
+        "AB": 2.7197284027934074,
+        "BA": -3.069999609142542,
+        "BB": 3.3952197395265102
+      },
+      "early": [
+        1.1207581963390112,
+        0.6754913367331028
+      ],
+      "later": [
+        6.9104862082749605,
+        6.465219348669052
+      ],
+      "interaction": -0.4452668596059084
+    },
+    "direct_checks": [
+      {
+        "state": "AB",
+        "query_id": "SSC1-FINAL-0057-d1-extra0",
+        "recipient": "BB",
+        "baseline_both_correct": true,
+        "p_correct": 0.9999175421055616,
+        "recipient_probability_change": 2.000527129397689e-06,
+        "passed": true
+      },
+      {
+        "state": "AB",
+        "query_id": "SSC1-FINAL-0057-d1-00",
+        "recipient": "BB",
+        "baseline_both_correct": true,
+        "p_correct": 0.9973393690440125,
+        "recipient_probability_change": 0.0014023313435678197,
+        "passed": true
+      },
+      {
+        "state": "BA",
+        "query_id": "SSC1-FINAL-0057-d1-extra0",
+        "recipient": "AA",
+        "baseline_both_correct": true,
+        "p_correct": 0.9998836829737908,
+        "recipient_probability_change": 8.525635087353045e-06,
+        "passed": true
+      },
+      {
+        "state": "BA",
+        "query_id": "SSC1-FINAL-0057-d1-00",
+        "recipient": "AA",
+        "baseline_both_correct": true,
+        "p_correct": 0.9939993503665748,
+        "recipient_probability_change": 0.0012890298788174048,
+        "passed": true
+      }
+    ],
+    "selectivity_assessed": true,
+    "direct_preservation": true,
+    "hybrid_joint_valid_mass": true
+  },
+  {
+    "root_id": "SSC1-FINAL-0057",
+    "pair_id": "gemma-pair-06",
+    "role": "witness",
+    "original_split": "held_out_validation",
+    "query_id": "SSC1-FINAL-0057-d0-08",
+    "primary": false,
+    "label": "MIXED/INCONCLUSIVE",
+    "probability_gap": 0.8455098627487732,
+    "error_early": 0.7493840312394524,
+    "error_later": 0.09612583150932083,
+    "probability_effects": {
+      "cells": {
+        "AA": 0.06733855192460265,
+        "AB": 0.8365441268740288,
+        "BA": 0.18328592714389724,
+        "BB": 0.9128484146733759
+      },
+      "early": [
+        0.11594737521929459,
+        0.07630428779934706
+      ],
+      "later": [
+        0.7692055749494261,
+        0.7295624875294786
+      ],
+      "interaction": -0.03964308741994753
+    },
+    "log_odds_effects": {
+      "cells": {
+        "AA": -2.6283093616366386,
+        "AB": 1.6327362060546875,
+        "BA": -1.4942416846752167,
+        "BB": 2.348920874297619
+      },
+      "early": [
+        1.134067676961422,
+        0.7161846682429314
+      ],
+      "later": [
+        4.261045567691326,
+        3.8431625589728355
+      ],
+      "interaction": -0.4178830087184906
+    },
+    "direct_checks": [
+      {
+        "state": "AB",
+        "query_id": "SSC1-FINAL-0057-d0-extra0",
+        "recipient": "BB",
+        "baseline_both_correct": true,
+        "p_correct": 0.9999843663215054,
+        "recipient_probability_change": 1.1509481347982131e-06,
+        "passed": true
+      },
+      {
+        "state": "AB",
+        "query_id": "SSC1-FINAL-0057-d0-00",
+        "recipient": "BB",
+        "baseline_both_correct": true,
+        "p_correct": 0.996950983390837,
+        "recipient_probability_change": 0.006566946033630838,
+        "passed": true
+      },
+      {
+        "state": "BA",
+        "query_id": "SSC1-FINAL-0057-d0-extra0",
+        "recipient": "AA",
+        "baseline_both_correct": true,
+        "p_correct": 0.9999793532707563,
+        "recipient_probability_change": 3.250822804279352e-07,
+        "passed": true
+      },
+      {
+        "state": "BA",
+        "query_id": "SSC1-FINAL-0057-d0-00",
+        "recipient": "AA",
+        "baseline_both_correct": true,
+        "p_correct": 0.9880930156074733,
+        "recipient_probability_change": 0.004649211211376958,
+        "passed": true
+      }
+    ],
+    "selectivity_assessed": true,
+    "direct_preservation": true,
+    "hybrid_joint_valid_mass": true
+  },
+  {
+    "root_id": "SSC1-FINAL-0022",
+    "pair_id": "gemma-pair-06",
+    "role": "control",
+    "original_split": "held_out_validation",
+    "query_id": "SSC1-FINAL-0022-d1-02",
+    "primary": true,
+    "label": "LOW-DISCRIMINATION",
+    "probability_gap": 0.0005100355795906222,
+    "error_early": 0.0008272405199311911,
+    "error_later": 0.0003993016641793579,
+    "probability_effects": {
+      "cells": {
+        "AA": 0.0011109079129336113,
+        "AB": 0.0006829690571817779,
+        "BA": 0.0018274145174535382,
+        "BB": 0.0006008723333429891
+      },
+      "early": [
+        0.000716506604519927,
+        -8.209672383878886e-05
+      ],
+      "later": [
+        -0.0004279388557518333,
+        -0.001226542184110549
+      ],
+      "interaction": -0.0007986033283587156
+    },
+    "log_odds_effects": {
+      "cells": {
+        "AA": -6.80146613297984,
+        "AB": -7.288377801305614,
+        "BA": -6.303024056833237,
+        "BB": -7.416527016786858
+      },
+      "early": [
+        0.49844207614660263,
+        -0.12814921548124403
+      ],
+      "later": [
+        -0.48691166832577437,
+        -1.113502959953621
+      ],
+      "interaction": -0.6265912916278467
+    },
+    "direct_checks": [
+      {
+        "state": "AB",
+        "query_id": "SSC1-FINAL-0022-d1-00",
+        "recipient": "BB",
+        "baseline_both_correct": true,
+        "p_correct": 0.999549462808941,
+        "recipient_probability_change": 3.2458488602893354e-05,
+        "passed": true
+      },
+      {
+        "state": "AB",
+        "query_id": "SSC1-FINAL-0022-d1-03",
+        "recipient": "BB",
+        "baseline_both_correct": true,
+        "p_correct": 0.9999392319392135,
+        "recipient_probability_change": 4.8444960112359325e-06,
+        "passed": true
+      },
+      {
+        "state": "BA",
+        "query_id": "SSC1-FINAL-0022-d1-00",
+        "recipient": "AA",
+        "baseline_both_correct": true,
+        "p_correct": 0.9996130597714786,
+        "recipient_probability_change": 5.658912148875928e-07,
+        "passed": true
+      },
+      {
+        "state": "BA",
+        "query_id": "SSC1-FINAL-0022-d1-03",
+        "recipient": "AA",
+        "baseline_both_correct": true,
+        "p_correct": 0.9999090078363528,
+        "recipient_probability_change": 7.44872816804687e-06,
+        "passed": true
+      }
+    ],
+    "selectivity_assessed": true,
+    "direct_preservation": true,
+    "hybrid_joint_valid_mass": true
+  },
+  {
+    "root_id": "SSC1-FINAL-0022",
+    "pair_id": "gemma-pair-06",
+    "role": "control",
+    "original_split": "held_out_validation",
+    "query_id": "SSC1-FINAL-0022-d0-02",
+    "primary": false,
+    "label": "LOW-DISCRIMINATION",
+    "probability_gap": 0.0005851059786997547,
+    "error_early": 0.0008142176487524978,
+    "error_later": 0.0004417912611391749,
+    "probability_effects": {
+      "cells": {
+        "AA": 0.0008540880655765928,
+        "AB": 0.0004816616779632699,
+        "BA": 0.0015249909967685108,
+        "BB": 0.00026898208687683805
+      },
+      "early": [
+        0.000670902931191918,
+        -0.00021267959108643188
+      ],
+      "later": [
+        -0.00037242638761332287,
+        -0.0012560089098916727
+      ],
+      "interaction": -0.0008835825222783499
+    },
+    "log_odds_effects": {
+      "cells": {
+        "AA": -7.064621795201674,
+        "AB": -7.637786825594958,
+        "BA": -6.484240617719479,
+        "BB": -8.220596753846621
+      },
+      "early": [
+        0.5803811774821952,
+        -0.5828099282516632
+      ],
+      "later": [
+        -0.5731650303932838,
+        -1.7363561361271422
+      ],
+      "interaction": -1.1631911057338584
+    },
+    "direct_checks": [
+      {
+        "state": "AB",
+        "query_id": "SSC1-FINAL-0022-d0-00",
+        "recipient": "BB",
+        "baseline_both_correct": true,
+        "p_correct": 0.9999911565946236,
+        "recipient_probability_change": 2.838158408291491e-07,
+        "passed": true
+      },
+      {
+        "state": "AB",
+        "query_id": "SSC1-FINAL-0022-d0-03",
+        "recipient": "BB",
+        "baseline_both_correct": true,
+        "p_correct": 0.9999693364180863,
+        "recipient_probability_change": 1.0584491816456598e-05,
+        "passed": true
+      },
+      {
+        "state": "BA",
+        "query_id": "SSC1-FINAL-0022-d0-00",
+        "recipient": "AA",
+        "baseline_both_correct": true,
+        "p_correct": 0.9999912349712975,
+        "recipient_probability_change": 1.1265942247984384e-06,
+        "passed": true
+      },
+      {
+        "state": "BA",
+        "query_id": "SSC1-FINAL-0022-d0-03",
+        "recipient": "AA",
+        "baseline_both_correct": true,
+        "p_correct": 0.9999225944204848,
+        "recipient_probability_change": 5.02037035865488e-06,
+        "passed": true
+      }
+    ],
+    "selectivity_assessed": true,
+    "direct_preservation": true,
+    "hybrid_joint_valid_mass": true
+  },
+  {
+    "root_id": "SSC1-FINAL-0054",
+    "pair_id": "gemma-pair-07",
+    "role": "witness",
+    "original_split": "held_out_validation",
+    "query_id": "SSC1-FINAL-0054-d0-08",
+    "primary": true,
+    "label": "LATER-FOLLOWING",
+    "probability_gap": 0.9477811141015939,
+    "error_early": 0.8994654801995354,
+    "error_later": 0.04887476749184706,
+    "probability_effects": {
+      "cells": {
+        "AA": 0.9975557343937176,
+        "AB": 0.14696502168602926,
+        "BA": 0.9981148679835061,
+        "BB": 0.04977462029212367
+      },
+      "early": [
+        0.0005591335897885408,
+        -0.09719040139390558
+      ],
+      "later": [
+        -0.8505907127076884,
+        -0.9483402476913825
+      ],
+      "interaction": -0.0977495349836941
+    },
+    "log_odds_effects": {
+      "cells": {
+        "AA": 6.011563309002668,
+        "AB": -1.7586059421300888,
+        "BA": 6.271870514145121,
+        "BB": -2.9491939768195152
+      },
+      "early": [
+        0.2603072051424533,
+        -1.1905880346894264
+      ],
+      "later": [
+        -7.7701692511327565,
+        -9.221064490964636
+      ],
+      "interaction": -1.4508952398318797
+    },
+    "direct_checks": [
+      {
+        "state": "AB",
+        "query_id": "SSC1-FINAL-0054-d0-extra0",
+        "recipient": "BB",
+        "baseline_both_correct": true,
+        "p_correct": 0.9999792522765236,
+        "recipient_probability_change": 3.0542324400695264e-06,
+        "passed": true
+      },
+      {
+        "state": "AB",
+        "query_id": "SSC1-FINAL-0054-d0-00",
+        "recipient": "BB",
+        "baseline_both_correct": true,
+        "p_correct": 0.9999736362215408,
+        "recipient_probability_change": 3.028655167214289e-06,
+        "passed": true
+      },
+      {
+        "state": "BA",
+        "query_id": "SSC1-FINAL-0054-d0-extra0",
+        "recipient": "AA",
+        "baseline_both_correct": true,
+        "p_correct": 0.9998268115664944,
+        "recipient_probability_change": 5.264198037102652e-05,
+        "passed": true
+      },
+      {
+        "state": "BA",
+        "query_id": "SSC1-FINAL-0054-d0-00",
+        "recipient": "AA",
+        "baseline_both_correct": true,
+        "p_correct": 0.9999907499229603,
+        "recipient_probability_change": 1.644276516721277e-06,
+        "passed": true
+      }
+    ],
+    "selectivity_assessed": true,
+    "direct_preservation": true,
+    "hybrid_joint_valid_mass": true
+  },
+  {
+    "root_id": "SSC1-FINAL-0054",
+    "pair_id": "gemma-pair-07",
+    "role": "witness",
+    "original_split": "held_out_validation",
+    "query_id": "SSC1-FINAL-0054-d1-08",
+    "primary": false,
+    "label": "MIXED/INCONCLUSIVE",
+    "probability_gap": 0.8408026090741901,
+    "error_early": 0.602823551435733,
+    "error_later": 0.2384201774166071,
+    "probability_effects": {
+      "cells": {
+        "AA": 0.9966343193958216,
+        "AB": 0.6322309453766958,
+        "BA": 0.9970754391739715,
+        "BB": 0.15583171032163143
+      },
+      "early": [
+        0.0004411197781498677,
+        -0.4763992350550643
+      ],
+      "later": [
+        -0.3644033740191258,
+        -0.84124372885234
+      ],
+      "interaction": -0.4768403548332141
+    },
+    "log_odds_effects": {
+      "cells": {
+        "AA": 5.690753719303757,
+        "AB": 0.5417995750904083,
+        "BA": 5.831682108808309,
+        "BB": -1.6895752251148224
+      },
+      "early": [
+        0.1409283895045519,
+        -2.2313748002052307
+      ],
+      "later": [
+        -5.148954144213349,
+        -7.521257333923131
+      ],
+      "interaction": -2.3723031897097826
+    },
+    "direct_checks": [
+      {
+        "state": "AB",
+        "query_id": "SSC1-FINAL-0054-d1-extra0",
+        "recipient": "BB",
+        "baseline_both_correct": true,
+        "p_correct": 0.9991914060424789,
+        "recipient_probability_change": 0.0001472285155349473,
+        "passed": true
+      },
+      {
+        "state": "AB",
+        "query_id": "SSC1-FINAL-0054-d1-00",
+        "recipient": "BB",
+        "baseline_both_correct": true,
+        "p_correct": 0.9990891467745094,
+        "recipient_probability_change": 0.0002639234763494036,
+        "passed": true
+      },
+      {
+        "state": "BA",
+        "query_id": "SSC1-FINAL-0054-d1-extra0",
+        "recipient": "AA",
+        "baseline_both_correct": true,
+        "p_correct": 0.9948480957347723,
+        "recipient_probability_change": 0.0014445769811876064,
+        "passed": true
+      },
+      {
+        "state": "BA",
+        "query_id": "SSC1-FINAL-0054-d1-00",
+        "recipient": "AA",
+        "baseline_both_correct": true,
+        "p_correct": 0.999635564974051,
+        "recipient_probability_change": 4.692502558756306e-05,
+        "passed": true
+      }
+    ],
+    "selectivity_assessed": true,
+    "direct_preservation": true,
+    "hybrid_joint_valid_mass": true
+  },
+  {
+    "root_id": "SSC1-FINAL-0029",
+    "pair_id": "gemma-pair-07",
+    "role": "control",
+    "original_split": "held_out_validation",
+    "query_id": "SSC1-FINAL-0029-d0-08",
+    "primary": true,
+    "label": "LOW-DISCRIMINATION",
+    "probability_gap": 0.002486151088207489,
+    "error_early": 0.0020619742259793683,
+    "error_later": 0.00042417686222812057,
+    "probability_effects": {
+      "cells": {
+        "AA": 0.998573963978573,
+        "AB": 0.9963650718047006,
+        "BA": 0.9980028691684518,
+        "BB": 0.9960878128903655
+      },
+      "early": [
+        -0.0005710948101211866,
+        -0.00027725891433505456
+      ],
+      "later": [
+        -0.0022088921738724343,
+        -0.0019150562780863023
+      ],
+      "interaction": 0.000293835895786132
+    },
+    "log_odds_effects": {
+      "cells": {
+        "AA": 6.551429643062875,
+        "AB": 5.613524371292442,
+        "BA": 6.21404458489269,
+        "BB": 5.539738838560879
+      },
+      "early": [
+        -0.3373850581701845,
+        -0.07378553273156285
+      ],
+      "later": [
+        -0.9379052717704326,
+        -0.674305746331811
+      ],
+      "interaction": 0.26359952543862164
+    },
+    "direct_checks": [
+      {
+        "state": "AB",
+        "query_id": "SSC1-FINAL-0029-d0-extra0",
+        "recipient": "BB",
+        "baseline_both_correct": true,
+        "p_correct": 0.9999533206897814,
+        "recipient_probability_change": 1.1128971268759003e-05,
+        "passed": true
+      },
+      {
+        "state": "AB",
+        "query_id": "SSC1-FINAL-0029-d0-00",
+        "recipient": "BB",
+        "baseline_both_correct": true,
+        "p_correct": 0.9997986447804118,
+        "recipient_probability_change": 1.3889687885071389e-05,
+        "passed": true
+      },
+      {
+        "state": "BA",
+        "query_id": "SSC1-FINAL-0029-d0-extra0",
+        "recipient": "AA",
+        "baseline_both_correct": true,
+        "p_correct": 0.9990178208629712,
+        "recipient_probability_change": 0.00013135007668607646,
+        "passed": true
+      },
+      {
+        "state": "BA",
+        "query_id": "SSC1-FINAL-0029-d0-00",
+        "recipient": "AA",
+        "baseline_both_correct": true,
+        "p_correct": 0.9999656260203521,
+        "recipient_probability_change": 8.553142346490183e-06,
+        "passed": true
+      }
+    ],
+    "selectivity_assessed": true,
+    "direct_preservation": true,
+    "hybrid_joint_valid_mass": true
+  },
+  {
+    "root_id": "SSC1-FINAL-0029",
+    "pair_id": "gemma-pair-07",
+    "role": "control",
+    "original_split": "held_out_validation",
+    "query_id": "SSC1-FINAL-0029-d1-08",
+    "primary": false,
+    "label": "LOW-DISCRIMINATION",
+    "probability_gap": 0.0181029821628077,
+    "error_early": 0.017540831399345813,
+    "error_later": 0.0005621507634618883,
+    "probability_effects": {
+      "cells": {
+        "AA": 0.9923604159514866,
+        "AB": 0.9742764177101757,
+        "BA": 0.9912550983460596,
+        "BB": 0.9742574337886789
+      },
+      "early": [
+        -0.0011053176054269809,
+        -1.898392149679573e-05
+      ],
+      "later": [
+        -0.018083998241310906,
+        -0.01699766455738072
+      ],
+      "interaction": 0.0010863336839301851
+    },
+    "log_odds_effects": {
+      "cells": {
+        "AA": 4.866743206046522,
+        "AB": 3.63428688980639,
+        "BA": 4.730501053854823,
+        "BB": 3.633529679849744
+      },
+      "early": [
+        -0.13624215219169855,
+        -0.0007572099566459656
+      ],
+      "later": [
+        -1.2324563162401319,
+        -1.0969713740050793
+      ],
+      "interaction": 0.13548494223505259
+    },
+    "direct_checks": [
+      {
+        "state": "AB",
+        "query_id": "SSC1-FINAL-0029-d1-extra0",
+        "recipient": "BB",
+        "baseline_both_correct": true,
+        "p_correct": 0.9992168988335095,
+        "recipient_probability_change": 9.380111734835772e-05,
+        "passed": true
+      },
+      {
+        "state": "AB",
+        "query_id": "SSC1-FINAL-0029-d1-00",
+        "recipient": "BB",
+        "baseline_both_correct": true,
+        "p_correct": 0.9993405962304667,
+        "recipient_probability_change": 0.0001187186196275336,
+        "passed": true
+      },
+      {
+        "state": "BA",
+        "query_id": "SSC1-FINAL-0029-d1-extra0",
+        "recipient": "AA",
+        "baseline_both_correct": true,
+        "p_correct": 0.9967600011322781,
+        "recipient_probability_change": 0.0008866489292405078,
+        "passed": true
+      },
+      {
+        "state": "BA",
+        "query_id": "SSC1-FINAL-0029-d1-00",
+        "recipient": "AA",
+        "baseline_both_correct": true,
+        "p_correct": 0.9998504954544777,
+        "recipient_probability_change": 1.3960054288664203e-05,
+        "passed": true
+      }
+    ],
+    "selectivity_assessed": true,
+    "direct_preservation": true,
+    "hybrid_joint_valid_mass": true
+  }
+]

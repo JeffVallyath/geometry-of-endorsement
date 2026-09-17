@@ -11,3 +11,24 @@
 *.parquet binary
 *.png binary
 *.pdf binary
+
+# Preserve byte-exact saved evidence and exported CSV hashes.
+artifacts/cache_crossover/checks.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+artifacts/cache_crossover/extension_direct.csv -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+artifacts/cache_crossover/extension_joint.csv -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+artifacts/cache_crossover/original_panel.csv -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+artifacts/cache_crossover/query_mappings.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+artifacts/cache_crossover/supplied_independent_audit.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+reproducibility/cache_crossover/saved_summaries.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+reproducibility/cache_crossover/six_cases.csv -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+reproducibility/cache_crossover/terminal.json -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+
+# This complete scientific snapshot is hash-bound. Preserve every payload byte
+# during staging and checkout, including original source JSON line endings.
+* -text whitespace=cr-at-eol
+# Frozen source snapshots retain their original trailing blank lines. Diff
+# context lines intentionally contain their leading space and remain untouched.
+reproducibility/fresh_inference/supplied/reproduction/STATE_SUFFICIENCY_CONFIRMATION/runtime_inputs/UPDATE_METHOD_INPUTS/canonical/*.py whitespace=cr-at-eol,-blank-at-eof
+reproducibility/in_context_updates/supplied/review/parser_change.diff whitespace=cr-at-eol,-blank-at-eol
+src/geometry_of_truth/m1/support/build_confirmatory_split.py whitespace=cr-at-eol,-blank-at-eof
+src/geometry_of_truth/m1/support/dependence_power.py whitespace=cr-at-eol,-blank-at-eof

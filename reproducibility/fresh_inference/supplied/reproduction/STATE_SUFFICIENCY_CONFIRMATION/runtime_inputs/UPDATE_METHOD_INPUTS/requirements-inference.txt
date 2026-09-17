@@ -1,0 +1,6 @@
+# Minimal direct scientific inference pins from completed runtime; transitive GPU resolution requires validation.
+--extra-index-url https://download.pytorch.org/whl/cu128
+accelerate==1.10.1
+numpy==2.2.6
+transformers==4.56.2
+torch==2.11.0+cu128

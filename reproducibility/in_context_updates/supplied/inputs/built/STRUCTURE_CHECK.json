@@ -1,0 +1,336 @@
+{
+ "category_counts": {
+  "Compositionality_I": 95,
+  "Compositionality_II": 33
+ },
+ "changed_address_hop_distribution": {
+  "1": 95,
+  "2": 33
+ },
+ "checks": {
+  "all_rippleedits_replacement": true,
+  "bdc_pairwise_distinct_at_changed_address": true,
+  "changed_address_on_every_selected_chain": true,
+  "chronological_ledger_resolves_to_declared_current_table": true,
+  "declared_record_order_covers_final_edits_and_all_question_supports": true,
+  "distinct_clusters": 45,
+  "identical_final_batch_in_both_histories": true,
+  "identical_templates_and_current_table_across_streams": true,
+  "prompt_leakage_findings": 0,
+  "roots": 45,
+  "scalar_semantics_only": true,
+  "source_members_match_package_manifest_and_scope": true,
+  "streams_differ_only_in_the_obsolete_line": true
+ },
+ "gold_label_self_extraction_exceptions": [
+  {
+   "address": [
+    "Q3161050",
+    "P19",
+    "benchmark snapshot; no explicit temporal qualifier supplied"
+   ],
+   "extracted": null,
+   "object_type": "place",
+   "root_id": "rippleedits:popular:627",
+   "status": "ambiguous",
+   "target_id": "Q84",
+   "target_label": "London"
+  }
+ ],
+ "note": "Structural, pre-output checks only. Equal record counts do not imply equal token counts; per-stream character sizes are reported and measured token lengths are journaled at run time.",
+ "parser_amendment": "ICMH1-LP1 (source labels take precedence; aliases otherwise; ties abstain)",
+ "plans": {
+  "development": {
+   "by_kind": {
+    "atomic": 57,
+    "downstream": 70,
+    "locality": 80
+   },
+   "max_user_chars": 738,
+   "plan_sha256": "1ec247f9453e4180fda6047ebbf95a8d31911f7e2dfac3283131da8c322f8d73",
+   "scoring_sha256": "1fbaeabdb79a17451dda644bbb091d5009eefa10635c6392a0076a7e13d99767",
+   "units": 207
+  },
+  "final": {
+   "by_kind": {
+    "atomic": 396,
+    "downstream": 490,
+    "locality": 544
+   },
+   "max_user_chars": 928,
+   "plan_sha256": "aba0f33085a86633f8527142a6b491e440d1a1a770f72b0c6c5a05daf1d83882",
+   "scoring_sha256": "5097aa3cc2773c8bd09d326f737c6069336b5bc534f64a152ed7c3788b21567f",
+   "units": 1430
+  },
+  "qualification": {
+   "by_kind": {
+    "atomic": 66,
+    "downstream": 48,
+    "locality": 0
+   },
+   "max_user_chars": 738,
+   "plan_sha256": "da9871e8c70ba115e30714dc1c39766f6ce25d609e89e3215212e8d6e2177fa4",
+   "scoring_sha256": "5907c831d37a4dbb9f0df348ed379bea7c71dbfd44b9cce8d4ac71affbbb0bcc",
+   "units": 114
+  },
+  "repeat_618": {
+   "by_kind": {
+    "atomic": 15,
+    "downstream": 20,
+    "locality": 16
+   },
+   "max_user_chars": 685,
+   "plan_sha256": "f8fbf686e75017a827b236179ad116b20ebcdd5dae49a23ee95813f06f6e594a",
+   "scoring_sha256": "424079b0e912dd2e7259fd0067ccd2a67aa18ee089ba24580b97dd73e1c5763b",
+   "units": 51
+  },
+  "repeat_670": {
+   "by_kind": {
+    "atomic": 9,
+    "downstream": 10,
+    "locality": 16
+   },
+   "max_user_chars": 481,
+   "plan_sha256": "c96920ebfa30ce52542da3f15cef7e9a774b8791eaf93622ff38b65984f2be8c",
+   "scoring_sha256": "4c8006d545695c5a277066c0a4a0ceeb398a0f7ef374c04384a21ed051514632",
+   "units": 35
+  }
+ },
+ "registry_object_types": {
+  "anthem": 248,
+  "city": 1771,
+  "continent": 48,
+  "country": 3808,
+  "gender": 286,
+  "person": 13064,
+  "place": 4502
+ },
+ "stream_token_proxy_chars": {
+  "rippleedits:popular:10": {
+   "chronological_B": 652,
+   "chronological_D": 631,
+   "equal_line_counts": true
+  },
+  "rippleedits:popular:107": {
+   "chronological_B": 427,
+   "chronological_D": 429,
+   "equal_line_counts": true
+  },
+  "rippleedits:popular:110": {
+   "chronological_B": 164,
+   "chronological_D": 154,
+   "equal_line_counts": true
+  },
+  "rippleedits:popular:118": {
+   "chronological_B": 254,
+   "chronological_D": 248,
+   "equal_line_counts": true
+  },
+  "rippleedits:popular:133": {
+   "chronological_B": 508,
+   "chronological_D": 516,
+   "equal_line_counts": true
+  },
+  "rippleedits:popular:152": {
+   "chronological_B": 280,
+   "chronological_D": 262,
+   "equal_line_counts": true
+  },
+  "rippleedits:popular:155": {
+   "chronological_B": 578,
+   "chronological_D": 585,
+   "equal_line_counts": true
+  },
+  "rippleedits:popular:352": {
+   "chronological_B": 480,
+   "chronological_D": 475,
+   "equal_line_counts": true
+  },
+  "rippleedits:popular:38": {
+   "chronological_B": 157,
+   "chronological_D": 155,
+   "equal_line_counts": true
+  },
+  "rippleedits:popular:382": {
+   "chronological_B": 207,
+   "chronological_D": 180,
+   "equal_line_counts": true
+  },
+  "rippleedits:popular:415": {
+   "chronological_B": 389,
+   "chronological_D": 387,
+   "equal_line_counts": true
+  },
+  "rippleedits:popular:483": {
+   "chronological_B": 368,
+   "chronological_D": 378,
+   "equal_line_counts": true
+  },
+  "rippleedits:popular:539": {
+   "chronological_B": 185,
+   "chronological_D": 137,
+   "equal_line_counts": true
+  },
+  "rippleedits:popular:620": {
+   "chronological_B": 172,
+   "chronological_D": 166,
+   "equal_line_counts": true
+  },
+  "rippleedits:popular:622": {
+   "chronological_B": 330,
+   "chronological_D": 320,
+   "equal_line_counts": true
+  },
+  "rippleedits:popular:627": {
+   "chronological_B": 219,
+   "chronological_D": 222,
+   "equal_line_counts": true
+  },
+  "rippleedits:popular:670": {
+   "chronological_B": 226,
+   "chronological_D": 225,
+   "equal_line_counts": true
+  },
+  "rippleedits:popular:7": {
+   "chronological_B": 194,
+   "chronological_D": 181,
+   "equal_line_counts": true
+  },
+  "rippleedits:popular:703": {
+   "chronological_B": 152,
+   "chronological_D": 156,
+   "equal_line_counts": true
+  },
+  "rippleedits:popular:717": {
+   "chronological_B": 215,
+   "chronological_D": 216,
+   "equal_line_counts": true
+  },
+  "rippleedits:popular:736": {
+   "chronological_B": 489,
+   "chronological_D": 467,
+   "equal_line_counts": true
+  },
+  "rippleedits:popular:824": {
+   "chronological_B": 163,
+   "chronological_D": 165,
+   "equal_line_counts": true
+  },
+  "rippleedits:popular:836": {
+   "chronological_B": 226,
+   "chronological_D": 226,
+   "equal_line_counts": true
+  },
+  "rippleedits:popular:837": {
+   "chronological_B": 349,
+   "chronological_D": 324,
+   "equal_line_counts": true
+  },
+  "rippleedits:popular:85": {
+   "chronological_B": 159,
+   "chronological_D": 154,
+   "equal_line_counts": true
+  },
+  "rippleedits:random:1066": {
+   "chronological_B": 225,
+   "chronological_D": 231,
+   "equal_line_counts": true
+  },
+  "rippleedits:random:1174": {
+   "chronological_B": 328,
+   "chronological_D": 325,
+   "equal_line_counts": true
+  },
+  "rippleedits:random:1202": {
+   "chronological_B": 319,
+   "chronological_D": 316,
+   "equal_line_counts": true
+  },
+  "rippleedits:random:1223": {
+   "chronological_B": 155,
+   "chronological_D": 161,
+   "equal_line_counts": true
+  },
+  "rippleedits:random:1289": {
+   "chronological_B": 354,
+   "chronological_D": 356,
+   "equal_line_counts": true
+  },
+  "rippleedits:random:1320": {
+   "chronological_B": 240,
+   "chronological_D": 245,
+   "equal_line_counts": true
+  },
+  "rippleedits:random:1468": {
+   "chronological_B": 391,
+   "chronological_D": 391,
+   "equal_line_counts": true
+  },
+  "rippleedits:random:1689": {
+   "chronological_B": 386,
+   "chronological_D": 397,
+   "equal_line_counts": true
+  },
+  "rippleedits:random:17": {
+   "chronological_B": 377,
+   "chronological_D": 376,
+   "equal_line_counts": true
+  },
+  "rippleedits:random:1775": {
+   "chronological_B": 164,
+   "chronological_D": 189,
+   "equal_line_counts": true
+  },
+  "rippleedits:random:1791": {
+   "chronological_B": 150,
+   "chronological_D": 151,
+   "equal_line_counts": true
+  },
+  "rippleedits:random:1898": {
+   "chronological_B": 477,
+   "chronological_D": 471,
+   "equal_line_counts": true
+  },
+  "rippleedits:random:354": {
+   "chronological_B": 371,
+   "chronological_D": 378,
+   "equal_line_counts": true
+  },
+  "rippleedits:random:491": {
+   "chronological_B": 202,
+   "chronological_D": 207,
+   "equal_line_counts": true
+  },
+  "rippleedits:random:575": {
+   "chronological_B": 132,
+   "chronological_D": 135,
+   "equal_line_counts": true
+  },
+  "rippleedits:random:60": {
+   "chronological_B": 337,
+   "chronological_D": 331,
+   "equal_line_counts": true
+  },
+  "rippleedits:random:618": {
+   "chronological_B": 410,
+   "chronological_D": 411,
+   "equal_line_counts": true
+  },
+  "rippleedits:random:636": {
+   "chronological_B": 166,
+   "chronological_D": 167,
+   "equal_line_counts": true
+  },
+  "rippleedits:random:683": {
+   "chronological_B": 283,
+   "chronological_D": 266,
+   "equal_line_counts": true
+  },
+  "rippleedits:random:857": {
+   "chronological_B": 493,
+   "chronological_D": 495,
+   "equal_line_counts": true
+  }
+ },
+ "study": "icmh1-ripple-v2"
+}

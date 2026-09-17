@@ -1,0 +1,226 @@
+{
+  "schema_version": 1,
+  "archives": {
+    "V10_CACHE_CROSSOVER_RESULTS.zip": {
+      "sha256": "fc6f8c3eed7bfca435fc1042453bfb2e44874a3179fda4e950ba95416d18b5e2",
+      "bytes": 420599025,
+      "members": 70,
+      "public_url": null,
+      "status": "unavailable_to_external_reproducer"
+    }
+  },
+  "capsule": {
+    "capsule_manifest_sha256": "2856b10a0a53607d7d0a2804f0ec52c5d2285e24082fc209c196cf59a802cb03",
+    "payload_sha256": "925448882a2783663457e683e1688828033a4d69a73f3591e96d88c68d56bd55",
+    "payload_bytes": 139049670,
+    "members": 747,
+    "source_commit": "18fac16d47cefd1061b83e97672ae7958e80ffd0"
+  },
+  "verification": {
+    "outer_members": 70,
+    "capsule_members": 747,
+    "exact_prior_plus_new_journal": true,
+    "recorded_both_instances_terminated": true,
+    "recorded_watchdog_disabled": true,
+    "scope": "Local delivered bytes and saved receipts; no live provider check or neural execution"
+  },
+  "files": [
+    {
+      "path": "raw.jsonl.gz",
+      "sha256": "4fafa7adda258e6295f823b09ad13eea020f6a12497b9ac563ecf8f8f7d66aa2",
+      "bytes": 346865,
+      "sources": [
+        {
+          "archive": "V10_CACHE_CROSSOVER_RESULTS.zip",
+          "member": "combined/raw.jsonl",
+          "container": null,
+          "sha256": "2baf17d50b24c674dfe5b920405cdeab25dfd7735eb874efc2de8ee662d82dcd",
+          "bytes": 9218849,
+          "source_manifest_verified": true
+        }
+      ],
+      "derivation": "Lossless gzip of the complete scientific journal; no rows or fields omitted."
+    },
+    {
+      "path": "saved_summaries.json",
+      "sha256": "67c29e1f8a3e70802074835f4e9304ecf0db0f983897d95b86a27e9d4ed16330",
+      "bytes": 60317,
+      "sources": [
+        {
+          "archive": "V10_CACHE_CROSSOVER_RESULTS.zip",
+          "member": "combined/summaries.json",
+          "container": null,
+          "sha256": "67c29e1f8a3e70802074835f4e9304ecf0db0f983897d95b86a27e9d4ed16330",
+          "bytes": 60317,
+          "source_manifest_verified": true
+        }
+      ],
+      "derivation": "Byte-for-byte scientific output."
+    },
+    {
+      "path": "terminal.json",
+      "sha256": "f2f3d6f960af5cecabe62ca4826e2c7405ec9e6f4bfc390dc0654a3ae1126124",
+      "bytes": 908,
+      "sources": [
+        {
+          "archive": "V10_CACHE_CROSSOVER_RESULTS.zip",
+          "member": "combined/terminal.json",
+          "container": null,
+          "sha256": "f2f3d6f960af5cecabe62ca4826e2c7405ec9e6f4bfc390dc0654a3ae1126124",
+          "bytes": 908,
+          "source_manifest_verified": true
+        }
+      ],
+      "derivation": "Byte-for-byte scientific output."
+    },
+    {
+      "path": "case_plan.json",
+      "sha256": "013933161e4028c114da54ac9b1f0823c4a20ed61f6a506bb398c4710da8c539",
+      "bytes": 44861,
+      "sources": [
+        {
+          "archive": "V10_CACHE_CROSSOVER_RESULTS.zip",
+          "member": "handoff/CASE_PLAN.json",
+          "container": "provenance/run-payload.tar.gz",
+          "sha256": "013933161e4028c114da54ac9b1f0823c4a20ed61f6a506bb398c4710da8c539",
+          "bytes": 44861,
+          "source_manifest_verified": true
+        }
+      ],
+      "derivation": "Byte-for-byte pre-execution plan; its proposed status describes planning, not the completed run."
+    },
+    {
+      "path": "frozen_gates.py.txt",
+      "sha256": "4cf9338a3ed4e599345d40b4c5a9b78aa113fe45c1946620e9ff08406a5222ad",
+      "bytes": 7243,
+      "sources": [
+        {
+          "archive": "V10_CACHE_CROSSOVER_RESULTS.zip",
+          "member": "continuation/gates.py",
+          "container": "provenance/run-payload.tar.gz",
+          "sha256": "4cf9338a3ed4e599345d40b4c5a9b78aa113fe45c1946620e9ff08406a5222ad",
+          "bytes": 7243,
+          "source_manifest_verified": true
+        }
+      ],
+      "derivation": "Byte-for-byte classification specification, retained for inspection, not imported by replay."
+    },
+    {
+      "path": "terminal_worlds.json",
+      "sha256": "a2fc7bf13e15fc2c64eceee5bbc4ff7df7c8f8870789373272a5c52e758027ee",
+      "bytes": 8000,
+      "sources": [
+        {
+          "archive": "V10_CACHE_CROSSOVER_RESULTS.zip",
+          "member": "inputs/c04f228f6e9475e3d775dfd055d3bea28e47a1fcb7e1212a5140b724427454f2/inputs/88fffa074a0c514fdb7898f2fecba404c01ad6a6c237b32b549831388a1e0f7a/evidence/47b42f5b5619b6f7c34c544ff5cfdf1e0f2228c9de3d8c1e362c37f6cf69ea15/snapshot/reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0034.json",
+          "container": "provenance/run-payload.tar.gz",
+          "sha256": "b6306f3199baf87dedca7920d7a441d3e5735cd0aecdf4381264a979a371ba23",
+          "bytes": 57133,
+          "source_manifest_verified": true
+        },
+        {
+          "archive": "V10_CACHE_CROSSOVER_RESULTS.zip",
+          "member": "inputs/c04f228f6e9475e3d775dfd055d3bea28e47a1fcb7e1212a5140b724427454f2/inputs/88fffa074a0c514fdb7898f2fecba404c01ad6a6c237b32b549831388a1e0f7a/evidence/47b42f5b5619b6f7c34c544ff5cfdf1e0f2228c9de3d8c1e362c37f6cf69ea15/snapshot/reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0011.json",
+          "container": "provenance/run-payload.tar.gz",
+          "sha256": "a6c649a208911b2f1f31e2968be41b5dc3fd44062527c6a6df4eeda30e57f4cc",
+          "bytes": 60973,
+          "source_manifest_verified": true
+        },
+        {
+          "archive": "V10_CACHE_CROSSOVER_RESULTS.zip",
+          "member": "inputs/c04f228f6e9475e3d775dfd055d3bea28e47a1fcb7e1212a5140b724427454f2/inputs/88fffa074a0c514fdb7898f2fecba404c01ad6a6c237b32b549831388a1e0f7a/evidence/47b42f5b5619b6f7c34c544ff5cfdf1e0f2228c9de3d8c1e362c37f6cf69ea15/snapshot/reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0026.json",
+          "container": "provenance/run-payload.tar.gz",
+          "sha256": "4529f001cf615f1689fbf1062d6ab37489cf3286529ca4b5827c0cef8b374c84",
+          "bytes": 56871,
+          "source_manifest_verified": true
+        },
+        {
+          "archive": "V10_CACHE_CROSSOVER_RESULTS.zip",
+          "member": "inputs/c04f228f6e9475e3d775dfd055d3bea28e47a1fcb7e1212a5140b724427454f2/inputs/88fffa074a0c514fdb7898f2fecba404c01ad6a6c237b32b549831388a1e0f7a/evidence/47b42f5b5619b6f7c34c544ff5cfdf1e0f2228c9de3d8c1e362c37f6cf69ea15/snapshot/reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0031.json",
+          "container": "provenance/run-payload.tar.gz",
+          "sha256": "2de78d220dae8ea32f9abe04259e60dae55d47c9fff96ab057d0931a5a570f39",
+          "bytes": 61197,
+          "source_manifest_verified": true
+        },
+        {
+          "archive": "V10_CACHE_CROSSOVER_RESULTS.zip",
+          "member": "inputs/c04f228f6e9475e3d775dfd055d3bea28e47a1fcb7e1212a5140b724427454f2/inputs/88fffa074a0c514fdb7898f2fecba404c01ad6a6c237b32b549831388a1e0f7a/evidence/47b42f5b5619b6f7c34c544ff5cfdf1e0f2228c9de3d8c1e362c37f6cf69ea15/snapshot/reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0033.json",
+          "container": "provenance/run-payload.tar.gz",
+          "sha256": "e767f3a2e984dc2123006b780f23c9269065287b38da1e6f517ec06de006f9cd",
+          "bytes": 56818,
+          "source_manifest_verified": true
+        },
+        {
+          "archive": "V10_CACHE_CROSSOVER_RESULTS.zip",
+          "member": "inputs/c04f228f6e9475e3d775dfd055d3bea28e47a1fcb7e1212a5140b724427454f2/inputs/88fffa074a0c514fdb7898f2fecba404c01ad6a6c237b32b549831388a1e0f7a/evidence/47b42f5b5619b6f7c34c544ff5cfdf1e0f2228c9de3d8c1e362c37f6cf69ea15/snapshot/reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0007.json",
+          "container": "provenance/run-payload.tar.gz",
+          "sha256": "9554af518d72724ec4f2147f95c7e707408789a00be7a0fd28d78432e50b3e8c",
+          "bytes": 61265,
+          "source_manifest_verified": true
+        },
+        {
+          "archive": "V10_CACHE_CROSSOVER_RESULTS.zip",
+          "member": "inputs/c04f228f6e9475e3d775dfd055d3bea28e47a1fcb7e1212a5140b724427454f2/inputs/88fffa074a0c514fdb7898f2fecba404c01ad6a6c237b32b549831388a1e0f7a/evidence/47b42f5b5619b6f7c34c544ff5cfdf1e0f2228c9de3d8c1e362c37f6cf69ea15/snapshot/reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0004.json",
+          "container": "provenance/run-payload.tar.gz",
+          "sha256": "73e47d29d269ef99236bef2ef5cab67fc3a8f9a95fbbe26256b18d3fb2b2827e",
+          "bytes": 53995,
+          "source_manifest_verified": true
+        },
+        {
+          "archive": "V10_CACHE_CROSSOVER_RESULTS.zip",
+          "member": "inputs/c04f228f6e9475e3d775dfd055d3bea28e47a1fcb7e1212a5140b724427454f2/inputs/88fffa074a0c514fdb7898f2fecba404c01ad6a6c237b32b549831388a1e0f7a/evidence/47b42f5b5619b6f7c34c544ff5cfdf1e0f2228c9de3d8c1e362c37f6cf69ea15/snapshot/reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0023.json",
+          "container": "provenance/run-payload.tar.gz",
+          "sha256": "f30a8dc021c0425b73156705dd6136dca8742257dc6ee45cb433a246c350984c",
+          "bytes": 61292,
+          "source_manifest_verified": true
+        },
+        {
+          "archive": "V10_CACHE_CROSSOVER_RESULTS.zip",
+          "member": "inputs/c04f228f6e9475e3d775dfd055d3bea28e47a1fcb7e1212a5140b724427454f2/inputs/88fffa074a0c514fdb7898f2fecba404c01ad6a6c237b32b549831388a1e0f7a/evidence/47b42f5b5619b6f7c34c544ff5cfdf1e0f2228c9de3d8c1e362c37f6cf69ea15/snapshot/reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0057.json",
+          "container": "provenance/run-payload.tar.gz",
+          "sha256": "04ac34a13504caf7e62c49a51cd76338cece376d15d9f358c35b5a096ad60d1d",
+          "bytes": 56760,
+          "source_manifest_verified": true
+        },
+        {
+          "archive": "V10_CACHE_CROSSOVER_RESULTS.zip",
+          "member": "inputs/c04f228f6e9475e3d775dfd055d3bea28e47a1fcb7e1212a5140b724427454f2/inputs/88fffa074a0c514fdb7898f2fecba404c01ad6a6c237b32b549831388a1e0f7a/evidence/47b42f5b5619b6f7c34c544ff5cfdf1e0f2228c9de3d8c1e362c37f6cf69ea15/snapshot/reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0022.json",
+          "container": "provenance/run-payload.tar.gz",
+          "sha256": "23d868c57ecfef473bd0683e96d429d29f794ec6af196ff50a4422e11c3dab97",
+          "bytes": 57103,
+          "source_manifest_verified": true
+        },
+        {
+          "archive": "V10_CACHE_CROSSOVER_RESULTS.zip",
+          "member": "inputs/c04f228f6e9475e3d775dfd055d3bea28e47a1fcb7e1212a5140b724427454f2/inputs/88fffa074a0c514fdb7898f2fecba404c01ad6a6c237b32b549831388a1e0f7a/evidence/47b42f5b5619b6f7c34c544ff5cfdf1e0f2228c9de3d8c1e362c37f6cf69ea15/snapshot/reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0054.json",
+          "container": "provenance/run-payload.tar.gz",
+          "sha256": "a71e88ce3711c06bac7a55e8612fc61fe4209c7b1b5d95cda9e2c0a7edcef683",
+          "bytes": 56994,
+          "source_manifest_verified": true
+        },
+        {
+          "archive": "V10_CACHE_CROSSOVER_RESULTS.zip",
+          "member": "inputs/c04f228f6e9475e3d775dfd055d3bea28e47a1fcb7e1212a5140b724427454f2/inputs/88fffa074a0c514fdb7898f2fecba404c01ad6a6c237b32b549831388a1e0f7a/evidence/47b42f5b5619b6f7c34c544ff5cfdf1e0f2228c9de3d8c1e362c37f6cf69ea15/snapshot/reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0029.json",
+          "container": "provenance/run-payload.tar.gz",
+          "sha256": "1382e8758a7062b1142ca4e187b1a39f060ca3f8a87992c1a089b0d1c32297f4",
+          "bytes": 56849,
+          "source_manifest_verified": true
+        }
+      ],
+      "derivation": "Select the complete terminal world for each of the twelve planned roots; no numeric rounding."
+    },
+    {
+      "path": "delivery_receipt.json",
+      "sha256": "7ad9ed57123cf167bb70f80df43b7c2a867e276d1cdfd87a93450c357e12275c",
+      "bytes": 400,
+      "sources": [
+        {
+          "member": "DELIVERY_RECEIPT.json",
+          "sha256": "43abec223d379b76170920815a063a26d41372286bb7053eae5fe0da3a14fdf1",
+          "bytes": 513
+        }
+      ],
+      "derivation": "Receipt projection: local archive path replaced by basename; cost field omitted; other fields unchanged."
+    }
+  ]
+}

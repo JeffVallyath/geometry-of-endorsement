@@ -1,0 +1,48 @@
+{
+ "at": "2026-09-16T19:21:57.219270+00:00",
+ "batch_policy": {
+  "batch_size": 1,
+  "decoding": "greedy, num_beams=1, max_new_tokens=16, bf16, sdpa, tf32 off",
+  "kv_cache": "fresh per independent generation",
+  "order": "plan order",
+  "processes": "one process per phase; repeats are separate fresh processes"
+ },
+ "chronological_atomic_reads": 44,
+ "chronological_downstream_excluded": true,
+ "development_check_sha256": "1ea52e0e8740cef8593c8d0199129afaffa71f8573eb484d769e6e1fc76c260d",
+ "development_throughput": {
+  "generations": 207,
+  "load_seconds_max": 6.038327123000045,
+  "max_seconds": 1.2182660309999847,
+  "mean_seconds": 0.10221551401932212,
+  "p95_seconds": 0.14946205999990525,
+  "peak_allocated_bytes": 15322547712,
+  "total_generation_seconds": 21.15861140199968
+ },
+ "gates": {
+  "G1": ">=13/16 given_facts AND >=13/16 canonical",
+  "G2": ">=18/22 records correct under both histories",
+  "G4": "<=4/44 unresolved chronological atomic reads",
+  "G5": ">=10/16 A&C questions across >=3/6 roots",
+  "resource": "final+repeat forecast fits with 25% allowance and 30-minute reserve",
+  "technical": "all units measured, no fault"
+ },
+ "no_retuning_after_this_point": true,
+ "parser_freeze_sha256": "71b8410436ed930ad959b7e8a2925e63bcc5062557c28847801ec61fdb78a2d3",
+ "plan_sha256": "da9871e8c70ba115e30714dc1c39766f6ce25d609e89e3215212e8d6e2177fa4",
+ "questions": 16,
+ "records": 22,
+ "registry_sha256": "f99995b7e3cbb71bfa86702466782e930397a60d0e33c000cae386ed7ba0d3ef",
+ "registry_union_sha256": "d5d19644ace9513ddef58fd90f07b3cf273fa27d48a1e4793ece421c18ba18ba",
+ "roots": [
+  "rippleedits:popular:382",
+  "rippleedits:random:1223",
+  "rippleedits:random:1289",
+  "rippleedits:popular:415",
+  "rippleedits:popular:352",
+  "rippleedits:popular:7"
+ ],
+ "runtime_freeze_sha256": "6b4b69bffb79ce5ef3dd3ddb7ee24e4180522889079e59eee50d0106c66670fa",
+ "schema": "ICMH1_RIPPLE_V2_LP1_QUALIFICATION_FREEZE_V1",
+ "scoring_sha256": "5907c831d37a4dbb9f0df348ed379bea7c71dbfd44b9cce8d4ac71affbbb0bcc"
+}

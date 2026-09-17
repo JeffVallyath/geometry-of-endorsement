@@ -1,0 +1,51 @@
+{
+  "actor": "gemma",
+  "arm": "FREE_OVERWRITE",
+  "at": "2026-09-11T20:46:36.883694+00:00",
+  "cap_ref": 103.18592071533203,
+  "condition": "FREE_COMPLETE_SINGLE",
+  "coverage": "complete",
+  "epoch": 2,
+  "files": {
+    "setter": "26bcf56cd79fe0c275575d419abfffa2c2895272431613b5939c8bc6586f9e2c"
+  },
+  "init": {
+    "dir": "provenance/sha256-4e31935431688f89531895d31a6d08226140b8c362a62a791986453fae6dde22",
+    "kind": "v3_selected_checkpoint_warm_start",
+    "load_basis_error": 0.0,
+    "optimizer_state": "fresh AdamW moments (V3 checkpoints hold no optimizer state)",
+    "sha256": {
+      "meta": "e9c5e570cd2f372e7760c86b3caaf33439bbea1f1c26cb7b2b53bfda7d3bfa4a",
+      "setter": "effed08fd38e4449cc79c3bc52d2c73511d390aec56287050f59860f2d743499"
+    },
+    "v3_epoch": 3,
+    "v3_lr": 0.001
+  },
+  "kind": "free",
+  "lr": 0.001,
+  "norms": {
+    "basis_raw": 10.45723819732666,
+    "bias0": 93.01345825195312,
+    "bias1": 70.50839233398438,
+    "head0": 13.003973007202148,
+    "head1": 10.28147029876709
+  },
+  "rank": 16,
+  "schema": "RSO3_SETTER_V1",
+  "seed": 0,
+  "site": 15,
+  "slots": 5760,
+  "steps": 1440,
+  "warm_start": {
+    "dir": "provenance/sha256-4e31935431688f89531895d31a6d08226140b8c362a62a791986453fae6dde22",
+    "kind": "v3_selected_checkpoint_warm_start",
+    "load_basis_error": 0.0,
+    "optimizer_state": "fresh AdamW moments (V3 checkpoints hold no optimizer state)",
+    "sha256": {
+      "meta": "e9c5e570cd2f372e7760c86b3caaf33439bbea1f1c26cb7b2b53bfda7d3bfa4a",
+      "setter": "effed08fd38e4449cc79c3bc52d2c73511d390aec56287050f59860f2d743499"
+    },
+    "v3_epoch": 3,
+    "v3_lr": 0.001
+  }
+}

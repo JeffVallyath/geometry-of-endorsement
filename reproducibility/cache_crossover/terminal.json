@@ -1,0 +1,24 @@
+{
+  "status": "SCIENTIFIC_EXECUTED",
+  "completed_pairs": [
+    "gemma-pair-00",
+    "gemma-pair-02",
+    "gemma-pair-04",
+    "gemma-pair-05",
+    "gemma-pair-06",
+    "gemma-pair-07"
+  ],
+  "real_forwards": 1992,
+  "calls": {
+    "prefix": 264,
+    "suffix": 1728
+  },
+  "prior_forwards_reused": 332,
+  "new_forwards": 1660,
+  "parent_terminal_status": "ENGINEERING_STOP: preserved, not rewritten",
+  "pair00_completion": "Requalified preserved raw evidence and binding-only deterministic summary correction",
+  "original_raw_sha256": "f0db7220d26cbed2bca82894aa9658bfbf4a480313fa3867c68aae71ebc71ba0",
+  "new_raw_sha256": "220a76326bab20c4cf709203b65b1d4557ac251f2f9733b071fb118c2291659f",
+  "resume_terminal_sha256": "211574293546afd29b7f1cd03c4b845be471db21fb913a7d876ef264cb9b63d2",
+  "reused_evidence_sha256": "2d3c98195e40b0994efa87113905378cf87c2ffe4a2a8ff09af64c37d91bebdb"
+}

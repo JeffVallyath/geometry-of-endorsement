@@ -1,0 +1,104 @@
+[
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0035-d0-extra3",
+    "root_id": "SSC1-FINAL-0035",
+    "spec": {
+      "a": 3,
+      "b": 4,
+      "kind": "either",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Ada and Gita support Theater?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0035-d0-03",
+    "root_id": "SSC1-FINAL-0035",
+    "spec": {
+      "a": 3,
+      "b": 2,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Ada favor the Theater proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0035-d0-extra0",
+    "root_id": "SSC1-FINAL-0035",
+    "spec": {
+      "a": 4,
+      "b": 2,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Gita favor the Theater proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0035-d1-extra3",
+    "root_id": "SSC1-FINAL-0035",
+    "spec": {
+      "a": 3,
+      "b": 4,
+      "kind": "either",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Ada and Gita support Theater?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-FINAL-0035-d1-03",
+    "root_id": "SSC1-FINAL-0035",
+    "spec": {
+      "a": 3,
+      "b": 2,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Ada favor the Theater proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0035-d1-extra0",
+    "root_id": "SSC1-FINAL-0035",
+    "spec": {
+      "a": 4,
+      "b": 2,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Gita favor the Theater proposal?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  }
+]

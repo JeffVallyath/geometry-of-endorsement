@@ -1,0 +1,334 @@
+{
+  "schema": "PREFLIGHT_MODEL_V1",
+  "stage": "model",
+  "actor": "gemma",
+  "model_id": "google/gemma-2-9b-it",
+  "revision": "11c9b309abf73637e4b6f9a3fa1e92e615547819",
+  "started": 1789578437.0785723,
+  "backbone": {
+    "model": {
+      "cap": 30.0,
+      "cap_rule": "inherited V1 site-15 relation cap 103.18592071533203 (clip THEN strength)",
+      "hidden": 3584,
+      "id": "google/gemma-2-9b-it",
+      "key": "gemma",
+      "late_site": 27,
+      "layers": 42,
+      "revision": "11c9b309abf73637e4b6f9a3fa1e92e615547819",
+      "site": 15,
+      "site_convention": "zero-based post-block index of the decoder layer whose output is edited",
+      "sites": [
+        15
+      ],
+      "template_kwargs": {}
+    },
+    "sites": [
+      15,
+      27
+    ],
+    "hidden": 3584,
+    "vocab": 256000,
+    "final_logit_softcapping": 30.0,
+    "actual_layers": 42,
+    "fp32_readout": "detached clone outside inference_mode, requires_grad False",
+    "backbone_requires_grad": false,
+    "tf32_disabled": true,
+    "matmul_precision": "highest",
+    "attn_implementation": "sdpa",
+    "layer_types": [
+      "sliding_attention",
+      "full_attention",
+      "sliding_attention",
+      "full_attention"
+    ],
+    "site": 15,
+    "template_kwargs": {},
+    "generation_prompt": "<end_of_turn>\n<start_of_turn>model\n",
+    "serving": "KV_CACHE_CLONE + batched clone asks (validated in E0)",
+    "program_workspace": "FP32 whole-prefix working residual inside the site hook; BF16 cast only when written back to the block output; legacy per-command BF16 path retained for the historical V2 references"
+  },
+  "erratum_template": {
+    "schema": "ERRATUM_TEMPLATE_V1",
+    "published_trigger": "[STATE UPDATE] {label} has changed to {value}; this overrides any earlier value AND any earlier conclusion. Apply the current value.",
+    "label_pattern": "{actor}'s position on the {project} proposal",
+    "value_true": "in favor",
+    "value_false": "opposed",
+    "source": "editkv/core.py::DEFAULT_TRIGGER",
+    "adaptation": "single named field -> explicitly addressed record clauses",
+    "stacked_history": false,
+    "sha256": "2d88092b1c5dfa5da26f59ed7262713fb1b28d4f920579aa991ca5d5d0467c68"
+  },
+  "refresh_census": {
+    "scenes": 8,
+    "feasible": 0,
+    "fallback": 8,
+    "fallback_rate": 1.0,
+    "reasons": [
+      "PREFIX_TOKEN_LENGTH_CHANGE"
+    ],
+    "rows": [
+      {
+        "input_id": "b66d96805b3a2a992221328f1b13c4785c8c9e34ac0ae94a22180a0775d8637f",
+        "scene_id": "UPDATE_COMPARISON-DEV-0000",
+        "addressed_clauses": 1,
+        "refresh_feasible": false,
+        "reason": "PREFIX_TOKEN_LENGTH_CHANGE",
+        "char_deltas": [
+          1
+        ],
+        "stale_tokens": 448,
+        "fresh_tokens": 449
+      },
+      {
+        "input_id": "d026fd8abd2ef272fb8f09c527e28e9bf970bb49a986e2249347217c8fafe30d",
+        "scene_id": "UPDATE_COMPARISON-DEV-0001",
+        "addressed_clauses": 1,
+        "refresh_feasible": false,
+        "reason": "PREFIX_TOKEN_LENGTH_CHANGE",
+        "char_deltas": [
+          1
+        ],
+        "stale_tokens": 481,
+        "fresh_tokens": 482
+      },
+      {
+        "input_id": "1b4f5431277507013edf538954b0cb6ed6616bf0815a36468117e47210cf83cc",
+        "scene_id": "UPDATE_COMPARISON-DEV-0002",
+        "addressed_clauses": 1,
+        "refresh_feasible": false,
+        "reason": "PREFIX_TOKEN_LENGTH_CHANGE",
+        "char_deltas": [
+          1
+        ],
+        "stale_tokens": 485,
+        "fresh_tokens": 486
+      },
+      {
+        "input_id": "5b11adf3ad04978425f4aab30811d26a82d9d235d9c4bd67062a40c181bc36e0",
+        "scene_id": "UPDATE_COMPARISON-DEV-0003",
+        "addressed_clauses": 1,
+        "refresh_feasible": false,
+        "reason": "PREFIX_TOKEN_LENGTH_CHANGE",
+        "char_deltas": [
+          1
+        ],
+        "stale_tokens": 551,
+        "fresh_tokens": 552
+      },
+      {
+        "input_id": "9b1c6164a2fbb2bffddaf1136589263ad27260bdf01fecbaa66a8d11c9f0f5fc",
+        "scene_id": "UPDATE_COMPARISON-DEV-0004",
+        "addressed_clauses": 1,
+        "refresh_feasible": false,
+        "reason": "PREFIX_TOKEN_LENGTH_CHANGE",
+        "char_deltas": [
+          -1
+        ],
+        "stale_tokens": 447,
+        "fresh_tokens": 446
+      },
+      {
+        "input_id": "c5644062a532cf67abde4adafdd516d03a09d7055cc79fc6fb0f74913afc4056",
+        "scene_id": "UPDATE_COMPARISON-DEV-0005",
+        "addressed_clauses": 1,
+        "refresh_feasible": false,
+        "reason": "PREFIX_TOKEN_LENGTH_CHANGE",
+        "char_deltas": [
+          -1
+        ],
+        "stale_tokens": 489,
+        "fresh_tokens": 488
+      },
+      {
+        "input_id": "486124103b2e3e3e307d94ab83426b4a8a74a2a17115a0aea02ea839dfaf88c9",
+        "scene_id": "UPDATE_COMPARISON-DEV-0006",
+        "addressed_clauses": 1,
+        "refresh_feasible": false,
+        "reason": "PREFIX_TOKEN_LENGTH_CHANGE",
+        "char_deltas": [
+          -1
+        ],
+        "stale_tokens": 488,
+        "fresh_tokens": 487
+      },
+      {
+        "input_id": "071df497ebcf8116bdafd6e6a40c026f6c05c8e7f1beb95a11bf5dc36a69e40d",
+        "scene_id": "UPDATE_COMPARISON-DEV-0007",
+        "addressed_clauses": 1,
+        "refresh_feasible": false,
+        "reason": "PREFIX_TOKEN_LENGTH_CHANGE",
+        "char_deltas": [
+          -1
+        ],
+        "stale_tokens": 546,
+        "fresh_tokens": 545
+      }
+    ],
+    "interpretation": "field refresh never executes on DEV; FIELD_PLUS_LATEST_ERRATUM reduces to LATEST_ERRATUM under the documented fixed fallback and the headline contrast MUST state this"
+  },
+  "adapter_builds": [
+    {
+      "input_id": "b66d96805b3a2a992221328f1b13c4785c8c9e34ac0ae94a22180a0775d8637f",
+      "method": "LATEST_ERRATUM",
+      "artifact_sha256": "94402458fa1665416eff89e4b4ed05c52ed61eec751e587eb318f79728271f77",
+      "refresh_fallback": false,
+      "prefill_seconds": 0.5431852299999491,
+      "refresh_seconds": null
+    },
+    {
+      "input_id": "b66d96805b3a2a992221328f1b13c4785c8c9e34ac0ae94a22180a0775d8637f",
+      "method": "FIELD_PLUS_LATEST_ERRATUM",
+      "artifact_sha256": "94402458fa1665416eff89e4b4ed05c52ed61eec751e587eb318f79728271f77",
+      "refresh_fallback": true,
+      "prefill_seconds": 0.55470807100005,
+      "refresh_seconds": null
+    },
+    {
+      "input_id": "d026fd8abd2ef272fb8f09c527e28e9bf970bb49a986e2249347217c8fafe30d",
+      "method": "LATEST_ERRATUM",
+      "artifact_sha256": "48c9c2de10de2b74e751a044658a7f34198778d3384c41cd7be235d8e98fe12e",
+      "refresh_fallback": false,
+      "prefill_seconds": 0.5869937080000227,
+      "refresh_seconds": null
+    },
+    {
+      "input_id": "d026fd8abd2ef272fb8f09c527e28e9bf970bb49a986e2249347217c8fafe30d",
+      "method": "FIELD_PLUS_LATEST_ERRATUM",
+      "artifact_sha256": "48c9c2de10de2b74e751a044658a7f34198778d3384c41cd7be235d8e98fe12e",
+      "refresh_fallback": true,
+      "prefill_seconds": 0.5937716390000105,
+      "refresh_seconds": null
+    },
+    {
+      "input_id": "1b4f5431277507013edf538954b0cb6ed6616bf0815a36468117e47210cf83cc",
+      "method": "LATEST_ERRATUM",
+      "artifact_sha256": "51b328c3562fa841c43b936f6345317c565478ba2d6d4baea1a59b68e6b112d1",
+      "refresh_fallback": false,
+      "prefill_seconds": 0.5981852869999784,
+      "refresh_seconds": null
+    },
+    {
+      "input_id": "1b4f5431277507013edf538954b0cb6ed6616bf0815a36468117e47210cf83cc",
+      "method": "FIELD_PLUS_LATEST_ERRATUM",
+      "artifact_sha256": "51b328c3562fa841c43b936f6345317c565478ba2d6d4baea1a59b68e6b112d1",
+      "refresh_fallback": true,
+      "prefill_seconds": 0.5857992840000179,
+      "refresh_seconds": null
+    },
+    {
+      "input_id": "5b11adf3ad04978425f4aab30811d26a82d9d235d9c4bd67062a40c181bc36e0",
+      "method": "LATEST_ERRATUM",
+      "artifact_sha256": "dfa66d2e571e641f35174116651daa47cb5a6deba6b78ce51de2e3fbce4a721c",
+      "refresh_fallback": false,
+      "prefill_seconds": 0.6650489209999932,
+      "refresh_seconds": null
+    },
+    {
+      "input_id": "5b11adf3ad04978425f4aab30811d26a82d9d235d9c4bd67062a40c181bc36e0",
+      "method": "FIELD_PLUS_LATEST_ERRATUM",
+      "artifact_sha256": "dfa66d2e571e641f35174116651daa47cb5a6deba6b78ce51de2e3fbce4a721c",
+      "refresh_fallback": true,
+      "prefill_seconds": 0.6618823569999677,
+      "refresh_seconds": null
+    },
+    {
+      "input_id": "9b1c6164a2fbb2bffddaf1136589263ad27260bdf01fecbaa66a8d11c9f0f5fc",
+      "method": "LATEST_ERRATUM",
+      "artifact_sha256": "27fd3b08c69cf17b728d7a89f5b555e78119c0cf7c12f350860767c6839fa9c1",
+      "refresh_fallback": false,
+      "prefill_seconds": 0.5511437510000405,
+      "refresh_seconds": null
+    },
+    {
+      "input_id": "9b1c6164a2fbb2bffddaf1136589263ad27260bdf01fecbaa66a8d11c9f0f5fc",
+      "method": "FIELD_PLUS_LATEST_ERRATUM",
+      "artifact_sha256": "27fd3b08c69cf17b728d7a89f5b555e78119c0cf7c12f350860767c6839fa9c1",
+      "refresh_fallback": true,
+      "prefill_seconds": 0.5473742619999484,
+      "refresh_seconds": null
+    },
+    {
+      "input_id": "c5644062a532cf67abde4adafdd516d03a09d7055cc79fc6fb0f74913afc4056",
+      "method": "LATEST_ERRATUM",
+      "artifact_sha256": "28a35f2304300090bfa42b24748d944b04339b00349f52fef08944a74663534d",
+      "refresh_fallback": false,
+      "prefill_seconds": 0.5943722209999578,
+      "refresh_seconds": null
+    },
+    {
+      "input_id": "c5644062a532cf67abde4adafdd516d03a09d7055cc79fc6fb0f74913afc4056",
+      "method": "FIELD_PLUS_LATEST_ERRATUM",
+      "artifact_sha256": "28a35f2304300090bfa42b24748d944b04339b00349f52fef08944a74663534d",
+      "refresh_fallback": true,
+      "prefill_seconds": 0.5923751159999711,
+      "refresh_seconds": null
+    },
+    {
+      "input_id": "486124103b2e3e3e307d94ab83426b4a8a74a2a17115a0aea02ea839dfaf88c9",
+      "method": "LATEST_ERRATUM",
+      "artifact_sha256": "70b9fa3ffc6742b01c6b1828df0a2799d6a8c00025d6b45e24ea49c11aaa0154",
+      "refresh_fallback": false,
+      "prefill_seconds": 0.6035510550000254,
+      "refresh_seconds": null
+    },
+    {
+      "input_id": "486124103b2e3e3e307d94ab83426b4a8a74a2a17115a0aea02ea839dfaf88c9",
+      "method": "FIELD_PLUS_LATEST_ERRATUM",
+      "artifact_sha256": "70b9fa3ffc6742b01c6b1828df0a2799d6a8c00025d6b45e24ea49c11aaa0154",
+      "refresh_fallback": true,
+      "prefill_seconds": 0.6013924050000696,
+      "refresh_seconds": null
+    },
+    {
+      "input_id": "071df497ebcf8116bdafd6e6a40c026f6c05c8e7f1beb95a11bf5dc36a69e40d",
+      "method": "LATEST_ERRATUM",
+      "artifact_sha256": "2c48d5bf800535e3703ab37ecdcd437ef44a4c0bff04e9a9b3f9e0fe13e7d19f",
+      "refresh_fallback": false,
+      "prefill_seconds": 0.6679346890000488,
+      "refresh_seconds": null
+    },
+    {
+      "input_id": "071df497ebcf8116bdafd6e6a40c026f6c05c8e7f1beb95a11bf5dc36a69e40d",
+      "method": "FIELD_PLUS_LATEST_ERRATUM",
+      "artifact_sha256": "2c48d5bf800535e3703ab37ecdcd437ef44a4c0bff04e9a9b3f9e0fe13e7d19f",
+      "refresh_fallback": true,
+      "prefill_seconds": 0.6546975100000054,
+      "refresh_seconds": null
+    }
+  ],
+  "master_immutability": [
+    {
+      "input_id": "b66d96805b3a2a992221328f1b13c4785c8c9e34ac0ae94a22180a0775d8637f",
+      "unchanged": true
+    },
+    {
+      "input_id": "d026fd8abd2ef272fb8f09c527e28e9bf970bb49a986e2249347217c8fafe30d",
+      "unchanged": true
+    },
+    {
+      "input_id": "1b4f5431277507013edf538954b0cb6ed6616bf0815a36468117e47210cf83cc",
+      "unchanged": true
+    },
+    {
+      "input_id": "5b11adf3ad04978425f4aab30811d26a82d9d235d9c4bd67062a40c181bc36e0",
+      "unchanged": true
+    },
+    {
+      "input_id": "9b1c6164a2fbb2bffddaf1136589263ad27260bdf01fecbaa66a8d11c9f0f5fc",
+      "unchanged": true
+    },
+    {
+      "input_id": "c5644062a532cf67abde4adafdd516d03a09d7055cc79fc6fb0f74913afc4056",
+      "unchanged": true
+    },
+    {
+      "input_id": "486124103b2e3e3e307d94ab83426b4a8a74a2a17115a0aea02ea839dfaf88c9",
+      "unchanged": true
+    },
+    {
+      "input_id": "071df497ebcf8116bdafd6e6a40c026f6c05c8e7f1beb95a11bf5dc36a69e40d",
+      "unchanged": true
+    }
+  ],
+  "status": "PASS"
+}

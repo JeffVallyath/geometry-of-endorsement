@@ -1,5 +1,9 @@
 # Probe weights
 
+These fitted vectors read support or opposition from a model's activations.
+The files below belong to the representation study (`M1`); they are not pretrained
+model weights.
+
 ```
 m1_relation/
   llama_layer19.npz    Meta-Llama-3.1-8B-Instruct, layer 19, 4096-d
@@ -19,14 +23,14 @@ direction" everything in Part I of
 
 Each file has two probes fitted on the same data:
 
-- **difference-in-means** — the simple one. Average the internal states of all
+- **difference-in-means**: the simple one. Average the internal states of all
   the Supports examples, average the Opposes ones, subtract. That difference,
   normalized, is the direction.
-- **logistic** — a trained linear classifier over the same states. Usually a bit
+- **logistic**: a trained linear classifier over the same states. Usually a bit
   more accurate, less interpretable.
 
 Both were fitted on 1,500 training examples and scored on 500 held-out ones.
-They are fitted parameters, not model weights — you still need the model itself
+They are fitted parameters, not model weights. You still need the model itself
 to produce the internal states they get applied to.
 
 ## Using them
