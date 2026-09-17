@@ -43,9 +43,10 @@ def rules(identity, text):
 def test_actual_registry_passes():
     report = ev.check(ROOT, REGISTRY)
     assert report.ok(), report.errors
-    assert sum(c['bound'] for c in report.coverage) == 426
+    assert sum(c['bound'] for c in report.coverage) == 470
+    assert sum(c['bound'] for c in report.coverage if c['document'] == 'captions') == 44
     assert sum(c['bound'] for c in report.coverage if c['document'] == 'results') == 343
-    captions = {c['unit']: c for c in report.coverage if c['document'] == 'captions'}
+    captions = {c['unit']: c for c in report.coverage if c['document'] == 'caption_details'}
     assert set(captions) >= {'figure6', 'figure7', 'supplementary_s1', 'supplementary_s2', 'supplementary_s3'}
     assert captions['figure7']['bound'] == 7  # V10 design and primary interval bindings.
     assert captions['figure8']['bound'] == 2  # Crossover layer counts; prose counts have source predicates.
@@ -55,15 +56,15 @@ def test_actual_registry_passes():
 
 
 def test_consequence_caption_requires_failed_strong_target_qualification():
-    _, bad = changed('captions', 'not perfect hard-answer accuracy or a full strong-target pass',
+    _, bad = changed('caption_details', 'not perfect hard-answer accuracy or a full strong-target pass',
                      'perfect hard-answer accuracy and a full strong-target pass')
-    assert 'material-qualification-missing' in rules('captions', bad)
+    assert 'material-qualification-missing' in rules('caption_details', bad)
 
 
 def test_source_history_caption_requires_conditional_denominator():
-    _, bad = changed('captions', 'counts\nuse cases passing all individual-fact checks as their denominator; the bars use all cases',
-                     'counts\nuse all cases as their denominator; the bars use all cases')
-    assert 'material-qualification-missing' in rules('captions', bad)
+    _, bad = changed('caption_details', 'counts\nuse atomic-perfect roots as their denominator; the bars use all roots',
+                     'counts\nuse all roots as their denominator; the bars use all roots')
+    assert 'material-qualification-missing' in rules('caption_details', bad)
 
 
 def test_changed_estimate_is_rejected():
@@ -100,17 +101,17 @@ def test_external_counts_are_bound_to_saved_response_replay():
 
 
 def test_wrong_interval_type_is_rejected():
-    _, bad = changed('captions', 'are not bootstrap intervals.', 'are bootstrap intervals.')
-    assert 'material-qualification-missing' in rules('captions', bad)
+    _, bad = changed('caption_details', 'are not bootstrap intervals.', 'are bootstrap intervals.')
+    assert 'material-qualification-missing' in rules('caption_details', bad)
 
 
 def test_random_item_score_is_not_random_activation_direction():
-    text = document('captions')
+    text = document('caption_details')
     bad, count = re.subn(r'Its implementation hashes each\s+item identifier to a scalar in the range 0 to 1 and scores the item with that\s+number\. No vector in activation space is ever sampled',
                         'Its implementation samples a random activation direction and rescales scores to the range 0 to 1. A vector in activation space is sampled', text)
     assert count == 1
     assert Counter(ev.number_tokens(text)) == Counter(ev.number_tokens(bad))
-    assert 'material-qualification-missing' in rules('captions', bad)
+    assert 'material-qualification-missing' in rules('caption_details', bad)
 
 
 @pytest.mark.parametrize('old,new', [
@@ -118,9 +119,9 @@ def test_random_item_score_is_not_random_activation_direction():
     ('(k+1)/(B+1)', '(k+1)/(k+1)'),
 ])
 def test_same_number_counts_do_not_hide_wrong_denominator(old, new):
-    original, bad = changed('captions', old, new)
+    original, bad = changed('caption_details', old, new)
     assert Counter(ev.number_tokens(original)) == Counter(ev.number_tokens(bad))
-    assert {'material-qualification-missing', 'unsupported-scientific-assertion'} & rules('captions', bad)
+    assert {'material-qualification-missing', 'unsupported-scientific-assertion'} & rules('caption_details', bad)
 
 
 @pytest.mark.parametrize('assertion', ev.load(REGISTRY)['source_checks'])
@@ -153,19 +154,19 @@ def test_literal_source_key_path_and_percent_display():
 
 
 def test_generic_cross_study_model_scope_is_rejected():
-    original = document('captions')
+    original = document('caption_details')
     bad, count = re.subn(r'Later causal and\s+reliability results do not replicate symmetrically across studies\. Qualification\s+failures and bounded positive outcomes differ by experiment;',
                         'Later causal and reliability tests give a narrower Llama finding; Gemma misses the required conjunction;', original)
     assert count == 1
-    assert 'material-qualification-missing' in rules('captions', bad)
+    assert 'material-qualification-missing' in rules('caption_details', bad)
 
 
 def test_relative_coverage_is_not_absolute_success():
-    _, bad = changed('captions', 'This relative improvement does not\nestablish a pass of the full absolute joint-control requirements.',
+    _, bad = changed('caption_details', 'This relative improvement does not\nestablish a pass of the full absolute joint-control requirements.',
                      'This relative improvement establishes a pass of the full absolute joint-control requirements.')
-    assert 'material-qualification-missing' in rules('captions', bad)
+    assert 'material-qualification-missing' in rules('caption_details', bad)
 
 
 def test_reader_crossing_zero_is_not_equivalence():
-    _, bad = changed('captions', 'which is not evidence of equivalence', 'which establishes equivalence')
-    assert 'material-qualification-missing' in rules('captions', bad)
+    _, bad = changed('caption_details', 'which is not evidence of equivalence', 'which establishes equivalence')
+    assert 'material-qualification-missing' in rules('caption_details', bad)

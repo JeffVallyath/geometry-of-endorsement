@@ -1,237 +1,115 @@
 # Figure captions
 
-Methods, measurements, and interpretation for the representation and editing figures.
+Main-paper captions; exact procedures, numerical detail, and artifact links are
+in the [figure methods and evidence appendix](CAPTION_DETAILS.md).
 
 ## Scope
 
-The representation figure set reports development evidence about **decodability**: whether a
-linear readout of the model's activations tracks how a consideration bears on an
-action. All five figures agree across Llama and Gemma.
-
-That agreement is real for this question, and it stops here. Later causal and
-reliability results do not replicate symmetrically across studies. Qualification
-failures and bounded positive outcomes differ by experiment; the
-[results page](../docs/RESULTS_AND_CLAIMS.md) keeps their scopes separate.
+The five representation figures report development evidence about decodability
+in Llama and Gemma, not confirmation or a complete mechanism. Later studies have
+experiment-specific qualifications and outcomes; see the
+[results page](../docs/RESULTS_AND_CLAIMS.md).
 
 ## Shared definitions
 
-**The checkerboard.** A checkerboard crosses two situations with two
-considerations. Each consideration flips between Supports and Opposes across the
-two situations, so a preference for one situation or one consideration cancels.
-
-**Checkerboard interaction $I_b$.** Each scorer is standardized using a mean and
-standard deviation frozen on the pilot select split. The four standardized cell
-scores are then combined:
-
-```math
-I_b = \tilde{s}_{11} - \tilde{s}_{12} - \tilde{s}_{21} + \tilde{s}_{22}.
-```
-
-Any score that is additive in situation and consideration gives $I_b = 0$
-exactly. The measure therefore responds only to the situation-by-consideration
-interaction. It is a standardized difference-in-differences,
-expressed in selection-split standard deviations. Reported values are the mean
-over the evaluation checkerboards.
-
-**Splits.** Probes are fitted on the pilot train split, which has 1,500 rows. The
-layer and the standardization constants are chosen on the pilot select split,
-which has 300 rows across 75 checkerboards. Every reported metric is computed on
-the pilot evaluation split, which has 500 rows across 125 checkerboards.
-
-The evaluation split did not participate in choosing the layer. No panel in this
-set touches the audited confirmatory boards or the 7,394-row strict test set.
-Every figure is development evidence.
-
-**Confidence intervals.** Intervals on the representation study's checkerboard interaction estimates are
-95% *normal* intervals built from the frozen dyadic-robust standard error. They
-are not bootstrap intervals. Figure 4 is the one exception: its intervals are
-group bootstrap intervals.
-
----
+A *checkerboard* crosses situations and considerations whose support/opposition
+labels reverse. Its interaction cancels fixed preferences for either input:
+higher positive values indicate stronger contextual separation, measured in
+selection-split standard deviations. Relation readouts use 125 evaluation
+checkerboards (500 rows), separate from fitting and layer selection; they do not
+use the confirmatory or strict test sets.
+[Exact definitions and splits](CAPTION_DETAILS.md#shared-definitions).
 
 ## Figure 1: Decodability across layers
 
 <a id="figure-1--decodability-across-layers"></a>
 
-A support/opposition direction is fitted independently at every layer, and each
-layer is then scored on the evaluation split. Panels **(a, b)** show the
-checkerboard interaction. Panels **(c, d)** show AUROC as the secondary
-quantity. The left column is Llama-3.1-8B-Instruct, which has 32 layers; the
-right column is Gemma-2-9B-it, which has 42. Rows share a y-axis, so the two
-models can be compared directly.
+We test where a linear readout can recover whether a consideration supports or
+opposes an action, fitting a readout at each layer and evaluating every layer on
+the same checkerboards.
 
-Both models sit at chance through the early layers and then rise to a plateau.
-The rise falls around layers 10 to 15 in Llama. In Gemma it comes later, around
-layers 17 to 25.
+Panels **(a, b)** show contextual separation; **(c, d)** show AUROC. Llama
+(left) rises around layers 10–15 and Gemma (right) around 17–25, then both
+plateau. Red lines mark layers 19 and 27, selected on separate data rather than
+at the peaks of the plotted curves. The shared evaluation set contains 125
+checkerboards (500 rows); axes match across models. These are development
+readouts, not confirmatory evidence or causal effects.
 
-The dashed red line marks the frozen layer used in every later figure. That layer
-was chosen on the pilot select split, using the prespecified criterion
-`mean_mirrored_pairwise`, before the evaluation split was scored.
-
-The selected layer is demonstrably not the peak of the plotted curves.
-
-In Llama, both curves peak at layer 21. There the AUROC is 0.7348 and the
-checkerboard interaction is 1.6528. The selected layer 19 gives 0.7320 and
-1.6470 instead.
-
-In Gemma, both curves peak at layer 28, at 0.8306 and 2.3366. The selected layer
-27 gives 0.8291 and 2.3221.
-
-In each model the selection rule gave up a little of the plotted quantity
-relative to that quantity's own maximum. That is what selection on a separate
-split should look like. The curves are development-split evaluation metrics,
-plotted to show shape, and they had no part in choosing the layer.
+[Methods and evidence](CAPTION_DETAILS.md#figure-1-decodability-across-layers).
 
 ## Figure 2: Scorers at the selected layer
 
 <a id="figure-2--scorers-at-the-selected-layer"></a>
 
-Four scorers are compared at the selected layer: the model answer margin, the
-support/opposition direction, the logistic activation probe, and the frozen
-MiniLM comparator. Panel **(a)** is Llama at layer 19 and panel **(b)** is Gemma
-at layer 27. Error bars are 95% normal intervals from the dyadic-robust standard
-error.
+Does the activation readout capture the contextual relation better than wording
+alone? We compare the direction, a logistic activation probe, the model's answer
+margin, and a frozen MiniLM text comparator on the same checkerboards.
 
-The frozen MiniLM comparator sees the situation and the consideration as text and
-never sees activations. It reaches a checkerboard interaction of 0.28. That is
-small, but it is not zero, so wording alone carries a little interaction signal.
+Panel **(a)** shows Llama at layer 19 and **(b)** Gemma at layer 27. The direction
+exceeds the text comparator by 1.363 [1.089, 1.637] and 2.038 [1.661, 2.415],
+respectively; the comparator itself has a small, nonzero interaction of 0.28.
+Error bars and quoted intervals are 95% normal intervals using dyadic-robust
+standard errors over 125 evaluation checkerboards. This is development evidence
+of improvement over the tested text baseline, not proof that wording carries
+no signal.
 
-The preregistered gate is therefore stated as a margin over that comparator,
-rather than as a claim that the comparator scores nothing. The support/opposition
-direction exceeds the comparator by 1.363, with an interval of 1.089 to 1.637, in
-Llama. In Gemma it exceeds the comparator by 2.038, with an interval of 1.661 to
-2.415. Both intervals exclude zero. Both runs record this as one of the four
-gates the frozen direction cleared.
-
-Scorer colours and ordering are held fixed across every figure in this set.
+[Methods and evidence](CAPTION_DETAILS.md#figure-2-scorers-at-the-selected-layer).
 
 ## Figure 3: Checkerboard interaction against the permutation null
 
 <a id="figure-3--checkerboard-interaction-against-the-permutation-null"></a>
 
-The grey histogram is the null distribution of the checkerboard interaction, and
-the coloured line is the observed value. Panels **(a, c)** are Llama and panels
-**(b, d)** are Gemma. The top row is the support/opposition direction and the
-bottom row is the logistic activation probe. All four panels use one common bin
-grid and a density y-axis, because the number of draws differs between the
-columns and raw counts would not be comparable.
+Could the relation signal arise after randomizing which orientation counts as
+support versus opposition? We keep examples and situation groups fixed, randomly
+reverse labels by situation, and refit the readouts before evaluating on the
+unchanged checkerboards.
 
-**How the null is built.** Each draw visits every training situation
-independently and either keeps or reverses all of that situation's labels. Llama
-has 1,454 training situations across its 1,500 training rows. The draw preserves
-the rows themselves, the grouping into situations, and the label composition
-within each situation. What it randomizes is the orientation that the support/opposition
-direction can learn.
+Grey histograms show randomized interactions; colored lines mark observed
+values. Panels **(a, c)** are Llama and **(b, d)** Gemma; rows show the direction
+and logistic probe, respectively. All four one-sided p-values are below 0.05,
+with sharper evidence from the logistic probe. Histograms share density scales;
+Llama uses 10,000 draws and Gemma 200, so p-value resolution differs. The
+historical comparator-improvement test is a different analysis, not an earlier
+estimate of this same tail.
 
-Both probes are then refit from scratch on the flipped training labels. The
-select split refits its own standardization constants for that draw. The
-checkerboard interaction is recomputed on the 125 held-out evaluation boards.
-
-**How the p-value is defined.** The reported value is a one-sided empirical
-permutation p-value, $(k+1)/(B+1)$, where $k$ counts draws at or above the
-observed value. This is the prespecified test in both the original run and the
-re-run. A two-sided version of the same 10,000 draws gives 0.0245 for the Llama
-support/opposition direction, so the conclusion does not turn on sidedness.
-
-**The Llama panels show the later refit-null analysis.** They use 10,000 draws
-with the procedure described above. The historical source summary used 200 draws
-for improvement over the text comparator, and both Llama probes reported 0.005,
-the resolution floor. That historical test and the later refitted-interaction
-null are not interchangeable; the change cannot be interpreted simply as a more
-precise estimate of the same tail. In the later analysis, the logistic activation
-probe gives 0.0001 with no draw reaching the observed value. The support/opposition
-direction gives 0.0132, with 131 draws at or above it. Both are below 0.05.
-
-**The Gemma panels are still at 200 draws.** That is low resolution, but it is not
-uniformly censored. Only Gemma's logistic result sits at the floor of 1/201.
-Gemma's support/opposition direction has 2 draws at or above the observed value,
-giving a measured 0.0149. Gemma was not re-run because its layer-27 activations
-were not retained.
-
-**Why the two rows differ.** The support/opposition direction's null has a
-standard deviation of 1.01, with 46% of draws beyond an absolute interaction of
-1, and it is visibly bimodal. The logistic probe's null has a standard deviation
-of 0.46, with 2.5% of draws beyond that threshold, and is unimodal near zero.
-
-The consequence is that the support/opposition direction gives the weaker of the
-two permutation tests, even though its point estimate is comparable. Read the
-logistic panels as the sharper evidence. This experiment does not isolate why the
-two nulls differ; regularization is one plausible contributor, but it is not
-separated here from the other differences between the estimators.
+[Methods and evidence](CAPTION_DETAILS.md#figure-3-checkerboard-interaction-against-the-permutation-null).
 
 ## Figure 4: Factual True/False positive control
 
 <a id="figure-4--factual-truefalse-positive-control"></a>
 
-This control applies the same extraction and direction-fitting machinery to a
-task whose ground truth is already known, using the `cities` and `neg_cities`
-sources. It acts as a gate: the representation-study runner requires each model to pass its own
-truth control before the relation result is reported.
+Can the readout distinguish known true and false statements rather than answer
+tokens? We reverse the meanings of neutral answer symbols and test transfer to
+a held-out answer format.
 
-Panel **(a)** is the development layer sweep under both answer mappings. Panel
-**(b)** is the held-out test, with 95% group bootstrap intervals over 2,000
-replicates.
+Panel **(a)** shows the development layer sweep under both mappings; **(b)**
+shows held-out separation, with both models passing the factual control.
+Separation is the True-minus-False mean difference in training-projection
+standard deviations; error bars are 95% group-bootstrap intervals, while Gemma's
+open marker has no retained interval. Passing qualifies this control, not every
+layer: later-layer mapping divergence and the earlier failed literal-label
+control remain important limitations.
 
-The standardized separation $T$ is a True-minus-False mean difference measured in
-training-projection standard deviations, averaged over eight training partitions.
-Its scale is therefore set by the training projections themselves.
-
-An earlier version of this control failed strict review. The probe there was
-reading the answer token rather than the semantics. The symptom was a
-reversed-instruction AUROC of 0.0003 while the reversed-*literal*
-True-minus-False AUROC stayed at 0.9997.
-
-The version shown here uses neutral symbols whose meaning is reversed across
-examples, and it tests transfer to a held-out answer format. In panel **(a)**,
-the standard and reversed mappings diverge after roughly the selected layer 14.
-That divergence is the residue of the confound the redesign was meant to remove.
-
-The Gemma point is drawn as an open marker at layer 25 because only its point
-estimate was retained. No interval is available for it.
+[Methods and evidence](CAPTION_DETAILS.md#figure-4-factual-truefalse-positive-control).
 
 ## Figure 5: Specificity
 
 <a id="figure-5--specificity"></a>
 
-Each panel places the relation effect beside its controls, in the same units and
-on the same axis. Panel **(a)** is Llama at layer 19 and panel **(b)** is Gemma
-at layer 27. The rows are grouped into three bands.
+Could wording or answer format explain the relation effect? We hold the
+checkerboards and scale fixed while comparing the learned direction with
+answer-template transfer, text-only and random-item baselines, and separate-input
+controls.
 
-**Relation.** The first band holds the fitted support/opposition direction, and
-the same frozen direction evaluated under a held-out answer template. The
-template result is 2.16 in Llama and 2.26 in Gemma, drawn as an open marker
-because no interval was retained. The effect therefore survives a change of
-answer format, which is the control against a scorer that is really reading the
-answer token or the surface form of the prompt.
+Panels **(a, b)** show Llama and Gemma. The relation band retains a large point estimate
+under the new answer template; the empirical-baseline band is much smaller.
+The separate-input band is zero by construction because additive scores cancel.
+Error bars are 95% normal dyadic-robust intervals over 125 evaluation checkerboards;
+open transfer markers have no retained intervals. Random item scores are not
+random activation directions, and algebraic zeros are not neural evidence; other
+semantic directions are not tested here.
 
-**Confound baselines.** The second band holds the frozen MiniLM comparator and
-the deterministic random item scores. The comparator reaches 0.28 and the random
-item scores reach -0.26. Both are empirical: they are what the estimator returns
-for wording alone, and for a meaningless per-item score.
-
-The random baseline needs care in description. Its implementation hashes each
-item identifier to a scalar in the range 0 to 1 and scores the item with that
-number. No vector in activation space is ever sampled, so this baseline says
-nothing about arbitrary directions in the residual stream.
-
-**Zero by construction.** The third band holds situation-only activations,
-consideration-only activations, and an additive separate encoding. All three give
-an interaction of exactly 0, analytically, because the checkerboard interaction
-annihilates any score that is additive in situation and consideration. These rows
-are not evidence about the model. They are a validity check that the estimator
-behaves as the algebra says, and they are kept in a separate band for that
-reason.
-
-**What this figure does not cover.** Two gaps remain, and both need runs outside
-this representation study (`M1`). Specificity against other semantic directions, such as truth, sentiment, or
-actor identity, is not testable here, because this study fits only the relation
-direction; that comparison belongs to the later intervention work. Specificity
-against arbitrary activation-space directions is not supplied either, because this study
-contains no such control.
-
-So the figure establishes that the effect is not wording, not answer format, and
-not an artefact of the board algebra. It does not establish that an arbitrary
-direction in the residual stream would fail to produce it.
+[Methods and evidence](CAPTION_DETAILS.md#figure-5-specificity).
 
 ## Figure 6: Direct answers and broader counterfactual consequences
 
@@ -239,87 +117,44 @@ direction in the residual stream would fail to produce it.
 
 ![Direct-margin hits compared with broader consequence recovery](fig06_answer_consequences.png)
 
-The matched Gemma comparison uses the same 96 test contexts at target fraction
-0.75: the requested answer-margin change is that fraction of the change produced
-by rewriting the fact in the text. Rank-one relation steering and whole-state interpolation reach the requested
-direct-answer margin within tolerance in 100% of these contexts. This is a margin
-criterion, not perfect hard-answer accuracy or a full strong-target pass: some
-targets fall below the frozen absolute-strength requirement. The direction fitted
-to the matched setting also failed qualification; the displayed rank-one arm uses
-the original frozen direction.
+Does hitting a direct-answer target recreate the consequences of changing the
+underlying relation? We compare relation-direction steering with whole-state
+interpolation toward a genuinely changed context, matching the direct-answer
+target on the same 96 Gemma worlds.
 
-The right panel measures recovery of the natural change on held-out questions,
-including complementary, paraphrased, and unchanged relations. Recovery is a
-normalized score, not a proportion of correct answers; zero is the unchanged
-starting state and one is the natural change. Negative recovery moves farther
-from the natural pattern. Error bars are the saved 95% context-bootstrap intervals.
-The natural changed-state patch is a reference intervention, not margin-tuned.
-Llama failed natural-reference qualification and is not included in this comparison.
+Both interventions reach the requested margin in 100% of worlds (left), but
+steering moves held-out answers farther from the natural change while
+whole-state interpolation closely recovers it (right). The changed-state patch
+is an untuned reference. Recovery is normalized, not accuracy: zero is unchanged,
+one is the natural change, and negative values move farther away; bars are 95%
+world-bootstrap intervals. Margin attainment is not perfect hard-answer accuracy
+or a full strong-target pass; the matched direction failed qualification, so the
+original frozen direction is used, and Llama's unqualified reference is excluded.
 
-[Saved results](../reproducibility/representation/counterfactual_fidelity/results.json),
-[per-world measurements](../reproducibility/representation/counterfactual_fidelity/scores/final_gemma.jsonl.gz),
-and [plot data](../artifacts/figures/consequence_comparisons.json) retain the exact
-estimates. The supported table replay checks the behavioral measurements; it does
-not recreate the omitted fitted direction or the supporting later-layer readout.
+[Methods and evidence](CAPTION_DETAILS.md#figure-6-direct-answers-and-broader-counterfactual-consequences).
 
 ## Figure 7: Correct current facts can still leave downstream answers dependent on source history
 
 <a id="figure-7--correct-current-facts-can-still-leave-downstream-answers-dependent-on-source-history"></a>
 
-![Matched histories and eight qualifying-question rates with adjusted intervals above zero](fig07_source_history.png)
+![Matched histories and eight V10 primary witness rates with adjusted intervals above zero](fig07_source_history.png)
 
-**A, matched-history design.** Different starting histories receive the same
-updates, producing identical intended current facts before the same fresh
-downstream question is asked. The prospective matched-history study (`V10`)
-compares all 8 starting assignments to three
-addressed records and checks complete intended final-table equality, including
-untouched facts. Relevant direct facts are checked after updating. The question
-and response interface are fixed across histories. This is a behavioral test:
-neither equality of hidden activations nor physical erasure of history is assumed.
+Different starting histories receive the same updates and reach the same intended
+current facts. After verifying the relevant facts directly, we ask the same
+downstream question with the same response interface across histories.
 
-**B, prospective matched-history result.** Each row is one model and update group:
-Constrained learned editor (`INV_PAIR_NLL`), Unrestricted consistency-trained
-editor (`FREE_PAIR_CONSISTENCY`), Existing textual correction
-(`EXISTING_CORRECTION`), or Latest-value wording (`LATEST_SAME_WORDING`). Dots and
-squares distinguish learned and textual updates, not a ranking of methods.
-Points copy the saved primary mean qualifying-question rates; intervals copy the exact
-multiplicity-adjusted 99.375% case-bootstrap intervals (10,000 draws, fixed seed
-2609141002, correction across 8 cells). All eight intervals lie above zero.
+Panel **A** shows this design; **B** reports prospective results for Gemma and
+Qwen under two learned and two textual update procedures. A witness requires
+correct direct facts in every history and correct reference answers, but differing
+valid downstream answers. All eight multiplicity-adjusted intervals lie above
+zero. Each condition uses 64 cases with a fixed set of downstream questions;
+questions failing the witness criteria remain in the denominator. Intervals are
+multiplicity-adjusted 99.375% root-bootstrap intervals, not pairwise method comparisons. This is
+recurring behavioral dependence on overwritten history, not case prevalence,
+individual-answer error, evidence of absent internal facts, or an identified
+neural mechanism; recurrence is limited to the generated-case sampling scheme.
 
-Each cell has 64 benchmark cases and 18 fixed joint-question opportunities per benchmark case
-(9 semantic questions under two answer-code draws), or 1,152 opportunities per
-seed or textual condition. Ineligible questions remain in the denominator.
-The two learned-seed scores are averaged within each benchmark case before averaging over
-cases; models and update groups are not pooled. A question qualifies when its
-individual facts are answered correctly and validly in every history, both
-references answer correctly, and valid answers to the question combining those
-facts differ across histories. The references supply current facts from the start
-(`native-final`) or apply the same update to already-correct facts (`no-op`). This rate
-is not benchmark case prevalence, a filter-conditional rate, or an individual-answer error
-rate. These intervals support recurrence within the generated-case sampling
-scheme, not universal failure or a pairwise method comparison.
-
-The result demonstrates **history-dependent answers despite correct
-individual-fact checks**. It does not establish that updated facts are absent internally,
-that separate physical old/new stores exist, or that a specific neural mechanism
-has been identified. Correct facts with a history-sensitive reader remain possible.
-
-The selected Qwen Wren/Orla case is kept separately as an
-[illustrative repeat-checked example](../reproducibility/state_sufficiency/independent_verification/examples/EXAMPLES.md#repeat_checked_positive),
-not a prevalence estimate. Its direct facts are correct across histories but
-the fixed same-side question receives different answers; the exact joint query
-matches both fresh repeat passes. Operand scores are from the core, not all
-independently repeated. See also the
-[main-text account](../docs/RESULTS_AND_CLAIMS.md#a-repeat-checked-illustration-and-provenance-limits)
-and [saved example](../reproducibility/state_sufficiency/v10/selected_repeat_checked_example.json).
-
-[Saved primary output](../reproducibility/state_sufficiency/v10/primary_results.json),
-[specification](../reproducibility/state_sufficiency/v10/specification_summary.json),
-and [full-precision plot data](../artifacts/figures/v10_source_history.json)
-bind every plotted estimate and interval. Regenerate with `python -m repro figures`
-using [the plotting code](../src/repro/source_history_figure.py). No new inference,
-estimand, or uncertainty calculation is performed by the renderer. The earlier
-archival shared-state figure (`V6`) is retained as [Supplementary Figure S3](#supplementary-figure-s3--v6-descriptivearchival-source-history-census).
+[Methods and evidence](CAPTION_DETAILS.md#figure-7-correct-current-facts-can-still-leave-downstream-answers-dependent-on-source-history).
 
 ## Figure 8: Swapping later activations changes the joint answer
 
@@ -327,86 +162,59 @@ archival shared-state figure (`V6`) is retained as [Supplementary Figure S3](#su
 
 ![One saved Gemma crossover example](fig08_cache_crossover.png)
 
-In this selected Gemma example, the current records say Dion and Orla both support
-Bridge. The original histories give very different answers to whether both support
-it. Combining the first 16 layers' stored activations from one history with the
-remaining 26 from the other shifts the joint answer toward the latter history.
-The activations are combined before the question; model weights stay fixed.
+Can history-dependent information in later activations change the answer?
+In this selected Gemma example, both histories end with Dion and Orla supporting
+Bridge, yet disagree on whether both support it. Before asking the same question,
+we combine earlier activations from one history with later activations from
+the other; model weights stay fixed.
 
-Bars show normalized probability of semantic Yes under the main answer format.
-Their widths use the unrounded saved-score values. The adjacent columns show
-normalized probabilities of the two correct direct answers, which remain near
-one. Numerical labels are rounded to six decimal places. Colors identify the
-history supplying the later activations, not whether the answer is correct.
+Bars show normalized Yes probabilities: the joint answer follows the later-layer
+donor, while adjacent columns show the two correct direct answers remaining
+near one. Colors identify the donor, not correctness. This is one selected case,
+not a prevalence estimate or a unique mechanism: the main format yields five
+clear effects among six selected cases, while the alternate format yields only
+one, with two mixed and three insufficiently separated cases.
 
-This is one selected example, not a prevalence estimate. Across the six selected
-cases, the main format gives five clear later-state effects and one mixed result.
-The alternate format gives one clear effect, two mixed results and three cases
-with insufficient original separation. The swap establishes coarse causal
-influence, not a unique mechanism or where the history information first arose.
-
-[Unrounded plot data](../artifacts/figures/cache_crossover.json),
-[the six-case table](../reproducibility/cache_crossover/six_cases.csv), and
-[saved-score replay and provenance](../reproducibility/cache_crossover/README.md)
-link the figure to the completed archive. The example is `SSC1-FINAL-0026`,
-question `SSC1-FINAL-0026-d1-extra2`.
+[Methods and evidence](CAPTION_DETAILS.md#figure-8-swapping-later-activations-changes-the-joint-answer).
 
 ## Figure 9 - Changing the later stored activations changes the downstream answer
 
 ![The selected extension under both answer formats](fig09_cache_crossover_extension.png)
 
-One retrospectively selected Gemma history pair combines the strong behavioral
-controls and the causal crossover result. Both histories require 2 fact changes
-and have 517-token prefixes. The current records say Ada and Gita both oppose
-Theater, so the correct answer to whether at least one supports it is No.
+Does the activation-swap effect persist across answer formats with matched
+histories? One retrospectively selected Gemma pair has equal update counts and
+prompt lengths and the same current facts: Ada and Gita both oppose Theater.
+The fixed question asks whether at least one supports it; the correct answer
+is No.
 
-Both answer formats show the downstream answer following the history supplying
-the later stored activations. The swap combines the first 16 layers from one
-history with the remaining 26 from the other before the question. Model weights
-stay fixed. Bars use unrounded normalized probabilities of semantic Yes; labels
-are rounded to six decimal places. Colors identify the history supplying the
-later layers, not correctness. The coded format maps its answer tokens back to
-semantic Yes/No separately for each question.
+Under both formats, the answer follows the history donating the later
+activations, while separately measured direct facts remain correct. Bars show
+normalized semantic Yes probabilities, not correctness; coded answers are mapped
+back to Yes/No for each question. All 8 strict direct-fact checks pass, with
+minimum correct-answer probability 0.999230. These formats test one example,
+not independent cases or prevalence; the large activation swap does not identify
+a unique circuit or where history information originated.
 
-All 8 strict checks of separately measured direct facts pass. Their minimum
-correct-answer probability is 0.999230; the largest change from the corresponding
-original state is 0.00008612. The two formats test the same example,
-not independent cases or a prevalence estimate. The intervention covers a large
-block of stored computation. Earlier computation may have contributed to those
-activations; a unique circuit or stored obsolete fact remains unidentified.
-
-[Source tables](../artifacts/cache_crossover/extension_joint.csv),
-[direct checks](../artifacts/cache_crossover/extension_direct.csv),
-[plot data](../artifacts/figures/cache_crossover_extension.json), and
-[replay and provenance](../reproducibility/cache_crossover/README.md#one-case-extension)
-provide the full values. The original six-case results remain separate in the
-earlier crossover figure and [appendix](../docs/CACHE_CROSSOVER_APPENDIX.md).
+[Methods and evidence](CAPTION_DETAILS.md#figure-9---changing-the-later-stored-activations-changes-the-downstream-answer).
 
 ## Figure 10. Update procedures and downstream coherence
 
 ![Update-method comparison](fig10_update_methods.png)
 
-The completed matched-history comparison tests 64 benchmark cases per model.
-A benchmark case succeeds only when all 34 questions are correct under every one of four
-histories ending at the same facts. Panel A shows percentage-point changes
-relative to the factual-update baseline: attempted internal fact refresh plus
-the latest textual correction (`FIELD_PLUS_LATEST_ERRATUM`).
-Points average both learned seeds inside each benchmark case; error bars are 98.75% paired
-case-bootstrap intervals. Triangles retain the separate seed effects.
-"Constrained" denotes `INV_PAIR_NLL`; "consistency-trained" denotes
-`FREE_PAIR_CONSISTENCY`. Models are not pooled.
+Does the update procedure improve complete-case downstream accuracy? We compare
+two learned procedures with fact refresh plus latest textual correction on the
+same 64 cases per model, each with four histories ending at the same facts.
 
-Both Qwen intervals exclude zero. Gemma's constrained interval touches zero and
-its consistency-trained interval crosses zero. Panel B shows absolute complete-case success on the full percentage scale: neither learned method's seed mean
-reaches half the benchmark cases in either model. The baseline used its recorded fallback
-in 192/256 contexts per model. The improvements do not establish a universal
-consistency cure. This comparison supports treating downstream coherence as a
-separate evaluation objective; the matched-history sufficiency test remains the
-paper's centerpiece.
+Panel **A** shows changes from baseline: both Qwen intervals exclude zero;
+Gemma's constrained interval touches zero and its consistency-trained interval
+crosses zero. Panel **B** shows absolute success, requiring all 34 questions
+correct under every history; neither learned method's seed mean reaches half
+the cases. Bars are 98.75% paired root-bootstrap intervals with seeds averaged
+within roots; triangles show separate seed effects. Gains are relative to the
+executed baseline, which used fallback in 192/256 contexts per model, not a
+universal consistency cure.
 
-[Saved rows, tables and reconstruction](../reproducibility/update_method_comparison/README.md)
-and [plotting code](../src/repro/update_methods_figure.py) reproduce both panels
-through `python -m repro figures` without model inference.
+[Methods and evidence](CAPTION_DETAILS.md#figure-10-update-procedures-and-downstream-coherence).
 
 ## Supplementary Figure S1: Broader single-edit training and later sequences
 

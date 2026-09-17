@@ -10,6 +10,7 @@ from repro.common import ROOT
 GUIDES = [
     'README.md', 'PAPER_GUIDE.md', 'PROJECT_STRATEGY.md', 'REPRODUCIBILITY.md',
     'DATA_NOTICE.md', 'docs/RESULTS_AND_CLAIMS.md', 'figures/CAPTIONS.md',
+    'figures/CAPTION_DETAILS.md',
     'docs/TERMINOLOGY.md',
     'reproducibility/state_sufficiency/README.md',
     'reproducibility/cache_crossover/README.md',

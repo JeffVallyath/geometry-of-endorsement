@@ -35,6 +35,7 @@ MEMBERS = [
     "figures/fig05_specificity.pdf",
     "figures/fig05_specificity.png",
     "figures/CAPTIONS.md",
+    "figures/CAPTION_DETAILS.md",
     "scripts/build_figure_data.py",
     "scripts/make_figures.py",
     "artifacts/figures/figure_data.json",

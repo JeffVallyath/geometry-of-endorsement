@@ -109,13 +109,17 @@ def test_every_figure_value_recomputes_from_the_identified_raw_record(tmp_path):
         plt.close(fig)
 
 
-def test_caption_and_claim_guards():
+@pytest.mark.parametrize('document,path', [
+    ('captions', 'figures/CAPTIONS.md'),
+    ('caption_details', 'figures/CAPTION_DETAILS.md'),
+])
+def test_caption_and_claim_guards(document, path):
     from repro.evidence import check
-    text = (ROOT / 'figures/CAPTIONS.md').read_text(encoding='utf8')
+    text = (ROOT / path).read_text(encoding='utf8')
     for old, new in [('not a prevalence estimate', 'a prevalence estimate'),
                      ('model weights stay fixed', 'model weights change'),
                      ('two correct direct answers', 'two incorrect direct answers')]:
-        report = check(document='captions', overrides={'captions': text.replace(old, new)})
+        report = check(document=document, overrides={document: text.replace(old, new)})
         assert any(r['unit'] == 'figure8' for r in report.errors)
 
 

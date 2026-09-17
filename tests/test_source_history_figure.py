@@ -105,13 +105,13 @@ def test_v6_archive_retains_original_figure_bytes():
 
 
 def test_main_and_archival_captions_distinguish_evidence_and_witness():
-    captions = (ROOT / 'figures/CAPTIONS.md').read_text(encoding='utf8')
+    captions = (ROOT / 'figures/CAPTION_DETAILS.md').read_text(encoding='utf8')
     main = captions.split('## Figure 7')[1].split('## Supplementary Figure S1')[0]
     archive = captions.split('## Supplementary Figure S3')[1]
     assert '99.375%' in main and '1,152' in main
     assert 'separate physical old/new stores' in main
-    assert 'illustrative repeat-checked example' in main and 'not a prevalence estimate' in main
-    assert 'earlier shared-state editing study (`V6`)' in archive and 'not the prospective confirmation' in archive
+    assert 'illustrative repeat-checked witness' in main and 'not a prevalence estimate' in main
+    assert 'earlier V6 descriptive source-history figure, not the V10 prospective' in archive
     results = (ROOT / 'docs/RESULTS_AND_CLAIMS.md').read_text(encoding='utf8')
     assert 'fig07_source_history.png' not in results.split('### Does the effect recur in a study planned before its outcomes?')[0]
     assert 'figS3_source_history_readable.png' in results
@@ -119,14 +119,14 @@ def test_main_and_archival_captions_distinguish_evidence_and_witness():
 
 @pytest.mark.parametrize('old,new', [
     ('Ineligible questions remain in the denominator', 'Ineligible questions are excluded'),
-    ('two learned-seed scores are averaged within each benchmark case', 'learned-seed scores are pooled across benchmark cases'),
+    ('two learned-seed scores are averaged within each root', 'learned-seed scores are pooled across roots'),
     ('All eight intervals lie above zero', 'Some intervals cross zero'),
     ('not a prevalence estimate', 'a prevalence estimate'),
 ])
 def test_v10_caption_contract_rejects_estimand_and_scope_drift(old, new):
     from repro.evidence import check
-    captions = (ROOT / 'figures/CAPTIONS.md').read_text(encoding='utf8')
+    captions = (ROOT / 'figures/CAPTION_DETAILS.md').read_text(encoding='utf8')
     assert old in captions
-    report = check(document='captions', overrides={'captions': captions.replace(old, new)})
+    report = check(document='caption_details', overrides={'caption_details': captions.replace(old, new)})
     assert any(r['rule'] == 'material-qualification-missing' and r['unit'] == 'figure7'
                for r in report.errors)
