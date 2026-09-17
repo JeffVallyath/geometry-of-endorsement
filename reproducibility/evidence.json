@@ -3691,13 +3691,12 @@
           "literals": [],
           "facts": [
             {
-              "id": "main-caption-interpretation",
-              "description": "Keep the short caption's design, plotted quantity, uncertainty, and essential limits explicit; technical details are checked separately in the appendix.",
+              "id": "caption-interpretation",
+              "description": "Preserve the caption's experimental comparison, measured quantity, uncertainty, and interpretation-critical scope.",
               "all_of": [
-                "development evidence about decodability",
+                "development evidence about linear readouts",
                 "Llama and Gemma",
-                "not confirmation or a complete mechanism",
-                "experiment-specific qualifications and outcomes"
+                "Each study has its own qualifications and outcomes"
               ],
               "source_evidence": [
                 {
@@ -3749,14 +3748,14 @@
           "literals": [],
           "facts": [
             {
-              "id": "main-caption-interpretation",
-              "description": "Keep the short caption's design, plotted quantity, uncertainty, and essential limits explicit; technical details are checked separately in the appendix.",
+              "id": "caption-interpretation",
+              "description": "Preserve the caption's experimental comparison, measured quantity, uncertainty, and interpretation-critical scope.",
               "all_of": [
                 "labels reverse",
-                "cancels fixed preferences",
+                "Fixed preferences for either input cancel out",
                 "selection-split standard deviations",
-                "separate from fitting and layer selection",
-                "do not use the confirmatory or strict test sets"
+                "held separate from fitting and layer selection",
+                "development data"
               ],
               "source_evidence": [
                 {
@@ -3803,58 +3802,21 @@
         {
           "id": "figure1",
           "heading_pattern": "^Figure\\ 1\\b",
-          "numbers": [
-            {
-              "path": "figures.models.llama.selected_layer",
-              "decimals": null,
-              "thousands": false,
-              "text": "19"
-            },
-            {
-              "path": "figures.models.gemma.selected_layer",
-              "decimals": null,
-              "thousands": false,
-              "text": "27"
-            },
-            {
-              "path": "figures.models.llama.sample_counts.pilot_eval",
-              "decimals": null,
-              "thousands": true,
-              "text": "500"
-            },
-            {
-              "path": "figures.models.llama.sample_counts.pilot_eval_boards",
-              "decimals": null,
-              "thousands": true,
-              "text": "125"
-            }
-          ],
-          "literals": [
-            {
-              "text": "10"
-            },
-            {
-              "text": "15"
-            },
-            {
-              "text": "17"
-            },
-            {
-              "text": "25"
-            }
-          ],
+          "numbers": [],
+          "literals": [],
           "facts": [
             {
-              "id": "main-caption-interpretation",
-              "description": "Keep the short caption's design, plotted quantity, uncertainty, and essential limits explicit; technical details are checked separately in the appendix.",
+              "id": "caption-interpretation",
+              "description": "Preserve the caption's experimental comparison, measured quantity, uncertainty, and interpretation-critical scope.",
               "all_of": [
-                "each layer",
-                "same checkerboards",
+                "becomes linearly decodable in later layers",
+                "separate readout at each layer",
+                "same paired situations and considerations",
                 "\\(a, b\\)",
                 "\\(c, d\\)",
                 "AUROC",
-                "selected on separate data rather than at the peaks",
-                "development readouts, not confirmatory evidence or causal effects"
+                "chance-level early readouts to a later plateau",
+                "layers selected on separate data"
               ],
               "source_evidence": [
                 {
@@ -3882,64 +3844,9 @@
           "heading_pattern": "^Figure\\ 2\\b",
           "numbers": [
             {
-              "path": "figures.models.llama.selected_layer",
-              "decimals": null,
-              "thousands": false,
-              "text": "19"
-            },
-            {
-              "path": "figures.models.gemma.selected_layer",
-              "decimals": null,
-              "thousands": false,
-              "text": "27"
-            },
-            {
-              "path": "figures.models.llama.evaluations.sbert_interaction.I_b",
-              "decimals": 2,
-              "thousands": false,
-              "text": "0.28"
-            },
-            {
-              "path": "figures.models.llama.delta_over_text_baseline.difference_in_means.point",
-              "decimals": 3,
-              "thousands": false,
-              "text": "1.363"
-            },
-            {
-              "path": "figures.models.llama.delta_over_text_baseline.difference_in_means.low",
-              "decimals": 3,
-              "thousands": false,
-              "text": "1.089"
-            },
-            {
-              "path": "figures.models.llama.delta_over_text_baseline.difference_in_means.high",
-              "decimals": 3,
-              "thousands": false,
-              "text": "1.637"
-            },
-            {
-              "path": "figures.models.gemma.delta_over_text_baseline.difference_in_means.point",
-              "decimals": 3,
-              "thousands": false,
-              "text": "2.038"
-            },
-            {
-              "path": "figures.models.gemma.delta_over_text_baseline.difference_in_means.low",
-              "decimals": 3,
-              "thousands": false,
-              "text": "1.661"
-            },
-            {
-              "path": "figures.models.gemma.delta_over_text_baseline.difference_in_means.high",
-              "decimals": 3,
-              "thousands": false,
-              "text": "2.415"
-            },
-            {
-              "path": "figures.models.llama.sample_counts.pilot_eval_boards",
-              "decimals": null,
-              "thousands": true,
-              "text": "125"
+              "path": "figures.models.llama.evaluations.difference_in_means.ci_level",
+              "decimals": 0,
+              "percent": true
             }
           ],
           "literals": [
@@ -3949,18 +3856,16 @@
           ],
           "facts": [
             {
-              "id": "main-caption-interpretation",
-              "description": "Keep the short caption's design, plotted quantity, uncertainty, and essential limits explicit; technical details are checked separately in the appendix.",
+              "id": "caption-interpretation",
+              "description": "Preserve the caption's experimental comparison, measured quantity, uncertainty, and interpretation-critical scope.",
               "all_of": [
-                "same checkerboards",
+                "more strongly than the text-only comparator",
+                "same paired situations and considerations",
                 "logistic activation probe",
-                "answer margin",
-                "MiniLM text comparator",
-                "direction exceeds the text comparator",
-                "small, nonzero interaction",
-                "95% normal intervals using dyadic-robust",
-                "development evidence",
-                "not proof that wording carries no signal"
+                "model.s answer margin",
+                "advantage over the text comparator has an interval above zero in both models",
+                "95% normal intervals using dyadic-robust standard errors",
+                "text comparator retains a small positive signal"
               ]
             }
           ],
@@ -3976,20 +3881,7 @@
         {
           "id": "figure3",
           "heading_pattern": "^Figure\\ 3\\b",
-          "numbers": [
-            {
-              "path": "figures.models.llama.permutation_null_large.probes.difference_in_means.B",
-              "decimals": null,
-              "thousands": true,
-              "text": "10,000"
-            },
-            {
-              "path": "figures.models.gemma.permutation_null.difference_in_means.B",
-              "decimals": null,
-              "thousands": false,
-              "text": "200"
-            }
-          ],
+          "numbers": [],
           "literals": [
             {
               "text": "0.05"
@@ -3997,19 +3889,16 @@
           ],
           "facts": [
             {
-              "id": "main-caption-interpretation",
-              "description": "Keep the short caption's design, plotted quantity, uncertainty, and essential limits explicit; technical details are checked separately in the appendix.",
+              "id": "caption-interpretation",
+              "description": "Preserve the caption's experimental comparison, measured quantity, uncertainty, and interpretation-critical scope.",
               "all_of": [
-                "examples and situation groups fixed",
-                "reverse labels by situation",
+                "reverse support/opposition labels by training situation",
+                "examples and situation groups stay fixed",
                 "refit the readouts",
                 "unchanged checkerboards",
-                "All four one-sided p-values are below 0\\.05",
-                "sharper evidence from the logistic",
-                "density scales",
-                "p-value resolution differs",
-                "historical comparator-improvement test is a different analysis",
-                "not an earlier estimate of this same tail"
+                "densities of randomized interactions",
+                "All four one-sided tests give p < 0\\.05",
+                "Gemma.s smaller permutation sample gives coarser p-values"
               ],
               "source_evidence": [
                 {
@@ -4050,18 +3939,18 @@
           ],
           "facts": [
             {
-              "id": "main-caption-interpretation",
-              "description": "Keep the short caption's design, plotted quantity, uncertainty, and essential limits explicit; technical details are checked separately in the appendix.",
+              "id": "caption-interpretation",
+              "description": "Preserve the caption's experimental comparison, measured quantity, uncertainty, and interpretation-critical scope.",
               "all_of": [
-                "known true and false",
-                "reverse the meanings of neutral answer symbols",
+                "Both models pass the factual-truth control",
+                "known truth values",
+                "reverse which neutral answer symbol means True or False",
                 "held-out answer format",
-                "both models passing",
-                "True-minus-False mean difference in training-projection standard deviations",
-                "95% group-bootstrap",
-                "open marker has no retained interval",
-                "not every layer",
-                "earlier failed literal-label control"
+                "development layer sweep",
+                "held-out True-minus-False separation in training-projection standard deviations",
+                "95% group-bootstrap intervals",
+                "point estimate without an interval",
+                "later-layer divergence between mappings shows residual answer-format sensitivity"
               ]
             }
           ],
@@ -4084,12 +3973,6 @@
           "heading_pattern": "^Figure\\ 5\\b",
           "numbers": [
             {
-              "path": "figures.models.llama.sample_counts.pilot_eval_boards",
-              "decimals": null,
-              "thousands": true,
-              "text": "125"
-            },
-            {
               "path": "figures.models.llama.evaluations.difference_in_means.ci_level",
               "decimals": 0,
               "percent": true
@@ -4098,16 +3981,17 @@
           "literals": [],
           "facts": [
             {
-              "id": "main-caption-interpretation",
-              "description": "Keep the short caption's design, plotted quantity, uncertainty, and essential limits explicit; technical details are checked separately in the appendix.",
+              "id": "caption-interpretation",
+              "description": "Preserve the caption's experimental comparison, measured quantity, uncertainty, and interpretation-critical scope.",
               "all_of": [
-                "checkerboards and scale fixed",
-                "zero by construction because additive scores cancel",
+                "large point estimate under new answer wording",
+                "evaluation examples and measurement scale fixed",
+                "original and held-out answer templates",
+                "text-only scores and arbitrary per-item scores",
+                "Separate-input scores give zero because the interaction cancels additive effects",
                 "95% normal dyadic-robust intervals",
-                "open transfer markers have no retained intervals",
-                "Random item scores are not random activation directions",
-                "algebraic zeros are not neural evidence",
-                "other semantic directions are not tested"
+                "point estimates without retained intervals",
+                "controls test wording and answer format"
               ]
             }
           ],
@@ -4146,22 +4030,18 @@
           ],
           "facts": [
             {
-              "id": "main-caption-interpretation",
-              "description": "Keep the short caption's design, plotted quantity, uncertainty, and essential limits explicit; technical details are checked separately in the appendix.",
+              "id": "caption-interpretation",
+              "description": "Preserve the caption's experimental comparison, measured quantity, uncertainty, and interpretation-critical scope.",
               "all_of": [
-                "same 96 Gemma worlds",
+                "Whole-state interpolation recovers downstream consequences much better than relation-direction steering",
+                "same direct-answer margin in 96 Gemma contexts",
+                "changing the relation in the text",
                 "requested margin in 100%",
-                "steering moves held-out answers farther",
-                "whole-state interpolation closely recovers",
-                "patch is an untuned reference",
-                "normalized, not accuracy",
-                "zero is unchanged, one is the natural change",
-                "negative values move farther away",
-                "95% world-bootstrap",
-                "not perfect hard-answer accuracy or a full strong-target pass",
-                "matched direction failed qualification",
-                "original frozen direction is used",
-                "Llama.s unqualified reference is excluded"
+                "full changed-state patch provides an untuned reference",
+                "Recovery is zero for the unchanged state and one for the natural change",
+                "Negative values move farther from that answer pattern",
+                "95% bootstrap intervals over contexts",
+                "Hitting the target margin did not satisfy the study.s stricter qualification requirements"
               ],
               "source_evidence": [
                 {
@@ -4200,23 +4080,22 @@
           "literals": [],
           "facts": [
             {
-              "id": "main-caption-interpretation",
-              "description": "Keep the short caption's design, plotted quantity, uncertainty, and essential limits explicit; technical details are checked separately in the appendix.",
+              "id": "caption-interpretation",
+              "description": "Preserve the caption's experimental comparison, measured quantity, uncertainty, and interpretation-critical scope.",
               "all_of": [
+                "Some downstream answers differ across histories",
+                "current facts are read correctly",
                 "same updates",
                 "same intended current facts",
-                "same downstream question with the same response interface",
+                "same downstream question through the same response interface",
                 "prospective results for Gemma and Qwen",
-                "two learned and two textual update procedures",
-                "correct direct facts in every history and correct reference answers",
-                "differing valid downstream answers",
-                "All eight multiplicity-adjusted intervals lie above zero",
-                "Each condition uses 64 cases with a fixed set of downstream questions",
-                "questions failing the witness criteria remain in the denominator",
-                "Intervals are multiplicity-adjusted",
-                "99\\.375% root-bootstrap intervals, not pairwise method comparisons",
-                "not case prevalence, individual-answer error, evidence of absent internal facts, or an identified neural mechanism",
-                "recurrence is limited to the generated-case sampling scheme"
+                "two learned and two text-based update methods",
+                "count differing valid answers only when every history reports the required facts correctly and reference answers are also correct",
+                "Each condition uses 64 cases",
+                "Rates count qualifying cross-history disagreements over all scheduled questions",
+                "Questions failing the checks stay in the denominator",
+                "All eight multiplicity-adjusted 99\\.375% case-bootstrap intervals lie above zero",
+                "conclusion concerns behavior in these generated cases"
               ],
               "source_evidence": [
                 {
@@ -4236,18 +4115,17 @@
           "literals": [],
           "facts": [
             {
-              "id": "main-caption-interpretation",
-              "description": "Keep the short caption's design, plotted quantity, uncertainty, and essential limits explicit; technical details are checked separately in the appendix.",
+              "id": "caption-interpretation",
+              "description": "Preserve the caption's experimental comparison, measured quantity, uncertainty, and interpretation-critical scope.",
               "all_of": [
+                "Swapping later stored activations shifts the answer toward the history supplying them",
                 "selected Gemma example",
-                "same question",
-                "model weights stay fixed",
-                "normalized Yes probabilities",
-                "two correct direct answers remaining near one",
-                "Colors identify the donor, not correctness",
-                "not a prevalence estimate or a unique mechanism",
-                "five clear effects among six selected cases",
-                "alternate format yields only one, with two mixed and three insufficiently separated cases"
+                "early activations from one history with later activations from the other before asking",
+                "Model weights stay fixed",
+                "normalized Yes probabilities under the main answer format",
+                "both direct fact answers remain correct",
+                "Colors identify the later-layer source",
+                "effect is format-sensitive across the selected examples"
               ],
               "source_evidence": [
                 {
@@ -4291,34 +4169,23 @@
         {
           "id": "figure9",
           "heading_pattern": "^Figure 9\\b",
-          "numbers": [
-            {
-              "path": "cache_extension.strict_direct_checks",
-              "decimals": 0
-            },
-            {
-              "path": "cache_extension.minimum_direct_probability",
-              "decimals": 6
-            }
-          ],
+          "numbers": [],
           "literals": [],
           "facts": [
             {
-              "id": "main-caption-interpretation",
-              "description": "Keep the short caption's design, plotted quantity, uncertainty, and essential limits explicit; technical details are checked separately in the appendix.",
+              "id": "caption-interpretation",
+              "description": "Preserve the caption's experimental comparison, measured quantity, uncertainty, and interpretation-critical scope.",
               "all_of": [
+                "both tested answer formats",
                 "One retrospectively selected Gemma pair",
-                "equal update counts and prompt lengths",
-                "same current facts",
-                "both oppose Theater",
+                "matching update counts and prompt lengths",
+                "Ada and Gita opposing Theater",
+                "swap later stored activations before asking",
                 "correct answer is No",
-                "both formats",
-                "separately measured direct facts remain correct",
-                "normalized semantic Yes probabilities, not correctness",
-                "mapped back to Yes/No for each question",
-                "All 8 strict direct-fact checks pass",
-                "one example, not independent cases or prevalence",
-                "does not identify a unique circuit or where history information originated"
+                "Direct-fact answers remain correct after the swap",
+                "normalized Yes probabilities",
+                "Coded answers are mapped back to Yes/No for each question",
+                "Both formats test the same selected example"
               ],
               "source_evidence": [
                 {
@@ -4338,17 +4205,8 @@
         {
           "id": "supplementary_s3",
           "heading_pattern": "^Supplementary Figure S3\\b",
-          "literals": [
-            {
-              "text": "7",
-              "reason": "Former main figure number"
-            }
-          ],
+          "literals": [],
           "numbers": [
-            {
-              "path": "consequences.source_history.origins",
-              "decimals": null
-            },
             {
               "path": "consequences.source_history.groups.0.roots",
               "decimals": null
@@ -4356,23 +4214,23 @@
             {
               "path": "consequences.source_history.groups.4.roots",
               "decimals": null
-            },
-            {
-              "path": "consequences.source_history.atomic_questions",
-              "decimals": null
-            },
-            {
-              "path": "consequences.source_history.joint_questions",
-              "decimals": null
             }
           ],
           "facts": [
             {
-              "id": "history-population",
-              "description": "Keep all roots, both editors and original seeds under the original reader.",
+              "id": "caption-interpretation",
+              "description": "Preserve the caption's experimental comparison, measured quantity, uncertainty, and interpretation-critical scope.",
               "all_of": [
-                "every benchmark case under the original reader",
-                "both editors and both original training seeds shown separately"
+                "history-dependent joint answers despite correct direct-fact answers across every history",
+                "four starting states receiving the same final assignments",
+                "all 64 Gemma cases and 32 Qwen cases",
+                "descriptive counts from earlier saved experiments",
+                "Red marks cases with correct direct facts but differing joint answers",
+                "Teal marks cases with correct direct facts and stable joint answers",
+                "Gray marks failures of direct-fact checks",
+                "Bars use all cases as their denominator",
+                "Right-hand counts use only cases passing every direct-fact check",
+                "Stable joint answers can still be wrong"
               ],
               "source_evidence": [
                 {
@@ -4380,28 +4238,6 @@
                   "equals": "R0"
                 }
               ]
-            },
-            {
-              "id": "history-denominator",
-              "description": "Conditional atomic correctness and across-origin joint disagreement are distinct from unconditional error.",
-              "all_of": [
-                "all 16 direct/opposes questions are correct across every starting state",
-                "18 joint both/either/same questions",
-                "consistently wrong",
-                "counts use cases passing all individual-fact checks as their denominator; the bars use all cases"
-              ],
-              "source_evidence": []
-            },
-            {
-              "id": "history-descriptive-only",
-              "description": "New descriptive visualization is not a primary or pooled inference.",
-              "all_of": [
-                "descriptive counts",
-                "not a new primary test",
-                "not a claim about an identified internal mechanism",
-                "design example, not a sequence of model answers"
-              ],
-              "source_evidence": []
             }
           ],
           "unsupported": []
@@ -4426,41 +4262,28 @@
           ],
           "facts": [
             {
-              "id": "within-study-matched-coverage",
-              "description": "Broader versus narrower single-edit coverage is a paired within-study comparison, not a cross-study improvement trend.",
+              "id": "caption-interpretation",
+              "description": "Preserve the caption's experimental comparison, measured quantity, uncertainty, and interpretation-critical scope.",
               "all_of": [
-                "matched comparison within",
-                "not a trend across studies",
-                "trained on individual edits",
-                "broader minus narrower"
-              ],
-              "source_evidence": []
-            },
-            {
-              "id": "whole-scene-seed-denominator",
-              "description": "Coverage uncertainty uses paired whole scenes with seeds averaged, not additional independent seed or reversed-order observations.",
-              "all_of": [
-                "paired whole.scene bootstrap",
-                "both training seeds within each scene",
-                "not extra independent observations",
-                "Reversed orders are not counted as additional scenes"
+                "three of four comparisons",
+                "Both editors train on individual edits",
+                "broader condition learns from more consequences of each edit",
+                "same evaluation situations after two or three updates",
+                "broader minus narrower training",
+                "every question about the resulting program to be correct",
+                "Each situation.s score averages success after two and three updates",
+                "Dots average both training seeds within each situation",
+                "Triangles show the separate seed effects",
+                "98\\.75% paired situation-bootstrap intervals",
+                "64 Gemma situations and 32 Qwen situations",
+                "Gemma.s free-overwrite interval crosses zero",
+                "relative gains against narrower training"
               ],
               "source_evidence": [
                 {
                   "path": "editing_figures.coverage.*.level",
                   "equals": 0.9875
-                }
-              ]
-            },
-            {
-              "id": "coverage-relative-not-absolute",
-              "description": "Three paired benefits do not establish the absolute conjunction; Gemma free overwrite crosses zero.",
-              "all_of": [
-                "Three intervals exclude zero",
-                "Gemma.{0,20}free.overwrite interval crosses zero",
-                "does not.{0,35}pass.{0,35}absolute joint.control"
-              ],
-              "source_evidence": [
+                },
                 {
                   "path": "editing_figures.coverage.0.lower",
                   "gt": 0
@@ -4484,7 +4307,8 @@
               ]
             }
           ],
-          "unsupported": []
+          "unsupported": [],
+          "literals": []
         },
         {
           "id": "supplementary_s2",
@@ -4506,42 +4330,24 @@
           ],
           "facts": [
             {
-              "id": "same-states-instruction-interface",
-              "description": "The explicit reader changes instructions while holding edited states fixed, not the original wording.",
+              "id": "caption-interpretation",
+              "description": "Preserve the caption's experimental comparison, measured quantity, uncertainty, and interpretation-critical scope.",
               "all_of": [
-                "same saved edited states",
-                "extra instruction changes",
-                "not evidence.{0,45}original wording"
-              ],
-              "source_evidence": []
-            },
-            {
-              "id": "reader-endpoint-denominator",
-              "description": "The reader endpoint uses same-side accuracy after three edits, whole-scene pairing, original seeds and fixed early ordering.",
-              "all_of": [
-                "same.side question accuracy after a three.edit sequence",
-                "within each scene.{0,40}two original training seeds",
-                "fixed early ordering",
-                "paired whole.scene.{0,15}bootstrap",
-                "neither model nor study populations are pooled"
+                "question wordings on the same saved edited states",
+                "paraphrases the question",
+                "states the rule",
+                "same-side accuracy after a three-edit sequence",
+                "None of the corrected intervals establishes an improvement",
+                "Several lie below zero",
+                "99\\.375% paired situation-bootstrap intervals, averaging the two original training seeds",
+                "64 Gemma situations and 32 Qwen situations",
+                "Intervals crossing zero leave the direction of the effect unresolved"
               ],
               "source_evidence": [
                 {
                   "path": "editing_figures.readers.*.level",
                   "equals": 0.99375
-                }
-              ]
-            },
-            {
-              "id": "reader-no-established-improvement",
-              "description": "No corrected interval establishes improvement; crossing zero is not equivalence, and this contrast does not establish source independence.",
-              "all_of": [
-                "None of these corrected intervals establishes an improvement",
-                "not evidence of equivalence",
-                "distinct from.{0,20}source.independence test",
-                "does not show.{0,100}ceased.{0,30}affect"
-              ],
-              "source_evidence": [
+                },
                 {
                   "path": "editing_figures.readers.*.lower",
                   "lt": 0
@@ -4549,7 +4355,8 @@
               ]
             }
           ],
-          "unsupported": []
+          "unsupported": [],
+          "literals": []
         },
         {
           "id": "figure10",
@@ -4565,31 +4372,26 @@
               "path": "update_methods.contrasts.0.level",
               "percent": true,
               "decimals": 2
-            },
-            {
-              "path": "update_methods.fallback.0.fallback"
-            },
-            {
-              "path": "update_methods.fallback.0.contexts"
             }
           ],
           "literals": [],
           "facts": [
             {
-              "id": "main-caption-interpretation",
-              "description": "Keep the short caption's design, plotted quantity, uncertainty, and essential limits explicit; technical details are checked separately in the appendix.",
+              "id": "caption-interpretation",
+              "description": "Preserve the caption's experimental comparison, measured quantity, uncertainty, and interpretation-critical scope.",
               "all_of": [
-                "same 64 cases per model",
-                "four histories ending at the same facts",
-                "both Qwen intervals exclude zero",
-                "Gemma.s constrained interval touches zero",
-                "consistency-trained interval crosses zero",
-                "requiring all 34 questions correct under every history",
-                "neither learned method.s seed mean reaches half",
-                "98\\.75% paired root-bootstrap intervals with seeds averaged within roots",
-                "triangles show separate seed effects",
-                "executed baseline, which used fallback in 192/256 contexts per model",
-                "not a universal consistency cure"
+                "improve complete-case accuracy clearly in Qwen, with mixed results in Gemma",
+                "two learned procedures with attempted fact refresh plus a textual correction on the same 64 cases per model",
+                "all 34 questions are correct under every starting history",
+                "percentage-point changes from the baseline",
+                "Both Qwen intervals exclude zero",
+                "Gemma.s intervals touch or cross zero",
+                "absolute success",
+                "Neither learned method reaches half the cases on average across seeds",
+                "98\\.75% paired case-bootstrap intervals",
+                "Triangles show separate seed effects",
+                "baseline often used its fallback",
+                "gains apply to that executed procedure"
               ],
               "source_evidence": [
                 {

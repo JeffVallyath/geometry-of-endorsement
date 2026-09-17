@@ -1,4 +1,4 @@
-"""Main-paper captions stay brief without delegating essential caveats to the appendix."""
+"""Captions stay brief and preserve the interpretation of each scientific comparison."""
 import importlib.util
 import re
 
@@ -8,21 +8,22 @@ from repro.common import ROOT
 from repro.evidence import check, sections
 
 
-def main_captions():
+def figure_captions():
     text = (ROOT / 'figures/CAPTIONS.md').read_text(encoding='utf8')
     return [(heading, body) for heading, body in sections(text)
-            if re.match(r'^Figure \d+\b', heading)]
+            if re.match(r'^(?:Supplementary )?Figure S?\d+\b', heading)]
 
 
-def test_main_captions_are_short_and_link_to_matching_appendix():
+def test_captions_are_short_and_link_to_matching_appendix():
     appendix = (ROOT / 'figures/CAPTION_DETAILS.md').read_text(encoding='utf8')
+    assert '\u2014' not in (ROOT / 'figures/CAPTIONS.md').read_text(encoding='utf8')
     appendix_headings = {heading for heading, _ in sections(appendix)}
-    captions = main_captions()
-    assert len(captions) == 10
+    captions = figure_captions()
+    assert len(captions) == 13
     for heading, body in captions:
         prose = re.sub(r'<a\s+id="[^"]+"\s*>\s*</a>', '', body)
         prose = re.sub(r'!\[[^\n]*\]\([^\n]*\)', '', prose)
-        prose = re.sub(r'\[Methods and evidence\]\([^)]*\)\.', '', prose).strip()
+        prose = re.sub(r'^\[[^\n]*$', '', prose, flags=re.M).strip()
         assert len(prose.split()) <= 160, (heading, len(prose.split()))
         assert len(prose.split('\n\n')) == 2, heading
         assert heading in appendix_headings
@@ -33,23 +34,29 @@ def test_main_captions_are_short_and_link_to_matching_appendix():
 
 
 @pytest.mark.parametrize('unit,old,new', [
-    ('figure1', 'selected on separate data', 'selected on evaluation data'),
+    ('figure1', 'layers selected on\nseparate data', 'layers selected on evaluation data'),
     ('figure2', 'normal intervals', 'bootstrap intervals'),
-    ('figure3', 'p-value resolution differs', 'p-value resolution is identical'),
-    ('figure3', 'a different analysis', 'the same analysis'),
-    ('figure4', 'open marker has no retained interval', 'open marker has a retained interval'),
-    ('figure5', 'not\nrandom activation directions', 'random activation directions'),
-    ('figure6', 'not perfect hard-answer accuracy', 'perfect hard-answer accuracy'),
-    ('figure7', 'questions failing the witness criteria remain in the denominator',
-     'questions failing the witness criteria are excluded from the denominator'),
-    ('figure7', 'Intervals are\nmultiplicity-adjusted', 'Intervals are unadjusted'),
-    ('figure7', 'All eight multiplicity-adjusted intervals lie above', 'Some adjusted intervals cross'),
-    ('figure7', 'not case prevalence', 'case prevalence'),
-    ('figure7', 'correct direct facts in every history', 'correct direct facts in one history'),
-    ('figure8', 'not a prevalence estimate', 'a prevalence estimate'),
-    ('figure9', 'not independent cases or prevalence', 'independent cases and prevalence'),
-    ('figure10', 'touches zero', 'excludes zero'),
-    ('figure10', 'used fallback', 'did not use fallback'),
+    ('figure3', 'coarser p-values', 'more precise p-values'),
+    ('figure4', 'point estimate without an interval', 'point estimate with an interval'),
+    ('figure5', 'arbitrary per-item scores', 'random activation directions'),
+    ('figure6', "did not satisfy the study's stricter qualification requirements",
+     "satisfied the study's stricter qualification requirements"),
+    ('figure7', 'Questions failing the checks stay in the denominator',
+     'Questions failing the checks are removed from the denominator'),
+    ('figure7', 'multiplicity-adjusted', 'unadjusted'),
+    ('figure7', 'intervals lie above zero', 'intervals cross zero'),
+    ('figure7', 'Rates count qualifying cross-history disagreements over all scheduled questions',
+     'Rates count individual answer errors'),
+    ('figure7', 'every history reports the required facts', 'one history reports the required facts'),
+    ('figure7', 'differing valid answers', 'differing answers'),
+    ('figure8', 'selected Gemma example', 'representative Gemma example'),
+    ('figure9', 'same selected example', 'independent examples'),
+    ('figure10', 'touch or cross zero', 'exclude zero'),
+    ('figure10', 'often used its fallback', 'never used its fallback'),
+    ('supplementary_s1', 'averages success after two and three updates', 'requires success on both update lengths'),
+    ('supplementary_s2', 'leave the direction of the effect unresolved', 'establish equivalent accuracy'),
+    ('supplementary_s3', 'Right-hand counts use only cases passing every direct-fact check',
+     'Right-hand counts use all cases'),
 ])
 def test_short_caption_caveats_cannot_be_masked_by_valid_appendix(unit, old, new):
     text = (ROOT / 'figures/CAPTIONS.md').read_text(encoding='utf8')

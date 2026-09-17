@@ -116,9 +116,15 @@ def test_every_figure_value_recomputes_from_the_identified_raw_record(tmp_path):
 def test_caption_and_claim_guards(document, path):
     from repro.evidence import check
     text = (ROOT / path).read_text(encoding='utf8')
-    for old, new in [('not a prevalence estimate', 'a prevalence estimate'),
-                     ('model weights stay fixed', 'model weights change'),
-                     ('two correct direct answers', 'two incorrect direct answers')]:
+    mutations = [('not a prevalence estimate', 'a prevalence estimate'),
+                 ('model weights stay fixed', 'model weights change'),
+                 ('two correct direct answers', 'two incorrect direct answers')]
+    if document == 'captions':
+        mutations = [('selected Gemma example', 'representative Gemma example'),
+                     ('Model weights stay fixed', 'Model weights change'),
+                     ('both direct fact answers remain correct', 'both direct fact answers become incorrect')]
+    for old, new in mutations:
+        assert old in text
         report = check(document=document, overrides={document: text.replace(old, new)})
         assert any(r['unit'] == 'figure8' for r in report.errors)
 

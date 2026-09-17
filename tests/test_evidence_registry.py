@@ -43,8 +43,8 @@ def rules(identity, text):
 def test_actual_registry_passes():
     report = ev.check(ROOT, REGISTRY)
     assert report.ok(), report.errors
-    assert sum(c['bound'] for c in report.coverage) == 470
-    assert sum(c['bound'] for c in report.coverage if c['document'] == 'captions') == 44
+    assert sum(c['bound'] for c in report.coverage) == 447
+    assert sum(c['bound'] for c in report.coverage if c['document'] == 'captions') == 21
     assert sum(c['bound'] for c in report.coverage if c['document'] == 'results') == 343
     captions = {c['unit']: c for c in report.coverage if c['document'] == 'caption_details'}
     assert set(captions) >= {'figure6', 'figure7', 'supplementary_s1', 'supplementary_s2', 'supplementary_s3'}

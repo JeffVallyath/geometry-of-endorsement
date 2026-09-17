@@ -105,8 +105,8 @@ def test_public_story_and_style_contract():
         assert re.search(r'prospective (?:confirmation|(?:matched-history )?study)', text)
         assert not re.search(r'\bmy own experiments\b|strongest unresolved test|unfinished successor is not a completed result',text,re.I)
     captions=(ROOT/'figures/CAPTIONS.md').read_text(encoding='utf8')
-    assert 'earlier shared-state editing study (`V6`)' in captions
-    assert 'not the prospective confirmation' in captions
+    assert 'descriptive counts from earlier saved experiments' in captions
+    assert 'prospective results for Gemma and' in captions
 
 
 def test_export_refuses_existing_output(tmp_path):
