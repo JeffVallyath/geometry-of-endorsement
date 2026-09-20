@@ -100,7 +100,7 @@ def test_v6_archive_retains_original_figure_bytes():
         'pdf': 'abad3414e477f96012d62f81b80a71605e41f456f6fb0d9a31deeb7e070d8572',
         'png': '7d83c4913314cbafa397a9b3e243a6a56f32058f44fceb7ad6843e1d5fb6082d',
     }.items():
-        path = ROOT / f'figures/supplementary/figS3_v6_source_history.{extension}'
+        path = ROOT / f'figures/archive/20260919/figS3_v6_source_history.{extension}'
         assert hashlib.sha256(path.read_bytes()).hexdigest() == digest
 
 

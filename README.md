@@ -6,6 +6,13 @@ For the short logical progression, see [Project Strategy](PROJECT_STRATEGY.md). 
 
 ## Paper-first navigation
 
+Browse the [16 redesigned figures](figures/redesigned/README.md), the
+[combined review PDF](figures/redesigned/review.pdf), or the
+[contact sheet](figures/redesigned/contact_sheet.pdf). The new assets replace the
+older numbered images without breaking their paths. The
+[mapping](figures/redesigned/old_to_new.csv) records merged panels and duplicate
+exports; these are presentation changes, not new experiments.
+
 The [short terminology lookup](docs/TERMINOLOGY.md) connects scientific descriptions to exact saved-record names.
 
 Correctly reporting an updated fact does not establish that later behavior depends

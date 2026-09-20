@@ -1,0 +1,3 @@
+# Preserve reviewed Matplotlib SVG bytes, including whitespace inside path data.
+# Other source and documentation files retain their normal whitespace checks.
+redesigned/*.svg -text whitespace=cr-at-eol,-blank-at-eol

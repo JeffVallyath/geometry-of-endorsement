@@ -1,7 +1,8 @@
 """Historical representation-only packager: Figures 1 through 5.
 
-This is not the current paper figure export. Use `python -m repro figures`
-for the complete current inventory. The shared captions include later figures
+This is not the current paper figure export. Use `python scripts/package_redesigned_figures.py --out PATH.zip`
+for the complete redesigned inventory. `python -m repro figures` replays historical layouts.
+The shared captions include later figures
 that this historical archive intentionally does not contain.
 
 Bundles the rendered figures, their captions, both scripts, the frozen figure

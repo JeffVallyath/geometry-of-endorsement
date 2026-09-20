@@ -4823,7 +4823,7 @@
                 "four starting states receiving the same final assignments",
                 "all 64 Gemma cases and 32 Qwen cases",
                 "descriptive counts from earlier saved experiments",
-                "Red marks cases with correct direct facts but differing joint answers",
+                "Orange hatching marks cases with correct direct facts but differing joint answers",
                 "Teal marks cases with correct direct facts and stable joint answers",
                 "Gray marks failures of direct-fact checks",
                 "Bars use all cases as their denominator",

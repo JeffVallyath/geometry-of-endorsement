@@ -1,5 +1,26 @@
 # Reproducibility
 
+## Current figure presentation
+
+The [16-figure redesign](figures/redesigned/README.md) is the current viewing
+collection. The historical numbered PDF/PNG paths are updated compatibility
+copies, including intentional merged-figure duplicates. Saved experiment SVGs
+under `reproducibility/` remain unchanged provenance artifacts.
+
+Export the current collection, with checksum verification and no regeneration:
+
+```sh
+python scripts/package_redesigned_figures.py --out redesigned-figures.zip
+```
+
+Extract the ZIP and open `START_HERE.html`. The manifest binds every presentation
+file and records its compatibility paths. The CPU `figures` replay below still
+executes the original scientific plotting code and produces historical layouts
+in a fresh output directory; it does not reproduce the redesigned typography or
+overwrite the reviewed presentation. Main/appendix placement remains provisional.
+
+## Numerical and historical-layout replay
+
 The CPU replay checks artifact hashes and scientific claims, rebuilds the supported
 tables from saved measurements, and renders the figures. It does not download a
 model, generate new answers, or train an editor. No GPU or model-account access

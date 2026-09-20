@@ -57,6 +57,8 @@ def test_captions_are_short_and_link_to_matching_appendix():
     ('supplementary_s2', 'leave the direction of the effect unresolved', 'establish equivalent accuracy'),
     ('supplementary_s3', 'Right-hand counts use only cases passing every direct-fact check',
      'Right-hand counts use all cases'),
+    ('supplementary_s3', 'Orange hatching marks cases with correct direct facts but differing joint answers',
+     'Orange hatching marks cases with failed direct-fact checks'),
 ])
 def test_short_caption_caveats_cannot_be_masked_by_valid_appendix(unit, old, new):
     text = (ROOT / 'figures/CAPTIONS.md').read_text(encoding='utf8')

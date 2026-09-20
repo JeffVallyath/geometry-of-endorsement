@@ -3,6 +3,12 @@
 Main-paper captions; exact procedures, numerical detail, and artifact links are
 in the [figure methods and evidence appendix](CAPTION_DETAILS.md).
 
+The [current redesigned gallery](redesigned/README.md) and
+[redesigned full captions](redesigned/CAPTIONS.md) are the presentation entry points.
+The historical numbering below remains stable for existing links. The scorer and
+specificity views share the combined construct-validity asset; both archival paths share one
+asset. These are merged views, not additional results or independent replications.
+
 ## Scope
 
 The five representation figures report development evidence about linear
@@ -35,7 +41,7 @@ paired situations and considerations.
 
 Panels **(a, b)** show contextual separation. Panels **(c, d)** show AUROC.
 Llama is on the left and Gemma on the right. Both models rise from chance-level
-early readouts to a later plateau. The red lines mark layers selected on
+early readouts to a later plateau. The vertical lines mark layers selected on
 separate data.
 
 [Methods and evidence](CAPTION_DETAILS.md#figure-1-decodability-across-layers).
@@ -128,8 +134,8 @@ relation-direction steering.
 We tune both interventions to the same direct-answer margin in 96 Gemma contexts.
 The comparison target comes from changing the relation in the text.
 
-Both interventions hit their requested margin in 100% of contexts (left).
-The right panel measures recovery of the changed context's other answers.
+Both interventions hit their requested margin in 100% of contexts (noted above the plot).
+The interval plot measures recovery of the changed context's other answers.
 A full changed-state patch provides an untuned reference.
 Recovery is zero for the unchanged state and one for the natural change.
 Negative values move farther from that answer pattern.
@@ -151,7 +157,7 @@ intended current facts.
 We then ask the same downstream question through the same response interface.
 
 Panel **A** shows the design.
-Panel **B** gives prospective results for Gemma and Qwen under two learned and
+Panels **B and C** give prospective results for Gemma and Qwen under two learned and
 two text-based update methods.
 We count differing valid answers only when every history reports the required facts
 correctly and reference answers are also correct.
@@ -215,10 +221,10 @@ We compare two learned procedures with attempted fact refresh plus a textual
 correction on the same 64 cases per model.
 A case succeeds only when all 34 questions are correct under every starting history.
 
-Panel **A** shows percentage-point changes from the baseline.
+Panels **A and C** show percentage-point changes from the baseline.
 Both Qwen intervals exclude zero.
 Gemma's intervals touch or cross zero.
-Panel **B** shows absolute success.
+Panels **B and D** show absolute success.
 Neither learned method reaches half the cases on average across seeds.
 Error bars are 98.75% paired case-bootstrap intervals.
 Triangles show separate seed effects.
@@ -286,7 +292,7 @@ The top panel shows four starting states receiving the same final assignments.
 The bottom panel counts outcomes across all 64 Gemma cases and 32 Qwen cases.
 These are descriptive counts from earlier saved experiments.
 
-Red marks cases with correct direct facts but differing joint answers.
+Orange hatching marks cases with correct direct facts but differing joint answers.
 Teal marks cases with correct direct facts and stable joint answers.
 Gray marks failures of direct-fact checks.
 Bars use all cases as their denominator.
@@ -295,14 +301,15 @@ Stable joint answers can still be wrong.
 
 [Methods and evidence](CAPTION_DETAILS.md#supplementary-figure-s3-descriptive-history-dependence-in-archived-cases).
 
-[original PNG](supplementary/figS3_v6_source_history.png) · [original PDF](supplementary/figS3_v6_source_history.pdf) · [Case statistics](../reproducibility/relational_editing/v6/scores/source_root_statistics.json.gz) · [synthetic source worlds](../reproducibility/relational_editing/v6/data/gemma_source_roots.jsonl) · [unchanged plot data](../artifacts/figures/consequence_comparisons.json) · [the archival plotting code](../src/repro/consequence_figures.py)
+[compatibility PNG](supplementary/figS3_v6_source_history.png) · [compatibility PDF](supplementary/figS3_v6_source_history.pdf) · [Case statistics](../reproducibility/relational_editing/v6/scores/source_root_statistics.json.gz) · [synthetic source worlds](../reproducibility/relational_editing/v6/data/gemma_source_roots.jsonl) · [unchanged plot data](../artifacts/figures/consequence_comparisons.json) · [the archival plotting code](../src/repro/consequence_figures.py)
+[Preserved original rendering](archive/20260919/README.md).
 
 ## Repair population
 
-![Original repair and damage endpoints](../reproducibility/question_blind_repair/supplied/primary/figures/POPULATION_REPAIR_DAMAGE.svg)
+![Redesigned repair and damage endpoints](redesigned/repair_benefit_damage.png)
 
 Targeted partial refresh repairs more qualifying answers than the comparison
-refresh, but misses the strong-repair threshold. The original plot shows the
+refresh, but misses the strong-repair threshold. The redesigned plot shows the
 repair and damage endpoints, with their adjusted intervals. The
 [population accounting table](../reproducibility/question_blind_repair/README.md#prospective-result)
 also compares joint errors with the full current-record reference, which is
@@ -337,12 +344,10 @@ denominators and the narrower repeated example's failed second format.
 
 ## Fresh confirmation and validation utility
 
-![Fresh confirmation under fixed stronger controls](../reproducibility/fresh_history_validation/figures/PRIMARY_CONFIRMATION.svg)
+![Fresh confirmation and validation utility](redesigned/fresh_confirmation_utility.png)
 
 The fresh study confirms history dependence under stronger controls fixed
 before new outcomes. [Methods, units and source counts](CAPTION_DETAILS.md#fresh-matched-history-confirmation).
-
-![Equal-budget validation utility comparison](../reproducibility/fresh_history_validation/figures/VALIDATION_UTILITY.svg)
 
 Validation across histories is compared with more questions at one history.
 The practical difference remains uncertain at equal read budget and retention.

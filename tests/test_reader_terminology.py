@@ -36,7 +36,7 @@ def test_archived_figure_is_separate_from_reader_friendly_rendition():
         'pdf': 'abad3414e477f96012d62f81b80a71605e41f456f6fb0d9a31deeb7e070d8572',
     }
     for extension, digest in expected.items():
-        original = ROOT / f'figures/supplementary/figS3_v6_source_history.{extension}'
+        original = ROOT / f'figures/archive/20260919/figS3_v6_source_history.{extension}'
         readable = ROOT / f'figures/supplementary/figS3_source_history_readable.{extension}'
         assert hashlib.sha256(original.read_bytes()).hexdigest() == digest
         assert original.read_bytes() != readable.read_bytes()

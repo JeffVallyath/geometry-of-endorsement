@@ -64,8 +64,8 @@ def test_gallery_repeated_answers_and_failed_format_match_the_existing_example()
     assert 'full current-record reference' in gallery
     assert 'strongest cross-format result remains zero' in gallery
     for name in ('fig01_layer_sweep.png', 'fig02_scorer_comparison.png', 'fig03_permutation_null.png',
-                 'fig04_truth_control.png', 'fig05_specificity.png', 'POPULATION_REPAIR_DAMAGE.svg',
-                 'PRIMARY_CONFIRMATION.svg', 'VALIDATION_UTILITY.svg'):
+                 'fig04_truth_control.png', 'fig05_specificity.png', 'repair_benefit_damage.png',
+                 'fresh_confirmation_utility.png'):
         assert name in gallery
 
 

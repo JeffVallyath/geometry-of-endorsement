@@ -4,6 +4,11 @@ Technical companion to the [main-paper captions](CAPTIONS.md). The detailed
 accounts below preserve the numerical results, statistical procedures, claim
 boundaries, and artifact links; they are not intended as main-paper captions.
 
+See the [current redesign gallery](redesigned/README.md) and its
+[full asset captions](redesigned/CAPTIONS.md) for the consolidated presentation.
+The numbered links below are updated compatibility copies. Original plotting
+code and frozen experiment SVGs remain available for historical reproduction.
+
 ## Scope
 
 The five representation figures report development evidence about **decodability**:
@@ -65,7 +70,7 @@ Panels **(a, b)** show checkerboard interaction; **(c, d)** show AUROC as a
 secondary measure. The left column is Llama-3.1-8B-Instruct (32 layers), and the
 right is Gemma-2-9B-it (42 layers). Each row shares a y-axis across models.
 
-The dashed red lines mark the relation layers frozen for the subsequent
+The dashed vertical lines mark the relation layers frozen for the subsequent
 selected-layer comparisons, not the peaks of these evaluation curves. Llama's
 curves peak at layer 21 (AUROC 0.7348; interaction 1.6528), while selected layer
 19 gives 0.7320 and 1.6470. Gemma's curves peak at layer 28 (0.8306; 2.3366),
@@ -87,8 +92,10 @@ direction exceeds the text comparator in both models, with both difference
 intervals above zero.
 
 Panel **(a)** shows Llama at layer 19; **(b)** shows Gemma at layer 27. The four
-scorers are the model answer margin, support/opposition direction, logistic
-activation probe, and frozen MiniLM text comparator. MiniLM sees the situation
+original scorers are the model answer margin, support/opposition direction, logistic
+activation probe, and frozen MiniLM text comparator. The combined redesigned
+asset also retains the wording and specificity controls described in the specificity caption.
+MiniLM sees the situation
 and consideration but no model activations; its interaction is 0.28, so wording
 alone carries a small, nonzero signal.
 
@@ -224,9 +231,9 @@ target. Both reach that target, but only the whole-state intervention closely
 recovers the changed context's answers to other questions; relation steering
 moves those answers farther from the natural pattern.
 
-The left panel shows direct-answer margin attainment in the same 96 final worlds
+The note above the plot records direct-answer margin attainment in the same 96 final worlds
 at target fraction 0.75: both tuned interventions hit the requested
-margin within tolerance in 100% of worlds. The right panel shows recovery on
+margin within tolerance in 100% of worlds. The interval plot shows recovery on
 held-out complementary, paraphrased, and unchanged-relation questions. The
 natural changed-state patch replaces the activation with that of the changed
 context and is a reference intervention, not margin-tuned.
@@ -260,9 +267,10 @@ history despite correct direct fact reports and reference answers. This pattern
 recurs in both models under learned and textual updates, with all eight adjusted
 intervals above zero.
 
-**Panel A** shows the matched-history design: all 8 starting assignments to
-three addressed records lead to the same complete intended final table, including
-untouched facts. **Panel B, prospective V10 aggregate result,** shows Gemma and Qwen
+**Panel A** illustrates two example histories from the matched-history design:
+all 8 scheduled starting assignments to three addressed records lead to the same
+complete intended final table, including untouched facts. **Panels B and C,
+prospective V10 aggregate results,** show Gemma and Qwen separately
 under a constrained learned editor, an unrestricted consistency-trained editor,
 an existing textual correction, and latest-value wording. Dots and squares
 distinguish learned and textual updates, not a ranking of methods.
@@ -393,9 +401,9 @@ ending at the same facts and the same questions. Both learned procedures improve
 complete-case success clearly in Qwen; Gemma's results are mixed, and neither
 learned method's seed mean reaches half the roots in either model.
 
-Panel **A** shows percentage-point changes from the baseline: both Qwen intervals
+Panels **A and C** show percentage-point changes from the baseline: both Qwen intervals
 exclude zero, while Gemma's constrained interval touches zero and its
-consistency-trained interval crosses zero. Panel **B** shows absolute
+consistency-trained interval crosses zero. Panels **B and D** show absolute
 complete-root success on the full percentage scale. A case (*root*) succeeds only
 if all 34 questions are correct under every one of its four histories; each
 model has 64 terminal roots.
@@ -414,12 +422,13 @@ comparison does not replace the paper's matched-history test of sufficiency
 after verifying current facts.
 
 [Saved rows, tables and reconstruction](../reproducibility/update_method_comparison/README.md)
-and [plotting code](../src/repro/update_methods_figure.py) reproduce both panels
-through `python -m repro figures` without model inference.
+and [plotting code](../src/repro/update_methods_figure.py) reproduce the historical
+two-panel layout through `python -m repro figures` without model inference.
+The redesigned view separates models into four panels without changing estimates.
 
 ## Fresh matched-history confirmation
 
-The [fresh confirmation figure](../reproducibility/fresh_history_validation/figures/PRIMARY_CONFIRMATION.svg)
+The [combined fresh confirmation figure](redesigned/fresh_confirmation_utility.pdf)
 shows history-dependent answers in Gemma under controls fixed before outcomes.
 Different starting histories receive the same learned update and face the same
 downstream questions. 14 of 64 new cases contain a qualifying disagreement
@@ -435,8 +444,8 @@ is separate from the original primary study and its post-hoc robustness audit.
 
 ## Held-out validation utility
 
-The [validation figure](../reproducibility/fresh_history_validation/figures/VALIDATION_UTILITY.svg)
-compares checking more questions at one history with checking fewer questions
+The [validation panels in the same combined figure](redesigned/fresh_confirmation_utility.pdf)
+compare checking more questions at one history with checking fewer questions
 across two histories. Both rules use the same question budget and are evaluated
 on withheld questions at equal retention. The named No/Yes endpoint at 50%
 retention gives a -1.7447 percentage-point error difference for history-diverse
@@ -449,9 +458,8 @@ comparisons are separate from the post-hoc target-specific diagnostics.
 
 ## Pre-update deletion screen
 
-The [correction plot](../reproducibility/preupdate_route/supplied/figures/SCREEN_CORRECTIONS.svg)
-and [error plot](../reproducibility/preupdate_route/supplied/figures/SCREEN_DAMAGE.svg)
-show the fixed historical admission screen. They compare deletion of pre-update
+The [combined correction and error plot](redesigned/removal_screen.pdf)
+shows the fixed historical admission screen. It compares deletion of pre-update
 attention messages with the original computation and a matched scrambled
 control. Deletion increased errors and failed four of five requirements.
 These results describe the selected historical panel; the fresh final cases
@@ -464,7 +472,7 @@ accepts CRLF/LF-only regeneration differences while rejecting changed content.
 
 ## Question-blind repair
 
-The [population figure](../reproducibility/question_blind_repair/supplied/primary/figures/POPULATION_REPAIR_DAMAGE.svg)
+The [redesigned population figure](redesigned/repair_benefit_damage.pdf)
 shows the repair advantage over the comparison band and the net change in joint
 errors. It also shows newly introduced direct and joint errors, using the
 original multiplicity-adjusted intervals. Targeted refresh improves joint-answer
@@ -486,8 +494,10 @@ define the required controls and keep primary estimates separate from selected r
 The [donor comparison](../reproducibility/question_blind_repair/WORKED_EXAMPLE.md#when-a-correct-donor-causes-an-error)
 also retains reverse errors caused by originally correct donors. It supports
 context-dependent causal influence rather than universal replay of an old answer.
-The original [outcome-independent illustration](../reproducibility/question_blind_repair/supplied/primary/figures/WORKED_EXAMPLE.svg)
-is preserved unchanged as a separate archived figure.
+The redesigned [outcome-independent illustration](redesigned/fixed_worked_example.pdf)
+uses the original fixed case, separate from those later selected repeats. The
+[original SVG](../reproducibility/question_blind_repair/supplied/primary/figures/WORKED_EXAMPLE.svg)
+is preserved unchanged in the experiment archive.
 
 ## Supplementary Figure S1: Broader single-edit training and later sequences
 
@@ -559,7 +569,7 @@ and [plot data](../artifacts/figures/editing_comparisons.json) give the full com
 Can answers to joint questions still depend on old facts when every direct fact
 answer is correct? In this archival V6 test, 4 starting states receive the
 same requested final assignments and are then asked the same fresh questions.
-The red bar segments count cases with correct direct answers across all histories
+The orange hatched bar segments count cases with correct direct answers across all histories
 but at least one joint answer that changes with the overwritten values. These
 are descriptive counts, not the prospective V10 confirmation in Figure 7.
 
@@ -567,7 +577,7 @@ The top panel is a design example, not a sequence of model answers.
 The lower panel includes every terminal root under the original reader: 64 for
 Gemma and 32 for Qwen, with both editors and both original training seeds shown
 separately. A root is *atomic-perfect* only when all 16 direct/opposes questions are correct
-across every starting state. Red marks such roots with disagreement on
+across every starting state. Orange hatching marks such roots with disagreement on
 at least one of the 18 joint both/either/same questions; teal marks atomic-perfect
 roots without joint disagreement, whose joint answers may still be consistently
 wrong. Gray marks roots with an incorrect atomic answer. The right-hand counts

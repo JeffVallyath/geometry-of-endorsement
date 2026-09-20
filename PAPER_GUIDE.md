@@ -1,5 +1,10 @@
 # Paper guide
 
+The [current 16-figure gallery](figures/redesigned/README.md) includes every
+redesigned asset, full captions, vector downloads and grayscale previews.
+[Earlier figure paths](figures/redesigned/old_to_new.csv) now display those assets;
+their historical numbering is retained for link compatibility, not final placement.
+
 The main question is whether the same verified current facts are sufficient for
 the same later answer, regardless of the path to those facts. Downstream
 propagation failures have prior art. The matched-history test is the centerpiece;
@@ -52,7 +57,11 @@ python -m repro figures --output reproduced/all-figures
 ```
 
 Expected: all supported historical tables and ten main plus three supplementary
-figures, each in PNG and PDF. Some background findings are aggregate-only;
+figures in their historical rendering layouts, each in PNG and PDF. To export the
+reviewed redesign unchanged, use
+`python scripts/package_redesigned_figures.py --out redesigned-figures.zip`.
+This export checks the committed presentation hashes; it does not rerender them.
+Some background findings are aggregate-only;
 the [study index](REPRODUCIBILITY.md#experiment-index) identifies them separately.
 
 ## Matched-history sufficiency
