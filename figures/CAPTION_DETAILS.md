@@ -417,6 +417,78 @@ after verifying current facts.
 and [plotting code](../src/repro/update_methods_figure.py) reproduce both panels
 through `python -m repro figures` without model inference.
 
+## Fresh matched-history confirmation
+
+The [fresh confirmation figure](../reproducibility/fresh_history_validation/figures/PRIMARY_CONFIRMATION.svg)
+shows history-dependent answers in Gemma under controls fixed before outcomes.
+Different starting histories receive the same learned update and face the same
+downstream questions. 14 of 64 new cases contain a qualifying disagreement
+after factual, reference, logical and history-matching checks. This confirmation
+covers one model and one learned-update family.
+
+The full criterion retains 22 target/seed observations. The rate is 0.9549%,
+with a 95% paired case-bootstrap interval of [0.5208%, 1.4323%]. Ineligible
+targets remain in the denominator. Seeds and formats remain nested within cases.
+The [method and evidence guide](../docs/FRESH_HISTORY_REPRODUCTION.md) explains
+the controls and links the frozen per-seed accounting. This fresh confirmation
+is separate from the original primary study and its post-hoc robustness audit.
+
+## Held-out validation utility
+
+The [validation figure](../reproducibility/fresh_history_validation/figures/VALIDATION_UTILITY.svg)
+compares checking more questions at one history with checking fewer questions
+across two histories. Both rules use the same question budget and are evaluated
+on withheld questions at equal retention. The named No/Yes endpoint at 50%
+retention gives a -1.7447 percentage-point error difference for history-diverse
+validation, with a 95% interval of [-3.5346, +0.6504]. The interval spans zero,
+so the practical advantage remains inconclusive.
+
+The [reproduction guide](../docs/FRESH_HISTORY_REPRODUCTION.md#results-and-statistical-units)
+links all seeds, answer formats and retention levels. These saved-score
+comparisons are separate from the post-hoc target-specific diagnostics.
+
+## Pre-update deletion screen
+
+The [correction plot](../reproducibility/preupdate_route/supplied/figures/SCREEN_CORRECTIONS.svg)
+and [error plot](../reproducibility/preupdate_route/supplied/figures/SCREEN_DAMAGE.svg)
+show the fixed historical admission screen. They compare deletion of pre-update
+attention messages with the original computation and a matched scrambled
+control. Deletion increased errors and failed four of five requirements.
+These results describe the selected historical panel; the fresh final cases
+were never run.
+
+The [compact result table](../reproducibility/preupdate_route/README.md#results)
+retains every numerator, denominator and gate decision. The original figures
+are preserved byte-for-byte. Their [versioned replay helper](../reproducibility/preupdate_route/README.md#separately-versioned-svg-portability-fix)
+accepts CRLF/LF-only regeneration differences while rejecting changed content.
+
+## Question-blind repair
+
+The [population figure](../reproducibility/question_blind_repair/supplied/primary/figures/POPULATION_REPAIR_DAMAGE.svg)
+shows the repair advantage over the comparison band and the net change in joint
+errors. It also shows newly introduced direct and joint errors, using the
+original multiplicity-adjusted intervals. Targeted refresh improves joint-answer
+accuracy overall, but fails the strong-repair threshold.
+
+The [Esme/Vera table](../reproducibility/question_blind_repair/WORKED_EXAMPLE.md)
+shows independently asked facts and logical answers before refresh, after
+targeted or comparison refresh, and after reverse transfer. Targeted refresh
+corrects the same-side answer; reverse transfer makes it wrong again. The
+post-hoc-selected illustration succeeds for Yes/No but fails full A/B-format repair.
+
+The reference is prepared from complete current records using the same learned
+update. The refresh copies selected values before any downstream question.
+Keys, other values, model weights and the recipient prompt remain fixed.
+Each question reads an independent clone. The
+[method and accounting](../reproducibility/question_blind_repair/README.md)
+define the required controls and keep primary estimates separate from selected repeats.
+
+The [donor comparison](../reproducibility/question_blind_repair/WORKED_EXAMPLE.md#when-a-correct-donor-causes-an-error)
+also retains reverse errors caused by originally correct donors. It supports
+context-dependent causal influence rather than universal replay of an old answer.
+The original [outcome-independent illustration](../reproducibility/question_blind_repair/supplied/primary/figures/WORKED_EXAMPLE.svg)
+is preserved unchanged as a separate archived figure.
+
 ## Supplementary Figure S1: Broader single-edit training and later sequences
 
 <a id="supplementary-figure-s1--broader-single-edit-training-and-later-sequences"></a>

@@ -15,6 +15,11 @@ experiment measured, not to make the argument depend on following every detail
 of the analysis. Exact methods, saved results and reproduction limits are in
 [Reproducibility](../REPRODUCIBILITY.md).
 
+The [current completed-evidence table](../PAPER_GUIDE.md#current-evidence) adds
+textual breadth, full-prompt larger-model measurement, partial repair and its
+repeats, partial mechanism follow-ups and the negative method-selection
+reanalysis. Each linked package states its own criterion and denominator.
+
 A **benchmark case** is a target fact configuration with its starting histories
 and questions (`root` in saved records). An **individual-fact question** asks
 about one relation; a **joint question** combines relations. A **qualifying
@@ -541,6 +546,43 @@ The [primary table](../reproducibility/state_sufficiency/v10/primary_results.jso
 and [per-case counts](../reproducibility/state_sufficiency/v10/root_counts.json)
 support aggregate reconstruction of these rates and intervals.
 
+### Post-hoc controls on the same saved runs
+
+In a post-hoc reanalysis of the saved V10 runs, history-dependent answers
+persisted after matching the compared histories on changed-fact count and exact
+prefix length. The effect also survived stronger controls requiring correct
+answers to logically sufficient compositions of the same relations, including
+64 opportunities across 29 designs that passed both the same-pair and cross-pair
+controls.
+
+The audit checked all 653 original witnesses. Matching retained 430/653.
+The additional controls also require correct answers to all measured direct
+factual questions across histories and preserve the original reference checks.
+
+| Post-hoc control, with count and length matching | Retained coded opportunities | Shared designs |
+|---|---:|---:|
+| Same-pair logical consistency | 188 | 53/64 |
+| Cross-pair propagation | 82 | 34/64 |
+| Both controls | 64 | 29/64 |
+
+The same-pair control requires correct answers across histories to the other
+two logically sufficient compositions of the same relation pair. The target
+can ask whether both support, either supports, or their positions match.
+The cross-pair control requires correct compositions on the other relation
+pairs. Its surviving cases are concentrated in learned-update conditions;
+textual-update survival is sparse.
+
+For the surviving comparisons, differences in changed-fact count and total
+prefix-token length cannot explain the disagreement. Lexical content, clause
+position and which relation was previously different remain unmatched.
+These controls were chosen post hoc and pool correlated opportunities across
+models, update procedures, seeds and answer codes. Their counts describe the
+saved runs, rather than a new prospective prevalence estimate.
+
+The [canonical audit and replay](../reproducibility/state_sufficiency/README.md#post-hoc-cpu-robustness-audit)
+supersede the earlier same-instance package's G2 interpretation. That package
+remains valid provenance for an earlier analysis of these same outputs.
+
 ### Strong margins and repeatability
 
 The predeclared strong diagnostic requires every operand correct-answer
@@ -605,6 +647,51 @@ raw journals or reproduce the original forward passes. The separate
 now supplies scientific per-example projections of the saved journals and
 independently reconstructs eligibility, witnesses and intervals from those
 scores. It does not reproduce fresh neural outputs or attest the original run.
+
+### Fresh confirmation and held-out validation
+
+History-dependent answers survived the strongest controls in 14 of 64 new Gemma
+cases. This separate prospective study fixed history matching and logical-correctness
+checks before outcomes. Both stored seeds of one learned activation-update family
+were tested. V10 remains the original primary study; the fresh cases retain a
+separate denominator and criterion.
+
+Each case starts from eight histories and receives the same learned update.
+The intended current facts, downstream question and response format stay fixed.
+After factual, reference and logical checks pass, we test whether histories
+matched on changed-fact count and prefix length still give different valid answers.
+The [method and replay guide](FRESH_HISTORY_REPRODUCTION.md) explains the checks.
+
+| Measurement | Result | 95% paired case-bootstrap interval |
+|---|---:|---:|
+| Qualifying target/seed observations | 22 across 14/64 cases | |
+| Full-denominator rate | 0.9549% | [0.5208%, 1.4323%] |
+| Withheld task-error difference, history-diverse minus question-diverse validation | -1.7447 percentage points | [-3.5346, +0.6504] points |
+
+Ineligible targets remain in the denominator. Seeds and answer formats remain
+nested within cases. Four positive cases were repeated completely; all 2,312
+logical records had zero score difference and identical hard-answer/token bindings.
+
+Validation checks six consequence questions at one history or three at each of
+two histories. Both rules use the same read budget and withhold the same questions.
+At equal 50% retention, the table reports the named No/Yes endpoint. The practical
+advantage remains uncertain because its interval includes zero. All seeds,
+formats and retention levels remain in the
+[saved analyses](../reproducibility/fresh_history_validation/README.md#canonical-result-table).
+
+### Post-hoc diagnostics on the fresh cases
+
+Thirteen full-criterion observations have a withheld target, spanning seven cases.
+Both validators accept the corresponding case/seed/format for all thirteen.
+Correct answers to other questions can miss a target-specific error. The
+[fully repeated Ada/Bryn example](../reproducibility/fresh_history_validation/examples/CASE_0017.md)
+shows this failure at the validators' selected history pair.
+
+All 22 observations across 14 cases retain a witness pair with exactly equal
+token-ID inventories, including multiplicity. Token order and name-relation
+associations remain different. These are post-hoc diagnostics, separate from
+the frozen primary and utility endpoints. The [diagnostic records](../reproducibility/fresh_history_validation/diagnostics/DIAGNOSTICS.json)
+identify every target, accepted decision and matched pair.
 
 ### Changing which history the answer follows
 
@@ -708,6 +795,91 @@ provide the source records, strict checks and provenance. The
 [original-panel appendix](CACHE_CROSSOVER_APPENDIX.md) retains every earlier
 classification without pooling the extension into that panel.
 
+### Deleting pre-update messages failed the low-harm screen
+
+The fixed deletion procedure increased errors and failed 4 of 5 admission
+requirements. The study stopped before running any of its 128 fresh final cases.
+
+The test used 16 historical Gemma cases selected for earlier failures and controls.
+Before the learned update, deletion removed a fixed set of attention messages
+from the addressed clauses to shared trailing positions. The learned update,
+model weights, questions and response formats stayed fixed. We compared deletion
+with the original computation and a matched control that scrambled those messages.
+
+| Arm | Downstream joint errors / 1,152 responses | Direct errors / 768 responses |
+|---|---:|---:|
+| Original computation | 75 | 0 |
+| Deletion | 129 | 38 |
+| Matched scrambled control | 72 | 0 |
+
+Deletion introduced 67 new joint errors while correcting 13. All 38 direct
+errors were new. The [compact evidence and replay guide](../reproducibility/preupdate_route/README.md)
+retains the gate decisions and case-level accounting. Questions, histories and
+seeds remain repeated measurements within the same historical cases.
+
+This rejects the fixed procedure as a low-harm repair under its admission gate.
+Removing those messages may also remove useful computation. The result leaves
+other upstream influences unresolved.
+
+### Refreshing stored values before the question partially repairs later answers
+
+Refreshing a fixed band of stored values corrected some history-dependent
+answers in Gemma. The prospective study used 256 designs. Targeted refresh
+repaired 36/83 qualifying target/seed/format observations (43.4%), spanning
+28 designs. The comparison band repaired 2/83. The prespecified 50% strong-repair
+condition remained failed.
+
+The input is an edited context and a reference built from the complete current
+records using the same learned update. Before any question is opened, the
+intervention copies selected reference values into aligned trailing positions.
+The keys, other values, model weights and recipient prompt stay fixed. Each
+question is then asked from an independent context clone. Repair requires the
+target answer to be valid and correct across every history, while preserving
+the required current-fact and other logical answers.
+
+The targeted refresh reduced joint-answer error overall. It also introduced
+347 joint errors and 76 direct errors. The full current-record reference performed
+better than the partial refresh and was required to construct it.
+
+| Context used for answers | Joint errors / 73,728 scheduled responses |
+|---|---:|
+| Edited context before refresh | 3,490 |
+| Targeted partial refresh | 2,893 |
+| Full current-record reference | 2,000 |
+
+The cohort repair rate is distinct from the 75 qualifying observations after
+treatment. Eligibility can change, and new failures can appear. The
+[accounting table and original intervals](../reproducibility/question_blind_repair/README.md#prospective-result)
+keep those quantities separate. This is a limited corrective effect with access
+to a complete current-record reference, not an efficiency advantage over that
+reference.
+
+### Selected successful-case reproducibility
+
+Fresh processes reproduced the retained scores and bindings for six designs
+selected after their successful primary outcomes. Both stored seeds were checked,
+with a separate technical anchor. The eight repeated repairs are
+target/seed/format observations from those designs. Three eligible reverse
+targets recurred on the two selected reverse cases; the comparison band had none.
+
+This extension is post-hoc successful-case reproducibility. The original sample,
+repair estimate and intervals remain unchanged. The delivery's
+`ALL_REQUIRED_GATES_PASS` status refers to verification, while the scientific
+strong-repair condition remains failed.
+
+The [repeated Esme/Vera example](../reproducibility/question_blind_repair/WORKED_EXAMPLE.md)
+shows the same-side answer becoming correct after targeted refresh and wrong
+again after reverse transfer. Independently asked current-fact and other logical
+answers remain correct. Its Yes/No repair succeeds; the adjacent A/B-format check
+fails full repair. This illustration was selected post hoc.
+
+In the second reverse example, an originally correct donor can cause a wrong
+recipient answer. Copied values therefore exert context-dependent causal
+influence; they do not universally replay an old answer. The exact natural
+mechanism remains unresolved. The
+[offline replay](../reproducibility/question_blind_repair/README.md#offline-replay)
+checks the selected outputs against the original archive without running a model.
+
 ### Public-data in-context extension
 
 The [saved-response replay](../reproducibility/in_context_updates/README.md)
@@ -804,6 +976,12 @@ The causal swaps strengthen this behavioral result: changing the later stored
 activations changed which history the answer followed while direct facts stayed
 correct. The matched one-case extension supports this under both tested formats,
 without turning a selected example into a prevalence estimate.
+
+The completed prospective repair test adds a limited corrective result. A fixed
+refresh prepared before questions improved later answers using a complete
+current-record reference. Selected successes and reverse effects reproduced in
+fresh processes. The [repair closeout](../reproducibility/question_blind_repair/README.md)
+preserves the failed strong-repair condition and the better full reference.
 
 This does not establish absent internal facts, physical erasure of history,
 a unique neural mechanism, calibrated beliefs, deployment failure rates, universal

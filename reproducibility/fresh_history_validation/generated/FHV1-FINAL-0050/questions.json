@@ -1,0 +1,580 @@
+[
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "FHV1-FINAL-0050-d0-00",
+    "root_id": "FHV1-FINAL-0050",
+    "spec": {
+      "a": 3,
+      "b": 4,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Ravi favor the Garden proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "FHV1-FINAL-0050-d0-01",
+    "root_id": "FHV1-FINAL-0050",
+    "spec": {
+      "a": 3,
+      "b": 4,
+      "kind": "opposes",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Ravi oppose the Garden proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "FHV1-FINAL-0050-d0-02",
+    "root_id": "FHV1-FINAL-0050",
+    "spec": {
+      "a": 3,
+      "b": 4,
+      "kind": "same",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Do Ravi and Gale take the same side on Garden?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "FHV1-FINAL-0050-d0-03",
+    "root_id": "FHV1-FINAL-0050",
+    "spec": {
+      "a": 4,
+      "b": 3,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Gale favor the Garden proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "FHV1-FINAL-0050-d0-04",
+    "root_id": "FHV1-FINAL-0050",
+    "spec": {
+      "a": 4,
+      "b": 3,
+      "kind": "opposes",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Gale oppose the Garden proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "FHV1-FINAL-0050-d0-05",
+    "root_id": "FHV1-FINAL-0050",
+    "spec": {
+      "a": 3,
+      "b": 4,
+      "kind": "direct",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does Ravi favor the Gallery proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "FHV1-FINAL-0050-d0-06",
+    "root_id": "FHV1-FINAL-0050",
+    "spec": {
+      "a": 3,
+      "b": 4,
+      "kind": "both",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Is the Garden proposal supported by both Ravi and Gale?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "FHV1-FINAL-0050-d0-07",
+    "root_id": "FHV1-FINAL-0050",
+    "spec": {
+      "a": 3,
+      "b": 4,
+      "kind": "either",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Ravi and Gale support Garden?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "FHV1-FINAL-0050-d0-08",
+    "root_id": "FHV1-FINAL-0050",
+    "spec": {
+      "a": 5,
+      "b": 3,
+      "kind": "same",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Do Ada and Ravi take the same side on Garden?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "FHV1-FINAL-0050-d0-09",
+    "root_id": "FHV1-FINAL-0050",
+    "spec": {
+      "a": 5,
+      "b": 3,
+      "kind": "both",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Is the Garden proposal supported by both Ada and Ravi?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "FHV1-FINAL-0050-d0-10",
+    "root_id": "FHV1-FINAL-0050",
+    "spec": {
+      "a": 5,
+      "b": 3,
+      "kind": "either",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Ada and Ravi support Garden?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "FHV1-FINAL-0050-d0-11",
+    "root_id": "FHV1-FINAL-0050",
+    "spec": {
+      "a": 5,
+      "b": 3,
+      "kind": "direct",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does Ada favor the Gallery proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "FHV1-FINAL-0050-d0-extra0",
+    "root_id": "FHV1-FINAL-0050",
+    "spec": {
+      "a": 5,
+      "b": 3,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Ada favor the Garden proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "FHV1-FINAL-0050-d0-extra1",
+    "root_id": "FHV1-FINAL-0050",
+    "spec": {
+      "a": 4,
+      "b": 5,
+      "kind": "same",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Do Gale and Ada take the same side on Garden?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "FHV1-FINAL-0050-d0-extra2",
+    "root_id": "FHV1-FINAL-0050",
+    "spec": {
+      "a": 4,
+      "b": 5,
+      "kind": "both",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Is the Garden proposal supported by both Gale and Ada?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "FHV1-FINAL-0050-d0-extra3",
+    "root_id": "FHV1-FINAL-0050",
+    "spec": {
+      "a": 4,
+      "b": 5,
+      "kind": "either",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Gale and Ada support Garden?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "FHV1-FINAL-0050-d0-extra4",
+    "root_id": "FHV1-FINAL-0050",
+    "spec": {
+      "a": 0,
+      "b": 3,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Hugo favor the Garden proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "FHV1-FINAL-0050-d1-00",
+    "root_id": "FHV1-FINAL-0050",
+    "spec": {
+      "a": 3,
+      "b": 4,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Ravi favor the Garden proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "FHV1-FINAL-0050-d1-01",
+    "root_id": "FHV1-FINAL-0050",
+    "spec": {
+      "a": 3,
+      "b": 4,
+      "kind": "opposes",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Ravi oppose the Garden proposal?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "FHV1-FINAL-0050-d1-02",
+    "root_id": "FHV1-FINAL-0050",
+    "spec": {
+      "a": 3,
+      "b": 4,
+      "kind": "same",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Do Ravi and Gale take the same side on Garden?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "FHV1-FINAL-0050-d1-03",
+    "root_id": "FHV1-FINAL-0050",
+    "spec": {
+      "a": 4,
+      "b": 3,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Gale favor the Garden proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "FHV1-FINAL-0050-d1-04",
+    "root_id": "FHV1-FINAL-0050",
+    "spec": {
+      "a": 4,
+      "b": 3,
+      "kind": "opposes",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Gale oppose the Garden proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "FHV1-FINAL-0050-d1-05",
+    "root_id": "FHV1-FINAL-0050",
+    "spec": {
+      "a": 3,
+      "b": 4,
+      "kind": "direct",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does Ravi favor the Gallery proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "FHV1-FINAL-0050-d1-06",
+    "root_id": "FHV1-FINAL-0050",
+    "spec": {
+      "a": 3,
+      "b": 4,
+      "kind": "both",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Is the Garden proposal supported by both Ravi and Gale?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "FHV1-FINAL-0050-d1-07",
+    "root_id": "FHV1-FINAL-0050",
+    "spec": {
+      "a": 3,
+      "b": 4,
+      "kind": "either",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Ravi and Gale support Garden?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "FHV1-FINAL-0050-d1-08",
+    "root_id": "FHV1-FINAL-0050",
+    "spec": {
+      "a": 5,
+      "b": 3,
+      "kind": "same",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Do Ada and Ravi take the same side on Garden?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "FHV1-FINAL-0050-d1-09",
+    "root_id": "FHV1-FINAL-0050",
+    "spec": {
+      "a": 5,
+      "b": 3,
+      "kind": "both",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Is the Garden proposal supported by both Ada and Ravi?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "FHV1-FINAL-0050-d1-10",
+    "root_id": "FHV1-FINAL-0050",
+    "spec": {
+      "a": 5,
+      "b": 3,
+      "kind": "either",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Ada and Ravi support Garden?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "FHV1-FINAL-0050-d1-11",
+    "root_id": "FHV1-FINAL-0050",
+    "spec": {
+      "a": 5,
+      "b": 3,
+      "kind": "direct",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does Ada favor the Gallery proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "FHV1-FINAL-0050-d1-extra0",
+    "root_id": "FHV1-FINAL-0050",
+    "spec": {
+      "a": 5,
+      "b": 3,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Ada favor the Garden proposal?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "FHV1-FINAL-0050-d1-extra1",
+    "root_id": "FHV1-FINAL-0050",
+    "spec": {
+      "a": 4,
+      "b": 5,
+      "kind": "same",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Do Gale and Ada take the same side on Garden?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "FHV1-FINAL-0050-d1-extra2",
+    "root_id": "FHV1-FINAL-0050",
+    "spec": {
+      "a": 4,
+      "b": 5,
+      "kind": "both",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Is the Garden proposal supported by both Gale and Ada?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "FHV1-FINAL-0050-d1-extra3",
+    "root_id": "FHV1-FINAL-0050",
+    "spec": {
+      "a": 4,
+      "b": 5,
+      "kind": "either",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Gale and Ada support Garden?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "FHV1-FINAL-0050-d1-extra4",
+    "root_id": "FHV1-FINAL-0050",
+    "spec": {
+      "a": 0,
+      "b": 3,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Hugo favor the Garden proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  }
+]

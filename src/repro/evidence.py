@@ -266,6 +266,24 @@ def check(root=ROOT, registry_path=None, *, document=None, strict=True, override
             artifacts[key] = load(rooted(root, name))
         except (OSError, ValueError) as error:
             report.add('artifact-missing', f'{key}: {error}')
+    if 'preupdate' in artifacts:
+        try:
+            from .preupdate_route import check as check_preupdate
+            artifacts['preupdate'] = check_preupdate(root / 'reproducibility/preupdate_route')['result']
+        except (OSError, KeyError, TypeError, ValueError) as error:
+            report.add('scientific-evidence-mismatch', f'Pre-update compact replay: {error}')
+    if 'question_blind_repair' in artifacts:
+        try:
+            from .question_blind_repair import check as check_repair
+            artifacts['question_blind_repair'] = check_repair(root / 'reproducibility/question_blind_repair')['result']
+        except (OSError, KeyError, TypeError, ValueError) as error:
+            report.add('scientific-evidence-mismatch', f'Question-blind repair closeout: {error}')
+    if 'qwen32' in artifacts and document is None and not overrides:
+        try:
+            from .qwen32_full_forward import check_projection
+            artifacts['qwen32'] = check_projection(root / 'reproducibility/qwen32_full_forward')
+        except (OSError, KeyError, TypeError, ValueError) as error:
+            report.add('scientific-evidence-mismatch', f'Qwen32 saved-evidence projection: {error}')
     if 'qwen_public' in artifacts:
         # Bind the public counts to the saved-response calculation, not just a
         # supplied summary. A stale generated projection must fail closed.
@@ -286,6 +304,16 @@ def check(root=ROOT, registry_path=None, *, document=None, strict=True, override
             artifacts['update_methods'] = computed
         except (OSError, ValueError, KeyError) as error:
             report.add('scientific-evidence-mismatch', f'Comparison saved-score reconstruction: {error}')
+    if 'cpu_audit' in artifacts and document is None and not overrides:
+        from .cpu_robustness import reconstruct
+        try:
+            computed = reconstruct(root / 'reproducibility/state_sufficiency/cpu_audit',
+                                   root / 'reproducibility/state_sufficiency/independent_verification')['summary']
+            if artifacts['cpu_audit'] != computed:
+                report.add('scientific-evidence-mismatch', 'CPU audit projection differs from frozen-score replay')
+            artifacts['cpu_audit'] = computed
+        except (OSError, ValueError, KeyError, AssertionError) as error:
+            report.add('scientific-evidence-mismatch', f'CPU audit saved-score replay: {error}')
     for assertion in registry.get('source_checks', []):
         try:
             if not check_source(assertion, artifacts):

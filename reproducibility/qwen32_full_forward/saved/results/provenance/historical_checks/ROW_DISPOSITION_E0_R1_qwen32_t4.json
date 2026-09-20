@@ -1,0 +1,17 @@
+{
+  "status": "NOT_MEASURED_ACTOR_TECHNICAL",
+  "row_id": "qwen32_t4",
+  "reason": "Actor-specific cached/full technical gate failed; original evidence retained, no scientific retry",
+  "dev_check_sha256": "c0af2b6dcbc2d586ecefcff21a67d4a66e6712744106ccdbfcf5d1899946d486",
+  "common_integrity": {
+    "status": "PASS",
+    "scope": "SOURCE_CPU_EVALUATOR_AND_OBSERVED_BINDINGS",
+    "cpu_verification_sha256": "e56ebbdde0ff7623bc404ca37fdfb29865506a35513f05050d860c906d2e0df3",
+    "source_bindings_sha256": "0e2b9e29c5667628bb814e9cb564b597aeee7cb9c700839af5a53d694875bfff",
+    "actor_neural_qualification_separate": true
+  },
+  "final_roots_measured": 0,
+  "required_final_roots": 64,
+  "aggregate_permitted": false,
+  "remaining_predeclared_actors_may_proceed": true
+}

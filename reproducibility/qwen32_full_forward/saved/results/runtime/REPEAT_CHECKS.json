@@ -1,0 +1,37 @@
+{
+  "status": "PASS",
+  "compared_reads": 4488,
+  "fixed_panel_reads": 2176,
+  "complete_case_reads": 2312,
+  "processes": {
+    "final": 5616,
+    "repeat0": 18984,
+    "repeat1": 19680,
+    "repeat_full": 20479
+  },
+  "discrepancies": [],
+  "complete_case_classification": [
+    {
+      "root_id": "SSC1-FINAL-0003",
+      "classification_identical": true,
+      "changes": []
+    },
+    {
+      "root_id": "SSC1-FINAL-0004",
+      "classification_identical": true,
+      "changes": []
+    },
+    {
+      "root_id": "SSC1-FINAL-0007",
+      "classification_identical": true,
+      "changes": []
+    },
+    {
+      "root_id": "SSC1-FINAL-0014",
+      "classification_identical": true,
+      "changes": []
+    }
+  ],
+  "repeats_not_added_to_population_estimates": true,
+  "reruns_until_favorable_or_stable": false
+}

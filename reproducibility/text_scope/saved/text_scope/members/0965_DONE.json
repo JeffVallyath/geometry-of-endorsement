@@ -1,0 +1,18 @@
+{
+  "status": "TECHNICAL_SCORE_PASS_COMPLETE_NOT_YET_ANALYZED",
+  "row_id": "qwen4_t4",
+  "root_id": "SSC1-FINAL-0005",
+  "phase": "final",
+  "logical_scores": 578,
+  "forward_attempts": 595,
+  "score_attempts": 578,
+  "seconds": 42.1298672339999,
+  "scorer_pid": 26989,
+  "score_bindings_sha256": "750265c31e392356bacfddd467d1805dfc5426174da84b056b520e89e194c697",
+  "files": {
+    "CONTEXT_SEAL.json": "bf2de0838be8fa7f8b871f694f820c68502b859774f5f7972f603d4fb7ee88a2",
+    "RAW_SCORES.jsonl": "a84beae9637bf7147b9f6274b0b93d1982a1088e1304c11c86ff4b6233656185",
+    "SCORES.json": "8e4d80e653d86dae32cbb6f2fd342544cb32625e394a144cc0d572962d0107e8",
+    "TOKENS.json": "5036676f52d23ba6dd70aa11c94bc9d1bb3c2557aeb746f04ba9b82088f5ba37"
+  }
+}

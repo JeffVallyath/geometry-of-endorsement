@@ -23,6 +23,28 @@ old path still predict the same later answer?
 | Update-method comparison | [Matched-history comparison and Figure 10](PAPER_GUIDE.md#update-method-comparison) |
 | Representation and decoding background | [Earlier figures and saved measurements](PAPER_GUIDE.md#representation-and-decoding) |
 
+### Completed follow-up evidence
+
+The [post-hoc robustness audit](PAPER_GUIDE.md#post-hoc-robustness) retains
+history-dependent answers after count and length matching and stronger logical
+controls on the original saved runs. A [separate fresh Gemma study](PAPER_GUIDE.md#fresh-confirmation-and-held-out-validation)
+fixed those controls before new outcomes and confirmed the effect for one
+learned-update family. Its practical comparison of validation rules remains
+inconclusive. The original prospective study remains the primary result.
+
+The [pre-update deletion screen](PAPER_GUIDE.md#pre-update-deletion-screen)
+increased errors and failed its low-harm admission gate. Its fresh final cases
+were never run. This closes that fixed procedure, while leaving other upstream
+influences unresolved.
+
+The [question-blind repair](PAPER_GUIDE.md#question-blind-repair) partly reduces
+the effect, with measured harms and a failed strong-repair threshold. Its selected
+successful cases were independently repeated. The [textual breadth and 32B
+follow-up](PAPER_GUIDE.md#textual-breadth-and-full-forward-32b) extend basic
+recurrence, but do not establish scaling or the strongest cross-format result.
+The [current evidence table](PAPER_GUIDE.md#current-evidence) also links the
+completed mechanism and negative method-selection follow-ups.
+
 For a CPU-only start, use Python 3.11 or newer in a virtual environment:
 
 ```sh
@@ -46,8 +68,6 @@ For example, if an update makes fairness count against an action and the model r
 The main starting dataset is ValuePrism. Each example gives a situation, an action, and a consideration such as autonomy, fairness, privacy, or harm. The dataset records whether that consideration **Supports** or **Opposes** the action in that situation.
 
 The useful feature is that the same named consideration can point in different directions across different cases.
-
-For example, autonomy might support respecting a patient’s refusal of treatment. In another situation, an appeal to personal freedom might support letting a toddler run into a dangerous street. The surrounding situation determines how the consideration applies.
 
 We organize examples into four-part comparisons where two considerations reverse direction across two situations. We call this a checkerboard.
 

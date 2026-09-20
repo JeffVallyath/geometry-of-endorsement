@@ -1,0 +1,348 @@
+{
+  "archived": {
+    "B_remaining_qualifying_witnesses": 3,
+    "B_repairs": 8,
+    "C_repairs": 0,
+    "baseline_W": 9,
+    "case_seed_blocks": 12,
+    "eligible_RB_targets": 3,
+    "eligible_RC_targets": 0,
+    "response_counts": [
+      {
+        "arm": "A",
+        "baseline_correct": 1145,
+        "benefit": 0,
+        "correct": 1145,
+        "family": "direct",
+        "harm": 0,
+        "invalid": 0,
+        "scheduled": 1152
+      },
+      {
+        "arm": "B",
+        "baseline_correct": 1145,
+        "benefit": 0,
+        "correct": 1142,
+        "family": "direct",
+        "harm": 3,
+        "invalid": 0,
+        "scheduled": 1152
+      },
+      {
+        "arm": "C",
+        "baseline_correct": 1145,
+        "benefit": 0,
+        "correct": 1145,
+        "family": "direct",
+        "harm": 0,
+        "invalid": 0,
+        "scheduled": 1152
+      },
+      {
+        "arm": "D",
+        "baseline_correct": 1145,
+        "benefit": 1,
+        "correct": 1144,
+        "family": "direct",
+        "harm": 2,
+        "invalid": 0,
+        "scheduled": 1152
+      },
+      {
+        "arm": "A",
+        "baseline_correct": 1672,
+        "benefit": 0,
+        "correct": 1672,
+        "family": "joint",
+        "harm": 0,
+        "invalid": 0,
+        "scheduled": 1728
+      },
+      {
+        "arm": "B",
+        "baseline_correct": 1672,
+        "benefit": 24,
+        "correct": 1694,
+        "family": "joint",
+        "harm": 2,
+        "invalid": 0,
+        "scheduled": 1728
+      },
+      {
+        "arm": "C",
+        "baseline_correct": 1672,
+        "benefit": 1,
+        "correct": 1673,
+        "family": "joint",
+        "harm": 0,
+        "invalid": 0,
+        "scheduled": 1728
+      },
+      {
+        "arm": "D",
+        "baseline_correct": 1672,
+        "benefit": 44,
+        "correct": 1712,
+        "family": "joint",
+        "harm": 4,
+        "invalid": 0,
+        "scheduled": 1728
+      },
+      {
+        "arm": "A",
+        "baseline_correct": 381,
+        "benefit": 0,
+        "correct": 381,
+        "family": "opposes",
+        "harm": 0,
+        "invalid": 0,
+        "scheduled": 384
+      },
+      {
+        "arm": "B",
+        "baseline_correct": 381,
+        "benefit": 0,
+        "correct": 381,
+        "family": "opposes",
+        "harm": 0,
+        "invalid": 0,
+        "scheduled": 384
+      },
+      {
+        "arm": "C",
+        "baseline_correct": 381,
+        "benefit": 0,
+        "correct": 381,
+        "family": "opposes",
+        "harm": 0,
+        "invalid": 0,
+        "scheduled": 384
+      },
+      {
+        "arm": "D",
+        "baseline_correct": 381,
+        "benefit": 3,
+        "correct": 384,
+        "family": "opposes",
+        "harm": 0,
+        "invalid": 0,
+        "scheduled": 384
+      },
+      {
+        "arm": "A",
+        "baseline_correct": 3198,
+        "benefit": 0,
+        "correct": 3198,
+        "family": "all34",
+        "harm": 0,
+        "invalid": 0,
+        "scheduled": 3264
+      },
+      {
+        "arm": "B",
+        "baseline_correct": 3198,
+        "benefit": 24,
+        "correct": 3217,
+        "family": "all34",
+        "harm": 5,
+        "invalid": 0,
+        "scheduled": 3264
+      },
+      {
+        "arm": "C",
+        "baseline_correct": 3198,
+        "benefit": 1,
+        "correct": 3199,
+        "family": "all34",
+        "harm": 0,
+        "invalid": 0,
+        "scheduled": 3264
+      },
+      {
+        "arm": "D",
+        "baseline_correct": 3198,
+        "benefit": 48,
+        "correct": 3240,
+        "family": "all34",
+        "harm": 6,
+        "invalid": 0,
+        "scheduled": 3264
+      }
+    ],
+    "selected_cases": 6,
+    "target_rows": 216
+  },
+  "fresh": {
+    "B_remaining_qualifying_witnesses": 3,
+    "B_repairs": 8,
+    "C_repairs": 0,
+    "baseline_W": 9,
+    "case_seed_blocks": 12,
+    "eligible_RB_targets": 3,
+    "eligible_RC_targets": 0,
+    "response_counts": [
+      {
+        "arm": "A",
+        "baseline_correct": 1145,
+        "benefit": 0,
+        "correct": 1145,
+        "family": "direct",
+        "harm": 0,
+        "invalid": 0,
+        "scheduled": 1152
+      },
+      {
+        "arm": "B",
+        "baseline_correct": 1145,
+        "benefit": 0,
+        "correct": 1142,
+        "family": "direct",
+        "harm": 3,
+        "invalid": 0,
+        "scheduled": 1152
+      },
+      {
+        "arm": "C",
+        "baseline_correct": 1145,
+        "benefit": 0,
+        "correct": 1145,
+        "family": "direct",
+        "harm": 0,
+        "invalid": 0,
+        "scheduled": 1152
+      },
+      {
+        "arm": "D",
+        "baseline_correct": 1145,
+        "benefit": 1,
+        "correct": 1144,
+        "family": "direct",
+        "harm": 2,
+        "invalid": 0,
+        "scheduled": 1152
+      },
+      {
+        "arm": "A",
+        "baseline_correct": 1672,
+        "benefit": 0,
+        "correct": 1672,
+        "family": "joint",
+        "harm": 0,
+        "invalid": 0,
+        "scheduled": 1728
+      },
+      {
+        "arm": "B",
+        "baseline_correct": 1672,
+        "benefit": 24,
+        "correct": 1694,
+        "family": "joint",
+        "harm": 2,
+        "invalid": 0,
+        "scheduled": 1728
+      },
+      {
+        "arm": "C",
+        "baseline_correct": 1672,
+        "benefit": 1,
+        "correct": 1673,
+        "family": "joint",
+        "harm": 0,
+        "invalid": 0,
+        "scheduled": 1728
+      },
+      {
+        "arm": "D",
+        "baseline_correct": 1672,
+        "benefit": 44,
+        "correct": 1712,
+        "family": "joint",
+        "harm": 4,
+        "invalid": 0,
+        "scheduled": 1728
+      },
+      {
+        "arm": "A",
+        "baseline_correct": 381,
+        "benefit": 0,
+        "correct": 381,
+        "family": "opposes",
+        "harm": 0,
+        "invalid": 0,
+        "scheduled": 384
+      },
+      {
+        "arm": "B",
+        "baseline_correct": 381,
+        "benefit": 0,
+        "correct": 381,
+        "family": "opposes",
+        "harm": 0,
+        "invalid": 0,
+        "scheduled": 384
+      },
+      {
+        "arm": "C",
+        "baseline_correct": 381,
+        "benefit": 0,
+        "correct": 381,
+        "family": "opposes",
+        "harm": 0,
+        "invalid": 0,
+        "scheduled": 384
+      },
+      {
+        "arm": "D",
+        "baseline_correct": 381,
+        "benefit": 3,
+        "correct": 384,
+        "family": "opposes",
+        "harm": 0,
+        "invalid": 0,
+        "scheduled": 384
+      },
+      {
+        "arm": "A",
+        "baseline_correct": 3198,
+        "benefit": 0,
+        "correct": 3198,
+        "family": "all34",
+        "harm": 0,
+        "invalid": 0,
+        "scheduled": 3264
+      },
+      {
+        "arm": "B",
+        "baseline_correct": 3198,
+        "benefit": 24,
+        "correct": 3217,
+        "family": "all34",
+        "harm": 5,
+        "invalid": 0,
+        "scheduled": 3264
+      },
+      {
+        "arm": "C",
+        "baseline_correct": 3198,
+        "benefit": 1,
+        "correct": 3199,
+        "family": "all34",
+        "harm": 0,
+        "invalid": 0,
+        "scheduled": 3264
+      },
+      {
+        "arm": "D",
+        "baseline_correct": 3198,
+        "benefit": 48,
+        "correct": 3240,
+        "family": "all34",
+        "harm": 6,
+        "invalid": 0,
+        "scheduled": 3264
+      }
+    ],
+    "selected_cases": 6,
+    "target_rows": 216
+  }
+}

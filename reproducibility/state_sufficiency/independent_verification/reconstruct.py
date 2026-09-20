@@ -39,13 +39,13 @@ def load(path):
 def check_manifest(base,role='input'):
     manifest=load(base/'MANIFEST.json');seen=set()
     for row in manifest['files']:
-        name=row['path'];p=PurePosixPath(name)
-        require(not p.is_absolute() and '..' not in p.parts and ':' not in name and '\\' not in name,'Unsafe input path')
-        require(name not in seen,'Duplicate manifest path');seen.add(name)
+        name=row['path'].replace('\\','/');p=PurePosixPath(name)
+        require(bool(name) and not p.is_absolute() and '..' not in p.parts and ':' not in name and p.as_posix()==name,'Unsafe input path')
+        require(name.casefold() not in seen,'Duplicate manifest path');seen.add(name.casefold())
         if row['role']!=role: continue
         prefix={'input':'inputs/','expected':'expected/','example':'examples/'}[role]
         require(name.startswith(prefix),'Unexpected role/path')
-        path=base/name
+        path=base.joinpath(*p.parts)
         require(path.resolve().is_relative_to(base.resolve()),'Escaping input path')
         raw=path.read_bytes()
         require(len(raw)==row['bytes'] and digest(raw)==row['sha256'],'Input hash mismatch: '+name)

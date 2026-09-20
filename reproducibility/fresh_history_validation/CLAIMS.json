@@ -1,0 +1,340 @@
+{
+  "interval_level": 0.95,
+  "post_hoc": {
+    "classification": "POST_HOC_DIAGNOSTICS_NOT_FROZEN_ENDPOINTS",
+    "definition": "Exact token inventory means equal token-ID multisets, including multiplicity, within an already count/length-matched witness pair. Token order and relation binding remain different.",
+    "exact_token_inventory_cases": 14,
+    "exact_token_inventory_observations": 22,
+    "primary_cases": 14,
+    "primary_observations": 22,
+    "withheld_target_both_accept": 13,
+    "withheld_target_cases": 7,
+    "withheld_target_observations": 13,
+    "withheld_target_selected_pair_disagreements": 9,
+    "withheld_target_selected_pair_errors": 9
+  },
+  "primary": {
+    "bootstrap_draws": 10000,
+    "bootstrap_seed": 2609182102,
+    "cases": 64,
+    "contributing_cases": 14,
+    "cross_code_common_pair": [
+      {
+        "denominator": 576,
+        "gates": {
+          "G0": {
+            "eligible": 453,
+            "matched": 5,
+            "strong": 1
+          },
+          "G1": {
+            "eligible": 427,
+            "matched": 5,
+            "strong": 1
+          },
+          "G2a": {
+            "eligible": 361,
+            "matched": 5,
+            "strong": 1
+          },
+          "G2b": {
+            "eligible": 241,
+            "matched": 3,
+            "strong": 0
+          },
+          "both": {
+            "eligible": 192,
+            "matched": 3,
+            "strong": 0
+          }
+        },
+        "seed": 0
+      },
+      {
+        "denominator": 576,
+        "gates": {
+          "G0": {
+            "eligible": 427,
+            "matched": 23,
+            "strong": 6
+          },
+          "G1": {
+            "eligible": 392,
+            "matched": 21,
+            "strong": 6
+          },
+          "G2a": {
+            "eligible": 238,
+            "matched": 14,
+            "strong": 3
+          },
+          "G2b": {
+            "eligible": 79,
+            "matched": 4,
+            "strong": 2
+          },
+          "both": {
+            "eligible": 44,
+            "matched": 2,
+            "strong": 2
+          }
+        },
+        "seed": 1
+      }
+    ],
+    "denominator_per_seed": 1152,
+    "interval95": [
+      0.005208333333333333,
+      0.014322916666666668
+    ],
+    "observations": 22,
+    "per_seed": [
+      {
+        "contributing_cases": 9,
+        "denominator": 1152,
+        "eligible": 509,
+        "matched": 12,
+        "seed": 0
+      },
+      {
+        "contributing_cases": 8,
+        "denominator": 1152,
+        "eligible": 146,
+        "matched": 10,
+        "seed": 1
+      }
+    ],
+    "rate": 0.00954861111111111,
+    "seed_code_decomposition": [
+      {
+        "contributing_cases": {
+          "G0": 15,
+          "G1": 11,
+          "G2a": 9,
+          "G2b": 9,
+          "both": 7
+        },
+        "denominator": 576,
+        "draw": 0,
+        "gates": {
+          "G0": {
+            "eligible": 477,
+            "matched": 17,
+            "strong": 4,
+            "witness": 25
+          },
+          "G1": {
+            "eligible": 444,
+            "matched": 13,
+            "strong": 4,
+            "witness": 20
+          },
+          "G2a": {
+            "eligible": 396,
+            "matched": 10,
+            "strong": 2,
+            "witness": 16
+          },
+          "G2b": {
+            "eligible": 311,
+            "matched": 10,
+            "strong": 3,
+            "witness": 16
+          },
+          "both": {
+            "eligible": 275,
+            "matched": 7,
+            "strong": 1,
+            "witness": 12
+          }
+        },
+        "seed": 0
+      },
+      {
+        "contributing_cases": {
+          "G0": 7,
+          "G1": 6,
+          "G2a": 6,
+          "G2b": 5,
+          "both": 5
+        },
+        "denominator": 576,
+        "draw": 1,
+        "gates": {
+          "G0": {
+            "eligible": 460,
+            "matched": 7,
+            "strong": 2,
+            "witness": 19
+          },
+          "G1": {
+            "eligible": 432,
+            "matched": 6,
+            "strong": 2,
+            "witness": 15
+          },
+          "G2a": {
+            "eligible": 380,
+            "matched": 6,
+            "strong": 2,
+            "witness": 12
+          },
+          "G2b": {
+            "eligible": 277,
+            "matched": 5,
+            "strong": 2,
+            "witness": 12
+          },
+          "both": {
+            "eligible": 234,
+            "matched": 5,
+            "strong": 2,
+            "witness": 9
+          }
+        },
+        "seed": 0
+      },
+      {
+        "contributing_cases": {
+          "G0": 33,
+          "G1": 29,
+          "G2a": 26,
+          "G2b": 8,
+          "both": 5
+        },
+        "denominator": 576,
+        "draw": 0,
+        "gates": {
+          "G0": {
+            "eligible": 460,
+            "matched": 51,
+            "strong": 12,
+            "witness": 70
+          },
+          "G1": {
+            "eligible": 405,
+            "matched": 43,
+            "strong": 12,
+            "witness": 56
+          },
+          "G2a": {
+            "eligible": 266,
+            "matched": 31,
+            "strong": 8,
+            "witness": 41
+          },
+          "G2b": {
+            "eligible": 104,
+            "matched": 9,
+            "strong": 3,
+            "witness": 15
+          },
+          "both": {
+            "eligible": 66,
+            "matched": 5,
+            "strong": 3,
+            "witness": 8
+          }
+        },
+        "seed": 1
+      },
+      {
+        "contributing_cases": {
+          "G0": 29,
+          "G1": 26,
+          "G2a": 21,
+          "G2b": 9,
+          "both": 5
+        },
+        "denominator": 576,
+        "draw": 1,
+        "gates": {
+          "G0": {
+            "eligible": 445,
+            "matched": 38,
+            "strong": 16,
+            "witness": 59
+          },
+          "G1": {
+            "eligible": 401,
+            "matched": 32,
+            "strong": 14,
+            "witness": 49
+          },
+          "G2a": {
+            "eligible": 279,
+            "matched": 23,
+            "strong": 11,
+            "witness": 31
+          },
+          "G2b": {
+            "eligible": 121,
+            "matched": 10,
+            "strong": 5,
+            "witness": 14
+          },
+          "both": {
+            "eligible": 80,
+            "matched": 5,
+            "strong": 4,
+            "witness": 6
+          }
+        },
+        "seed": 1
+      }
+    ],
+    "structural_opportunity_coverage": 1.0
+  },
+  "reconstruction_comparisons": [
+    {
+      "byte_identical": true,
+      "file": "CPU_REPLAY.json"
+    },
+    {
+      "byte_identical": true,
+      "file": "PRIMARY.json"
+    },
+    {
+      "byte_identical": true,
+      "file": "READ_COSTS.json"
+    },
+    {
+      "byte_identical": true,
+      "file": "REPEATS.json"
+    },
+    {
+      "byte_identical": false,
+      "file": "UTILITY.json"
+    },
+    {
+      "byte_identical": true,
+      "file": "WITHHELD_LOSSES.json"
+    }
+  ],
+  "repeats": {
+    "cases": 4,
+    "logical_records": 2312,
+    "strictly_equal": true
+  },
+  "retention_fraction": 0.5,
+  "source_archive_sha256": "0f52f3057797c3d07c9e945c1f920834bab37364fce11f53ed13e404c29431c4",
+  "sources": [
+    "expected/PRIMARY.json",
+    "expected/UTILITY.json",
+    "expected/REPEATS.json",
+    "diagnostics/DIAGNOSTICS.json",
+    "protocol/SCOPE.json"
+  ],
+  "utility": {
+    "B_minus_A_50pct": -0.017446633825944163,
+    "bootstrap_draws": 10000,
+    "draw": 0,
+    "interface": "literal No/Yes",
+    "interval95": [
+      -0.03534572879330944,
+      0.00650352733686067
+    ],
+    "quantitative_headline_available": true,
+    "undefined_bootstrap_draws": 0
+  }
+}

@@ -1,5 +1,10 @@
 # Do current facts determine later answers?
 
+The CPU audit's private input location and local interpreter paths are removed
+in [documented privacy derivatives](../privacy_derivatives.json). Original
+identities remain separately bound. Score rows, gates and numerical results
+are unchanged.
+
 Exact study IDs: prospective confirmation `V10`, retrospective census `V9`,
 archival corroboration `V6`, and combined-update evidence `V7`.
 
@@ -89,3 +94,75 @@ No neural inference, experiment allocation or private operations logs are part
 of this package. The separate [public-data in-context study](../in_context_updates/README.md)
 is completed and replayable. Conventional parameter-editor validation remains
 unresolved; it must not be conflated with the early unexecuted AlphaEdit route.
+
+## Post-hoc CPU robustness audit
+
+The canonical audit is `V10_CPU_AUDIT_RESULTS_20260917.zip`. Its four members
+are retained byte-for-byte in [cpu_audit/](cpu_audit/). This is a post-hoc
+reanalysis of the original saved V10 runs. The prospective classifications
+remain unchanged.
+
+```sh
+python -m repro.cpu_robustness --output reproduced/cpu-audit
+python -m pytest tests/test_cpu_robustness.py
+```
+
+The replay reads the existing `independent_verification/inputs/` files. It derives
+logical answers from the case designs and model answers from saved scores.
+It varies which history pairs and additional correctness controls qualify;
+the facts, questions, scores and original witness definition stay fixed.
+It then compares every exported control flag and matching pair against the
+canonical CSV. A surviving disagreement is a history-dependent answer under
+the added controls. No model or tokenizer is loaded.
+
+| Canonical artifact | Role |
+|---|---|
+| [GATE_SPEC.json](cpu_audit/GATE_SPEC.json) | Fixed same-pair and cross-pair question mappings, matching rules and post-hoc status |
+| [RESULTS.csv](cpu_audit/RESULTS.csv) | One row per coded opportunity, including eligibility, matching pairs and control intersections |
+| [SURVIVORS.json](cpu_audit/SURVIVORS.json) | Surviving examples, full response panels and manual-review selections |
+| [CPU_AUDIT_REPORT.md](cpu_audit/CPU_AUDIT_REPORT.md) | Unmodified source report, detailed tables and historical commands |
+| [MANIFEST.json](cpu_audit/MANIFEST.json) | Archive/member hashes, input identity, successful-run binding and verifier provenance |
+
+The portable replay adapts the supplied scalar-score verifier rather than
+rerunning its historical execution wrapper. It exports `summary.json`,
+`by_condition.csv` and `verification.json` into a new directory. The
+[paper guide](../../PAPER_GUIDE.md#post-hoc-robustness) maps each claim to exact
+CSV and replay fields. [Results and Claims](../../docs/RESULTS_AND_CLAIMS.md#post-hoc-controls-on-the-same-saved-runs)
+gives the canonical interpretation and limitations.
+
+The newer audit distinguishes the same-pair logical consistency control from
+the cross-pair propagation control. It supersedes the earlier
+`V10_SAME_INSTANCE_CPU_RESULTS_20260917.zip` for the G2 interpretation.
+That earlier analysis used the same outputs and remains provenance, not an
+independent replication. Its [receipt](cpu_audit/provenance/prior_receipt.json)
+and technical recovery records are retained without importing its headline
+tables as additional evidence.
+
+Both stronger controls require correct answers to all measured direct factual
+questions and the original references. The same-pair control checks the other
+two logically sufficient compositions of the target relation pair, under the
+target answer-code draw. The cross-pair control checks all three compositions
+on each of the other two pairs under that draw. The latter therefore checks
+propagation elsewhere in the same relational system.
+
+Each model/condition has 1,152 coded opportunities. Learned-method summaries
+combine two seeds, giving 2,304 opportunities; shared designs are counted once
+within each reported union. These pooled counts are descriptive. Cross-code
+fields are counted only where `semantic_representative=True`, giving nine
+semantic opportunities per design rather than eighteen coded opportunities.
+Both codes must show disagreement on the same matched pair in the same direction.
+
+### Floating-point recovery
+
+An extra equality check initially stopped the earlier audit on a probability
+discrepancy of about 2.2e-16. The intended `atol=1e-12, rtol=0` tolerance was
+restored for probabilities. Scientific classifications, hard answers, identities
+and counts continued to require exact agreement. A regression test covered
+one-ULP drift, a changed witness flag and excessive numerical drift. The recovery
+reused the hash-bound completed reconstruction.
+
+This was a technical check failure, separate from the scientific result.
+The original [incident record](cpu_audit/provenance/INCIDENT_001.md) and
+[regression source](cpu_audit/provenance/test_analysis.py) are retained unchanged.
+The portable replay tests the same numerical-versus-classification boundary in
+[test_cpu_robustness.py](../../tests/test_cpu_robustness.py).

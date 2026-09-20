@@ -1,0 +1,580 @@
+[
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "FHV1-FINAL-0062-d0-00",
+    "root_id": "FHV1-FINAL-0062",
+    "spec": {
+      "a": 1,
+      "b": 2,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Pia favor the Orchard proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "FHV1-FINAL-0062-d0-01",
+    "root_id": "FHV1-FINAL-0062",
+    "spec": {
+      "a": 1,
+      "b": 2,
+      "kind": "opposes",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Pia oppose the Orchard proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "FHV1-FINAL-0062-d0-02",
+    "root_id": "FHV1-FINAL-0062",
+    "spec": {
+      "a": 1,
+      "b": 2,
+      "kind": "same",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Do Pia and Orla take the same side on Orchard?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "FHV1-FINAL-0062-d0-03",
+    "root_id": "FHV1-FINAL-0062",
+    "spec": {
+      "a": 2,
+      "b": 1,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Orla favor the Orchard proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "FHV1-FINAL-0062-d0-04",
+    "root_id": "FHV1-FINAL-0062",
+    "spec": {
+      "a": 2,
+      "b": 1,
+      "kind": "opposes",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Orla oppose the Orchard proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "FHV1-FINAL-0062-d0-05",
+    "root_id": "FHV1-FINAL-0062",
+    "spec": {
+      "a": 1,
+      "b": 2,
+      "kind": "direct",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does Pia favor the Theater proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "FHV1-FINAL-0062-d0-06",
+    "root_id": "FHV1-FINAL-0062",
+    "spec": {
+      "a": 1,
+      "b": 2,
+      "kind": "both",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Is the Orchard proposal supported by both Pia and Orla?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "FHV1-FINAL-0062-d0-07",
+    "root_id": "FHV1-FINAL-0062",
+    "spec": {
+      "a": 1,
+      "b": 2,
+      "kind": "either",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Pia and Orla support Orchard?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "FHV1-FINAL-0062-d0-08",
+    "root_id": "FHV1-FINAL-0062",
+    "spec": {
+      "a": 3,
+      "b": 1,
+      "kind": "same",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Do Zara and Pia take the same side on Orchard?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "FHV1-FINAL-0062-d0-09",
+    "root_id": "FHV1-FINAL-0062",
+    "spec": {
+      "a": 3,
+      "b": 1,
+      "kind": "both",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Is the Orchard proposal supported by both Zara and Pia?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "FHV1-FINAL-0062-d0-10",
+    "root_id": "FHV1-FINAL-0062",
+    "spec": {
+      "a": 3,
+      "b": 1,
+      "kind": "either",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Zara and Pia support Orchard?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "FHV1-FINAL-0062-d0-11",
+    "root_id": "FHV1-FINAL-0062",
+    "spec": {
+      "a": 3,
+      "b": 1,
+      "kind": "direct",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does Zara favor the Theater proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "FHV1-FINAL-0062-d0-extra0",
+    "root_id": "FHV1-FINAL-0062",
+    "spec": {
+      "a": 3,
+      "b": 1,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Zara favor the Orchard proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "FHV1-FINAL-0062-d0-extra1",
+    "root_id": "FHV1-FINAL-0062",
+    "spec": {
+      "a": 2,
+      "b": 3,
+      "kind": "same",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Do Orla and Zara take the same side on Orchard?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "FHV1-FINAL-0062-d0-extra2",
+    "root_id": "FHV1-FINAL-0062",
+    "spec": {
+      "a": 2,
+      "b": 3,
+      "kind": "both",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Is the Orchard proposal supported by both Orla and Zara?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "FHV1-FINAL-0062-d0-extra3",
+    "root_id": "FHV1-FINAL-0062",
+    "spec": {
+      "a": 2,
+      "b": 3,
+      "kind": "either",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Orla and Zara support Orchard?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "FHV1-FINAL-0062-d0-extra4",
+    "root_id": "FHV1-FINAL-0062",
+    "spec": {
+      "a": 4,
+      "b": 1,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Nico favor the Orchard proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "FHV1-FINAL-0062-d1-00",
+    "root_id": "FHV1-FINAL-0062",
+    "spec": {
+      "a": 1,
+      "b": 2,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Pia favor the Orchard proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "FHV1-FINAL-0062-d1-01",
+    "root_id": "FHV1-FINAL-0062",
+    "spec": {
+      "a": 1,
+      "b": 2,
+      "kind": "opposes",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Pia oppose the Orchard proposal?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "FHV1-FINAL-0062-d1-02",
+    "root_id": "FHV1-FINAL-0062",
+    "spec": {
+      "a": 1,
+      "b": 2,
+      "kind": "same",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Do Pia and Orla take the same side on Orchard?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "FHV1-FINAL-0062-d1-03",
+    "root_id": "FHV1-FINAL-0062",
+    "spec": {
+      "a": 2,
+      "b": 1,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Orla favor the Orchard proposal?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "FHV1-FINAL-0062-d1-04",
+    "root_id": "FHV1-FINAL-0062",
+    "spec": {
+      "a": 2,
+      "b": 1,
+      "kind": "opposes",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Orla oppose the Orchard proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "FHV1-FINAL-0062-d1-05",
+    "root_id": "FHV1-FINAL-0062",
+    "spec": {
+      "a": 1,
+      "b": 2,
+      "kind": "direct",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does Pia favor the Theater proposal?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "FHV1-FINAL-0062-d1-06",
+    "root_id": "FHV1-FINAL-0062",
+    "spec": {
+      "a": 1,
+      "b": 2,
+      "kind": "both",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Is the Orchard proposal supported by both Pia and Orla?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "FHV1-FINAL-0062-d1-07",
+    "root_id": "FHV1-FINAL-0062",
+    "spec": {
+      "a": 1,
+      "b": 2,
+      "kind": "either",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Pia and Orla support Orchard?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "FHV1-FINAL-0062-d1-08",
+    "root_id": "FHV1-FINAL-0062",
+    "spec": {
+      "a": 3,
+      "b": 1,
+      "kind": "same",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Do Zara and Pia take the same side on Orchard?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "FHV1-FINAL-0062-d1-09",
+    "root_id": "FHV1-FINAL-0062",
+    "spec": {
+      "a": 3,
+      "b": 1,
+      "kind": "both",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Is the Orchard proposal supported by both Zara and Pia?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "FHV1-FINAL-0062-d1-10",
+    "root_id": "FHV1-FINAL-0062",
+    "spec": {
+      "a": 3,
+      "b": 1,
+      "kind": "either",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Zara and Pia support Orchard?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "FHV1-FINAL-0062-d1-11",
+    "root_id": "FHV1-FINAL-0062",
+    "spec": {
+      "a": 3,
+      "b": 1,
+      "kind": "direct",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does Zara favor the Theater proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "FHV1-FINAL-0062-d1-extra0",
+    "root_id": "FHV1-FINAL-0062",
+    "spec": {
+      "a": 3,
+      "b": 1,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Zara favor the Orchard proposal?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "FHV1-FINAL-0062-d1-extra1",
+    "root_id": "FHV1-FINAL-0062",
+    "spec": {
+      "a": 2,
+      "b": 3,
+      "kind": "same",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Do Orla and Zara take the same side on Orchard?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "FHV1-FINAL-0062-d1-extra2",
+    "root_id": "FHV1-FINAL-0062",
+    "spec": {
+      "a": 2,
+      "b": 3,
+      "kind": "both",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Is the Orchard proposal supported by both Orla and Zara?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "FHV1-FINAL-0062-d1-extra3",
+    "root_id": "FHV1-FINAL-0062",
+    "spec": {
+      "a": 2,
+      "b": 3,
+      "kind": "either",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Orla and Zara support Orchard?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "FHV1-FINAL-0062-d1-extra4",
+    "root_id": "FHV1-FINAL-0062",
+    "spec": {
+      "a": 4,
+      "b": 1,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Nico favor the Orchard proposal?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  }
+]

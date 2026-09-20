@@ -1,0 +1,90 @@
+{
+  "root_id": "SSC1-FINAL-0003",
+  "method": "LATEST_SAME_WORDING",
+  "target": "SSC1-FINAL-0003-d0-09",
+  "other_format_target": "SSC1-FINAL-0003-d1-09",
+  "origins": [
+    1,
+    2
+  ],
+  "prefix_tokens": [
+    834,
+    834
+  ],
+  "changed_facts": [
+    1,
+    1
+  ],
+  "table": [
+    {
+      "query_id": "SSC1-FINAL-0003-d0-00",
+      "question": "Does Wren favor the Gallery proposal?\nAnswer with exactly one of No, Yes.",
+      "correct": 0,
+      "answers": [
+        0,
+        0
+      ]
+    },
+    {
+      "query_id": "SSC1-FINAL-0003-d0-extra0",
+      "question": "Does Mina favor the Gallery proposal?\nAnswer with exactly one of No, Yes.",
+      "correct": 0,
+      "answers": [
+        0,
+        0
+      ]
+    },
+    {
+      "query_id": "SSC1-FINAL-0003-d0-08",
+      "question": "Do Mina and Wren take the same side on Gallery?\nAnswer with exactly one of No, Yes.",
+      "correct": 1,
+      "answers": [
+        1,
+        1
+      ]
+    },
+    {
+      "query_id": "SSC1-FINAL-0003-d0-10",
+      "question": "Does at least one of Mina and Wren support Gallery?\nAnswer with exactly one of No, Yes.",
+      "correct": 0,
+      "answers": [
+        0,
+        0
+      ]
+    },
+    {
+      "query_id": "SSC1-FINAL-0003-d0-09",
+      "question": "Is the Gallery proposal supported by both Mina and Wren?\nAnswer with exactly one of No, Yes.",
+      "correct": 0,
+      "answers": [
+        0,
+        1
+      ]
+    }
+  ],
+  "correct_answer_scores": [
+    0.9983893723921086,
+    0.043653464819593354
+  ],
+  "candidate_masses": [
+    0.9999828284739344,
+    0.9999966970963643
+  ],
+  "direct_checks": 12,
+  "direct_histories": 8,
+  "logical_checks": 8,
+  "target_references_correct": true,
+  "other_format_noop_correct": false,
+  "other_format_selected_answers": [
+    1,
+    1
+  ],
+  "repeated_records": 578,
+  "repeated_scores_and_token_bindings_identical": true,
+  "old_target_truth": [
+    0,
+    0
+  ],
+  "selection_for_exposition": "post_hoc",
+  "strongest_cross_format": false
+}

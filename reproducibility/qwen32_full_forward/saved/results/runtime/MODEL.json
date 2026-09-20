@@ -1,0 +1,17 @@
+{
+  "id": "qwen32_t4",
+  "model": "Qwen/Qwen3-32B",
+  "revision": "9216db5781bf21249d130ec9da846c4624c16137",
+  "content": "T4",
+  "native_chat_template": true,
+  "template_kwargs": {
+    "enable_thinking": false
+  },
+  "resource_priority": 3,
+  "tokenizer_revision": "9216db5781bf21249d130ec9da846c4624c16137",
+  "model_pin": "models/Qwen--Qwen3-32B/MODEL_PIN.json",
+  "model_pin_sha256": "fc2fd252c9553b2e49855f1661dc2b9c8533481a32ca99707d5b859b946ca807",
+  "hidden": 5120,
+  "layers": 64,
+  "cap": null
+}

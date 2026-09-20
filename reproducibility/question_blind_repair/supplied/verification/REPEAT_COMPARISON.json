@@ -1,0 +1,502 @@
+{
+  "blocks": 14,
+  "comparisons": [
+    {
+      "all_score_and_binding_fields_pass": true,
+      "discrepancies": [],
+      "excluded_wall_clock_fields": [
+        "batch_seconds",
+        "compile_seconds",
+        "preprocessing_seconds",
+        "qualification_seconds"
+      ],
+      "failures": [],
+      "max_delta": 0.0,
+      "phase": "anchor",
+      "raw_record_exact_equal": false,
+      "root_id": "QBR1-FINAL-0225",
+      "rows": 850,
+      "score_binding_exact_equal": true,
+      "seal": {
+        "discrepancies": [],
+        "excluded_wall_clock_fields": [
+          "batch_seconds",
+          "compile_seconds",
+          "preprocessing_seconds",
+          "qualification_seconds"
+        ],
+        "failures": [],
+        "max_delta": 0.0,
+        "raw_record_exact_equal": false,
+        "score_binding_exact_equal": true,
+        "tolerance": 1e-06,
+        "tolerance_pass": true
+      },
+      "seed": 0,
+      "tolerance": 1e-06,
+      "tolerance_pass": true
+    },
+    {
+      "all_score_and_binding_fields_pass": true,
+      "discrepancies": [],
+      "excluded_wall_clock_fields": [
+        "batch_seconds",
+        "compile_seconds",
+        "preprocessing_seconds",
+        "qualification_seconds"
+      ],
+      "failures": [],
+      "max_delta": 0.0,
+      "phase": "anchor",
+      "raw_record_exact_equal": false,
+      "root_id": "QBR1-FINAL-0225",
+      "rows": 850,
+      "score_binding_exact_equal": true,
+      "seal": {
+        "discrepancies": [],
+        "excluded_wall_clock_fields": [
+          "batch_seconds",
+          "compile_seconds",
+          "preprocessing_seconds",
+          "qualification_seconds"
+        ],
+        "failures": [],
+        "max_delta": 0.0,
+        "raw_record_exact_equal": false,
+        "score_binding_exact_equal": true,
+        "tolerance": 1e-06,
+        "tolerance_pass": true
+      },
+      "seed": 1,
+      "tolerance": 1e-06,
+      "tolerance_pass": true
+    },
+    {
+      "all_score_and_binding_fields_pass": true,
+      "discrepancies": [],
+      "excluded_wall_clock_fields": [
+        "batch_seconds",
+        "compile_seconds",
+        "preprocessing_seconds",
+        "qualification_seconds"
+      ],
+      "failures": [],
+      "max_delta": 0.0,
+      "phase": "repeat",
+      "raw_record_exact_equal": false,
+      "root_id": "QBR1-FINAL-0037",
+      "rows": 850,
+      "score_binding_exact_equal": true,
+      "seal": {
+        "discrepancies": [],
+        "excluded_wall_clock_fields": [
+          "batch_seconds",
+          "compile_seconds",
+          "preprocessing_seconds",
+          "qualification_seconds"
+        ],
+        "failures": [],
+        "max_delta": 0.0,
+        "raw_record_exact_equal": false,
+        "score_binding_exact_equal": true,
+        "tolerance": 1e-06,
+        "tolerance_pass": true
+      },
+      "seed": 0,
+      "tolerance": 1e-06,
+      "tolerance_pass": true
+    },
+    {
+      "all_score_and_binding_fields_pass": true,
+      "discrepancies": [],
+      "excluded_wall_clock_fields": [
+        "batch_seconds",
+        "compile_seconds",
+        "preprocessing_seconds",
+        "qualification_seconds"
+      ],
+      "failures": [],
+      "max_delta": 0.0,
+      "phase": "repeat",
+      "raw_record_exact_equal": false,
+      "root_id": "QBR1-FINAL-0058",
+      "rows": 850,
+      "score_binding_exact_equal": true,
+      "seal": {
+        "discrepancies": [],
+        "excluded_wall_clock_fields": [
+          "batch_seconds",
+          "compile_seconds",
+          "preprocessing_seconds",
+          "qualification_seconds"
+        ],
+        "failures": [],
+        "max_delta": 0.0,
+        "raw_record_exact_equal": false,
+        "score_binding_exact_equal": true,
+        "tolerance": 1e-06,
+        "tolerance_pass": true
+      },
+      "seed": 0,
+      "tolerance": 1e-06,
+      "tolerance_pass": true
+    },
+    {
+      "all_score_and_binding_fields_pass": true,
+      "discrepancies": [],
+      "excluded_wall_clock_fields": [
+        "batch_seconds",
+        "compile_seconds",
+        "preprocessing_seconds",
+        "qualification_seconds"
+      ],
+      "failures": [],
+      "max_delta": 0.0,
+      "phase": "repeat",
+      "raw_record_exact_equal": false,
+      "root_id": "QBR1-FINAL-0070",
+      "rows": 850,
+      "score_binding_exact_equal": true,
+      "seal": {
+        "discrepancies": [],
+        "excluded_wall_clock_fields": [
+          "batch_seconds",
+          "compile_seconds",
+          "preprocessing_seconds",
+          "qualification_seconds"
+        ],
+        "failures": [],
+        "max_delta": 0.0,
+        "raw_record_exact_equal": false,
+        "score_binding_exact_equal": true,
+        "tolerance": 1e-06,
+        "tolerance_pass": true
+      },
+      "seed": 0,
+      "tolerance": 1e-06,
+      "tolerance_pass": true
+    },
+    {
+      "all_score_and_binding_fields_pass": true,
+      "discrepancies": [],
+      "excluded_wall_clock_fields": [
+        "batch_seconds",
+        "compile_seconds",
+        "preprocessing_seconds",
+        "qualification_seconds"
+      ],
+      "failures": [],
+      "max_delta": 0.0,
+      "phase": "repeat",
+      "raw_record_exact_equal": false,
+      "root_id": "QBR1-FINAL-0078",
+      "rows": 850,
+      "score_binding_exact_equal": true,
+      "seal": {
+        "discrepancies": [],
+        "excluded_wall_clock_fields": [
+          "batch_seconds",
+          "compile_seconds",
+          "preprocessing_seconds",
+          "qualification_seconds"
+        ],
+        "failures": [],
+        "max_delta": 0.0,
+        "raw_record_exact_equal": false,
+        "score_binding_exact_equal": true,
+        "tolerance": 1e-06,
+        "tolerance_pass": true
+      },
+      "seed": 0,
+      "tolerance": 1e-06,
+      "tolerance_pass": true
+    },
+    {
+      "all_score_and_binding_fields_pass": true,
+      "discrepancies": [],
+      "excluded_wall_clock_fields": [
+        "batch_seconds",
+        "compile_seconds",
+        "preprocessing_seconds",
+        "qualification_seconds"
+      ],
+      "failures": [],
+      "max_delta": 0.0,
+      "phase": "repeat",
+      "raw_record_exact_equal": false,
+      "root_id": "QBR1-FINAL-0127",
+      "rows": 1394,
+      "score_binding_exact_equal": true,
+      "seal": {
+        "discrepancies": [],
+        "excluded_wall_clock_fields": [
+          "batch_seconds",
+          "compile_seconds",
+          "preprocessing_seconds",
+          "qualification_seconds"
+        ],
+        "failures": [],
+        "max_delta": 0.0,
+        "raw_record_exact_equal": false,
+        "score_binding_exact_equal": true,
+        "tolerance": 1e-06,
+        "tolerance_pass": true
+      },
+      "seed": 0,
+      "tolerance": 1e-06,
+      "tolerance_pass": true
+    },
+    {
+      "all_score_and_binding_fields_pass": true,
+      "discrepancies": [],
+      "excluded_wall_clock_fields": [
+        "batch_seconds",
+        "compile_seconds",
+        "preprocessing_seconds",
+        "qualification_seconds"
+      ],
+      "failures": [],
+      "max_delta": 0.0,
+      "phase": "repeat",
+      "raw_record_exact_equal": false,
+      "root_id": "QBR1-FINAL-0146",
+      "rows": 1394,
+      "score_binding_exact_equal": true,
+      "seal": {
+        "discrepancies": [],
+        "excluded_wall_clock_fields": [
+          "batch_seconds",
+          "compile_seconds",
+          "preprocessing_seconds",
+          "qualification_seconds"
+        ],
+        "failures": [],
+        "max_delta": 0.0,
+        "raw_record_exact_equal": false,
+        "score_binding_exact_equal": true,
+        "tolerance": 1e-06,
+        "tolerance_pass": true
+      },
+      "seed": 0,
+      "tolerance": 1e-06,
+      "tolerance_pass": true
+    },
+    {
+      "all_score_and_binding_fields_pass": true,
+      "discrepancies": [],
+      "excluded_wall_clock_fields": [
+        "batch_seconds",
+        "compile_seconds",
+        "preprocessing_seconds",
+        "qualification_seconds"
+      ],
+      "failures": [],
+      "max_delta": 0.0,
+      "phase": "repeat",
+      "raw_record_exact_equal": false,
+      "root_id": "QBR1-FINAL-0037",
+      "rows": 850,
+      "score_binding_exact_equal": true,
+      "seal": {
+        "discrepancies": [],
+        "excluded_wall_clock_fields": [
+          "batch_seconds",
+          "compile_seconds",
+          "preprocessing_seconds",
+          "qualification_seconds"
+        ],
+        "failures": [],
+        "max_delta": 0.0,
+        "raw_record_exact_equal": false,
+        "score_binding_exact_equal": true,
+        "tolerance": 1e-06,
+        "tolerance_pass": true
+      },
+      "seed": 1,
+      "tolerance": 1e-06,
+      "tolerance_pass": true
+    },
+    {
+      "all_score_and_binding_fields_pass": true,
+      "discrepancies": [],
+      "excluded_wall_clock_fields": [
+        "batch_seconds",
+        "compile_seconds",
+        "preprocessing_seconds",
+        "qualification_seconds"
+      ],
+      "failures": [],
+      "max_delta": 0.0,
+      "phase": "repeat",
+      "raw_record_exact_equal": false,
+      "root_id": "QBR1-FINAL-0058",
+      "rows": 850,
+      "score_binding_exact_equal": true,
+      "seal": {
+        "discrepancies": [],
+        "excluded_wall_clock_fields": [
+          "batch_seconds",
+          "compile_seconds",
+          "preprocessing_seconds",
+          "qualification_seconds"
+        ],
+        "failures": [],
+        "max_delta": 0.0,
+        "raw_record_exact_equal": false,
+        "score_binding_exact_equal": true,
+        "tolerance": 1e-06,
+        "tolerance_pass": true
+      },
+      "seed": 1,
+      "tolerance": 1e-06,
+      "tolerance_pass": true
+    },
+    {
+      "all_score_and_binding_fields_pass": true,
+      "discrepancies": [],
+      "excluded_wall_clock_fields": [
+        "batch_seconds",
+        "compile_seconds",
+        "preprocessing_seconds",
+        "qualification_seconds"
+      ],
+      "failures": [],
+      "max_delta": 0.0,
+      "phase": "repeat",
+      "raw_record_exact_equal": false,
+      "root_id": "QBR1-FINAL-0070",
+      "rows": 850,
+      "score_binding_exact_equal": true,
+      "seal": {
+        "discrepancies": [],
+        "excluded_wall_clock_fields": [
+          "batch_seconds",
+          "compile_seconds",
+          "preprocessing_seconds",
+          "qualification_seconds"
+        ],
+        "failures": [],
+        "max_delta": 0.0,
+        "raw_record_exact_equal": false,
+        "score_binding_exact_equal": true,
+        "tolerance": 1e-06,
+        "tolerance_pass": true
+      },
+      "seed": 1,
+      "tolerance": 1e-06,
+      "tolerance_pass": true
+    },
+    {
+      "all_score_and_binding_fields_pass": true,
+      "discrepancies": [],
+      "excluded_wall_clock_fields": [
+        "batch_seconds",
+        "compile_seconds",
+        "preprocessing_seconds",
+        "qualification_seconds"
+      ],
+      "failures": [],
+      "max_delta": 0.0,
+      "phase": "repeat",
+      "raw_record_exact_equal": false,
+      "root_id": "QBR1-FINAL-0078",
+      "rows": 850,
+      "score_binding_exact_equal": true,
+      "seal": {
+        "discrepancies": [],
+        "excluded_wall_clock_fields": [
+          "batch_seconds",
+          "compile_seconds",
+          "preprocessing_seconds",
+          "qualification_seconds"
+        ],
+        "failures": [],
+        "max_delta": 0.0,
+        "raw_record_exact_equal": false,
+        "score_binding_exact_equal": true,
+        "tolerance": 1e-06,
+        "tolerance_pass": true
+      },
+      "seed": 1,
+      "tolerance": 1e-06,
+      "tolerance_pass": true
+    },
+    {
+      "all_score_and_binding_fields_pass": true,
+      "discrepancies": [],
+      "excluded_wall_clock_fields": [
+        "batch_seconds",
+        "compile_seconds",
+        "preprocessing_seconds",
+        "qualification_seconds"
+      ],
+      "failures": [],
+      "max_delta": 0.0,
+      "phase": "repeat",
+      "raw_record_exact_equal": false,
+      "root_id": "QBR1-FINAL-0127",
+      "rows": 1394,
+      "score_binding_exact_equal": true,
+      "seal": {
+        "discrepancies": [],
+        "excluded_wall_clock_fields": [
+          "batch_seconds",
+          "compile_seconds",
+          "preprocessing_seconds",
+          "qualification_seconds"
+        ],
+        "failures": [],
+        "max_delta": 0.0,
+        "raw_record_exact_equal": false,
+        "score_binding_exact_equal": true,
+        "tolerance": 1e-06,
+        "tolerance_pass": true
+      },
+      "seed": 1,
+      "tolerance": 1e-06,
+      "tolerance_pass": true
+    },
+    {
+      "all_score_and_binding_fields_pass": true,
+      "discrepancies": [],
+      "excluded_wall_clock_fields": [
+        "batch_seconds",
+        "compile_seconds",
+        "preprocessing_seconds",
+        "qualification_seconds"
+      ],
+      "failures": [],
+      "max_delta": 0.0,
+      "phase": "repeat",
+      "raw_record_exact_equal": false,
+      "root_id": "QBR1-FINAL-0146",
+      "rows": 1394,
+      "score_binding_exact_equal": true,
+      "seal": {
+        "discrepancies": [],
+        "excluded_wall_clock_fields": [
+          "batch_seconds",
+          "compile_seconds",
+          "preprocessing_seconds",
+          "qualification_seconds"
+        ],
+        "failures": [],
+        "max_delta": 0.0,
+        "raw_record_exact_equal": false,
+        "score_binding_exact_equal": true,
+        "tolerance": 1e-06,
+        "tolerance_pass": true
+      },
+      "seed": 1,
+      "tolerance": 1e-06,
+      "tolerance_pass": true
+    }
+  ],
+  "max_score_delta": 0.0,
+  "new_independent_observations": 0,
+  "physical_rows": 14076,
+  "post_hoc_selection": true,
+  "primary_bootstrap_unchanged": true,
+  "score_binding_exact_blocks": 14,
+  "status": "ALL_RETAINED_SCORE_BINDINGS_REPRODUCED"
+}

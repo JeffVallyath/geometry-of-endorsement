@@ -1,0 +1,645 @@
+{
+  "changed_counts": [
+    0,
+    1,
+    1,
+    2,
+    1,
+    2,
+    2,
+    3
+  ],
+  "conditions": [
+    "INV_PAIR_NLL_s0",
+    "INV_PAIR_NLL_s1"
+  ],
+  "contexts_per_case": 17,
+  "gates": {
+    "direct": [
+      "FHV1-FINAL-0047-d0-00",
+      "FHV1-FINAL-0047-d0-03",
+      "FHV1-FINAL-0047-d0-05",
+      "FHV1-FINAL-0047-d0-11",
+      "FHV1-FINAL-0047-d0-extra0",
+      "FHV1-FINAL-0047-d0-extra4",
+      "FHV1-FINAL-0047-d1-00",
+      "FHV1-FINAL-0047-d1-03",
+      "FHV1-FINAL-0047-d1-05",
+      "FHV1-FINAL-0047-d1-11",
+      "FHV1-FINAL-0047-d1-extra0",
+      "FHV1-FINAL-0047-d1-extra4"
+    ],
+    "targets": {
+      "FHV1-FINAL-0047-d0-02": {
+        "cross_pair": [
+          "FHV1-FINAL-0047-d0-08",
+          "FHV1-FINAL-0047-d0-09",
+          "FHV1-FINAL-0047-d0-10",
+          "FHV1-FINAL-0047-d0-extra1",
+          "FHV1-FINAL-0047-d0-extra2",
+          "FHV1-FINAL-0047-d0-extra3"
+        ],
+        "draw": 0,
+        "function": "same",
+        "operands": [
+          "FHV1-FINAL-0047-d0-00",
+          "FHV1-FINAL-0047-d0-03"
+        ],
+        "pair": [
+          2,
+          0,
+          5
+        ],
+        "same_pair": [
+          "FHV1-FINAL-0047-d0-06",
+          "FHV1-FINAL-0047-d0-07"
+        ],
+        "twins": [
+          "FHV1-FINAL-0047-d0-02",
+          "FHV1-FINAL-0047-d1-02"
+        ]
+      },
+      "FHV1-FINAL-0047-d0-06": {
+        "cross_pair": [
+          "FHV1-FINAL-0047-d0-08",
+          "FHV1-FINAL-0047-d0-09",
+          "FHV1-FINAL-0047-d0-10",
+          "FHV1-FINAL-0047-d0-extra1",
+          "FHV1-FINAL-0047-d0-extra2",
+          "FHV1-FINAL-0047-d0-extra3"
+        ],
+        "draw": 0,
+        "function": "both",
+        "operands": [
+          "FHV1-FINAL-0047-d0-00",
+          "FHV1-FINAL-0047-d0-03"
+        ],
+        "pair": [
+          2,
+          0,
+          5
+        ],
+        "same_pair": [
+          "FHV1-FINAL-0047-d0-02",
+          "FHV1-FINAL-0047-d0-07"
+        ],
+        "twins": [
+          "FHV1-FINAL-0047-d0-06",
+          "FHV1-FINAL-0047-d1-06"
+        ]
+      },
+      "FHV1-FINAL-0047-d0-07": {
+        "cross_pair": [
+          "FHV1-FINAL-0047-d0-08",
+          "FHV1-FINAL-0047-d0-09",
+          "FHV1-FINAL-0047-d0-10",
+          "FHV1-FINAL-0047-d0-extra1",
+          "FHV1-FINAL-0047-d0-extra2",
+          "FHV1-FINAL-0047-d0-extra3"
+        ],
+        "draw": 0,
+        "function": "either",
+        "operands": [
+          "FHV1-FINAL-0047-d0-00",
+          "FHV1-FINAL-0047-d0-03"
+        ],
+        "pair": [
+          2,
+          0,
+          5
+        ],
+        "same_pair": [
+          "FHV1-FINAL-0047-d0-02",
+          "FHV1-FINAL-0047-d0-06"
+        ],
+        "twins": [
+          "FHV1-FINAL-0047-d0-07",
+          "FHV1-FINAL-0047-d1-07"
+        ]
+      },
+      "FHV1-FINAL-0047-d0-08": {
+        "cross_pair": [
+          "FHV1-FINAL-0047-d0-02",
+          "FHV1-FINAL-0047-d0-06",
+          "FHV1-FINAL-0047-d0-07",
+          "FHV1-FINAL-0047-d0-extra1",
+          "FHV1-FINAL-0047-d0-extra2",
+          "FHV1-FINAL-0047-d0-extra3"
+        ],
+        "draw": 0,
+        "function": "same",
+        "operands": [
+          "FHV1-FINAL-0047-d0-00",
+          "FHV1-FINAL-0047-d0-extra0"
+        ],
+        "pair": [
+          2,
+          1,
+          5
+        ],
+        "same_pair": [
+          "FHV1-FINAL-0047-d0-09",
+          "FHV1-FINAL-0047-d0-10"
+        ],
+        "twins": [
+          "FHV1-FINAL-0047-d0-08",
+          "FHV1-FINAL-0047-d1-08"
+        ]
+      },
+      "FHV1-FINAL-0047-d0-09": {
+        "cross_pair": [
+          "FHV1-FINAL-0047-d0-02",
+          "FHV1-FINAL-0047-d0-06",
+          "FHV1-FINAL-0047-d0-07",
+          "FHV1-FINAL-0047-d0-extra1",
+          "FHV1-FINAL-0047-d0-extra2",
+          "FHV1-FINAL-0047-d0-extra3"
+        ],
+        "draw": 0,
+        "function": "both",
+        "operands": [
+          "FHV1-FINAL-0047-d0-00",
+          "FHV1-FINAL-0047-d0-extra0"
+        ],
+        "pair": [
+          2,
+          1,
+          5
+        ],
+        "same_pair": [
+          "FHV1-FINAL-0047-d0-08",
+          "FHV1-FINAL-0047-d0-10"
+        ],
+        "twins": [
+          "FHV1-FINAL-0047-d0-09",
+          "FHV1-FINAL-0047-d1-09"
+        ]
+      },
+      "FHV1-FINAL-0047-d0-10": {
+        "cross_pair": [
+          "FHV1-FINAL-0047-d0-02",
+          "FHV1-FINAL-0047-d0-06",
+          "FHV1-FINAL-0047-d0-07",
+          "FHV1-FINAL-0047-d0-extra1",
+          "FHV1-FINAL-0047-d0-extra2",
+          "FHV1-FINAL-0047-d0-extra3"
+        ],
+        "draw": 0,
+        "function": "either",
+        "operands": [
+          "FHV1-FINAL-0047-d0-00",
+          "FHV1-FINAL-0047-d0-extra0"
+        ],
+        "pair": [
+          2,
+          1,
+          5
+        ],
+        "same_pair": [
+          "FHV1-FINAL-0047-d0-08",
+          "FHV1-FINAL-0047-d0-09"
+        ],
+        "twins": [
+          "FHV1-FINAL-0047-d0-10",
+          "FHV1-FINAL-0047-d1-10"
+        ]
+      },
+      "FHV1-FINAL-0047-d0-extra1": {
+        "cross_pair": [
+          "FHV1-FINAL-0047-d0-02",
+          "FHV1-FINAL-0047-d0-06",
+          "FHV1-FINAL-0047-d0-07",
+          "FHV1-FINAL-0047-d0-08",
+          "FHV1-FINAL-0047-d0-09",
+          "FHV1-FINAL-0047-d0-10"
+        ],
+        "draw": 0,
+        "function": "same",
+        "operands": [
+          "FHV1-FINAL-0047-d0-03",
+          "FHV1-FINAL-0047-d0-extra0"
+        ],
+        "pair": [
+          2,
+          0,
+          1
+        ],
+        "same_pair": [
+          "FHV1-FINAL-0047-d0-extra2",
+          "FHV1-FINAL-0047-d0-extra3"
+        ],
+        "twins": [
+          "FHV1-FINAL-0047-d0-extra1",
+          "FHV1-FINAL-0047-d1-extra1"
+        ]
+      },
+      "FHV1-FINAL-0047-d0-extra2": {
+        "cross_pair": [
+          "FHV1-FINAL-0047-d0-02",
+          "FHV1-FINAL-0047-d0-06",
+          "FHV1-FINAL-0047-d0-07",
+          "FHV1-FINAL-0047-d0-08",
+          "FHV1-FINAL-0047-d0-09",
+          "FHV1-FINAL-0047-d0-10"
+        ],
+        "draw": 0,
+        "function": "both",
+        "operands": [
+          "FHV1-FINAL-0047-d0-03",
+          "FHV1-FINAL-0047-d0-extra0"
+        ],
+        "pair": [
+          2,
+          0,
+          1
+        ],
+        "same_pair": [
+          "FHV1-FINAL-0047-d0-extra1",
+          "FHV1-FINAL-0047-d0-extra3"
+        ],
+        "twins": [
+          "FHV1-FINAL-0047-d0-extra2",
+          "FHV1-FINAL-0047-d1-extra2"
+        ]
+      },
+      "FHV1-FINAL-0047-d0-extra3": {
+        "cross_pair": [
+          "FHV1-FINAL-0047-d0-02",
+          "FHV1-FINAL-0047-d0-06",
+          "FHV1-FINAL-0047-d0-07",
+          "FHV1-FINAL-0047-d0-08",
+          "FHV1-FINAL-0047-d0-09",
+          "FHV1-FINAL-0047-d0-10"
+        ],
+        "draw": 0,
+        "function": "either",
+        "operands": [
+          "FHV1-FINAL-0047-d0-03",
+          "FHV1-FINAL-0047-d0-extra0"
+        ],
+        "pair": [
+          2,
+          0,
+          1
+        ],
+        "same_pair": [
+          "FHV1-FINAL-0047-d0-extra1",
+          "FHV1-FINAL-0047-d0-extra2"
+        ],
+        "twins": [
+          "FHV1-FINAL-0047-d0-extra3",
+          "FHV1-FINAL-0047-d1-extra3"
+        ]
+      },
+      "FHV1-FINAL-0047-d1-02": {
+        "cross_pair": [
+          "FHV1-FINAL-0047-d1-08",
+          "FHV1-FINAL-0047-d1-09",
+          "FHV1-FINAL-0047-d1-10",
+          "FHV1-FINAL-0047-d1-extra1",
+          "FHV1-FINAL-0047-d1-extra2",
+          "FHV1-FINAL-0047-d1-extra3"
+        ],
+        "draw": 1,
+        "function": "same",
+        "operands": [
+          "FHV1-FINAL-0047-d1-00",
+          "FHV1-FINAL-0047-d1-03"
+        ],
+        "pair": [
+          2,
+          0,
+          5
+        ],
+        "same_pair": [
+          "FHV1-FINAL-0047-d1-06",
+          "FHV1-FINAL-0047-d1-07"
+        ],
+        "twins": [
+          "FHV1-FINAL-0047-d0-02",
+          "FHV1-FINAL-0047-d1-02"
+        ]
+      },
+      "FHV1-FINAL-0047-d1-06": {
+        "cross_pair": [
+          "FHV1-FINAL-0047-d1-08",
+          "FHV1-FINAL-0047-d1-09",
+          "FHV1-FINAL-0047-d1-10",
+          "FHV1-FINAL-0047-d1-extra1",
+          "FHV1-FINAL-0047-d1-extra2",
+          "FHV1-FINAL-0047-d1-extra3"
+        ],
+        "draw": 1,
+        "function": "both",
+        "operands": [
+          "FHV1-FINAL-0047-d1-00",
+          "FHV1-FINAL-0047-d1-03"
+        ],
+        "pair": [
+          2,
+          0,
+          5
+        ],
+        "same_pair": [
+          "FHV1-FINAL-0047-d1-02",
+          "FHV1-FINAL-0047-d1-07"
+        ],
+        "twins": [
+          "FHV1-FINAL-0047-d0-06",
+          "FHV1-FINAL-0047-d1-06"
+        ]
+      },
+      "FHV1-FINAL-0047-d1-07": {
+        "cross_pair": [
+          "FHV1-FINAL-0047-d1-08",
+          "FHV1-FINAL-0047-d1-09",
+          "FHV1-FINAL-0047-d1-10",
+          "FHV1-FINAL-0047-d1-extra1",
+          "FHV1-FINAL-0047-d1-extra2",
+          "FHV1-FINAL-0047-d1-extra3"
+        ],
+        "draw": 1,
+        "function": "either",
+        "operands": [
+          "FHV1-FINAL-0047-d1-00",
+          "FHV1-FINAL-0047-d1-03"
+        ],
+        "pair": [
+          2,
+          0,
+          5
+        ],
+        "same_pair": [
+          "FHV1-FINAL-0047-d1-02",
+          "FHV1-FINAL-0047-d1-06"
+        ],
+        "twins": [
+          "FHV1-FINAL-0047-d0-07",
+          "FHV1-FINAL-0047-d1-07"
+        ]
+      },
+      "FHV1-FINAL-0047-d1-08": {
+        "cross_pair": [
+          "FHV1-FINAL-0047-d1-02",
+          "FHV1-FINAL-0047-d1-06",
+          "FHV1-FINAL-0047-d1-07",
+          "FHV1-FINAL-0047-d1-extra1",
+          "FHV1-FINAL-0047-d1-extra2",
+          "FHV1-FINAL-0047-d1-extra3"
+        ],
+        "draw": 1,
+        "function": "same",
+        "operands": [
+          "FHV1-FINAL-0047-d1-00",
+          "FHV1-FINAL-0047-d1-extra0"
+        ],
+        "pair": [
+          2,
+          1,
+          5
+        ],
+        "same_pair": [
+          "FHV1-FINAL-0047-d1-09",
+          "FHV1-FINAL-0047-d1-10"
+        ],
+        "twins": [
+          "FHV1-FINAL-0047-d0-08",
+          "FHV1-FINAL-0047-d1-08"
+        ]
+      },
+      "FHV1-FINAL-0047-d1-09": {
+        "cross_pair": [
+          "FHV1-FINAL-0047-d1-02",
+          "FHV1-FINAL-0047-d1-06",
+          "FHV1-FINAL-0047-d1-07",
+          "FHV1-FINAL-0047-d1-extra1",
+          "FHV1-FINAL-0047-d1-extra2",
+          "FHV1-FINAL-0047-d1-extra3"
+        ],
+        "draw": 1,
+        "function": "both",
+        "operands": [
+          "FHV1-FINAL-0047-d1-00",
+          "FHV1-FINAL-0047-d1-extra0"
+        ],
+        "pair": [
+          2,
+          1,
+          5
+        ],
+        "same_pair": [
+          "FHV1-FINAL-0047-d1-08",
+          "FHV1-FINAL-0047-d1-10"
+        ],
+        "twins": [
+          "FHV1-FINAL-0047-d0-09",
+          "FHV1-FINAL-0047-d1-09"
+        ]
+      },
+      "FHV1-FINAL-0047-d1-10": {
+        "cross_pair": [
+          "FHV1-FINAL-0047-d1-02",
+          "FHV1-FINAL-0047-d1-06",
+          "FHV1-FINAL-0047-d1-07",
+          "FHV1-FINAL-0047-d1-extra1",
+          "FHV1-FINAL-0047-d1-extra2",
+          "FHV1-FINAL-0047-d1-extra3"
+        ],
+        "draw": 1,
+        "function": "either",
+        "operands": [
+          "FHV1-FINAL-0047-d1-00",
+          "FHV1-FINAL-0047-d1-extra0"
+        ],
+        "pair": [
+          2,
+          1,
+          5
+        ],
+        "same_pair": [
+          "FHV1-FINAL-0047-d1-08",
+          "FHV1-FINAL-0047-d1-09"
+        ],
+        "twins": [
+          "FHV1-FINAL-0047-d0-10",
+          "FHV1-FINAL-0047-d1-10"
+        ]
+      },
+      "FHV1-FINAL-0047-d1-extra1": {
+        "cross_pair": [
+          "FHV1-FINAL-0047-d1-02",
+          "FHV1-FINAL-0047-d1-06",
+          "FHV1-FINAL-0047-d1-07",
+          "FHV1-FINAL-0047-d1-08",
+          "FHV1-FINAL-0047-d1-09",
+          "FHV1-FINAL-0047-d1-10"
+        ],
+        "draw": 1,
+        "function": "same",
+        "operands": [
+          "FHV1-FINAL-0047-d1-03",
+          "FHV1-FINAL-0047-d1-extra0"
+        ],
+        "pair": [
+          2,
+          0,
+          1
+        ],
+        "same_pair": [
+          "FHV1-FINAL-0047-d1-extra2",
+          "FHV1-FINAL-0047-d1-extra3"
+        ],
+        "twins": [
+          "FHV1-FINAL-0047-d0-extra1",
+          "FHV1-FINAL-0047-d1-extra1"
+        ]
+      },
+      "FHV1-FINAL-0047-d1-extra2": {
+        "cross_pair": [
+          "FHV1-FINAL-0047-d1-02",
+          "FHV1-FINAL-0047-d1-06",
+          "FHV1-FINAL-0047-d1-07",
+          "FHV1-FINAL-0047-d1-08",
+          "FHV1-FINAL-0047-d1-09",
+          "FHV1-FINAL-0047-d1-10"
+        ],
+        "draw": 1,
+        "function": "both",
+        "operands": [
+          "FHV1-FINAL-0047-d1-03",
+          "FHV1-FINAL-0047-d1-extra0"
+        ],
+        "pair": [
+          2,
+          0,
+          1
+        ],
+        "same_pair": [
+          "FHV1-FINAL-0047-d1-extra1",
+          "FHV1-FINAL-0047-d1-extra3"
+        ],
+        "twins": [
+          "FHV1-FINAL-0047-d0-extra2",
+          "FHV1-FINAL-0047-d1-extra2"
+        ]
+      },
+      "FHV1-FINAL-0047-d1-extra3": {
+        "cross_pair": [
+          "FHV1-FINAL-0047-d1-02",
+          "FHV1-FINAL-0047-d1-06",
+          "FHV1-FINAL-0047-d1-07",
+          "FHV1-FINAL-0047-d1-08",
+          "FHV1-FINAL-0047-d1-09",
+          "FHV1-FINAL-0047-d1-10"
+        ],
+        "draw": 1,
+        "function": "either",
+        "operands": [
+          "FHV1-FINAL-0047-d1-03",
+          "FHV1-FINAL-0047-d1-extra0"
+        ],
+        "pair": [
+          2,
+          0,
+          1
+        ],
+        "same_pair": [
+          "FHV1-FINAL-0047-d1-extra1",
+          "FHV1-FINAL-0047-d1-extra2"
+        ],
+        "twins": [
+          "FHV1-FINAL-0047-d0-extra3",
+          "FHV1-FINAL-0047-d1-extra3"
+        ]
+      }
+    }
+  },
+  "index": 47,
+  "prefix_lengths": [
+    513,
+    512,
+    512,
+    511,
+    514,
+    513,
+    513,
+    512
+  ],
+  "selected_anchor_pair": [
+    1,
+    2
+  ],
+  "split": "FINAL",
+  "structural_pairs": [
+    [
+      1,
+      2
+    ],
+    [
+      5,
+      6
+    ]
+  ],
+  "utility": {
+    "0": {
+      "accuracy_queries": [
+        "FHV1-FINAL-0047-d0-extra1",
+        "FHV1-FINAL-0047-d0-extra2",
+        "FHV1-FINAL-0047-d0-06",
+        "FHV1-FINAL-0047-d0-07",
+        "FHV1-FINAL-0047-d0-08",
+        "FHV1-FINAL-0047-d0-10"
+      ],
+      "accuracy_read_budget": 6,
+      "direct": [
+        "FHV1-FINAL-0047-d0-00",
+        "FHV1-FINAL-0047-d0-03",
+        "FHV1-FINAL-0047-d0-05",
+        "FHV1-FINAL-0047-d0-11",
+        "FHV1-FINAL-0047-d0-extra0",
+        "FHV1-FINAL-0047-d0-extra4"
+      ],
+      "history_queries": [
+        "FHV1-FINAL-0047-d0-extra1",
+        "FHV1-FINAL-0047-d0-07",
+        "FHV1-FINAL-0047-d0-08"
+      ],
+      "history_read_budget": 6,
+      "withheld_queries": [
+        "FHV1-FINAL-0047-d0-extra3",
+        "FHV1-FINAL-0047-d0-02",
+        "FHV1-FINAL-0047-d0-09"
+      ]
+    },
+    "1": {
+      "accuracy_queries": [
+        "FHV1-FINAL-0047-d1-extra1",
+        "FHV1-FINAL-0047-d1-extra2",
+        "FHV1-FINAL-0047-d1-06",
+        "FHV1-FINAL-0047-d1-07",
+        "FHV1-FINAL-0047-d1-08",
+        "FHV1-FINAL-0047-d1-10"
+      ],
+      "accuracy_read_budget": 6,
+      "direct": [
+        "FHV1-FINAL-0047-d1-00",
+        "FHV1-FINAL-0047-d1-03",
+        "FHV1-FINAL-0047-d1-05",
+        "FHV1-FINAL-0047-d1-11",
+        "FHV1-FINAL-0047-d1-extra0",
+        "FHV1-FINAL-0047-d1-extra4"
+      ],
+      "history_queries": [
+        "FHV1-FINAL-0047-d1-extra1",
+        "FHV1-FINAL-0047-d1-07",
+        "FHV1-FINAL-0047-d1-08"
+      ],
+      "history_read_budget": 6,
+      "withheld_queries": [
+        "FHV1-FINAL-0047-d1-extra3",
+        "FHV1-FINAL-0047-d1-02",
+        "FHV1-FINAL-0047-d1-09"
+      ]
+    }
+  }
+}

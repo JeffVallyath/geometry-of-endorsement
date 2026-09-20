@@ -1,0 +1,745 @@
+{
+  "classification": "POST_HOC_DIAGNOSTICS_NOT_FROZEN_ENDPOINTS",
+  "definition": "Exact token inventory means equal token-ID multisets, including multiplicity, within an already count/length-matched witness pair. Token order and relation binding remain different.",
+  "exact_token_inventory_cases": 14,
+  "exact_token_inventory_observations": 22,
+  "primary_cases": 14,
+  "primary_observations": 22,
+  "withheld_target_both_accept": 13,
+  "withheld_target_cases": 7,
+  "withheld_target_observations": 13,
+  "withheld_target_selected_pair_disagreements": 9,
+  "withheld_target_selected_pair_errors": 9,
+  "witnesses": [
+    {
+      "draw": 0,
+      "exact_token_inventory_pairs": [
+        [
+          5,
+          6
+        ]
+      ],
+      "matched_witness_pairs": [
+        [
+          5,
+          6
+        ]
+      ],
+      "query_id": "FHV1-FINAL-0016-d0-extra3",
+      "root_id": "FHV1-FINAL-0016",
+      "seed": 0,
+      "selected_pair": [
+        6,
+        5
+      ],
+      "selected_pair_target_error": true,
+      "selected_pair_valid_disagreement": true,
+      "target_is_withheld": false,
+      "validator_A_accept": false,
+      "validator_B_accept": true
+    },
+    {
+      "draw": 0,
+      "exact_token_inventory_pairs": [
+        [
+          1,
+          2
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "matched_witness_pairs": [
+        [
+          1,
+          2
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "query_id": "FHV1-FINAL-0017-d0-08",
+      "root_id": "FHV1-FINAL-0017",
+      "seed": 0,
+      "selected_pair": [
+        6,
+        5
+      ],
+      "selected_pair_target_error": true,
+      "selected_pair_valid_disagreement": true,
+      "target_is_withheld": true,
+      "validator_A_accept": true,
+      "validator_B_accept": true
+    },
+    {
+      "draw": 1,
+      "exact_token_inventory_pairs": [
+        [
+          1,
+          2
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "matched_witness_pairs": [
+        [
+          1,
+          2
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "query_id": "FHV1-FINAL-0017-d1-08",
+      "root_id": "FHV1-FINAL-0017",
+      "seed": 0,
+      "selected_pair": [
+        6,
+        5
+      ],
+      "selected_pair_target_error": true,
+      "selected_pair_valid_disagreement": true,
+      "target_is_withheld": true,
+      "validator_A_accept": true,
+      "validator_B_accept": true
+    },
+    {
+      "draw": 0,
+      "exact_token_inventory_pairs": [
+        [
+          3,
+          5
+        ]
+      ],
+      "matched_witness_pairs": [
+        [
+          3,
+          5
+        ]
+      ],
+      "query_id": "FHV1-FINAL-0024-d0-08",
+      "root_id": "FHV1-FINAL-0024",
+      "seed": 1,
+      "selected_pair": [
+        3,
+        5
+      ],
+      "selected_pair_target_error": true,
+      "selected_pair_valid_disagreement": true,
+      "target_is_withheld": false,
+      "validator_A_accept": false,
+      "validator_B_accept": true
+    },
+    {
+      "draw": 1,
+      "exact_token_inventory_pairs": [
+        [
+          2,
+          4
+        ]
+      ],
+      "matched_witness_pairs": [
+        [
+          2,
+          4
+        ]
+      ],
+      "query_id": "FHV1-FINAL-0025-d1-extra1",
+      "root_id": "FHV1-FINAL-0025",
+      "seed": 0,
+      "selected_pair": [
+        3,
+        5
+      ],
+      "selected_pair_target_error": false,
+      "selected_pair_valid_disagreement": false,
+      "target_is_withheld": true,
+      "validator_A_accept": true,
+      "validator_B_accept": true
+    },
+    {
+      "draw": 0,
+      "exact_token_inventory_pairs": [
+        [
+          3,
+          5
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "matched_witness_pairs": [
+        [
+          3,
+          5
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "query_id": "FHV1-FINAL-0030-d0-09",
+      "root_id": "FHV1-FINAL-0030",
+      "seed": 0,
+      "selected_pair": [
+        5,
+        3
+      ],
+      "selected_pair_target_error": true,
+      "selected_pair_valid_disagreement": true,
+      "target_is_withheld": true,
+      "validator_A_accept": true,
+      "validator_B_accept": true
+    },
+    {
+      "draw": 1,
+      "exact_token_inventory_pairs": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "matched_witness_pairs": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          3,
+          5
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "query_id": "FHV1-FINAL-0030-d1-09",
+      "root_id": "FHV1-FINAL-0030",
+      "seed": 0,
+      "selected_pair": [
+        5,
+        3
+      ],
+      "selected_pair_target_error": true,
+      "selected_pair_valid_disagreement": true,
+      "target_is_withheld": true,
+      "validator_A_accept": true,
+      "validator_B_accept": true
+    },
+    {
+      "draw": 0,
+      "exact_token_inventory_pairs": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "matched_witness_pairs": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "query_id": "FHV1-FINAL-0033-d0-07",
+      "root_id": "FHV1-FINAL-0033",
+      "seed": 1,
+      "selected_pair": [
+        3,
+        6
+      ],
+      "selected_pair_target_error": true,
+      "selected_pair_valid_disagreement": true,
+      "target_is_withheld": false,
+      "validator_A_accept": false,
+      "validator_B_accept": true
+    },
+    {
+      "draw": 0,
+      "exact_token_inventory_pairs": [
+        [
+          3,
+          5
+        ]
+      ],
+      "matched_witness_pairs": [
+        [
+          3,
+          5
+        ]
+      ],
+      "query_id": "FHV1-FINAL-0037-d0-07",
+      "root_id": "FHV1-FINAL-0037",
+      "seed": 0,
+      "selected_pair": [
+        3,
+        5
+      ],
+      "selected_pair_target_error": true,
+      "selected_pair_valid_disagreement": true,
+      "target_is_withheld": true,
+      "validator_A_accept": true,
+      "validator_B_accept": true
+    },
+    {
+      "draw": 1,
+      "exact_token_inventory_pairs": [
+        [
+          3,
+          5
+        ]
+      ],
+      "matched_witness_pairs": [
+        [
+          3,
+          5
+        ]
+      ],
+      "query_id": "FHV1-FINAL-0037-d1-07",
+      "root_id": "FHV1-FINAL-0037",
+      "seed": 1,
+      "selected_pair": [
+        3,
+        5
+      ],
+      "selected_pair_target_error": true,
+      "selected_pair_valid_disagreement": true,
+      "target_is_withheld": true,
+      "validator_A_accept": true,
+      "validator_B_accept": true
+    },
+    {
+      "draw": 0,
+      "exact_token_inventory_pairs": [
+        [
+          3,
+          6
+        ]
+      ],
+      "matched_witness_pairs": [
+        [
+          3,
+          6
+        ]
+      ],
+      "query_id": "FHV1-FINAL-0043-d0-10",
+      "root_id": "FHV1-FINAL-0043",
+      "seed": 0,
+      "selected_pair": [
+        4,
+        1
+      ],
+      "selected_pair_target_error": true,
+      "selected_pair_valid_disagreement": false,
+      "target_is_withheld": false,
+      "validator_A_accept": false,
+      "validator_B_accept": true
+    },
+    {
+      "draw": 1,
+      "exact_token_inventory_pairs": [
+        [
+          5,
+          6
+        ]
+      ],
+      "matched_witness_pairs": [
+        [
+          5,
+          6
+        ]
+      ],
+      "query_id": "FHV1-FINAL-0047-d1-08",
+      "root_id": "FHV1-FINAL-0047",
+      "seed": 1,
+      "selected_pair": [
+        1,
+        2
+      ],
+      "selected_pair_target_error": false,
+      "selected_pair_valid_disagreement": false,
+      "target_is_withheld": false,
+      "validator_A_accept": true,
+      "validator_B_accept": true
+    },
+    {
+      "draw": 0,
+      "exact_token_inventory_pairs": [
+        [
+          1,
+          2
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "matched_witness_pairs": [
+        [
+          1,
+          2
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "query_id": "FHV1-FINAL-0050-d0-07",
+      "root_id": "FHV1-FINAL-0050",
+      "seed": 1,
+      "selected_pair": [
+        2,
+        1
+      ],
+      "selected_pair_target_error": true,
+      "selected_pair_valid_disagreement": true,
+      "target_is_withheld": true,
+      "validator_A_accept": true,
+      "validator_B_accept": true
+    },
+    {
+      "draw": 1,
+      "exact_token_inventory_pairs": [
+        [
+          5,
+          6
+        ]
+      ],
+      "matched_witness_pairs": [
+        [
+          5,
+          6
+        ]
+      ],
+      "query_id": "FHV1-FINAL-0050-d1-07",
+      "root_id": "FHV1-FINAL-0050",
+      "seed": 1,
+      "selected_pair": [
+        2,
+        1
+      ],
+      "selected_pair_target_error": false,
+      "selected_pair_valid_disagreement": false,
+      "target_is_withheld": true,
+      "validator_A_accept": true,
+      "validator_B_accept": true
+    },
+    {
+      "draw": 0,
+      "exact_token_inventory_pairs": [
+        [
+          1,
+          4
+        ]
+      ],
+      "matched_witness_pairs": [
+        [
+          1,
+          4
+        ]
+      ],
+      "query_id": "FHV1-FINAL-0052-d0-extra1",
+      "root_id": "FHV1-FINAL-0052",
+      "seed": 0,
+      "selected_pair": [
+        4,
+        1
+      ],
+      "selected_pair_target_error": true,
+      "selected_pair_valid_disagreement": true,
+      "target_is_withheld": false,
+      "validator_A_accept": false,
+      "validator_B_accept": true
+    },
+    {
+      "draw": 0,
+      "exact_token_inventory_pairs": [
+        [
+          1,
+          4
+        ]
+      ],
+      "matched_witness_pairs": [
+        [
+          1,
+          4
+        ]
+      ],
+      "query_id": "FHV1-FINAL-0052-d0-extra1",
+      "root_id": "FHV1-FINAL-0052",
+      "seed": 1,
+      "selected_pair": [
+        4,
+        1
+      ],
+      "selected_pair_target_error": true,
+      "selected_pair_valid_disagreement": true,
+      "target_is_withheld": false,
+      "validator_A_accept": false,
+      "validator_B_accept": true
+    },
+    {
+      "draw": 0,
+      "exact_token_inventory_pairs": [
+        [
+          1,
+          4
+        ]
+      ],
+      "matched_witness_pairs": [
+        [
+          1,
+          4
+        ]
+      ],
+      "query_id": "FHV1-FINAL-0053-d0-02",
+      "root_id": "FHV1-FINAL-0053",
+      "seed": 0,
+      "selected_pair": [
+        6,
+        3
+      ],
+      "selected_pair_target_error": false,
+      "selected_pair_valid_disagreement": false,
+      "target_is_withheld": true,
+      "validator_A_accept": true,
+      "validator_B_accept": true
+    },
+    {
+      "draw": 1,
+      "exact_token_inventory_pairs": [
+        [
+          1,
+          4
+        ]
+      ],
+      "matched_witness_pairs": [
+        [
+          1,
+          4
+        ]
+      ],
+      "query_id": "FHV1-FINAL-0053-d1-02",
+      "root_id": "FHV1-FINAL-0053",
+      "seed": 0,
+      "selected_pair": [
+        6,
+        3
+      ],
+      "selected_pair_target_error": false,
+      "selected_pair_valid_disagreement": false,
+      "target_is_withheld": true,
+      "validator_A_accept": true,
+      "validator_B_accept": true
+    },
+    {
+      "draw": 1,
+      "exact_token_inventory_pairs": [
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "matched_witness_pairs": [
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          5
+        ]
+      ],
+      "query_id": "FHV1-FINAL-0057-d1-extra2",
+      "root_id": "FHV1-FINAL-0057",
+      "seed": 0,
+      "selected_pair": [
+        5,
+        3
+      ],
+      "selected_pair_target_error": true,
+      "selected_pair_valid_disagreement": true,
+      "target_is_withheld": false,
+      "validator_A_accept": false,
+      "validator_B_accept": true
+    },
+    {
+      "draw": 1,
+      "exact_token_inventory_pairs": [
+        [
+          2,
+          4
+        ]
+      ],
+      "matched_witness_pairs": [
+        [
+          2,
+          4
+        ]
+      ],
+      "query_id": "FHV1-FINAL-0057-d1-extra2",
+      "root_id": "FHV1-FINAL-0057",
+      "seed": 1,
+      "selected_pair": [
+        5,
+        3
+      ],
+      "selected_pair_target_error": true,
+      "selected_pair_valid_disagreement": false,
+      "target_is_withheld": false,
+      "validator_A_accept": false,
+      "validator_B_accept": true
+    },
+    {
+      "draw": 0,
+      "exact_token_inventory_pairs": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "matched_witness_pairs": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "query_id": "FHV1-FINAL-0060-d0-09",
+      "root_id": "FHV1-FINAL-0060",
+      "seed": 1,
+      "selected_pair": [
+        3,
+        6
+      ],
+      "selected_pair_target_error": true,
+      "selected_pair_valid_disagreement": true,
+      "target_is_withheld": true,
+      "validator_A_accept": true,
+      "validator_B_accept": true
+    },
+    {
+      "draw": 1,
+      "exact_token_inventory_pairs": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "matched_witness_pairs": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          5,
+          6
+        ]
+      ],
+      "query_id": "FHV1-FINAL-0060-d1-09",
+      "root_id": "FHV1-FINAL-0060",
+      "seed": 1,
+      "selected_pair": [
+        3,
+        6
+      ],
+      "selected_pair_target_error": true,
+      "selected_pair_valid_disagreement": true,
+      "target_is_withheld": true,
+      "validator_A_accept": true,
+      "validator_B_accept": true
+    }
+  ]
+}

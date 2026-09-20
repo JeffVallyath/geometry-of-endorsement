@@ -30,8 +30,9 @@ def document(identity):
 
 def changed(identity, old, new):
     original = document(identity)
-    assert old in original, f'Update the corruption target: {old!r}'
-    mutated = original.replace(old, new, 1)
+    pattern = r'\s+'.join(re.escape(word) for word in old.split())
+    mutated, count = re.subn(pattern, lambda _: new, original, count=1)
+    assert count == 1, f'Update the corruption target: {old!r}'
     assert mutated != original
     return original, mutated
 
@@ -43,14 +44,16 @@ def rules(identity, text):
 def test_actual_registry_passes():
     report = ev.check(ROOT, REGISTRY)
     assert report.ok(), report.errors
-    assert sum(c['bound'] for c in report.coverage) == 447
+    assert sum(c['bound'] for c in report.coverage) == 509
     assert sum(c['bound'] for c in report.coverage if c['document'] == 'captions') == 21
-    assert sum(c['bound'] for c in report.coverage if c['document'] == 'results') == 343
+    assert sum(c['bound'] for c in report.coverage if c['document'] == 'results') == 393
     captions = {c['unit']: c for c in report.coverage if c['document'] == 'caption_details'}
     assert set(captions) >= {'figure6', 'figure7', 'supplementary_s1', 'supplementary_s2', 'supplementary_s3'}
     assert captions['figure7']['bound'] == 7  # V10 design and primary interval bindings.
     assert captions['figure8']['bound'] == 2  # Crossover layer counts; prose counts have source predicates.
     assert captions['figure9']['bound'] == 7  # Selected extension matching and strict direct-readout checks.
+    assert captions['fresh_confirmation']['bound'] == 7
+    assert captions['fresh_utility']['bound'] == 5
     assert captions['supplementary_s3']['bound'] == 5  # Preserved V6 census bindings.
     assert not report.pending
 
@@ -170,3 +173,56 @@ def test_relative_coverage_is_not_absolute_success():
 def test_reader_crossing_zero_is_not_equivalence():
     _, bad = changed('caption_details', 'which is not evidence of equivalence', 'which establishes equivalence')
     assert 'material-qualification-missing' in rules('caption_details', bad)
+
+
+@pytest.mark.parametrize('old,new', [
+    ('0.9549%', '0.9550%'),
+    ('-1.7447 percentage points', '1.7447 percentage points'),
+    ('At equal 50% retention', 'At equal 75% retention'),
+    ('V10 remains the original primary study;', 'The fresh study replaces the original primary study;'),
+    ('The practical advantage remains uncertain', 'The practical advantage is established'),
+    ('Thirteen full-criterion observations have a withheld target', 'Twelve full-criterion observations have a withheld target'),
+    ('Both validators accept the corresponding case/seed/format', 'Both validators reject the corresponding case/seed/format'),
+    ('These are post-hoc diagnostics, separate from', 'These are prospective primary criteria, replacing'),
+])
+def test_fresh_confirmation_utility_and_post_hoc_scope_remain_bound(old, new):
+    _, bad = changed('results', old, new)
+    assert {'number-undeclared', 'material-qualification-missing'} & rules('results', bad)
+
+
+def test_fresh_claim_guards_allow_equivalent_readable_wording():
+    text = document('results')
+    text = text.replace('fixed history matching', 'specified history matching')
+    text = text.replace('advantage remains uncertain because its interval includes zero',
+                        'advantage remains inconclusive because its interval spans zero')
+    report = ev.check(ROOT, REGISTRY, document='results', overrides={'results': text})
+    assert report.ok(), report.errors
+
+
+@pytest.mark.parametrize('old,new', [
+    ('| Deletion | 129 | 38 |', '| Deletion | 128 | 38 |'),
+    ('75 | 0 |', '76 | 0 |'),
+    ('failed 4 of 5 admission', 'failed 3 of 5 admission'),
+    ('128 fresh final cases', '127 fresh final cases'),
+    ('other upstream influences unresolved', 'no upstream influence possible'),
+])
+def test_preupdate_counts_and_fixed_procedure_scope(old, new):
+    _, bad = changed('results', old, new)
+    assert {'number-undeclared', 'number-missing', 'material-qualification-missing'} & rules('results', bad)
+
+
+
+@pytest.mark.parametrize('old,new', [
+    ('430/653', '431/653'),
+    ('| Same-pair logical consistency | 188 | 53/64 |',
+     '| Same-pair logical consistency | 189 | 53/64 |'),
+    ('other\ntwo logically sufficient compositions of the same relation pair',
+     'two arbitrary questions about unrelated relations'),
+    ('concentrated in learned-update conditions', 'equally broad under all update conditions'),
+    ('Lexical content, clause\nposition and which relation was previously different remain unmatched',
+     'All possible confounds have been eliminated'),
+    ('earlier analysis of these same outputs', 'independent replication'),
+])
+def test_post_hoc_audit_claims_and_limits_remain_checked(old, new):
+    _, bad = changed('results', old, new)
+    assert {'number-undeclared', 'material-qualification-missing'} & rules('results', bad)

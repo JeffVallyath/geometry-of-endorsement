@@ -1,0 +1,41 @@
+{
+  "repository": {
+    "file": "geometry-of-endorsement-main(5).zip",
+    "sha256": "319486cdd3534a334f5d6a21fe7fea54e1a61d0189bfe24d7b94fa17991f349c",
+    "root": "geometry-of-endorsement-beff6b6a4355abffcaa81e5367f6e79c435f4934"
+  },
+  "robustness_audit": {
+    "file": "V10_CPU_AUDIT_RESULTS_20260917.zip",
+    "sha256": "8f0993a7460bc601662a3f85b2e2c00142e30374abf5d7b8ae5e162276fd8bda"
+  },
+  "model": {
+    "id": "google/gemma-2-9b-it",
+    "revision": "11c9b309abf73637e4b6f9a3fa1e92e615547819"
+  },
+  "scientific_source_root": "reproducibility/fresh_inference/supplied/reproduction",
+  "scientific_files": {
+    "reproducibility/fresh_inference/run.py": "970a975e5b233ef8c3c59719b0b094a7c9bd0bf078d28e91c8e89f270a195a75",
+    "reproducibility/fresh_inference/supplied/MANIFEST.json": "f5892f9eeba7be5af3ced145a79de562d8c662da2a846540412d8cc36fab2ae3",
+    "reproducibility/fresh_inference/supplied/reproduction/scripts/ssc1_eval.py": "087c79ae85fadf3732bfa27dbce2634f1f0e06d16dc63ee5b592ce67c7c9a507",
+    "reproducibility/fresh_inference/supplied/reproduction/scripts/ssc1_prepare.py": "4db1144b983a783ecc31cf4b2b3548909a75bb66e7fd969f73dcadf2c0ae9c10",
+    "reproducibility/fresh_inference/supplied/reproduction/scripts/ssc1_common.py": "97743a55e7003593f70a380489f4d02791f17f073b89c5df71c2e70a0032d10b"
+  },
+  "learned_checkpoints": [
+    {
+      "actor": "gemma",
+      "recipe": "INV_PAIR_NLL",
+      "seed": 0,
+      "path": "weights/gemma/INV_PAIR_NLL/s0",
+      "setter_sha256": "6858927326a49757b954f18ecc25e31b75647dda930fda9c959fca7e9994e164",
+      "meta_sha256": "6289e3a195ff8c565e4c9173dde0d4a712c7878c0d48586a496c4d8fc76e6ae2"
+    },
+    {
+      "actor": "gemma",
+      "recipe": "INV_PAIR_NLL",
+      "seed": 1,
+      "path": "weights/gemma/INV_PAIR_NLL/s1",
+      "setter_sha256": "448c131d94a328ef249a0a21f7f73187e5486254eb4f8fa50d49d94b764b33d5",
+      "meta_sha256": "9bbf092bd9f0ccc9af54da19a16fd39bb7ce5de79f39625532236e70825c5b13"
+    }
+  ]
+}

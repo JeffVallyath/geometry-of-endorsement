@@ -1,0 +1,580 @@
+[
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0009-d0-00",
+    "root_id": "SSC1-FINAL-0009",
+    "spec": {
+      "a": 0,
+      "b": 1,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Dion favor the Meadow proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0009-d0-01",
+    "root_id": "SSC1-FINAL-0009",
+    "spec": {
+      "a": 0,
+      "b": 1,
+      "kind": "opposes",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Dion oppose the Meadow proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0009-d0-02",
+    "root_id": "SSC1-FINAL-0009",
+    "spec": {
+      "a": 0,
+      "b": 1,
+      "kind": "same",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Do Dion and Cleo take the same side on Meadow?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0009-d0-03",
+    "root_id": "SSC1-FINAL-0009",
+    "spec": {
+      "a": 1,
+      "b": 0,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Cleo favor the Meadow proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0009-d0-04",
+    "root_id": "SSC1-FINAL-0009",
+    "spec": {
+      "a": 1,
+      "b": 0,
+      "kind": "opposes",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Cleo oppose the Meadow proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0009-d0-05",
+    "root_id": "SSC1-FINAL-0009",
+    "spec": {
+      "a": 0,
+      "b": 1,
+      "kind": "direct",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does Dion favor the Bridge proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0009-d0-06",
+    "root_id": "SSC1-FINAL-0009",
+    "spec": {
+      "a": 0,
+      "b": 1,
+      "kind": "both",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Is the Meadow proposal supported by both Dion and Cleo?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0009-d0-07",
+    "root_id": "SSC1-FINAL-0009",
+    "spec": {
+      "a": 0,
+      "b": 1,
+      "kind": "either",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Dion and Cleo support Meadow?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0009-d0-08",
+    "root_id": "SSC1-FINAL-0009",
+    "spec": {
+      "a": 2,
+      "b": 0,
+      "kind": "same",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Do Mina and Dion take the same side on Meadow?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0009-d0-09",
+    "root_id": "SSC1-FINAL-0009",
+    "spec": {
+      "a": 2,
+      "b": 0,
+      "kind": "both",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Is the Meadow proposal supported by both Mina and Dion?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0009-d0-10",
+    "root_id": "SSC1-FINAL-0009",
+    "spec": {
+      "a": 2,
+      "b": 0,
+      "kind": "either",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Mina and Dion support Meadow?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0009-d0-11",
+    "root_id": "SSC1-FINAL-0009",
+    "spec": {
+      "a": 2,
+      "b": 0,
+      "kind": "direct",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does Mina favor the Bridge proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0009-d0-extra0",
+    "root_id": "SSC1-FINAL-0009",
+    "spec": {
+      "a": 2,
+      "b": 0,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Mina favor the Meadow proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0009-d0-extra1",
+    "root_id": "SSC1-FINAL-0009",
+    "spec": {
+      "a": 1,
+      "b": 2,
+      "kind": "same",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Do Cleo and Mina take the same side on Meadow?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0009-d0-extra2",
+    "root_id": "SSC1-FINAL-0009",
+    "spec": {
+      "a": 1,
+      "b": 2,
+      "kind": "both",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Is the Meadow proposal supported by both Cleo and Mina?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0009-d0-extra3",
+    "root_id": "SSC1-FINAL-0009",
+    "spec": {
+      "a": 1,
+      "b": 2,
+      "kind": "either",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Cleo and Mina support Meadow?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0009-d0-extra4",
+    "root_id": "SSC1-FINAL-0009",
+    "spec": {
+      "a": 3,
+      "b": 0,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Bryn favor the Meadow proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0009-d1-00",
+    "root_id": "SSC1-FINAL-0009",
+    "spec": {
+      "a": 0,
+      "b": 1,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Dion favor the Meadow proposal?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-FINAL-0009-d1-01",
+    "root_id": "SSC1-FINAL-0009",
+    "spec": {
+      "a": 0,
+      "b": 1,
+      "kind": "opposes",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Dion oppose the Meadow proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0009-d1-02",
+    "root_id": "SSC1-FINAL-0009",
+    "spec": {
+      "a": 0,
+      "b": 1,
+      "kind": "same",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Do Dion and Cleo take the same side on Meadow?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-FINAL-0009-d1-03",
+    "root_id": "SSC1-FINAL-0009",
+    "spec": {
+      "a": 1,
+      "b": 0,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Cleo favor the Meadow proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0009-d1-04",
+    "root_id": "SSC1-FINAL-0009",
+    "spec": {
+      "a": 1,
+      "b": 0,
+      "kind": "opposes",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Cleo oppose the Meadow proposal?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-FINAL-0009-d1-05",
+    "root_id": "SSC1-FINAL-0009",
+    "spec": {
+      "a": 0,
+      "b": 1,
+      "kind": "direct",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does Dion favor the Bridge proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-FINAL-0009-d1-06",
+    "root_id": "SSC1-FINAL-0009",
+    "spec": {
+      "a": 0,
+      "b": 1,
+      "kind": "both",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Is the Meadow proposal supported by both Dion and Cleo?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-FINAL-0009-d1-07",
+    "root_id": "SSC1-FINAL-0009",
+    "spec": {
+      "a": 0,
+      "b": 1,
+      "kind": "either",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Dion and Cleo support Meadow?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-FINAL-0009-d1-08",
+    "root_id": "SSC1-FINAL-0009",
+    "spec": {
+      "a": 2,
+      "b": 0,
+      "kind": "same",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Do Mina and Dion take the same side on Meadow?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-FINAL-0009-d1-09",
+    "root_id": "SSC1-FINAL-0009",
+    "spec": {
+      "a": 2,
+      "b": 0,
+      "kind": "both",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Is the Meadow proposal supported by both Mina and Dion?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-FINAL-0009-d1-10",
+    "root_id": "SSC1-FINAL-0009",
+    "spec": {
+      "a": 2,
+      "b": 0,
+      "kind": "either",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Mina and Dion support Meadow?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0009-d1-11",
+    "root_id": "SSC1-FINAL-0009",
+    "spec": {
+      "a": 2,
+      "b": 0,
+      "kind": "direct",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does Mina favor the Bridge proposal?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-FINAL-0009-d1-extra0",
+    "root_id": "SSC1-FINAL-0009",
+    "spec": {
+      "a": 2,
+      "b": 0,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Mina favor the Meadow proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-FINAL-0009-d1-extra1",
+    "root_id": "SSC1-FINAL-0009",
+    "spec": {
+      "a": 1,
+      "b": 2,
+      "kind": "same",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Do Cleo and Mina take the same side on Meadow?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0009-d1-extra2",
+    "root_id": "SSC1-FINAL-0009",
+    "spec": {
+      "a": 1,
+      "b": 2,
+      "kind": "both",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Is the Meadow proposal supported by both Cleo and Mina?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-FINAL-0009-d1-extra3",
+    "root_id": "SSC1-FINAL-0009",
+    "spec": {
+      "a": 1,
+      "b": 2,
+      "kind": "either",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Cleo and Mina support Meadow?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0009-d1-extra4",
+    "root_id": "SSC1-FINAL-0009",
+    "spec": {
+      "a": 3,
+      "b": 0,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Bryn favor the Meadow proposal?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  }
+]

@@ -10,7 +10,7 @@ import argparse
 import hashlib
 import importlib
 import json
-from pathlib import Path
+from pathlib import Path, PurePosixPath
 import re
 import sys
 
@@ -21,11 +21,19 @@ PUBLIC = REPRODUCTION / 'STATE_SUFFICIENCY_CONFIRMATION/runtime_inputs/UPDATE_ME
 SHARDS = REPRODUCTION / 'reports/state_sufficiency_confirmation/shards'
 
 
-def verify():
-    manifest = json.loads((SUPPLIED / 'MANIFEST.json').read_text(encoding='utf8'))
+def verify(source=SUPPLIED):
+    source = Path(source)
+    manifest = json.loads((source / 'MANIFEST.json').read_text(encoding='utf8'))
+    seen = set()
     for row in manifest['files']:
-        path = (SUPPLIED / row['path']).resolve()
-        if not path.is_relative_to(SUPPLIED.resolve()):
+        name = row['path'].replace('\\', '/')
+        relative = PurePosixPath(name)
+        if (not name or relative.is_absolute() or '..' in relative.parts or ':' in name
+                or relative.as_posix() != name or name.casefold() in seen):
+            raise ValueError('Unsafe or duplicate scientific input path')
+        seen.add(name.casefold())
+        path = source.joinpath(*relative.parts).resolve()
+        if not path.is_relative_to(source.resolve()):
             raise ValueError('Escaping scientific input')
         raw = path.read_bytes()
         if len(raw) != row['bytes'] or hashlib.sha256(raw).hexdigest() != row['sha256']:
@@ -33,19 +41,24 @@ def verify():
     return manifest
 
 
-def modules():
+def modules(source=SUPPLIED):
     # Only this process receives the preserved scientific import layout.
-    sys.path[:0] = [str(REPRODUCTION / 'scripts'), str(PUBLIC)]
+    reproduction = Path(source) / 'reproduction'
+    public = reproduction / 'STATE_SUFFICIENCY_CONFIRMATION/runtime_inputs/UPDATE_METHOD_INPUTS'
+    sys.path[:0] = [str(reproduction / 'scripts'), str(public)]
     return importlib.import_module('ssc1_eval'), importlib.import_module('inputs')
 
 
-def smoke(root_id='SSC1-FINAL-0006'):
-    manifest = verify()
-    evaluation, inputs = modules()
+def smoke(root_id='SSC1-FINAL-0006', source=SUPPLIED):
+    manifest = verify(source)
+    evaluation, inputs = modules(source)
+    reproduction = Path(source) / 'reproduction'
+    shards = reproduction / 'reports/state_sufficiency_confirmation/shards'
+    public = reproduction / 'STATE_SUFFICIENCY_CONFIRMATION/runtime_inputs/UPDATE_METHOD_INPUTS'
     import numpy as np
     from canonical.config import MODELS
     from ssc1_boundary import ReadBoundary
-    sources = json.loads((SHARDS / root_id / 'source_inputs.json').read_text(encoding='utf8'))
+    sources = json.loads((shards / root_id / 'source_inputs.json').read_text(encoding='utf8'))
     for actor in ('gemma', 'qwen'):
         if not re.fullmatch('[0-9a-f]{40}', MODELS[actor]['revision']):
             raise ValueError('Unpinned model')
@@ -63,7 +76,7 @@ def smoke(root_id='SSC1-FINAL-0006'):
             raise ValueError('Current facts do not match across histories')
     selected = inputs.inventory()['selected']
     for record in selected:
-        folder = PUBLIC / record['path']
+        folder = public / record['path']
         for name, key in (('setter.npz', 'setter_sha256'), ('META.json', 'meta_sha256')):
             if hashlib.sha256((folder / name).read_bytes()).hexdigest() != record[key]:
                 raise ValueError('Selected checkpoint changed')
@@ -82,8 +95,8 @@ def smoke(root_id='SSC1-FINAL-0006'):
         neural_readiness='NOT_VERIFIED: no pretrained smoke was run')
 
 
-def execute(actor, root_id, cache, output):
-    verify()
+def execute(actor, root_id, cache, output, source=SUPPLIED):
+    verify(source)
     if not output or output.exists():
         raise ValueError('Fresh output directory required')
     repository = HERE.parents[1].resolve()
@@ -99,7 +112,7 @@ def execute(actor, root_id, cache, output):
         raise ValueError('Original neural Python/torch/transformers versions required')
     if np.__version__ != '2.2.6':
         raise ValueError('Original neural numpy version required')
-    evaluation, inputs = modules()
+    evaluation, inputs = modules(source)
     from canonical.adapter import Backbone
     from canonical.config import MODELS
     from ssc1_boundary import ReadBoundary
@@ -110,7 +123,8 @@ def execute(actor, root_id, cache, output):
     with ReadBoundary(output / 'ENTRY_EVENTS.jsonl'):
         backbone = Backbone(cache=cache, cfg=MODELS[actor])
         try:
-            result = evaluation.evaluate_root(backbone, actor, SHARDS, root_id, output / 'roots', chunk_size=1)
+            shards = Path(source) / 'reproduction/reports/state_sufficiency_confirmation/shards'
+            result = evaluation.evaluate_root(backbone, actor, shards, root_id, output / 'roots', chunk_size=1)
             save(output / 'UNCHANGED.json', backbone.finish())
         finally:
             for handle in backbone.handles:
@@ -130,12 +144,14 @@ def main():
     p.add_argument('--execute', action='store_true')
     p.add_argument('--cache', type=Path)
     p.add_argument('--output', type=Path)
+    p.add_argument('--source', type=Path, default=SUPPLIED, help='Directory containing the unchanged supplied MANIFEST.json and reproduction tree')
     args = p.parse_args()
-    if not re.fullmatch(r'SSC1-(FINAL|DEV)-\d{4}', args.root_id) or not (SHARDS / args.root_id).is_dir():
+    shards = args.source / 'reproduction/reports/state_sufficiency_confirmation/shards'
+    if not re.fullmatch(r'SSC1-(FINAL|DEV)-\d{4}', args.root_id) or not (shards / args.root_id).is_dir():
         p.error('Choose an included frozen root ID')
     if args.execute and (args.cache is None or args.output is None):
         p.error('--execute requires a local --cache and fresh --output')
-    result = execute(args.actor,args.root_id,args.cache,args.output) if args.execute else smoke(args.root_id)
+    result = execute(args.actor,args.root_id,args.cache,args.output,args.source) if args.execute else smoke(args.root_id,args.source)
     print(json.dumps(result,indent=2))
 
 

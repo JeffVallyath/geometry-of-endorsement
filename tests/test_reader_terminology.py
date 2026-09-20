@@ -1,4 +1,5 @@
 """Reader-facing terminology guards, separate from frozen scientific records."""
+import hashlib
 import re
 from pathlib import Path
 
@@ -29,7 +30,16 @@ def test_archived_figure_is_separate_from_reader_friendly_rendition():
     text=(ROOT/'figures/CAPTIONS.md').read_text(encoding='utf8')
     assert 'figS3_source_history_readable.png' in text
     assert 'figS3_v6_source_history.png' in text and 'figS3_v6_source_history.pdf' in text
-    assert 'remain byte-for-byte' in text
+    # Test archival preservation itself, independent of current caption wording.
+    expected = {
+        'png': '7d83c4913314cbafa397a9b3e243a6a56f32058f44fceb7ad6843e1d5fb6082d',
+        'pdf': 'abad3414e477f96012d62f81b80a71605e41f456f6fb0d9a31deeb7e070d8572',
+    }
+    for extension, digest in expected.items():
+        original = ROOT / f'figures/supplementary/figS3_v6_source_history.{extension}'
+        readable = ROOT / f'figures/supplementary/figS3_source_history_readable.{extension}'
+        assert hashlib.sha256(original.read_bytes()).hexdigest() == digest
+        assert original.read_bytes() != readable.read_bytes()
 
 
 def test_public_data_display_labels_explain_the_units():

@@ -1,0 +1,2734 @@
+{
+  "all_questions": [
+    {
+      "family": "familiar",
+      "labels": [
+        "No",
+        "Yes"
+      ],
+      "query_id": "FHV1-FINAL-0017-d0-00",
+      "root_id": "FHV1-FINAL-0017",
+      "spec": {
+        "a": 0,
+        "b": 1,
+        "kind": "direct",
+        "p": 2
+      },
+      "split": "FINAL",
+      "text": "Does Bryn favor the Gallery proposal?\nAnswer with exactly one of No, Yes."
+    },
+    {
+      "family": "familiar",
+      "labels": [
+        "No",
+        "Yes"
+      ],
+      "query_id": "FHV1-FINAL-0017-d0-01",
+      "root_id": "FHV1-FINAL-0017",
+      "spec": {
+        "a": 0,
+        "b": 1,
+        "kind": "opposes",
+        "p": 2
+      },
+      "split": "FINAL",
+      "text": "Does Bryn oppose the Gallery proposal?\nAnswer with exactly one of No, Yes."
+    },
+    {
+      "family": "familiar",
+      "labels": [
+        "No",
+        "Yes"
+      ],
+      "query_id": "FHV1-FINAL-0017-d0-02",
+      "root_id": "FHV1-FINAL-0017",
+      "spec": {
+        "a": 0,
+        "b": 1,
+        "kind": "same",
+        "p": 2
+      },
+      "split": "FINAL",
+      "text": "Do Bryn and Ari take the same side on Gallery?\nAnswer with exactly one of No, Yes."
+    },
+    {
+      "family": "familiar",
+      "labels": [
+        "No",
+        "Yes"
+      ],
+      "query_id": "FHV1-FINAL-0017-d0-03",
+      "root_id": "FHV1-FINAL-0017",
+      "spec": {
+        "a": 1,
+        "b": 0,
+        "kind": "direct",
+        "p": 2
+      },
+      "split": "FINAL",
+      "text": "Does Ari favor the Gallery proposal?\nAnswer with exactly one of No, Yes."
+    },
+    {
+      "family": "familiar",
+      "labels": [
+        "No",
+        "Yes"
+      ],
+      "query_id": "FHV1-FINAL-0017-d0-04",
+      "root_id": "FHV1-FINAL-0017",
+      "spec": {
+        "a": 1,
+        "b": 0,
+        "kind": "opposes",
+        "p": 2
+      },
+      "split": "FINAL",
+      "text": "Does Ari oppose the Gallery proposal?\nAnswer with exactly one of No, Yes."
+    },
+    {
+      "family": "familiar",
+      "labels": [
+        "No",
+        "Yes"
+      ],
+      "query_id": "FHV1-FINAL-0017-d0-05",
+      "root_id": "FHV1-FINAL-0017",
+      "spec": {
+        "a": 0,
+        "b": 1,
+        "kind": "direct",
+        "p": 0
+      },
+      "split": "FINAL",
+      "text": "Does Bryn favor the Garden proposal?\nAnswer with exactly one of No, Yes."
+    },
+    {
+      "family": "familiar",
+      "labels": [
+        "No",
+        "Yes"
+      ],
+      "query_id": "FHV1-FINAL-0017-d0-06",
+      "root_id": "FHV1-FINAL-0017",
+      "spec": {
+        "a": 0,
+        "b": 1,
+        "kind": "both",
+        "p": 2
+      },
+      "split": "FINAL",
+      "text": "Is the Gallery proposal supported by both Bryn and Ari?\nAnswer with exactly one of No, Yes."
+    },
+    {
+      "family": "familiar",
+      "labels": [
+        "No",
+        "Yes"
+      ],
+      "query_id": "FHV1-FINAL-0017-d0-07",
+      "root_id": "FHV1-FINAL-0017",
+      "spec": {
+        "a": 0,
+        "b": 1,
+        "kind": "either",
+        "p": 2
+      },
+      "split": "FINAL",
+      "text": "Does at least one of Bryn and Ari support Gallery?\nAnswer with exactly one of No, Yes."
+    },
+    {
+      "family": "familiar",
+      "labels": [
+        "No",
+        "Yes"
+      ],
+      "query_id": "FHV1-FINAL-0017-d0-08",
+      "root_id": "FHV1-FINAL-0017",
+      "spec": {
+        "a": 2,
+        "b": 0,
+        "kind": "same",
+        "p": 2
+      },
+      "split": "FINAL",
+      "text": "Do Ada and Bryn take the same side on Gallery?\nAnswer with exactly one of No, Yes."
+    },
+    {
+      "family": "familiar",
+      "labels": [
+        "No",
+        "Yes"
+      ],
+      "query_id": "FHV1-FINAL-0017-d0-09",
+      "root_id": "FHV1-FINAL-0017",
+      "spec": {
+        "a": 2,
+        "b": 0,
+        "kind": "both",
+        "p": 2
+      },
+      "split": "FINAL",
+      "text": "Is the Gallery proposal supported by both Ada and Bryn?\nAnswer with exactly one of No, Yes."
+    },
+    {
+      "family": "familiar",
+      "labels": [
+        "No",
+        "Yes"
+      ],
+      "query_id": "FHV1-FINAL-0017-d0-10",
+      "root_id": "FHV1-FINAL-0017",
+      "spec": {
+        "a": 2,
+        "b": 0,
+        "kind": "either",
+        "p": 2
+      },
+      "split": "FINAL",
+      "text": "Does at least one of Ada and Bryn support Gallery?\nAnswer with exactly one of No, Yes."
+    },
+    {
+      "family": "familiar",
+      "labels": [
+        "No",
+        "Yes"
+      ],
+      "query_id": "FHV1-FINAL-0017-d0-11",
+      "root_id": "FHV1-FINAL-0017",
+      "spec": {
+        "a": 2,
+        "b": 0,
+        "kind": "direct",
+        "p": 0
+      },
+      "split": "FINAL",
+      "text": "Does Ada favor the Garden proposal?\nAnswer with exactly one of No, Yes."
+    },
+    {
+      "family": "familiar",
+      "labels": [
+        "No",
+        "Yes"
+      ],
+      "query_id": "FHV1-FINAL-0017-d0-extra0",
+      "root_id": "FHV1-FINAL-0017",
+      "spec": {
+        "a": 2,
+        "b": 0,
+        "kind": "direct",
+        "p": 2
+      },
+      "split": "FINAL",
+      "text": "Does Ada favor the Gallery proposal?\nAnswer with exactly one of No, Yes."
+    },
+    {
+      "family": "familiar",
+      "labels": [
+        "No",
+        "Yes"
+      ],
+      "query_id": "FHV1-FINAL-0017-d0-extra1",
+      "root_id": "FHV1-FINAL-0017",
+      "spec": {
+        "a": 1,
+        "b": 2,
+        "kind": "same",
+        "p": 2
+      },
+      "split": "FINAL",
+      "text": "Do Ari and Ada take the same side on Gallery?\nAnswer with exactly one of No, Yes."
+    },
+    {
+      "family": "familiar",
+      "labels": [
+        "No",
+        "Yes"
+      ],
+      "query_id": "FHV1-FINAL-0017-d0-extra2",
+      "root_id": "FHV1-FINAL-0017",
+      "spec": {
+        "a": 1,
+        "b": 2,
+        "kind": "both",
+        "p": 2
+      },
+      "split": "FINAL",
+      "text": "Is the Gallery proposal supported by both Ari and Ada?\nAnswer with exactly one of No, Yes."
+    },
+    {
+      "family": "familiar",
+      "labels": [
+        "No",
+        "Yes"
+      ],
+      "query_id": "FHV1-FINAL-0017-d0-extra3",
+      "root_id": "FHV1-FINAL-0017",
+      "spec": {
+        "a": 1,
+        "b": 2,
+        "kind": "either",
+        "p": 2
+      },
+      "split": "FINAL",
+      "text": "Does at least one of Ari and Ada support Gallery?\nAnswer with exactly one of No, Yes."
+    },
+    {
+      "family": "familiar",
+      "labels": [
+        "No",
+        "Yes"
+      ],
+      "query_id": "FHV1-FINAL-0017-d0-extra4",
+      "root_id": "FHV1-FINAL-0017",
+      "spec": {
+        "a": 3,
+        "b": 0,
+        "kind": "direct",
+        "p": 2
+      },
+      "split": "FINAL",
+      "text": "Does Dara favor the Gallery proposal?\nAnswer with exactly one of No, Yes."
+    },
+    {
+      "family": "familiar",
+      "labels": [
+        "A",
+        "B"
+      ],
+      "query_id": "FHV1-FINAL-0017-d1-00",
+      "root_id": "FHV1-FINAL-0017",
+      "spec": {
+        "a": 0,
+        "b": 1,
+        "kind": "direct",
+        "p": 2
+      },
+      "split": "FINAL",
+      "text": "Does Bryn favor the Gallery proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+    },
+    {
+      "family": "familiar",
+      "labels": [
+        "A",
+        "B"
+      ],
+      "query_id": "FHV1-FINAL-0017-d1-01",
+      "root_id": "FHV1-FINAL-0017",
+      "spec": {
+        "a": 0,
+        "b": 1,
+        "kind": "opposes",
+        "p": 2
+      },
+      "split": "FINAL",
+      "text": "Does Bryn oppose the Gallery proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+    },
+    {
+      "family": "familiar",
+      "labels": [
+        "B",
+        "A"
+      ],
+      "query_id": "FHV1-FINAL-0017-d1-02",
+      "root_id": "FHV1-FINAL-0017",
+      "spec": {
+        "a": 0,
+        "b": 1,
+        "kind": "same",
+        "p": 2
+      },
+      "split": "FINAL",
+      "text": "Do Bryn and Ari take the same side on Gallery?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+    },
+    {
+      "family": "familiar",
+      "labels": [
+        "A",
+        "B"
+      ],
+      "query_id": "FHV1-FINAL-0017-d1-03",
+      "root_id": "FHV1-FINAL-0017",
+      "spec": {
+        "a": 1,
+        "b": 0,
+        "kind": "direct",
+        "p": 2
+      },
+      "split": "FINAL",
+      "text": "Does Ari favor the Gallery proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+    },
+    {
+      "family": "familiar",
+      "labels": [
+        "B",
+        "A"
+      ],
+      "query_id": "FHV1-FINAL-0017-d1-04",
+      "root_id": "FHV1-FINAL-0017",
+      "spec": {
+        "a": 1,
+        "b": 0,
+        "kind": "opposes",
+        "p": 2
+      },
+      "split": "FINAL",
+      "text": "Does Ari oppose the Gallery proposal?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+    },
+    {
+      "family": "familiar",
+      "labels": [
+        "A",
+        "B"
+      ],
+      "query_id": "FHV1-FINAL-0017-d1-05",
+      "root_id": "FHV1-FINAL-0017",
+      "spec": {
+        "a": 0,
+        "b": 1,
+        "kind": "direct",
+        "p": 0
+      },
+      "split": "FINAL",
+      "text": "Does Bryn favor the Garden proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+    },
+    {
+      "family": "familiar",
+      "labels": [
+        "A",
+        "B"
+      ],
+      "query_id": "FHV1-FINAL-0017-d1-06",
+      "root_id": "FHV1-FINAL-0017",
+      "spec": {
+        "a": 0,
+        "b": 1,
+        "kind": "both",
+        "p": 2
+      },
+      "split": "FINAL",
+      "text": "Is the Gallery proposal supported by both Bryn and Ari?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+    },
+    {
+      "family": "familiar",
+      "labels": [
+        "B",
+        "A"
+      ],
+      "query_id": "FHV1-FINAL-0017-d1-07",
+      "root_id": "FHV1-FINAL-0017",
+      "spec": {
+        "a": 0,
+        "b": 1,
+        "kind": "either",
+        "p": 2
+      },
+      "split": "FINAL",
+      "text": "Does at least one of Bryn and Ari support Gallery?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+    },
+    {
+      "family": "familiar",
+      "labels": [
+        "B",
+        "A"
+      ],
+      "query_id": "FHV1-FINAL-0017-d1-08",
+      "root_id": "FHV1-FINAL-0017",
+      "spec": {
+        "a": 2,
+        "b": 0,
+        "kind": "same",
+        "p": 2
+      },
+      "split": "FINAL",
+      "text": "Do Ada and Bryn take the same side on Gallery?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+    },
+    {
+      "family": "familiar",
+      "labels": [
+        "A",
+        "B"
+      ],
+      "query_id": "FHV1-FINAL-0017-d1-09",
+      "root_id": "FHV1-FINAL-0017",
+      "spec": {
+        "a": 2,
+        "b": 0,
+        "kind": "both",
+        "p": 2
+      },
+      "split": "FINAL",
+      "text": "Is the Gallery proposal supported by both Ada and Bryn?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+    },
+    {
+      "family": "familiar",
+      "labels": [
+        "A",
+        "B"
+      ],
+      "query_id": "FHV1-FINAL-0017-d1-10",
+      "root_id": "FHV1-FINAL-0017",
+      "spec": {
+        "a": 2,
+        "b": 0,
+        "kind": "either",
+        "p": 2
+      },
+      "split": "FINAL",
+      "text": "Does at least one of Ada and Bryn support Gallery?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+    },
+    {
+      "family": "familiar",
+      "labels": [
+        "A",
+        "B"
+      ],
+      "query_id": "FHV1-FINAL-0017-d1-11",
+      "root_id": "FHV1-FINAL-0017",
+      "spec": {
+        "a": 2,
+        "b": 0,
+        "kind": "direct",
+        "p": 0
+      },
+      "split": "FINAL",
+      "text": "Does Ada favor the Garden proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+    },
+    {
+      "family": "familiar",
+      "labels": [
+        "B",
+        "A"
+      ],
+      "query_id": "FHV1-FINAL-0017-d1-extra0",
+      "root_id": "FHV1-FINAL-0017",
+      "spec": {
+        "a": 2,
+        "b": 0,
+        "kind": "direct",
+        "p": 2
+      },
+      "split": "FINAL",
+      "text": "Does Ada favor the Gallery proposal?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+    },
+    {
+      "family": "familiar",
+      "labels": [
+        "B",
+        "A"
+      ],
+      "query_id": "FHV1-FINAL-0017-d1-extra1",
+      "root_id": "FHV1-FINAL-0017",
+      "spec": {
+        "a": 1,
+        "b": 2,
+        "kind": "same",
+        "p": 2
+      },
+      "split": "FINAL",
+      "text": "Do Ari and Ada take the same side on Gallery?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+    },
+    {
+      "family": "familiar",
+      "labels": [
+        "B",
+        "A"
+      ],
+      "query_id": "FHV1-FINAL-0017-d1-extra2",
+      "root_id": "FHV1-FINAL-0017",
+      "spec": {
+        "a": 1,
+        "b": 2,
+        "kind": "both",
+        "p": 2
+      },
+      "split": "FINAL",
+      "text": "Is the Gallery proposal supported by both Ari and Ada?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+    },
+    {
+      "family": "familiar",
+      "labels": [
+        "B",
+        "A"
+      ],
+      "query_id": "FHV1-FINAL-0017-d1-extra3",
+      "root_id": "FHV1-FINAL-0017",
+      "spec": {
+        "a": 1,
+        "b": 2,
+        "kind": "either",
+        "p": 2
+      },
+      "split": "FINAL",
+      "text": "Does at least one of Ari and Ada support Gallery?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+    },
+    {
+      "family": "familiar",
+      "labels": [
+        "A",
+        "B"
+      ],
+      "query_id": "FHV1-FINAL-0017-d1-extra4",
+      "root_id": "FHV1-FINAL-0017",
+      "spec": {
+        "a": 3,
+        "b": 0,
+        "kind": "direct",
+        "p": 2
+      },
+      "split": "FINAL",
+      "text": "Does Dara favor the Gallery proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+    }
+  ],
+  "diagnostic": {
+    "draw": 0,
+    "exact_token_inventory_pairs": [
+      [
+        1,
+        2
+      ],
+      [
+        5,
+        6
+      ]
+    ],
+    "matched_witness_pairs": [
+      [
+        1,
+        2
+      ],
+      [
+        5,
+        6
+      ]
+    ],
+    "query_id": "FHV1-FINAL-0017-d0-08",
+    "root_id": "FHV1-FINAL-0017",
+    "seed": 0,
+    "selected_pair": [
+      6,
+      5
+    ],
+    "selected_pair_target_error": true,
+    "selected_pair_valid_disagreement": true,
+    "target_is_withheld": true,
+    "validator_A_accept": true,
+    "validator_B_accept": true
+  },
+  "histories": [
+    {
+      "changed_facts": 0,
+      "controls": [
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-00",
+          "question": "Does Bryn favor the Gallery proposal?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-03",
+          "question": "Does Ari favor the Gallery proposal?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-05",
+          "question": "Does Bryn favor the Garden proposal?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-11",
+          "question": "Does Ada favor the Garden proposal?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 1,
+          "prediction": 1,
+          "query_id": "FHV1-FINAL-0017-d0-extra0",
+          "question": "Does Ada favor the Gallery proposal?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-extra4",
+          "question": "Does Dara favor the Gallery proposal?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d1-00",
+          "question": "Does Bryn favor the Gallery proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d1-03",
+          "question": "Does Ari favor the Gallery proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d1-05",
+          "question": "Does Bryn favor the Garden proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d1-11",
+          "question": "Does Ada favor the Garden proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B.",
+          "valid": true
+        },
+        {
+          "gold": 1,
+          "prediction": 1,
+          "query_id": "FHV1-FINAL-0017-d1-extra0",
+          "question": "Does Ada favor the Gallery proposal?\nUse A for yes and B for no.\nAnswer with exactly one of B, A.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d1-extra4",
+          "question": "Does Dara favor the Gallery proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-09",
+          "question": "Is the Gallery proposal supported by both Ada and Bryn?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 1,
+          "prediction": 1,
+          "query_id": "FHV1-FINAL-0017-d0-10",
+          "question": "Does at least one of Ada and Bryn support Gallery?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 1,
+          "prediction": 1,
+          "query_id": "FHV1-FINAL-0017-d0-02",
+          "question": "Do Bryn and Ari take the same side on Gallery?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-06",
+          "question": "Is the Gallery proposal supported by both Bryn and Ari?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-07",
+          "question": "Does at least one of Bryn and Ari support Gallery?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-extra1",
+          "question": "Do Ari and Ada take the same side on Gallery?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-extra2",
+          "question": "Is the Gallery proposal supported by both Ari and Ada?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 1,
+          "prediction": 1,
+          "query_id": "FHV1-FINAL-0017-d0-extra3",
+          "question": "Does at least one of Ari and Ada support Gallery?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        }
+      ],
+      "origin": 0,
+      "prefix_length": 455,
+      "repeated_target": {
+        "answer_mass": 0.9992547863907544,
+        "argmax_in_labels": true,
+        "batch_seconds": 0.08090286100014055,
+        "batch_size": 1,
+        "context": "o0/INV_PAIR_NLL_s0",
+        "finite": true,
+        "logps": [
+          -0.40288686752319336,
+          -1.1060385704040527
+        ],
+        "master_unchanged": true,
+        "physical_batch": 11,
+        "physical_slot": 0,
+        "prediction": 0,
+        "qualification_seconds": 0.0,
+        "query_id": "FHV1-FINAL-0017-d0-08",
+        "tie": false,
+        "tokens_sha256": "921519b7bb58ae555c3b4ef78f3a3eca20a0b98be2b6685245b0882dc6e0e681",
+        "valid": true
+      },
+      "target": {
+        "answer_mass": 0.9992547863907544,
+        "argmax_in_labels": true,
+        "batch_seconds": 0.07538162999981068,
+        "batch_size": 1,
+        "context": "o0/INV_PAIR_NLL_s0",
+        "finite": true,
+        "logps": [
+          -0.40288686752319336,
+          -1.1060385704040527
+        ],
+        "master_unchanged": true,
+        "physical_batch": 11,
+        "physical_slot": 0,
+        "prediction": 0,
+        "qualification_seconds": 0.0,
+        "query_id": "FHV1-FINAL-0017-d0-08",
+        "tie": false,
+        "tokens_sha256": "921519b7bb58ae555c3b4ef78f3a3eca20a0b98be2b6685245b0882dc6e0e681",
+        "valid": true
+      }
+    },
+    {
+      "changed_facts": 1,
+      "controls": [
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-00",
+          "question": "Does Bryn favor the Gallery proposal?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-03",
+          "question": "Does Ari favor the Gallery proposal?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-05",
+          "question": "Does Bryn favor the Garden proposal?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-11",
+          "question": "Does Ada favor the Garden proposal?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 1,
+          "prediction": 1,
+          "query_id": "FHV1-FINAL-0017-d0-extra0",
+          "question": "Does Ada favor the Gallery proposal?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-extra4",
+          "question": "Does Dara favor the Gallery proposal?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d1-00",
+          "question": "Does Bryn favor the Gallery proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d1-03",
+          "question": "Does Ari favor the Gallery proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d1-05",
+          "question": "Does Bryn favor the Garden proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d1-11",
+          "question": "Does Ada favor the Garden proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B.",
+          "valid": true
+        },
+        {
+          "gold": 1,
+          "prediction": 1,
+          "query_id": "FHV1-FINAL-0017-d1-extra0",
+          "question": "Does Ada favor the Gallery proposal?\nUse A for yes and B for no.\nAnswer with exactly one of B, A.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d1-extra4",
+          "question": "Does Dara favor the Gallery proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-09",
+          "question": "Is the Gallery proposal supported by both Ada and Bryn?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 1,
+          "prediction": 1,
+          "query_id": "FHV1-FINAL-0017-d0-10",
+          "question": "Does at least one of Ada and Bryn support Gallery?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 1,
+          "prediction": 1,
+          "query_id": "FHV1-FINAL-0017-d0-02",
+          "question": "Do Bryn and Ari take the same side on Gallery?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-06",
+          "question": "Is the Gallery proposal supported by both Bryn and Ari?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-07",
+          "question": "Does at least one of Bryn and Ari support Gallery?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-extra1",
+          "question": "Do Ari and Ada take the same side on Gallery?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-extra2",
+          "question": "Is the Gallery proposal supported by both Ari and Ada?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 1,
+          "prediction": 1,
+          "query_id": "FHV1-FINAL-0017-d0-extra3",
+          "question": "Does at least one of Ari and Ada support Gallery?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        }
+      ],
+      "origin": 1,
+      "prefix_length": 456,
+      "repeated_target": {
+        "answer_mass": 0.9997469987988714,
+        "argmax_in_labels": true,
+        "batch_seconds": 0.08072311799969611,
+        "batch_size": 1,
+        "context": "o1/INV_PAIR_NLL_s0",
+        "finite": true,
+        "logps": [
+          -0.008879697881639004,
+          -4.757460594177246
+        ],
+        "master_unchanged": true,
+        "physical_batch": 11,
+        "physical_slot": 0,
+        "prediction": 0,
+        "qualification_seconds": 0.0,
+        "query_id": "FHV1-FINAL-0017-d0-08",
+        "tie": false,
+        "tokens_sha256": "f14b80127b18651241e6e8accd74517deccb4b82fd79efc32531a148e4bf7e33",
+        "valid": true
+      },
+      "target": {
+        "answer_mass": 0.9997469987988714,
+        "argmax_in_labels": true,
+        "batch_seconds": 0.07299256000032983,
+        "batch_size": 1,
+        "context": "o1/INV_PAIR_NLL_s0",
+        "finite": true,
+        "logps": [
+          -0.008879697881639004,
+          -4.757460594177246
+        ],
+        "master_unchanged": true,
+        "physical_batch": 11,
+        "physical_slot": 0,
+        "prediction": 0,
+        "qualification_seconds": 0.0,
+        "query_id": "FHV1-FINAL-0017-d0-08",
+        "tie": false,
+        "tokens_sha256": "f14b80127b18651241e6e8accd74517deccb4b82fd79efc32531a148e4bf7e33",
+        "valid": true
+      }
+    },
+    {
+      "changed_facts": 1,
+      "controls": [
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-00",
+          "question": "Does Bryn favor the Gallery proposal?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-03",
+          "question": "Does Ari favor the Gallery proposal?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-05",
+          "question": "Does Bryn favor the Garden proposal?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-11",
+          "question": "Does Ada favor the Garden proposal?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 1,
+          "prediction": 1,
+          "query_id": "FHV1-FINAL-0017-d0-extra0",
+          "question": "Does Ada favor the Gallery proposal?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-extra4",
+          "question": "Does Dara favor the Gallery proposal?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d1-00",
+          "question": "Does Bryn favor the Gallery proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d1-03",
+          "question": "Does Ari favor the Gallery proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d1-05",
+          "question": "Does Bryn favor the Garden proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d1-11",
+          "question": "Does Ada favor the Garden proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B.",
+          "valid": true
+        },
+        {
+          "gold": 1,
+          "prediction": 1,
+          "query_id": "FHV1-FINAL-0017-d1-extra0",
+          "question": "Does Ada favor the Gallery proposal?\nUse A for yes and B for no.\nAnswer with exactly one of B, A.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d1-extra4",
+          "question": "Does Dara favor the Gallery proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-09",
+          "question": "Is the Gallery proposal supported by both Ada and Bryn?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 1,
+          "prediction": 1,
+          "query_id": "FHV1-FINAL-0017-d0-10",
+          "question": "Does at least one of Ada and Bryn support Gallery?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 1,
+          "prediction": 1,
+          "query_id": "FHV1-FINAL-0017-d0-02",
+          "question": "Do Bryn and Ari take the same side on Gallery?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-06",
+          "question": "Is the Gallery proposal supported by both Bryn and Ari?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-07",
+          "question": "Does at least one of Bryn and Ari support Gallery?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-extra1",
+          "question": "Do Ari and Ada take the same side on Gallery?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-extra2",
+          "question": "Is the Gallery proposal supported by both Ari and Ada?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 1,
+          "prediction": 1,
+          "query_id": "FHV1-FINAL-0017-d0-extra3",
+          "question": "Does at least one of Ari and Ada support Gallery?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        }
+      ],
+      "origin": 2,
+      "prefix_length": 456,
+      "repeated_target": {
+        "answer_mass": 0.999359053368634,
+        "argmax_in_labels": true,
+        "batch_seconds": 0.0736668199997439,
+        "batch_size": 1,
+        "context": "o2/INV_PAIR_NLL_s0",
+        "finite": true,
+        "logps": [
+          -2.8054680824279785,
+          -0.06306696683168411
+        ],
+        "master_unchanged": true,
+        "physical_batch": 11,
+        "physical_slot": 0,
+        "prediction": 1,
+        "qualification_seconds": 0.0,
+        "query_id": "FHV1-FINAL-0017-d0-08",
+        "tie": false,
+        "tokens_sha256": "d0988be7f62959bc613eabe0ef9cd248b600ea8c5fb14187292369c06dfd5a76",
+        "valid": true
+      },
+      "target": {
+        "answer_mass": 0.999359053368634,
+        "argmax_in_labels": true,
+        "batch_seconds": 0.07392940899990208,
+        "batch_size": 1,
+        "context": "o2/INV_PAIR_NLL_s0",
+        "finite": true,
+        "logps": [
+          -2.8054680824279785,
+          -0.06306696683168411
+        ],
+        "master_unchanged": true,
+        "physical_batch": 11,
+        "physical_slot": 0,
+        "prediction": 1,
+        "qualification_seconds": 0.0,
+        "query_id": "FHV1-FINAL-0017-d0-08",
+        "tie": false,
+        "tokens_sha256": "d0988be7f62959bc613eabe0ef9cd248b600ea8c5fb14187292369c06dfd5a76",
+        "valid": true
+      }
+    },
+    {
+      "changed_facts": 2,
+      "controls": [
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-00",
+          "question": "Does Bryn favor the Gallery proposal?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-03",
+          "question": "Does Ari favor the Gallery proposal?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-05",
+          "question": "Does Bryn favor the Garden proposal?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-11",
+          "question": "Does Ada favor the Garden proposal?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 1,
+          "prediction": 1,
+          "query_id": "FHV1-FINAL-0017-d0-extra0",
+          "question": "Does Ada favor the Gallery proposal?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-extra4",
+          "question": "Does Dara favor the Gallery proposal?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d1-00",
+          "question": "Does Bryn favor the Gallery proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d1-03",
+          "question": "Does Ari favor the Gallery proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d1-05",
+          "question": "Does Bryn favor the Garden proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d1-11",
+          "question": "Does Ada favor the Garden proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B.",
+          "valid": true
+        },
+        {
+          "gold": 1,
+          "prediction": 1,
+          "query_id": "FHV1-FINAL-0017-d1-extra0",
+          "question": "Does Ada favor the Gallery proposal?\nUse A for yes and B for no.\nAnswer with exactly one of B, A.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d1-extra4",
+          "question": "Does Dara favor the Gallery proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-09",
+          "question": "Is the Gallery proposal supported by both Ada and Bryn?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 1,
+          "prediction": 1,
+          "query_id": "FHV1-FINAL-0017-d0-10",
+          "question": "Does at least one of Ada and Bryn support Gallery?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 1,
+          "prediction": 1,
+          "query_id": "FHV1-FINAL-0017-d0-02",
+          "question": "Do Bryn and Ari take the same side on Gallery?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-06",
+          "question": "Is the Gallery proposal supported by both Bryn and Ari?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-07",
+          "question": "Does at least one of Bryn and Ari support Gallery?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-extra1",
+          "question": "Do Ari and Ada take the same side on Gallery?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-extra2",
+          "question": "Is the Gallery proposal supported by both Ari and Ada?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 1,
+          "prediction": 1,
+          "query_id": "FHV1-FINAL-0017-d0-extra3",
+          "question": "Does at least one of Ari and Ada support Gallery?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        }
+      ],
+      "origin": 3,
+      "prefix_length": 457,
+      "repeated_target": {
+        "answer_mass": 0.9997103487708182,
+        "argmax_in_labels": true,
+        "batch_seconds": 0.07370339999943099,
+        "batch_size": 1,
+        "context": "o3/INV_PAIR_NLL_s0",
+        "finite": true,
+        "logps": [
+          -0.014912322163581848,
+          -4.232777118682861
+        ],
+        "master_unchanged": true,
+        "physical_batch": 11,
+        "physical_slot": 0,
+        "prediction": 0,
+        "qualification_seconds": 0.0,
+        "query_id": "FHV1-FINAL-0017-d0-08",
+        "tie": false,
+        "tokens_sha256": "a80b30849c7eaff72f552f2633308422f06f6ad123cb4a0c8a20472a2ed8bee2",
+        "valid": true
+      },
+      "target": {
+        "answer_mass": 0.9997103487708182,
+        "argmax_in_labels": true,
+        "batch_seconds": 0.0728993569996419,
+        "batch_size": 1,
+        "context": "o3/INV_PAIR_NLL_s0",
+        "finite": true,
+        "logps": [
+          -0.014912322163581848,
+          -4.232777118682861
+        ],
+        "master_unchanged": true,
+        "physical_batch": 11,
+        "physical_slot": 0,
+        "prediction": 0,
+        "qualification_seconds": 0.0,
+        "query_id": "FHV1-FINAL-0017-d0-08",
+        "tie": false,
+        "tokens_sha256": "a80b30849c7eaff72f552f2633308422f06f6ad123cb4a0c8a20472a2ed8bee2",
+        "valid": true
+      }
+    },
+    {
+      "changed_facts": 1,
+      "controls": [
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-00",
+          "question": "Does Bryn favor the Gallery proposal?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-03",
+          "question": "Does Ari favor the Gallery proposal?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-05",
+          "question": "Does Bryn favor the Garden proposal?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-11",
+          "question": "Does Ada favor the Garden proposal?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 1,
+          "prediction": 1,
+          "query_id": "FHV1-FINAL-0017-d0-extra0",
+          "question": "Does Ada favor the Gallery proposal?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-extra4",
+          "question": "Does Dara favor the Gallery proposal?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d1-00",
+          "question": "Does Bryn favor the Gallery proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d1-03",
+          "question": "Does Ari favor the Gallery proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d1-05",
+          "question": "Does Bryn favor the Garden proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d1-11",
+          "question": "Does Ada favor the Garden proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B.",
+          "valid": true
+        },
+        {
+          "gold": 1,
+          "prediction": 1,
+          "query_id": "FHV1-FINAL-0017-d1-extra0",
+          "question": "Does Ada favor the Gallery proposal?\nUse A for yes and B for no.\nAnswer with exactly one of B, A.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d1-extra4",
+          "question": "Does Dara favor the Gallery proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-09",
+          "question": "Is the Gallery proposal supported by both Ada and Bryn?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 1,
+          "prediction": 1,
+          "query_id": "FHV1-FINAL-0017-d0-10",
+          "question": "Does at least one of Ada and Bryn support Gallery?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 1,
+          "prediction": 1,
+          "query_id": "FHV1-FINAL-0017-d0-02",
+          "question": "Do Bryn and Ari take the same side on Gallery?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-06",
+          "question": "Is the Gallery proposal supported by both Bryn and Ari?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-07",
+          "question": "Does at least one of Bryn and Ari support Gallery?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-extra1",
+          "question": "Do Ari and Ada take the same side on Gallery?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-extra2",
+          "question": "Is the Gallery proposal supported by both Ari and Ada?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 1,
+          "prediction": 1,
+          "query_id": "FHV1-FINAL-0017-d0-extra3",
+          "question": "Does at least one of Ari and Ada support Gallery?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        }
+      ],
+      "origin": 4,
+      "prefix_length": 454,
+      "repeated_target": {
+        "answer_mass": 0.9994515903119557,
+        "argmax_in_labels": true,
+        "batch_seconds": 0.07360887800041382,
+        "batch_size": 1,
+        "context": "o4/INV_PAIR_NLL_s0",
+        "finite": true,
+        "logps": [
+          -4.027824878692627,
+          -0.018532106652855873
+        ],
+        "master_unchanged": true,
+        "physical_batch": 11,
+        "physical_slot": 0,
+        "prediction": 1,
+        "qualification_seconds": 0.0,
+        "query_id": "FHV1-FINAL-0017-d0-08",
+        "tie": false,
+        "tokens_sha256": "c071586649963ea924cf3e73f0cf098b84b843c720448fb5c6edf4dc3078025f",
+        "valid": true
+      },
+      "target": {
+        "answer_mass": 0.9994515903119557,
+        "argmax_in_labels": true,
+        "batch_seconds": 0.07295441799988112,
+        "batch_size": 1,
+        "context": "o4/INV_PAIR_NLL_s0",
+        "finite": true,
+        "logps": [
+          -4.027824878692627,
+          -0.018532106652855873
+        ],
+        "master_unchanged": true,
+        "physical_batch": 11,
+        "physical_slot": 0,
+        "prediction": 1,
+        "qualification_seconds": 0.0,
+        "query_id": "FHV1-FINAL-0017-d0-08",
+        "tie": false,
+        "tokens_sha256": "c071586649963ea924cf3e73f0cf098b84b843c720448fb5c6edf4dc3078025f",
+        "valid": true
+      }
+    },
+    {
+      "changed_facts": 2,
+      "controls": [
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-00",
+          "question": "Does Bryn favor the Gallery proposal?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-03",
+          "question": "Does Ari favor the Gallery proposal?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-05",
+          "question": "Does Bryn favor the Garden proposal?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-11",
+          "question": "Does Ada favor the Garden proposal?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 1,
+          "prediction": 1,
+          "query_id": "FHV1-FINAL-0017-d0-extra0",
+          "question": "Does Ada favor the Gallery proposal?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-extra4",
+          "question": "Does Dara favor the Gallery proposal?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d1-00",
+          "question": "Does Bryn favor the Gallery proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d1-03",
+          "question": "Does Ari favor the Gallery proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d1-05",
+          "question": "Does Bryn favor the Garden proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d1-11",
+          "question": "Does Ada favor the Garden proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B.",
+          "valid": true
+        },
+        {
+          "gold": 1,
+          "prediction": 1,
+          "query_id": "FHV1-FINAL-0017-d1-extra0",
+          "question": "Does Ada favor the Gallery proposal?\nUse A for yes and B for no.\nAnswer with exactly one of B, A.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d1-extra4",
+          "question": "Does Dara favor the Gallery proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-09",
+          "question": "Is the Gallery proposal supported by both Ada and Bryn?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 1,
+          "prediction": 1,
+          "query_id": "FHV1-FINAL-0017-d0-10",
+          "question": "Does at least one of Ada and Bryn support Gallery?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 1,
+          "prediction": 1,
+          "query_id": "FHV1-FINAL-0017-d0-02",
+          "question": "Do Bryn and Ari take the same side on Gallery?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-06",
+          "question": "Is the Gallery proposal supported by both Bryn and Ari?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-07",
+          "question": "Does at least one of Bryn and Ari support Gallery?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-extra1",
+          "question": "Do Ari and Ada take the same side on Gallery?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-extra2",
+          "question": "Is the Gallery proposal supported by both Ari and Ada?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 1,
+          "prediction": 1,
+          "query_id": "FHV1-FINAL-0017-d0-extra3",
+          "question": "Does at least one of Ari and Ada support Gallery?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        }
+      ],
+      "origin": 5,
+      "prefix_length": 455,
+      "repeated_target": {
+        "answer_mass": 0.99939841603417,
+        "argmax_in_labels": true,
+        "batch_seconds": 0.07348079399980634,
+        "batch_size": 1,
+        "context": "o5/INV_PAIR_NLL_s0",
+        "finite": true,
+        "logps": [
+          -0.2507692575454712,
+          -1.5087038278579712
+        ],
+        "master_unchanged": true,
+        "physical_batch": 11,
+        "physical_slot": 0,
+        "prediction": 0,
+        "qualification_seconds": 0.0,
+        "query_id": "FHV1-FINAL-0017-d0-08",
+        "tie": false,
+        "tokens_sha256": "a66938217b9aa450ee9f529031697a9ce779f605a2a444fa13f8c411b4e90214",
+        "valid": true
+      },
+      "target": {
+        "answer_mass": 0.99939841603417,
+        "argmax_in_labels": true,
+        "batch_seconds": 0.07360428199990565,
+        "batch_size": 1,
+        "context": "o5/INV_PAIR_NLL_s0",
+        "finite": true,
+        "logps": [
+          -0.2507692575454712,
+          -1.5087038278579712
+        ],
+        "master_unchanged": true,
+        "physical_batch": 11,
+        "physical_slot": 0,
+        "prediction": 0,
+        "qualification_seconds": 0.0,
+        "query_id": "FHV1-FINAL-0017-d0-08",
+        "tie": false,
+        "tokens_sha256": "a66938217b9aa450ee9f529031697a9ce779f605a2a444fa13f8c411b4e90214",
+        "valid": true
+      }
+    },
+    {
+      "changed_facts": 2,
+      "controls": [
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-00",
+          "question": "Does Bryn favor the Gallery proposal?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-03",
+          "question": "Does Ari favor the Gallery proposal?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-05",
+          "question": "Does Bryn favor the Garden proposal?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-11",
+          "question": "Does Ada favor the Garden proposal?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 1,
+          "prediction": 1,
+          "query_id": "FHV1-FINAL-0017-d0-extra0",
+          "question": "Does Ada favor the Gallery proposal?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-extra4",
+          "question": "Does Dara favor the Gallery proposal?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d1-00",
+          "question": "Does Bryn favor the Gallery proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d1-03",
+          "question": "Does Ari favor the Gallery proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d1-05",
+          "question": "Does Bryn favor the Garden proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d1-11",
+          "question": "Does Ada favor the Garden proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B.",
+          "valid": true
+        },
+        {
+          "gold": 1,
+          "prediction": 1,
+          "query_id": "FHV1-FINAL-0017-d1-extra0",
+          "question": "Does Ada favor the Gallery proposal?\nUse A for yes and B for no.\nAnswer with exactly one of B, A.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d1-extra4",
+          "question": "Does Dara favor the Gallery proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-09",
+          "question": "Is the Gallery proposal supported by both Ada and Bryn?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 1,
+          "prediction": 1,
+          "query_id": "FHV1-FINAL-0017-d0-10",
+          "question": "Does at least one of Ada and Bryn support Gallery?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 1,
+          "prediction": 1,
+          "query_id": "FHV1-FINAL-0017-d0-02",
+          "question": "Do Bryn and Ari take the same side on Gallery?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-06",
+          "question": "Is the Gallery proposal supported by both Bryn and Ari?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-07",
+          "question": "Does at least one of Bryn and Ari support Gallery?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-extra1",
+          "question": "Do Ari and Ada take the same side on Gallery?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-extra2",
+          "question": "Is the Gallery proposal supported by both Ari and Ada?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 1,
+          "prediction": 1,
+          "query_id": "FHV1-FINAL-0017-d0-extra3",
+          "question": "Does at least one of Ari and Ada support Gallery?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        }
+      ],
+      "origin": 6,
+      "prefix_length": 455,
+      "repeated_target": {
+        "answer_mass": 0.9995223604956254,
+        "argmax_in_labels": true,
+        "batch_seconds": 0.07364584900005866,
+        "batch_size": 1,
+        "context": "o6/INV_PAIR_NLL_s0",
+        "finite": true,
+        "logps": [
+          -4.0390214920043945,
+          -0.018258007243275642
+        ],
+        "master_unchanged": true,
+        "physical_batch": 11,
+        "physical_slot": 0,
+        "prediction": 1,
+        "qualification_seconds": 0.0,
+        "query_id": "FHV1-FINAL-0017-d0-08",
+        "tie": false,
+        "tokens_sha256": "5d2ecb9877a59df503b2fba0a15731ff97b04beeb5673e7025b94a82532d2091",
+        "valid": true
+      },
+      "target": {
+        "answer_mass": 0.9995223604956254,
+        "argmax_in_labels": true,
+        "batch_seconds": 0.07352157099967371,
+        "batch_size": 1,
+        "context": "o6/INV_PAIR_NLL_s0",
+        "finite": true,
+        "logps": [
+          -4.0390214920043945,
+          -0.018258007243275642
+        ],
+        "master_unchanged": true,
+        "physical_batch": 11,
+        "physical_slot": 0,
+        "prediction": 1,
+        "qualification_seconds": 0.0,
+        "query_id": "FHV1-FINAL-0017-d0-08",
+        "tie": false,
+        "tokens_sha256": "5d2ecb9877a59df503b2fba0a15731ff97b04beeb5673e7025b94a82532d2091",
+        "valid": true
+      }
+    },
+    {
+      "changed_facts": 3,
+      "controls": [
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-00",
+          "question": "Does Bryn favor the Gallery proposal?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-03",
+          "question": "Does Ari favor the Gallery proposal?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-05",
+          "question": "Does Bryn favor the Garden proposal?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-11",
+          "question": "Does Ada favor the Garden proposal?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 1,
+          "prediction": 1,
+          "query_id": "FHV1-FINAL-0017-d0-extra0",
+          "question": "Does Ada favor the Gallery proposal?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-extra4",
+          "question": "Does Dara favor the Gallery proposal?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d1-00",
+          "question": "Does Bryn favor the Gallery proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d1-03",
+          "question": "Does Ari favor the Gallery proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d1-05",
+          "question": "Does Bryn favor the Garden proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d1-11",
+          "question": "Does Ada favor the Garden proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B.",
+          "valid": true
+        },
+        {
+          "gold": 1,
+          "prediction": 1,
+          "query_id": "FHV1-FINAL-0017-d1-extra0",
+          "question": "Does Ada favor the Gallery proposal?\nUse A for yes and B for no.\nAnswer with exactly one of B, A.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d1-extra4",
+          "question": "Does Dara favor the Gallery proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-09",
+          "question": "Is the Gallery proposal supported by both Ada and Bryn?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 1,
+          "prediction": 1,
+          "query_id": "FHV1-FINAL-0017-d0-10",
+          "question": "Does at least one of Ada and Bryn support Gallery?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 1,
+          "prediction": 1,
+          "query_id": "FHV1-FINAL-0017-d0-02",
+          "question": "Do Bryn and Ari take the same side on Gallery?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-06",
+          "question": "Is the Gallery proposal supported by both Bryn and Ari?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-07",
+          "question": "Does at least one of Bryn and Ari support Gallery?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-extra1",
+          "question": "Do Ari and Ada take the same side on Gallery?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 0,
+          "prediction": 0,
+          "query_id": "FHV1-FINAL-0017-d0-extra2",
+          "question": "Is the Gallery proposal supported by both Ari and Ada?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        },
+        {
+          "gold": 1,
+          "prediction": 1,
+          "query_id": "FHV1-FINAL-0017-d0-extra3",
+          "question": "Does at least one of Ari and Ada support Gallery?\nAnswer with exactly one of No, Yes.",
+          "valid": true
+        }
+      ],
+      "origin": 7,
+      "prefix_length": 456,
+      "repeated_target": {
+        "answer_mass": 0.9994641929241578,
+        "argmax_in_labels": true,
+        "batch_seconds": 0.07375177999983862,
+        "batch_size": 1,
+        "context": "o7/INV_PAIR_NLL_s0",
+        "finite": true,
+        "logps": [
+          -0.16981665790081024,
+          -1.8601795434951782
+        ],
+        "master_unchanged": true,
+        "physical_batch": 11,
+        "physical_slot": 0,
+        "prediction": 0,
+        "qualification_seconds": 0.0,
+        "query_id": "FHV1-FINAL-0017-d0-08",
+        "tie": false,
+        "tokens_sha256": "5eb4580490b8f103963bbd1b57e64d82e3621f962427020c1ed156a5205790fa",
+        "valid": true
+      },
+      "target": {
+        "answer_mass": 0.9994641929241578,
+        "argmax_in_labels": true,
+        "batch_seconds": 0.07325319500023397,
+        "batch_size": 1,
+        "context": "o7/INV_PAIR_NLL_s0",
+        "finite": true,
+        "logps": [
+          -0.16981665790081024,
+          -1.8601795434951782
+        ],
+        "master_unchanged": true,
+        "physical_batch": 11,
+        "physical_slot": 0,
+        "prediction": 0,
+        "qualification_seconds": 0.0,
+        "query_id": "FHV1-FINAL-0017-d0-08",
+        "tie": false,
+        "tokens_sha256": "5eb4580490b8f103963bbd1b57e64d82e3621f962427020c1ed156a5205790fa",
+        "valid": true
+      }
+    }
+  ],
+  "native_target": {
+    "answer_mass": 0.9991600626289413,
+    "argmax_in_labels": true,
+    "batch_seconds": 0.07338338799991106,
+    "batch_size": 1,
+    "context": "NATIVE_FINAL",
+    "finite": true,
+    "logps": [
+      -0.30481332540512085,
+      -1.3397960662841797
+    ],
+    "master_unchanged": true,
+    "physical_batch": 11,
+    "physical_slot": 0,
+    "prediction": 0,
+    "qualification_seconds": 0.0,
+    "query_id": "FHV1-FINAL-0017-d0-08",
+    "tie": false,
+    "tokens_sha256": "921519b7bb58ae555c3b4ef78f3a3eca20a0b98be2b6685245b0882dc6e0e681",
+    "valid": true
+  },
+  "original_panel": "scientific/final/FHV1-FINAL-0017/SCORES.json.gz",
+  "post_hoc_illustration": true,
+  "question": {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "FHV1-FINAL-0017-d0-08",
+    "root_id": "FHV1-FINAL-0017",
+    "spec": {
+      "a": 2,
+      "b": 0,
+      "kind": "same",
+      "p": 2
+    },
+    "split": "FINAL",
+    "text": "Do Ada and Bryn take the same side on Gallery?\nAnswer with exactly one of No, Yes."
+  },
+  "repeat_comparison": {
+    "all_discrepancies": [],
+    "failed_rows": [],
+    "max_logp_delta": 0.0,
+    "rows": 578,
+    "status": "PASS",
+    "tolerance": 1e-06
+  },
+  "repeated_native_target": {
+    "answer_mass": 0.9991600626289413,
+    "argmax_in_labels": true,
+    "batch_seconds": 0.0739290350002193,
+    "batch_size": 1,
+    "context": "NATIVE_FINAL",
+    "finite": true,
+    "logps": [
+      -0.30481332540512085,
+      -1.3397960662841797
+    ],
+    "master_unchanged": true,
+    "physical_batch": 11,
+    "physical_slot": 0,
+    "prediction": 0,
+    "qualification_seconds": 0.0,
+    "query_id": "FHV1-FINAL-0017-d0-08",
+    "tie": false,
+    "tokens_sha256": "921519b7bb58ae555c3b4ef78f3a3eca20a0b98be2b6685245b0882dc6e0e681",
+    "valid": true
+  },
+  "repeated_panel": "scientific/repeat/FHV1-FINAL-0017/SCORES.json.gz",
+  "root": {
+    "commands": [
+      {
+        "actor": 0,
+        "project": 2,
+        "value": 0
+      },
+      {
+        "actor": 1,
+        "project": 2,
+        "value": 0
+      },
+      {
+        "actor": 2,
+        "project": 2,
+        "value": 1
+      }
+    ],
+    "root_id": "FHV1-FINAL-0017",
+    "source_hashes": [
+      "c0e472d05f1f37398419e4deb4a8449f0a410e5ece6f8dfa79046101ef848e0e",
+      "93c6fa6e9b75ab675407abb52593fab21a9d1b79dfee3bb6600dac662aaf439e",
+      "929bc4db10e4a6a9130381c78e878abb8d1a78d7c1b56cd534e40937f2d3b18a",
+      "b46ef04d8d0434efd4b4fde80f6681323f81479c4c504f35b930d32c85159360",
+      "45ffb1ac2bdb2aca472dff08a5bb6b972dfbb0c775860d2111ce435127728721",
+      "683f7709eddcf5bed8225e9374c535aa993cda41f3e1a95af0ecc0ca9f5fb2de",
+      "8a15c0da1b88831e4e22179ca511d80ff512e5419f5c9fffa8ce779e533c672f",
+      "dfe8f1a1f98eee3bffdf62fe6e116cf237bafa5650dbe464c2cefea48a1810f6"
+    ],
+    "sources": [
+      {
+        "actors": [
+          "Bryn",
+          "Ari",
+          "Ada",
+          "Dara"
+        ],
+        "layout": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "projects": [
+          "Garden",
+          "Meadow",
+          "Gallery"
+        ],
+        "scene_id": "FHV1-FINAL-0017-origin0",
+        "setting": "community planning meeting",
+        "split": "FINAL",
+        "target_actor": 0,
+        "target_project": 2,
+        "values": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "actors": [
+          "Bryn",
+          "Ari",
+          "Ada",
+          "Dara"
+        ],
+        "layout": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "projects": [
+          "Garden",
+          "Meadow",
+          "Gallery"
+        ],
+        "scene_id": "FHV1-FINAL-0017-origin1",
+        "setting": "community planning meeting",
+        "split": "FINAL",
+        "target_actor": 0,
+        "target_project": 2,
+        "values": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "actors": [
+          "Bryn",
+          "Ari",
+          "Ada",
+          "Dara"
+        ],
+        "layout": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "projects": [
+          "Garden",
+          "Meadow",
+          "Gallery"
+        ],
+        "scene_id": "FHV1-FINAL-0017-origin2",
+        "setting": "community planning meeting",
+        "split": "FINAL",
+        "target_actor": 0,
+        "target_project": 2,
+        "values": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "actors": [
+          "Bryn",
+          "Ari",
+          "Ada",
+          "Dara"
+        ],
+        "layout": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "projects": [
+          "Garden",
+          "Meadow",
+          "Gallery"
+        ],
+        "scene_id": "FHV1-FINAL-0017-origin3",
+        "setting": "community planning meeting",
+        "split": "FINAL",
+        "target_actor": 0,
+        "target_project": 2,
+        "values": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "actors": [
+          "Bryn",
+          "Ari",
+          "Ada",
+          "Dara"
+        ],
+        "layout": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "projects": [
+          "Garden",
+          "Meadow",
+          "Gallery"
+        ],
+        "scene_id": "FHV1-FINAL-0017-origin4",
+        "setting": "community planning meeting",
+        "split": "FINAL",
+        "target_actor": 0,
+        "target_project": 2,
+        "values": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "actors": [
+          "Bryn",
+          "Ari",
+          "Ada",
+          "Dara"
+        ],
+        "layout": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "projects": [
+          "Garden",
+          "Meadow",
+          "Gallery"
+        ],
+        "scene_id": "FHV1-FINAL-0017-origin5",
+        "setting": "community planning meeting",
+        "split": "FINAL",
+        "target_actor": 0,
+        "target_project": 2,
+        "values": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "actors": [
+          "Bryn",
+          "Ari",
+          "Ada",
+          "Dara"
+        ],
+        "layout": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "projects": [
+          "Garden",
+          "Meadow",
+          "Gallery"
+        ],
+        "scene_id": "FHV1-FINAL-0017-origin6",
+        "setting": "community planning meeting",
+        "split": "FINAL",
+        "target_actor": 0,
+        "target_project": 2,
+        "values": [
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "actors": [
+          "Bryn",
+          "Ari",
+          "Ada",
+          "Dara"
+        ],
+        "layout": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "projects": [
+          "Garden",
+          "Meadow",
+          "Gallery"
+        ],
+        "scene_id": "FHV1-FINAL-0017-origin7",
+        "setting": "community planning meeting",
+        "split": "FINAL",
+        "target_actor": 0,
+        "target_project": 2,
+        "values": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      }
+    ],
+    "split": "FINAL",
+    "terminal": {
+      "actors": [
+        "Bryn",
+        "Ari",
+        "Ada",
+        "Dara"
+      ],
+      "layout": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "projects": [
+        "Garden",
+        "Meadow",
+        "Gallery"
+      ],
+      "scene_id": "FHV1-FINAL-0017",
+      "setting": "community planning meeting",
+      "split": "FINAL",
+      "target_actor": 0,
+      "target_project": 2,
+      "values": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    }
+  },
+  "root_id": "FHV1-FINAL-0017",
+  "witness": {
+    "G0_eligible": true,
+    "G0_matched": true,
+    "G0_strong": false,
+    "G0_witness": true,
+    "G1_eligible": true,
+    "G1_matched": true,
+    "G1_strong": false,
+    "G1_witness": true,
+    "G2a_eligible": true,
+    "G2a_matched": true,
+    "G2a_strong": false,
+    "G2a_witness": true,
+    "G2b_eligible": true,
+    "G2b_matched": true,
+    "G2b_strong": false,
+    "G2b_witness": true,
+    "both_eligible": true,
+    "both_matched": true,
+    "both_strong": false,
+    "both_witness": true,
+    "correct_probabilities": [
+      0.6688861744839085,
+      0.9914104382332687,
+      0.060517243967399006,
+      0.9854837624562778,
+      0.017822807554833765,
+      0.7786703506616323,
+      0.017623117607588112,
+      0.8442718769009275
+    ],
+    "cross_G0_eligible": true,
+    "cross_G0_matched": true,
+    "cross_G0_strong": false,
+    "cross_G1_eligible": true,
+    "cross_G1_matched": true,
+    "cross_G1_strong": false,
+    "cross_G2a_eligible": true,
+    "cross_G2a_matched": true,
+    "cross_G2a_strong": false,
+    "cross_G2b_eligible": true,
+    "cross_G2b_matched": true,
+    "cross_G2b_strong": false,
+    "cross_both_eligible": true,
+    "cross_both_matched": true,
+    "cross_both_strong": false,
+    "draw": 0,
+    "gold": 0,
+    "matched_pairs": [
+      [
+        1,
+        2
+      ],
+      [
+        5,
+        6
+      ]
+    ],
+    "predictions": [
+      0,
+      0,
+      1,
+      0,
+      1,
+      0,
+      1,
+      0
+    ],
+    "query_id": "FHV1-FINAL-0017-d0-08",
+    "root_id": "FHV1-FINAL-0017",
+    "seed": 0,
+    "semantic_representative": true,
+    "strong_pairs": [],
+    "structural_pairs": 2,
+    "valid": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  }
+}

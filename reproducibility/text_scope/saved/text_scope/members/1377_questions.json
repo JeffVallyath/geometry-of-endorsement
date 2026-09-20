@@ -1,0 +1,580 @@
+[
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0006-d0-00",
+    "root_id": "SSC1-FINAL-0006",
+    "spec": {
+      "a": 3,
+      "b": 4,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Wren favor the Garden proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0006-d0-01",
+    "root_id": "SSC1-FINAL-0006",
+    "spec": {
+      "a": 3,
+      "b": 4,
+      "kind": "opposes",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Wren oppose the Garden proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0006-d0-02",
+    "root_id": "SSC1-FINAL-0006",
+    "spec": {
+      "a": 3,
+      "b": 4,
+      "kind": "same",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Do Wren and Orla take the same side on Garden?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0006-d0-03",
+    "root_id": "SSC1-FINAL-0006",
+    "spec": {
+      "a": 4,
+      "b": 3,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Orla favor the Garden proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0006-d0-04",
+    "root_id": "SSC1-FINAL-0006",
+    "spec": {
+      "a": 4,
+      "b": 3,
+      "kind": "opposes",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Orla oppose the Garden proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0006-d0-05",
+    "root_id": "SSC1-FINAL-0006",
+    "spec": {
+      "a": 3,
+      "b": 4,
+      "kind": "direct",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does Wren favor the Meadow proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0006-d0-06",
+    "root_id": "SSC1-FINAL-0006",
+    "spec": {
+      "a": 3,
+      "b": 4,
+      "kind": "both",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Is the Garden proposal supported by both Wren and Orla?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0006-d0-07",
+    "root_id": "SSC1-FINAL-0006",
+    "spec": {
+      "a": 3,
+      "b": 4,
+      "kind": "either",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Wren and Orla support Garden?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0006-d0-08",
+    "root_id": "SSC1-FINAL-0006",
+    "spec": {
+      "a": 5,
+      "b": 3,
+      "kind": "same",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Do Luca and Wren take the same side on Garden?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0006-d0-09",
+    "root_id": "SSC1-FINAL-0006",
+    "spec": {
+      "a": 5,
+      "b": 3,
+      "kind": "both",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Is the Garden proposal supported by both Luca and Wren?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0006-d0-10",
+    "root_id": "SSC1-FINAL-0006",
+    "spec": {
+      "a": 5,
+      "b": 3,
+      "kind": "either",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Luca and Wren support Garden?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0006-d0-11",
+    "root_id": "SSC1-FINAL-0006",
+    "spec": {
+      "a": 5,
+      "b": 3,
+      "kind": "direct",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does Luca favor the Meadow proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0006-d0-extra0",
+    "root_id": "SSC1-FINAL-0006",
+    "spec": {
+      "a": 5,
+      "b": 3,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Luca favor the Garden proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0006-d0-extra1",
+    "root_id": "SSC1-FINAL-0006",
+    "spec": {
+      "a": 4,
+      "b": 5,
+      "kind": "same",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Do Orla and Luca take the same side on Garden?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0006-d0-extra2",
+    "root_id": "SSC1-FINAL-0006",
+    "spec": {
+      "a": 4,
+      "b": 5,
+      "kind": "both",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Is the Garden proposal supported by both Orla and Luca?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0006-d0-extra3",
+    "root_id": "SSC1-FINAL-0006",
+    "spec": {
+      "a": 4,
+      "b": 5,
+      "kind": "either",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Orla and Luca support Garden?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0006-d0-extra4",
+    "root_id": "SSC1-FINAL-0006",
+    "spec": {
+      "a": 0,
+      "b": 3,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Dion favor the Garden proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0006-d1-00",
+    "root_id": "SSC1-FINAL-0006",
+    "spec": {
+      "a": 3,
+      "b": 4,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Wren favor the Garden proposal?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0006-d1-01",
+    "root_id": "SSC1-FINAL-0006",
+    "spec": {
+      "a": 3,
+      "b": 4,
+      "kind": "opposes",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Wren oppose the Garden proposal?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0006-d1-02",
+    "root_id": "SSC1-FINAL-0006",
+    "spec": {
+      "a": 3,
+      "b": 4,
+      "kind": "same",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Do Wren and Orla take the same side on Garden?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-FINAL-0006-d1-03",
+    "root_id": "SSC1-FINAL-0006",
+    "spec": {
+      "a": 4,
+      "b": 3,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Orla favor the Garden proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0006-d1-04",
+    "root_id": "SSC1-FINAL-0006",
+    "spec": {
+      "a": 4,
+      "b": 3,
+      "kind": "opposes",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Orla oppose the Garden proposal?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0006-d1-05",
+    "root_id": "SSC1-FINAL-0006",
+    "spec": {
+      "a": 3,
+      "b": 4,
+      "kind": "direct",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does Wren favor the Meadow proposal?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-FINAL-0006-d1-06",
+    "root_id": "SSC1-FINAL-0006",
+    "spec": {
+      "a": 3,
+      "b": 4,
+      "kind": "both",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Is the Garden proposal supported by both Wren and Orla?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0006-d1-07",
+    "root_id": "SSC1-FINAL-0006",
+    "spec": {
+      "a": 3,
+      "b": 4,
+      "kind": "either",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Wren and Orla support Garden?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-FINAL-0006-d1-08",
+    "root_id": "SSC1-FINAL-0006",
+    "spec": {
+      "a": 5,
+      "b": 3,
+      "kind": "same",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Do Luca and Wren take the same side on Garden?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-FINAL-0006-d1-09",
+    "root_id": "SSC1-FINAL-0006",
+    "spec": {
+      "a": 5,
+      "b": 3,
+      "kind": "both",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Is the Garden proposal supported by both Luca and Wren?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0006-d1-10",
+    "root_id": "SSC1-FINAL-0006",
+    "spec": {
+      "a": 5,
+      "b": 3,
+      "kind": "either",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Luca and Wren support Garden?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-FINAL-0006-d1-11",
+    "root_id": "SSC1-FINAL-0006",
+    "spec": {
+      "a": 5,
+      "b": 3,
+      "kind": "direct",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does Luca favor the Meadow proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0006-d1-extra0",
+    "root_id": "SSC1-FINAL-0006",
+    "spec": {
+      "a": 5,
+      "b": 3,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Luca favor the Garden proposal?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0006-d1-extra1",
+    "root_id": "SSC1-FINAL-0006",
+    "spec": {
+      "a": 4,
+      "b": 5,
+      "kind": "same",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Do Orla and Luca take the same side on Garden?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-FINAL-0006-d1-extra2",
+    "root_id": "SSC1-FINAL-0006",
+    "spec": {
+      "a": 4,
+      "b": 5,
+      "kind": "both",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Is the Garden proposal supported by both Orla and Luca?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-FINAL-0006-d1-extra3",
+    "root_id": "SSC1-FINAL-0006",
+    "spec": {
+      "a": 4,
+      "b": 5,
+      "kind": "either",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Orla and Luca support Garden?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-FINAL-0006-d1-extra4",
+    "root_id": "SSC1-FINAL-0006",
+    "spec": {
+      "a": 0,
+      "b": 3,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Dion favor the Garden proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  }
+]

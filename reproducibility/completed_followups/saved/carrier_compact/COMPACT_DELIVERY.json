@@ -1,0 +1,83 @@
+{
+  "format": "NORMAL_INDEPENDENT_ZIP_FILES",
+  "maximum_archive_bytes": 512000000,
+  "source_archive": {
+    "path": "[local path omitted]",
+    "sha256": "8a4465234f9f952a00f9b025f47dfc5785f8c1198f7ac5bff595f365d9dedd39",
+    "bytes": 1123743136,
+    "verified_members": 442,
+    "tensor_custody_before_shutdown": true,
+    "instance_absent": true,
+    "estimated_compute_usd": 4.22,
+    "invoice_available": false
+  },
+  "source_archive_preserved": true,
+  "lossless_native_tensor_bytes": true,
+  "scientific_results_unchanged": true,
+  "tensor_companions": [
+    {
+      "path": "[local path omitted]",
+      "bytes": 382028606,
+      "sha256": "b0ed0209aa221fca8a2d06b5feaace39b99d6a997ba7754e7a80df52a6d05143",
+      "verified_members": 28
+    },
+    {
+      "path": "[local path omitted]",
+      "bytes": 376108393,
+      "sha256": "2283c4366d28f2acfcf068c6437d402ffc4f3061f3793f1ffded7e652fcbc4ec",
+      "verified_members": 3
+    },
+    {
+      "path": "[local path omitted]",
+      "bytes": 374465982,
+      "sha256": "79efba5ba07286354afacd3f012f263674f1414f0578803b1f17665420b59f7d",
+      "verified_members": 3
+    }
+  ],
+  "members_by_companion": {
+    "V10_CARRIER_READER_TENSORS_PART_01.zip": [
+      "run/results/discovery/tensors/origin_3.safetensors",
+      "run/results/discovery/tensors/origin_5.safetensors",
+      "run/results/discovery/producers/origin_3.safetensors",
+      "run/results/discovery/producers/origin_5.safetensors",
+      "run/results/discovery/D/tensors/3_SSC1-FINAL-0035-d1-extra3_R0.safetensors",
+      "run/results/discovery/D/tensors/3_SSC1-FINAL-0035-d1-extra3_RC.safetensors",
+      "run/results/discovery/D/tensors/5_SSC1-FINAL-0035-d1-extra3_R0.safetensors",
+      "run/results/discovery/D/tensors/5_SSC1-FINAL-0035-d1-extra3_RC.safetensors",
+      "run/results/discovery/D/tensors/3_SSC1-FINAL-0035-d1-03_R0.safetensors",
+      "run/results/discovery/D/tensors/3_SSC1-FINAL-0035-d1-03_RC.safetensors",
+      "run/results/discovery/D/tensors/3_SSC1-FINAL-0035-d1-extra0_R0.safetensors",
+      "run/results/discovery/D/tensors/3_SSC1-FINAL-0035-d1-extra0_RC.safetensors",
+      "run/results/discovery/D/tensors/5_SSC1-FINAL-0035-d1-03_R0.safetensors",
+      "run/results/discovery/D/tensors/5_SSC1-FINAL-0035-d1-03_RC.safetensors",
+      "run/results/discovery/D/tensors/5_SSC1-FINAL-0035-d1-extra0_R0.safetensors",
+      "run/results/discovery/D/tensors/5_SSC1-FINAL-0035-d1-extra0_RC.safetensors",
+      "run/results/discovery/D/tensors/3_SSC1-FINAL-0035-d0-extra3_R0.safetensors",
+      "run/results/discovery/D/tensors/3_SSC1-FINAL-0035-d0-extra3_RC.safetensors",
+      "run/results/discovery/D/tensors/5_SSC1-FINAL-0035-d0-extra3_R0.safetensors",
+      "run/results/discovery/D/tensors/5_SSC1-FINAL-0035-d0-extra3_RC.safetensors",
+      "run/results/discovery/D/tensors/3_SSC1-FINAL-0035-d0-03_R0.safetensors",
+      "run/results/discovery/D/tensors/3_SSC1-FINAL-0035-d0-03_RC.safetensors",
+      "run/results/discovery/D/tensors/3_SSC1-FINAL-0035-d0-extra0_R0.safetensors",
+      "run/results/discovery/D/tensors/3_SSC1-FINAL-0035-d0-extra0_RC.safetensors",
+      "run/results/discovery/D/tensors/5_SSC1-FINAL-0035-d0-03_R0.safetensors",
+      "run/results/discovery/D/tensors/5_SSC1-FINAL-0035-d0-03_RC.safetensors",
+      "run/results/discovery/D/tensors/5_SSC1-FINAL-0035-d0-extra0_R0.safetensors",
+      "run/results/discovery/D/tensors/5_SSC1-FINAL-0035-d0-extra0_RC.safetensors"
+    ],
+    "V10_CARRIER_READER_TENSORS_PART_02.zip": [
+      "run/results/reserved/SSC1-FINAL-0054/tensors/origin_NATIVE_FINAL.safetensors",
+      "run/results/reserved/SSC1-FINAL-0054/tensors/origin_1.safetensors",
+      "run/results/reserved/SSC1-FINAL-0054/tensors/origin_4.safetensors"
+    ],
+    "V10_CARRIER_READER_TENSORS_PART_03.zip": [
+      "run/results/reserved/SSC1-FINAL-0026/tensors/origin_NATIVE_FINAL.safetensors",
+      "run/results/reserved/SSC1-FINAL-0026/tensors/origin_2.safetensors",
+      "run/results/reserved/SSC1-FINAL-0026/tensors/origin_7.safetensors"
+    ]
+  },
+  "original_member_rename": {
+    "READ_ME.md": "ORIGINAL_FULL_ARCHIVE_READ_ME.md"
+  },
+  "instructions": "Read this small ZIP alone for reports/scores/code. For tensors, extract all three companions into the SAME folder as this ZIP; original run/results paths and TENSOR_INDEX.json resolve without changes."
+}

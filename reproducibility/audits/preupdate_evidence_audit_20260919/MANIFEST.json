@@ -1,0 +1,29 @@
+{
+  "schema": "BOUNDED_AUDIT_PROVENANCE_V1",
+  "handoff_sha256": "8be780ccb739f4fb8ed315092e6351825f14ce490662b0bf16b3c3fbba204f6f",
+  "new_neural_observations": 0,
+  "files": {
+    "source/CLAIM_DELTA.md": {
+      "bytes": 4323,
+      "sha256": "690e400a98d90d0703201f364cc6b347da3e554aea01136fdfc091eb3e422074",
+      "original_sha256": "e927bc0a6c995fa27cf740e77926679394215d2dd601d39e0484023499139106",
+      "original_bytes": 4472,
+      "transformation": "Operational privacy derivative; original preserved externally by original_sha256."
+    },
+    "source/PORTABLE_RENDERING_FIX.md": {
+      "bytes": 2211,
+      "sha256": "5fb92bf0f7e5cf3b2c1bb94db0a944fadfcbf5dd3686dc8a2fc5eb0a06037993"
+    },
+    "source/PRIOR_ART_MATRIX.md": {
+      "bytes": 7208,
+      "sha256": "f5cd62b8e3e58befb4aa65f20e3053082f49686b8c23db80019c62bb40a00eb5"
+    },
+    "source/REVIEW.md": {
+      "bytes": 9350,
+      "sha256": "6935afa799402d099c8efb7232e3db41285a679dbc8ee9d01b212b3cda8ae1eb",
+      "original_sha256": "af3dc0dc2c2de9f86d03b8a42a652efb10698e52d0b386f5eefcdaf2c674cb34",
+      "original_bytes": 9485,
+      "transformation": "Operational privacy derivative; original preserved externally by original_sha256."
+    }
+  }
+}

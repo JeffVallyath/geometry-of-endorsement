@@ -1,0 +1,291 @@
+{
+  "base_commit": "2d52cc211ef74642ef940930c1ef8f3d9e9ea323",
+  "modified": 10,
+  "added": 37,
+  "removed": 0,
+  "files": [
+    {
+      "path": ".gitattributes",
+      "status": "modified",
+      "bytes": 2194,
+      "sha256": "02da3ba8da377faf552d3f0ba4dcd61b40d6b0d49c68975a3d2eafe57a12767a"
+    },
+    {
+      "path": "PAPER_GUIDE.md",
+      "status": "modified",
+      "bytes": 13808,
+      "sha256": "5c970dcba8b2435bf5786d28bba875da5cccf9c140be37a56fa1e82bafe2220d"
+    },
+    {
+      "path": "REPRODUCIBILITY.md",
+      "status": "modified",
+      "bytes": 18481,
+      "sha256": "c015a7925349cf52d2454eceff9bbf6076d85574dbaeea87580647cd8e008da3"
+    },
+    {
+      "path": "docs/RESULTS_AND_CLAIMS.md",
+      "status": "modified",
+      "bytes": 57499,
+      "sha256": "e50e71213a4da36171eee1f946aaf82efd67c3e3567120aba605c337b814d7fe"
+    },
+    {
+      "path": "figures/CAPTION_DETAILS.md",
+      "status": "modified",
+      "bytes": 34298,
+      "sha256": "1af92407469fec5a39f6df6c2ec3c01912dd625c337ba8628c24b539c3829e5c"
+    },
+    {
+      "path": "reproducibility/evidence.json",
+      "status": "modified",
+      "bytes": 252165,
+      "sha256": "20a479481f82f2630ef767a41ad0b4f25bc8a2a97f1ae6d4dcd0b2c29e5ad1ab"
+    },
+    {
+      "path": "reproducibility/manifest.json",
+      "status": "modified",
+      "hash_omitted": "Avoid recursive inventory hashing; checked separately in the deliverable ZIP manifest."
+    },
+    {
+      "path": "reproducibility/question_blind_repair/CHANGED_FILES.json",
+      "status": "added",
+      "hash_omitted": "Avoid recursive inventory hashing; checked separately in the deliverable ZIP manifest."
+    },
+    {
+      "path": "reproducibility/question_blind_repair/CLAIMS.json",
+      "status": "added",
+      "bytes": 3447,
+      "sha256": "3f749f49c6b6441d89ddcca01f2913efbe3c5ac729d4e49606398091f03fa95d"
+    },
+    {
+      "path": "reproducibility/question_blind_repair/INTEGRATION_REPORT.md",
+      "status": "added",
+      "bytes": 6778,
+      "sha256": "d49283d505fc666335c856bdd1aa131b30706694f78f326d133cbd19fc67788b"
+    },
+    {
+      "path": "reproducibility/question_blind_repair/READER_FACING_DIFF.patch",
+      "status": "added",
+      "bytes": 11719,
+      "sha256": "86e95eb5e421b286fa55147f05eb3a03c81a9145dd459a31900ddf95e684bedb"
+    },
+    {
+      "path": "reproducibility/question_blind_repair/README.md",
+      "status": "added",
+      "bytes": 8258,
+      "sha256": "f524591a8cf1e1d3e24da79447c1a315cb224dbd0b7d3d12f1b0232de2a739cd"
+    },
+    {
+      "path": "reproducibility/question_blind_repair/SOURCE.json",
+      "status": "added",
+      "bytes": 7879,
+      "sha256": "c171003fdae17dd1b91ef912bdbaf4091244d07dcb1e238372d72bc28e605569"
+    },
+    {
+      "path": "reproducibility/question_blind_repair/VERIFICATION.json",
+      "status": "added",
+      "bytes": 4240,
+      "sha256": "8d5bc2e33b3547e0ff3654add97291bdf0cc42b15210f69ea35d95c110c36331"
+    },
+    {
+      "path": "reproducibility/question_blind_repair/WORKED_EXAMPLE.md",
+      "status": "added",
+      "bytes": 3349,
+      "sha256": "01e5fed439cd1d4d4cdbf2fdfa1cdb4272d519f7d61063bb2b9df7415d215bf6"
+    },
+    {
+      "path": "reproducibility/question_blind_repair/supplied/handoff/MANIFEST.json",
+      "status": "added",
+      "bytes": 1822,
+      "sha256": "3464660e40ad143949e8d8c65fa815b0506c9fc9ed447953cef093a8d187ba2d"
+    },
+    {
+      "path": "reproducibility/question_blind_repair/supplied/handoff/SOURCE_BINDINGS.json",
+      "status": "added",
+      "bytes": 795,
+      "sha256": "bf199647c7ec350efe42b226e4f62b21dfb6f8b29b2fc8be50b40ca30b3c94bc"
+    },
+    {
+      "path": "reproducibility/question_blind_repair/supplied/handoff/checked_evidence/INDEPENDENT_SELECTED.json",
+      "status": "added",
+      "bytes": 3237,
+      "sha256": "5ff344dc8238268e4e956a9fd631529d1a558a83592f0431c5d3464aaa5b7efb"
+    },
+    {
+      "path": "reproducibility/question_blind_repair/supplied/handoff/checked_evidence/PRODUCTS.json",
+      "status": "added",
+      "bytes": 1749,
+      "sha256": "f1c388510c977a313bc5a632351f912ee06bb92b76c1077a6930f9ff009e3dc1"
+    },
+    {
+      "path": "reproducibility/question_blind_repair/supplied/primary/ANALYSIS_RULES.md",
+      "status": "added",
+      "bytes": 4938,
+      "sha256": "536c3cf5113dc7aa2d11ef167dc5f2a9105995f6733623918cc190eb6706e81f"
+    },
+    {
+      "path": "reproducibility/question_blind_repair/supplied/primary/MANIFEST.json",
+      "status": "added",
+      "bytes": 85172,
+      "sha256": "bfb7d37d049fc6f763b152286de8acdeaf0b20606e2f2e0c2717148a7c6e04e3"
+    },
+    {
+      "path": "reproducibility/question_blind_repair/supplied/primary/figures/POPULATION_REPAIR_DAMAGE.svg",
+      "status": "added",
+      "bytes": 3352,
+      "sha256": "5337cb4f1c41c2542ce86643715f5f508fd086ec0c11eb350d8b9249952e4c50"
+    },
+    {
+      "path": "reproducibility/question_blind_repair/supplied/primary/figures/WORKED_EXAMPLE.svg",
+      "status": "added",
+      "bytes": 14813,
+      "sha256": "05810df1bd496d5a7ca76f997a45469aebb87032d4013eec532250a1bea9e6eb"
+    },
+    {
+      "path": "reproducibility/question_blind_repair/supplied/primary/replay/ALL_SEED_FORMAT_TARGETS.csv",
+      "status": "added",
+      "bytes": 840555,
+      "sha256": "afd30d24159590591ba12ef4a7d62350749b983b02d9e467f2f7107e8623001c"
+    },
+    {
+      "path": "reproducibility/question_blind_repair/supplied/primary/replay/SUMMARY.json",
+      "status": "added",
+      "bytes": 21744,
+      "sha256": "80ccae80d22bd26a4e8237085baf8c0a00b1915d928f0b760ac25e967ce1f3e9"
+    },
+    {
+      "path": "reproducibility/question_blind_repair/supplied/primary/tables/ALL_SEED_FORMAT_FAMILIES.csv",
+      "status": "added",
+      "bytes": 4480,
+      "sha256": "0f198886d6541c63e209bfe92f6a7d716d484d37198ac041f037e09253e250a9"
+    },
+    {
+      "path": "reproducibility/question_blind_repair/supplied/primary/tables/FOUR_ENDPOINTS.csv",
+      "status": "added",
+      "bytes": 360,
+      "sha256": "2742277a028e29efaab84be23086dc69a650df6b87e3fd660c72564c0e070ba6"
+    },
+    {
+      "path": "reproducibility/question_blind_repair/supplied/verification/CLAIM_LEDGER.json",
+      "status": "added",
+      "bytes": 6319,
+      "sha256": "8477722a35839764593aff0cdd11f7f20e51b14d1017897c55eae61766729e16"
+    },
+    {
+      "path": "reproducibility/question_blind_repair/supplied/verification/CPU_REPLAY.json",
+      "status": "added",
+      "bytes": 1328,
+      "sha256": "258dc93555db62cc705d540fb1bb4ef41a166cd3e658266e0352967a689517bd"
+    },
+    {
+      "path": "reproducibility/question_blind_repair/supplied/verification/DONOR_AGREEMENT.csv",
+      "status": "added",
+      "bytes": 395056,
+      "sha256": "1a5b7f70ec362f32009755a00e138ca02cb16da23990749f1a1713183981532f"
+    },
+    {
+      "path": "reproducibility/question_blind_repair/supplied/verification/FAMILIES.csv",
+      "status": "added",
+      "bytes": 44862,
+      "sha256": "0e2a1b92db46705eef8135e59a3134b52de50046733cb0f1048419b839b6908c"
+    },
+    {
+      "path": "reproducibility/question_blind_repair/supplied/verification/MANIFEST.json",
+      "status": "added",
+      "bytes": 23176,
+      "sha256": "4ec16ba50ad47fac53f8229e615b61cd695dca90a8bd78dd58ecd58fa8a6639c"
+    },
+    {
+      "path": "reproducibility/question_blind_repair/supplied/verification/REPEAT_COMPARISON.json",
+      "status": "added",
+      "bytes": 13649,
+      "sha256": "468c1ddd62f4b37c92f6d77ab9131f87cc03a6f07d8dfec4c553c00c2832978b"
+    },
+    {
+      "path": "reproducibility/question_blind_repair/supplied/verification/REVERSE_TARGETS.csv",
+      "status": "added",
+      "bytes": 23524,
+      "sha256": "a148fd21ac7f889c119a7a325e478a1fa42745ed358f3556cd3a81329a3f900e"
+    },
+    {
+      "path": "reproducibility/question_blind_repair/supplied/verification/SAME_CASE_FORWARD_REVERSE.json",
+      "status": "added",
+      "bytes": 529,
+      "sha256": "59a0f6f7970795d1f0e1614d21f1356757a1c6e24dd3df4e122f3ad78f37397d"
+    },
+    {
+      "path": "reproducibility/question_blind_repair/supplied/verification/SELECTED_RECOUNT.json",
+      "status": "added",
+      "bytes": 7375,
+      "sha256": "96272cfb5be51638c84a8ca7c1627bc5efdf6ab53f13719baf0614961bc8968c"
+    },
+    {
+      "path": "reproducibility/question_blind_repair/supplied/verification/TARGETS.csv",
+      "status": "added",
+      "bytes": 65053,
+      "sha256": "37f36acede9711684cbc826d407ea17bf028302dafabc250a0d08ec8b292dc6b"
+    },
+    {
+      "path": "reproducibility/question_blind_repair/supplied/verification/WORKED_EXAMPLE.csv",
+      "status": "added",
+      "bytes": 825,
+      "sha256": "83d0bacbb15a525d223fe8b8d9f2dce799c15a8b45d1ec8592bc9bc0e69b2d51"
+    },
+    {
+      "path": "reproducibility/question_blind_repair/supplied/verification/WORKED_EXAMPLE.md",
+      "status": "added",
+      "bytes": 1430,
+      "sha256": "d77ed7fc638191eae5a860ee53a59893e979954f85e6739e2dfea149a71926f3"
+    },
+    {
+      "path": "reproducibility/question_blind_repair/supplied/verification/tools/artifact_export.py",
+      "status": "added",
+      "bytes": 4367,
+      "sha256": "cdc64d6eecccc7efa013a5ea4dfedc8b8050565c066f4f73916f536da85fe329"
+    },
+    {
+      "path": "reproducibility/question_blind_repair/supplied/verification/tools/replay.py",
+      "status": "added",
+      "bytes": 19239,
+      "sha256": "57a241ce24db10806da8547e0320dd50ed20010eee0936beb1395a5eb236dc90"
+    },
+    {
+      "path": "reproducibility/question_blind_repair/supplied/verification/tools/run_capsule.py",
+      "status": "added",
+      "bytes": 2967,
+      "sha256": "89f761744a30c43b0580b927f03554fa99550ef5e100e7dc8cb00149a252890f"
+    },
+    {
+      "path": "src/repro/evidence.py",
+      "status": "modified",
+      "bytes": 16381,
+      "sha256": "b0f36e01673038ccc168f43eae5f113509a4c553183a70ae0a8e8fc6b1ca3f17"
+    },
+    {
+      "path": "src/repro/question_blind_repair.py",
+      "status": "added",
+      "bytes": 22054,
+      "sha256": "e0db3debb0ec1a22d7481e7892666451c6db7d21978b23c04c8bdea91fe17d13"
+    },
+    {
+      "path": "tests/test_evidence_registry.py",
+      "status": "modified",
+      "bytes": 11808,
+      "sha256": "52d17b49a7cea236265a879fbb9a476c82249e78863bdb1b44f97ee47ef4a460"
+    },
+    {
+      "path": "tests/test_paper_navigation.py",
+      "status": "modified",
+      "bytes": 3060,
+      "sha256": "d1fe3714f8c186567ccb19c5840b5bad8b8a919960546ae0540b1a8835b94887"
+    },
+    {
+      "path": "tests/test_question_blind_repair.py",
+      "status": "added",
+      "bytes": 7367,
+      "sha256": "6037dd6c25ddd7c6ac557a0a73dc67070fc46039cae87f1f1d16e9c56dad6841"
+    }
+  ],
+  "integration_target": "https://github.com/JeffVallyath/geometry-of-truth",
+  "private_push_authorized": true,
+  "public_release_authorized": false
+}

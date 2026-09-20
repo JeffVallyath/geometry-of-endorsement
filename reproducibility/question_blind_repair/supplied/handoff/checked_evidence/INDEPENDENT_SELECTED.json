@@ -1,0 +1,167 @@
+{
+  "status": "INDEPENDENT_RAW_COMPARISON_AND_BOOLEAN_RECOUNT_PASS",
+  "totals": {
+    "blocks": 14,
+    "reads": 14076,
+    "W": 9,
+    "B_repairs": 8,
+    "C_repairs": 0,
+    "RB_targets": 3,
+    "RC_targets": 0
+  },
+  "selected_unique_cases": 6,
+  "repaired_unique_cases": 6,
+  "by_block": [
+    {
+      "root": "QBR1-FINAL-0037",
+      "seed": 0,
+      "W": 0,
+      "B_repairs": 0,
+      "C_repairs": 0,
+      "RB_targets": 0,
+      "RC_targets": 0
+    },
+    {
+      "root": "QBR1-FINAL-0058",
+      "seed": 0,
+      "W": 0,
+      "B_repairs": 0,
+      "C_repairs": 0,
+      "RB_targets": 0,
+      "RC_targets": 0
+    },
+    {
+      "root": "QBR1-FINAL-0070",
+      "seed": 0,
+      "W": 0,
+      "B_repairs": 0,
+      "C_repairs": 0,
+      "RB_targets": 0,
+      "RC_targets": 0
+    },
+    {
+      "root": "QBR1-FINAL-0078",
+      "seed": 0,
+      "W": 2,
+      "B_repairs": 2,
+      "C_repairs": 0,
+      "RB_targets": 0,
+      "RC_targets": 0
+    },
+    {
+      "root": "QBR1-FINAL-0127",
+      "seed": 0,
+      "W": 0,
+      "B_repairs": 0,
+      "C_repairs": 0,
+      "RB_targets": 0,
+      "RC_targets": 0
+    },
+    {
+      "root": "QBR1-FINAL-0146",
+      "seed": 0,
+      "W": 2,
+      "B_repairs": 2,
+      "C_repairs": 0,
+      "RB_targets": 1,
+      "RC_targets": 0
+    },
+    {
+      "root": "QBR1-FINAL-0037",
+      "seed": 1,
+      "W": 1,
+      "B_repairs": 1,
+      "C_repairs": 0,
+      "RB_targets": 0,
+      "RC_targets": 0
+    },
+    {
+      "root": "QBR1-FINAL-0058",
+      "seed": 1,
+      "W": 1,
+      "B_repairs": 1,
+      "C_repairs": 0,
+      "RB_targets": 0,
+      "RC_targets": 0
+    },
+    {
+      "root": "QBR1-FINAL-0070",
+      "seed": 1,
+      "W": 1,
+      "B_repairs": 1,
+      "C_repairs": 0,
+      "RB_targets": 0,
+      "RC_targets": 0
+    },
+    {
+      "root": "QBR1-FINAL-0078",
+      "seed": 1,
+      "W": 0,
+      "B_repairs": 0,
+      "C_repairs": 0,
+      "RB_targets": 0,
+      "RC_targets": 0
+    },
+    {
+      "root": "QBR1-FINAL-0127",
+      "seed": 1,
+      "W": 2,
+      "B_repairs": 1,
+      "C_repairs": 0,
+      "RB_targets": 2,
+      "RC_targets": 0
+    },
+    {
+      "root": "QBR1-FINAL-0146",
+      "seed": 1,
+      "W": 0,
+      "B_repairs": 0,
+      "C_repairs": 0,
+      "RB_targets": 0,
+      "RC_targets": 0
+    }
+  ],
+  "repaired_targets": [
+    {
+      "root": "QBR1-FINAL-0078",
+      "seed": 0,
+      "query": "QBR1-FINAL-0078-d0-02"
+    },
+    {
+      "root": "QBR1-FINAL-0078",
+      "seed": 0,
+      "query": "QBR1-FINAL-0078-d1-02"
+    },
+    {
+      "root": "QBR1-FINAL-0146",
+      "seed": 0,
+      "query": "QBR1-FINAL-0146-d0-extra1"
+    },
+    {
+      "root": "QBR1-FINAL-0146",
+      "seed": 0,
+      "query": "QBR1-FINAL-0146-d1-extra1"
+    },
+    {
+      "root": "QBR1-FINAL-0037",
+      "seed": 1,
+      "query": "QBR1-FINAL-0037-d1-02"
+    },
+    {
+      "root": "QBR1-FINAL-0058",
+      "seed": 1,
+      "query": "QBR1-FINAL-0058-d1-08"
+    },
+    {
+      "root": "QBR1-FINAL-0070",
+      "seed": 1,
+      "query": "QBR1-FINAL-0070-d1-07"
+    },
+    {
+      "root": "QBR1-FINAL-0127",
+      "seed": 1,
+      "query": "QBR1-FINAL-0127-d0-02"
+    }
+  ],
+  "scope": "Post-hoc selected repeat. No new population inference or pretrained execution."
+}

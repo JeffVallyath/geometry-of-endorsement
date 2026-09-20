@@ -1,0 +1,567 @@
+{
+  "combined": [
+    {
+      "B_minus_A_50pct": -0.017446633825944177,
+      "bootstrap_draws": 10000,
+      "draw": 0,
+      "interface": "literal No/Yes",
+      "interval95": [
+        -0.035345728793309446,
+        0.006503527336860656
+      ],
+      "quantitative_headline_available": true,
+      "undefined_bootstrap_draws": 0
+    },
+    {
+      "B_minus_A_50pct": -0.00862068965517241,
+      "bootstrap_draws": 10000,
+      "draw": 1,
+      "interface": "A/B sensitivity",
+      "interval95": [
+        -0.02678571428571429,
+        0.012301587301587298
+      ],
+      "quantitative_headline_available": true,
+      "undefined_bootstrap_draws": 0
+    }
+  ],
+  "per_seed_format": [
+    {
+      "A_only": {
+        "cases": [
+          "FHV1-FINAL-0045",
+          "FHV1-FINAL-0063"
+        ],
+        "stats": {
+          "any_error": 1.0,
+          "count": 2,
+          "native_error": 0.16666666666666666,
+          "successful": 0,
+          "task_error": 0.25,
+          "valid_disagreement": 0.16666666666666666
+        }
+      },
+      "B_only": {
+        "cases": [
+          "FHV1-FINAL-0009",
+          "FHV1-FINAL-0011",
+          "FHV1-FINAL-0016",
+          "FHV1-FINAL-0021",
+          "FHV1-FINAL-0043",
+          "FHV1-FINAL-0051",
+          "FHV1-FINAL-0052",
+          "FHV1-FINAL-0057"
+        ],
+        "stats": {
+          "any_error": 0.125,
+          "count": 8,
+          "native_error": 0.16666666666666666,
+          "successful": 7,
+          "task_error": 0.041666666666666664,
+          "valid_disagreement": 0.0
+        }
+      },
+      "common": {
+        "any_error": 0.15254237288135594,
+        "count": 59,
+        "native_error": 0.15254237288135591,
+        "successful": 50,
+        "task_error": 0.03954802259887005,
+        "valid_disagreement": 0.022598870056497175
+      },
+      "common_cases": 59,
+      "contrasts": {
+        "0.25": -0.023809523809523808,
+        "0.5": -0.022988505747126436,
+        "0.75": -0.015151515151515152
+      },
+      "draw": 0,
+      "interval95_50pct": [
+        -0.052083333333333336,
+        0.0
+      ],
+      "policies": {
+        "A": {
+          "accepted": {
+            "any_error": 0.15555555555555556,
+            "count": 45,
+            "native_error": 0.1407407407407407,
+            "successful": 38,
+            "task_error": 0.037037037037037035,
+            "valid_disagreement": 0.029629629629629627
+          },
+          "equal_retention": {
+            "0.25": {
+              "any_error": 0.07142857142857142,
+              "count": 14,
+              "native_error": 0.07142857142857142,
+              "successful": 13,
+              "task_error": 0.023809523809523808,
+              "valid_disagreement": 0.0
+            },
+            "0.5": {
+              "any_error": 0.10344827586206896,
+              "count": 29,
+              "native_error": 0.14942528735632182,
+              "successful": 26,
+              "task_error": 0.022988505747126436,
+              "valid_disagreement": 0.022988505747126436
+            },
+            "0.75": {
+              "any_error": 0.1590909090909091,
+              "count": 44,
+              "native_error": 0.13636363636363635,
+              "successful": 37,
+              "task_error": 0.03787878787878788,
+              "valid_disagreement": 0.0303030303030303
+            }
+          },
+          "rejected": 14
+        },
+        "B": {
+          "accepted": {
+            "any_error": 0.11764705882352941,
+            "count": 51,
+            "native_error": 0.14379084967320255,
+            "successful": 45,
+            "task_error": 0.02941176470588235,
+            "valid_disagreement": 0.0196078431372549
+          },
+          "equal_retention": {
+            "0.25": {
+              "any_error": 0.0,
+              "count": 14,
+              "native_error": 0.07142857142857142,
+              "successful": 14,
+              "task_error": 0.0,
+              "valid_disagreement": 0.0
+            },
+            "0.5": {
+              "any_error": 0.0,
+              "count": 29,
+              "native_error": 0.1264367816091954,
+              "successful": 29,
+              "task_error": 0.0,
+              "valid_disagreement": 0.0
+            },
+            "0.75": {
+              "any_error": 0.09090909090909091,
+              "count": 44,
+              "native_error": 0.1515151515151515,
+              "successful": 40,
+              "task_error": 0.022727272727272728,
+              "valid_disagreement": 0.01515151515151515
+            }
+          },
+          "rejected": 8
+        }
+      },
+      "seed": 0,
+      "undefined_bootstrap_draws": 0
+    },
+    {
+      "A_only": {
+        "cases": [
+          "FHV1-FINAL-0036",
+          "FHV1-FINAL-0037",
+          "FHV1-FINAL-0051",
+          "FHV1-FINAL-0061"
+        ],
+        "stats": {
+          "any_error": 0.75,
+          "count": 4,
+          "native_error": 0.08333333333333333,
+          "successful": 1,
+          "task_error": 0.16666666666666666,
+          "valid_disagreement": 0.3333333333333333
+        }
+      },
+      "B_only": {
+        "cases": [
+          "FHV1-FINAL-0012",
+          "FHV1-FINAL-0014",
+          "FHV1-FINAL-0021",
+          "FHV1-FINAL-0024",
+          "FHV1-FINAL-0033",
+          "FHV1-FINAL-0039",
+          "FHV1-FINAL-0043",
+          "FHV1-FINAL-0044",
+          "FHV1-FINAL-0052",
+          "FHV1-FINAL-0057"
+        ],
+        "stats": {
+          "any_error": 0.5,
+          "count": 10,
+          "native_error": 0.16666666666666666,
+          "successful": 5,
+          "task_error": 0.13333333333333333,
+          "valid_disagreement": 0.06666666666666667
+        }
+      },
+      "common": {
+        "any_error": 0.45614035087719296,
+        "count": 57,
+        "native_error": 0.1403508771929824,
+        "successful": 31,
+        "task_error": 0.10233918128654973,
+        "valid_disagreement": 0.11111111111111108
+      },
+      "common_cases": 57,
+      "contrasts": {
+        "0.25": 0.011904761904761904,
+        "0.5": -0.011904761904761918,
+        "0.75": 0.003968253968253968
+      },
+      "draw": 0,
+      "interval95_50pct": [
+        -0.03571428571428574,
+        0.029761904761904795
+      ],
+      "policies": {
+        "A": {
+          "accepted": {
+            "any_error": 0.4,
+            "count": 35,
+            "native_error": 0.1333333333333333,
+            "successful": 21,
+            "task_error": 0.0857142857142857,
+            "valid_disagreement": 0.11428571428571428
+          },
+          "equal_retention": {
+            "0.25": {
+              "any_error": 0.35714285714285715,
+              "count": 14,
+              "native_error": 0.07142857142857142,
+              "successful": 9,
+              "task_error": 0.07142857142857142,
+              "valid_disagreement": 0.09523809523809523
+            },
+            "0.5": {
+              "any_error": 0.39285714285714285,
+              "count": 28,
+              "native_error": 0.15476190476190474,
+              "successful": 17,
+              "task_error": 0.0773809523809524,
+              "valid_disagreement": 0.13095238095238096
+            },
+            "0.75": {
+              "any_error": 0.40476190476190477,
+              "count": 42,
+              "native_error": 0.12698412698412695,
+              "successful": 25,
+              "task_error": 0.08730158730158731,
+              "valid_disagreement": 0.11111111111111109
+            }
+          },
+          "rejected": 22
+        },
+        "B": {
+          "accepted": {
+            "any_error": 0.3902439024390244,
+            "count": 41,
+            "native_error": 0.1463414634146341,
+            "successful": 25,
+            "task_error": 0.08943089430894308,
+            "valid_disagreement": 0.08130081300813008
+          },
+          "equal_retention": {
+            "0.25": {
+              "any_error": 0.35714285714285715,
+              "count": 14,
+              "native_error": 0.09523809523809523,
+              "successful": 9,
+              "task_error": 0.08333333333333333,
+              "valid_disagreement": 0.07142857142857142
+            },
+            "0.5": {
+              "any_error": 0.32142857142857145,
+              "count": 28,
+              "native_error": 0.15476190476190474,
+              "successful": 19,
+              "task_error": 0.06547619047619048,
+              "valid_disagreement": 0.08333333333333333
+            },
+            "0.75": {
+              "any_error": 0.40476190476190477,
+              "count": 42,
+              "native_error": 0.14285714285714285,
+              "successful": 25,
+              "task_error": 0.09126984126984128,
+              "valid_disagreement": 0.08730158730158731
+            }
+          },
+          "rejected": 16
+        }
+      },
+      "seed": 1,
+      "undefined_bootstrap_draws": 0
+    },
+    {
+      "A_only": {
+        "cases": [
+          "FHV1-FINAL-0041"
+        ],
+        "stats": {
+          "any_error": 0.0,
+          "count": 1,
+          "native_error": 0.0,
+          "successful": 1,
+          "task_error": 0.0,
+          "valid_disagreement": 0.0
+        }
+      },
+      "B_only": {
+        "cases": [
+          "FHV1-FINAL-0009",
+          "FHV1-FINAL-0011",
+          "FHV1-FINAL-0021",
+          "FHV1-FINAL-0043",
+          "FHV1-FINAL-0051",
+          "FHV1-FINAL-0057"
+        ],
+        "stats": {
+          "any_error": 0.16666666666666666,
+          "count": 6,
+          "native_error": 0.2222222222222222,
+          "successful": 5,
+          "task_error": 0.05555555555555555,
+          "valid_disagreement": 0.0
+        }
+      },
+      "common": {
+        "any_error": 0.13559322033898305,
+        "count": 59,
+        "native_error": 0.1638418079096045,
+        "successful": 51,
+        "task_error": 0.03954802259887005,
+        "valid_disagreement": 0.011299435028248588
+      },
+      "common_cases": 59,
+      "contrasts": {
+        "0.25": 0.0,
+        "0.5": -0.005747126436781609,
+        "0.75": 0.003787878787878788
+      },
+      "draw": 1,
+      "interval95_50pct": [
+        -0.034482758620689655,
+        0.0
+      ],
+      "policies": {
+        "A": {
+          "accepted": {
+            "any_error": 0.10869565217391304,
+            "count": 46,
+            "native_error": 0.15217391304347822,
+            "successful": 41,
+            "task_error": 0.02898550724637681,
+            "valid_disagreement": 0.014492753623188404
+          },
+          "equal_retention": {
+            "0.25": {
+              "any_error": 0.0,
+              "count": 14,
+              "native_error": 0.09523809523809523,
+              "successful": 14,
+              "task_error": 0.0,
+              "valid_disagreement": 0.0
+            },
+            "0.5": {
+              "any_error": 0.06896551724137931,
+              "count": 29,
+              "native_error": 0.14942528735632182,
+              "successful": 27,
+              "task_error": 0.017241379310344827,
+              "valid_disagreement": 0.011494252873563218
+            },
+            "0.75": {
+              "any_error": 0.09090909090909091,
+              "count": 44,
+              "native_error": 0.1515151515151515,
+              "successful": 40,
+              "task_error": 0.022727272727272724,
+              "valid_disagreement": 0.01515151515151515
+            }
+          },
+          "rejected": 13
+        },
+        "B": {
+          "accepted": {
+            "any_error": 0.11764705882352941,
+            "count": 51,
+            "native_error": 0.16339869281045746,
+            "successful": 45,
+            "task_error": 0.0326797385620915,
+            "valid_disagreement": 0.0130718954248366
+          },
+          "equal_retention": {
+            "0.25": {
+              "any_error": 0.0,
+              "count": 14,
+              "native_error": 0.11904761904761904,
+              "successful": 14,
+              "task_error": 0.0,
+              "valid_disagreement": 0.0
+            },
+            "0.5": {
+              "any_error": 0.034482758620689655,
+              "count": 29,
+              "native_error": 0.13793103448275862,
+              "successful": 28,
+              "task_error": 0.011494252873563218,
+              "valid_disagreement": 0.0
+            },
+            "0.75": {
+              "any_error": 0.09090909090909091,
+              "count": 44,
+              "native_error": 0.16666666666666663,
+              "successful": 40,
+              "task_error": 0.026515151515151512,
+              "valid_disagreement": 0.007575757575757575
+            }
+          },
+          "rejected": 8
+        }
+      },
+      "seed": 0,
+      "undefined_bootstrap_draws": 0
+    },
+    {
+      "A_only": {
+        "cases": [
+          "FHV1-FINAL-0010",
+          "FHV1-FINAL-0018",
+          "FHV1-FINAL-0036",
+          "FHV1-FINAL-0061"
+        ],
+        "stats": {
+          "any_error": 0.5,
+          "count": 4,
+          "native_error": 0.16666666666666666,
+          "successful": 2,
+          "task_error": 0.125,
+          "valid_disagreement": 0.08333333333333333
+        }
+      },
+      "B_only": {
+        "cases": [
+          "FHV1-FINAL-0012",
+          "FHV1-FINAL-0014",
+          "FHV1-FINAL-0019",
+          "FHV1-FINAL-0021",
+          "FHV1-FINAL-0033",
+          "FHV1-FINAL-0039",
+          "FHV1-FINAL-0043",
+          "FHV1-FINAL-0044",
+          "FHV1-FINAL-0056",
+          "FHV1-FINAL-0057"
+        ],
+        "stats": {
+          "any_error": 0.6,
+          "count": 10,
+          "native_error": 0.13333333333333333,
+          "successful": 4,
+          "task_error": 0.16666666666666669,
+          "valid_disagreement": 0.06666666666666667
+        }
+      },
+      "common": {
+        "any_error": 0.3620689655172414,
+        "count": 58,
+        "native_error": 0.15517241379310343,
+        "successful": 37,
+        "task_error": 0.08620689655172414,
+        "valid_disagreement": 0.06896551724137931
+      },
+      "common_cases": 58,
+      "contrasts": {
+        "0.25": 0.0,
+        "0.5": -0.011494252873563211,
+        "0.75": 0.01937984496124033
+      },
+      "draw": 1,
+      "interval95_50pct": [
+        -0.03448275862068964,
+        0.030864197530864196
+      ],
+      "policies": {
+        "A": {
+          "accepted": {
+            "any_error": 0.2777777777777778,
+            "count": 36,
+            "native_error": 0.15740740740740738,
+            "successful": 26,
+            "task_error": 0.06018518518518518,
+            "valid_disagreement": 0.06481481481481481
+          },
+          "equal_retention": {
+            "0.25": {
+              "any_error": 0.2857142857142857,
+              "count": 14,
+              "native_error": 0.14285714285714285,
+              "successful": 10,
+              "task_error": 0.05952380952380952,
+              "valid_disagreement": 0.07142857142857142
+            },
+            "0.5": {
+              "any_error": 0.3103448275862069,
+              "count": 29,
+              "native_error": 0.16091954022988503,
+              "successful": 20,
+              "task_error": 0.0632183908045977,
+              "valid_disagreement": 0.08045977011494251
+            },
+            "0.75": {
+              "any_error": 0.27906976744186046,
+              "count": 43,
+              "native_error": 0.14728682170542634,
+              "successful": 31,
+              "task_error": 0.05813953488372092,
+              "valid_disagreement": 0.06976744186046512
+            }
+          },
+          "rejected": 22
+        },
+        "B": {
+          "accepted": {
+            "any_error": 0.3333333333333333,
+            "count": 42,
+            "native_error": 0.15079365079365076,
+            "successful": 28,
+            "task_error": 0.07936507936507936,
+            "valid_disagreement": 0.06349206349206349
+          },
+          "equal_retention": {
+            "0.25": {
+              "any_error": 0.2857142857142857,
+              "count": 14,
+              "native_error": 0.11904761904761904,
+              "successful": 10,
+              "task_error": 0.05952380952380952,
+              "valid_disagreement": 0.07142857142857142
+            },
+            "0.5": {
+              "any_error": 0.27586206896551724,
+              "count": 29,
+              "native_error": 0.16091954022988503,
+              "successful": 21,
+              "task_error": 0.05172413793103448,
+              "valid_disagreement": 0.08045977011494251
+            },
+            "0.75": {
+              "any_error": 0.32558139534883723,
+              "count": 43,
+              "native_error": 0.15503875968992245,
+              "successful": 29,
+              "task_error": 0.07751937984496125,
+              "valid_disagreement": 0.06201550387596899
+            }
+          },
+          "rejected": 16
+        }
+      },
+      "seed": 1,
+      "undefined_bootstrap_draws": 0
+    }
+  ]
+}

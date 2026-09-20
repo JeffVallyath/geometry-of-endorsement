@@ -60,7 +60,40 @@ The retrospective census (`V9`) measured how often the history effect occurred i
 
 The prospective matched-history study (`V10`) confirmed the central prediction on fresh generated cases with a fixed primary analysis. Both models showed the pattern under learned and textual updates, after the relevant individual facts and reference answers passed their checks. This supports the evaluation criterion without requiring the learned update to outperform every simpler method. A separate logical-coherence control limits a different claim: editing did not uniquely create logical incoherence.
 
+## Completed robustness and fresh confirmation
+
+The [post-hoc audit](PAPER_GUIDE.md#post-hoc-robustness) applies stronger logical
+controls and count/length matching to the original saved outputs. It retains
+history dependence without constituting another prospective study.
+
+The [fresh Gemma confirmation](PAPER_GUIDE.md#fresh-confirmation-and-held-out-validation)
+fixed those controls before new outcomes. It confirms the effect for one
+learned-update family; the original prospective study remains primary. The
+same fresh scores compare validation across histories with validation across
+more questions at one history. Their practical difference on withheld questions
+remains uncertain at equal read budget and retention.
+
+The [pre-update deletion screen](PAPER_GUIDE.md#pre-update-deletion-screen)
+increased direct and downstream errors and failed its admission gate. No fresh
+final cases ran. The result rejects this fixed low-harm repair procedure, not
+every possible upstream influence.
+
 ## Current position
+
+The [current evidence table](PAPER_GUIDE.md#current-evidence) includes the
+completed breadth, repair and mechanism follow-ups. Basic recurrence now
+extends to further checkpoints, including stateless Qwen3-32B, without a
+supported scaling comparison. That 32B run newly measured existing designs;
+its strongest cross-format result is zero. Question-blind repair is partial:
+the strong-repair threshold failed, harms remain, and the full reference is
+required to construct the intervention. Selected successful cases were repeated.
+
+Carrier-reader and mediation studies establish selected functional effects,
+not a complete compact mechanism. The method-selection reanalysis establishes
+no conventional-equivalence-plus-history-separation comparison and no method
+choice reversal. ValuePrism's latest released benchmark-reuse update is a
+technical stop before inference, not a scientific outcome. The September 15
+project-status artifact remains a historical notebook input.
 
 The constructive result and the source-history result now belong together. Useful question-independent updates exist, yet correctly reported current facts can be insufficient to account for measured downstream responses. Correct facts plus a history-sensitive reader remain possible; the experiments do not show that the facts are absent internally.
 

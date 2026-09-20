@@ -1,0 +1,580 @@
+[
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0014-d0-00",
+    "root_id": "SSC1-FINAL-0014",
+    "spec": {
+      "a": 0,
+      "b": 1,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Ivo favor the Canal proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0014-d0-01",
+    "root_id": "SSC1-FINAL-0014",
+    "spec": {
+      "a": 0,
+      "b": 1,
+      "kind": "opposes",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Ivo oppose the Canal proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0014-d0-02",
+    "root_id": "SSC1-FINAL-0014",
+    "spec": {
+      "a": 0,
+      "b": 1,
+      "kind": "same",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Do Ivo and Quin take the same side on Canal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0014-d0-03",
+    "root_id": "SSC1-FINAL-0014",
+    "spec": {
+      "a": 1,
+      "b": 0,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Quin favor the Canal proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0014-d0-04",
+    "root_id": "SSC1-FINAL-0014",
+    "spec": {
+      "a": 1,
+      "b": 0,
+      "kind": "opposes",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Quin oppose the Canal proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0014-d0-05",
+    "root_id": "SSC1-FINAL-0014",
+    "spec": {
+      "a": 0,
+      "b": 1,
+      "kind": "direct",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does Ivo favor the Bridge proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0014-d0-06",
+    "root_id": "SSC1-FINAL-0014",
+    "spec": {
+      "a": 0,
+      "b": 1,
+      "kind": "both",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Is the Canal proposal supported by both Ivo and Quin?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0014-d0-07",
+    "root_id": "SSC1-FINAL-0014",
+    "spec": {
+      "a": 0,
+      "b": 1,
+      "kind": "either",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Ivo and Quin support Canal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0014-d0-08",
+    "root_id": "SSC1-FINAL-0014",
+    "spec": {
+      "a": 2,
+      "b": 0,
+      "kind": "same",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Do Bryn and Ivo take the same side on Canal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0014-d0-09",
+    "root_id": "SSC1-FINAL-0014",
+    "spec": {
+      "a": 2,
+      "b": 0,
+      "kind": "both",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Is the Canal proposal supported by both Bryn and Ivo?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0014-d0-10",
+    "root_id": "SSC1-FINAL-0014",
+    "spec": {
+      "a": 2,
+      "b": 0,
+      "kind": "either",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Bryn and Ivo support Canal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0014-d0-11",
+    "root_id": "SSC1-FINAL-0014",
+    "spec": {
+      "a": 2,
+      "b": 0,
+      "kind": "direct",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does Bryn favor the Bridge proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0014-d0-extra0",
+    "root_id": "SSC1-FINAL-0014",
+    "spec": {
+      "a": 2,
+      "b": 0,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Bryn favor the Canal proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0014-d0-extra1",
+    "root_id": "SSC1-FINAL-0014",
+    "spec": {
+      "a": 1,
+      "b": 2,
+      "kind": "same",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Do Quin and Bryn take the same side on Canal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0014-d0-extra2",
+    "root_id": "SSC1-FINAL-0014",
+    "spec": {
+      "a": 1,
+      "b": 2,
+      "kind": "both",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Is the Canal proposal supported by both Quin and Bryn?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0014-d0-extra3",
+    "root_id": "SSC1-FINAL-0014",
+    "spec": {
+      "a": 1,
+      "b": 2,
+      "kind": "either",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Quin and Bryn support Canal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0014-d0-extra4",
+    "root_id": "SSC1-FINAL-0014",
+    "spec": {
+      "a": 3,
+      "b": 0,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Ravi favor the Canal proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-FINAL-0014-d1-00",
+    "root_id": "SSC1-FINAL-0014",
+    "spec": {
+      "a": 0,
+      "b": 1,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Ivo favor the Canal proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-FINAL-0014-d1-01",
+    "root_id": "SSC1-FINAL-0014",
+    "spec": {
+      "a": 0,
+      "b": 1,
+      "kind": "opposes",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Ivo oppose the Canal proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0014-d1-02",
+    "root_id": "SSC1-FINAL-0014",
+    "spec": {
+      "a": 0,
+      "b": 1,
+      "kind": "same",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Do Ivo and Quin take the same side on Canal?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0014-d1-03",
+    "root_id": "SSC1-FINAL-0014",
+    "spec": {
+      "a": 1,
+      "b": 0,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Quin favor the Canal proposal?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0014-d1-04",
+    "root_id": "SSC1-FINAL-0014",
+    "spec": {
+      "a": 1,
+      "b": 0,
+      "kind": "opposes",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Quin oppose the Canal proposal?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-FINAL-0014-d1-05",
+    "root_id": "SSC1-FINAL-0014",
+    "spec": {
+      "a": 0,
+      "b": 1,
+      "kind": "direct",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does Ivo favor the Bridge proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0014-d1-06",
+    "root_id": "SSC1-FINAL-0014",
+    "spec": {
+      "a": 0,
+      "b": 1,
+      "kind": "both",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Is the Canal proposal supported by both Ivo and Quin?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-FINAL-0014-d1-07",
+    "root_id": "SSC1-FINAL-0014",
+    "spec": {
+      "a": 0,
+      "b": 1,
+      "kind": "either",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Ivo and Quin support Canal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0014-d1-08",
+    "root_id": "SSC1-FINAL-0014",
+    "spec": {
+      "a": 2,
+      "b": 0,
+      "kind": "same",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Do Bryn and Ivo take the same side on Canal?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-FINAL-0014-d1-09",
+    "root_id": "SSC1-FINAL-0014",
+    "spec": {
+      "a": 2,
+      "b": 0,
+      "kind": "both",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Is the Canal proposal supported by both Bryn and Ivo?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0014-d1-10",
+    "root_id": "SSC1-FINAL-0014",
+    "spec": {
+      "a": 2,
+      "b": 0,
+      "kind": "either",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Bryn and Ivo support Canal?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-FINAL-0014-d1-11",
+    "root_id": "SSC1-FINAL-0014",
+    "spec": {
+      "a": 2,
+      "b": 0,
+      "kind": "direct",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does Bryn favor the Bridge proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-FINAL-0014-d1-extra0",
+    "root_id": "SSC1-FINAL-0014",
+    "spec": {
+      "a": 2,
+      "b": 0,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Bryn favor the Canal proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0014-d1-extra1",
+    "root_id": "SSC1-FINAL-0014",
+    "spec": {
+      "a": 1,
+      "b": 2,
+      "kind": "same",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Do Quin and Bryn take the same side on Canal?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0014-d1-extra2",
+    "root_id": "SSC1-FINAL-0014",
+    "spec": {
+      "a": 1,
+      "b": 2,
+      "kind": "both",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Is the Canal proposal supported by both Quin and Bryn?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0014-d1-extra3",
+    "root_id": "SSC1-FINAL-0014",
+    "spec": {
+      "a": 1,
+      "b": 2,
+      "kind": "either",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Quin and Bryn support Canal?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0014-d1-extra4",
+    "root_id": "SSC1-FINAL-0014",
+    "spec": {
+      "a": 3,
+      "b": 0,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Ravi favor the Canal proposal?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  }
+]

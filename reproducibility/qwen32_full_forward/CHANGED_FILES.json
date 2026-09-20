@@ -1,0 +1,4147 @@
+{
+  "base_commit": "2d52cc211ef74642ef940930c1ef8f3d9e9ea323",
+  "modified": 8,
+  "added": 682,
+  "removed": 0,
+  "files": [
+    {
+      "path": "PAPER_GUIDE.md",
+      "status": "modified",
+      "bytes": 13810,
+      "sha256": "a00974610800d9a1aaeae537c6aaeb5b5bc84efcd493fb3db5d328118c7bb8fe"
+    },
+    {
+      "path": "docs/RESULTS_AND_CLAIMS.md",
+      "status": "modified",
+      "bytes": 56276,
+      "sha256": "df451fa0262753bc120a446e151e8f21d87902a4822b12354619c2a46f1ea89f"
+    },
+    {
+      "path": "figures/CAPTION_DETAILS.md",
+      "status": "modified",
+      "bytes": 33418,
+      "sha256": "3f20016da5b7dd0af042b40b99605785539948f855f66bcfb653913226d00bc9"
+    },
+    {
+      "path": "reproducibility/evidence.json",
+      "status": "modified",
+      "bytes": 250180,
+      "sha256": "e027900b9c3a7a60a03c373f9a3c43c67d21094651f5e7a8e59eb0e55224822b"
+    },
+    {
+      "path": "reproducibility/manifest.json",
+      "status": "modified",
+      "hash_omitted": "Avoid a recursive binding; the mutable inventory is verified separately."
+    },
+    {
+      "path": "src/repro/evidence.py",
+      "status": "modified",
+      "bytes": 16551,
+      "sha256": "6d9a4cfb008af06ccd43118782476471f39aee896c327d61c387b00b8f93000a"
+    },
+    {
+      "path": "tests/test_evidence_registry.py",
+      "status": "modified",
+      "bytes": 11808,
+      "sha256": "6e4ca80d5b01f834b9195997bb61d4a4a168211b2204a011ed4a3a36f3f1f3b5"
+    },
+    {
+      "path": "tests/test_paper_navigation.py",
+      "status": "modified",
+      "bytes": 3226,
+      "sha256": "3bde96e6000355ae66cd38fe3b8cf43b30f1281d28b8d64566bb743e63e3bd38"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/CHANGED_FILES.json",
+      "status": "added",
+      "hash_omitted": "Avoid a recursive binding; the mutable inventory is verified separately."
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/CLAIMS.json",
+      "status": "added",
+      "bytes": 4184,
+      "sha256": "eb4e65a7b1b11bd29b1377d79b688857b9c362b35b1baf41699386f74a2244f0"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/CLAIM_MAP.md",
+      "status": "added",
+      "bytes": 1708,
+      "sha256": "ab277d4d816427f645fc6610700c6538185fe7855a4015906f9010604ecca912"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/FIGURES.md",
+      "status": "added",
+      "bytes": 1492,
+      "sha256": "aebd7b5c168e3b0cc12ccaec844793bebfba05909debe3e124fcb15e5fe669ae"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/INTEGRATION_NOTES.md",
+      "status": "added",
+      "bytes": 1977,
+      "sha256": "f30f966cc5d92e65a8bd52924a1905566a129104aa1784233d2e3d416d58c079"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/INTEGRATION_REPORT.md",
+      "status": "added",
+      "bytes": 5872,
+      "sha256": "fa1065af34b4748285f9e1036382ec61c5c2c60e4e1c22d93c030cf31a6073cd"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/READER_FACING_DIFF.patch",
+      "status": "added",
+      "bytes": 5732,
+      "sha256": "d840900b28ccf601a1dc78ddf42f7cf4c0b8c293a6a541016201c3646bb5384b"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/README.md",
+      "status": "added",
+      "bytes": 7676,
+      "sha256": "38f4945b341a3e30b75528f59ca0c62c9f49091007a5d908f57d015e6d41556b"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/SOURCE.json",
+      "status": "added",
+      "bytes": 302142,
+      "sha256": "84b9b2f18719b39eeca08783c371e7ce03398e9ee66cd43b7bd188661492fa2c"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/VERIFICATION.json",
+      "status": "added",
+      "bytes": 688,
+      "sha256": "5fb08840d4ca97ef3869843b2b0a72f9e006e4a2dbadd8ed265e7556e6741d24"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/WORKED_EXAMPLE.json",
+      "status": "added",
+      "bytes": 2088,
+      "sha256": "29be1ae2a99993dc00c83d9673e224389098eca798f128c4e55e11b0cc7aa247"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/WORKED_EXAMPLE.md",
+      "status": "added",
+      "bytes": 3042,
+      "sha256": "685df9e6d2faa6de323f5c03e6a6124c904eb4efee658c2824648b6b28689232"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/figures/FIGURE_DATA.json",
+      "status": "added",
+      "bytes": 10297,
+      "sha256": "c5a6c6c7602b782ea2d55a74b7cff20f62a0bd1e206da110d8a18d4a193abc0c"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/figures/PLOTTED_VALUES.json",
+      "status": "added",
+      "bytes": 626,
+      "sha256": "83b185be85e9b3345d10096932a9642f3d553d8f9383f54c12c64137044075e3"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/figures/attrition.png",
+      "status": "added",
+      "bytes": 66287,
+      "sha256": "ba546af9149f63a127392be1ddc8498a22555ef6bd9c8e7f54809caad4317c11"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/figures/coverage.png",
+      "status": "added",
+      "bytes": 88251,
+      "sha256": "eb6ad8584b4aec2a24084c577edb6771e33ab8820f8fdfec77e8e79a6a13c409"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/portfolio/MAIN_TABLE.json",
+      "status": "added",
+      "bytes": 38280,
+      "sha256": "44573c8dd030182504ccd0457e2be6c6a9731c07bbeb023d9f4856fcdb605b98"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/portfolio/MODEL_ROSTER_FROZEN.json",
+      "status": "added",
+      "bytes": 3395,
+      "sha256": "95fab98709412d9173a500675b6ea64ca9227120080155cea0cdf67e5043d5cf"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/portfolio/PLANNED_COMPARISONS.json",
+      "status": "added",
+      "bytes": 1025,
+      "sha256": "55b682c533f8756f022c2502e33f436e8a8af756628a53ee4d8fb8232b6369d6"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/portfolio/PORTFOLIO.json",
+      "status": "added",
+      "bytes": 302,
+      "sha256": "7bb5ed798fb40f6880cc9f24f7734c367be153a736d3f3c49d9df01b5d230aac"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/portfolio/PORTFOLIO_CHECK.json",
+      "status": "added",
+      "bytes": 2725,
+      "sha256": "0691f7b0194d517d87f2cb458fcc03bcf0bffe6150bca86eb00b93bfa50356be"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/portfolio/README.md",
+      "status": "added",
+      "bytes": 2842,
+      "sha256": "6c5d4c12f3a20445a00da7ffc7c1d3b44b07ebaa8fca63227aa12c82544a5587"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/portfolio/ROW_DISPOSITIONS.json",
+      "status": "added",
+      "bytes": 1884,
+      "sha256": "dc5081e677ec1d479147a65f862821371e90e5a649cbda1b45269dc651994b0b"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/handoff/MANIFEST.json",
+      "status": "added",
+      "bytes": 831,
+      "sha256": "598ec0669aa8d5da0bf294cf084b858f81c3d1ffe259ddfca5a70a0b026c9f71"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/handoff/REVIEW.md",
+      "status": "added",
+      "bytes": 8525,
+      "sha256": "e54dbced33e0d2300ad5dba8285d8cf954bd395c38143052afa7750510fded38"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/handoff/WORKED_EXAMPLE.md",
+      "status": "added",
+      "bytes": 3299,
+      "sha256": "5e4f5dfbc5be2d024e87f8641dd1f62995d1dd7131f3157644a66863f16ae5d1"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/handoff/independent_check.py",
+      "status": "added",
+      "bytes": 10497,
+      "sha256": "a991b67fbeeb8668b4fcf7e1ec083e2d53c9f6f27f0f21d29633ccc0c21e7231"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/FIGURE_1_COVERAGE.png",
+      "status": "added",
+      "bytes": 78111,
+      "sha256": "cb89106cf823c01d557620e17fe2d5abd5cc08db96559a26fcae526727ee4c0d"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/FIGURE_2_ATTRITION.png",
+      "status": "added",
+      "bytes": 64363,
+      "sha256": "0729eaa5d6962be54d1270e9098463725b76436383b5389cf552f5ef96806cff"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/MANIFEST.json.gz",
+      "status": "added",
+      "bytes": 49091,
+      "sha256": "4c9f7681bfe2603a6f5b829b975fbc4713c7954e80cc0fde265c2e299035f987"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/PER_CASE_PRIMARY.csv.gz",
+      "status": "added",
+      "bytes": 2554,
+      "sha256": "ba742fee0505209cd6f7b1cddf103be961e1eca7fa74ea7051a3ef5fc027a69c"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/PER_CASE_SEMANTIC_GATES.csv.gz",
+      "status": "added",
+      "bytes": 31506,
+      "sha256": "f4bdad58375a9b426ede0c6f85b2bf4732708a17119d7cc5ac256672a0c741bd"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/provenance/historical_checks/DEV_E0_R1_qwen32_t4.json.gz",
+      "status": "added",
+      "bytes": 2164,
+      "sha256": "65d0629f67ee2293089b4ea75ce0332824150d745b95bf166a6b005e216d6e07"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/provenance/historical_checks/DEV_qwen32_t4.json.gz",
+      "status": "added",
+      "bytes": 2022,
+      "sha256": "8e259de7784a2ad926c740a3444c0709a76d023d9001c85f97d400e3fb094087"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/provenance/historical_checks/ROW_DISPOSITION_E0_R1_qwen32_t4.json",
+      "status": "added",
+      "bytes": 773,
+      "sha256": "24017d73df5178c23406eeb7bf72c7b9a2f827ba8d0d61a8e7d835f6e117c351"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/reporting_code/report.py",
+      "status": "added",
+      "bytes": 23679,
+      "sha256": "29286f49ab652454c0c27cc7ebfd3b7227a39224d8673eaaad1d18a923390ea4"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/ANALYSIS_FREEZE.json.gz",
+      "status": "added",
+      "bytes": 106531,
+      "sha256": "c739c9bf35dd736bd247e371610fd2bb2d05d2c82592167d179572ad60b0dd5e"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/CPU_BINDINGS.json",
+      "status": "added",
+      "bytes": 333,
+      "sha256": "892674d49fd48f347be70bc7e070bb9281e18e22217325a4df355303692fa366"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/ENVIRONMENT_ADMISSION.json.gz",
+      "status": "added",
+      "bytes": 1070,
+      "sha256": "654f76bb35c30fcdbcffeb7c9e3d88f3b3a8b7c4d78e815333e219404c8bea61"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/EXECUTION_AMENDMENT.json.gz",
+      "status": "added",
+      "bytes": 2044,
+      "sha256": "83bde0668529878bb4d7c83c43371504ba559465292878f3dcb2006331e18ca8"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/MODEL.json",
+      "status": "added",
+      "bytes": 508,
+      "sha256": "65ab6181e909f5db7fa5e8a713b382c75bb6ade26b0535020ef28483118ea63e"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/REPEAT_CHECKS.json",
+      "status": "added",
+      "bytes": 816,
+      "sha256": "99d2b855404c82abb2612e4e457255960e2ce4c9eef38e10b7d32bb10d822eb0"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/REPEAT_SELECTION.json",
+      "status": "added",
+      "bytes": 1908,
+      "sha256": "9c4154d31e27fd2ca0e86504af794a62adc4de845f7785c5f23049a9584e95da"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/REQUEST_FREEZE.json.gz",
+      "status": "added",
+      "bytes": 485,
+      "sha256": "d4dd876f53a8dbc54b55bf2925bfff2095ba4b947601f8fec7655ef1f3aacab4"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/RUN_CAPSULE.json.gz",
+      "status": "added",
+      "bytes": 17793,
+      "sha256": "4d7e6d0b90911f5f48dec631b3939d5c20e0d0b205b8be79e2360879e7a2a98c"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/ANALYSIS_BINDING.json.gz",
+      "status": "added",
+      "bytes": 2826,
+      "sha256": "985fea2dbffff5ffd75303b89235df8f31f7e2cc5db6a2f1f87947eec523d341"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/INDEPENDENT_REPLAY.json",
+      "status": "added",
+      "bytes": 597,
+      "sha256": "f0435bfbc6c11aec37faac9337a4e21c7ad97aebfef44b70b729d47ef688a66d"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/SUMMARY.json.gz",
+      "status": "added",
+      "bytes": 2852,
+      "sha256": "af47b7fda7ba606eb1b94a544897ff785fb973ef8a3754acb5d0771dadb5f2b8"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/cases/SSC1-FINAL-0000.json.gz",
+      "status": "added",
+      "bytes": 18875,
+      "sha256": "c0b2c0f03e22ae3e202bbbd6c83b906582f46ea00c6db66e34c49dab3330752a"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/cases/SSC1-FINAL-0001.json.gz",
+      "status": "added",
+      "bytes": 19560,
+      "sha256": "7da703d391e7c280148b59e209f24d9648dc1229bb6fc10b128a3afb6d1b3063"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/cases/SSC1-FINAL-0002.json.gz",
+      "status": "added",
+      "bytes": 19028,
+      "sha256": "e989888b9244df0f071c96868643918cfed3eaaed451ab46604e6f8f6daf10ec"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/cases/SSC1-FINAL-0003.json.gz",
+      "status": "added",
+      "bytes": 19154,
+      "sha256": "d70d0cdd69a76f7f5b294967b77794b25c4df7a09dd9e11f034c0286a8333948"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/cases/SSC1-FINAL-0004.json.gz",
+      "status": "added",
+      "bytes": 19287,
+      "sha256": "9d0317c2e2c4bfa84db3e57b7d933c900e80290abba9c96c2f04a56fbb05408d"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/cases/SSC1-FINAL-0005.json.gz",
+      "status": "added",
+      "bytes": 19161,
+      "sha256": "24c911aa240d7b43dbbfc084312f5e3b80288f48e7a575ac72bcab79dc12d40c"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/cases/SSC1-FINAL-0006.json.gz",
+      "status": "added",
+      "bytes": 19166,
+      "sha256": "d953a7e178f9a7b7bd68dd08ca238977949a4359b5f73160162a790ab4703bac"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/cases/SSC1-FINAL-0007.json.gz",
+      "status": "added",
+      "bytes": 19646,
+      "sha256": "a458d537ad89dc9d96f2b27ac989e58307e2337cd73b27d21e762f52562daf1d"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/cases/SSC1-FINAL-0008.json.gz",
+      "status": "added",
+      "bytes": 20041,
+      "sha256": "a97f68cdae42c419dd6e231309e1e42766067e011144f3d4f56d79d10bccb958"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/cases/SSC1-FINAL-0009.json.gz",
+      "status": "added",
+      "bytes": 19978,
+      "sha256": "9a26839c9c6a9ec5b074f1fe999a5ab2108ea631ac5cdc863881b52a6c2a14c8"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/cases/SSC1-FINAL-0010.json.gz",
+      "status": "added",
+      "bytes": 19657,
+      "sha256": "bd88865d5364d712513ea596ce9cfcf089c5a684639c89581504c0f0a9a666ac"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/cases/SSC1-FINAL-0011.json.gz",
+      "status": "added",
+      "bytes": 20071,
+      "sha256": "01595ce1b9a7d787b16034af9c54edf42f1227318122baa73604882e16025df3"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/cases/SSC1-FINAL-0012.json.gz",
+      "status": "added",
+      "bytes": 18601,
+      "sha256": "6953b29995bf4fd9c581f4f955b134e17d63eebf8d4147326389c2ddac0e781f"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/cases/SSC1-FINAL-0013.json.gz",
+      "status": "added",
+      "bytes": 19039,
+      "sha256": "b87d7701d994a4f356d99608a18b1cd414fff2e84efa3eea4be5ebd4f400debe"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/cases/SSC1-FINAL-0014.json.gz",
+      "status": "added",
+      "bytes": 18688,
+      "sha256": "c545b053c325c8620d1f98b20f40a4ede1d0f107346446676fce612af4144afb"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/cases/SSC1-FINAL-0015.json.gz",
+      "status": "added",
+      "bytes": 19173,
+      "sha256": "9a2de2f66c480454562771e5123a1395775affef65ae0051a4bac53bf5d483fc"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/cases/SSC1-FINAL-0016.json.gz",
+      "status": "added",
+      "bytes": 19595,
+      "sha256": "2d664d9470790e7dcf1eae78b72f6972fb21d0d6a4fb094111f2ebe34de83485"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/cases/SSC1-FINAL-0017.json.gz",
+      "status": "added",
+      "bytes": 19472,
+      "sha256": "71ec52b6908d1fd40db4c3a861dd232ac19adc60f5d944b2244b070859a22fc3"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/cases/SSC1-FINAL-0018.json.gz",
+      "status": "added",
+      "bytes": 19572,
+      "sha256": "3b902000d145323673011fa7c4daf7a413cf54591b1912ec4a2b813ca89fef88"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/cases/SSC1-FINAL-0019.json.gz",
+      "status": "added",
+      "bytes": 20040,
+      "sha256": "c76c55811e73e2d2f3d8bd0663dd96d6111fd2737a3f0e2708e5e0ae191a903a"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/cases/SSC1-FINAL-0020.json.gz",
+      "status": "added",
+      "bytes": 18715,
+      "sha256": "d92253df6f4c0196426cb2b4345cc39f70fdbd30d761dcbe884477a7d27b9c20"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/cases/SSC1-FINAL-0021.json.gz",
+      "status": "added",
+      "bytes": 18680,
+      "sha256": "72312146855c056d9f018a89df989012f0d022bbe562d71fb775430ecc8629a4"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/cases/SSC1-FINAL-0022.json.gz",
+      "status": "added",
+      "bytes": 18505,
+      "sha256": "44514ff47510b63f950a1b09f9acf73e961a31e57a901346fbde90ea275b121f"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/cases/SSC1-FINAL-0023.json.gz",
+      "status": "added",
+      "bytes": 18798,
+      "sha256": "0ee6c887f776b03195f44cb449fadaf9e06b6ed15a298f4748537792297458ae"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/cases/SSC1-FINAL-0024.json.gz",
+      "status": "added",
+      "bytes": 19189,
+      "sha256": "f1a72f13a80d983dd09aa760855cd4b640c4bfa2af8dc0c03c5980eff4d3778a"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/cases/SSC1-FINAL-0025.json.gz",
+      "status": "added",
+      "bytes": 18810,
+      "sha256": "f29ce081761e9dbbc050dfa4a28132cee34286887d066fc205dd267ae1ae392d"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/cases/SSC1-FINAL-0026.json.gz",
+      "status": "added",
+      "bytes": 19165,
+      "sha256": "8c5534a2d127f6e799b6c33533e0524fecefe3f1bf2ce87cce92ffcb52b2e157"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/cases/SSC1-FINAL-0027.json.gz",
+      "status": "added",
+      "bytes": 18993,
+      "sha256": "60937176b4918c7aa58a0ad40f201db093d35b3337fb24c6d084ed61e480941f"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/cases/SSC1-FINAL-0028.json.gz",
+      "status": "added",
+      "bytes": 16786,
+      "sha256": "5f2ebd05a169fd7dd5dff5f1bb1af2dfdcf7ad245f3d54265ae2f9f8e24f6c02"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/cases/SSC1-FINAL-0029.json.gz",
+      "status": "added",
+      "bytes": 16482,
+      "sha256": "319264d9326f250340b409d8fc37459b7d74b0c5fd3aaa58d2fc7cf6fd305504"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/cases/SSC1-FINAL-0030.json.gz",
+      "status": "added",
+      "bytes": 16739,
+      "sha256": "45d79dd7cf34ebd1ce85db699e9dfdfd0050c987b7a86a98b12e11d59e959193"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/cases/SSC1-FINAL-0031.json.gz",
+      "status": "added",
+      "bytes": 16750,
+      "sha256": "795a166c0665c2edb727745946c7e0172c6de365b167c1577657057fe7a76bc8"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/cases/SSC1-FINAL-0032.json.gz",
+      "status": "added",
+      "bytes": 19027,
+      "sha256": "d3230b221e4c0921c0562e73aa72962c1161f2300a7ef4a7bb6ba676298c9442"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/cases/SSC1-FINAL-0033.json.gz",
+      "status": "added",
+      "bytes": 19188,
+      "sha256": "dc0d3d29bbceb37708cc2bf6648242363f24c80e85932945a1bf2f2712712259"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/cases/SSC1-FINAL-0034.json.gz",
+      "status": "added",
+      "bytes": 19398,
+      "sha256": "1cb15e4c0b63ae40f6c470100de2eb4f7761ee1444f7e95e2ea67e9ade3375ca"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/cases/SSC1-FINAL-0035.json.gz",
+      "status": "added",
+      "bytes": 19580,
+      "sha256": "a324e1e586ad1af4c44407542e09443b7c427edec924345fd1aef3ca6fdc365d"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/cases/SSC1-FINAL-0036.json.gz",
+      "status": "added",
+      "bytes": 19812,
+      "sha256": "54abf46a3a573337ea95299b6561d47a7e2962df6de4662e4845b26aebef33c6"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/cases/SSC1-FINAL-0037.json.gz",
+      "status": "added",
+      "bytes": 19524,
+      "sha256": "e83abae6593cc0c4c5d1589ad882e9ad4b6af77d44a6ba477b87991950e5bb24"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/cases/SSC1-FINAL-0038.json.gz",
+      "status": "added",
+      "bytes": 19040,
+      "sha256": "205872f9316bf15ad10b7f51d8a1ea52c82c2a063cb54535843364ea38eacbba"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/cases/SSC1-FINAL-0039.json.gz",
+      "status": "added",
+      "bytes": 19750,
+      "sha256": "6d453a4c777152c7d4f8a3c8f2ff26916382e68fecdd92d29a65bead8461d1ae"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/cases/SSC1-FINAL-0040.json.gz",
+      "status": "added",
+      "bytes": 19719,
+      "sha256": "4087c96570f7887cc7366cc93dfa1615e1c8a7cf903e404577231f939661c42c"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/cases/SSC1-FINAL-0041.json.gz",
+      "status": "added",
+      "bytes": 19624,
+      "sha256": "bbc669e15d01ecdd5e577ce5b2d987dbd39b7a385bea1818fb362c2845f2e0b9"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/cases/SSC1-FINAL-0042.json.gz",
+      "status": "added",
+      "bytes": 19669,
+      "sha256": "4ac4f9442ce15663ba38cc6069dee753328715ef34e3d2db84d393e1c0c702da"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/cases/SSC1-FINAL-0043.json.gz",
+      "status": "added",
+      "bytes": 19764,
+      "sha256": "c6215b46fbb6cad00a7887760f702a484744ff551ec127a1e66fc6b71197cbd9"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/cases/SSC1-FINAL-0044.json.gz",
+      "status": "added",
+      "bytes": 18742,
+      "sha256": "1d2d5a8bb5af07701e680bcc560ea23f1a906c4f0d6396de342050bd5ca20fec"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/cases/SSC1-FINAL-0045.json.gz",
+      "status": "added",
+      "bytes": 18991,
+      "sha256": "87cf9daa5488a7e856f5ca25b7f823d9004b142f9bdf2b53a627748dd4d2df47"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/cases/SSC1-FINAL-0046.json.gz",
+      "status": "added",
+      "bytes": 18489,
+      "sha256": "1a5753482e01db53c2de104d0a2cbf606572afa59d213a460008c2e477e70a26"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/cases/SSC1-FINAL-0047.json.gz",
+      "status": "added",
+      "bytes": 18864,
+      "sha256": "585c447af4ef98d0305c84f403aff57d55f7da03d703d27a611be270c94341ce"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/cases/SSC1-FINAL-0048.json.gz",
+      "status": "added",
+      "bytes": 19747,
+      "sha256": "93278bb27057c68546d2225be2a49c186e7745c9e20d60925610a1d582524006"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/cases/SSC1-FINAL-0049.json.gz",
+      "status": "added",
+      "bytes": 19661,
+      "sha256": "4c84287cba8878f1b73d287a560690e269882e039d0de9a9615bae1dd79c5602"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/cases/SSC1-FINAL-0050.json.gz",
+      "status": "added",
+      "bytes": 19741,
+      "sha256": "8ae1235b018c16a44595ade7b715b4b692bac89b62b671828ebefce5f13337a1"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/cases/SSC1-FINAL-0051.json.gz",
+      "status": "added",
+      "bytes": 19713,
+      "sha256": "2f4eae69bd3481848fab19988910b43899c51c883cce8f886ba44fda7c635b13"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/cases/SSC1-FINAL-0052.json.gz",
+      "status": "added",
+      "bytes": 18333,
+      "sha256": "197d244e244ae6e50f9af7aee01ad1e2e95302db85d2bb205286ee98f6b94121"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/cases/SSC1-FINAL-0053.json.gz",
+      "status": "added",
+      "bytes": 18734,
+      "sha256": "ffb5e4311914b5199d53d896002c468871808e50fd0ebe7dea0a91a98c64b1c3"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/cases/SSC1-FINAL-0054.json.gz",
+      "status": "added",
+      "bytes": 18653,
+      "sha256": "9f799ca6af9c1b88a15e0f96369487a2fc2b6affabb036be8b679d30fc506b05"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/cases/SSC1-FINAL-0055.json.gz",
+      "status": "added",
+      "bytes": 18965,
+      "sha256": "d087d787f7a251c6d0b3bc0a8c64d3ba4742f92bc7d778b7856f7e5ceecb5bcc"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/cases/SSC1-FINAL-0056.json.gz",
+      "status": "added",
+      "bytes": 19384,
+      "sha256": "2b5d17995d0055f48073c8668ff82552e80b2efc30befa65b84c4141781e14cc"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/cases/SSC1-FINAL-0057.json.gz",
+      "status": "added",
+      "bytes": 18850,
+      "sha256": "fd6998090dc8cf5e50b2a4f3ded349c4e0f22abffb9ebd683c0ee8c564008a4c"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/cases/SSC1-FINAL-0058.json.gz",
+      "status": "added",
+      "bytes": 18632,
+      "sha256": "24ab7000c7dcebb4745f9adb404189b781b43085329f5b9674f17c212babbe95"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/cases/SSC1-FINAL-0059.json.gz",
+      "status": "added",
+      "bytes": 19464,
+      "sha256": "6876b591c2bb1256b568014f757ab6d5ca981d812c416914ee63656966b0a698"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/cases/SSC1-FINAL-0060.json.gz",
+      "status": "added",
+      "bytes": 16867,
+      "sha256": "01f365a53b0468a9d81eb19405ad95f0d44031d032115739aa85f0d055e76014"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/cases/SSC1-FINAL-0061.json.gz",
+      "status": "added",
+      "bytes": 17049,
+      "sha256": "5574b07b10b6b1678f3b7580ffee93a9c0b638f1a9043997d44256bce65e1e5b"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/cases/SSC1-FINAL-0062.json.gz",
+      "status": "added",
+      "bytes": 16772,
+      "sha256": "843eae2f76f9d688650c9b468f8bc5641eaa10d58c25bb7b85be2186aff41375"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/cases/SSC1-FINAL-0063.json.gz",
+      "status": "added",
+      "bytes": 16303,
+      "sha256": "a2171a71b835ae62c549504dfd246c1cd5b9969b111a3faa13f8dd020c3bf913"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/full_repeats/SSC1-FINAL-0003.json.gz",
+      "status": "added",
+      "bytes": 19154,
+      "sha256": "d70d0cdd69a76f7f5b294967b77794b25c4df7a09dd9e11f034c0286a8333948"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/full_repeats/SSC1-FINAL-0004.json.gz",
+      "status": "added",
+      "bytes": 19287,
+      "sha256": "9d0317c2e2c4bfa84db3e57b7d933c900e80290abba9c96c2f04a56fbb05408d"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/full_repeats/SSC1-FINAL-0007.json.gz",
+      "status": "added",
+      "bytes": 19646,
+      "sha256": "a458d537ad89dc9d96f2b27ac989e58307e2337cd73b27d21e762f52562daf1d"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/analysis/full_repeats/SSC1-FINAL-0014.json.gz",
+      "status": "added",
+      "bytes": 18688,
+      "sha256": "c545b053c325c8620d1f98b20f40a4ede1d0f107346446676fce612af4144afb"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/code/qwen32_full_forward/__init__.py",
+      "status": "added",
+      "bytes": 69,
+      "sha256": "cbf4f083aff3de6eeaa4c8b78893f234e01d78d4edd75be7a566796d77642931"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/code/qwen32_full_forward/analyze.py",
+      "status": "added",
+      "bytes": 11386,
+      "sha256": "79df5c2a374c320fa5e6e6674c73868ad36957d3d7c3d57313f017c15bd8feb9"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/code/qwen32_full_forward/repeat_checks.py",
+      "status": "added",
+      "bytes": 3234,
+      "sha256": "bf61e89a9da13bf3d1bef148544b6e76f885bfc9e8d4168ae740c78d58bc4df0"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/code/qwen32_full_forward/replay.py",
+      "status": "added",
+      "bytes": 11318,
+      "sha256": "4ab93718677114811a3e6bc1d65f7c949f8c5b575a7ba604ccc054de7f5f9b0a"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/code/text_scope/__init__.py",
+      "status": "added",
+      "bytes": 82,
+      "sha256": "a5dc526e78969436d967f5a075652d354f272caf7ca5cb02eb7e79add3c8d49a"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/code/text_scope/common.py",
+      "status": "added",
+      "bytes": 2831,
+      "sha256": "73bc896fd856e08a369008ed5a9ad82301353fa962b4e17e4be9394353f32adf"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/code/text_scope/metrics.py",
+      "status": "added",
+      "bytes": 11506,
+      "sha256": "cf6a161589d313597b8a28201455f86cc62a21e606299c589a84414880845e4d"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/code/text_scope/sensitivities.py",
+      "status": "added",
+      "bytes": 4937,
+      "sha256": "9052803314e7e1d0b232f7fbff35e57e08d74103cca73b5673148900b279ddd9"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/cpu/designs/SSC1-DEV-0000.json.gz",
+      "status": "added",
+      "bytes": 2611,
+      "sha256": "ae87fd5115eb7c47c7c1fd2edfd3dc562e073ace901239f9a204314702b3845f"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/cpu/designs/SSC1-DEV-0001.json.gz",
+      "status": "added",
+      "bytes": 2696,
+      "sha256": "8db358875ce1000f3934628a142c035ea171978c66afe5eb2c180e66f2202365"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/cpu/designs/SSC1-FINAL-0000.json.gz",
+      "status": "added",
+      "bytes": 2594,
+      "sha256": "1c8d12bfad8091b94ef4a1c4310d4e90d29c3a2992f46eb08f046a3479dcceef"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/cpu/designs/SSC1-FINAL-0001.json.gz",
+      "status": "added",
+      "bytes": 2679,
+      "sha256": "da298af7f2b165e2821db60ee70fdc1ece5bf700fea9f2730af711beade3b066"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/cpu/designs/SSC1-FINAL-0002.json.gz",
+      "status": "added",
+      "bytes": 2702,
+      "sha256": "7ff60d91b9c9f275807b252db359d252ef5474dd548942caa9936912ad7e8d87"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/cpu/designs/SSC1-FINAL-0003.json.gz",
+      "status": "added",
+      "bytes": 2778,
+      "sha256": "e9aca19f75bcdf1198e9138388732553a292125a72980ecfc384e1b62e1c4ffa"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/cpu/designs/SSC1-FINAL-0004.json.gz",
+      "status": "added",
+      "bytes": 2650,
+      "sha256": "83bad061038a7e2bdb0fb68e976d70bdad71674e2b55db0795f98dee24b09f71"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/cpu/designs/SSC1-FINAL-0005.json.gz",
+      "status": "added",
+      "bytes": 2727,
+      "sha256": "6292b752470c8f706b2766a8b39d15891e17fcfecbe7ae71feaab4110d499189"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/cpu/designs/SSC1-FINAL-0006.json.gz",
+      "status": "added",
+      "bytes": 2742,
+      "sha256": "3ef506c02a91537f5380b12a22bc894e55c7fcf15716be9c29364a7d3c5cb61d"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/cpu/designs/SSC1-FINAL-0007.json.gz",
+      "status": "added",
+      "bytes": 2820,
+      "sha256": "829840c836cfefe4736c7a40b5566a304fde010183cd36a46199b89f5a778f40"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/cpu/designs/SSC1-FINAL-0008.json.gz",
+      "status": "added",
+      "bytes": 2631,
+      "sha256": "4994c24681ce085ef6df38357b17be4e85c1ea5c193fcc4aeb356e5962822d3c"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/cpu/designs/SSC1-FINAL-0009.json.gz",
+      "status": "added",
+      "bytes": 2723,
+      "sha256": "2871699cbbf1d6b329c08164a9cc2f14b340251e11e159f6b7a4453022d75958"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/cpu/designs/SSC1-FINAL-0010.json.gz",
+      "status": "added",
+      "bytes": 2741,
+      "sha256": "06ec08cb655799e5e81b84bf905a786fa3c30141d528291e2ac27c1c0fe0223e"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/cpu/designs/SSC1-FINAL-0011.json.gz",
+      "status": "added",
+      "bytes": 2828,
+      "sha256": "d88d55d15d1a9e2874a7bd40a29eada32cdb801282542be50db160bc038b0301"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/cpu/designs/SSC1-FINAL-0012.json.gz",
+      "status": "added",
+      "bytes": 2634,
+      "sha256": "4d969002d23fddb5f5aa5889b4c5b3c650911c93e5b0413f0cb0bd936c67bd77"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/cpu/designs/SSC1-FINAL-0013.json.gz",
+      "status": "added",
+      "bytes": 2707,
+      "sha256": "16bce2d376a54c661cb090a82942cc07d24abd75b746d6ed3f1820f017d091e0"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/cpu/designs/SSC1-FINAL-0014.json.gz",
+      "status": "added",
+      "bytes": 2727,
+      "sha256": "671f8fd4575c0995b124253089b23d52f8058da0679ba7a0141365ee5d71d7f7"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/cpu/designs/SSC1-FINAL-0015.json.gz",
+      "status": "added",
+      "bytes": 2820,
+      "sha256": "4e9dab6f7a93cd86d0c6127206a9b127cb46620413498d255263d648785c567f"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/cpu/designs/SSC1-FINAL-0016.json.gz",
+      "status": "added",
+      "bytes": 2613,
+      "sha256": "a33948bbc37d61e9747f4927263471efbf42b62bff0686cb59a09945c705a794"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/cpu/designs/SSC1-FINAL-0017.json.gz",
+      "status": "added",
+      "bytes": 2713,
+      "sha256": "ce7dda5e941285604f4d92349316a999c06db4b753c3de16a775db5474cc22a9"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/cpu/designs/SSC1-FINAL-0018.json.gz",
+      "status": "added",
+      "bytes": 2747,
+      "sha256": "ca20e628e00cad9fa8d871ed2fde60ac75dfdde431e5f324d02f7b18456c60f0"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/cpu/designs/SSC1-FINAL-0019.json.gz",
+      "status": "added",
+      "bytes": 2788,
+      "sha256": "e1713c8edfc29754cefe33b3599343d82efd5de787a2db7c65eb44aebc1a36f7"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/cpu/designs/SSC1-FINAL-0020.json.gz",
+      "status": "added",
+      "bytes": 2637,
+      "sha256": "9e9fccee3a2903d2fb88560f64b8c97eac36f7a9ae90133968edb0b4641aa211"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/cpu/designs/SSC1-FINAL-0021.json.gz",
+      "status": "added",
+      "bytes": 2716,
+      "sha256": "08ac677d13728e41abb570f9b378e9277dda70f871ab3356c7b8c4e59a3653d1"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/cpu/designs/SSC1-FINAL-0022.json.gz",
+      "status": "added",
+      "bytes": 2743,
+      "sha256": "3d2970bfeec2ab2a0788eb8579cdb41ebdba037ccd3ddf54df8f88c3de9f3963"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/cpu/designs/SSC1-FINAL-0023.json.gz",
+      "status": "added",
+      "bytes": 2806,
+      "sha256": "6a2e89c40804f2e1dcb6cf511b29284a2d91175968ad459a2ff4cf2f69949c6f"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/cpu/designs/SSC1-FINAL-0024.json.gz",
+      "status": "added",
+      "bytes": 2647,
+      "sha256": "9c2a8fd8a2e6107e3eab23f914a63d2e5d90f73c3f4350fd144bc2f26d4f8301"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/cpu/designs/SSC1-FINAL-0025.json.gz",
+      "status": "added",
+      "bytes": 2703,
+      "sha256": "41876187690e771e4e72b5870457a9080f72b88b0827802d9034a79884210e13"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/cpu/designs/SSC1-FINAL-0026.json.gz",
+      "status": "added",
+      "bytes": 2734,
+      "sha256": "89355aa7a8165677989a8ed2d8bcf957fc2cc80f834646486c5070988672f272"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/cpu/designs/SSC1-FINAL-0027.json.gz",
+      "status": "added",
+      "bytes": 2780,
+      "sha256": "37ef7c3afd5ba40f36010af2073e8f7ae5e5fb8b3df933640e32a2eecc44128b"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/cpu/designs/SSC1-FINAL-0028.json.gz",
+      "status": "added",
+      "bytes": 2635,
+      "sha256": "5d9529e28358163875b5ea4d470053b4b7f4ac24e345e89c2cb876479ce9888f"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/cpu/designs/SSC1-FINAL-0029.json.gz",
+      "status": "added",
+      "bytes": 2676,
+      "sha256": "49d4b389bccc310c319c5526b4ac603e2c3fb7e00d3070df18fff7042a82cd53"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/cpu/designs/SSC1-FINAL-0030.json.gz",
+      "status": "added",
+      "bytes": 2703,
+      "sha256": "806daf17ff3aa923a4e4f22fa3212967a138064f4bbc04dfd4e3fd00dc90597c"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/cpu/designs/SSC1-FINAL-0031.json.gz",
+      "status": "added",
+      "bytes": 2801,
+      "sha256": "05cdf256c073e52b0fb9158e3a0248793abefb3b2d14257abbbea08acf7d6049"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/cpu/designs/SSC1-FINAL-0032.json.gz",
+      "status": "added",
+      "bytes": 2589,
+      "sha256": "c436e19a784891bf092903da3d66f1130ff56cf1567087377ca42db184bc0ea7"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/cpu/designs/SSC1-FINAL-0033.json.gz",
+      "status": "added",
+      "bytes": 2672,
+      "sha256": "0dfd7940365508c084926aa870a417561be94ae6d01c2842f19bde887a3d49aa"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/cpu/designs/SSC1-FINAL-0034.json.gz",
+      "status": "added",
+      "bytes": 2685,
+      "sha256": "1334adbe49e31583353cc36998afff2fc0a9ff2be580dd9f6804719078886bcd"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/cpu/designs/SSC1-FINAL-0035.json.gz",
+      "status": "added",
+      "bytes": 2802,
+      "sha256": "38217575ee202ecca172ff0de6592bc7322c69c05943b801e10948eef4ba47be"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/cpu/designs/SSC1-FINAL-0036.json.gz",
+      "status": "added",
+      "bytes": 2665,
+      "sha256": "c0928e6f2de846e0bf4464bffe03b31035e1bec80df07717dfaec5404407acec"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/cpu/designs/SSC1-FINAL-0037.json.gz",
+      "status": "added",
+      "bytes": 2716,
+      "sha256": "c741e7a5cb3b3c958ccabd6fdcfceeb50aa7bcc694a1c3b130447c117b3a8643"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/cpu/designs/SSC1-FINAL-0038.json.gz",
+      "status": "added",
+      "bytes": 2727,
+      "sha256": "9cbf2eb978bde9ac5162b96ef008e5a4a2e0b14a76695c4f986e87cc4847fae7"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/cpu/designs/SSC1-FINAL-0039.json.gz",
+      "status": "added",
+      "bytes": 2797,
+      "sha256": "ccba5ff87fb4a13fbcc45255d738ee017b9f31d8db722a8670f3debc09d9a579"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/cpu/designs/SSC1-FINAL-0040.json.gz",
+      "status": "added",
+      "bytes": 2616,
+      "sha256": "bf89bad698ae0034cbe850c9f01cf443feff096a1b39a0ae2bebddc8b0c0aada"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/cpu/designs/SSC1-FINAL-0041.json.gz",
+      "status": "added",
+      "bytes": 2716,
+      "sha256": "3191639f96358e27fd25f3e27cec6c1da422134de2690c8490e5e4ca1869c9a6"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/cpu/designs/SSC1-FINAL-0042.json.gz",
+      "status": "added",
+      "bytes": 2712,
+      "sha256": "f10711ad598ceb26e11f790ed35a7ec3d0b584bc0399b3baf7e760647c8ab5d5"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/cpu/designs/SSC1-FINAL-0043.json.gz",
+      "status": "added",
+      "bytes": 2831,
+      "sha256": "5f7475e8fa14e68563c4aef16dea3569ce1f25ad0f8da43a8b2ac80925bfae2c"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/cpu/designs/SSC1-FINAL-0044.json.gz",
+      "status": "added",
+      "bytes": 2637,
+      "sha256": "8b1b7055e286cb2612b5d2397e121b521dbf35602052799b01220e762df948d3"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/cpu/designs/SSC1-FINAL-0045.json.gz",
+      "status": "added",
+      "bytes": 2713,
+      "sha256": "81af3b0e01b9f190d0ff5c20b5e1ebb06415af6579d65ac980b3ddf40c096308"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/cpu/designs/SSC1-FINAL-0046.json.gz",
+      "status": "added",
+      "bytes": 2715,
+      "sha256": "643a47d0bc209b5095258fb3603195d6545c95b69e9ddc69af2489202312ec55"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/cpu/designs/SSC1-FINAL-0047.json.gz",
+      "status": "added",
+      "bytes": 2809,
+      "sha256": "818e61fbec2b4d7ec41de0ac6cdea44c5d2202f26d9edbd84165e6875ae5cc3d"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/cpu/designs/SSC1-FINAL-0048.json.gz",
+      "status": "added",
+      "bytes": 2657,
+      "sha256": "775640dd6ce530e5ef38241144f3407a224c95d05fd68b6a05488538a592f091"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/cpu/designs/SSC1-FINAL-0049.json.gz",
+      "status": "added",
+      "bytes": 2691,
+      "sha256": "f1534310973983a73a7cab2568427a00c469dd862c50359034ab660eb2437078"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/cpu/designs/SSC1-FINAL-0050.json.gz",
+      "status": "added",
+      "bytes": 2726,
+      "sha256": "f534a617cb89a7dc8cb83baa954cebd434ef1400af6bb2c200b971a40cf7ed75"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/cpu/designs/SSC1-FINAL-0051.json.gz",
+      "status": "added",
+      "bytes": 2800,
+      "sha256": "bf58f6dcbd818dc7e87e72f3abf338afeb0e02ad5e3447b13480df3f7421e5ef"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/cpu/designs/SSC1-FINAL-0052.json.gz",
+      "status": "added",
+      "bytes": 2664,
+      "sha256": "ae2b5017190556e7aed039dfa8d195fcf53e8d9ab5c9c8aa61f538d835caf600"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/cpu/designs/SSC1-FINAL-0053.json.gz",
+      "status": "added",
+      "bytes": 2698,
+      "sha256": "338408f02bfc461208a85bc4c2701ca07e6fb51322346b491f3a57ad2e17f817"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/cpu/designs/SSC1-FINAL-0054.json.gz",
+      "status": "added",
+      "bytes": 2732,
+      "sha256": "69c3762224bb83ad62523fae0ca13e18a42c8f00d178d4a001ca13e20fcc5d2b"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/cpu/designs/SSC1-FINAL-0055.json.gz",
+      "status": "added",
+      "bytes": 2821,
+      "sha256": "29dc7a108cb3941b11303715a2202d49750f0a6325a10cb931d6a0bdf49915ca"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/cpu/designs/SSC1-FINAL-0056.json.gz",
+      "status": "added",
+      "bytes": 2667,
+      "sha256": "5f0d5597ceb39cb134be21567bf9c2d491196c1fd8a3564b9372850433fe8574"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/cpu/designs/SSC1-FINAL-0057.json.gz",
+      "status": "added",
+      "bytes": 2705,
+      "sha256": "aeebda5b4762d5a8628457261df8276a99841495d73918a2185fa002036b2649"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/cpu/designs/SSC1-FINAL-0058.json.gz",
+      "status": "added",
+      "bytes": 2727,
+      "sha256": "9483593788f0025e270140edab9a0c6d8492bf7a94ecc1d5348cdba2c21df98e"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/cpu/designs/SSC1-FINAL-0059.json.gz",
+      "status": "added",
+      "bytes": 2825,
+      "sha256": "f733cba0a5e8764ea1b8bd12f12a05a4bda0801a3682b3a3d06cdb4fdb7f8f5f"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/cpu/designs/SSC1-FINAL-0060.json.gz",
+      "status": "added",
+      "bytes": 2615,
+      "sha256": "81799bd14ff2dd63eeced695bc697ade8435eb27d417b63c89fef0fc2f3b4fe6"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/cpu/designs/SSC1-FINAL-0061.json.gz",
+      "status": "added",
+      "bytes": 2668,
+      "sha256": "c6e6ae95705925ff6f6bd6e8c50de736d13fd64dee5e44f0026ff57f8d703bdd"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/cpu/designs/SSC1-FINAL-0062.json.gz",
+      "status": "added",
+      "bytes": 2716,
+      "sha256": "18afe7caf542f1d7e1f361142f8df324a7130597b0932cf3e07e888533c2f932"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/cpu/designs/SSC1-FINAL-0063.json.gz",
+      "status": "added",
+      "bytes": 2793,
+      "sha256": "c9b9e92e2191a9242abda91ec9c763058749d64dde39dfdad77ee3a37944044d"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/models/Qwen--Qwen3-32B/MODEL_PIN.json.gz",
+      "status": "added",
+      "bytes": 1524,
+      "sha256": "873c220aaf39f2d6a6ddb773c85d673f473b95af6dbdc15c752ecf3e37bfc39d"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-DEV-0000/questions.json.gz",
+      "status": "added",
+      "bytes": 514,
+      "sha256": "de0c1c28711b3c09ec64999da5b3b006a7158778902be21231d1401f21261ca1"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-DEV-0000/source_inputs.json.gz",
+      "status": "added",
+      "bytes": 1282,
+      "sha256": "6aa0cfd9deff9d1680bbd74889da51195054605d3ea3d79fdfce2d088a2462d3"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-DEV-0001/questions.json.gz",
+      "status": "added",
+      "bytes": 514,
+      "sha256": "25c504cf891f619006d9c33a32dc00442ee3f86c48711a73ec7ebb17d1ad60c3"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-DEV-0001/source_inputs.json.gz",
+      "status": "added",
+      "bytes": 1334,
+      "sha256": "19667a29456378ffbc8f413d5ddc83a7ee128a5a27ab0da4206cb17e8b0e8d52"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0000/questions.json.gz",
+      "status": "added",
+      "bytes": 515,
+      "sha256": "adce9174952e22d46234d887fd81836b76390f6ef961e70c963361e4b3b34a29"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0000/source_inputs.json.gz",
+      "status": "added",
+      "bytes": 1264,
+      "sha256": "fb97b9e10df9c9f47ed46f3fa53d2515fa8938fa20c9cbdfaf5f294a71390b18"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0001/questions.json.gz",
+      "status": "added",
+      "bytes": 517,
+      "sha256": "0f980209adf8bc6ef46d1e955c06382f985d13b2470383098c43ca7a82af56c1"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0001/source_inputs.json.gz",
+      "status": "added",
+      "bytes": 1310,
+      "sha256": "18c1328470d21fae3b8ef4fa164e250e58c208f5d6f64f66a054331b090c750a"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0002/questions.json.gz",
+      "status": "added",
+      "bytes": 516,
+      "sha256": "34f0cf0275b3bdabf2f8d2878219c09d882c973cd0123b5854a5e596a1ab9f00"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0002/source_inputs.json.gz",
+      "status": "added",
+      "bytes": 1313,
+      "sha256": "185cda066e44ea5602a78ef3753e124a9f09fd1f9c90ce08bc5d86f3963c3d77"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0003/questions.json.gz",
+      "status": "added",
+      "bytes": 518,
+      "sha256": "fa854f59f998d5c34656bf2a339162f587d9cd2b83b0c2225f41965fdf964e8c"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0003/source_inputs.json.gz",
+      "status": "added",
+      "bytes": 1391,
+      "sha256": "380d1ba57ccd433b9dce5d2dc85152ad3357be635ea24571e3367b15e10b3607"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0004/questions.json.gz",
+      "status": "added",
+      "bytes": 517,
+      "sha256": "3a34ed15790ad73c78de495bb1f945187e119de05bec667e2e464c4b005cef1c"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0004/source_inputs.json.gz",
+      "status": "added",
+      "bytes": 1316,
+      "sha256": "71021ec6248e6bae231a0a762519a5ed36358624fd8550bf41bcb8559950fa39"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0005/questions.json.gz",
+      "status": "added",
+      "bytes": 518,
+      "sha256": "0bfbc7b08e1b12ff76a82dfc0567463997d767998d7ab6a0f347ecffbcf776e9"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0005/source_inputs.json.gz",
+      "status": "added",
+      "bytes": 1358,
+      "sha256": "eacf454c6983989e81756ba951b9caaf6de855adbc4a217215e3ded04a5e723b"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0006/questions.json.gz",
+      "status": "added",
+      "bytes": 518,
+      "sha256": "6400befe20b2584e5c9b1dc49d2758beb6ca5e5e6d971f90ddf7277726446424"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0006/source_inputs.json.gz",
+      "status": "added",
+      "bytes": 1334,
+      "sha256": "b90b8bcec9410f717736d470eabf5f54fbfc2c4a6365c844c617270d4990e00a"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0007/questions.json.gz",
+      "status": "added",
+      "bytes": 518,
+      "sha256": "79446e27b891a5262e24b20246e626210481522befef8b91254d717c0bdbbce5"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0007/source_inputs.json.gz",
+      "status": "added",
+      "bytes": 1394,
+      "sha256": "5599f7878bff8f26fcab3917fa5aadcfdad2856854c33bdef4e7937812496c3e"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0008/questions.json.gz",
+      "status": "added",
+      "bytes": 520,
+      "sha256": "5ce4a2ef07f575b42c64ba0e191ba75af4e421381fd4ea989621a7f9b84d1e94"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0008/source_inputs.json.gz",
+      "status": "added",
+      "bytes": 1300,
+      "sha256": "59c99904a429eca911555e846563816cf5c20f61aa66629138a37efbe109c6ac"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0009/questions.json.gz",
+      "status": "added",
+      "bytes": 517,
+      "sha256": "97ca9a3cdccc3735cc69de269ad5b51eb71ca3b21c87be8439b4eda57a521f77"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0009/source_inputs.json.gz",
+      "status": "added",
+      "bytes": 1349,
+      "sha256": "f444c9205ffcca3267f4c01a11b20ae524ade48d24aef7bdb444eceb4cacaeb4"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0010/questions.json.gz",
+      "status": "added",
+      "bytes": 518,
+      "sha256": "c519c398543d06c436464d0d2ff8baaac113b8e15e147d9ee315d28e8d9fa776"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0010/source_inputs.json.gz",
+      "status": "added",
+      "bytes": 1351,
+      "sha256": "2289acd0db2c1f3c02fbec811279f18d428a73abb11c66b454969241ed3d9f56"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0011/questions.json.gz",
+      "status": "added",
+      "bytes": 517,
+      "sha256": "1711c0ab18aebf3cbb04e9a846dd4d608f459ac5a1fd641a88cc4dc2a7263390"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0011/source_inputs.json.gz",
+      "status": "added",
+      "bytes": 1414,
+      "sha256": "910f2f185af96edad4bae65a183a837b439406af4cdd7b1d1bf63dae174028ee"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0012/questions.json.gz",
+      "status": "added",
+      "bytes": 518,
+      "sha256": "47b71b2636207e8d82d7168ef062071a2a4f63ec8dcfebce2afe44d39453a272"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0012/source_inputs.json.gz",
+      "status": "added",
+      "bytes": 1286,
+      "sha256": "1e4641e3805bc6ac9785238da369c6e6379f7cacb2c34461357e12e55f1fd7eb"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0013/questions.json.gz",
+      "status": "added",
+      "bytes": 515,
+      "sha256": "221c64bb99eb85ee0702353ab20d35737453e432652f91166883ca0679bea9ff"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0013/source_inputs.json.gz",
+      "status": "added",
+      "bytes": 1331,
+      "sha256": "e65e4e9b7c6bc15341598a4b0479fe7511b79851746f5dbfd0d25a9de4ac246f"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0014/questions.json.gz",
+      "status": "added",
+      "bytes": 517,
+      "sha256": "63483e8623bd7cc0b09a00189a10a8159d8e55b13c493c6250fee1508e60353f"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0014/source_inputs.json.gz",
+      "status": "added",
+      "bytes": 1338,
+      "sha256": "4387f063c571bd1774d3c39e23edc402c3a509eb388a3afc2b2cc9d7a29e2439"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0015/questions.json.gz",
+      "status": "added",
+      "bytes": 519,
+      "sha256": "88047a7df631b1d85b0ddc6ed94c7516c4939573557285f441144e4b8c12eee7"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0015/source_inputs.json.gz",
+      "status": "added",
+      "bytes": 1401,
+      "sha256": "1adc2caba9dfe67f4a981ecf8344e20db955ffeb51b7264d3dc31667d4770fbd"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0016/questions.json.gz",
+      "status": "added",
+      "bytes": 519,
+      "sha256": "288d7300171ba326f88ec02efaa069615b3994c55db3e8236b7c1ea8eaca4725"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0016/source_inputs.json.gz",
+      "status": "added",
+      "bytes": 1275,
+      "sha256": "2f02bbebd3ba1437804cd91883a6305d70b7cc31ee8c3956bd0610257aa923ae"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0017/questions.json.gz",
+      "status": "added",
+      "bytes": 518,
+      "sha256": "69bc517ee1caf0bd62359260b1622652a1de7b751a003b781114d14fb782d479"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0017/source_inputs.json.gz",
+      "status": "added",
+      "bytes": 1344,
+      "sha256": "90faad4d71cad723385735c210c317405da0d1b0af23e409843a4da3d7153f7a"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0018/questions.json.gz",
+      "status": "added",
+      "bytes": 519,
+      "sha256": "1db67abdd57e7834220660b3228143f47143136e0041ff32a191eeb407b3e125"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0018/source_inputs.json.gz",
+      "status": "added",
+      "bytes": 1356,
+      "sha256": "f6e3fd91838464f34a17a9b5878eabd2e825b47809bd44900356ab8766b468c9"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0019/questions.json.gz",
+      "status": "added",
+      "bytes": 520,
+      "sha256": "ce17c3fe3cee1df5c48259d43e89be06197a64039f23abb69bab46a9cb9072a5"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0019/source_inputs.json.gz",
+      "status": "added",
+      "bytes": 1383,
+      "sha256": "23e0f271523744c0b6ebd4c7f3175220f34e6892354bf9b76c2fa9d0d2efeefc"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0020/questions.json.gz",
+      "status": "added",
+      "bytes": 515,
+      "sha256": "62740a3b2a901327380fa6ddf91fc5fe03f69d140f303eed05a23396654c229c"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0020/source_inputs.json.gz",
+      "status": "added",
+      "bytes": 1300,
+      "sha256": "d15edf59650c80f9d6181c57eb7f73e299e62312dbe499a279a67a606ae8cc9d"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0021/questions.json.gz",
+      "status": "added",
+      "bytes": 517,
+      "sha256": "2216e187fb2cacfb0e8de18bd5068715846092b7109ec53e3ddc6ef03f41a86c"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0021/source_inputs.json.gz",
+      "status": "added",
+      "bytes": 1355,
+      "sha256": "5ea43a2797f2208061fb01ac1f33fe1411c596b30bcb76ae71c26ff2479408a4"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0022/questions.json.gz",
+      "status": "added",
+      "bytes": 517,
+      "sha256": "5d7605804adbc1fae1aa9e3993d1f1e0a165a50e630d5670ddf43aa6d0c4e196"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0022/source_inputs.json.gz",
+      "status": "added",
+      "bytes": 1352,
+      "sha256": "0824a1277a3916ecf1594d56a0777a460f3b50b592c4479757c0b613dee0fa5f"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0023/questions.json.gz",
+      "status": "added",
+      "bytes": 518,
+      "sha256": "0808d069e8e40763ebb768d5c458f6dd5219fd9147410779ebc92a495d58dcc1"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0023/source_inputs.json.gz",
+      "status": "added",
+      "bytes": 1395,
+      "sha256": "2b52ebe0225e38f47e81020647597d3d42c2e993d16740fb1c4ce323493d90db"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0024/questions.json.gz",
+      "status": "added",
+      "bytes": 518,
+      "sha256": "54a21933b0ab55fcf11a54d0a70d461caf9b61e47ec1edf5f7797a5e941dd989"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0024/source_inputs.json.gz",
+      "status": "added",
+      "bytes": 1314,
+      "sha256": "df81978c1605377ccad3c745adfb41a72218e6f17446a39b66db20dfb3dea9cf"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0025/questions.json.gz",
+      "status": "added",
+      "bytes": 517,
+      "sha256": "2444e75cc0d4507ec48c215815f94c7a8369f4087de71473b95b67f2730873a7"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0025/source_inputs.json.gz",
+      "status": "added",
+      "bytes": 1346,
+      "sha256": "5cbb1a80d8a4f8c15ec40d233188d38638d4fcd6708e1364d16ef5c1c0edaee2"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0026/questions.json.gz",
+      "status": "added",
+      "bytes": 518,
+      "sha256": "950127a25629c488439db2d7b4a0cf0c179b2e74134251975354a71340a9f727"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0026/source_inputs.json.gz",
+      "status": "added",
+      "bytes": 1343,
+      "sha256": "03de365dab3fd703da604ddf00c2d22dc452e59cb8e6e6dfeeb996cd538ada1b"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0027/questions.json.gz",
+      "status": "added",
+      "bytes": 519,
+      "sha256": "237779e76fe9e05b2624fc13045f00295bc62fc02b58586959e62235892edd76"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0027/source_inputs.json.gz",
+      "status": "added",
+      "bytes": 1386,
+      "sha256": "1ab1674a39af2a0900634fc082626d4ff2d0edba6d898a6b00ab4c4053021141"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0028/questions.json.gz",
+      "status": "added",
+      "bytes": 519,
+      "sha256": "cb64ebc3fe88565d935f322cb78254ff5af457a72c4ddcd79a4ade16e1f9d732"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0028/source_inputs.json.gz",
+      "status": "added",
+      "bytes": 1294,
+      "sha256": "391ce0f12cb0cdd9b492c0a1c0a72b652bf43f4f06eb5a44e7a11b0ed9043773"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0029/questions.json.gz",
+      "status": "added",
+      "bytes": 516,
+      "sha256": "44f1607177ca8566abb80b78f6f41706494b1095a13280250cb56a609459cf16"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0029/source_inputs.json.gz",
+      "status": "added",
+      "bytes": 1322,
+      "sha256": "c6a53b846abf9d2695456d6bc738368d0a8f8460abffec7ad93b56cf6d231289"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0030/questions.json.gz",
+      "status": "added",
+      "bytes": 517,
+      "sha256": "1be7c2c80b148d054ace31c5790cd8f89ef8d5109f343a56b6b7207c76063ebe"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0030/source_inputs.json.gz",
+      "status": "added",
+      "bytes": 1325,
+      "sha256": "0a138a6674839f70589893675fb6b9c28b83e4144a35ec57fc6c2c7bc3176a23"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0031/questions.json.gz",
+      "status": "added",
+      "bytes": 515,
+      "sha256": "af5750b205069e51951955dffbbb6280c06aede8f32ace6d78a6728db1927d9d"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0031/source_inputs.json.gz",
+      "status": "added",
+      "bytes": 1392,
+      "sha256": "8fa132fad1687424c3928d1ee62a86bb8848c6b0109a4aa09ee842dc7ee29e7c"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0032/questions.json.gz",
+      "status": "added",
+      "bytes": 519,
+      "sha256": "a4139ee3fd9987a8eee11a6b3d7b1b7d417c4a94e69b9aaa552bf209ca251811"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0032/source_inputs.json.gz",
+      "status": "added",
+      "bytes": 1264,
+      "sha256": "46cfc46210ebd4c04bb74b7b3d56f308e915a9e0e89ad62fccd6c57e09e9510d"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0033/questions.json.gz",
+      "status": "added",
+      "bytes": 515,
+      "sha256": "e0ca42f58e85855d646d09ec0c23f0da8ce4eda6b28e6e43ac93f00570847867"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0033/source_inputs.json.gz",
+      "status": "added",
+      "bytes": 1322,
+      "sha256": "095bcb519253e8da35abad2920bb25813538e8de466482b38bd77ef31a777efd"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0034/questions.json.gz",
+      "status": "added",
+      "bytes": 521,
+      "sha256": "26c56aaadf91f652c659f526fc56f548513c17d687253153dc0fc4bbad014e71"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0034/source_inputs.json.gz",
+      "status": "added",
+      "bytes": 1321,
+      "sha256": "be92ef0138208599cecda448abb72e16e92130fdbdd723d0490c49fdbb169e92"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0035/questions.json.gz",
+      "status": "added",
+      "bytes": 518,
+      "sha256": "5f0a89c1b0297195d26e0b94827f261af57c9fb5bc6709ab9f93b2f2c2a26cbc"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0035/source_inputs.json.gz",
+      "status": "added",
+      "bytes": 1383,
+      "sha256": "bc17331d9dbecc3f92d12082a9d8209c48cf1a803ccc3e18e307e48dc0b61d4b"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0036/questions.json.gz",
+      "status": "added",
+      "bytes": 518,
+      "sha256": "c564f7bd09987c62204f9c58b60e681830fdad2d3c11e4e69d1fa93bd2ec7bd3"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0036/source_inputs.json.gz",
+      "status": "added",
+      "bytes": 1326,
+      "sha256": "96c220e01c6767b5a855bc128f1a1459bf46ade25226c5c3f686822020e4417a"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0037/questions.json.gz",
+      "status": "added",
+      "bytes": 516,
+      "sha256": "c8180b8c3dfa797e302752c0f206490986b455ab8918e2689fd2a12c0db53e64"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0037/source_inputs.json.gz",
+      "status": "added",
+      "bytes": 1346,
+      "sha256": "6d04446dd472d6b72dcc47de06c5e1c9b0248180c376176435f7194c68495c13"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0038/questions.json.gz",
+      "status": "added",
+      "bytes": 521,
+      "sha256": "1851bfcc7df443fef6f64e5100cf583488f5dc05094caef55ff181b6b2d1eddd"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0038/source_inputs.json.gz",
+      "status": "added",
+      "bytes": 1347,
+      "sha256": "3c0a567a977ad03dac3db8256cd42af0ea205f0a258adbaa57f5e70b1dcbde5c"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0039/questions.json.gz",
+      "status": "added",
+      "bytes": 518,
+      "sha256": "fc3fcc5025c12d5343f68b0766d947fd76f10be4c3f4c69da474588830abbdd0"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0039/source_inputs.json.gz",
+      "status": "added",
+      "bytes": 1384,
+      "sha256": "83a00845db2cde457872f30f10d7f2d318857d8e0a302c4d830370a98c89b201"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0040/questions.json.gz",
+      "status": "added",
+      "bytes": 517,
+      "sha256": "515729a7748c9b3b26fe8847f57c89a76b285afd7243bd3fb263f5c7e6568a3d"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0040/source_inputs.json.gz",
+      "status": "added",
+      "bytes": 1284,
+      "sha256": "8759e0310c56cc0fa6232ef2f355839bb9bf319b76b2043b0910e5b45bba9919"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0041/questions.json.gz",
+      "status": "added",
+      "bytes": 516,
+      "sha256": "e08d18e4cdf9491b798884e7baeacadb0f48bd1dc74aa75232e991be60ce414a"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0041/source_inputs.json.gz",
+      "status": "added",
+      "bytes": 1355,
+      "sha256": "996af615dd8842f676211fa9dfa4bb20b58caf86b74871671224260d6613fac6"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0042/questions.json.gz",
+      "status": "added",
+      "bytes": 518,
+      "sha256": "be8adf08c8a603aff973442ad3a0b99a9e9bae13e3c53e3a43fd2297f5bab95f"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0042/source_inputs.json.gz",
+      "status": "added",
+      "bytes": 1334,
+      "sha256": "f34424a1347e6bc63a2682c7fae96ab2081eaf81f8a4c67a5b3d3dd89855c53c"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0043/questions.json.gz",
+      "status": "added",
+      "bytes": 519,
+      "sha256": "70892f1d864148d363500bc92f5b365ccf8d83fc02ecb409bf578e98c13923df"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0043/source_inputs.json.gz",
+      "status": "added",
+      "bytes": 1418,
+      "sha256": "589112e6d2ab6dc1ebcad2499ace17d1bd512387eb8c71b37486df896f009110"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0044/questions.json.gz",
+      "status": "added",
+      "bytes": 518,
+      "sha256": "f2085cc48c99a884be205c9cdd1e19ce309085724fc18911102c9a14ee0b7733"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0044/source_inputs.json.gz",
+      "status": "added",
+      "bytes": 1305,
+      "sha256": "e8c13c5196d1eac757703f1ef7c4f2f71b6063530bb647620ad75f39a957ca38"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0045/questions.json.gz",
+      "status": "added",
+      "bytes": 520,
+      "sha256": "5b9c1faf3474b4bd74795534f2642c538e19a791e89139f45f2b56879e1ad292"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0045/source_inputs.json.gz",
+      "status": "added",
+      "bytes": 1335,
+      "sha256": "9650619a85fdc8fa827e4d8a2d58b530a1424654732249ca301043412b070553"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0046/questions.json.gz",
+      "status": "added",
+      "bytes": 515,
+      "sha256": "6fbd857618bbe27ad2ae1a7a74f5b26fd87e62986c9f1554e1ab6efbbe30ef36"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0046/source_inputs.json.gz",
+      "status": "added",
+      "bytes": 1332,
+      "sha256": "3e3551cbbbefa5eaefa196ce6d5cbb9af0d55e241a81387f119229011b05444a"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0047/questions.json.gz",
+      "status": "added",
+      "bytes": 517,
+      "sha256": "e12f9f21c80ceb424e343dbc0c541949c93d89763f07ca10b27e74b617f08822"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0047/source_inputs.json.gz",
+      "status": "added",
+      "bytes": 1402,
+      "sha256": "fbe665a5237fa8ace615e4b396691b5b602083dc122a44adc932812bc0325ada"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0048/questions.json.gz",
+      "status": "added",
+      "bytes": 518,
+      "sha256": "6a4b2eba1ca465b270a1980caaab86e4fa735702a56ffbbe0f6db49f54bfcc50"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0048/source_inputs.json.gz",
+      "status": "added",
+      "bytes": 1310,
+      "sha256": "87bb77cf7cb5adf77089f8ed37c6acc13c51ca8fb0aa6141d296ba1487e7e7e5"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0049/questions.json.gz",
+      "status": "added",
+      "bytes": 519,
+      "sha256": "a92ec474a3c5f6eee947f61c6e7af3b4ee0c68feb1d2da014d4c6997a57495f2"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0049/source_inputs.json.gz",
+      "status": "added",
+      "bytes": 1321,
+      "sha256": "d3404c297eddd533e79029bfabe97006322978ec48b4e8ab92e82fe80e3c732d"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0050/questions.json.gz",
+      "status": "added",
+      "bytes": 518,
+      "sha256": "04fbd33d11da98cc4077f8799447e22109905c11b5131c6857b7174a6a4cc312"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0050/source_inputs.json.gz",
+      "status": "added",
+      "bytes": 1343,
+      "sha256": "6ab4217b6bf4c339606d905ffc6f79ada8ab89f94edc0af2038f852bac699d9a"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0051/questions.json.gz",
+      "status": "added",
+      "bytes": 519,
+      "sha256": "1ca3c31a5bb560b4be4e4e759c6ae9ec1304791972cbf1b5a8e0ee5f4cd76ac8"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0051/source_inputs.json.gz",
+      "status": "added",
+      "bytes": 1392,
+      "sha256": "666876bd7456b1b4d949795213b4dce579499d8d641739e12f54b2476f1c0891"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0052/questions.json.gz",
+      "status": "added",
+      "bytes": 520,
+      "sha256": "f063e4db9d0fede297610212e1fee14cdc3d26ed1fdf14a6b321c11034567b4c"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0052/source_inputs.json.gz",
+      "status": "added",
+      "bytes": 1312,
+      "sha256": "00844cf6a7a0b4ee4777c36aaab60f2a4a7c48fe07e1947cfcb524ba3527995b"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0053/questions.json.gz",
+      "status": "added",
+      "bytes": 519,
+      "sha256": "66daeb5acbaca860ce476970fc790464b7ea7d60af53cde651aa7fabd9811358"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0053/source_inputs.json.gz",
+      "status": "added",
+      "bytes": 1345,
+      "sha256": "2efc158ac9484bfd9703612f96f7652a88c45dfc0db804bfafd43f5f1d7e2bc4"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0054/questions.json.gz",
+      "status": "added",
+      "bytes": 517,
+      "sha256": "a443683bc36c506783a39d5b3a0600ab550066fb3f1c9af88a7163379b8e65a8"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0054/source_inputs.json.gz",
+      "status": "added",
+      "bytes": 1334,
+      "sha256": "55c647189a5d940fe546e44b2f4f6bf53c1300a1280b1eeae9fa351272be6806"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0055/questions.json.gz",
+      "status": "added",
+      "bytes": 520,
+      "sha256": "ffdd604dba6793e4907a0b1870e4184d25597fe40e6b2d16ddf52c451bc56b44"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0055/source_inputs.json.gz",
+      "status": "added",
+      "bytes": 1415,
+      "sha256": "e923ba77dba877d5ff68cc9fbf73af274cd06e12ac455931f706e5237e250031"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0056/questions.json.gz",
+      "status": "added",
+      "bytes": 520,
+      "sha256": "f5782140c6d10f9321735026898558070ddb53caac56aa9a806fc8fd04f1c736"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0056/source_inputs.json.gz",
+      "status": "added",
+      "bytes": 1316,
+      "sha256": "9e32218d3b7b1214f285b3375a96e598c3d98935d0c07a05c38bed0903e3c4d5"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0057/questions.json.gz",
+      "status": "added",
+      "bytes": 517,
+      "sha256": "b9b8d7c7989b7a9b727ef8f9289ced4a8a4573f6a412b7145ea6447beb7c6a73"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0057/source_inputs.json.gz",
+      "status": "added",
+      "bytes": 1334,
+      "sha256": "9b07c2e1336b8fe6458c1d8638d9116d20c9557b03125c28b72e71f4d8e7b95d"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0058/questions.json.gz",
+      "status": "added",
+      "bytes": 517,
+      "sha256": "16a9945eb7cccacabee022f7844171e7c0172c50d70e482a8a00d711feef7692"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0058/source_inputs.json.gz",
+      "status": "added",
+      "bytes": 1350,
+      "sha256": "a72a350c27cbbad9a6908ea9ad1262c2771963b698212d84e3941da938c440c8"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0059/questions.json.gz",
+      "status": "added",
+      "bytes": 519,
+      "sha256": "bc365a6883b8e87cb157e622f8800d1c1f55c6a2b8fd15e2f213e735d214d06f"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0059/source_inputs.json.gz",
+      "status": "added",
+      "bytes": 1398,
+      "sha256": "a2693c6ad42621e464336265c4e56d07a956386a72e9f8e9ce3cf8df92b6321d"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0060/questions.json.gz",
+      "status": "added",
+      "bytes": 516,
+      "sha256": "b50d03eda2346803ef8e9451d680498d7cb4b6eb03e96d0e816a1536683f6c1d"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0060/source_inputs.json.gz",
+      "status": "added",
+      "bytes": 1286,
+      "sha256": "a05e1c5ac58fe997a27520a3c5b3c8cca1b596ff9a6e884d17d1c086b5a385db"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0061/questions.json.gz",
+      "status": "added",
+      "bytes": 519,
+      "sha256": "5ec1eeed963124c79ee9f9b5fa0e8d5b615023e33624349941cabacfa3d3b7f7"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0061/source_inputs.json.gz",
+      "status": "added",
+      "bytes": 1319,
+      "sha256": "133044a6054eab9f3e9b9a7e5641f25648a48e8de042e42aa95ca21227802299"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0062/questions.json.gz",
+      "status": "added",
+      "bytes": 516,
+      "sha256": "4d4f52a91228ca014c661d12efc786fc2372f0d37a61463b550ea7c61300fbb0"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0062/source_inputs.json.gz",
+      "status": "added",
+      "bytes": 1338,
+      "sha256": "ce5e1218d11ae800de51d8c91a92fc7c711f532f411589dbf071de90a483b99e"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0063/questions.json.gz",
+      "status": "added",
+      "bytes": 517,
+      "sha256": "1f9155219e508a52d7d2df2310706c5fa6c68d4d5f3c1c8ab807a59689718171"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/neural_inputs/SSC1-FINAL-0063/source_inputs.json.gz",
+      "status": "added",
+      "bytes": 1396,
+      "sha256": "422508ceb22a5a0f8d91e739ce811b8212255dfa423a4a7a85542112a74ca120"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/MODEL_CHECKS.json",
+      "status": "added",
+      "bytes": 1199,
+      "sha256": "5793bef52b6b34b9f7abaf33012117603998bc61a0afcc22ec607df800ab9426"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/PARAMETERS_UNCHANGED.json",
+      "status": "added",
+      "bytes": 706,
+      "sha256": "7da0bdf69aeafc3ec3830b94af9d25806d74dc979a4ca4dffdf16691230f0288"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/PHASE_DONE.json",
+      "status": "added",
+      "bytes": 248,
+      "sha256": "c6230b21d5fdae0a6fe0653ddf852e36ec922581ae0c5a0b25b8c543821f07b6"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0000/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4145,
+      "sha256": "1eca4f0dd95ded58b5c647c8795139d619cbe7d1709fe89df77287731e8f693d"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0000/DONE.json",
+      "status": "added",
+      "bytes": 488,
+      "sha256": "9c6ae68fc1d889059648afc2ec95246fe242f963a41a3b18e967e80bc98cd3de"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0000/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 177741,
+      "sha256": "5f9daaa98b5f3cb8eca52402a9d68a516d88b49f4e76412d79086ad6eb277c21"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0000/SCORES.json.gz",
+      "status": "added",
+      "bytes": 101131,
+      "sha256": "4eccf80e7ebe467380b9fd80d1d72d257067770b3184113acfa034af26445407"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0001/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4269,
+      "sha256": "2f21c39afb014a7c53ac48be50067ddc890036b40bde00710b8ead096045e4c0"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0001/DONE.json",
+      "status": "added",
+      "bytes": 488,
+      "sha256": "d38cc754fb149e629e81baf8e4cbb939d9c3cc2016f2d8503f99ef9a86af6d96"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0001/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 176714,
+      "sha256": "9347acbc2c7566a499496d2c93511ced0bcf29bba6740b5aa716fb0d96bcaa3c"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0001/SCORES.json.gz",
+      "status": "added",
+      "bytes": 99518,
+      "sha256": "2fe1725d3366ea26edc858290da4e5201386dd3a10adf0edba7315528cbe3657"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0002/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4246,
+      "sha256": "fade6578a1d144ccf92feb08b9cd3d9b7a39da114b6571f096bbca18beab04c3"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0002/DONE.json",
+      "status": "added",
+      "bytes": 488,
+      "sha256": "88d94fd0a2f46f706c4d6453ced7bf9e4761721635fe957262038cff834fac23"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0002/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 177056,
+      "sha256": "45544dc9a8c6e990194e914c77b0f9565661adee64513c70ce117e25d36425f5"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0002/SCORES.json.gz",
+      "status": "added",
+      "bytes": 99870,
+      "sha256": "3cab929cb3d7eca43c77664685d18b6f3b5ddaeb829a051c23d37a9f50abd684"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0003/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4850,
+      "sha256": "adc8db0b5282f46d83cb9f20a30ccf6a066ff4f348b39c4d3adb94bf82e409b3"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0003/DONE.json",
+      "status": "added",
+      "bytes": 483,
+      "sha256": "781ec45a5eba87372a01172ee0224100d7edd3356ae14d70919a7d2eda5f7f61"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0003/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 175015,
+      "sha256": "49c3e307ff4737a8963935e2ebe264b6265fcbe4b2aabb971fd887ac86dc642a"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0003/SCORES.json.gz",
+      "status": "added",
+      "bytes": 97776,
+      "sha256": "266a6a25a71e5419be621cee3e75864f2c0b3ca499ac87367419b6785a5fbffc"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0004/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4567,
+      "sha256": "abee1504b8169f27a350c95ce3858142bb0e531678ff1dd9231a2f1f5bd46959"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0004/DONE.json",
+      "status": "added",
+      "bytes": 488,
+      "sha256": "5f91656e2883ffb719712f566298b40bf78a8a2ad492c4fdce97e7cc9e5c3b64"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0004/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 176144,
+      "sha256": "cfce5d5c72f0348e8cf4a61968905734ecf4964202ff1a0fcdbc8602653e967c"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0004/SCORES.json.gz",
+      "status": "added",
+      "bytes": 99621,
+      "sha256": "1fdc5b0d5ddd0826a760431c319675769478498bcfed1d10b1238ec8e7c78d47"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0005/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4332,
+      "sha256": "5a02fa677ae835280e26013039d22e8c616ce8f953b4ab4161f49bbb6eb12bdc"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0005/DONE.json",
+      "status": "added",
+      "bytes": 488,
+      "sha256": "bb19d1ed1e6468ee08c4aa266947af6053afcf359a57265d65103918ce84566c"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0005/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 177009,
+      "sha256": "bbf5599fea275513aa9d946c2eb7882166aec7d34b4e309ec769026ab03ce90b"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0005/SCORES.json.gz",
+      "status": "added",
+      "bytes": 100422,
+      "sha256": "d6d6b04e3ed9fa2205d8e3e5357e03bb8536f8d62981826c6812a16c10e73c84"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0006/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4693,
+      "sha256": "1fc56c3cdc645cc4d88cbc522cf95d01d5348cc377e8666d0b5a373db6fe2124"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0006/DONE.json",
+      "status": "added",
+      "bytes": 488,
+      "sha256": "c7f24d1f343812182adb16585d9e4794f883e40d21ba5d9499e4982b0fc8c356"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0006/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 178427,
+      "sha256": "e94011361fe03433a8ad44f5711084c9a25bdbfabc1791fecc32b4b0d1e030f1"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0006/SCORES.json.gz",
+      "status": "added",
+      "bytes": 101486,
+      "sha256": "fbbaaa73e16649cc7c09b694fc81ebe96b66c1103ca9f6b9f0b9263878f7bee0"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0007/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4887,
+      "sha256": "2f9e338617036d2ca122ea451e95ca1f3884a297f244430b167855437e4eb64f"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0007/DONE.json",
+      "status": "added",
+      "bytes": 487,
+      "sha256": "b3d676477ef9175c4895876ed0c49442a9855008456018fd13e6dfca378625f3"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0007/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 177246,
+      "sha256": "d282f901fb05c31894472d6f8973a34ccd3e67661318aa262f453eeb0dced9cd"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0007/SCORES.json.gz",
+      "status": "added",
+      "bytes": 100205,
+      "sha256": "a3bf4413a0838ed222a7be00984c39f3522862d17dec01a553cd9a68639cc2db"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0008/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4581,
+      "sha256": "1b6a0dc1a2ede6c9d5d8610b2c994ae3c3f013c423621cafda6c6f5d0c41bb36"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0008/DONE.json",
+      "status": "added",
+      "bytes": 488,
+      "sha256": "ae2298a241415fdc9e6e576c84913eb321379646fa2972ae8c7325b4b81eecf4"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0008/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 177827,
+      "sha256": "a93229936f63c58b0ef96cdfc7d9a434159dfacdf0a051105136f6acac7e92ec"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0008/SCORES.json.gz",
+      "status": "added",
+      "bytes": 101339,
+      "sha256": "134bc512c3ef4e31e443962674814a3f4b77e64678848e414761c4cf4ce8f9a5"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0009/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4725,
+      "sha256": "29e823c83013ebcd97c1b36b5076fbe17337d9e6efc1a4d366fbf077ce810322"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0009/DONE.json",
+      "status": "added",
+      "bytes": 488,
+      "sha256": "20e8176d2c1193402acbb5e629c002d6da4514f42497432cd6f90b49da7a3b2e"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0009/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 178013,
+      "sha256": "fc043d96b93c1dffc35486df5535496be58cc35866b9bedfe6887e17d4eaa312"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0009/SCORES.json.gz",
+      "status": "added",
+      "bytes": 101344,
+      "sha256": "0f83acb1456ae7776dbd1055323956a455d7cde22986f4c43658e6043d6201b2"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0010/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4279,
+      "sha256": "0070924bf34ea01b4b9f32050824122b40b3b6efbc01a79aa68d923faf7dbf81"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0010/DONE.json",
+      "status": "added",
+      "bytes": 488,
+      "sha256": "ce17b103bb4f840c69e30febcb354a4d7db67f108f9a0a6c0f0de5f10e8514e9"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0010/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 178255,
+      "sha256": "add133dad56a02f3871f1040c323891dce366c90e3410cb1465ca2a704728236"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0010/SCORES.json.gz",
+      "status": "added",
+      "bytes": 101051,
+      "sha256": "af5964738d0c4e12d446ce739f48297ae28ef494446fbab878a14d25b78086b9"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0011/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4874,
+      "sha256": "5ad17434290677ac5c2284de3eb6d40bea59c0397b30852e2a07ca64ed79056a"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0011/DONE.json",
+      "status": "added",
+      "bytes": 488,
+      "sha256": "495c567cc5733bc95a9ef2ee83bcde526b1775f6aff8c3ba32b2d2705131ffdb"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0011/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 177200,
+      "sha256": "7d0fb228ac37aa193737d303ca94af0fac5ca9d6ea6b9d1c119092c8438e0e2d"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0011/SCORES.json.gz",
+      "status": "added",
+      "bytes": 100635,
+      "sha256": "2e5de248ec8d01fafa9ca6463bcbab763c947cabe7bf2d1af6bdfbf2bd2f4c11"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0012/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4159,
+      "sha256": "d8b7fd02071ddb7db5bbb988e39002cbb9d78395dcafd1105043283c8091a312"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0012/DONE.json",
+      "status": "added",
+      "bytes": 488,
+      "sha256": "e80a22bfa748d56034dfba0e4edf1c09a9fdf361badc41a0c8ecad2ba756f907"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0012/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 175490,
+      "sha256": "2e85decf04fda0cbc850fc05acaf2355ea51b9e6ac152d3d8966f01f3b3b0763"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0012/SCORES.json.gz",
+      "status": "added",
+      "bytes": 98601,
+      "sha256": "76d058bd23db0f6ff3096de576796c2140d253db36f6baeff50446c759f7e093"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0013/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4683,
+      "sha256": "caae2b77c707c29f7d40a6b71caf5e4606d67186221d65474fd584fb51d70c35"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0013/DONE.json",
+      "status": "added",
+      "bytes": 488,
+      "sha256": "42bbf02f8fa979d0ec0e3a2863392c263a605ffd62b3d1b65651f66b4790fb52"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0013/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 177650,
+      "sha256": "1f1482010fb4bd114ebdcb70c453a2528dc4df544b32df9f9bf95a66e0f13a36"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0013/SCORES.json.gz",
+      "status": "added",
+      "bytes": 100576,
+      "sha256": "16e2db0f5cc2f213a052afc0f0c5abccf0f79fa191cc8cde5c6022d1f8fe16f1"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0014/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4263,
+      "sha256": "bf428fcb0bf55cce7342db6a578b7fbb3c14ff479eba9179c998c66205b5dabb"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0014/DONE.json",
+      "status": "added",
+      "bytes": 488,
+      "sha256": "a72332f4ca76584599ec27e71c3b110d371173f4537b3c81853915b046d88460"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0014/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 176524,
+      "sha256": "b830d52ddbdefd9fd26892fddc9172b66172d015fcebd3fb218a7de76a194ea9"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0014/SCORES.json.gz",
+      "status": "added",
+      "bytes": 99414,
+      "sha256": "59e5ac84bb6dc7b8d6787c720d987f235738be234e45e756ea799dfd08bfcc62"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0015/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4524,
+      "sha256": "1a5b50e2b7dc6a56d9d9025bf9be9c246d39262293a3d9b216bf0b60347d9528"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0015/DONE.json",
+      "status": "added",
+      "bytes": 488,
+      "sha256": "1a4074eae00aab1542deb18933ef6871980b4e819f10a10f18d3f6ca3af2428d"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0015/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 177782,
+      "sha256": "55041a9e9d4fe61de310e2796649878c61d705a16a0163df5e97c3020028741b"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0015/SCORES.json.gz",
+      "status": "added",
+      "bytes": 101168,
+      "sha256": "4e18dbf51b8627ca40fa9b4fc481f89f3002f8533a02b1548fc5003b327d5921"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0016/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4140,
+      "sha256": "a92afd7b1c7f2f4317a63120baf7870fa881739dc056e349b87f68c21a197ca5"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0016/DONE.json",
+      "status": "added",
+      "bytes": 487,
+      "sha256": "0dfd3c82a48862a681419a06f535def8fff3794afe4ea5b0aaedea6db149dd9d"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0016/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 176180,
+      "sha256": "1cec5a6b36322054446098d3cb7678d85323247fedca291c03b307dd53f72683"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0016/SCORES.json.gz",
+      "status": "added",
+      "bytes": 99665,
+      "sha256": "f3015f41053fd26a0f8c312aa4bffec7fb3458bdae5c88d623533ad8342ac7d5"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0017/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4288,
+      "sha256": "6db7d83d6d218f2ca956e295bd5d2a0e0efa589801c4b8a1d422f5c2eb1fc8fd"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0017/DONE.json",
+      "status": "added",
+      "bytes": 488,
+      "sha256": "a324aab98ae9d91fcbb35a842cd430e3a37c878c53501a2f981c5110ee16b4d3"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0017/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 175430,
+      "sha256": "b34ae1e1554eda070124b3432f3add18646bce486d75000a4fbf8096a4fe0f58"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0017/SCORES.json.gz",
+      "status": "added",
+      "bytes": 98668,
+      "sha256": "23f063d9d99d6e87cd0ab3b9416e37c5baae384b125f670122281f2e801eb032"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0018/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4743,
+      "sha256": "8c6120690e9eb088ee717b0c3940c16528269d0c06ee401e13160f3d7c594558"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0018/DONE.json",
+      "status": "added",
+      "bytes": 487,
+      "sha256": "4d3e244fb1a1d76db666679a395d986d0aa869bd0ae612589610dbbb9d06c7e6"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0018/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 175898,
+      "sha256": "b04782bfa7d87f1ae7fb0a7cbeac22256279185ef767109e8567f23e037098ac"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0018/SCORES.json.gz",
+      "status": "added",
+      "bytes": 99120,
+      "sha256": "fdc74d1c2d8ee6003b231efd1385c8580bb7b27e86f4c7a78497485e934f21d3"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0019/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4801,
+      "sha256": "4a9f8ceadadfa0a8f8e9cff7c4579d2cb91b8f708647d26d7d9293e3b0f2e6ab"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0019/DONE.json",
+      "status": "added",
+      "bytes": 487,
+      "sha256": "845b2665357d3c1b1e4351978c239ead5133096e93c3f9156d927bce4314b4a4"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0019/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 176714,
+      "sha256": "5a37ee13dbd0d7e243afe9b03ce86e6584b6cba076e0800c05ab2d281ecce6ca"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0019/SCORES.json.gz",
+      "status": "added",
+      "bytes": 100024,
+      "sha256": "88403638fc3cea2899733020e3d7f117c8b3c8405a742547d854a0289dea9d39"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0020/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4497,
+      "sha256": "8608ede92d59d9472c589d8c128aea67e5fc30d3c7a7b272abb8c4f021f46cc0"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0020/DONE.json",
+      "status": "added",
+      "bytes": 487,
+      "sha256": "44797543028a8a1ccfff2889a477842ff4d5d04ec7c6cf5cfb05f3459f9611bc"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0020/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 175920,
+      "sha256": "769f209164f1d2cc21e91151019f7a7a12a8c78b118968d13ba775dc3aa2421c"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0020/SCORES.json.gz",
+      "status": "added",
+      "bytes": 98687,
+      "sha256": "8e13847e4dff349e9952c9b5e072c8f025a8369c93a4bb9801d8e0bfa8c33722"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0021/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4707,
+      "sha256": "8cfe9595e546b1d1a5337bd0969a66555ca9fe4dd0c67c7d0c34de8b06443bc9"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0021/DONE.json",
+      "status": "added",
+      "bytes": 488,
+      "sha256": "79f2822151a3c2dc2ad229d8af655079d14de8352ca37d5cf082d9765045cb6d"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0021/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 176030,
+      "sha256": "d8f0290fae48e2ed02ab04f39ecc66d867ed292d3be5b78176661f4f95b852a5"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0021/SCORES.json.gz",
+      "status": "added",
+      "bytes": 99075,
+      "sha256": "5c1a10eb7cf4dfd8998252e7385eedfe4fd7347bdbe5661228a62913882db815"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0022/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4321,
+      "sha256": "4a841e9d84d37562176262621264e811a2753bc4ce857b32394150310496b0d0"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0022/DONE.json",
+      "status": "added",
+      "bytes": 488,
+      "sha256": "9c74f2199c46bfd050e9cdc79d252a3e0acf93aa50e6903e815b3848d2730d92"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0022/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 176675,
+      "sha256": "5127ef826731cebd07eff54bc0e4d7b30a02d385e3f7e27afd242a5a368d48d2"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0022/SCORES.json.gz",
+      "status": "added",
+      "bytes": 99581,
+      "sha256": "fe667729238aebfddfd8bce721866bf1ba03abd6649c3cafafd51dad80773365"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0023/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4487,
+      "sha256": "841bcd44ff5826cb830b1b81d8bfce3229894f8c69d82c9e02a1ba2cc4159a08"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0023/DONE.json",
+      "status": "added",
+      "bytes": 488,
+      "sha256": "54389cb0e97a2e1b0f859898c214b9171fcb73f8a580354d943794c7544e8513"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0023/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 175725,
+      "sha256": "98b30f6093c0e1072306bb6ac6accb1e9e13e4a493e2d38e91a7a62d9c19842b"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0023/SCORES.json.gz",
+      "status": "added",
+      "bytes": 99075,
+      "sha256": "6b9819131581f20534b3a9701ef9c7319bfcf724b1308026c5e2826f70f96c8f"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0024/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4604,
+      "sha256": "a9426a1e4d7f4b2c4d4d5037aa4d437b5bbd60264ac37e9953d84e80dfe2b873"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0024/DONE.json",
+      "status": "added",
+      "bytes": 487,
+      "sha256": "65693f34721567146d5c6f5b4073ff320b0d1490aba3925264295a607c0f872b"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0024/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 176534,
+      "sha256": "bb45abe46e8b806bf364bb8b622b60a8c227b362d9ae28b901f8d9eade0d256d"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0024/SCORES.json.gz",
+      "status": "added",
+      "bytes": 99715,
+      "sha256": "bbeae9ec45e88100fa41fbaa80c001b87ee8aa68db20d4d53e3a456cef1f2e66"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0025/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4718,
+      "sha256": "35e3c389158f30dbd2b8e080e642b8c0bf5c6646619a189ad73493caa65a9651"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0025/DONE.json",
+      "status": "added",
+      "bytes": 488,
+      "sha256": "0cec72e50ea9034a9fae6f832e82be7bd76a7e4965cbd442f76af5223a7d3964"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0025/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 175496,
+      "sha256": "7048ef32f0c39434706eb4e3a636cd55835745b03d6fd63f9493e3c8c07de2e2"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0025/SCORES.json.gz",
+      "status": "added",
+      "bytes": 98650,
+      "sha256": "c7272659a5b11b930f0485af62f0fa7d7fe056e5bafb0db815fcd0340470c7d4"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0026/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4708,
+      "sha256": "8a11b3b48a6557d181beb96c7d1112ada51ba239cb8e6a8d951aaecbdfa681ac"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0026/DONE.json",
+      "status": "added",
+      "bytes": 488,
+      "sha256": "a4fcb8a583c54d0f91cb079666943739b0f718f001746497b7d89429170b1e77"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0026/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 177056,
+      "sha256": "f9a8726b3b50b6d2aea34a04e18119951929ff619613743f0b6cccf8600f8e84"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0026/SCORES.json.gz",
+      "status": "added",
+      "bytes": 100118,
+      "sha256": "523203f169dde441b856de3c3a2a1186d387b4b5cf436b3bc466e1321782d4e3"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0027/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4879,
+      "sha256": "a816fa07b8bab5cd7b61d0672733e873351d2a26c8c2b461afbbc8b5d63cafd5"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0027/DONE.json",
+      "status": "added",
+      "bytes": 488,
+      "sha256": "bba05ef3c3ae1d0ae6b4b88f18edcbad5bf7dced08bbaccb914b74ddada4e0ca"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0027/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 175536,
+      "sha256": "78b7e92ce737ffee712179582f2bf1f4c62757c2063b9dc27d847c74743d8350"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0027/SCORES.json.gz",
+      "status": "added",
+      "bytes": 98738,
+      "sha256": "a577f156477ee328176beeb94c19628bb07315a4be330b6af4935288fa1793e0"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0028/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4476,
+      "sha256": "47e75b310c6c4b8a567be5b6dfd8c1d5ca33428acc658caab90ccfa38b0fbb68"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0028/DONE.json",
+      "status": "added",
+      "bytes": 487,
+      "sha256": "e1c34e172e5d3311f19db10fe1d33a638fca8aeb805014148f42bf6eba7c3382"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0028/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 173297,
+      "sha256": "71e1d5e7c89cc7611a1c8c351e291d3d8c061fc107850b3fccefce39078001ab"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0028/SCORES.json.gz",
+      "status": "added",
+      "bytes": 95613,
+      "sha256": "cbd3a8f1cdfaa1221a91939a0593c776018ea84ff909bb8b628a4f934220f63d"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0029/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4751,
+      "sha256": "509d94eb5e1f610f54cf4dbd29a64d08a63b19b85dcd630208def991ed6bb207"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0029/DONE.json",
+      "status": "added",
+      "bytes": 488,
+      "sha256": "110837f9b9c4cc242a65ba3a182015aa11752807982e8c909d04d6087ace6a17"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0029/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 171774,
+      "sha256": "96a304ff3d76448eb1723da44ac311c316b5e3bad628f41736143620efd7754e"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0029/SCORES.json.gz",
+      "status": "added",
+      "bytes": 94530,
+      "sha256": "56614711765552ff70861328a399f3befab2d19c6607208195dfc59e7962e7ab"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0030/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4672,
+      "sha256": "5b309555b2fa14026c0a8964f2def749bdf9bcc38fcbba03989539c073083bf1"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0030/DONE.json",
+      "status": "added",
+      "bytes": 488,
+      "sha256": "c634a0fdbe42436b5401c98bced7a171a2f3bc369dcd835274fefc7ec5a9af2f"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0030/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 170953,
+      "sha256": "b5d82bd09e037a816cf20193491d1bfc8a89c8ac5c5af885fdab8d345ea382ff"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0030/SCORES.json.gz",
+      "status": "added",
+      "bytes": 93687,
+      "sha256": "e9886235ced7284c9a8c4d78d4dca88a603809cdcfdfb3fa1c08d300f1aacdc3"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0031/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4866,
+      "sha256": "dcdd805ed1519c73cfd9c35b1a37adfc4ef0e1c7e682f9410cabc1f28fd2ba1c"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0031/DONE.json",
+      "status": "added",
+      "bytes": 488,
+      "sha256": "afa61fa90d05a1f4059f0d872acefd2ee5b6d63b5a565f1ee6f1b374946eb305"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0031/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 171099,
+      "sha256": "1e91c5b33404a16c574cff86999a975b21519eed1d60f058677adc8767f00d71"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0031/SCORES.json.gz",
+      "status": "added",
+      "bytes": 93487,
+      "sha256": "0ba1d835babe6c63ce3b19583fed7920f6ed1c30ab5f025bc7e20a2aaf285cc5"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0032/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4138,
+      "sha256": "b72624c266445ed152c3e02d835def5ed5b74c71f15474d8078f338d066d89fb"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0032/DONE.json",
+      "status": "added",
+      "bytes": 487,
+      "sha256": "72d220be1e59c90189e824d3747fbbef8010ca5cfe4316fffc1336cba92b126e"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0032/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 176562,
+      "sha256": "d05d6f49a977aa81fedd880a42463141904776e68fbbcf88bf528f9be8d2b69d"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0032/SCORES.json.gz",
+      "status": "added",
+      "bytes": 99416,
+      "sha256": "2e86a551557942b4e2f6b9ccc4fa1a5fffbbf09b71554dcb08bbe2c68bac6361"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0033/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4621,
+      "sha256": "c61aacf24bf140497a475225815d67bf13092ac6696d86efb55ade7770fcaa5f"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0033/DONE.json",
+      "status": "added",
+      "bytes": 488,
+      "sha256": "d6a2b1e37a5ddd739a97c71ce7e1bb7da87b67384cacd169ea69757c0bc59e1d"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0033/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 177246,
+      "sha256": "65e2c25f188591668c226812c75b7cb571fd30b54da7c04b05a64072342fdc2a"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0033/SCORES.json.gz",
+      "status": "added",
+      "bytes": 100173,
+      "sha256": "4b9cba722d4defe1c1b7c243be4537286f9286c1e9521e3176f1bc7dfcddd2e8"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0034/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4683,
+      "sha256": "4c0ad4faaf753d5db6725789fbbff0424beff5376f3dd427720c354148ca78c3"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0034/DONE.json",
+      "status": "added",
+      "bytes": 488,
+      "sha256": "ed9ecbe31ef75be1f0f4b36381d8b4e7b56a9d75287f4e06e2b68f52ba02210e"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0034/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 176856,
+      "sha256": "b5180d73e03ee395db2cc184aec24a717bc57b645494794a0e8256a042bc6df2"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0034/SCORES.json.gz",
+      "status": "added",
+      "bytes": 100237,
+      "sha256": "0926912efdcee3bebf70e3c5d813df2100bdbd3c8bf62e9288900af225437874"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0035/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4543,
+      "sha256": "31b8e7f5fc332af9cc1f09c3f2f3ab4af8ba7f5ecb6f3e3d30b4f2d39e810dba"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0035/DONE.json",
+      "status": "added",
+      "bytes": 488,
+      "sha256": "c4d3515e7dabbfa6dcf0c2e0ba8a462e5bd42dc8564c464140a165c50f7ed2d9"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0035/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 177097,
+      "sha256": "e81830a6b93736fd5295db4a32ff9ec9eefb730d26f11ff1a02a477a6101bd0d"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0035/SCORES.json.gz",
+      "status": "added",
+      "bytes": 99321,
+      "sha256": "0342bee2549355c5d493e924ded656383f026e4c08f3e6530a9a8d20ff567f50"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0036/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4620,
+      "sha256": "0c4020fc62ce1b13afbe2c38e183b4767f6dd58df53fa732afe738fea157b6b0"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0036/DONE.json",
+      "status": "added",
+      "bytes": 487,
+      "sha256": "e28401deb52a46576dc004f1b153276aa4e7f6f1fd1aa22259de7c4ada73c8da"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0036/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 178277,
+      "sha256": "ee473bc9f0b933c2d5fdd0c6cdc50c71c08f2727208bb9097ea4231b8c67c9a2"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0036/SCORES.json.gz",
+      "status": "added",
+      "bytes": 101924,
+      "sha256": "c383139daddd7c5ae3c91f390f320d27e152b5c16cd4eaf79f677781329f95cc"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0037/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4704,
+      "sha256": "44cddeb55e935b99c347b4ea5aaf6196c33f566a3818cfcce609a6826f170442"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0037/DONE.json",
+      "status": "added",
+      "bytes": 488,
+      "sha256": "e1ab2bbf5e37f87bbc30783bfdc823cb180e13956b53b340374a2b16bac70edf"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0037/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 177511,
+      "sha256": "c99e89ec6713e3610b2a5724a10e3db84156c2ab61939631fb4025ea407dbc43"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0037/SCORES.json.gz",
+      "status": "added",
+      "bytes": 101020,
+      "sha256": "2adee4944b36077d9593542324edcbc1a18d53173dd26277996e81a753898dce"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0038/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4315,
+      "sha256": "2d354f9607b2d97e8d84a2421443a623ea42ff3d6d6f61f6a5ebdbbfc9186fc5"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0038/DONE.json",
+      "status": "added",
+      "bytes": 488,
+      "sha256": "cdf834a5d1b3ab3fc252a9b676d536fb70ee126a6eea060d7fd0882b9e11b7f6"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0038/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 178086,
+      "sha256": "b28a6efbc53cbc989abd4b2702ec77a8a3413cdd931b2eda84652e0b85e8fea0"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0038/SCORES.json.gz",
+      "status": "added",
+      "bytes": 101092,
+      "sha256": "8d74a94d2dc5a5435af39326f0c5b88c85510357f7921c7296c85e4ac9503e4e"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0039/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4842,
+      "sha256": "b6d70a212a8ef85f3f0d7ae564f971b4b3767e8d07ab603328c94bd0fc16d5f5"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0039/DONE.json",
+      "status": "added",
+      "bytes": 488,
+      "sha256": "f0878c010f729fa83cdfa338a844cdb02de210c1bf9ddfd520979b409544b529"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0039/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 178729,
+      "sha256": "4607117c6c0162d64c31313183b8d68c19539870e19a7f4fbea21e99c2f738f5"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0039/SCORES.json.gz",
+      "status": "added",
+      "bytes": 101894,
+      "sha256": "dc23fbf1a002baa7ff5a910298986fe166b05a5a0797aeade9885210a3741819"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0040/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4476,
+      "sha256": "aa5fea5f1bdaba0affb740960a13332eb7cd2602a72f341d773fc80c1b3e365a"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0040/DONE.json",
+      "status": "added",
+      "bytes": 487,
+      "sha256": "7aa0997e1313c2d3d90db37a67e2d173809ed7380aaab1cb830682646b609520"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0040/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 177395,
+      "sha256": "4061f2f0f27f19b7feeacdf075ebc23db40f3f45775f3eec7357cbced6ea7c7c"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0040/SCORES.json.gz",
+      "status": "added",
+      "bytes": 101014,
+      "sha256": "a5ad69f1e878b52a810484e74adec465d0b051474c8d3cfae74b03343a5673b2"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0041/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4257,
+      "sha256": "4e3b7070fa9ae4edd669ad0e7116f114ba64ea79d4e3de7de72efce63dd10ede"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0041/DONE.json",
+      "status": "added",
+      "bytes": 488,
+      "sha256": "66d2e94449a315131496eb6f3fd2a85f663a01aa18e8c19efa6df3bb205f9550"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0041/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 176390,
+      "sha256": "1f87fe82ea267f308dd84caec49d7555fd35abe4ba4db10c2989bf80bd3be89f"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0041/SCORES.json.gz",
+      "status": "added",
+      "bytes": 99372,
+      "sha256": "cfad3a41b16cae56c68e9b1e1e0f86beb4b685d95687f77652b495e42f0c91f5"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0042/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4277,
+      "sha256": "86bf13307c0f88eb831fcafeaf39b4864211f15ebe5c8db31555fff395aca5e3"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0042/DONE.json",
+      "status": "added",
+      "bytes": 488,
+      "sha256": "8f6211eeacc942ed2a22607c576292dc5b4cd28d885ea854030f47f4f9372329"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0042/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 177872,
+      "sha256": "4b9d19e05cb8dca29f776e08ad25587fc58f0ff4ffc96c19437e6f242abc5533"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0042/SCORES.json.gz",
+      "status": "added",
+      "bytes": 101337,
+      "sha256": "68b8d20610c1e3981fa7bab809c4eb13999953d8cb440647ae586d37c3cb5917"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0043/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4439,
+      "sha256": "9cdcdeb977921804345a722b2f2cbda433cc6789e19266c692c177d206a0884c"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0043/DONE.json",
+      "status": "added",
+      "bytes": 488,
+      "sha256": "71446c28700f26e067b45d897d47889e0566f252e5aeedba8c936f3bee5a8a6c"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0043/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 177076,
+      "sha256": "e3564cbb8fecd4c637f729b38aa3726fe687b9eb41c1b649fb824135006be902"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0043/SCORES.json.gz",
+      "status": "added",
+      "bytes": 100618,
+      "sha256": "debf3e19b5247636c003be73dfc4e937466a20ee1aef93daab1cc51bdf79a052"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0044/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4522,
+      "sha256": "a6554efd3c02ab892446dbc4c67ddefed0fcba5690c6eeabc50cd8eeee3e8694"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0044/DONE.json",
+      "status": "added",
+      "bytes": 487,
+      "sha256": "2236b8bb5b4d23d5650e6b68efa2f5681f218c64117a4224eaaf9607a8d49fc1"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0044/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 176186,
+      "sha256": "b0eb578b9114dcc7830071e2f174b6a66433824c3edc1bce2e167772284109b4"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0044/SCORES.json.gz",
+      "status": "added",
+      "bytes": 98925,
+      "sha256": "f74454ccecb6c06b37e7067de21fe1cdcf3ceafe99a1833bbc35361a32ce4a49"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0045/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4672,
+      "sha256": "c9b8989fd2d69f9847185af86f5c01589f522b4c817033f2d40a566f9fd4afbe"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0045/DONE.json",
+      "status": "added",
+      "bytes": 488,
+      "sha256": "349c65e54d84b7a46ff68a96229ebefc2b4ef16ddaeaf0ba4e5aea46875be1e4"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0045/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 176996,
+      "sha256": "f61ba4930f62d420ee3b21b0649d00649de0f03592a9a7ee10b17cb106e47839"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0045/SCORES.json.gz",
+      "status": "added",
+      "bytes": 100049,
+      "sha256": "7af2040686b59bc6f9e1532dac5c5a2801704125bd6e208145981efea847fdcc"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0046/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4255,
+      "sha256": "d1d3c298c9d4822b5575a6a79420e4e69b92a3c3f656e626c30d46fe76d533e8"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0046/DONE.json",
+      "status": "added",
+      "bytes": 488,
+      "sha256": "94e11804bc548e0e68e151607c3b8020f023db5c0d4d8c3b7db6db0dd35751d1"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0046/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 175823,
+      "sha256": "c88b928089df917dc679179e357ceaa28d2a4575622ff0a4ce7bc8ab6e18eeea"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0046/SCORES.json.gz",
+      "status": "added",
+      "bytes": 99096,
+      "sha256": "3f64e09c3abe1d57f70292b34589e5a7eb008725ed4ba6f2abd62e02c1c19c89"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0047/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4819,
+      "sha256": "31a978a824a41b1f6da9b47bda28cd7ec52767b7fe08c4970b147ca50eb410b8"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0047/DONE.json",
+      "status": "added",
+      "bytes": 488,
+      "sha256": "cc013b1e9666f2cb746843b7a1782b3bfb881364ca923d069132779641c9ed4d"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0047/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 175678,
+      "sha256": "93fda1bd85c12bb0058582ac572318eaa0b565ec819141912a863f758cbe73be"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0047/SCORES.json.gz",
+      "status": "added",
+      "bytes": 98954,
+      "sha256": "ff9c11dbdb839350256e04f06767b215ff1a35dfdee724ac4cdfcf786e2b2fbd"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0048/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4568,
+      "sha256": "97073a268d0dd9b91df1881cb8820ca5d999de19c9bcb574d460ec58ef450a67"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0048/DONE.json",
+      "status": "added",
+      "bytes": 487,
+      "sha256": "cdf781f5d5cb6701395def8decbfccf46878bf09daedc0867fbf72321c829975"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0048/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 176000,
+      "sha256": "c59a102cfdd515a44858390171979ffdd51bba6b79faa2f3265b3bd763dc53ea"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0048/SCORES.json.gz",
+      "status": "added",
+      "bytes": 99058,
+      "sha256": "2ae5eb5dc4b2eeb6ab9fa6da9558d1f17acbf766b1f19fd05ec1190d89a122f3"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0049/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4279,
+      "sha256": "75bf6de271604aade9d5c8b5e3530e0b7d0491be3df857bcc5f0072267f62c5a"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0049/DONE.json",
+      "status": "added",
+      "bytes": 487,
+      "sha256": "2fed92464cf221452d26a03394ace5b24612e490d4fd31d34253f15259be8188"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0049/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 176741,
+      "sha256": "e31e0e188a7a9c115b7c54be9288fb04172fb7aac2120da65250c23ecbe3dd14"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0049/SCORES.json.gz",
+      "status": "added",
+      "bytes": 99816,
+      "sha256": "592535a461971a3d5a2dafb8fb6dad45dab7218638d972460044cf65ca03296f"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0050/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4704,
+      "sha256": "44f785b8b32667dcb3c066be5aa7187476024fe01b2d9ef3a97abaf06af3f357"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0050/DONE.json",
+      "status": "added",
+      "bytes": 488,
+      "sha256": "eb8da6bf78f9cc0776622c7e65ebc5221a6b226e7bc92030a8a64a4f2440a0fa"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0050/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 176212,
+      "sha256": "4360132a0da2bab7869bbb1ab86f8111c42915795afa6a6e2a98481cbd70200c"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0050/SCORES.json.gz",
+      "status": "added",
+      "bytes": 98954,
+      "sha256": "0394007a5dfd59014f1dc124471c865c4f1af4f984c9800fde85319af8dd2614"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0051/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4505,
+      "sha256": "b42cad00585ca8509eb9bb40fd3fe322daeacf2a7bd69110313ce9ed1b162499"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0051/DONE.json",
+      "status": "added",
+      "bytes": 488,
+      "sha256": "163ec0372b7aa86727da7f24626518a0961a5ffe132be97878698cde4e956904"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0051/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 176785,
+      "sha256": "71431005849d7f6b065ee8baf0b02bd47c2b4a338a2dc60715d07c6efd9ecb82"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0051/SCORES.json.gz",
+      "status": "added",
+      "bytes": 99240,
+      "sha256": "ba94f5cb302c4a6ba3f609a68d6aa3e06c2e54e6dd29441740d65b1a2829d140"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0052/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4153,
+      "sha256": "dc81b3fd960598faec8a6770d1764b483b406477295232253a01714f9cbf48be"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0052/DONE.json",
+      "status": "added",
+      "bytes": 487,
+      "sha256": "22216144e72129fc3ec8091ffcf2ae4cb84339888dbf58ca49df671dff1a51b7"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0052/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 176314,
+      "sha256": "7c50a5daffab067b35708cc360432cd22ce55cc6586f3781328c342b95056267"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0052/SCORES.json.gz",
+      "status": "added",
+      "bytes": 99043,
+      "sha256": "c772c94a2bdb6677842678c340ae1e911a4d0ac688d9874006f81287004a5d41"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0053/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4344,
+      "sha256": "8e27e5ce46f02190c7d4c89bd3bc16b2b05bc74e6fa959d78d839c2309ec0da2"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0053/DONE.json",
+      "status": "added",
+      "bytes": 488,
+      "sha256": "601d9b6d2d51a22bfba3368d7b3bbb4f2610040a026f3e2f7683985973a1b3d9"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0053/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 174851,
+      "sha256": "e5b97de28bdf997ca60fcd5e18aaec85676f9d96d4a50575648bd8b5e84d1e3f"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0053/SCORES.json.gz",
+      "status": "added",
+      "bytes": 98272,
+      "sha256": "7e85bd592482c54b25155cec5aa8def394092fc17ce14bc61d1990ad28814521"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0054/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4689,
+      "sha256": "26ad1e8238a51fbfd428bb1440c274487ce58b7c1a06a1f7727bd7689b865d56"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0054/DONE.json",
+      "status": "added",
+      "bytes": 488,
+      "sha256": "d92b1c82b81c30314a544e7dc9ae86ffb452e527e37311220400f7587a4d9b56"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0054/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 175021,
+      "sha256": "dd67dc37aceaa765a705c6589dc7b8036c7cf1c960c232b14e20ab0cf9b23c1d"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0054/SCORES.json.gz",
+      "status": "added",
+      "bytes": 98017,
+      "sha256": "cc27128e640f25564b2f744aab1abd7f6b9d535b8948d9bf1687aeff0277bef4"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0055/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4533,
+      "sha256": "875e7742c9bd6cb8c7ca9cd71299970ef51eea74065ffa7e31bb3c239e57d74c"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0055/DONE.json",
+      "status": "added",
+      "bytes": 488,
+      "sha256": "0d4b8464b645073a5f3b6ed4d223d86360aad92e49ade7bf76a4858bbcb7d6f0"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0055/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 174837,
+      "sha256": "66c5aff9e4c62d612705c518989751f6caa914622126ab4b03615f577b3e6c25"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0055/SCORES.json.gz",
+      "status": "added",
+      "bytes": 98242,
+      "sha256": "4b437fdee8a5f11cec929e47f388db16ae6fd5f485209e629953791fd0a49148"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0056/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4555,
+      "sha256": "64bb21108402ad5ca43489040191fee8230a85f785f0c247a7d86230fa2febd4"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0056/DONE.json",
+      "status": "added",
+      "bytes": 487,
+      "sha256": "e0816cf83ca2d02288077832954df8461fdfcbaff485a4ec0ed89008c54487aa"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0056/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 177777,
+      "sha256": "8d8dfffa9ec526d03f799b7c17d18efa342fd18f8da47fe684f48f6461a3724b"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0056/SCORES.json.gz",
+      "status": "added",
+      "bytes": 100245,
+      "sha256": "8323b189d097308f4838d2b72fed5f10bf652f886e8568f0bb788acd00c4e0ae"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0057/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4661,
+      "sha256": "302976d38eda76fb4e3f1e6a11f7b5424775b1b20e5c670397c464092e84ff84"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0057/DONE.json",
+      "status": "added",
+      "bytes": 488,
+      "sha256": "806c5cfe4ea429d237ad89591fbf212efa40605a6dce8d538b96a5ee96d15a7f"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0057/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 175587,
+      "sha256": "55a99436244f34e1288ab3b6f735d42d7c931f3cf8764204d5e3e5c3fadcaa43"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0057/SCORES.json.gz",
+      "status": "added",
+      "bytes": 98892,
+      "sha256": "f71f851c819d99694c60911c2b31574640c87e26b92da542e80dd91995c49689"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0058/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4696,
+      "sha256": "f506e6a307399071034bc8a2f3c63fe55941b46bb4f1ce39e12bea5f41eb425c"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0058/DONE.json",
+      "status": "added",
+      "bytes": 488,
+      "sha256": "40dd5d0ffbda21b54cf513edb17ac49958f79eeee6894e46ba37d237a09dada8"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0058/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 174028,
+      "sha256": "b4ae1455fd5d5a2719c5f68a4f8d55b5821930033b66d628c18b030c48b46ac0"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0058/SCORES.json.gz",
+      "status": "added",
+      "bytes": 97111,
+      "sha256": "c95a4ed4bd55442a67a28e91d68d9a9db6388c644538daac1d10b7bd9ab635f8"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0059/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4908,
+      "sha256": "1ea9dd295e616b03c3ff8f6572999b4cabacabf46214e85fce4f921651c64cbf"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0059/DONE.json",
+      "status": "added",
+      "bytes": 487,
+      "sha256": "d27f53030d7e1cce279e3d874fcf5e1b1d7921d6f156f95cbaaeba868fd6d11a"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0059/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 177367,
+      "sha256": "c4df7b13370fe59d903ae764b08585da8ab88e1416ddd75893ae5a2c08311c7d"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0059/SCORES.json.gz",
+      "status": "added",
+      "bytes": 100320,
+      "sha256": "a667059ee39731e202bdeac6d9847180000d83add714cf6af62f31ca5178df7a"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0060/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4457,
+      "sha256": "42e9e281b91b6a438ea48fcc418c43d043c95b97f267a7eb314f18024eb824db"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0060/DONE.json",
+      "status": "added",
+      "bytes": 486,
+      "sha256": "6bd6f5e5947bb1a6048293d583395ef526dd1297b460cb6825788fa50240b090"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0060/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 172746,
+      "sha256": "43a0ba5fdb7b93b8286e1911c443b4d7a000f38bd43623244d6f74b24b68e409"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0060/SCORES.json.gz",
+      "status": "added",
+      "bytes": 95236,
+      "sha256": "1b04662201b65a7c8f0134a94c51d4dac9c3f15cf97cd1254e14550bd10d6a70"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0061/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4730,
+      "sha256": "0d1d7d5e46d9ceebd0b7fa1a6d0bcdfd6a135a2872647e5d33a2614bbf3a5191"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0061/DONE.json",
+      "status": "added",
+      "bytes": 488,
+      "sha256": "2d3011dce6bc08a3b4e6f3fb102eff7ce6169ea6dfb920a26c8b1fa5b87d52bf"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0061/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 173532,
+      "sha256": "ba6e31fc425295b4f8fbd09b7f8a1642d59478e4a23354bd5fdc82d8bb44cdda"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0061/SCORES.json.gz",
+      "status": "added",
+      "bytes": 95833,
+      "sha256": "2b2c0476d7a327324ab4200c3d4c8644d609cc8413c2cc0ae0c7c4e69ef3c5d8"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0062/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4648,
+      "sha256": "9e8499c53937d1d43bf21f6cc9dcf1f57371bc019320e49f985969b42967a0ff"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0062/DONE.json",
+      "status": "added",
+      "bytes": 488,
+      "sha256": "2a5a67fbb9ebd53f725503baa09e308d0a2ef74720b07e2dbe1fc6cbb1ccae8e"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0062/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 171870,
+      "sha256": "bab4a616670fb2d85aa338c8e885792a36c9f63b771c0c93a34b95cdfe6320a8"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0062/SCORES.json.gz",
+      "status": "added",
+      "bytes": 95082,
+      "sha256": "33517e086de00657cff8ef4b8828a92e5375c17b23eff842929e5bd62fb0e992"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0063/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4882,
+      "sha256": "86089b0b3a17faccb33cbbd07264ac556e040b6f87a77001867e9bb00e917202"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0063/DONE.json",
+      "status": "added",
+      "bytes": 488,
+      "sha256": "2b4b8d8840147dc830eb14eadb800a1018c5b981a94ee96b6fd6e701eaef17d4"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0063/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 171334,
+      "sha256": "a507ea18392a62dcf14846ca459710e5f2315a80385e10f080a7537f71f331ad"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/final/SSC1-FINAL-0063/SCORES.json.gz",
+      "status": "added",
+      "bytes": 93655,
+      "sha256": "42fe8ed6106dba6727d2e7e3d9ba480513c7f930e2ae78a1ab90b09e7c36266f"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat0/MODEL_CHECKS.json",
+      "status": "added",
+      "bytes": 1199,
+      "sha256": "ec55f12fc652b5f623b477ac5a3906f449e6ea69b991a74d5ddcddf1eb93452d"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat0/PARAMETERS_UNCHANGED.json",
+      "status": "added",
+      "bytes": 706,
+      "sha256": "7da0bdf69aeafc3ec3830b94af9d25806d74dc979a4ca4dffdf16691230f0288"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat0/PHASE_DONE.json",
+      "status": "added",
+      "bytes": 255,
+      "sha256": "acd5a30824d63f66fd927ef030e5b37bd3bfa73d3a755eec444133413a2208a6"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat0/SSC1-FINAL-0006/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4693,
+      "sha256": "1fc56c3cdc645cc4d88cbc522cf95d01d5348cc377e8666d0b5a373db6fe2124"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat0/SSC1-FINAL-0006/DONE.json",
+      "status": "added",
+      "bytes": 490,
+      "sha256": "3daa6fb633d634a31bbbad0f4e59e4d1bf3614b9748fea5c099101cb0846baf9"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat0/SSC1-FINAL-0006/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 36431,
+      "sha256": "95abd499fadf6f4e260e38a1c4d034b48dcfef94c06c766503593b2d6e4c44b3"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat0/SSC1-FINAL-0006/SCORES.json.gz",
+      "status": "added",
+      "bytes": 23557,
+      "sha256": "26eabb409b07a54c65b1afeaf67d48355908dc57d659db9b5bc5dd5ff34fee95"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat0/SSC1-FINAL-0017/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4288,
+      "sha256": "6db7d83d6d218f2ca956e295bd5d2a0e0efa589801c4b8a1d422f5c2eb1fc8fd"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat0/SSC1-FINAL-0017/DONE.json",
+      "status": "added",
+      "bytes": 490,
+      "sha256": "8b61c7a2e1a65d1ef74159f8e991d96435393c0ce4369b605d156b697e01a10e"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat0/SSC1-FINAL-0017/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 22450,
+      "sha256": "bc73590c11ce8d8dc86d06007aa4a3ee28324e404d6cbb2086e6722bd49176fd"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat0/SSC1-FINAL-0017/SCORES.json.gz",
+      "status": "added",
+      "bytes": 14655,
+      "sha256": "60a8957512a43a1465f5abc0b815b25ae13f22d446612e3eb439ac8446f60284"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat0/SSC1-FINAL-0029/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4751,
+      "sha256": "509d94eb5e1f610f54cf4dbd29a64d08a63b19b85dcd630208def991ed6bb207"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat0/SSC1-FINAL-0029/DONE.json",
+      "status": "added",
+      "bytes": 491,
+      "sha256": "fe2aecc87042fcdf0480d805f80310b9436c9c4543e78b6c77fb71d8bbb2c16a"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat0/SSC1-FINAL-0029/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 35145,
+      "sha256": "b59b8b56272f6e9558efc706c46ed5d66b4137b8f94a4f1d9ee8e0945df136ac"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat0/SSC1-FINAL-0029/SCORES.json.gz",
+      "status": "added",
+      "bytes": 22177,
+      "sha256": "6bbddf14061737a1e81e737f7a30bc433b9b8644edc8ec8a7d5b59798a9ac52e"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat0/SSC1-FINAL-0032/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4138,
+      "sha256": "b72624c266445ed152c3e02d835def5ed5b74c71f15474d8078f338d066d89fb"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat0/SSC1-FINAL-0032/DONE.json",
+      "status": "added",
+      "bytes": 491,
+      "sha256": "3060131625035f8924e2341811756545367eec5349473aef3eb9d7e677a9f718"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat0/SSC1-FINAL-0032/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 22556,
+      "sha256": "7d020f9223d7f423be8b515e578e25826ddc5623ad9cbdaf8ffb3887ae1c1f28"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat0/SSC1-FINAL-0032/SCORES.json.gz",
+      "status": "added",
+      "bytes": 14757,
+      "sha256": "ccef807fc765c6c1c43460c791c4358fd83ec7c64c121550c5e93a12c607e179"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat0/SSC1-FINAL-0033/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4621,
+      "sha256": "c61aacf24bf140497a475225815d67bf13092ac6696d86efb55ade7770fcaa5f"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat0/SSC1-FINAL-0033/DONE.json",
+      "status": "added",
+      "bytes": 490,
+      "sha256": "3f14547a06621122d98da32a2dcba6ac23593134b78183904eb2041e0537582e"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat0/SSC1-FINAL-0033/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 36807,
+      "sha256": "f0c1b5b934c9d12194cd479cf593f24f2298b930f6c268dd4bce0dbb0cd24d67"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat0/SSC1-FINAL-0033/SCORES.json.gz",
+      "status": "added",
+      "bytes": 23936,
+      "sha256": "2d4088cabacbeac09bde86531669788706eecb934488a68a56f5f5460e86f694"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat0/SSC1-FINAL-0044/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4522,
+      "sha256": "a6554efd3c02ab892446dbc4c67ddefed0fcba5690c6eeabc50cd8eeee3e8694"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat0/SSC1-FINAL-0044/DONE.json",
+      "status": "added",
+      "bytes": 490,
+      "sha256": "2bb0ff7e9c5a01119edc450929c9c9e44ce3bdc2936a46c06258587571315cc8"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat0/SSC1-FINAL-0044/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 35298,
+      "sha256": "1ec286467b01618550cfe12a116f58dbc457d1368e33fab9bc611dfe20147dd6"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat0/SSC1-FINAL-0044/SCORES.json.gz",
+      "status": "added",
+      "bytes": 22319,
+      "sha256": "83e50b4a0f9e5fa497032a4b8a0bdcfa457fd269f6da8c8c2b6d73519de63438"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat0/SSC1-FINAL-0045/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4672,
+      "sha256": "c9b8989fd2d69f9847185af86f5c01589f522b4c817033f2d40a566f9fd4afbe"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat0/SSC1-FINAL-0045/DONE.json",
+      "status": "added",
+      "bytes": 491,
+      "sha256": "f5ac3d50acae0272d2b5b216c478a4ce4b60fd55091c144c7299487312372f71"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat0/SSC1-FINAL-0045/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 35031,
+      "sha256": "6a0e660d1af69dd77e7352822816dfdc8a9ebd52c1fefd878f14613e1851a1e9"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat0/SSC1-FINAL-0045/SCORES.json.gz",
+      "status": "added",
+      "bytes": 22072,
+      "sha256": "492e1260266dd79ce2f3b22604d8f9bd95232e7e9733ff91b6df697b77fe9a1a"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat0/SSC1-FINAL-0060/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4457,
+      "sha256": "42e9e281b91b6a438ea48fcc418c43d043c95b97f267a7eb314f18024eb824db"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat0/SSC1-FINAL-0060/DONE.json",
+      "status": "added",
+      "bytes": 490,
+      "sha256": "51482bf521c805b2af4d08c8cdfb3016149b64bb594e7761b30bedb83e9c2f10"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat0/SSC1-FINAL-0060/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 35281,
+      "sha256": "e115e2b52f7cf6468f0bba222660415795d328692570ecc048f9f227c20640f6"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat0/SSC1-FINAL-0060/SCORES.json.gz",
+      "status": "added",
+      "bytes": 22296,
+      "sha256": "7c528928bfe0ae1e74878ba88cc753a730ee5a7486e87df221a22e45e1721eae"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat1/MODEL_CHECKS.json",
+      "status": "added",
+      "bytes": 1199,
+      "sha256": "ecd91b325514a44411114737b41aa1d3515b4aa5975456c489d7cefcb53d9493"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat1/PARAMETERS_UNCHANGED.json",
+      "status": "added",
+      "bytes": 706,
+      "sha256": "7da0bdf69aeafc3ec3830b94af9d25806d74dc979a4ca4dffdf16691230f0288"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat1/PHASE_DONE.json",
+      "status": "added",
+      "bytes": 255,
+      "sha256": "1e20362ec34deabf667cad3ab9fe68bb1be2d00f6a1fed88cd66823a26934610"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat1/SSC1-FINAL-0006/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4693,
+      "sha256": "1fc56c3cdc645cc4d88cbc522cf95d01d5348cc377e8666d0b5a373db6fe2124"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat1/SSC1-FINAL-0006/DONE.json",
+      "status": "added",
+      "bytes": 491,
+      "sha256": "a17a57552217d177345ecfa2ce21dcc799f158801165c89914b8acd73b4eff15"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat1/SSC1-FINAL-0006/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 36417,
+      "sha256": "14d3283c8c6c53c38d35e7f055d324001f88904a0f293fffd16833e7ff5e9a9c"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat1/SSC1-FINAL-0006/SCORES.json.gz",
+      "status": "added",
+      "bytes": 23533,
+      "sha256": "e5960c43d084f4c801b2e9673649d22007958b690df3a8dee5e5df276cfaa734"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat1/SSC1-FINAL-0017/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4288,
+      "sha256": "6db7d83d6d218f2ca956e295bd5d2a0e0efa589801c4b8a1d422f5c2eb1fc8fd"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat1/SSC1-FINAL-0017/DONE.json",
+      "status": "added",
+      "bytes": 491,
+      "sha256": "10ec2b98b7210958ffccc99a1e596ba34746dca03f91b3cc153734335c1c8f0a"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat1/SSC1-FINAL-0017/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 22495,
+      "sha256": "e8b1a55f231605b4fbbd4b07f3cd951e91e3cb309587343155e6b362ca4edbaa"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat1/SSC1-FINAL-0017/SCORES.json.gz",
+      "status": "added",
+      "bytes": 14708,
+      "sha256": "47a6a81e71eb8d3a3b7af6dbf53b34eaf49a0bf2fa755fb74a91e0ea2732963a"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat1/SSC1-FINAL-0029/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4751,
+      "sha256": "509d94eb5e1f610f54cf4dbd29a64d08a63b19b85dcd630208def991ed6bb207"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat1/SSC1-FINAL-0029/DONE.json",
+      "status": "added",
+      "bytes": 491,
+      "sha256": "041630ad89960a9a496c95b163d9516e1f146cddc60ad9d0762a9c32e3e93287"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat1/SSC1-FINAL-0029/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 35180,
+      "sha256": "15b912053c70c51da8e8b4101ed1e4d7bc7381c1e4063c18e025223e8a15600f"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat1/SSC1-FINAL-0029/SCORES.json.gz",
+      "status": "added",
+      "bytes": 22177,
+      "sha256": "c8393861cba90dd9fa1254f9654079e3cca60d4253bbc94000848d39fa193f21"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat1/SSC1-FINAL-0032/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4138,
+      "sha256": "b72624c266445ed152c3e02d835def5ed5b74c71f15474d8078f338d066d89fb"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat1/SSC1-FINAL-0032/DONE.json",
+      "status": "added",
+      "bytes": 490,
+      "sha256": "73324303f6c6226f698b93a84e81e04dde148cac338cc8e5c8ede3f1d472ef8e"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat1/SSC1-FINAL-0032/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 22558,
+      "sha256": "e539b9f01990785e40156d304211ffbc497ddc5369ad936f186bb8de7dd97de3"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat1/SSC1-FINAL-0032/SCORES.json.gz",
+      "status": "added",
+      "bytes": 14764,
+      "sha256": "5442d5c4e54ae1178225440b4dc17a16ee961d858a6aeb95b347b4b95f7de214"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat1/SSC1-FINAL-0033/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4621,
+      "sha256": "c61aacf24bf140497a475225815d67bf13092ac6696d86efb55ade7770fcaa5f"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat1/SSC1-FINAL-0033/DONE.json",
+      "status": "added",
+      "bytes": 491,
+      "sha256": "c2077340712821d0b2425bbe804ac132c09aa954638a3427dc336f5f784a5ea3"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat1/SSC1-FINAL-0033/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 36781,
+      "sha256": "f404b581c3d7de693a830fbcd42a61dd80b61f1fd4448bcf6de07ab3699c7e3e"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat1/SSC1-FINAL-0033/SCORES.json.gz",
+      "status": "added",
+      "bytes": 23895,
+      "sha256": "5e5f963044995fc0fa9ee632e6a813da21d5c0d1d220e48ce937b9aa0af1c7da"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat1/SSC1-FINAL-0044/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4522,
+      "sha256": "a6554efd3c02ab892446dbc4c67ddefed0fcba5690c6eeabc50cd8eeee3e8694"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat1/SSC1-FINAL-0044/DONE.json",
+      "status": "added",
+      "bytes": 489,
+      "sha256": "a87374dcd13e570bad3fc8b079adbbbdf94c87a2ef86e5ebf942b94d6fd88710"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat1/SSC1-FINAL-0044/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 35273,
+      "sha256": "6052cbd3c0562b2fde5498f3b47ee749edbbaf55e082c6a71a952b19279ebcd5"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat1/SSC1-FINAL-0044/SCORES.json.gz",
+      "status": "added",
+      "bytes": 22282,
+      "sha256": "20a94fe79bda501bd4fba477b877c5463273896cb0968e828f046c963e436165"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat1/SSC1-FINAL-0045/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4672,
+      "sha256": "c9b8989fd2d69f9847185af86f5c01589f522b4c817033f2d40a566f9fd4afbe"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat1/SSC1-FINAL-0045/DONE.json",
+      "status": "added",
+      "bytes": 491,
+      "sha256": "0881faa761d978bdeb69bb661ab425526895b4336380c7336aad074f2ea6dd10"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat1/SSC1-FINAL-0045/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 35010,
+      "sha256": "088907929f0d42abf3e4175aee4022da1f537b7627f55310a6d4240b6122268a"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat1/SSC1-FINAL-0045/SCORES.json.gz",
+      "status": "added",
+      "bytes": 22068,
+      "sha256": "4a99eda40de53b0a9d1a15e1f9267f1df09ef3dc61f5bd94a388a7f39e16bf56"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat1/SSC1-FINAL-0060/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4457,
+      "sha256": "42e9e281b91b6a438ea48fcc418c43d043c95b97f267a7eb314f18024eb824db"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat1/SSC1-FINAL-0060/DONE.json",
+      "status": "added",
+      "bytes": 491,
+      "sha256": "2e3729fe91eac8ee16e7c5435de207214cdcd7c2927aa140c178accc427f3237"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat1/SSC1-FINAL-0060/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 35312,
+      "sha256": "4a118be2ea8ba0394b12593f3bf5543caf519e42d1e334ebca19a35fac7533b1"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat1/SSC1-FINAL-0060/SCORES.json.gz",
+      "status": "added",
+      "bytes": 22308,
+      "sha256": "b41dd7482e369c8ba084c88a4d260aa11b4e72b63d105163cfee0c7de7ac5029"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat_full/MODEL_CHECKS.json",
+      "status": "added",
+      "bytes": 1200,
+      "sha256": "e108daf2bad84327bd00b26687bf881e72aa1d273d5a219aff68d4a6353508ec"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat_full/PARAMETERS_UNCHANGED.json",
+      "status": "added",
+      "bytes": 706,
+      "sha256": "7da0bdf69aeafc3ec3830b94af9d25806d74dc979a4ca4dffdf16691230f0288"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat_full/PHASE_DONE.json",
+      "status": "added",
+      "bytes": 258,
+      "sha256": "09a915be15737412fb36c7bcb6aecbf47b014707a54f3ac7359907d3a7790a37"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat_full/SSC1-FINAL-0003/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4850,
+      "sha256": "adc8db0b5282f46d83cb9f20a30ccf6a066ff4f348b39c4d3adb94bf82e409b3"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat_full/SSC1-FINAL-0003/DONE.json",
+      "status": "added",
+      "bytes": 495,
+      "sha256": "d4085d04950059dff1da62eb57a701f48e84ae1df70b0444966ed2bdd6269eac"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat_full/SSC1-FINAL-0003/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 175164,
+      "sha256": "c33b0db62e43384b7099b6ede2cb9bfc5d1fbac0694153aeb1806eb385f7fd15"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat_full/SSC1-FINAL-0003/SCORES.json.gz",
+      "status": "added",
+      "bytes": 98001,
+      "sha256": "cddf1743479bfcaf53b5670e1e3ffba3d9d743d87b6952c6231eb928bc07a649"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat_full/SSC1-FINAL-0004/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4567,
+      "sha256": "abee1504b8169f27a350c95ce3858142bb0e531678ff1dd9231a2f1f5bd46959"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat_full/SSC1-FINAL-0004/DONE.json",
+      "status": "added",
+      "bytes": 494,
+      "sha256": "b094314bdc203cdd2405f373bc40209169d048ca97a305392bad3ffe2510bdb6"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat_full/SSC1-FINAL-0004/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 176152,
+      "sha256": "1d4b979c31daf20b06860fb52e6b87f82409657b6197f11bf3256e5227e11f1a"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat_full/SSC1-FINAL-0004/SCORES.json.gz",
+      "status": "added",
+      "bytes": 99714,
+      "sha256": "61bd7ce9ac24adbef48f40543805636c49d278fcca2b3c4ddef4b2f24702a700"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat_full/SSC1-FINAL-0007/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4887,
+      "sha256": "2f9e338617036d2ca122ea451e95ca1f3884a297f244430b167855437e4eb64f"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat_full/SSC1-FINAL-0007/DONE.json",
+      "status": "added",
+      "bytes": 495,
+      "sha256": "5e7994bbdfc5761f6f4d3d360b6b4bf1666f0136d4bd32343bf6f65bdbae9473"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat_full/SSC1-FINAL-0007/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 177367,
+      "sha256": "8b246728ac207e59c8efc8adca17d9b5405e7db9f45bd284518d32c2521ec2e0"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat_full/SSC1-FINAL-0007/SCORES.json.gz",
+      "status": "added",
+      "bytes": 100323,
+      "sha256": "c6f18c82b5373aef6b3ff2ffa169cb3bf358ab7d8873b929fdec62709f7d55ba"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat_full/SSC1-FINAL-0014/CONTEXT_SEAL.json.gz",
+      "status": "added",
+      "bytes": 4263,
+      "sha256": "bf428fcb0bf55cce7342db6a578b7fbb3c14ff479eba9179c998c66205b5dabb"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat_full/SSC1-FINAL-0014/DONE.json",
+      "status": "added",
+      "bytes": 495,
+      "sha256": "320aad7acb539d9e67f96fc509ad2f5b1a3d3057ab7673ad628ec37e94cc4a47"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat_full/SSC1-FINAL-0014/RAW_SCORES.jsonl.gz",
+      "status": "added",
+      "bytes": 176638,
+      "sha256": "57e1954e7aed66bbe66707479a59651c37346541d75c7bea13dc32b2bd61522d"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/repeat_full/SSC1-FINAL-0014/SCORES.json.gz",
+      "status": "added",
+      "bytes": 99525,
+      "sha256": "8e91c1166146aef39edbd70acb05c432ccd5eb6c369d7e1a7c6e66547d16777a"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/technical/MODEL_CHECKS.json",
+      "status": "added",
+      "bytes": 1199,
+      "sha256": "67243b0ba006ec7e72b3bb36c33a4fe584d430d2b218d2c7a585f07258d69152"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/technical/PARAMETERS_UNCHANGED.json",
+      "status": "added",
+      "bytes": 706,
+      "sha256": "7da0bdf69aeafc3ec3830b94af9d25806d74dc979a4ca4dffdf16691230f0288"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/results/qwen32_t4/technical/PHASE_DONE.json",
+      "status": "added",
+      "bytes": 249,
+      "sha256": "7277bc8abe5b49fd4b6ad3c11d9b02ae2c3b76abdfc22f6490e597cb2d860700"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/source/geometry-of-endorsement/reproducibility/state_sufficiency/independent_verification/reconstruct.py",
+      "status": "added",
+      "bytes": 23140,
+      "sha256": "783cf3134867d74a44296e25a05b3815a7d853d745c033252f9f2c0ddcecab2f"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/source/geometry-of-endorsement/src/repro/__init__.py",
+      "status": "added",
+      "bytes": 57,
+      "sha256": "f3b7fcc264cab0dfe8bf4e5402b0950c48c73f47c69ecb5dae1d2df399f4dc96"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/source/geometry-of-endorsement/src/repro/common.py",
+      "status": "added",
+      "bytes": 1533,
+      "sha256": "7caeff7d29ac0083211a9e81a22b7bf2f54290b6ffe7d6da5408c17b119f0ec1"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/saved/results/runtime/source/geometry-of-endorsement/src/repro/cpu_robustness.py",
+      "status": "added",
+      "bytes": 12957,
+      "sha256": "c15de8965c598ccae39f8b68360b2be1e180843f594a65252fa562f0d5668068"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/tools/replay_driver.py",
+      "status": "added",
+      "bytes": 10340,
+      "sha256": "8a4e125588167d80b78248244605dfa245d29aa39bd4e721bc483f3c1ef947f3"
+    },
+    {
+      "path": "reproducibility/qwen32_full_forward/tools/verify_portfolio.py",
+      "status": "added",
+      "bytes": 7027,
+      "sha256": "dae10326ed241d2a3f03803fb44986e310b7dd8c70b3c3a6681fc1d22f2720af"
+    },
+    {
+      "path": "src/repro/qwen32_full_forward.py",
+      "status": "added",
+      "bytes": 16173,
+      "sha256": "e0b0960a5a6f520a0160faa07a1c056dead6f42f37ce62760d5aeb8f771e1d42"
+    },
+    {
+      "path": "tests/test_qwen32_full_forward.py",
+      "status": "added",
+      "bytes": 6919,
+      "sha256": "58ff7e0c1b935cddafeb34f0d6a7fea7d453d04acdb5850c7e50e377199fefd5"
+    }
+  ],
+  "commit_or_push_performed": false
+}

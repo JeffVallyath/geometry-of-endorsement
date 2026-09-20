@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "analysis_capsule": "ff7a290b832bec3b58a9556849c521dc208fc8a17632406f43bec4e091f7709c",
+  "new_unit_tests": {"command": "python -m pytest tests/test_method_selection.py -q", "passed": 10},
+  "independent_arithmetic": {
+    "command": "python audit_results.py",
+    "root_metric_checks": 9216,
+    "aggregate_interval_checks": 18,
+    "equivalence_rows_checked": 360,
+    "decision_rows_checked": 40,
+    "status": "PASS"
+  },
+  "frozen_V10_replay": {
+    "primary_cells": 8,
+    "root_condition_rows": 896,
+    "joint_query_classifications": 16128,
+    "physical_core_scores": 230656,
+    "logical_core_scores": 248064,
+    "fresh_saved_repeat_scores": 8448,
+    "repeat_pairwise_checks": 12672,
+    "status": "independent_reconstruction_matches"
+  },
+  "separate_update_method_replay": {"score_rows": 208896, "pooled_with_V10": false, "status": "PASS"},
+  "requirements": {
+    "1_METHOD_SELECTION_REANALYSIS": "Metrics, pre-calculation sensitivity grid, paired Qwen/Gemma contrasts, verdict, strongest claim and overclaim present",
+    "2_METHOD_SELECTION_TABLE": "24 model/condition-or-group rows; all executed update seeds plus recipe/class means and labeled controls; rates and 95% uncertainty; original group SHS intervals",
+    "3_EQUIVALENCE_ANALYSIS": "360 metric/comparison/margin rows; 95% and 99% paired CIs, margins, equivalence decisions and SHS difference; 40 conjunction decisions; seed and common-support supplements",
+    "4_POINTWISE_VS_RELATIONAL_ARGUMENT": "Two formal paragraphs, caveat, plain-English version, one-sentence standard-evaluation answer, bounded empirical connection",
+    "5_PAPER_READY_PARAGRAPH": "Conditional A explicitly unsupported and non-publishable as current result; evidence-supported fallback B",
+    "6_FINAL_DECISION": "Only the five requested answers",
+    "constraints": "No inference/GPU/provider run; frozen inputs/code verified unchanged before and after; no model settings changed; no subagents"
+  },
+  "limitations": [
+    "Retrospective new analysis; original public SHS rates were already known",
+    "No utility/cost-based choice reversal established",
+    "Synthetic bounded locality/generalization, not a complete external editing benchmark",
+    "Percentile bootstrap uncertainty over generated roots, not deployment prevalence",
+    "Source archive is not a Git checkout; local hash-bound Python replay used, no rr execution receipt fabricated"
+  ]
+}

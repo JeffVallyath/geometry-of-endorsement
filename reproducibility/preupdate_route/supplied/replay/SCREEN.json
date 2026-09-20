@@ -1,0 +1,807 @@
+{
+  "K_corrected_by_seed": {
+    "0": [],
+    "1": [
+      "FHV1-FINAL-0033",
+      "FHV1-FINAL-0050",
+      "FHV1-FINAL-0053"
+    ]
+  },
+  "corrected_cases": {
+    "K": [
+      "FHV1-FINAL-0033",
+      "FHV1-FINAL-0050",
+      "FHV1-FINAL-0053"
+    ],
+    "SCTRL": [
+      "FHV1-FINAL-0053",
+      "FHV1-FINAL-0060"
+    ]
+  },
+  "details": [
+    {
+      "arm": "K",
+      "corrected": false,
+      "pair": [
+        5,
+        6
+      ],
+      "positive": true,
+      "root_id": "FHV1-FINAL-0016",
+      "seed": 0,
+      "target": "FHV1-FINAL-0016-d0-extra3"
+    },
+    {
+      "arm": "SCTRL",
+      "corrected": false,
+      "pair": [
+        5,
+        6
+      ],
+      "positive": true,
+      "root_id": "FHV1-FINAL-0016",
+      "seed": 0,
+      "target": "FHV1-FINAL-0016-d0-extra3"
+    },
+    {
+      "arm": "K",
+      "corrected": false,
+      "pair": [
+        5,
+        6
+      ],
+      "positive": true,
+      "root_id": "FHV1-FINAL-0016",
+      "seed": 1,
+      "target": "FHV1-FINAL-0016-d0-extra3"
+    },
+    {
+      "arm": "SCTRL",
+      "corrected": false,
+      "pair": [
+        5,
+        6
+      ],
+      "positive": true,
+      "root_id": "FHV1-FINAL-0016",
+      "seed": 1,
+      "target": "FHV1-FINAL-0016-d0-extra3"
+    },
+    {
+      "arm": "K",
+      "corrected": false,
+      "pair": [
+        1,
+        2
+      ],
+      "positive": true,
+      "root_id": "FHV1-FINAL-0017",
+      "seed": 0,
+      "target": "FHV1-FINAL-0017-d0-08"
+    },
+    {
+      "arm": "SCTRL",
+      "corrected": false,
+      "pair": [
+        1,
+        2
+      ],
+      "positive": true,
+      "root_id": "FHV1-FINAL-0017",
+      "seed": 0,
+      "target": "FHV1-FINAL-0017-d0-08"
+    },
+    {
+      "arm": "K",
+      "corrected": false,
+      "pair": [
+        1,
+        2
+      ],
+      "positive": true,
+      "root_id": "FHV1-FINAL-0017",
+      "seed": 1,
+      "target": "FHV1-FINAL-0017-d0-08"
+    },
+    {
+      "arm": "SCTRL",
+      "corrected": false,
+      "pair": [
+        1,
+        2
+      ],
+      "positive": true,
+      "root_id": "FHV1-FINAL-0017",
+      "seed": 1,
+      "target": "FHV1-FINAL-0017-d0-08"
+    },
+    {
+      "arm": "K",
+      "corrected": false,
+      "pair": [
+        3,
+        5
+      ],
+      "positive": true,
+      "root_id": "FHV1-FINAL-0024",
+      "seed": 0,
+      "target": "FHV1-FINAL-0024-d0-08"
+    },
+    {
+      "arm": "SCTRL",
+      "corrected": false,
+      "pair": [
+        3,
+        5
+      ],
+      "positive": true,
+      "root_id": "FHV1-FINAL-0024",
+      "seed": 0,
+      "target": "FHV1-FINAL-0024-d0-08"
+    },
+    {
+      "arm": "K",
+      "corrected": false,
+      "pair": [
+        3,
+        5
+      ],
+      "positive": true,
+      "root_id": "FHV1-FINAL-0024",
+      "seed": 1,
+      "target": "FHV1-FINAL-0024-d0-08"
+    },
+    {
+      "arm": "SCTRL",
+      "corrected": false,
+      "pair": [
+        3,
+        5
+      ],
+      "positive": true,
+      "root_id": "FHV1-FINAL-0024",
+      "seed": 1,
+      "target": "FHV1-FINAL-0024-d0-08"
+    },
+    {
+      "arm": "K",
+      "corrected": false,
+      "pair": [
+        2,
+        4
+      ],
+      "positive": true,
+      "root_id": "FHV1-FINAL-0025",
+      "seed": 0,
+      "target": "FHV1-FINAL-0025-d1-extra1"
+    },
+    {
+      "arm": "SCTRL",
+      "corrected": false,
+      "pair": [
+        2,
+        4
+      ],
+      "positive": true,
+      "root_id": "FHV1-FINAL-0025",
+      "seed": 0,
+      "target": "FHV1-FINAL-0025-d1-extra1"
+    },
+    {
+      "arm": "K",
+      "corrected": false,
+      "pair": [
+        2,
+        4
+      ],
+      "positive": true,
+      "root_id": "FHV1-FINAL-0025",
+      "seed": 1,
+      "target": "FHV1-FINAL-0025-d1-extra1"
+    },
+    {
+      "arm": "SCTRL",
+      "corrected": false,
+      "pair": [
+        2,
+        4
+      ],
+      "positive": true,
+      "root_id": "FHV1-FINAL-0025",
+      "seed": 1,
+      "target": "FHV1-FINAL-0025-d1-extra1"
+    },
+    {
+      "arm": "K",
+      "corrected": false,
+      "pair": [
+        3,
+        5
+      ],
+      "positive": true,
+      "root_id": "FHV1-FINAL-0030",
+      "seed": 0,
+      "target": "FHV1-FINAL-0030-d0-09"
+    },
+    {
+      "arm": "SCTRL",
+      "corrected": false,
+      "pair": [
+        3,
+        5
+      ],
+      "positive": true,
+      "root_id": "FHV1-FINAL-0030",
+      "seed": 0,
+      "target": "FHV1-FINAL-0030-d0-09"
+    },
+    {
+      "arm": "K",
+      "corrected": false,
+      "pair": [
+        3,
+        5
+      ],
+      "positive": true,
+      "root_id": "FHV1-FINAL-0030",
+      "seed": 1,
+      "target": "FHV1-FINAL-0030-d0-09"
+    },
+    {
+      "arm": "SCTRL",
+      "corrected": false,
+      "pair": [
+        3,
+        5
+      ],
+      "positive": true,
+      "root_id": "FHV1-FINAL-0030",
+      "seed": 1,
+      "target": "FHV1-FINAL-0030-d0-09"
+    },
+    {
+      "arm": "K",
+      "corrected": false,
+      "pair": [
+        1,
+        2
+      ],
+      "positive": true,
+      "root_id": "FHV1-FINAL-0033",
+      "seed": 0,
+      "target": "FHV1-FINAL-0033-d0-07"
+    },
+    {
+      "arm": "SCTRL",
+      "corrected": false,
+      "pair": [
+        1,
+        2
+      ],
+      "positive": true,
+      "root_id": "FHV1-FINAL-0033",
+      "seed": 0,
+      "target": "FHV1-FINAL-0033-d0-07"
+    },
+    {
+      "arm": "K",
+      "corrected": true,
+      "pair": [
+        1,
+        2
+      ],
+      "positive": true,
+      "root_id": "FHV1-FINAL-0033",
+      "seed": 1,
+      "target": "FHV1-FINAL-0033-d0-07"
+    },
+    {
+      "arm": "SCTRL",
+      "corrected": false,
+      "pair": [
+        1,
+        2
+      ],
+      "positive": true,
+      "root_id": "FHV1-FINAL-0033",
+      "seed": 1,
+      "target": "FHV1-FINAL-0033-d0-07"
+    },
+    {
+      "arm": "K",
+      "corrected": false,
+      "pair": [
+        3,
+        5
+      ],
+      "positive": true,
+      "root_id": "FHV1-FINAL-0037",
+      "seed": 0,
+      "target": "FHV1-FINAL-0037-d0-07"
+    },
+    {
+      "arm": "SCTRL",
+      "corrected": false,
+      "pair": [
+        3,
+        5
+      ],
+      "positive": true,
+      "root_id": "FHV1-FINAL-0037",
+      "seed": 0,
+      "target": "FHV1-FINAL-0037-d0-07"
+    },
+    {
+      "arm": "K",
+      "corrected": false,
+      "pair": [
+        3,
+        5
+      ],
+      "positive": true,
+      "root_id": "FHV1-FINAL-0037",
+      "seed": 1,
+      "target": "FHV1-FINAL-0037-d0-07"
+    },
+    {
+      "arm": "SCTRL",
+      "corrected": false,
+      "pair": [
+        3,
+        5
+      ],
+      "positive": true,
+      "root_id": "FHV1-FINAL-0037",
+      "seed": 1,
+      "target": "FHV1-FINAL-0037-d0-07"
+    },
+    {
+      "arm": "K",
+      "corrected": false,
+      "pair": [
+        3,
+        6
+      ],
+      "positive": true,
+      "root_id": "FHV1-FINAL-0043",
+      "seed": 0,
+      "target": "FHV1-FINAL-0043-d0-10"
+    },
+    {
+      "arm": "SCTRL",
+      "corrected": false,
+      "pair": [
+        3,
+        6
+      ],
+      "positive": true,
+      "root_id": "FHV1-FINAL-0043",
+      "seed": 0,
+      "target": "FHV1-FINAL-0043-d0-10"
+    },
+    {
+      "arm": "K",
+      "corrected": false,
+      "pair": [
+        3,
+        6
+      ],
+      "positive": true,
+      "root_id": "FHV1-FINAL-0043",
+      "seed": 1,
+      "target": "FHV1-FINAL-0043-d0-10"
+    },
+    {
+      "arm": "SCTRL",
+      "corrected": false,
+      "pair": [
+        3,
+        6
+      ],
+      "positive": true,
+      "root_id": "FHV1-FINAL-0043",
+      "seed": 1,
+      "target": "FHV1-FINAL-0043-d0-10"
+    },
+    {
+      "arm": "K",
+      "corrected": false,
+      "pair": [
+        5,
+        6
+      ],
+      "positive": true,
+      "root_id": "FHV1-FINAL-0047",
+      "seed": 0,
+      "target": "FHV1-FINAL-0047-d1-08"
+    },
+    {
+      "arm": "SCTRL",
+      "corrected": false,
+      "pair": [
+        5,
+        6
+      ],
+      "positive": true,
+      "root_id": "FHV1-FINAL-0047",
+      "seed": 0,
+      "target": "FHV1-FINAL-0047-d1-08"
+    },
+    {
+      "arm": "K",
+      "corrected": false,
+      "pair": [
+        5,
+        6
+      ],
+      "positive": true,
+      "root_id": "FHV1-FINAL-0047",
+      "seed": 1,
+      "target": "FHV1-FINAL-0047-d1-08"
+    },
+    {
+      "arm": "SCTRL",
+      "corrected": false,
+      "pair": [
+        5,
+        6
+      ],
+      "positive": true,
+      "root_id": "FHV1-FINAL-0047",
+      "seed": 1,
+      "target": "FHV1-FINAL-0047-d1-08"
+    },
+    {
+      "arm": "K",
+      "corrected": false,
+      "pair": [
+        1,
+        2
+      ],
+      "positive": true,
+      "root_id": "FHV1-FINAL-0050",
+      "seed": 0,
+      "target": "FHV1-FINAL-0050-d0-07"
+    },
+    {
+      "arm": "SCTRL",
+      "corrected": false,
+      "pair": [
+        1,
+        2
+      ],
+      "positive": true,
+      "root_id": "FHV1-FINAL-0050",
+      "seed": 0,
+      "target": "FHV1-FINAL-0050-d0-07"
+    },
+    {
+      "arm": "K",
+      "corrected": true,
+      "pair": [
+        1,
+        2
+      ],
+      "positive": true,
+      "root_id": "FHV1-FINAL-0050",
+      "seed": 1,
+      "target": "FHV1-FINAL-0050-d0-07"
+    },
+    {
+      "arm": "SCTRL",
+      "corrected": false,
+      "pair": [
+        1,
+        2
+      ],
+      "positive": true,
+      "root_id": "FHV1-FINAL-0050",
+      "seed": 1,
+      "target": "FHV1-FINAL-0050-d0-07"
+    },
+    {
+      "arm": "K",
+      "corrected": false,
+      "pair": [
+        1,
+        4
+      ],
+      "positive": true,
+      "root_id": "FHV1-FINAL-0052",
+      "seed": 0,
+      "target": "FHV1-FINAL-0052-d0-extra1"
+    },
+    {
+      "arm": "SCTRL",
+      "corrected": false,
+      "pair": [
+        1,
+        4
+      ],
+      "positive": true,
+      "root_id": "FHV1-FINAL-0052",
+      "seed": 0,
+      "target": "FHV1-FINAL-0052-d0-extra1"
+    },
+    {
+      "arm": "K",
+      "corrected": false,
+      "pair": [
+        1,
+        4
+      ],
+      "positive": true,
+      "root_id": "FHV1-FINAL-0052",
+      "seed": 1,
+      "target": "FHV1-FINAL-0052-d0-extra1"
+    },
+    {
+      "arm": "SCTRL",
+      "corrected": false,
+      "pair": [
+        1,
+        4
+      ],
+      "positive": true,
+      "root_id": "FHV1-FINAL-0052",
+      "seed": 1,
+      "target": "FHV1-FINAL-0052-d0-extra1"
+    },
+    {
+      "arm": "K",
+      "corrected": false,
+      "pair": [
+        1,
+        4
+      ],
+      "positive": true,
+      "root_id": "FHV1-FINAL-0053",
+      "seed": 0,
+      "target": "FHV1-FINAL-0053-d0-02"
+    },
+    {
+      "arm": "SCTRL",
+      "corrected": false,
+      "pair": [
+        1,
+        4
+      ],
+      "positive": true,
+      "root_id": "FHV1-FINAL-0053",
+      "seed": 0,
+      "target": "FHV1-FINAL-0053-d0-02"
+    },
+    {
+      "arm": "K",
+      "corrected": true,
+      "pair": [
+        1,
+        4
+      ],
+      "positive": true,
+      "root_id": "FHV1-FINAL-0053",
+      "seed": 1,
+      "target": "FHV1-FINAL-0053-d0-02"
+    },
+    {
+      "arm": "SCTRL",
+      "corrected": true,
+      "pair": [
+        1,
+        4
+      ],
+      "positive": true,
+      "root_id": "FHV1-FINAL-0053",
+      "seed": 1,
+      "target": "FHV1-FINAL-0053-d0-02"
+    },
+    {
+      "arm": "K",
+      "corrected": false,
+      "pair": [
+        2,
+        4
+      ],
+      "positive": true,
+      "root_id": "FHV1-FINAL-0057",
+      "seed": 0,
+      "target": "FHV1-FINAL-0057-d1-extra2"
+    },
+    {
+      "arm": "SCTRL",
+      "corrected": false,
+      "pair": [
+        2,
+        4
+      ],
+      "positive": true,
+      "root_id": "FHV1-FINAL-0057",
+      "seed": 0,
+      "target": "FHV1-FINAL-0057-d1-extra2"
+    },
+    {
+      "arm": "K",
+      "corrected": false,
+      "pair": [
+        2,
+        4
+      ],
+      "positive": true,
+      "root_id": "FHV1-FINAL-0057",
+      "seed": 1,
+      "target": "FHV1-FINAL-0057-d1-extra2"
+    },
+    {
+      "arm": "SCTRL",
+      "corrected": false,
+      "pair": [
+        2,
+        4
+      ],
+      "positive": true,
+      "root_id": "FHV1-FINAL-0057",
+      "seed": 1,
+      "target": "FHV1-FINAL-0057-d1-extra2"
+    },
+    {
+      "arm": "K",
+      "corrected": false,
+      "pair": [
+        1,
+        2
+      ],
+      "positive": true,
+      "root_id": "FHV1-FINAL-0060",
+      "seed": 0,
+      "target": "FHV1-FINAL-0060-d0-09"
+    },
+    {
+      "arm": "SCTRL",
+      "corrected": false,
+      "pair": [
+        1,
+        2
+      ],
+      "positive": true,
+      "root_id": "FHV1-FINAL-0060",
+      "seed": 0,
+      "target": "FHV1-FINAL-0060-d0-09"
+    },
+    {
+      "arm": "K",
+      "corrected": false,
+      "pair": [
+        1,
+        2
+      ],
+      "positive": true,
+      "root_id": "FHV1-FINAL-0060",
+      "seed": 1,
+      "target": "FHV1-FINAL-0060-d0-09"
+    },
+    {
+      "arm": "SCTRL",
+      "corrected": true,
+      "pair": [
+        1,
+        2
+      ],
+      "positive": true,
+      "root_id": "FHV1-FINAL-0060",
+      "seed": 1,
+      "target": "FHV1-FINAL-0060-d0-09"
+    },
+    {
+      "arm": "K",
+      "corrected": false,
+      "pair": [
+        1,
+        2
+      ],
+      "positive": false,
+      "root_id": "FHV1-FINAL-0063",
+      "seed": 0,
+      "target": "FHV1-FINAL-0063-d0-02"
+    },
+    {
+      "arm": "SCTRL",
+      "corrected": false,
+      "pair": [
+        1,
+        2
+      ],
+      "positive": false,
+      "root_id": "FHV1-FINAL-0063",
+      "seed": 0,
+      "target": "FHV1-FINAL-0063-d0-02"
+    },
+    {
+      "arm": "K",
+      "corrected": false,
+      "pair": [
+        1,
+        2
+      ],
+      "positive": false,
+      "root_id": "FHV1-FINAL-0063",
+      "seed": 1,
+      "target": "FHV1-FINAL-0063-d0-02"
+    },
+    {
+      "arm": "SCTRL",
+      "corrected": false,
+      "pair": [
+        1,
+        2
+      ],
+      "positive": false,
+      "root_id": "FHV1-FINAL-0063",
+      "seed": 1,
+      "target": "FHV1-FINAL-0063-d0-02"
+    },
+    {
+      "arm": "K",
+      "corrected": false,
+      "pair": [
+        1,
+        4
+      ],
+      "positive": false,
+      "root_id": "FHV1-FINAL-0023",
+      "seed": 0,
+      "target": "FHV1-FINAL-0023-d0-02"
+    },
+    {
+      "arm": "SCTRL",
+      "corrected": false,
+      "pair": [
+        1,
+        4
+      ],
+      "positive": false,
+      "root_id": "FHV1-FINAL-0023",
+      "seed": 0,
+      "target": "FHV1-FINAL-0023-d0-02"
+    },
+    {
+      "arm": "K",
+      "corrected": false,
+      "pair": [
+        1,
+        4
+      ],
+      "positive": false,
+      "root_id": "FHV1-FINAL-0023",
+      "seed": 1,
+      "target": "FHV1-FINAL-0023-d0-02"
+    },
+    {
+      "arm": "SCTRL",
+      "corrected": false,
+      "pair": [
+        1,
+        4
+      ],
+      "positive": false,
+      "root_id": "FHV1-FINAL-0023",
+      "seed": 1,
+      "target": "FHV1-FINAL-0023-d0-02"
+    }
+  ],
+  "gates": {
+    "direct_new_errors_at_most_2pp": false,
+    "each_seed": false,
+    "lower_mean_joint_error": false,
+    "three_distinct_positive": true,
+    "two_more_than_control": false
+  },
+  "interpretation": "Resource-admission screen on exposed enriched material, not a prevalence result",
+  "joint_errors": {
+    "K": 129,
+    "N": 75
+  },
+  "new_direct_errors": 38,
+  "scheduled_direct": 768,
+  "scheduled_joint": 1152,
+  "status": "NO_ACTIONABLE_DIRECT_PREUPDATE_ROUTE"
+}

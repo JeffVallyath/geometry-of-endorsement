@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "analysis_files": 15,
+  "all_analysis_files_byte_exact": true,
+  "study_terminality_reproduced": true,
+  "replay_used_packaged_code_and_inputs": true,
+  "pretrained_inference_performed": false,
+  "files": {
+    "ANALYSIS_BINDING.json": "5551c1d4424ba6a0a0cd190f68d47b9a666a2f90759a0b4e42a231f369fe4036",
+    "MAIN_TABLE.json": "44573c8dd030182504ccd0457e2be6c6a9731c07bbeb023d9f4856fcdb605b98",
+    "PLANNED_COMPARISONS.json": "55b682c533f8756f022c2502e33f436e8a8af756628a53ee4d8fb8232b6369d6",
+    "QWEN_THREE_WAY_INTERSECTION.json": "dbe9e8f562ad0f7b3d93a0cfd0b96bbb2812cd35a5b4490269da8e8c6ff9c720",
+    "ROW_DISPOSITIONS.json": "dc5081e677ec1d479147a65f862821371e90e5a649cbda1b45269dc651994b0b",
+    "rows/gemma9_c1/EXISTING_CORRECTION.json": "59304afe4eb34b71739314ee5cb53bb11a8336ea68d7fe3c795694ecf97fd835",
+    "rows/gemma9_c1/LATEST_SAME_WORDING.json": "1e390ecc9b1b87f3b992a294bc23e164051a5c40b7edfaa03dae62d9b44e7b20",
+    "rows/gemma9_t4/EXISTING_CORRECTION.json": "06e784c1a6069478a5da90b0b3b5393e3974e2fdb4f1fdf62b38d9af014a5db9",
+    "rows/gemma9_t4/LATEST_SAME_WORDING.json": "e7627d848194c96e313771851b218269bce184389c8a08f7e5c8fe19ce390af5",
+    "rows/llama8_t4/EXISTING_CORRECTION.json": "85cebaa3ea609fd9da7bb83df7075abaeae4b40e3c4e54601c38681ab999bb53",
+    "rows/llama8_t4/LATEST_SAME_WORDING.json": "cbe5bb976804c54c1c1875a6e7e401ccb6e13d758bf764f5f9a05b699e5c62af",
+    "rows/qwen4_t4/EXISTING_CORRECTION.json": "2d5459c475f45ce5c184178e90bad9303a478c8ff052e5fecc1e62cd3bf5455d",
+    "rows/qwen4_t4/LATEST_SAME_WORDING.json": "7323641208d0519aff85281cf0176ff343770cfbd48584f2315e4a2bf1c41dc7",
+    "rows/qwen8_t4/EXISTING_CORRECTION.json": "11b92f5bc83303678010367354901be7273c97635231e3767b50ec11bf4dc059",
+    "rows/qwen8_t4/LATEST_SAME_WORDING.json": "b447b54916be76585b2607106ad37b9010bba00bf56acbd101fadb1070150a38"
+  }
+}

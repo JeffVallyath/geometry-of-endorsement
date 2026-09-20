@@ -1,0 +1,137 @@
+{
+  "primary": {
+    "A_joint_errors": 3490,
+    "B_direct_corrections": 84,
+    "B_direct_damage": 76,
+    "B_joint_corrections": 944,
+    "B_joint_damage": 347,
+    "B_joint_errors": 2893,
+    "B_repair_rate": 0.43373493975903615,
+    "B_repairs": 36,
+    "C_repairs": 2,
+    "D_joint_errors": 2000,
+    "baseline_W": 83,
+    "all_primary_response_damage": {
+      "B": {
+        "direct": 76,
+        "joint": 347,
+        "oppositional": 50
+      },
+      "C": {
+        "direct": 3,
+        "joint": 59,
+        "oppositional": 2
+      },
+      "D": {
+        "direct": 111,
+        "joint": 686,
+        "oppositional": 63
+      }
+    },
+    "B_previously_complete_case_damage": {
+      "seed0": 11,
+      "seed1": 3
+    },
+    "baseline_ceased_qualifying_without_repair": 12,
+    "baseline_witnesses_retained": 35,
+    "cases": 256,
+    "failed_requirement": "At least 50% of baseline qualifying observations repaired",
+    "joint_response_denominator": 73728,
+    "new_qualifying_witnesses": 40,
+    "primary_bootstrap_and_sample_size_unchanged": true,
+    "strong_repair": false,
+    "treated_qualifying_witnesses": 75,
+    "treated_witness_cases": 58,
+    "repaired_designs": 28,
+    "target_observations": 9216,
+    "strong_repair_threshold": 0.5,
+    "uncertainty_family": {
+      "direct_harm": {
+        "estimate": 0.0015462239583333333,
+        "interval9875": [
+          0.0008748372395833333,
+          0.0023193359375
+        ]
+      },
+      "efficacy": {
+        "estimate": 0.003689236111111111,
+        "interval9875": [
+          0.002061631944444445,
+          0.005642361111111108
+        ]
+      },
+      "joint_harm": {
+        "estimate": 0.004706488715277778,
+        "interval9875": [
+          0.0035942925347222186,
+          0.0059407552083333365
+        ]
+      },
+      "net_joint_error": {
+        "estimate": -0.008097330729166664,
+        "interval9875": [
+          -0.010403103298611122,
+          -0.005791558159722226
+        ]
+      }
+    },
+    "joint_error_reduction": 0.008097330729166666
+  },
+  "post_hoc": {
+    "status": "POST_HOC_SUCCESSFUL_CASE_REPRODUCIBILITY",
+    "selected_cases": 6,
+    "case_seed_blocks": 12,
+    "baseline_W": 9,
+    "B_repairs": 8,
+    "C_repairs": 0,
+    "eligible_RB_targets": 3,
+    "eligible_RC_targets": 0,
+    "anchor_designs": 1,
+    "seeds": 2,
+    "blocks": 14,
+    "reads": 14076,
+    "new_independent_observations": 0,
+    "all_retained_score_bindings_exact": true,
+    "max_score_delta": 0,
+    "score_tolerance": 1e-06,
+    "excluded_timing_fields": [
+      "batch_seconds",
+      "compile_seconds",
+      "preprocessing_seconds",
+      "qualification_seconds"
+    ],
+    "delivery_status_is_strong_repair": false
+  },
+  "example": {
+    "yes_no_full_repair": true,
+    "ab_full_repair": false,
+    "independent_controls_correct": true,
+    "same_answers": [
+      "Yes",
+      "No",
+      "Yes",
+      "No",
+      "Yes",
+      "No",
+      "Yes"
+    ],
+    "correct_donor_reverse_error_origins": [
+      6,
+      7
+    ]
+  },
+  "method": {
+    "target_layers": [
+      16,
+      23
+    ],
+    "comparison_layers": [
+      24,
+      31
+    ],
+    "histories": 8,
+    "complete_current_record_reference_required": true,
+    "before_questions": true,
+    "keys_other_values_weights_and_recipient_prompt_fixed": true
+  }
+}

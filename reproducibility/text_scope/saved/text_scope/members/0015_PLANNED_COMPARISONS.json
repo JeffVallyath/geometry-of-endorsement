@@ -1,0 +1,44 @@
+[
+  {
+    "left": "gemma9_t4",
+    "right": "gemma9_c1",
+    "method": "EXISTING_CORRECTION",
+    "status": "NOT_ASSESSABLE",
+    "reason": "HISTORICAL_BRIDGE_NOT_PASSED"
+  },
+  {
+    "left": "gemma9_t4",
+    "right": "gemma9_c1",
+    "method": "LATEST_SAME_WORDING",
+    "status": "NOT_ASSESSABLE",
+    "reason": "HISTORICAL_BRIDGE_NOT_PASSED"
+  },
+  {
+    "left": "qwen4_t4",
+    "right": "qwen8_t4",
+    "method": "EXISTING_CORRECTION",
+    "status": "NOT_ASSESSABLE",
+    "reason": "HISTORICAL_BRIDGE_NOT_PASSED"
+  },
+  {
+    "left": "qwen4_t4",
+    "right": "qwen8_t4",
+    "method": "LATEST_SAME_WORDING",
+    "status": "NOT_ASSESSABLE",
+    "reason": "HISTORICAL_BRIDGE_NOT_PASSED"
+  },
+  {
+    "left": "qwen32_t4",
+    "right": "qwen8_t4",
+    "method": "EXISTING_CORRECTION",
+    "status": "NOT_ASSESSABLE",
+    "reason": "MISSING_COMPLETE_ROW"
+  },
+  {
+    "left": "qwen32_t4",
+    "right": "qwen8_t4",
+    "method": "LATEST_SAME_WORDING",
+    "status": "NOT_ASSESSABLE",
+    "reason": "MISSING_COMPLETE_ROW"
+  }
+]

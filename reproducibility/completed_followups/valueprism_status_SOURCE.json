@@ -1,0 +1,33 @@
+{
+    "schema":  "COMPLETED_DELIVERY_COMPACT_V1",
+    "archive":  "VALUEPRISM_BENCHMARK_REUSE_CPU_STOP_20260919.zip",
+    "archive_bytes":  22857943,
+    "archive_sha256":  "674d279a75b26928bfdab3510b9c92f326866b71a8a1e40211f954409a9d4214",
+    "intake":  "Every original declared member verified before selection; original retained externally by digest.",
+    "scope":  "Selected original evidence, lossless gzip only. No new inference or runtime attestation.",
+    "files":  [
+                  {
+                      "path":  "saved/valueprism_status/MANIFEST.json",
+                      "member":  "MANIFEST.json",
+                      "encoding":  "verbatim",
+                      "bytes":  15440,
+                      "sha256":  "99cf0ad1cdbd2217e36df962a4d1d93729d0500c4b00d71fbe91e5b20cae34b3",
+                      "original_bytes":  15440,
+                      "original_sha256":  "99cf0ad1cdbd2217e36df962a4d1d93729d0500c4b00d71fbe91e5b20cae34b3"
+                  },
+                  {
+                      "path":  "saved/valueprism_status/STATUS.md",
+                      "member":  "STATUS.md",
+                      "encoding":  "verbatim",
+                      "bytes":  950,
+                      "sha256":  "2c28ebfb03d99be034fe02740369db854e74fb5bebd351cac189153fc14179d6",
+                      "original_bytes":  3545,
+                      "original_sha256":  "9501260ffcd89d605c772cc79abe7d33a575ed35779297fa1a590f968689152d",
+                      "privacy_derivative":  {
+                                                 "bytes":  950,
+                                                 "sha256":  "2c28ebfb03d99be034fe02740369db854e74fb5bebd351cac189153fc14179d6",
+                                                 "reason":  "Operational metadata removed; original member identity remains separately bound."
+                                             }
+                  }
+              ]
+}

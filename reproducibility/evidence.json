@@ -31,7 +31,12 @@
     "state_sufficiency": "reproducibility/state_sufficiency/headline_values.json",
     "state_spec": "reproducibility/state_sufficiency/v10/specification_summary.json",
     "qwen_public": "reproducibility/in_context_updates/results.json",
-    "update_methods": "reproducibility/update_method_comparison/results.json"
+    "update_methods": "reproducibility/update_method_comparison/results.json",
+    "preupdate": "reproducibility/preupdate_route/EXPECTED.json",
+    "fresh_history": "reproducibility/fresh_history_validation/CLAIMS.json",
+    "cpu_audit": "reproducibility/state_sufficiency/cpu_audit/summary.json",
+    "question_blind_repair": "reproducibility/question_blind_repair/CLAIMS.json",
+    "qwen32": "reproducibility/qwen32_full_forward/CLAIMS.json"
   },
   "definitions": [
     {
@@ -3677,6 +3682,599 @@
           ],
           "unsupported": [],
           "provenance": "Computed from every saved ORIGIN row; paired root bootstrap with both original seeds."
+        },
+        {
+          "id": "preupdate_negative_screen",
+          "heading_pattern": "^Deleting pre-update messages failed the low-harm screen$",
+          "numbers": [
+            {
+              "path": "preupdate.historical_cases",
+              "decimals": 0
+            },
+            {
+              "path": "preupdate.joint_errors.N",
+              "decimals": 0
+            },
+            {
+              "path": "preupdate.joint_errors.K",
+              "decimals": 0
+            },
+            {
+              "path": "preupdate.joint_errors.SCTRL",
+              "decimals": 0
+            },
+            {
+              "path": "preupdate.joint_responses",
+              "decimals": 0,
+              "thousands": true
+            },
+            {
+              "path": "preupdate.direct_new_errors",
+              "decimals": 0
+            },
+            {
+              "path": "preupdate.direct_responses",
+              "decimals": 0
+            },
+            {
+              "path": "preupdate.new_joint_errors",
+              "decimals": 0
+            },
+            {
+              "path": "preupdate.corrected_joint_errors",
+              "decimals": 0
+            },
+            {
+              "path": "preupdate.failed_gates",
+              "decimals": 0
+            },
+            {
+              "path": "preupdate.total_gates",
+              "decimals": 0
+            },
+            {
+              "path": "preupdate.final_cases_planned",
+              "decimals": 0
+            },
+            {
+              "path": "preupdate.final_cases_run",
+              "decimals": 0
+            }
+          ],
+          "facts": [
+            {
+              "id": "closed-historical-screen",
+              "description": "The gate failed on historical cases; fresh final outcomes do not exist.",
+              "all_of": [
+                "historical",
+                "(?:stopped before|never).*final cases",
+                "(?:failed|failure).*admission"
+              ],
+              "source_evidence": [
+                {
+                  "path": "preupdate.failed_gates",
+                  "equals": 4
+                },
+                {
+                  "path": "preupdate.final_cases_run",
+                  "equals": 0
+                },
+                {
+                  "path": "preupdate.status",
+                  "equals": "NO_ACTIONABLE_DIRECT_PREUPDATE_ROUTE"
+                }
+              ]
+            },
+            {
+              "id": "fixed-procedure-scope",
+              "description": "The negative finding concerns a fixed low-harm procedure and leaves other upstream influences open.",
+              "all_of": [
+                "fixed (?:deletion )?procedure",
+                "low.harm",
+                "(?:other|every|all) upstream"
+              ],
+              "any_of": [
+                "(?:other|every|all) upstream.*(?:unresolved|open)",
+                "(?:does not|cannot).*(?:exclude|rule out|disprove).*(?:other|every|all) upstream"
+              ]
+            },
+            {
+              "id": "historical-statistical-unit",
+              "description": "Seeds, histories and questions are repeated measurements within cases.",
+              "all_of": [
+                "(?:seeds|histories).*repeated measurements.*cases"
+              ],
+              "source_evidence": [
+                {
+                  "path": "preupdate.historical_cases",
+                  "equals": 16
+                }
+              ]
+            }
+          ],
+          "unsupported": [
+            {
+              "id": "upstream-absence-overclaim",
+              "pattern": "(?:rules? out|disproves?|excludes?) (?:every|all) upstream",
+              "reason": "Only the fixed deletion procedure failed its low-harm gate."
+            },
+            {
+              "id": "historical-screen-is-not-fresh-confirmation",
+              "pattern": "(?:fresh|final).{0,25}(?:128.case|population) (?:result|estimate|efficacy)",
+              "reason": "No fresh final outcomes were measured."
+            }
+          ]
+        },
+        {
+          "id": "fresh_history_confirmation_and_utility",
+          "heading_pattern": "^Fresh confirmation and held-out validation$",
+          "numbers": [
+            {
+              "path": "fresh_history.primary.cases",
+              "decimals": 0,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "fresh_history.primary.observations",
+              "decimals": 0,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "fresh_history.primary.contributing_cases",
+              "decimals": 0,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "fresh_history.primary.rate",
+              "decimals": 4,
+              "percent": true,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "fresh_history.primary.interval95.0",
+              "decimals": 4,
+              "percent": true,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "fresh_history.primary.interval95.1",
+              "decimals": 4,
+              "percent": true,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "fresh_history.interval_level",
+              "decimals": 0,
+              "percent": true,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "fresh_history.repeats.logical_records",
+              "decimals": 0,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "fresh_history.retention_fraction",
+              "decimals": 0,
+              "percent": true,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "fresh_history.utility.B_minus_A_50pct",
+              "decimals": 4,
+              "percent": true,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "fresh_history.utility.interval95.0",
+              "decimals": 4,
+              "percent": true,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "fresh_history.utility.interval95.1",
+              "decimals": 4,
+              "percent": true,
+              "required": true,
+              "headline": true
+            }
+          ],
+          "facts": [
+            {
+              "id": "fresh-controls-before-outcomes",
+              "description": "Fresh controls precede outcomes; V10 stays primary and repeated measurements stay within cases.",
+              "all_of": [
+                "(?:fixed|locked|specified).*before (?:new )?outcomes",
+                "V10.*(?:original primary|primary study)",
+                "separate denominator",
+                "both stored seeds",
+                "one learned activation.update family",
+                "(?:seeds|formats).*within cases"
+              ]
+            },
+            {
+              "id": "fresh-utility-uncertainty",
+              "description": "Keep the named No/Yes endpoint and the inconclusive practical result beside confirmation.",
+              "all_of": [
+                "No/Yes",
+                "(?:uncertain|inconclusive)",
+                "interval (?:includes|spans|crosses|straddles) zero"
+              ],
+              "source_evidence": [
+                {
+                  "path": "fresh_history.utility.interval95.0",
+                  "lt": 0
+                },
+                {
+                  "path": "fresh_history.utility.interval95.1",
+                  "gt": 0
+                },
+                {
+                  "path": "fresh_history.utility.interface",
+                  "equals": "literal No/Yes"
+                }
+              ]
+            },
+            {
+              "id": "fresh-exact-repeat",
+              "description": "Exact repeat equality is distinct from acceptance tolerance.",
+              "all_of": [
+                "(?:four|4) positive cases.*repeat",
+                "(?:zero score difference|identical scores)",
+                "(?:identical|unchanged|no recorded).*(?:hard.answer|token.binding)"
+              ],
+              "source_evidence": [
+                {
+                  "path": "fresh_history.repeats.cases",
+                  "equals": 4
+                },
+                {
+                  "path": "fresh_history.repeats.strictly_equal",
+                  "equals": true
+                }
+              ]
+            }
+          ],
+          "unsupported": [
+            {
+              "id": "utility-superiority-unproved",
+              "pattern": "practical (?:advantage|benefit) (?:is |has been )?(?:established|proven|demonstrated)",
+              "reason": "The utility interval includes zero."
+            },
+            {
+              "id": "fresh-measurements-not-independent-cases",
+              "pattern": "(?:seeds|formats|repeats) (?:are|provide) independent cases",
+              "reason": "The statistical unit is the case."
+            }
+          ]
+        },
+        {
+          "id": "fresh_history_post_hoc",
+          "heading_pattern": "^Post-hoc diagnostics on the fresh cases$",
+          "numbers": [
+            {
+              "path": "fresh_history.post_hoc.exact_token_inventory_observations",
+              "decimals": 0,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "fresh_history.post_hoc.exact_token_inventory_cases",
+              "decimals": 0,
+              "required": true,
+              "headline": true
+            }
+          ],
+          "facts": [
+            {
+              "id": "withheld-target-misses",
+              "description": "Thirteen qualifying withheld-target observations span seven cases and both validators accept all thirteen.",
+              "all_of": [
+                "Thirteen full.criterion observations have a withheld target",
+                "spanning seven cases",
+                "Both validators accept",
+                "for all thirteen"
+              ],
+              "source_evidence": [
+                {
+                  "path": "fresh_history.post_hoc.withheld_target_observations",
+                  "equals": 13
+                },
+                {
+                  "path": "fresh_history.post_hoc.withheld_target_cases",
+                  "equals": 7
+                },
+                {
+                  "path": "fresh_history.post_hoc.withheld_target_both_accept",
+                  "equals": 13
+                }
+              ]
+            },
+            {
+              "id": "post-hoc-token-scope",
+              "description": "Token-inventory sensitivity is post hoc and does not match order or relational associations.",
+              "all_of": [
+                "exactly equal token.ID inventories, including multiplicity",
+                "Token order and name.relation associations remain different",
+                "post.hoc diagnostics, separate from the frozen primary and utility endpoints"
+              ],
+              "source_evidence": [
+                {
+                  "path": "fresh_history.post_hoc.classification",
+                  "equals": "POST_HOC_DIAGNOSTICS_NOT_FROZEN_ENDPOINTS"
+                }
+              ]
+            }
+          ],
+          "unsupported": []
+        },
+        {
+          "id": "v10_cpu_audit",
+          "heading_pattern": "^Post-hoc controls on the same saved runs$",
+          "numbers": [
+            {
+              "path": "cpu_audit.original_witnesses",
+              "decimals": 0,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "cpu_audit.shared_designs",
+              "decimals": 0,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "cpu_audit.controls.G0.matched",
+              "decimals": 0,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "cpu_audit.controls.G2a.matched",
+              "decimals": 0,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "cpu_audit.controls.G2a.designs",
+              "decimals": 0,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "cpu_audit.controls.G2b.matched",
+              "decimals": 0,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "cpu_audit.controls.G2b.designs",
+              "decimals": 0,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "cpu_audit.controls.G2ab.matched",
+              "decimals": 0,
+              "required": true,
+              "headline": true
+            },
+            {
+              "path": "cpu_audit.controls.G2ab.designs",
+              "decimals": 0,
+              "required": true,
+              "headline": true
+            }
+          ],
+          "facts": [
+            {
+              "id": "post-hoc-same-evidence",
+              "description": "The audit remains post hoc and the earlier G2 interpretation is superseded, not independent evidence.",
+              "all_of": [
+                "post.hoc",
+                "same saved|saved V10",
+                "supersede",
+                "earlier analysis of these same outputs"
+              ]
+            },
+            {
+              "id": "distinct-logical-controls",
+              "description": "Same-pair checks are the other two logically sufficient functions; cross-pair checks refer to other pairs.",
+              "all_of": [
+                "other\\s+two logically sufficient compositions of the same relation pair",
+                "cross.pair control requires correct compositions on the other relation\\s+pairs"
+              ]
+            },
+            {
+              "id": "learned-concentration",
+              "description": "Stronger cross-pair survival is concentrated in learned conditions.",
+              "all_of": [
+                "concentrated in learned.update",
+                "textual.update survival is sparse"
+              ],
+              "source_evidence": [
+                {
+                  "path": "cpu_audit.controls.G2b.learned",
+                  "equals": 76
+                },
+                {
+                  "path": "cpu_audit.controls.G2b.textual",
+                  "equals": 6
+                }
+              ]
+            },
+            {
+              "id": "remaining-confounds",
+              "description": "Matching excludes two measured explanations, leaving lexical, position and changed-relation differences.",
+              "all_of": [
+                "changed.fact count",
+                "prefix.token length",
+                "Lexical content, clause\\s+position and which relation was previously different remain unmatched",
+                "correlated opportunities",
+                "rather than a new prospective prevalence"
+              ]
+            }
+          ],
+          "unsupported": []
+        },
+        {
+          "id": "question_blind_repair",
+          "heading_pattern": "^Refreshing stored values before the question partially repairs later answers$",
+          "numbers": [
+            {
+              "path": "question_blind_repair.primary.cases",
+              "decimals": 0
+            },
+            {
+              "path": "question_blind_repair.primary.B_repairs",
+              "decimals": 0
+            },
+            {
+              "path": "question_blind_repair.primary.baseline_W",
+              "decimals": 0
+            },
+            {
+              "path": "question_blind_repair.primary.repaired_designs",
+              "decimals": 0
+            },
+            {
+              "path": "question_blind_repair.primary.C_repairs",
+              "decimals": 0
+            },
+            {
+              "path": "question_blind_repair.primary.B_joint_damage",
+              "decimals": 0
+            },
+            {
+              "path": "question_blind_repair.primary.B_direct_damage",
+              "decimals": 0
+            },
+            {
+              "path": "question_blind_repair.primary.treated_qualifying_witnesses",
+              "decimals": 0
+            },
+            {
+              "path": "question_blind_repair.primary.B_repair_rate",
+              "percent": true,
+              "decimals": 1
+            },
+            {
+              "path": "question_blind_repair.primary.strong_repair_threshold",
+              "percent": true,
+              "decimals": 0
+            },
+            {
+              "path": "question_blind_repair.primary.joint_response_denominator",
+              "decimals": 0,
+              "thousands": true
+            },
+            {
+              "path": "question_blind_repair.primary.A_joint_errors",
+              "decimals": 0,
+              "thousands": true
+            },
+            {
+              "path": "question_blind_repair.primary.B_joint_errors",
+              "decimals": 0,
+              "thousands": true
+            },
+            {
+              "path": "question_blind_repair.primary.D_joint_errors",
+              "decimals": 0,
+              "thousands": true
+            }
+          ],
+          "facts": [
+            {
+              "id": "primary-repair-scope",
+              "description": "Prospective partial repair with the original failed threshold and required full reference.",
+              "all_of": [
+                "strong.repair.{0,80}(?:fail|not met)",
+                "complete current.{0,12}record"
+              ],
+              "source_evidence": [
+                {
+                  "path": "question_blind_repair.primary.cases",
+                  "equals": 256
+                },
+                {
+                  "path": "question_blind_repair.primary.strong_repair",
+                  "equals": false
+                },
+                {
+                  "path": "question_blind_repair.post_hoc.new_independent_observations",
+                  "equals": 0
+                },
+                {
+                  "path": "question_blind_repair.post_hoc.delivery_status_is_strong_repair",
+                  "equals": false
+                },
+                {
+                  "path": "question_blind_repair.example.ab_full_repair",
+                  "equals": false
+                },
+                {
+                  "path": "question_blind_repair.method.complete_current_record_reference_required",
+                  "equals": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "question_blind_repair_repeats",
+          "heading_pattern": "^Selected successful-case reproducibility$",
+          "numbers": [],
+          "facts": [
+            {
+              "id": "selected-repeat-scope",
+              "description": "Post-hoc repeats preserve the primary population, failed format and donor boundary.",
+              "all_of": [
+                "post.hoc",
+                "(?:sample|population).{0,80}unchanged",
+                "A/B.{0,50}(?:fail|not)",
+                "(?:correct donor|donor.{0,30}correct)"
+              ],
+              "source_evidence": [
+                {
+                  "path": "question_blind_repair.primary.cases",
+                  "equals": 256
+                },
+                {
+                  "path": "question_blind_repair.primary.strong_repair",
+                  "equals": false
+                },
+                {
+                  "path": "question_blind_repair.post_hoc.new_independent_observations",
+                  "equals": 0
+                },
+                {
+                  "path": "question_blind_repair.post_hoc.delivery_status_is_strong_repair",
+                  "equals": false
+                },
+                {
+                  "path": "question_blind_repair.example.ab_full_repair",
+                  "equals": false
+                },
+                {
+                  "path": "question_blind_repair.method.complete_current_record_reference_required",
+                  "equals": true
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -4423,6 +5021,112 @@
           ],
           "unsupported": [],
           "provenance": "Main-paper interpretation. Full original numerical bindings and technical qualifications are retained independently in caption_details."
+        },
+        {
+          "id": "repair_population",
+          "heading_pattern": "^Repair population$",
+          "numbers": [],
+          "literals": [],
+          "facts": [
+            {
+              "id": "interpretation",
+              "description": "Preserve source-bound outcome and scope.",
+              "all_of": [
+                "misses the strong.repair threshold",
+                "damage",
+                "full current.record reference",
+                "required to prepare both"
+              ],
+              "source_evidence": [
+                {
+                  "path": "question_blind_repair.primary.strong_repair",
+                  "equals": false
+                }
+              ]
+            }
+          ],
+          "unsupported": [],
+          "provenance": "Existing completed source packages; gallery promotion only, stable original figure IDs."
+        },
+        {
+          "id": "repeated_repair_example",
+          "heading_pattern": "^Repeated Esme and Vera example$",
+          "numbers": [],
+          "literals": [],
+          "facts": [
+            {
+              "id": "interpretation",
+              "description": "Preserve source-bound outcome and scope.",
+              "all_of": [
+                "post.hoc.selected",
+                "repeated",
+                "fails in counterbalanced A/B",
+                "reverse transfer"
+              ],
+              "source_evidence": [
+                {
+                  "path": "question_blind_repair.example.ab_full_repair",
+                  "equals": false
+                }
+              ]
+            }
+          ],
+          "unsupported": [],
+          "provenance": "Existing completed source packages; gallery promotion only, stable original figure IDs."
+        },
+        {
+          "id": "breadth_scope",
+          "heading_pattern": "^Textual breadth and stronger criteria$",
+          "numbers": [],
+          "literals": [],
+          "facts": [
+            {
+              "id": "interpretation",
+              "description": "Preserve source-bound outcome and scope.",
+              "all_of": [
+                "unmeasured cached path",
+                "stateless full.prompt",
+                "strongest cross.format result remains zero",
+                "prevent a scaling comparison"
+              ],
+              "source_evidence": [
+                {
+                  "path": "qwen32.methods.EXISTING_CORRECTION.strongest",
+                  "equals": 0
+                },
+                {
+                  "path": "qwen32.methods.LATEST_SAME_WORDING.strongest",
+                  "equals": 0
+                },
+                {
+                  "path": "qwen32.scaling_comparison_supported",
+                  "equals": false
+                }
+              ]
+            }
+          ],
+          "unsupported": [],
+          "provenance": "Existing completed source packages; gallery promotion only, stable original figure IDs."
+        },
+        {
+          "id": "fresh_gallery",
+          "heading_pattern": "^Fresh confirmation and validation utility$",
+          "numbers": [],
+          "literals": [],
+          "facts": [
+            {
+              "id": "interpretation",
+              "description": "Preserve source-bound outcome and scope.",
+              "all_of": [
+                "fixed.*before new outcomes",
+                "remains uncertain",
+                "equal read budget and retention"
+              ],
+              "source_evidence": []
+            }
+          ],
+          "unsupported": [],
+          "provenance": "Existing completed source packages; gallery promotion only, stable original figure IDs."
         }
       ]
     },
@@ -6229,6 +6933,183 @@
           ],
           "unsupported": [],
           "provenance": "Computed from every saved ORIGIN row; paired root bootstrap with both original seeds."
+        },
+        {
+          "id": "fresh_confirmation",
+          "heading_pattern": "^Fresh matched-history confirmation$",
+          "numbers": [
+            {
+              "path": "fresh_history.primary.cases",
+              "decimals": 0
+            },
+            {
+              "path": "fresh_history.primary.contributing_cases",
+              "decimals": 0
+            },
+            {
+              "path": "fresh_history.primary.observations",
+              "decimals": 0
+            },
+            {
+              "path": "fresh_history.primary.rate",
+              "decimals": 4,
+              "percent": true
+            },
+            {
+              "path": "fresh_history.interval_level",
+              "decimals": 0,
+              "percent": true
+            },
+            {
+              "path": "fresh_history.primary.interval95.0",
+              "decimals": 4,
+              "percent": true
+            },
+            {
+              "path": "fresh_history.primary.interval95.1",
+              "decimals": 4,
+              "percent": true
+            }
+          ],
+          "facts": [
+            {
+              "id": "fresh-scope-and-units",
+              "description": "Prospective one-model confirmation with cases as the statistical unit.",
+              "all_of": [
+                "before outcomes",
+                "Gemma",
+                "one model",
+                "one learned.update family",
+                "(?:seeds|formats).*within cases",
+                "[Ii]neligible.*denominator",
+                "separate.*original primary"
+              ]
+            }
+          ],
+          "unsupported": []
+        },
+        {
+          "id": "fresh_utility",
+          "heading_pattern": "^Held-out validation utility$",
+          "numbers": [
+            {
+              "path": "fresh_history.retention_fraction",
+              "decimals": 0,
+              "percent": true
+            },
+            {
+              "path": "fresh_history.utility.B_minus_A_50pct",
+              "decimals": 4,
+              "percent": true
+            },
+            {
+              "path": "fresh_history.interval_level",
+              "decimals": 0,
+              "percent": true
+            },
+            {
+              "path": "fresh_history.utility.interval95.0",
+              "decimals": 4,
+              "percent": true
+            },
+            {
+              "path": "fresh_history.utility.interval95.1",
+              "decimals": 4,
+              "percent": true
+            }
+          ],
+          "facts": [
+            {
+              "id": "utility-remains-inconclusive",
+              "description": "Equal-budget and equal-retention comparison with an interval crossing zero.",
+              "all_of": [
+                "same question budget",
+                "equal retention",
+                "No/Yes",
+                "(?:inconclusive|uncertain)",
+                "interval (?:spans|includes|crosses) zero"
+              ],
+              "source_evidence": [
+                {
+                  "path": "fresh_history.utility.interval95.0",
+                  "lt": 0
+                },
+                {
+                  "path": "fresh_history.utility.interval95.1",
+                  "gt": 0
+                }
+              ]
+            }
+          ],
+          "unsupported": []
+        },
+        {
+          "id": "preupdate_screen",
+          "heading_pattern": "^Pre-update deletion screen$",
+          "numbers": [],
+          "facts": [
+            {
+              "id": "historical-negative-screen",
+              "description": "Descriptive failed admission screen, with no fresh final outcomes.",
+              "all_of": [
+                "historical",
+                "(?:failed|failure)",
+                "final cases.*(?:never|not).*run"
+              ],
+              "source_evidence": [
+                {
+                  "path": "preupdate.failed_gates",
+                  "equals": 4
+                },
+                {
+                  "path": "preupdate.total_gates",
+                  "equals": 5
+                },
+                {
+                  "path": "preupdate.final_cases_run",
+                  "equals": 0
+                }
+              ]
+            }
+          ],
+          "unsupported": []
+        },
+        {
+          "id": "question_blind_repair",
+          "heading_pattern": "^Question-blind repair$",
+          "numbers": [],
+          "facts": [
+            {
+              "id": "repair-illustration-scope",
+              "description": "Selected example retains the failed second format and correct-donor reverse error.",
+              "source_evidence": [
+                {
+                  "path": "question_blind_repair.primary.cases",
+                  "equals": 256
+                },
+                {
+                  "path": "question_blind_repair.primary.strong_repair",
+                  "equals": false
+                },
+                {
+                  "path": "question_blind_repair.post_hoc.new_independent_observations",
+                  "equals": 0
+                },
+                {
+                  "path": "question_blind_repair.post_hoc.delivery_status_is_strong_repair",
+                  "equals": false
+                },
+                {
+                  "path": "question_blind_repair.example.ab_full_repair",
+                  "equals": false
+                },
+                {
+                  "path": "question_blind_repair.method.complete_current_record_reference_required",
+                  "equals": true
+                }
+              ]
+            }
+          ]
         }
       ]
     }
@@ -6490,6 +7371,36 @@
       "id": "strong-witness-recurrence",
       "path": "state_sufficiency.strong.*.count",
       "gt": 0
+    },
+    {
+      "id": "question-blind-repair-scope-0",
+      "path": "question_blind_repair.primary.cases",
+      "equals": 256
+    },
+    {
+      "id": "question-blind-repair-scope-1",
+      "path": "question_blind_repair.primary.strong_repair",
+      "equals": false
+    },
+    {
+      "id": "question-blind-repair-scope-2",
+      "path": "question_blind_repair.post_hoc.new_independent_observations",
+      "equals": 0
+    },
+    {
+      "id": "question-blind-repair-scope-3",
+      "path": "question_blind_repair.post_hoc.delivery_status_is_strong_repair",
+      "equals": false
+    },
+    {
+      "id": "question-blind-repair-scope-4",
+      "path": "question_blind_repair.example.ab_full_repair",
+      "equals": false
+    },
+    {
+      "id": "question-blind-repair-scope-5",
+      "path": "question_blind_repair.method.complete_current_record_reference_required",
+      "equals": true
     }
   ]
 }

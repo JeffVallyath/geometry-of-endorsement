@@ -1,0 +1,200 @@
+{
+  "status": "SCIENTIFIC_COMPLETE",
+  "unique_score_rows": 1422,
+  "complete_schedule": true,
+  "raw_metrics_recomputed": true,
+  "exact_original_token_records": true,
+  "inference_performed_by_postprocessor": false,
+  "checks": {
+    "carrier_tensors_recomputed": 78,
+    "writer_selection_recomputed": true,
+    "all_128_ranks_literal_forward_only": true,
+    "frozen_top_sets_recomputed": {
+      "TOP1": [
+        [
+          19,
+          15
+        ]
+      ],
+      "TOP2": [
+        [
+          19,
+          15
+        ],
+        [
+          18,
+          3
+        ]
+      ],
+      "TOP4": [
+        [
+          19,
+          15
+        ],
+        [
+          18,
+          3
+        ],
+        [
+          23,
+          12
+        ],
+        [
+          20,
+          11
+        ]
+      ],
+      "TOP8": [
+        [
+          19,
+          15
+        ],
+        [
+          18,
+          3
+        ],
+        [
+          23,
+          12
+        ],
+        [
+          20,
+          11
+        ],
+        [
+          21,
+          0
+        ],
+        [
+          23,
+          14
+        ],
+        [
+          17,
+          0
+        ],
+        [
+          21,
+          9
+        ]
+      ]
+    },
+    "reader_selection_training_only": true,
+    "chain_all_cells_and_same_site_restore": 12
+  },
+  "selected_writer": {
+    "component": [
+      16,
+      "ATTN"
+    ],
+    "name": "L16_ATTN_ONLY",
+    "direct_passes": 8,
+    "worst_joint_fraction": 0.08770845174712055,
+    "worst_carrier_projection": 0.09792352314326944
+  },
+  "selected_reader": {
+    "selected": "TOP8",
+    "status": "NO_QUALIFIED_READER_SET",
+    "training_outcomes": {
+      "TOP1": {
+        "block_fraction": 0.3244987613154758,
+        "inject_fraction": 0.11855704984748586,
+        "mediation_score": 0.11855704984748586,
+        "sign": -1,
+        "reference_gap": 9.986416028346866,
+        "qualified_training": false,
+        "checks": [
+          false,
+          true,
+          true,
+          false,
+          true,
+          true
+        ]
+      },
+      "TOP2": {
+        "block_fraction": 0.48072351465300833,
+        "inject_fraction": 0.21278411076679388,
+        "mediation_score": 0.21278411076679388,
+        "sign": -1,
+        "reference_gap": 9.986416028346866,
+        "qualified_training": false,
+        "checks": [
+          true,
+          true,
+          true,
+          false,
+          true,
+          true
+        ]
+      },
+      "TOP4": {
+        "block_fraction": 0.7435616716264996,
+        "inject_fraction": 0.5632666796631486,
+        "mediation_score": 0.5632666796631486,
+        "sign": -1,
+        "reference_gap": 9.986416028346866,
+        "qualified_training": false,
+        "checks": [
+          true,
+          true,
+          true,
+          false,
+          true,
+          true
+        ]
+      },
+      "TOP8": {
+        "block_fraction": 0.8882350903432971,
+        "inject_fraction": 0.7777574880208111,
+        "mediation_score": 0.7777574880208111,
+        "sign": -1,
+        "reference_gap": 9.986416028346866,
+        "qualified_training": false,
+        "checks": [
+          true,
+          true,
+          true,
+          true,
+          true,
+          true
+        ]
+      }
+    },
+    "frozen_before_coded_and_reverse": true,
+    "sites": [
+      [
+        19,
+        15
+      ],
+      [
+        18,
+        3
+      ],
+      [
+        23,
+        12
+      ],
+      [
+        20,
+        11
+      ],
+      [
+        21,
+        0
+      ],
+      [
+        23,
+        14
+      ],
+      [
+        17,
+        0
+      ],
+      [
+        21,
+        9
+      ]
+    ]
+  }
+}

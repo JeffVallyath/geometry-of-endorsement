@@ -1,0 +1,41 @@
+{
+  "pid": 25473,
+  "row_id": "llama8_t4",
+  "phase": "repeat0",
+  "started_at": "2026-09-19T03:10:39.021308+00:00",
+  "load_seconds": 14.957026529000359,
+  "backbone": {
+    "model": {
+      "key": "llama8_t4",
+      "id": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+      "hidden": 4096,
+      "layers": 32,
+      "cap": null,
+      "site": 0,
+      "sites": [],
+      "late_site": 0,
+      "template_kwargs": {}
+    },
+    "dtype": "torch.bfloat16",
+    "device": "cuda:0",
+    "hidden": 4096,
+    "vocab": 128256,
+    "final_logit_softcapping": null,
+    "template_kwargs": {},
+    "generation_prompt": "<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n",
+    "attn_implementation": "sdpa",
+    "fp32_readout": true,
+    "tf32_disabled": true,
+    "serving": "ORIGINAL_KV_CLONE_SINGLE_QUESTION",
+    "editor_loaded": false,
+    "writer_hooks": 0,
+    "unmodified_parameters": true,
+    "dev_gate_amendment_sha256": "4a4409042ccf2d51d4244e7c410cf5fdbab41eda1596b11c2827f9b7a4fe345d",
+    "amended_dev_check_sha256": "534a2e21741ddc9205d50a777f2a88f2de3d9197ff60ffd46df8e902547af215",
+    "metadata_probe_repair_sha256": "7e27151f99c7fc17ebe182a0d954c66be0fa7375bfce178a0a8bfd2690e3d46d"
+  },
+  "capsule_sha256": "1d5974846c4d0a657a577e8d3aef22d541a4563cdc025300c10930615f0fbe6e",
+  "readout_semantics": "BORROWED_FULL_VOCAB_FP32",
+  "single_question": true
+}

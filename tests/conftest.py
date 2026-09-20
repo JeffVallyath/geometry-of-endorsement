@@ -1,4 +1,6 @@
-"""Render test figures without requiring an optional desktop GUI toolkit."""
-import matplotlib
+"""The supported scientific CPU suite never requires a desktop GUI."""
+import os
 
-matplotlib.use("Agg")
+# Process-local test configuration; do not edit the user's matplotlibrc.
+# Keep this stdlib-only so the fresh-study NumPy-only checks stay lightweight.
+os.environ['MPLBACKEND'] = 'Agg'

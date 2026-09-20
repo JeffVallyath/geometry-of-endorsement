@@ -1,0 +1,44 @@
+[
+  {
+    "file": "REPEAT_COMPARISON.json",
+    "byte_identical": true,
+    "expected_sha256": "468c1ddd62f4b37c92f6d77ab9131f87cc03a6f07d8dfec4c553c00c2832978b",
+    "actual_sha256": "468c1ddd62f4b37c92f6d77ab9131f87cc03a6f07d8dfec4c553c00c2832978b"
+  },
+  {
+    "file": "SELECTED_RECOUNT.json",
+    "byte_identical": true,
+    "expected_sha256": "96272cfb5be51638c84a8ca7c1627bc5efdf6ab53f13719baf0614961bc8968c",
+    "actual_sha256": "96272cfb5be51638c84a8ca7c1627bc5efdf6ab53f13719baf0614961bc8968c"
+  },
+  {
+    "file": "TARGETS.csv",
+    "byte_identical": true,
+    "expected_sha256": "37f36acede9711684cbc826d407ea17bf028302dafabc250a0d08ec8b292dc6b",
+    "actual_sha256": "37f36acede9711684cbc826d407ea17bf028302dafabc250a0d08ec8b292dc6b"
+  },
+  {
+    "file": "FAMILIES.csv",
+    "byte_identical": true,
+    "expected_sha256": "0e2a1b92db46705eef8135e59a3134b52de50046733cb0f1048419b839b6908c",
+    "actual_sha256": "0e2a1b92db46705eef8135e59a3134b52de50046733cb0f1048419b839b6908c"
+  },
+  {
+    "file": "REVERSE_TARGETS.csv",
+    "byte_identical": true,
+    "expected_sha256": "a148fd21ac7f889c119a7a325e478a1fa42745ed358f3556cd3a81329a3f900e",
+    "actual_sha256": "a148fd21ac7f889c119a7a325e478a1fa42745ed358f3556cd3a81329a3f900e"
+  },
+  {
+    "file": "DONOR_AGREEMENT.csv",
+    "byte_identical": true,
+    "expected_sha256": "1a5b7f70ec362f32009755a00e138ca02cb16da23990749f1a1713183981532f",
+    "actual_sha256": "1a5b7f70ec362f32009755a00e138ca02cb16da23990749f1a1713183981532f"
+  },
+  {
+    "file": "WORKED_EXAMPLE.csv",
+    "byte_identical": true,
+    "expected_sha256": "83d0bacbb15a525d223fe8b8d9f2dce799c15a8b45d1ec8592bc9bc0e69b2d51",
+    "actual_sha256": "83d0bacbb15a525d223fe8b8d9f2dce799c15a8b45d1ec8592bc9bc0e69b2d51"
+  }
+]

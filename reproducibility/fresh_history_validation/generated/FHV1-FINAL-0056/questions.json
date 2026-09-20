@@ -1,0 +1,580 @@
+[
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "FHV1-FINAL-0056-d0-00",
+    "root_id": "FHV1-FINAL-0056",
+    "spec": {
+      "a": 1,
+      "b": 2,
+      "kind": "direct",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does Nico favor the Meadow proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "FHV1-FINAL-0056-d0-01",
+    "root_id": "FHV1-FINAL-0056",
+    "spec": {
+      "a": 1,
+      "b": 2,
+      "kind": "opposes",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does Nico oppose the Meadow proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "FHV1-FINAL-0056-d0-02",
+    "root_id": "FHV1-FINAL-0056",
+    "spec": {
+      "a": 1,
+      "b": 2,
+      "kind": "same",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Do Nico and Uma take the same side on Meadow?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "FHV1-FINAL-0056-d0-03",
+    "root_id": "FHV1-FINAL-0056",
+    "spec": {
+      "a": 2,
+      "b": 1,
+      "kind": "direct",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does Uma favor the Meadow proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "FHV1-FINAL-0056-d0-04",
+    "root_id": "FHV1-FINAL-0056",
+    "spec": {
+      "a": 2,
+      "b": 1,
+      "kind": "opposes",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does Uma oppose the Meadow proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "FHV1-FINAL-0056-d0-05",
+    "root_id": "FHV1-FINAL-0056",
+    "spec": {
+      "a": 1,
+      "b": 2,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Nico favor the Orchard proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "FHV1-FINAL-0056-d0-06",
+    "root_id": "FHV1-FINAL-0056",
+    "spec": {
+      "a": 1,
+      "b": 2,
+      "kind": "both",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Is the Meadow proposal supported by both Nico and Uma?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "FHV1-FINAL-0056-d0-07",
+    "root_id": "FHV1-FINAL-0056",
+    "spec": {
+      "a": 1,
+      "b": 2,
+      "kind": "either",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Nico and Uma support Meadow?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "FHV1-FINAL-0056-d0-08",
+    "root_id": "FHV1-FINAL-0056",
+    "spec": {
+      "a": 3,
+      "b": 1,
+      "kind": "same",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Do Quin and Nico take the same side on Meadow?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "FHV1-FINAL-0056-d0-09",
+    "root_id": "FHV1-FINAL-0056",
+    "spec": {
+      "a": 3,
+      "b": 1,
+      "kind": "both",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Is the Meadow proposal supported by both Quin and Nico?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "FHV1-FINAL-0056-d0-10",
+    "root_id": "FHV1-FINAL-0056",
+    "spec": {
+      "a": 3,
+      "b": 1,
+      "kind": "either",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Quin and Nico support Meadow?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "FHV1-FINAL-0056-d0-11",
+    "root_id": "FHV1-FINAL-0056",
+    "spec": {
+      "a": 3,
+      "b": 1,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Quin favor the Orchard proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "FHV1-FINAL-0056-d0-extra0",
+    "root_id": "FHV1-FINAL-0056",
+    "spec": {
+      "a": 3,
+      "b": 1,
+      "kind": "direct",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does Quin favor the Meadow proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "FHV1-FINAL-0056-d0-extra1",
+    "root_id": "FHV1-FINAL-0056",
+    "spec": {
+      "a": 2,
+      "b": 3,
+      "kind": "same",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Do Uma and Quin take the same side on Meadow?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "FHV1-FINAL-0056-d0-extra2",
+    "root_id": "FHV1-FINAL-0056",
+    "spec": {
+      "a": 2,
+      "b": 3,
+      "kind": "both",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Is the Meadow proposal supported by both Uma and Quin?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "FHV1-FINAL-0056-d0-extra3",
+    "root_id": "FHV1-FINAL-0056",
+    "spec": {
+      "a": 2,
+      "b": 3,
+      "kind": "either",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Uma and Quin support Meadow?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "FHV1-FINAL-0056-d0-extra4",
+    "root_id": "FHV1-FINAL-0056",
+    "spec": {
+      "a": 0,
+      "b": 1,
+      "kind": "direct",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does Faye favor the Meadow proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "FHV1-FINAL-0056-d1-00",
+    "root_id": "FHV1-FINAL-0056",
+    "spec": {
+      "a": 1,
+      "b": 2,
+      "kind": "direct",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does Nico favor the Meadow proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "FHV1-FINAL-0056-d1-01",
+    "root_id": "FHV1-FINAL-0056",
+    "spec": {
+      "a": 1,
+      "b": 2,
+      "kind": "opposes",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does Nico oppose the Meadow proposal?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "FHV1-FINAL-0056-d1-02",
+    "root_id": "FHV1-FINAL-0056",
+    "spec": {
+      "a": 1,
+      "b": 2,
+      "kind": "same",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Do Nico and Uma take the same side on Meadow?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "FHV1-FINAL-0056-d1-03",
+    "root_id": "FHV1-FINAL-0056",
+    "spec": {
+      "a": 2,
+      "b": 1,
+      "kind": "direct",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does Uma favor the Meadow proposal?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "FHV1-FINAL-0056-d1-04",
+    "root_id": "FHV1-FINAL-0056",
+    "spec": {
+      "a": 2,
+      "b": 1,
+      "kind": "opposes",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does Uma oppose the Meadow proposal?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "FHV1-FINAL-0056-d1-05",
+    "root_id": "FHV1-FINAL-0056",
+    "spec": {
+      "a": 1,
+      "b": 2,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Nico favor the Orchard proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "FHV1-FINAL-0056-d1-06",
+    "root_id": "FHV1-FINAL-0056",
+    "spec": {
+      "a": 1,
+      "b": 2,
+      "kind": "both",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Is the Meadow proposal supported by both Nico and Uma?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "FHV1-FINAL-0056-d1-07",
+    "root_id": "FHV1-FINAL-0056",
+    "spec": {
+      "a": 1,
+      "b": 2,
+      "kind": "either",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Nico and Uma support Meadow?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "FHV1-FINAL-0056-d1-08",
+    "root_id": "FHV1-FINAL-0056",
+    "spec": {
+      "a": 3,
+      "b": 1,
+      "kind": "same",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Do Quin and Nico take the same side on Meadow?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "FHV1-FINAL-0056-d1-09",
+    "root_id": "FHV1-FINAL-0056",
+    "spec": {
+      "a": 3,
+      "b": 1,
+      "kind": "both",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Is the Meadow proposal supported by both Quin and Nico?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "FHV1-FINAL-0056-d1-10",
+    "root_id": "FHV1-FINAL-0056",
+    "spec": {
+      "a": 3,
+      "b": 1,
+      "kind": "either",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Quin and Nico support Meadow?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "FHV1-FINAL-0056-d1-11",
+    "root_id": "FHV1-FINAL-0056",
+    "spec": {
+      "a": 3,
+      "b": 1,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Quin favor the Orchard proposal?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "FHV1-FINAL-0056-d1-extra0",
+    "root_id": "FHV1-FINAL-0056",
+    "spec": {
+      "a": 3,
+      "b": 1,
+      "kind": "direct",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does Quin favor the Meadow proposal?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "FHV1-FINAL-0056-d1-extra1",
+    "root_id": "FHV1-FINAL-0056",
+    "spec": {
+      "a": 2,
+      "b": 3,
+      "kind": "same",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Do Uma and Quin take the same side on Meadow?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "FHV1-FINAL-0056-d1-extra2",
+    "root_id": "FHV1-FINAL-0056",
+    "spec": {
+      "a": 2,
+      "b": 3,
+      "kind": "both",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Is the Meadow proposal supported by both Uma and Quin?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "FHV1-FINAL-0056-d1-extra3",
+    "root_id": "FHV1-FINAL-0056",
+    "spec": {
+      "a": 2,
+      "b": 3,
+      "kind": "either",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Uma and Quin support Meadow?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "FHV1-FINAL-0056-d1-extra4",
+    "root_id": "FHV1-FINAL-0056",
+    "spec": {
+      "a": 0,
+      "b": 1,
+      "kind": "direct",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does Faye favor the Meadow proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  }
+]

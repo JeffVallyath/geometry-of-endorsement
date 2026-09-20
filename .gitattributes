@@ -32,3 +32,6 @@ reproducibility/fresh_inference/supplied/reproduction/STATE_SUFFICIENCY_CONFIRMA
 reproducibility/in_context_updates/supplied/review/parser_change.diff whitespace=cr-at-eol,-blank-at-eol
 src/geometry_of_truth/m1/support/build_confirmatory_split.py whitespace=cr-at-eol,-blank-at-eof
 src/geometry_of_truth/m1/support/dependence_power.py whitespace=cr-at-eol,-blank-at-eof
+# These immutable source copies retain their hash-bound trailing newline.
+reproducibility/qwen32_full_forward/saved/results/runtime/source/geometry-of-endorsement/src/repro/cpu_robustness.py whitespace=cr-at-eol,-blank-at-eof
+reproducibility/text_scope/saved/text_scope/members/1791_cpu_robustness.py whitespace=cr-at-eol,-blank-at-eof

@@ -8,6 +8,12 @@ import pytest
 from repro.common import ROOT
 
 GUIDES = [
+    'reproducibility/text_scope/README.md',
+    'reproducibility/completed_followups/README.md',
+    'reproducibility/qwen32_full_forward/README.md',
+    'reproducibility/qwen32_full_forward/WORKED_EXAMPLE.md',
+    'docs/PRIVACY_BOUNDARY.md', 'docs/TEAM_READINESS_CHECKS.md',
+    'docs/history/READABILITY_INTEGRATION_20260919.md',
     'README.md', 'PAPER_GUIDE.md', 'PROJECT_STRATEGY.md', 'REPRODUCIBILITY.md',
     'DATA_NOTICE.md', 'docs/RESULTS_AND_CLAIMS.md', 'figures/CAPTIONS.md',
     'figures/CAPTION_DETAILS.md',
@@ -17,6 +23,15 @@ GUIDES = [
     'reproducibility/in_context_updates/README.md',
     'reproducibility/update_method_comparison/README.md',
     'reproducibility/fresh_inference/README.md',
+    'reproducibility/fresh_history_validation/README.md',
+    'docs/FRESH_HISTORY_REPRODUCTION.md',
+    'reproducibility/preupdate_route/README.md',
+    'reproducibility/question_blind_repair/README.md',
+    'reproducibility/question_blind_repair/WORKED_EXAMPLE.md',
+    'reproducibility/question_blind_repair/INTEGRATION_REPORT.md',
+    'reproducibility/audits/preupdate_evidence_audit_20260919/README.md',
+    'reproducibility/fresh_history_validation/PORTABILITY.md',
+    'reproducibility/fresh_history_validation/examples/CASE_0017.md',
     'reproducibility/state_sufficiency/independent_verification/README.md',
     'reproducibility/memit_qualification/README.md',
     'docs/CACHE_CROSSOVER_APPENDIX.md',

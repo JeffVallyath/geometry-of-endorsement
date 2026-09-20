@@ -1,0 +1,95 @@
+{
+  "archives": [
+    {
+      "archive": "V10_CPU_AUDIT_RESULTS_20260917.zip",
+      "bytes": 2073223,
+      "members": 4,
+      "sha256": "8f0993a7460bc601662a3f85b2e2c00142e30374abf5d7b8ae5e162276fd8bda",
+      "source": "User-supplied local archive; not a remote download"
+    },
+    {
+      "archive": "V10_SAME_INSTANCE_CPU_RESULTS_20260917.zip",
+      "bytes": 27463090,
+      "members": 397,
+      "sha256": "c3f6072575464bfca648ad2c16058006e20fee3641224b4174a6a9fb549f5f4e",
+      "source": "User-supplied local archive; not a remote download"
+    }
+  ],
+  "borrowed_verifier": {
+    "adaptation": "Portable replay in src/repro/cpu_robustness.py; same scalar-score and Boolean-control logic, checkout-relative inputs, input integrity, fresh output directory and summary export.",
+    "sha256": "db9b3b5914aca35cc3742831ecf13067d50f5022b24280d33460d955eda06e57",
+    "source": "V10_CPU_AUDIT_20260917/check_audit.py"
+  },
+  "files": [
+    {
+      "bytes": 27164,
+      "path": "CPU_AUDIT_REPORT.md",
+      "sha256": "bf2b34f21c0dc2f3680e081e035962cb211af821dd0d7d1fb0aedba8e8c52dcb",
+      "source": "V10_CPU_AUDIT_RESULTS_20260917.zip:CPU_AUDIT_REPORT.md",
+      "transformation": "Operational privacy derivative; original preserved externally by original_sha256.",
+      "original_sha256": "859932f7e49075ede03cc942600c79b5ae273409ab223b7c5983b099695e906e",
+      "original_bytes": 27420
+    },
+    {
+      "bytes": 1986997,
+      "path": "GATE_SPEC.json",
+      "sha256": "67b4275d617f6d62f4cadeb76d5832a6961eddfe4541de52dc4a2fa9c21ad896",
+      "source": "V10_CPU_AUDIT_RESULTS_20260917.zip:GATE_SPEC.json",
+      "transformation": "Operational privacy derivative; original preserved externally by original_sha256.",
+      "original_sha256": "8ad59d7d31952f5cbdc9bd2c6eb62a0f9b87c886c306cc814302e4f82b23c765",
+      "original_bytes": 1987117
+    },
+    {
+      "bytes": 10364091,
+      "path": "RESULTS.csv",
+      "sha256": "6d2d02999abfed845e925cd7be7fce084a6af90b497955bfe7bbb5f3620c81c0",
+      "source": "V10_CPU_AUDIT_RESULTS_20260917.zip:RESULTS.csv",
+      "transformation": "Byte-for-byte copy"
+    },
+    {
+      "bytes": 8312790,
+      "path": "SURVIVORS.json",
+      "sha256": "f797ce02e239011ac80ba6036ed24d21637d4c9ccf368c41f7c7af52d6e44385",
+      "source": "V10_CPU_AUDIT_RESULTS_20260917.zip:SURVIVORS.json",
+      "transformation": "Byte-for-byte copy"
+    },
+    {
+      "bytes": 2142,
+      "path": "provenance/INCIDENT_001.md",
+      "sha256": "446082df77340c09bbe45ce789c8d247991138f7a43f4617bcf78f7ef72edc23",
+      "source": "V10_SAME_INSTANCE_CPU_RESULTS_20260917.zip:INCIDENT_001.md",
+      "transformation": "Byte-for-byte copy"
+    },
+    {
+      "bytes": 4018,
+      "path": "provenance/test_analysis.py",
+      "sha256": "f2c9d7b78041089af039e298cf323d483dc77648acce453432fd5680575d535c",
+      "source": "V10_SAME_INSTANCE_CPU_RESULTS_20260917.zip:analysis/test_analysis.py",
+      "transformation": "Byte-for-byte copy"
+    },
+    {
+      "bytes": 430,
+      "path": "provenance/prior_receipt.json",
+      "sha256": "0e1984785a89df5fccda7efc0fbbff2ec6bb8df1c72e6c7091a345edbe619a16",
+      "source": "V10_SAME_INSTANCE_CPU_RESULTS_20260917.receipt.json",
+      "transformation": "Operational privacy derivative; original preserved externally by original_sha256.",
+      "original_sha256": "d391675c1471b079ee128df66b9cf87cc7ce8959b1581e6a21e67378f135ca9b",
+      "original_bytes": 511
+    }
+  ],
+  "integrity": {
+    "boundary": "Byte consistency and retained receipts, not independent attestation of the original neural execution.",
+    "canonical_archive": "Four allowlisted members; no internal manifest was supplied. Digests recorded at intake. Gate and CSV match the successful run receipt; all four members match the final audit workspace.",
+    "capsule_members_verified": 14,
+    "capsule_sha256": "1416d6acf2a743f0db95778f46b1c449ca21e902a3436138076b323d3964ee8a",
+    "completed_at": "2026-09-18T04:55:12Z",
+    "prior_declared_members_verified": 396,
+    "run_state": "SUCCEEDED",
+    "shared_input_files_verified": 225
+  },
+  "schema_version": 1,
+  "scientific_status": "Post-hoc reanalysis of frozen V10 outputs; earlier G2 interpretation superseded, not independent evidence.",
+  "tool_versions": {
+    "python": "3.13.12"
+  }
+}

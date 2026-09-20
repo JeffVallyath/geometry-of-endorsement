@@ -1,0 +1,133 @@
+{
+  "scope": "Offline saved-evidence verification; no model execution or live-provider attestation",
+  "commands": [
+    {
+      "argv": [
+        "tools/run_capsule.py",
+        "extract",
+        "--archive",
+        "capsules/qbrv-r2.zip",
+        "--out",
+        "<fresh-output>\\capsule",
+        "--sha256",
+        "c31b5602355fe4cbbc7a79450d8847c7e91f2319501c7c9279b0bb0468e15afb"
+      ],
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "tools/artifact_export.py",
+        "--verify",
+        "--out",
+        "raw/final_export.zip",
+        "--extract",
+        "<fresh-output>\\fresh",
+        "--capsule-hash",
+        "c31b5602355fe4cbbc7a79450d8847c7e91f2319501c7c9279b0bb0468e15afb"
+      ],
+      "returncode": 0
+    },
+    {
+      "argv": [
+        "tools/replay.py",
+        "--capsule",
+        "<fresh-output>\\capsule",
+        "--seed0",
+        "reference/seed0/scientific",
+        "--seed1",
+        "reference/seed1/scientific",
+        "--fresh",
+        "<fresh-output>\\fresh\\scientific",
+        "--output",
+        "<fresh-output>\\replay"
+      ],
+      "returncode": 0
+    }
+  ],
+  "products": {
+    "REPEAT_COMPARISON.json": "468c1ddd62f4b37c92f6d77ab9131f87cc03a6f07d8dfec4c553c00c2832978b",
+    "SELECTED_RECOUNT.json": "96272cfb5be51638c84a8ca7c1627bc5efdf6ab53f13719baf0614961bc8968c",
+    "TARGETS.csv": "37f36acede9711684cbc826d407ea17bf028302dafabc250a0d08ec8b292dc6b",
+    "FAMILIES.csv": "0e2a1b92db46705eef8135e59a3134b52de50046733cb0f1048419b839b6908c",
+    "REVERSE_TARGETS.csv": "a148fd21ac7f889c119a7a325e478a1fa42745ed358f3556cd3a81329a3f900e",
+    "DONOR_AGREEMENT.csv": "1a5b7f70ec362f32009755a00e138ca02cb16da23990749f1a1713183981532f",
+    "WORKED_EXAMPLE.csv": "83d0bacbb15a525d223fe8b8d9f2dce799c15a8b45d1ec8592bc9bc0e69b2d51"
+  },
+  "primary_recount": {
+    "raw_rows": 435200,
+    "baseline_W": 83,
+    "B_repairs": 36,
+    "C_repairs": 2,
+    "treated_qualifying_witnesses": 75,
+    "baseline_witnesses_retained": 35,
+    "new_qualifying_witnesses": 40,
+    "baseline_ceased_qualifying_without_repair": 12,
+    "B_direct_damage": 76,
+    "B_direct_corrections": 84,
+    "A_joint_errors": 3490,
+    "B_joint_errors": 2893,
+    "B_joint_damage": 347,
+    "B_joint_corrections": 944,
+    "C_joint_errors": 3494,
+    "D_joint_errors": 2000,
+    "cases": 256,
+    "treated_witness_cases": 58,
+    "repaired_designs": 28
+  },
+  "status": "PASS",
+  "scientific_products_exact": 7,
+  "original_reference_members_exact": 74,
+  "original_capsule_members_exact": 2742,
+  "primary_outer_members": 506,
+  "verification_outer_members": 134,
+  "original_uncertainty_family": {
+    "direct_harm": {
+      "estimate": 0.0015462239583333333,
+      "interval9875": [
+        0.0008748372395833333,
+        0.0023193359375
+      ]
+    },
+    "efficacy": {
+      "estimate": 0.003689236111111111,
+      "interval9875": [
+        0.002061631944444445,
+        0.005642361111111108
+      ]
+    },
+    "joint_harm": {
+      "estimate": 0.004706488715277778,
+      "interval9875": [
+        0.0035942925347222186,
+        0.0059407552083333365
+      ]
+    },
+    "net_joint_error": {
+      "estimate": -0.008097330729166664,
+      "interval9875": [
+        -0.010403103298611122,
+        -0.005791558159722226
+      ]
+    }
+  },
+  "archive_sha256": {
+    "primary": "f95a0a20daca0bbc51fa8942b1d2ce03c275e9fca8d72abebd094454c10c7608",
+    "verification": "590772eb9f4148a714bd7c22ce769925beb9890bdab0f81654a75934427ed188",
+    "handoff": "645483a5353e9f72598cb4c7c86dc6b2e3f23cc59fce0cc79578458b3b6376d8"
+  },
+  "capsule_sha256": {
+    "primary": "22bc13ee9b3cc7369741339d4f8f2f74b1577db6bf513e49e1dcb5cecd14da49",
+    "verification": "c31b5602355fe4cbbc7a79450d8847c7e91f2319501c7c9279b0bb0468e15afb"
+  },
+  "repeat_comparison": {
+    "blocks": 14,
+    "max_score_delta": 0.0,
+    "new_independent_observations": 0,
+    "physical_rows": 14076,
+    "post_hoc_selection": true,
+    "primary_bootstrap_unchanged": true,
+    "score_binding_exact_blocks": 14,
+    "status": "ALL_RETAINED_SCORE_BINDINGS_REPRODUCED"
+  },
+  "local_path_annotations_normalized": true
+}

@@ -1,0 +1,580 @@
+[
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0045-d0-00",
+    "root_id": "SSC1-FINAL-0045",
+    "spec": {
+      "a": 1,
+      "b": 2,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Wren favor the Garden proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0045-d0-01",
+    "root_id": "SSC1-FINAL-0045",
+    "spec": {
+      "a": 1,
+      "b": 2,
+      "kind": "opposes",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Wren oppose the Garden proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0045-d0-02",
+    "root_id": "SSC1-FINAL-0045",
+    "spec": {
+      "a": 1,
+      "b": 2,
+      "kind": "same",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Do Wren and Juno take the same side on Garden?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0045-d0-03",
+    "root_id": "SSC1-FINAL-0045",
+    "spec": {
+      "a": 2,
+      "b": 1,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Juno favor the Garden proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0045-d0-04",
+    "root_id": "SSC1-FINAL-0045",
+    "spec": {
+      "a": 2,
+      "b": 1,
+      "kind": "opposes",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Juno oppose the Garden proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0045-d0-05",
+    "root_id": "SSC1-FINAL-0045",
+    "spec": {
+      "a": 1,
+      "b": 2,
+      "kind": "direct",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does Wren favor the Orchard proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0045-d0-06",
+    "root_id": "SSC1-FINAL-0045",
+    "spec": {
+      "a": 1,
+      "b": 2,
+      "kind": "both",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Is the Garden proposal supported by both Wren and Juno?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0045-d0-07",
+    "root_id": "SSC1-FINAL-0045",
+    "spec": {
+      "a": 1,
+      "b": 2,
+      "kind": "either",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Wren and Juno support Garden?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0045-d0-08",
+    "root_id": "SSC1-FINAL-0045",
+    "spec": {
+      "a": 3,
+      "b": 1,
+      "kind": "same",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Do Eli and Wren take the same side on Garden?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0045-d0-09",
+    "root_id": "SSC1-FINAL-0045",
+    "spec": {
+      "a": 3,
+      "b": 1,
+      "kind": "both",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Is the Garden proposal supported by both Eli and Wren?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0045-d0-10",
+    "root_id": "SSC1-FINAL-0045",
+    "spec": {
+      "a": 3,
+      "b": 1,
+      "kind": "either",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Eli and Wren support Garden?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0045-d0-11",
+    "root_id": "SSC1-FINAL-0045",
+    "spec": {
+      "a": 3,
+      "b": 1,
+      "kind": "direct",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does Eli favor the Orchard proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0045-d0-extra0",
+    "root_id": "SSC1-FINAL-0045",
+    "spec": {
+      "a": 3,
+      "b": 1,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Eli favor the Garden proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0045-d0-extra1",
+    "root_id": "SSC1-FINAL-0045",
+    "spec": {
+      "a": 2,
+      "b": 3,
+      "kind": "same",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Do Juno and Eli take the same side on Garden?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0045-d0-extra2",
+    "root_id": "SSC1-FINAL-0045",
+    "spec": {
+      "a": 2,
+      "b": 3,
+      "kind": "both",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Is the Garden proposal supported by both Juno and Eli?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0045-d0-extra3",
+    "root_id": "SSC1-FINAL-0045",
+    "spec": {
+      "a": 2,
+      "b": 3,
+      "kind": "either",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Juno and Eli support Garden?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "No",
+      "Yes"
+    ],
+    "query_id": "SSC1-FINAL-0045-d0-extra4",
+    "root_id": "SSC1-FINAL-0045",
+    "spec": {
+      "a": 0,
+      "b": 1,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Hugo favor the Garden proposal?\nAnswer with exactly one of No, Yes."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-FINAL-0045-d1-00",
+    "root_id": "SSC1-FINAL-0045",
+    "spec": {
+      "a": 1,
+      "b": 2,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Wren favor the Garden proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-FINAL-0045-d1-01",
+    "root_id": "SSC1-FINAL-0045",
+    "spec": {
+      "a": 1,
+      "b": 2,
+      "kind": "opposes",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Wren oppose the Garden proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0045-d1-02",
+    "root_id": "SSC1-FINAL-0045",
+    "spec": {
+      "a": 1,
+      "b": 2,
+      "kind": "same",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Do Wren and Juno take the same side on Garden?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-FINAL-0045-d1-03",
+    "root_id": "SSC1-FINAL-0045",
+    "spec": {
+      "a": 2,
+      "b": 1,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Juno favor the Garden proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-FINAL-0045-d1-04",
+    "root_id": "SSC1-FINAL-0045",
+    "spec": {
+      "a": 2,
+      "b": 1,
+      "kind": "opposes",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Juno oppose the Garden proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0045-d1-05",
+    "root_id": "SSC1-FINAL-0045",
+    "spec": {
+      "a": 1,
+      "b": 2,
+      "kind": "direct",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does Wren favor the Orchard proposal?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0045-d1-06",
+    "root_id": "SSC1-FINAL-0045",
+    "spec": {
+      "a": 1,
+      "b": 2,
+      "kind": "both",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Is the Garden proposal supported by both Wren and Juno?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0045-d1-07",
+    "root_id": "SSC1-FINAL-0045",
+    "spec": {
+      "a": 1,
+      "b": 2,
+      "kind": "either",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Wren and Juno support Garden?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-FINAL-0045-d1-08",
+    "root_id": "SSC1-FINAL-0045",
+    "spec": {
+      "a": 3,
+      "b": 1,
+      "kind": "same",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Do Eli and Wren take the same side on Garden?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0045-d1-09",
+    "root_id": "SSC1-FINAL-0045",
+    "spec": {
+      "a": 3,
+      "b": 1,
+      "kind": "both",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Is the Garden proposal supported by both Eli and Wren?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0045-d1-10",
+    "root_id": "SSC1-FINAL-0045",
+    "spec": {
+      "a": 3,
+      "b": 1,
+      "kind": "either",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Eli and Wren support Garden?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-FINAL-0045-d1-11",
+    "root_id": "SSC1-FINAL-0045",
+    "spec": {
+      "a": 3,
+      "b": 1,
+      "kind": "direct",
+      "p": 1
+    },
+    "split": "FINAL",
+    "text": "Does Eli favor the Orchard proposal?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0045-d1-extra0",
+    "root_id": "SSC1-FINAL-0045",
+    "spec": {
+      "a": 3,
+      "b": 1,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Eli favor the Garden proposal?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "A",
+      "B"
+    ],
+    "query_id": "SSC1-FINAL-0045-d1-extra1",
+    "root_id": "SSC1-FINAL-0045",
+    "spec": {
+      "a": 2,
+      "b": 3,
+      "kind": "same",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Do Juno and Eli take the same side on Garden?\nUse B for yes and A for no.\nAnswer with exactly one of A, B."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0045-d1-extra2",
+    "root_id": "SSC1-FINAL-0045",
+    "spec": {
+      "a": 2,
+      "b": 3,
+      "kind": "both",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Is the Garden proposal supported by both Juno and Eli?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0045-d1-extra3",
+    "root_id": "SSC1-FINAL-0045",
+    "spec": {
+      "a": 2,
+      "b": 3,
+      "kind": "either",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does at least one of Juno and Eli support Garden?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  },
+  {
+    "family": "familiar",
+    "labels": [
+      "B",
+      "A"
+    ],
+    "query_id": "SSC1-FINAL-0045-d1-extra4",
+    "root_id": "SSC1-FINAL-0045",
+    "spec": {
+      "a": 0,
+      "b": 1,
+      "kind": "direct",
+      "p": 0
+    },
+    "split": "FINAL",
+    "text": "Does Hugo favor the Garden proposal?\nUse A for yes and B for no.\nAnswer with exactly one of B, A."
+  }
+]

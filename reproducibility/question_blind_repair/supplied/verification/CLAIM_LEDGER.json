@@ -1,0 +1,230 @@
+{
+  "original_outcome_independent_repeat_panel": {
+    "archived_version_unchanged": true,
+    "cases": 8,
+    "full_criterion_B_repairs": 0
+  },
+  "original_prospective_result": {
+    "A_joint_errors": 3490,
+    "B_direct_corrections": 84,
+    "B_direct_damage": 76,
+    "B_joint_corrections": 944,
+    "B_joint_damage": 347,
+    "B_joint_errors": 2893,
+    "B_repair_rate": 0.43373493975903615,
+    "B_repairs": 36,
+    "C_repairs": 2,
+    "D_joint_errors": 2000,
+    "baseline_W": 83,
+    "all_primary_response_damage": {
+      "B": {"direct": 76, "joint": 347, "oppositional": 50},
+      "C": {"direct": 3, "joint": 59, "oppositional": 2},
+      "D": {"direct": 111, "joint": 686, "oppositional": 63}
+    },
+    "B_previously_complete_case_damage": {"seed0": 11, "seed1": 3},
+    "baseline_ceased_qualifying_without_repair": 12,
+    "baseline_witnesses_retained": 35,
+    "cases": 256,
+    "failed_requirement": "At least 50% of baseline qualifying observations repaired",
+    "joint_response_denominator": 73728,
+    "new_qualifying_witnesses": 40,
+    "primary_bootstrap_and_sample_size_unchanged": true,
+    "strong_repair": false,
+    "treated_qualifying_witnesses": 75,
+    "treated_witness_cases": 58
+  },
+  "post_hoc_verification": {
+    "anchor_case": "QBR1-FINAL-0225",
+    "cases": 6,
+    "new_independent_observations": 0,
+    "score_binding_reproduction_status": "ALL_RETAINED_SCORE_BINDINGS_REPRODUCED",
+    "seeds": [
+      0,
+      1
+    ],
+    "selected_recount": {
+      "B_remaining_qualifying_witnesses": 3,
+      "B_repairs": 8,
+      "C_repairs": 0,
+      "baseline_W": 9,
+      "case_seed_blocks": 12,
+      "eligible_RB_targets": 3,
+      "eligible_RC_targets": 0,
+      "response_counts": [
+        {
+          "arm": "A",
+          "baseline_correct": 1145,
+          "benefit": 0,
+          "correct": 1145,
+          "family": "direct",
+          "harm": 0,
+          "invalid": 0,
+          "scheduled": 1152
+        },
+        {
+          "arm": "B",
+          "baseline_correct": 1145,
+          "benefit": 0,
+          "correct": 1142,
+          "family": "direct",
+          "harm": 3,
+          "invalid": 0,
+          "scheduled": 1152
+        },
+        {
+          "arm": "C",
+          "baseline_correct": 1145,
+          "benefit": 0,
+          "correct": 1145,
+          "family": "direct",
+          "harm": 0,
+          "invalid": 0,
+          "scheduled": 1152
+        },
+        {
+          "arm": "D",
+          "baseline_correct": 1145,
+          "benefit": 1,
+          "correct": 1144,
+          "family": "direct",
+          "harm": 2,
+          "invalid": 0,
+          "scheduled": 1152
+        },
+        {
+          "arm": "A",
+          "baseline_correct": 1672,
+          "benefit": 0,
+          "correct": 1672,
+          "family": "joint",
+          "harm": 0,
+          "invalid": 0,
+          "scheduled": 1728
+        },
+        {
+          "arm": "B",
+          "baseline_correct": 1672,
+          "benefit": 24,
+          "correct": 1694,
+          "family": "joint",
+          "harm": 2,
+          "invalid": 0,
+          "scheduled": 1728
+        },
+        {
+          "arm": "C",
+          "baseline_correct": 1672,
+          "benefit": 1,
+          "correct": 1673,
+          "family": "joint",
+          "harm": 0,
+          "invalid": 0,
+          "scheduled": 1728
+        },
+        {
+          "arm": "D",
+          "baseline_correct": 1672,
+          "benefit": 44,
+          "correct": 1712,
+          "family": "joint",
+          "harm": 4,
+          "invalid": 0,
+          "scheduled": 1728
+        },
+        {
+          "arm": "A",
+          "baseline_correct": 381,
+          "benefit": 0,
+          "correct": 381,
+          "family": "opposes",
+          "harm": 0,
+          "invalid": 0,
+          "scheduled": 384
+        },
+        {
+          "arm": "B",
+          "baseline_correct": 381,
+          "benefit": 0,
+          "correct": 381,
+          "family": "opposes",
+          "harm": 0,
+          "invalid": 0,
+          "scheduled": 384
+        },
+        {
+          "arm": "C",
+          "baseline_correct": 381,
+          "benefit": 0,
+          "correct": 381,
+          "family": "opposes",
+          "harm": 0,
+          "invalid": 0,
+          "scheduled": 384
+        },
+        {
+          "arm": "D",
+          "baseline_correct": 381,
+          "benefit": 3,
+          "correct": 384,
+          "family": "opposes",
+          "harm": 0,
+          "invalid": 0,
+          "scheduled": 384
+        },
+        {
+          "arm": "A",
+          "baseline_correct": 3198,
+          "benefit": 0,
+          "correct": 3198,
+          "family": "all34",
+          "harm": 0,
+          "invalid": 0,
+          "scheduled": 3264
+        },
+        {
+          "arm": "B",
+          "baseline_correct": 3198,
+          "benefit": 24,
+          "correct": 3217,
+          "family": "all34",
+          "harm": 5,
+          "invalid": 0,
+          "scheduled": 3264
+        },
+        {
+          "arm": "C",
+          "baseline_correct": 3198,
+          "benefit": 1,
+          "correct": 3199,
+          "family": "all34",
+          "harm": 0,
+          "invalid": 0,
+          "scheduled": 3264
+        },
+        {
+          "arm": "D",
+          "baseline_correct": 3198,
+          "benefit": 48,
+          "correct": 3240,
+          "family": "all34",
+          "harm": 6,
+          "invalid": 0,
+          "scheduled": 3264
+        }
+      ],
+      "selected_cases": 6,
+      "target_rows": 216
+    },
+    "selection": "First four successful roots in frozen order plus two forward/reverse overlap roots"
+  },
+  "prohibited_inferences": [
+    "No new population evidence or new success threshold",
+    "No strong-repair pass",
+    "No compute-saving advantage over the stronger full reference",
+    "No unique or complete natural source-to-cache-to-answer mechanism",
+    "No moral-probe causality or cross-model generality",
+    "Do not describe every reverse error as replaying an originally wrong donor",
+    "Do not turn the 43.4% original-cohort repair rate into a net reduction of all witnesses"
+  ],
+  "supported_updated_claim": "The prospectively observed partial, current-record-reference-assisted correction was reproduced on six post-hoc selected successful cases and the fixed same-case reverse examples."
+}

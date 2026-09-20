@@ -75,6 +75,7 @@ identities and unavailable inputs are in the [artifact manifest](reproducibility
 | Source-history sufficiency, independent per-example verification | [Collaborator package](reproducibility/state_sufficiency/independent_verification/README.md); commands below | Reconstructs semantic labels, eligibility, witnesses and intervals from saved scores; no original analysis imports or neural rerun |
 | Six-case causal cache intervention | `python -m repro.cache_crossover --output reproduced/causal-panel`; [package](reproducibility/cache_crossover/README.md) | Saved-score normalization and all classifications/controls; selected cases |
 | Matched one-case causal extension | `python scripts/export_cache_crossover.py --output reproduced/causal-extension` | Both formats and strict direct checks; separate retrospective case |
+| Question-blind prospective repair and selected-case verification | `python -m repro.question_blind_repair`; [evidence and full replay](reproducibility/question_blind_repair/README.md) | Compact source/table checks by default; both external archives are required for raw replay; selected repeats remain separate from the primary sample |
 | Public-data Qwen/Ripple extension | `python -m repro.in_context_updates --output reproduced/qwen`; [package](reproducibility/in_context_updates/README.md) | Frozen analyzer replay of all saved responses with both parsers, including qualification and repeats |
 | Matched-history update-method comparison | `python -m repro.update_methods --output reproduced/update-methods`; [package](reproducibility/update_method_comparison/README.md) | All saved primary scores, four contrasts and intervals, four CSVs; no new inference |
 | MEMIT/GPT-J MQuAKE qualification | [Compact source records](reproducibility/memit_qualification/README.md) | Pretrained inference ran but failed reference qualification; no FINAL result; summary-level verification |
@@ -122,6 +123,45 @@ the original question subset remains a separate result. Identical wrong answers
 do not satisfy source independence. Repetition alone cannot convert a low-quality
 single edit into success. Original qualification amendments and post-outcome
 descriptive interval additions remain disclosed.
+
+## Completed follow-up replays
+
+These commands only process saved evidence; they do not load models or call
+remote services. Use a new output directory for each replay.
+
+```sh
+python -m repro.cpu_robustness --output reproduced/cpu-audit
+python -m repro.fresh_history --output reproduced/fresh-history
+python -m repro.preupdate_route
+```
+
+The [fresh-history reader guide](docs/FRESH_HISTORY_REPRODUCTION.md) explains the
+prospective method and its statistical units. It sits outside the unchanged,
+hash-bound scientific package.
+
+The deletion check recomputes the historical table totals and admission gates.
+Its separate full replay verifies the external archive's members and reconstructs
+the decision from saved scores. The versioned helper normalizes CRLF only when
+comparing regenerated SVGs; archive and evidence integrity remain byte-exact.
+The [bounded audit](reproducibility/audits/preupdate_evidence_audit_20260919/README.md)
+is retained as internal source-review provenance, with no new neural evidence.
+
+The fresh-study replay reconstructs all primary rows and the equal-retention
+utility comparison from saved scores. Seeds and formats remain nested within
+cases. It keeps the named endpoint and all retention-level sensitivities.
+Identities and scientific classifications require exact equality; finite
+recomputed floating-point summaries allow absolute error 1e-12 and zero relative
+tolerance. Original repeated scores have zero difference across all 2,312 logical
+records, which is stronger than merely passing the frozen 1e-6 acceptance rule.
+The [post-hoc diagnostics and full example](reproducibility/fresh_history_validation/README.md#post-hoc-diagnostics)
+remain separate from the frozen analyses.
+
+The post-hoc audit verifies every exported control flag against the saved
+per-example scores. The [claim-to-source map](PAPER_GUIDE.md#post-hoc-robustness)
+identifies the canonical artifacts and replay fields. Its
+[floating-point recovery note](reproducibility/state_sufficiency/README.md#floating-point-recovery)
+records a technical equality-check failure and the unchanged scientific
+classifications. It is separate from the scientific result.
 
 ## Three levels of reproduction
 

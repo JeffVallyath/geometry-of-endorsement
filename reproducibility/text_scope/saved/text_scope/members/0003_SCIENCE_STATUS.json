@@ -1,0 +1,32 @@
+{
+  "status": "COMPLETE_WITH_EXPLICIT_TECHNICAL_AND_COMPARISON_LIMITATIONS",
+  "created_at": "2026-09-19T04:59:05.612266+00:00",
+  "new_rows_planned": 4,
+  "new_rows_complete": 3,
+  "new_rows_not_measured": [
+    "qwen32_t4"
+  ],
+  "final_roots": 192,
+  "final_scores": 110976,
+  "missing_planned_final_scores": 36992,
+  "repeat_scores": 6528,
+  "pretrained_forwards": 125285,
+  "scored_evaluations": 120984,
+  "historical_bridges_passed": 0,
+  "planned_contrasts_assessable": 0,
+  "dev_amended_after_dev_before_final": true,
+  "provider_terminal_verified": true,
+  "instance_id": "b5dc722268d546328ce1e025a97714c3",
+  "allocations_in_lineage": 2,
+  "cumulative_billable_seconds_upper_bound": 21469.63025,
+  "cumulative_compute_usd_upper_bound": 19.620856534027777,
+  "all_in_cost_including_unspent_reserved_contingency_upper_bound": 40.140856534027776,
+  "cost_is_not_provider_invoice": true,
+  "model_weight_payloads": false,
+  "source_commit": "8483416553e79556c1710d9b9d61249ffb5e837f",
+  "executed_parent_capsule_sha256": "1d5974846c4d0a657a577e8d3aef22d541a4563cdc025300c10930615f0fbe6e",
+  "dev_amendment_sha256": "4a4409042ccf2d51d4244e7c410cf5fdbab41eda1596b11c2827f9b7a4fe345d",
+  "custody_archive_sha256": "3efce91db09cacdb6fc3e131f0b1f1fe6fc627158325fc48b361bca637fa8520",
+  "superseded_cpu_archive_sha256": "64a163860986bf000f650b44359dab67e33bc283b90e6e749b8e72a1771837dc",
+  "superseded_neural_delivery_sha256": "9f455724f72d5c7139033e8b15ccad0fa27b5da80abce1b338d0a5cfdf4aeb93"
+}

@@ -27,6 +27,8 @@ selection. These are development data.
 
 <a id="figure-1--decodability-across-layers"></a>
 
+![Decodability across model layers](fig01_layer_sweep.png)
+
 The support/opposition relation becomes linearly decodable in later layers.
 We fit a separate readout at each layer and evaluate all layers on the same
 paired situations and considerations.
@@ -41,6 +43,8 @@ separate data.
 ## Figure 2: Scorers at the selected layer
 
 <a id="figure-2--scorers-at-the-selected-layer"></a>
+
+![Scorers evaluated at each selected layer](fig02_scorer_comparison.png)
 
 The support/opposition readout separates the relation labels more strongly than
 the text-only comparator. We evaluate both on the same paired situations and
@@ -57,6 +61,8 @@ The text comparator retains a small positive signal.
 ## Figure 3: Checkerboard interaction against the permutation null
 
 <a id="figure-3--checkerboard-interaction-against-the-permutation-null"></a>
+
+![Observed interactions and randomized-label baselines](fig03_permutation_null.png)
 
 The observed relation signal exceeds the randomized-label baseline.
 We randomly reverse support/opposition labels by training situation.
@@ -76,6 +82,8 @@ Gemma's smaller permutation sample gives coarser p-values.
 
 <a id="figure-4--factual-truefalse-positive-control"></a>
 
+![Factual truth control across answer mappings](fig04_truth_control.png)
+
 Both models pass the factual-truth control.
 We use statements with known truth values and reverse which neutral answer
 symbol means True or False.
@@ -93,6 +101,8 @@ The later-layer divergence between mappings shows residual answer-format sensiti
 ## Figure 5: Specificity
 
 <a id="figure-5--specificity"></a>
+
+![Relation specificity and held-out answer wording](fig05_specificity.png)
 
 The relation readout retains a large point estimate under new answer wording.
 We keep the evaluation examples and measurement scale fixed.
@@ -286,3 +296,54 @@ Stable joint answers can still be wrong.
 [Methods and evidence](CAPTION_DETAILS.md#supplementary-figure-s3-descriptive-history-dependence-in-archived-cases).
 
 [original PNG](supplementary/figS3_v6_source_history.png) · [original PDF](supplementary/figS3_v6_source_history.pdf) · [Case statistics](../reproducibility/relational_editing/v6/scores/source_root_statistics.json.gz) · [synthetic source worlds](../reproducibility/relational_editing/v6/data/gemma_source_roots.jsonl) · [unchanged plot data](../artifacts/figures/consequence_comparisons.json) · [the archival plotting code](../src/repro/consequence_figures.py)
+
+## Repair population
+
+![Original repair and damage endpoints](../reproducibility/question_blind_repair/supplied/primary/figures/POPULATION_REPAIR_DAMAGE.svg)
+
+Targeted partial refresh repairs more qualifying answers than the comparison
+refresh, but misses the strong-repair threshold. The original plot shows the
+repair and damage endpoints, with their adjusted intervals. The
+[population accounting table](../reproducibility/question_blind_repair/README.md#prospective-result)
+also compares joint errors with the full current-record reference, which is
+more accurate and is required to prepare both partial refreshes.
+
+## Repeated Esme and Vera example
+
+Both people support the Library proposal. Each question is asked independently.
+Targeted refresh corrects the same-side answer; reverse transfer makes the full
+reference answer incorrectly. This post-hoc-selected example was repeated.
+
+| Question | Edited first history | Edited second history | Targeted refresh | Comparison refresh | Full reference | Reverse targeted | Reverse comparison |
+|---|---|---|---|---|---|---|---|
+| Does Esme favor Library? | Yes | Yes | Yes | Yes | Yes | Yes | Yes |
+| Does Vera favor Library? | Yes | Yes | Yes | Yes | Yes | Yes | Yes |
+| Do they take the same side? | Yes | No | Yes | No | Yes | No | Yes |
+| Do both support Library? | Yes | Yes | Yes | Yes | Yes | Yes | Yes |
+| Does at least one support Library? | Yes | Yes | Yes | Yes | Yes | Yes | Yes |
+
+Full repair succeeds in Yes/No format but fails in counterbalanced A/B format.
+The [full worked example and source table](../reproducibility/question_blind_repair/WORKED_EXAMPLE.md)
+retain the other qualification checks and the failed format beside the success.
+
+## Textual breadth and stronger criteria
+
+The [compact breadth table](../reproducibility/text_scope/README.md#breadth-alongside-the-separate-full-forward-study)
+separates cached smaller-model rows, the unmeasured cached path and the completed
+stateless full-prompt path. Basic recurrence extends across the measured rows;
+the larger model's strongest cross-format result remains zero. Failed historical
+bridges prevent a scaling comparison. The linked table keeps each study's
+denominators and the narrower repeated example's failed second format.
+
+## Fresh confirmation and validation utility
+
+![Fresh confirmation under fixed stronger controls](../reproducibility/fresh_history_validation/figures/PRIMARY_CONFIRMATION.svg)
+
+The fresh study confirms history dependence under stronger controls fixed
+before new outcomes. [Methods, units and source counts](CAPTION_DETAILS.md#fresh-matched-history-confirmation).
+
+![Equal-budget validation utility comparison](../reproducibility/fresh_history_validation/figures/VALIDATION_UTILITY.svg)
+
+Validation across histories is compared with more questions at one history.
+The practical difference remains uncertain at equal read budget and retention.
+[Exact validation comparison](../docs/FRESH_HISTORY_REPRODUCTION.md#results-and-statistical-units).

@@ -1,0 +1,416 @@
+{
+  "EXISTING_CORRECTION": {
+    "primary": {
+      "roots": 64,
+      "opportunities": 1152,
+      "W": 128,
+      "strong": 20,
+      "witness_rate": 0.1111111111111111,
+      "interval95": [
+        0.0876736111111111,
+        0.13541666666666669
+      ],
+      "roots_with_witness": 43,
+      "roots_with_strong": 14,
+      "primary_family8_interval99375": [
+        0.07747124565972213,
+        0.1449652777777778
+      ],
+      "conditional_witness": {
+        "estimate": 0.15822002472187885,
+        "interval95": [
+          0.12244897959183673,
+          0.1969126594126594
+        ],
+        "valid_draw_fraction": 1.0,
+        "numerator": 128.0,
+        "denominator": 809.0
+      },
+      "A_coverage": {
+        "estimate": 0.9479166666666666,
+        "interval95": [
+          0.9114583333333333,
+          0.9791666666666667
+        ]
+      },
+      "C_coverage": {
+        "estimate": 0.7309027777777777,
+        "interval95": [
+          0.6848958333333334,
+          0.7743055555555556
+        ]
+      },
+      "E_coverage": {
+        "estimate": 0.7022569444444444,
+        "interval95": [
+          0.6484375,
+          0.7534722222222223
+        ]
+      },
+      "A_only": {
+        "estimate": 0.2456597222222222,
+        "interval95": [
+          0.20399305555555555,
+          0.2890625
+        ]
+      },
+      "C_only": {
+        "estimate": 0.02864583333333333,
+        "interval95": [
+          0.01128472222222222,
+          0.05034722222222222
+        ]
+      },
+      "neither": {
+        "estimate": 0.0234375,
+        "interval95": [
+          0.008680555555555554,
+          0.042534722222222224
+        ]
+      },
+      "all_origin_joint_accuracy": {
+        "estimate": 0.6388888888888888,
+        "interval95": [
+          0.5859375,
+          0.6909722222222221
+        ]
+      },
+      "complete_case_success": {
+        "estimate": 0.078125,
+        "interval95": [
+          0.015625,
+          0.140625
+        ]
+      },
+      "disagreement": {
+        "estimate": 0.2569444444444444,
+        "interval95": [
+          0.21961805555555552,
+          0.2951388888888889
+        ]
+      },
+      "all_origin_joint_validity": {
+        "estimate": 1.0,
+        "interval95": [
+          1.0,
+          1.0
+        ]
+      },
+      "direct_accuracy": {
+        "estimate": 0.9752604166666666,
+        "interval95": [
+          0.96435546875,
+          0.9847005208333334
+        ],
+        "valid_draw_fraction": 1.0,
+        "numerator": 5992.0,
+        "denominator": 6144.0
+      },
+      "joint_accuracy": {
+        "estimate": 0.7784288194444444,
+        "interval95": [
+          0.7433810763888888,
+          0.8128282335069444
+        ],
+        "valid_draw_fraction": 1.0,
+        "numerator": 7174.0,
+        "denominator": 9216.0
+      },
+      "battery_accuracy": {
+        "estimate": 0.8701171875,
+        "interval95": [
+          0.8513901654411765,
+          0.8887293198529411
+        ],
+        "valid_draw_fraction": 1.0,
+        "numerator": 15147.0,
+        "denominator": 17408.0
+      },
+      "native_accuracy": {
+        "estimate": 0.9131433823529411,
+        "interval95": [
+          0.8943014705882353,
+          0.9310661764705882
+        ],
+        "valid_draw_fraction": 1.0,
+        "numerator": 1987.0,
+        "denominator": 2176.0
+      },
+      "noop_accuracy": {
+        "estimate": 0.8809742647058824,
+        "interval95": [
+          0.8612132352941176,
+          0.9007352941176471
+        ],
+        "valid_draw_fraction": 1.0,
+        "numerator": 1917.0,
+        "denominator": 2176.0
+      },
+      "candidate_mass": {
+        "finite_count": 17408,
+        "total": 17408,
+        "quantiles": {
+          "min": 0.9988234245499473,
+          "q05": 0.9999645636369717,
+          "q25": 0.9999970629248568,
+          "median": 0.9999997627249275,
+          "q75": 1.0000000002670042,
+          "q95": 1.0000000314040811,
+          "max": 1.0000000595517125
+        }
+      },
+      "invalid_responses": 0
+    },
+    "ordered_attrition_flow": [
+      {
+        "gate": "invalid_answer",
+        "entering": 576,
+        "count": 0,
+        "remaining": 576
+      },
+      {
+        "gate": "failed_direct_readout",
+        "entering": 576,
+        "count": 252,
+        "remaining": 324
+      },
+      {
+        "gate": "failed_native_noop_target",
+        "entering": 324,
+        "count": 99,
+        "remaining": 225
+      },
+      {
+        "gate": "failed_other_logical_question",
+        "entering": 225,
+        "count": 145,
+        "remaining": 80
+      },
+      {
+        "gate": "unavailable_matched_pair",
+        "entering": 80,
+        "count": 0,
+        "remaining": 80
+      },
+      {
+        "gate": "no_target_disagreement",
+        "entering": 80,
+        "count": 80,
+        "remaining": 0
+      },
+      {
+        "gate": "survivor",
+        "entering": 0,
+        "count": 0,
+        "remaining": 0
+      }
+    ]
+  },
+  "LATEST_SAME_WORDING": {
+    "primary": {
+      "roots": 64,
+      "opportunities": 1152,
+      "W": 123,
+      "strong": 23,
+      "witness_rate": 0.10677083333333333,
+      "interval95": [
+        0.08333333333333333,
+        0.1328125
+      ],
+      "roots_with_witness": 49,
+      "roots_with_strong": 12,
+      "primary_family8_interval99375": [
+        0.07465277777777778,
+        0.14322916666666669
+      ],
+      "conditional_witness": {
+        "estimate": 0.15471698113207547,
+        "interval95": [
+          0.1189873417721519,
+          0.19508758635274212
+        ],
+        "valid_draw_fraction": 1.0,
+        "numerator": 123.0,
+        "denominator": 795.0
+      },
+      "A_coverage": {
+        "estimate": 0.9270833333333333,
+        "interval95": [
+          0.8802083333333334,
+          0.9635416666666667
+        ]
+      },
+      "C_coverage": {
+        "estimate": 0.734375,
+        "interval95": [
+          0.6892144097222224,
+          0.7786458333333334
+        ]
+      },
+      "E_coverage": {
+        "estimate": 0.6901041666666667,
+        "interval95": [
+          0.6354166666666666,
+          0.7430555555555556
+        ]
+      },
+      "A_only": {
+        "estimate": 0.23697916666666669,
+        "interval95": [
+          0.19444444444444442,
+          0.2821180555555555
+        ]
+      },
+      "C_only": {
+        "estimate": 0.04427083333333333,
+        "interval95": [
+          0.020833333333333332,
+          0.0720486111111111
+        ]
+      },
+      "neither": {
+        "estimate": 0.02864583333333333,
+        "interval95": [
+          0.011284722222222222,
+          0.051215277777777776
+        ]
+      },
+      "all_origin_joint_accuracy": {
+        "estimate": 0.6423611111111112,
+        "interval95": [
+          0.5920138888888888,
+          0.6927083333333333
+        ]
+      },
+      "complete_case_success": {
+        "estimate": 0.09375,
+        "interval95": [
+          0.03125,
+          0.171875
+        ]
+      },
+      "disagreement": {
+        "estimate": 0.265625,
+        "interval95": [
+          0.22569444444444448,
+          0.30642361111111116
+        ]
+      },
+      "all_origin_joint_validity": {
+        "estimate": 1.0,
+        "interval95": [
+          1.0,
+          1.0
+        ]
+      },
+      "direct_accuracy": {
+        "estimate": 0.9752604166666666,
+        "interval95": [
+          0.9646809895833334,
+          0.9845377604166666
+        ],
+        "valid_draw_fraction": 1.0,
+        "numerator": 5992.0,
+        "denominator": 6144.0
+      },
+      "joint_accuracy": {
+        "estimate": 0.7835286458333334,
+        "interval95": [
+          0.7496744791666666,
+          0.8167317708333334
+        ],
+        "valid_draw_fraction": 1.0,
+        "numerator": 7221.0,
+        "denominator": 9216.0
+      },
+      "battery_accuracy": {
+        "estimate": 0.8727596507352942,
+        "interval95": [
+          0.8546645220588235,
+          0.890798770680147
+        ],
+        "valid_draw_fraction": 1.0,
+        "numerator": 15193.0,
+        "denominator": 17408.0
+      },
+      "native_accuracy": {
+        "estimate": 0.9131433823529411,
+        "interval95": [
+          0.8943014705882353,
+          0.9310661764705882
+        ],
+        "valid_draw_fraction": 1.0,
+        "numerator": 1987.0,
+        "denominator": 2176.0
+      },
+      "noop_accuracy": {
+        "estimate": 0.8841911764705882,
+        "interval95": [
+          0.8644301470588235,
+          0.9034926470588235
+        ],
+        "valid_draw_fraction": 1.0,
+        "numerator": 1924.0,
+        "denominator": 2176.0
+      },
+      "candidate_mass": {
+        "finite_count": 17408,
+        "total": 17408,
+        "quantiles": {
+          "min": 0.9990686447421631,
+          "q05": 0.9999637876670214,
+          "q25": 0.9999969658116197,
+          "median": 0.9999997577753077,
+          "q75": 1.0000000002398535,
+          "q95": 1.0000000305734007,
+          "max": 1.0000000595396663
+        }
+      },
+      "invalid_responses": 0
+    },
+    "ordered_attrition_flow": [
+      {
+        "gate": "invalid_answer",
+        "entering": 576,
+        "count": 0,
+        "remaining": 576
+      },
+      {
+        "gate": "failed_direct_readout",
+        "entering": 576,
+        "count": 270,
+        "remaining": 306
+      },
+      {
+        "gate": "failed_native_noop_target",
+        "entering": 306,
+        "count": 93,
+        "remaining": 213
+      },
+      {
+        "gate": "failed_other_logical_question",
+        "entering": 213,
+        "count": 133,
+        "remaining": 80
+      },
+      {
+        "gate": "unavailable_matched_pair",
+        "entering": 80,
+        "count": 0,
+        "remaining": 80
+      },
+      {
+        "gate": "no_target_disagreement",
+        "entering": 80,
+        "count": 80,
+        "remaining": 0
+      },
+      {
+        "gate": "survivor",
+        "entering": 0,
+        "count": 0,
+        "remaining": 0
+      }
+    ]
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "schema": "COMPLETED_DELIVERY_COMPACT_V1",
+  "archive": "METHOD_SELECTION_REANALYSIS_VERIFIED_20260918.zip",
+  "archive_bytes": 22369973,
+  "archive_sha256": "cbecf068c0a5d3ca6731fe1eb6eb2baabcef64a611cd77f87bada69f34a80bb6",
+  "intake": "Every original declared member verified before selection; original retained externally by digest.",
+  "scope": "Selected original evidence, lossless gzip only. No new inference or runtime attestation.",
+  "files": [
+    {
+      "path": "saved/method_selection/EQUIVALENCE_ANALYSIS.csv.gz",
+      "member": "EQUIVALENCE_ANALYSIS.csv",
+      "encoding": "gzip",
+      "bytes": 7116,
+      "sha256": "cfa12ffc9407b20a7dac855db8475fc378d0addb9ee58b7817771f7fca0af8c1",
+      "original_bytes": 136926,
+      "original_sha256": "964289f85c29e0d10475734e785e516e04baa850879ce1af72eb2229f430cfe0"
+    },
+    {
+      "path": "saved/method_selection/EQUIVALENCE_ANALYSIS.json.gz",
+      "member": "EQUIVALENCE_ANALYSIS.json",
+      "encoding": "gzip",
+      "bytes": 9374,
+      "sha256": "71ba12eefe77c76643e96089223dd757f45e24ba2188fb461e1f9166641925d2",
+      "original_bytes": 327085,
+      "original_sha256": "29a6582b7a602d5a007f1f76780e5375b063544cfd11b309e38fa63409b1a09c"
+    },
+    {
+      "path": "saved/method_selection/FINAL_DECISION.md",
+      "member": "FINAL_DECISION.md",
+      "encoding": "verbatim",
+      "bytes": 1505,
+      "sha256": "5271135d1288be17c6ddac737e54709e31746fefa3cd06ab11a7f73b927ff111",
+      "original_bytes": 1505,
+      "original_sha256": "5271135d1288be17c6ddac737e54709e31746fefa3cd06ab11a7f73b927ff111"
+    },
+    {
+      "path": "saved/method_selection/METHOD_SELECTION_REANALYSIS.md",
+      "member": "METHOD_SELECTION_REANALYSIS.md",
+      "encoding": "verbatim",
+      "bytes": 15446,
+      "sha256": "3f86a097e4125c2c57b3dc51bfc0f9471295eed595aea5230b41aeaea1854bcc",
+      "original_bytes": 15446,
+      "original_sha256": "3f86a097e4125c2c57b3dc51bfc0f9471295eed595aea5230b41aeaea1854bcc"
+    },
+    {
+      "path": "saved/method_selection/METHOD_SELECTION_TABLE.csv.gz",
+      "member": "METHOD_SELECTION_TABLE.csv",
+      "encoding": "gzip",
+      "bytes": 5261,
+      "sha256": "098f72dc4b5e703be10e6d11cda124cc3cb5ae59b7c7e3a5ef97f1078042a399",
+      "original_bytes": 21950,
+      "original_sha256": "1833b066863a22f603f082809363a9f5c9a46fb6cb5c5c1fcce14b6cd4d89cf3"
+    },
+    {
+      "path": "saved/method_selection/PACKAGE_MANIFEST.json.gz",
+      "member": "PACKAGE_MANIFEST.json",
+      "encoding": "gzip",
+      "bytes": 12815,
+      "sha256": "b34ea0228e55073cef8340e51c65db54b24eae031e6c97858bd38cf89e42c3a7",
+      "original_bytes": 47416,
+      "original_sha256": "6e429a245f34ce8c242827b819a1dda75f6846ee2ba6543501bcf135c9cb0847"
+    },
+    {
+      "path": "saved/method_selection/POINTWISE_VS_RELATIONAL_ARGUMENT.md",
+      "member": "POINTWISE_VS_RELATIONAL_ARGUMENT.md",
+      "encoding": "verbatim",
+      "bytes": 3013,
+      "sha256": "d4fc3aaf3d040e107198ff69fca8ced434d1d4b1cca36bfa52b630e35b22bad7",
+      "original_bytes": 3013,
+      "original_sha256": "d4fc3aaf3d040e107198ff69fca8ced434d1d4b1cca36bfa52b630e35b22bad7"
+    },
+    {
+      "path": "saved/method_selection/VERIFICATION.json",
+      "member": "VERIFICATION.json",
+      "encoding": "verbatim",
+      "bytes": 2439,
+      "sha256": "93d70bd35a94a5c1fc81544127ff0de943ea69bf4f7cdd1f505872aee2b64dfb",
+      "original_bytes": 2439,
+      "original_sha256": "93d70bd35a94a5c1fc81544127ff0de943ea69bf4f7cdd1f505872aee2b64dfb"
+    }
+  ]
+}

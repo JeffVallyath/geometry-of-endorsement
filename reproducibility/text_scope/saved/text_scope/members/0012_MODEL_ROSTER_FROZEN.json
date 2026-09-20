@@ -1,0 +1,99 @@
+{
+  "status": "FROZEN_BEFORE_NEW_OUTPUTS",
+  "rows": [
+    {
+      "id": "gemma9_t4",
+      "model": "google/gemma-2-9b-it",
+      "revision": "11c9b309abf73637e4b6f9a3fa1e92e615547819",
+      "content": "T4",
+      "native_chat_template": true,
+      "template_kwargs": {},
+      "resource_priority": 1,
+      "tokenizer_revision": "11c9b309abf73637e4b6f9a3fa1e92e615547819",
+      "model_pin": "models/google--gemma-2-9b-it/MODEL_PIN.json",
+      "model_pin_sha256": "6c047ed9abd590065b9c4fcf12092f90de2df7434209290ef15c9b041b662a7e",
+      "hidden": 3584,
+      "layers": 42,
+      "cap": 30.0
+    },
+    {
+      "id": "llama8_t4",
+      "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+      "revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+      "content": "T4",
+      "native_chat_template": true,
+      "template_kwargs": {},
+      "resource_priority": 2,
+      "tokenizer_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+      "model_pin": "models/meta-llama--Meta-Llama-3.1-8B-Instruct/MODEL_PIN.json",
+      "model_pin_sha256": "7ce947779d26a4af983d9255abfeb2baf0393ca35fe040543f7cd571bfc67a12",
+      "hidden": 4096,
+      "layers": 32,
+      "cap": null
+    },
+    {
+      "id": "qwen32_t4",
+      "model": "Qwen/Qwen3-32B",
+      "revision": "9216db5781bf21249d130ec9da846c4624c16137",
+      "content": "T4",
+      "native_chat_template": true,
+      "template_kwargs": {
+        "enable_thinking": false
+      },
+      "resource_priority": 3,
+      "tokenizer_revision": "9216db5781bf21249d130ec9da846c4624c16137",
+      "model_pin": "models/Qwen--Qwen3-32B/MODEL_PIN.json",
+      "model_pin_sha256": "fc2fd252c9553b2e49855f1661dc2b9c8533481a32ca99707d5b859b946ca807",
+      "hidden": 5120,
+      "layers": 64,
+      "cap": null
+    },
+    {
+      "id": "qwen4_t4",
+      "model": "Qwen/Qwen3-4B",
+      "revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+      "content": "T4",
+      "native_chat_template": true,
+      "template_kwargs": {
+        "enable_thinking": false
+      },
+      "resource_priority": 4,
+      "tokenizer_revision": "1cfa9a7208912126459214e8b04321603b3df60c",
+      "model_pin": "models/Qwen--Qwen3-4B/MODEL_PIN.json",
+      "model_pin_sha256": "29602bd0bb7320e30aac7735723762cb160627a6de7e0922a4254b447729b94c",
+      "hidden": 2560,
+      "layers": 36,
+      "cap": null
+    },
+    {
+      "id": "gemma9_c1",
+      "model": "google/gemma-2-9b-it",
+      "revision": "11c9b309abf73637e4b6f9a3fa1e92e615547819",
+      "content": "C1",
+      "template_kwargs": {},
+      "tokenizer_revision": "11c9b309abf73637e4b6f9a3fa1e92e615547819",
+      "model_pin": "models/google--gemma-2-9b-it/MODEL_PIN.json",
+      "model_pin_sha256": "6c047ed9abd590065b9c4fcf12092f90de2df7434209290ef15c9b041b662a7e",
+      "hidden": 3584,
+      "layers": 42,
+      "cap": 30.0
+    },
+    {
+      "id": "qwen8_t4",
+      "model": "Qwen/Qwen3-8B",
+      "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+      "content": "T4",
+      "template_kwargs": {
+        "enable_thinking": false
+      },
+      "tokenizer_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+      "model_pin": "models/Qwen--Qwen3-8B/MODEL_PIN.json",
+      "model_pin_sha256": "8c63ad235fbd468664a1e17679806692b0a98a398bb12378c3bfe8f72a324d58",
+      "hidden": 4096,
+      "layers": 36,
+      "cap": null
+    }
+  ],
+  "all_qwen_non_thinking": true,
+  "pretrained_forwards": 0
+}

@@ -1,0 +1,151 @@
+{
+  "model": "Qwen/Qwen3-32B",
+  "revision": "9216db5781bf21249d130ec9da846c4624c16137",
+  "methods": {
+    "EXISTING_CORRECTION": {
+      "cases": 64,
+      "primary": 128,
+      "denominator": 1152,
+      "designs_with_primary": 43,
+      "primary_rate": 0.1111111111111111,
+      "interval99375": [
+        0.07747124565972213,
+        0.1449652777777778
+      ],
+      "coverage": 0.7022569444444444,
+      "direct_accuracy": 0.9752604166666666,
+      "joint_accuracy": 0.7784288194444444,
+      "strongest": 0,
+      "semantic_denominator": 576,
+      "fully_certified_opportunities": 80,
+      "fully_certified_designs": 9,
+      "matched_single_format": 1,
+      "single_format_designs": [
+        "SSC1-FINAL-0022"
+      ]
+    },
+    "LATEST_SAME_WORDING": {
+      "cases": 64,
+      "primary": 123,
+      "denominator": 1152,
+      "designs_with_primary": 49,
+      "primary_rate": 0.10677083333333333,
+      "interval99375": [
+        0.07465277777777778,
+        0.14322916666666669
+      ],
+      "coverage": 0.6901041666666667,
+      "direct_accuracy": 0.9752604166666666,
+      "joint_accuracy": 0.7835286458333334,
+      "strongest": 0,
+      "semantic_denominator": 576,
+      "fully_certified_opportunities": 80,
+      "fully_certified_designs": 9,
+      "matched_single_format": 2,
+      "single_format_designs": [
+        "SSC1-FINAL-0003",
+        "SSC1-FINAL-0022"
+      ]
+    }
+  },
+  "original_designs_newly_measured": true,
+  "newly_sampled_designs": false,
+  "repeat_rows": 4488,
+  "repeat_max_logp_delta": 0.0,
+  "single_format_distinct_designs": 2,
+  "strongest_scope": "same matched history pair and direction in both answer formats",
+  "worked_example": {
+    "root_id": "SSC1-FINAL-0003",
+    "method": "LATEST_SAME_WORDING",
+    "target": "SSC1-FINAL-0003-d0-09",
+    "other_format_target": "SSC1-FINAL-0003-d1-09",
+    "origins": [
+      1,
+      2
+    ],
+    "prefix_tokens": [
+      834,
+      834
+    ],
+    "changed_facts": [
+      1,
+      1
+    ],
+    "table": [
+      {
+        "query_id": "SSC1-FINAL-0003-d0-00",
+        "question": "Does Wren favor the Gallery proposal?\nAnswer with exactly one of No, Yes.",
+        "correct": 0,
+        "answers": [
+          0,
+          0
+        ]
+      },
+      {
+        "query_id": "SSC1-FINAL-0003-d0-extra0",
+        "question": "Does Mina favor the Gallery proposal?\nAnswer with exactly one of No, Yes.",
+        "correct": 0,
+        "answers": [
+          0,
+          0
+        ]
+      },
+      {
+        "query_id": "SSC1-FINAL-0003-d0-08",
+        "question": "Do Mina and Wren take the same side on Gallery?\nAnswer with exactly one of No, Yes.",
+        "correct": 1,
+        "answers": [
+          1,
+          1
+        ]
+      },
+      {
+        "query_id": "SSC1-FINAL-0003-d0-10",
+        "question": "Does at least one of Mina and Wren support Gallery?\nAnswer with exactly one of No, Yes.",
+        "correct": 0,
+        "answers": [
+          0,
+          0
+        ]
+      },
+      {
+        "query_id": "SSC1-FINAL-0003-d0-09",
+        "question": "Is the Gallery proposal supported by both Mina and Wren?\nAnswer with exactly one of No, Yes.",
+        "correct": 0,
+        "answers": [
+          0,
+          1
+        ]
+      }
+    ],
+    "correct_answer_scores": [
+      0.9983893723921086,
+      0.043653464819593354
+    ],
+    "candidate_masses": [
+      0.9999828284739344,
+      0.9999966970963643
+    ],
+    "direct_checks": 12,
+    "direct_histories": 8,
+    "logical_checks": 8,
+    "target_references_correct": true,
+    "other_format_noop_correct": false,
+    "other_format_selected_answers": [
+      1,
+      1
+    ],
+    "repeated_records": 578,
+    "repeated_scores_and_token_bindings_identical": true,
+    "old_target_truth": [
+      0,
+      0
+    ],
+    "selection_for_exposition": "post_hoc",
+    "strongest_cross_format": false
+  },
+  "scaling_comparison_supported": false,
+  "causal_repair_measured": false,
+  "moral_decision_effect_measured": false,
+  "saved_score_replay_not_neural_replication": true
+}

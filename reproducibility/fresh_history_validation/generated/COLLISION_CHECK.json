@@ -1,0 +1,811 @@
+{
+  "collisions_remaining": 0,
+  "fresh_semantic_tables": 576,
+  "historical_inventory": [
+    {
+      "path": "reproducibility\\cache_crossover\\terminal_worlds.json",
+      "scene_records": 12,
+      "sha256": "a2fc7bf13e15fc2c64eceee5bbc4ff7df7c8f8870789373272a5c52e758027ee"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-DEV-0000\\root.json",
+      "scene_records": 9,
+      "sha256": "5d4527d87fd0ed97dddbb6ba47391502a6437b0be31e7187587955d796e92acc"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-DEV-0001\\root.json",
+      "scene_records": 9,
+      "sha256": "54189845b0b4d72fa877d9f2690504bdcfdb953ab89fb9cd685a2b184df12405"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-DEV-0002\\root.json",
+      "scene_records": 9,
+      "sha256": "35c80587300168eebc68389e0e8d4e66dc4d69cfc9dc8841a4ef7d43277290ca"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-DEV-0003\\root.json",
+      "scene_records": 9,
+      "sha256": "849c68e4b3748581a42da6b15763af4faf1c8c09fedfe140eb49875a4a090f35"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-DEV-0004\\root.json",
+      "scene_records": 9,
+      "sha256": "e7878d13f3f6fda0edcd2f8519b29a53b1c4a81bd800d720d277de237e4dad16"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-DEV-0005\\root.json",
+      "scene_records": 9,
+      "sha256": "ef8c049e73dd51d90fe304a957319d2f8f331b5383da2e9807b25631f00c3213"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-DEV-0006\\root.json",
+      "scene_records": 9,
+      "sha256": "47c0e58ea5a932db1e457b872eaeda0106aa4accb9772ba171e17b7afdfff201"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-DEV-0007\\root.json",
+      "scene_records": 9,
+      "sha256": "6a97f2b183c94548d93ea1e4c4f0d11954dea65f00e8f1d862bcc84f74453b1e"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-FINAL-0000\\root.json",
+      "scene_records": 9,
+      "sha256": "26184678cf688b705dd8211c4f49c3d354b689dd4dedf32a1562e52ae54e0604"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-FINAL-0001\\root.json",
+      "scene_records": 9,
+      "sha256": "74a17b8a00a1adec1a4f42af25a2ab9f5c4f1337f303932c4a81aeb21bf29397"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-FINAL-0002\\root.json",
+      "scene_records": 9,
+      "sha256": "b83cb2636e3abc694e35f942de78b655fcaed3a69e71bd1298ffcfe23d320920"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-FINAL-0003\\root.json",
+      "scene_records": 9,
+      "sha256": "15090b2efb7faedce21493f08e0cf780254873c9fe1b78568e1e4ed91bc2e2d5"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-FINAL-0004\\root.json",
+      "scene_records": 9,
+      "sha256": "6eebf2200eddcd57c170164ab8758436859f91c253ee3cf639210641b07e1178"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-FINAL-0005\\root.json",
+      "scene_records": 9,
+      "sha256": "5b401b6a0970386fc36d3009d7d617f653bc329a57b45106ccae0100604323d8"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-FINAL-0006\\root.json",
+      "scene_records": 9,
+      "sha256": "b489a6b89834ba9f328e0fc1bcc1798df838fc5ae8196ad9d8e376890650c630"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-FINAL-0007\\root.json",
+      "scene_records": 9,
+      "sha256": "0125b9dd8b11bd67d38ed8c390863d47262217cf49ae1a0b86e8d9d7bc6c10c2"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-FINAL-0008\\root.json",
+      "scene_records": 9,
+      "sha256": "97b46de7c355c3e5f651ec21751fc971974a470e041f41a14ce9a4416392fc30"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-FINAL-0009\\root.json",
+      "scene_records": 9,
+      "sha256": "c4cb3387cfe423da3e63b50f6daf1fd9cec81585c89d3f606a9aa628ca2952a0"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-FINAL-0010\\root.json",
+      "scene_records": 9,
+      "sha256": "82ba0eeefb94e6d16c7dc8ddeb6df0341c6c6a0d98fb88fc6c99b5adca1c2b84"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-FINAL-0011\\root.json",
+      "scene_records": 9,
+      "sha256": "8cbb684624bfb25e0cebb6afddd1de9cd96d91fc29aac3c88fe5dc7dbc838f64"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-FINAL-0012\\root.json",
+      "scene_records": 9,
+      "sha256": "01104e8cefa651ed42e4a9f07e5ecfd73245c999db73912b99478e008f5d7769"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-FINAL-0013\\root.json",
+      "scene_records": 9,
+      "sha256": "953d5adf27f8994a84fe628179db4137e6b7abef26a1270c72f39b92a5ae9b97"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-FINAL-0014\\root.json",
+      "scene_records": 9,
+      "sha256": "78069a743a36b05542f68d998ef3b0f9dcd27b703422ec78c190011ab930cab0"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-FINAL-0015\\root.json",
+      "scene_records": 9,
+      "sha256": "876d9fc276b4342151d3e32c448220196892275da7625e597c92adba3c0de889"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-FINAL-0016\\root.json",
+      "scene_records": 9,
+      "sha256": "3c030aced73d6d0124b1e56df271c14b78833d6a9e4746a4f75a83840eddef5f"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-FINAL-0017\\root.json",
+      "scene_records": 9,
+      "sha256": "2d44d674902cef95e4554789f011261965cdf78c78873584cc045add4d9a19d9"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-FINAL-0018\\root.json",
+      "scene_records": 9,
+      "sha256": "66593c0b19fbab53135e1ca34f077c3413f4d143f0805450ebe63172379f460b"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-FINAL-0019\\root.json",
+      "scene_records": 9,
+      "sha256": "0b41448cfdc1b446655b7a2b4390b2a7a8bbe7006f0ecea54cd66de6606dad5c"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-FINAL-0020\\root.json",
+      "scene_records": 9,
+      "sha256": "f396eb0b6a00f9a401eff053fb7f7570983ca31ce278723152c5fc7ed88f12e0"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-FINAL-0021\\root.json",
+      "scene_records": 9,
+      "sha256": "6dff642b597202d196642a4dd781ff5c95af563c7c7b30265c3513239e4bbaf7"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-FINAL-0022\\root.json",
+      "scene_records": 9,
+      "sha256": "87538d20e4b6342a1a8d90b522b59a6fcc5804d67621c4e7a513213ff6843151"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-FINAL-0023\\root.json",
+      "scene_records": 9,
+      "sha256": "909c54e001fe80a0c3ea02aaa97e0af20ce7cdf8fc2f6c725e5f4c0020712a79"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-FINAL-0024\\root.json",
+      "scene_records": 9,
+      "sha256": "1bdfe962e4ea2c5f625aa42ced2b0fa79ebdfef10c428f618d3b14b7b902e000"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-FINAL-0025\\root.json",
+      "scene_records": 9,
+      "sha256": "d8c1e35f46d2cc9c4e0bb1195a6caa51462760e1440a168b0cda7787be344e99"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-FINAL-0026\\root.json",
+      "scene_records": 9,
+      "sha256": "2750de4f656ab8fcf9b6fa5f7267edc70a9c72c57f5f01945dfd13a0e8d0cfb8"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-FINAL-0027\\root.json",
+      "scene_records": 9,
+      "sha256": "8e121a650d449fa5b437d6d746a9da19cc1e4d866b0aa2b5a8efc19588556299"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-FINAL-0028\\root.json",
+      "scene_records": 9,
+      "sha256": "4e0b963c0b65a3bb1a25a888fe53fdc96227d7ec599a2026b5d6f54f6ad97892"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-FINAL-0029\\root.json",
+      "scene_records": 9,
+      "sha256": "b36f804d1a7dc01e2540da46d60c1af62b4405075a3ac1c03cbe464bb4a72e3b"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-FINAL-0030\\root.json",
+      "scene_records": 9,
+      "sha256": "8099b0afaf3d0ac0520f100d080479e023da5934c12d21c74581507995eb77c2"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-FINAL-0031\\root.json",
+      "scene_records": 9,
+      "sha256": "e2dd89cc1dfbc5354a084eac44453f24bb3b73f31977284a4bb7feb82511df1e"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-FINAL-0032\\root.json",
+      "scene_records": 9,
+      "sha256": "1426407353fd0b74fcd58ce50f306161e681a263ff022ae872590e287f1ce0c3"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-FINAL-0033\\root.json",
+      "scene_records": 9,
+      "sha256": "030775bc258bcd6e23edc733857b6791329ac4215dab583e7f31e0bdb4fb404c"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-FINAL-0034\\root.json",
+      "scene_records": 9,
+      "sha256": "febea0de65b877f943a9177f621158161faf070b4e8898a6a379232fe91e5b2e"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-FINAL-0035\\root.json",
+      "scene_records": 9,
+      "sha256": "e919c10ed2eb41eb6d3235a17de2fe3f48441a9f307c0c2924b4bacdee74f58a"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-FINAL-0036\\root.json",
+      "scene_records": 9,
+      "sha256": "01351a2a31c7efe8e80feabddf2e0da344dc4499a5f794c587ef40455d4a2736"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-FINAL-0037\\root.json",
+      "scene_records": 9,
+      "sha256": "be38b280e8295fe0f305a5b7b814b923edaffab04a32dc0233ae9e27c016ee30"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-FINAL-0038\\root.json",
+      "scene_records": 9,
+      "sha256": "044d304c2382cc14996db947b360866901cb118b68898a9e79aa120c31011af2"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-FINAL-0039\\root.json",
+      "scene_records": 9,
+      "sha256": "7ada5d72bcbbea56731980bbbdb90af0775fc5e8a7be679fd92d9a43b492718a"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-FINAL-0040\\root.json",
+      "scene_records": 9,
+      "sha256": "87fdd760d5dd2339bdee4c57ef37dbcfa9d7162a292d64d220e05846f6dce5f0"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-FINAL-0041\\root.json",
+      "scene_records": 9,
+      "sha256": "19b3072ed21b1acc11983f253b469f3143f71417738aca39a1aa1d6ea858e2cb"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-FINAL-0042\\root.json",
+      "scene_records": 9,
+      "sha256": "9ff0be13cd484df050011e10aca833e1fc998ad6d66fa52d584742ee71ecb65c"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-FINAL-0043\\root.json",
+      "scene_records": 9,
+      "sha256": "cf16a427a46afce6594a2d86a3001495c5fe5eefeff810862e4a797f707350a1"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-FINAL-0044\\root.json",
+      "scene_records": 9,
+      "sha256": "d92a669fbc317b3e03de67f7bb50adb3ec3470e8cea8a8a89518dba584fff40a"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-FINAL-0045\\root.json",
+      "scene_records": 9,
+      "sha256": "da4ba0e79e48d526842b0b5f50bc0bc5849871918e5cc6e7681274287488712f"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-FINAL-0046\\root.json",
+      "scene_records": 9,
+      "sha256": "0d6b10fc944d2f219a2886c64d1bd73a99de8f6a9db75c1e42da3e69370f5d4f"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-FINAL-0047\\root.json",
+      "scene_records": 9,
+      "sha256": "ce8cb9557d4313558cb5fcb23bcb10010b51e1e0b8f84ab5d544b615c1645d22"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-FINAL-0048\\root.json",
+      "scene_records": 9,
+      "sha256": "0a739d6fdfe7ab7ccd74b3345c0e4e0adc483fa6c55b8bb91cbf9d1b03a1b891"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-FINAL-0049\\root.json",
+      "scene_records": 9,
+      "sha256": "922866263bb320f5734726db407265f10d961e88108e98b9884311803dd43090"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-FINAL-0050\\root.json",
+      "scene_records": 9,
+      "sha256": "2904283229b635331b5ba2e89c1da025cb4880471c282a50386012939e4ae60b"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-FINAL-0051\\root.json",
+      "scene_records": 9,
+      "sha256": "55c9239cc361ae068bab690913c05fc4df8655791807c38b73f1068bde7e73b0"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-FINAL-0052\\root.json",
+      "scene_records": 9,
+      "sha256": "5b0f0b6acf741ecf5772d4fea6dd7f701674969a9aa7d4cf98b5f772fcbb4e6e"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-FINAL-0053\\root.json",
+      "scene_records": 9,
+      "sha256": "bd1add32c3d342622722f46af66d0862359fc000c8e3ea0fb875af36a1211a19"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-FINAL-0054\\root.json",
+      "scene_records": 9,
+      "sha256": "8b25f4e26a66c8af23148bffe5a35797060ea932ac56c0ee5a9ddadc67f78dd6"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-FINAL-0055\\root.json",
+      "scene_records": 9,
+      "sha256": "0852002d990d6cbe9510de9e03421f1c3e94a8e53a892545d46c42a6a3672e15"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-FINAL-0056\\root.json",
+      "scene_records": 9,
+      "sha256": "4bf7b3db2a0d7fe92bcc91faa6c78209bcad8ff073ac2dd4718ac2153c6faeac"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-FINAL-0057\\root.json",
+      "scene_records": 9,
+      "sha256": "901800d76fed73265d679dbecbcd14cd4dafd2b6f38877850d82de3b9f837ac6"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-FINAL-0058\\root.json",
+      "scene_records": 9,
+      "sha256": "9e89324727e6a4e08f21f12c1365288aa65d985bf4a6202ed2e8bd2f146ede76"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-FINAL-0059\\root.json",
+      "scene_records": 9,
+      "sha256": "e69b09ffdf11118ad00a42201df39de1aebbe369cdde01977b78f108c2496b28"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-FINAL-0060\\root.json",
+      "scene_records": 9,
+      "sha256": "e6a17c555715ac8f946586cf495fcba2ad0955fe905b346834f5393cbe757837"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-FINAL-0061\\root.json",
+      "scene_records": 9,
+      "sha256": "6a001a9bc7a25e13ba3e06a4cc6029dd2b367f1a0a805f11215e1a56d7270d4d"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-FINAL-0062\\root.json",
+      "scene_records": 9,
+      "sha256": "d1fe1743c13d2ab78c6c03e88937b007602f5877a50ebcc6cb8b467fbe8299ab"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\reports\\state_sufficiency_confirmation\\shards\\SSC1-FINAL-0063\\root.json",
+      "scene_records": 9,
+      "sha256": "2c9a7c98ec9ee001bbf5f18a3ac59f3076f5c933e78c3ef0b303c94d15e6a0c9"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\STATE_SUFFICIENCY_CONFIRMATION\\runtime_inputs\\UPDATE_METHOD_INPUTS\\cases\\fixed\\dev.jsonl",
+      "scene_records": 8,
+      "sha256": "1762a5f1904f56370bf369da902e22d1d516c9af8cac118818b3add4784d509d"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\STATE_SUFFICIENCY_CONFIRMATION\\runtime_inputs\\UPDATE_METHOD_INPUTS\\cases\\fixed\\main.jsonl",
+      "scene_records": 64,
+      "sha256": "cedaf91d2ab12cda26d8c1cc7875205443fbea99035b0cb31808adecde6d60a6"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\STATE_SUFFICIENCY_CONFIRMATION\\runtime_inputs\\UPDATE_METHOD_INPUTS\\cases\\fixed\\origin.jsonl",
+      "scene_records": 320,
+      "sha256": "541585266fc60711f5c8a3e65d8be92c77a3f57bbbfe742788cbd7444cce2f13"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\STATE_SUFFICIENCY_CONFIRMATION\\runtime_inputs\\UPDATE_METHOD_INPUTS\\cases\\fixed\\program.jsonl",
+      "scene_records": 32,
+      "sha256": "62192380f8e94f9f510de35f0a4c46ed7a89374e0b9d122fc34bb191bbde8dda"
+    },
+    {
+      "path": "reproducibility\\fresh_inference\\supplied\\reproduction\\STATE_SUFFICIENCY_CONFIRMATION\\runtime_inputs\\UPDATE_METHOD_INPUTS\\cases\\PRIOR_SOURCE_HASHES.json",
+      "prior_digest_count": 2304,
+      "sha256": "d84f970d3b4ae2b19b06750f8118e150e5122e262d6c28c2d7119bb13e75e626"
+    },
+    {
+      "path": "reproducibility\\relational_editing\\v2\\data\\cal_scenes.jsonl",
+      "scene_records": 32,
+      "sha256": "712599f1adcafe09fd1b41d9e5afd4b459753dea7f82eeeaa3192fe4d4365f19"
+    },
+    {
+      "path": "reproducibility\\relational_editing\\v2\\data\\final_scenes.jsonl",
+      "scene_records": 128,
+      "sha256": "07b1da3d2cc6513fb41f7448e0e071f9a2a1f685c0e0674045e4d7b568854318"
+    },
+    {
+      "path": "reproducibility\\relational_editing\\v2\\data\\fit_scenes.jsonl",
+      "scene_records": 96,
+      "sha256": "43c0ceb4a0f32ce82cceca24b72f4a00bb7fb7f04a151cc5cd1c7af807434141"
+    },
+    {
+      "path": "reproducibility\\relational_editing\\v2\\data\\workflow_scenes.jsonl",
+      "scene_records": 128,
+      "sha256": "65c5cb0e49f6177291254145729adde7587c538a38efd6b897a4600dac22929a"
+    },
+    {
+      "path": "reproducibility\\relational_editing\\v3\\data\\cal_scenes.jsonl",
+      "scene_records": 48,
+      "sha256": "d25637f0b38acb0228a793a174e91e4631d62d647d6868b060e6f97e83ba832d"
+    },
+    {
+      "path": "reproducibility\\relational_editing\\v3\\data\\final_scenes.jsonl",
+      "scene_records": 128,
+      "sha256": "88709ec7ab0fb192d56503af0fb0a7ae408cc7eee45a777a556572cf6c26f76a"
+    },
+    {
+      "path": "reproducibility\\relational_editing\\v3\\data\\fit_scenes.jsonl",
+      "scene_records": 96,
+      "sha256": "a57b52c69eeddf31e103ddd73f08c413548538101e9caf6852b24fb72827954a"
+    },
+    {
+      "path": "reproducibility\\relational_editing\\v3\\data\\workflow_scenes.jsonl",
+      "scene_records": 128,
+      "sha256": "200bbc5bc3f11348c1bb122d000d1404ace15f684a552b033e70a1a593d5a17d"
+    },
+    {
+      "path": "reproducibility\\relational_editing\\v4\\data\\cal_scenes.jsonl",
+      "scene_records": 48,
+      "sha256": "4ea419b7cbe9ca2891ffe1a7455e0c10bdc161f858a05b191eb1edb8c7997892"
+    },
+    {
+      "path": "reproducibility\\relational_editing\\v4\\data\\final_scenes.jsonl",
+      "scene_records": 128,
+      "sha256": "b8f996543a3e172b82810095e668f01cbfea27d6fedc92623317b2e675a2aab3"
+    },
+    {
+      "path": "reproducibility\\relational_editing\\v4\\data\\fit_scenes.jsonl",
+      "scene_records": 96,
+      "sha256": "27c9bce66077af63be4f9de2a6f468a560d4333298a032e64a3c332fa129e8dd"
+    },
+    {
+      "path": "reproducibility\\relational_editing\\v4\\data\\workflow_scenes.jsonl",
+      "scene_records": 128,
+      "sha256": "083d671eae02f29b8a9a16c331ab992c259e8a14af0f8037de5b7ff41d93163f"
+    },
+    {
+      "path": "reproducibility\\relational_editing\\v6\\data\\gemma_program_subset.jsonl",
+      "scene_records": 32,
+      "sha256": "1d18d57bb77f8e526f8af8ddd6375d159de339d98be69c65c92b9040fb8eb614"
+    },
+    {
+      "path": "reproducibility\\relational_editing\\v6\\data\\gemma_scenes.jsonl",
+      "scene_records": 64,
+      "sha256": "d68886f1f8ae6a99e7b0eb52054cccb715ced173375847b232de091d1604076f"
+    },
+    {
+      "path": "reproducibility\\relational_editing\\v6\\data\\gemma_source_roots.jsonl",
+      "scene_records": 320,
+      "sha256": "86c4fe1b89b60f73c74e009cb5627632350669b9fd6e2e832d9ef822af23fb9b"
+    },
+    {
+      "path": "reproducibility\\relational_editing\\v6\\data\\qwen_program_subset.jsonl",
+      "scene_records": 16,
+      "sha256": "86c31b576b5fdf5640a359933e48fc7a8a2b59f351994ba879535d7388098628"
+    },
+    {
+      "path": "reproducibility\\relational_editing\\v6\\data\\qwen_scenes.jsonl",
+      "scene_records": 32,
+      "sha256": "85d4c487d1340b704398d88161eb3d9f1210acb57169ead1dbfc17889cacc0f8"
+    },
+    {
+      "path": "reproducibility\\relational_editing\\v6\\data\\qwen_source_roots.jsonl",
+      "scene_records": 160,
+      "sha256": "956a47a0100762dfdbf3651c5af96df017a229deef5111ad203c35294586d4c3"
+    },
+    {
+      "path": "reproducibility\\state_sufficiency\\independent_verification\\inputs\\designs\\SSC1-FINAL-0000.json",
+      "scene_records": 9,
+      "sha256": "649437d885a23f53a0ebf9e285c5bb6bcbd100945ee25daceb47fa9cf69a1574"
+    },
+    {
+      "path": "reproducibility\\state_sufficiency\\independent_verification\\inputs\\designs\\SSC1-FINAL-0001.json",
+      "scene_records": 9,
+      "sha256": "1bec5af2d37609d4b6834b5ca79b91c7894b3e7d8804c9c96c177282a5821b0c"
+    },
+    {
+      "path": "reproducibility\\state_sufficiency\\independent_verification\\inputs\\designs\\SSC1-FINAL-0002.json",
+      "scene_records": 9,
+      "sha256": "3fb9c48be8db7d949a29e147a185481c1c301804a2d2b79cfab913dc7e8b25a1"
+    },
+    {
+      "path": "reproducibility\\state_sufficiency\\independent_verification\\inputs\\designs\\SSC1-FINAL-0003.json",
+      "scene_records": 9,
+      "sha256": "f0eba9ec11175fee066c7e8b60579647f76ff8a399d55632f873b73274c3b418"
+    },
+    {
+      "path": "reproducibility\\state_sufficiency\\independent_verification\\inputs\\designs\\SSC1-FINAL-0004.json",
+      "scene_records": 9,
+      "sha256": "73e47d29d269ef99236bef2ef5cab67fc3a8f9a95fbbe26256b18d3fb2b2827e"
+    },
+    {
+      "path": "reproducibility\\state_sufficiency\\independent_verification\\inputs\\designs\\SSC1-FINAL-0005.json",
+      "scene_records": 9,
+      "sha256": "ab897638566ff3cfb4e69861a91b240eb650d30bc2b4b151a54957de4f3d80c8"
+    },
+    {
+      "path": "reproducibility\\state_sufficiency\\independent_verification\\inputs\\designs\\SSC1-FINAL-0006.json",
+      "scene_records": 9,
+      "sha256": "f11d2eee504462e0042d35c393865490d4e2b2d83f4774eed1c4eb6346e5bf6b"
+    },
+    {
+      "path": "reproducibility\\state_sufficiency\\independent_verification\\inputs\\designs\\SSC1-FINAL-0007.json",
+      "scene_records": 9,
+      "sha256": "9554af518d72724ec4f2147f95c7e707408789a00be7a0fd28d78432e50b3e8c"
+    },
+    {
+      "path": "reproducibility\\state_sufficiency\\independent_verification\\inputs\\designs\\SSC1-FINAL-0008.json",
+      "scene_records": 9,
+      "sha256": "eac660dcec644adf40598cbef472a9e561c489232bd3806e4b7513f8b3e52969"
+    },
+    {
+      "path": "reproducibility\\state_sufficiency\\independent_verification\\inputs\\designs\\SSC1-FINAL-0009.json",
+      "scene_records": 9,
+      "sha256": "83affbfeb38550a6c81bc82cad97407bd296e59188124ee89d5b97aac19caa2b"
+    },
+    {
+      "path": "reproducibility\\state_sufficiency\\independent_verification\\inputs\\designs\\SSC1-FINAL-0010.json",
+      "scene_records": 9,
+      "sha256": "77d92e5bae1b8fa7dc97d77f39fb108e4bde54ebf0e6aa9983731ce21be2545f"
+    },
+    {
+      "path": "reproducibility\\state_sufficiency\\independent_verification\\inputs\\designs\\SSC1-FINAL-0011.json",
+      "scene_records": 9,
+      "sha256": "a6c649a208911b2f1f31e2968be41b5dc3fd44062527c6a6df4eeda30e57f4cc"
+    },
+    {
+      "path": "reproducibility\\state_sufficiency\\independent_verification\\inputs\\designs\\SSC1-FINAL-0012.json",
+      "scene_records": 9,
+      "sha256": "0a7d9b42198aff8529fabd5e1a93323ba04ba602b28d4ec65357d6d259dcc422"
+    },
+    {
+      "path": "reproducibility\\state_sufficiency\\independent_verification\\inputs\\designs\\SSC1-FINAL-0013.json",
+      "scene_records": 9,
+      "sha256": "17c121167f3427fc28e8048588be947962bbb5ce06d3c4e8639399677a746516"
+    },
+    {
+      "path": "reproducibility\\state_sufficiency\\independent_verification\\inputs\\designs\\SSC1-FINAL-0014.json",
+      "scene_records": 9,
+      "sha256": "05fa6cf9bcad87410f82f54b56494c36fe88b44c978d5caef1fc4fa19c750796"
+    },
+    {
+      "path": "reproducibility\\state_sufficiency\\independent_verification\\inputs\\designs\\SSC1-FINAL-0015.json",
+      "scene_records": 9,
+      "sha256": "0faadb2f574ac93999b5f77d9c11ebbf900362c473d33077be8d97745b3c2dd2"
+    },
+    {
+      "path": "reproducibility\\state_sufficiency\\independent_verification\\inputs\\designs\\SSC1-FINAL-0016.json",
+      "scene_records": 9,
+      "sha256": "a6b4b6d2f18d53e80970de786436758f9c1e9ba3c17ce40c7f32cf670c7e5f73"
+    },
+    {
+      "path": "reproducibility\\state_sufficiency\\independent_verification\\inputs\\designs\\SSC1-FINAL-0017.json",
+      "scene_records": 9,
+      "sha256": "32897275f53d729d3c197d7ebf5346f37e03ed73c8e4928fa81aa565a6a58726"
+    },
+    {
+      "path": "reproducibility\\state_sufficiency\\independent_verification\\inputs\\designs\\SSC1-FINAL-0018.json",
+      "scene_records": 9,
+      "sha256": "ebadc5616b2775694e1435a92041484040ff9cf26a387df09a8f826225a989e0"
+    },
+    {
+      "path": "reproducibility\\state_sufficiency\\independent_verification\\inputs\\designs\\SSC1-FINAL-0019.json",
+      "scene_records": 9,
+      "sha256": "bf34b6f0edd659f848e1b6ee153739d32c99e1c55d044e4cb5861389ba0ed1dc"
+    },
+    {
+      "path": "reproducibility\\state_sufficiency\\independent_verification\\inputs\\designs\\SSC1-FINAL-0020.json",
+      "scene_records": 9,
+      "sha256": "448a17aff5c6c12aabbc8e36ca7d97d5f686f1f750a764a02d612ffa7723449b"
+    },
+    {
+      "path": "reproducibility\\state_sufficiency\\independent_verification\\inputs\\designs\\SSC1-FINAL-0021.json",
+      "scene_records": 9,
+      "sha256": "bb6e7b8502e3aad8b9e1a1ae6847deed682a598e4ce933036d2f26d39c47a346"
+    },
+    {
+      "path": "reproducibility\\state_sufficiency\\independent_verification\\inputs\\designs\\SSC1-FINAL-0022.json",
+      "scene_records": 9,
+      "sha256": "23d868c57ecfef473bd0683e96d429d29f794ec6af196ff50a4422e11c3dab97"
+    },
+    {
+      "path": "reproducibility\\state_sufficiency\\independent_verification\\inputs\\designs\\SSC1-FINAL-0023.json",
+      "scene_records": 9,
+      "sha256": "f30a8dc021c0425b73156705dd6136dca8742257dc6ee45cb433a246c350984c"
+    },
+    {
+      "path": "reproducibility\\state_sufficiency\\independent_verification\\inputs\\designs\\SSC1-FINAL-0024.json",
+      "scene_records": 9,
+      "sha256": "b59b5de97ce24f57f981838081057eacd57ef77e38628e153b1120c16f5cbd56"
+    },
+    {
+      "path": "reproducibility\\state_sufficiency\\independent_verification\\inputs\\designs\\SSC1-FINAL-0025.json",
+      "scene_records": 9,
+      "sha256": "f1bc2d5904a0497fdb150eca141380d4db51adf1921c0aac508d4cbf598e1ef6"
+    },
+    {
+      "path": "reproducibility\\state_sufficiency\\independent_verification\\inputs\\designs\\SSC1-FINAL-0026.json",
+      "scene_records": 9,
+      "sha256": "4529f001cf615f1689fbf1062d6ab37489cf3286529ca4b5827c0cef8b374c84"
+    },
+    {
+      "path": "reproducibility\\state_sufficiency\\independent_verification\\inputs\\designs\\SSC1-FINAL-0027.json",
+      "scene_records": 9,
+      "sha256": "f4dd33735afa3b1dbc0f7f66974d77102990b828782ba451061cf2061defad5f"
+    },
+    {
+      "path": "reproducibility\\state_sufficiency\\independent_verification\\inputs\\designs\\SSC1-FINAL-0028.json",
+      "scene_records": 9,
+      "sha256": "0924a854a70a83ac07a5593f3088b41a72ea67f5e4c0dcb9491b94cf9a0f46c8"
+    },
+    {
+      "path": "reproducibility\\state_sufficiency\\independent_verification\\inputs\\designs\\SSC1-FINAL-0029.json",
+      "scene_records": 9,
+      "sha256": "1382e8758a7062b1142ca4e187b1a39f060ca3f8a87992c1a089b0d1c32297f4"
+    },
+    {
+      "path": "reproducibility\\state_sufficiency\\independent_verification\\inputs\\designs\\SSC1-FINAL-0030.json",
+      "scene_records": 9,
+      "sha256": "b5db3cc7891dbc1cff4f63bc475719706a5c5337aabc91f5832e5aa7bc939e3a"
+    },
+    {
+      "path": "reproducibility\\state_sufficiency\\independent_verification\\inputs\\designs\\SSC1-FINAL-0031.json",
+      "scene_records": 9,
+      "sha256": "2de78d220dae8ea32f9abe04259e60dae55d47c9fff96ab057d0931a5a570f39"
+    },
+    {
+      "path": "reproducibility\\state_sufficiency\\independent_verification\\inputs\\designs\\SSC1-FINAL-0032.json",
+      "scene_records": 9,
+      "sha256": "ba6129dd59c5bed9b665f392672ad19b98c1f9f92c88aa177df310f558520e4f"
+    },
+    {
+      "path": "reproducibility\\state_sufficiency\\independent_verification\\inputs\\designs\\SSC1-FINAL-0033.json",
+      "scene_records": 9,
+      "sha256": "e767f3a2e984dc2123006b780f23c9269065287b38da1e6f517ec06de006f9cd"
+    },
+    {
+      "path": "reproducibility\\state_sufficiency\\independent_verification\\inputs\\designs\\SSC1-FINAL-0034.json",
+      "scene_records": 9,
+      "sha256": "b6306f3199baf87dedca7920d7a441d3e5735cd0aecdf4381264a979a371ba23"
+    },
+    {
+      "path": "reproducibility\\state_sufficiency\\independent_verification\\inputs\\designs\\SSC1-FINAL-0035.json",
+      "scene_records": 9,
+      "sha256": "68483830c6debf24fd4bc0fe1799ed4407a032215ddd7d1e836c1c978fe0349b"
+    },
+    {
+      "path": "reproducibility\\state_sufficiency\\independent_verification\\inputs\\designs\\SSC1-FINAL-0036.json",
+      "scene_records": 9,
+      "sha256": "975cf377cf8f31fd660e607c87c3bc72470912bf950c0cd553b68b78ef7e7489"
+    },
+    {
+      "path": "reproducibility\\state_sufficiency\\independent_verification\\inputs\\designs\\SSC1-FINAL-0037.json",
+      "scene_records": 9,
+      "sha256": "753438c1ef5bcfab300aadadade41aec01234bf54489e3534ec77f65903bee84"
+    },
+    {
+      "path": "reproducibility\\state_sufficiency\\independent_verification\\inputs\\designs\\SSC1-FINAL-0038.json",
+      "scene_records": 9,
+      "sha256": "53c1ec5c77fb38ad55d1077e943e1e32a34e9d2e51ab7721f235e64d30906519"
+    },
+    {
+      "path": "reproducibility\\state_sufficiency\\independent_verification\\inputs\\designs\\SSC1-FINAL-0039.json",
+      "scene_records": 9,
+      "sha256": "3de634eb29bf6dc26e900a0ce566d2f8e4d5720022ee4e77d57108609c9c71ca"
+    },
+    {
+      "path": "reproducibility\\state_sufficiency\\independent_verification\\inputs\\designs\\SSC1-FINAL-0040.json",
+      "scene_records": 9,
+      "sha256": "05591bc6337b7ff9da3614b1d9db7f36833221c3b38f659f240cbd58a548c13e"
+    },
+    {
+      "path": "reproducibility\\state_sufficiency\\independent_verification\\inputs\\designs\\SSC1-FINAL-0041.json",
+      "scene_records": 9,
+      "sha256": "024899193b45f6bfc0eecdeea3695ed746bc3cc3ddf66603043df8e613372af0"
+    },
+    {
+      "path": "reproducibility\\state_sufficiency\\independent_verification\\inputs\\designs\\SSC1-FINAL-0042.json",
+      "scene_records": 9,
+      "sha256": "661df668760057f6e1b11eb47035e43d15f914475c349c6f6f2816e2dc5aa7ce"
+    },
+    {
+      "path": "reproducibility\\state_sufficiency\\independent_verification\\inputs\\designs\\SSC1-FINAL-0043.json",
+      "scene_records": 9,
+      "sha256": "f31748ae6102294a2103743980142ee0dfc459dbdb84acf9e28e3dab4a0915d8"
+    },
+    {
+      "path": "reproducibility\\state_sufficiency\\independent_verification\\inputs\\designs\\SSC1-FINAL-0044.json",
+      "scene_records": 9,
+      "sha256": "2d64c5f645476a2ff7ace09f40bcf93791082890802fe1995903bc7376fbcd9e"
+    },
+    {
+      "path": "reproducibility\\state_sufficiency\\independent_verification\\inputs\\designs\\SSC1-FINAL-0045.json",
+      "scene_records": 9,
+      "sha256": "2f737cfc51e7f3153d2b5110f05b79381bca7abb3f47ab6059fdd5fc0d29bb8b"
+    },
+    {
+      "path": "reproducibility\\state_sufficiency\\independent_verification\\inputs\\designs\\SSC1-FINAL-0046.json",
+      "scene_records": 9,
+      "sha256": "4ce25521bbe242a25529c4d3d769bb4e03224814903a9337d8a0bdbfdaa5cded"
+    },
+    {
+      "path": "reproducibility\\state_sufficiency\\independent_verification\\inputs\\designs\\SSC1-FINAL-0047.json",
+      "scene_records": 9,
+      "sha256": "eda23b73e8e793c652131a820e9ae771cfc3c1e0f0e6416a4cde6a92cda0c4d4"
+    },
+    {
+      "path": "reproducibility\\state_sufficiency\\independent_verification\\inputs\\designs\\SSC1-FINAL-0048.json",
+      "scene_records": 9,
+      "sha256": "333b5998a963cdda82b773aed0f654cf1d45877aebf9f00d7452972969a475a1"
+    },
+    {
+      "path": "reproducibility\\state_sufficiency\\independent_verification\\inputs\\designs\\SSC1-FINAL-0049.json",
+      "scene_records": 9,
+      "sha256": "f9860d01f5245a4a98aef61e4d696eb82b3aa8a2c41fe29659d1e7f7df9ac23f"
+    },
+    {
+      "path": "reproducibility\\state_sufficiency\\independent_verification\\inputs\\designs\\SSC1-FINAL-0050.json",
+      "scene_records": 9,
+      "sha256": "e6c918841a1b56315e07a17fd29c7a4f08541cfc8048fe9daf0373805cf50d86"
+    },
+    {
+      "path": "reproducibility\\state_sufficiency\\independent_verification\\inputs\\designs\\SSC1-FINAL-0051.json",
+      "scene_records": 9,
+      "sha256": "a248046bd6928ebf94919f7303e8c59103f9421a2d6a05fbd2fa9f378074106d"
+    },
+    {
+      "path": "reproducibility\\state_sufficiency\\independent_verification\\inputs\\designs\\SSC1-FINAL-0052.json",
+      "scene_records": 9,
+      "sha256": "73a1e374e1f539af3696304ced03fec0f2c110022f9300c7f80c0f8ec49737a6"
+    },
+    {
+      "path": "reproducibility\\state_sufficiency\\independent_verification\\inputs\\designs\\SSC1-FINAL-0053.json",
+      "scene_records": 9,
+      "sha256": "51a28a063621dd90892f6dd3a3a05c67bcb869d036fe38fb507cf9295e18ef9d"
+    },
+    {
+      "path": "reproducibility\\state_sufficiency\\independent_verification\\inputs\\designs\\SSC1-FINAL-0054.json",
+      "scene_records": 9,
+      "sha256": "a71e88ce3711c06bac7a55e8612fc61fe4209c7b1b5d95cda9e2c0a7edcef683"
+    },
+    {
+      "path": "reproducibility\\state_sufficiency\\independent_verification\\inputs\\designs\\SSC1-FINAL-0055.json",
+      "scene_records": 9,
+      "sha256": "15ad37d69d5638742d0c501ad83bfbf9114ee498a883f8584d43a27ca0a40d8b"
+    },
+    {
+      "path": "reproducibility\\state_sufficiency\\independent_verification\\inputs\\designs\\SSC1-FINAL-0056.json",
+      "scene_records": 9,
+      "sha256": "fc9849c26c7e6f3d9a7ea2e061981fcbf1588693aa9a1c7bbfa5a25d529a2c2c"
+    },
+    {
+      "path": "reproducibility\\state_sufficiency\\independent_verification\\inputs\\designs\\SSC1-FINAL-0057.json",
+      "scene_records": 9,
+      "sha256": "04ac34a13504caf7e62c49a51cd76338cece376d15d9f358c35b5a096ad60d1d"
+    },
+    {
+      "path": "reproducibility\\state_sufficiency\\independent_verification\\inputs\\designs\\SSC1-FINAL-0058.json",
+      "scene_records": 9,
+      "sha256": "6820cca4309be3c06bd199631a13947e8c797535677391d39b5239b08b79ca91"
+    },
+    {
+      "path": "reproducibility\\state_sufficiency\\independent_verification\\inputs\\designs\\SSC1-FINAL-0059.json",
+      "scene_records": 9,
+      "sha256": "a5c1a379e7bd7e14beb0abe0fb7a770e4926b51f1993c9591bbe2ea894596189"
+    },
+    {
+      "path": "reproducibility\\state_sufficiency\\independent_verification\\inputs\\designs\\SSC1-FINAL-0060.json",
+      "scene_records": 9,
+      "sha256": "07a6af3aed16cee247e21d912f40a333b441d19f1888286799f9315a8ed31522"
+    },
+    {
+      "path": "reproducibility\\state_sufficiency\\independent_verification\\inputs\\designs\\SSC1-FINAL-0061.json",
+      "scene_records": 9,
+      "sha256": "8c3d88e8393c7d4eb8b40e7e142137f01f1fd883208a572d236da9a352c7f674"
+    },
+    {
+      "path": "reproducibility\\state_sufficiency\\independent_verification\\inputs\\designs\\SSC1-FINAL-0062.json",
+      "scene_records": 9,
+      "sha256": "9a57915a1010a914ed334dbd56e8d7570320bbf4e2af583c0805c609080da382"
+    },
+    {
+      "path": "reproducibility\\state_sufficiency\\independent_verification\\inputs\\designs\\SSC1-FINAL-0063.json",
+      "scene_records": 9,
+      "sha256": "9ec7c09c7a7b77172c22f0dcc884e075ef91114fa20380a7ea010aa97375a4c3"
+    }
+  ],
+  "historical_semantic_tables": 2408,
+  "historical_textual_hashes": 8024,
+  "replacements": [],
+  "seed": 2609182101,
+  "semantic_rule": "named Boolean table sorted without case ID, layout or entity index order"
+}

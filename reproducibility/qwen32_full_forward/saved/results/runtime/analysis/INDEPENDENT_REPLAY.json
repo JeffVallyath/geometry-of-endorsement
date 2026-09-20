@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "roots": 64,
+  "raw_final_rows": 36992,
+  "classification_fields_checked": 27136,
+  "imports_experiment_classification": false,
+  "source": "RAW_SCORES.jsonl + source design schema",
+  "full_repeat_reconstruction": [
+    {
+      "root_id": "SSC1-FINAL-0003",
+      "classification_identical": true
+    },
+    {
+      "root_id": "SSC1-FINAL-0004",
+      "classification_identical": true
+    },
+    {
+      "root_id": "SSC1-FINAL-0007",
+      "classification_identical": true
+    },
+    {
+      "root_id": "SSC1-FINAL-0014",
+      "classification_identical": true
+    }
+  ]
+}

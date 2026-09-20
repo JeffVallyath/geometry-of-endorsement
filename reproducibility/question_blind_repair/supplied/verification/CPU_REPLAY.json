@@ -1,0 +1,21 @@
+{
+  "at": "2026-09-19T19:49:11.327363+00:00",
+  "comparison_status": "ALL_RETAINED_SCORE_BINDINGS_REPRODUCED",
+  "data_products": {
+    "DONOR_AGREEMENT.csv": "1a5b7f70ec362f32009755a00e138ca02cb16da23990749f1a1713183981532f",
+    "FAMILIES.csv": "0e2a1b92db46705eef8135e59a3134b52de50046733cb0f1048419b839b6908c",
+    "RAW_AND_BOUNDARY_AUDIT.json": "43e99896cc9e8909ec3c7ae733c374d6d74da148ec4b00a81247b5886a6d5f70",
+    "REPEAT_COMPARISON.json": "468c1ddd62f4b37c92f6d77ab9131f87cc03a6f07d8dfec4c553c00c2832978b",
+    "REVERSE_TARGETS.csv": "a148fd21ac7f889c119a7a325e478a1fa42745ed358f3556cd3a81329a3f900e",
+    "SELECTED_RECOUNT.json": "96272cfb5be51638c84a8ca7c1627bc5efdf6ab53f13719baf0614961bc8968c",
+    "TARGETS.csv": "37f36acede9711684cbc826d407ea17bf028302dafabc250a0d08ec8b292dc6b",
+    "WORKED_EXAMPLE.csv": "83d0bacbb15a525d223fe8b8d9f2dce799c15a8b45d1ec8592bc9bc0e69b2d51"
+  },
+  "extension_manifest_sha256": "5ec23fd9c55116e071b5c6c041ef6049edc2ef1dc3386d26fd177a04f694bf64",
+  "independent_implementation_no_scientific_imports": true,
+  "new_population_inference": false,
+  "original_capsule_sha256": "22bc13ee9b3cc7369741339d4f8f2f74b1577db6bf513e49e1dcb5cecd14da49",
+  "physical_rows": 14076,
+  "python": "3.11.15 (main, Jun 23 2026, 15:20:37) [MSC v.1944 64 bit (AMD64)]",
+  "status": "CPU_REPLAY_COMPLETE"
+}
