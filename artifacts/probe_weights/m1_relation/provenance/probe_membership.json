@@ -1,0 +1,28 @@
+{
+  "schema": "ANONYMOUS_PROBE_MEMBERSHIP_V1",
+  "model_binding": [
+    "gemma"
+  ],
+  "files": [
+    {
+      "path": "splits/pilot_train.csv",
+      "rows": 1500,
+      "sha256": "1304d8780aa7c6c731875666651001d2c7b8a0093b4a82ee3e9a5cbe091c568c"
+    },
+    {
+      "path": "splits/pilot_select.csv",
+      "rows": 300,
+      "sha256": "b1d599913e749371d38e7cd79f7d9e602324bc8d06d2d18ac9144488008bab92"
+    },
+    {
+      "path": "splits/pilot_eval.csv",
+      "rows": 500,
+      "sha256": "16bdab84f444593221aa97c8fbc67f8a4f6450792153241580f66dc08f10a474"
+    }
+  ],
+  "scope": "Original activation-probe pilot membership and grouping identifiers only; not a complete labeled training corpus",
+  "source_text_and_reference_labels_included": false,
+  "minilm_common_training_membership_recovered": false,
+  "original_gemma_aggregate_manifest_available": false,
+  "current_llama_artifact_association": "not established by the earlier candidate audit"
+}

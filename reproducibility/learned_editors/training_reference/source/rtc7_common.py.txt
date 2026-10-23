@@ -1,0 +1,156 @@
+"""V7 bindings. Historical adapters and supplied data are read-only dependencies."""
+from __future__ import annotations
+
+from dataclasses import dataclass
+import hashlib
+import importlib.util
+import json
+import os
+from pathlib import Path
+import random
+import sys
+
+ROOT = Path(__file__).resolve().parents[1]
+INPUT = Path(os.environ.get('RTC7_INPUT_ROOT', str(ROOT.with_name(ROOT.name + '-inputs') / 'RELATIONAL_TERMINAL_CONSISTENCY_V7')))
+SOURCE = INPUT / 'inputs/v6_source'
+os.environ['RFR5_V4_STORE'] = str(SOURCE / 'factors/v4')
+os.environ['RFR5_V3_STORE'] = str(SOURCE / 'factors/v3')
+sys.path.insert(0, str(SOURCE / 'scripts'))
+import rfr5_common as C
+
+
+def reference(name):
+    spec = importlib.util.spec_from_file_location('rtc7_reference_' + name, INPUT / 'reference' / (name + '.py'))
+    module = importlib.util.module_from_spec(spec)
+    sys.modules[spec.name] = module
+    spec.loader.exec_module(module)
+    return module
+
+
+PAIRS = reference('terminal_pairs')
+CONDITIONS = ('INV_PAIR_NLL', 'INV_PAIR_CONSISTENCY', 'FREE_PAIR_NLL', 'FREE_PAIR_CONSISTENCY')
+ACTORS = ('gemma', 'qwen')
+SEEDS = (0, 1)
+LR = {'INV': 3e-4, 'FREE': 1e-3}
+BETA = .01
+
+
+def sha(path):
+    return hashlib.sha256(Path(path).read_bytes()).hexdigest()
+
+
+def data(split):
+    sizes = {'fit': 64, 'cal': 32, 'main': 64, 'origin': 64, 'program': 32, 'controls': 16}
+    if split not in sizes:
+        raise ValueError('Undeclared split')
+    manifest = json.loads((INPUT / 'data/MANIFEST.json').read_text())
+    path = INPUT / 'data' / (split + '.jsonl')
+    if sha(path) != manifest['files'][path.name]['sha256']:
+        raise ValueError('Immutable input hash mismatch')
+    rows = C.read_rows(path)
+    if len(rows) != sizes[split]:
+        raise ValueError('Full designed population required')
+    return rows
+
+
+def verify_bundle():
+    records = json.loads((INPUT / 'BUNDLE_MANIFEST.json').read_text())['files']
+    for record in records:
+        path = INPUT / record['path']
+        if path.stat().st_size != record['bytes'] or sha(path) != record['sha256']:
+            raise ValueError('Supplied file changed: ' + record['path'])
+    binding = C.verify_inputs()
+    if len(binding['checkpoints']) != 24:
+        raise ValueError('Expected all24 historical setters')
+    return {'files': len(records), 'checkpoints': 24, 'binding': binding}
+
+
+@dataclass(frozen=True)
+class WriterInput:
+    """The complete inference access boundary; no evaluator fields allowed."""
+    prefix_ids: tuple[int, ...]
+    addresses: tuple[tuple[int, ...], ...]
+    desired_values: tuple[int, ...]
+
+    def __post_init__(self):
+        if not self.prefix_ids or len(self.addresses) != len(self.desired_values):
+            raise ValueError('Invalid writer input')
+        for address, value in zip(self.addresses, self.desired_values, strict=True):
+            if not address or len(set(address)) != len(address) or value not in (0, 1):
+                raise ValueError('Invalid address/value')
+            if min(address) < 0 or max(address) >= len(self.prefix_ids):
+                raise ValueError('Address outside prefix')
+
+
+def encode_pair(bb, record, actor):
+    """Evaluator builds labels separately, after serializing each writer request."""
+    if actor not in ACTORS or not record['pair_id'].startswith(('FIT-', 'CAL-')):
+        raise ValueError('Only paired FIT/CAL can enter development')
+    if len(record['commands']) != 1 or len(record['sources']) != 2:
+        raise ValueError('Training requires exactly one SET per source')
+    terminal = C.Q.scene_from_dict(record['terminal'])
+    if PAIRS.digest(PAIRS.training_pair(terminal)) != PAIRS.digest(record):
+        raise ValueError('Terminal pair differs from frozen construction')
+    command = C.Q.OLD.Edit(**record['commands'][0])
+    branches = []
+    for origin, source in enumerate(record['sources']):
+        scene = C.Q.scene_from_dict(source)
+        text, spans = C.Q.prefix_text(scene, C.PROCEDURES[actor], 'original')
+        request = WriterInput(tuple(bb.prefix_ids(text)),
+            (tuple(bb.clause_positions(text, spans[(command.actor, command.project)])),), (int(command.value),))
+        queries = []
+        for query in PAIRS.pair_questions(record, origin):
+            encoded = bb.encode(text, C.Q.suffix_text(query['text']))
+            if tuple(encoded['prefix_ids']) != request.prefix_ids:
+                raise ValueError('Question changed prefix boundary')
+            queries.append({'meta': query, 'suffix': tuple(encoded['suffix_ids']),
+                            'labels': tuple(bb.label_ids(encoded['full_text'], query['labels']))})
+        branches.append({'request': request, 'queries': queries, 'text': text})
+    for left, right in zip(branches[0]['queries'], branches[1]['queries'], strict=True):
+        if any(left['meta'][k] != right['meta'][k] for k in ('text', 'labels', 'gold', 'spec', 'draw')):
+            raise ValueError('Misaligned paired query or semantic labels')
+        if left['suffix'] != right['suffix'] or left['labels'] != right['labels']:
+            raise ValueError('Origin-dependent suffix/answer token mapping')
+    return {'pair_id': record['pair_id'], 'branches': branches, 'record': record}
+
+
+def groups(pairs, seed, epoch):
+    if seed not in SEEDS or epoch not in (1, 2):
+        raise ValueError('Undeclared training opportunity')
+    result = []
+    for pair_index, pair in enumerate(pairs):
+        indices = list(range(24))
+        random.Random(f'RTC7|{seed}|{epoch}|{pair["pair_id"]}').shuffle(indices)
+        result.extend((pair_index, tuple(indices[i:i+4])) for i in range(0, 24, 4))
+    random.Random(f'RTC7-order|{seed}|{epoch}').shuffle(result)
+    return result
+
+
+def feasible(metrics):
+    return (metrics['changed'] >= .85 and metrics['harm'] <= .05
+        and min(metrics['changed_by_direction'].values()) >= .80
+        and metrics['all24'] >= .7 * metrics['native_all24']
+        and metrics['noop_preservation'] >= .95)
+
+
+def select_checkpoint(curve):
+    if not curve or len({c['epoch'] for c in curve}) != len(curve):
+        raise ValueError('Nonempty unique checkpoint curve required')
+    viable = [c for c in curve if feasible(c['cal'])]
+    if viable:
+        choice = max(viable, key=lambda c: (c['cal']['pair_correct'], c['cal']['changed'], -c['cal']['harm'], -c['epoch']))
+    else:
+        choice = max(curve, key=lambda c: (c['cal']['changed'] - 2*c['cal']['harm'], c['cal']['pair_correct'], -c['epoch']))
+    return dict(choice, feasible=bool(viable))
+
+
+def select_current(selected):
+    if set(selected) != set(CONDITIONS):
+        raise ValueError('All four current conditions required')
+    viable = [n for n in CONDITIONS if feasible(selected[n]['cal'])]
+    def key(name):
+        c = selected[name]; m = c['cal']
+        return ((m['pair_correct'], m['changed'], -m['harm'], -c['epoch'], -CONDITIONS.index(name)) if viable
+                else (m['changed']-2*m['harm'], m['pair_correct'], -c['epoch'], -CONDITIONS.index(name)))
+    name = max(viable or CONDITIONS, key=key)
+    return {'condition': name, **selected[name], 'feasible': bool(viable)}

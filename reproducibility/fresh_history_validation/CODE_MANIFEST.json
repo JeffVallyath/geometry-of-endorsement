@@ -1,0 +1,51 @@
+{
+  "schema": "REVIEW_CODE_INTEGRITY_V1",
+  "files": [
+    {
+      "path": "source/analyze.py",
+      "bytes": 15326,
+      "sha256": "2b4b5a0a5f24a75dcdac009a3ce51e37a64202de6567da77708cc6d06907dfd5"
+    },
+    {
+      "path": "source/bindings.py",
+      "bytes": 732,
+      "sha256": "afe77bdf6eb22d7fb6d833f7df3753458d32e3aa6e1e890387d3f644f1f8f8ea"
+    },
+    {
+      "path": "source/decision.py",
+      "bytes": 3998,
+      "sha256": "205bb1aec0746f858511ec1be21e51574369cf750341f1eed34554b49368c513"
+    },
+    {
+      "path": "source/diagnostics.py",
+      "bytes": 5761,
+      "sha256": "0d1cae73cd4a0ea04aeb1aa9c17b1b43aeaf903e34db3e48bf5ee43d69e7929e"
+    },
+    {
+      "path": "source/panels.py",
+      "bytes": 3596,
+      "sha256": "9ba4ac0aa10c54e43f56afd16f78899588094e83ec2e55ea2c146ae904bf36b2"
+    },
+    {
+      "path": "source/replay.py",
+      "bytes": 6367,
+      "sha256": "c6c02ce86c200b1da71cfd896de845972abaf273462d9c1b6b9aeed2559d6b21"
+    },
+    {
+      "path": "source/result_figures.py",
+      "bytes": 5487,
+      "sha256": "4bd66059a834f101d7867d8e4432fc10c77b9290f61cce1f493c9fb4118ef16a"
+    },
+    {
+      "path": "source/result_tables.py",
+      "bytes": 4912,
+      "sha256": "cab71eb5ef3fba7dc7090fa8e066b83915451d05d5d3fd39568547755b571426"
+    }
+  ],
+  "function_ast_sha256": {
+    "compare": "a925a2adadfa91f1bd05c2f8670bbfe94396c1ed6d4fb92faa67009dd3866af2",
+    "current_rows": "7b207647189ac13680ab54c6612cfeab42e13e7babb44bba64af30203008aa88",
+    "panel_index": "557d52c41ba663b921ec7dd3ba140a5ed68482c592477f9af3fe81c4ff4e6128"
+  },
+  "scope": "Public code bytes and preserved scientific panel-function syntax; original custody stays private"
+}

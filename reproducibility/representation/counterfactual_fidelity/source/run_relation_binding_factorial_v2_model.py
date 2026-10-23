@@ -782,7 +782,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--direction-key", default="raw_relation_dim")
     parser.add_argument("--direction-sha256", required=True)
     parser.add_argument("--output-root", type=Path, required=True)
-    parser.add_argument("--cache-dir", type=Path, default=Path("/content/model-cache"))
+    parser.add_argument("--cache-dir", type=Path, default=Path("model-cache"))
     parser.add_argument("--hf-token-env", default="HF_TOKEN")
     mode = parser.add_mutually_exclusive_group()
     mode.add_argument("--validate-inputs", action="store_true")

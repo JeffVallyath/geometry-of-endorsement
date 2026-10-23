@@ -14,7 +14,6 @@ import xml.etree.ElementTree as ET
 from .common import ROOT, load_json, new_output, safe_path, sha256
 
 SOURCE = ROOT / 'reproducibility/fresh_history_validation'
-ARCHIVE_SHA256 = '0f52f3057797c3d07c9e945c1f920834bab37364fce11f53ed13e404c29431c4'
 
 # The saved-score child cannot import a model/provider client or open a socket.
 OFFLINE_BOOTSTRAP = '''
@@ -48,12 +47,11 @@ def equivalent(actual, expected):
 
 
 def verify(source=SOURCE):
+    """Check actual public bytes, closed inventory and frozen generated inputs."""
     source = Path(source).resolve()
     manifest = load_json(source / 'MANIFEST.json')
-    if manifest.get('schema') != 'FHV1_COMPACT_SCIENTIFIC_V1':
-        raise ValueError('Wrong compact scientific manifest schema')
-    if manifest['source_archive_sha256'] != ARCHIVE_SHA256:
-        raise ValueError('Wrong immutable study source')
+    if manifest.get('schema') != 'REVIEW_FRESH_HISTORY_V1':
+        raise ValueError('Wrong public scientific manifest schema')
     seen = set()
     for row in manifest['files']:
         name = row['path']
@@ -63,9 +61,6 @@ def verify(source=SOURCE):
         path = safe_path(name, source)
         if path.stat().st_size != row['bytes'] or sha256(path) != row['sha256']:
             raise ValueError('Scientific artifact changed: ' + name)
-    provenance = load_json(source / 'SOURCE.json')
-    if provenance['source_archive_sha256'] != ARCHIVE_SHA256:
-        raise ValueError('Source provenance changed')
     freeze = load_json(source / 'generated/DATA_FREEZE.json')
     frozen_names = set()
     for recorded_name, expected in freeze['files'].items():

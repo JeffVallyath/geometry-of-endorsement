@@ -1,0 +1,101 @@
+{
+  "source_reported_scientific_complete": true,
+  "verification_level": "Historical report; source tensor/operational records are not part of this release",
+  "requirements": [
+    {
+      "requirement": "Pinned model/writer/runtime and authorized GPU actually qualified; no asset/runtime blocker",
+      "verdict": "PROVEN",
+      "revision": "11c9b309abf73637e4b6f9a3fa1e92e615547819",
+      "device": "NVIDIA A100-SXM4-40GB",
+      "original_record_locations": [
+        "run/results/provenance.json",
+        "run/receipts/runtime-qualification.json",
+        "run/receipts/assets.json"
+      ]
+    },
+    {
+      "requirement": "Exact original discovery bindings, replay tolerances, producer passivity, retained unchanged masters",
+      "verdict": "PROVEN",
+      "baseline_cells": 12,
+      "original_record_locations": [
+        "run/results/discovery/baseline_3.json",
+        "run/results/discovery/baseline_5.json",
+        "run/results/discovery/tensors",
+        "run/results/discovery/producers"
+      ]
+    },
+    {
+      "requirement": "A: all replay controls, exact four parents/complements and fixed-order selection",
+      "verdict": "PROVEN",
+      "selected_parent": "P1",
+      "arm_count": 13,
+      "original_record_locations": [
+        "run/results/discovery/A",
+        "run/results/discovery/PARENT_SELECTION.json"
+      ]
+    },
+    {
+      "requirement": "B: all64 sites both arms; signed ranking and frozen seven set pairs; prescribed compact fallback",
+      "verdict": "PROVEN",
+      "ranking_recomputation": "Verified by retained custody verifier against every raw scan cell",
+      "site_count": 64,
+      "compact_set": null,
+      "original_record_locations": [
+        "run/results/discovery/B_scan",
+        "run/results/discovery/FROZEN_RANKING_AND_UNIONS.json",
+        "run/results/discovery/B_unions",
+        "run/results/discovery/FROZEN_CARRIER.json",
+        "run/results/LOCAL_VERIFICATION.json"
+      ]
+    },
+    {
+      "requirement": "C: prescribed positional partitions; only empty-by-construction omissions; carrier unchanged",
+      "verdict": "PROVEN",
+      "nonempty_regions": 3,
+      "original_record_locations": [
+        "run/results/discovery/C",
+        "run/results/discovery/C_*_SPANS_NORMS.json",
+        "run/results/discovery/FROZEN_CARRIER.json"
+      ]
+    },
+    {
+      "requirement": "D: same-query all-suffix native grouped-head capture/BLOCK/INJECT/shams, passivity, exact copies, tensor binding",
+      "verdict": "PROVEN",
+      "reader_forwards": 72,
+      "original_record_locations": [
+        "run/results/discovery/D/GROUP_MAPPING.json",
+        "run/results/discovery/D",
+        "run/results/discovery/D/tensors"
+      ]
+    },
+    {
+      "requirement": "E: exact prebound original cases, own historical baseline/native replay, unchanged carrier IDs/components/positional rule",
+      "verdict": "PROVEN",
+      "cases": [
+        {
+          "root": "SSC1-FINAL-0026",
+          "status": "RESERVED_CASE_COMPLETE",
+          "origins": [
+            2,
+            7
+          ],
+          "baseline_replay_cells": 18
+        },
+        {
+          "root": "SSC1-FINAL-0054",
+          "status": "RESERVED_CASE_COMPLETE",
+          "origins": [
+            1,
+            4
+          ],
+          "baseline_replay_cells": 18
+        }
+      ],
+      "original_record_locations": [
+        "study/RESERVED_CASES.json",
+        "run/results/reserved",
+        "CASE_INPUT_DISCLOSURES.json"
+      ]
+    }
+  ]
+}

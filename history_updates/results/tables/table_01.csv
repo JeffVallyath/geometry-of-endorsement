@@ -1,0 +1,6 @@
+Model,Prompt,History_dependent,Questions,Related_minus_unrelated_pp,Long_chain_witnesses,Long_chain_questions
+Qwen2.5-7B,Original,94,384,12.5,32,195
+Gemma-2-9B,Original,101,384,15.625,65,195
+Qwen2.5-7B,Shared size-comparison format,57,384,6.770833333333333,,
+Qwen2.5-32B,Shared size-comparison format,9,384,0.6510416666666667,,
+Gemma-2-27B,Own format,41,384,6.380208333333333,34,195

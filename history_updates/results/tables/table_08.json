@@ -1,0 +1,65 @@
+{
+  "title": "Paired gains of the trained interpreter",
+  "unit": "97.5% intervals from 10,000 whole-subject resamples, with both repair seeds linked.",
+  "columns": [
+    "Model",
+    "Baseline",
+    "Gain_pp",
+    "Lower_pp",
+    "Upper_pp"
+  ],
+  "rows": [
+    {
+      "Model": "Qwen2.5-7B",
+      "Baseline": "HISTORY",
+      "Gain_pp": 89.453125,
+      "Lower_pp": 83.203125,
+      "Upper_pp": 94.921875
+    },
+    {
+      "Model": "Qwen2.5-7B",
+      "Baseline": "REFLECT",
+      "Gain_pp": 88.671875,
+      "Lower_pp": 82.03125,
+      "Upper_pp": 94.53125
+    },
+    {
+      "Model": "Qwen2.5-7B",
+      "Baseline": "CURRENT_TEXT",
+      "Gain_pp": 84.765625,
+      "Lower_pp": 77.34375,
+      "Upper_pp": 91.40625
+    },
+    {
+      "Model": "Qwen2.5-32B",
+      "Baseline": "NATIVE32_SAVED",
+      "Gain_pp": 29.6875,
+      "Lower_pp": 21.09375,
+      "Upper_pp": 39.0625
+    },
+    {
+      "Model": "Qwen2.5-32B",
+      "Baseline": "CURRENT_TEXT",
+      "Gain_pp": 61.71875,
+      "Lower_pp": 51.953125,
+      "Upper_pp": 71.09375
+    },
+    {
+      "Model": "Gemma-2-27B",
+      "Baseline": "NATIVE_GEMMA",
+      "Gain_pp": 50.78125,
+      "Lower_pp": 41.015625,
+      "Upper_pp": 60.546875
+    },
+    {
+      "Model": "Gemma-2-27B",
+      "Baseline": "CURRENT_TEXT",
+      "Gain_pp": 37.5,
+      "Lower_pp": 28.125,
+      "Upper_pp": 47.265625
+    }
+  ],
+  "sources": [
+    "public_repair/presentation/paired_gains"
+  ]
+}

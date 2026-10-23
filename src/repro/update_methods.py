@@ -12,7 +12,7 @@ import numpy as np
 from .common import ROOT, load_json, sha256, safe_path, new_output
 
 BASE = ROOT / 'reproducibility/update_method_comparison'
-INPUTS = ROOT / 'reproducibility/fresh_inference/supplied/reproduction/STATE_SUFFICIENCY_CONFIRMATION/runtime_inputs/UPDATE_METHOD_INPUTS'
+INPUTS = BASE / 'inputs'
 RECIPES = ('INV_PAIR_NLL', 'FREE_PAIR_CONSISTENCY')
 BASELINE = 'FIELD_PLUS_LATEST_ERRATUM'
 CONDITIONS = ('SOURCE','REBUILD','EXISTING_CORRECTION','LATEST_SAME_WORDING','LATEST_ERRATUM',BASELINE,
@@ -48,15 +48,8 @@ def interval(values):
 
 
 def verify(base=BASE):
-    for row in load_json(base/'supplied/completed/MANIFEST.json')['files']:
-        p=safe_path(row['path'],base/'supplied/completed')
-        need(p.stat().st_size==row['bytes'] and sha256(p)==row['sha256'], 'Changed comparison member: '+row['path'])
-    # These are the exact fixed inputs already distributed with the main-study
-    # scientific dependencies. Do not create a second divergent case inventory.
-    for name, rec in load_json(INPUTS/'ARTIFACT_MANIFEST.json')['files'].items():
-        if name.startswith('cases/fixed/'):
-            p=safe_path(name,INPUTS)
-            need(p.stat().st_size==rec['bytes'] and sha256(p)==rec['sha256'], 'Changed fixed input: '+name)
+    from .release_inputs import verify as verify_public
+    return verify_public(base, 'update_methods')
 
 
 def validate_score(r, reference, origin, sources):
@@ -81,12 +74,12 @@ def validate_score(r, reference, origin, sources):
 def reconstructed(base=BASE):
     verify(base)
     evaluation={a:{} for a in ('gemma','qwen')}
-    for row in rows(INPUTS/'cases/fixed/evaluation.jsonl'):
+    for row in rows(INPUTS/'cases/fixed/evaluation.jsonl.gz'):
         if row['panel']=='ORIGIN':
             key=(row['input_id'],row['query_id'])
             need(key not in evaluation[row['actor']], 'Duplicate frozen query')
             evaluation[row['actor']][key]=row
-    origins={r['root_id']:r for r in rows(INPUTS/'cases/fixed/origin.jsonl')}
+    origins={r['root_id']:r for r in rows(INPUTS/'cases/fixed/origin.jsonl.gz')}
     need(len(origins)==64, 'Expected 64 frozen roots')
     compact=[]; telemetry=[]; vectors={}; absolute=[]; fallback=[]
     fields=('actor','condition','root_id','scene_id','input_panel','origin','correct','valid','prediction','source_prediction','source_valid')
@@ -133,7 +126,7 @@ def reconstructed(base=BASE):
                 scope='Matched-origin comparison; 64 roots per model, four histories, 34 questions, both learned seeds.')
     # Original tabulation code is reused only after strict independent coverage,
     # semantic-label and score checks; its weak len(origins)-only guard is not used.
-    spec=importlib.util.spec_from_file_location('_supplied_comparison_analysis',base/'supplied/later_delivery/UPDATE_METHOD_RESULTS/code/analysis.py')
+    spec=importlib.util.spec_from_file_location('_supplied_comparison_analysis',base/'source/analysis.py')
     module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
     tables={'headline_results':module.headline(compact,contrasts),'per_root_results':module.per_root(compact),
             'per_scene_results':module.per_scene(compact),'timing_memory':module.timing_memory(telemetry)}

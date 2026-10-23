@@ -60,7 +60,7 @@ def examples(base,result):
 
 def markdown(rows):
     lines=['# Traceable saved-output examples','',
-           'These are selected illustrations, not prevalence estimates. Each example is selected solely from the independent calculation, without consulting expected outputs. `examples.json` contains full-precision scores, token bindings and journal line references. Manifest entries identify each original source archive/member.','',
+           'These examples illustrate positive results, non-witnesses and exclusions. Selection uses the independent calculation without opening expected results. Full-precision scores and scientific response bindings are in `examples.json`. The public manifest verifies the supplied files. Selected examples do not estimate prevalence.','',
            'Relation tables use 1 for supports and 0 for opposes. Actor and project order is explicit. Candidate log probabilities are ordered by the displayed answer mapping. All displayed semantic Yes/No answers are decoded from that mapping.','']
     for e in rows:
         lines += [f"## {e['category']}",'',f"{e['model']} / `{e['method']}` / `{e['root_id']}` / `{e['query_id']}`",'',

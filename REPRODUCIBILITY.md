@@ -1,280 +1,112 @@
 # Reproducibility
 
-## Current figure presentation
+> **Historical version.** These commands and reproduction levels describe an
+> earlier release. Start with the [collaborator README](README.md), then use the
+> [current reproduction guide](history_updates/docs/reproduction.md) and
+> [current paper map](history_updates/docs/paper_map.md). Historical content follows.
 
-The [16-figure redesign](figures/redesigned/README.md) is the current viewing
-collection. The historical numbered PDF/PNG paths are updated compatibility
-copies, including intentional merged-figure duplicates. Saved experiment SVGs
-under `reproducibility/` remain unchanged provenance artifacts.
+The supported route reconstructs saved results on CPU. It never downloads a model,
+opens a cloud account, generates pretrained outputs or retrains an editor.
+Scientific inputs stay fixed. Each output directory must be new.
 
-Export the current collection, with checksum verification and no regeneration:
+## Environment and commands
 
-```sh
-python scripts/package_redesigned_figures.py --out redesigned-figures.zip
-```
+The CPU dependency pins target the tested Python 3.13.12, Windows x86-64 environment.
+The source requires Python 3.12 or later; other combinations remain unverified.
+Use an isolated environment outside the release and activate it before the commands
+below. Run from the release root, including when the path contains spaces.
 
-Extract the ZIP and open `START_HERE.html`. The manifest binds every presentation
-file and records its compatibility paths. The CPU `figures` replay below still
-executes the original scientific plotting code and produces historical layouts
-in a fresh output directory; it does not reproduce the redesigned typography or
-overwrite the reviewed presentation. Main/appendix placement remains provisional.
-
-## Numerical and historical-layout replay
-
-The CPU replay checks artifact hashes and scientific claims, rebuilds the supported
-tables from saved measurements, and renders the figures. It does not download a
-model, generate new answers, or train an editor. No GPU or model-account access
-is needed for these commands.
-
-## Run the saved-evidence replay
-
-Use a complete repository checkout or extracted repository archive, Python 3.11
-or newer, and enough disk space for a separate output directory. The tested
-environment uses Python 3.13.12 and the package versions in
-[requirements-replay.lock](reproducibility/requirements-replay.lock). Run from the
-repository root:
+Reserve at least 5 GiB of free space on the output volume for each paper-analysis
+or test workflow (10 GiB if running both concurrently), plus space for the Python
+environment on its own volume. Compressed evidence expands during reconstruction.
+The paper runner checks a conservative 5 GiB floor before creating output; this
+is a preflight check, not a reservation against other processes consuming space.
+An absolute `--output` path on another drive is supported. Preserve failed output
+directories and choose a new path when retrying after an environment failure.
 
 ```sh
-python -m pip install -r reproducibility/requirements-replay.lock -e .
-python -m repro verify
-python -m repro evidence
-python -m repro tables --output reproduced
-python -m repro figures --output reproduced
-python -m repro.state_sufficiency --output reproduced
+python -m pip install -r requirements-cpu.lock
+python -m pip install --no-deps --no-build-isolation -e .
+python -m repro.release_manifest
+python -m repro.paper_results --output reproduced/paper
+python -m repro.paper_results --test --output reproduced/tests
 ```
 
-`verify` reports the number of checked files and experiments. `evidence` reports
-the declared number bindings and scientific qualification checks, and fails on
-unresolved evidence by default. Tables go to `reproduced/tables/`; plots go to
-`reproduced/figures/`. Use a fresh output directory for another replay. Existing
-outputs and committed evidence are not overwritten.
+Installation needs the normal Python package index and the official CPU PyTorch
+wheel index. Analysis subprocesses have network access and pretrained/service
+imports blocked. CPU-only PyTorch is used for synthetic tensors and parameter
+arithmetic. These guards catch accidental use; they are not a hostile-code sandbox.
 
-Figure 7 uses the prospective matched-history study's saved primary means and multiplicity-adjusted intervals
-directly, without recomputing uncertainty. Its full-precision projection is
-[v10_source_history.json](artifacts/figures/v10_source_history.json), including
-source hashes and fixed opportunity denominators. The earlier shared-state study's descriptive Figure 7 is
-preserved as Supplementary Figure S3, with unchanged counts in
-[consequence_comparisons.json](artifacts/figures/consequence_comparisons.json).
-Both regenerate through `python -m repro figures`; the selected repeat-checked
-Wren/Orla example remains linked separately from the main caption.
+The paper command runs 16 retained analysis/check steps; MQMH has a separate saved-response reconstruction command and dedicated test. Logs and `CHECKS.json`
+are written under the requested output. Each step has a 1,200-second bound.
+Failure stops the sequence and preserves prior outputs. A failed scientific
+qualification recorded in the evidence is an expected result, not a runner error.
+The test command runs the same retained root test suite as pytest, with offline
+restrictions and isolated temporary files.
 
-The tests additionally require pytest and nbformat for notebook validation. Install the test dependencies and run:
+Public manifests verify the actual delivered bytes and closed study inventories.
+The root manifest excludes itself from its digest list. After installation, its
+normal mode permits only `reproduced/`, Python bytecode caches and the package's
+own editable-install metadata as local products. `--strict` permits none of these
+and is intended for a pristine extracted tree. ZIP integrity requires comparison
+with the separately supplied archive checksum. Hashes alone do not validate a
+scientific claim or certify anonymity.
 
-```sh
-python -m pip install -r reproducibility/requirements-test.lock
-python -m pytest
-```
+## Reproduction levels
 
-The supported suite is `tests/`. Historical tests in study source snapshots
-require their original layouts and dependencies. The editable checkout is the
-supported installation: a code-only wheel does not contain the evidence archive.
+Level 1 views saved results or redraws aggregates. Level 2 reconstructs statistics
+and gates from scores or sufficient statistics. Level 3 regenerates pretrained
+outputs. Level 4 retrains learned components and reruns the complete study.
 
-## Experiment index
+| Study | Level 1 | Level 2 | Level 3 | Level 4 / specific missing material |
+|---|---|---|---|---|
+| <a id="reproduction-relation"></a>Relation readout and factual controls | Aggregate reconciliation | Stored null-tail recount and available Llama gates | Source/configs inspectable; complete execution unavailable | Gemma activation membership and MiniLM fitted count/revision supplied. Licensed rows, exact MiniLM fitted membership, current Llama fit provenance, activations and complete Gemma config/control inputs remain unavailable |
+| <a id="reproduction-consequences"></a>Consequence recovery | Saved results | Saved-margin reconstruction, 145 comparisons | Source inspectable; complete execution unavailable | Refitted direction and later-layer witness weights missing. One exact prior corpus supplied; the second remains absent for the overlap audit |
+| Primary matched histories | Verified | Verified saved-score semantic/gate reconstruction and case bootstrap | Supplied portable path available but not executed or verified | Selected weights, paired-stage source, explicit optimizer/schedule settings and FIT/CAL records supplied; public backend integration and fresh retraining remain unverified |
+| Original stronger controls | Verified | Verified post-hoc reconstruction from original scores | Inherits primary neural limit | No new fit is part of this reanalysis |
+| Fresh Gemma confirmation and utility | Verified | Verified primary, utility and repeat reconstruction | Supplied source available but unexecuted; model/tokenizer not included | Frozen editor reuse; retraining is not part of this study |
+| Smaller-model textual breadth and stateless 32B | Verified | Verified saved-score accounting and recorded repeats | Supplied source available but unexecuted; backbones/tokenizers not included | No learned component is fitted in these textual studies |
+| Selected crossover and matched extension | Verified | Verified saved-journal classifications and controls | Original measurement source available but unexecuted; native caches absent | Inherits selected-editor execution/retraining limits |
+| Question-blind refresh | Saved results and intervals | Primary gates and harms reconstructed from 512 case/seed score blocks; 14 selected-repeat blocks and four tables reproduced exactly | Fresh execution unavailable in this release | Public score/token/alias projections supplied. Native caches and the full measurement runtime are not included; original intervals are retained, not regenerated |
+| Separate update-method comparison | Verified | Verified 208,896 scores, 6,144 telemetry rows and paired contrasts | Not verified; exact executed revision/environment absent | Planned additional panels and complete external baseline adapter absent; completed origin panel retained |
+| MQuAKE-derived public multi-hop (MQMH) | Verified from saved responses | Reconstructs both models, full denominators, subject-clustered intervals, strict parser and repeats | `python -m repro.mqmh --output reproduced/mqmh` reconstructs the retained responses; no model/tokenizer needed | No new inference; residual pretraining exposure unknown; shared cohort; no parameter-editing transfer claim |
+| Ripple-derived public-data extension | Verified | Verified both parsers, all retained phases, locality and negative repeats | Supplied source available but unexecuted; model/tokenizer not included | No training; broader preparation pool and immutable upstream dataset checkout unavailable |
+| Carrier-reader and mediation follow-ups | Verified saved tables/reports | Narrower only: supplied effect/score accounting and qualification checks | Native tensor replay unavailable | Private activation/native cache tensors absent |
+| Selected editor parameters | Public manifests and arrays | Original CPU arithmetic/interface tests; reference recipe and selection records available | Real-tokenizer and pretrained execution unverified | Training source is an inert reference, not a supported retraining command. Original optimizer/RNG snapshots are withheld and would be required for exact continuation |
 
-For a claim-first route with figures and expected outputs, start with
-[PAPER_GUIDE.md](PAPER_GUIDE.md).
+The [MiniLM training discussion](docs/appendix/A03_text_features.md#training-provenance)
+is separate from evaluation-board agreement. The Gemma record establishes
+107,368 fitted text-comparator rows, versus 1,500 activation-probe training rows.
+Its encoder revision is recorded; its exact fitted-row list remains unavailable.
+The current Llama fit's provenance remains unestablished. Published scores are
+the recorded run values. See the [training records](artifacts/probe_weights/README.md#recovered-gemma-provenance).
 
-Every `tables` entry below is included in `python -m repro tables`. Exact file
-identities and unavailable inputs are in the [artifact manifest](reproducibility/manifest.json).
-[Results and Claims](docs/RESULTS_AND_CLAIMS.md) supplies the interpretation.
+## Topic-specific commands and outputs
 
-| Evidence | CPU output or destination | Material boundary |
-|---|---|---|
-| Relation readouts and factual control | `tables`, `figures`; [figure data](artifacts/figures/figure_data.json) | Aggregate replay; no new probe fitting |
-| Rewrite instability | `tables`; [predictions and freezes](reproducibility/representation/rewrite_fragility/) | Individual review judgments are not distributed |
-| Relation transfer and matched steering | `tables`; [scores and source](reproducibility/representation/relation_transfer/) | Original corpus text must be acquired separately |
-| Fingerprint validation | `tables`; [validation arrays](reproducibility/representation/causal_fingerprint/) | Replays the recorded invalid instrument, not a passed one |
-| Broader-state information | `tables`; [frozen-plan predictions](reproducibility/representation/full_state_report/) | [Controlled readouts](reproducibility/representation/richer_state/) and elicitation comparisons are aggregate-only |
-| Counterfactual consequences | `tables`; [behavioral scores](reproducibility/representation/counterfactual_fidelity/) | Fitted direction and later-layer readout parameters are unavailable; supporting readout evidence is aggregate-only |
-| Compression, decision-rule edits, applicability | [Terminal summaries](reproducibility/representation/background/) | Source-bound summaries, not additional numerical replays |
-| Initial and matched shared-state editors | `tables`; [initial](reproducibility/relational_editing/v1/) and [matched](reproducibility/relational_editing/v2/) packages | Qualification and development rows replay recorded summaries |
-| Repetition, restoration, and broader training consequences | `tables`; [update](reproducibility/relational_editing/v3/) and [coverage](reproducibility/relational_editing/v4/) packages | Recomputes saved behavioral statistics; does not repeat training |
-| Source independence and fixed readers | `tables`; [source-independence package](reproducibility/relational_editing/v6/) | Uses original per-scene/per-case sufficient statistics, not raw model probabilities |
-| Later constructive editing | `tables`; [combined-update summary (`V7`)](reproducibility/state_sufficiency/v7/) | Source-bound aggregate rates and gate flags, not training or scene-level reconstruction |
-| Source-history sufficiency, retrospective census and archival corroboration | `tables`; [retrospective census (`V9`)](reproducibility/state_sufficiency/v9/) and [fixed-criterion archival check (`V6`)](reproducibility/state_sufficiency/v6/) summaries | Selected source-table consistency, not independent reconstruction of qualifying checks from scores |
-| Source-history sufficiency, prospective confirmation aggregates | `tables`; [prospective confirmation (`V10`)](reproducibility/state_sufficiency/v10/) | Reconstructs primary rates, intervals and strong-witness counts from saved per-case counts |
-| Source-history sufficiency, independent per-example verification | [Collaborator package](reproducibility/state_sufficiency/independent_verification/README.md); commands below | Reconstructs semantic labels, eligibility, witnesses and intervals from saved scores; no original analysis imports or neural rerun |
-| Six-case causal cache intervention | `python -m repro.cache_crossover --output reproduced/causal-panel`; [package](reproducibility/cache_crossover/README.md) | Saved-score normalization and all classifications/controls; selected cases |
-| Matched one-case causal extension | `python scripts/export_cache_crossover.py --output reproduced/causal-extension` | Both formats and strict direct checks; separate retrospective case |
-| Question-blind prospective repair and selected-case verification | `python -m repro.question_blind_repair`; [evidence and full replay](reproducibility/question_blind_repair/README.md) | Compact source/table checks by default; both external archives are required for raw replay; selected repeats remain separate from the primary sample |
-| Public-data Qwen/Ripple extension | `python -m repro.in_context_updates --output reproduced/qwen`; [package](reproducibility/in_context_updates/README.md) | Frozen analyzer replay of all saved responses with both parsers, including qualification and repeats |
-| Matched-history update-method comparison | `python -m repro.update_methods --output reproduced/update-methods`; [package](reproducibility/update_method_comparison/README.md) | All saved primary scores, four contrasts and intervals, four CSVs; no new inference |
-| MEMIT/GPT-J MQuAKE qualification | [Compact source records](reproducibility/memit_qualification/README.md) | Pretrained inference ran but failed reference qualification; no FINAL result; summary-level verification |
+Run the MQMH reconstruction with `python -m repro.mqmh --output reproduced/mqmh`; it checks the retained hashes and reproduces `summary.json`, target counts, case 1617, and `CHECKS.json` without inference. Run its regression checks with `pytest tests/test_mqmh.py`. Each study guide contains its executable command. [PAPER_MAP.md](PAPER_MAP.md)
+is generated from [paper_map.json](paper_map.json) and supplies the evidence,
+settings, command and expected files for every mapped topic, paper figure and
+supplementary table. The paper command runs the same commands under its output
+root, with independent analysis preceding comparison to expected primary results.
 
-The prepared fixed-readout predecessor had no fresh efficacy measurement. Its
-scientific definitions are inherited by the executed source-independence study;
-it is not distributed as a second result package. The prospective matched-history
-study (`V10`) is complete at controlled
-generated-case scope. Public-data in-context validation is completed and replayable.
-Conventional parameter-editing validation remains unresolved. The historical
-AlphaEdit route stopped before pretrained inference; the later MEMIT qualification
-failure is a distinct executed outcome, not that earlier exclusion.
+All integer counts, identities, cohort memberships, gate decisions and seeds use
+exact checks. Original study tolerances apply to derived floats. No tolerance was
+relaxed to accommodate packaging. The retained overlap test explicitly skips
+because one of its two required earlier corpora remains unavailable; a skip is not
+a completed check.
 
-## What the CPU checks establish
+The [figure guide](figures/main/README.md) follows the paper's five main-text and
+two appendix figures. Run `python -m repro.main_figures --output
+reproduced/main-figures` to render PDF, SVG and PNG versions from the verified
+measurements. Display wording and layout preserve the underlying values and
+intervals. PDF and direct PNG rasterization can differ in antialiasing; PDFs are
+the authoritative vector figures. The command performs no model inference.
 
-A benchmark case (`root` in saved records) groups the same intended final facts
-with their starting histories and questions. Some earlier studies instead group
-measurements by synthetic situation (`scene`); their units are kept separate.
-A qualifying history-dependent question, called a `witness`, passes the relevant
-current-fact and reference checks but receives different answers across histories.
-The exact checks and statistical denominators are given in each package guide.
+## Scope and acceptance
 
-The original representation figures render from committed aggregate data.
-Saved null arrays reproduce displayed permutation summaries; refitting the
-original permutation experiment is a different operation.
-
-Earlier editing tables use their original scientific analyzers. Fresh
-single-edit, program, control, energy and workflow statistics are recomputed from
-saved question or episode records. Qualification tables use recorded
-qualification summaries, and development tables use recorded checkpoint
-summaries. These commands do not independently recheck omitted stored-activation
-tensors or repeat training. Both original seeds and all measured controls are
-retained; row ordering is aligned by scientific identity when comparing tables.
-
-The source-independence package retains the original per-scene and per-case
-sufficient statistics, paired contrasts, program inventory, final decisions,
-synthetic population manifests and selected weights. Replay recomputes means,
-grouped intervals and conjunctions from those statistics. Questions, starting histories,
-answer-code draws and training seeds remain grouped within their original
-situation or benchmark case. This does not independently prove the original physical cache
-identity or reproduce raw label probabilities from model activations.
-
-The full source-independent bundle uses every question in its declared bundle;
-the original question subset remains a separate result. Identical wrong answers
-do not satisfy source independence. Repetition alone cannot convert a low-quality
-single edit into success. Original qualification amendments and post-outcome
-descriptive interval additions remain disclosed.
-
-## Completed follow-up replays
-
-These commands only process saved evidence; they do not load models or call
-remote services. Use a new output directory for each replay.
-
-```sh
-python -m repro.cpu_robustness --output reproduced/cpu-audit
-python -m repro.fresh_history --output reproduced/fresh-history
-python -m repro.preupdate_route
-```
-
-The [fresh-history reader guide](docs/FRESH_HISTORY_REPRODUCTION.md) explains the
-prospective method and its statistical units. It sits outside the unchanged,
-hash-bound scientific package.
-
-The deletion check recomputes the historical table totals and admission gates.
-Its separate full replay verifies the external archive's members and reconstructs
-the decision from saved scores. The versioned helper normalizes CRLF only when
-comparing regenerated SVGs; archive and evidence integrity remain byte-exact.
-The [bounded audit](reproducibility/audits/preupdate_evidence_audit_20260919/README.md)
-is retained as internal source-review provenance, with no new neural evidence.
-
-The fresh-study replay reconstructs all primary rows and the equal-retention
-utility comparison from saved scores. Seeds and formats remain nested within
-cases. It keeps the named endpoint and all retention-level sensitivities.
-Identities and scientific classifications require exact equality; finite
-recomputed floating-point summaries allow absolute error 1e-12 and zero relative
-tolerance. Original repeated scores have zero difference across all 2,312 logical
-records, which is stronger than merely passing the frozen 1e-6 acceptance rule.
-The [post-hoc diagnostics and full example](reproducibility/fresh_history_validation/README.md#post-hoc-diagnostics)
-remain separate from the frozen analyses.
-
-The post-hoc audit verifies every exported control flag against the saved
-per-example scores. The [claim-to-source map](PAPER_GUIDE.md#post-hoc-robustness)
-identifies the canonical artifacts and replay fields. Its
-[floating-point recovery note](reproducibility/state_sufficiency/README.md#floating-point-recovery)
-records a technical equality-check failure and the unchanged scientific
-classifications. It is separate from the scientific result.
-
-## Three levels of reproduction
-
-Aggregate saved-evidence replay reconstructs tables from retained summaries and
-benchmark case counts. Independent per-example reconstruction starts instead from saved
-model outputs, relations, questions and reference responses. A full fresh neural
-rerun would load the models and generate new outputs. This checkout supports
-the first two levels for the prospective study; the independent verification package supplies the second.
-
-The [compact source-history package](reproducibility/state_sufficiency/README.md)
-records original archive/member hashes and exact selection rules. The command
-`python -m repro.state_sufficiency --output reproduced` exports its derived tables;
-the same checks also run inside `python -m repro tables`. It recomputes the prospective study's case bootstrap, seed-averaged rates and
-counts of cases qualifying under at least one seed. Checks of the retrospective
-census and archived study validate selected aggregate identities and denominators,
-not their original score-level qualifying checks.
-
-The [independent collaborator package](reproducibility/state_sufficiency/independent_verification/README.md)
-retains the relevant fields from the prospective study's raw journals, complete
-case records, references and saved repeat passes. The references either present
-current facts from the start or apply the same update to already-correct facts. A new standalone
-analysis derives Boolean labels, response validity, eligibility, primary and
-strong witnesses, per-condition and per-case quantities and confidence intervals without
-importing the original experimental analyzer. Run the calculation first, then
-compare with the separately stored reported results:
-
-```sh
-python reproducibility/state_sufficiency/independent_verification/reconstruct.py analyze --output reproduced/independent
-python reproducibility/state_sufficiency/independent_verification/reconstruct.py compare --output reproduced/independent
-python -m pytest tests/test_independent_state_sufficiency.py
-```
-
-The independent calculation never opens expected results. No primary
-classification inputs are omitted at the saved-output level. Full-vocabulary
-argmax membership is established from the retained candidate probabilities and
-the remaining probability-mass bound, rather than assumed from a validity flag.
-The complete original archives are not copied into this checkout; every included
-projection has source-member hashes, exact transformations and omitted-field
-descriptions. Six traceable examples cover witnesses, eligible non-witnesses and
-excluded cases. The retained repeat panel covers native and learned conditions,
-not independent textual-correction repeats.
-
-Fresh forward passes, cache-tensor regeneration, tokenizer execution and
-prospective execution-order attestation are not performed. Those boundaries
-remain distinct from saved per-example reconstruction. The retrospective census
-and archival qualifying-check packages remain aggregate-level here. No private resource, billing,
-provider or machine logs are included. Original archive hashes identify sources,
-not public download locations or attestation of the original model run.
-
-## Optional model reproduction and distribution boundaries
-
-The original [ValuePrism notebook](notebooks/01_reproduce_valueprism_pipeline.ipynb),
-[Llama development notebook](notebooks/02_reproduce_llama_m1.ipynb), and
-[factual-control notebook](notebooks/geometry_of_truth.ipynb) retain their
-documented FULL/ANALYSIS interfaces. They may require licensed data, gated model
-access, a compatible activation cache and GPU memory. Their setup cells pin the
-original reproduction snapshots; they are not the CPU interface for this
-saved-evidence replay.
-
-The later-study source directories retain scientific construction, evaluation,
-training/editor and analysis routines with provenance and portability notices.
-These source snapshots are not complete, turnkey GPU reruns. The supported public reproduction level is
-the saved-evidence replay specified above, not a claim of end-to-end backbone
-reproduction.
-
-The [fresh-inference audit](reproducibility/fresh_inference/README.md) records
-recovered execution code/checkpoints and the remaining smoke-test boundary.
-No new pretrained inference is part of this integration pass.
-
-The old `scripts/package_figures.py` is explicitly a historical Figures 1 through 5
-packager. Use `python -m repro figures` for the complete current figure set.
-The project-status notebook is historical; its original pins are unchanged.
-
-Some representation files are selected source snapshots, not a complete original
-GPU package. Counterfactual fitted direction and later-layer readout parameters
-are unavailable; that readout also lacks per-context logits for independent replay.
-Controlled and elicitation readouts lack the full prediction ledgers needed to
-recompute their supporting summaries. The manifest distinguishes these boundaries
-from the independently replayed behavioral and frozen-plan endpoints.
-
-Large activation and physical-state archives are not included. An artifact
-without a public retrieval location is unavailable to an external reproducer,
-even when its hash is known. Those boundaries are recorded in the manifest;
-a recorded hash alone does not provide access to an omitted file.
-For the older Llama permutation refit, the hash-pinned compact activation
-archive named by [the refitting script](scripts/rerun_permutation_null.py) remains
-external. Gemma's original larger-null activation cache was not retained.
-
-Synthetic study data, source code, fitted parameters and third-party text have
-different distribution constraints. See [Data notice](DATA_NOTICE.md) for model
-licenses, corpus acquisition and the review-privacy boundary.
-
-Original model-execution versions and unrecovered environment fields are recorded
-in the [editing environment record](reproducibility/relational_editing/runtime-environments.json)
-and [representation boundaries](reproducibility/representation/boundaries.json).
+[STATUS.md](STATUS.md) records final local acceptance and its qualifications.
+The release contains only retained studies and required dependencies. It preserves
+negative outcomes, ineligible denominators, selection rules, amendments and harms.
+Technical recovery and scientific repeat remain distinct in the study records.
+Local artifact inspection does not verify an eventual hosting account or guarantee
+that distinctive public content cannot be matched to another copy.

@@ -1,0 +1,53 @@
+<bos><start_of_turn>user
+Example 1:
+This is a fictional community planning meeting. Use only the records below.
+Each named member has independent views. Updating one record leaves the other records unchanged.
+Ravi is in favor of the Gallery proposal.
+Ravi is opposed to the Harbor proposal.
+Pia is opposed to the Gallery proposal.
+Pia is opposed to the Harbor proposal.
+Esme is opposed to the Gallery proposal.
+Esme is opposed to the Harbor proposal.
+Bela is in favor of the Gallery proposal.
+Bela is opposed to the Harbor proposal.
+End of records.
+Does Esme favor the Harbor proposal?
+Answer with exactly one of No, Yes.
+Answer: No
+
+Example 2:
+This is a fictional community planning meeting. Use only the records below.
+Each named member has independent views. Updating one record leaves the other records unchanged.
+Gita is opposed to the Garden proposal.
+Gita is in favor of the Library proposal.
+Juno is opposed to the Garden proposal.
+Juno is in favor of the Library proposal.
+Mina is opposed to the Garden proposal.
+Mina is in favor of the Library proposal.
+Esme is in favor of the Garden proposal.
+Esme is in favor of the Library proposal.
+End of records.
+Does Esme favor the Library proposal?
+Answer with exactly one of No, Yes.
+Answer: Yes
+
+Now the actual records:
+This is a fictional community planning meeting. Use only the records below.
+Each named member has independent views. Updating one record leaves the other records unchanged.
+Bryn is opposed to the Gallery proposal.
+Bryn is opposed to the Garden proposal.
+Bryn is in favor of the Meadow proposal.
+Ari is in favor of the Garden proposal.
+Ari is in favor of the Meadow proposal.
+Ari is opposed to the Gallery proposal.
+Ada is opposed to the Garden proposal.
+Ada is in favor of the Meadow proposal.
+Ada is in favor of the Gallery proposal.
+Dara is opposed to the Garden proposal.
+Dara is opposed to the Meadow proposal.
+Dara is opposed to the Gallery proposal.
+End of records.
+Do Ada and Bryn take the same side on Gallery?
+Answer with exactly one of No, Yes.
+Reply with only that answer on the first line.<end_of_turn>
+<start_of_turn>model

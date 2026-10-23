@@ -1,0 +1,722 @@
+[
+  {
+    "arm": "H0",
+    "branch": "F",
+    "case_id": 531,
+    "chat_sha256": "8ed4402229363bb5ff95fc34d9336b19ea27299d00d8305efd4d5aba58a8da65",
+    "input_ids_sha256": "b98b2b86f499a20670a9eb2399b776538945d227ece7ff82f3c151209219e919",
+    "input_tokens": 151,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nThe type of music that Funky Drummer plays is funk.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\nThe type of music that Eric Paslay plays is opéra comique.\n\nCorrections:\nSET The type of music that Funky Drummer plays is opéra comique.\nSET The type of music that Eric Paslay plays is opéra comique.\n\nQuestion: What type of music does Funky Drummer play?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F0",
+    "unit_id": "qwen:531:H0:F0"
+  },
+  {
+    "arm": "H1",
+    "branch": "F",
+    "case_id": 531,
+    "chat_sha256": "0a26151bf7579d88aea7e971f30ef7c19d38c546665cfe0a8a3a6d0bc94190ad",
+    "input_ids_sha256": "8c956154a6496d3e404d18da1f3bfb052e81cdfd00fb73a74dccd068c5bc9c86",
+    "input_tokens": 151,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nThe type of music that Eric Paslay plays is opéra comique.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\nThe type of music that Funky Drummer plays is funk.\n\nCorrections:\nSET The type of music that Funky Drummer plays is opéra comique.\nSET The type of music that Eric Paslay plays is opéra comique.\n\nQuestion: What type of music does Funky Drummer play?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F0",
+    "unit_id": "qwen:531:H1:F0"
+  },
+  {
+    "arm": "S0",
+    "branch": "F",
+    "case_id": 531,
+    "chat_sha256": "d9ba67b3aec824cd407af5911a7e203c892055319ffc174a3d1d839bdaf42775",
+    "input_ids_sha256": "bda888b3c4466a90369382fab74ed0312cef1b7c9cced310ea1d91902a7b9955",
+    "input_tokens": 151,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nThe type of music that Eric Paslay plays is funk.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\nThe type of music that Funky Drummer plays is opéra comique.\n\nCorrections:\nSET The type of music that Funky Drummer plays is opéra comique.\nSET The type of music that Eric Paslay plays is opéra comique.\n\nQuestion: What type of music does Funky Drummer play?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F0",
+    "unit_id": "qwen:531:S0:F0"
+  },
+  {
+    "arm": "S1",
+    "branch": "F",
+    "case_id": 531,
+    "chat_sha256": "52f2794451857fd086b7d011e387d70d8743380a8cdc2289406a824a722b0699",
+    "input_ids_sha256": "356620fe86082a78fe07addb9ae61949dc28a72a5d5f5413df2945beb8d79693",
+    "input_tokens": 151,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nThe type of music that Funky Drummer plays is opéra comique.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\nThe type of music that Eric Paslay plays is funk.\n\nCorrections:\nSET The type of music that Funky Drummer plays is opéra comique.\nSET The type of music that Eric Paslay plays is opéra comique.\n\nQuestion: What type of music does Funky Drummer play?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F0",
+    "unit_id": "qwen:531:S1:F0"
+  },
+  {
+    "arm": "C",
+    "branch": "F",
+    "case_id": 531,
+    "chat_sha256": "a3cde9d3ea33ccb4a9a14c7501768ab9ba31464650bf9f6bbefcaa0da0b09f7c",
+    "input_ids_sha256": "cb2a57f4621d188b4feefd1b09c9ab73382cd829681793efef3c428bc9491087",
+    "input_tokens": 118,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nThe type of music that Funky Drummer plays is opéra comique.\nThe type of music that Eric Paslay plays is opéra comique.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\n\nQuestion: What type of music does Funky Drummer play?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F0",
+    "unit_id": "qwen:531:C:F0"
+  },
+  {
+    "arm": "C+",
+    "branch": "F",
+    "case_id": 531,
+    "chat_sha256": "d18b9442e08816b3051d60950cbe1dee16998b0073f23d7d35374c4789effd11",
+    "input_ids_sha256": "709574a11357ce90ebd10dec1917c796c94958f3387623a4c6f5ac06caa988ac",
+    "input_tokens": 154,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nThe type of music that Funky Drummer plays is opéra comique.\nThe type of music that Eric Paslay plays is opéra comique.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\n\nCorrections:\nSET The type of music that Funky Drummer plays is opéra comique.\nSET The type of music that Eric Paslay plays is opéra comique.\n\nQuestion: What type of music does Funky Drummer play?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F0",
+    "unit_id": "qwen:531:C+:F0"
+  },
+  {
+    "arm": "H0",
+    "branch": "F",
+    "case_id": 531,
+    "chat_sha256": "d42ded12a6ce66171449864b370b1c702b0a46882937a34288195082f251c08e",
+    "input_ids_sha256": "73fece2cb7fbf3630414e4d94c4837e3858ede62807c2eefc8bf8837983f655f",
+    "input_tokens": 150,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nThe type of music that Funky Drummer plays is funk.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\nThe type of music that Eric Paslay plays is opéra comique.\n\nCorrections:\nSET The type of music that Funky Drummer plays is opéra comique.\nSET The type of music that Eric Paslay plays is opéra comique.\n\nQuestion: Which country was opéra comique created in?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F1",
+    "unit_id": "qwen:531:H0:F1"
+  },
+  {
+    "arm": "H1",
+    "branch": "F",
+    "case_id": 531,
+    "chat_sha256": "abf32b5596ac8b83c86e7097cc1311f95f5e568e6bdd118544f546c3104fd524",
+    "input_ids_sha256": "4a7eb58ed1576e3af58fd79830de29fac97d112be5f684a37f681479e7ea1a73",
+    "input_tokens": 150,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nThe type of music that Eric Paslay plays is opéra comique.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\nThe type of music that Funky Drummer plays is funk.\n\nCorrections:\nSET The type of music that Funky Drummer plays is opéra comique.\nSET The type of music that Eric Paslay plays is opéra comique.\n\nQuestion: Which country was opéra comique created in?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F1",
+    "unit_id": "qwen:531:H1:F1"
+  },
+  {
+    "arm": "S0",
+    "branch": "F",
+    "case_id": 531,
+    "chat_sha256": "f8652435180f9029daffaf67f44b23d2142dc70758a06ed419e4884b1426b45d",
+    "input_ids_sha256": "1a31b88dc573d354a8c8558628a821761709baa59ee237578c6754fd0a835ca6",
+    "input_tokens": 150,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nThe type of music that Eric Paslay plays is funk.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\nThe type of music that Funky Drummer plays is opéra comique.\n\nCorrections:\nSET The type of music that Funky Drummer plays is opéra comique.\nSET The type of music that Eric Paslay plays is opéra comique.\n\nQuestion: Which country was opéra comique created in?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F1",
+    "unit_id": "qwen:531:S0:F1"
+  },
+  {
+    "arm": "S1",
+    "branch": "F",
+    "case_id": 531,
+    "chat_sha256": "9e1b8e953fabd00af896de1b345564ae7fc2511dab356cd59c07797c1d91c74c",
+    "input_ids_sha256": "43d9b31a842e1e2d496d13f3f9fc7220ffa856404d3f1e75b246385d672806a7",
+    "input_tokens": 150,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nThe type of music that Funky Drummer plays is opéra comique.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\nThe type of music that Eric Paslay plays is funk.\n\nCorrections:\nSET The type of music that Funky Drummer plays is opéra comique.\nSET The type of music that Eric Paslay plays is opéra comique.\n\nQuestion: Which country was opéra comique created in?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F1",
+    "unit_id": "qwen:531:S1:F1"
+  },
+  {
+    "arm": "C",
+    "branch": "F",
+    "case_id": 531,
+    "chat_sha256": "b2c3ca4b6bcb53d04319246ac4f1663ba7458ea69729ca3b479044aec828d8c2",
+    "input_ids_sha256": "f336e0ba43fd5e5e2e5f1c1f9af41fc01ae43ba731f6ab86e8b9ef72e8337e01",
+    "input_tokens": 117,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nThe type of music that Funky Drummer plays is opéra comique.\nThe type of music that Eric Paslay plays is opéra comique.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\n\nQuestion: Which country was opéra comique created in?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F1",
+    "unit_id": "qwen:531:C:F1"
+  },
+  {
+    "arm": "C+",
+    "branch": "F",
+    "case_id": 531,
+    "chat_sha256": "75fc364f74077416a111043789e8ff3290081e276801c996d60182360a3cdbf4",
+    "input_ids_sha256": "87f44b9723f06e994a329faf32464e59f606e0eccfeeace7287b4904c4b5ddaf",
+    "input_tokens": 153,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nThe type of music that Funky Drummer plays is opéra comique.\nThe type of music that Eric Paslay plays is opéra comique.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\n\nCorrections:\nSET The type of music that Funky Drummer plays is opéra comique.\nSET The type of music that Eric Paslay plays is opéra comique.\n\nQuestion: Which country was opéra comique created in?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F1",
+    "unit_id": "qwen:531:C+:F1"
+  },
+  {
+    "arm": "H0",
+    "branch": "Fdecoy",
+    "case_id": 531,
+    "chat_sha256": "29e6bdfad2acae0da4cc1db19079fcdc03984ab71ee1bec6b6f97821e29ffa89",
+    "input_ids_sha256": "c23206228ecc3da7e8bd4ccce587b57581cca8821089ec189704f01a87c9cbe7",
+    "input_tokens": 150,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nThe type of music that Funky Drummer plays is funk.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\nThe type of music that Eric Paslay plays is opéra comique.\n\nCorrections:\nSET The type of music that Funky Drummer plays is opéra comique.\nSET The type of music that Eric Paslay plays is opéra comique.\n\nQuestion: What type of music does Eric Paslay play?",
+        "role": "user"
+      }
+    ],
+    "query_id": "Fdecoy",
+    "unit_id": "qwen:531:H0:Fdecoy"
+  },
+  {
+    "arm": "H1",
+    "branch": "Fdecoy",
+    "case_id": 531,
+    "chat_sha256": "1f7a0e8d32d6f4f1b66e77cc20626cfe83421b1727bdb57a37f222f5ff62f167",
+    "input_ids_sha256": "a01f22479a8a12369c6fbb78f21aab7aaa54094b881bef0a3bd667f2907ea065",
+    "input_tokens": 150,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nThe type of music that Eric Paslay plays is opéra comique.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\nThe type of music that Funky Drummer plays is funk.\n\nCorrections:\nSET The type of music that Funky Drummer plays is opéra comique.\nSET The type of music that Eric Paslay plays is opéra comique.\n\nQuestion: What type of music does Eric Paslay play?",
+        "role": "user"
+      }
+    ],
+    "query_id": "Fdecoy",
+    "unit_id": "qwen:531:H1:Fdecoy"
+  },
+  {
+    "arm": "S0",
+    "branch": "Fdecoy",
+    "case_id": 531,
+    "chat_sha256": "9c84139c00c6a3d97b5ea1d214f2590790bfd7d92620ec9f0c32d49ede3b843c",
+    "input_ids_sha256": "5e483e5dc3432fb383b4b45f3b4d709efe2be1e870c912fffd5efeea3334513b",
+    "input_tokens": 150,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nThe type of music that Eric Paslay plays is funk.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\nThe type of music that Funky Drummer plays is opéra comique.\n\nCorrections:\nSET The type of music that Funky Drummer plays is opéra comique.\nSET The type of music that Eric Paslay plays is opéra comique.\n\nQuestion: What type of music does Eric Paslay play?",
+        "role": "user"
+      }
+    ],
+    "query_id": "Fdecoy",
+    "unit_id": "qwen:531:S0:Fdecoy"
+  },
+  {
+    "arm": "S1",
+    "branch": "Fdecoy",
+    "case_id": 531,
+    "chat_sha256": "0ee5b8c8a57cc21b9a2f05ddaafd7fd8f6445b1087f27d3d6ddb5d38edfadfe5",
+    "input_ids_sha256": "f5fd19decb4fb563a104f35f10c6ce5676b7c1db7befe765b3ee780c184fafc3",
+    "input_tokens": 150,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nThe type of music that Funky Drummer plays is opéra comique.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\nThe type of music that Eric Paslay plays is funk.\n\nCorrections:\nSET The type of music that Funky Drummer plays is opéra comique.\nSET The type of music that Eric Paslay plays is opéra comique.\n\nQuestion: What type of music does Eric Paslay play?",
+        "role": "user"
+      }
+    ],
+    "query_id": "Fdecoy",
+    "unit_id": "qwen:531:S1:Fdecoy"
+  },
+  {
+    "arm": "C",
+    "branch": "Fdecoy",
+    "case_id": 531,
+    "chat_sha256": "007880fdb21a7b246f6a0998205ae376d1256c0ef31caa6a043aae6baf9fa80b",
+    "input_ids_sha256": "c559dcf3b294e91c9cb8d2c61b1ae041c6d32a23f6f6fbc10903f1e5b610a938",
+    "input_tokens": 117,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nThe type of music that Funky Drummer plays is opéra comique.\nThe type of music that Eric Paslay plays is opéra comique.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\n\nQuestion: What type of music does Eric Paslay play?",
+        "role": "user"
+      }
+    ],
+    "query_id": "Fdecoy",
+    "unit_id": "qwen:531:C:Fdecoy"
+  },
+  {
+    "arm": "C+",
+    "branch": "Fdecoy",
+    "case_id": 531,
+    "chat_sha256": "b62dcdae0523cd70a2cb7b95c8fbe08f9d88e40f7140b6f12d443af25bee9a4a",
+    "input_ids_sha256": "0025838b9afa34ea422b9eb8746f3463450f1217c4d7659093a8137c0a486cf4",
+    "input_tokens": 153,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nThe type of music that Funky Drummer plays is opéra comique.\nThe type of music that Eric Paslay plays is opéra comique.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\n\nCorrections:\nSET The type of music that Funky Drummer plays is opéra comique.\nSET The type of music that Eric Paslay plays is opéra comique.\n\nQuestion: What type of music does Eric Paslay play?",
+        "role": "user"
+      }
+    ],
+    "query_id": "Fdecoy",
+    "unit_id": "qwen:531:C+:Fdecoy"
+  },
+  {
+    "arm": "H0",
+    "branch": "J",
+    "case_id": 531,
+    "chat_sha256": "0d6ae52a8f479d4cf84b3417595f967e80c18c2441a1a00e0860f5631d6b0914",
+    "input_ids_sha256": "14fa0616d3c902539744820123d068037b9d31fc7d7b022971cdcdb629c8a018",
+    "input_tokens": 154,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nThe type of music that Funky Drummer plays is funk.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\nThe type of music that Eric Paslay plays is opéra comique.\n\nCorrections:\nSET The type of music that Funky Drummer plays is opéra comique.\nSET The type of music that Eric Paslay plays is opéra comique.\n\nQuestion: Which country is known for originating the genre of Funky Drummer?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J0",
+    "unit_id": "qwen:531:H0:J0"
+  },
+  {
+    "arm": "H1",
+    "branch": "J",
+    "case_id": 531,
+    "chat_sha256": "f35ac2c15d6cb3063372ede7ba9778a8cc4e81b0df20977e4d73d9a1d9977f51",
+    "input_ids_sha256": "1f60b354302644bd33830e69595e668658bd7834653b4a868a1d481a15e2f835",
+    "input_tokens": 154,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nThe type of music that Eric Paslay plays is opéra comique.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\nThe type of music that Funky Drummer plays is funk.\n\nCorrections:\nSET The type of music that Funky Drummer plays is opéra comique.\nSET The type of music that Eric Paslay plays is opéra comique.\n\nQuestion: Which country is known for originating the genre of Funky Drummer?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J0",
+    "unit_id": "qwen:531:H1:J0"
+  },
+  {
+    "arm": "S0",
+    "branch": "J",
+    "case_id": 531,
+    "chat_sha256": "185075ce25a30dc3ef3426cd728b398eb53b0d1da215a7afdc048b389eedd653",
+    "input_ids_sha256": "83d68ffcb65ab0457b13c7519a7931af262f9dc5c767854b21f16081470a878c",
+    "input_tokens": 154,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nThe type of music that Eric Paslay plays is funk.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\nThe type of music that Funky Drummer plays is opéra comique.\n\nCorrections:\nSET The type of music that Funky Drummer plays is opéra comique.\nSET The type of music that Eric Paslay plays is opéra comique.\n\nQuestion: Which country is known for originating the genre of Funky Drummer?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J0",
+    "unit_id": "qwen:531:S0:J0"
+  },
+  {
+    "arm": "S1",
+    "branch": "J",
+    "case_id": 531,
+    "chat_sha256": "165aca46ec2b5c03442f93daf52358b344b2ed6500213eeb2b146c6b6bb79a65",
+    "input_ids_sha256": "f914c57013134a3fcc0caccb318d2ccb1750f1194a43737ec64241a3164894c0",
+    "input_tokens": 154,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nThe type of music that Funky Drummer plays is opéra comique.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\nThe type of music that Eric Paslay plays is funk.\n\nCorrections:\nSET The type of music that Funky Drummer plays is opéra comique.\nSET The type of music that Eric Paslay plays is opéra comique.\n\nQuestion: Which country is known for originating the genre of Funky Drummer?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J0",
+    "unit_id": "qwen:531:S1:J0"
+  },
+  {
+    "arm": "C",
+    "branch": "J",
+    "case_id": 531,
+    "chat_sha256": "da87f80d2d87dd3b23caf64aa3ebe6539c1ddad710f7a758a360ba4531a9daae",
+    "input_ids_sha256": "2f14bcd3e3a20c146d32d6a110e20284c361ff207853db7955d69b5906cf08af",
+    "input_tokens": 121,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nThe type of music that Funky Drummer plays is opéra comique.\nThe type of music that Eric Paslay plays is opéra comique.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\n\nQuestion: Which country is known for originating the genre of Funky Drummer?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J0",
+    "unit_id": "qwen:531:C:J0"
+  },
+  {
+    "arm": "C+",
+    "branch": "J",
+    "case_id": 531,
+    "chat_sha256": "45af0ded7338cbc06acb2e2dd4e5451bbf01e9b20aa9e5ffa33db4dc0ce2734a",
+    "input_ids_sha256": "204f25aee6a75134db987aedbc636c58b9db646e504ea5c1660485feb7af7ee3",
+    "input_tokens": 157,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nThe type of music that Funky Drummer plays is opéra comique.\nThe type of music that Eric Paslay plays is opéra comique.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\n\nCorrections:\nSET The type of music that Funky Drummer plays is opéra comique.\nSET The type of music that Eric Paslay plays is opéra comique.\n\nQuestion: Which country is known for originating the genre of Funky Drummer?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J0",
+    "unit_id": "qwen:531:C+:J0"
+  },
+  {
+    "arm": "H0",
+    "branch": "J",
+    "case_id": 531,
+    "chat_sha256": "621d9d360762a6707f45dd9d4b2eb5bc1f522b0190ee8c1c76cb42930eadb579",
+    "input_ids_sha256": "17ef334ca59b33dc2aba194c19b4dba6f5971af9599f34afc5076c4f66ae0e50",
+    "input_tokens": 155,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nThe type of music that Funky Drummer plays is funk.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\nThe type of music that Eric Paslay plays is opéra comique.\n\nCorrections:\nSET The type of music that Funky Drummer plays is opéra comique.\nSET The type of music that Eric Paslay plays is opéra comique.\n\nQuestion: From which country did the genre that includes Funky Drummer come from?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J1",
+    "unit_id": "qwen:531:H0:J1"
+  },
+  {
+    "arm": "H1",
+    "branch": "J",
+    "case_id": 531,
+    "chat_sha256": "dee35d78d3aab0414d2a653ab1d7537dac4cd5b2ca7ba54a341941d37a10debc",
+    "input_ids_sha256": "5782ccb11bfdf0e3609b95794b7230939678f0b48591da5e9c7d9103e3f4386f",
+    "input_tokens": 155,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nThe type of music that Eric Paslay plays is opéra comique.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\nThe type of music that Funky Drummer plays is funk.\n\nCorrections:\nSET The type of music that Funky Drummer plays is opéra comique.\nSET The type of music that Eric Paslay plays is opéra comique.\n\nQuestion: From which country did the genre that includes Funky Drummer come from?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J1",
+    "unit_id": "qwen:531:H1:J1"
+  },
+  {
+    "arm": "S0",
+    "branch": "J",
+    "case_id": 531,
+    "chat_sha256": "b6051a650d79c5057d7317a43c6074b44efcd48c74f54591fac424fe68ea8171",
+    "input_ids_sha256": "23f770bcd7e1905c48803f441385906912a3a21a38aed64d58938a3882d558df",
+    "input_tokens": 155,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nThe type of music that Eric Paslay plays is funk.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\nThe type of music that Funky Drummer plays is opéra comique.\n\nCorrections:\nSET The type of music that Funky Drummer plays is opéra comique.\nSET The type of music that Eric Paslay plays is opéra comique.\n\nQuestion: From which country did the genre that includes Funky Drummer come from?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J1",
+    "unit_id": "qwen:531:S0:J1"
+  },
+  {
+    "arm": "S1",
+    "branch": "J",
+    "case_id": 531,
+    "chat_sha256": "fe3a073c53eeb68273b439efec47b72421687eaaa128594941b4b022dcc2246e",
+    "input_ids_sha256": "cb4f8cec59ec13177d9e353c3dc1d7ade63d77dc024cc1f123003fe295203d0d",
+    "input_tokens": 155,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nThe type of music that Funky Drummer plays is opéra comique.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\nThe type of music that Eric Paslay plays is funk.\n\nCorrections:\nSET The type of music that Funky Drummer plays is opéra comique.\nSET The type of music that Eric Paslay plays is opéra comique.\n\nQuestion: From which country did the genre that includes Funky Drummer come from?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J1",
+    "unit_id": "qwen:531:S1:J1"
+  },
+  {
+    "arm": "C",
+    "branch": "J",
+    "case_id": 531,
+    "chat_sha256": "3b5776fb8116ef6f3e536cbffad942041f34d75a4a159ca08727436d65843575",
+    "input_ids_sha256": "db9d0627d4391b3d495b5c971318932a8caf690621eb4d06ea19c38f8b815ad3",
+    "input_tokens": 122,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nThe type of music that Funky Drummer plays is opéra comique.\nThe type of music that Eric Paslay plays is opéra comique.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\n\nQuestion: From which country did the genre that includes Funky Drummer come from?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J1",
+    "unit_id": "qwen:531:C:J1"
+  },
+  {
+    "arm": "C+",
+    "branch": "J",
+    "case_id": 531,
+    "chat_sha256": "bab335055ab0211ff3acb1beaba8e9dcb7fdd661b9c9a1a8aca2586bae83644d",
+    "input_ids_sha256": "1d7d9b417aea1cf5c8db45ccf225a42758e474ff4d3d4d16cb1f28dd21aa487d",
+    "input_tokens": 158,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nThe type of music that Funky Drummer plays is opéra comique.\nThe type of music that Eric Paslay plays is opéra comique.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\n\nCorrections:\nSET The type of music that Funky Drummer plays is opéra comique.\nSET The type of music that Eric Paslay plays is opéra comique.\n\nQuestion: From which country did the genre that includes Funky Drummer come from?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J1",
+    "unit_id": "qwen:531:C+:J1"
+  },
+  {
+    "arm": "H0",
+    "branch": "J",
+    "case_id": 531,
+    "chat_sha256": "819f28c40119a8a966e51f9e61945675c3168e544890662782b352b076802ac5",
+    "input_ids_sha256": "55cbcb081b544584c6e8a6137aebeda82ebaa3671c7dfe862d7096d4be6e524f",
+    "input_tokens": 156,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nThe type of music that Funky Drummer plays is funk.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\nThe type of music that Eric Paslay plays is opéra comique.\n\nCorrections:\nSET The type of music that Funky Drummer plays is opéra comique.\nSET The type of music that Eric Paslay plays is opéra comique.\n\nQuestion: What is the country of origin for the genre that has Funky Drummer?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J2",
+    "unit_id": "qwen:531:H0:J2"
+  },
+  {
+    "arm": "H1",
+    "branch": "J",
+    "case_id": 531,
+    "chat_sha256": "3910e62758f2ad28809a68936c9f8731417b180f30283fd0e829bd1fa3b48e89",
+    "input_ids_sha256": "c8d9a609b1c177d80ea911e6c08f7d76d14f66144f6cb5760ecfe60f84f3fb29",
+    "input_tokens": 156,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nThe type of music that Eric Paslay plays is opéra comique.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\nThe type of music that Funky Drummer plays is funk.\n\nCorrections:\nSET The type of music that Funky Drummer plays is opéra comique.\nSET The type of music that Eric Paslay plays is opéra comique.\n\nQuestion: What is the country of origin for the genre that has Funky Drummer?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J2",
+    "unit_id": "qwen:531:H1:J2"
+  },
+  {
+    "arm": "S0",
+    "branch": "J",
+    "case_id": 531,
+    "chat_sha256": "3d6c281cf786564eb8b2d67d6fd3e65f4e72936479cba2d3b025b969723d31a6",
+    "input_ids_sha256": "4da5fbb1e724b99909b39fc3efb97e64e28591a6729f6fe67da94dbc258ddc95",
+    "input_tokens": 156,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nThe type of music that Eric Paslay plays is funk.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\nThe type of music that Funky Drummer plays is opéra comique.\n\nCorrections:\nSET The type of music that Funky Drummer plays is opéra comique.\nSET The type of music that Eric Paslay plays is opéra comique.\n\nQuestion: What is the country of origin for the genre that has Funky Drummer?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J2",
+    "unit_id": "qwen:531:S0:J2"
+  },
+  {
+    "arm": "S1",
+    "branch": "J",
+    "case_id": 531,
+    "chat_sha256": "39074636d4c1247c43c47cd92dafce7a8bc57a3269c9a0f0f4265e7a2ce5a87c",
+    "input_ids_sha256": "0daed79e906799ee786c02806ff56dc846f63b608e312e1e213b9abdbaeb5b59",
+    "input_tokens": 156,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nThe type of music that Funky Drummer plays is opéra comique.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\nThe type of music that Eric Paslay plays is funk.\n\nCorrections:\nSET The type of music that Funky Drummer plays is opéra comique.\nSET The type of music that Eric Paslay plays is opéra comique.\n\nQuestion: What is the country of origin for the genre that has Funky Drummer?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J2",
+    "unit_id": "qwen:531:S1:J2"
+  },
+  {
+    "arm": "C",
+    "branch": "J",
+    "case_id": 531,
+    "chat_sha256": "fff5afd378b2e29aa8abece44fcb06dcd6b4df42d0cb15ec4248ac7ccbe823c9",
+    "input_ids_sha256": "e28d390e983c2641d32060e85a701d54ab20d731f13e31fa29bac24a1197e4fc",
+    "input_tokens": 123,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nThe type of music that Funky Drummer plays is opéra comique.\nThe type of music that Eric Paslay plays is opéra comique.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\n\nQuestion: What is the country of origin for the genre that has Funky Drummer?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J2",
+    "unit_id": "qwen:531:C:J2"
+  },
+  {
+    "arm": "C+",
+    "branch": "J",
+    "case_id": 531,
+    "chat_sha256": "331b9b8b166249f536b7f58a85774fc02fa262d8edac3aae8438c6c92a590801",
+    "input_ids_sha256": "e6466ea1744083e88bbba0b819d70176ba983e4197b0ec75922f7d4a415551eb",
+    "input_tokens": 159,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nThe type of music that Funky Drummer plays is opéra comique.\nThe type of music that Eric Paslay plays is opéra comique.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\n\nCorrections:\nSET The type of music that Funky Drummer plays is opéra comique.\nSET The type of music that Eric Paslay plays is opéra comique.\n\nQuestion: What is the country of origin for the genre that has Funky Drummer?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J2",
+    "unit_id": "qwen:531:C+:J2"
+  }
+]

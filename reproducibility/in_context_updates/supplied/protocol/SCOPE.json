@@ -1,30 +1,6 @@
 {
   "study": "ICMH1-RIPPLE-v2",
-  "status": "PROPOSED_AMENDMENT_NOT_EXECUTED",
-  "source_archive": {
-    "name": "EXTERNAL_MEMIT_GPTJ_H100_CANARY_REPRO_v7.zip",
-    "sha256": "364579c7c0e91f01f8290b88c436c3cb71956cee63664fcccd8319d5e7d08600"
-  },
-  "original_proposal": {
-    "name": "ICMH1_FOLLOWUP_SPEC.zip",
-    "sha256": "f99647b51d06d40c3d326a24d6d7f0861674adec953ea541d65a17e7f3291395",
-    "member_sha256": {
-      "SPEC.md": "d72426e6be6444b9538bfd3e2673884d54f77e3441e1cfd85178320670ed74bf",
-      "SPEC.json": "4d110d55099c5754a9182d9c852c29f37e9ff15f398a4ae724d56b10e105c179",
-      "LAUNCHER.txt": "7a27094a5be2663bd998dc4ec117155f80773bfe26b83bbd186a99c0ae9773aa",
-      "PHASE1_DIAGNOSIS_MEMO.md": "2ede4f9822fb85d2824228dd978c87a65cf90bf7ca83854734a7794b132233f8"
-    }
-  },
-  "source_member_sha256": {
-    "manifests/splits.json": "dc06a62dfe79b59c9916843b375ab30bf582b73f25ac4e27c289406d15507f3b",
-    "manifests/questions.json": "54fca19b1c46df098fa9bfd07abd26d7c77e31d1ab996fd79342a945517779b8",
-    "manifests/histories.json": "44c900cd01585bff92b8aaed67823e6af5adaca7840c31cf38938f64d42497e2",
-    "manifests/entities.json": "c333ed406bd3b13cc383844884884352afe14c22fb59e4819366d46e0efb27f6",
-    "manifests/dependencies.json": "e901f7703975878395a6f56b714c61183295b1bca2edd759ccbfa4d26e2daab1",
-    "manifests/summary.json": "ae517fdd8770e7a8a390a4ea255d6d361da15f96317295f96fb4e020e7d3991c",
-    "evcpu/schedule.py": "eaa1a07e02d220984013a3375f1fc89d87a85c6be6c3abb372f1716da1798564",
-    "SEMANTIC_POLICY.md": "0c0fb697452b15019d98b1be64381c8e672934764cbb37acbc0db6e19c5cde7a"
-  },
+  "status": "HISTORICAL_PROTOCOL_PRECEDING_RETAINED_OUTPUTS",
   "model": "Qwen/Qwen2.5-7B-Instruct",
   "model_revision_policy": "Resolve and record an immutable model/tokenizer revision before first inference; no output-dependent model choice.",
   "development": [
@@ -82,20 +58,6 @@
     "rippleedits:popular:670",
     "rippleedits:random:618"
   ],
-  "mquake_not_run": {
-    "sealed_nine": [
-      "mquake:1117",
-      "mquake:921",
-      "mquake:353",
-      "mquake:39",
-      "mquake:238",
-      "mquake:862",
-      "mquake:306",
-      "mquake:274",
-      "mquake:495"
-    ],
-    "all_other_mquake": "No new model inference in this task, including the proposed secondary track and interface-only qualification."
-  },
   "counts": {
     "development": {
       "roots": 5,
@@ -2074,7 +2036,7 @@
       "roots_with_any_A_and_C_min": 3,
       "roots": 6
     },
-    "resource": "Finish full frozen final + two repeats within current approved cap, with at least 25% measured work-time margin and 30 min closeout reserve."
+    "resource": "Historical resource check only; no execution authority in this release."
   },
   "scoring": "See AMENDMENT.md; primary A uses a full-string normalized type-scoped entity-ID extractor; C,D use fixed ICMH1 strict first-line public label/alias equality. No prefix/substring rescue.",
   "inference": {
@@ -2084,18 +2046,5 @@
     "num_beams": 1,
     "system": "Answer with only the entity name.",
     "weights_unchanged": true
-  },
-  "resources_proposed": {
-    "gpu": "one NVIDIA A100 40GB SXM4 x86-64 instance",
-    "max_compute_rate_usd_per_hour": 1.99,
-    "max_all_in_new_study_usd": 10,
-    "max_new_study_hours": 3,
-    "reserve_minutes": 30
-  },
-  "review": {
-    "no_model_loaded": true,
-    "no_pretrained_inference": true,
-    "no_cloud_access": true,
-    "executable_experiment_runner_supplied": false
   }
 }

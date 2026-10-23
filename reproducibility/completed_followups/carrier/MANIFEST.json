@@ -1,0 +1,61 @@
+{
+  "schema": "ANONYMOUS_COMPACT_INPUTS_V1",
+  "study": "carrier",
+  "files": [
+    {
+      "bytes": 43546,
+      "sha256": "35e3e067c30c81eb78c721bba7f1d5ed14a1a44075432e6c688d565798b9637c",
+      "encoding": "gzip",
+      "decoded_bytes": 498435,
+      "decoded_sha256": "e081f242b34aeacafdd7b08d427bddbf655adbcf6032a4f0a1c6e9ec86961f6e",
+      "path": "ADVERSE_AND_OMISSIONS.json.gz",
+      "member": "ADVERSE_AND_OMISSIONS.json"
+    },
+    {
+      "bytes": 341938,
+      "sha256": "5824540f61646f6af94b8ca71c155845b771c26ca912eb09f5760a7ddd8cf160",
+      "encoding": "gzip",
+      "decoded_bytes": 4068517,
+      "decoded_sha256": "acba40f1386fd569e659e777b2f01174d06a346344af1174557393044f8bcae7",
+      "path": "ALL_CONDITION_SUMMARIES.json.gz",
+      "member": "ALL_CONDITION_SUMMARIES.json"
+    },
+    {
+      "bytes": 247773,
+      "sha256": "b4c282e3b342d28ad7cd270e61511f9dbaf5c2485e08c0597be18c37cd78d29c",
+      "encoding": "gzip",
+      "decoded_bytes": 1243608,
+      "decoded_sha256": "cfcb6e790e89ec7de607a272f300e74280dc10bb21aa4811c2ef53387c8d104e",
+      "path": "ALL_SCORES_AND_EFFECTS.csv.gz",
+      "member": "ALL_SCORES_AND_EFFECTS.csv"
+    },
+    {
+      "bytes": 3497,
+      "sha256": "1728e8bdeca2b06a980be3c709a534db72a1a4fd9fc9ff0abfc64df3a5404135",
+      "encoding": "verbatim",
+      "decoded_bytes": 3497,
+      "decoded_sha256": "1728e8bdeca2b06a980be3c709a534db72a1a4fd9fc9ff0abfc64df3a5404135",
+      "path": "SOURCE_PROTOCOL_REPORT.json",
+      "member": "SOURCE_PROTOCOL_REPORT.json"
+    },
+    {
+      "bytes": 14568,
+      "sha256": "680d89a67d867f18d6285fae87b6265ab59f370cf8f988071e786adae4e09d73",
+      "encoding": "verbatim",
+      "decoded_bytes": 14568,
+      "decoded_sha256": "680d89a67d867f18d6285fae87b6265ab59f370cf8f988071e786adae4e09d73",
+      "path": "TABLES.md",
+      "member": "TABLES.md"
+    },
+    {
+      "bytes": 259,
+      "sha256": "e0a7b56c1dde7ca05f969cc8b47e837bcc97075a09f022e0c1002e6edc955425",
+      "encoding": "verbatim",
+      "decoded_bytes": 259,
+      "decoded_sha256": "e0a7b56c1dde7ca05f969cc8b47e837bcc97075a09f022e0c1002e6edc955425",
+      "path": "SCORE_REDERIVATION.json",
+      "member": "SCORE_REDERIVATION.json"
+    }
+  ],
+  "support_files": []
+}

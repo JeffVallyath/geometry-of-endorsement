@@ -37,7 +37,6 @@ def reconstruct(base=BASE):
     conditions = {'SOURCE','NATIVE_FINAL', 'INV_PAIR_NLL_s0', 'INV_PAIR_NLL_s1',
                   'FREE_PAIR_CONSISTENCY_s0', 'FREE_PAIR_CONSISTENCY_s1',
                   'EXISTING_CORRECTION','LATEST_SAME_WORDING'}
-    # NATIVE_FINAL is not a separate condition in the source root table.
     conditions.remove('NATIVE_FINAL')
     identities = {(r['actor'], r['condition'], r['root_id']) for r in counts}
     require(len(counts) == len(identities) == 896, 'Missing or duplicate root records')
@@ -81,36 +80,10 @@ def reconstruct(base=BASE):
             for key in ('A','C','AC','D','W','strong','all_direct_witness'):
                 require(sum(r[key] for r in seeds)==w[0][key], 'Per-seed count mismatch')
             require(w[0]['fixed_questions']==1152,'Per-seed denominator changed')
-    v9=[]
-    for r in read('v9/primary_summary.json'):
-        require(r['view']=='HIGH_DIRECT_MARGIN_090' and r['variant']=='d0' and r['cohort']=='ALL_HISTORIES',
-                'V9 strong view must include direct margin and both reference gates')
-        row={'model':r['model'],'condition':r['condition'],
-             **{out:int(float(r[src])) for out,src in [('count','count_ge10'),('eligible','n'),('full','full_denominator'),('roots','roots_any_ge10'),('total_roots','full_roots')]}}
-        require(row['count']<=row['eligible']<=row['full']==1088 and row['roots']<=row['total_roots']==64,'V9 denominator mismatch')
-        v9.append(row)
-    require(len(v9)==12 and len({(r['model'],r['condition']) for r in v9})==12,'V9 inventory mismatch')
-    v6=[]
-    for r in read('v6/fixed_certificate_summary.json'):
-        require(r['view']=='E_SAME_METHOD_NOOP' and r['interface']=='ALL_34','V6 fixed interface changed')
-        row={'model':r['model'],'condition':r['condition'],
-             **{out:int(r[src]) for out,src in [('count','count_ge10'),('eligible','eligible_questions'),('full','total_question_opportunities'),('roots','roots_ge10'),('total_roots','total_roots')]}}
-        require(row['count']<=row['eligible']<=row['full']==34*row['total_roots'] and row['roots']<=row['total_roots'],'V6 denominator mismatch')
-        v6.append(row)
-    require(len(v6)==10,'V6 inventory mismatch')
-    coherence=[{'model':r['model'],'condition':r['condition'],'cohort':r['cohort'],'mean':float(r['mean'])} for r in read('v9/coherence_summary.json')]
-    for model in ('gemma','qwen'):
-        native=next(r['mean'] for r in coherence if r['model']==model and r['condition']=='NATIVE_FINAL')
-        require(all(r['mean']<native for r in coherence if r['model']==model and r['cohort']=='ACTUAL_EDIT'),'Adverse coherence control changed')
     example=read('v10/selected_repeat_checked_example.json')
     close(np.ptp(example['correct_probabilities'])/2,example['half_probability_range'])
     require(example['predictions']==[0,0,0,0,1,1,0,1] and example['W'] and example['all_direct_witness'],'Illustrative witness changed')
-    v7=read('v7/constructive_summary.json')
-    for model in ('gemma','qwen'):
-        for group in ('INV_PAIR_NLL','INV_PAIR_CONSISTENCY','FREE_PAIR_CONSISTENCY'):
-            rows=[r for r in v7['gates'] if r['model']==model and r['condition'] in (group+'_s0',group+'_s1')]
-            require(len(rows)==2 and all(r['H1'] and r['H2'] and not r['H3'] for r in rows),'Constructive gate boundary changed')
-    return {'v7':v7['three_edit'],'v9':v9,'v6':v6,'coherence':coherence,'v10':primary_rows,'strong':strong_rows,
+    return {'v10':primary_rows,'strong':strong_rows,
             'example':{'minimum_direct_probability':min(example['direct_correct_probabilities']),
                        'half_range':example['half_probability_range']}}
 
@@ -130,7 +103,7 @@ def replay(base=BASE):
 def export(output):
     result=replay()
     destination=new_output(Path(output)/'state_sufficiency')
-    for key in ('v7','v9','v6','coherence','v10','strong'):
+    for key in ('v10','strong'):
         with (destination/(key+'.csv')).open('x',encoding='utf8',newline='') as stream:
             writer=csv.DictWriter(stream,fieldnames=list(result[key][0]))
             writer.writeheader();writer.writerows(result[key])

@@ -1,0 +1,12 @@
+# Remaining trained-interpreter errors
+
+Distinct current questions, out of 901 per model and seed.
+
+| Model | Seed | Refusals | Wrong_accepted_answers | Questions |
+|---|---|---|---|---|
+| Qwen2.5-7B | 0 | 3 | 1 | 901 |
+| Qwen2.5-7B | 1 | 0 | 1 | 901 |
+| Qwen2.5-32B | 0 | 0 | 0 | 901 |
+| Qwen2.5-32B | 1 | 2 | 0 | 901 |
+| Gemma-2-27B | 0 | 0 | 1 | 901 |
+| Gemma-2-27B | 1 | 0 | 1 | 901 |

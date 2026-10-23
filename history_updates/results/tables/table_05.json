@@ -1,0 +1,109 @@
+{
+  "title": "Cache refresh accounting",
+  "unit": "Counts retain both seeds, all scheduled questions and every correction or harm.",
+  "columns": [
+    "Measurement",
+    "Count",
+    "Source_field"
+  ],
+  "rows": [
+    {
+      "Measurement": "Saved score rows",
+      "Count": 435200,
+      "Source_field": "raw_rows"
+    },
+    {
+      "Measurement": "Eligible witness observations before refresh",
+      "Count": 83,
+      "Source_field": "baseline_W"
+    },
+    {
+      "Measurement": "Witnesses repaired, blocks 17-24",
+      "Count": 36,
+      "Source_field": "B_repairs"
+    },
+    {
+      "Measurement": "Witnesses repaired, control blocks 25-32",
+      "Count": 2,
+      "Source_field": "C_repairs"
+    },
+    {
+      "Measurement": "Eligible witnesses after refresh",
+      "Count": 75,
+      "Source_field": "treated_qualifying_witnesses"
+    },
+    {
+      "Measurement": "Original witnesses still present",
+      "Count": 35,
+      "Source_field": "baseline_witnesses_retained"
+    },
+    {
+      "Measurement": "New witnesses after refresh",
+      "Count": 40,
+      "Source_field": "new_qualifying_witnesses"
+    },
+    {
+      "Measurement": "Lost qualification without repair",
+      "Count": 12,
+      "Source_field": "baseline_ceased_qualifying_without_repair"
+    },
+    {
+      "Measurement": "Direct answers made wrong",
+      "Count": 76,
+      "Source_field": "B_direct_damage"
+    },
+    {
+      "Measurement": "Direct answers corrected",
+      "Count": 84,
+      "Source_field": "B_direct_corrections"
+    },
+    {
+      "Measurement": "Combined-answer errors before refresh",
+      "Count": 3490,
+      "Source_field": "A_joint_errors"
+    },
+    {
+      "Measurement": "Combined-answer errors after refresh",
+      "Count": 2893,
+      "Source_field": "B_joint_errors"
+    },
+    {
+      "Measurement": "Combined answers made wrong",
+      "Count": 347,
+      "Source_field": "B_joint_damage"
+    },
+    {
+      "Measurement": "Combined answers corrected",
+      "Count": 944,
+      "Source_field": "B_joint_corrections"
+    },
+    {
+      "Measurement": "Combined-answer errors after control-region refresh",
+      "Count": 3494,
+      "Source_field": "C_joint_errors"
+    },
+    {
+      "Measurement": "Combined-answer errors in donor reference",
+      "Count": 2000,
+      "Source_field": "D_joint_errors"
+    },
+    {
+      "Measurement": "Cases",
+      "Count": 256,
+      "Source_field": "cases"
+    },
+    {
+      "Measurement": "Cases with witnesses after refresh",
+      "Count": 58,
+      "Source_field": "treated_witness_cases"
+    },
+    {
+      "Measurement": "Distinct designs with repaired witnesses",
+      "Count": 28,
+      "Source_field": "repaired_designs"
+    }
+  ],
+  "sources": [
+    "refresh/PRIMARY_RECOUNT.json"
+  ]
+}

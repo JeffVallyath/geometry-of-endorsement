@@ -1,14 +1,6 @@
-# Fresh matched-history validation
+# Scientific protocol excerpt
 
-## Question and purpose
-
-Run one new controlled study with two outputs from the same saved model scores.
-
-First, test whether the strongest post-hoc robustness finding recurs on fresh cases when its full counting rule is fixed before inference.
-
-Second, test whether spending a fixed number of validation reads on different histories helps predict errors on questions excluded from that validation. This is an application test of the last sentence of the user's abstract. A lower error rate obtained only by rejecting more updates is insufficient to establish an advantage.
-
-Use the current abstract as the claim to investigate, not as a result to obtain. Preserve all completed results and the submission draft.
+These are the preserved scientific sections of the pre-outcome protocol. Former execution authorizations and resource instructions are omitted. They document the completed study, not permission to run it.
 
 ## Fixed scope
 
@@ -22,18 +14,6 @@ Use the current abstract as the claim to investigate, not as a result to obtain.
 - Qwen, parameter editing, new causal searches, and alignment training are outside this run.
 
 This is a prospective confirmation in the existing controlled task family. Both the model and update were selected using prior evidence. The claim concerns fresh generated cases, not a new model family or arbitrary tasks.
-
-## Reuse and readiness before rental
-
-Read SOURCE_BINDINGS.json, the repo's fresh-inference README, and source_audit/CPU_AUDIT_REPORT.md and GATE_SPEC.json. Verify the source archive and the two selected learned checkpoints. Do not use the original audit's hard-coded case IDs as new gate definitions.
-
-The repo includes the scientific prepare/serve routines and learned parameters. Its optional top-level pretrained runner was only CPU-smoke-tested. Actual pretrained replay remains a prerequisite, not an assumed success.
-
-Finish only a thin new-case generator, restricted context schedule, gate analyzer, query-partition loader and sequential driver. Reuse exact scientific prepare and single-query serving. Do not rebuild cloud orchestration or train a model.
-
-Use the existing locally qualified runtime matching these scientific sources where available. Verify its versions and settings against the runtime actually used for the original study. The requirements file alone does not certify an installation. Any needed semantic or numerical runtime amendment requires an explicit decision; do not silently upgrade the model stack.
-
-Use at most two elapsed hours on new CPU implementation before returning a concrete readiness state. Finish sooner when ready. A small missing operator adapter is in scope; a new experiment framework is not. Before any allocation, establish working model access, an independent deadline guard, a real source/data binding, and a plausible execution path.
 
 ## Fresh data
 
@@ -132,71 +112,3 @@ A benefit on withheld questions supports practical value beyond detecting the
 same failure used to score the test. A primary robustness success can coexist
 with no utility advantage. Report those outcomes separately.
 
-## Technical run order and workload
-
-Before new final inference:
-- Reproduce the two fixed old cases SSC1-FINAL-0000 and SSC1-FINAL-0006 on the
-  selected native + two-seed context schedule. Use the original replay contract.
-  Fix deterministic binding bugs with focused tests, preserving old outputs.
-- Run all eight new technical cases for serving, identity, reference inspection
-  and timing. Do not use their disagreement to choose the model or final data.
-- Retain original BF16 backbone / FP32 workspace and readout semantics, final
-  softcap, layer boundary, cache ownership and batch size one.
-- Require valid implementation checks and a conservative whole-final-plus-repeat
-  forecast within the resource limits. No effect-size gate.
-
-The fixed score-row plan is 36,992 final + 4,624 technical + 1,156 old replay +
-up to 2,312 targeted replay = 45,084. Physical calls can be fewer through proven
-exact context identity. Count all additional recovery/scoring calls too; hard
-ceiling 50,000.
-
-After completing the final block, repeat at most four complete final cases in a
-fresh process: first four cases with a primary witness in source order; fill any
-vacant slots with the earliest other cases. This is a predeclared targeted
-reproducibility check. The original primary results stay unchanged. Report every
-score and hard-answer discrepancy; repeat agreement covers only repeated cases.
-
-Do not recalculate large full-weight hashes per query. Reuse the existing
-cache-stamp/whole-context verification strategy. Do not introduce batching,
-quantization, fresh training, new question types or a performance rewrite.
-
-## Resources and autonomy
-
-The pasted launcher is the authority. Proposed maximum: one new x86-64 H100
-80GB instance (PCIe or SXM), at most $4.50/hour, >=128 GiB host RAM and >=100 GiB
-instance-local storage, ten total billable hours and $50 all-in INCLUDING tax,
-setup, idle time, recovery, transfers and shutdown. Reserve the final 30 minutes.
-
-First establish successful replay/readiness within 90 billable minutes. If that
-fails, export and terminate rather than running down the whole budget.
-Once ready, admit FINAL only when a 1.25x measured-work forecast plus export
-fits the remaining time and actual cost. Do not change N to fit after rental.
-
-Reuse the working independent exact-instance guard through its supported
-interface. Set the new limits explicitly; no old budget inheritance. If the
-required local supervisor depends on an awake controller, state that operational
-requirement before allocation. Do not weaken permissions or alter global hooks.
-No parallel study, new instance, or automatic budget extension.
-
-Finish every authorized scientific block regardless of sign. Export raw scores,
-settings, source bindings, cases, both analyses, repeat results and a runnable
-CPU replay. Shut down as soon as necessary GPU work and delivery verification
-are complete. Write explanatory prose and figures locally afterward.
-
-## Deliverables and interpretation
-
-Return one results package with:
-- the primary prospective result, attrition and seed/code sensitivities;
-- the held-out validation comparison and same-retention error curves;
-- all raw scores and exact analysis/scoring rules;
-- repeat coverage and discrepancies;
-- a simple figure for primary confirmation and one for validation utility;
-- actual timing, spending and exact-instance shutdown evidence;
-- STORY_DELTA.md separating which abstract sentence each result supports.
-
-Use plain-language labels. Keep internal IDs in data/source mappings.
-
-Do not present this as a new moral-probe result, a conventional parameter-editor
-replication, or an explanation of RLHF. Do not rewrite the frozen abstract or
-main repo automatically. A later integration decision can add the completed
-results. Stop after this study.

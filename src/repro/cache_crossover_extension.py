@@ -173,8 +173,7 @@ def check_exports(result, rows, queries, outcome, joint_csv, direct_csv):
         for r in table:
             raw = rows[int(r['line']) - 1]
             require(raw is cells[r['state'], r['query_id']], 'Raw line selector mismatch')
-            require(r['archive_sha256'] == '307a4f2344e81564300671d616af5cec21ac5bffe28b9553aedd5c4b253ef16a'
-                    and r['member'] == 'remote/results/raw.jsonl', 'Source identity mismatch')
+            require(r['journal'] == 'reproducibility/cache_crossover/extension/raw.jsonl.gz', 'Public journal binding mismatch')
             require([r['label_no'], r['label_yes']] == qmap[r['query_id']]['labels'], 'Semantic label mapping changed')
             expected_code = 'literal_No_Yes' if set(qmap[r['query_id']]['labels']) == {'No', 'Yes'} else 'coded_A_B'
             require(r['code'] == expected_code, 'Answer-format binding changed')
@@ -200,16 +199,12 @@ def check_exports(result, rows, queries, outcome, joint_csv, direct_csv):
 def replay(root=ROOT):
     base = root / 'reproducibility/cache_crossover/extension'
     artifacts = root / 'artifacts/cache_crossover'
-    provenance = load_json(base / 'provenance.json')
-    for row in provenance['files']:
-        path = safe_path(row['path'], root)
-        require(path.stat().st_size == row['bytes'] and sha256(path) == row['sha256'], 'Extension evidence hash mismatch: ' + row['path'])
+    from .release_inputs import verify
+    verify(base.parent, 'cache_crossover', root)
     candidate = load_json(base / 'candidate.json')
     require(sha256(root / DESIGN) == candidate['source_bindings']['design_sha256'], 'Design lineage mismatch')
     require(sha256(root / CORE) == candidate['source_bindings']['scores_sha256'], 'Original score lineage mismatch')
     raw_bytes = gzip.decompress((base / 'raw.jsonl.gz').read_bytes())
-    import hashlib
-    require(hashlib.sha256(raw_bytes).hexdigest() == provenance['raw_member_sha256'], 'Lossless journal binding mismatch')
     raw = [json.loads(line) for line in raw_bytes.splitlines()]
     result = analyze(load_json(root / DESIGN), json.loads(gzip.decompress((root / CORE).read_bytes())),
                      candidate, raw, load_json(base / 'terminal.json'))

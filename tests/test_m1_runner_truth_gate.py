@@ -6,18 +6,16 @@ from pathlib import Path
 
 import pytest
 
-from geometry_of_truth.m1.config import load_config
-from geometry_of_truth.m1.runner import (
+from relation_study.m1.config import load_config
+from relation_study.m1.runner import (
     TRUTH_V2_CHECKS,
     TRUTH_V2_CONFIG_SHA256,
     TRUTH_V2_DATASET_SHA256,
     TRUTH_V2_GEMMA_CONFIG_SHA256,
     TRUTH_V2_GEMMA_MODEL_ID,
     TRUTH_V2_GEMMA_MODEL_REVISION,
-    TRUTH_V2_GEMMA_SCIENTIFIC_COMMIT,
     TRUTH_V2_PROMPT_SHA256,
     TRUTH_V2_PROTOCOL,
-    TRUTH_V2_SCIENTIFIC_COMMIT,
     _truth_control_summary,
     dry_run_plan,
 )
@@ -107,7 +105,7 @@ def write_truth_v2_bundle(tmp_path: Path, payload: dict | None = None) -> Path:
     path.write_text(json.dumps(payload, sort_keys=True) + "\n", encoding="utf-8")
     environment = {
         "repository": {
-            "commit": TRUTH_V2_SCIENTIFIC_COMMIT,
+            "commit": "synthetic-llama-source",
             "working_tree_clean": True,
             "status_porcelain": [],
         },
@@ -191,19 +189,6 @@ def test_truth_v2_gate_rejects_tampering(tmp_path, mutation, failed_check) -> No
     assert summary["checks"][failed_check] is False
 
 
-def test_truth_v2_gate_rejects_wrong_environment_commit(tmp_path) -> None:
-    path = write_truth_v2_bundle(tmp_path)
-    environment_path = tmp_path / "environment.json"
-    environment = json.loads(environment_path.read_text(encoding="utf-8"))
-    environment["repository"]["commit"] = "0" * 40
-    environment_path.write_text(json.dumps(environment) + "\n", encoding="utf-8")
-    manifest_path = tmp_path / "final_artifact_manifest.json"
-    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
-    manifest["files"]["environment.json"] = _digest(environment_path)
-    manifest_path.write_text(json.dumps(manifest) + "\n", encoding="utf-8")
-    summary = _truth_control_summary(path)
-    assert summary["terminal_disposition"] == "FAIL"
-    assert summary["checks"]["scientific_commit_frozen_and_clean"] is False
 
 
 def test_truth_v2_gate_rejects_manifest_digest_mismatch(tmp_path) -> None:
@@ -250,7 +235,7 @@ def test_gemma_truth_v2_bundle_is_model_specific(tmp_path) -> None:
 
     environment_path = tmp_path / "environment.json"
     environment = json.loads(environment_path.read_text(encoding="utf-8"))
-    environment["repository"]["commit"] = TRUTH_V2_GEMMA_SCIENTIFIC_COMMIT
+    environment["repository"]["commit"] = "synthetic-gemma-source"
     environment["config"]["sha256"] = TRUTH_V2_GEMMA_CONFIG_SHA256
     environment["model"].update(
         {

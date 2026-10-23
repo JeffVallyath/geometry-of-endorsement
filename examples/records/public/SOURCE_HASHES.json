@@ -1,0 +1,56 @@
+{
+  "models": {
+    "gemma": {
+      "name": "Gemma-2-9B-it",
+      "repository": "google/gemma-2-9b-it",
+      "revision": "11c9b309abf73637e4b6f9a3fa1e92e615547819"
+    },
+    "qwen": {
+      "name": "Qwen2.5-7B-Instruct",
+      "repository": "Qwen/Qwen2.5-7B-Instruct",
+      "revision": "a09a35458c702b33eeacc393d103063234e8bc28"
+    }
+  },
+  "parser": "Case-sensitive NFC whitespace normalization; exact first-line alias; optional Answer: prefix, paired quotes, final period.",
+  "repeat_scope": "Eight preselected complete cases plus four qualified-positive cases per model; repeats add no subjects.",
+  "schema": "MQMH_SCIENTIFIC_SOURCE_HASHES_V1",
+  "scope": "Saved-response reconstruction, not fresh inference; token-boundary validity retained from saved scoring.",
+  "source_evidence": {
+    "gemma": {
+      "archive_bytes": 165695952,
+      "archive_sha256": "8dcc480937b12f54239e0021d5d31dcf52c5f5efd986b80bc26e0f09acfa5d64",
+      "bootstrap_source_sha256": "7ca4e117909fbcde38636c4696465e4afa2a2b86f874b01b81090cb66b8e3113",
+      "cohort_sha256": "228c99f1673e6f5f9000e31a32aa0d45637364097d766367a2d974ecb4b98cc7",
+      "endpoint_rules_sha256": "24ed5d514430d51e437da45f25b46956a9e8abae028f0dd7e2325600b6a7d20b",
+      "fresh_process_repeat_verified": true,
+      "primary_journal_sha256": "5197258777ca7364568307273ba5114ea7d541986567473b12230fda60c27e40",
+      "repeat_journal_sha256": "cf20b62e3dd121d7921954390ecdfcc6f7b23d70e91bac5282ec11deee8ea162",
+      "saved_repeats_sha256": "1dfe697f951a4ffad5f5065582209fee9bcc714fa8070d7a64c28c59cfc4f6bf",
+      "saved_responses_sha256": "af504d7af1dd4214692002a076d90b70787752ca8f971ceb954ebc1237262801"
+    },
+    "qwen": {
+      "archive_bytes": 86566860,
+      "archive_sha256": "32914bb5e9235d06b5fa80c031f86ae66eb7b3fc7f04588f434bab5d0bf0649c",
+      "bootstrap_source_sha256": "7ca4e117909fbcde38636c4696465e4afa2a2b86f874b01b81090cb66b8e3113",
+      "cohort_sha256": "228c99f1673e6f5f9000e31a32aa0d45637364097d766367a2d974ecb4b98cc7",
+      "endpoint_rules_sha256": "24ed5d514430d51e437da45f25b46956a9e8abae028f0dd7e2325600b6a7d20b",
+      "fresh_process_repeat_verified": true,
+      "primary_journal_sha256": "fa863435a54306a29e00fff280ed7c1a483d89e6430a7e1277a316521a0f7fc0",
+      "repeat_journal_sha256": "27c0b076054795be49205a3e136143689979ab7dc5cca194847d24e58d1d0b55",
+      "saved_repeats_sha256": "faae72cc74cd58a7972767b83ac085cf5625ce96e141a0415b5bbc3856ece8c3",
+      "saved_responses_sha256": "e8ed9313e295f8777a70db0209b924c55654af464577ae4ed007fc477b9c4671"
+    }
+  },
+  "uncertainty": {
+    "draws": 10000,
+    "level": 0.9875,
+    "seed": 20260923,
+    "unit": "whole subject, with all three target phrasings"
+  },
+  "upstream": {
+    "dataset": "MQuAKE-CF-3k-v2.json",
+    "dataset_sha256": "f82091cbb668cef8f2537f79f1768af1840184450b347ff8c344336090ddc71e",
+    "repository": "https://github.com/princeton-nlp/MQuAKE",
+    "revision": "fb43dadc2d8cd19d08ce81c63d957b59deb3f3cd"
+  }
+}

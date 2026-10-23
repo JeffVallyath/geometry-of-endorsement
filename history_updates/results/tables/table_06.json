@@ -1,0 +1,41 @@
+{
+  "title": "Answering on the cache-refresh cohort",
+  "unit": "83 eligible seed-question observations; 73,728 combined-answer comparisons. Compiler observations are reused across editor seeds.",
+  "columns": [
+    "Answering_system",
+    "Repaired_witness_observations",
+    "Combined_answer_errors",
+    "Introduced_errors"
+  ],
+  "rows": [
+    {
+      "Answering_system": "Model alone",
+      "Repaired_witness_observations": 0,
+      "Combined_answer_errors": 3490,
+      "Introduced_errors": 0
+    },
+    {
+      "Answering_system": "Cache refresh",
+      "Repaired_witness_observations": 36,
+      "Combined_answer_errors": 2893,
+      "Introduced_errors": 347
+    },
+    {
+      "Answering_system": "Saved direct answers plus supplied operations",
+      "Repaired_witness_observations": 83,
+      "Combined_answer_errors": 584,
+      "Introduced_errors": 346
+    },
+    {
+      "Answering_system": "External dictionary and neural compiler",
+      "Repaired_witness_observations": 83,
+      "Combined_answer_errors": 0,
+      "Introduced_errors": 0
+    }
+  ],
+  "sources": [
+    "history_exposure/bridge/a10/A10_RECOMPOSITION.json",
+    "history_exposure/bridge/NSR1_ANALYSIS.json",
+    "refresh/PRIMARY_RECOUNT.json"
+  ]
+}

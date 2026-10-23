@@ -1,0 +1,128 @@
+{
+  "gemma": {
+    "primary": {
+      "common_guard": 279,
+      "cross_phrasing_long_chain_subjects": 21,
+      "decoy_qualified": 101,
+      "invalid_contribution": 0.0,
+      "long_chain_phrasings": 195,
+      "long_chain_qualified": 65,
+      "qualified": 101,
+      "qualified_interval": [
+        0.18618164062499942,
+        0.34375
+      ],
+      "qualified_rate": 0.2630208333333333,
+      "relevance_difference": 0.15625,
+      "relevance_interval": [
+        0.10807291666666666,
+        0.20963541666666666
+      ],
+      "subjects": 128,
+      "target_phrasings": 384
+    },
+    "repeats": {
+      "cases": 12,
+      "new_subjects": 0,
+      "stable": 12,
+      "stable_by_case": {
+        "133": true,
+        "1457": true,
+        "149": true,
+        "1617": true,
+        "1751": true,
+        "1778": true,
+        "2061": true,
+        "581": true,
+        "583": true,
+        "642": true,
+        "722": true,
+        "784": true
+      }
+    },
+    "strict_canonical": {
+      "common_guard": 264,
+      "cross_phrasing_long_chain_subjects": 20,
+      "decoy_qualified": 98,
+      "invalid_contribution": 0.0013020833333333333,
+      "long_chain_phrasings": 195,
+      "long_chain_qualified": 63,
+      "qualified": 98,
+      "qualified_interval": [
+        0.1796875,
+        0.3333333333333333
+      ],
+      "qualified_rate": 0.2552083333333333,
+      "relevance_difference": 0.15364583333333334,
+      "relevance_interval": [
+        0.10677083333333331,
+        0.20703125
+      ],
+      "subjects": 128,
+      "target_phrasings": 384
+    }
+  },
+  "qwen": {
+    "primary": {
+      "common_guard": 242,
+      "cross_phrasing_long_chain_subjects": 11,
+      "decoy_qualified": 94,
+      "invalid_contribution": 0.00390625,
+      "long_chain_phrasings": 195,
+      "long_chain_qualified": 32,
+      "qualified": 94,
+      "qualified_interval": [
+        0.17708333333333331,
+        0.31770833333333337
+      ],
+      "qualified_rate": 0.24479166666666666,
+      "relevance_difference": 0.125,
+      "relevance_interval": [
+        0.08333333333333333,
+        0.17447916666666663
+      ],
+      "subjects": 128,
+      "target_phrasings": 384
+    },
+    "repeats": {
+      "cases": 12,
+      "new_subjects": 0,
+      "stable": 12,
+      "stable_by_case": {
+        "133": true,
+        "1457": true,
+        "1617": true,
+        "1751": true,
+        "1778": true,
+        "2061": true,
+        "2079": true,
+        "581": true,
+        "583": true,
+        "642": true,
+        "722": true,
+        "784": true
+      }
+    },
+    "strict_canonical": {
+      "common_guard": 229,
+      "cross_phrasing_long_chain_subjects": 10,
+      "decoy_qualified": 86,
+      "invalid_contribution": 0.00390625,
+      "long_chain_phrasings": 195,
+      "long_chain_qualified": 29,
+      "qualified": 87,
+      "qualified_interval": [
+        0.16145833333333331,
+        0.2981933593750009
+      ],
+      "qualified_rate": 0.2265625,
+      "relevance_difference": 0.11588541666666667,
+      "relevance_interval": [
+        0.07616373697916638,
+        0.1640625
+      ],
+      "subjects": 128,
+      "target_phrasings": 384
+    }
+  }
+}

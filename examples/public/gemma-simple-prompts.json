@@ -1,0 +1,578 @@
+[
+  {
+    "arm": "H0",
+    "branch": "F",
+    "case_id": 149,
+    "chat_sha256": "3742c9ec9f992d5d6cc8f42ee546a5b124e1a2052ce2d6a8ceb1d7e4c6e240ac",
+    "input_ids_sha256": "50a15b6a942eb81f6f7c2bc3f4860ea5bdc566c67da6c465dadc5eaafe098b98",
+    "input_tokens": 140,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nGiovanni Papini is affiliated with the religion of Catholic Church.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\nAlbert of Saxony is affiliated with the religion of Abrahamic religion.\n\nCorrections:\nSET Giovanni Papini is affiliated with the religion of Abrahamic religion.\nSET Albert of Saxony is affiliated with the religion of Abrahamic religion.\n\nQuestion: Which religion is Giovanni Papini affiliated with?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F0",
+    "unit_id": "gemma:149:H0:F0"
+  },
+  {
+    "arm": "H1",
+    "branch": "F",
+    "case_id": 149,
+    "chat_sha256": "88615d48f844671fe42326798890d999c73542bf6688a0f2f40737e22da99e16",
+    "input_ids_sha256": "6f37024c4a86c0789338c15ef3d14f19527f89c20ebceb142dd539736506d2fb",
+    "input_tokens": 140,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nAlbert of Saxony is affiliated with the religion of Abrahamic religion.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\nGiovanni Papini is affiliated with the religion of Catholic Church.\n\nCorrections:\nSET Giovanni Papini is affiliated with the religion of Abrahamic religion.\nSET Albert of Saxony is affiliated with the religion of Abrahamic religion.\n\nQuestion: Which religion is Giovanni Papini affiliated with?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F0",
+    "unit_id": "gemma:149:H1:F0"
+  },
+  {
+    "arm": "S0",
+    "branch": "F",
+    "case_id": 149,
+    "chat_sha256": "f253e699b9fdc553a3420baaaffb5d8bfa1aee1c1165cb14dc1561100020e1cf",
+    "input_ids_sha256": "fa90245457703d7903be4eb58c811f8e7c7f030cf8aa383e634e9fa53a04f5a8",
+    "input_tokens": 140,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nAlbert of Saxony is affiliated with the religion of Catholic Church.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\nGiovanni Papini is affiliated with the religion of Abrahamic religion.\n\nCorrections:\nSET Giovanni Papini is affiliated with the religion of Abrahamic religion.\nSET Albert of Saxony is affiliated with the religion of Abrahamic religion.\n\nQuestion: Which religion is Giovanni Papini affiliated with?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F0",
+    "unit_id": "gemma:149:S0:F0"
+  },
+  {
+    "arm": "S1",
+    "branch": "F",
+    "case_id": 149,
+    "chat_sha256": "8e252909c96a4482ce6fb9133b9ce5c31efa8c27b2118507cebb88f6120ea73d",
+    "input_ids_sha256": "6af213587fed2388c0ef717b024a555a64764cf9fc3ecce2572f684d7fe1ff9f",
+    "input_tokens": 140,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nGiovanni Papini is affiliated with the religion of Abrahamic religion.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\nAlbert of Saxony is affiliated with the religion of Catholic Church.\n\nCorrections:\nSET Giovanni Papini is affiliated with the religion of Abrahamic religion.\nSET Albert of Saxony is affiliated with the religion of Abrahamic religion.\n\nQuestion: Which religion is Giovanni Papini affiliated with?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F0",
+    "unit_id": "gemma:149:S1:F0"
+  },
+  {
+    "arm": "C",
+    "branch": "F",
+    "case_id": 149,
+    "chat_sha256": "2d362ea98fd6e2dd5821f28e28521e3e4c3dc20409cf8c483f0ed5eb53043b16",
+    "input_ids_sha256": "470b8bbd4f8b8c85f659f0dc2873569add1616a02ef4a869c6924f0ce087898d",
+    "input_tokens": 106,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nGiovanni Papini is affiliated with the religion of Abrahamic religion.\nAlbert of Saxony is affiliated with the religion of Abrahamic religion.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\n\nQuestion: Which religion is Giovanni Papini affiliated with?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F0",
+    "unit_id": "gemma:149:C:F0"
+  },
+  {
+    "arm": "C+",
+    "branch": "F",
+    "case_id": 149,
+    "chat_sha256": "a269c2f4eedff8ebc5b55ebb4b7119ef293403842b296e4d2dcce8f6723e7642",
+    "input_ids_sha256": "274e02630e2462dfda5ea2983a300f0b729ff4c05588ed3e15b2fa7c3837dd5d",
+    "input_tokens": 142,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nGiovanni Papini is affiliated with the religion of Abrahamic religion.\nAlbert of Saxony is affiliated with the religion of Abrahamic religion.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\n\nCorrections:\nSET Giovanni Papini is affiliated with the religion of Abrahamic religion.\nSET Albert of Saxony is affiliated with the religion of Abrahamic religion.\n\nQuestion: Which religion is Giovanni Papini affiliated with?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F0",
+    "unit_id": "gemma:149:C+:F0"
+  },
+  {
+    "arm": "H0",
+    "branch": "F",
+    "case_id": 149,
+    "chat_sha256": "572a7027055e78a7fba6d07639b4ed26718d6c0ece9e93fd3a600ddc85a5b612",
+    "input_ids_sha256": "740efb250190d4d285dfdf03e13d00b2754ca836bb5a199e55103d0ac0255ef7",
+    "input_tokens": 138,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nGiovanni Papini is affiliated with the religion of Catholic Church.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\nAlbert of Saxony is affiliated with the religion of Abrahamic religion.\n\nCorrections:\nSET Giovanni Papini is affiliated with the religion of Abrahamic religion.\nSET Albert of Saxony is affiliated with the religion of Abrahamic religion.\n\nQuestion: Who founded Abrahamic religion?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F1",
+    "unit_id": "gemma:149:H0:F1"
+  },
+  {
+    "arm": "H1",
+    "branch": "F",
+    "case_id": 149,
+    "chat_sha256": "f1566221dc71a9a519308a2bf5e23909326ac3807274fbc39b4d80850ec2bc91",
+    "input_ids_sha256": "79ef1d844d69707d2c7bdc90fa9eb2823d9c71a272946a4cf1cdd5458127f9dc",
+    "input_tokens": 138,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nAlbert of Saxony is affiliated with the religion of Abrahamic religion.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\nGiovanni Papini is affiliated with the religion of Catholic Church.\n\nCorrections:\nSET Giovanni Papini is affiliated with the religion of Abrahamic religion.\nSET Albert of Saxony is affiliated with the religion of Abrahamic religion.\n\nQuestion: Who founded Abrahamic religion?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F1",
+    "unit_id": "gemma:149:H1:F1"
+  },
+  {
+    "arm": "S0",
+    "branch": "F",
+    "case_id": 149,
+    "chat_sha256": "03824721bb4cbe800b4fa1995885d1d90fe3fcd629f79badc93d3dfc8609f7ae",
+    "input_ids_sha256": "b6747db8cf4ffe8ff81161258ecde82d30fcc9a59781aabc997042f559025386",
+    "input_tokens": 138,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nAlbert of Saxony is affiliated with the religion of Catholic Church.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\nGiovanni Papini is affiliated with the religion of Abrahamic religion.\n\nCorrections:\nSET Giovanni Papini is affiliated with the religion of Abrahamic religion.\nSET Albert of Saxony is affiliated with the religion of Abrahamic religion.\n\nQuestion: Who founded Abrahamic religion?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F1",
+    "unit_id": "gemma:149:S0:F1"
+  },
+  {
+    "arm": "S1",
+    "branch": "F",
+    "case_id": 149,
+    "chat_sha256": "8164425af50d9b0de50605a1c04b2695bbe3334e184a75c00dfdac592a2304a5",
+    "input_ids_sha256": "73a6102c6697722652f8779beeee557601f2ca712d3688cb7295e43c26a71c1f",
+    "input_tokens": 138,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nGiovanni Papini is affiliated with the religion of Abrahamic religion.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\nAlbert of Saxony is affiliated with the religion of Catholic Church.\n\nCorrections:\nSET Giovanni Papini is affiliated with the religion of Abrahamic religion.\nSET Albert of Saxony is affiliated with the religion of Abrahamic religion.\n\nQuestion: Who founded Abrahamic religion?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F1",
+    "unit_id": "gemma:149:S1:F1"
+  },
+  {
+    "arm": "C",
+    "branch": "F",
+    "case_id": 149,
+    "chat_sha256": "b8ceb91b0adee62cfb924de948d1e5dab57cae893e29c3a123c7cd37943af1b8",
+    "input_ids_sha256": "048067ba26948df890e748a6527f77f2b276b735b5e3c1a03cef38c3a3555738",
+    "input_tokens": 104,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nGiovanni Papini is affiliated with the religion of Abrahamic religion.\nAlbert of Saxony is affiliated with the religion of Abrahamic religion.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\n\nQuestion: Who founded Abrahamic religion?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F1",
+    "unit_id": "gemma:149:C:F1"
+  },
+  {
+    "arm": "C+",
+    "branch": "F",
+    "case_id": 149,
+    "chat_sha256": "29188f6e5e0032c36e80c5163cfc8606a75b2d6be20b30a461e6533f3a6da8db",
+    "input_ids_sha256": "104b59fa87859bf667d3beae5b31d5fb6a3dd1c3c0154cf431efe0f4834607c1",
+    "input_tokens": 140,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nGiovanni Papini is affiliated with the religion of Abrahamic religion.\nAlbert of Saxony is affiliated with the religion of Abrahamic religion.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\n\nCorrections:\nSET Giovanni Papini is affiliated with the religion of Abrahamic religion.\nSET Albert of Saxony is affiliated with the religion of Abrahamic religion.\n\nQuestion: Who founded Abrahamic religion?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F1",
+    "unit_id": "gemma:149:C+:F1"
+  },
+  {
+    "arm": "H0",
+    "branch": "Fdecoy",
+    "case_id": 149,
+    "chat_sha256": "c7fa0b00a3073174526de3d65d11e5127ea3b63560fa6fe1caeadf30c099f17b",
+    "input_ids_sha256": "5c6096d97a8ac2a169ac4c1dbaca3ef505bd24c21058e69a6b4efb26abeedcdd",
+    "input_tokens": 140,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nGiovanni Papini is affiliated with the religion of Catholic Church.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\nAlbert of Saxony is affiliated with the religion of Abrahamic religion.\n\nCorrections:\nSET Giovanni Papini is affiliated with the religion of Abrahamic religion.\nSET Albert of Saxony is affiliated with the religion of Abrahamic religion.\n\nQuestion: Which religion is Albert of Saxony affiliated with?",
+        "role": "user"
+      }
+    ],
+    "query_id": "Fdecoy",
+    "unit_id": "gemma:149:H0:Fdecoy"
+  },
+  {
+    "arm": "H1",
+    "branch": "Fdecoy",
+    "case_id": 149,
+    "chat_sha256": "d18a13b3449adcdd7767b70bede6d3a9385811bd0d5e8b36f37994d098c2e9ae",
+    "input_ids_sha256": "9380e407fc65200461eca0f7e3178d4fc192802ede46d1e803b9a5560b421c90",
+    "input_tokens": 140,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nAlbert of Saxony is affiliated with the religion of Abrahamic religion.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\nGiovanni Papini is affiliated with the religion of Catholic Church.\n\nCorrections:\nSET Giovanni Papini is affiliated with the religion of Abrahamic religion.\nSET Albert of Saxony is affiliated with the religion of Abrahamic religion.\n\nQuestion: Which religion is Albert of Saxony affiliated with?",
+        "role": "user"
+      }
+    ],
+    "query_id": "Fdecoy",
+    "unit_id": "gemma:149:H1:Fdecoy"
+  },
+  {
+    "arm": "S0",
+    "branch": "Fdecoy",
+    "case_id": 149,
+    "chat_sha256": "899ccf3f234a5ed666cc0661a83106855a13194c735759b662b25ec89e63c3c1",
+    "input_ids_sha256": "8c7b69a69b55451ac030d6803ad086f56b4d12f49e035af32cccdde0f2548d0e",
+    "input_tokens": 140,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nAlbert of Saxony is affiliated with the religion of Catholic Church.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\nGiovanni Papini is affiliated with the religion of Abrahamic religion.\n\nCorrections:\nSET Giovanni Papini is affiliated with the religion of Abrahamic religion.\nSET Albert of Saxony is affiliated with the religion of Abrahamic religion.\n\nQuestion: Which religion is Albert of Saxony affiliated with?",
+        "role": "user"
+      }
+    ],
+    "query_id": "Fdecoy",
+    "unit_id": "gemma:149:S0:Fdecoy"
+  },
+  {
+    "arm": "S1",
+    "branch": "Fdecoy",
+    "case_id": 149,
+    "chat_sha256": "3d3a2a7615dd1156683beff873ca79a50885803aae29f1563c96e5780f5c21d6",
+    "input_ids_sha256": "adcfbe69d18fa06646ed1c179bf094b53cb758b844cab95468eeb24142f81156",
+    "input_tokens": 140,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nGiovanni Papini is affiliated with the religion of Abrahamic religion.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\nAlbert of Saxony is affiliated with the religion of Catholic Church.\n\nCorrections:\nSET Giovanni Papini is affiliated with the religion of Abrahamic religion.\nSET Albert of Saxony is affiliated with the religion of Abrahamic religion.\n\nQuestion: Which religion is Albert of Saxony affiliated with?",
+        "role": "user"
+      }
+    ],
+    "query_id": "Fdecoy",
+    "unit_id": "gemma:149:S1:Fdecoy"
+  },
+  {
+    "arm": "C",
+    "branch": "Fdecoy",
+    "case_id": 149,
+    "chat_sha256": "0ce6f045039613e2cf02ccdd815f6e14ad7789dc871f7bd50e09ccedbf2df1b8",
+    "input_ids_sha256": "bb9178dccfc6d8e386a02552ef922930ea8c6448c234db23103a08ad5c4299e6",
+    "input_tokens": 106,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nGiovanni Papini is affiliated with the religion of Abrahamic religion.\nAlbert of Saxony is affiliated with the religion of Abrahamic religion.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\n\nQuestion: Which religion is Albert of Saxony affiliated with?",
+        "role": "user"
+      }
+    ],
+    "query_id": "Fdecoy",
+    "unit_id": "gemma:149:C:Fdecoy"
+  },
+  {
+    "arm": "C+",
+    "branch": "Fdecoy",
+    "case_id": 149,
+    "chat_sha256": "66a2bfa943ce367ff0bec7765dac12aadeb38765212fd3e54ec3ef59204102d1",
+    "input_ids_sha256": "fd1952959f0eb1d8ef53e9afecfe61c033746e155e4b680d1cc9225a02f0f0a4",
+    "input_tokens": 142,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nGiovanni Papini is affiliated with the religion of Abrahamic religion.\nAlbert of Saxony is affiliated with the religion of Abrahamic religion.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\n\nCorrections:\nSET Giovanni Papini is affiliated with the religion of Abrahamic religion.\nSET Albert of Saxony is affiliated with the religion of Abrahamic religion.\n\nQuestion: Which religion is Albert of Saxony affiliated with?",
+        "role": "user"
+      }
+    ],
+    "query_id": "Fdecoy",
+    "unit_id": "gemma:149:C+:Fdecoy"
+  },
+  {
+    "arm": "H0",
+    "branch": "J",
+    "case_id": 149,
+    "chat_sha256": "04319846b63e506cb6ef4c50105506d8b499ae66237206764dc47ddc553e9f66",
+    "input_ids_sha256": "1def2acefaf0beaad5605a943ebfdbf7915218b51a6070586b2d53c994abf746",
+    "input_tokens": 141,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nGiovanni Papini is affiliated with the religion of Catholic Church.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\nAlbert of Saxony is affiliated with the religion of Abrahamic religion.\n\nCorrections:\nSET Giovanni Papini is affiliated with the religion of Abrahamic religion.\nSET Albert of Saxony is affiliated with the religion of Abrahamic religion.\n\nQuestion: Who founded the religion associated with Giovanni Papini?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J0",
+    "unit_id": "gemma:149:H0:J0"
+  },
+  {
+    "arm": "H1",
+    "branch": "J",
+    "case_id": 149,
+    "chat_sha256": "b64be4681c1abcc274ce822959afbf1e6360bbf3dce45663fd2d1696b84b5448",
+    "input_ids_sha256": "fe0b546811e776abb85798299005010e65b9ed92a7df72a0e4acb7c066be2166",
+    "input_tokens": 141,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nAlbert of Saxony is affiliated with the religion of Abrahamic religion.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\nGiovanni Papini is affiliated with the religion of Catholic Church.\n\nCorrections:\nSET Giovanni Papini is affiliated with the religion of Abrahamic religion.\nSET Albert of Saxony is affiliated with the religion of Abrahamic religion.\n\nQuestion: Who founded the religion associated with Giovanni Papini?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J0",
+    "unit_id": "gemma:149:H1:J0"
+  },
+  {
+    "arm": "S0",
+    "branch": "J",
+    "case_id": 149,
+    "chat_sha256": "686e731fe22ff9c203a58e96eb9736a474cf40bdfa7c6b5d04b6529eb534f484",
+    "input_ids_sha256": "0d64f23fa2b31fc70fd9129271525b330beab656b1f5d1408d40ab29c6a5f5c8",
+    "input_tokens": 141,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nAlbert of Saxony is affiliated with the religion of Catholic Church.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\nGiovanni Papini is affiliated with the religion of Abrahamic religion.\n\nCorrections:\nSET Giovanni Papini is affiliated with the religion of Abrahamic religion.\nSET Albert of Saxony is affiliated with the religion of Abrahamic religion.\n\nQuestion: Who founded the religion associated with Giovanni Papini?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J0",
+    "unit_id": "gemma:149:S0:J0"
+  },
+  {
+    "arm": "S1",
+    "branch": "J",
+    "case_id": 149,
+    "chat_sha256": "d92b625b8b5998871e17dba5984f334c575d5d99d57ead7a4d9d1d7a7dad08e9",
+    "input_ids_sha256": "9e36f93984a2b533f8f3592c0b79c66f6e0fc2f7c918dfb46edb554c97ba77cb",
+    "input_tokens": 141,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nGiovanni Papini is affiliated with the religion of Abrahamic religion.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\nAlbert of Saxony is affiliated with the religion of Catholic Church.\n\nCorrections:\nSET Giovanni Papini is affiliated with the religion of Abrahamic religion.\nSET Albert of Saxony is affiliated with the religion of Abrahamic religion.\n\nQuestion: Who founded the religion associated with Giovanni Papini?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J0",
+    "unit_id": "gemma:149:S1:J0"
+  },
+  {
+    "arm": "C",
+    "branch": "J",
+    "case_id": 149,
+    "chat_sha256": "d33676e7c841c1d134a433cf40d05865b78beab51d5d05bcfbe409eef89f64ae",
+    "input_ids_sha256": "866ad8b0ce6ddbe4e5ee13baec2bfa40e86ad7ef0bedcba4a67f50bd4b3aa59c",
+    "input_tokens": 107,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nGiovanni Papini is affiliated with the religion of Abrahamic religion.\nAlbert of Saxony is affiliated with the religion of Abrahamic religion.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\n\nQuestion: Who founded the religion associated with Giovanni Papini?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J0",
+    "unit_id": "gemma:149:C:J0"
+  },
+  {
+    "arm": "C+",
+    "branch": "J",
+    "case_id": 149,
+    "chat_sha256": "9109bb1b940fc24d9c040158262ccd229767be11a87ed22945de5f8a429651d0",
+    "input_ids_sha256": "b541ccbc1e3b4a403193f0e4ec897f2585020480d1ba566145827932fd707d72",
+    "input_tokens": 143,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nGiovanni Papini is affiliated with the religion of Abrahamic religion.\nAlbert of Saxony is affiliated with the religion of Abrahamic religion.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\n\nCorrections:\nSET Giovanni Papini is affiliated with the religion of Abrahamic religion.\nSET Albert of Saxony is affiliated with the religion of Abrahamic religion.\n\nQuestion: Who founded the religion associated with Giovanni Papini?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J0",
+    "unit_id": "gemma:149:C+:J0"
+  },
+  {
+    "arm": "H0",
+    "branch": "J",
+    "case_id": 149,
+    "chat_sha256": "a91ca0593cfb3428fabee763e89b922048ff8980004b31fc4c2deaba585d2320",
+    "input_ids_sha256": "ed3a61a576b8d6bfed426b669d94cf47eb2407074bca28d5426228d3076170b9",
+    "input_tokens": 148,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nGiovanni Papini is affiliated with the religion of Catholic Church.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\nAlbert of Saxony is affiliated with the religion of Abrahamic religion.\n\nCorrections:\nSET Giovanni Papini is affiliated with the religion of Abrahamic religion.\nSET Albert of Saxony is affiliated with the religion of Abrahamic religion.\n\nQuestion: What is the name of the founder of the religion that Giovanni Papini believed in?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J1",
+    "unit_id": "gemma:149:H0:J1"
+  },
+  {
+    "arm": "H1",
+    "branch": "J",
+    "case_id": 149,
+    "chat_sha256": "8fa7c7190368444972cb88d5c16fdfeae8d05a4d7388deb731d2f947bd931dfd",
+    "input_ids_sha256": "067294fdfb4c7ba2b3903dea44909f20c013cccee53e0b8664c0888ea8ea6cbb",
+    "input_tokens": 148,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nAlbert of Saxony is affiliated with the religion of Abrahamic religion.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\nGiovanni Papini is affiliated with the religion of Catholic Church.\n\nCorrections:\nSET Giovanni Papini is affiliated with the religion of Abrahamic religion.\nSET Albert of Saxony is affiliated with the religion of Abrahamic religion.\n\nQuestion: What is the name of the founder of the religion that Giovanni Papini believed in?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J1",
+    "unit_id": "gemma:149:H1:J1"
+  },
+  {
+    "arm": "S0",
+    "branch": "J",
+    "case_id": 149,
+    "chat_sha256": "36451d50b204a6ced9777c8663aa555d64c0bfecb0be1a9b604c51fc1f992cbe",
+    "input_ids_sha256": "84a485d4ece6bfed6ef754e907b8336b9a833c8386898eff8223c9b98fc9742f",
+    "input_tokens": 148,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nAlbert of Saxony is affiliated with the religion of Catholic Church.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\nGiovanni Papini is affiliated with the religion of Abrahamic religion.\n\nCorrections:\nSET Giovanni Papini is affiliated with the religion of Abrahamic religion.\nSET Albert of Saxony is affiliated with the religion of Abrahamic religion.\n\nQuestion: What is the name of the founder of the religion that Giovanni Papini believed in?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J1",
+    "unit_id": "gemma:149:S0:J1"
+  },
+  {
+    "arm": "S1",
+    "branch": "J",
+    "case_id": 149,
+    "chat_sha256": "8bb8dee980d5822934883558dea6327b03a97dcd9f95655943477ce1a73f685e",
+    "input_ids_sha256": "7c0a62566049a79d5036a3ce0ed1e2e03400405358adfc8d14a75d312b038080",
+    "input_tokens": 148,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nGiovanni Papini is affiliated with the religion of Abrahamic religion.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\nAlbert of Saxony is affiliated with the religion of Catholic Church.\n\nCorrections:\nSET Giovanni Papini is affiliated with the religion of Abrahamic religion.\nSET Albert of Saxony is affiliated with the religion of Abrahamic religion.\n\nQuestion: What is the name of the founder of the religion that Giovanni Papini believed in?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J1",
+    "unit_id": "gemma:149:S1:J1"
+  },
+  {
+    "arm": "C",
+    "branch": "J",
+    "case_id": 149,
+    "chat_sha256": "807ce2535fdacff60708fa7fbf1cfa35312d78648887941392c174d6b62f7d5b",
+    "input_ids_sha256": "75d553a74415993a05825891d93304656be3a29d22c91037c5014ccb6f2bb189",
+    "input_tokens": 114,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nGiovanni Papini is affiliated with the religion of Abrahamic religion.\nAlbert of Saxony is affiliated with the religion of Abrahamic religion.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\n\nQuestion: What is the name of the founder of the religion that Giovanni Papini believed in?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J1",
+    "unit_id": "gemma:149:C:J1"
+  },
+  {
+    "arm": "C+",
+    "branch": "J",
+    "case_id": 149,
+    "chat_sha256": "8d6e446bfc954e162f61a8b1719eeb2dd75f26e7e95a5c5809bbde0294bef3ee",
+    "input_ids_sha256": "e4073188f11bd8920046425bc0364599029b7f78a5289cdcc9ac20ea3c10a994",
+    "input_tokens": 150,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nGiovanni Papini is affiliated with the religion of Abrahamic religion.\nAlbert of Saxony is affiliated with the religion of Abrahamic religion.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\n\nCorrections:\nSET Giovanni Papini is affiliated with the religion of Abrahamic religion.\nSET Albert of Saxony is affiliated with the religion of Abrahamic religion.\n\nQuestion: What is the name of the founder of the religion that Giovanni Papini believed in?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J1",
+    "unit_id": "gemma:149:C+:J1"
+  },
+  {
+    "arm": "H0",
+    "branch": "J",
+    "case_id": 149,
+    "chat_sha256": "e59f6856f2497aa5b33672f99bffaf52964f51252f0fa2146d83737f115ccc39",
+    "input_ids_sha256": "e89a1f584574b86d67b833e0e4d0f8bedff427faa8173252ebfdcc0ca7fb42c0",
+    "input_tokens": 144,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nGiovanni Papini is affiliated with the religion of Catholic Church.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\nAlbert of Saxony is affiliated with the religion of Abrahamic religion.\n\nCorrections:\nSET Giovanni Papini is affiliated with the religion of Abrahamic religion.\nSET Albert of Saxony is affiliated with the religion of Abrahamic religion.\n\nQuestion: From whom was the religion that Giovanni Papini adhered to founded?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J2",
+    "unit_id": "gemma:149:H0:J2"
+  },
+  {
+    "arm": "H1",
+    "branch": "J",
+    "case_id": 149,
+    "chat_sha256": "4ca80a56f45b31100acf5ee9e248c8f4ce46c01e5d54888ade344bccd316b70b",
+    "input_ids_sha256": "1527d54543155e06b30a0e8feea7de4d9c497eb397d8a341acda42a25d1e49b9",
+    "input_tokens": 144,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nAlbert of Saxony is affiliated with the religion of Abrahamic religion.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\nGiovanni Papini is affiliated with the religion of Catholic Church.\n\nCorrections:\nSET Giovanni Papini is affiliated with the religion of Abrahamic religion.\nSET Albert of Saxony is affiliated with the religion of Abrahamic religion.\n\nQuestion: From whom was the religion that Giovanni Papini adhered to founded?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J2",
+    "unit_id": "gemma:149:H1:J2"
+  },
+  {
+    "arm": "S0",
+    "branch": "J",
+    "case_id": 149,
+    "chat_sha256": "046efed75c8d2365fda57e4c118c9302b6e27927fb4596edca81f19cbba6b27f",
+    "input_ids_sha256": "9841d34cb0cf09f9c1fbe3c97514c4f2cbb7a07a34d3627ab99881402f4c3212",
+    "input_tokens": 144,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nAlbert of Saxony is affiliated with the religion of Catholic Church.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\nGiovanni Papini is affiliated with the religion of Abrahamic religion.\n\nCorrections:\nSET Giovanni Papini is affiliated with the religion of Abrahamic religion.\nSET Albert of Saxony is affiliated with the religion of Abrahamic religion.\n\nQuestion: From whom was the religion that Giovanni Papini adhered to founded?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J2",
+    "unit_id": "gemma:149:S0:J2"
+  },
+  {
+    "arm": "S1",
+    "branch": "J",
+    "case_id": 149,
+    "chat_sha256": "554e8080e54f81314fc446aea96422754f1bffa6dfb04a27d5bb3b33a6ea3e68",
+    "input_ids_sha256": "192ce66ada43239aef52941c3310e279d34161665504b92f45e55b439c259e30",
+    "input_tokens": 144,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nGiovanni Papini is affiliated with the religion of Abrahamic religion.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\nAlbert of Saxony is affiliated with the religion of Catholic Church.\n\nCorrections:\nSET Giovanni Papini is affiliated with the religion of Abrahamic religion.\nSET Albert of Saxony is affiliated with the religion of Abrahamic religion.\n\nQuestion: From whom was the religion that Giovanni Papini adhered to founded?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J2",
+    "unit_id": "gemma:149:S1:J2"
+  },
+  {
+    "arm": "C",
+    "branch": "J",
+    "case_id": 149,
+    "chat_sha256": "b89173db43659aa2bffaff14e06604f8f860aadb75f386bb72e6d3f9ca085c43",
+    "input_ids_sha256": "19e5da205692c6d1274357e34a3d6e7345965d207b1af45b9fa68eb1462f8393",
+    "input_tokens": 110,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nGiovanni Papini is affiliated with the religion of Abrahamic religion.\nAlbert of Saxony is affiliated with the religion of Abrahamic religion.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\n\nQuestion: From whom was the religion that Giovanni Papini adhered to founded?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J2",
+    "unit_id": "gemma:149:C:J2"
+  },
+  {
+    "arm": "C+",
+    "branch": "J",
+    "case_id": 149,
+    "chat_sha256": "704dc29240c157b8cc61a2a0013f9a1baca64e1d60b505814aa41ec40b8fa33f",
+    "input_ids_sha256": "8ab8f0342756fc4631e7421cd1df14dd006db7da5cc993f82cf0e426419c7d5f",
+    "input_tokens": 146,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nGiovanni Papini is affiliated with the religion of Abrahamic religion.\nAlbert of Saxony is affiliated with the religion of Abrahamic religion.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\n\nCorrections:\nSET Giovanni Papini is affiliated with the religion of Abrahamic religion.\nSET Albert of Saxony is affiliated with the religion of Abrahamic religion.\n\nQuestion: From whom was the religion that Giovanni Papini adhered to founded?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J2",
+    "unit_id": "gemma:149:C+:J2"
+  }
+]

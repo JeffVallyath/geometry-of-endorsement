@@ -76,7 +76,7 @@ def main(run,out,source=ROOT):
         if result!=load(run/'repeat'/rid/'COMPARISON.json'):raise ValueError('Repeat reconstruction mismatch')
         repeated.append(dict(root_id=rid,**result))
     physical=0;compilation=0;prior_reads=0
-    for line in gzip.decompress((run/'READOUT_LEDGER.jsonl.gz').read_bytes()).decode('utf8').splitlines():
+    for line in gzip.decompress((run/'READOUT_ACCOUNTING.jsonl.gz').read_bytes()).decode('utf8').splitlines():
         r=json.loads(line)
         if r['event']=='SCORED_READ_RESERVED':physical+=r['count']
         elif r['event']=='COMPILATION_FORWARDS':compilation+=r['count']

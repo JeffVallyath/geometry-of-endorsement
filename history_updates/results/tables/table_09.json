@@ -1,0 +1,58 @@
+{
+  "title": "Remaining trained-interpreter errors",
+  "unit": "Distinct current questions, out of 901 per model and seed.",
+  "columns": [
+    "Model",
+    "Seed",
+    "Refusals",
+    "Wrong_accepted_answers",
+    "Questions"
+  ],
+  "rows": [
+    {
+      "Model": "Qwen2.5-7B",
+      "Seed": "0",
+      "Refusals": 3,
+      "Wrong_accepted_answers": 1,
+      "Questions": 901
+    },
+    {
+      "Model": "Qwen2.5-7B",
+      "Seed": "1",
+      "Refusals": 0,
+      "Wrong_accepted_answers": 1,
+      "Questions": 901
+    },
+    {
+      "Model": "Qwen2.5-32B",
+      "Seed": "0",
+      "Refusals": 0,
+      "Wrong_accepted_answers": 0,
+      "Questions": 901
+    },
+    {
+      "Model": "Qwen2.5-32B",
+      "Seed": "1",
+      "Refusals": 2,
+      "Wrong_accepted_answers": 0,
+      "Questions": 901
+    },
+    {
+      "Model": "Gemma-2-27B",
+      "Seed": "0",
+      "Refusals": 0,
+      "Wrong_accepted_answers": 1,
+      "Questions": 901
+    },
+    {
+      "Model": "Gemma-2-27B",
+      "Seed": "1",
+      "Refusals": 0,
+      "Wrong_accepted_answers": 1,
+      "Questions": 901
+    }
+  ],
+  "sources": [
+    "public_repair/presentation/trained_current_outcomes"
+  ]
+}

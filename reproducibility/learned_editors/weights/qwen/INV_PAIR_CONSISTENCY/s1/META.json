@@ -1,0 +1,42 @@
+{
+  "actor": "qwen",
+  "arm": "INVARIANT_SET",
+  "cap_ref": 28.22532844543457,
+  "checkpoint0_sha256": "b6159e3defddc36d782d843a60c741ee43e30e71a6228d83037b9562201a0eb6",
+  "condition": "INV_PAIR_CONSISTENCY",
+  "epoch": 1,
+  "files": {
+    "setter": "5ba1b8590fd90e6481d8b8583a743b8b12325f6a96926d07b89794422ec6afaa"
+  },
+  "frozen_backbone": true,
+  "init": {
+    "kind": "v3_selected_checkpoint_warm_start",
+    "load_basis_error": 0.0,
+    "optimizer_state": "fresh AdamW moments (V3 checkpoints hold no optimizer state)",
+    "sha256": {
+      "setter": "279ed57566eb392af211b24fe69efdd24f6c21124819137ee73ed73813906059"
+    },
+    "v3_epoch": 3,
+    "v3_lr": 0.0003,
+    "parameter_path": "initialization/parent_03.npz"
+  },
+  "kappa": 1.0,
+  "kind": "invariant",
+  "lr": 0.0003,
+  "norms": {
+    "basis_raw": 5.2526421546936035,
+    "bias0": 0.028002213686704636,
+    "bias1": 0.029315300285816193,
+    "head0": 3.494793176651001,
+    "head1": 3.3578498363494873
+  },
+  "paired_groups": 384,
+  "paired_question_slots": 3072,
+  "rank": 16,
+  "schema": "RSO3_SETTER_V1",
+  "seed": 1,
+  "site": 13,
+  "steps": 384,
+  "training_contract": "RTC7_EXACT_PAIRED_V1",
+  "checkpoint0_path": "initialization/parent_14.npz"
+}

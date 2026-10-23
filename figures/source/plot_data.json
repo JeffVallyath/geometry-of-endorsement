@@ -1,0 +1,196 @@
+{
+  "matched_history": {
+    "rows": [
+      {
+        "actor": "gemma",
+        "group": "INV_PAIR_NLL",
+        "roots": 64,
+        "mean": 0.06336805555555555,
+        "corrected_interval": [
+          0.04513888888888889,
+          0.08289930555555555
+        ],
+        "corrected_level": 0.99375,
+        "draws": 10000,
+        "seed": 2609141002,
+        "seeds_averaged_within_root": true,
+        "label": "Constrained learned editor",
+        "update_type": "Learned",
+        "joint_questions_per_root": 18,
+        "fixed_opportunities_per_seed_or_textual_condition": 1152
+      },
+      {
+        "actor": "gemma",
+        "group": "FREE_PAIR_CONSISTENCY",
+        "roots": 64,
+        "mean": 0.051215277777777776,
+        "corrected_interval": [
+          0.03526340060763884,
+          0.06770833333333334
+        ],
+        "corrected_level": 0.99375,
+        "draws": 10000,
+        "seed": 2609141002,
+        "seeds_averaged_within_root": true,
+        "label": "Unrestricted consistency-trained editor",
+        "update_type": "Learned",
+        "joint_questions_per_root": 18,
+        "fixed_opportunities_per_seed_or_textual_condition": 1152
+      },
+      {
+        "actor": "gemma",
+        "group": "EXISTING_CORRECTION",
+        "roots": 64,
+        "mean": 0.05989583333333333,
+        "corrected_interval": [
+          0.034722222222222224,
+          0.0891954210069438
+        ],
+        "corrected_level": 0.99375,
+        "draws": 10000,
+        "seed": 2609141002,
+        "seeds_averaged_within_root": false,
+        "label": "Existing textual correction",
+        "update_type": "Textual",
+        "joint_questions_per_root": 18,
+        "fixed_opportunities_per_seed_or_textual_condition": 1152
+      },
+      {
+        "actor": "gemma",
+        "group": "LATEST_SAME_WORDING",
+        "roots": 64,
+        "mean": 0.05555555555555555,
+        "corrected_interval": [
+          0.029513888888888888,
+          0.0859375
+        ],
+        "corrected_level": 0.99375,
+        "draws": 10000,
+        "seed": 2609141002,
+        "seeds_averaged_within_root": false,
+        "label": "Latest-value wording",
+        "update_type": "Textual",
+        "joint_questions_per_root": 18,
+        "fixed_opportunities_per_seed_or_textual_condition": 1152
+      },
+      {
+        "actor": "qwen",
+        "group": "INV_PAIR_NLL",
+        "roots": 64,
+        "mean": 0.024739583333333336,
+        "corrected_interval": [
+          0.01171875,
+          0.04123263888888889
+        ],
+        "corrected_level": 0.99375,
+        "draws": 10000,
+        "seed": 2609141002,
+        "seeds_averaged_within_root": true,
+        "label": "Constrained learned editor",
+        "update_type": "Learned",
+        "joint_questions_per_root": 18,
+        "fixed_opportunities_per_seed_or_textual_condition": 1152
+      },
+      {
+        "actor": "qwen",
+        "group": "FREE_PAIR_CONSISTENCY",
+        "roots": 64,
+        "mean": 0.02387152777777778,
+        "corrected_interval": [
+          0.01171875,
+          0.03993055555555555
+        ],
+        "corrected_level": 0.99375,
+        "draws": 10000,
+        "seed": 2609141002,
+        "seeds_averaged_within_root": true,
+        "label": "Unrestricted consistency-trained editor",
+        "update_type": "Learned",
+        "joint_questions_per_root": 18,
+        "fixed_opportunities_per_seed_or_textual_condition": 1152
+      },
+      {
+        "actor": "qwen",
+        "group": "EXISTING_CORRECTION",
+        "roots": 64,
+        "mean": 0.06163194444444445,
+        "corrected_interval": [
+          0.038408745659722125,
+          0.0859375
+        ],
+        "corrected_level": 0.99375,
+        "draws": 10000,
+        "seed": 2609141002,
+        "seeds_averaged_within_root": false,
+        "label": "Existing textual correction",
+        "update_type": "Textual",
+        "joint_questions_per_root": 18,
+        "fixed_opportunities_per_seed_or_textual_condition": 1152
+      },
+      {
+        "actor": "qwen",
+        "group": "LATEST_SAME_WORDING",
+        "roots": 64,
+        "mean": 0.06336805555555555,
+        "corrected_interval": [
+          0.04079861111111111,
+          0.08854166666666667
+        ],
+        "corrected_level": 0.99375,
+        "draws": 10000,
+        "seed": 2609141002,
+        "seeds_averaged_within_root": false,
+        "label": "Latest-value wording",
+        "update_type": "Textual",
+        "joint_questions_per_root": 18,
+        "fixed_opportunities_per_seed_or_textual_condition": 1152
+      }
+    ]
+  },
+  "consequences": {
+    "counterfactual": {
+      "model": "gemma",
+      "worlds": 96,
+      "interval_level": 0.95,
+      "target_fraction": 0.75,
+      "bootstrap_draws": 10000,
+      "arms": [
+        {
+          "key": "ORIGINAL_FROZEN_DIM@0.75",
+          "label": "Rank-one relation steering",
+          "recovery": -0.8508023069772639,
+          "lower": -1.0047594830011988,
+          "upper": -0.7066918757910918,
+          "worlds": 96,
+          "margin_hit": 1.0,
+          "hard_answer_correct": 0.9895833333333334,
+          "strong_target_pass": false
+        },
+        {
+          "key": "NATURAL_FULL_STATE_INTERPOLATION@0.75",
+          "label": "Whole-state interpolation",
+          "recovery": 0.9135822378114593,
+          "lower": 0.8994605138779845,
+          "upper": 0.9259728090863992,
+          "worlds": 96,
+          "margin_hit": 1.0,
+          "hard_answer_correct": 0.9895833333333334,
+          "strong_target_pass": false
+        },
+        {
+          "key": "FULL_STATE_SOURCE_PATCH",
+          "label": "Natural changed-state patch",
+          "recovery": 0.981272301693043,
+          "lower": 0.979915374061593,
+          "upper": 0.9825537048516965,
+          "worlds": 96,
+          "margin_hit": null,
+          "hard_answer_correct": null,
+          "strong_target_pass": null
+        }
+      ],
+      "source": "reproducibility/representation/counterfactual_fidelity/results.json",
+      "qualification": "Measured transport-arm margins; full strong-target requirements failed. Llama reference unqualified."
+    }
+  }
+}

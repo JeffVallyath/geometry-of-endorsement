@@ -1,0 +1,27 @@
+{
+  "title": "Corrected primary paired contrasts",
+  "unit": "97.5% intervals; 10,000 linked-subject draws, seed 2026101211.",
+  "columns": [
+    "Comparator",
+    "Repair_minus_comparator_pp",
+    "Lower_pp",
+    "Upper_pp"
+  ],
+  "rows": [
+    {
+      "Comparator": "G_CORE",
+      "Repair_minus_comparator_pp": 26.953125,
+      "Lower_pp": 18.745117187500004,
+      "Upper_pp": 35.546875
+    },
+    {
+      "Comparator": "G_FULL",
+      "Repair_minus_comparator_pp": 28.515625,
+      "Lower_pp": 19.921875,
+      "Upper_pp": 37.5
+    }
+  ],
+  "sources": [
+    "gmello_comparison/SCIENTIFIC_RESULTS.json"
+  ]
+}

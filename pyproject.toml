@@ -3,48 +3,22 @@ requires = ["setuptools>=75", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "geometry-of-endorsement"
-version = "1.1.2"
-description = "Reproducibility and analysis code for Geometry of Endorsement: representation, intervention fidelity, and question-independent relational state editing in language models."
-requires-python = ">=3.11"
+name = "anonymous-review"
+version = "1.0.0"
+description = "Offline scientific evidence and analysis accompanying an anonymous review submission"
+requires-python = ">=3.12"
 dependencies = [
-  "matplotlib>=3.8,<4",
-  "numpy>=1.26,<3",
-  "pandas>=2.2,<3",
-  "scikit-learn>=1.5,<2",
-  "scipy>=1.13,<2",
-  "pyarrow>=15,<26",
-  "PyYAML>=6,<7",
-]
-
-[project.optional-dependencies]
-notebook = ["ipykernel>=6.29,<7", "jupyter>=1.1,<2", "nbconvert>=7.16,<8"]
-truth-full = [
-  "accelerate==1.10.1",
-  "huggingface-hub==0.34.4",
-  "PyYAML==6.0.2",
-  "tqdm==4.67.1",
-  "transformers==4.56.2",
-]
-valueprism-full = [
-  "datasets>=3.6,<4",
-  "huggingface-hub>=0.34,<1",
-  "sentence-transformers>=3.4,<4",
-]
-m1-full = [
-  "accelerate==1.10.1",
-  "datasets==5.0.0",
-  "huggingface-hub==0.34.4",
-  "PyYAML==6.0.2",
-  "sentence-transformers==5.1.0",
-  "tqdm==4.67.1",
-  "transformers==4.56.2",
+  "numpy==2.4.4",
+  "scipy==1.17.1",
+  "pandas==2.3.3",
+  "scikit-learn==1.9.0",
+  "matplotlib==3.11.1",
+  "pyarrow==25.0.0",
+  "PyYAML==6.0.3",
 ]
 
 [tool.setuptools.packages.find]
 where = ["src"]
 
 [tool.pytest.ini_options]
-# Historical scientific source snapshots have their own original dependencies.
-# The supported public CPU acceptance suite lives here.
 testpaths = ["tests"]

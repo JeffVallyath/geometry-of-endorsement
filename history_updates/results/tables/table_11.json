@@ -1,0 +1,73 @@
+{
+  "title": "Common-state reader comparisons",
+  "unit": "Cases /128, targets /384, controls /517, original-snapshot targets /1536. Ranking and PROGRAM share exact execution.",
+  "columns": [
+    "Reader",
+    "Source_endpoint",
+    "Complete_cases",
+    "Targets",
+    "Controls",
+    "Original_targets"
+  ],
+  "rows": [
+    {
+      "Reader": "Ranking, seed 0",
+      "Source_endpoint": "REPAIR_0",
+      "Complete_cases": 124,
+      "Targets": 380,
+      "Controls": 517,
+      "Original_targets": 1522
+    },
+    {
+      "Reader": "Ranking, seed 1",
+      "Source_endpoint": "REPAIR_1",
+      "Complete_cases": 127,
+      "Targets": 383,
+      "Controls": 517,
+      "Original_targets": 1524
+    },
+    {
+      "Reader": "Generates operation, seed 0",
+      "Source_endpoint": "PROGRAM_0",
+      "Complete_cases": 126,
+      "Targets": 383,
+      "Controls": 516,
+      "Original_targets": 1532
+    },
+    {
+      "Reader": "Generates operation, seed 1",
+      "Source_endpoint": "PROGRAM_1",
+      "Complete_cases": 126,
+      "Targets": 384,
+      "Controls": 515,
+      "Original_targets": 1530
+    },
+    {
+      "Reader": "Generates answer, seed 0",
+      "Source_endpoint": "QA_0",
+      "Complete_cases": 126,
+      "Targets": 383,
+      "Controls": 516,
+      "Original_targets": 1266
+    },
+    {
+      "Reader": "Generates answer, seed 1",
+      "Source_endpoint": "QA_1",
+      "Complete_cases": 122,
+      "Targets": 382,
+      "Controls": 513,
+      "Original_targets": 1068
+    },
+    {
+      "Reader": "MeLLo, adapted",
+      "Source_endpoint": "MELLO_CURRENT",
+      "Complete_cases": 45,
+      "Targets": 287,
+      "Controls": 466,
+      "Original_targets": 1166
+    }
+  ],
+  "sources": [
+    "same_case_baselines/analysis/SCIENTIFIC_RESULTS.json"
+  ]
+}

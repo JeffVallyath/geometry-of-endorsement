@@ -19,8 +19,8 @@ same semantic direction, not two independently found disagreements.
 For utility, freeze the two procedures' decisions AND all equal-retention
 rankings before any full-battery primary analysis or withheld-outcome analysis.
 Each isolated procedure receives only its exact common direct checks plus six
-validation response IDs. A process running as Linux nobody must be unable to
-read the private capsule/run tree; its input is an allowlisted stdin packet.
+validation response IDs. The isolated decision process receives only an allowlisted input packet
+and cannot read the remaining study records.
 It additionally refuses filesystem/network access after stdlib initialization.
 Common direct reads cost 24 scores per case/seed/format: six at each selected
 history, six native and six no-op. These selected histories have nonzero equal
@@ -45,8 +45,8 @@ imply utility. A complete zero is a fixed-test null, not a technical failure.
 The original SSC1 core-to-fresh-pass numerical rule is preserved for the two
 old replay cases and the final fresh-process repeats: same hard choice,
 validity and token binding, max absolute log-probability difference <=1e-6.
-Its retained definition is reproduction/scripts/ssc1_verify.py,
-compare_repeat_scores, in the original results-and-reproduction archive.
+The retained saved-score implementation is `source/panels.py`,
+function `compare`.
 The unrelated older RSO3 anchor's 0.05 cap is NOT substituted. Every score
 discrepancy (including nonzero differences below tolerance) is retained.
 

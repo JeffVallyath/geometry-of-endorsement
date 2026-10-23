@@ -413,19 +413,19 @@ def analyze_actor(actor: str, gpu_root: Path, freeze_root: Path, final_freeze_pa
 
 def actor_markdown(res: dict[str, Any]) -> str:
     def bs(b: dict[str, Any] | None) -> str:
-        return "—" if not b else f"{b['mean']:.3f} [{b['ci_low']:.3f}, {b['ci_high']:.3f}]"
+        return ":" if not b else f"{b['mean']:.3f} [{b['ci_low']:.3f}, {b['ci_high']:.3f}]"
 
-    L = [f"# {res['actor']} — {res['split']} worlds (n={res['worlds']}), protocol {res['protocol']}", "", f"Classification: **{res['classification']['class']}**" + (f" (flags: {', '.join(res['classification']['flags'])})" if res["classification"]["flags"] else ""), "", f"Licensed wording: {res['licensed_wording']}", "", "## Natural reference gates", "", "| gate | value | threshold | pass |", "|---|---|---|---|"]
+    L = [f"# {res['actor']} : {res['split']} worlds (n={res['worlds']}), protocol {res['protocol']}", "", f"Classification: **{res['classification']['class']}**" + (f" (flags: {', '.join(res['classification']['flags'])})" if res["classification"]["flags"] else ""), "", f"Licensed wording: {res['licensed_wording']}", "", "## Natural reference gates", "", "| gate | value | threshold | pass |", "|---|---|---|---|"]
     for k, v in res["reference"]["checks"].items():
         val = v["value"]
         val = f"{val['mean']:.3f} [{val['ci_low']:.3f}, {val['ci_high']:.3f}]" if isinstance(val, dict) else (f"{val:.3f}" if isinstance(val, float) else str(val))
         thr = v.get("min", v.get("max", f"mean>={v.get('mean_min')} & ci_low>={v.get('ci_low_min')}"))
         L.append(f"| {k} | {val} | {thr} | {v['pass']} |")
-    L += ["", f"Direction: **{res['direction']['status']}**" + ("" if not res["direction"].get("qualification") else " — " + ", ".join(f"{k} {v['value']:.3f} (min {v['min']})" for k, v in res["direction"]["qualification"]["checks"].items())), ""]
+    L += ["", f"Direction: **{res['direction']['status']}**" + ("" if not res["direction"].get("qualification") else " : " + ", ".join(f"{k} {v['value']:.3f} (min {v['min']})" for k, v in res["direction"]["qualification"]["checks"].items())), ""]
     for tag, key in (("Primary inferential object", "primary_disposition"), ("Transport / replication arm", "transport_disposition")):
         d = res.get(key, {})
         if d.get("available"):
-            L += ["", f"### {tag}: {d['arm']} at tau={C.PRIMARY_TAU} — **{d['disposition']}**", "", f"- CSR {bs(d['csr'])}, focal {bs(d['csr_focal'])}, invariance {bs(d['csr_invariance'])}, cross-template {bs(d['cross_template_csr'])}", f"- dose valid: {d['dose']['dose_valid']} (dose-valid worlds {d['dose']['fraction_dose_valid']:.2f}, norm ratio median {d['dose']['norm_ratio']['median']}, p90 {d['dose']['norm_ratio']['p90']})", f"- natural full-state interpolation control: {bs(d['interpolation_csr'])}; half cross-template ceiling threshold {d['half_ctnc_threshold']:.3f}", f"- beats comparators (Holm): {d['beats_comparators_holm']}", f"- licensed wording: {d['licensed_wording']}", ""]
+            L += ["", f"### {tag}: {d['arm']} at tau={C.PRIMARY_TAU} : **{d['disposition']}**", "", f"- CSR {bs(d['csr'])}, focal {bs(d['csr_focal'])}, invariance {bs(d['csr_invariance'])}, cross-template {bs(d['cross_template_csr'])}", f"- dose valid: {d['dose']['dose_valid']} (dose-valid worlds {d['dose']['fraction_dose_valid']:.2f}, norm ratio median {d['dose']['norm_ratio']['median']}, p90 {d['dose']['norm_ratio']['p90']})", f"- natural full-state interpolation control: {bs(d['interpolation_csr'])}; half cross-template ceiling threshold {d['half_ctnc_threshold']:.3f}", f"- beats comparators (Holm): {d['beats_comparators_holm']}", f"- licensed wording: {d['licensed_wording']}", ""]
         elif key in res:
             L += ["", f"### {tag}: not available (arm not applied on enough worlds)", ""]
     L += ["## Dose (Q1 calibration only)", "", "| arm | tau | applied | dose-valid | achieved Q1 | target Q1 | norm ratio median | p90 | valid |", "|---|---|---|---|---|---|---|---|---|"]

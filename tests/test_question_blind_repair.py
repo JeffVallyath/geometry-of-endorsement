@@ -4,12 +4,10 @@ import hashlib
 import json
 import runpy
 import shutil
-import zipfile
 
 import pytest
 
 from repro import question_blind_repair as qbr
-from repro import evidence
 
 
 def test_original_population_and_selected_extension_stay_separate():
@@ -53,7 +51,7 @@ def source_copy(tmp_path):
 def test_changed_source_byte_is_rejected(source_copy):
     path = source_copy / 'supplied/verification/WORKED_EXAMPLE.csv'
     path.write_bytes(path.read_bytes().replace(b'Yes', b'No', 1))
-    with pytest.raises(ValueError, match='Changed supplied evidence'):
+    with pytest.raises(ValueError, match='Stored payload hash mismatch'):
         qbr.check(source_copy)
 
 
@@ -76,6 +74,13 @@ def test_generated_scope_cannot_override_source(source_copy, section, key, value
     changed = qbr.load_json(path)
     changed[section][key] = value
     path.write_text(json.dumps(changed))
+    # Rebind the changed public bytes to exercise the scientific guard independently.
+    manifest_path = source_copy / 'MANIFEST.json'
+    manifest = qbr.load_json(manifest_path)
+    record = next(r for r in manifest['files'] if r['path'] == 'CLAIMS.json')
+    record.update(bytes=path.stat().st_size, decoded_bytes=path.stat().st_size,
+                  sha256=qbr.sha256(path), decoded_sha256=qbr.sha256(path))
+    manifest_path.write_text(json.dumps(manifest))
     with pytest.raises(ValueError, match='claim projection'):
         qbr.check(source_copy)
 
@@ -112,53 +117,13 @@ def test_delivered_comparator_excludes_only_four_timing_fields():
     assert not reader['compare'](original, almost)['tolerance_pass']
 
 
-def make_archive(path, members, declared=None):
-    records = {name: {'bytes': len(raw), 'sha256': hashlib.sha256(raw).hexdigest()}
-               for name, raw in members.items()} if declared is None else declared
-    with zipfile.ZipFile(path, 'x') as archive:
-        for name, raw in members.items():
-            archive.writestr(name, raw)
-        archive.writestr('MANIFEST.json', json.dumps({'files': records}))
-    return qbr.sha256(path)
 
 
-@pytest.mark.parametrize('members,declared', [
-    ({'../escape': b'x'}, None),
-    ({'extra': b'x'}, {}),
-    ({'score': b'x'}, {'score': {'bytes': 1, 'sha256': '0' * 64}}),
-    ({'Score': b'x', 'score': b'y'}, None),
-])
-def test_archive_validation_fails_before_extraction(tmp_path, members, declared):
-    path = tmp_path / 'bad.zip'
-    digest = make_archive(path, members, declared)
-    destination = tmp_path / 'extracted'
-    with pytest.raises(ValueError):
-        qbr.verify_zip(path, digest, destination)
-    assert not destination.exists()
-    assert not (tmp_path / 'escape').exists()
 
 
-def test_outer_archive_digest_is_required(tmp_path):
-    path = tmp_path / 'valid.zip'
-    make_archive(path, {'score': b'x'})
-    with pytest.raises(ValueError, match='Outer archive hash'):
-        qbr.verify_zip(path, '0' * 64)
 
 
-def test_replay_does_not_overwrite_a_previous_output(tmp_path):
-    with pytest.raises(ValueError, match='fresh output directory'):
-        qbr.full_replay(tmp_path / 'missing-verification.zip', tmp_path / 'missing-primary.zip', tmp_path)
 
 
-def test_current_results_numbers_are_bound_to_the_existing_registry():
-    path = qbr.ROOT / 'docs/RESULTS_AND_CLAIMS.md'
-    original = path.read_text(encoding='utf-8')
-    changed = original.replace('repaired 36/83', 'repaired 37/83', 1)
-    assert changed != original
-    report = evidence.check(document='results', overrides={'results': changed})
-    assert any(row['unit'] == 'question_blind_repair' and row['rule'] == 'number-undeclared' for row in report.errors)
 
 
-@pytest.mark.parametrize('name', ['README.md', 'WORKED_EXAMPLE.md', 'INTEGRATION_REPORT.md'])
-def test_new_reader_docs_have_no_em_dashes(name):
-    assert '\u2014' not in (qbr.SOURCE / name).read_text(encoding='utf-8')

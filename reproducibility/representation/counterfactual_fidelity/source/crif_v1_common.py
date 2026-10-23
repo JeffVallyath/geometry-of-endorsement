@@ -165,7 +165,7 @@ def expected_sign(direction: str, query: str) -> int:
 
 
 def load_demonstrations() -> list[dict[str, Any]]:
-    demos = read_jsonl(RRRD_FREEZE / "TRACK_A_DEMONSTRATION_FREEZE.jsonl")
+    demos = read_jsonl(ROOT / "prior_demonstrations.jsonl")
     if len(demos) != 8:
         raise RuntimeError("expected eight frozen demonstrations")
     return sorted(demos, key=lambda d: d["presentation_position"])

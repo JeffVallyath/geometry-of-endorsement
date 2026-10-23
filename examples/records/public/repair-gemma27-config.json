@@ -1,0 +1,201 @@
+{
+  "study": "GEMMA27_SAME_CASE_REPAIR_V1",
+  "purpose": "Cross-pretrained-family replication of the actual trained explicit-state/query-execution repair. Not a native-only run.",
+  "model": {
+    "repo": "google/gemma-2-27b-it",
+    "revision": null,
+    "base_frozen": true,
+    "dtype": "bfloat16",
+    "attention": "eager",
+    "torch": "2.8.0+cu128",
+    "transformers": "4.56.2",
+    "peft": "0.17.1",
+    "accelerate": "1.10.1",
+    "numpy": "2.2.6",
+    "safetensors": "0.6.2",
+    "python": "3.12",
+    "quantization": false,
+    "offload": false,
+    "torch_compile": false,
+    "revision_policy": "Resolve the official repository once into MODEL_LOCK.json before rental; use the immutable SHA thereafter.",
+    "expected_architecture": {
+      "model_type": "gemma2",
+      "num_hidden_layers": 46,
+      "hidden_size": 4608,
+      "intermediate_size": 36864,
+      "num_attention_heads": 32,
+      "num_key_value_heads": 16,
+      "head_dim": 128,
+      "attn_logit_softcapping": 50.0,
+      "final_logit_softcapping": 30.0,
+      "query_pre_attn_scalar": 144,
+      "sliding_window": 4096,
+      "max_position_embeddings": 8192
+    }
+  },
+  "training": {
+    "source": "Original QSA1 training_pairs.jsonl.gz, byte-identical",
+    "seeds": [
+      0,
+      1
+    ],
+    "steps_each": 768,
+    "draws_each": 12288,
+    "distinct_pairs": 7507,
+    "order": "Original seed0_ORDER.json and seed1_ORDER.json sample-order lists",
+    "effective_batch": 16,
+    "primary_microbatch": 2,
+    "primary_accumulation": 8,
+    "technical_fallback_microbatch": 1,
+    "technical_fallback_accumulation": 16,
+    "fallback_rule": "Choose only from canary memory/throughput before protected inference; same for both seeds",
+    "rank": 16,
+    "alpha": 32,
+    "dropout": 0,
+    "target_modules": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj"
+    ],
+    "optimizer": "AdamW",
+    "lr": 0.0002,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0.01,
+    "warmup_steps": 39,
+    "lr_schedule": "cosine",
+    "clip": 1.0,
+    "gradient_checkpointing": true,
+    "sequence_cap": 3072,
+    "loss": "response-only Yes/No plus Gemma <end_of_turn>; exact chat-template boundary must yield two supervised tokens",
+    "packing": false,
+    "truncation": false,
+    "canary_steps": 16,
+    "checkpoint": "last fixed step only",
+    "maximum_training_minutes_including_canary": 330,
+    "select_seed_or_checkpoint_from_PPR": false,
+    "expected_lora_parameters": 22609920,
+    "expected_lora_tensors": 368
+  },
+  "scoring": {
+    "batch": 1,
+    "first_token_margin": "native post-softcap logit(Yes)-logit(No); verify actual single-token labels at the assistant boundary",
+    "acceptance": "max strictly >0; canonical program tie-break",
+    "input_cap": 6144,
+    "max_new_tokens": 64,
+    "sampling": false,
+    "seed": 0,
+    "max_depth": 4,
+    "max_candidates": 64,
+    "candidate_mode": "RAW original PPR/QSA1 contract, not READBACK or type filtering",
+    "renderer": "Fold the exact system instruction into the first user message with two LF characters; use Gemma official chat template"
+  },
+  "endpoints": {
+    "fresh": [
+      "NATIVE_GEMMA",
+      "CURRENT_TEXT",
+      "CURRENT_JSON",
+      "STATE_BASE",
+      "STATE_0",
+      "STATE_1"
+    ],
+    "saved": "No saved outcome is used as the fresh Gemma baseline",
+    "STATE_0": "fresh Gemma27 seed0 adapter",
+    "STATE_1": "fresh Gemma27 seed1 adapter"
+  },
+  "evaluation": {
+    "subjects": 128,
+    "target_phrasings": 384,
+    "fact_controls": 324,
+    "decoy_controls": 128,
+    "chain_controls": 65,
+    "questions": 901,
+    "histories": [
+      "H0",
+      "H1",
+      "S0",
+      "S1"
+    ],
+    "references": [
+      "C",
+      "C+"
+    ],
+    "post_reads_each": 5406,
+    "pre_reads_each": 1536,
+    "fresh_logical_reads_total": 40116,
+    "primary_unit": "complete post subject: every target AND every control correct across all four histories, full 128 denominator",
+    "primary_codec": "Unchanged PPR whole-response source-ID/name codec for every new generative endpoint; first-line sensitivity separately",
+    "first_line_sensitivity": "retain old SCALE first-line interpretation separately; never pick the favorable parser",
+    "two_primary_contrasts": [
+      "trained seed mean minus NATIVE_GEMMA",
+      "trained seed mean minus CURRENT_TEXT"
+    ],
+    "bootstrap": {
+      "unit": "subject; all questions/histories and both seeds together",
+      "draws": 10000,
+      "seed": 2026100717,
+      "confidence": 0.975
+    },
+    "useful_gain": {
+      "difference_pp_at_least": 5,
+      "lower_bound_above": 0
+    },
+    "sampled_capability_proposed": {
+      "each_seed_complete_faithful_subjects_minimum": 122,
+      "each_seed_correct_targets_minimum": 381,
+      "each_seed_correct_controls_required": 517
+    },
+    "repeat_cases": [
+      172,
+      755,
+      1662,
+      2061,
+      2113,
+      133,
+      583,
+      642,
+      722,
+      784,
+      1617,
+      1751
+    ],
+    "repeat_scope": "every current question under all six source conditions, separate process, no result cache; STATE_BASE and both trained scorers",
+    "historical_return_programs": 16,
+    "isolation": "complete current input equality + independent uncached control agreement; never inferred from low witness count",
+    "native_pre": "NOT_MEASURED",
+    "own_native_witnesses": "All new Gemma guarded witnesses from all384 targets, frozen mechanically before repair-ledger analysis; W=0 is not an efficacy pass",
+    "known_qwen9": "Fixed cross-family challenge/preservation set, NOT nine Gemma failures by assumption"
+  },
+  "limits": {
+    "wall_hours": 8,
+    "science_stop_hours": 7,
+    "cumulative_billed_gpu_hours": 8,
+    "all_cloud_usd": 40,
+    "preferred_gpu": "Runpod Secure H100 SXM 80GB, subject to measured eager-training fit",
+    "alternative": "Runpod Secure H200 141GB only when measured complete forecast fits",
+    "max_simultaneous_gpus": 1,
+    "technical_replacements": "Necessary technical replacements within unchanged original cumulative time/cost and one-live-GPU caps; never outcome-driven",
+    "forecast_reserve_fraction": 0.25,
+    "cleanup_reserve_minutes": 30,
+    "delivery_max_MiB": 512,
+    "paid_model_apis": false,
+    "successor": false,
+    "account_billing_changes": false,
+    "shared_repo_writes": false,
+    "billing_credit_rule": "Existing auto-refill is not a new approval or available-credit gate; cost is attributable usage, not deposits"
+  },
+  "claim_boundaries": [
+    "Method/recipe transfer to a different pretrained family, not a parameter-matched causal size comparison",
+    "History separation does not depend on correct interpretation; end-to-end usefulness does",
+    "The same researcher-exposed retained128 subjects, not fresh questions",
+    "No normalized train overlap for384 targets or65K;33 F/decoy occurrences remain flagged",
+    "Fresh Gemma baselines; neither old Gemma9 failures nor Qwen32 failures substitute for new Gemma27 failures",
+    "Whole-system trained repair comparisons, not a pure data-structure causal effect",
+    "No raw-English-update guarantee or original native-editor F1-F4/fullR3 certification",
+    "No Olmo, new Gemma generation,9B substitution, QRT extension, tuning or automatic successor"
+  ]
+}

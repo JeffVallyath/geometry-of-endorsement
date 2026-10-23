@@ -1,0 +1,30 @@
+{
+  "schema": "ANONYMOUS_TEXT_TRAINING_PROVENANCE_V1",
+  "models": {
+    "gemma": {
+      "classifier": "LogisticRegression(C=1.0,max_iter=3000)",
+      "device": "cpu",
+      "encoder": "sentence-transformers/all-MiniLM-L6-v2",
+      "encoder_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+      "feature_construction": [
+        "situation_embedding",
+        "consideration_embedding",
+        "elementwise_product",
+        "absolute_difference"
+      ],
+      "name": "sbert_interaction",
+      "trained_rows": 107368,
+      "training_scope": "manifest_train_common",
+      "row_level_training_membership_available": false,
+      "activation_probe_counts": {
+        "pilot_eval": 500,
+        "pilot_eval_boards": 125,
+        "pilot_select": 300,
+        "pilot_train": 1500
+      }
+    }
+  },
+  "scope": "Recorded development-run fit metadata, not a refit or recovered row-level training manifest",
+  "licensed_text_and_reference_labels_included": false,
+  "text_comparator_membership_manifest_available": false
+}

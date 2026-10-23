@@ -251,7 +251,7 @@ def study_contract(v1_demos: list[dict[str, Any]], fresh: list[dict[str, Any]]) 
         "schema_version": f"{C.SCHEMA_PREFIX}_STUDY_CONTRACT",
         "study_id": C.STUDY_ID,
         "frozen_at": dt.datetime.now(dt.timezone.utc).isoformat(),
-        "predecessor": {"study": V1.STUDY_ID, "corpus_freeze_manifest_sha256": C.sha256_file(V1.FREEZE_ROOT / "artifact_manifest.json"), "results_commit": "8f62d37", "rule": "V1 is never altered or reinterpreted; its CSR endpoint, Q1-Q6 semantic structure, actors, layers, scoring path, model revisions and Lambda environment are reused unchanged"},
+        "predecessor": {"study": V1.STUDY_ID, "corpus_freeze_manifest_sha256": C.sha256_file(V1.FREEZE_ROOT / "artifact_manifest.json"), "rule": "V1 is never altered or reinterpreted; its CSR endpoint, Q1-Q6 semantic structure, actors, layers, scoring path, model revisions and Lambda environment are reused unchanged"},
         "question": "When rank-1 relation steering actually converts the direct answer with counterfactual-like strength, does it reproduce the held-out consequences of changing the relation?",
         "not_a": ["belief study", "hidden-knowledge study", "moral-truth study", "deception study"],
         "actors": {a: {"model_id": cfg["model_id"], "model_revision": cfg["model_revision"], "primary_layer": cfg["primary_layer"], "witness_layer": C.WITNESS_LAYER[a], "hidden_size": cfg["hidden_size"], "dtype": "bfloat16 exact", "original_frozen_dim_sha256": cfg["raw_relation_dim_sha256"]} for a, cfg in C.ACTORS.items()},

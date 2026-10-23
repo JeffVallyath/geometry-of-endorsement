@@ -7,18 +7,12 @@ import hashlib
 import json
 from pathlib import Path
 import subprocess
-import zipfile
 
 from .common import ROOT, load_json, new_output, safe_path, sha256
 from .fresh_history import equivalent, float_differences, run_offline
+from .release_inputs import payload as _payload, verify as verify_inputs, restore as restore_inputs
 
 SOURCE = ROOT / 'reproducibility/qwen32_full_forward'
-ARCHIVE = '5777db17c80cb0145207c447a0303d395f309e045f17f4b2e6d84157a294fca3'
-CAPSULE = 'b8b523be57e3058868ea23539c61778024022a903a192d942e58a8bc9a9e70e4'
-MANIFESTS = {
-    'results': 'e0861d9df4473e11b22764d26185e4b5fe83284d2f1ac12d6554e3c481d8c62e',
-    'handoff': '598ec0669aa8d5da0bf294cf084b858f81c3d1ffe259ddfca5a70a0b026c9f71',
-}
 METHODS = ('EXISTING_CORRECTION', 'LATEST_SAME_WORDING')
 
 
@@ -27,69 +21,15 @@ def require(condition, message):
         raise ValueError(message)
 
 
-def _payload(source, record):
-    raw = safe_path(record['path'], source).read_bytes()
-    require(len(raw) == record['bytes'] and hashlib.sha256(raw).hexdigest() == record['sha256'],
-            'Stored payload hash mismatch: ' + record['path'])
-    require(record['encoding'] in ('gzip', 'verbatim'), 'Unknown payload encoding')
-    raw = gzip.decompress(raw) if record['encoding'] == 'gzip' else raw
-    require(len(raw) == record['original_bytes'] and hashlib.sha256(raw).hexdigest() == record['original_sha256'],
-            'Original member hash mismatch: ' + record['member'])
-    return raw
 
 
-def verify(source=SOURCE, archive=None):
-    source = Path(source).resolve()
-    binding = load_json(source / 'SOURCE.json')
-    require(binding['schema'] == 'QWEN32_COMPACT_REPLAY_V1', 'Wrong source schema')
-    require(binding['archives']['results']['sha256'] == ARCHIVE and binding['capsule_sha256'] == CAPSULE,
-            'Unexpected source archive or capsule')
-    paths, members, manifests = set(), set(), {}
-    for label, expected in MANIFESTS.items():
-        matches = [row for row in binding['files'] if row['archive'] == label and row['member'] == 'MANIFEST.json']
-        require(len(matches) == 1, 'Missing or duplicate original manifest')
-        raw = _payload(source, matches[0])
-        require(hashlib.sha256(raw).hexdigest() == expected, 'Original manifest changed')
-        manifests[label] = json.loads(raw)
-    for record in binding['files']:
-        safe_path(record['member'], source)
-        member = record['archive'], record['member'].casefold()
-        require(record['path'].casefold() not in paths and member not in members, 'Duplicate compact binding')
-        paths.add(record['path'].casefold())
-        members.add(member)
-        raw = _payload(source, record)
-        if record['member'] != 'MANIFEST.json':
-            original = manifests[record['archive']]['files'][record['member']]
-            require(len(raw) == original['bytes'] and hashlib.sha256(raw).hexdigest() == original['sha256'],
-                    'Payload differs from original archive manifest')
-    observed = {p.relative_to(source).as_posix().casefold() for p in (source / 'saved').rglob('*') if p.is_file()}
-    require(observed == paths, 'Undeclared or missing compact payload')
-    required_inputs = {('results', name.casefold()) for name in manifests['results']['files']
-                       if name.startswith(('runtime/results/', 'runtime/cpu/designs/', 'runtime/analysis/'))}
-    require(required_inputs <= members, 'Incomplete final, repeat, design or comparison inputs')
-    if archive is not None:
-        archive = Path(archive)
-        require(archive.stat().st_size == binding['archives']['results']['bytes'] and sha256(archive) == ARCHIVE,
-                'External archive hash mismatch')
-        with zipfile.ZipFile(archive) as z:
-            expected = manifests['results']['files']
-            require(len(z.namelist()) == len(expected) + 1 and set(z.namelist()) == set(expected) | {'MANIFEST.json'},
-                    'External archive member inventory mismatch')
-            for name, row in expected.items():
-                safe_path(name, source)
-                raw = z.read(name)
-                require(len(raw) == row['bytes'] and hashlib.sha256(raw).hexdigest() == row['sha256'],
-                        'External archive member changed: ' + name)
-    return binding
+
+def verify(source=SOURCE):
+    return verify_inputs(Path(source), 'qwen32')
 
 
 def restore(source, destination, binding):
-    require(not destination.exists(), 'Use a fresh restored-source directory')
-    for record in binding['files']:
-        path = safe_path(record['archive'] + '/' + record['member'], destination)
-        path.parent.mkdir(parents=True, exist_ok=True)
-        with path.open('xb') as stream:
-            stream.write(_payload(source, record))
+    return restore_inputs(source, binding, destination)
 
 
 def claims_from_outputs(summary, cases, independent, example):
@@ -135,13 +75,13 @@ def validate_receipts(replay, independent):
 def check_projection(source=SOURCE, *, integrity=True):
     """Bind the reader projection to frozen case outputs; full raw replay is export()."""
     source = Path(source)
-    binding = verify(source) if integrity else load_json(source / 'SOURCE.json')
-    records = {(row['archive'], row['member']): row for row in binding['files']}
+    binding = verify(source) if integrity else load_json(source / 'MANIFEST.json')
+    records = {row['member']: row for row in binding['files']}
     def saved(member):
-        return json.loads(_payload(source, records['results', member]))
+        return json.loads(_payload(source, records['results/' + member]))
     summary = saved('runtime/analysis/SUMMARY.json')
-    cases = {Path(name).stem: saved(name) for label, name in records
-             if label == 'results' and name.startswith('runtime/analysis/cases/')}
+    cases = {Path(name).stem: saved(name.removeprefix('results/')) for name in records
+             if name.startswith('results/runtime/analysis/cases/')}
     repeat = saved('runtime/REPEAT_CHECKS.json')
     require(repeat['status'] == 'PASS' and not repeat['discrepancies'], 'Frozen repeat disposition differs')
     examples = [dict(root=rid, method=method) for rid, case in cases.items() for method in METHODS
@@ -155,41 +95,40 @@ def check_projection(source=SOURCE, *, integrity=True):
 
 
 def check_portfolio(source=SOURCE, root=ROOT):
-    """Require actual source-bound smaller-model rows before counting five checkpoints."""
-    source, root = Path(source), Path(root)
-    receipt = load_json(source / 'portfolio/PORTFOLIO_CHECK.json')
-    require(receipt['status'] == 'PASS' and receipt['raw_score_records_decoded'] == 110976,
+    """Count checkpoints from the retained completed rows, preserving failed bridges."""
+    table = portfolio_table(root)
+    source = Path(root) / 'reproducibility/text_scope'
+    binding = verify_inputs(source, 'text_scope', root)
+    record = next(r for r in binding['files'] if r['member'] == 'runtime/MODEL_ROSTER_FROZEN.json')
+    roster = json.loads(_payload(source, record, root))
+    models = {row['id']: row['model'] for row in roster['rows']}
+    complete = [row for row in table if row['status'] == 'COMPLETE_FINAL_ROW']
+    require(len(complete) == 6 and [row['W'] for row in complete] == [104, 93, 61, 68, 115, 110],
             'Earlier portfolio reconstruction is incomplete')
-    require(receipt['source_archive_sha256'] == 'eb5bee9d247bdfbea59ad894053a4b2054a0d605a898e008b889517c614b7441',
-            'Unexpected earlier portfolio source')
-    for member, record in receipt['original_member_bindings'].items():
-        path = safe_path(Path(member).name, source / 'portfolio')
-        require(path.stat().st_size == record['bytes'] and sha256(path) == record['sha256'],
-                'Earlier portfolio member changed')
-    table = load_json(source / 'portfolio/MAIN_TABLE.json')
-    for row in receipt['primary_rows']:
-        original = next(r for r in table if r['row_id'] == row['row_id'] and r['method'] == row['method'])
-        require(original['status'] == 'COMPLETE_FINAL_ROW' and original['W'] == row['witnesses'] > 0,
-                'Unsupported completed checkpoint')
-    original_qwen = [row for row in load_json(root / 'reproducibility/state_sufficiency/v10/primary_results.json')
+    original_qwen = [row for row in load_json(Path(root) / 'reproducibility/state_sufficiency/v10/primary_results.json')
                      if row['actor'] == 'qwen' and row['group'] in METHODS]
     require(len(original_qwen) == 2 and all(row['roots'] == 64 and row['mean'] > 0 for row in original_qwen),
             'Original Qwen3-8B record is missing')
-    models = {row['model'] for row in receipt['primary_rows']} | {'Qwen/Qwen3-8B', 'Qwen/Qwen3-32B'}
-    require(len(models) == 5 and all(row['status'] == 'NOT_MEASURED' for row in table if row['row_id'] == 'qwen32_t4'),
+    distinct = {models[row['row_id']] for row in complete} | {'Qwen/Qwen3-8B', 'Qwen/Qwen3-32B'}
+    require(len(distinct) == 5 and all(row['status'] == 'NOT_MEASURED' for row in table if row['row_id'] == 'qwen32_t4'),
             'Checkpoint duplication or historical disposition drift')
-    result = dict(checkpoints=5, families=3, minimum_parameters_b=4, maximum_parameters_b=32,
-                  numerical_bridges_repaired=False, distinct_models=sorted(models))
-    require(result == load_json(source / 'portfolio/PORTFOLIO.json'), 'Portfolio claim projection differs')
-    return result
+    return dict(checkpoints=5, families=3, minimum_parameters_b=4, maximum_parameters_b=32,
+                numerical_bridges_repaired=False, distinct_models=sorted(distinct))
 
 
-def export(output, source=SOURCE, archive=None):
+def portfolio_table(root=ROOT):
+    source = Path(root) / 'reproducibility/text_scope'
+    binding = verify_inputs(source, 'text_scope', root)
+    record = next(r for r in binding['files'] if r['member'] == 'runtime/analysis_final/MAIN_TABLE.json')
+    return json.loads(_payload(source, record, root))
+
+
+def export(output, source=SOURCE):
     require(__debug__, 'Replay requires assertions; do not use python -O')
     source, output = Path(source).resolve(), Path(output).resolve()
     require(not output.exists() and not output.is_relative_to(source) and not source.is_relative_to(output),
             'Use a fresh output directory outside scientific inputs')
-    binding = verify(source, archive)
+    binding = verify(source)
     output = new_output(output)
     restored = output / 'restored'
     restore(source, restored, binding)
@@ -241,7 +180,7 @@ def export(output, source=SOURCE, archive=None):
                   original_csv_tables_byte_identical=True, original_figure_data_reconstructed=True,
                   summary_max_float_difference=max(differences, default=0), float_atol=1e-12, float_rtol=0,
                   full_repeat_derived_max_float_difference=max(repeat_differences, default=0),
-                  worked_example_checked=True, external_archive_checked=archive is not None,
+                  worked_example_checked=True, public_inputs_checked=True,
                   inference=False, socket_and_model_imports_blocked=True)
     with (output / 'VERIFICATION.json').open('x', encoding='utf8') as stream:
         json.dump(report, stream, indent=2)
@@ -252,15 +191,14 @@ def export(output, source=SOURCE, archive=None):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--source', type=Path, default=SOURCE)
-    parser.add_argument('--archive', type=Path)
     parser.add_argument('--output', type=Path)
     args = parser.parse_args()
     if args.output is None:
-        binding = verify(args.source, args.archive)
-        result = dict(status='PASS', compact_members_checked=len(binding['files']), external_archive_checked=args.archive is not None,
+        binding = verify(args.source)
+        result = dict(status='PASS', compact_members_checked=len(binding['files']), public_inputs_checked=True,
                       scope='Source/member integrity only; use --output for full saved-score reconstruction')
     else:
-        result = export(args.output, args.source, args.archive)
+        result = export(args.output, args.source)
     print(json.dumps(result, indent=2))
 
 

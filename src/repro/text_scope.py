@@ -4,18 +4,17 @@ import json
 from pathlib import Path
 
 from .common import ROOT, load_json, new_output
-from .compact_delivery import verify, restore
+from .release_inputs import verify, restore
 from .fresh_history import equivalent, run_offline
 
 SOURCE = ROOT / 'reproducibility/text_scope'
-ARCHIVE = 'eb5bee9d247bdfbea59ad894053a4b2054a0d605a898e008b889517c614b7441'
 
 
 def export(output, source=SOURCE):
     output, source = Path(output).resolve(), Path(source).resolve()
     if output.exists() or output.is_relative_to(source) or source.is_relative_to(output):
         raise ValueError('Choose a fresh output outside scientific inputs')
-    binding = verify(source, 'text_scope', ARCHIVE)
+    binding = verify(source, 'text_scope')
     new_output(output)
     restored = output / 'source'
     restore(source, binding, restored)

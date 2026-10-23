@@ -5,9 +5,9 @@ from types import SimpleNamespace
 import numpy as np
 import pandas as pd
 
-from geometry_of_truth.m1.config import load_config
-from geometry_of_truth.m1.model import ExtractionResult
-from geometry_of_truth.m1.runner import CON, SIT, _runtime_validation, _signature
+from relation_study.m1.config import load_config
+from relation_study.m1.model import ExtractionResult
+from relation_study.m1.runner import CON, SIT, _runtime_validation, _signature
 
 
 def _fake_result(records: list[dict[str, str]]) -> ExtractionResult:
@@ -58,7 +58,7 @@ def _fixture(monkeypatch):
     def fake_extract(loaded, records, prompt_config, activation_dtype):
         return _fake_result(records)
 
-    monkeypatch.setattr("geometry_of_truth.m1.runner.extract_batch", fake_extract)
+    monkeypatch.setattr("relation_study.m1.runner.extract_batch", fake_extract)
     batch = _fake_result(
         [
             {

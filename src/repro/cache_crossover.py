@@ -201,14 +201,9 @@ def analyze(plan, worlds, rows):
 
 
 def replay(base: Path = BASE):
-    provenance = load_json(base / 'provenance.json')
-    for row in provenance['files']:
-        path = safe_path(row['path'], base)
-        require(path.stat().st_size == row['bytes'] and sha256(path) == row['sha256'], 'Evidence hash mismatch: ' + row['path'])
+    from .release_inputs import verify
+    verify(base, 'cache_crossover')
     raw = gzip.decompress((base / 'raw.jsonl.gz').read_bytes())
-    import hashlib
-    source = next(r for r in provenance['files'] if r['path'] == 'raw.jsonl.gz')['sources'][0]
-    require(hashlib.sha256(raw).hexdigest() == source['sha256'], 'Decompressed journal hash mismatch')
     result = analyze(load_json(base / 'case_plan.json'), load_json(base / 'terminal_worlds.json'),
                      [json.loads(line) for line in raw.splitlines()])
     # Expectations are opened only after independent reconstruction.

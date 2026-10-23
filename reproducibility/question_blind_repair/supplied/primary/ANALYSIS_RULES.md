@@ -1,6 +1,6 @@
 # Prospective analysis binding
 
-The attached GOAL.md is authoritative. No new outcome has been observed.
+Historical prospective analysis rules, fixed before the study outcomes.
 Use the inherited FHV decoder (full-vocabulary validity, candidate-mass identity)
 and `primary` gates unchanged on A only, with 18 targets per case/seed.
 Store the A-only W lock before reading intervention outputs in the analysis.

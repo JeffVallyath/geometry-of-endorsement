@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "anonymous-review"
+version = "1.0.0"
+description = "Offline scientific evidence and analysis accompanying an anonymous review submission"
+requires-python = ">=3.12"
+dependencies = [
+  "numpy==2.4.4",
+  "scipy==1.17.1",
+  "pandas==2.3.3",
+  "scikit-learn==1.9.0",
+  "matplotlib==3.11.1",
+  "pyarrow==25.0.0",
+  "PyYAML==6.0.3",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

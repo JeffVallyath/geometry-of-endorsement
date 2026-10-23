@@ -1,0 +1,22 @@
+# Question-side reader interventions
+
+Fraction of the recorded full-carrier log-odds effect. Selection uses the original training condition; all reverse/format checks remain separate.
+
+| Heads | Recipient_history | Answer_format | Selection_role | Blocked_fraction | Restored_fraction | Minimum_fraction |
+|---|---|---|---|---|---|---|
+| 1 | H3 | Words | TRAINING | 0.324499 | 0.118557 | 0.118557 |
+| 1 | H3 | Letters | CODED_OR_REVERSE_CHECK | 0.298485 | 0.0822056 | 0.0822056 |
+| 1 | H5 | Words | CODED_OR_REVERSE_CHECK | 0.279429 | 0.437717 | 0.279429 |
+| 1 | H5 | Letters | CODED_OR_REVERSE_CHECK | 0.181769 | 0.360736 | 0.181769 |
+| 2 | H3 | Words | TRAINING | 0.480724 | 0.212784 | 0.212784 |
+| 2 | H3 | Letters | CODED_OR_REVERSE_CHECK | 0.466152 | 0.134264 | 0.134264 |
+| 2 | H5 | Words | CODED_OR_REVERSE_CHECK | 0.446316 | 0.640667 | 0.446316 |
+| 2 | H5 | Letters | CODED_OR_REVERSE_CHECK | 0.330068 | 0.631494 | 0.330068 |
+| 4 | H3 | Words | TRAINING | 0.743562 | 0.563267 | 0.563267 |
+| 4 | H3 | Letters | CODED_OR_REVERSE_CHECK | 0.857469 | 0.609085 | 0.609085 |
+| 4 | H5 | Words | CODED_OR_REVERSE_CHECK | 0.547622 | 0.681122 | 0.547622 |
+| 4 | H5 | Letters | CODED_OR_REVERSE_CHECK | 0.608049 | 0.771157 | 0.608049 |
+| 8 | H3 | Words | TRAINING | 0.888235 | 0.777757 | 0.777757 |
+| 8 | H3 | Letters | CODED_OR_REVERSE_CHECK | 0.950477 | 0.751592 | 0.751592 |
+| 8 | H5 | Words | CODED_OR_REVERSE_CHECK | 0.712414 | 0.833726 | 0.712414 |
+| 8 | H5 | Letters | CODED_OR_REVERSE_CHECK | 0.726941 | 0.894122 | 0.726941 |

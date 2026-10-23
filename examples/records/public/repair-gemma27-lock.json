@@ -1,0 +1,28 @@
+{
+  "repo": "google/gemma-2-27b-it",
+  "revision": "aaf20e6b9f4c0fcf043f6fb2a2068419086d77b0",
+  "resolution": "one official main resolution before model outcomes",
+  "metadata_sha256": {
+    "config.json": "8e560335c5f3156a7340edd8087e9a23339b71072338016f46f3f5ef89b8eb05",
+    "generation_config.json": "99b4f0bfe91aa4a78fc10018c17de56706db39d6ca87bc76f9be17aed7fe18c9",
+    "tokenizer_config.json": "cb32b7929c62608d46572e813112b3ad8a841fb98fdd6a4da8559e368a951c89",
+    "tokenizer.json": "3f289bc05132635a8bc7aca7aa21255efd5e18f3710f43e3cdb96bcd41be4922",
+    "special_tokens_map.json": "baec30ea10906f16adb8c18af7a34023002c1746542612b8b41c9f09e1351351",
+    "model.safetensors.index.json": "0912fde150e64f7ea677c29e73dd59f7aaadbfac8cbb338745ce93321572ce43"
+  },
+  "weight_files_sha256": {
+    "model-00001-of-00012.safetensors": "74ca36bee640853cbdcae85119eabeb73cc0c63ab852136de8a330f2f9c33697",
+    "model-00002-of-00012.safetensors": "13354bc14e0eddeb1e50bc7cce9f5219e2d1492bf8addfb8efabfa5d45de768d",
+    "model-00003-of-00012.safetensors": "3a8c6ed92ec81bce871a1eb5538143c5d336a12ca592887ca37865ba2614d32c",
+    "model-00004-of-00012.safetensors": "f06d4211eda8e2546c7fdb38c655a96bd146b28b382ee007be29416faa8c5e46",
+    "model-00005-of-00012.safetensors": "065680559b7b99fcbf3359fbe3676eadb8cfd1999fc6670789c8d01de716ec27",
+    "model-00006-of-00012.safetensors": "a7f3b81dd009049c07206c2d4479a2ab55d12ec54743f686bad36d09707affc7",
+    "model-00007-of-00012.safetensors": "679fcd6c8ad0ecbac864141244edfeed7fb594887ab7216a19e53c2f0500f350",
+    "model-00008-of-00012.safetensors": "2ae127df61c37cbcf1e2bed5fd3fc6eea3ec37c15f6dededa279d7bba7d83184",
+    "model-00009-of-00012.safetensors": "4950140e96b75421ac5064966659e9f23a7741632ead93e4df0319b9fd6140fa",
+    "model-00010-of-00012.safetensors": "5e1d04f78fc6e518c1dab8fb00691af3226868fdde6046a548f9bc93eb308322",
+    "model-00011-of-00012.safetensors": "c1448b676de8e8c21a7585ed60073ecf54f448082adedc125ca33a35246b198e",
+    "model-00012-of-00012.safetensors": "37632f98b340e76c1c345d1681ea05bc3c8c9267e44ab5074dd5ebccb274081f"
+  },
+  "weight_bytes": 54454316552
+}

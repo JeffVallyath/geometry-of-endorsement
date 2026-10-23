@@ -1,0 +1,2498 @@
+[
+  {
+    "arm": "H0",
+    "branch": "F",
+    "case_id": 963,
+    "chat_sha256": "ef3c409404ca158cefef4c70b35502b7bcfe16b91a2a3eb1ef88663248bbd5e8",
+    "input_ids_sha256": "ff809daa1acd7f8a9e3b8058c7693f61aba5d7ff39c073d75fce4755aea5ade9",
+    "input_tokens": 143,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nMarcelo Caetano is employed by University of Lisbon.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\nAlfred Newton is employed by Academy of Fine Arts Vienna.\n\nCorrections:\nSET Alfred Newton is employed by Academy of Fine Arts Vienna.\nSET Marcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nQuestion: Who is the employer of Marcelo Caetano?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F0",
+    "unit_id": "gemma:963:H0:F0"
+  },
+  {
+    "arm": "H1",
+    "branch": "F",
+    "case_id": 963,
+    "chat_sha256": "b117205e33813c3b2dfa62b6a5c67a6608a7bf69fb9e04cbe812acce3944af12",
+    "input_ids_sha256": "28a62d5ca58eb56af08411c482883524e2a74a9538f3f4b31527e091439c117a",
+    "input_tokens": 143,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nAlfred Newton is employed by Academy of Fine Arts Vienna.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\nMarcelo Caetano is employed by University of Lisbon.\n\nCorrections:\nSET Alfred Newton is employed by Academy of Fine Arts Vienna.\nSET Marcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nQuestion: Who is the employer of Marcelo Caetano?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F0",
+    "unit_id": "gemma:963:H1:F0"
+  },
+  {
+    "arm": "S0",
+    "branch": "F",
+    "case_id": 963,
+    "chat_sha256": "0556896ed7a15eb811264ea59d3dd5f459bb5d5d6e1755badf26bd79b4072abf",
+    "input_ids_sha256": "432334d02dfbd7d62dcc1d221307b88e1a18a7476f1553838f646be3d05a287e",
+    "input_tokens": 143,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nAlfred Newton is employed by University of Lisbon.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\nMarcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nCorrections:\nSET Alfred Newton is employed by Academy of Fine Arts Vienna.\nSET Marcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nQuestion: Who is the employer of Marcelo Caetano?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F0",
+    "unit_id": "gemma:963:S0:F0"
+  },
+  {
+    "arm": "S1",
+    "branch": "F",
+    "case_id": 963,
+    "chat_sha256": "28a14e90531cecf649060f3f4321caebc05900109ab89c997c75194747ae7fc3",
+    "input_ids_sha256": "d4bdf69f98d1f3d7b34d451bef4985d651644d17078974da1dd9b187f1ee5cba",
+    "input_tokens": 143,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nMarcelo Caetano is employed by Academy of Fine Arts Vienna.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\nAlfred Newton is employed by University of Lisbon.\n\nCorrections:\nSET Alfred Newton is employed by Academy of Fine Arts Vienna.\nSET Marcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nQuestion: Who is the employer of Marcelo Caetano?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F0",
+    "unit_id": "gemma:963:S1:F0"
+  },
+  {
+    "arm": "C",
+    "branch": "F",
+    "case_id": 963,
+    "chat_sha256": "9a4dc44b135f78447208b4f05cd1d70564e6ceefdff5d09bd795c763e4994214",
+    "input_ids_sha256": "114990bdb1558931555872bbe51aea04bfa7173fab09a49ee107da789a468b26",
+    "input_tokens": 114,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nMarcelo Caetano is employed by Academy of Fine Arts Vienna.\nAlfred Newton is employed by Academy of Fine Arts Vienna.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\n\nQuestion: Who is the employer of Marcelo Caetano?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F0",
+    "unit_id": "gemma:963:C:F0"
+  },
+  {
+    "arm": "C+",
+    "branch": "F",
+    "case_id": 963,
+    "chat_sha256": "9588edaaa28835e41a04fe3c9d2b14d2ec32e2509de317183dcb05672b81d695",
+    "input_ids_sha256": "c29c26b3d01d002bc7fcab10e2e98ef9febd2ef8f98c232d4a61ff759cfd957f",
+    "input_tokens": 145,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nMarcelo Caetano is employed by Academy of Fine Arts Vienna.\nAlfred Newton is employed by Academy of Fine Arts Vienna.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\n\nCorrections:\nSET Alfred Newton is employed by Academy of Fine Arts Vienna.\nSET Marcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nQuestion: Who is the employer of Marcelo Caetano?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F0",
+    "unit_id": "gemma:963:C+:F0"
+  },
+  {
+    "arm": "H0",
+    "branch": "F",
+    "case_id": 963,
+    "chat_sha256": "74b45de0960697813b1824c24ad632bc026499f706a5e354e8dfec4939cd923c",
+    "input_ids_sha256": "0eb11f0bd54baf366c389bcdb21bdbe11ab3942b15283afa29fee633e1a158d8",
+    "input_tokens": 149,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nMarcelo Caetano is employed by University of Lisbon.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\nAlfred Newton is employed by Academy of Fine Arts Vienna.\n\nCorrections:\nSET Alfred Newton is employed by Academy of Fine Arts Vienna.\nSET Marcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nQuestion: Which city is the headquarter of Academy of Fine Arts Vienna located in?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F1",
+    "unit_id": "gemma:963:H0:F1"
+  },
+  {
+    "arm": "H1",
+    "branch": "F",
+    "case_id": 963,
+    "chat_sha256": "4ff9db90b35ba07ecd82175e35659349112513ba45ee67157fe6b746fd2f7911",
+    "input_ids_sha256": "2b5c315aca8eefcc4941a81a3aecb5cb8696b3f751374c8f51e54ff45b3b6ed2",
+    "input_tokens": 149,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nAlfred Newton is employed by Academy of Fine Arts Vienna.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\nMarcelo Caetano is employed by University of Lisbon.\n\nCorrections:\nSET Alfred Newton is employed by Academy of Fine Arts Vienna.\nSET Marcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nQuestion: Which city is the headquarter of Academy of Fine Arts Vienna located in?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F1",
+    "unit_id": "gemma:963:H1:F1"
+  },
+  {
+    "arm": "S0",
+    "branch": "F",
+    "case_id": 963,
+    "chat_sha256": "f6f834f9b3197a693b80c60e70aaacf3dbdba6cb15485bf1146a0356af1c4e99",
+    "input_ids_sha256": "6093efee455b05046c62e23bbfe9ef37390c6dca32bb541db78e81f970c14038",
+    "input_tokens": 149,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nAlfred Newton is employed by University of Lisbon.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\nMarcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nCorrections:\nSET Alfred Newton is employed by Academy of Fine Arts Vienna.\nSET Marcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nQuestion: Which city is the headquarter of Academy of Fine Arts Vienna located in?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F1",
+    "unit_id": "gemma:963:S0:F1"
+  },
+  {
+    "arm": "S1",
+    "branch": "F",
+    "case_id": 963,
+    "chat_sha256": "d6823532b6ba252af8e7d037eafde30348bc5e164291784adf714c39f714f6c1",
+    "input_ids_sha256": "c6725f3843994326b1315f66ebe73714eb9c32225f59a8ecc8faaa4021874300",
+    "input_tokens": 149,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nMarcelo Caetano is employed by Academy of Fine Arts Vienna.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\nAlfred Newton is employed by University of Lisbon.\n\nCorrections:\nSET Alfred Newton is employed by Academy of Fine Arts Vienna.\nSET Marcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nQuestion: Which city is the headquarter of Academy of Fine Arts Vienna located in?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F1",
+    "unit_id": "gemma:963:S1:F1"
+  },
+  {
+    "arm": "C",
+    "branch": "F",
+    "case_id": 963,
+    "chat_sha256": "bfe8270f387625d784343b845cc9be3d8f1c8397e7758db39cfcbc3a84e511e5",
+    "input_ids_sha256": "f81470f32aa7f8eb083901692bd285e5c8746b4cecd735175bbd4c7e862f711b",
+    "input_tokens": 120,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nMarcelo Caetano is employed by Academy of Fine Arts Vienna.\nAlfred Newton is employed by Academy of Fine Arts Vienna.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\n\nQuestion: Which city is the headquarter of Academy of Fine Arts Vienna located in?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F1",
+    "unit_id": "gemma:963:C:F1"
+  },
+  {
+    "arm": "C+",
+    "branch": "F",
+    "case_id": 963,
+    "chat_sha256": "5131a7bc051a427d71385f3e9845b5752e830684db48f39e36a8c0d7480ceed9",
+    "input_ids_sha256": "a28ffb10a90b37de87d04831021efd77b54812fa9182516032ea48bc9943361e",
+    "input_tokens": 151,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nMarcelo Caetano is employed by Academy of Fine Arts Vienna.\nAlfred Newton is employed by Academy of Fine Arts Vienna.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\n\nCorrections:\nSET Alfred Newton is employed by Academy of Fine Arts Vienna.\nSET Marcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nQuestion: Which city is the headquarter of Academy of Fine Arts Vienna located in?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F1",
+    "unit_id": "gemma:963:C+:F1"
+  },
+  {
+    "arm": "H0",
+    "branch": "Fdecoy",
+    "case_id": 963,
+    "chat_sha256": "79aa0e09853f98a5d32abf8c7c52d230bde3e18eba4e59ff819bb8c8ca6b79cf",
+    "input_ids_sha256": "cdd10828ffd2632aa44f7076865c91f714fbef9baedde615750128c484320b0a",
+    "input_tokens": 142,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nMarcelo Caetano is employed by University of Lisbon.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\nAlfred Newton is employed by Academy of Fine Arts Vienna.\n\nCorrections:\nSET Alfred Newton is employed by Academy of Fine Arts Vienna.\nSET Marcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nQuestion: Who is the employer of Alfred Newton?",
+        "role": "user"
+      }
+    ],
+    "query_id": "Fdecoy",
+    "unit_id": "gemma:963:H0:Fdecoy"
+  },
+  {
+    "arm": "H1",
+    "branch": "Fdecoy",
+    "case_id": 963,
+    "chat_sha256": "ee5bbc025d97a66bae6146c1e5d89e023edaae64703808ba1692b4872c9b7708",
+    "input_ids_sha256": "bbaea6e28f7aacbae8e961667fbd37b854157a33342f28f02168b673d2fbe2e3",
+    "input_tokens": 142,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nAlfred Newton is employed by Academy of Fine Arts Vienna.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\nMarcelo Caetano is employed by University of Lisbon.\n\nCorrections:\nSET Alfred Newton is employed by Academy of Fine Arts Vienna.\nSET Marcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nQuestion: Who is the employer of Alfred Newton?",
+        "role": "user"
+      }
+    ],
+    "query_id": "Fdecoy",
+    "unit_id": "gemma:963:H1:Fdecoy"
+  },
+  {
+    "arm": "S0",
+    "branch": "Fdecoy",
+    "case_id": 963,
+    "chat_sha256": "0b165022f78587055c74739820013f821a12dfd02dc54cacfa87bee2c5fb8acd",
+    "input_ids_sha256": "994f0c8284427c979dfb47bd12d7a1143dead42f38c87c570507d36523cb7b56",
+    "input_tokens": 142,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nAlfred Newton is employed by University of Lisbon.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\nMarcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nCorrections:\nSET Alfred Newton is employed by Academy of Fine Arts Vienna.\nSET Marcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nQuestion: Who is the employer of Alfred Newton?",
+        "role": "user"
+      }
+    ],
+    "query_id": "Fdecoy",
+    "unit_id": "gemma:963:S0:Fdecoy"
+  },
+  {
+    "arm": "S1",
+    "branch": "Fdecoy",
+    "case_id": 963,
+    "chat_sha256": "af6bce32e1a54b3b440416951be5e1d25be23bffa053eb2534c5adec1a67827a",
+    "input_ids_sha256": "7078d7950a443f8147b269c2fe6b98448f9f6492310ba161f5d50ce86f74ef8f",
+    "input_tokens": 142,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nMarcelo Caetano is employed by Academy of Fine Arts Vienna.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\nAlfred Newton is employed by University of Lisbon.\n\nCorrections:\nSET Alfred Newton is employed by Academy of Fine Arts Vienna.\nSET Marcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nQuestion: Who is the employer of Alfred Newton?",
+        "role": "user"
+      }
+    ],
+    "query_id": "Fdecoy",
+    "unit_id": "gemma:963:S1:Fdecoy"
+  },
+  {
+    "arm": "C",
+    "branch": "Fdecoy",
+    "case_id": 963,
+    "chat_sha256": "e436d7f4534ab16639c0b8f8d7b923d039324ae7d311327dd97c10fb6697bc6f",
+    "input_ids_sha256": "804e5e970767e8fa44faf0dac22982bfbc89e42b2185736816c8280844f1ec71",
+    "input_tokens": 113,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nMarcelo Caetano is employed by Academy of Fine Arts Vienna.\nAlfred Newton is employed by Academy of Fine Arts Vienna.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\n\nQuestion: Who is the employer of Alfred Newton?",
+        "role": "user"
+      }
+    ],
+    "query_id": "Fdecoy",
+    "unit_id": "gemma:963:C:Fdecoy"
+  },
+  {
+    "arm": "C+",
+    "branch": "Fdecoy",
+    "case_id": 963,
+    "chat_sha256": "0160b5481ae8344d7fce1f1d325967716aac0b1ac3c843dff6b10b1dd3129865",
+    "input_ids_sha256": "4cfe6e227bbe2511c678b3723534990f397423f2fb84f57c66edc096a99bb786",
+    "input_tokens": 144,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nMarcelo Caetano is employed by Academy of Fine Arts Vienna.\nAlfred Newton is employed by Academy of Fine Arts Vienna.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\n\nCorrections:\nSET Alfred Newton is employed by Academy of Fine Arts Vienna.\nSET Marcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nQuestion: Who is the employer of Alfred Newton?",
+        "role": "user"
+      }
+    ],
+    "query_id": "Fdecoy",
+    "unit_id": "gemma:963:C+:Fdecoy"
+  },
+  {
+    "arm": "H0",
+    "branch": "J",
+    "case_id": 963,
+    "chat_sha256": "f90aa0315a113cf43229058e876ff92f512caa029b491539f9f1aec2deac1fbf",
+    "input_ids_sha256": "1a356223a4dd195d44451c4691a2a0932d5e049a487a7164fd73111ecfd3c4ea",
+    "input_tokens": 147,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nMarcelo Caetano is employed by University of Lisbon.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\nAlfred Newton is employed by Academy of Fine Arts Vienna.\n\nCorrections:\nSET Alfred Newton is employed by Academy of Fine Arts Vienna.\nSET Marcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nQuestion: Where is the headquarters location of the employer of Marcelo Caetano?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J0",
+    "unit_id": "gemma:963:H0:J0"
+  },
+  {
+    "arm": "H1",
+    "branch": "J",
+    "case_id": 963,
+    "chat_sha256": "72a0515b13ac7b752b8f858402cf0fea2b26ed00a6aabb4c768c51b922d52dc8",
+    "input_ids_sha256": "28d35bf4cf711e2971bc01cc1be9dafdba7e05207ff7d6ec383dcf9e2ca3cc98",
+    "input_tokens": 147,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nAlfred Newton is employed by Academy of Fine Arts Vienna.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\nMarcelo Caetano is employed by University of Lisbon.\n\nCorrections:\nSET Alfred Newton is employed by Academy of Fine Arts Vienna.\nSET Marcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nQuestion: Where is the headquarters location of the employer of Marcelo Caetano?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J0",
+    "unit_id": "gemma:963:H1:J0"
+  },
+  {
+    "arm": "S0",
+    "branch": "J",
+    "case_id": 963,
+    "chat_sha256": "d3d5791d77ee04c86091e87542ae94583a5991464cc9d5386226aa74d083ed1b",
+    "input_ids_sha256": "d2f89f1965a1754aa1b3320e5c579e73dece3ba0796059c4a5c199d30a7110d5",
+    "input_tokens": 147,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nAlfred Newton is employed by University of Lisbon.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\nMarcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nCorrections:\nSET Alfred Newton is employed by Academy of Fine Arts Vienna.\nSET Marcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nQuestion: Where is the headquarters location of the employer of Marcelo Caetano?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J0",
+    "unit_id": "gemma:963:S0:J0"
+  },
+  {
+    "arm": "S1",
+    "branch": "J",
+    "case_id": 963,
+    "chat_sha256": "fd447b8ceeed003117441e6843415a0ddbb4c5ef64892dd49a53d4ea3bb63850",
+    "input_ids_sha256": "439bc9da60f901ff7e64e11b7e732cb4159df322a7e95b77d43bfe7271328166",
+    "input_tokens": 147,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nMarcelo Caetano is employed by Academy of Fine Arts Vienna.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\nAlfred Newton is employed by University of Lisbon.\n\nCorrections:\nSET Alfred Newton is employed by Academy of Fine Arts Vienna.\nSET Marcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nQuestion: Where is the headquarters location of the employer of Marcelo Caetano?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J0",
+    "unit_id": "gemma:963:S1:J0"
+  },
+  {
+    "arm": "C",
+    "branch": "J",
+    "case_id": 963,
+    "chat_sha256": "8ed9a08fc7a4c87ff5e67fb4dc7d2237c13708f303b896d26555553e6499b6ec",
+    "input_ids_sha256": "030ea032b54ade9efc45eb5afc2b18c8520103a1927a608d681039439bc5468a",
+    "input_tokens": 118,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nMarcelo Caetano is employed by Academy of Fine Arts Vienna.\nAlfred Newton is employed by Academy of Fine Arts Vienna.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\n\nQuestion: Where is the headquarters location of the employer of Marcelo Caetano?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J0",
+    "unit_id": "gemma:963:C:J0"
+  },
+  {
+    "arm": "C+",
+    "branch": "J",
+    "case_id": 963,
+    "chat_sha256": "e7d801af38c418d440d14d4deb0a33ad5a697b8f6330356bedd3678d9255c450",
+    "input_ids_sha256": "e97534357e83df7a94e560f76d66a71c3456830d9fd76c72ad1e95f24a00301d",
+    "input_tokens": 149,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nMarcelo Caetano is employed by Academy of Fine Arts Vienna.\nAlfred Newton is employed by Academy of Fine Arts Vienna.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\n\nCorrections:\nSET Alfred Newton is employed by Academy of Fine Arts Vienna.\nSET Marcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nQuestion: Where is the headquarters location of the employer of Marcelo Caetano?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J0",
+    "unit_id": "gemma:963:C+:J0"
+  },
+  {
+    "arm": "H0",
+    "branch": "J",
+    "case_id": 963,
+    "chat_sha256": "d36651e6be18b23ae745a67a367ec59d7f51df39cc4ac09b9fa71609d744baea",
+    "input_ids_sha256": "91dbe247b5b14b6e3df00beedcf80f853fc42b051b7df05836a0f8eefb7fffe5",
+    "input_tokens": 149,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nMarcelo Caetano is employed by University of Lisbon.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\nAlfred Newton is employed by Academy of Fine Arts Vienna.\n\nCorrections:\nSET Alfred Newton is employed by Academy of Fine Arts Vienna.\nSET Marcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nQuestion: What is the city in which the employer of Marcelo Caetano is headquartered?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J1",
+    "unit_id": "gemma:963:H0:J1"
+  },
+  {
+    "arm": "H1",
+    "branch": "J",
+    "case_id": 963,
+    "chat_sha256": "863b83dc57d357f98956f03dd94ee224d8ca6e0e79c3ff08f02d8da09deb4dfa",
+    "input_ids_sha256": "afa5108d6bcea389cb35f9e2926be13d1975c2c0908ee0128315eb8a9f5271df",
+    "input_tokens": 149,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nAlfred Newton is employed by Academy of Fine Arts Vienna.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\nMarcelo Caetano is employed by University of Lisbon.\n\nCorrections:\nSET Alfred Newton is employed by Academy of Fine Arts Vienna.\nSET Marcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nQuestion: What is the city in which the employer of Marcelo Caetano is headquartered?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J1",
+    "unit_id": "gemma:963:H1:J1"
+  },
+  {
+    "arm": "S0",
+    "branch": "J",
+    "case_id": 963,
+    "chat_sha256": "45f182b9b7f0bfdb8454622fa2bb6214c389a04fe23526efe89b0c3442458076",
+    "input_ids_sha256": "a0015d47a571fb96e6dccba94738fcf7ab928ec378a98617d1d1652e57a987e5",
+    "input_tokens": 149,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nAlfred Newton is employed by University of Lisbon.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\nMarcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nCorrections:\nSET Alfred Newton is employed by Academy of Fine Arts Vienna.\nSET Marcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nQuestion: What is the city in which the employer of Marcelo Caetano is headquartered?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J1",
+    "unit_id": "gemma:963:S0:J1"
+  },
+  {
+    "arm": "S1",
+    "branch": "J",
+    "case_id": 963,
+    "chat_sha256": "b83acd9d82b9f0670fc6b335845aeb1b6d8ca1a1bff7f11931c176d92b12e96a",
+    "input_ids_sha256": "9e80506e80ee2ac8b233b365455259b1208c23a02f53c236b02f3e442871c9ae",
+    "input_tokens": 149,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nMarcelo Caetano is employed by Academy of Fine Arts Vienna.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\nAlfred Newton is employed by University of Lisbon.\n\nCorrections:\nSET Alfred Newton is employed by Academy of Fine Arts Vienna.\nSET Marcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nQuestion: What is the city in which the employer of Marcelo Caetano is headquartered?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J1",
+    "unit_id": "gemma:963:S1:J1"
+  },
+  {
+    "arm": "C",
+    "branch": "J",
+    "case_id": 963,
+    "chat_sha256": "058d483205dda6e3b639ff0bbde2cb7fc689602995e60db6d81ade27dd5b7a9f",
+    "input_ids_sha256": "2b6e5cb2d5411cb6e3aa59bf0897ff1dee4db306b0793d14f7864a5b0b8af6c0",
+    "input_tokens": 120,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nMarcelo Caetano is employed by Academy of Fine Arts Vienna.\nAlfred Newton is employed by Academy of Fine Arts Vienna.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\n\nQuestion: What is the city in which the employer of Marcelo Caetano is headquartered?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J1",
+    "unit_id": "gemma:963:C:J1"
+  },
+  {
+    "arm": "C+",
+    "branch": "J",
+    "case_id": 963,
+    "chat_sha256": "74b89d9c0ae36275ce95cffacec82dca4d234a5288f9952f0123dc2dcb4c1f5a",
+    "input_ids_sha256": "f8869f0143cc24b39c965965ac0d7d5b13934355ddd896649e8708d1ea73b0ed",
+    "input_tokens": 151,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nMarcelo Caetano is employed by Academy of Fine Arts Vienna.\nAlfred Newton is employed by Academy of Fine Arts Vienna.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\n\nCorrections:\nSET Alfred Newton is employed by Academy of Fine Arts Vienna.\nSET Marcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nQuestion: What is the city in which the employer of Marcelo Caetano is headquartered?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J1",
+    "unit_id": "gemma:963:C+:J1"
+  },
+  {
+    "arm": "H0",
+    "branch": "J",
+    "case_id": 963,
+    "chat_sha256": "d9177bb8d20fd4cfd36a60d37972e9309477db340b3a5d5f71bd422f1c956bd2",
+    "input_ids_sha256": "43f93b8c8e9084146d19357ad379033a966bdafbeffac66daecaf6e339675771",
+    "input_tokens": 146,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nMarcelo Caetano is employed by University of Lisbon.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\nAlfred Newton is employed by Academy of Fine Arts Vienna.\n\nCorrections:\nSET Alfred Newton is employed by Academy of Fine Arts Vienna.\nSET Marcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nQuestion: In which city is the employer of Marcelo Caetano headquartered?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J2",
+    "unit_id": "gemma:963:H0:J2"
+  },
+  {
+    "arm": "H1",
+    "branch": "J",
+    "case_id": 963,
+    "chat_sha256": "0efece26addc089d06fac50feda83eb7d8e9993a29631ddc1449f408b207cfc3",
+    "input_ids_sha256": "fdaf9198c259200cd131c463e1ecab8fe00f093a941e9a3412d194d8bad13518",
+    "input_tokens": 146,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nAlfred Newton is employed by Academy of Fine Arts Vienna.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\nMarcelo Caetano is employed by University of Lisbon.\n\nCorrections:\nSET Alfred Newton is employed by Academy of Fine Arts Vienna.\nSET Marcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nQuestion: In which city is the employer of Marcelo Caetano headquartered?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J2",
+    "unit_id": "gemma:963:H1:J2"
+  },
+  {
+    "arm": "S0",
+    "branch": "J",
+    "case_id": 963,
+    "chat_sha256": "ecd9a339eee5a02f28318a16bccc981eb1e9755d532adf64862a072d77a8fe8a",
+    "input_ids_sha256": "39471d5fd75b1c14c7a6a7624d8002d38393eed03f83f446c759d795bdd5e521",
+    "input_tokens": 146,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nAlfred Newton is employed by University of Lisbon.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\nMarcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nCorrections:\nSET Alfred Newton is employed by Academy of Fine Arts Vienna.\nSET Marcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nQuestion: In which city is the employer of Marcelo Caetano headquartered?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J2",
+    "unit_id": "gemma:963:S0:J2"
+  },
+  {
+    "arm": "S1",
+    "branch": "J",
+    "case_id": 963,
+    "chat_sha256": "1a5ba7ebac82a9d91aff20b71b36128033dca3b9ca7d07d036a9bedd31baba81",
+    "input_ids_sha256": "aa03e905a69f1b6eca749a1f65b52109e21ad5a75b24dae4684a009e4f1382f7",
+    "input_tokens": 146,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nMarcelo Caetano is employed by Academy of Fine Arts Vienna.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\nAlfred Newton is employed by University of Lisbon.\n\nCorrections:\nSET Alfred Newton is employed by Academy of Fine Arts Vienna.\nSET Marcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nQuestion: In which city is the employer of Marcelo Caetano headquartered?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J2",
+    "unit_id": "gemma:963:S1:J2"
+  },
+  {
+    "arm": "C",
+    "branch": "J",
+    "case_id": 963,
+    "chat_sha256": "1c84e3336798417ff396bb7eeabffc36e79481cb065dd8da11db22236aff1d63",
+    "input_ids_sha256": "9889705b28231f0e64930023a823b286626566619db9fb9cb0ce571a8dc06872",
+    "input_tokens": 117,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nMarcelo Caetano is employed by Academy of Fine Arts Vienna.\nAlfred Newton is employed by Academy of Fine Arts Vienna.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\n\nQuestion: In which city is the employer of Marcelo Caetano headquartered?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J2",
+    "unit_id": "gemma:963:C:J2"
+  },
+  {
+    "arm": "C+",
+    "branch": "J",
+    "case_id": 963,
+    "chat_sha256": "6dbc37de4ce52cedd7b008c8ced8049387441646de9b20a530f94b5e74dd5b79",
+    "input_ids_sha256": "de31d5955d11dc15ec38ece87e4a7f190af2e794460169cfcbb047ffe1a37e3f",
+    "input_tokens": 148,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nMarcelo Caetano is employed by Academy of Fine Arts Vienna.\nAlfred Newton is employed by Academy of Fine Arts Vienna.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\n\nCorrections:\nSET Alfred Newton is employed by Academy of Fine Arts Vienna.\nSET Marcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nQuestion: In which city is the employer of Marcelo Caetano headquartered?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J2",
+    "unit_id": "gemma:963:C+:J2"
+  },
+  {
+    "arm": "H0",
+    "branch": "F",
+    "case_id": 531,
+    "chat_sha256": "9d92a335f998e9ce513a7888e18d9cc53623751d22441285aaabfc16dff244b2",
+    "input_ids_sha256": "4674ccbf71c8c4d0f73febbd189e23aeaae8536dda6e6394050033d43c3f4bf6",
+    "input_tokens": 151,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nThe type of music that Funky Drummer plays is funk.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\nThe type of music that Eric Paslay plays is opéra comique.\n\nCorrections:\nSET The type of music that Funky Drummer plays is opéra comique.\nSET The type of music that Eric Paslay plays is opéra comique.\n\nQuestion: What type of music does Funky Drummer play?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F0",
+    "unit_id": "gemma:531:H0:F0"
+  },
+  {
+    "arm": "H1",
+    "branch": "F",
+    "case_id": 531,
+    "chat_sha256": "316eb9354d5938add83602d5dc6ff0f69d92bd909d844b7f4504e4cc850cdcef",
+    "input_ids_sha256": "f360c6b99ff4948e1396cf8e42933c3717d4f4d35f264d43c826fd96a5f1e5a3",
+    "input_tokens": 151,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nThe type of music that Eric Paslay plays is opéra comique.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\nThe type of music that Funky Drummer plays is funk.\n\nCorrections:\nSET The type of music that Funky Drummer plays is opéra comique.\nSET The type of music that Eric Paslay plays is opéra comique.\n\nQuestion: What type of music does Funky Drummer play?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F0",
+    "unit_id": "gemma:531:H1:F0"
+  },
+  {
+    "arm": "S0",
+    "branch": "F",
+    "case_id": 531,
+    "chat_sha256": "b07ab3e21ea23c68814df4614ee6a79a8b7fc0bf022d4c76b00dd12df0194931",
+    "input_ids_sha256": "8e6b6d39172b28c016c5badff641b931f73916cb5e0eae68e71211a7a5576edf",
+    "input_tokens": 151,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nThe type of music that Eric Paslay plays is funk.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\nThe type of music that Funky Drummer plays is opéra comique.\n\nCorrections:\nSET The type of music that Funky Drummer plays is opéra comique.\nSET The type of music that Eric Paslay plays is opéra comique.\n\nQuestion: What type of music does Funky Drummer play?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F0",
+    "unit_id": "gemma:531:S0:F0"
+  },
+  {
+    "arm": "S1",
+    "branch": "F",
+    "case_id": 531,
+    "chat_sha256": "911651cc92bcc8cd5c57b4fb89ec0e6a0341a5316c25ea50432c7c156e9f4f8b",
+    "input_ids_sha256": "8ad1663fa61afd690193abaebceae3091e02ec9f41de8686a9bf7951be3ce517",
+    "input_tokens": 151,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nThe type of music that Funky Drummer plays is opéra comique.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\nThe type of music that Eric Paslay plays is funk.\n\nCorrections:\nSET The type of music that Funky Drummer plays is opéra comique.\nSET The type of music that Eric Paslay plays is opéra comique.\n\nQuestion: What type of music does Funky Drummer play?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F0",
+    "unit_id": "gemma:531:S1:F0"
+  },
+  {
+    "arm": "C",
+    "branch": "F",
+    "case_id": 531,
+    "chat_sha256": "4a44efa856efb7c705605f1f4607e4d4c5347514aabd067cd58284b97d743372",
+    "input_ids_sha256": "3280c973e3c6570fa38da96125802d11feeb441c30edda44613078c5547a122a",
+    "input_tokens": 116,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nThe type of music that Funky Drummer plays is opéra comique.\nThe type of music that Eric Paslay plays is opéra comique.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\n\nQuestion: What type of music does Funky Drummer play?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F0",
+    "unit_id": "gemma:531:C:F0"
+  },
+  {
+    "arm": "C+",
+    "branch": "F",
+    "case_id": 531,
+    "chat_sha256": "d2ab4c737c3f1ca3edd71382b14e49af1446ceaf98a1367a32eea181e80f3bda",
+    "input_ids_sha256": "ebb4fa37795036f2dc2889cf6146840dd6d10e801116e83664daa3f4d9600758",
+    "input_tokens": 154,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nThe type of music that Funky Drummer plays is opéra comique.\nThe type of music that Eric Paslay plays is opéra comique.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\n\nCorrections:\nSET The type of music that Funky Drummer plays is opéra comique.\nSET The type of music that Eric Paslay plays is opéra comique.\n\nQuestion: What type of music does Funky Drummer play?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F0",
+    "unit_id": "gemma:531:C+:F0"
+  },
+  {
+    "arm": "H0",
+    "branch": "F",
+    "case_id": 531,
+    "chat_sha256": "01ce33dacee9119000141dd65d0bea3fbfe96a1cc64e746351c8f9618cb4a7d7",
+    "input_ids_sha256": "ad976150210dec79c5710682b26657a8afff014bf9d4a05a0deb19305be928b2",
+    "input_tokens": 151,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nThe type of music that Funky Drummer plays is funk.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\nThe type of music that Eric Paslay plays is opéra comique.\n\nCorrections:\nSET The type of music that Funky Drummer plays is opéra comique.\nSET The type of music that Eric Paslay plays is opéra comique.\n\nQuestion: Which country was opéra comique created in?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F1",
+    "unit_id": "gemma:531:H0:F1"
+  },
+  {
+    "arm": "H1",
+    "branch": "F",
+    "case_id": 531,
+    "chat_sha256": "17493e633a7e63618160cd53c1149bffcfcdbab741c20ffa3b4d979ded0b9fd9",
+    "input_ids_sha256": "e23d8a97b3960b529f464f34fa7bd98761e850cfe18d56350be27a4905f36610",
+    "input_tokens": 151,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nThe type of music that Eric Paslay plays is opéra comique.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\nThe type of music that Funky Drummer plays is funk.\n\nCorrections:\nSET The type of music that Funky Drummer plays is opéra comique.\nSET The type of music that Eric Paslay plays is opéra comique.\n\nQuestion: Which country was opéra comique created in?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F1",
+    "unit_id": "gemma:531:H1:F1"
+  },
+  {
+    "arm": "S0",
+    "branch": "F",
+    "case_id": 531,
+    "chat_sha256": "ae7610d73322725af26d2747938ac0347904fceb9efb4bd6d4d9847b0509e7f5",
+    "input_ids_sha256": "1c674a01b8d2a0be5c96e5db7d52b7755288bbfce66303db1d6095d19e3bdc75",
+    "input_tokens": 151,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nThe type of music that Eric Paslay plays is funk.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\nThe type of music that Funky Drummer plays is opéra comique.\n\nCorrections:\nSET The type of music that Funky Drummer plays is opéra comique.\nSET The type of music that Eric Paslay plays is opéra comique.\n\nQuestion: Which country was opéra comique created in?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F1",
+    "unit_id": "gemma:531:S0:F1"
+  },
+  {
+    "arm": "S1",
+    "branch": "F",
+    "case_id": 531,
+    "chat_sha256": "65fb14504ef9fffff40e53d15b04a84dcd28b19a6e550a835df183d0142f6358",
+    "input_ids_sha256": "e863f9e8e5570fcf4b9f848c84a2a5f16a1c81df77dee67aa599326c9fe2ea23",
+    "input_tokens": 151,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nThe type of music that Funky Drummer plays is opéra comique.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\nThe type of music that Eric Paslay plays is funk.\n\nCorrections:\nSET The type of music that Funky Drummer plays is opéra comique.\nSET The type of music that Eric Paslay plays is opéra comique.\n\nQuestion: Which country was opéra comique created in?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F1",
+    "unit_id": "gemma:531:S1:F1"
+  },
+  {
+    "arm": "C",
+    "branch": "F",
+    "case_id": 531,
+    "chat_sha256": "995afbe3c9b43008dab73c063aad8711b4405ee92926d70d7a18ed0fbc561b2a",
+    "input_ids_sha256": "023a98cc7fbc2e9dd69e0f7c34acf1621a32c075e29d80c286def48a70e7a507",
+    "input_tokens": 116,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nThe type of music that Funky Drummer plays is opéra comique.\nThe type of music that Eric Paslay plays is opéra comique.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\n\nQuestion: Which country was opéra comique created in?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F1",
+    "unit_id": "gemma:531:C:F1"
+  },
+  {
+    "arm": "C+",
+    "branch": "F",
+    "case_id": 531,
+    "chat_sha256": "c228c994bf2f35bb5f2e67805de2dfdd2df7a266284d80b23bd2c18dca3e8ae4",
+    "input_ids_sha256": "94a46e8ced43acb72eaecab44eb15365cce4f84a6d1823eff9c212b37d78bcfe",
+    "input_tokens": 154,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nThe type of music that Funky Drummer plays is opéra comique.\nThe type of music that Eric Paslay plays is opéra comique.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\n\nCorrections:\nSET The type of music that Funky Drummer plays is opéra comique.\nSET The type of music that Eric Paslay plays is opéra comique.\n\nQuestion: Which country was opéra comique created in?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F1",
+    "unit_id": "gemma:531:C+:F1"
+  },
+  {
+    "arm": "H0",
+    "branch": "Fdecoy",
+    "case_id": 531,
+    "chat_sha256": "ea784b5c08afa317c0bca14de1598b6172b5469d89c7a6610f42b6b86246861a",
+    "input_ids_sha256": "2ab05ea8986c1d769d1a9214428885256d9e5caae3c8c232dce81de29f23d7a0",
+    "input_tokens": 151,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nThe type of music that Funky Drummer plays is funk.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\nThe type of music that Eric Paslay plays is opéra comique.\n\nCorrections:\nSET The type of music that Funky Drummer plays is opéra comique.\nSET The type of music that Eric Paslay plays is opéra comique.\n\nQuestion: What type of music does Eric Paslay play?",
+        "role": "user"
+      }
+    ],
+    "query_id": "Fdecoy",
+    "unit_id": "gemma:531:H0:Fdecoy"
+  },
+  {
+    "arm": "H1",
+    "branch": "Fdecoy",
+    "case_id": 531,
+    "chat_sha256": "eb420253fc5b1175099a5ba6bfc2d26f525d5bca475b8b37fcac97164c7e9391",
+    "input_ids_sha256": "50927754f792a75482eb827335c2f74e54742b0f4b4418ecb69fa7745192f2d5",
+    "input_tokens": 151,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nThe type of music that Eric Paslay plays is opéra comique.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\nThe type of music that Funky Drummer plays is funk.\n\nCorrections:\nSET The type of music that Funky Drummer plays is opéra comique.\nSET The type of music that Eric Paslay plays is opéra comique.\n\nQuestion: What type of music does Eric Paslay play?",
+        "role": "user"
+      }
+    ],
+    "query_id": "Fdecoy",
+    "unit_id": "gemma:531:H1:Fdecoy"
+  },
+  {
+    "arm": "S0",
+    "branch": "Fdecoy",
+    "case_id": 531,
+    "chat_sha256": "a48d8646c326c909e091494df341db44452363a66c7f44ef3098ddd2955092cb",
+    "input_ids_sha256": "31621fe11c597ba2202c3a4c954cf62874dcfeab89af17be95c767c08aa5fbf0",
+    "input_tokens": 151,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nThe type of music that Eric Paslay plays is funk.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\nThe type of music that Funky Drummer plays is opéra comique.\n\nCorrections:\nSET The type of music that Funky Drummer plays is opéra comique.\nSET The type of music that Eric Paslay plays is opéra comique.\n\nQuestion: What type of music does Eric Paslay play?",
+        "role": "user"
+      }
+    ],
+    "query_id": "Fdecoy",
+    "unit_id": "gemma:531:S0:Fdecoy"
+  },
+  {
+    "arm": "S1",
+    "branch": "Fdecoy",
+    "case_id": 531,
+    "chat_sha256": "6f8090acf3a2349cdbbb1c92915dfceb9e5af36bf637c709a3c53e58466a8374",
+    "input_ids_sha256": "e34f8dfc0f7bde0af7f9a2e8a626300f56b15726d957be2cec33a4e85f6a4fc7",
+    "input_tokens": 151,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nThe type of music that Funky Drummer plays is opéra comique.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\nThe type of music that Eric Paslay plays is funk.\n\nCorrections:\nSET The type of music that Funky Drummer plays is opéra comique.\nSET The type of music that Eric Paslay plays is opéra comique.\n\nQuestion: What type of music does Eric Paslay play?",
+        "role": "user"
+      }
+    ],
+    "query_id": "Fdecoy",
+    "unit_id": "gemma:531:S1:Fdecoy"
+  },
+  {
+    "arm": "C",
+    "branch": "Fdecoy",
+    "case_id": 531,
+    "chat_sha256": "229a3a0826452b7dc7062461c1e9e8d86a1c0826cd162eea49fa63e92d39d70d",
+    "input_ids_sha256": "f2dff2740ade2d1bdfab30fc05c7ab68f65a97834a73774efd9909fbe1636629",
+    "input_tokens": 116,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nThe type of music that Funky Drummer plays is opéra comique.\nThe type of music that Eric Paslay plays is opéra comique.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\n\nQuestion: What type of music does Eric Paslay play?",
+        "role": "user"
+      }
+    ],
+    "query_id": "Fdecoy",
+    "unit_id": "gemma:531:C:Fdecoy"
+  },
+  {
+    "arm": "C+",
+    "branch": "Fdecoy",
+    "case_id": 531,
+    "chat_sha256": "2c54d3e884b1dbc33c803f44eb32ef9ace37a6b6f7e12c682e01dac46348cde8",
+    "input_ids_sha256": "5c308b0e5512b4952378db2515942f9c3cc593154b263a505d2dbd5639b145fe",
+    "input_tokens": 154,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nThe type of music that Funky Drummer plays is opéra comique.\nThe type of music that Eric Paslay plays is opéra comique.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\n\nCorrections:\nSET The type of music that Funky Drummer plays is opéra comique.\nSET The type of music that Eric Paslay plays is opéra comique.\n\nQuestion: What type of music does Eric Paslay play?",
+        "role": "user"
+      }
+    ],
+    "query_id": "Fdecoy",
+    "unit_id": "gemma:531:C+:Fdecoy"
+  },
+  {
+    "arm": "H0",
+    "branch": "J",
+    "case_id": 531,
+    "chat_sha256": "295a8b14953e0981e68cb1e268c559907763228c4fd7c15ef869d0a98e01b618",
+    "input_ids_sha256": "47e3b7471197c1a94761356d262af7724cb366c0da2b17246b734d0c5d0e2d82",
+    "input_tokens": 154,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nThe type of music that Funky Drummer plays is funk.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\nThe type of music that Eric Paslay plays is opéra comique.\n\nCorrections:\nSET The type of music that Funky Drummer plays is opéra comique.\nSET The type of music that Eric Paslay plays is opéra comique.\n\nQuestion: Which country is known for originating the genre of Funky Drummer?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J0",
+    "unit_id": "gemma:531:H0:J0"
+  },
+  {
+    "arm": "H1",
+    "branch": "J",
+    "case_id": 531,
+    "chat_sha256": "a320b89093dc7917c8aff3157cf43ecb1ed21625cc3a308f377ee5d491cc7191",
+    "input_ids_sha256": "a71893ccc68015826ebce42e298cbb2079feade42ba09821f49450f4cacd260a",
+    "input_tokens": 154,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nThe type of music that Eric Paslay plays is opéra comique.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\nThe type of music that Funky Drummer plays is funk.\n\nCorrections:\nSET The type of music that Funky Drummer plays is opéra comique.\nSET The type of music that Eric Paslay plays is opéra comique.\n\nQuestion: Which country is known for originating the genre of Funky Drummer?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J0",
+    "unit_id": "gemma:531:H1:J0"
+  },
+  {
+    "arm": "S0",
+    "branch": "J",
+    "case_id": 531,
+    "chat_sha256": "d8ecaff7691f89756bd225f69d46a735402ced46ea9f699c5f59b7b4e224a8e3",
+    "input_ids_sha256": "3c06250cab8605f779f446682930042526cc98583e9d06edb08f8110b43dc4b7",
+    "input_tokens": 154,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nThe type of music that Eric Paslay plays is funk.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\nThe type of music that Funky Drummer plays is opéra comique.\n\nCorrections:\nSET The type of music that Funky Drummer plays is opéra comique.\nSET The type of music that Eric Paslay plays is opéra comique.\n\nQuestion: Which country is known for originating the genre of Funky Drummer?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J0",
+    "unit_id": "gemma:531:S0:J0"
+  },
+  {
+    "arm": "S1",
+    "branch": "J",
+    "case_id": 531,
+    "chat_sha256": "2344ac7e491d9c7a6b4fa929cd2ceca477d89ce6de4517de57caae481779a2b2",
+    "input_ids_sha256": "24f56241485ee908334e76e1d54999a32bb07d6432665f29046523d74aa44901",
+    "input_tokens": 154,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nThe type of music that Funky Drummer plays is opéra comique.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\nThe type of music that Eric Paslay plays is funk.\n\nCorrections:\nSET The type of music that Funky Drummer plays is opéra comique.\nSET The type of music that Eric Paslay plays is opéra comique.\n\nQuestion: Which country is known for originating the genre of Funky Drummer?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J0",
+    "unit_id": "gemma:531:S1:J0"
+  },
+  {
+    "arm": "C",
+    "branch": "J",
+    "case_id": 531,
+    "chat_sha256": "6cfd8550d19b12f16cf10f0304ed0dc4bdfa04a6c8e9c87443f3e02cce80b0af",
+    "input_ids_sha256": "c2cafadb61d8b5b99209f02411cb2d4eb46b46821a188653dc1cc73cb0ddc472",
+    "input_tokens": 119,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nThe type of music that Funky Drummer plays is opéra comique.\nThe type of music that Eric Paslay plays is opéra comique.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\n\nQuestion: Which country is known for originating the genre of Funky Drummer?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J0",
+    "unit_id": "gemma:531:C:J0"
+  },
+  {
+    "arm": "C+",
+    "branch": "J",
+    "case_id": 531,
+    "chat_sha256": "964da0704527a706e63a829e00b57fb6cac0561ac43e39c851248edb44531220",
+    "input_ids_sha256": "e3c89f8b0b71019d1a88f533571265dcf0ba9956620ec4e663473bbcf481bc34",
+    "input_tokens": 157,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nThe type of music that Funky Drummer plays is opéra comique.\nThe type of music that Eric Paslay plays is opéra comique.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\n\nCorrections:\nSET The type of music that Funky Drummer plays is opéra comique.\nSET The type of music that Eric Paslay plays is opéra comique.\n\nQuestion: Which country is known for originating the genre of Funky Drummer?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J0",
+    "unit_id": "gemma:531:C+:J0"
+  },
+  {
+    "arm": "H0",
+    "branch": "J",
+    "case_id": 531,
+    "chat_sha256": "da6da2898e6d4b95ca370b769a79a1c95df782efa9a546c76e283d41817b79d4",
+    "input_ids_sha256": "f6e16b70a5702a962b19fec30f4dba89c11a9e132ccaa0d3616c96d2c57be3ef",
+    "input_tokens": 155,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nThe type of music that Funky Drummer plays is funk.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\nThe type of music that Eric Paslay plays is opéra comique.\n\nCorrections:\nSET The type of music that Funky Drummer plays is opéra comique.\nSET The type of music that Eric Paslay plays is opéra comique.\n\nQuestion: From which country did the genre that includes Funky Drummer come from?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J1",
+    "unit_id": "gemma:531:H0:J1"
+  },
+  {
+    "arm": "H1",
+    "branch": "J",
+    "case_id": 531,
+    "chat_sha256": "d963f27e91efec44321e60b7c275d6309f568e8e10b877110a68e06ec1e1fd1e",
+    "input_ids_sha256": "3ea888a24d35ada803bd71932ef908bbe1f825c40c4c835adfd62699cd00c597",
+    "input_tokens": 155,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nThe type of music that Eric Paslay plays is opéra comique.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\nThe type of music that Funky Drummer plays is funk.\n\nCorrections:\nSET The type of music that Funky Drummer plays is opéra comique.\nSET The type of music that Eric Paslay plays is opéra comique.\n\nQuestion: From which country did the genre that includes Funky Drummer come from?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J1",
+    "unit_id": "gemma:531:H1:J1"
+  },
+  {
+    "arm": "S0",
+    "branch": "J",
+    "case_id": 531,
+    "chat_sha256": "526deb05e3a888147d84e3c9bf7c4745cffb50f6b2feefbe2609f5721a7112d7",
+    "input_ids_sha256": "97c28698f61d8e942d7ab59608a2fa0da045df10a9d66a062a4c37f64711f71a",
+    "input_tokens": 155,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nThe type of music that Eric Paslay plays is funk.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\nThe type of music that Funky Drummer plays is opéra comique.\n\nCorrections:\nSET The type of music that Funky Drummer plays is opéra comique.\nSET The type of music that Eric Paslay plays is opéra comique.\n\nQuestion: From which country did the genre that includes Funky Drummer come from?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J1",
+    "unit_id": "gemma:531:S0:J1"
+  },
+  {
+    "arm": "S1",
+    "branch": "J",
+    "case_id": 531,
+    "chat_sha256": "b5ab292c582cdda2355193d1a7d2fca8e5cf21e2ed74b33e7f01376e36ae42a7",
+    "input_ids_sha256": "d8f9d8f0e53ea2a67b33f9af94e0bef3c72639e0a2ea29d59814b1338d971809",
+    "input_tokens": 155,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nThe type of music that Funky Drummer plays is opéra comique.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\nThe type of music that Eric Paslay plays is funk.\n\nCorrections:\nSET The type of music that Funky Drummer plays is opéra comique.\nSET The type of music that Eric Paslay plays is opéra comique.\n\nQuestion: From which country did the genre that includes Funky Drummer come from?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J1",
+    "unit_id": "gemma:531:S1:J1"
+  },
+  {
+    "arm": "C",
+    "branch": "J",
+    "case_id": 531,
+    "chat_sha256": "a3e6bdeb5a6ddc5cb399102e3eca670cd1adb219250f3a368abd7ec565f9eefb",
+    "input_ids_sha256": "1014ef5342838bdb948fe6c81d97da8af9ec96d2dee58679f657e740dae79b04",
+    "input_tokens": 120,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nThe type of music that Funky Drummer plays is opéra comique.\nThe type of music that Eric Paslay plays is opéra comique.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\n\nQuestion: From which country did the genre that includes Funky Drummer come from?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J1",
+    "unit_id": "gemma:531:C:J1"
+  },
+  {
+    "arm": "C+",
+    "branch": "J",
+    "case_id": 531,
+    "chat_sha256": "cac83b081901b83b4321003fc9086156ccd91a59645a8bd03613e224b1877fb7",
+    "input_ids_sha256": "a47eb3e51148b7dc015d6b75ca9b3f7bdb31d56c591336bed57ae8f4d543c8a5",
+    "input_tokens": 158,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nThe type of music that Funky Drummer plays is opéra comique.\nThe type of music that Eric Paslay plays is opéra comique.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\n\nCorrections:\nSET The type of music that Funky Drummer plays is opéra comique.\nSET The type of music that Eric Paslay plays is opéra comique.\n\nQuestion: From which country did the genre that includes Funky Drummer come from?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J1",
+    "unit_id": "gemma:531:C+:J1"
+  },
+  {
+    "arm": "H0",
+    "branch": "J",
+    "case_id": 531,
+    "chat_sha256": "61b29d1a93232bdafb7b7d7a4edbf538125038a6bf255b7f787e19f7d6ffc775",
+    "input_ids_sha256": "03dd433736810ad4141c0d0161f6a571d2878d7b5bfbe38252805bd1c8976cf0",
+    "input_tokens": 156,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nThe type of music that Funky Drummer plays is funk.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\nThe type of music that Eric Paslay plays is opéra comique.\n\nCorrections:\nSET The type of music that Funky Drummer plays is opéra comique.\nSET The type of music that Eric Paslay plays is opéra comique.\n\nQuestion: What is the country of origin for the genre that has Funky Drummer?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J2",
+    "unit_id": "gemma:531:H0:J2"
+  },
+  {
+    "arm": "H1",
+    "branch": "J",
+    "case_id": 531,
+    "chat_sha256": "906dd85a88f52319880c2e32c8a58f4a0cd48b413bfaefc3e2f8bb3d169c8199",
+    "input_ids_sha256": "b81da01655bd4ee2ab2fabb6a5fb95ec290e39295d40b41d94d3070a2f648961",
+    "input_tokens": 156,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nThe type of music that Eric Paslay plays is opéra comique.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\nThe type of music that Funky Drummer plays is funk.\n\nCorrections:\nSET The type of music that Funky Drummer plays is opéra comique.\nSET The type of music that Eric Paslay plays is opéra comique.\n\nQuestion: What is the country of origin for the genre that has Funky Drummer?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J2",
+    "unit_id": "gemma:531:H1:J2"
+  },
+  {
+    "arm": "S0",
+    "branch": "J",
+    "case_id": 531,
+    "chat_sha256": "b575139fd512a190970dfb45ed2c80e8266cd2504919a26d1123f24ad66c87d8",
+    "input_ids_sha256": "cdcadc7be3306870d4aa52c75b64b699e8fc37d6ef9efd9afcaf59bf7f49c3b1",
+    "input_tokens": 156,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nThe type of music that Eric Paslay plays is funk.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\nThe type of music that Funky Drummer plays is opéra comique.\n\nCorrections:\nSET The type of music that Funky Drummer plays is opéra comique.\nSET The type of music that Eric Paslay plays is opéra comique.\n\nQuestion: What is the country of origin for the genre that has Funky Drummer?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J2",
+    "unit_id": "gemma:531:S0:J2"
+  },
+  {
+    "arm": "S1",
+    "branch": "J",
+    "case_id": 531,
+    "chat_sha256": "6ac220889200087541ab17c38e510e0720e403b28a1f3b39f8771b56cdf43a08",
+    "input_ids_sha256": "a6c9273ce964b563c750c1e9e3c623a1fd8b229e64a3edaadd4834be11ca37ac",
+    "input_tokens": 156,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nThe type of music that Funky Drummer plays is opéra comique.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\nThe type of music that Eric Paslay plays is funk.\n\nCorrections:\nSET The type of music that Funky Drummer plays is opéra comique.\nSET The type of music that Eric Paslay plays is opéra comique.\n\nQuestion: What is the country of origin for the genre that has Funky Drummer?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J2",
+    "unit_id": "gemma:531:S1:J2"
+  },
+  {
+    "arm": "C",
+    "branch": "J",
+    "case_id": 531,
+    "chat_sha256": "c4335e276db705db802fdcc0c2da9f5b9bf0e2935386a742076c591226c52b98",
+    "input_ids_sha256": "0f005268ecc043fcacceeff2b7cffe2f4ef60ded424f59095b2ba9a2f82239fd",
+    "input_tokens": 121,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nThe type of music that Funky Drummer plays is opéra comique.\nThe type of music that Eric Paslay plays is opéra comique.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\n\nQuestion: What is the country of origin for the genre that has Funky Drummer?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J2",
+    "unit_id": "gemma:531:C:J2"
+  },
+  {
+    "arm": "C+",
+    "branch": "J",
+    "case_id": 531,
+    "chat_sha256": "74bff02d25bcf9680f0b1c7cee80553c1bb39c5aa32933363816f8c9de793512",
+    "input_ids_sha256": "bf81769af8bb9683f02cb79c6896e485d942f5a8fa02a93fddb2b0e2ea15fcba",
+    "input_tokens": 159,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nThe type of music that Funky Drummer plays is opéra comique.\nThe type of music that Eric Paslay plays is opéra comique.\nfunk was created in the country of United States of America.\nopéra comique was created in the country of France.\n\nCorrections:\nSET The type of music that Funky Drummer plays is opéra comique.\nSET The type of music that Eric Paslay plays is opéra comique.\n\nQuestion: What is the country of origin for the genre that has Funky Drummer?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J2",
+    "unit_id": "gemma:531:C+:J2"
+  },
+  {
+    "arm": "H0",
+    "branch": "F",
+    "case_id": 149,
+    "chat_sha256": "3742c9ec9f992d5d6cc8f42ee546a5b124e1a2052ce2d6a8ceb1d7e4c6e240ac",
+    "input_ids_sha256": "50a15b6a942eb81f6f7c2bc3f4860ea5bdc566c67da6c465dadc5eaafe098b98",
+    "input_tokens": 140,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nGiovanni Papini is affiliated with the religion of Catholic Church.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\nAlbert of Saxony is affiliated with the religion of Abrahamic religion.\n\nCorrections:\nSET Giovanni Papini is affiliated with the religion of Abrahamic religion.\nSET Albert of Saxony is affiliated with the religion of Abrahamic religion.\n\nQuestion: Which religion is Giovanni Papini affiliated with?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F0",
+    "unit_id": "gemma:149:H0:F0"
+  },
+  {
+    "arm": "H1",
+    "branch": "F",
+    "case_id": 149,
+    "chat_sha256": "88615d48f844671fe42326798890d999c73542bf6688a0f2f40737e22da99e16",
+    "input_ids_sha256": "6f37024c4a86c0789338c15ef3d14f19527f89c20ebceb142dd539736506d2fb",
+    "input_tokens": 140,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nAlbert of Saxony is affiliated with the religion of Abrahamic religion.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\nGiovanni Papini is affiliated with the religion of Catholic Church.\n\nCorrections:\nSET Giovanni Papini is affiliated with the religion of Abrahamic religion.\nSET Albert of Saxony is affiliated with the religion of Abrahamic religion.\n\nQuestion: Which religion is Giovanni Papini affiliated with?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F0",
+    "unit_id": "gemma:149:H1:F0"
+  },
+  {
+    "arm": "S0",
+    "branch": "F",
+    "case_id": 149,
+    "chat_sha256": "f253e699b9fdc553a3420baaaffb5d8bfa1aee1c1165cb14dc1561100020e1cf",
+    "input_ids_sha256": "fa90245457703d7903be4eb58c811f8e7c7f030cf8aa383e634e9fa53a04f5a8",
+    "input_tokens": 140,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nAlbert of Saxony is affiliated with the religion of Catholic Church.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\nGiovanni Papini is affiliated with the religion of Abrahamic religion.\n\nCorrections:\nSET Giovanni Papini is affiliated with the religion of Abrahamic religion.\nSET Albert of Saxony is affiliated with the religion of Abrahamic religion.\n\nQuestion: Which religion is Giovanni Papini affiliated with?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F0",
+    "unit_id": "gemma:149:S0:F0"
+  },
+  {
+    "arm": "S1",
+    "branch": "F",
+    "case_id": 149,
+    "chat_sha256": "8e252909c96a4482ce6fb9133b9ce5c31efa8c27b2118507cebb88f6120ea73d",
+    "input_ids_sha256": "6af213587fed2388c0ef717b024a555a64764cf9fc3ecce2572f684d7fe1ff9f",
+    "input_tokens": 140,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nGiovanni Papini is affiliated with the religion of Abrahamic religion.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\nAlbert of Saxony is affiliated with the religion of Catholic Church.\n\nCorrections:\nSET Giovanni Papini is affiliated with the religion of Abrahamic religion.\nSET Albert of Saxony is affiliated with the religion of Abrahamic religion.\n\nQuestion: Which religion is Giovanni Papini affiliated with?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F0",
+    "unit_id": "gemma:149:S1:F0"
+  },
+  {
+    "arm": "C",
+    "branch": "F",
+    "case_id": 149,
+    "chat_sha256": "2d362ea98fd6e2dd5821f28e28521e3e4c3dc20409cf8c483f0ed5eb53043b16",
+    "input_ids_sha256": "470b8bbd4f8b8c85f659f0dc2873569add1616a02ef4a869c6924f0ce087898d",
+    "input_tokens": 106,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nGiovanni Papini is affiliated with the religion of Abrahamic religion.\nAlbert of Saxony is affiliated with the religion of Abrahamic religion.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\n\nQuestion: Which religion is Giovanni Papini affiliated with?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F0",
+    "unit_id": "gemma:149:C:F0"
+  },
+  {
+    "arm": "C+",
+    "branch": "F",
+    "case_id": 149,
+    "chat_sha256": "a269c2f4eedff8ebc5b55ebb4b7119ef293403842b296e4d2dcce8f6723e7642",
+    "input_ids_sha256": "274e02630e2462dfda5ea2983a300f0b729ff4c05588ed3e15b2fa7c3837dd5d",
+    "input_tokens": 142,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nGiovanni Papini is affiliated with the religion of Abrahamic religion.\nAlbert of Saxony is affiliated with the religion of Abrahamic religion.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\n\nCorrections:\nSET Giovanni Papini is affiliated with the religion of Abrahamic religion.\nSET Albert of Saxony is affiliated with the religion of Abrahamic religion.\n\nQuestion: Which religion is Giovanni Papini affiliated with?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F0",
+    "unit_id": "gemma:149:C+:F0"
+  },
+  {
+    "arm": "H0",
+    "branch": "F",
+    "case_id": 149,
+    "chat_sha256": "572a7027055e78a7fba6d07639b4ed26718d6c0ece9e93fd3a600ddc85a5b612",
+    "input_ids_sha256": "740efb250190d4d285dfdf03e13d00b2754ca836bb5a199e55103d0ac0255ef7",
+    "input_tokens": 138,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nGiovanni Papini is affiliated with the religion of Catholic Church.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\nAlbert of Saxony is affiliated with the religion of Abrahamic religion.\n\nCorrections:\nSET Giovanni Papini is affiliated with the religion of Abrahamic religion.\nSET Albert of Saxony is affiliated with the religion of Abrahamic religion.\n\nQuestion: Who founded Abrahamic religion?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F1",
+    "unit_id": "gemma:149:H0:F1"
+  },
+  {
+    "arm": "H1",
+    "branch": "F",
+    "case_id": 149,
+    "chat_sha256": "f1566221dc71a9a519308a2bf5e23909326ac3807274fbc39b4d80850ec2bc91",
+    "input_ids_sha256": "79ef1d844d69707d2c7bdc90fa9eb2823d9c71a272946a4cf1cdd5458127f9dc",
+    "input_tokens": 138,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nAlbert of Saxony is affiliated with the religion of Abrahamic religion.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\nGiovanni Papini is affiliated with the religion of Catholic Church.\n\nCorrections:\nSET Giovanni Papini is affiliated with the religion of Abrahamic religion.\nSET Albert of Saxony is affiliated with the religion of Abrahamic religion.\n\nQuestion: Who founded Abrahamic religion?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F1",
+    "unit_id": "gemma:149:H1:F1"
+  },
+  {
+    "arm": "S0",
+    "branch": "F",
+    "case_id": 149,
+    "chat_sha256": "03824721bb4cbe800b4fa1995885d1d90fe3fcd629f79badc93d3dfc8609f7ae",
+    "input_ids_sha256": "b6747db8cf4ffe8ff81161258ecde82d30fcc9a59781aabc997042f559025386",
+    "input_tokens": 138,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nAlbert of Saxony is affiliated with the religion of Catholic Church.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\nGiovanni Papini is affiliated with the religion of Abrahamic religion.\n\nCorrections:\nSET Giovanni Papini is affiliated with the religion of Abrahamic religion.\nSET Albert of Saxony is affiliated with the religion of Abrahamic religion.\n\nQuestion: Who founded Abrahamic religion?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F1",
+    "unit_id": "gemma:149:S0:F1"
+  },
+  {
+    "arm": "S1",
+    "branch": "F",
+    "case_id": 149,
+    "chat_sha256": "8164425af50d9b0de50605a1c04b2695bbe3334e184a75c00dfdac592a2304a5",
+    "input_ids_sha256": "73a6102c6697722652f8779beeee557601f2ca712d3688cb7295e43c26a71c1f",
+    "input_tokens": 138,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nGiovanni Papini is affiliated with the religion of Abrahamic religion.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\nAlbert of Saxony is affiliated with the religion of Catholic Church.\n\nCorrections:\nSET Giovanni Papini is affiliated with the religion of Abrahamic religion.\nSET Albert of Saxony is affiliated with the religion of Abrahamic religion.\n\nQuestion: Who founded Abrahamic religion?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F1",
+    "unit_id": "gemma:149:S1:F1"
+  },
+  {
+    "arm": "C",
+    "branch": "F",
+    "case_id": 149,
+    "chat_sha256": "b8ceb91b0adee62cfb924de948d1e5dab57cae893e29c3a123c7cd37943af1b8",
+    "input_ids_sha256": "048067ba26948df890e748a6527f77f2b276b735b5e3c1a03cef38c3a3555738",
+    "input_tokens": 104,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nGiovanni Papini is affiliated with the religion of Abrahamic religion.\nAlbert of Saxony is affiliated with the religion of Abrahamic religion.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\n\nQuestion: Who founded Abrahamic religion?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F1",
+    "unit_id": "gemma:149:C:F1"
+  },
+  {
+    "arm": "C+",
+    "branch": "F",
+    "case_id": 149,
+    "chat_sha256": "29188f6e5e0032c36e80c5163cfc8606a75b2d6be20b30a461e6533f3a6da8db",
+    "input_ids_sha256": "104b59fa87859bf667d3beae5b31d5fb6a3dd1c3c0154cf431efe0f4834607c1",
+    "input_tokens": 140,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nGiovanni Papini is affiliated with the religion of Abrahamic religion.\nAlbert of Saxony is affiliated with the religion of Abrahamic religion.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\n\nCorrections:\nSET Giovanni Papini is affiliated with the religion of Abrahamic religion.\nSET Albert of Saxony is affiliated with the religion of Abrahamic religion.\n\nQuestion: Who founded Abrahamic religion?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F1",
+    "unit_id": "gemma:149:C+:F1"
+  },
+  {
+    "arm": "H0",
+    "branch": "Fdecoy",
+    "case_id": 149,
+    "chat_sha256": "c7fa0b00a3073174526de3d65d11e5127ea3b63560fa6fe1caeadf30c099f17b",
+    "input_ids_sha256": "5c6096d97a8ac2a169ac4c1dbaca3ef505bd24c21058e69a6b4efb26abeedcdd",
+    "input_tokens": 140,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nGiovanni Papini is affiliated with the religion of Catholic Church.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\nAlbert of Saxony is affiliated with the religion of Abrahamic religion.\n\nCorrections:\nSET Giovanni Papini is affiliated with the religion of Abrahamic religion.\nSET Albert of Saxony is affiliated with the religion of Abrahamic religion.\n\nQuestion: Which religion is Albert of Saxony affiliated with?",
+        "role": "user"
+      }
+    ],
+    "query_id": "Fdecoy",
+    "unit_id": "gemma:149:H0:Fdecoy"
+  },
+  {
+    "arm": "H1",
+    "branch": "Fdecoy",
+    "case_id": 149,
+    "chat_sha256": "d18a13b3449adcdd7767b70bede6d3a9385811bd0d5e8b36f37994d098c2e9ae",
+    "input_ids_sha256": "9380e407fc65200461eca0f7e3178d4fc192802ede46d1e803b9a5560b421c90",
+    "input_tokens": 140,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nAlbert of Saxony is affiliated with the religion of Abrahamic religion.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\nGiovanni Papini is affiliated with the religion of Catholic Church.\n\nCorrections:\nSET Giovanni Papini is affiliated with the religion of Abrahamic religion.\nSET Albert of Saxony is affiliated with the religion of Abrahamic religion.\n\nQuestion: Which religion is Albert of Saxony affiliated with?",
+        "role": "user"
+      }
+    ],
+    "query_id": "Fdecoy",
+    "unit_id": "gemma:149:H1:Fdecoy"
+  },
+  {
+    "arm": "S0",
+    "branch": "Fdecoy",
+    "case_id": 149,
+    "chat_sha256": "899ccf3f234a5ed666cc0661a83106855a13194c735759b662b25ec89e63c3c1",
+    "input_ids_sha256": "8c7b69a69b55451ac030d6803ad086f56b4d12f49e035af32cccdde0f2548d0e",
+    "input_tokens": 140,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nAlbert of Saxony is affiliated with the religion of Catholic Church.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\nGiovanni Papini is affiliated with the religion of Abrahamic religion.\n\nCorrections:\nSET Giovanni Papini is affiliated with the religion of Abrahamic religion.\nSET Albert of Saxony is affiliated with the religion of Abrahamic religion.\n\nQuestion: Which religion is Albert of Saxony affiliated with?",
+        "role": "user"
+      }
+    ],
+    "query_id": "Fdecoy",
+    "unit_id": "gemma:149:S0:Fdecoy"
+  },
+  {
+    "arm": "S1",
+    "branch": "Fdecoy",
+    "case_id": 149,
+    "chat_sha256": "3d3a2a7615dd1156683beff873ca79a50885803aae29f1563c96e5780f5c21d6",
+    "input_ids_sha256": "adcfbe69d18fa06646ed1c179bf094b53cb758b844cab95468eeb24142f81156",
+    "input_tokens": 140,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nGiovanni Papini is affiliated with the religion of Abrahamic religion.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\nAlbert of Saxony is affiliated with the religion of Catholic Church.\n\nCorrections:\nSET Giovanni Papini is affiliated with the religion of Abrahamic religion.\nSET Albert of Saxony is affiliated with the religion of Abrahamic religion.\n\nQuestion: Which religion is Albert of Saxony affiliated with?",
+        "role": "user"
+      }
+    ],
+    "query_id": "Fdecoy",
+    "unit_id": "gemma:149:S1:Fdecoy"
+  },
+  {
+    "arm": "C",
+    "branch": "Fdecoy",
+    "case_id": 149,
+    "chat_sha256": "0ce6f045039613e2cf02ccdd815f6e14ad7789dc871f7bd50e09ccedbf2df1b8",
+    "input_ids_sha256": "bb9178dccfc6d8e386a02552ef922930ea8c6448c234db23103a08ad5c4299e6",
+    "input_tokens": 106,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nGiovanni Papini is affiliated with the religion of Abrahamic religion.\nAlbert of Saxony is affiliated with the religion of Abrahamic religion.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\n\nQuestion: Which religion is Albert of Saxony affiliated with?",
+        "role": "user"
+      }
+    ],
+    "query_id": "Fdecoy",
+    "unit_id": "gemma:149:C:Fdecoy"
+  },
+  {
+    "arm": "C+",
+    "branch": "Fdecoy",
+    "case_id": 149,
+    "chat_sha256": "66a2bfa943ce367ff0bec7765dac12aadeb38765212fd3e54ec3ef59204102d1",
+    "input_ids_sha256": "fd1952959f0eb1d8ef53e9afecfe61c033746e155e4b680d1cc9225a02f0f0a4",
+    "input_tokens": 142,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nGiovanni Papini is affiliated with the religion of Abrahamic religion.\nAlbert of Saxony is affiliated with the religion of Abrahamic religion.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\n\nCorrections:\nSET Giovanni Papini is affiliated with the religion of Abrahamic religion.\nSET Albert of Saxony is affiliated with the religion of Abrahamic religion.\n\nQuestion: Which religion is Albert of Saxony affiliated with?",
+        "role": "user"
+      }
+    ],
+    "query_id": "Fdecoy",
+    "unit_id": "gemma:149:C+:Fdecoy"
+  },
+  {
+    "arm": "H0",
+    "branch": "J",
+    "case_id": 149,
+    "chat_sha256": "04319846b63e506cb6ef4c50105506d8b499ae66237206764dc47ddc553e9f66",
+    "input_ids_sha256": "1def2acefaf0beaad5605a943ebfdbf7915218b51a6070586b2d53c994abf746",
+    "input_tokens": 141,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nGiovanni Papini is affiliated with the religion of Catholic Church.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\nAlbert of Saxony is affiliated with the religion of Abrahamic religion.\n\nCorrections:\nSET Giovanni Papini is affiliated with the religion of Abrahamic religion.\nSET Albert of Saxony is affiliated with the religion of Abrahamic religion.\n\nQuestion: Who founded the religion associated with Giovanni Papini?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J0",
+    "unit_id": "gemma:149:H0:J0"
+  },
+  {
+    "arm": "H1",
+    "branch": "J",
+    "case_id": 149,
+    "chat_sha256": "b64be4681c1abcc274ce822959afbf1e6360bbf3dce45663fd2d1696b84b5448",
+    "input_ids_sha256": "fe0b546811e776abb85798299005010e65b9ed92a7df72a0e4acb7c066be2166",
+    "input_tokens": 141,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nAlbert of Saxony is affiliated with the religion of Abrahamic religion.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\nGiovanni Papini is affiliated with the religion of Catholic Church.\n\nCorrections:\nSET Giovanni Papini is affiliated with the religion of Abrahamic religion.\nSET Albert of Saxony is affiliated with the religion of Abrahamic religion.\n\nQuestion: Who founded the religion associated with Giovanni Papini?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J0",
+    "unit_id": "gemma:149:H1:J0"
+  },
+  {
+    "arm": "S0",
+    "branch": "J",
+    "case_id": 149,
+    "chat_sha256": "686e731fe22ff9c203a58e96eb9736a474cf40bdfa7c6b5d04b6529eb534f484",
+    "input_ids_sha256": "0d64f23fa2b31fc70fd9129271525b330beab656b1f5d1408d40ab29c6a5f5c8",
+    "input_tokens": 141,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nAlbert of Saxony is affiliated with the religion of Catholic Church.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\nGiovanni Papini is affiliated with the religion of Abrahamic religion.\n\nCorrections:\nSET Giovanni Papini is affiliated with the religion of Abrahamic religion.\nSET Albert of Saxony is affiliated with the religion of Abrahamic religion.\n\nQuestion: Who founded the religion associated with Giovanni Papini?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J0",
+    "unit_id": "gemma:149:S0:J0"
+  },
+  {
+    "arm": "S1",
+    "branch": "J",
+    "case_id": 149,
+    "chat_sha256": "d92b625b8b5998871e17dba5984f334c575d5d99d57ead7a4d9d1d7a7dad08e9",
+    "input_ids_sha256": "9e36f93984a2b533f8f3592c0b79c66f6e0fc2f7c918dfb46edb554c97ba77cb",
+    "input_tokens": 141,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nGiovanni Papini is affiliated with the religion of Abrahamic religion.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\nAlbert of Saxony is affiliated with the religion of Catholic Church.\n\nCorrections:\nSET Giovanni Papini is affiliated with the religion of Abrahamic religion.\nSET Albert of Saxony is affiliated with the religion of Abrahamic religion.\n\nQuestion: Who founded the religion associated with Giovanni Papini?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J0",
+    "unit_id": "gemma:149:S1:J0"
+  },
+  {
+    "arm": "C",
+    "branch": "J",
+    "case_id": 149,
+    "chat_sha256": "d33676e7c841c1d134a433cf40d05865b78beab51d5d05bcfbe409eef89f64ae",
+    "input_ids_sha256": "866ad8b0ce6ddbe4e5ee13baec2bfa40e86ad7ef0bedcba4a67f50bd4b3aa59c",
+    "input_tokens": 107,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nGiovanni Papini is affiliated with the religion of Abrahamic religion.\nAlbert of Saxony is affiliated with the religion of Abrahamic religion.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\n\nQuestion: Who founded the religion associated with Giovanni Papini?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J0",
+    "unit_id": "gemma:149:C:J0"
+  },
+  {
+    "arm": "C+",
+    "branch": "J",
+    "case_id": 149,
+    "chat_sha256": "9109bb1b940fc24d9c040158262ccd229767be11a87ed22945de5f8a429651d0",
+    "input_ids_sha256": "b541ccbc1e3b4a403193f0e4ec897f2585020480d1ba566145827932fd707d72",
+    "input_tokens": 143,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nGiovanni Papini is affiliated with the religion of Abrahamic religion.\nAlbert of Saxony is affiliated with the religion of Abrahamic religion.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\n\nCorrections:\nSET Giovanni Papini is affiliated with the religion of Abrahamic religion.\nSET Albert of Saxony is affiliated with the religion of Abrahamic religion.\n\nQuestion: Who founded the religion associated with Giovanni Papini?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J0",
+    "unit_id": "gemma:149:C+:J0"
+  },
+  {
+    "arm": "H0",
+    "branch": "J",
+    "case_id": 149,
+    "chat_sha256": "a91ca0593cfb3428fabee763e89b922048ff8980004b31fc4c2deaba585d2320",
+    "input_ids_sha256": "ed3a61a576b8d6bfed426b669d94cf47eb2407074bca28d5426228d3076170b9",
+    "input_tokens": 148,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nGiovanni Papini is affiliated with the religion of Catholic Church.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\nAlbert of Saxony is affiliated with the religion of Abrahamic religion.\n\nCorrections:\nSET Giovanni Papini is affiliated with the religion of Abrahamic religion.\nSET Albert of Saxony is affiliated with the religion of Abrahamic religion.\n\nQuestion: What is the name of the founder of the religion that Giovanni Papini believed in?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J1",
+    "unit_id": "gemma:149:H0:J1"
+  },
+  {
+    "arm": "H1",
+    "branch": "J",
+    "case_id": 149,
+    "chat_sha256": "8fa7c7190368444972cb88d5c16fdfeae8d05a4d7388deb731d2f947bd931dfd",
+    "input_ids_sha256": "067294fdfb4c7ba2b3903dea44909f20c013cccee53e0b8664c0888ea8ea6cbb",
+    "input_tokens": 148,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nAlbert of Saxony is affiliated with the religion of Abrahamic religion.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\nGiovanni Papini is affiliated with the religion of Catholic Church.\n\nCorrections:\nSET Giovanni Papini is affiliated with the religion of Abrahamic religion.\nSET Albert of Saxony is affiliated with the religion of Abrahamic religion.\n\nQuestion: What is the name of the founder of the religion that Giovanni Papini believed in?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J1",
+    "unit_id": "gemma:149:H1:J1"
+  },
+  {
+    "arm": "S0",
+    "branch": "J",
+    "case_id": 149,
+    "chat_sha256": "36451d50b204a6ced9777c8663aa555d64c0bfecb0be1a9b604c51fc1f992cbe",
+    "input_ids_sha256": "84a485d4ece6bfed6ef754e907b8336b9a833c8386898eff8223c9b98fc9742f",
+    "input_tokens": 148,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nAlbert of Saxony is affiliated with the religion of Catholic Church.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\nGiovanni Papini is affiliated with the religion of Abrahamic religion.\n\nCorrections:\nSET Giovanni Papini is affiliated with the religion of Abrahamic religion.\nSET Albert of Saxony is affiliated with the religion of Abrahamic religion.\n\nQuestion: What is the name of the founder of the religion that Giovanni Papini believed in?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J1",
+    "unit_id": "gemma:149:S0:J1"
+  },
+  {
+    "arm": "S1",
+    "branch": "J",
+    "case_id": 149,
+    "chat_sha256": "8bb8dee980d5822934883558dea6327b03a97dcd9f95655943477ce1a73f685e",
+    "input_ids_sha256": "7c0a62566049a79d5036a3ce0ed1e2e03400405358adfc8d14a75d312b038080",
+    "input_tokens": 148,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nGiovanni Papini is affiliated with the religion of Abrahamic religion.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\nAlbert of Saxony is affiliated with the religion of Catholic Church.\n\nCorrections:\nSET Giovanni Papini is affiliated with the religion of Abrahamic religion.\nSET Albert of Saxony is affiliated with the religion of Abrahamic religion.\n\nQuestion: What is the name of the founder of the religion that Giovanni Papini believed in?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J1",
+    "unit_id": "gemma:149:S1:J1"
+  },
+  {
+    "arm": "C",
+    "branch": "J",
+    "case_id": 149,
+    "chat_sha256": "807ce2535fdacff60708fa7fbf1cfa35312d78648887941392c174d6b62f7d5b",
+    "input_ids_sha256": "75d553a74415993a05825891d93304656be3a29d22c91037c5014ccb6f2bb189",
+    "input_tokens": 114,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nGiovanni Papini is affiliated with the religion of Abrahamic religion.\nAlbert of Saxony is affiliated with the religion of Abrahamic religion.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\n\nQuestion: What is the name of the founder of the religion that Giovanni Papini believed in?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J1",
+    "unit_id": "gemma:149:C:J1"
+  },
+  {
+    "arm": "C+",
+    "branch": "J",
+    "case_id": 149,
+    "chat_sha256": "8d6e446bfc954e162f61a8b1719eeb2dd75f26e7e95a5c5809bbde0294bef3ee",
+    "input_ids_sha256": "e4073188f11bd8920046425bc0364599029b7f78a5289cdcc9ac20ea3c10a994",
+    "input_tokens": 150,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nGiovanni Papini is affiliated with the religion of Abrahamic religion.\nAlbert of Saxony is affiliated with the religion of Abrahamic religion.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\n\nCorrections:\nSET Giovanni Papini is affiliated with the religion of Abrahamic religion.\nSET Albert of Saxony is affiliated with the religion of Abrahamic religion.\n\nQuestion: What is the name of the founder of the religion that Giovanni Papini believed in?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J1",
+    "unit_id": "gemma:149:C+:J1"
+  },
+  {
+    "arm": "H0",
+    "branch": "J",
+    "case_id": 149,
+    "chat_sha256": "e59f6856f2497aa5b33672f99bffaf52964f51252f0fa2146d83737f115ccc39",
+    "input_ids_sha256": "e89a1f584574b86d67b833e0e4d0f8bedff427faa8173252ebfdcc0ca7fb42c0",
+    "input_tokens": 144,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nGiovanni Papini is affiliated with the religion of Catholic Church.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\nAlbert of Saxony is affiliated with the religion of Abrahamic religion.\n\nCorrections:\nSET Giovanni Papini is affiliated with the religion of Abrahamic religion.\nSET Albert of Saxony is affiliated with the religion of Abrahamic religion.\n\nQuestion: From whom was the religion that Giovanni Papini adhered to founded?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J2",
+    "unit_id": "gemma:149:H0:J2"
+  },
+  {
+    "arm": "H1",
+    "branch": "J",
+    "case_id": 149,
+    "chat_sha256": "4ca80a56f45b31100acf5ee9e248c8f4ce46c01e5d54888ade344bccd316b70b",
+    "input_ids_sha256": "1527d54543155e06b30a0e8feea7de4d9c497eb397d8a341acda42a25d1e49b9",
+    "input_tokens": 144,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nAlbert of Saxony is affiliated with the religion of Abrahamic religion.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\nGiovanni Papini is affiliated with the religion of Catholic Church.\n\nCorrections:\nSET Giovanni Papini is affiliated with the religion of Abrahamic religion.\nSET Albert of Saxony is affiliated with the religion of Abrahamic religion.\n\nQuestion: From whom was the religion that Giovanni Papini adhered to founded?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J2",
+    "unit_id": "gemma:149:H1:J2"
+  },
+  {
+    "arm": "S0",
+    "branch": "J",
+    "case_id": 149,
+    "chat_sha256": "046efed75c8d2365fda57e4c118c9302b6e27927fb4596edca81f19cbba6b27f",
+    "input_ids_sha256": "9841d34cb0cf09f9c1fbe3c97514c4f2cbb7a07a34d3627ab99881402f4c3212",
+    "input_tokens": 144,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nAlbert of Saxony is affiliated with the religion of Catholic Church.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\nGiovanni Papini is affiliated with the religion of Abrahamic religion.\n\nCorrections:\nSET Giovanni Papini is affiliated with the religion of Abrahamic religion.\nSET Albert of Saxony is affiliated with the religion of Abrahamic religion.\n\nQuestion: From whom was the religion that Giovanni Papini adhered to founded?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J2",
+    "unit_id": "gemma:149:S0:J2"
+  },
+  {
+    "arm": "S1",
+    "branch": "J",
+    "case_id": 149,
+    "chat_sha256": "554e8080e54f81314fc446aea96422754f1bffa6dfb04a27d5bb3b33a6ea3e68",
+    "input_ids_sha256": "192ce66ada43239aef52941c3310e279d34161665504b92f45e55b439c259e30",
+    "input_tokens": 144,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nGiovanni Papini is affiliated with the religion of Abrahamic religion.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\nAlbert of Saxony is affiliated with the religion of Catholic Church.\n\nCorrections:\nSET Giovanni Papini is affiliated with the religion of Abrahamic religion.\nSET Albert of Saxony is affiliated with the religion of Abrahamic religion.\n\nQuestion: From whom was the religion that Giovanni Papini adhered to founded?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J2",
+    "unit_id": "gemma:149:S1:J2"
+  },
+  {
+    "arm": "C",
+    "branch": "J",
+    "case_id": 149,
+    "chat_sha256": "b89173db43659aa2bffaff14e06604f8f860aadb75f386bb72e6d3f9ca085c43",
+    "input_ids_sha256": "19e5da205692c6d1274357e34a3d6e7345965d207b1af45b9fa68eb1462f8393",
+    "input_tokens": 110,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nGiovanni Papini is affiliated with the religion of Abrahamic religion.\nAlbert of Saxony is affiliated with the religion of Abrahamic religion.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\n\nQuestion: From whom was the religion that Giovanni Papini adhered to founded?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J2",
+    "unit_id": "gemma:149:C:J2"
+  },
+  {
+    "arm": "C+",
+    "branch": "J",
+    "case_id": 149,
+    "chat_sha256": "704dc29240c157b8cc61a2a0013f9a1baca64e1d60b505814aa41ec40b8fa33f",
+    "input_ids_sha256": "8ab8f0342756fc4631e7421cd1df14dd006db7da5cc993f82cf0e426419c7d5f",
+    "input_tokens": 146,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nGiovanni Papini is affiliated with the religion of Abrahamic religion.\nAlbert of Saxony is affiliated with the religion of Abrahamic religion.\nCatholic Church was founded by Jesus Christ.\nAbrahamic religion was founded by Abraham.\n\nCorrections:\nSET Giovanni Papini is affiliated with the religion of Abrahamic religion.\nSET Albert of Saxony is affiliated with the religion of Abrahamic religion.\n\nQuestion: From whom was the religion that Giovanni Papini adhered to founded?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J2",
+    "unit_id": "gemma:149:C+:J2"
+  },
+  {
+    "arm": "H0",
+    "branch": "F",
+    "case_id": 1617,
+    "chat_sha256": "1d94087e8492b4e274e4337098b30b8baa24d4d1721863e85ed8cae16f3c8356",
+    "input_ids_sha256": "8654a1e6e6adab0ea5d49cbe5b27f3cecabf54670b4128694eebedb8a70e3152",
+    "input_tokens": 157,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nWilliam Levada is affiliated with the religion of Catholic Church.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\nAlbert of Saxony is affiliated with the religion of Church of Scotland.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: Which religion is William Levada affiliated with?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F0",
+    "unit_id": "gemma:1617:H0:F0"
+  },
+  {
+    "arm": "H1",
+    "branch": "F",
+    "case_id": 1617,
+    "chat_sha256": "e2189f16db1ef00bda8897716c0bba8e8a871cba339a9b0c8af5bdb45c414f89",
+    "input_ids_sha256": "7675307ee1a5034faef8d6f64f7373d889557c1f2bde8e9299a8eaf7c070bbcd",
+    "input_tokens": 157,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nAlbert of Saxony is affiliated with the religion of Church of Scotland.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\nWilliam Levada is affiliated with the religion of Catholic Church.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: Which religion is William Levada affiliated with?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F0",
+    "unit_id": "gemma:1617:H1:F0"
+  },
+  {
+    "arm": "S0",
+    "branch": "F",
+    "case_id": 1617,
+    "chat_sha256": "1f0b36b886cacba41e3b4649d5ce6ad46c16186f576a07d518917f32e227a14d",
+    "input_ids_sha256": "5a9bce6b8c5f1e16b41a3ed6e74ce48b3ed07dbca7411cc9c56b091535a3622b",
+    "input_tokens": 157,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nAlbert of Saxony is affiliated with the religion of Catholic Church.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\nWilliam Levada is affiliated with the religion of Church of Scotland.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: Which religion is William Levada affiliated with?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F0",
+    "unit_id": "gemma:1617:S0:F0"
+  },
+  {
+    "arm": "S1",
+    "branch": "F",
+    "case_id": 1617,
+    "chat_sha256": "9b6d1beac8e365470a86203b60bfb62e447d24ec07301936ca55405127cc4819",
+    "input_ids_sha256": "617b9688ba1aec2a418a15df154c3405a04eaed054c720ca79b13a33412a77c6",
+    "input_tokens": 157,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nWilliam Levada is affiliated with the religion of Church of Scotland.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\nAlbert of Saxony is affiliated with the religion of Catholic Church.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: Which religion is William Levada affiliated with?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F0",
+    "unit_id": "gemma:1617:S1:F0"
+  },
+  {
+    "arm": "C",
+    "branch": "F",
+    "case_id": 1617,
+    "chat_sha256": "57d585d1f86584def48c8edaf745ac8717a460e6574c9739ca61cc70adf2af19",
+    "input_ids_sha256": "0c7cda74dd3899ed43015ecdc00331a8d6886311e8e7707dc61390735d6b4616",
+    "input_tokens": 124,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nWilliam Levada is affiliated with the religion of Church of Scotland.\nAlbert of Saxony is affiliated with the religion of Church of Scotland.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\n\nQuestion: Which religion is William Levada affiliated with?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F0",
+    "unit_id": "gemma:1617:C:F0"
+  },
+  {
+    "arm": "C+",
+    "branch": "F",
+    "case_id": 1617,
+    "chat_sha256": "1fe940e19f61f45a332849bced0de98a001d46ff99d85015676ff6ff2ad95e49",
+    "input_ids_sha256": "10a1b20c58088512f28a01b9972364abe8d4c0ad8fc76952c2ce96557c43cd5b",
+    "input_tokens": 158,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nWilliam Levada is affiliated with the religion of Church of Scotland.\nAlbert of Saxony is affiliated with the religion of Church of Scotland.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: Which religion is William Levada affiliated with?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F0",
+    "unit_id": "gemma:1617:C+:F0"
+  },
+  {
+    "arm": "H0",
+    "branch": "F",
+    "case_id": 1617,
+    "chat_sha256": "6a55c0e98cd443bc1369dc130386008e6a2236051cb49a6b7092a3fff67f42b1",
+    "input_ids_sha256": "a15079396b382dccfab8805112366c37017c114fe2ed1ee98781b8bd7303310e",
+    "input_tokens": 154,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nWilliam Levada is affiliated with the religion of Catholic Church.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\nAlbert of Saxony is affiliated with the religion of Church of Scotland.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: Who founded Church of Scotland?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F1",
+    "unit_id": "gemma:1617:H0:F1"
+  },
+  {
+    "arm": "H1",
+    "branch": "F",
+    "case_id": 1617,
+    "chat_sha256": "8ee18c09f63cd89867e6a362af6426bc803d1ad5103d28f94cad98eccabfc45e",
+    "input_ids_sha256": "de0ca78dc03913ac2863b83a34b4d39ce1f8bc8e2d3d85022adf218f7a185eed",
+    "input_tokens": 154,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nAlbert of Saxony is affiliated with the religion of Church of Scotland.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\nWilliam Levada is affiliated with the religion of Catholic Church.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: Who founded Church of Scotland?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F1",
+    "unit_id": "gemma:1617:H1:F1"
+  },
+  {
+    "arm": "S0",
+    "branch": "F",
+    "case_id": 1617,
+    "chat_sha256": "7a5de55dcd4e03d07515b08da602579e72e2ce5f9c88a2310d1ad90b84232c4b",
+    "input_ids_sha256": "673fbee64b9f2c689bc36a3723ead206e6ed9a8c049bbf5f47bf297ecc038dd5",
+    "input_tokens": 154,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nAlbert of Saxony is affiliated with the religion of Catholic Church.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\nWilliam Levada is affiliated with the religion of Church of Scotland.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: Who founded Church of Scotland?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F1",
+    "unit_id": "gemma:1617:S0:F1"
+  },
+  {
+    "arm": "S1",
+    "branch": "F",
+    "case_id": 1617,
+    "chat_sha256": "f283a742d9cde32ec26ee64475fa86cda4f36e7fcd012b62af50328431b647fa",
+    "input_ids_sha256": "0f75e745645dcfa33df764cefea54b8547d3fdbef3128004b2264450acac7475",
+    "input_tokens": 154,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nWilliam Levada is affiliated with the religion of Church of Scotland.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\nAlbert of Saxony is affiliated with the religion of Catholic Church.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: Who founded Church of Scotland?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F1",
+    "unit_id": "gemma:1617:S1:F1"
+  },
+  {
+    "arm": "C",
+    "branch": "F",
+    "case_id": 1617,
+    "chat_sha256": "4ead398dbfbc1d6e48c75c87b984d85db9da24175ebe5124c0edd3be3001039c",
+    "input_ids_sha256": "c8212166715e3d3d8a56124eb89adc2d42cf854227e44d0ee3eb13ff4eff75ab",
+    "input_tokens": 121,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nWilliam Levada is affiliated with the religion of Church of Scotland.\nAlbert of Saxony is affiliated with the religion of Church of Scotland.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\n\nQuestion: Who founded Church of Scotland?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F1",
+    "unit_id": "gemma:1617:C:F1"
+  },
+  {
+    "arm": "C+",
+    "branch": "F",
+    "case_id": 1617,
+    "chat_sha256": "43bd317c4f33f7c160032f65d2c3ff62640aae3a4ee89ca5bf7ab67f960d2116",
+    "input_ids_sha256": "0e20c1dd3b42b32efea7a8d8632c055a0c1494df7a7709033b54c32b1e8065e9",
+    "input_tokens": 155,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nWilliam Levada is affiliated with the religion of Church of Scotland.\nAlbert of Saxony is affiliated with the religion of Church of Scotland.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: Who founded Church of Scotland?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F1",
+    "unit_id": "gemma:1617:C+:F1"
+  },
+  {
+    "arm": "H0",
+    "branch": "F",
+    "case_id": 1617,
+    "chat_sha256": "e0e9cd84820136f548191bcab9d75a53fff700f24a73c2adc706c3f361c691d7",
+    "input_ids_sha256": "c97da8256979b2b4cce909ad6857b0169f255f7a300a310ad2856ec6e8dab3e3",
+    "input_tokens": 156,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nWilliam Levada is affiliated with the religion of Catholic Church.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\nAlbert of Saxony is affiliated with the religion of Church of Scotland.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: Which city did John Knox work in?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F2",
+    "unit_id": "gemma:1617:H0:F2"
+  },
+  {
+    "arm": "H1",
+    "branch": "F",
+    "case_id": 1617,
+    "chat_sha256": "a33f82e4b5d9c4b9d465c5b5d354302a674548127be4b4b0d5e5bbb36a58bd8c",
+    "input_ids_sha256": "0225505ea298c1b986b81f38a6a40d4eac2a9459c08b41654c3c345221fc000a",
+    "input_tokens": 156,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nAlbert of Saxony is affiliated with the religion of Church of Scotland.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\nWilliam Levada is affiliated with the religion of Catholic Church.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: Which city did John Knox work in?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F2",
+    "unit_id": "gemma:1617:H1:F2"
+  },
+  {
+    "arm": "S0",
+    "branch": "F",
+    "case_id": 1617,
+    "chat_sha256": "77cda49610ac96657650aec1949d9a6212ead3f1f0619156886495a2a438d1f8",
+    "input_ids_sha256": "1b2265d77846ae64ce6e5305749dacc74601d77a9e453ce7c573d2fe1f0e6744",
+    "input_tokens": 156,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nAlbert of Saxony is affiliated with the religion of Catholic Church.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\nWilliam Levada is affiliated with the religion of Church of Scotland.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: Which city did John Knox work in?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F2",
+    "unit_id": "gemma:1617:S0:F2"
+  },
+  {
+    "arm": "S1",
+    "branch": "F",
+    "case_id": 1617,
+    "chat_sha256": "969c4a25c782845ca29d84d9b245824f95d824e6560fab95fdf2403a18dbf3a0",
+    "input_ids_sha256": "af6aec71eaf3dc3c2ec852d0e4112c52dcdef8f05b36af0092e59105be93b65d",
+    "input_tokens": 156,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nWilliam Levada is affiliated with the religion of Church of Scotland.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\nAlbert of Saxony is affiliated with the religion of Catholic Church.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: Which city did John Knox work in?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F2",
+    "unit_id": "gemma:1617:S1:F2"
+  },
+  {
+    "arm": "C",
+    "branch": "F",
+    "case_id": 1617,
+    "chat_sha256": "1ace64bfe6f6db7aa280794cf1b95e531345d5ef0c291f9c411eaa17cd330bea",
+    "input_ids_sha256": "a238c950f9ad65493494dae1b64a90add3bc9ecbe31c7367ea2869efe45ee6ba",
+    "input_tokens": 123,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nWilliam Levada is affiliated with the religion of Church of Scotland.\nAlbert of Saxony is affiliated with the religion of Church of Scotland.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\n\nQuestion: Which city did John Knox work in?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F2",
+    "unit_id": "gemma:1617:C:F2"
+  },
+  {
+    "arm": "C+",
+    "branch": "F",
+    "case_id": 1617,
+    "chat_sha256": "367460d50f384176e17184916bcff4481362aba126a8d0725d13105cd5f19b19",
+    "input_ids_sha256": "b3120681f11673a727da297e4d3011f9c40674a5ac975a5eb81965057a7ca949",
+    "input_tokens": 157,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nWilliam Levada is affiliated with the religion of Church of Scotland.\nAlbert of Saxony is affiliated with the religion of Church of Scotland.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: Which city did John Knox work in?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F2",
+    "unit_id": "gemma:1617:C+:F2"
+  },
+  {
+    "arm": "H0",
+    "branch": "Fdecoy",
+    "case_id": 1617,
+    "chat_sha256": "9fde6be0c459a26f20248bdd0330dde19a3b6ca50d9db64beffd68874d793fa3",
+    "input_ids_sha256": "17ae7a948366bd16901d08d493f77df1d89d551f6d3c9c63c3bab33465defcd4",
+    "input_tokens": 157,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nWilliam Levada is affiliated with the religion of Catholic Church.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\nAlbert of Saxony is affiliated with the religion of Church of Scotland.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: Which religion is Albert of Saxony affiliated with?",
+        "role": "user"
+      }
+    ],
+    "query_id": "Fdecoy",
+    "unit_id": "gemma:1617:H0:Fdecoy"
+  },
+  {
+    "arm": "H1",
+    "branch": "Fdecoy",
+    "case_id": 1617,
+    "chat_sha256": "c9a266072b6d4abbccf6ff49015ed8b8e04dce8f3b88ddea149407212f9c0ee4",
+    "input_ids_sha256": "daef03b65c59382c59d65d89269145c3a3bfff48a2943e418c9c65be8d850042",
+    "input_tokens": 157,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nAlbert of Saxony is affiliated with the religion of Church of Scotland.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\nWilliam Levada is affiliated with the religion of Catholic Church.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: Which religion is Albert of Saxony affiliated with?",
+        "role": "user"
+      }
+    ],
+    "query_id": "Fdecoy",
+    "unit_id": "gemma:1617:H1:Fdecoy"
+  },
+  {
+    "arm": "S0",
+    "branch": "Fdecoy",
+    "case_id": 1617,
+    "chat_sha256": "69210740b1d9d0f9b7585f74000268e1fd7df3c830809e468d855ab9a10e0a9d",
+    "input_ids_sha256": "7bfcd2b9de7d6dd64b2c176021e576cafb1fee9f49d6c2767a9b1ed1c4135433",
+    "input_tokens": 157,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nAlbert of Saxony is affiliated with the religion of Catholic Church.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\nWilliam Levada is affiliated with the religion of Church of Scotland.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: Which religion is Albert of Saxony affiliated with?",
+        "role": "user"
+      }
+    ],
+    "query_id": "Fdecoy",
+    "unit_id": "gemma:1617:S0:Fdecoy"
+  },
+  {
+    "arm": "S1",
+    "branch": "Fdecoy",
+    "case_id": 1617,
+    "chat_sha256": "7461cf5b6e14bb2d640c59c57ba74cf00fddb0be4c5dec0f14ed5b359a774a81",
+    "input_ids_sha256": "56899266e7b191260960290efa7fc4c148094ecf23bae394d3ea8806008af387",
+    "input_tokens": 157,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nWilliam Levada is affiliated with the religion of Church of Scotland.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\nAlbert of Saxony is affiliated with the religion of Catholic Church.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: Which religion is Albert of Saxony affiliated with?",
+        "role": "user"
+      }
+    ],
+    "query_id": "Fdecoy",
+    "unit_id": "gemma:1617:S1:Fdecoy"
+  },
+  {
+    "arm": "C",
+    "branch": "Fdecoy",
+    "case_id": 1617,
+    "chat_sha256": "89c47f5f005d0366f6926db74de435c8235df246acf33fa2f5dd8659d2c93771",
+    "input_ids_sha256": "972dc9fbfd10eede63bf8a53a726e480594f44807b970d39de1632e81adaab77",
+    "input_tokens": 124,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nWilliam Levada is affiliated with the religion of Church of Scotland.\nAlbert of Saxony is affiliated with the religion of Church of Scotland.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\n\nQuestion: Which religion is Albert of Saxony affiliated with?",
+        "role": "user"
+      }
+    ],
+    "query_id": "Fdecoy",
+    "unit_id": "gemma:1617:C:Fdecoy"
+  },
+  {
+    "arm": "C+",
+    "branch": "Fdecoy",
+    "case_id": 1617,
+    "chat_sha256": "350f0f32782e79430d2d450252d9f5a078a963775c06a104fdd04a0ef2fffac4",
+    "input_ids_sha256": "8aab489e980b79a1a32e9fda40b4aee0303ab911c57ed9096ad927bf3d971ab9",
+    "input_tokens": 158,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nWilliam Levada is affiliated with the religion of Church of Scotland.\nAlbert of Saxony is affiliated with the religion of Church of Scotland.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: Which religion is Albert of Saxony affiliated with?",
+        "role": "user"
+      }
+    ],
+    "query_id": "Fdecoy",
+    "unit_id": "gemma:1617:C+:Fdecoy"
+  },
+  {
+    "arm": "H0",
+    "branch": "J",
+    "case_id": 1617,
+    "chat_sha256": "ca074e150b18c016aaee991eae227d73452b57b3d82a7125dc778932f5a4607c",
+    "input_ids_sha256": "11f4c2e65398e7aa9bf69ad9e199e888939b285a411d3f25cea3d1d8425e7d7f",
+    "input_tokens": 164,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nWilliam Levada is affiliated with the religion of Catholic Church.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\nAlbert of Saxony is affiliated with the religion of Church of Scotland.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: What is the location where the founder of William Levada's religion worked?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J0",
+    "unit_id": "gemma:1617:H0:J0"
+  },
+  {
+    "arm": "H1",
+    "branch": "J",
+    "case_id": 1617,
+    "chat_sha256": "9f23475f91f189d665acc47193a243ed925354a521ed6e8e812ef26c51a7699f",
+    "input_ids_sha256": "176e788d1a027223d7bac2171d543c0ebd610d1cc1a666835a9ab6f3928f211a",
+    "input_tokens": 164,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nAlbert of Saxony is affiliated with the religion of Church of Scotland.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\nWilliam Levada is affiliated with the religion of Catholic Church.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: What is the location where the founder of William Levada's religion worked?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J0",
+    "unit_id": "gemma:1617:H1:J0"
+  },
+  {
+    "arm": "S0",
+    "branch": "J",
+    "case_id": 1617,
+    "chat_sha256": "e9d45529dc6e639fb6331f8ebb811278a209121f91882bbfd04e455a2963f541",
+    "input_ids_sha256": "d085f371e3efc34b84844ef6555a45d282c4bdbbe48c88dfdcd6bfebf6c6fb07",
+    "input_tokens": 164,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nAlbert of Saxony is affiliated with the religion of Catholic Church.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\nWilliam Levada is affiliated with the religion of Church of Scotland.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: What is the location where the founder of William Levada's religion worked?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J0",
+    "unit_id": "gemma:1617:S0:J0"
+  },
+  {
+    "arm": "S1",
+    "branch": "J",
+    "case_id": 1617,
+    "chat_sha256": "561733f3d3629d48a8562f0589bef160d7b638f9ed935cb4a10317cc05e7f1bf",
+    "input_ids_sha256": "f66804cfafbf54ab624ecc2a4d6a5fea394de6cf6bd40119b981ef2f0ba21ea6",
+    "input_tokens": 164,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nWilliam Levada is affiliated with the religion of Church of Scotland.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\nAlbert of Saxony is affiliated with the religion of Catholic Church.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: What is the location where the founder of William Levada's religion worked?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J0",
+    "unit_id": "gemma:1617:S1:J0"
+  },
+  {
+    "arm": "C",
+    "branch": "J",
+    "case_id": 1617,
+    "chat_sha256": "374ed951af4938ffb13518a6d6a621e8901daf29ae842396156e3ffc5c672b6e",
+    "input_ids_sha256": "1f8963d182c7231eb0b24dd4f48f0cd4e00c8f17246b3e178b6e535ed86300bd",
+    "input_tokens": 131,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nWilliam Levada is affiliated with the religion of Church of Scotland.\nAlbert of Saxony is affiliated with the religion of Church of Scotland.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\n\nQuestion: What is the location where the founder of William Levada's religion worked?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J0",
+    "unit_id": "gemma:1617:C:J0"
+  },
+  {
+    "arm": "C+",
+    "branch": "J",
+    "case_id": 1617,
+    "chat_sha256": "ded8ad74483a020436cecc6f7cd53f947d9a1459f59c07a4eb51cd618a745dc3",
+    "input_ids_sha256": "f41cea07301a1f26f56f98f78fcc7a6156fc84ba799da068f1cf835424fd0e0f",
+    "input_tokens": 165,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nWilliam Levada is affiliated with the religion of Church of Scotland.\nAlbert of Saxony is affiliated with the religion of Church of Scotland.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: What is the location where the founder of William Levada's religion worked?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J0",
+    "unit_id": "gemma:1617:C+:J0"
+  },
+  {
+    "arm": "H0",
+    "branch": "J",
+    "case_id": 1617,
+    "chat_sha256": "8fffccd4ba350b6db288a03b717edaadca47bf2d19efaf19c093cd76c7720aa3",
+    "input_ids_sha256": "fae640fb877e26d9444fd6e4821bb26586b53baf2d4781ef60a64fe78fd7f89c",
+    "input_tokens": 162,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nWilliam Levada is affiliated with the religion of Catholic Church.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\nAlbert of Saxony is affiliated with the religion of Church of Scotland.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: Where did the founder of the religion that William Levada follows work?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J1",
+    "unit_id": "gemma:1617:H0:J1"
+  },
+  {
+    "arm": "H1",
+    "branch": "J",
+    "case_id": 1617,
+    "chat_sha256": "bcaa2c03210d71a09400419351f78b349a714beeed2b7e7cf45021f2c4806710",
+    "input_ids_sha256": "9ed9599b6407be1a0d63f3428220457bae937334fca9d5e5d16202ad71c78f36",
+    "input_tokens": 162,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nAlbert of Saxony is affiliated with the religion of Church of Scotland.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\nWilliam Levada is affiliated with the religion of Catholic Church.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: Where did the founder of the religion that William Levada follows work?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J1",
+    "unit_id": "gemma:1617:H1:J1"
+  },
+  {
+    "arm": "S0",
+    "branch": "J",
+    "case_id": 1617,
+    "chat_sha256": "c5f92b040ed74c1a7c27d2cffa51c287ef1a36b2fc526863778cf0b68019de5c",
+    "input_ids_sha256": "bece32f1394f5c43c35af651ac3a11b3109537a00342218e70d12bd9d43063bd",
+    "input_tokens": 162,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nAlbert of Saxony is affiliated with the religion of Catholic Church.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\nWilliam Levada is affiliated with the religion of Church of Scotland.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: Where did the founder of the religion that William Levada follows work?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J1",
+    "unit_id": "gemma:1617:S0:J1"
+  },
+  {
+    "arm": "S1",
+    "branch": "J",
+    "case_id": 1617,
+    "chat_sha256": "ae4f4583548e02ec0d3a1e36f12c50dc17a835b09f55b8756eb6b99046b5486f",
+    "input_ids_sha256": "ced7c50ec26516adb50c65ef78acea30ac40b01e470c31d25450367f9dca3c23",
+    "input_tokens": 162,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nWilliam Levada is affiliated with the religion of Church of Scotland.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\nAlbert of Saxony is affiliated with the religion of Catholic Church.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: Where did the founder of the religion that William Levada follows work?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J1",
+    "unit_id": "gemma:1617:S1:J1"
+  },
+  {
+    "arm": "C",
+    "branch": "J",
+    "case_id": 1617,
+    "chat_sha256": "ea2ad2b749bcf3402c0540dbd62722e6e51859cbd367ec7f3d70e49828ed0704",
+    "input_ids_sha256": "e76f691f4c2ff5fbad1fc49b8b94260173414d7d9545df4343e1b2eb156b9571",
+    "input_tokens": 129,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nWilliam Levada is affiliated with the religion of Church of Scotland.\nAlbert of Saxony is affiliated with the religion of Church of Scotland.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\n\nQuestion: Where did the founder of the religion that William Levada follows work?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J1",
+    "unit_id": "gemma:1617:C:J1"
+  },
+  {
+    "arm": "C+",
+    "branch": "J",
+    "case_id": 1617,
+    "chat_sha256": "2dbe502b7033bb2d97770b0d7bfdabd5ecad2740586b62448e7316cc2b19b614",
+    "input_ids_sha256": "6d435bebf9e70a6319cdf42002b5e161bffb766cf655d48b23ff9b5f3244883e",
+    "input_tokens": 163,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nWilliam Levada is affiliated with the religion of Church of Scotland.\nAlbert of Saxony is affiliated with the religion of Church of Scotland.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: Where did the founder of the religion that William Levada follows work?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J1",
+    "unit_id": "gemma:1617:C+:J1"
+  },
+  {
+    "arm": "H0",
+    "branch": "J",
+    "case_id": 1617,
+    "chat_sha256": "886c990564be03a28cdfe2613b7f03ac37d028230a77d511c5ac387ad86c43d6",
+    "input_ids_sha256": "2abdea406318d5839f67c440141b84250090be5fdc1f4313128a82fa153bbaee",
+    "input_tokens": 164,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nWilliam Levada is affiliated with the religion of Catholic Church.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\nAlbert of Saxony is affiliated with the religion of Church of Scotland.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: What place did the person who founded William Levada's religion work in?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J2",
+    "unit_id": "gemma:1617:H0:J2"
+  },
+  {
+    "arm": "H1",
+    "branch": "J",
+    "case_id": 1617,
+    "chat_sha256": "1ae4b10ae0c6b869ce6dc4a22f3c42bc46bc6ede8fd5dcc361d492b67c4a498c",
+    "input_ids_sha256": "814eb63f2cfaca8620b53d67015edfea1c42b08c58cdb6dcbd88e1390c25f00d",
+    "input_tokens": 164,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nAlbert of Saxony is affiliated with the religion of Church of Scotland.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\nWilliam Levada is affiliated with the religion of Catholic Church.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: What place did the person who founded William Levada's religion work in?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J2",
+    "unit_id": "gemma:1617:H1:J2"
+  },
+  {
+    "arm": "S0",
+    "branch": "J",
+    "case_id": 1617,
+    "chat_sha256": "b581e2287823d10ad8f61bff6d87aa273d4aefaaf964e45f8f91eff7388a3fa6",
+    "input_ids_sha256": "c7e98ffa3457d32dba6dcf5cb0c9f00c1794ae6d24ff6173efb33a4085da77e5",
+    "input_tokens": 164,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nAlbert of Saxony is affiliated with the religion of Catholic Church.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\nWilliam Levada is affiliated with the religion of Church of Scotland.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: What place did the person who founded William Levada's religion work in?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J2",
+    "unit_id": "gemma:1617:S0:J2"
+  },
+  {
+    "arm": "S1",
+    "branch": "J",
+    "case_id": 1617,
+    "chat_sha256": "788a3d5dae267d24cc8c8cb51d536e52a77690ce396b975548b66b7f3918d558",
+    "input_ids_sha256": "71420761e4394fd1fc378a433440cdb3739218b637123ffa6b8fb297b451800f",
+    "input_tokens": 164,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nWilliam Levada is affiliated with the religion of Church of Scotland.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\nAlbert of Saxony is affiliated with the religion of Catholic Church.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: What place did the person who founded William Levada's religion work in?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J2",
+    "unit_id": "gemma:1617:S1:J2"
+  },
+  {
+    "arm": "C",
+    "branch": "J",
+    "case_id": 1617,
+    "chat_sha256": "2b37df38f4e70c16a89510c99386bf77001cff620fc70edf79f925019bac6458",
+    "input_ids_sha256": "638d40dc6592e097e06370422e2b4cdddbc2c7eb61040696925b74597cb390a7",
+    "input_tokens": 131,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nWilliam Levada is affiliated with the religion of Church of Scotland.\nAlbert of Saxony is affiliated with the religion of Church of Scotland.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\n\nQuestion: What place did the person who founded William Levada's religion work in?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J2",
+    "unit_id": "gemma:1617:C:J2"
+  },
+  {
+    "arm": "C+",
+    "branch": "J",
+    "case_id": 1617,
+    "chat_sha256": "aacdfcc4a6230a2262a9911c7433d935d18a4887d44976a0e870f5a2a7121752",
+    "input_ids_sha256": "960c0d4a116785e6898f6da9a80694583138d77d2641fb9a3f8c8674f6e948dd",
+    "input_tokens": 165,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nWilliam Levada is affiliated with the religion of Church of Scotland.\nAlbert of Saxony is affiliated with the religion of Church of Scotland.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: What place did the person who founded William Levada's religion work in?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J2",
+    "unit_id": "gemma:1617:C+:J2"
+  },
+  {
+    "arm": "H0",
+    "branch": "K",
+    "case_id": 1617,
+    "chat_sha256": "15cbd30b872a491bfc26abbceb2622ae82998d7a0beb64fc397e889b267be54b",
+    "input_ids_sha256": "66733a4419fd96ebff025c628c0eb9cb1aec2d3571acdea3e62e640f0b14182a",
+    "input_tokens": 172,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nWilliam Levada is affiliated with the religion of Catholic Church.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\nAlbert of Saxony is affiliated with the religion of Church of Scotland.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: Starting from Church of Scotland, follow these relations in order: founded by, work location. Which entity do you reach?",
+        "role": "user"
+      }
+    ],
+    "query_id": "K",
+    "unit_id": "gemma:1617:H0:K"
+  },
+  {
+    "arm": "H1",
+    "branch": "K",
+    "case_id": 1617,
+    "chat_sha256": "4f45785a3b7128c58961f33b843c2353b89d13b44f25a4d38b0cac962c50727f",
+    "input_ids_sha256": "1ee8eb3e96f3953384e6b4da9acae3bbfbf72ad734fd963ebfbbad979fb413f4",
+    "input_tokens": 172,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nAlbert of Saxony is affiliated with the religion of Church of Scotland.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\nWilliam Levada is affiliated with the religion of Catholic Church.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: Starting from Church of Scotland, follow these relations in order: founded by, work location. Which entity do you reach?",
+        "role": "user"
+      }
+    ],
+    "query_id": "K",
+    "unit_id": "gemma:1617:H1:K"
+  },
+  {
+    "arm": "S0",
+    "branch": "K",
+    "case_id": 1617,
+    "chat_sha256": "c633480a27207343f1f72a17956e7cc3a9b3916cb19582bba3d8bec75c516be5",
+    "input_ids_sha256": "e211c0e5ad208750bf2ffdb38568f4cb7f425d18e544087f4e0bfffa57d6597a",
+    "input_tokens": 172,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nAlbert of Saxony is affiliated with the religion of Catholic Church.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\nWilliam Levada is affiliated with the religion of Church of Scotland.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: Starting from Church of Scotland, follow these relations in order: founded by, work location. Which entity do you reach?",
+        "role": "user"
+      }
+    ],
+    "query_id": "K",
+    "unit_id": "gemma:1617:S0:K"
+  },
+  {
+    "arm": "S1",
+    "branch": "K",
+    "case_id": 1617,
+    "chat_sha256": "b5a1d153c971f93085f420658ee64ebc9e0b8784b076b24e63520abda88f983c",
+    "input_ids_sha256": "2048b3f1a2119a32a414c49873e0f03b13a5e41ad6ab559b87abe52da9d7e013",
+    "input_tokens": 172,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nWilliam Levada is affiliated with the religion of Church of Scotland.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\nAlbert of Saxony is affiliated with the religion of Catholic Church.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: Starting from Church of Scotland, follow these relations in order: founded by, work location. Which entity do you reach?",
+        "role": "user"
+      }
+    ],
+    "query_id": "K",
+    "unit_id": "gemma:1617:S1:K"
+  },
+  {
+    "arm": "C",
+    "branch": "K",
+    "case_id": 1617,
+    "chat_sha256": "7917bc272f233b0fb4e7e5d93c969933e1960fdf3cd9043cce9b1dbaf0214ab5",
+    "input_ids_sha256": "bdf1a4b060778bd71575f625011b817aff14b3af16f0fa9d0b31e01e8f9db491",
+    "input_tokens": 139,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nWilliam Levada is affiliated with the religion of Church of Scotland.\nAlbert of Saxony is affiliated with the religion of Church of Scotland.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\n\nQuestion: Starting from Church of Scotland, follow these relations in order: founded by, work location. Which entity do you reach?",
+        "role": "user"
+      }
+    ],
+    "query_id": "K",
+    "unit_id": "gemma:1617:C:K"
+  },
+  {
+    "arm": "C+",
+    "branch": "K",
+    "case_id": 1617,
+    "chat_sha256": "5ff63ee1a591d2460950b6f5939dd637732f8db751986cb685e945543218255b",
+    "input_ids_sha256": "65033d2edc2b562f78ada887fe9d38bb0c4f6e56e3900d73d59890c837dd6a54",
+    "input_tokens": 173,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.\n\nInitial record:\nWilliam Levada is affiliated with the religion of Church of Scotland.\nAlbert of Saxony is affiliated with the religion of Church of Scotland.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: Starting from Church of Scotland, follow these relations in order: founded by, work location. Which entity do you reach?",
+        "role": "user"
+      }
+    ],
+    "query_id": "K",
+    "unit_id": "gemma:1617:C+:K"
+  }
+]

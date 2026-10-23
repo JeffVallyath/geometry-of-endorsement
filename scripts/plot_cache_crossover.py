@@ -73,10 +73,12 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', type=Path, required=True, help='Fresh figure directory')
     args = parser.parse_args()
-    import make_figures as style
+    from types import SimpleNamespace
+    import matplotlib.pyplot as plt
     destination = new_output(args.output)
     if any(destination.iterdir()):
         raise FileExistsError('Choose a fresh figure output directory')
-    style.style()
-    style.OUT = destination
-    plot(style)
+    def save(fig, name):
+        fig.savefig(destination / (name + '.png'), dpi=160, metadata={'Software': None})
+        plt.close(fig)
+    plot(SimpleNamespace(OUT=destination, save=save))

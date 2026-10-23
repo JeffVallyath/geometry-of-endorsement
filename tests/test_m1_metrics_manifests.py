@@ -3,15 +3,15 @@ from __future__ import annotations
 import numpy as np
 import pandas as pd
 
-from geometry_of_truth.m1.manifests import _cluster_bucket, _public_rows
-from geometry_of_truth.m1.metrics import (
+from relation_study.m1.manifests import _cluster_bucket, _public_rows
+from relation_study.m1.metrics import (
     board_metrics,
     boards_from_manifest,
     paired_interaction_delta_ci,
     mirrored_pairwise,
 )
-from geometry_of_truth.m1.support.metrics import fit_scaler
-from geometry_of_truth.m1.support.split_stress_test import CON, SIT, VAL
+from relation_study.m1.support.metrics import fit_scaler
+from relation_study.m1.support.split_stress_test import CON, SIT, VAL
 
 
 def board_frame() -> tuple[pd.DataFrame, pd.DataFrame]:

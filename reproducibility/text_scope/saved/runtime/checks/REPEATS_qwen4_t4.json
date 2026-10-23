@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "row_id": "qwen4_t4",
+  "fresh_processes": [
+    [
+      "final",
+      12
+    ],
+    [
+      "repeat0",
+      13
+    ],
+    [
+      "repeat1",
+      14
+    ]
+  ],
+  "comparisons": 3264,
+  "max_logp_delta": 0.0,
+  "discrepancies": [],
+  "cache_identity_discrepancies": [],
+  "primary_scores_averaged_with_repeats": false,
+  "scientific_retry_authorized": false,
+  "note": "Differences are retained, not automatically called a cache bug or grounds for efficacy reruns."
+}

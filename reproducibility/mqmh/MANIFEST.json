@@ -1,0 +1,59 @@
+{
+  "files": [
+    {
+      "bytes": 99719,
+      "decoded_bytes": 859862,
+      "decoded_sha256": "8750a5410481d7b4c4b8c83aa4059622ba86597df831699500846cedc917663d",
+      "encoding": "gzip",
+      "member": "cohort.json",
+      "path": "cohort.json.gz",
+      "sha256": "bd469142dc0a5d09040fc65d01595ab8ba3a60392346e16c980fe99309e719df"
+    },
+    {
+      "bytes": 37562,
+      "decoded_bytes": 1681998,
+      "decoded_sha256": "9b606db7afb05d0564e4324a53b20ebc6d4efc2bd9f7c802fca4b84e7967babd",
+      "encoding": "gzip",
+      "member": "qwen_responses.json",
+      "path": "qwen_responses.json.gz",
+      "sha256": "bbf0d1d220e42a0097f1cd3ffc235474f278bf789d758ccd7bfcfd661cc44d49"
+    },
+    {
+      "bytes": 34619,
+      "decoded_bytes": 1687484,
+      "decoded_sha256": "bf8beeaaca6226b703cc70ebadebdd5e51dde34554530f1a66c23b18e2afd05d",
+      "encoding": "gzip",
+      "member": "gemma_responses.json",
+      "path": "gemma_responses.json.gz",
+      "sha256": "7bfcb6c4422453d971183087c6de912b80dbb17486df6937096f36c8921c0021"
+    }
+  ],
+  "schema": "ANONYMOUS_COMPACT_INPUTS_V1",
+  "study": "mqmh",
+  "support_files": [
+    {
+      "bytes": 3148,
+      "decoded_bytes": 3148,
+      "decoded_sha256": "89b0d7672565219449ca5783a582d343029e5d7fb01a0e57f93f718aaf2b38a8",
+      "encoding": "verbatim",
+      "path": "RESULTS.json",
+      "sha256": "89b0d7672565219449ca5783a582d343029e5d7fb01a0e57f93f718aaf2b38a8"
+    },
+    {
+      "bytes": 2979,
+      "decoded_bytes": 2979,
+      "decoded_sha256": "1013078ad88a2d53c9604c2c265b05bbcd9c94891ae8aaf8af0278c54222256c",
+      "encoding": "verbatim",
+      "path": "SOURCE_HASHES.json",
+      "sha256": "1013078ad88a2d53c9604c2c265b05bbcd9c94891ae8aaf8af0278c54222256c"
+    },
+    {
+      "bytes": 45911,
+      "decoded_bytes": 45911,
+      "decoded_sha256": "29ab5c6e71aecafcd153e6e1fe314e93912edb8283ae95a72fd40a56397d73d7",
+      "encoding": "verbatim",
+      "path": "case_1617.json",
+      "sha256": "29ab5c6e71aecafcd153e6e1fe314e93912edb8283ae95a72fd40a56397d73d7"
+    }
+  ]
+}

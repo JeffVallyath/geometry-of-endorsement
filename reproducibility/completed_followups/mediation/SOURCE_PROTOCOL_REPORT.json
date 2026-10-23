@@ -1,0 +1,73 @@
+{
+  "source_reported_scientific_complete": true,
+  "verification_level": "Historical report; source tensor/operational records are not part of this release",
+  "requirements": [
+    {
+      "requirement": "Original writer and native Gemma residual-addition/query-head hooks, unchanged attention backend",
+      "verdict": "PROVEN",
+      "original_record_locations": [
+        "run/results/provenance.json",
+        "run/results/GROUP_AND_HOOK_MAPPING.json",
+        "source/carrier_mediation/hooks.py",
+        "source/carrier_mediation/TEST_EVIDENCE.json"
+      ]
+    },
+    {
+      "requirement": "Native caches and original answers replay; original C and separate AFTER1 reference remain qualified",
+      "verdict": "PROVEN",
+      "origins": [
+        3,
+        5
+      ],
+      "questions": 6,
+      "original_record_locations": [
+        "run/results/baseline",
+        "source/carrier_mediation/INPUT_BINDING.json"
+      ]
+    },
+    {
+      "requirement": "Stage A: both directions, all four residual regions,39 fixed writer/control arms and actual donor clamps",
+      "verdict": "PROVEN",
+      "arms": 39,
+      "late_cache_full_reference": "Frozen worker explicitly compares every layer16–41 cache to donor before scoring; terminal success proves gate passed",
+      "temporal_negative_control": "Layer23 ONLY carrier unchanged independently verified from retained bytes",
+      "original_record_locations": [
+        "run/results/writer",
+        "report/CARRIER_TENSOR_CHANGES.json",
+        "report/WRITER_COMPONENT_MEDIATION.json"
+      ]
+    },
+    {
+      "requirement": "Selected writer full caches retained; native early caches and measured carrier match actual saved selection",
+      "verdict": "PROVEN",
+      "original_record_locations": [
+        "run/results/FROZEN_WRITER.json",
+        "run/results/selected_writer/tensors",
+        "report/NUMERICAL_AUDIT.json"
+      ]
+    },
+    {
+      "requirement": "Stage B: actual retained same-query captures, all-suffix binding,128 candidates, shams and frozen top1/2/4/8",
+      "verdict": "PROVEN",
+      "freeze_order": "Enforced by capsule-bound study.py control flow and CPU orchestration regression; not an independent signed per-row event trace",
+      "selection_not_recomputed_from_confirmation": true,
+      "original_record_locations": [
+        "run/results/readers",
+        "run/results/FROZEN_READER_RANKING.json",
+        "run/results/FROZEN_READER_SELECTION.json",
+        "report/NUMERICAL_AUDIT.json"
+      ]
+    },
+    {
+      "requirement": "Stage C: all six conditions, both directions/six questions; exact carrier-only restoration and composition gates",
+      "verdict": "PROVEN",
+      "D": "Original donor C on B background; B-produced carrier reconstructs B only as tensor control",
+      "F": "Same-site reader restoration control, not an independent natural-path test",
+      "original_record_locations": [
+        "run/results/chain",
+        "report/CHAIN_EFFECTS.json",
+        "source/carrier_mediation/study.py"
+      ]
+    }
+  ]
+}

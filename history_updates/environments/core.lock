@@ -1,0 +1,6 @@
+# Tested minimal CPU recorded-evidence environment, Python 3.13.12.
+# No torch, base weights, pretrained inference, or training.
+numpy==2.4.4
+transformers==4.56.2
+tokenizers==0.22.2
+Jinja2==3.1.4

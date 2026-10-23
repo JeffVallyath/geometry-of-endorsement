@@ -3,11 +3,11 @@ from __future__ import annotations
 import numpy as np
 import pandas as pd
 
-from geometry_of_truth.m1.analysis import analyze
-from geometry_of_truth.m1.config import load_config
-from geometry_of_truth.m1.probes import fit_difference_in_means, fit_logistic
-from geometry_of_truth.m1.reporting import render_report, write_results
-from geometry_of_truth.m1.support.split_stress_test import CON, SIT, VAL
+from relation_study.m1.analysis import analyze
+from relation_study.m1.config import load_config
+from relation_study.m1.probes import fit_difference_in_means, fit_logistic
+from relation_study.m1.reporting import render_report, write_results
+from relation_study.m1.support.split_stress_test import CON, SIT, VAL
 
 
 def _rows_and_boards(split: str, count: int, start: int):
@@ -118,7 +118,7 @@ def _synthetic_inputs():
 
 def test_analysis_freezes_selection_and_enforces_exact_invariants(monkeypatch, tmp_path) -> None:
     monkeypatch.setattr(
-        "geometry_of_truth.m1.analysis.fit_sbert_interaction",
+        "relation_study.m1.analysis.fit_sbert_interaction",
         lambda train, *frames, device: (
             [
                 frame["label"].to_numpy(dtype=float)

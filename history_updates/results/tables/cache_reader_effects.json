@@ -1,0 +1,163 @@
+{
+  "title": "Question-side reader interventions",
+  "unit": "Fraction of the recorded full-carrier log-odds effect. Selection uses the original training condition; all reverse/format checks remain separate.",
+  "columns": [
+    "Heads",
+    "Recipient_history",
+    "Answer_format",
+    "Selection_role",
+    "Blocked_fraction",
+    "Restored_fraction",
+    "Minimum_fraction"
+  ],
+  "rows": [
+    {
+      "Heads": 1,
+      "Recipient_history": "H3",
+      "Answer_format": "Words",
+      "Selection_role": "TRAINING",
+      "Blocked_fraction": 0.3244987613154758,
+      "Restored_fraction": 0.11855704984748586,
+      "Minimum_fraction": 0.11855704984748586
+    },
+    {
+      "Heads": 1,
+      "Recipient_history": "H3",
+      "Answer_format": "Letters",
+      "Selection_role": "CODED_OR_REVERSE_CHECK",
+      "Blocked_fraction": 0.2984852190588357,
+      "Restored_fraction": 0.08220557033855977,
+      "Minimum_fraction": 0.08220557033855977
+    },
+    {
+      "Heads": 1,
+      "Recipient_history": "H5",
+      "Answer_format": "Words",
+      "Selection_role": "CODED_OR_REVERSE_CHECK",
+      "Blocked_fraction": 0.27942947677784696,
+      "Restored_fraction": 0.43771703816503166,
+      "Minimum_fraction": 0.27942947677784696
+    },
+    {
+      "Heads": 1,
+      "Recipient_history": "H5",
+      "Answer_format": "Letters",
+      "Selection_role": "CODED_OR_REVERSE_CHECK",
+      "Blocked_fraction": 0.18176887548941553,
+      "Restored_fraction": 0.3607359930445088,
+      "Minimum_fraction": 0.18176887548941553
+    },
+    {
+      "Heads": 2,
+      "Recipient_history": "H3",
+      "Answer_format": "Words",
+      "Selection_role": "TRAINING",
+      "Blocked_fraction": 0.48072351465300833,
+      "Restored_fraction": 0.21278411076679388,
+      "Minimum_fraction": 0.21278411076679388
+    },
+    {
+      "Heads": 2,
+      "Recipient_history": "H3",
+      "Answer_format": "Letters",
+      "Selection_role": "CODED_OR_REVERSE_CHECK",
+      "Blocked_fraction": 0.4661516026453616,
+      "Restored_fraction": 0.13426414962413458,
+      "Minimum_fraction": 0.13426414962413458
+    },
+    {
+      "Heads": 2,
+      "Recipient_history": "H5",
+      "Answer_format": "Words",
+      "Selection_role": "CODED_OR_REVERSE_CHECK",
+      "Blocked_fraction": 0.4463157357177625,
+      "Restored_fraction": 0.6406667582035721,
+      "Minimum_fraction": 0.4463157357177625
+    },
+    {
+      "Heads": 2,
+      "Recipient_history": "H5",
+      "Answer_format": "Letters",
+      "Selection_role": "CODED_OR_REVERSE_CHECK",
+      "Blocked_fraction": 0.3300680102108706,
+      "Restored_fraction": 0.6314935112510678,
+      "Minimum_fraction": 0.3300680102108706
+    },
+    {
+      "Heads": 4,
+      "Recipient_history": "H3",
+      "Answer_format": "Words",
+      "Selection_role": "TRAINING",
+      "Blocked_fraction": 0.7435616716264996,
+      "Restored_fraction": 0.5632666796631486,
+      "Minimum_fraction": 0.5632666796631486
+    },
+    {
+      "Heads": 4,
+      "Recipient_history": "H3",
+      "Answer_format": "Letters",
+      "Selection_role": "CODED_OR_REVERSE_CHECK",
+      "Blocked_fraction": 0.8574692259815403,
+      "Restored_fraction": 0.6090849185172295,
+      "Minimum_fraction": 0.6090849185172295
+    },
+    {
+      "Heads": 4,
+      "Recipient_history": "H5",
+      "Answer_format": "Words",
+      "Selection_role": "CODED_OR_REVERSE_CHECK",
+      "Blocked_fraction": 0.5476216129779053,
+      "Restored_fraction": 0.6811216097664805,
+      "Minimum_fraction": 0.5476216129779053
+    },
+    {
+      "Heads": 4,
+      "Recipient_history": "H5",
+      "Answer_format": "Letters",
+      "Selection_role": "CODED_OR_REVERSE_CHECK",
+      "Blocked_fraction": 0.6080493874552895,
+      "Restored_fraction": 0.7711574470540535,
+      "Minimum_fraction": 0.6080493874552895
+    },
+    {
+      "Heads": 8,
+      "Recipient_history": "H3",
+      "Answer_format": "Words",
+      "Selection_role": "TRAINING",
+      "Blocked_fraction": 0.8882350903432971,
+      "Restored_fraction": 0.7777574880208111,
+      "Minimum_fraction": 0.7777574880208111
+    },
+    {
+      "Heads": 8,
+      "Recipient_history": "H3",
+      "Answer_format": "Letters",
+      "Selection_role": "CODED_OR_REVERSE_CHECK",
+      "Blocked_fraction": 0.9504768093597536,
+      "Restored_fraction": 0.7515920457700069,
+      "Minimum_fraction": 0.7515920457700069
+    },
+    {
+      "Heads": 8,
+      "Recipient_history": "H5",
+      "Answer_format": "Words",
+      "Selection_role": "CODED_OR_REVERSE_CHECK",
+      "Blocked_fraction": 0.7124137716715644,
+      "Restored_fraction": 0.8337261942907225,
+      "Minimum_fraction": 0.7124137716715644
+    },
+    {
+      "Heads": 8,
+      "Recipient_history": "H5",
+      "Answer_format": "Letters",
+      "Selection_role": "CODED_OR_REVERSE_CHECK",
+      "Blocked_fraction": 0.7269405480348968,
+      "Restored_fraction": 0.8941222436563443,
+      "Minimum_fraction": 0.7269405480348968
+    }
+  ],
+  "sources": [
+    "completed_followups/mediation/ALL_UNIQUE_FORWARD_SCORES.csv",
+    "completed_followups/mediation/READER_UNION_EFFECTS.json"
+  ]
+}

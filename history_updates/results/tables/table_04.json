@@ -1,0 +1,44 @@
+{
+  "title": "Public worked example",
+  "unit": "Parsed target answers under four histories and two references.",
+  "columns": [
+    "History",
+    "Qwen2.5-7B",
+    "Gemma-2-9B"
+  ],
+  "rows": [
+    {
+      "History": "H0",
+      "Qwen2.5-7B": "Galilee",
+      "Gemma-2-9B": "Edinburgh"
+    },
+    {
+      "History": "H1",
+      "Qwen2.5-7B": "Edinburgh",
+      "Gemma-2-9B": "Galilee"
+    },
+    {
+      "History": "S0",
+      "Qwen2.5-7B": "Edinburgh",
+      "Gemma-2-9B": "Edinburgh"
+    },
+    {
+      "History": "S1",
+      "Qwen2.5-7B": "Edinburgh",
+      "Gemma-2-9B": "Edinburgh"
+    },
+    {
+      "History": "C",
+      "Qwen2.5-7B": "Edinburgh",
+      "Gemma-2-9B": "Edinburgh"
+    },
+    {
+      "History": "C+",
+      "Qwen2.5-7B": "Edinburgh",
+      "Gemma-2-9B": "Edinburgh"
+    }
+  ],
+  "sources": [
+    "original_public_history/analysis/case_1617.json"
+  ]
+}

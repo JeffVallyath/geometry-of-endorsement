@@ -1,0 +1,106 @@
+{
+  "schema": "ANONYMOUS_COMPACT_INPUTS_V1",
+  "study": "mediation",
+  "files": [
+    {
+      "bytes": 23045,
+      "sha256": "f2ba394d8dc58e8125a3055b97ca2b841e326ee802e989bd61f49dc89476c8b6",
+      "encoding": "gzip",
+      "decoded_bytes": 229899,
+      "decoded_sha256": "d42407fe50f9eca6529a608b4044fe915c28d9e8c734dea093e87f70c5376831",
+      "path": "ADVERSE_AND_OMISSIONS.json.gz",
+      "member": "ADVERSE_AND_OMISSIONS.json"
+    },
+    {
+      "bytes": 239281,
+      "sha256": "c653563d0a421179da3360309c1e22cd0c969d46c73191f598d078a554f6a534",
+      "encoding": "gzip",
+      "decoded_bytes": 2683169,
+      "decoded_sha256": "ecbf4c1775f93da061ddb01afe72010e23a0d5b2a55e4c75080c4e00e9fe2105",
+      "path": "ALL_CONDITION_RESULTS.json.gz",
+      "member": "ALL_CONDITION_RESULTS.json"
+    },
+    {
+      "bytes": 186973,
+      "sha256": "0034264d9212550ffcc8e5edd7aeeebdac662f3aaa77e7eeadf5d53f8c77cdf2",
+      "encoding": "gzip",
+      "decoded_bytes": 813385,
+      "decoded_sha256": "31c1120d94eeb31c2861667e2add7c74a1cc5bb3e1ee40c5aeea41f49257e953",
+      "path": "ALL_UNIQUE_FORWARD_SCORES.csv.gz",
+      "member": "ALL_UNIQUE_FORWARD_SCORES.csv"
+    },
+    {
+      "bytes": 21289,
+      "sha256": "82670cadfa8c980a78c02c3fd853b694d12515c7852fe4f5f082f68f29e172d0",
+      "encoding": "gzip",
+      "decoded_bytes": 304404,
+      "decoded_sha256": "d02c2af21cb0b256b50a5f3a2b5594d996ab3e055ae3e044f0c41f0bc619a088",
+      "path": "CARRIER_TENSOR_CHANGES.json.gz",
+      "member": "CARRIER_TENSOR_CHANGES.json"
+    },
+    {
+      "bytes": 2608,
+      "sha256": "91000736122d5fa5393c47b4646d231424e511f0c59ece6e477534a270217d7a",
+      "encoding": "gzip",
+      "decoded_bytes": 38268,
+      "decoded_sha256": "2d0c2a3eace8b005a32bc9c14805b97fa2fffebc6b25299c04f34d930ba2faaa",
+      "path": "CASE_INPUT_DISCLOSURE.json.gz",
+      "member": "CASE_INPUT_DISCLOSURE.json"
+    },
+    {
+      "bytes": 14017,
+      "sha256": "116100c4a7a33e56fedcfd4b671c90abd0d9d02ba59247ce2a29b9e5b596984c",
+      "encoding": "gzip",
+      "decoded_bytes": 151867,
+      "decoded_sha256": "aa62572d0cb1a2ffb96086a665209f55784867cba012be0578e823bba387036f",
+      "path": "CHAIN_EFFECTS.json.gz",
+      "member": "CHAIN_EFFECTS.json"
+    },
+    {
+      "bytes": 3818,
+      "sha256": "41b9287d3481de40532cabae169a446893b7ebb23fd0827d31d1b69e8bbbcb6c",
+      "encoding": "verbatim",
+      "decoded_bytes": 3818,
+      "decoded_sha256": "41b9287d3481de40532cabae169a446893b7ebb23fd0827d31d1b69e8bbbcb6c",
+      "path": "NUMERICAL_AUDIT.json",
+      "member": "NUMERICAL_AUDIT.json"
+    },
+    {
+      "bytes": 3042,
+      "sha256": "11c6f2264ce37505441e278340aa847385f11e520e84775a0e3fde46cd2dbe37",
+      "encoding": "verbatim",
+      "decoded_bytes": 3042,
+      "decoded_sha256": "11c6f2264ce37505441e278340aa847385f11e520e84775a0e3fde46cd2dbe37",
+      "path": "SOURCE_PROTOCOL_REPORT.json",
+      "member": "SOURCE_PROTOCOL_REPORT.json"
+    },
+    {
+      "bytes": 6818,
+      "sha256": "0b0f4748ed7c38ab05a95cf5e6082e795fafcad29ba37d34972040c6389ef2fe",
+      "encoding": "gzip",
+      "decoded_bytes": 61923,
+      "decoded_sha256": "819edbb1541d1ed586a7d18f4b16ba2475f4556934c95b860afbb6513da57ee9",
+      "path": "READER_UNION_EFFECTS.json.gz",
+      "member": "READER_UNION_EFFECTS.json"
+    },
+    {
+      "bytes": 4971,
+      "sha256": "b50283fe8906c2a71798c9fd26dca33784073b1886c7f8c0d29bd95d9f42bc98",
+      "encoding": "verbatim",
+      "decoded_bytes": 4971,
+      "decoded_sha256": "b50283fe8906c2a71798c9fd26dca33784073b1886c7f8c0d29bd95d9f42bc98",
+      "path": "TABLES.md",
+      "member": "TABLES.md"
+    },
+    {
+      "bytes": 24542,
+      "sha256": "e0501b1fab88683737e1cd75401e060f349c21d3894d6e09a19fb44ec33b33f0",
+      "encoding": "gzip",
+      "decoded_bytes": 246121,
+      "decoded_sha256": "8a29d8b19758fe8128448704b8696ec3eaab04271cd40d7de99fb3605635149a",
+      "path": "WRITER_COMPONENT_MEDIATION.json.gz",
+      "member": "WRITER_COMPONENT_MEDIATION.json"
+    }
+  ],
+  "support_files": []
+}

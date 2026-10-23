@@ -25,7 +25,7 @@ def replay(tmp_path_factory):
 def test_complete_raw_replay_and_frozen_source_tables(replay):
     output, report = replay
     assert report['status'] == 'PASS'
-    assert report['compact_members_checked'] == len(load(qwen.SOURCE / 'SOURCE.json')['files'])
+    assert report['compact_members_checked'] == len(load(qwen.SOURCE / 'MANIFEST.json')['files'])
     assert report['raw_final_rows'] == 36992 and report['classification_fields_checked'] == 27136
     assert report['repeats_checked'] == 4488 and report['full_case_classifications_identical'] == 4
     assert report['repeats_strictly_equal'] and report['original_csv_tables_byte_identical']
@@ -107,7 +107,7 @@ def test_derived_roundoff_never_permits_changed_classifications():
 def test_compact_raw_corruption_fails_before_replay(tmp_path):
     mutant = tmp_path / 'compact'
     shutil.copytree(qwen.SOURCE, mutant)
-    binding = load(mutant / 'SOURCE.json')
+    binding = load(mutant / 'MANIFEST.json')
     row = next(r for r in binding['files'] if r['member'].endswith('RAW_SCORES.jsonl'))
     path = mutant / row['path']
     path.write_bytes(path.read_bytes() + b'changed')
@@ -136,6 +136,6 @@ def test_portfolio_uses_five_distinct_checkpoints_and_preserves_old_failures():
     portfolio = qwen.check_portfolio()
     assert portfolio['checkpoints'] == len(set(portfolio['distinct_models'])) == 5
     assert portfolio['families'] == 3 and not portfolio['numerical_bridges_repaired']
-    table = load(qwen.SOURCE / 'portfolio/MAIN_TABLE.json')
+    table = qwen.portfolio_table()
     old = [row for row in table if row['row_id'] == 'qwen32_t4']
     assert len(old) == 2 and all(row['status'] == 'NOT_MEASURED' and row['witness_rate'] is None for row in old)

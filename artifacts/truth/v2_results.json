@@ -1,6 +1,5 @@
 {
   "auroc_role": "descriptive_only_not_a_permutation_gate",
-  "cache_signature": "c019ed735ef51cf028099e4668db9790f38a93bfc6aef3abbaeb85a7bd14dc28",
   "checks": {
     "all_four_mapping_transfer_T_positive": true,
     "at_least_one_immediate_neighbor_clear": true,
@@ -2054,11 +2053,6 @@
     "transfer:standard": 1.0
   },
   "permutation_null": {
-    "checkpoint": {
-      "checkpoint_signature": "c019ed735ef51cf028099e4668db9790f38a93bfc6aef3abbaeb85a7bd14dc28",
-      "restored_from": null,
-      "resumed_permutations": 0
-    },
     "count_greater_equal_observed": 0,
     "definition": "Within-training-group semantic sign flips; complete all-layer dev selection and one untouched primary test evaluation per null run.",
     "mean": 0.29742816103226505,

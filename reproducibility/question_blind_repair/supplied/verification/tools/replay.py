@@ -1,18 +1,18 @@
-"""Independent, standard-library CPU reconstruction from retained raw records.
+"""Original standard-library score-reader and comparator definitions.
+
+The public wrapper reconstructs statistics from recovered score projections.
+Original native-cache receipts and the raw journal remain outside this release.
 
 No scientific implementation is imported. No neural model, training, bootstrap,
 threshold change or additional independent observation is created here.
 """
-import argparse
 from collections import Counter
 import csv
-import datetime as dt
 import gzip
 import hashlib
 import json
 import math
 from pathlib import Path
-import sys
 
 TIMING={'batch_seconds','qualification_seconds','preprocessing_seconds','compile_seconds'}
 load=lambda p:json.loads(Path(p).read_text(encoding='utf8'))
@@ -196,92 +196,3 @@ def audit_events(path,expected_roots):
             opened[rid]+=1
     if sealed!=set(expected_roots) or set(opened)!=set(expected_roots):raise ValueError('Missing case boundary events')
     return dict(path=str(path),sha256=sha(path),roots=sorted(sealed),all_evaluation_opens_after_seal=True)
-
-def main(args):
-    output=args.output
-    if output.exists():raise FileExistsError('Use a fresh replay output directory')
-    output.mkdir(parents=True)
-    capsule=args.capsule;original=capsule/'original';contract=load(capsule/'EXECUTION_CONTRACT.json')
-    manifest=load(capsule/'RUN_CAPSULE.json')
-    for name,expected in manifest['files'].items():
-        p=capsule/name
-        if not p.resolve().is_relative_to(capsule.resolve()) or p.is_symlink() or sha(p)!=expected:
-            raise ValueError('Frozen capsule member differs: '+name)
-    old_roots={0:args.seed0,1:args.seed1}
-    comparisons=[];audits=[];all_rows={name:[] for name in ('targets','families','reverse_targets','donor_agreement')};events=[]
-    worked=[];retained_new={}
-    for phase,roots in [('anchor',[contract['anchor']]),('repeat',contract['roots'])]:
-        for seed in (0,1):
-            events.append(audit_events(args.fresh/f'{phase}-seed{seed}'/'EVENTS.jsonl',roots))
-            for rid in roots:
-                reverse=phase=='repeat' and rid in contract['reverse_roots']
-                old,old_seal,oa=read_case(old_roots[seed]/'final'/rid,reverse)
-                new,new_seal,na=read_case(args.fresh/f'{phase}-seed{seed}'/'cases'/rid,reverse)
-                old['physical'].sort(key=lambda r:(r['context'],r['query_id']))
-                new['physical'].sort(key=lambda r:(r['context'],r['query_id']))
-                c=compare(old,new);sc=compare(old_seal,new_seal,'/CONTEXT_SEAL')
-                c.update(phase=phase,root_id=rid,seed=seed,rows=len(new['physical']),seal=sc)
-                c['all_score_and_binding_fields_pass']=c['tolerance_pass'] and sc['tolerance_pass']
-                comparisons.append(c);audits.append(dict(phase=phase,root_id=rid,seed=seed,old=oa,fresh=na))
-                design=original/'generated'/rid
-                root,questions,plan=load(design/'root.json'),load(design/'questions.json'),load(design/'PLAN.json')
-                if new_seal['mask']!=load(design/'MASK.json'):raise ValueError('Frozen mask mismatch')
-                if phase=='repeat':
-                    for label,panel in [('archived',old),('fresh',new)]:
-                        m=metrics(root,questions,plan,panel,reverse)
-                        for kind,rows in m.items():all_rows[kind].extend(dict(dataset=label,**r) for r in rows)
-                    retained_new[rid,seed]=(new,questions,root)
-    for kind,rows in all_rows.items():table(output/(kind.upper()+'.csv'),rows)
-    # The named worked example is fixed by the handoff, never chosen from new outcomes.
-    panel,questions,root=retained_new['QBR1-FINAL-0127',1]
-    index={(r['context'],r['query_id']):r for r in panel['physical']}
-    slots=[('A_history1','o1/INV_PAIR_NLL_s1'),('A_history2','o2/INV_PAIR_NLL_s1'),
-           ('B16_23_history2','B/o2'),('C24_31_history2','C/o2'),('D_reference','o0/INV_PAIR_NLL_s1'),
-           ('RB16_23_history2','RB/o2'),('RC24_31_history2','RC/o2')]
-    for q in questions:
-        s=q['spec']
-        if '-d0-' not in q['query_id'] or s['p']!=0:continue
-        desired=(s['kind']=='direct' and s['a'] in (1,2)) or (s['kind'] in ('same','both','either') and {s['a'],s['b']}=={1,2})
-        if not desired:continue
-        row=dict(query_id=q['query_id'],question=q['text'],gold_label=q['labels'][truth(root['terminal']['values'],s)])
-        for label,ctx in slots:
-            r=index[ctx,q['query_id']];row[label]=q['labels'][r['prediction']] if r['valid'] else 'INVALID'
-        worked.append(row)
-    if len(worked)!=5:raise ValueError('Frozen worked-example question mapping differs')
-    table(output/'WORKED_EXAMPLE.csv',worked)
-    summary={}
-    for dataset in ('archived','fresh'):
-        target=[r for r in all_rows['targets'] if r['dataset']==dataset]
-        families=[r for r in all_rows['families'] if r['dataset']==dataset]
-        reverse=[r for r in all_rows['reverse_targets'] if r['dataset']==dataset]
-        summary[dataset]=dict(selected_cases=6,case_seed_blocks=12,target_rows=len(target),
-            baseline_W=sum(r['W'] for r in target),B_repairs=sum(r['B_repair'] for r in target),
-            C_repairs=sum(r['C_repair'] for r in target),B_remaining_qualifying_witnesses=sum(r['B_qualifying_witness'] for r in target),
-            eligible_RB_targets=sum(r['eligible_history_dependent_error'] for r in reverse if r['arm']=='RB'),
-            eligible_RC_targets=sum(r['eligible_history_dependent_error'] for r in reverse if r['arm']=='RC'),
-            response_counts=[dict(family=fam,arm=arm,**{key:sum(r[key] for r in families if r['family']==fam and r['arm']==arm)
-                for key in ('scheduled','correct','baseline_correct','harm','benefit','invalid')}) for fam in ('direct','joint','opposes','all34') for arm in ('A','B','C','D')])
-    comparison_summary=dict(status='ALL_RETAINED_SCORE_BINDINGS_REPRODUCED' if all(r['all_score_and_binding_fields_pass'] for r in comparisons) else 'DISCREPANCIES_RETAINED',
-        post_hoc_selection=True,primary_bootstrap_unchanged=True,new_independent_observations=0,
-        blocks=len(comparisons),physical_rows=sum(r['rows'] for r in comparisons),
-        score_binding_exact_blocks=sum(r['score_binding_exact_equal'] and r['seal']['score_binding_exact_equal'] for r in comparisons),
-        max_score_delta=max(r['max_delta'] for r in comparisons),comparisons=comparisons)
-    save(output/'REPEAT_COMPARISON.json',comparison_summary)
-    save(output/'RAW_AND_BOUNDARY_AUDIT.json',dict(cases=audits,events=events))
-    save(output/'SELECTED_RECOUNT.json',summary)
-    save(output/'CPU_REPLAY.json',dict(status='CPU_REPLAY_COMPLETE',at=dt.datetime.now(dt.timezone.utc).isoformat(),
-        python=sys.version,independent_implementation_no_scientific_imports=True,
-        original_capsule_sha256=contract['original_capsule_sha256'],extension_manifest_sha256=sha(capsule/'RUN_CAPSULE.json'),
-        comparison_status=comparison_summary['status'],physical_rows=comparison_summary['physical_rows'],
-        data_products={p.name:sha(p) for p in output.iterdir() if p.is_file()},new_population_inference=False))
-    print(json.dumps(dict(comparison={k:v for k,v in comparison_summary.items() if k!='comparisons'},
-          selected={k:{x:y for x,y in v.items() if x!='response_counts'} for k,v in summary.items()}),indent=2))
-
-if __name__=='__main__':
-    p=argparse.ArgumentParser()
-    p.add_argument('--capsule',type=Path,required=True)
-    p.add_argument('--seed0',type=Path,required=True)
-    p.add_argument('--seed1',type=Path,required=True)
-    p.add_argument('--fresh',type=Path,required=True)
-    p.add_argument('--output',type=Path,required=True)
-    main(p.parse_args())

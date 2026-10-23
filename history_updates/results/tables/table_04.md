@@ -1,0 +1,12 @@
+# Public worked example
+
+Parsed target answers under four histories and two references.
+
+| History | Qwen2.5-7B | Gemma-2-9B |
+|---|---|---|
+| H0 | Galilee | Edinburgh |
+| H1 | Edinburgh | Galilee |
+| S0 | Edinburgh | Edinburgh |
+| S1 | Edinburgh | Edinburgh |
+| C | Edinburgh | Edinburgh |
+| C+ | Edinburgh | Edinburgh |

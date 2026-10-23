@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "experiment_id": "2026-08-03-llama-m1-development",
+  "experiment_id": "m1-development-llama",
   "hypothesis": "The joint pre-answer state encodes how the named consideration bears on the action in context.",
   "baseline": "Frozen SBERT interaction score on the same 125 development checkerboards.",
   "claim_boundary": "Nonconfirmatory development evidence only. No human-audited confirmatory result is included.",
@@ -48,11 +48,6 @@
     "rationale": "This tolerance requires agreement after rounding to four decimal places, which is the public reporting precision."
   },
   "retained_provenance": {
-    "source_extraction_commit": "1f6786ee4fae6288cc8fac5f09111629659c0981",
-    "analysis_commit": "37f4a59daeb720bc4c2b540c5692c7a3b1e4819d",
-    "finalization_commit": "18117f729d72dc7869c1a1fe35c24ebd7516b0b8",
-    "source_result_sha256": "85c281974299682cd544d341d73174997ddc696b73a0912bfb274162404f34e0",
-    "source_audit_archive_sha256": "d1e57f79cd93e7ae7a4db44076dcbe6785c685c31e908e717012c0f509f9ac53",
     "source_text_included": false
   }
 }

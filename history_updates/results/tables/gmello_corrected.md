@@ -1,0 +1,11 @@
+# Corrected local-graph comparison
+
+Cases /128, targets /384, controls /517; matched original/current targets /1536. CORE/FULL are primary; TEXT is secondary.
+
+| Endpoint | Complete_cases | Targets | Controls | Original_targets | Matched_current_targets |
+|---|---|---|---|---|---|
+| REPAIR_0 | 124 | 380 | 517 | 1522 | 1520 |
+| REPAIR_1 | 127 | 383 | 517 | 1524 | 1532 |
+| G_CORE | 91 | 323 | 517 | 1364 | 1292 |
+| G_FULL | 89 | 321 | 516 | 1378 | 1284 |
+| G_TEXT | 46 | 236 | 474 | 1000 | 966 |

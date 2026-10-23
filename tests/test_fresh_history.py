@@ -41,8 +41,8 @@ def example(analyzer):
 
 def test_compact_inventory_and_frozen_calculation_bytes():
     assert replay.verify() > 600
-    source = load(replay.SOURCE / 'SOURCE.json')
-    for name in ('source/analyze.py', 'source/decision.py', 'source/original_replay.py'):
+    source = load(replay.SOURCE / 'CODE_MANIFEST.json')
+    for name in ('source/analyze.py', 'source/decision.py', 'source/replay.py'):
         record = next(r for r in source['files'] if r['path'] == name)
         assert hashlib.sha256((replay.SOURCE / name).read_bytes()).hexdigest() == record['sha256']
     trees = ast.parse((replay.SOURCE / 'source/panels.py').read_text(encoding='utf8'))
@@ -190,7 +190,7 @@ def test_offline_child_allows_local_platform_metadata(tmp_path):
 
 def test_changed_compact_artifact_fails_before_replay(tmp_path):
     (tmp_path / 'value.json').write_text('{}', encoding='utf8')
-    (tmp_path / 'MANIFEST.json').write_text(json.dumps(dict(schema='FHV1_COMPACT_SCIENTIFIC_V1', source_archive_sha256=replay.ARCHIVE_SHA256,
+    (tmp_path / 'MANIFEST.json').write_text(json.dumps(dict(schema='REVIEW_FRESH_HISTORY_V1',
         files=[dict(path='value.json', bytes=2, sha256='0' * 64)])), encoding='utf8')
     with pytest.raises(ValueError, match='Scientific artifact changed'):
         replay.verify(tmp_path)
@@ -199,3 +199,18 @@ def test_changed_compact_artifact_fails_before_replay(tmp_path):
 def test_existing_output_is_never_replaced(tmp_path):
     with pytest.raises(ValueError, match='fresh output'):
         replay.export(tmp_path)
+
+
+def test_nested_manifest_cannot_hide_an_undeclared_file(tmp_path):
+    generated = tmp_path / 'generated'
+    generated.mkdir()
+    payload = b'{"files": {}}'
+    (generated / 'DATA_FREEZE.json').write_bytes(payload)
+    (tmp_path / 'MANIFEST.json').write_text(json.dumps({
+        'schema': 'REVIEW_FRESH_HISTORY_V1', 'files': [{
+            'path': 'generated/DATA_FREEZE.json', 'bytes': len(payload),
+            'sha256': hashlib.sha256(payload).hexdigest()}]}), encoding='utf8')
+    assert replay.verify(tmp_path) == 1
+    (generated / 'MANIFEST.json').write_text('{}', encoding='utf8')
+    with pytest.raises(ValueError, match='missing or undeclared'):
+        replay.verify(tmp_path)

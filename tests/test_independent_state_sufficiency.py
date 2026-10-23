@@ -102,8 +102,9 @@ def test_inputs_contain_no_precomputed_primary_classifications():
     manifest=iv.check_manifest(BASE)
     assert len({r['path'] for r in manifest['files']})==len(manifest['files'])
     for row in manifest['files']:
-        assert row['sources'] and row['row_counts'] and row['transformation']
-        assert all(len(s['sha256'])==64 and s['member'] and s['archive'] for s in row['sources'])
+        assert row['row_counts'] and row['transformation']
+        assert len(row['sha256'])==64 and row['bytes']>0
+        assert not {'sources','archive','original_sha256'} & row.keys()
         if '/responses/' in row['path']:
             panel=iv.load(BASE/row['path'])
             assert row['row_counts']=={'physical_responses':len(panel['physical']),'logical_responses':len(panel['bindings']),'contexts':len(panel['contexts'])}

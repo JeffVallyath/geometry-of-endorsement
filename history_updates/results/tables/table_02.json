@@ -1,0 +1,82 @@
+{
+  "title": "Synthetic worked example",
+  "unit": "One selected question, eight histories, 20 checks per history.",
+  "columns": [
+    "History",
+    "Changed_facts",
+    "Tokens_before_question",
+    "Checks_passed",
+    "Checks",
+    "Answer"
+  ],
+  "rows": [
+    {
+      "History": "H0",
+      "Changed_facts": 0,
+      "Tokens_before_question": 455,
+      "Checks_passed": 20,
+      "Checks": 20,
+      "Answer": "No"
+    },
+    {
+      "History": "H1",
+      "Changed_facts": 1,
+      "Tokens_before_question": 456,
+      "Checks_passed": 20,
+      "Checks": 20,
+      "Answer": "No"
+    },
+    {
+      "History": "H2",
+      "Changed_facts": 1,
+      "Tokens_before_question": 456,
+      "Checks_passed": 20,
+      "Checks": 20,
+      "Answer": "Yes"
+    },
+    {
+      "History": "H3",
+      "Changed_facts": 2,
+      "Tokens_before_question": 457,
+      "Checks_passed": 20,
+      "Checks": 20,
+      "Answer": "No"
+    },
+    {
+      "History": "H4",
+      "Changed_facts": 1,
+      "Tokens_before_question": 454,
+      "Checks_passed": 20,
+      "Checks": 20,
+      "Answer": "Yes"
+    },
+    {
+      "History": "H5",
+      "Changed_facts": 2,
+      "Tokens_before_question": 455,
+      "Checks_passed": 20,
+      "Checks": 20,
+      "Answer": "No"
+    },
+    {
+      "History": "H6",
+      "Changed_facts": 2,
+      "Tokens_before_question": 455,
+      "Checks_passed": 20,
+      "Checks": 20,
+      "Answer": "Yes"
+    },
+    {
+      "History": "H7",
+      "Changed_facts": 3,
+      "Tokens_before_question": 456,
+      "Checks_passed": 20,
+      "Checks": 20,
+      "Answer": "No"
+    }
+  ],
+  "sources": [
+    "fresh/tables/PRIMARY_WITNESSES.csv",
+    "fresh_history_validation/examples/EXAMPLE_0017.json"
+  ]
+}

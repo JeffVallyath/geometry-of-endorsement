@@ -1,0 +1,173 @@
+{
+  "schema": "ANONYMOUS_PAIRED_TRAINING_RECORD_V1",
+  "scope": "Recovered original source and execution metadata; reference-only, not fresh retraining",
+  "entrypoint": "source/rtc7_train.py.txt:train_condition",
+  "source_snapshots_executable_as_delivered": false,
+  "explicit_optimizer": {
+    "name": "torch.optim.AdamW",
+    "learning_rates": {
+      "INV": 0.0003,
+      "FREE": 0.001
+    },
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0.0
+  },
+  "learning_rate_scheduler": "None instantiated or stepped in the original paired training function",
+  "unspecified_optimizer_options": "Not inferred from library defaults",
+  "norm_regularization_weight": 0.01,
+  "gradient_clip_norm": 1.0,
+  "loss": {
+    "nll": "Full-vocabulary label negative log likelihood",
+    "consistency": "Symmetric KL on the conditional two-label distribution",
+    "kappa_by_suffix": {
+      "NLL": 0,
+      "CONSISTENCY": 1
+    },
+    "weights": "Original per-branch 24-question bundle weights; no microbatch renormalization"
+  },
+  "fit_pairs": 64,
+  "calibration_pairs": 32,
+  "aligned_questions_per_pair": 24,
+  "questions_per_group": 4,
+  "origins_per_pair": 2,
+  "groups_per_epoch": 384,
+  "paired_question_slots_per_epoch": 3072,
+  "forwards_per_step": 3,
+  "backwards_per_step": 2,
+  "optimizer_steps_per_group": 1,
+  "no_grad_live_replay_tolerance": {
+    "atol": 0.0,
+    "rtol": 0.0
+  },
+  "initialization": "Matching actor/seed constrained or unrestricted COMPLETE_SINGLE checkpoint; fresh AdamW moments",
+  "checkpoint_zero": "Exact saved realized basis evaluated before enabling differentiable QR",
+  "selection": "Original CAL-only feasibility and tie-breaking in rtc7_common.py.txt",
+  "resume": "Original function restores owned editor, optimizer and RNG state; snapshots are not included or loaded",
+  "selected_runs": [
+    {
+      "actor": "gemma",
+      "procedure": "FREE_PAIR_CONSISTENCY",
+      "seed": 0,
+      "selected_epoch": 0,
+      "selected_parameter_path": "../weights/gemma/FREE_PAIR_CONSISTENCY/s0/setter.npz",
+      "selected_parameter_sha256": "1ebc53347229e07eed2f91002472c9b181dd7657e8d09b5a3d0f6c075d72fc87",
+      "attempted_epochs": 1,
+      "completed_steps": 384,
+      "fit_pairs": 64,
+      "calibration_pairs": 32
+    },
+    {
+      "actor": "gemma",
+      "procedure": "FREE_PAIR_CONSISTENCY",
+      "seed": 1,
+      "selected_epoch": 1,
+      "selected_parameter_path": "../weights/gemma/FREE_PAIR_CONSISTENCY/s1/setter.npz",
+      "selected_parameter_sha256": "59657b4d1428d8d7d050bb23569894468e4c99f490b32ee98aa4f508b492ab1b",
+      "attempted_epochs": 1,
+      "completed_steps": 384,
+      "fit_pairs": 64,
+      "calibration_pairs": 32
+    },
+    {
+      "actor": "gemma",
+      "procedure": "INV_PAIR_CONSISTENCY",
+      "seed": 1,
+      "selected_epoch": 1,
+      "selected_parameter_path": "../weights/gemma/INV_PAIR_CONSISTENCY/s1/setter.npz",
+      "selected_parameter_sha256": "2b7eb27557c522eb1bd20cec72562aa88cec0e0b9fcba6eacbd7209199637309",
+      "attempted_epochs": 1,
+      "completed_steps": 384,
+      "fit_pairs": 64,
+      "calibration_pairs": 32
+    },
+    {
+      "actor": "gemma",
+      "procedure": "INV_PAIR_NLL",
+      "seed": 0,
+      "selected_epoch": 1,
+      "selected_parameter_path": "../weights/gemma/INV_PAIR_NLL/s0/setter.npz",
+      "selected_parameter_sha256": "94e50718d8de6e787e0dbf42f2183035ab1c40b546092a8365cf7230b83ae7e8",
+      "attempted_epochs": 1,
+      "completed_steps": 384,
+      "fit_pairs": 64,
+      "calibration_pairs": 32
+    },
+    {
+      "actor": "gemma",
+      "procedure": "INV_PAIR_NLL",
+      "seed": 1,
+      "selected_epoch": 1,
+      "selected_parameter_path": "../weights/gemma/INV_PAIR_NLL/s1/setter.npz",
+      "selected_parameter_sha256": "02e372b40ff4764824cd0995b4b2d4dd601a1ccb7a7b93c470e37aa709b56002",
+      "attempted_epochs": 1,
+      "completed_steps": 384,
+      "fit_pairs": 64,
+      "calibration_pairs": 32
+    },
+    {
+      "actor": "qwen",
+      "procedure": "FREE_PAIR_CONSISTENCY",
+      "seed": 0,
+      "selected_epoch": 1,
+      "selected_parameter_path": "../weights/qwen/FREE_PAIR_CONSISTENCY/s0/setter.npz",
+      "selected_parameter_sha256": "dae77adef7ed44619aa79a9188f53343e3762eef98628e04a90fecf210b64592",
+      "attempted_epochs": 1,
+      "completed_steps": 384,
+      "fit_pairs": 64,
+      "calibration_pairs": 32
+    },
+    {
+      "actor": "qwen",
+      "procedure": "FREE_PAIR_CONSISTENCY",
+      "seed": 1,
+      "selected_epoch": 1,
+      "selected_parameter_path": "../weights/qwen/FREE_PAIR_CONSISTENCY/s1/setter.npz",
+      "selected_parameter_sha256": "c13a6cac549c230c139e5c9a420b6d61ef30cb31ac5419b5edf41d4e0ef80d98",
+      "attempted_epochs": 1,
+      "completed_steps": 384,
+      "fit_pairs": 64,
+      "calibration_pairs": 32
+    },
+    {
+      "actor": "qwen",
+      "procedure": "INV_PAIR_CONSISTENCY",
+      "seed": 1,
+      "selected_epoch": 1,
+      "selected_parameter_path": "../weights/qwen/INV_PAIR_CONSISTENCY/s1/setter.npz",
+      "selected_parameter_sha256": "5ba1b8590fd90e6481d8b8583a743b8b12325f6a96926d07b89794422ec6afaa",
+      "attempted_epochs": 1,
+      "completed_steps": 384,
+      "fit_pairs": 64,
+      "calibration_pairs": 32
+    },
+    {
+      "actor": "qwen",
+      "procedure": "INV_PAIR_NLL",
+      "seed": 0,
+      "selected_epoch": 1,
+      "selected_parameter_path": "../weights/qwen/INV_PAIR_NLL/s0/setter.npz",
+      "selected_parameter_sha256": "d130ca35a4e8c319239d9979e8a82fa4e477d6618c2b4876ef4ef539ad1d8f8d",
+      "attempted_epochs": 1,
+      "completed_steps": 384,
+      "fit_pairs": 64,
+      "calibration_pairs": 32
+    },
+    {
+      "actor": "qwen",
+      "procedure": "INV_PAIR_NLL",
+      "seed": 1,
+      "selected_epoch": 1,
+      "selected_parameter_path": "../weights/qwen/INV_PAIR_NLL/s1/setter.npz",
+      "selected_parameter_sha256": "eba37af808a1f07facab8aa78df47aa077b00e6db424b6b03a94686ecb2b596a",
+      "attempted_epochs": 1,
+      "completed_steps": 384,
+      "fit_pairs": 64,
+      "calibration_pairs": 32
+    }
+  ],
+  "remaining_execution_boundary": "Original backend/bundle integrations and pretrained execution are not a supported public retraining command"
+}

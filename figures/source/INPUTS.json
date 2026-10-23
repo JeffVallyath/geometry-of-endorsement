@@ -1,0 +1,73 @@
+{
+  "schema": "ANONYMOUS_MAIN_FIGURE_INPUTS_V1",
+  "files": [
+    {
+      "path": "figures/source/plot_data.json",
+      "bytes": 6099,
+      "sha256": "fc022bdfbb74e6ab92e8d35075b467f7f9a6293754f81c4a7d810afcae18c364"
+    },
+    {
+      "path": "artifacts/figures/figure_data.json",
+      "bytes": 61387,
+      "sha256": "928f33dc66d43964bdc9763a52faa29c2f9cfa153d60e4ac06c3f7c00c4005bb"
+    },
+    {
+      "path": "artifacts/figures/cache_crossover.json",
+      "bytes": 5531,
+      "sha256": "0c89da902097e7c4ca62a0819f8a7074546b547efacbcb87e232fc8c4a636f54"
+    },
+    {
+      "path": "reproducibility/fresh_history_validation/expected/PRIMARY.json",
+      "bytes": 5236,
+      "sha256": "61bf067e24d62d68d47fdc58f3438a212c90903b529a82d18501682966bd6152"
+    },
+    {
+      "path": "reproducibility/fresh_history_validation/expected/UTILITY.json",
+      "bytes": 16813,
+      "sha256": "4bdad2f2383c39c477d47eb2ed78fd947a880858520677f237f48a60520b4b76"
+    },
+    {
+      "path": "reproducibility/question_blind_repair/supplied/primary/replay/SUMMARY.json",
+      "bytes": 21744,
+      "sha256": "80ccae80d22bd26a4e8237085baf8c0a00b1915d928f0b760ac25e967ce1f3e9"
+    }
+  ],
+  "figures": {
+    "matched_history_design": {
+      "function": "design",
+      "width_pt": 396.0,
+      "height_inches": 1.05
+    },
+    "matched_history": {
+      "function": "history",
+      "width_pt": 396.0,
+      "height_inches": 2.25
+    },
+    "construct_validity": {
+      "function": "construct",
+      "width_pt": 396.0,
+      "height_inches": 3.25
+    },
+    "consequence_qualification": {
+      "function": "consequences",
+      "width_pt": 396.0,
+      "height_inches": 2.1
+    },
+    "fresh_confirmation_utility": {
+      "function": "fresh",
+      "width_pt": 396.0,
+      "height_inches": 3.1
+    },
+    "selected_crossover": {
+      "function": "crossover",
+      "width_pt": 396.0,
+      "height_inches": 2.55
+    },
+    "repair_benefit_damage": {
+      "function": "repair",
+      "width_pt": 396.0,
+      "height_inches": 2.9
+    }
+  },
+  "scope": "Recovered main-figure composition source over retained measurements; no new statistical or neural run"
+}

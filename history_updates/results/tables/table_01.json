@@ -1,0 +1,65 @@
+{
+  "title": "Public multi-hop matched-history results",
+  "unit": "Question counts use 384 scheduled phrasings per model. Prompt-matched size comparisons are separate measurements.",
+  "columns": [
+    "Model",
+    "Prompt",
+    "History_dependent",
+    "Questions",
+    "Related_minus_unrelated_pp",
+    "Long_chain_witnesses",
+    "Long_chain_questions"
+  ],
+  "rows": [
+    {
+      "Model": "Qwen2.5-7B",
+      "Prompt": "Original",
+      "History_dependent": 94,
+      "Questions": 384,
+      "Related_minus_unrelated_pp": 12.5,
+      "Long_chain_witnesses": 32,
+      "Long_chain_questions": 195
+    },
+    {
+      "Model": "Gemma-2-9B",
+      "Prompt": "Original",
+      "History_dependent": 101,
+      "Questions": 384,
+      "Related_minus_unrelated_pp": 15.625,
+      "Long_chain_witnesses": 65,
+      "Long_chain_questions": 195
+    },
+    {
+      "Model": "Qwen2.5-7B",
+      "Prompt": "Shared size-comparison format",
+      "History_dependent": 57,
+      "Questions": 384,
+      "Related_minus_unrelated_pp": 6.770833333333333,
+      "Long_chain_witnesses": null,
+      "Long_chain_questions": null
+    },
+    {
+      "Model": "Qwen2.5-32B",
+      "Prompt": "Shared size-comparison format",
+      "History_dependent": 9,
+      "Questions": 384,
+      "Related_minus_unrelated_pp": 0.6510416666666667,
+      "Long_chain_witnesses": null,
+      "Long_chain_questions": null
+    },
+    {
+      "Model": "Gemma-2-27B",
+      "Prompt": "Own format",
+      "History_dependent": 41,
+      "Questions": 384,
+      "Related_minus_unrelated_pp": 6.380208333333333,
+      "Long_chain_witnesses": 34,
+      "Long_chain_questions": 195
+    }
+  ],
+  "sources": [
+    "original_public_history/analysis/summary.json",
+    "paired_native_scale/analysis/SUMMARY.json",
+    "repair_gemma27/analysis/SUMMARY.json"
+  ]
+}

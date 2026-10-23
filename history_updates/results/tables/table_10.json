@@ -1,0 +1,65 @@
+{
+  "title": "History access at the trained interpreter",
+  "unit": "Cases /128, targets /384, controls /517 and changed answers /901. Correctness requires all four histories.",
+  "columns": [
+    "Additional_text",
+    "Seed",
+    "Complete_cases",
+    "Targets",
+    "Controls",
+    "Answer_changes"
+  ],
+  "rows": [
+    {
+      "Additional_text": "None (ISO)",
+      "Seed": "0",
+      "Complete_cases": 124,
+      "Targets": 380,
+      "Controls": 517,
+      "Answer_changes": 0
+    },
+    {
+      "Additional_text": "None (ISO)",
+      "Seed": "1",
+      "Complete_cases": 127,
+      "Targets": 383,
+      "Controls": 517,
+      "Answer_changes": 0
+    },
+    {
+      "Additional_text": "Original history (HIST)",
+      "Seed": "0",
+      "Complete_cases": 36,
+      "Targets": 366,
+      "Controls": 392,
+      "Answer_changes": 122
+    },
+    {
+      "Additional_text": "Original history (HIST)",
+      "Seed": "1",
+      "Complete_cases": 108,
+      "Targets": 379,
+      "Controls": 496,
+      "Answer_changes": 23
+    },
+    {
+      "Additional_text": "Final facts only (CURRENT_EXTRA)",
+      "Seed": "0",
+      "Complete_cases": 107,
+      "Targets": 378,
+      "Controls": 497,
+      "Answer_changes": 6
+    },
+    {
+      "Additional_text": "Final facts only (CURRENT_EXTRA)",
+      "Seed": "1",
+      "Complete_cases": 124,
+      "Targets": 382,
+      "Controls": 515,
+      "Answer_changes": 1
+    }
+  ],
+  "sources": [
+    "history_exposure/analysis/METRICS.json"
+  ]
+}

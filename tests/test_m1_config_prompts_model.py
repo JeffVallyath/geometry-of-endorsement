@@ -7,9 +7,9 @@ import pytest
 
 torch = pytest.importorskip("torch")
 
-from geometry_of_truth.m1.config import ConfigError, load_config
-from geometry_of_truth.m1.model import LoadedModel, _score_candidate_sequences
-from geometry_of_truth.m1.prompts import (
+from relation_study.m1.config import ConfigError, load_config
+from relation_study.m1.model import LoadedModel, _score_candidate_sequences
+from relation_study.m1.prompts import (
     mapping_for_item,
     messages_for,
     prompt_contract_hash,

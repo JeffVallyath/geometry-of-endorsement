@@ -1,0 +1,99 @@
+{
+  "title": "Synthetic matched-history rates",
+  "unit": "Scheduled-question percentages; 99.375% whole-case intervals. Seeds are averaged within each case.",
+  "columns": [
+    "Model",
+    "Update",
+    "Source_condition",
+    "Rate_percent",
+    "Lower_percent",
+    "Upper_percent",
+    "Affected_cases",
+    "Cases"
+  ],
+  "rows": [
+    {
+      "Model": "Gemma-2-9B",
+      "Update": "Activation intervention",
+      "Source_condition": "INV_PAIR_NLL",
+      "Rate_percent": 6.336805555555555,
+      "Lower_percent": 4.513888888888888,
+      "Upper_percent": 8.289930555555555,
+      "Affected_cases": 50,
+      "Cases": 64
+    },
+    {
+      "Model": "Gemma-2-9B",
+      "Update": "Activation plus consistency",
+      "Source_condition": "FREE_PAIR_CONSISTENCY",
+      "Rate_percent": 5.121527777777778,
+      "Lower_percent": 3.5263400607638844,
+      "Upper_percent": 6.770833333333334,
+      "Affected_cases": 41,
+      "Cases": 64
+    },
+    {
+      "Model": "Gemma-2-9B",
+      "Update": "In-context, request order",
+      "Source_condition": "EXISTING_CORRECTION",
+      "Rate_percent": 5.989583333333333,
+      "Lower_percent": 3.4722222222222223,
+      "Upper_percent": 8.91954210069438,
+      "Affected_cases": 30,
+      "Cases": 64
+    },
+    {
+      "Model": "Gemma-2-9B",
+      "Update": "In-context, statement order",
+      "Source_condition": "LATEST_SAME_WORDING",
+      "Rate_percent": 5.555555555555555,
+      "Lower_percent": 2.951388888888889,
+      "Upper_percent": 8.59375,
+      "Affected_cases": 25,
+      "Cases": 64
+    },
+    {
+      "Model": "Qwen3-8B",
+      "Update": "Activation intervention",
+      "Source_condition": "INV_PAIR_NLL",
+      "Rate_percent": 2.4739583333333335,
+      "Lower_percent": 1.171875,
+      "Upper_percent": 4.123263888888888,
+      "Affected_cases": 24,
+      "Cases": 64
+    },
+    {
+      "Model": "Qwen3-8B",
+      "Update": "Activation plus consistency",
+      "Source_condition": "FREE_PAIR_CONSISTENCY",
+      "Rate_percent": 2.387152777777778,
+      "Lower_percent": 1.171875,
+      "Upper_percent": 3.9930555555555554,
+      "Affected_cases": 25,
+      "Cases": 64
+    },
+    {
+      "Model": "Qwen3-8B",
+      "Update": "In-context, request order",
+      "Source_condition": "EXISTING_CORRECTION",
+      "Rate_percent": 6.163194444444445,
+      "Lower_percent": 3.8408745659722126,
+      "Upper_percent": 8.59375,
+      "Affected_cases": 38,
+      "Cases": 64
+    },
+    {
+      "Model": "Qwen3-8B",
+      "Update": "In-context, statement order",
+      "Source_condition": "LATEST_SAME_WORDING",
+      "Rate_percent": 6.336805555555555,
+      "Lower_percent": 4.079861111111112,
+      "Upper_percent": 8.854166666666668,
+      "Affected_cases": 40,
+      "Cases": 64
+    }
+  ],
+  "sources": [
+    "primary/state_sufficiency/v10.csv"
+  ]
+}

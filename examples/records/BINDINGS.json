@@ -1,0 +1,253 @@
+{
+  "schema": "COLLABORATOR_EXAMPLES_V1",
+  "study_index_sha256": "d4dfd7540a3ea811f6c62dfdf6518fc27488ee7746e92aa384bfc714d7782647",
+  "selection": "One full fresh synthetic case; original public response cohort and recorded paper case.",
+  "records": {
+    "synthetic/root.json": {
+      "logical_source": "v3/studies/original_public_history/reproducibility/fresh_history_validation/generated/FHV1-FINAL-0017/root.json",
+      "source": {
+        "included": "data/matched_histories/v3/studies/original_public_history/reproducibility/fresh_history_validation/generated/FHV1-FINAL-0017/root.json",
+        "sha256": "942d92892e1afe196e3164440f2361c0283180521592f725f0c087d85732f51f",
+        "bytes": 6958
+      },
+      "export_sha256": "942d92892e1afe196e3164440f2361c0283180521592f725f0c087d85732f51f"
+    },
+    "synthetic/questions.json": {
+      "logical_source": "v3/studies/original_public_history/reproducibility/fresh_history_validation/generated/FHV1-FINAL-0017/questions.json",
+      "source": {
+        "included": "data/matched_histories/v3/studies/original_public_history/reproducibility/fresh_history_validation/generated/FHV1-FINAL-0017/questions.json",
+        "sha256": "26a5b0207f0275b98cafb96a1a36ca0c2b3fc1d4c08e30af761c52ec7e4895b8",
+        "bytes": 12676
+      },
+      "export_sha256": "26a5b0207f0275b98cafb96a1a36ca0c2b3fc1d4c08e30af761c52ec7e4895b8"
+    },
+    "synthetic/PLAN.json": {
+      "logical_source": "v3/studies/original_public_history/reproducibility/fresh_history_validation/generated/FHV1-FINAL-0017/PLAN.json",
+      "source": {
+        "included": "data/matched_histories/v3/studies/original_public_history/reproducibility/fresh_history_validation/generated/FHV1-FINAL-0017/PLAN.json",
+        "sha256": "7182e28fbf142555665c3ac426030005639f9a19bef7d5ffcc10117e78d9f8fe",
+        "bytes": 15560
+      },
+      "export_sha256": "7182e28fbf142555665c3ac426030005639f9a19bef7d5ffcc10117e78d9f8fe"
+    },
+    "synthetic/labels.json": {
+      "logical_source": "v3/studies/original_public_history/reproducibility/fresh_history_validation/generated/FHV1-FINAL-0017/labels.json",
+      "source": {
+        "included": "data/matched_histories/v3/studies/original_public_history/reproducibility/fresh_history_validation/generated/FHV1-FINAL-0017/labels.json",
+        "sha256": "70b737704d077a3c4932b42b4198136558c205d98ab9652d2eaca529bb3118bc",
+        "bytes": 37587
+      },
+      "export_sha256": "70b737704d077a3c4932b42b4198136558c205d98ab9652d2eaca529bb3118bc"
+    },
+    "synthetic/source_inputs.json": {
+      "logical_source": "v3/studies/original_public_history/reproducibility/fresh_history_validation/generated/FHV1-FINAL-0017/source_inputs.json",
+      "source": {
+        "included": "data/matched_histories/v3/studies/original_public_history/reproducibility/fresh_history_validation/generated/FHV1-FINAL-0017/source_inputs.json",
+        "sha256": "0317428eeceaf53e9383127e4a3508836a66a3ca4676bf5b0767acb90833bc37",
+        "bytes": 47155
+      },
+      "export_sha256": "0317428eeceaf53e9383127e4a3508836a66a3ca4676bf5b0767acb90833bc37"
+    },
+    "synthetic/PROMPTS.json.gz": {
+      "logical_source": "v3/studies/original_public_history/reproducibility/fresh_history_validation/generated/FHV1-FINAL-0017/PROMPTS.json.gz",
+      "source": {
+        "included": "data/matched_histories/v3/studies/original_public_history/reproducibility/fresh_history_validation/generated/FHV1-FINAL-0017/PROMPTS.json.gz.xz",
+        "sha256": "3fb5c80dbc564d22036b20fd599008d2cff5ceef18201e9860ffdfcbaca2a38a",
+        "bytes": 8028,
+        "codec": "xz-to-gzip-v1",
+        "decoded_sha256": "d35f6ec57d5dd2d633bfe68dc508dd91edc9b4518107cd140623b37d2b23353c",
+        "decoded_bytes": 2011833,
+        "materialized_sha256": "9bca6f29783abb86aab854406fe1c73765e2afc3f648e390feefe04bf5eaba03",
+        "materialized_bytes": 24916
+      },
+      "export_sha256": "9bca6f29783abb86aab854406fe1c73765e2afc3f648e390feefe04bf5eaba03"
+    },
+    "synthetic/SCORES.json.gz": {
+      "logical_source": "v3/studies/original_public_history/reproducibility/fresh_history_validation/scientific/final/FHV1-FINAL-0017/SCORES.json.gz",
+      "source": {
+        "included": "data/matched_histories/v3/studies/original_public_history/reproducibility/fresh_history_validation/scientific/final/FHV1-FINAL-0017/SCORES.json.gz.xz",
+        "sha256": "2b763efa730da41d412fa558d5a0f7052a25870104b545e056fe365d22f8f188",
+        "bytes": 53600,
+        "codec": "xz-to-gzip-v1",
+        "decoded_sha256": "3f0d83e7c6a6f5585c41e14d5e3fdd1e04ca0455f217177c4d855970b6bcce84",
+        "decoded_bytes": 725589,
+        "materialized_sha256": "78a04819897e82218508dffa458c6a0b80b8c443e25499d955915e92631fe816",
+        "materialized_bytes": 70924
+      },
+      "export_sha256": "78a04819897e82218508dffa458c6a0b80b8c443e25499d955915e92631fe816"
+    },
+    "synthetic/DONE.json": {
+      "logical_source": "v3/studies/original_public_history/reproducibility/fresh_history_validation/scientific/final/FHV1-FINAL-0017/DONE.json",
+      "source": {
+        "included": "data/matched_histories/v3/studies/original_public_history/reproducibility/fresh_history_validation/scientific/final/FHV1-FINAL-0017/DONE.json",
+        "sha256": "7c1b090d8ef44e5e64e4bab01a4884cb2949436e91e99288b80047d2972efcb3",
+        "bytes": 1089
+      },
+      "export_sha256": "7c1b090d8ef44e5e64e4bab01a4884cb2949436e91e99288b80047d2972efcb3"
+    },
+    "public/case_1617.json": {
+      "logical_source": "v3/studies/original_public_history/reproducibility/mqmh/case_1617.json",
+      "source": {
+        "included": "data/matched_histories/v3/studies/original_public_history/reproducibility/mqmh/case_1617.json",
+        "sha256": "29ab5c6e71aecafcd153e6e1fe314e93912edb8283ae95a72fd40a56397d73d7",
+        "bytes": 45911
+      },
+      "export_sha256": "29ab5c6e71aecafcd153e6e1fe314e93912edb8283ae95a72fd40a56397d73d7"
+    },
+    "public/cohort.json.gz": {
+      "logical_source": "v3/studies/original_public_history/reproducibility/mqmh/cohort.json.gz",
+      "source": {
+        "included": "data/interpreter_checks/v3/studies/history_exposure/sources/ppr1/source/cohort.json.gz.xz",
+        "sha256": "fde0f5e2ff97c7f43c654caf77262a6830b45db7ab0f52101e689496ee8fcdda",
+        "bytes": 68988,
+        "codec": "xz-to-gzip-v1",
+        "decoded_sha256": "8750a5410481d7b4c4b8c83aa4059622ba86597df831699500846cedc917663d",
+        "decoded_bytes": 859862,
+        "materialized_sha256": "bd469142dc0a5d09040fc65d01595ab8ba3a60392346e16c980fe99309e719df",
+        "materialized_bytes": 99719
+      },
+      "export_sha256": "bd469142dc0a5d09040fc65d01595ab8ba3a60392346e16c980fe99309e719df"
+    },
+    "public/qwen_responses.json.gz": {
+      "logical_source": "v3/studies/original_public_history/reproducibility/mqmh/qwen_responses.json.gz",
+      "source": {
+        "included": "data/interpreter_checks/v3/studies/history_exposure/sources/ppr1/source/qwen_responses.json.gz.xz",
+        "sha256": "23fd3b6386276cf71c64236e2e87fec4166d42092f32037bf4bf4d28a27e0051",
+        "bytes": 29592,
+        "codec": "xz-to-gzip-v1",
+        "decoded_sha256": "9b606db7afb05d0564e4324a53b20ebc6d4efc2bd9f7c802fca4b84e7967babd",
+        "decoded_bytes": 1681998,
+        "materialized_sha256": "bbf0d1d220e42a0097f1cd3ffc235474f278bf789d758ccd7bfcfd661cc44d49",
+        "materialized_bytes": 37562
+      },
+      "export_sha256": "bbf0d1d220e42a0097f1cd3ffc235474f278bf789d758ccd7bfcfd661cc44d49"
+    },
+    "public/gemma_responses.json.gz": {
+      "logical_source": "v3/studies/original_public_history/reproducibility/mqmh/gemma_responses.json.gz",
+      "source": {
+        "included": "data/interpreter_checks/v3/studies/history_exposure/sources/ppr1/source/gemma_responses.json.gz.xz",
+        "sha256": "b40bf884afc54f232694b1fc26a90e2a7bf63a1055b4d3ea62c380f97b3a21a5",
+        "bytes": 28352,
+        "codec": "xz-to-gzip-v1",
+        "decoded_sha256": "bf8beeaaca6226b703cc70ebadebdd5e51dde34554530f1a66c23b18e2afd05d",
+        "decoded_bytes": 1687484,
+        "materialized_sha256": "7bfcb6c4422453d971183087c6de912b80dbb17486df6937096f36c8921c0021",
+        "materialized_bytes": 34619
+      },
+      "export_sha256": "7bfcb6c4422453d971183087c6de912b80dbb17486df6937096f36c8921c0021"
+    },
+    "public/SOURCE_HASHES.json": {
+      "logical_source": "v3/studies/original_public_history/reproducibility/mqmh/SOURCE_HASHES.json",
+      "source": {
+        "included": "data/interpreter_checks/v3/studies/history_exposure/sources/ppr1/source/SOURCE_HASHES.json",
+        "sha256": "1013078ad88a2d53c9604c2c265b05bbcd9c94891ae8aaf8af0278c54222256c",
+        "bytes": 2979
+      },
+      "export_sha256": "1013078ad88a2d53c9604c2c265b05bbcd9c94891ae8aaf8af0278c54222256c"
+    },
+    "public/recorded_case_1617.json": {
+      "logical_source": "v3/data/examples/recorded_case_1617.json",
+      "source": {
+        "included": "data/external_state/v3/data/examples/recorded_case_1617.json",
+        "sha256": "95ac1a549a4affd4e072de6ebbc3c1d46a098a2ddd4c960193284cc26b7e1e52",
+        "bytes": 14678
+      },
+      "export_sha256": "95ac1a549a4affd4e072de6ebbc3c1d46a098a2ddd4c960193284cc26b7e1e52"
+    },
+    "public/qwen_native_prompts.json": {
+      "source_kind": "native",
+      "logical_source": "prepared/qwen_FINAL.json",
+      "source": {
+        "included": "prepared/qwen_FINAL.json",
+        "sha256": "8dafc1cf2496c5767ef16ec579c88e2aa7a2ae92580168a33e7b9399d35c2a02"
+      },
+      "selection": {
+        "field": "units",
+        "case_ids": [
+          149,
+          531,
+          963,
+          1617
+        ]
+      },
+      "freeze_sha256": "3db654460f5d1c82fe67e1d354eb585b3018e31483716dc882c8b38c2b86e984",
+      "extension_freeze_sha256": "866835a23f6de1a9f84f61ef427baa0e9c176765def7af127f42537aa4945717",
+      "export_sha256": "ae00e233312675547dc8277c2fe9f21cbb5764cbbf841783b305f88db5cb2794"
+    },
+    "public/gemma_native_prompts.json": {
+      "source_kind": "native",
+      "logical_source": "prepared/gemma_FINAL.json",
+      "source": {
+        "included": "prepared/gemma_FINAL.json",
+        "sha256": "4c23cd884bdf8fa4ec8df9cbf92fb35edb82227ab82eea6e150bd8029fdf5e21"
+      },
+      "selection": {
+        "field": "units",
+        "case_ids": [
+          149,
+          531,
+          963,
+          1617
+        ]
+      },
+      "freeze_sha256": "3db654460f5d1c82fe67e1d354eb585b3018e31483716dc882c8b38c2b86e984",
+      "extension_freeze_sha256": "866835a23f6de1a9f84f61ef427baa0e9c176765def7af127f42537aa4945717",
+      "export_sha256": "d42ef65b4eaeb42fbefd39f37e91c7a057593975aa666b1da13c8ea870059d45"
+    },
+    "synthetic/model-pins.json": {
+      "logical_source": "v3/studies/original_public_history/reproducibility/update_method_comparison/inputs/models.json",
+      "source": {
+        "included": "data/matched_histories/v3/studies/original_public_history/reproducibility/update_method_comparison/inputs/models.json",
+        "sha256": "c86512444a49db447ba7f539b517b873c099687cb0f1a9d7cb0ad870aa403cb5",
+        "bytes": 1510
+      },
+      "export_sha256": "c86512444a49db447ba7f539b517b873c099687cb0f1a9d7cb0ad870aa403cb5"
+    },
+    "public/repair-qwen7-model.json": {
+      "logical_source": "v3/studies/repair_qwen7/input/PPR1_Same_Case_Public_Repair/reference/MODEL_VERIFY.json",
+      "source": {
+        "included": "data/external_state/v3/studies/repair_qwen7/input/PPR1_Same_Case_Public_Repair/reference/MODEL_VERIFY.json",
+        "sha256": "f6531a47e440add37ccf8448c9fb6498c2cba9a7aaa9a181a13a3137dc99918f",
+        "bytes": 2580
+      },
+      "export_sha256": "f6531a47e440add37ccf8448c9fb6498c2cba9a7aaa9a181a13a3137dc99918f"
+    },
+    "public/repair-qwen32-config.json": {
+      "logical_source": "v3/studies/repair_qwen32/PPR32_Repair_128/REPAIR32_CONFIG.json",
+      "source": {
+        "included": "data/external_state/v3/studies/repair_gemma27/source/Gemma27_Same_Case_Repair/inherited/PPR32_Repair_128/REPAIR32_CONFIG.json",
+        "sha256": "6ddf324e4158f403a55d1c2d60997d30750bbde346751ac21d29f76758a0fb3e",
+        "bytes": 5989
+      },
+      "export_sha256": "6ddf324e4158f403a55d1c2d60997d30750bbde346751ac21d29f76758a0fb3e"
+    },
+    "public/repair-gemma27-config.json": {
+      "logical_source": "v3/studies/repair_gemma27/source/Gemma27_Same_Case_Repair/GEMMA_CONFIG.json",
+      "source": {
+        "included": "data/external_state/v3/studies/repair_gemma27/source/Gemma27_Same_Case_Repair/GEMMA_CONFIG.json",
+        "sha256": "3a185578f508f854528540e77f2e3917105d65f8d4bba5211ea828b6ff8da7b6",
+        "bytes": 7305
+      },
+      "export_sha256": "3a185578f508f854528540e77f2e3917105d65f8d4bba5211ea828b6ff8da7b6"
+    },
+    "public/repair-gemma27-lock.json": {
+      "logical_source": "v3/studies/repair_gemma27/remote-evidence/MODEL_LOCK.json",
+      "source": {
+        "included": "data/external_state/v3/studies/repair_gemma27/remote-evidence/MODEL_LOCK.json",
+        "sha256": "3755e949d67e2187091e774a18effaf427668e34a2398c96b570e2ca2edf3a48",
+        "bytes": 2126
+      },
+      "export_sha256": "3755e949d67e2187091e774a18effaf427668e34a2398c96b570e2ca2edf3a48"
+    }
+  },
+  "derived": {
+    "synthetic/token_spans.json": {
+      "sha256": "be7e6b20ce3c3dbc8674b417ec5b2daf8aa4d609977fb2bf7d7c794372f8d67c",
+      "inputs": [
+        "synthetic/PROMPTS.json.gz",
+        "synthetic/source_inputs.json"
+      ],
+      "tokenizer_sha256": "3f289bc05132635a8bc7aca7aa21255efd5e18f3710f43e3cdb96bcd41be4922"
+    }
+  }
+}

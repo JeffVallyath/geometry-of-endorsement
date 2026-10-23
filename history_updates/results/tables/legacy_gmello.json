@@ -1,0 +1,25 @@
+{
+  "title": "Superseded GMeLLo observation from the supplied paper",
+  "unit": "Original implementation and rows, not relabeled as corrected results.",
+  "columns": [
+    "Reader",
+    "Source_endpoint",
+    "Complete_cases",
+    "Targets",
+    "Controls",
+    "Original_targets"
+  ],
+  "rows": [
+    {
+      "Reader": "GMeLLo, superseded implementation",
+      "Source_endpoint": "GMELLO_LOCAL",
+      "Complete_cases": 35,
+      "Targets": 237,
+      "Controls": 425,
+      "Original_targets": 1094
+    }
+  ],
+  "sources": [
+    "same_case_baselines/analysis/SCIENTIFIC_RESULTS.json"
+  ]
+}

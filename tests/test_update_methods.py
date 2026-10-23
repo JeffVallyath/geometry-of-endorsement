@@ -26,9 +26,9 @@ def test_saved_primary_contrasts_and_absolute_performance(result):
 @pytest.mark.parametrize('field', ['correct', 'gold', 'source_gold', 'prediction', 'query_id', 'master_unchanged'])
 def test_raw_score_corruption_rejected(field):
     row=next(m.rows(m.BASE/'supplied/completed/raw/gemma__ORIGIN__SOURCE.jsonl.gz'))
-    reference=next(r for r in m.rows(m.INPUTS/'cases/fixed/evaluation.jsonl')
+    reference=next(r for r in m.rows(m.INPUTS/'cases/fixed/evaluation.jsonl.gz')
                    if r['actor']=='gemma' and r['input_id']==row['input_id'] and r['query_id']==row['query_id'])
-    origin=next(r for r in m.rows(m.INPUTS/'cases/fixed/origin.jsonl') if r['root_id']==row['root_id'])
+    origin=next(r for r in m.rows(m.INPUTS/'cases/fixed/origin.jsonl.gz') if r['root_id']==row['root_id'])
     m.validate_score(row,reference,origin,{})
     bad=copy.deepcopy(row)
     bad[field]='not-a-query' if field=='query_id' else not row[field] if isinstance(row[field],bool) else 1-row[field]

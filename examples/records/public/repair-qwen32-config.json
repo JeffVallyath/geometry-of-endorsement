@@ -1,0 +1,180 @@
+{
+  "study": "PPR32_SAME_CASE_REPAIR_V1",
+  "purpose": "Test the actual explicit-state + learned query scorer + exact executor repair at 32B on the retained 128 cases, not native failure recurrence.",
+  "model": {
+    "repo": "Qwen/Qwen2.5-32B-Instruct",
+    "revision": "5ede1c97bbab6ce5cda5812749b4c0bdf79b18dd",
+    "base_frozen": true,
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "torch": "2.8.0+cu128",
+    "transformers": "4.56.2",
+    "peft": "0.17.1",
+    "accelerate": "1.10.1",
+    "numpy": "2.2.6",
+    "safetensors": "0.6.2",
+    "python": "3.12",
+    "quantization": false,
+    "offload": false,
+    "torch_compile": false
+  },
+  "training": {
+    "source": "Original QSA1 training_pairs.jsonl.gz, byte-identical",
+    "seeds": [
+      0,
+      1
+    ],
+    "steps_each": 768,
+    "draws_each": 12288,
+    "distinct_pairs": 7507,
+    "order": "Original seed0_ORDER.json and seed1_ORDER.json sample-order lists",
+    "effective_batch": 16,
+    "primary_microbatch": 2,
+    "primary_accumulation": 8,
+    "technical_fallback_microbatch": 1,
+    "technical_fallback_accumulation": 16,
+    "fallback_rule": "Choose only from canary memory/throughput before protected inference; same for both seeds",
+    "rank": 16,
+    "alpha": 32,
+    "dropout": 0,
+    "target_modules": [
+      "q_proj",
+      "k_proj",
+      "v_proj",
+      "o_proj"
+    ],
+    "optimizer": "AdamW",
+    "lr": 0.0002,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "weight_decay": 0.01,
+    "warmup_steps": 39,
+    "lr_schedule": "cosine",
+    "clip": 1.0,
+    "gradient_checkpointing": true,
+    "sequence_cap": 3072,
+    "loss": "response-only Yes/No + EOS cross entropy; input and padding masked",
+    "packing": false,
+    "truncation": false,
+    "canary_steps": 16,
+    "checkpoint": "last fixed step only",
+    "maximum_training_minutes_including_canary": 330,
+    "select_seed_or_checkpoint_from_PPR": false
+  },
+  "scoring": {
+    "batch": 1,
+    "first_token_margin": "logit(Yes)-logit(No)",
+    "acceptance": "max strictly >0; canonical program tie-break",
+    "input_cap": 6144,
+    "max_new_tokens": 64,
+    "sampling": false,
+    "seed": 0,
+    "max_depth": 4,
+    "max_candidates": 64,
+    "candidate_mode": "RAW original PPR/QSA1 contract, not READBACK or type filtering"
+  },
+  "endpoints": {
+    "saved": "NATIVE32_SAVED",
+    "fresh": [
+      "CURRENT_TEXT",
+      "CURRENT_JSON",
+      "STATE_BASE",
+      "STATE_0",
+      "STATE_1"
+    ],
+    "STATE_0": "new 32B seed0 adapter",
+    "STATE_1": "new 32B seed1 adapter",
+    "old_7B_results": "separate historical context only, no reused adapters or fresh 7B run"
+  },
+  "evaluation": {
+    "subjects": 128,
+    "target_phrasings": 384,
+    "fact_controls": 324,
+    "decoy_controls": 128,
+    "chain_controls": 65,
+    "questions": 901,
+    "histories": [
+      "H0",
+      "H1",
+      "S0",
+      "S1"
+    ],
+    "references": [
+      "C",
+      "C+"
+    ],
+    "post_reads_each": 5406,
+    "pre_reads_each": 1536,
+    "fresh_logical_reads_total": 34710,
+    "primary_unit": "complete post subject: every target AND every control correct across all four histories, full 128 denominator",
+    "primary_codec": "unchanged PPR whole-response source-ID/name codec for saved and new answer-only outputs; native9 labels stay under original SCALE rule",
+    "first_line_sensitivity": "retain old SCALE first-line interpretation separately; never pick the favorable parser",
+    "two_primary_contrasts": [
+      "trained seed mean minus NATIVE32_SAVED",
+      "trained seed mean minus CURRENT_TEXT"
+    ],
+    "bootstrap": {
+      "unit": "subject; all questions/histories and both seeds together",
+      "draws": 10000,
+      "seed": 2026100708,
+      "confidence": 0.975
+    },
+    "useful_gain": {
+      "difference_pp_at_least": 5,
+      "lower_bound_above": 0
+    },
+    "sampled_capability_proposed": {
+      "each_seed_complete_faithful_subjects_minimum": 122,
+      "each_seed_correct_targets_minimum": 381,
+      "each_seed_correct_controls_required": 517
+    },
+    "known_native_witness_denominator": 9,
+    "known_9_requirement": "correct target plus faithful intended program across histories, both references, and every retained control for its case correct; no requalification",
+    "repeat_cases": [
+      172,
+      755,
+      1662,
+      2061,
+      2113,
+      133,
+      583,
+      642,
+      722,
+      784,
+      1617,
+      1751
+    ],
+    "repeat_scope": "every current question under all six source conditions, separate process, no result cache; STATE_BASE and both trained scorers",
+    "historical_return_programs": 16,
+    "isolation": "complete current input equality + independent uncached control agreement; never inferred from low witness count"
+  },
+  "limits": {
+    "wall_hours": 8,
+    "science_stop_hours": 7,
+    "cumulative_billed_gpu_hours": 8,
+    "all_cloud_usd": 40,
+    "preferred_gpu": "Runpod Secure H200 141GB",
+    "alternative": "Runpod Secure H100 SXM 80GB only after memory and full-throughput canary fits",
+    "max_simultaneous_gpus": 1,
+    "technical_replacements": 1,
+    "forecast_reserve_fraction": 0.25,
+    "cleanup_reserve_minutes": 30,
+    "delivery_max_MiB": 512,
+    "paid_model_apis": false,
+    "successor": false,
+    "account_billing_changes": false,
+    "shared_repo_writes": false
+  },
+  "claim_boundaries": [
+    "Actual repair application at32B, not a renewed native-failure study",
+    "Current-state history independence is distinct from correct English interpretation",
+    "Same exposed128case cohort; not fresh cases or new model family",
+    "Exact target and K training-string overlap zero; 33 F/decoy occurrences shared with training remain labelled",
+    "Native error baseline is saved prior inference under its own wrapper; no claim of equal FLOPs or pure data-structure effect",
+    "No original native-editor F1-F4 pass; method breadth only",
+    "No general raw-prose ingestion; exact source-template transport is retained"
+  ]
+}

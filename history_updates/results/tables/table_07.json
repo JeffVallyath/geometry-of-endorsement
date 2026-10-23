@@ -1,0 +1,151 @@
+{
+  "title": "Complete cases under each repair condition",
+  "unit": "Every target and control must be correct under all four histories; each seed remains separate.",
+  "columns": [
+    "Model",
+    "Condition",
+    "Source_endpoint",
+    "Complete_cases",
+    "Cases"
+  ],
+  "rows": [
+    {
+      "Model": "Qwen2.5-7B",
+      "Condition": "Full history",
+      "Source_endpoint": "HISTORY",
+      "Complete_cases": 11,
+      "Cases": 128
+    },
+    {
+      "Model": "Qwen2.5-7B",
+      "Condition": "Note before question",
+      "Source_endpoint": "REFLECT",
+      "Complete_cases": 12,
+      "Cases": 128
+    },
+    {
+      "Model": "Qwen2.5-7B",
+      "Condition": "Corrected facts, text",
+      "Source_endpoint": "CURRENT_TEXT",
+      "Complete_cases": 17,
+      "Cases": 128
+    },
+    {
+      "Model": "Qwen2.5-7B",
+      "Condition": "Corrected facts, JSON",
+      "Source_endpoint": "CURRENT_JSON",
+      "Complete_cases": 14,
+      "Cases": 128
+    },
+    {
+      "Model": "Qwen2.5-7B",
+      "Condition": "Dictionary, untrained",
+      "Source_endpoint": "STATE_BASE",
+      "Complete_cases": 5,
+      "Cases": 128
+    },
+    {
+      "Model": "Qwen2.5-7B",
+      "Condition": "Dictionary, trained seed 0",
+      "Source_endpoint": "STATE_0",
+      "Complete_cases": 124,
+      "Cases": 128
+    },
+    {
+      "Model": "Qwen2.5-7B",
+      "Condition": "Dictionary, trained seed 1",
+      "Source_endpoint": "STATE_1",
+      "Complete_cases": 127,
+      "Cases": 128
+    },
+    {
+      "Model": "Qwen2.5-32B",
+      "Condition": "Corrected facts, JSON",
+      "Source_endpoint": "CURRENT_JSON",
+      "Complete_cases": 32,
+      "Cases": 128
+    },
+    {
+      "Model": "Qwen2.5-32B",
+      "Condition": "Corrected facts, text",
+      "Source_endpoint": "CURRENT_TEXT",
+      "Complete_cases": 48,
+      "Cases": 128
+    },
+    {
+      "Model": "Qwen2.5-32B",
+      "Condition": "Full history",
+      "Source_endpoint": "NATIVE32_SAVED",
+      "Complete_cases": 89,
+      "Cases": 128
+    },
+    {
+      "Model": "Qwen2.5-32B",
+      "Condition": "Dictionary, trained seed 0",
+      "Source_endpoint": "STATE_0",
+      "Complete_cases": 128,
+      "Cases": 128
+    },
+    {
+      "Model": "Qwen2.5-32B",
+      "Condition": "Dictionary, trained seed 1",
+      "Source_endpoint": "STATE_1",
+      "Complete_cases": 126,
+      "Cases": 128
+    },
+    {
+      "Model": "Qwen2.5-32B",
+      "Condition": "Dictionary, untrained",
+      "Source_endpoint": "STATE_BASE",
+      "Complete_cases": 11,
+      "Cases": 128
+    },
+    {
+      "Model": "Gemma-2-27B",
+      "Condition": "Corrected facts, JSON",
+      "Source_endpoint": "CURRENT_JSON",
+      "Complete_cases": 59,
+      "Cases": 128
+    },
+    {
+      "Model": "Gemma-2-27B",
+      "Condition": "Corrected facts, text",
+      "Source_endpoint": "CURRENT_TEXT",
+      "Complete_cases": 79,
+      "Cases": 128
+    },
+    {
+      "Model": "Gemma-2-27B",
+      "Condition": "Full history",
+      "Source_endpoint": "NATIVE_GEMMA",
+      "Complete_cases": 62,
+      "Cases": 128
+    },
+    {
+      "Model": "Gemma-2-27B",
+      "Condition": "Dictionary, trained seed 0",
+      "Source_endpoint": "STATE_0",
+      "Complete_cases": 127,
+      "Cases": 128
+    },
+    {
+      "Model": "Gemma-2-27B",
+      "Condition": "Dictionary, trained seed 1",
+      "Source_endpoint": "STATE_1",
+      "Complete_cases": 127,
+      "Cases": 128
+    },
+    {
+      "Model": "Gemma-2-27B",
+      "Condition": "Dictionary, untrained",
+      "Source_endpoint": "STATE_BASE",
+      "Complete_cases": 28,
+      "Cases": 128
+    }
+  ],
+  "sources": [
+    "repair_qwen7/analysis/SUMMARY.json",
+    "repair_qwen32/analysis/SUMMARY.json",
+    "repair_gemma27/analysis/SUMMARY.json"
+  ]
+}

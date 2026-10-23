@@ -1,0 +1,44 @@
+"""Reference paired-output objective; not a production backbone runner.
+
+Inputs are FULL-VOCABULARY-normalized log probabilities of the two semantic labels.
+Conditional normalization is used only inside symmetric KL, never instead of NLL.
+"""
+from __future__ import annotations
+import torch
+
+
+def balance_weights(changed: torch.Tensor) -> torch.Tensor:
+    if changed.ndim != 1 or changed.numel()==0: raise ValueError('Nonempty 1D mask required')
+    changed=changed.bool(); n=changed.numel(); k=int(changed.sum())
+    w=torch.empty(n,dtype=torch.float64,device=changed.device)
+    if k==0 or k==n: w.fill_(1/n)
+    else: w[changed]=.5/k;w[~changed]=.5/(n-k)
+    return w
+
+
+def paired_loss(log0, log1, gold, w0, w1, kappa: float):
+    if log0.shape!=log1.shape or log0.ndim!=2 or log0.shape[1]!=2:
+        raise ValueError('Paired [Q,2] log probabilities required')
+    if gold.shape != log0.shape[:1] or w0.shape!=gold.shape or w1.shape!=gold.shape:
+        raise ValueError('Weights and gold must align with paired queries')
+    if kappa not in (0.,1.): raise ValueError('Fixed comparator coefficients only')
+    if not (torch.isfinite(log0).all() and torch.isfinite(log1).all()):
+        raise ValueError('Nonfinite model scores')
+    ix=torch.arange(gold.numel(),device=gold.device)
+    nll=-.5*((w0*log0[ix,gold]).sum()+(w1*log1[ix,gold]).sum())
+    a=torch.log_softmax(log0,dim=-1); b=torch.log_softmax(log1,dim=-1)
+    sym=.5*((a.exp()*(a-b)).sum(-1)+(b.exp()*(b-a)).sum(-1))
+    # Keep original bundle weights in a 4-question microbatch, do not re-normalize.
+    consistency=((w0+w1)*.5*sym).sum()
+    return nll+kappa*consistency, {'nll':nll,'consistency':consistency}
+
+
+def split_gradient_loss(log0_detached, log1_live, gold, w0, w1, kappa):
+    """One half of the two-graph exact gradient; swap detachments on replay.
+
+Never optimizer.step between the two backwards. Log one full objective value,
+not the sum of the two equal objective values. Add .5 * beta * branch norm
+regularizer to each live-branch backward, once per branch.
+"""
+    if log0_detached.requires_grad: raise ValueError('Expected detached partner scores')
+    return paired_loss(log0_detached,log1_live,gold,w0,w1,kappa)[0]

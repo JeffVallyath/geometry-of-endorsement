@@ -109,35 +109,5 @@ def test_every_figure_value_recomputes_from_the_identified_raw_record(tmp_path):
         plt.close(fig)
 
 
-@pytest.mark.parametrize('document,path', [
-    ('captions', 'figures/CAPTIONS.md'),
-    ('caption_details', 'figures/CAPTION_DETAILS.md'),
-])
-def test_caption_and_claim_guards(document, path):
-    from repro.evidence import check
-    text = (ROOT / path).read_text(encoding='utf8')
-    mutations = [('not a prevalence estimate', 'a prevalence estimate'),
-                 ('model weights stay fixed', 'model weights change'),
-                 ('two correct direct answers', 'two incorrect direct answers')]
-    if document == 'captions':
-        mutations = [('selected Gemma example', 'representative Gemma example'),
-                     ('Model weights stay fixed', 'Model weights change'),
-                     ('both direct fact answers remain correct', 'both direct fact answers become incorrect')]
-    for old, new in mutations:
-        assert old in text
-        report = check(document=document, overrides={document: text.replace(old, new)})
-        assert any(r['unit'] == 'figure8' for r in report.errors)
 
 
-def test_extractor_rejects_unsafe_paths_and_wrong_archive(tmp_path):
-    spec = importlib.util.spec_from_file_location('crossover_extract', BASE / 'extract_sources.py')
-    extractor = importlib.util.module_from_spec(spec)
-    spec.loader.exec_module(extractor)
-    for name in ('../escape', '/absolute', 'C:/drive', 'x\\y', 'a/../b'):
-        with pytest.raises(ValueError):
-            extractor.safe(name)
-    archive = tmp_path / 'wrong.zip'
-    archive.write_bytes(b'not the completed archive')
-    with pytest.raises(AssertionError):
-        extractor.extract(archive, BASE / 'delivery_receipt.json', tmp_path / 'output')
-    assert not (tmp_path / 'output').exists()

@@ -1,0 +1,57 @@
+{
+  "title": "Corrected local-graph comparison",
+  "unit": "Cases /128, targets /384, controls /517; matched original/current targets /1536. CORE/FULL are primary; TEXT is secondary.",
+  "columns": [
+    "Endpoint",
+    "Complete_cases",
+    "Targets",
+    "Controls",
+    "Original_targets",
+    "Matched_current_targets"
+  ],
+  "rows": [
+    {
+      "Endpoint": "REPAIR_0",
+      "Complete_cases": 124,
+      "Targets": 380,
+      "Controls": 517,
+      "Original_targets": 1522,
+      "Matched_current_targets": 1520
+    },
+    {
+      "Endpoint": "REPAIR_1",
+      "Complete_cases": 127,
+      "Targets": 383,
+      "Controls": 517,
+      "Original_targets": 1524,
+      "Matched_current_targets": 1532
+    },
+    {
+      "Endpoint": "G_CORE",
+      "Complete_cases": 91,
+      "Targets": 323,
+      "Controls": 517,
+      "Original_targets": 1364,
+      "Matched_current_targets": 1292
+    },
+    {
+      "Endpoint": "G_FULL",
+      "Complete_cases": 89,
+      "Targets": 321,
+      "Controls": 516,
+      "Original_targets": 1378,
+      "Matched_current_targets": 1284
+    },
+    {
+      "Endpoint": "G_TEXT",
+      "Complete_cases": 46,
+      "Targets": 236,
+      "Controls": 474,
+      "Original_targets": 1000,
+      "Matched_current_targets": 966
+    }
+  ],
+  "sources": [
+    "gmello_comparison/SCIENTIFIC_RESULTS.json"
+  ]
+}

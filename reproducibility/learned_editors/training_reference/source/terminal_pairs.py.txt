@@ -1,0 +1,80 @@
+"""Model-free V7 inputs. No GPU, model outcomes or training are used.
+
+The returned terminal/pair objects belong to the evaluator. The writer must receive
+ONLY serialized prefix IDs, supplied clause positions, and requested bits.
+"""
+from __future__ import annotations
+from dataclasses import asdict, replace
+from pathlib import Path
+from contextlib import contextmanager
+import hashlib, json, random, sys
+
+ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / 'inputs/v6_source/scripts'))
+import rfr5_common as C
+import rsi6_common as V6
+OLD = C.Q.OLD
+SEED = 260912701
+
+
+def digest(x):
+    return hashlib.sha256(json.dumps(x, sort_keys=True, separators=(',', ':')).encode()).hexdigest()
+
+
+@contextmanager
+def seed_context(seed=SEED):
+    # Used during single-threaded input preparation ONLY. No concurrent global mutation.
+    before = OLD.SEED
+    OLD.SEED = seed
+    try: yield
+    finally: OLD.SEED = before
+
+
+def semantic_hash(scene):
+    return hashlib.sha256(OLD.render(scene, 'original')[0].encode()).hexdigest()
+
+
+def training_pair(terminal):
+    """Exactly one identical command per source; one flip and one no-op."""
+    a, p = terminal.target_actor, terminal.target_project
+    command = OLD.Edit(a, p, terminal.values[a][p])
+    sources = []
+    for initial in (0, 1):
+        s = OLD.set_value(terminal, OLD.Edit(a, p, initial))
+        sources.append(replace(s, scene_id=terminal.scene_id + f'-origin{initial}'))
+    for s in sources:
+        final = OLD.apply_program(s, (command,))
+        if final.values != terminal.values or OLD.render(final)[0] != OLD.render(terminal)[0]:
+            raise ValueError('Invalid paired terminal')
+    return {'pair_id': terminal.scene_id, 'terminal': asdict(terminal),
+            'sources': [asdict(s) for s in sources], 'commands': [asdict(command)],
+            'source_hashes': [semantic_hash(s) for s in sources]}
+
+
+def pair_questions(record, origin):
+    if origin not in (0, 1): raise ValueError('Origin must be 0 or 1')
+    terminal = C.Q.scene_from_dict(record['terminal'])
+    source = C.Q.scene_from_dict(record['sources'][origin])
+    out = []
+    with seed_context():
+        for draw in (0, 1):
+            qs = OLD.questions(terminal, terminal, challenge=True, draw=draw)
+            for q in qs:
+                q.update(source_gold=V6.R.truth(source.values, q['spec']),
+                         gold=V6.R.truth(terminal.values, q['spec']),
+                         additional=False, draw=draw, reader='R0',
+                         origin_id=source.scene_id, pair_id=record['pair_id'],
+                         program_id='SINGLE_TERMINAL_SET')
+                q['changed'] = q['source_gold'] != q['gold']
+                out.append(q)
+    if len(out) != 24: raise ValueError('Expected 24 single-operation questions')
+    return out
+
+
+
+
+
+
+
+
+

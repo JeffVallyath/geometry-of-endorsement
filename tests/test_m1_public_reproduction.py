@@ -6,9 +6,9 @@ from pathlib import Path
 
 import pytest
 
-from geometry_of_truth.m1.config import ConfigError, load_config
-from geometry_of_truth.m1.reference import compare_result, load_reference
-from geometry_of_truth.m1.runner import _truth_control_summary
+from relation_study.m1.config import ConfigError, load_config
+from relation_study.m1.reference import compare_result, load_reference
+from relation_study.m1.runner import _truth_control_summary
 
 
 ROOT = Path(__file__).resolve().parents[1]

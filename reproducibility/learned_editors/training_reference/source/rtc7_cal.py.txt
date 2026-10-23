@@ -1,0 +1,105 @@
+"""CAL-only measurement and selection, using unchanged R0 clone serving."""
+from __future__ import annotations
+
+import json
+from pathlib import Path
+import numpy as np
+import rtc7_common as V
+import rtc7_train as T
+import rsi6_forward as F
+
+
+def score_pair(bb, pair, actor, condition, output, *, bank=None, check_time=lambda: None):
+    output = Path(output)
+    receipt_path = output / (pair['pair_id'] + '.DONE.json')
+    row_path = output / (pair['pair_id'] + '.jsonl')
+    identity = {'pair': V.PAIRS.digest(pair['record']), 'actor': actor, 'condition': condition,
+                'serving': F.serving_mode(bb)}
+    if bank is not None:
+        identity['setter_identity'] = getattr(bank, 'rtc7_identity', None)
+        if identity['setter_identity'] is None: raise ValueError('CAL bank needs checkpoint hash identity')
+    if receipt_path.exists():
+        receipt = V.C.load(receipt_path)
+        if receipt['identity'] != identity or V.sha(row_path) != receipt['sha256']:
+            raise ValueError('CAL resume identity/hash mismatch')
+        return V.C.read_rows(row_path)
+    rows = []
+    for origin, branch in enumerate(pair['branches']):
+        check_time()
+        text = branch['text']; request = branch['request']
+        if condition == 'NATIVE_FINAL':
+            source = V.C.Q.scene_from_dict(pair['record']['sources'][origin])
+            terminal = V.C.Q.scene_from_dict(pair['record']['terminal'])
+            text, _ = V.C.Q.prefix_text(source, V.C.PROCEDURES[actor], 'original', world=terminal)
+            art = bb.compile(bb.prefix_ids(text), grad=False)
+        elif condition == 'SOURCE': art = bb.compile(request.prefix_ids, grad=False)
+        else:
+            if bank is None or bank.frozen_u is None: raise ValueError('Frozen selected basis required for CAL')
+            plan = T.writer_plan(bank, request)
+            art = bb.compile(request.prefix_ids, maps=plan['maps'], index=plan['index'], site=plan['site'], workspace='fp32', grad=False)
+        encoded = []
+        for q in branch['queries']:
+            enc = bb.encode(text, V.C.Q.suffix_text(q['meta']['text']))
+            labels = bb.label_ids(enc['full_text'], q['meta']['labels'])
+            if enc['prefix_ids'] != art['prefix_ids']: raise ValueError('CAL prefix boundary drift')
+            encoded.append((q, enc, labels))
+        for start in range(0, 24, 12):
+            chunk = encoded[start:start+12]
+            batch = dict(mode=F.serving_mode(bb), artifact_hash=art['hash'], prefix_sha256=art['prefix_sha256'],
+                prefix_tokens=art['prefix_len'], suffix_ids=[x[1]['suffix_ids'] for x in chunk],
+                label_ids=[x[2] for x in chunk], batch_size=12,
+                padded_suffix_length=max(len(x[1]['suffix_ids']) for x in chunk))
+            results = F.physical_batch(bb, art, batch, journal=output/'physical'/pair['pair_id'],
+                event={'identity': identity, 'origin': origin, 'start': start})
+            for slot, ((q, enc, labels), result) in enumerate(zip(chunk, results, strict=True)):
+                rows.append(dict(q['meta'], actor=actor, condition=condition, origin=origin, slot=start+slot,
+                    prediction=result['prediction'], logps=result['logps'], answer_mass=result['answer_mass'],
+                    argmax_in_labels=result['argmax_in_labels'], tie=result['tie'], finite=result.get('finite', True),
+                    valid=not result['tie'] and result.get('finite', True), prefix_text=text, prefix_ids=art['prefix_ids'],
+                    suffix_ids=enc['suffix_ids'], label_ids=labels, artifact_hash=art['hash'], batch=batch,
+                    batch_slot=slot, realized=art.get('realized')))
+        del art
+    if row_path.exists():
+        if V.C.read_rows(row_path) != rows: raise ValueError('Preserved CAL rows differ from physical journal')
+    else: V.C.write_rows(row_path, rows)
+    F.durable_json(receipt_path, {'identity': identity, 'sha256': V.sha(row_path), 'rows': len(rows)})
+    return rows
+
+
+def summarize(rows, source_rows, native_rows):
+    def index(records):
+        result = {(r['pair_id'], r['origin'], r['slot']): r for r in records}
+        if len(result) != len(records): raise ValueError('Duplicate CAL query identity')
+        return result
+    source, native, scored = map(index, (source_rows, native_rows, rows))
+    if set(source) != set(native) or set(source) != set(scored): raise ValueError('Unmatched CAL inventory')
+    ids = sorted({r['pair_id'] for r in rows})
+    if len(ids) != 32 or len(rows) != 32*48: raise ValueError('Full paired CAL32 required')
+    ok = lambda r: bool(r['valid'] and r['prediction'] == r['gold'])
+    per_pair = []
+    for pid in ids:
+        branches = [[scored[(pid, origin, i)] for i in range(24)] for origin in (0, 1)]
+        flip = [i for i in (0, 1) if any(r['changed'] for r in branches[i])]
+        if len(flip) != 1: raise ValueError('Exactly one flip and one no-op required')
+        f = flip[0]; n = 1-f; rs = branches[f]
+        changed = [r for r in rs if r['changed']]; inv = [r for r in rs if not r['changed']]
+        harm = [source[(pid, f, r['slot'])]['valid'] and source[(pid, f, r['slot'])]['prediction'] == r['gold'] and not ok(r) for r in inv]
+        noop_source_correct = [r for r in branches[n] if source[(pid, n, r['slot'])]['valid'] and source[(pid, n, r['slot'])]['prediction'] == r['gold']]
+        if not noop_source_correct: raise ValueError('Missing no-op source-correct denominator')
+        per_pair.append(dict(pair_id=pid, direction=n, changed=float(np.mean([ok(r) for r in changed])),
+            harm=float(np.mean(harm)), all24=float(all(ok(r) for r in rs)),
+            native_all24=float(all(ok(native[(pid, f, i)]) for i in range(24))),
+            noop_preservation=float(np.mean([ok(r) for r in noop_source_correct])),
+            pair_correct=float(all(ok(r) for branch in branches for r in branch)),
+            changed_count=len(changed), invariant_count=len(inv), noop_source_correct_count=len(noop_source_correct)))
+    result = {k: float(np.mean([p[k] for p in per_pair])) for k in ('changed', 'harm', 'all24', 'native_all24', 'noop_preservation', 'pair_correct')}
+    result['changed_by_direction'] = {str(d): float(np.mean([p['changed'] for p in per_pair if p['direction'] == d])) for d in (0, 1)}
+    result['per_pair'] = per_pair
+    return result
+
+
+def evaluate(bb, pairs, actor, condition, output, source, native, bank, check_time):
+    rows = []
+    for pair in pairs:
+        rows.extend(score_pair(bb, pair, actor, condition, output, bank=bank, check_time=check_time))
+    return summarize(rows, source, native)

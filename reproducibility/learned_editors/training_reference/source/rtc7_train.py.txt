@@ -1,0 +1,240 @@
+"""Production V7 paired gradient path; never imports historical training controllers."""
+from __future__ import annotations
+
+import os
+from pathlib import Path
+import random
+import shutil
+import time
+import numpy as np
+import torch
+import rtc7_common as V
+
+LOSS = V.reference('pair_loss')
+
+
+def writer_plan(bank, request):
+    """No query, mapping, gold, donor, source backup or origin enters the writer."""
+    if type(request) is not V.WriterInput:
+        raise TypeError('Writer requires the exact narrow immutable schema')
+    maps, union = [], set()
+    for positions, value in zip(request.addresses, request.desired_values, strict=True):
+        index = (torch.zeros(len(positions), dtype=torch.long, device=bank.bb.device),
+                 torch.tensor(positions, dtype=torch.long, device=bank.bb.device))
+        maps.append({'kind': 'setter', 'fn': bank.fn(value, 1., record=False),
+                     'index': index, 'clause_positions': list(positions)})
+        union.update(positions)
+    return {'maps': maps, 'index': sorted(union), 'site': bank.site, 'workspace': 'fp32'}
+
+
+def branch_forward(bb, bank, request, queries, *, grad):
+    """Loss-side scoring stays outside writer_plan's access boundary."""
+    if len(request.addresses) != 1 or len(queries) != 4:
+        raise ValueError('Exactly one SET and four paired questions per group')
+    # The entire no-grad call includes the inherited FP32 readout, not just backbone.model.
+    with torch.set_grad_enabled(grad):
+        plan = writer_plan(bank, request)
+        result = bb.full_forward(request.prefix_ids, [q['suffix'] for q in queries],
+            [q['labels'] for q in queries], prefix_maps=plan['maps'], prefix_index=plan['index'],
+            prefix_site=plan['site'], grad=grad, workspace='fp32')
+        logps = torch.stack(result['label_logps'])
+        normreg = torch.cat([m['_delta_sq'] for m in plan['maps']]).mean() / bank.cap_ref**2
+        return logps, normreg
+
+
+def partials(forward, backward, gold, w0, w1, kappa, *, replay_atol=0., replay_rtol=0.):
+    """Exact partial derivatives with only ONE live backbone graph at any time.
+
+    forward(origin, grad) -> (full-vocabulary label logps, inherited normreg).
+    This function never steps or clears an optimizer. The caller commits once.
+    """
+    log0, reg0 = forward(0, False)
+    log0 = log0.detach().clone()
+    reg0 = reg0.detach().clone()
+    log1, reg1 = forward(1, True)
+    objective, metrics = LOSS.paired_loss(log0, log1, gold, w0, w1, kappa)
+    detached1 = log1.detach().clone()
+    result = {'objective': float(objective.detach() + .5*V.BETA*(reg0 + reg1.detach())),
+        'nll': float(metrics['nll'].detach()), 'consistency': float(metrics['consistency'].detach()),
+        'normreg0': float(reg0), 'normreg1': float(reg1.detach()),
+        'answer_mass0': float(log0.exp().sum(-1).mean()),
+        'answer_mass1': float(detached1.exp().sum(-1).mean())}
+    backward(objective + .5*V.BETA*reg1)
+    del objective, metrics, log1, reg1
+    live0, live_reg0 = forward(0, True)
+    error = float((live0.detach()-log0).abs().max())
+    if not torch.allclose(live0.detach(), log0, atol=replay_atol, rtol=replay_rtol):
+        raise ValueError(f'Paired no-grad/live replay differs: {error}; optimizer not stepped')
+    if not torch.allclose(live_reg0.detach(), reg0, atol=replay_atol, rtol=replay_rtol):
+        raise ValueError('Paired replay norm regularizer differs; optimizer not stepped')
+    objective, metrics = LOSS.paired_loss(live0, detached1, gold, w0, w1, kappa)
+    backward(objective + .5*V.BETA*live_reg0)
+    result.update(replay_max_abs=error, forwards=3, backwards=2, group_size=int(gold.numel()))
+    return result
+
+
+def paired_step(bb, bank, pair, indices, optimizer, kappa):
+    if len(indices) != 4 or len(set(indices)) != 4:
+        raise ValueError('Four distinct aligned slots required')
+    if any(p.requires_grad for p in bb.model.parameters()):
+        raise ValueError('Backbone must be frozen')
+    if bank.frozen_u is not None:
+        raise ValueError('Training requires differentiable canonical-sign QR basis')
+    if {id(p) for g in optimizer.param_groups for p in g['params']} != {id(p) for p in bank.parameters()}:
+        raise ValueError('Optimizer must own editor parameters only')
+    branches = pair['branches']
+    queries = [[b['queries'][i] for i in indices] for b in branches]
+    if any(queries[0][i]['meta']['gold'] != queries[1][i]['meta']['gold'] for i in range(4)):
+        raise ValueError('Paired gold mismatch')
+    gold = torch.tensor([q['meta']['gold'] for q in queries[0]], device=bb.device)
+    weights = [LOSS.balance_weights(torch.tensor([q['meta']['changed'] for q in b['queries']], device=bb.device))[list(indices)] for b in branches]
+    optimizer.zero_grad(set_to_none=True)
+    def forward(origin, grad):
+        return branch_forward(bb, bank, branches[origin]['request'], queries[origin], grad=grad)
+    result = partials(forward, bb.backward, gold, weights[0], weights[1], kappa)
+    grads = {n: p.grad for n, p in bank.model.named_parameters()}
+    if any(g is None or not torch.isfinite(g).all() for g in grads.values()):
+        raise ValueError('Missing/nonfinite editor gradient; optimizer not stepped')
+    if any(p.grad is not None for p in bb.model.parameters()):
+        raise ValueError('Backbone received a gradient; optimizer not stepped')
+    result['gradient_norms'] = {n: float(g.norm()) for n, g in grads.items()}
+    result['preclip_norm'] = float(torch.nn.utils.clip_grad_norm_(bank.parameters(), 1., error_if_nonfinite=True))
+    optimizer.step()
+    optimizer.zero_grad(set_to_none=True)
+    result.update(optimizer_steps=1, weights0=weights[0].tolist(), weights1=weights[1].tolist())
+    return result
+
+
+def load_starter(bb, actor, condition, seed, binding):
+    from rso3_editor import SetterBank
+    if actor not in V.ACTORS or condition not in V.CONDITIONS or seed not in V.SEEDS:
+        raise ValueError('Undeclared actor/architecture/objective/seed')
+    original = ('INV' if condition.startswith('INV_') else 'FREE') + '_COMPLETE_SINGLE'
+    matches = [r for r in binding['checkpoints'] if r['origin'] == 'V4' and r['actor'] == actor
+               and r['condition'] == original and r['seed'] == seed]
+    if len(matches) != 1: raise ValueError('Ambiguous checkpoint0')
+    record = matches[0]; path = Path(record['path'])
+    if V.sha(path/'setter.npz') != record['setter_sha256'] or V.sha(path/'META.json') != record['meta_sha256']:
+        raise ValueError('Historical factor binding changed')
+    bank = SetterBank.load(bb, path)
+    if bank.seed != seed or bank.site != V.C.V4.MODELS[actor]['site'] or bank.actor != actor:
+        raise ValueError('Actor/seed/site mismatch')
+    bank.rtc7_identity = record['setter_sha256']
+    return bank, record
+
+
+def atomic_state(path, state):
+    """Replace only this goal's resumable optimizer state; audit rows remain immutable."""
+    path = Path(path); path.parent.mkdir(parents=True, exist_ok=True)
+    temporary = path.with_suffix('.pending')
+    with temporary.open('wb') as handle:
+        torch.save(state, handle); handle.flush(); os.fsync(handle.fileno())
+    os.replace(temporary, path)
+
+
+def rng_state():
+    return dict(python=random.getstate(), numpy=np.random.get_state(), torch=torch.get_rng_state(),
+                cuda=torch.cuda.get_rng_state_all() if torch.cuda.is_initialized() else None)
+
+
+def restore_rng(state):
+    random.setstate(state['python']); np.random.set_state(state['numpy']); torch.set_rng_state(state['torch'].cpu())
+    if state['cuda'] is not None: torch.cuda.set_rng_state_all([x.cpu() for x in state['cuda']])
+
+
+def train_condition(bb, actor, condition, seed, epochs, fit, cal, source, native, binding, output, run_identity, check_time):
+    """Full matched epochs with exact optimizer/RNG/group resume and CAL-only selection."""
+    import rtc7_cal as CAL
+    from rsi6_forward import durable_json
+    if epochs not in (1, 2) or len(fit) != 64 or len(cal) != 32:
+        raise ValueError('Frozen matched epoch/FIT/CAL counts required')
+    path = Path(output)/actor/condition/f's{seed}'
+    path.mkdir(parents=True, exist_ok=True)
+    bank, starter = load_starter(bb, actor, condition, seed, binding)
+    identity = dict(run_identity=run_identity, actor=actor, condition=condition, seed=seed, epochs=epochs,
+        starter=starter['setter_sha256'], fit=[V.PAIRS.digest(p['record']) for p in fit],
+        cal=[V.PAIRS.digest(p['record']) for p in cal])
+    identity_path = path/'IDENTITY.json'
+    if identity_path.exists():
+        if V.C.load(identity_path) != identity: raise ValueError('Condition belongs to another frozen scientific attempt')
+    else: durable_json(identity_path, identity)
+    if (path/'DONE.json').exists():
+        done = V.C.load(path/'DONE.json')
+        if done['identity'] != identity: raise ValueError('Completed condition identity differs')
+        for name, digest in done['files'].items():
+            if V.sha(path/name) != digest: raise ValueError('Completed condition file changed')
+        return done
+    ck0 = path/'epoch0'
+    if not ck0.exists():
+        ck0.mkdir()
+        for name in ('setter.npz', 'META.json'): shutil.copyfile(Path(starter['path'])/name, ck0/name)
+    if V.sha(ck0/'setter.npz') != starter['setter_sha256'] or V.sha(ck0/'META.json') != starter['meta_sha256']:
+        raise ValueError('Checkpoint0 not byte-identical to matching historical factor')
+    curve = []
+    if not (path/'epoch0.CAL.json').exists():
+        metrics = CAL.evaluate(bb, cal, actor, condition, path/'cal/epoch0', source, native, bank, check_time)
+        durable_json(path/'epoch0.CAL.json', dict(epoch=0, cal=metrics, setter_sha256=bank.rtc7_identity, path=str(ck0)))
+    curve.append(V.C.load(path/'epoch0.CAL.json'))
+    # Checkpoint zero is evaluated with SAVED realized basis. Only now enable QR training.
+    bank.frozen_u = None
+    bank.model.train(False)
+    for p in bank.parameters(): p.requires_grad_(True)
+    optimizer = torch.optim.AdamW(bank.parameters(), lr=V.LR[condition.split('_')[0]], betas=(.9, .999), eps=1e-8, weight_decay=0.)
+    resume_path = path/'resume.pt'
+    next_epoch, next_group, steps = 1, 0, 0
+    if resume_path.exists():
+        # This is an owned, locally produced checkpoint bound to the immutable capsule.
+        state = torch.load(resume_path, map_location=bb.device, weights_only=False)
+        if state['identity'] != identity: raise ValueError('Resume belongs to another frozen scientific attempt')
+        bank.model.load_state_dict(state['editor']); optimizer.load_state_dict(state['optimizer']); restore_rng(state['rng'])
+        next_epoch, next_group, steps = state['next_epoch'], state['next_group'], state['steps']
+        journal = path/'steps'/f'{steps:06d}.json'
+        if steps:
+            if journal.exists():
+                if V.C.load(journal) != state['last_step']: raise ValueError('Resume step journal differs from optimizer snapshot')
+            else: durable_json(journal, state['last_step'])
+    for epoch in range(1, epochs+1):
+        order = V.groups(fit, seed, epoch)
+        if epoch < next_epoch:
+            curve.append(V.C.load(path/f'epoch{epoch}.CAL.json')); continue
+        start = time.monotonic()
+        for group_index in range(next_group, len(order)):
+            check_time()
+            pair_index, indices = order[group_index]
+            result = paired_step(bb, bank, fit[pair_index], indices, optimizer, float(condition.endswith('CONSISTENCY')))
+            steps += 1
+            result.update(step=steps, epoch=epoch, group=group_index, pair_id=fit[pair_index]['pair_id'], indices=list(indices))
+            state = dict(identity=identity, editor=bank.model.state_dict(), optimizer=optimizer.state_dict(), rng=rng_state(),
+                         next_epoch=epoch, next_group=group_index+1, steps=steps, last_step=result)
+            atomic_state(resume_path, state)
+            durable_json(path/'steps'/f'{steps:06d}.json', result)
+        ck = path/f'epoch{epoch}'
+        if not ck.exists():
+            bank.save(ck, epoch=epoch, condition=condition, lr=V.LR[condition.split('_')[0]], steps=steps,
+                paired_groups=steps, paired_question_slots=steps*8, kappa=float(condition.endswith('CONSISTENCY')),
+                frozen_backbone=True, checkpoint0_sha256=starter['setter_sha256'], training_contract='RTC7_EXACT_PAIRED_V1')
+        else:
+            with np.load(ck/'setter.npz', allow_pickle=False) as saved:
+                for name in ('basis_raw', 'head', 'bias', 'center'):
+                    if not np.array_equal(saved[name], getattr(bank.model, name).detach().cpu().numpy()):
+                        raise ValueError('Epoch checkpoint differs from exact resumed editor')
+        # Evaluate the exact saved realized basis, never a separately rounded re-realization.
+        with np.load(ck/'setter.npz', allow_pickle=False) as saved:
+            bank.frozen_u = torch.as_tensor(saved['basis_realized'], device=bb.device).clone()
+        bank.rtc7_identity = V.sha(ck/'setter.npz')
+        cal_path = path/f'epoch{epoch}.CAL.json'
+        if not cal_path.exists():
+            metrics = CAL.evaluate(bb, cal, actor, condition, path/'cal'/f'epoch{epoch}', source, native, bank, check_time)
+            durable_json(cal_path, dict(epoch=epoch, cal=metrics, setter_sha256=bank.rtc7_identity, path=str(ck),
+                                      steps=steps, elapsed_this_resume_seconds=time.monotonic()-start))
+        curve.append(V.C.load(cal_path)); bank.frozen_u = None
+        state.update(next_epoch=epoch+1, next_group=0)
+        atomic_state(resume_path, state)
+        next_epoch, next_group = epoch+1, 0
+    selected = V.select_checkpoint(curve)
+    done = dict(identity=identity, curve=curve, selection=selected, steps=steps,
+        backbone=bb.verify_unchanged(), files={str(p.relative_to(path)).replace('\\', '/'): V.sha(p)
+        for epoch in range(epochs+1) for p in (path/f'epoch{epoch}/setter.npz', path/f'epoch{epoch}/META.json', path/f'epoch{epoch}.CAL.json')})
+    if not done['backbone']['unchanged']: raise ValueError('Backbone changed during paired training')
+    durable_json(path/'DONE.json', done)
+    return done

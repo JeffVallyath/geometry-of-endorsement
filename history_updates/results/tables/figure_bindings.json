@@ -1,0 +1,42 @@
+{
+  "figure_02": {
+    "data": "table_03.json",
+    "approved_design": "Supplied paper, Figure 2",
+    "kind": "measured rates and intervals"
+  },
+  "figure_01": {
+    "data": "table_04.json",
+    "approved_design": "Supplied paper, Figure 1",
+    "kind": "author-designed schematic with measured example; no neural trajectory is inferred"
+  },
+  "figure_08": {
+    "data": "claims.json#/cache_refresh",
+    "approved_design": "Supplied paper, Figure 8",
+    "kind": "measured paired changes and intervals"
+  },
+  "figure_03": {
+    "data": "claims.json#/cache_crossover/example",
+    "approved_design": "Supplied paper, Figure 3",
+    "kind": "saved-score cache crossover"
+  },
+  "figure_06": {
+    "data": "claims.json#/cache_sites",
+    "approved_design": "Supplied paper, Figure 6",
+    "kind": "individual-site and leave-one-out saved-score data"
+  },
+  "figure_07": {
+    "data": "claims.json#/cache_sites",
+    "approved_design": "Supplied paper, Figure 7",
+    "kind": "individual-site and leave-one-out saved-score data"
+  },
+  "figure_04": {
+    "data": "implementation and methods.md",
+    "approved_design": "Supplied paper, Figure 4",
+    "kind": "author-designed architecture schematic, not a measured trajectory"
+  },
+  "figure_05": {
+    "data": "table_07.json",
+    "approved_design": "Supplied paper, Figure 5",
+    "kind": "complete cases; trained bars average two seeds within model"
+  }
+}

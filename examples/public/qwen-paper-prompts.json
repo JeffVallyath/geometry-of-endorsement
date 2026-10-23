@@ -1,0 +1,962 @@
+[
+  {
+    "arm": "H0",
+    "branch": "F",
+    "case_id": 1617,
+    "chat_sha256": "0a11d31b0b14b21d30ba744ced146836a61a39cfa860546b6afd53ccbc71f3b5",
+    "input_ids_sha256": "49498e5caf3de188faabadd1ae550cfa5e3d95888bae8752c75de7ffb65e44b8",
+    "input_tokens": 155,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nWilliam Levada is affiliated with the religion of Catholic Church.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\nAlbert of Saxony is affiliated with the religion of Church of Scotland.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: Which religion is William Levada affiliated with?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F0",
+    "unit_id": "qwen:1617:H0:F0"
+  },
+  {
+    "arm": "H1",
+    "branch": "F",
+    "case_id": 1617,
+    "chat_sha256": "f62ee057dce2b429b2454f125c4031c7b56100c29cfc22b629538b6790a51c4f",
+    "input_ids_sha256": "9bc83ac822168e0320c7d37a79cebc009141618a55a93c45c07c9f184b10a761",
+    "input_tokens": 155,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nAlbert of Saxony is affiliated with the religion of Church of Scotland.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\nWilliam Levada is affiliated with the religion of Catholic Church.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: Which religion is William Levada affiliated with?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F0",
+    "unit_id": "qwen:1617:H1:F0"
+  },
+  {
+    "arm": "S0",
+    "branch": "F",
+    "case_id": 1617,
+    "chat_sha256": "05bd92e69a5face2b51d04f975f316e56602044077f8b616bebb9a24d1872bf1",
+    "input_ids_sha256": "70feaf7a6a0ee8959a8edb71feda6e87faf6120ebf2d8d1e45dafe7bd1537ca6",
+    "input_tokens": 155,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nAlbert of Saxony is affiliated with the religion of Catholic Church.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\nWilliam Levada is affiliated with the religion of Church of Scotland.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: Which religion is William Levada affiliated with?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F0",
+    "unit_id": "qwen:1617:S0:F0"
+  },
+  {
+    "arm": "S1",
+    "branch": "F",
+    "case_id": 1617,
+    "chat_sha256": "78a9d63890fd09897bcfae4cb95648e40c21c03c3aa0ee8b63b8ca20bed6a68c",
+    "input_ids_sha256": "1e09fe652dcd777c78b6ceb6ee13efb10fdc37d2b70b71842dafd6bc294d1578",
+    "input_tokens": 155,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nWilliam Levada is affiliated with the religion of Church of Scotland.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\nAlbert of Saxony is affiliated with the religion of Catholic Church.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: Which religion is William Levada affiliated with?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F0",
+    "unit_id": "qwen:1617:S1:F0"
+  },
+  {
+    "arm": "C",
+    "branch": "F",
+    "case_id": 1617,
+    "chat_sha256": "1357fa195575bf629383a79a05a7bdf5743eda7ee56f2dd690c8eaaf40e6bcce",
+    "input_ids_sha256": "f3c42b44ca99bd830ec8dc1a05a4f83e49534add06bb554b7f8945563dc7c319",
+    "input_tokens": 124,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nWilliam Levada is affiliated with the religion of Church of Scotland.\nAlbert of Saxony is affiliated with the religion of Church of Scotland.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\n\nQuestion: Which religion is William Levada affiliated with?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F0",
+    "unit_id": "qwen:1617:C:F0"
+  },
+  {
+    "arm": "C+",
+    "branch": "F",
+    "case_id": 1617,
+    "chat_sha256": "1967a33b2f7adac012a54df3bf7a8a2163e45bae1e881d0065716c29a6a7c4a6",
+    "input_ids_sha256": "82e35a02edaab545bc56f412b0d24884c45c8ce3ef1c3fe031657185ccc33b2d",
+    "input_tokens": 156,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nWilliam Levada is affiliated with the religion of Church of Scotland.\nAlbert of Saxony is affiliated with the religion of Church of Scotland.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: Which religion is William Levada affiliated with?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F0",
+    "unit_id": "qwen:1617:C+:F0"
+  },
+  {
+    "arm": "H0",
+    "branch": "F",
+    "case_id": 1617,
+    "chat_sha256": "d208fde136a86726927f691f0edd6d8f321844a17d5e91b373b4cc12a72f9289",
+    "input_ids_sha256": "b1fd86789f563e959bf57796caff1f76e81827633e2aca9eb7c9789952a58214",
+    "input_tokens": 152,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nWilliam Levada is affiliated with the religion of Catholic Church.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\nAlbert of Saxony is affiliated with the religion of Church of Scotland.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: Who founded Church of Scotland?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F1",
+    "unit_id": "qwen:1617:H0:F1"
+  },
+  {
+    "arm": "H1",
+    "branch": "F",
+    "case_id": 1617,
+    "chat_sha256": "48b2db54cd6927e0440b684764b9188c4b759fd23802748ffc4e09421ba55578",
+    "input_ids_sha256": "2bb2428e21c85887a1153e5e955e453a8bc958ea9f3bcbc342a3bc06a38ff7e8",
+    "input_tokens": 152,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nAlbert of Saxony is affiliated with the religion of Church of Scotland.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\nWilliam Levada is affiliated with the religion of Catholic Church.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: Who founded Church of Scotland?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F1",
+    "unit_id": "qwen:1617:H1:F1"
+  },
+  {
+    "arm": "S0",
+    "branch": "F",
+    "case_id": 1617,
+    "chat_sha256": "30a3fd350560513e72ffccb60a16bcc206357b08f74edc996c238e8333f3beaa",
+    "input_ids_sha256": "d715583aa7d6c20343c463aba0753a16310b02d6fad1401c3f1bcb3a58b6328a",
+    "input_tokens": 152,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nAlbert of Saxony is affiliated with the religion of Catholic Church.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\nWilliam Levada is affiliated with the religion of Church of Scotland.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: Who founded Church of Scotland?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F1",
+    "unit_id": "qwen:1617:S0:F1"
+  },
+  {
+    "arm": "S1",
+    "branch": "F",
+    "case_id": 1617,
+    "chat_sha256": "89a693cd6c09d4c2d1c98b4eae4af5fe74106f806052eed726ea0cf87e020b57",
+    "input_ids_sha256": "a239423a37af7425145ea222db8c7bc73b3b4dbb675e6abb4554f7f8570104f7",
+    "input_tokens": 152,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nWilliam Levada is affiliated with the religion of Church of Scotland.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\nAlbert of Saxony is affiliated with the religion of Catholic Church.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: Who founded Church of Scotland?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F1",
+    "unit_id": "qwen:1617:S1:F1"
+  },
+  {
+    "arm": "C",
+    "branch": "F",
+    "case_id": 1617,
+    "chat_sha256": "9d5261a4081e3d12eecfb419c7a86f0eb0eefc54c35df73fdc0ef184bdf0e9f8",
+    "input_ids_sha256": "57b100d75701c0fc08af6dbc84eff96ac90447dcb954d68a1ecf802cc8d9ee17",
+    "input_tokens": 121,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nWilliam Levada is affiliated with the religion of Church of Scotland.\nAlbert of Saxony is affiliated with the religion of Church of Scotland.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\n\nQuestion: Who founded Church of Scotland?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F1",
+    "unit_id": "qwen:1617:C:F1"
+  },
+  {
+    "arm": "C+",
+    "branch": "F",
+    "case_id": 1617,
+    "chat_sha256": "16c3a3100565876ef74fc6217c58eb9bf70d56a92fee2af796311476a8d6f7b8",
+    "input_ids_sha256": "e9c48f0707a3a693f7a30e8c17488aba55aa9ea47f7cdbe1e074258d32c34353",
+    "input_tokens": 153,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nWilliam Levada is affiliated with the religion of Church of Scotland.\nAlbert of Saxony is affiliated with the religion of Church of Scotland.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: Who founded Church of Scotland?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F1",
+    "unit_id": "qwen:1617:C+:F1"
+  },
+  {
+    "arm": "H0",
+    "branch": "F",
+    "case_id": 1617,
+    "chat_sha256": "a3c1803d5d47ecf7eb1266757c72451dfa9eac00d908b975313e9bc090372ca2",
+    "input_ids_sha256": "8106f7c52ca2f207550dd13a3e5f19b53a1557d66a9e83c29700d3d49444dfab",
+    "input_tokens": 154,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nWilliam Levada is affiliated with the religion of Catholic Church.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\nAlbert of Saxony is affiliated with the religion of Church of Scotland.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: Which city did John Knox work in?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F2",
+    "unit_id": "qwen:1617:H0:F2"
+  },
+  {
+    "arm": "H1",
+    "branch": "F",
+    "case_id": 1617,
+    "chat_sha256": "d8b92e656431328371e0227007bc0819b50ad3e8cfa9e954e22f4a246db2732a",
+    "input_ids_sha256": "bff82bb9a6fb7eceed8689dc265a2fe3ac32516a64da022746f571003ad78912",
+    "input_tokens": 154,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nAlbert of Saxony is affiliated with the religion of Church of Scotland.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\nWilliam Levada is affiliated with the religion of Catholic Church.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: Which city did John Knox work in?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F2",
+    "unit_id": "qwen:1617:H1:F2"
+  },
+  {
+    "arm": "S0",
+    "branch": "F",
+    "case_id": 1617,
+    "chat_sha256": "3047a9e0dc170a5344c33514afb684babe83dd7e00312b3632a8125b4deac077",
+    "input_ids_sha256": "6f52a7a29121a456de0687d72b0e15f37397caa552d594d6fb2a6cf901a12fd4",
+    "input_tokens": 154,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nAlbert of Saxony is affiliated with the religion of Catholic Church.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\nWilliam Levada is affiliated with the religion of Church of Scotland.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: Which city did John Knox work in?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F2",
+    "unit_id": "qwen:1617:S0:F2"
+  },
+  {
+    "arm": "S1",
+    "branch": "F",
+    "case_id": 1617,
+    "chat_sha256": "edbe57455fac66063c8d5af837eefa006c9575a8a57f1438776cc93cf60ef33a",
+    "input_ids_sha256": "8fab6e9164c3d17e04ef8f81c97aa9af0535d8c807085f93f48a5a743ccf9163",
+    "input_tokens": 154,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nWilliam Levada is affiliated with the religion of Church of Scotland.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\nAlbert of Saxony is affiliated with the religion of Catholic Church.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: Which city did John Knox work in?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F2",
+    "unit_id": "qwen:1617:S1:F2"
+  },
+  {
+    "arm": "C",
+    "branch": "F",
+    "case_id": 1617,
+    "chat_sha256": "0b6c551200aa99a50ba8cf29eb8426fb293b41510748fabf2bec0830ffb7a081",
+    "input_ids_sha256": "47b5a99cd40a2129ffe30b768eebdaf8339b0dcb54044ce2fc7fc73346b35b82",
+    "input_tokens": 123,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nWilliam Levada is affiliated with the religion of Church of Scotland.\nAlbert of Saxony is affiliated with the religion of Church of Scotland.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\n\nQuestion: Which city did John Knox work in?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F2",
+    "unit_id": "qwen:1617:C:F2"
+  },
+  {
+    "arm": "C+",
+    "branch": "F",
+    "case_id": 1617,
+    "chat_sha256": "e8a07b3abd1f14d41e1a00757ff09b1272eb94078ea64acee09efa74da069b1c",
+    "input_ids_sha256": "e5fded165c60abc641d4a57b6857b204687430cde4c8d213bcc8f8b079dfe8a9",
+    "input_tokens": 155,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nWilliam Levada is affiliated with the religion of Church of Scotland.\nAlbert of Saxony is affiliated with the religion of Church of Scotland.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: Which city did John Knox work in?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F2",
+    "unit_id": "qwen:1617:C+:F2"
+  },
+  {
+    "arm": "H0",
+    "branch": "Fdecoy",
+    "case_id": 1617,
+    "chat_sha256": "c36a374bd0dcf5b9691fb90a54d1d7d1dd6b2c7b8957e006404cb69910c8733b",
+    "input_ids_sha256": "f40b5b9a70aa7249ce4060c1c7253cbc947c46ab70446f96ed4f0b94d9fe256b",
+    "input_tokens": 156,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nWilliam Levada is affiliated with the religion of Catholic Church.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\nAlbert of Saxony is affiliated with the religion of Church of Scotland.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: Which religion is Albert of Saxony affiliated with?",
+        "role": "user"
+      }
+    ],
+    "query_id": "Fdecoy",
+    "unit_id": "qwen:1617:H0:Fdecoy"
+  },
+  {
+    "arm": "H1",
+    "branch": "Fdecoy",
+    "case_id": 1617,
+    "chat_sha256": "2b78686729dd2a681ba6d099d4f1ee48760d9c1c19a851b3fcd25187a0db5fb6",
+    "input_ids_sha256": "7c548d71cc7485f95884eef8a12040e80a863879abb6bdab752d757dcc3fd723",
+    "input_tokens": 156,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nAlbert of Saxony is affiliated with the religion of Church of Scotland.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\nWilliam Levada is affiliated with the religion of Catholic Church.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: Which religion is Albert of Saxony affiliated with?",
+        "role": "user"
+      }
+    ],
+    "query_id": "Fdecoy",
+    "unit_id": "qwen:1617:H1:Fdecoy"
+  },
+  {
+    "arm": "S0",
+    "branch": "Fdecoy",
+    "case_id": 1617,
+    "chat_sha256": "efc1b7a05fbca083cec4e584c12011f29ff9c193f8f67b77cac16c435b86a2c7",
+    "input_ids_sha256": "0aa172b499c2985443c2303352e2d8b87dc0731b663f786dca5f3d585409897d",
+    "input_tokens": 156,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nAlbert of Saxony is affiliated with the religion of Catholic Church.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\nWilliam Levada is affiliated with the religion of Church of Scotland.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: Which religion is Albert of Saxony affiliated with?",
+        "role": "user"
+      }
+    ],
+    "query_id": "Fdecoy",
+    "unit_id": "qwen:1617:S0:Fdecoy"
+  },
+  {
+    "arm": "S1",
+    "branch": "Fdecoy",
+    "case_id": 1617,
+    "chat_sha256": "f246ec63e442d7b988266cd4739847f98a9fbcf36d349158511dfe8fc813d5d7",
+    "input_ids_sha256": "041b7b9f59a636e2d89353d6d7b510922b107a785b604532cf44ac937fcb98d6",
+    "input_tokens": 156,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nWilliam Levada is affiliated with the religion of Church of Scotland.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\nAlbert of Saxony is affiliated with the religion of Catholic Church.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: Which religion is Albert of Saxony affiliated with?",
+        "role": "user"
+      }
+    ],
+    "query_id": "Fdecoy",
+    "unit_id": "qwen:1617:S1:Fdecoy"
+  },
+  {
+    "arm": "C",
+    "branch": "Fdecoy",
+    "case_id": 1617,
+    "chat_sha256": "3ba504e9a6393a3da30ed4b3f7b518cd6424ae48d61acc367c22ecdb31fbb976",
+    "input_ids_sha256": "99f1a1e75a2e7cc74a1c5bff9fc6b05a6678a1e74c1d87b60e9b507191dbd632",
+    "input_tokens": 125,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nWilliam Levada is affiliated with the religion of Church of Scotland.\nAlbert of Saxony is affiliated with the religion of Church of Scotland.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\n\nQuestion: Which religion is Albert of Saxony affiliated with?",
+        "role": "user"
+      }
+    ],
+    "query_id": "Fdecoy",
+    "unit_id": "qwen:1617:C:Fdecoy"
+  },
+  {
+    "arm": "C+",
+    "branch": "Fdecoy",
+    "case_id": 1617,
+    "chat_sha256": "2888a898d906c05d2d372251a26400f3b69bf8384d4080773928822656b1e66c",
+    "input_ids_sha256": "5ad1b1a8c98bff9bd7ac523089ae547a437f0cf5c40632ea2b485cf5b596e4de",
+    "input_tokens": 157,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nWilliam Levada is affiliated with the religion of Church of Scotland.\nAlbert of Saxony is affiliated with the religion of Church of Scotland.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: Which religion is Albert of Saxony affiliated with?",
+        "role": "user"
+      }
+    ],
+    "query_id": "Fdecoy",
+    "unit_id": "qwen:1617:C+:Fdecoy"
+  },
+  {
+    "arm": "H0",
+    "branch": "J",
+    "case_id": 1617,
+    "chat_sha256": "81806881143891613defc3cc20d9e29417045df37491fc57d57597aa5d02e607",
+    "input_ids_sha256": "074b3ce145fd0f96f8be8e4582b6d923a595467558f39b669e4203bab5fd46e7",
+    "input_tokens": 161,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nWilliam Levada is affiliated with the religion of Catholic Church.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\nAlbert of Saxony is affiliated with the religion of Church of Scotland.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: What is the location where the founder of William Levada's religion worked?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J0",
+    "unit_id": "qwen:1617:H0:J0"
+  },
+  {
+    "arm": "H1",
+    "branch": "J",
+    "case_id": 1617,
+    "chat_sha256": "8de65694dd2a54bd97ab546b526e2f0785df1cb2f61da538b40b70e1458aa1d9",
+    "input_ids_sha256": "4847c8990d371a42f6bf73e07721c69de26d9006076b5ceb42fbfe4551a14582",
+    "input_tokens": 161,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nAlbert of Saxony is affiliated with the religion of Church of Scotland.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\nWilliam Levada is affiliated with the religion of Catholic Church.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: What is the location where the founder of William Levada's religion worked?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J0",
+    "unit_id": "qwen:1617:H1:J0"
+  },
+  {
+    "arm": "S0",
+    "branch": "J",
+    "case_id": 1617,
+    "chat_sha256": "c079bda0aa93aef5408aa588940f72b0536e50e8b8db84f29ad9696cdf5669a5",
+    "input_ids_sha256": "e547e8246b71011a53301ebcc0dff32fe8c1ed346cade667298d90a163d1bc8f",
+    "input_tokens": 161,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nAlbert of Saxony is affiliated with the religion of Catholic Church.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\nWilliam Levada is affiliated with the religion of Church of Scotland.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: What is the location where the founder of William Levada's religion worked?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J0",
+    "unit_id": "qwen:1617:S0:J0"
+  },
+  {
+    "arm": "S1",
+    "branch": "J",
+    "case_id": 1617,
+    "chat_sha256": "c36d5cd9a819ec11b4fb6aa5a077dd24140c89b59850489afdbdbaab419dfa89",
+    "input_ids_sha256": "9cd4d583ccd4ca071bae14cd127058e4fdd713fc8d48716f35ce98cbaf3fe10e",
+    "input_tokens": 161,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nWilliam Levada is affiliated with the religion of Church of Scotland.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\nAlbert of Saxony is affiliated with the religion of Catholic Church.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: What is the location where the founder of William Levada's religion worked?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J0",
+    "unit_id": "qwen:1617:S1:J0"
+  },
+  {
+    "arm": "C",
+    "branch": "J",
+    "case_id": 1617,
+    "chat_sha256": "00d89d1984aebc88a2903167ec129fea31f9f2e851c537155579947af7135cf3",
+    "input_ids_sha256": "3258b9f8dd5a45697efd4f5d3d6a0804d37e83b35b4910a4f584196387d9a948",
+    "input_tokens": 130,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nWilliam Levada is affiliated with the religion of Church of Scotland.\nAlbert of Saxony is affiliated with the religion of Church of Scotland.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\n\nQuestion: What is the location where the founder of William Levada's religion worked?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J0",
+    "unit_id": "qwen:1617:C:J0"
+  },
+  {
+    "arm": "C+",
+    "branch": "J",
+    "case_id": 1617,
+    "chat_sha256": "b119c707b6dfbc07c2ef6c208e09b40d695a7070ccdb01a875e072fc10c6f0a4",
+    "input_ids_sha256": "e7f4432751bff11712e602fbc9aeaa13eeef9a2643b4b0b915b5f48312f3a810",
+    "input_tokens": 162,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nWilliam Levada is affiliated with the religion of Church of Scotland.\nAlbert of Saxony is affiliated with the religion of Church of Scotland.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: What is the location where the founder of William Levada's religion worked?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J0",
+    "unit_id": "qwen:1617:C+:J0"
+  },
+  {
+    "arm": "H0",
+    "branch": "J",
+    "case_id": 1617,
+    "chat_sha256": "0f600a231161bea5ec36ed050c32930cdcfb7c6948808c646b2dcccf3a14aeee",
+    "input_ids_sha256": "a569c62de4bfb21038643f5c244e6e0baaf5bd77490de984a509f68b18eece0b",
+    "input_tokens": 160,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nWilliam Levada is affiliated with the religion of Catholic Church.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\nAlbert of Saxony is affiliated with the religion of Church of Scotland.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: Where did the founder of the religion that William Levada follows work?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J1",
+    "unit_id": "qwen:1617:H0:J1"
+  },
+  {
+    "arm": "H1",
+    "branch": "J",
+    "case_id": 1617,
+    "chat_sha256": "63535b208a9a144a388e816d24c8d2999e0804d6b5f7e8fedd54eec901a0166e",
+    "input_ids_sha256": "6d541c3d784a675573d0ebb6cbec5a44b6eb6d2003b92bb80a7bed553e02d983",
+    "input_tokens": 160,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nAlbert of Saxony is affiliated with the religion of Church of Scotland.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\nWilliam Levada is affiliated with the religion of Catholic Church.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: Where did the founder of the religion that William Levada follows work?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J1",
+    "unit_id": "qwen:1617:H1:J1"
+  },
+  {
+    "arm": "S0",
+    "branch": "J",
+    "case_id": 1617,
+    "chat_sha256": "b1d313ef5be5a0c5c71010eb201505ae72fded63c3acb897b85b4145984b8e06",
+    "input_ids_sha256": "34a7f0fd58028407b4465788b418e448fe0379401a4c6e45e04ffe84795c7c9f",
+    "input_tokens": 160,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nAlbert of Saxony is affiliated with the religion of Catholic Church.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\nWilliam Levada is affiliated with the religion of Church of Scotland.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: Where did the founder of the religion that William Levada follows work?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J1",
+    "unit_id": "qwen:1617:S0:J1"
+  },
+  {
+    "arm": "S1",
+    "branch": "J",
+    "case_id": 1617,
+    "chat_sha256": "23305c8db61af59b5bb85621c01e426fcb5c73c575763b830311d24e76ea1b44",
+    "input_ids_sha256": "1395120b2a7d803902c0feefb6cd430ae6bdefb1fb678b4de212a6839dd7cd57",
+    "input_tokens": 160,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nWilliam Levada is affiliated with the religion of Church of Scotland.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\nAlbert of Saxony is affiliated with the religion of Catholic Church.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: Where did the founder of the religion that William Levada follows work?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J1",
+    "unit_id": "qwen:1617:S1:J1"
+  },
+  {
+    "arm": "C",
+    "branch": "J",
+    "case_id": 1617,
+    "chat_sha256": "71e035dc5062721f2f611ee884f7739335aa06e6ba638becede9ff148deec1cc",
+    "input_ids_sha256": "d4ab70a07884071536dfc982b3ca584953ba14b84a4d7e5c024d9f415539b4a0",
+    "input_tokens": 129,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nWilliam Levada is affiliated with the religion of Church of Scotland.\nAlbert of Saxony is affiliated with the religion of Church of Scotland.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\n\nQuestion: Where did the founder of the religion that William Levada follows work?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J1",
+    "unit_id": "qwen:1617:C:J1"
+  },
+  {
+    "arm": "C+",
+    "branch": "J",
+    "case_id": 1617,
+    "chat_sha256": "b4f559e184d138c33828b1788bf5854825671513f2855ec2ac90113a41565a69",
+    "input_ids_sha256": "b186efd85054106a3b6c9b7dc67d0ec2890ff147fcad54bb9b2f3e957b5dc0bc",
+    "input_tokens": 161,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nWilliam Levada is affiliated with the religion of Church of Scotland.\nAlbert of Saxony is affiliated with the religion of Church of Scotland.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: Where did the founder of the religion that William Levada follows work?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J1",
+    "unit_id": "qwen:1617:C+:J1"
+  },
+  {
+    "arm": "H0",
+    "branch": "J",
+    "case_id": 1617,
+    "chat_sha256": "8ab297bcee0928518c6b0d39795c0813d5df9414490766fe0f674f2bad47e1c4",
+    "input_ids_sha256": "963bed5c0d42ef2563717873ba3ddaebc46ead9a4d184eac0479de7ceb0136d1",
+    "input_tokens": 161,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nWilliam Levada is affiliated with the religion of Catholic Church.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\nAlbert of Saxony is affiliated with the religion of Church of Scotland.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: What place did the person who founded William Levada's religion work in?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J2",
+    "unit_id": "qwen:1617:H0:J2"
+  },
+  {
+    "arm": "H1",
+    "branch": "J",
+    "case_id": 1617,
+    "chat_sha256": "7122277bfc7a63cdd1913c65c6c2ce46ba9cf9682c57d4778648c6beeac9e1d7",
+    "input_ids_sha256": "157e1bf64266939a5114e212688938b2395fdb32fc134db9f0008736a4e615fe",
+    "input_tokens": 161,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nAlbert of Saxony is affiliated with the religion of Church of Scotland.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\nWilliam Levada is affiliated with the religion of Catholic Church.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: What place did the person who founded William Levada's religion work in?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J2",
+    "unit_id": "qwen:1617:H1:J2"
+  },
+  {
+    "arm": "S0",
+    "branch": "J",
+    "case_id": 1617,
+    "chat_sha256": "be4175c0deecaa5d0fe1ee33fef6e1f8e1abdee096606300ac5ef71c9b0e3a1c",
+    "input_ids_sha256": "d3155ce1ca712b728fdc9d153a0ebd7e3e8fcdf4499cb55caa11c537e767c728",
+    "input_tokens": 161,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nAlbert of Saxony is affiliated with the religion of Catholic Church.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\nWilliam Levada is affiliated with the religion of Church of Scotland.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: What place did the person who founded William Levada's religion work in?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J2",
+    "unit_id": "qwen:1617:S0:J2"
+  },
+  {
+    "arm": "S1",
+    "branch": "J",
+    "case_id": 1617,
+    "chat_sha256": "1d6b290f9285db909a6c1c19792c2ecd1887ef0481bf5b463a7cb86f12b62167",
+    "input_ids_sha256": "96fbec2ecfe9e66275ffb08808329d1c4f10d321bd9ed0398913518f9896ed6a",
+    "input_tokens": 161,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nWilliam Levada is affiliated with the religion of Church of Scotland.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\nAlbert of Saxony is affiliated with the religion of Catholic Church.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: What place did the person who founded William Levada's religion work in?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J2",
+    "unit_id": "qwen:1617:S1:J2"
+  },
+  {
+    "arm": "C",
+    "branch": "J",
+    "case_id": 1617,
+    "chat_sha256": "39f38cf799cb2cf5f4ef437226a97dae3e044671361621af4bd13e7db50b01f9",
+    "input_ids_sha256": "fbb87fec0f52c67549fbc0a5958dc05e4a718d8eed79cd604b1e2eab1e9450c9",
+    "input_tokens": 130,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nWilliam Levada is affiliated with the religion of Church of Scotland.\nAlbert of Saxony is affiliated with the religion of Church of Scotland.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\n\nQuestion: What place did the person who founded William Levada's religion work in?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J2",
+    "unit_id": "qwen:1617:C:J2"
+  },
+  {
+    "arm": "C+",
+    "branch": "J",
+    "case_id": 1617,
+    "chat_sha256": "a903f145a4580c11cf26d68c255c070e9ff6e4cd2d1db17dc069e8a5191e3220",
+    "input_ids_sha256": "66749652706c681334a8f1b35fc4a83dd83c393507f23d22fa2fe6facd821180",
+    "input_tokens": 162,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nWilliam Levada is affiliated with the religion of Church of Scotland.\nAlbert of Saxony is affiliated with the religion of Church of Scotland.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: What place did the person who founded William Levada's religion work in?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J2",
+    "unit_id": "qwen:1617:C+:J2"
+  },
+  {
+    "arm": "H0",
+    "branch": "K",
+    "case_id": 1617,
+    "chat_sha256": "754412bf16c40f9770f52c4f32e2923a4408f6f925991936cfeed843d5e574c0",
+    "input_ids_sha256": "cdcfd502ef4cbe9d7175736b6d6e817fcefb1f595e3505871de21839bbc33a6d",
+    "input_tokens": 170,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nWilliam Levada is affiliated with the religion of Catholic Church.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\nAlbert of Saxony is affiliated with the religion of Church of Scotland.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: Starting from Church of Scotland, follow these relations in order: founded by, work location. Which entity do you reach?",
+        "role": "user"
+      }
+    ],
+    "query_id": "K",
+    "unit_id": "qwen:1617:H0:K"
+  },
+  {
+    "arm": "H1",
+    "branch": "K",
+    "case_id": 1617,
+    "chat_sha256": "10c70c28e841418aaea0ee91d7ec9a6aa13c261f0f85b8713578f0febd13877c",
+    "input_ids_sha256": "c2667f46d72e48012c801afb5ab84d0e60e2751f65cc3d903a0b12f2e42bbafe",
+    "input_tokens": 170,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nAlbert of Saxony is affiliated with the religion of Church of Scotland.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\nWilliam Levada is affiliated with the religion of Catholic Church.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: Starting from Church of Scotland, follow these relations in order: founded by, work location. Which entity do you reach?",
+        "role": "user"
+      }
+    ],
+    "query_id": "K",
+    "unit_id": "qwen:1617:H1:K"
+  },
+  {
+    "arm": "S0",
+    "branch": "K",
+    "case_id": 1617,
+    "chat_sha256": "11c83236d20cfd46f5b5d379639b1e80e8b5d347d87627db8baa9f43df8304b3",
+    "input_ids_sha256": "de0a7a440720156e6a7fa4c8d1f37207afb3f5d99be33004892afbccacf603be",
+    "input_tokens": 170,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nAlbert of Saxony is affiliated with the religion of Catholic Church.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\nWilliam Levada is affiliated with the religion of Church of Scotland.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: Starting from Church of Scotland, follow these relations in order: founded by, work location. Which entity do you reach?",
+        "role": "user"
+      }
+    ],
+    "query_id": "K",
+    "unit_id": "qwen:1617:S0:K"
+  },
+  {
+    "arm": "S1",
+    "branch": "K",
+    "case_id": 1617,
+    "chat_sha256": "6085f8e806221dd3ad0ab5f24d3a94a1a318a7d18847951b9cdfa5ece3ed54ca",
+    "input_ids_sha256": "88a042f318b4629461612a92f3bfc3dc7cad00d098641a956da404fd151b3281",
+    "input_tokens": 170,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nWilliam Levada is affiliated with the religion of Church of Scotland.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\nAlbert of Saxony is affiliated with the religion of Catholic Church.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: Starting from Church of Scotland, follow these relations in order: founded by, work location. Which entity do you reach?",
+        "role": "user"
+      }
+    ],
+    "query_id": "K",
+    "unit_id": "qwen:1617:S1:K"
+  },
+  {
+    "arm": "C",
+    "branch": "K",
+    "case_id": 1617,
+    "chat_sha256": "c00c277b9c0eb5104c315f2af671ce72c58feb109fff3a53a0187c32d45660d1",
+    "input_ids_sha256": "050b12b344d3812f30a2a49d8521e2d55c59d855e3921d382ae9dac2026740d5",
+    "input_tokens": 139,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nWilliam Levada is affiliated with the religion of Church of Scotland.\nAlbert of Saxony is affiliated with the religion of Church of Scotland.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\n\nQuestion: Starting from Church of Scotland, follow these relations in order: founded by, work location. Which entity do you reach?",
+        "role": "user"
+      }
+    ],
+    "query_id": "K",
+    "unit_id": "qwen:1617:C:K"
+  },
+  {
+    "arm": "C+",
+    "branch": "K",
+    "case_id": 1617,
+    "chat_sha256": "7ffd53fc76757f2a790471d5cfb3eaa7c3e71629c09b75d5f88396775063b92a",
+    "input_ids_sha256": "914a7a74fc3946530e2e5107a51e81f7b2c1d4549f8b6a7b9e615faa7509cc0e",
+    "input_tokens": 171,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nWilliam Levada is affiliated with the religion of Church of Scotland.\nAlbert of Saxony is affiliated with the religion of Church of Scotland.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland.\n\nQuestion: Starting from Church of Scotland, follow these relations in order: founded by, work location. Which entity do you reach?",
+        "role": "user"
+      }
+    ],
+    "query_id": "K",
+    "unit_id": "qwen:1617:C+:K"
+  }
+]

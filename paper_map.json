@@ -1,0 +1,3678 @@
+{
+  "schema": "ANONYMOUS_PAPER_MAP_V1",
+  "presentation": "Manuscript Sections 1–8 and Appendices A–H; five main-text and two appendix figures; one new public multi-hop table",
+  "coverage_limit": "Additional repository analyses are identified separately; all reproduction limits are in REPRODUCIBILITY.md",
+  "related_work_and_discussion": "Empirical interpretation in sections 7 and 8 links to these retained claims; no separate experiment is implied.",
+  "reproduction_definitions": "REPRODUCIBILITY.md#reproduction-levels",
+  "entries": [
+    {
+      "id": "figure-1",
+      "title": "Figure 1: Matched-history design",
+      "kind": "main_figure",
+      "study": "primary",
+      "page": "docs/04_matched_histories.md",
+      "paper_labels": [
+        "section.1",
+        "figure.1"
+      ],
+      "evidence": [
+        "reproducibility/state_sufficiency/v10/primary_results.json",
+        "reproducibility/state_sufficiency/v10/root_counts.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs"
+      ],
+      "configuration": [
+        "reproducibility/state_sufficiency/independent_verification/inputs/protocol.json"
+      ],
+      "commands": [
+        "python -m repro.state_sufficiency --output reproduced/primary",
+        "python reproducibility/state_sufficiency/independent_verification/reconstruct.py analyze --output reproduced/independent",
+        "python reproducibility/state_sufficiency/independent_verification/reconstruct.py compare --output reproduced/independent"
+      ],
+      "expected_outputs": [
+        "reproduced/primary/state_sufficiency/v10.csv",
+        "reproduced/primary/state_sufficiency/strong.csv",
+        "reproduced/independent/primary.json",
+        "reproduced/independent/primary.csv"
+      ],
+      "reproduction_level": "2 counts plus independent saved-score reconstruction",
+      "figure_assets": [
+        "figures/main/matched_history_design.pdf",
+        "figures/main/matched_history_design.png"
+      ],
+      "figure_reproduction": "Data-bound plotting source; fixed measured values and uncertainty",
+      "composition_command": "python -m repro.main_figures --output reproduced/main-figures",
+      "paper_location": "Section 1",
+      "paper_pages": [
+        1,
+        3
+      ],
+      "paper_coverage": "manuscript",
+      "figure_number": 1
+    },
+    {
+      "id": "figure-2",
+      "title": "Figure 2: Relation readout",
+      "kind": "main_figure",
+      "study": "relation",
+      "page": "docs/02_reading_relation.md",
+      "paper_labels": [
+        "subsection.2.2",
+        "figure.2"
+      ],
+      "evidence": [
+        "artifacts/figures/figure_data.json",
+        "artifacts/figures/permutation_null_llama_B10000.json",
+        "artifacts/truth/v2_results.json",
+        "artifacts/truth/v1_diagnostic.json",
+        "artifacts/leakage/results.json"
+      ],
+      "configuration": [
+        "configs/m1_development.yaml",
+        "configs/truth_control_v2.yaml"
+      ],
+      "commands": [
+        "python -m repro.relation_readout --output reproduced/relation"
+      ],
+      "expected_outputs": [
+        "reproduced/relation/results.json",
+        "reproduced/relation/relation_table.csv"
+      ],
+      "reproduction_level": "1 verified; 2 stored null tails and available factual gates only",
+      "figure_assets": [
+        "figures/main/construct_validity.pdf",
+        "figures/main/construct_validity.png"
+      ],
+      "figure_reproduction": "Data-bound plotting source; fixed measured values and uncertainty",
+      "composition_command": "python -m repro.main_figures --output reproduced/main-figures",
+      "paper_location": "Section 2.2",
+      "paper_pages": [
+        2,
+        3
+      ],
+      "paper_coverage": "manuscript",
+      "figure_number": 2
+    },
+    {
+      "id": "figure-3",
+      "title": "Figure 3: Direct-answer calibration and consequence recovery",
+      "kind": "main_figure",
+      "study": "consequences",
+      "page": "docs/03_changing_direct_answer.md",
+      "paper_labels": [
+        "subsection.3.2",
+        "figure.3"
+      ],
+      "evidence": [
+        "reproducibility/representation/counterfactual_fidelity/results.json",
+        "reproducibility/representation/counterfactual_fidelity/gemma_analysis.json.gz",
+        "reproducibility/representation/counterfactual_fidelity/llama_reference_qualification.json"
+      ],
+      "configuration": [
+        "reproducibility/representation/counterfactual_fidelity/contract.json"
+      ],
+      "commands": [
+        "python -m repro.counterfactual --output reproduced/consequences"
+      ],
+      "expected_outputs": [
+        "reproduced/consequences/RESULTS.json",
+        "reproduced/consequences/VERIFICATION.json"
+      ],
+      "reproduction_level": "2 saved margins; fresh execution unavailable",
+      "figure_assets": [
+        "figures/main/consequence_qualification.pdf",
+        "figures/main/consequence_qualification.png"
+      ],
+      "figure_reproduction": "Data-bound plotting source; fixed measured values and uncertainty",
+      "composition_command": "python -m repro.main_figures --output reproduced/main-figures",
+      "paper_location": "Section 3.2",
+      "paper_pages": [
+        4,
+        5
+      ],
+      "paper_coverage": "manuscript",
+      "figure_number": 3
+    },
+    {
+      "id": "figure-4",
+      "title": "Figure 4: Prospective matched-history rates",
+      "kind": "main_figure",
+      "study": "primary",
+      "page": "docs/04_matched_histories.md",
+      "paper_labels": [
+        "subsection.4.2",
+        "figure.4"
+      ],
+      "evidence": [
+        "reproducibility/state_sufficiency/v10/primary_results.json",
+        "reproducibility/state_sufficiency/v10/root_counts.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs"
+      ],
+      "configuration": [
+        "reproducibility/state_sufficiency/independent_verification/inputs/protocol.json"
+      ],
+      "commands": [
+        "python -m repro.state_sufficiency --output reproduced/primary",
+        "python reproducibility/state_sufficiency/independent_verification/reconstruct.py analyze --output reproduced/independent",
+        "python reproducibility/state_sufficiency/independent_verification/reconstruct.py compare --output reproduced/independent"
+      ],
+      "expected_outputs": [
+        "reproduced/primary/state_sufficiency/v10.csv",
+        "reproduced/primary/state_sufficiency/strong.csv",
+        "reproduced/independent/primary.json",
+        "reproduced/independent/primary.csv"
+      ],
+      "reproduction_level": "2 counts plus independent saved-score reconstruction",
+      "figure_assets": [
+        "figures/main/matched_history.pdf",
+        "figures/main/matched_history.png"
+      ],
+      "figure_reproduction": "Data-bound plotting source; fixed measured values and uncertainty",
+      "composition_command": "python -m repro.main_figures --output reproduced/main-figures",
+      "paper_location": "Section 4.2",
+      "paper_pages": [
+        4,
+        5
+      ],
+      "paper_coverage": "manuscript",
+      "figure_number": 4
+    },
+    {
+      "id": "figure-5",
+      "title": "Figure 5: Causal crossover",
+      "kind": "main_figure",
+      "study": "crossover",
+      "page": "docs/appendix/A09_crossover.md",
+      "paper_labels": [
+        "subsection.6.1",
+        "figure.5"
+      ],
+      "evidence": [
+        "artifacts/cache_crossover/original_panel.csv",
+        "reproducibility/cache_crossover/saved_summaries.json"
+      ],
+      "configuration": [
+        "reproducibility/cache_crossover/case_plan.json"
+      ],
+      "commands": [
+        "python -m repro.cache_crossover --output reproduced/crossover"
+      ],
+      "expected_outputs": [
+        "reproduced/crossover/cache_crossover/results.json",
+        "reproduced/crossover/cache_crossover/six_cases.csv"
+      ],
+      "reproduction_level": "2 saved journals; selected cases",
+      "figure_assets": [
+        "figures/main/selected_crossover.pdf",
+        "figures/main/selected_crossover.png"
+      ],
+      "figure_reproduction": "Data-bound plotting source; fixed measured values and uncertainty",
+      "composition_command": "python -m repro.main_figures --output reproduced/main-figures",
+      "paper_location": "Section 6.1",
+      "paper_pages": [
+        6,
+        7
+      ],
+      "paper_coverage": "manuscript",
+      "figure_number": 5
+    },
+    {
+      "id": "figure-6",
+      "title": "Appendix Figure 6: Fresh confirmation and utility comparison",
+      "kind": "appendix_figure",
+      "study": "fresh",
+      "page": "docs/appendix/A06_stronger_controls.md",
+      "paper_labels": [
+        "subsection.D.2",
+        "figure.6"
+      ],
+      "evidence": [
+        "reproducibility/fresh_history_validation/CLAIMS.json",
+        "reproducibility/fresh_history_validation/tables",
+        "reproducibility/fresh_history_validation/MANIFEST.json"
+      ],
+      "configuration": [
+        "reproducibility/fresh_history_validation/protocol/PROTOCOL.md",
+        "reproducibility/fresh_history_validation/ANALYSIS_RULES.md"
+      ],
+      "commands": [
+        "python -m repro.fresh_history --output reproduced/fresh"
+      ],
+      "expected_outputs": [
+        "reproduced/fresh/verification.json",
+        "reproduced/fresh/tables/PRIMARY_GATE_COUNTS.csv",
+        "reproduced/fresh/tables/UTILITY_EQUAL_RETENTION.csv"
+      ],
+      "reproduction_level": "2 saved-score confirmation, utility, sensitivities and repeats",
+      "figure_assets": [
+        "figures/main/fresh_confirmation_utility.pdf",
+        "figures/main/fresh_confirmation_utility.png"
+      ],
+      "figure_reproduction": "Data-bound plotting source; fixed measured values and uncertainty",
+      "composition_command": "python -m repro.main_figures --output reproduced/main-figures",
+      "paper_location": "Appendix D.2",
+      "paper_pages": [
+        15
+      ],
+      "paper_coverage": "manuscript",
+      "figure_number": 6
+    },
+    {
+      "id": "figure-7",
+      "title": "Appendix Figure 7: Refresh benefits and new errors",
+      "kind": "appendix_figure",
+      "study": "refresh",
+      "page": "docs/appendix/A10_refresh_accounting.md",
+      "paper_labels": [
+        "subsection.E.2",
+        "figure.7"
+      ],
+      "evidence": [
+        "reproducibility/question_blind_repair/supplied/primary/tables/FOUR_ENDPOINTS.csv",
+        "reproducibility/question_blind_repair/supplied/verification/CLAIM_LEDGER.json",
+        "reproducibility/question_blind_repair/supplied/verification/REPEAT_COMPARISON.json",
+        "reproducibility/question_blind_repair/scores/DATA.json"
+      ],
+      "configuration": [
+        "reproducibility/question_blind_repair/supplied/primary/ANALYSIS_RULES.md"
+      ],
+      "commands": [
+        "python -m repro.question_blind_repair --output reproduced/refresh"
+      ],
+      "expected_outputs": [
+        "reproduced/refresh/RESULTS.json",
+        "reproduced/refresh/PRIMARY_RECOUNT.json",
+        "reproduced/refresh/SELECTED_RECOUNT.json",
+        "reproduced/refresh/REPEAT_SCORE_COMPARISON.json"
+      ],
+      "reproduction_level": "2 primary and selected-repeat score reconstruction; original intervals retained, not regenerated",
+      "figure_assets": [
+        "figures/main/repair_benefit_damage.pdf",
+        "figures/main/repair_benefit_damage.png"
+      ],
+      "figure_reproduction": "Data-bound plotting source; fixed measured values and uncertainty",
+      "composition_command": "python -m repro.main_figures --output reproduced/main-figures",
+      "paper_location": "Appendix E.2",
+      "paper_pages": [
+        16,
+        17
+      ],
+      "paper_coverage": "manuscript",
+      "figure_number": 7
+    },
+    {
+      "id": "claim-readout",
+      "title": "Context-sensitive relation readout",
+      "kind": "claim",
+      "study": "relation",
+      "page": "docs/02_reading_relation.md",
+      "paper_labels": [
+        "section.2",
+        "appendix.A"
+      ],
+      "evidence": [
+        "artifacts/figures/figure_data.json",
+        "artifacts/figures/permutation_null_llama_B10000.json",
+        "artifacts/truth/v2_results.json",
+        "artifacts/truth/v1_diagnostic.json",
+        "artifacts/leakage/results.json"
+      ],
+      "configuration": [
+        "configs/m1_development.yaml",
+        "configs/truth_control_v2.yaml"
+      ],
+      "commands": [
+        "python -m repro.relation_readout --output reproduced/relation"
+      ],
+      "expected_outputs": [
+        "reproduced/relation/results.json",
+        "reproduced/relation/relation_table.csv"
+      ],
+      "reproduction_level": "1 verified; 2 stored null tails and available factual gates only",
+      "paper_location": "Section 2; Appendix A",
+      "paper_pages": [
+        2,
+        10
+      ],
+      "paper_coverage": "manuscript"
+    },
+    {
+      "id": "claim-readout-null",
+      "title": "Relation permutation controls",
+      "kind": "claim",
+      "study": "relation",
+      "page": "docs/02_reading_relation.md",
+      "paper_labels": [
+        "section.2",
+        "appendix.A"
+      ],
+      "evidence": [
+        "artifacts/figures/figure_data.json",
+        "artifacts/figures/permutation_null_llama_B10000.json",
+        "artifacts/truth/v2_results.json",
+        "artifacts/truth/v1_diagnostic.json",
+        "artifacts/leakage/results.json"
+      ],
+      "configuration": [
+        "configs/m1_development.yaml",
+        "configs/truth_control_v2.yaml"
+      ],
+      "commands": [
+        "python -m repro.relation_readout --output reproduced/relation"
+      ],
+      "expected_outputs": [
+        "reproduced/relation/results.json",
+        "reproduced/relation/relation_table.csv"
+      ],
+      "reproduction_level": "1 verified; 2 stored null tails and available factual gates only",
+      "paper_location": "Section 2; Appendix A",
+      "paper_pages": [
+        2,
+        10
+      ],
+      "paper_coverage": "manuscript"
+    },
+    {
+      "id": "claim-truth",
+      "title": "Factual readout controls",
+      "kind": "claim",
+      "study": "relation",
+      "page": "docs/02_reading_relation.md",
+      "paper_labels": [
+        "section.2",
+        "appendix.A"
+      ],
+      "evidence": [
+        "artifacts/figures/figure_data.json",
+        "artifacts/figures/permutation_null_llama_B10000.json",
+        "artifacts/truth/v2_results.json",
+        "artifacts/truth/v1_diagnostic.json",
+        "artifacts/leakage/results.json"
+      ],
+      "configuration": [
+        "configs/m1_development.yaml",
+        "configs/truth_control_v2.yaml"
+      ],
+      "commands": [
+        "python -m repro.relation_readout --output reproduced/relation"
+      ],
+      "expected_outputs": [
+        "reproduced/relation/results.json",
+        "reproduced/relation/relation_table.csv"
+      ],
+      "reproduction_level": "1 verified; 2 stored null tails and available factual gates only",
+      "paper_location": "Section 2; Appendix A",
+      "paper_pages": [
+        2,
+        10
+      ],
+      "paper_coverage": "manuscript"
+    },
+    {
+      "id": "claim-text-comparator",
+      "title": "Text-only baseline and training data",
+      "kind": "claim",
+      "study": "relation",
+      "page": "docs/appendix/A03_text_features.md",
+      "paper_labels": [
+        "subsection.2.1",
+        "subsection.A.3"
+      ],
+      "evidence": [
+        "artifacts/figures/figure_data.json",
+        "artifacts/figures/permutation_null_llama_B10000.json",
+        "artifacts/truth/v2_results.json",
+        "artifacts/truth/v1_diagnostic.json",
+        "artifacts/leakage/results.json"
+      ],
+      "configuration": [
+        "configs/m1_development.yaml",
+        "configs/truth_control_v2.yaml"
+      ],
+      "commands": [
+        "python -m repro.relation_readout --output reproduced/relation"
+      ],
+      "expected_outputs": [
+        "reproduced/relation/results.json",
+        "reproduced/relation/relation_table.csv"
+      ],
+      "reproduction_level": "1 verified; 2 stored null tails and available factual gates only",
+      "paper_location": "Section 2.1; Appendix A.3",
+      "paper_pages": [
+        2,
+        10
+      ],
+      "paper_coverage": "manuscript"
+    },
+    {
+      "id": "claim-recovery",
+      "title": "Direct-answer calibration and consequence recovery",
+      "kind": "claim",
+      "study": "consequences",
+      "page": "docs/03_changing_direct_answer.md",
+      "paper_labels": [
+        "section.3",
+        "appendix.B"
+      ],
+      "evidence": [
+        "reproducibility/representation/counterfactual_fidelity/results.json",
+        "reproducibility/representation/counterfactual_fidelity/gemma_analysis.json.gz",
+        "reproducibility/representation/counterfactual_fidelity/llama_reference_qualification.json"
+      ],
+      "configuration": [
+        "reproducibility/representation/counterfactual_fidelity/contract.json"
+      ],
+      "commands": [
+        "python -m repro.counterfactual --output reproduced/consequences"
+      ],
+      "expected_outputs": [
+        "reproduced/consequences/RESULTS.json",
+        "reproduced/consequences/VERIFICATION.json"
+      ],
+      "reproduction_level": "2 saved margins; fresh execution unavailable",
+      "paper_location": "Section 3; Appendix B",
+      "paper_pages": [
+        2,
+        11
+      ],
+      "paper_coverage": "manuscript"
+    },
+    {
+      "id": "claim-failed-qualification",
+      "title": "Consequence-assay qualification",
+      "kind": "claim",
+      "study": "consequences",
+      "page": "docs/03_changing_direct_answer.md",
+      "paper_labels": [
+        "section.3",
+        "appendix.B"
+      ],
+      "evidence": [
+        "reproducibility/representation/counterfactual_fidelity/results.json",
+        "reproducibility/representation/counterfactual_fidelity/gemma_analysis.json.gz",
+        "reproducibility/representation/counterfactual_fidelity/llama_reference_qualification.json"
+      ],
+      "configuration": [
+        "reproducibility/representation/counterfactual_fidelity/contract.json"
+      ],
+      "commands": [
+        "python -m repro.counterfactual --output reproduced/consequences"
+      ],
+      "expected_outputs": [
+        "reproduced/consequences/RESULTS.json",
+        "reproduced/consequences/VERIFICATION.json"
+      ],
+      "reproduction_level": "2 saved margins; fresh execution unavailable",
+      "paper_location": "Section 3; Appendix B",
+      "paper_pages": [
+        2,
+        11
+      ],
+      "paper_coverage": "manuscript"
+    },
+    {
+      "id": "claim-primary",
+      "title": "Prospective matched-history results",
+      "kind": "claim",
+      "study": "primary",
+      "page": "docs/04_matched_histories.md",
+      "paper_labels": [
+        "section.4",
+        "appendix.C"
+      ],
+      "evidence": [
+        "reproducibility/state_sufficiency/v10/primary_results.json",
+        "reproducibility/state_sufficiency/v10/root_counts.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs"
+      ],
+      "configuration": [
+        "reproducibility/state_sufficiency/independent_verification/inputs/protocol.json"
+      ],
+      "commands": [
+        "python -m repro.state_sufficiency --output reproduced/primary",
+        "python reproducibility/state_sufficiency/independent_verification/reconstruct.py analyze --output reproduced/independent",
+        "python reproducibility/state_sufficiency/independent_verification/reconstruct.py compare --output reproduced/independent"
+      ],
+      "expected_outputs": [
+        "reproduced/primary/state_sufficiency/v10.csv",
+        "reproduced/primary/state_sufficiency/strong.csv",
+        "reproduced/independent/primary.json",
+        "reproduced/independent/primary.csv"
+      ],
+      "reproduction_level": "2 counts plus independent saved-score reconstruction",
+      "paper_location": "Section 4; Appendix C",
+      "paper_pages": [
+        4,
+        13
+      ],
+      "paper_coverage": "manuscript"
+    },
+    {
+      "id": "claim-selected-weights",
+      "title": "Paired-editor training and checkpoint selection",
+      "kind": "claim",
+      "study": "editors",
+      "page": "docs/appendix/A05_learned_editors.md",
+      "paper_labels": [
+        "subsection.4.1",
+        "subsection.C.4"
+      ],
+      "evidence": [
+        "reproducibility/learned_editors/PARAMETERS.json",
+        "reproducibility/learned_editors/weights",
+        "reproducibility/learned_editors/training_reference/RECIPE.json"
+      ],
+      "configuration": [
+        "reproducibility/learned_editors/weights/SELECTED.json",
+        "reproducibility/update_method_comparison/inputs/models.json"
+      ],
+      "commands": [
+        "python -m repro.learned_editors --output reproduced/editors"
+      ],
+      "expected_outputs": [
+        "reproduced/editors/CPU_CHECK.json"
+      ],
+      "reproduction_level": "2 original CPU parameter/interface checks; paired-stage source and FIT/CAL records supplied as an inert reference; fresh retraining unverified",
+      "paper_location": "Section 4.1; Appendix C.4",
+      "paper_pages": [
+        4,
+        13
+      ],
+      "paper_coverage": "manuscript"
+    },
+    {
+      "id": "claim-posthoc",
+      "title": "Matched-history controls on the original outputs",
+      "kind": "claim",
+      "study": "controls",
+      "page": "docs/appendix/A06_stronger_controls.md",
+      "paper_labels": [
+        "subsection.4.3",
+        "subsection.D.1"
+      ],
+      "evidence": [
+        "reproducibility/state_sufficiency/cpu_audit/RESULTS.csv",
+        "reproducibility/state_sufficiency/cpu_audit/SURVIVORS.json"
+      ],
+      "configuration": [
+        "reproducibility/state_sufficiency/cpu_audit/GATE_SPEC.json"
+      ],
+      "commands": [
+        "python -m repro.cpu_robustness --output reproduced/controls"
+      ],
+      "expected_outputs": [
+        "reproduced/controls/by_condition.csv"
+      ],
+      "reproduction_level": "2 original saved scores; post-hoc controls",
+      "paper_location": "Section 4.3; Appendix D.1",
+      "paper_pages": [
+        4,
+        14
+      ],
+      "paper_coverage": "manuscript"
+    },
+    {
+      "id": "claim-confirmation",
+      "title": "Fresh prospective confirmation",
+      "kind": "claim",
+      "study": "fresh",
+      "page": "docs/appendix/A06_stronger_controls.md",
+      "paper_labels": [
+        "subsection.4.3",
+        "subsection.D.2"
+      ],
+      "evidence": [
+        "reproducibility/fresh_history_validation/CLAIMS.json",
+        "reproducibility/fresh_history_validation/tables",
+        "reproducibility/fresh_history_validation/MANIFEST.json"
+      ],
+      "configuration": [
+        "reproducibility/fresh_history_validation/protocol/PROTOCOL.md",
+        "reproducibility/fresh_history_validation/ANALYSIS_RULES.md"
+      ],
+      "commands": [
+        "python -m repro.fresh_history --output reproduced/fresh"
+      ],
+      "expected_outputs": [
+        "reproduced/fresh/verification.json",
+        "reproduced/fresh/tables/PRIMARY_GATE_COUNTS.csv",
+        "reproduced/fresh/tables/UTILITY_EQUAL_RETENTION.csv"
+      ],
+      "reproduction_level": "2 saved-score confirmation, utility, sensitivities and repeats",
+      "paper_location": "Section 4.3; Appendix D.2",
+      "paper_pages": [
+        4,
+        15
+      ],
+      "paper_coverage": "manuscript"
+    },
+    {
+      "id": "claim-utility",
+      "title": "Held-out update-validation comparison",
+      "kind": "claim",
+      "study": "fresh",
+      "page": "docs/appendix/A06_stronger_controls.md",
+      "paper_labels": [
+        "subsection.4.3",
+        "subsection.D.2"
+      ],
+      "evidence": [
+        "reproducibility/fresh_history_validation/CLAIMS.json",
+        "reproducibility/fresh_history_validation/tables",
+        "reproducibility/fresh_history_validation/MANIFEST.json"
+      ],
+      "configuration": [
+        "reproducibility/fresh_history_validation/protocol/PROTOCOL.md",
+        "reproducibility/fresh_history_validation/ANALYSIS_RULES.md"
+      ],
+      "commands": [
+        "python -m repro.fresh_history --output reproduced/fresh"
+      ],
+      "expected_outputs": [
+        "reproduced/fresh/verification.json",
+        "reproduced/fresh/tables/PRIMARY_GATE_COUNTS.csv",
+        "reproduced/fresh/tables/UTILITY_EQUAL_RETENTION.csv"
+      ],
+      "reproduction_level": "2 saved-score confirmation, utility, sensitivities and repeats",
+      "paper_location": "Section 4.3; Appendix D.2",
+      "paper_pages": [
+        4,
+        15
+      ],
+      "paper_coverage": "manuscript"
+    },
+    {
+      "id": "claim-fresh-diagnostics",
+      "title": "Selected-case diagnostics",
+      "kind": "claim",
+      "study": "fresh",
+      "page": "docs/appendix/A06_stronger_controls.md",
+      "paper_labels": [
+        "subsection.4.3",
+        "subsection.D.2"
+      ],
+      "evidence": [
+        "reproducibility/fresh_history_validation/CLAIMS.json",
+        "reproducibility/fresh_history_validation/tables",
+        "reproducibility/fresh_history_validation/MANIFEST.json"
+      ],
+      "configuration": [
+        "reproducibility/fresh_history_validation/protocol/PROTOCOL.md",
+        "reproducibility/fresh_history_validation/ANALYSIS_RULES.md"
+      ],
+      "commands": [
+        "python -m repro.fresh_history --output reproduced/fresh"
+      ],
+      "expected_outputs": [
+        "reproduced/fresh/verification.json",
+        "reproduced/fresh/tables/PRIMARY_GATE_COUNTS.csv",
+        "reproduced/fresh/tables/UTILITY_EQUAL_RETENTION.csv"
+      ],
+      "reproduction_level": "2 saved-score confirmation, utility, sensitivities and repeats",
+      "paper_location": "Section 4.3; Appendix D.2",
+      "paper_pages": [
+        4,
+        15
+      ],
+      "paper_coverage": "manuscript"
+    },
+    {
+      "id": "claim-small-breadth",
+      "title": "Smaller-model textual breadth",
+      "kind": "claim",
+      "study": "textual-breadth",
+      "page": "docs/appendix/A07_textual_breadth.md",
+      "paper_labels": [
+        "subsection.4.4",
+        "subsection.D.3"
+      ],
+      "evidence": [
+        "reproducibility/text_scope/MANIFEST.json",
+        "reproducibility/text_scope/saved"
+      ],
+      "configuration": [
+        "reproducibility/text_scope/saved/runtime/MODEL_ROSTER_FROZEN.json",
+        "reproducibility/text_scope/saved/code/text_scope/DEV_GATE_AMENDMENT.md"
+      ],
+      "commands": [
+        "python -m repro.text_scope --output reproduced/textual-breadth"
+      ],
+      "expected_outputs": [
+        "reproduced/textual-breadth/VERIFICATION.json",
+        "reproduced/textual-breadth/analysis/MAIN_TABLE.json",
+        "reproduced/textual-breadth/analysis/PLANNED_COMPARISONS.json"
+      ],
+      "reproduction_level": "2 saved scores; failed bridges and unmeasured rows retained",
+      "paper_location": "Additional repository analysis; related to Section 4.4 and Appendix D.3",
+      "paper_pages": [
+        5,
+        15
+      ],
+      "paper_coverage": "additional_repository_analysis"
+    },
+    {
+      "id": "claim-breadth-failures",
+      "title": "Earlier textual-method comparisons",
+      "kind": "claim",
+      "study": "textual-breadth",
+      "page": "docs/appendix/A07_textual_breadth.md",
+      "paper_labels": [
+        "subsection.4.4",
+        "subsection.D.3"
+      ],
+      "evidence": [
+        "reproducibility/text_scope/MANIFEST.json",
+        "reproducibility/text_scope/saved"
+      ],
+      "configuration": [
+        "reproducibility/text_scope/saved/runtime/MODEL_ROSTER_FROZEN.json",
+        "reproducibility/text_scope/saved/code/text_scope/DEV_GATE_AMENDMENT.md"
+      ],
+      "commands": [
+        "python -m repro.text_scope --output reproduced/textual-breadth"
+      ],
+      "expected_outputs": [
+        "reproduced/textual-breadth/VERIFICATION.json",
+        "reproduced/textual-breadth/analysis/MAIN_TABLE.json",
+        "reproduced/textual-breadth/analysis/PLANNED_COMPARISONS.json"
+      ],
+      "reproduction_level": "2 saved scores; failed bridges and unmeasured rows retained",
+      "paper_location": "Additional repository analysis; related to Section 4.4 and Appendix D.3",
+      "paper_pages": [
+        5,
+        15
+      ],
+      "paper_coverage": "additional_repository_analysis"
+    },
+    {
+      "id": "claim-stateless32",
+      "title": "Stateless 32B matched-history results",
+      "kind": "claim",
+      "study": "qwen32",
+      "page": "docs/04_matched_histories.md",
+      "paper_labels": [
+        "subsection.4.4",
+        "subsection.D.3",
+        "table.4"
+      ],
+      "evidence": [
+        "reproducibility/qwen32_full_forward/CLAIMS.json",
+        "reproducibility/qwen32_full_forward/WORKED_EXAMPLE.json"
+      ],
+      "configuration": [
+        "reproducibility/qwen32_full_forward/MANIFEST.json"
+      ],
+      "commands": [
+        "python -m repro.qwen32_full_forward --output reproduced/qwen32"
+      ],
+      "expected_outputs": [
+        "reproduced/qwen32/CLAIMS.json",
+        "reproduced/qwen32/VERIFICATION.json"
+      ],
+      "reproduction_level": "2 stateless saved outputs; existing designs",
+      "paper_location": "Section 4.4; Appendix D.3; Table 4",
+      "paper_pages": [
+        5,
+        15
+      ],
+      "paper_coverage": "manuscript"
+    },
+    {
+      "id": "claim-six-crossovers",
+      "title": "Selected-case activation crossover",
+      "kind": "claim",
+      "study": "crossover",
+      "page": "docs/appendix/A09_crossover.md",
+      "paper_labels": [
+        "subsection.6.1",
+        "subsection.E.1"
+      ],
+      "evidence": [
+        "artifacts/cache_crossover/original_panel.csv",
+        "reproducibility/cache_crossover/saved_summaries.json"
+      ],
+      "configuration": [
+        "reproducibility/cache_crossover/case_plan.json"
+      ],
+      "commands": [
+        "python -m repro.cache_crossover --output reproduced/crossover"
+      ],
+      "expected_outputs": [
+        "reproduced/crossover/cache_crossover/results.json",
+        "reproduced/crossover/cache_crossover/six_cases.csv"
+      ],
+      "reproduction_level": "2 saved journals; selected cases",
+      "paper_location": "Section 6.1; Appendix E.1",
+      "paper_pages": [
+        6,
+        16
+      ],
+      "paper_coverage": "manuscript"
+    },
+    {
+      "id": "claim-matched-crossover",
+      "title": "Matched crossover under stronger controls",
+      "kind": "claim",
+      "study": "crossover-extension",
+      "page": "docs/appendix/A09_crossover.md",
+      "paper_labels": [
+        "subsection.6.1",
+        "subsection.E.1"
+      ],
+      "evidence": [
+        "artifacts/cache_crossover/extension_joint.csv",
+        "artifacts/cache_crossover/extension_direct.csv"
+      ],
+      "configuration": [
+        "reproducibility/cache_crossover/extension/candidate.json"
+      ],
+      "commands": [
+        "python -m repro.cache_crossover_extension --output reproduced/crossover-extension"
+      ],
+      "expected_outputs": [
+        "reproduced/crossover-extension/cache_crossover_extension/replay.json",
+        "reproduced/crossover-extension/cache_crossover_extension/extension_joint.csv"
+      ],
+      "reproduction_level": "2 saved journal and original baseline bindings; one selected pair",
+      "paper_location": "Section 6.1; Appendix E.1",
+      "paper_pages": [
+        6,
+        16
+      ],
+      "paper_coverage": "manuscript"
+    },
+    {
+      "id": "claim-repair",
+      "title": "Refresh benefits and new errors",
+      "kind": "claim",
+      "study": "refresh",
+      "page": "docs/appendix/A10_refresh_accounting.md",
+      "paper_labels": [
+        "subsection.6.2",
+        "subsection.E.2"
+      ],
+      "evidence": [
+        "reproducibility/question_blind_repair/supplied/primary/tables/FOUR_ENDPOINTS.csv",
+        "reproducibility/question_blind_repair/supplied/verification/CLAIM_LEDGER.json",
+        "reproducibility/question_blind_repair/supplied/verification/REPEAT_COMPARISON.json",
+        "reproducibility/question_blind_repair/scores/DATA.json"
+      ],
+      "configuration": [
+        "reproducibility/question_blind_repair/supplied/primary/ANALYSIS_RULES.md"
+      ],
+      "commands": [
+        "python -m repro.question_blind_repair --output reproduced/refresh"
+      ],
+      "expected_outputs": [
+        "reproduced/refresh/RESULTS.json",
+        "reproduced/refresh/PRIMARY_RECOUNT.json",
+        "reproduced/refresh/SELECTED_RECOUNT.json",
+        "reproduced/refresh/REPEAT_SCORE_COMPARISON.json"
+      ],
+      "reproduction_level": "2 primary and selected-repeat score reconstruction; original intervals retained, not regenerated",
+      "paper_location": "Section 6.2; Appendix E.2",
+      "paper_pages": [
+        7,
+        16
+      ],
+      "paper_coverage": "manuscript"
+    },
+    {
+      "id": "claim-refresh-repeats",
+      "title": "Refresh repeats and reverse transfers",
+      "kind": "claim",
+      "study": "refresh",
+      "page": "docs/appendix/A10_refresh_accounting.md",
+      "paper_labels": [
+        "subsection.6.2",
+        "subsection.E.2"
+      ],
+      "evidence": [
+        "reproducibility/question_blind_repair/supplied/primary/tables/FOUR_ENDPOINTS.csv",
+        "reproducibility/question_blind_repair/supplied/verification/CLAIM_LEDGER.json",
+        "reproducibility/question_blind_repair/supplied/verification/REPEAT_COMPARISON.json",
+        "reproducibility/question_blind_repair/scores/DATA.json"
+      ],
+      "configuration": [
+        "reproducibility/question_blind_repair/supplied/primary/ANALYSIS_RULES.md"
+      ],
+      "commands": [
+        "python -m repro.question_blind_repair --output reproduced/refresh"
+      ],
+      "expected_outputs": [
+        "reproduced/refresh/RESULTS.json",
+        "reproduced/refresh/PRIMARY_RECOUNT.json",
+        "reproduced/refresh/SELECTED_RECOUNT.json",
+        "reproduced/refresh/REPEAT_SCORE_COMPARISON.json"
+      ],
+      "reproduction_level": "2 primary and selected-repeat score reconstruction; original intervals retained, not regenerated",
+      "paper_location": "Section 6.2; Appendix E.2",
+      "paper_pages": [
+        7,
+        16
+      ],
+      "paper_coverage": "manuscript"
+    },
+    {
+      "id": "claim-method-comparison",
+      "title": "Paired update-method comparison",
+      "kind": "claim",
+      "study": "update-methods",
+      "page": "docs/appendix/A08_update_methods.md",
+      "paper_labels": [
+        "subsection.4.1",
+        "subsection.C.4"
+      ],
+      "evidence": [
+        "reproducibility/update_method_comparison/results.json",
+        "reproducibility/update_method_comparison/supplied/completed/tables"
+      ],
+      "configuration": [
+        "reproducibility/update_method_comparison/inputs/models.json"
+      ],
+      "commands": [
+        "python -m repro.update_methods --output reproduced/update-methods"
+      ],
+      "expected_outputs": [
+        "reproduced/update-methods/results.json",
+        "reproduced/update-methods/headline_results.csv",
+        "reproduced/update-methods/per_root_results.csv",
+        "reproduced/update-methods/timing_memory.csv"
+      ],
+      "reproduction_level": "2 completed origin panel saved scores and telemetry",
+      "paper_location": "Additional repository analysis; related to Section 4.1 and Appendix C.4",
+      "paper_pages": [
+        4,
+        13
+      ],
+      "paper_coverage": "additional_repository_analysis"
+    },
+    {
+      "id": "claim-public-data",
+      "title": "Public-data history dependence",
+      "kind": "claim",
+      "study": "ripple",
+      "page": "docs/06_public_data_extension.md",
+      "paper_labels": [
+        "subsection.F.2",
+        "table.5"
+      ],
+      "evidence": [
+        "reproducibility/in_context_updates/results.json",
+        "reproducibility/in_context_updates/supplied/journals"
+      ],
+      "configuration": [
+        "reproducibility/in_context_updates/supplied/protocol/SCOPE.json",
+        "reproducibility/in_context_updates/supplied/freezes/PARSER_FREEZE.json"
+      ],
+      "commands": [
+        "python -m repro.in_context_updates --output reproduced/ripple"
+      ],
+      "expected_outputs": [
+        "reproduced/ripple/results.json",
+        "reproduced/ripple/per_root_results.csv",
+        "reproduced/ripple/public_data_table.md"
+      ],
+      "reproduction_level": "2 both frozen parsers and all retained phases",
+      "paper_location": "Appendix F.2; Table 5",
+      "paper_pages": [
+        17,
+        18
+      ],
+      "paper_coverage": "manuscript"
+    },
+    {
+      "id": "claim-parser-sensitivity",
+      "title": "Parser sensitivity and eligibility",
+      "kind": "claim",
+      "study": "ripple",
+      "page": "docs/06_public_data_extension.md",
+      "paper_labels": [
+        "subsection.F.2",
+        "table.5"
+      ],
+      "evidence": [
+        "reproducibility/in_context_updates/results.json",
+        "reproducibility/in_context_updates/supplied/journals"
+      ],
+      "configuration": [
+        "reproducibility/in_context_updates/supplied/protocol/SCOPE.json",
+        "reproducibility/in_context_updates/supplied/freezes/PARSER_FREEZE.json"
+      ],
+      "commands": [
+        "python -m repro.in_context_updates --output reproduced/ripple"
+      ],
+      "expected_outputs": [
+        "reproduced/ripple/results.json",
+        "reproduced/ripple/per_root_results.csv",
+        "reproduced/ripple/public_data_table.md"
+      ],
+      "reproduction_level": "2 both frozen parsers and all retained phases",
+      "paper_location": "Appendix F.2; Table 5",
+      "paper_pages": [
+        17,
+        18
+      ],
+      "paper_coverage": "manuscript"
+    },
+    {
+      "id": "claim-locality-repeats",
+      "title": "Locality and negative repeat controls",
+      "kind": "claim",
+      "study": "ripple",
+      "page": "docs/06_public_data_extension.md",
+      "paper_labels": [
+        "subsection.F.2",
+        "table.5"
+      ],
+      "evidence": [
+        "reproducibility/in_context_updates/results.json",
+        "reproducibility/in_context_updates/supplied/journals"
+      ],
+      "configuration": [
+        "reproducibility/in_context_updates/supplied/protocol/SCOPE.json",
+        "reproducibility/in_context_updates/supplied/freezes/PARSER_FREEZE.json"
+      ],
+      "commands": [
+        "python -m repro.in_context_updates --output reproduced/ripple"
+      ],
+      "expected_outputs": [
+        "reproduced/ripple/results.json",
+        "reproduced/ripple/per_root_results.csv",
+        "reproduced/ripple/public_data_table.md"
+      ],
+      "reproduction_level": "2 both frozen parsers and all retained phases",
+      "paper_location": "Appendix F.2; Table 5",
+      "paper_pages": [
+        17,
+        18
+      ],
+      "paper_coverage": "manuscript"
+    },
+    {
+      "id": "claim-carrier",
+      "title": "Carrier-transfer follow-up",
+      "kind": "claim",
+      "study": "mechanism",
+      "page": "docs/appendix/A12_mechanism.md",
+      "paper_labels": [
+        "section.6",
+        "section.8"
+      ],
+      "evidence": [
+        "reproducibility/completed_followups/carrier/TABLES.md",
+        "reproducibility/completed_followups/mediation/TABLES.md",
+        "reproducibility/completed_followups/carrier/ALL_SCORES_AND_EFFECTS.csv.gz"
+      ],
+      "configuration": [
+        "reproducibility/completed_followups/carrier/MANIFEST.json",
+        "reproducibility/completed_followups/mediation/MANIFEST.json"
+      ],
+      "commands": [
+        "python -m repro.completed_followups --output reproduced/mechanism"
+      ],
+      "expected_outputs": [
+        "reproduced/mechanism/VERIFICATION.json"
+      ],
+      "reproduction_level": "1 saved tables with score/effect accounting checks; native tensors unavailable",
+      "paper_location": "Additional repository analyses; related to Sections 6 and 8",
+      "paper_pages": [
+        6,
+        8
+      ],
+      "paper_coverage": "additional_repository_analysis"
+    },
+    {
+      "id": "claim-mediation",
+      "title": "Reader mediation and restoration controls",
+      "kind": "claim",
+      "study": "mechanism",
+      "page": "docs/appendix/A12_mechanism.md",
+      "paper_labels": [
+        "section.6",
+        "section.8"
+      ],
+      "evidence": [
+        "reproducibility/completed_followups/carrier/TABLES.md",
+        "reproducibility/completed_followups/mediation/TABLES.md",
+        "reproducibility/completed_followups/carrier/ALL_SCORES_AND_EFFECTS.csv.gz"
+      ],
+      "configuration": [
+        "reproducibility/completed_followups/carrier/MANIFEST.json",
+        "reproducibility/completed_followups/mediation/MANIFEST.json"
+      ],
+      "commands": [
+        "python -m repro.completed_followups --output reproduced/mechanism"
+      ],
+      "expected_outputs": [
+        "reproduced/mechanism/VERIFICATION.json"
+      ],
+      "reproduction_level": "1 saved tables with score/effect accounting checks; native tensors unavailable",
+      "paper_location": "Additional repository analyses; related to Sections 6 and 8",
+      "paper_pages": [
+        6,
+        8
+      ],
+      "paper_coverage": "additional_repository_analysis"
+    },
+    {
+      "id": "A01",
+      "title": "Relation construction, splits and statistics",
+      "kind": "supplementary_topic",
+      "study": "relation",
+      "page": "docs/appendix/A01_relation_construction.md",
+      "paper_labels": [
+        "subsection.2.1",
+        "subsection.2.2",
+        "subsection.A.1",
+        "subsection.A.2",
+        "table.2"
+      ],
+      "evidence": [
+        "artifacts/figures/figure_data.json",
+        "artifacts/figures/permutation_null_llama_B10000.json",
+        "artifacts/truth/v2_results.json",
+        "artifacts/truth/v1_diagnostic.json",
+        "artifacts/leakage/results.json"
+      ],
+      "configuration": [
+        "configs/m1_development.yaml",
+        "configs/truth_control_v2.yaml"
+      ],
+      "commands": [
+        "python -m repro.relation_readout --output reproduced/relation"
+      ],
+      "expected_outputs": [
+        "reproduced/relation/results.json",
+        "reproduced/relation/relation_table.csv"
+      ],
+      "reproduction_level": "1 verified; 2 stored null tails and available factual gates only",
+      "related_studies": [
+        "relation"
+      ],
+      "paper_location": "Sections 2.1–2.2; Appendices A.1–A.2; Table 2",
+      "paper_pages": [
+        2,
+        10
+      ],
+      "paper_coverage": "manuscript",
+      "crosswalk_note": "Manuscript methods"
+    },
+    {
+      "id": "A01-table-1",
+      "title": "Development-only split construction: table 1",
+      "kind": "appendix_table",
+      "study": "relation",
+      "page": "docs/appendix/A01_relation_construction.md",
+      "paper_labels": [
+        "subsection.2.1",
+        "subsection.2.2",
+        "subsection.A.1",
+        "subsection.A.2",
+        "table.2"
+      ],
+      "evidence": [
+        "artifacts/figures/figure_data.json",
+        "artifacts/figures/permutation_null_llama_B10000.json",
+        "artifacts/truth/v2_results.json",
+        "artifacts/truth/v1_diagnostic.json",
+        "artifacts/leakage/results.json"
+      ],
+      "configuration": [
+        "configs/m1_development.yaml",
+        "configs/truth_control_v2.yaml"
+      ],
+      "commands": [
+        "python -m repro.relation_readout --output reproduced/relation"
+      ],
+      "expected_outputs": [
+        "reproduced/relation/results.json",
+        "reproduced/relation/relation_table.csv"
+      ],
+      "reproduction_level": "1 verified; 2 stored null tails and available factual gates only",
+      "table_location": "Displayed table 1 on the linked page",
+      "paper_location": "Sections 2.1–2.2; Appendices A.1–A.2; Table 2",
+      "paper_pages": [
+        2,
+        10
+      ],
+      "paper_coverage": "manuscript"
+    },
+    {
+      "id": "A02",
+      "title": "Permutation and factual controls",
+      "kind": "supplementary_topic",
+      "study": "relation",
+      "page": "docs/appendix/A02_controls.md",
+      "paper_labels": [
+        "subsection.2.1",
+        "subsection.A.4",
+        "subsection.A.5",
+        "table.3"
+      ],
+      "evidence": [
+        "artifacts/figures/figure_data.json",
+        "artifacts/figures/permutation_null_llama_B10000.json",
+        "artifacts/truth/v2_results.json",
+        "artifacts/truth/v1_diagnostic.json",
+        "artifacts/leakage/results.json"
+      ],
+      "configuration": [
+        "configs/m1_development.yaml",
+        "configs/truth_control_v2.yaml"
+      ],
+      "commands": [
+        "python -m repro.relation_readout --output reproduced/relation"
+      ],
+      "expected_outputs": [
+        "reproduced/relation/results.json",
+        "reproduced/relation/relation_table.csv"
+      ],
+      "reproduction_level": "1 verified; 2 stored null tails and available factual gates only",
+      "related_studies": [
+        "relation"
+      ],
+      "paper_location": "Section 2.1; Appendices A.4–A.5; Table 3",
+      "paper_pages": [
+        2,
+        11
+      ],
+      "paper_coverage": "manuscript",
+      "crosswalk_note": "Manuscript controls plus the earlier specification"
+    },
+    {
+      "id": "A02-table-1",
+      "title": "Relation permutation nulls: table 1",
+      "kind": "appendix_table",
+      "study": "relation",
+      "page": "docs/appendix/A02_controls.md",
+      "paper_labels": [
+        "subsection.2.1",
+        "subsection.A.4",
+        "subsection.A.5",
+        "table.3"
+      ],
+      "evidence": [
+        "artifacts/figures/figure_data.json",
+        "artifacts/figures/permutation_null_llama_B10000.json",
+        "artifacts/truth/v2_results.json",
+        "artifacts/truth/v1_diagnostic.json",
+        "artifacts/leakage/results.json"
+      ],
+      "configuration": [
+        "configs/m1_development.yaml",
+        "configs/truth_control_v2.yaml"
+      ],
+      "commands": [
+        "python -m repro.relation_readout --output reproduced/relation"
+      ],
+      "expected_outputs": [
+        "reproduced/relation/results.json",
+        "reproduced/relation/relation_table.csv"
+      ],
+      "reproduction_level": "1 verified; 2 stored null tails and available factual gates only",
+      "table_location": "Displayed table 1 on the linked page",
+      "paper_location": "Section 2.1; Appendices A.4–A.5; Table 3",
+      "paper_pages": [
+        2,
+        11
+      ],
+      "paper_coverage": "manuscript"
+    },
+    {
+      "id": "A02-data-table-1",
+      "title": "split manifest",
+      "kind": "appendix_table",
+      "study": "relation",
+      "page": "docs/appendix/A02_controls.md",
+      "paper_labels": [
+        "subsection.2.1",
+        "subsection.A.4",
+        "subsection.A.5",
+        "table.3"
+      ],
+      "evidence": [
+        "artifacts/truth/split_manifest.csv",
+        "artifacts/figures/figure_data.json",
+        "artifacts/figures/permutation_null_llama_B10000.json",
+        "artifacts/truth/v2_results.json",
+        "artifacts/truth/v1_diagnostic.json",
+        "artifacts/leakage/results.json"
+      ],
+      "configuration": [
+        "configs/m1_development.yaml",
+        "configs/truth_control_v2.yaml"
+      ],
+      "commands": [
+        "python -m repro.relation_readout --output reproduced/relation"
+      ],
+      "expected_outputs": [
+        "reproduced/relation/results.json",
+        "reproduced/relation/relation_table.csv"
+      ],
+      "reproduction_level": "1 verified; 2 stored null tails and available factual gates only",
+      "paper_location": "Section 2.1; Appendices A.4–A.5; Table 3",
+      "paper_pages": [
+        2,
+        11
+      ],
+      "paper_coverage": "manuscript"
+    },
+    {
+      "id": "A03",
+      "title": "Text-only baseline and training data",
+      "kind": "supplementary_topic",
+      "study": "relation",
+      "page": "docs/appendix/A03_text_features.md",
+      "paper_labels": [
+        "subsection.2.1",
+        "subsection.A.3"
+      ],
+      "evidence": [
+        "artifacts/figures/figure_data.json",
+        "artifacts/figures/permutation_null_llama_B10000.json",
+        "artifacts/truth/v2_results.json",
+        "artifacts/truth/v1_diagnostic.json",
+        "artifacts/leakage/results.json"
+      ],
+      "configuration": [
+        "configs/m1_development.yaml",
+        "configs/truth_control_v2.yaml"
+      ],
+      "commands": [
+        "python -m repro.relation_readout --output reproduced/relation"
+      ],
+      "expected_outputs": [
+        "reproduced/relation/results.json",
+        "reproduced/relation/relation_table.csv"
+      ],
+      "reproduction_level": "1 verified; 2 stored null tails and available factual gates only",
+      "related_studies": [
+        "relation"
+      ],
+      "paper_location": "Section 2.1; Appendix A.3",
+      "paper_pages": [
+        2,
+        10
+      ],
+      "paper_coverage": "manuscript",
+      "crosswalk_note": "Text-only features and separate fitted-population records"
+    },
+    {
+      "id": "A04",
+      "title": "Calibration and consequence recovery",
+      "kind": "supplementary_topic",
+      "study": "consequences",
+      "page": "docs/appendix/A04_counterfactual_calibration.md",
+      "paper_labels": [
+        "section.3",
+        "appendix.B",
+        "figure.3"
+      ],
+      "evidence": [
+        "reproducibility/representation/counterfactual_fidelity/results.json",
+        "reproducibility/representation/counterfactual_fidelity/gemma_analysis.json.gz",
+        "reproducibility/representation/counterfactual_fidelity/llama_reference_qualification.json"
+      ],
+      "configuration": [
+        "reproducibility/representation/counterfactual_fidelity/contract.json"
+      ],
+      "commands": [
+        "python -m repro.counterfactual --output reproduced/consequences"
+      ],
+      "expected_outputs": [
+        "reproduced/consequences/RESULTS.json",
+        "reproduced/consequences/VERIFICATION.json"
+      ],
+      "reproduction_level": "2 saved margins; fresh execution unavailable",
+      "related_studies": [
+        "consequences"
+      ],
+      "paper_location": "Section 3; Appendices B.1–B.5; Figure 3",
+      "paper_pages": [
+        2,
+        5,
+        11
+      ],
+      "paper_coverage": "manuscript",
+      "crosswalk_note": "Calibration, recovery and qualification"
+    },
+    {
+      "id": "A04-table-1",
+      "title": "Inputs and fixed comparisons: table 1",
+      "kind": "appendix_table",
+      "study": "consequences",
+      "page": "docs/appendix/A04_counterfactual_calibration.md",
+      "paper_labels": [
+        "section.3",
+        "appendix.B",
+        "figure.3"
+      ],
+      "evidence": [
+        "reproducibility/representation/counterfactual_fidelity/results.json",
+        "reproducibility/representation/counterfactual_fidelity/gemma_analysis.json.gz",
+        "reproducibility/representation/counterfactual_fidelity/llama_reference_qualification.json"
+      ],
+      "configuration": [
+        "reproducibility/representation/counterfactual_fidelity/contract.json"
+      ],
+      "commands": [
+        "python -m repro.counterfactual --output reproduced/consequences"
+      ],
+      "expected_outputs": [
+        "reproduced/consequences/RESULTS.json",
+        "reproduced/consequences/VERIFICATION.json"
+      ],
+      "reproduction_level": "2 saved margins; fresh execution unavailable",
+      "table_location": "Displayed table 1 on the linked page",
+      "paper_location": "Section 3; Appendices B.1–B.5; Figure 3",
+      "paper_pages": [
+        2,
+        5,
+        11
+      ],
+      "paper_coverage": "manuscript"
+    },
+    {
+      "id": "A05",
+      "title": "Paired-editor training and checkpoint selection",
+      "kind": "supplementary_topic",
+      "study": "editors",
+      "page": "docs/appendix/A05_learned_editors.md",
+      "paper_labels": [
+        "subsection.4.1",
+        "appendix.C"
+      ],
+      "evidence": [
+        "reproducibility/learned_editors/PARAMETERS.json",
+        "reproducibility/learned_editors/weights",
+        "reproducibility/state_sufficiency/v10/primary_results.json",
+        "reproducibility/state_sufficiency/v10/root_counts.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs",
+        "reproducibility/learned_editors/training_reference/RECIPE.json"
+      ],
+      "configuration": [
+        "reproducibility/learned_editors/weights/SELECTED.json",
+        "reproducibility/update_method_comparison/inputs/models.json",
+        "reproducibility/state_sufficiency/independent_verification/inputs/protocol.json"
+      ],
+      "commands": [
+        "python -m repro.learned_editors --output reproduced/editors",
+        "python -m repro.state_sufficiency --output reproduced/primary",
+        "python reproducibility/state_sufficiency/independent_verification/reconstruct.py analyze --output reproduced/independent",
+        "python reproducibility/state_sufficiency/independent_verification/reconstruct.py compare --output reproduced/independent"
+      ],
+      "expected_outputs": [
+        "reproduced/editors/CPU_CHECK.json",
+        "reproduced/primary/state_sufficiency/v10.csv",
+        "reproduced/primary/state_sufficiency/strong.csv",
+        "reproduced/independent/primary.json",
+        "reproduced/independent/primary.csv"
+      ],
+      "reproduction_level": "2 original CPU parameter/interface checks; paired-stage source and FIT/CAL records supplied as an inert reference; fresh retraining unverified",
+      "related_studies": [
+        "editors",
+        "primary"
+      ],
+      "paper_location": "Section 4.1; Appendices C.1–C.7",
+      "paper_pages": [
+        4,
+        13
+      ],
+      "paper_coverage": "manuscript",
+      "crosswalk_note": "Paired training, selection and the primary protocol"
+    },
+    {
+      "id": "A05-table-1",
+      "title": "What the learned update changes: table 1",
+      "kind": "appendix_table",
+      "study": "editors",
+      "page": "docs/appendix/A05_learned_editors.md",
+      "paper_labels": [
+        "subsection.4.1",
+        "appendix.C"
+      ],
+      "evidence": [
+        "reproducibility/learned_editors/PARAMETERS.json",
+        "reproducibility/learned_editors/weights",
+        "reproducibility/learned_editors/training_reference/RECIPE.json"
+      ],
+      "configuration": [
+        "reproducibility/learned_editors/weights/SELECTED.json",
+        "reproducibility/update_method_comparison/inputs/models.json"
+      ],
+      "commands": [
+        "python -m repro.learned_editors --output reproduced/editors"
+      ],
+      "expected_outputs": [
+        "reproduced/editors/CPU_CHECK.json"
+      ],
+      "reproduction_level": "2 original CPU parameter/interface checks; paired-stage source and FIT/CAL records supplied as an inert reference; fresh retraining unverified",
+      "table_location": "Displayed table 1 on the linked page",
+      "paper_location": "Section 4.1; Appendices C.1–C.7",
+      "paper_pages": [
+        4,
+        13
+      ],
+      "paper_coverage": "manuscript"
+    },
+    {
+      "id": "A05-table-2",
+      "title": "What the learned update changes: table 2",
+      "kind": "appendix_table",
+      "study": "editors",
+      "page": "docs/appendix/A05_learned_editors.md",
+      "paper_labels": [
+        "subsection.4.1",
+        "appendix.C"
+      ],
+      "evidence": [
+        "reproducibility/learned_editors/PARAMETERS.json",
+        "reproducibility/learned_editors/weights",
+        "reproducibility/learned_editors/training_reference/RECIPE.json"
+      ],
+      "configuration": [
+        "reproducibility/learned_editors/weights/SELECTED.json",
+        "reproducibility/update_method_comparison/inputs/models.json"
+      ],
+      "commands": [
+        "python -m repro.learned_editors --output reproduced/editors"
+      ],
+      "expected_outputs": [
+        "reproduced/editors/CPU_CHECK.json"
+      ],
+      "reproduction_level": "2 original CPU parameter/interface checks; paired-stage source and FIT/CAL records supplied as an inert reference; fresh retraining unverified",
+      "table_location": "Displayed table 2 on the linked page",
+      "paper_location": "Section 4.1; Appendices C.1–C.7",
+      "paper_pages": [
+        4,
+        13
+      ],
+      "paper_coverage": "manuscript"
+    },
+    {
+      "id": "A05-table-3",
+      "title": "Objectives, seeds and actual selection: table 3",
+      "kind": "appendix_table",
+      "study": "editors",
+      "page": "docs/appendix/A05_learned_editors.md",
+      "paper_labels": [
+        "subsection.4.1",
+        "appendix.C"
+      ],
+      "evidence": [
+        "reproducibility/learned_editors/PARAMETERS.json",
+        "reproducibility/learned_editors/weights",
+        "reproducibility/learned_editors/training_reference/RECIPE.json"
+      ],
+      "configuration": [
+        "reproducibility/learned_editors/weights/SELECTED.json",
+        "reproducibility/update_method_comparison/inputs/models.json"
+      ],
+      "commands": [
+        "python -m repro.learned_editors --output reproduced/editors"
+      ],
+      "expected_outputs": [
+        "reproduced/editors/CPU_CHECK.json"
+      ],
+      "reproduction_level": "2 original CPU parameter/interface checks; paired-stage source and FIT/CAL records supplied as an inert reference; fresh retraining unverified",
+      "table_location": "Displayed table 3 on the linked page",
+      "paper_location": "Section 4.1; Appendices C.1–C.7",
+      "paper_pages": [
+        4,
+        13
+      ],
+      "paper_coverage": "manuscript"
+    },
+    {
+      "id": "A06",
+      "title": "A06. Stronger controls and fresh confirmation",
+      "kind": "supplementary_topic",
+      "study": "fresh",
+      "page": "docs/appendix/A06_stronger_controls.md",
+      "paper_labels": [
+        "subsection.4.3",
+        "subsection.D.1",
+        "subsection.D.2",
+        "figure.6"
+      ],
+      "evidence": [
+        "reproducibility/state_sufficiency/cpu_audit/RESULTS.csv",
+        "reproducibility/state_sufficiency/cpu_audit/SURVIVORS.json",
+        "reproducibility/fresh_history_validation/CLAIMS.json",
+        "reproducibility/fresh_history_validation/tables",
+        "reproducibility/fresh_history_validation/MANIFEST.json"
+      ],
+      "configuration": [
+        "reproducibility/state_sufficiency/cpu_audit/GATE_SPEC.json",
+        "reproducibility/fresh_history_validation/protocol/PROTOCOL.md",
+        "reproducibility/fresh_history_validation/ANALYSIS_RULES.md"
+      ],
+      "commands": [
+        "python -m repro.cpu_robustness --output reproduced/controls",
+        "python -m repro.fresh_history --output reproduced/fresh"
+      ],
+      "expected_outputs": [
+        "reproduced/controls/by_condition.csv",
+        "reproduced/fresh/verification.json",
+        "reproduced/fresh/tables/PRIMARY_GATE_COUNTS.csv",
+        "reproduced/fresh/tables/UTILITY_EQUAL_RETENTION.csv"
+      ],
+      "reproduction_level": "2 saved-score confirmation, utility, sensitivities and repeats",
+      "related_studies": [
+        "controls",
+        "fresh"
+      ],
+      "paper_location": "Section 4.3; Appendices D.1–D.2; Appendix Figure 6",
+      "paper_pages": [
+        4,
+        14,
+        15
+      ],
+      "paper_coverage": "manuscript",
+      "crosswalk_note": "Original-output controls and fresh confirmation"
+    },
+    {
+      "id": "A06-table-1",
+      "title": "Original-output decomposition: table 1",
+      "kind": "appendix_table",
+      "study": "controls",
+      "page": "docs/appendix/A06_stronger_controls.md",
+      "paper_labels": [
+        "subsection.4.3",
+        "subsection.D.1",
+        "subsection.D.2",
+        "figure.6"
+      ],
+      "evidence": [
+        "reproducibility/state_sufficiency/cpu_audit/RESULTS.csv",
+        "reproducibility/state_sufficiency/cpu_audit/SURVIVORS.json"
+      ],
+      "configuration": [
+        "reproducibility/state_sufficiency/cpu_audit/GATE_SPEC.json"
+      ],
+      "commands": [
+        "python -m repro.cpu_robustness --output reproduced/controls"
+      ],
+      "expected_outputs": [
+        "reproduced/controls/by_condition.csv"
+      ],
+      "reproduction_level": "2 original saved scores; post-hoc controls",
+      "table_location": "Displayed table 1 on the linked page",
+      "paper_location": "Section 4.3; Appendices D.1–D.2; Appendix Figure 6",
+      "paper_pages": [
+        4,
+        14,
+        15
+      ],
+      "paper_coverage": "manuscript"
+    },
+    {
+      "id": "A06-table-2",
+      "title": "Fresh cases and fixed criteria: table 2",
+      "kind": "appendix_table",
+      "study": "fresh",
+      "page": "docs/appendix/A06_stronger_controls.md",
+      "paper_labels": [
+        "subsection.4.3",
+        "subsection.D.1",
+        "subsection.D.2",
+        "figure.6"
+      ],
+      "evidence": [
+        "reproducibility/fresh_history_validation/CLAIMS.json",
+        "reproducibility/fresh_history_validation/tables",
+        "reproducibility/fresh_history_validation/MANIFEST.json"
+      ],
+      "configuration": [
+        "reproducibility/fresh_history_validation/protocol/PROTOCOL.md",
+        "reproducibility/fresh_history_validation/ANALYSIS_RULES.md"
+      ],
+      "commands": [
+        "python -m repro.fresh_history --output reproduced/fresh"
+      ],
+      "expected_outputs": [
+        "reproduced/fresh/verification.json",
+        "reproduced/fresh/tables/PRIMARY_GATE_COUNTS.csv",
+        "reproduced/fresh/tables/UTILITY_EQUAL_RETENTION.csv"
+      ],
+      "reproduction_level": "2 saved-score confirmation, utility, sensitivities and repeats",
+      "table_location": "Displayed table 2 on the linked page",
+      "paper_location": "Section 4.3; Appendices D.1–D.2; Appendix Figure 6",
+      "paper_pages": [
+        4,
+        14,
+        15
+      ],
+      "paper_coverage": "manuscript"
+    },
+    {
+      "id": "A06-data-table-1",
+      "title": "full opportunity table",
+      "kind": "appendix_table",
+      "study": "controls",
+      "page": "docs/appendix/A06_stronger_controls.md",
+      "paper_labels": [
+        "subsection.4.3",
+        "subsection.D.1",
+        "subsection.D.2",
+        "figure.6"
+      ],
+      "evidence": [
+        "reproducibility/state_sufficiency/cpu_audit/RESULTS.csv",
+        "reproducibility/state_sufficiency/cpu_audit/RESULTS.csv",
+        "reproducibility/state_sufficiency/cpu_audit/SURVIVORS.json"
+      ],
+      "configuration": [
+        "reproducibility/state_sufficiency/cpu_audit/GATE_SPEC.json"
+      ],
+      "commands": [
+        "python -m repro.cpu_robustness --output reproduced/controls"
+      ],
+      "expected_outputs": [
+        "reproduced/controls/by_condition.csv"
+      ],
+      "reproduction_level": "2 original saved scores; post-hoc controls",
+      "paper_location": "Section 4.3; Appendices D.1–D.2; Appendix Figure 6",
+      "paper_pages": [
+        4,
+        14,
+        15
+      ],
+      "paper_coverage": "manuscript"
+    },
+    {
+      "id": "A06-data-table-2",
+      "title": "acceptance and errors",
+      "kind": "appendix_table",
+      "study": "fresh",
+      "page": "docs/appendix/A06_stronger_controls.md",
+      "paper_labels": [
+        "subsection.4.3",
+        "subsection.D.1",
+        "subsection.D.2",
+        "figure.6"
+      ],
+      "evidence": [
+        "reproducibility/fresh_history_validation/tables/UTILITY_ACCEPTANCE.csv",
+        "reproducibility/fresh_history_validation/CLAIMS.json",
+        "reproducibility/fresh_history_validation/tables",
+        "reproducibility/fresh_history_validation/MANIFEST.json"
+      ],
+      "configuration": [
+        "reproducibility/fresh_history_validation/protocol/PROTOCOL.md",
+        "reproducibility/fresh_history_validation/ANALYSIS_RULES.md"
+      ],
+      "commands": [
+        "python -m repro.fresh_history --output reproduced/fresh"
+      ],
+      "expected_outputs": [
+        "reproduced/fresh/verification.json",
+        "reproduced/fresh/tables/PRIMARY_GATE_COUNTS.csv",
+        "reproduced/fresh/tables/UTILITY_EQUAL_RETENTION.csv"
+      ],
+      "reproduction_level": "2 saved-score confirmation, utility, sensitivities and repeats",
+      "paper_location": "Section 4.3; Appendices D.1–D.2; Appendix Figure 6",
+      "paper_pages": [
+        4,
+        14,
+        15
+      ],
+      "paper_coverage": "manuscript"
+    },
+    {
+      "id": "A06-data-table-3",
+      "title": "per-seed contrasts",
+      "kind": "appendix_table",
+      "study": "fresh",
+      "page": "docs/appendix/A06_stronger_controls.md",
+      "paper_labels": [
+        "subsection.4.3",
+        "subsection.D.1",
+        "subsection.D.2",
+        "figure.6"
+      ],
+      "evidence": [
+        "reproducibility/fresh_history_validation/tables/UTILITY_SEED_CONTRASTS.csv",
+        "reproducibility/fresh_history_validation/CLAIMS.json",
+        "reproducibility/fresh_history_validation/tables",
+        "reproducibility/fresh_history_validation/MANIFEST.json"
+      ],
+      "configuration": [
+        "reproducibility/fresh_history_validation/protocol/PROTOCOL.md",
+        "reproducibility/fresh_history_validation/ANALYSIS_RULES.md"
+      ],
+      "commands": [
+        "python -m repro.fresh_history --output reproduced/fresh"
+      ],
+      "expected_outputs": [
+        "reproduced/fresh/verification.json",
+        "reproduced/fresh/tables/PRIMARY_GATE_COUNTS.csv",
+        "reproduced/fresh/tables/UTILITY_EQUAL_RETENTION.csv"
+      ],
+      "reproduction_level": "2 saved-score confirmation, utility, sensitivities and repeats",
+      "paper_location": "Section 4.3; Appendices D.1–D.2; Appendix Figure 6",
+      "paper_pages": [
+        4,
+        14,
+        15
+      ],
+      "paper_coverage": "manuscript"
+    },
+    {
+      "id": "A06-data-table-4",
+      "title": "all retention levels",
+      "kind": "appendix_table",
+      "study": "fresh",
+      "page": "docs/appendix/A06_stronger_controls.md",
+      "paper_labels": [
+        "subsection.4.3",
+        "subsection.D.1",
+        "subsection.D.2",
+        "figure.6"
+      ],
+      "evidence": [
+        "reproducibility/fresh_history_validation/tables/UTILITY_EQUAL_RETENTION.csv",
+        "reproducibility/fresh_history_validation/CLAIMS.json",
+        "reproducibility/fresh_history_validation/tables",
+        "reproducibility/fresh_history_validation/MANIFEST.json"
+      ],
+      "configuration": [
+        "reproducibility/fresh_history_validation/protocol/PROTOCOL.md",
+        "reproducibility/fresh_history_validation/ANALYSIS_RULES.md"
+      ],
+      "commands": [
+        "python -m repro.fresh_history --output reproduced/fresh"
+      ],
+      "expected_outputs": [
+        "reproduced/fresh/verification.json",
+        "reproduced/fresh/tables/PRIMARY_GATE_COUNTS.csv",
+        "reproduced/fresh/tables/UTILITY_EQUAL_RETENTION.csv"
+      ],
+      "reproduction_level": "2 saved-score confirmation, utility, sensitivities and repeats",
+      "paper_location": "Section 4.3; Appendices D.1–D.2; Appendix Figure 6",
+      "paper_pages": [
+        4,
+        14,
+        15
+      ],
+      "paper_coverage": "manuscript"
+    },
+    {
+      "id": "A06-data-table-5",
+      "title": "both directions of policy disagreement",
+      "kind": "appendix_table",
+      "study": "fresh",
+      "page": "docs/appendix/A06_stronger_controls.md",
+      "paper_labels": [
+        "subsection.4.3",
+        "subsection.D.1",
+        "subsection.D.2",
+        "figure.6"
+      ],
+      "evidence": [
+        "reproducibility/fresh_history_validation/tables/POLICY_DISAGREEMENT_CASES.csv",
+        "reproducibility/fresh_history_validation/CLAIMS.json",
+        "reproducibility/fresh_history_validation/tables",
+        "reproducibility/fresh_history_validation/MANIFEST.json"
+      ],
+      "configuration": [
+        "reproducibility/fresh_history_validation/protocol/PROTOCOL.md",
+        "reproducibility/fresh_history_validation/ANALYSIS_RULES.md"
+      ],
+      "commands": [
+        "python -m repro.fresh_history --output reproduced/fresh"
+      ],
+      "expected_outputs": [
+        "reproduced/fresh/verification.json",
+        "reproduced/fresh/tables/PRIMARY_GATE_COUNTS.csv",
+        "reproduced/fresh/tables/UTILITY_EQUAL_RETENTION.csv"
+      ],
+      "reproduction_level": "2 saved-score confirmation, utility, sensitivities and repeats",
+      "paper_location": "Section 4.3; Appendices D.1–D.2; Appendix Figure 6",
+      "paper_pages": [
+        4,
+        14,
+        15
+      ],
+      "paper_coverage": "manuscript"
+    },
+    {
+      "id": "A07",
+      "title": "Smaller-model textual breadth",
+      "kind": "supplementary_topic",
+      "study": "textual-breadth",
+      "page": "docs/appendix/A07_textual_breadth.md",
+      "paper_labels": [
+        "subsection.4.4",
+        "subsection.D.3"
+      ],
+      "evidence": [
+        "reproducibility/text_scope/MANIFEST.json",
+        "reproducibility/text_scope/saved"
+      ],
+      "configuration": [
+        "reproducibility/text_scope/saved/runtime/MODEL_ROSTER_FROZEN.json",
+        "reproducibility/text_scope/saved/code/text_scope/DEV_GATE_AMENDMENT.md"
+      ],
+      "commands": [
+        "python -m repro.text_scope --output reproduced/textual-breadth"
+      ],
+      "expected_outputs": [
+        "reproduced/textual-breadth/VERIFICATION.json",
+        "reproduced/textual-breadth/analysis/MAIN_TABLE.json",
+        "reproduced/textual-breadth/analysis/PLANNED_COMPARISONS.json"
+      ],
+      "reproduction_level": "2 saved scores; failed bridges and unmeasured rows retained",
+      "related_studies": [
+        "textual-breadth"
+      ],
+      "paper_location": "Related to Section 4.4 and Appendix D.3",
+      "paper_pages": [
+        5,
+        15
+      ],
+      "paper_coverage": "additional_repository_analysis",
+      "crosswalk_note": "Additional smaller-model studies; current 32B results are in the main matched-history guide"
+    },
+    {
+      "id": "A07-table-1",
+      "title": "Question and method: table 1",
+      "kind": "appendix_table",
+      "study": "textual-breadth",
+      "page": "docs/appendix/A07_textual_breadth.md",
+      "paper_labels": [
+        "subsection.4.4",
+        "subsection.D.3"
+      ],
+      "evidence": [
+        "reproducibility/text_scope/MANIFEST.json",
+        "reproducibility/text_scope/saved"
+      ],
+      "configuration": [
+        "reproducibility/text_scope/saved/runtime/MODEL_ROSTER_FROZEN.json",
+        "reproducibility/text_scope/saved/code/text_scope/DEV_GATE_AMENDMENT.md"
+      ],
+      "commands": [
+        "python -m repro.text_scope --output reproduced/textual-breadth"
+      ],
+      "expected_outputs": [
+        "reproduced/textual-breadth/VERIFICATION.json",
+        "reproduced/textual-breadth/analysis/MAIN_TABLE.json",
+        "reproduced/textual-breadth/analysis/PLANNED_COMPARISONS.json"
+      ],
+      "reproduction_level": "2 saved scores; failed bridges and unmeasured rows retained",
+      "table_location": "Displayed table 1 on the linked page",
+      "paper_location": "Related to Section 4.4 and Appendix D.3",
+      "paper_pages": [
+        5,
+        15
+      ],
+      "paper_coverage": "additional_repository_analysis"
+    },
+    {
+      "id": "A07-table-2",
+      "title": "Primary results: table 2",
+      "kind": "appendix_table",
+      "study": "textual-breadth",
+      "page": "docs/appendix/A07_textual_breadth.md",
+      "paper_labels": [
+        "subsection.4.4",
+        "subsection.D.3"
+      ],
+      "evidence": [
+        "reproducibility/text_scope/MANIFEST.json",
+        "reproducibility/text_scope/saved"
+      ],
+      "configuration": [
+        "reproducibility/text_scope/saved/runtime/MODEL_ROSTER_FROZEN.json",
+        "reproducibility/text_scope/saved/code/text_scope/DEV_GATE_AMENDMENT.md"
+      ],
+      "commands": [
+        "python -m repro.text_scope --output reproduced/textual-breadth"
+      ],
+      "expected_outputs": [
+        "reproduced/textual-breadth/VERIFICATION.json",
+        "reproduced/textual-breadth/analysis/MAIN_TABLE.json",
+        "reproduced/textual-breadth/analysis/PLANNED_COMPARISONS.json"
+      ],
+      "reproduction_level": "2 saved scores; failed bridges and unmeasured rows retained",
+      "table_location": "Displayed table 2 on the linked page",
+      "paper_location": "Related to Section 4.4 and Appendix D.3",
+      "paper_pages": [
+        5,
+        15
+      ],
+      "paper_coverage": "additional_repository_analysis"
+    },
+    {
+      "id": "A07-table-3",
+      "title": "Stronger-control accounting: table 3",
+      "kind": "appendix_table",
+      "study": "textual-breadth",
+      "page": "docs/appendix/A07_textual_breadth.md",
+      "paper_labels": [
+        "subsection.4.4",
+        "subsection.D.3"
+      ],
+      "evidence": [
+        "reproducibility/text_scope/MANIFEST.json",
+        "reproducibility/text_scope/saved"
+      ],
+      "configuration": [
+        "reproducibility/text_scope/saved/runtime/MODEL_ROSTER_FROZEN.json",
+        "reproducibility/text_scope/saved/code/text_scope/DEV_GATE_AMENDMENT.md"
+      ],
+      "commands": [
+        "python -m repro.text_scope --output reproduced/textual-breadth"
+      ],
+      "expected_outputs": [
+        "reproduced/textual-breadth/VERIFICATION.json",
+        "reproduced/textual-breadth/analysis/MAIN_TABLE.json",
+        "reproduced/textual-breadth/analysis/PLANNED_COMPARISONS.json"
+      ],
+      "reproduction_level": "2 saved scores; failed bridges and unmeasured rows retained",
+      "table_location": "Displayed table 3 on the linked page",
+      "paper_location": "Related to Section 4.4 and Appendix D.3",
+      "paper_pages": [
+        5,
+        15
+      ],
+      "paper_coverage": "additional_repository_analysis"
+    },
+    {
+      "id": "A08",
+      "title": "Update methods and downstream coherence",
+      "kind": "supplementary_topic",
+      "study": "update-methods",
+      "page": "docs/appendix/A08_update_methods.md",
+      "paper_labels": [
+        "subsection.4.1",
+        "subsection.C.4"
+      ],
+      "evidence": [
+        "reproducibility/update_method_comparison/results.json",
+        "reproducibility/update_method_comparison/supplied/completed/tables"
+      ],
+      "configuration": [
+        "reproducibility/update_method_comparison/inputs/models.json"
+      ],
+      "commands": [
+        "python -m repro.update_methods --output reproduced/update-methods"
+      ],
+      "expected_outputs": [
+        "reproduced/update-methods/results.json",
+        "reproduced/update-methods/headline_results.csv",
+        "reproduced/update-methods/per_root_results.csv",
+        "reproduced/update-methods/timing_memory.csv"
+      ],
+      "reproduction_level": "2 completed origin panel saved scores and telemetry",
+      "related_studies": [
+        "update-methods"
+      ],
+      "paper_location": "Related to Section 4.1 and Appendix C.4",
+      "paper_pages": [
+        4,
+        13
+      ],
+      "paper_coverage": "additional_repository_analysis",
+      "crosswalk_note": "Additional paired method comparison, not the primary study"
+    },
+    {
+      "id": "A08-table-1",
+      "title": "Paired contrasts: table 1",
+      "kind": "appendix_table",
+      "study": "update-methods",
+      "page": "docs/appendix/A08_update_methods.md",
+      "paper_labels": [
+        "subsection.4.1",
+        "subsection.C.4"
+      ],
+      "evidence": [
+        "reproducibility/update_method_comparison/results.json",
+        "reproducibility/update_method_comparison/supplied/completed/tables"
+      ],
+      "configuration": [
+        "reproducibility/update_method_comparison/inputs/models.json"
+      ],
+      "commands": [
+        "python -m repro.update_methods --output reproduced/update-methods"
+      ],
+      "expected_outputs": [
+        "reproduced/update-methods/results.json",
+        "reproduced/update-methods/headline_results.csv",
+        "reproduced/update-methods/per_root_results.csv",
+        "reproduced/update-methods/timing_memory.csv"
+      ],
+      "reproduction_level": "2 completed origin panel saved scores and telemetry",
+      "table_location": "Displayed table 1 on the linked page",
+      "paper_location": "Related to Section 4.1 and Appendix C.4",
+      "paper_pages": [
+        4,
+        13
+      ],
+      "paper_coverage": "additional_repository_analysis"
+    },
+    {
+      "id": "A08-table-2",
+      "title": "Paired contrasts: table 2",
+      "kind": "appendix_table",
+      "study": "update-methods",
+      "page": "docs/appendix/A08_update_methods.md",
+      "paper_labels": [
+        "subsection.4.1",
+        "subsection.C.4"
+      ],
+      "evidence": [
+        "reproducibility/update_method_comparison/results.json",
+        "reproducibility/update_method_comparison/supplied/completed/tables"
+      ],
+      "configuration": [
+        "reproducibility/update_method_comparison/inputs/models.json"
+      ],
+      "commands": [
+        "python -m repro.update_methods --output reproduced/update-methods"
+      ],
+      "expected_outputs": [
+        "reproduced/update-methods/results.json",
+        "reproduced/update-methods/headline_results.csv",
+        "reproduced/update-methods/per_root_results.csv",
+        "reproduced/update-methods/timing_memory.csv"
+      ],
+      "reproduction_level": "2 completed origin panel saved scores and telemetry",
+      "table_location": "Displayed table 2 on the linked page",
+      "paper_location": "Related to Section 4.1 and Appendix C.4",
+      "paper_pages": [
+        4,
+        13
+      ],
+      "paper_coverage": "additional_repository_analysis"
+    },
+    {
+      "id": "A08-data-table-1",
+      "title": "per-design outcomes",
+      "kind": "appendix_table",
+      "study": "update-methods",
+      "page": "docs/appendix/A08_update_methods.md",
+      "paper_labels": [
+        "subsection.4.1",
+        "subsection.C.4"
+      ],
+      "evidence": [
+        "reproducibility/update_method_comparison/supplied/completed/tables/per_root_results.csv",
+        "reproducibility/update_method_comparison/results.json",
+        "reproducibility/update_method_comparison/supplied/completed/tables"
+      ],
+      "configuration": [
+        "reproducibility/update_method_comparison/inputs/models.json"
+      ],
+      "commands": [
+        "python -m repro.update_methods --output reproduced/update-methods"
+      ],
+      "expected_outputs": [
+        "reproduced/update-methods/results.json",
+        "reproduced/update-methods/headline_results.csv",
+        "reproduced/update-methods/per_root_results.csv",
+        "reproduced/update-methods/timing_memory.csv"
+      ],
+      "reproduction_level": "2 completed origin panel saved scores and telemetry",
+      "paper_location": "Related to Section 4.1 and Appendix C.4",
+      "paper_pages": [
+        4,
+        13
+      ],
+      "paper_coverage": "additional_repository_analysis"
+    },
+    {
+      "id": "A08-data-table-2",
+      "title": "per-scene outcomes",
+      "kind": "appendix_table",
+      "study": "update-methods",
+      "page": "docs/appendix/A08_update_methods.md",
+      "paper_labels": [
+        "subsection.4.1",
+        "subsection.C.4"
+      ],
+      "evidence": [
+        "reproducibility/update_method_comparison/supplied/completed/tables/per_scene_results.csv",
+        "reproducibility/update_method_comparison/results.json",
+        "reproducibility/update_method_comparison/supplied/completed/tables"
+      ],
+      "configuration": [
+        "reproducibility/update_method_comparison/inputs/models.json"
+      ],
+      "commands": [
+        "python -m repro.update_methods --output reproduced/update-methods"
+      ],
+      "expected_outputs": [
+        "reproduced/update-methods/results.json",
+        "reproduced/update-methods/headline_results.csv",
+        "reproduced/update-methods/per_root_results.csv",
+        "reproduced/update-methods/timing_memory.csv"
+      ],
+      "reproduction_level": "2 completed origin panel saved scores and telemetry",
+      "paper_location": "Related to Section 4.1 and Appendix C.4",
+      "paper_pages": [
+        4,
+        13
+      ],
+      "paper_coverage": "additional_repository_analysis"
+    },
+    {
+      "id": "A08-data-table-3",
+      "title": "timing and fallback accounting",
+      "kind": "appendix_table",
+      "study": "update-methods",
+      "page": "docs/appendix/A08_update_methods.md",
+      "paper_labels": [
+        "subsection.4.1",
+        "subsection.C.4"
+      ],
+      "evidence": [
+        "reproducibility/update_method_comparison/supplied/completed/tables/timing_memory.csv",
+        "reproducibility/update_method_comparison/results.json",
+        "reproducibility/update_method_comparison/supplied/completed/tables"
+      ],
+      "configuration": [
+        "reproducibility/update_method_comparison/inputs/models.json"
+      ],
+      "commands": [
+        "python -m repro.update_methods --output reproduced/update-methods"
+      ],
+      "expected_outputs": [
+        "reproduced/update-methods/results.json",
+        "reproduced/update-methods/headline_results.csv",
+        "reproduced/update-methods/per_root_results.csv",
+        "reproduced/update-methods/timing_memory.csv"
+      ],
+      "reproduction_level": "2 completed origin panel saved scores and telemetry",
+      "paper_location": "Related to Section 4.1 and Appendix C.4",
+      "paper_pages": [
+        4,
+        13
+      ],
+      "paper_coverage": "additional_repository_analysis"
+    },
+    {
+      "id": "A08-data-table-4",
+      "title": "behavior",
+      "kind": "appendix_table",
+      "study": "update-methods",
+      "page": "docs/appendix/A08_update_methods.md",
+      "paper_labels": [
+        "subsection.4.1",
+        "subsection.C.4"
+      ],
+      "evidence": [
+        "reproducibility/update_method_comparison/supplied/completed/tables/seed_diag_behavior.csv",
+        "reproducibility/update_method_comparison/results.json",
+        "reproducibility/update_method_comparison/supplied/completed/tables"
+      ],
+      "configuration": [
+        "reproducibility/update_method_comparison/inputs/models.json"
+      ],
+      "commands": [
+        "python -m repro.update_methods --output reproduced/update-methods"
+      ],
+      "expected_outputs": [
+        "reproduced/update-methods/results.json",
+        "reproduced/update-methods/headline_results.csv",
+        "reproduced/update-methods/per_root_results.csv",
+        "reproduced/update-methods/timing_memory.csv"
+      ],
+      "reproduction_level": "2 completed origin panel saved scores and telemetry",
+      "paper_location": "Related to Section 4.1 and Appendix C.4",
+      "paper_pages": [
+        4,
+        13
+      ],
+      "paper_coverage": "additional_repository_analysis"
+    },
+    {
+      "id": "A08-data-table-5",
+      "title": "geometry",
+      "kind": "appendix_table",
+      "study": "update-methods",
+      "page": "docs/appendix/A08_update_methods.md",
+      "paper_labels": [
+        "subsection.4.1",
+        "subsection.C.4"
+      ],
+      "evidence": [
+        "reproducibility/update_method_comparison/supplied/completed/tables/seed_diag_geometry.csv",
+        "reproducibility/update_method_comparison/results.json",
+        "reproducibility/update_method_comparison/supplied/completed/tables"
+      ],
+      "configuration": [
+        "reproducibility/update_method_comparison/inputs/models.json"
+      ],
+      "commands": [
+        "python -m repro.update_methods --output reproduced/update-methods"
+      ],
+      "expected_outputs": [
+        "reproduced/update-methods/results.json",
+        "reproduced/update-methods/headline_results.csv",
+        "reproduced/update-methods/per_root_results.csv",
+        "reproduced/update-methods/timing_memory.csv"
+      ],
+      "reproduction_level": "2 completed origin panel saved scores and telemetry",
+      "paper_location": "Related to Section 4.1 and Appendix C.4",
+      "paper_pages": [
+        4,
+        13
+      ],
+      "paper_coverage": "additional_repository_analysis"
+    },
+    {
+      "id": "A08-data-table-6",
+      "title": "checkpoint-selection metadata",
+      "kind": "appendix_table",
+      "study": "update-methods",
+      "page": "docs/appendix/A08_update_methods.md",
+      "paper_labels": [
+        "subsection.4.1",
+        "subsection.C.4"
+      ],
+      "evidence": [
+        "reproducibility/update_method_comparison/supplied/completed/tables/seed_diag_selection.csv",
+        "reproducibility/update_method_comparison/results.json",
+        "reproducibility/update_method_comparison/supplied/completed/tables"
+      ],
+      "configuration": [
+        "reproducibility/update_method_comparison/inputs/models.json"
+      ],
+      "commands": [
+        "python -m repro.update_methods --output reproduced/update-methods"
+      ],
+      "expected_outputs": [
+        "reproduced/update-methods/results.json",
+        "reproduced/update-methods/headline_results.csv",
+        "reproduced/update-methods/per_root_results.csv",
+        "reproduced/update-methods/timing_memory.csv"
+      ],
+      "reproduction_level": "2 completed origin panel saved scores and telemetry",
+      "paper_location": "Related to Section 4.1 and Appendix C.4",
+      "paper_pages": [
+        4,
+        13
+      ],
+      "paper_coverage": "additional_repository_analysis"
+    },
+    {
+      "id": "A09",
+      "title": "Crossover details",
+      "kind": "supplementary_topic",
+      "study": "crossover-extension",
+      "page": "docs/appendix/A09_crossover.md",
+      "paper_labels": [
+        "subsection.6.1",
+        "subsection.E.1",
+        "figure.5"
+      ],
+      "evidence": [
+        "artifacts/cache_crossover/original_panel.csv",
+        "reproducibility/cache_crossover/saved_summaries.json",
+        "artifacts/cache_crossover/extension_joint.csv",
+        "artifacts/cache_crossover/extension_direct.csv"
+      ],
+      "configuration": [
+        "reproducibility/cache_crossover/case_plan.json",
+        "reproducibility/cache_crossover/extension/candidate.json"
+      ],
+      "commands": [
+        "python -m repro.cache_crossover --output reproduced/crossover",
+        "python -m repro.cache_crossover_extension --output reproduced/crossover-extension"
+      ],
+      "expected_outputs": [
+        "reproduced/crossover/cache_crossover/results.json",
+        "reproduced/crossover/cache_crossover/six_cases.csv",
+        "reproduced/crossover-extension/cache_crossover_extension/replay.json",
+        "reproduced/crossover-extension/cache_crossover_extension/extension_joint.csv"
+      ],
+      "reproduction_level": "2 saved journal and original baseline bindings; one selected pair",
+      "related_studies": [
+        "crossover",
+        "crossover-extension"
+      ],
+      "paper_location": "Section 6.1; Appendix E.1; Figure 5",
+      "paper_pages": [
+        6,
+        7,
+        16
+      ],
+      "paper_coverage": "manuscript",
+      "crosswalk_note": "Selected and matched crossovers"
+    },
+    {
+      "id": "A09-table-1",
+      "title": "Intervention and fixed inputs: table 1",
+      "kind": "appendix_table",
+      "study": "crossover",
+      "page": "docs/appendix/A09_crossover.md",
+      "paper_labels": [
+        "subsection.6.1",
+        "subsection.E.1",
+        "figure.5"
+      ],
+      "evidence": [
+        "artifacts/cache_crossover/original_panel.csv",
+        "reproducibility/cache_crossover/saved_summaries.json"
+      ],
+      "configuration": [
+        "reproducibility/cache_crossover/case_plan.json"
+      ],
+      "commands": [
+        "python -m repro.cache_crossover --output reproduced/crossover"
+      ],
+      "expected_outputs": [
+        "reproduced/crossover/cache_crossover/results.json",
+        "reproduced/crossover/cache_crossover/six_cases.csv"
+      ],
+      "reproduction_level": "2 saved journals; selected cases",
+      "table_location": "Displayed table 1 on the linked page",
+      "paper_location": "Section 6.1; Appendix E.1; Figure 5",
+      "paper_pages": [
+        6,
+        7,
+        16
+      ],
+      "paper_coverage": "manuscript"
+    },
+    {
+      "id": "A09-table-2",
+      "title": "Six-case panel and selection: table 2",
+      "kind": "appendix_table",
+      "study": "crossover",
+      "page": "docs/appendix/A09_crossover.md",
+      "paper_labels": [
+        "subsection.6.1",
+        "subsection.E.1",
+        "figure.5"
+      ],
+      "evidence": [
+        "artifacts/cache_crossover/original_panel.csv",
+        "reproducibility/cache_crossover/saved_summaries.json"
+      ],
+      "configuration": [
+        "reproducibility/cache_crossover/case_plan.json"
+      ],
+      "commands": [
+        "python -m repro.cache_crossover --output reproduced/crossover"
+      ],
+      "expected_outputs": [
+        "reproduced/crossover/cache_crossover/results.json",
+        "reproduced/crossover/cache_crossover/six_cases.csv"
+      ],
+      "reproduction_level": "2 saved journals; selected cases",
+      "table_location": "Displayed table 2 on the linked page",
+      "paper_location": "Section 6.1; Appendix E.1; Figure 5",
+      "paper_pages": [
+        6,
+        7,
+        16
+      ],
+      "paper_coverage": "manuscript"
+    },
+    {
+      "id": "A09-data-table-1",
+      "title": "complete 24-row panel",
+      "kind": "appendix_table",
+      "study": "crossover",
+      "page": "docs/appendix/A09_crossover.md",
+      "paper_labels": [
+        "subsection.6.1",
+        "subsection.E.1",
+        "figure.5"
+      ],
+      "evidence": [
+        "artifacts/cache_crossover/original_panel.csv",
+        "artifacts/cache_crossover/original_panel.csv",
+        "reproducibility/cache_crossover/saved_summaries.json"
+      ],
+      "configuration": [
+        "reproducibility/cache_crossover/case_plan.json"
+      ],
+      "commands": [
+        "python -m repro.cache_crossover --output reproduced/crossover"
+      ],
+      "expected_outputs": [
+        "reproduced/crossover/cache_crossover/results.json",
+        "reproduced/crossover/cache_crossover/six_cases.csv"
+      ],
+      "reproduction_level": "2 saved journals; selected cases",
+      "paper_location": "Section 6.1; Appendix E.1; Figure 5",
+      "paper_pages": [
+        6,
+        7,
+        16
+      ],
+      "paper_coverage": "manuscript"
+    },
+    {
+      "id": "A09-data-table-2",
+      "title": "joint table",
+      "kind": "appendix_table",
+      "study": "crossover-extension",
+      "page": "docs/appendix/A09_crossover.md",
+      "paper_labels": [
+        "subsection.6.1",
+        "subsection.E.1",
+        "figure.5"
+      ],
+      "evidence": [
+        "artifacts/cache_crossover/extension_joint.csv",
+        "artifacts/cache_crossover/extension_joint.csv",
+        "artifacts/cache_crossover/extension_direct.csv"
+      ],
+      "configuration": [
+        "reproducibility/cache_crossover/extension/candidate.json"
+      ],
+      "commands": [
+        "python -m repro.cache_crossover_extension --output reproduced/crossover-extension"
+      ],
+      "expected_outputs": [
+        "reproduced/crossover-extension/cache_crossover_extension/replay.json",
+        "reproduced/crossover-extension/cache_crossover_extension/extension_joint.csv"
+      ],
+      "reproduction_level": "2 saved journal and original baseline bindings; one selected pair",
+      "paper_location": "Section 6.1; Appendix E.1; Figure 5",
+      "paper_pages": [
+        6,
+        7,
+        16
+      ],
+      "paper_coverage": "manuscript"
+    },
+    {
+      "id": "A09-data-table-3",
+      "title": "direct table",
+      "kind": "appendix_table",
+      "study": "crossover-extension",
+      "page": "docs/appendix/A09_crossover.md",
+      "paper_labels": [
+        "subsection.6.1",
+        "subsection.E.1",
+        "figure.5"
+      ],
+      "evidence": [
+        "artifacts/cache_crossover/extension_direct.csv",
+        "artifacts/cache_crossover/extension_joint.csv",
+        "artifacts/cache_crossover/extension_direct.csv"
+      ],
+      "configuration": [
+        "reproducibility/cache_crossover/extension/candidate.json"
+      ],
+      "commands": [
+        "python -m repro.cache_crossover_extension --output reproduced/crossover-extension"
+      ],
+      "expected_outputs": [
+        "reproduced/crossover-extension/cache_crossover_extension/replay.json",
+        "reproduced/crossover-extension/cache_crossover_extension/extension_joint.csv"
+      ],
+      "reproduction_level": "2 saved journal and original baseline bindings; one selected pair",
+      "paper_location": "Section 6.1; Appendix E.1; Figure 5",
+      "paper_pages": [
+        6,
+        7,
+        16
+      ],
+      "paper_coverage": "manuscript"
+    },
+    {
+      "id": "A10",
+      "title": "Refresh accounting",
+      "kind": "supplementary_topic",
+      "study": "refresh",
+      "page": "docs/appendix/A10_refresh_accounting.md",
+      "paper_labels": [
+        "subsection.6.2",
+        "subsection.E.2",
+        "figure.7"
+      ],
+      "evidence": [
+        "reproducibility/question_blind_repair/supplied/primary/tables/FOUR_ENDPOINTS.csv",
+        "reproducibility/question_blind_repair/supplied/verification/CLAIM_LEDGER.json",
+        "reproducibility/question_blind_repair/supplied/verification/REPEAT_COMPARISON.json",
+        "reproducibility/question_blind_repair/scores/DATA.json"
+      ],
+      "configuration": [
+        "reproducibility/question_blind_repair/supplied/primary/ANALYSIS_RULES.md"
+      ],
+      "commands": [
+        "python -m repro.question_blind_repair --output reproduced/refresh"
+      ],
+      "expected_outputs": [
+        "reproduced/refresh/RESULTS.json",
+        "reproduced/refresh/PRIMARY_RECOUNT.json",
+        "reproduced/refresh/SELECTED_RECOUNT.json",
+        "reproduced/refresh/REPEAT_SCORE_COMPARISON.json"
+      ],
+      "reproduction_level": "2 primary and selected-repeat score reconstruction; original intervals retained, not regenerated",
+      "related_studies": [
+        "refresh"
+      ],
+      "paper_location": "Section 6.2; Appendix E.2; Appendix Figure 7",
+      "paper_pages": [
+        7,
+        16,
+        17
+      ],
+      "paper_coverage": "manuscript",
+      "crosswalk_note": "Repair, harm, denominators and repeats"
+    },
+    {
+      "id": "A10-table-1",
+      "title": "Fixed intervention and controls: table 1",
+      "kind": "appendix_table",
+      "study": "refresh",
+      "page": "docs/appendix/A10_refresh_accounting.md",
+      "paper_labels": [
+        "subsection.6.2",
+        "subsection.E.2",
+        "figure.7"
+      ],
+      "evidence": [
+        "reproducibility/question_blind_repair/supplied/primary/tables/FOUR_ENDPOINTS.csv",
+        "reproducibility/question_blind_repair/supplied/verification/CLAIM_LEDGER.json",
+        "reproducibility/question_blind_repair/supplied/verification/REPEAT_COMPARISON.json",
+        "reproducibility/question_blind_repair/scores/DATA.json"
+      ],
+      "configuration": [
+        "reproducibility/question_blind_repair/supplied/primary/ANALYSIS_RULES.md"
+      ],
+      "commands": [
+        "python -m repro.question_blind_repair --output reproduced/refresh"
+      ],
+      "expected_outputs": [
+        "reproduced/refresh/RESULTS.json",
+        "reproduced/refresh/PRIMARY_RECOUNT.json",
+        "reproduced/refresh/SELECTED_RECOUNT.json",
+        "reproduced/refresh/REPEAT_SCORE_COMPARISON.json"
+      ],
+      "reproduction_level": "2 primary and selected-repeat score reconstruction; original intervals retained, not regenerated",
+      "table_location": "Displayed table 1 on the linked page",
+      "paper_location": "Section 6.2; Appendix E.2; Appendix Figure 7",
+      "paper_pages": [
+        7,
+        16,
+        17
+      ],
+      "paper_coverage": "manuscript"
+    },
+    {
+      "id": "A10-table-2",
+      "title": "Eligibility and repair: table 2",
+      "kind": "appendix_table",
+      "study": "refresh",
+      "page": "docs/appendix/A10_refresh_accounting.md",
+      "paper_labels": [
+        "subsection.6.2",
+        "subsection.E.2",
+        "figure.7"
+      ],
+      "evidence": [
+        "reproducibility/question_blind_repair/supplied/primary/tables/FOUR_ENDPOINTS.csv",
+        "reproducibility/question_blind_repair/supplied/verification/CLAIM_LEDGER.json",
+        "reproducibility/question_blind_repair/supplied/verification/REPEAT_COMPARISON.json",
+        "reproducibility/question_blind_repair/scores/DATA.json"
+      ],
+      "configuration": [
+        "reproducibility/question_blind_repair/supplied/primary/ANALYSIS_RULES.md"
+      ],
+      "commands": [
+        "python -m repro.question_blind_repair --output reproduced/refresh"
+      ],
+      "expected_outputs": [
+        "reproduced/refresh/RESULTS.json",
+        "reproduced/refresh/PRIMARY_RECOUNT.json",
+        "reproduced/refresh/SELECTED_RECOUNT.json",
+        "reproduced/refresh/REPEAT_SCORE_COMPARISON.json"
+      ],
+      "reproduction_level": "2 primary and selected-repeat score reconstruction; original intervals retained, not regenerated",
+      "table_location": "Displayed table 2 on the linked page",
+      "paper_location": "Section 6.2; Appendix E.2; Appendix Figure 7",
+      "paper_pages": [
+        7,
+        16,
+        17
+      ],
+      "paper_coverage": "manuscript"
+    },
+    {
+      "id": "A10-table-3",
+      "title": "Benefit, harm and uncertainty: table 3",
+      "kind": "appendix_table",
+      "study": "refresh",
+      "page": "docs/appendix/A10_refresh_accounting.md",
+      "paper_labels": [
+        "subsection.6.2",
+        "subsection.E.2",
+        "figure.7"
+      ],
+      "evidence": [
+        "reproducibility/question_blind_repair/supplied/primary/tables/FOUR_ENDPOINTS.csv",
+        "reproducibility/question_blind_repair/supplied/verification/CLAIM_LEDGER.json",
+        "reproducibility/question_blind_repair/supplied/verification/REPEAT_COMPARISON.json",
+        "reproducibility/question_blind_repair/scores/DATA.json"
+      ],
+      "configuration": [
+        "reproducibility/question_blind_repair/supplied/primary/ANALYSIS_RULES.md"
+      ],
+      "commands": [
+        "python -m repro.question_blind_repair --output reproduced/refresh"
+      ],
+      "expected_outputs": [
+        "reproduced/refresh/RESULTS.json",
+        "reproduced/refresh/PRIMARY_RECOUNT.json",
+        "reproduced/refresh/SELECTED_RECOUNT.json",
+        "reproduced/refresh/REPEAT_SCORE_COMPARISON.json"
+      ],
+      "reproduction_level": "2 primary and selected-repeat score reconstruction; original intervals retained, not regenerated",
+      "table_location": "Displayed table 3 on the linked page",
+      "paper_location": "Section 6.2; Appendix E.2; Appendix Figure 7",
+      "paper_pages": [
+        7,
+        16,
+        17
+      ],
+      "paper_coverage": "manuscript"
+    },
+    {
+      "id": "A10-data-table-1",
+      "title": "ALL_SEED_FORMAT_TARGETS.csv",
+      "kind": "appendix_table",
+      "study": "refresh",
+      "page": "docs/appendix/A10_refresh_accounting.md",
+      "paper_labels": [
+        "subsection.6.2",
+        "subsection.E.2",
+        "figure.7"
+      ],
+      "evidence": [
+        "reproducibility/question_blind_repair/supplied/primary/replay/ALL_SEED_FORMAT_TARGETS.csv",
+        "reproducibility/question_blind_repair/supplied/primary/tables/FOUR_ENDPOINTS.csv",
+        "reproducibility/question_blind_repair/supplied/verification/CLAIM_LEDGER.json",
+        "reproducibility/question_blind_repair/supplied/verification/REPEAT_COMPARISON.json",
+        "reproducibility/question_blind_repair/scores/DATA.json"
+      ],
+      "configuration": [
+        "reproducibility/question_blind_repair/supplied/primary/ANALYSIS_RULES.md"
+      ],
+      "commands": [
+        "python -m repro.question_blind_repair --output reproduced/refresh"
+      ],
+      "expected_outputs": [
+        "reproduced/refresh/RESULTS.json",
+        "reproduced/refresh/PRIMARY_RECOUNT.json",
+        "reproduced/refresh/SELECTED_RECOUNT.json",
+        "reproduced/refresh/REPEAT_SCORE_COMPARISON.json"
+      ],
+      "reproduction_level": "2 primary and selected-repeat score reconstruction; original intervals retained, not regenerated",
+      "paper_location": "Section 6.2; Appendix E.2; Appendix Figure 7",
+      "paper_pages": [
+        7,
+        16,
+        17
+      ],
+      "paper_coverage": "manuscript"
+    },
+    {
+      "id": "A10-data-table-2",
+      "title": "All condition/family rows",
+      "kind": "appendix_table",
+      "study": "refresh",
+      "page": "docs/appendix/A10_refresh_accounting.md",
+      "paper_labels": [
+        "subsection.6.2",
+        "subsection.E.2",
+        "figure.7"
+      ],
+      "evidence": [
+        "reproducibility/question_blind_repair/supplied/primary/tables/ALL_SEED_FORMAT_FAMILIES.csv",
+        "reproducibility/question_blind_repair/supplied/primary/tables/FOUR_ENDPOINTS.csv",
+        "reproducibility/question_blind_repair/supplied/verification/CLAIM_LEDGER.json",
+        "reproducibility/question_blind_repair/supplied/verification/REPEAT_COMPARISON.json",
+        "reproducibility/question_blind_repair/scores/DATA.json"
+      ],
+      "configuration": [
+        "reproducibility/question_blind_repair/supplied/primary/ANALYSIS_RULES.md"
+      ],
+      "commands": [
+        "python -m repro.question_blind_repair --output reproduced/refresh"
+      ],
+      "expected_outputs": [
+        "reproduced/refresh/RESULTS.json",
+        "reproduced/refresh/PRIMARY_RECOUNT.json",
+        "reproduced/refresh/SELECTED_RECOUNT.json",
+        "reproduced/refresh/REPEAT_SCORE_COMPARISON.json"
+      ],
+      "reproduction_level": "2 primary and selected-repeat score reconstruction; original intervals retained, not regenerated",
+      "paper_location": "Section 6.2; Appendix E.2; Appendix Figure 7",
+      "paper_pages": [
+        7,
+        16,
+        17
+      ],
+      "paper_coverage": "manuscript"
+    },
+    {
+      "id": "A10-data-table-3",
+      "title": "FOUR_ENDPOINTS.csv",
+      "kind": "appendix_table",
+      "study": "refresh",
+      "page": "docs/appendix/A10_refresh_accounting.md",
+      "paper_labels": [
+        "subsection.6.2",
+        "subsection.E.2",
+        "figure.7"
+      ],
+      "evidence": [
+        "reproducibility/question_blind_repair/supplied/primary/tables/FOUR_ENDPOINTS.csv",
+        "reproducibility/question_blind_repair/supplied/primary/tables/FOUR_ENDPOINTS.csv",
+        "reproducibility/question_blind_repair/supplied/verification/CLAIM_LEDGER.json",
+        "reproducibility/question_blind_repair/supplied/verification/REPEAT_COMPARISON.json",
+        "reproducibility/question_blind_repair/scores/DATA.json"
+      ],
+      "configuration": [
+        "reproducibility/question_blind_repair/supplied/primary/ANALYSIS_RULES.md"
+      ],
+      "commands": [
+        "python -m repro.question_blind_repair --output reproduced/refresh"
+      ],
+      "expected_outputs": [
+        "reproduced/refresh/RESULTS.json",
+        "reproduced/refresh/PRIMARY_RECOUNT.json",
+        "reproduced/refresh/SELECTED_RECOUNT.json",
+        "reproduced/refresh/REPEAT_SCORE_COMPARISON.json"
+      ],
+      "reproduction_level": "2 primary and selected-repeat score reconstruction; original intervals retained, not regenerated",
+      "paper_location": "Section 6.2; Appendix E.2; Appendix Figure 7",
+      "paper_pages": [
+        7,
+        16,
+        17
+      ],
+      "paper_coverage": "manuscript"
+    },
+    {
+      "id": "A10-data-table-4",
+      "title": "worked-example questions",
+      "kind": "appendix_table",
+      "study": "refresh",
+      "page": "docs/appendix/A10_refresh_accounting.md",
+      "paper_labels": [
+        "subsection.6.2",
+        "subsection.E.2",
+        "figure.7"
+      ],
+      "evidence": [
+        "reproducibility/question_blind_repair/supplied/verification/WORKED_EXAMPLE.csv",
+        "reproducibility/question_blind_repair/supplied/primary/tables/FOUR_ENDPOINTS.csv",
+        "reproducibility/question_blind_repair/supplied/verification/CLAIM_LEDGER.json",
+        "reproducibility/question_blind_repair/supplied/verification/REPEAT_COMPARISON.json",
+        "reproducibility/question_blind_repair/scores/DATA.json"
+      ],
+      "configuration": [
+        "reproducibility/question_blind_repair/supplied/primary/ANALYSIS_RULES.md"
+      ],
+      "commands": [
+        "python -m repro.question_blind_repair --output reproduced/refresh"
+      ],
+      "expected_outputs": [
+        "reproduced/refresh/RESULTS.json",
+        "reproduced/refresh/PRIMARY_RECOUNT.json",
+        "reproduced/refresh/SELECTED_RECOUNT.json",
+        "reproduced/refresh/REPEAT_SCORE_COMPARISON.json"
+      ],
+      "reproduction_level": "2 primary and selected-repeat score reconstruction; original intervals retained, not regenerated",
+      "paper_location": "Section 6.2; Appendix E.2; Appendix Figure 7",
+      "paper_pages": [
+        7,
+        16,
+        17
+      ],
+      "paper_coverage": "manuscript"
+    },
+    {
+      "id": "A10-data-table-5",
+      "title": "Donor agreement",
+      "kind": "appendix_table",
+      "study": "refresh",
+      "page": "docs/appendix/A10_refresh_accounting.md",
+      "paper_labels": [
+        "subsection.6.2",
+        "subsection.E.2",
+        "figure.7"
+      ],
+      "evidence": [
+        "reproducibility/question_blind_repair/supplied/verification/DONOR_AGREEMENT.csv",
+        "reproducibility/question_blind_repair/supplied/primary/tables/FOUR_ENDPOINTS.csv",
+        "reproducibility/question_blind_repair/supplied/verification/CLAIM_LEDGER.json",
+        "reproducibility/question_blind_repair/supplied/verification/REPEAT_COMPARISON.json",
+        "reproducibility/question_blind_repair/scores/DATA.json"
+      ],
+      "configuration": [
+        "reproducibility/question_blind_repair/supplied/primary/ANALYSIS_RULES.md"
+      ],
+      "commands": [
+        "python -m repro.question_blind_repair --output reproduced/refresh"
+      ],
+      "expected_outputs": [
+        "reproduced/refresh/RESULTS.json",
+        "reproduced/refresh/PRIMARY_RECOUNT.json",
+        "reproduced/refresh/SELECTED_RECOUNT.json",
+        "reproduced/refresh/REPEAT_SCORE_COMPARISON.json"
+      ],
+      "reproduction_level": "2 primary and selected-repeat score reconstruction; original intervals retained, not regenerated",
+      "paper_location": "Section 6.2; Appendix E.2; Appendix Figure 7",
+      "paper_pages": [
+        7,
+        16,
+        17
+      ],
+      "paper_coverage": "manuscript"
+    },
+    {
+      "id": "A11",
+      "title": "Public-data accounting and parser sensitivity",
+      "kind": "supplementary_topic",
+      "study": "ripple",
+      "page": "docs/appendix/A11_ripple_accounting.md",
+      "paper_labels": [
+        "subsection.F.2",
+        "table.5"
+      ],
+      "evidence": [
+        "reproducibility/in_context_updates/results.json",
+        "reproducibility/in_context_updates/supplied/journals"
+      ],
+      "configuration": [
+        "reproducibility/in_context_updates/supplied/protocol/SCOPE.json",
+        "reproducibility/in_context_updates/supplied/freezes/PARSER_FREEZE.json"
+      ],
+      "commands": [
+        "python -m repro.in_context_updates --output reproduced/ripple"
+      ],
+      "expected_outputs": [
+        "reproduced/ripple/results.json",
+        "reproduced/ripple/per_root_results.csv",
+        "reproduced/ripple/public_data_table.md"
+      ],
+      "reproduction_level": "2 both frozen parsers and all retained phases",
+      "related_studies": [
+        "ripple"
+      ],
+      "paper_location": "Appendix F.2; Table 5",
+      "paper_pages": [
+        17,
+        18
+      ],
+      "paper_coverage": "manuscript",
+      "crosswalk_note": "Public-data accounting and parser sensitivity"
+    },
+    {
+      "id": "A11-table-1",
+      "title": "Candidate construction and parser rules: table 1",
+      "kind": "appendix_table",
+      "study": "ripple",
+      "page": "docs/appendix/A11_ripple_accounting.md",
+      "paper_labels": [
+        "subsection.F.2",
+        "table.5"
+      ],
+      "evidence": [
+        "reproducibility/in_context_updates/results.json",
+        "reproducibility/in_context_updates/supplied/journals"
+      ],
+      "configuration": [
+        "reproducibility/in_context_updates/supplied/protocol/SCOPE.json",
+        "reproducibility/in_context_updates/supplied/freezes/PARSER_FREEZE.json"
+      ],
+      "commands": [
+        "python -m repro.in_context_updates --output reproduced/ripple"
+      ],
+      "expected_outputs": [
+        "reproduced/ripple/results.json",
+        "reproduced/ripple/per_root_results.csv",
+        "reproduced/ripple/public_data_table.md"
+      ],
+      "reproduction_level": "2 both frozen parsers and all retained phases",
+      "table_location": "Displayed table 1 on the linked page",
+      "paper_location": "Appendix F.2; Table 5",
+      "paper_pages": [
+        17,
+        18
+      ],
+      "paper_coverage": "manuscript"
+    },
+    {
+      "id": "A11-table-2",
+      "title": "Eligibility, disagreement and qualification: table 2",
+      "kind": "appendix_table",
+      "study": "ripple",
+      "page": "docs/appendix/A11_ripple_accounting.md",
+      "paper_labels": [
+        "subsection.F.2",
+        "table.5"
+      ],
+      "evidence": [
+        "reproducibility/in_context_updates/results.json",
+        "reproducibility/in_context_updates/supplied/journals"
+      ],
+      "configuration": [
+        "reproducibility/in_context_updates/supplied/protocol/SCOPE.json",
+        "reproducibility/in_context_updates/supplied/freezes/PARSER_FREEZE.json"
+      ],
+      "commands": [
+        "python -m repro.in_context_updates --output reproduced/ripple"
+      ],
+      "expected_outputs": [
+        "reproduced/ripple/results.json",
+        "reproduced/ripple/per_root_results.csv",
+        "reproduced/ripple/public_data_table.md"
+      ],
+      "reproduction_level": "2 both frozen parsers and all retained phases",
+      "table_location": "Displayed table 2 on the linked page",
+      "paper_location": "Appendix F.2; Table 5",
+      "paper_pages": [
+        17,
+        18
+      ],
+      "paper_coverage": "manuscript"
+    },
+    {
+      "id": "A11-table-3",
+      "title": "Eligibility, disagreement and qualification: table 3",
+      "kind": "appendix_table",
+      "study": "ripple",
+      "page": "docs/appendix/A11_ripple_accounting.md",
+      "paper_labels": [
+        "subsection.F.2",
+        "table.5"
+      ],
+      "evidence": [
+        "reproducibility/in_context_updates/results.json",
+        "reproducibility/in_context_updates/supplied/journals"
+      ],
+      "configuration": [
+        "reproducibility/in_context_updates/supplied/protocol/SCOPE.json",
+        "reproducibility/in_context_updates/supplied/freezes/PARSER_FREEZE.json"
+      ],
+      "commands": [
+        "python -m repro.in_context_updates --output reproduced/ripple"
+      ],
+      "expected_outputs": [
+        "reproduced/ripple/results.json",
+        "reproduced/ripple/per_root_results.csv",
+        "reproduced/ripple/public_data_table.md"
+      ],
+      "reproduction_level": "2 both frozen parsers and all retained phases",
+      "table_location": "Displayed table 3 on the linked page",
+      "paper_location": "Appendix F.2; Table 5",
+      "paper_pages": [
+        17,
+        18
+      ],
+      "paper_coverage": "manuscript"
+    },
+    {
+      "id": "A11-table-4",
+      "title": "Final accounting and witnesses: table 4",
+      "kind": "appendix_table",
+      "study": "ripple",
+      "page": "docs/appendix/A11_ripple_accounting.md",
+      "paper_labels": [
+        "subsection.F.2",
+        "table.5"
+      ],
+      "evidence": [
+        "reproducibility/in_context_updates/results.json",
+        "reproducibility/in_context_updates/supplied/journals"
+      ],
+      "configuration": [
+        "reproducibility/in_context_updates/supplied/protocol/SCOPE.json",
+        "reproducibility/in_context_updates/supplied/freezes/PARSER_FREEZE.json"
+      ],
+      "commands": [
+        "python -m repro.in_context_updates --output reproduced/ripple"
+      ],
+      "expected_outputs": [
+        "reproduced/ripple/results.json",
+        "reproduced/ripple/per_root_results.csv",
+        "reproduced/ripple/public_data_table.md"
+      ],
+      "reproduction_level": "2 both frozen parsers and all retained phases",
+      "table_location": "Displayed table 4 on the linked page",
+      "paper_location": "Appendix F.2; Table 5",
+      "paper_pages": [
+        17,
+        18
+      ],
+      "paper_coverage": "manuscript"
+    },
+    {
+      "id": "A11-table-5",
+      "title": "Complete phase and repeat accounting: table 5",
+      "kind": "appendix_table",
+      "study": "ripple",
+      "page": "docs/appendix/A11_ripple_accounting.md",
+      "paper_labels": [
+        "subsection.F.2",
+        "table.5"
+      ],
+      "evidence": [
+        "reproducibility/in_context_updates/results.json",
+        "reproducibility/in_context_updates/supplied/journals"
+      ],
+      "configuration": [
+        "reproducibility/in_context_updates/supplied/protocol/SCOPE.json",
+        "reproducibility/in_context_updates/supplied/freezes/PARSER_FREEZE.json"
+      ],
+      "commands": [
+        "python -m repro.in_context_updates --output reproduced/ripple"
+      ],
+      "expected_outputs": [
+        "reproduced/ripple/results.json",
+        "reproduced/ripple/per_root_results.csv",
+        "reproduced/ripple/public_data_table.md"
+      ],
+      "reproduction_level": "2 both frozen parsers and all retained phases",
+      "table_location": "Displayed table 5 on the linked page",
+      "paper_location": "Appendix F.2; Table 5",
+      "paper_pages": [
+        17,
+        18
+      ],
+      "paper_coverage": "manuscript"
+    },
+    {
+      "id": "A12",
+      "title": "Selected-case carrier and mediation evidence",
+      "kind": "supplementary_topic",
+      "study": "mechanism",
+      "page": "docs/appendix/A12_mechanism.md",
+      "paper_labels": [
+        "section.6",
+        "section.8"
+      ],
+      "evidence": [
+        "reproducibility/completed_followups/carrier/TABLES.md",
+        "reproducibility/completed_followups/mediation/TABLES.md",
+        "reproducibility/completed_followups/carrier/ALL_SCORES_AND_EFFECTS.csv.gz"
+      ],
+      "configuration": [
+        "reproducibility/completed_followups/carrier/MANIFEST.json",
+        "reproducibility/completed_followups/mediation/MANIFEST.json"
+      ],
+      "commands": [
+        "python -m repro.completed_followups --output reproduced/mechanism"
+      ],
+      "expected_outputs": [
+        "reproduced/mechanism/VERIFICATION.json"
+      ],
+      "reproduction_level": "1 saved tables with score/effect accounting checks; native tensors unavailable",
+      "related_studies": [
+        "mechanism"
+      ],
+      "paper_location": "Related to Sections 6 and 8",
+      "paper_pages": [
+        6,
+        8
+      ],
+      "paper_coverage": "additional_repository_analysis",
+      "crosswalk_note": "Additional carrier-reader and mediation analyses; no separate manuscript appendix section"
+    },
+    {
+      "id": "A12-table-1",
+      "title": "Carrier-reader study: table 1",
+      "kind": "appendix_table",
+      "study": "mechanism",
+      "page": "docs/appendix/A12_mechanism.md",
+      "paper_labels": [
+        "section.6",
+        "section.8"
+      ],
+      "evidence": [
+        "reproducibility/completed_followups/carrier/TABLES.md",
+        "reproducibility/completed_followups/mediation/TABLES.md",
+        "reproducibility/completed_followups/carrier/ALL_SCORES_AND_EFFECTS.csv.gz"
+      ],
+      "configuration": [
+        "reproducibility/completed_followups/carrier/MANIFEST.json",
+        "reproducibility/completed_followups/mediation/MANIFEST.json"
+      ],
+      "commands": [
+        "python -m repro.completed_followups --output reproduced/mechanism"
+      ],
+      "expected_outputs": [
+        "reproduced/mechanism/VERIFICATION.json"
+      ],
+      "reproduction_level": "1 saved tables with score/effect accounting checks; native tensors unavailable",
+      "table_location": "Displayed table 1 on the linked page",
+      "paper_location": "Related to Sections 6 and 8",
+      "paper_pages": [
+        6,
+        8
+      ],
+      "paper_coverage": "additional_repository_analysis"
+    },
+    {
+      "id": "A12-table-2",
+      "title": "Loss and restoration controls: table 2",
+      "kind": "appendix_table",
+      "study": "mechanism",
+      "page": "docs/appendix/A12_mechanism.md",
+      "paper_labels": [
+        "section.6",
+        "section.8"
+      ],
+      "evidence": [
+        "reproducibility/completed_followups/carrier/TABLES.md",
+        "reproducibility/completed_followups/mediation/TABLES.md",
+        "reproducibility/completed_followups/carrier/ALL_SCORES_AND_EFFECTS.csv.gz"
+      ],
+      "configuration": [
+        "reproducibility/completed_followups/carrier/MANIFEST.json",
+        "reproducibility/completed_followups/mediation/MANIFEST.json"
+      ],
+      "commands": [
+        "python -m repro.completed_followups --output reproduced/mechanism"
+      ],
+      "expected_outputs": [
+        "reproduced/mechanism/VERIFICATION.json"
+      ],
+      "reproduction_level": "1 saved tables with score/effect accounting checks; native tensors unavailable",
+      "table_location": "Displayed table 2 on the linked page",
+      "paper_location": "Related to Sections 6 and 8",
+      "paper_pages": [
+        6,
+        8
+      ],
+      "paper_coverage": "additional_repository_analysis"
+    },
+    {
+      "id": "A12-data-table-1",
+      "title": "complete source tables",
+      "kind": "appendix_table",
+      "study": "mechanism",
+      "page": "docs/appendix/A12_mechanism.md",
+      "paper_labels": [
+        "section.6",
+        "section.8"
+      ],
+      "evidence": [
+        "reproducibility/completed_followups/carrier/TABLES.md",
+        "reproducibility/completed_followups/carrier/TABLES.md",
+        "reproducibility/completed_followups/mediation/TABLES.md",
+        "reproducibility/completed_followups/carrier/ALL_SCORES_AND_EFFECTS.csv.gz"
+      ],
+      "configuration": [
+        "reproducibility/completed_followups/carrier/MANIFEST.json",
+        "reproducibility/completed_followups/mediation/MANIFEST.json"
+      ],
+      "commands": [
+        "python -m repro.completed_followups --output reproduced/mechanism"
+      ],
+      "expected_outputs": [
+        "reproduced/mechanism/VERIFICATION.json"
+      ],
+      "reproduction_level": "1 saved tables with score/effect accounting checks; native tensors unavailable",
+      "paper_location": "Related to Sections 6 and 8",
+      "paper_pages": [
+        6,
+        8
+      ],
+      "paper_coverage": "additional_repository_analysis"
+    },
+    {
+      "id": "A12-data-table-2",
+      "title": "all 2,172 score rows",
+      "kind": "appendix_table",
+      "study": "mechanism",
+      "page": "docs/appendix/A12_mechanism.md",
+      "paper_labels": [
+        "section.6",
+        "section.8"
+      ],
+      "evidence": [
+        "reproducibility/completed_followups/carrier/ALL_SCORES_AND_EFFECTS.csv.gz",
+        "reproducibility/completed_followups/carrier/TABLES.md",
+        "reproducibility/completed_followups/mediation/TABLES.md",
+        "reproducibility/completed_followups/carrier/ALL_SCORES_AND_EFFECTS.csv.gz"
+      ],
+      "configuration": [
+        "reproducibility/completed_followups/carrier/MANIFEST.json",
+        "reproducibility/completed_followups/mediation/MANIFEST.json"
+      ],
+      "commands": [
+        "python -m repro.completed_followups --output reproduced/mechanism"
+      ],
+      "expected_outputs": [
+        "reproduced/mechanism/VERIFICATION.json"
+      ],
+      "reproduction_level": "1 saved tables with score/effect accounting checks; native tensors unavailable",
+      "paper_location": "Related to Sections 6 and 8",
+      "paper_pages": [
+        6,
+        8
+      ],
+      "paper_coverage": "additional_repository_analysis"
+    },
+    {
+      "id": "A12-data-table-3",
+      "title": "full result tables",
+      "kind": "appendix_table",
+      "study": "mechanism",
+      "page": "docs/appendix/A12_mechanism.md",
+      "paper_labels": [
+        "section.6",
+        "section.8"
+      ],
+      "evidence": [
+        "reproducibility/completed_followups/mediation/TABLES.md",
+        "reproducibility/completed_followups/carrier/TABLES.md",
+        "reproducibility/completed_followups/mediation/TABLES.md",
+        "reproducibility/completed_followups/carrier/ALL_SCORES_AND_EFFECTS.csv.gz"
+      ],
+      "configuration": [
+        "reproducibility/completed_followups/carrier/MANIFEST.json",
+        "reproducibility/completed_followups/mediation/MANIFEST.json"
+      ],
+      "commands": [
+        "python -m repro.completed_followups --output reproduced/mechanism"
+      ],
+      "expected_outputs": [
+        "reproduced/mechanism/VERIFICATION.json"
+      ],
+      "reproduction_level": "1 saved tables with score/effect accounting checks; native tensors unavailable",
+      "paper_location": "Related to Sections 6 and 8",
+      "paper_pages": [
+        6,
+        8
+      ],
+      "paper_coverage": "additional_repository_analysis"
+    },
+    {
+      "id": "worked-example-0017",
+      "title": "Ada and Bryn: a measured matched-history example",
+      "kind": "worked_example",
+      "study": "fresh",
+      "page": "reproducibility/fresh_history_validation/examples/CASE_0017.md",
+      "paper_labels": [
+        "subsection.4.3",
+        "subsection.D.2"
+      ],
+      "evidence": [
+        "reproducibility/fresh_history_validation/examples/EXAMPLE_0017.json",
+        "reproducibility/fresh_history_validation/generated/FHV1-FINAL-0017/root.json",
+        "reproducibility/fresh_history_validation/generated/FHV1-FINAL-0017/questions.json",
+        "reproducibility/fresh_history_validation/generated/FHV1-FINAL-0017/PLAN.json",
+        "reproducibility/fresh_history_validation/generated/FHV1-FINAL-0017/PROMPTS.json.gz",
+        "reproducibility/fresh_history_validation/scientific/final/FHV1-FINAL-0017/SCORES.json.gz",
+        "reproducibility/fresh_history_validation/scientific/repeat/FHV1-FINAL-0017/SCORES.json.gz",
+        "reproducibility/fresh_history_validation/scientific/repeat/FHV1-FINAL-0017/COMPARISON.json"
+      ],
+      "configuration": [
+        "reproducibility/fresh_history_validation/protocol/PROTOCOL.md",
+        "reproducibility/fresh_history_validation/ANALYSIS_RULES.md"
+      ],
+      "commands": [
+        "python -m repro.fresh_history --output reproduced/fresh"
+      ],
+      "expected_outputs": [
+        "reproduced/fresh/verification.json",
+        "reproduced/fresh/tables/PRIMARY_GATE_COUNTS.csv",
+        "reproduced/fresh/tables/UTILITY_EQUAL_RETENTION.csv"
+      ],
+      "reproduction_level": "2 saved-score and repeat verification; the walkthrough retains its selection and repeat qualifications",
+      "paper_location": "Section 4.3; Appendix D.2",
+      "paper_pages": [
+        4,
+        15
+      ],
+      "paper_coverage": "manuscript"
+    },
+    {
+      "id": "claim-mqmh",
+      "title": "Public multi-hop history dependence",
+      "kind": "claim",
+      "study": "mqmh",
+      "page": "docs/06_mqmh_public_multihop.md",
+      "paper_labels": [
+        "section.5",
+        "table.1",
+        "subsection.F.1"
+      ],
+      "evidence": [
+        "reproducibility/mqmh/RESULTS.json",
+        "reproducibility/mqmh/MANIFEST.json",
+        "reproducibility/mqmh/SOURCE_HASHES.json"
+      ],
+      "configuration": [
+        "reproducibility/mqmh/SOURCE_HASHES.json"
+      ],
+      "commands": [
+        "python -m repro.mqmh --output reproduced/mqmh"
+      ],
+      "expected_outputs": [
+        "reproduced/mqmh/summary.json",
+        "reproduced/mqmh/target_counts.csv",
+        "reproduced/mqmh/case_1617.json",
+        "reproduced/mqmh/CHECKS.json"
+      ],
+      "reproduction_level": "2 saved-response reconstruction with subject-clustered bootstrap",
+      "paper_location": "Section 5; Appendix F.1; Table 1",
+      "paper_pages": [
+        5,
+        6,
+        16
+      ],
+      "paper_coverage": "manuscript"
+    },
+    {
+      "id": "table-mqmh",
+      "title": "MQuAKE-derived public multi-hop results",
+      "kind": "main_table",
+      "study": "mqmh",
+      "page": "docs/06_mqmh_public_multihop.md",
+      "paper_labels": [
+        "section.5",
+        "table.1"
+      ],
+      "evidence": [
+        "reproducibility/mqmh/RESULTS.json"
+      ],
+      "configuration": [
+        "reproducibility/mqmh/SOURCE_HASHES.json"
+      ],
+      "commands": [
+        "python -m repro.mqmh --output reproduced/mqmh"
+      ],
+      "expected_outputs": [
+        "reproduced/mqmh/summary.json"
+      ],
+      "reproduction_level": "2 exact counts and reconstructed intervals",
+      "paper_location": "Section 5; Table 1",
+      "paper_pages": [
+        5,
+        6
+      ],
+      "paper_coverage": "manuscript"
+    },
+    {
+      "id": "example-mqmh-1617",
+      "title": "Matched-history example: source case 1617",
+      "kind": "worked_example",
+      "study": "mqmh",
+      "page": "docs/06_mqmh_public_multihop.md",
+      "paper_labels": [
+        "section.5",
+        "subsection.F.1"
+      ],
+      "evidence": [
+        "reproducibility/mqmh/case_1617.json"
+      ],
+      "configuration": [
+        "reproducibility/mqmh/cohort.json.gz",
+        "reproducibility/mqmh/SOURCE_HASHES.json"
+      ],
+      "commands": [
+        "python -m repro.mqmh --output reproduced/mqmh"
+      ],
+      "expected_outputs": [
+        "reproduced/mqmh/case_1617.json"
+      ],
+      "reproduction_level": "2 saved-output and repeat reconstruction",
+      "paper_location": "Section 5; Appendix F.1",
+      "paper_pages": [
+        5,
+        16
+      ],
+      "paper_coverage": "manuscript"
+    }
+  ],
+  "paper_label_kind": "PDF named destination",
+  "appendix_crosswalk": [
+    {
+      "topic": "A01",
+      "location": "Sections 2.1–2.2; Appendices A.1–A.2; Table 2",
+      "paper_labels": [
+        "subsection.2.1",
+        "subsection.2.2",
+        "subsection.A.1",
+        "subsection.A.2",
+        "table.2"
+      ],
+      "scope": "Manuscript methods",
+      "page": "docs/appendix/A01_relation_construction.md"
+    },
+    {
+      "topic": "A02",
+      "location": "Section 2.1; Appendices A.4–A.5; Table 3",
+      "paper_labels": [
+        "subsection.2.1",
+        "subsection.A.4",
+        "subsection.A.5",
+        "table.3"
+      ],
+      "scope": "Manuscript controls plus the earlier specification",
+      "page": "docs/appendix/A02_controls.md"
+    },
+    {
+      "topic": "A03",
+      "location": "Section 2.1; Appendix A.3",
+      "paper_labels": [
+        "subsection.2.1",
+        "subsection.A.3"
+      ],
+      "scope": "Text-only features and separate fitted-population records",
+      "page": "docs/appendix/A03_text_features.md"
+    },
+    {
+      "topic": "A04",
+      "location": "Section 3; Appendices B.1–B.5; Figure 3",
+      "paper_labels": [
+        "section.3",
+        "appendix.B",
+        "figure.3"
+      ],
+      "scope": "Calibration, recovery and qualification",
+      "page": "docs/appendix/A04_counterfactual_calibration.md"
+    },
+    {
+      "topic": "A05",
+      "location": "Section 4.1; Appendices C.1–C.7",
+      "paper_labels": [
+        "subsection.4.1",
+        "appendix.C"
+      ],
+      "scope": "Paired training, selection and the primary protocol",
+      "page": "docs/appendix/A05_learned_editors.md"
+    },
+    {
+      "topic": "A06",
+      "location": "Section 4.3; Appendices D.1–D.2; Appendix Figure 6",
+      "paper_labels": [
+        "subsection.4.3",
+        "subsection.D.1",
+        "subsection.D.2",
+        "figure.6"
+      ],
+      "scope": "Original-output controls and fresh confirmation",
+      "page": "docs/appendix/A06_stronger_controls.md"
+    },
+    {
+      "topic": "A07",
+      "location": "Related to Section 4.4 and Appendix D.3",
+      "paper_labels": [
+        "subsection.4.4",
+        "subsection.D.3"
+      ],
+      "scope": "Additional smaller-model studies; current 32B results are in the main matched-history guide",
+      "page": "docs/appendix/A07_textual_breadth.md"
+    },
+    {
+      "topic": "A08",
+      "location": "Related to Section 4.1 and Appendix C.4",
+      "paper_labels": [
+        "subsection.4.1",
+        "subsection.C.4"
+      ],
+      "scope": "Additional paired method comparison, not the primary study",
+      "page": "docs/appendix/A08_update_methods.md"
+    },
+    {
+      "topic": "A09",
+      "location": "Section 6.1; Appendix E.1; Figure 5",
+      "paper_labels": [
+        "subsection.6.1",
+        "subsection.E.1",
+        "figure.5"
+      ],
+      "scope": "Selected and matched crossovers",
+      "page": "docs/appendix/A09_crossover.md"
+    },
+    {
+      "topic": "A10",
+      "location": "Section 6.2; Appendix E.2; Appendix Figure 7",
+      "paper_labels": [
+        "subsection.6.2",
+        "subsection.E.2",
+        "figure.7"
+      ],
+      "scope": "Repair, harm, denominators and repeats",
+      "page": "docs/appendix/A10_refresh_accounting.md"
+    },
+    {
+      "topic": "A11",
+      "location": "Appendix F.2; Table 5",
+      "paper_labels": [
+        "subsection.F.2",
+        "table.5"
+      ],
+      "scope": "Secondary RippleEdits-derived extension and parser sensitivity",
+      "page": "docs/appendix/A11_ripple_accounting.md"
+    },
+    {
+      "topic": "A12",
+      "location": "Related to Sections 6 and 8",
+      "paper_labels": [
+        "section.6",
+        "section.8"
+      ],
+      "scope": "Additional carrier-reader and mediation analyses; no separate manuscript appendix section",
+      "page": "docs/appendix/A12_mechanism.md"
+    },
+    {
+      "topic": "A13",
+      "location": "Section 5; Appendix F.1; Table 1",
+      "paper_labels": [
+        "section.5",
+        "subsection.F.1",
+        "table.1"
+      ],
+      "scope": "MQuAKE-derived public multi-hop matched-history evaluation",
+      "page": "docs/06_mqmh_public_multihop.md"
+    }
+  ],
+  "paper_pages_rule": "PDF pages on which the listed named destinations begin in the final anonymous review PDF"
+}

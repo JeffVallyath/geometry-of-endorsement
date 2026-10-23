@@ -1,0 +1,12 @@
+# History access at the trained interpreter
+
+Cases /128, targets /384, controls /517 and changed answers /901. Correctness requires all four histories.
+
+| Additional_text | Seed | Complete_cases | Targets | Controls | Answer_changes |
+|---|---|---|---|---|---|
+| None (ISO) | 0 | 124 | 380 | 517 | 0 |
+| None (ISO) | 1 | 127 | 383 | 517 | 0 |
+| Original history (HIST) | 0 | 36 | 366 | 392 | 122 |
+| Original history (HIST) | 1 | 108 | 379 | 496 | 23 |
+| Final facts only (CURRENT_EXTRA) | 0 | 107 | 378 | 497 | 6 |
+| Final facts only (CURRENT_EXTRA) | 1 | 124 | 382 | 515 | 1 |

@@ -1,9 +1,9 @@
 """Saved-score functions separated from the original neural/private worker imports.
 
 panel_index, current_rows and compare preserve the frozen function bodies.
-load_panel verifies the imported score member of the unchanged DONE receipt;
-duplicate raw batches and context seals are outside this compact scientific copy.
-The public entry point verifies the complete compact manifest before replay.
+load_panel verifies the score member against its public completion record.
+Unavailable raw batches and context seals are omitted from that record.
+The public entry point verifies every declared file before replay.
 """
 import gzip
 import json

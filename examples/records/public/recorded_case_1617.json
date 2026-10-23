@@ -1,0 +1,541 @@
+{
+  "schema": "RECORDED_WORKED_EXAMPLE_V1",
+  "case_id": 1617,
+  "query": {
+    "branch": "J",
+    "gold": "Q23436",
+    "query_id": "J2",
+    "question": "What place did the person who founded William Levada's religion work in?"
+  },
+  "repair_arm": "STATE_0",
+  "repair_model_evidence": {
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "download_seconds": 29.7,
+    "files": {
+      "model-00001-of-00004.safetensors": {
+        "expected": "a1333e6293854747c481288ea83b348226af178dd565c49b6f9495ba1966aba7",
+        "actual": "a1333e6293854747c481288ea83b348226af178dd565c49b6f9495ba1966aba7",
+        "ok": true
+      },
+      "model-00002-of-00004.safetensors": {
+        "expected": "f5d25a2772cb825164a2a2c0fb6d51a87e282abf21e4dd75bc5cfb3cd0ea6185",
+        "actual": "f5d25a2772cb825164a2a2c0fb6d51a87e282abf21e4dd75bc5cfb3cd0ea6185",
+        "ok": true
+      },
+      "model-00003-of-00004.safetensors": {
+        "expected": "8efdec4c1bc12317ae1a38dc42b595ce777738a64deea3fcb8a0a91381bcdfd5",
+        "actual": "8efdec4c1bc12317ae1a38dc42b595ce777738a64deea3fcb8a0a91381bcdfd5",
+        "ok": true
+      },
+      "model-00004-of-00004.safetensors": {
+        "expected": "1a72d403cdf0c1ec3cb7f289f17b394a01e64394c2e9b3c0f94dbce3faf879bd",
+        "actual": "1a72d403cdf0c1ec3cb7f289f17b394a01e64394c2e9b3c0f94dbce3faf879bd",
+        "ok": true
+      },
+      "config.json": {
+        "expected": "7463bb0ea78315365e6c6b74de4e73bbcc8359dfb0c5a737584e077d42c0b03c",
+        "actual": "7463bb0ea78315365e6c6b74de4e73bbcc8359dfb0c5a737584e077d42c0b03c",
+        "ok": true
+      },
+      "generation_config.json": {
+        "expected": "3a8f9087e486054c8a4a08dae2e5a3ba62e23da212b5b8c08bc42cb983c3459f",
+        "actual": "3a8f9087e486054c8a4a08dae2e5a3ba62e23da212b5b8c08bc42cb983c3459f",
+        "ok": true
+      },
+      "merges.txt": {
+        "expected": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+        "actual": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+        "ok": true
+      },
+      "model.safetensors.index.json": {
+        "expected": "624bf7c47cd12468fdc16e38a47cf4f19e0415b859a223ba3c027eed2f0e1028",
+        "actual": "624bf7c47cd12468fdc16e38a47cf4f19e0415b859a223ba3c027eed2f0e1028",
+        "ok": true
+      },
+      "tokenizer.json": {
+        "expected": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+        "actual": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+        "ok": true
+      },
+      "tokenizer_config.json": {
+        "expected": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+        "actual": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+        "ok": true
+      },
+      "vocab.json": {
+        "expected": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+        "actual": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+        "ok": true
+      }
+    },
+    "all_ok": true,
+    "torch": "2.8.0+cu128",
+    "transformers": "4.56.2",
+    "token_persisted": false
+  },
+  "history_inputs": {
+    "H0": {
+      "edits": [
+        [
+          "Q168657",
+          "P140",
+          "Q922480"
+        ],
+        [
+          "Q433846",
+          "P140",
+          "Q922480"
+        ]
+      ],
+      "initial": [
+        [
+          "Q433846",
+          "P140",
+          "Q9592"
+        ],
+        [
+          "Q9592",
+          "P112",
+          "Q302"
+        ],
+        [
+          "Q302",
+          "P937",
+          "Q83241"
+        ],
+        [
+          "Q922480",
+          "P112",
+          "Q189937"
+        ],
+        [
+          "Q189937",
+          "P937",
+          "Q23436"
+        ],
+        [
+          "Q168657",
+          "P140",
+          "Q922480"
+        ]
+      ],
+      "source_text": "Initial record:\nWilliam Levada is affiliated with the religion of Catholic Church.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\nAlbert of Saxony is affiliated with the religion of Church of Scotland.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland."
+    },
+    "H1": {
+      "edits": [
+        [
+          "Q168657",
+          "P140",
+          "Q922480"
+        ],
+        [
+          "Q433846",
+          "P140",
+          "Q922480"
+        ]
+      ],
+      "initial": [
+        [
+          "Q168657",
+          "P140",
+          "Q922480"
+        ],
+        [
+          "Q9592",
+          "P112",
+          "Q302"
+        ],
+        [
+          "Q302",
+          "P937",
+          "Q83241"
+        ],
+        [
+          "Q922480",
+          "P112",
+          "Q189937"
+        ],
+        [
+          "Q189937",
+          "P937",
+          "Q23436"
+        ],
+        [
+          "Q433846",
+          "P140",
+          "Q9592"
+        ]
+      ],
+      "source_text": "Initial record:\nAlbert of Saxony is affiliated with the religion of Church of Scotland.\nCatholic Church was founded by Jesus Christ.\nJesus Christ worked in the city of Galilee.\nChurch of Scotland was founded by John Knox.\nJohn Knox worked in the city of Edinburgh.\nWilliam Levada is affiliated with the religion of Catholic Church.\n\nCorrections:\nSET Albert of Saxony is affiliated with the religion of Church of Scotland.\nSET William Levada is affiliated with the religion of Church of Scotland."
+    }
+  },
+  "independently_built_current_records": {
+    "H0": [
+      [
+        "Q168657",
+        "P140",
+        "Q922480"
+      ],
+      [
+        "Q189937",
+        "P937",
+        "Q23436"
+      ],
+      [
+        "Q302",
+        "P937",
+        "Q83241"
+      ],
+      [
+        "Q433846",
+        "P140",
+        "Q922480"
+      ],
+      [
+        "Q922480",
+        "P112",
+        "Q189937"
+      ],
+      [
+        "Q9592",
+        "P112",
+        "Q302"
+      ]
+    ],
+    "H1": [
+      [
+        "Q168657",
+        "P140",
+        "Q922480"
+      ],
+      [
+        "Q189937",
+        "P937",
+        "Q23436"
+      ],
+      [
+        "Q302",
+        "P937",
+        "Q83241"
+      ],
+      [
+        "Q433846",
+        "P140",
+        "Q922480"
+      ],
+      [
+        "Q922480",
+        "P112",
+        "Q189937"
+      ],
+      [
+        "Q9592",
+        "P112",
+        "Q302"
+      ]
+    ]
+  },
+  "labels": {
+    "Q168657": "Albert of Saxony",
+    "Q189937": "John Knox",
+    "Q23436": "Edinburgh",
+    "Q302": "Jesus Christ",
+    "Q433846": "William Levada",
+    "Q83241": "Galilee",
+    "Q922480": "Church of Scotland",
+    "Q9592": "Catholic Church"
+  },
+  "native_diagnostic_checks": {
+    "case_id": 1617,
+    "common_guard": true,
+    "current_facts": true,
+    "decoy_qualified": true,
+    "hops": 3,
+    "invalid_difference": 0.0,
+    "long_chain_qualified": true,
+    "qualified": true,
+    "query_id": "J2",
+    "references": true,
+    "relevance_difference": 0.5,
+    "subject_id": "Q433846"
+  },
+  "native_responses": [
+    {
+      "arm": "H0",
+      "case_id": 1617,
+      "control_tokens_valid": true,
+      "correct": true,
+      "entity_id": "Q922480",
+      "query_id": "F0",
+      "strict_correct": true,
+      "strict_entity_id": "Q922480",
+      "strict_valid": true,
+      "text": "Church of Scotland",
+      "truncated": false,
+      "valid": true
+    },
+    {
+      "arm": "H1",
+      "case_id": 1617,
+      "control_tokens_valid": true,
+      "correct": true,
+      "entity_id": "Q922480",
+      "query_id": "F0",
+      "strict_correct": true,
+      "strict_entity_id": "Q922480",
+      "strict_valid": true,
+      "text": "Church of Scotland",
+      "truncated": false,
+      "valid": true
+    },
+    {
+      "arm": "H0",
+      "case_id": 1617,
+      "control_tokens_valid": true,
+      "correct": true,
+      "entity_id": "Q189937",
+      "query_id": "F1",
+      "strict_correct": true,
+      "strict_entity_id": "Q189937",
+      "strict_valid": true,
+      "text": "John Knox",
+      "truncated": false,
+      "valid": true
+    },
+    {
+      "arm": "H1",
+      "case_id": 1617,
+      "control_tokens_valid": true,
+      "correct": true,
+      "entity_id": "Q189937",
+      "query_id": "F1",
+      "strict_correct": true,
+      "strict_entity_id": "Q189937",
+      "strict_valid": true,
+      "text": "John Knox",
+      "truncated": false,
+      "valid": true
+    },
+    {
+      "arm": "H0",
+      "case_id": 1617,
+      "control_tokens_valid": true,
+      "correct": true,
+      "entity_id": "Q23436",
+      "query_id": "F2",
+      "strict_correct": true,
+      "strict_entity_id": "Q23436",
+      "strict_valid": true,
+      "text": "Edinburgh",
+      "truncated": false,
+      "valid": true
+    },
+    {
+      "arm": "H1",
+      "case_id": 1617,
+      "control_tokens_valid": true,
+      "correct": true,
+      "entity_id": "Q23436",
+      "query_id": "F2",
+      "strict_correct": true,
+      "strict_entity_id": "Q23436",
+      "strict_valid": true,
+      "text": "Edinburgh",
+      "truncated": false,
+      "valid": true
+    },
+    {
+      "arm": "H0",
+      "case_id": 1617,
+      "control_tokens_valid": true,
+      "correct": false,
+      "entity_id": "Q83241",
+      "query_id": "J2",
+      "strict_correct": false,
+      "strict_entity_id": "Q83241",
+      "strict_valid": true,
+      "text": "Galilee",
+      "truncated": false,
+      "valid": true
+    },
+    {
+      "arm": "H1",
+      "case_id": 1617,
+      "control_tokens_valid": true,
+      "correct": true,
+      "entity_id": "Q23436",
+      "query_id": "J2",
+      "strict_correct": true,
+      "strict_entity_id": "Q23436",
+      "strict_valid": true,
+      "text": "Edinburgh",
+      "truncated": false,
+      "valid": true
+    }
+  ],
+  "repair_responses": [
+    {
+      "history": "H0",
+      "logical_id": "1617/H0/post/J2/STATE_0",
+      "call_ids": [
+        "cb062913aaa1b7b4a68027dff0e358b2ef83a96fcc74c22e73b9c7c38691ca64",
+        "4a14baddd514ef7122bb65d4d9afd68f515bc2e2a834b3e58eae0f51a5e9b811",
+        "5a528e6db60d5abd34b519d09d655d2bac6fc311af4c6269393b829bb8057e1c"
+      ],
+      "selected": {
+        "edges": [
+          [
+            "Q433846",
+            "P140",
+            "Q922480"
+          ],
+          [
+            "Q922480",
+            "P112",
+            "Q189937"
+          ],
+          [
+            "Q189937",
+            "P937",
+            "Q23436"
+          ]
+        ],
+        "endpoint": "Q23436",
+        "entity": "William Levada",
+        "path": [
+          "P140",
+          "P112",
+          "P937"
+        ],
+        "start_id": "Q433846"
+      },
+      "outcome": {
+        "answer": "Edinburgh",
+        "entity": "Q23436",
+        "status": "VALID",
+        "trace": {
+          "cache_hit": false,
+          "dependencies": [
+            [
+              "Q433846",
+              "P140",
+              "Q922480"
+            ],
+            [
+              "Q922480",
+              "P112",
+              "Q189937"
+            ],
+            [
+              "Q189937",
+              "P937",
+              "Q23436"
+            ]
+          ],
+          "endpoint": "Q23436",
+          "schema_digest": "2abee5497691cf53cc4f4804a592b9681d8f4d49c491a4b886baf28cd58ddda2",
+          "snapshot": 1
+        }
+      },
+      "correct": true,
+      "program_faithful": true,
+      "wrong_program_right_answer": false,
+      "request_payload_sha256": "abc2ce343ace846cd7d18eb8949f176ae7a07e6d24a80e535b1802e8c405a1d2",
+      "state_sha256": "308ba53e64643f745d7afaba5fe835a0f01c4a4176d3db76f8a99a071dfe1cf3"
+    },
+    {
+      "history": "H1",
+      "logical_id": "1617/H1/post/J2/STATE_0",
+      "call_ids": [
+        "cb062913aaa1b7b4a68027dff0e358b2ef83a96fcc74c22e73b9c7c38691ca64",
+        "4a14baddd514ef7122bb65d4d9afd68f515bc2e2a834b3e58eae0f51a5e9b811",
+        "5a528e6db60d5abd34b519d09d655d2bac6fc311af4c6269393b829bb8057e1c"
+      ],
+      "selected": {
+        "edges": [
+          [
+            "Q433846",
+            "P140",
+            "Q922480"
+          ],
+          [
+            "Q922480",
+            "P112",
+            "Q189937"
+          ],
+          [
+            "Q189937",
+            "P937",
+            "Q23436"
+          ]
+        ],
+        "endpoint": "Q23436",
+        "entity": "William Levada",
+        "path": [
+          "P140",
+          "P112",
+          "P937"
+        ],
+        "start_id": "Q433846"
+      },
+      "outcome": {
+        "answer": "Edinburgh",
+        "entity": "Q23436",
+        "status": "VALID",
+        "trace": {
+          "cache_hit": false,
+          "dependencies": [
+            [
+              "Q433846",
+              "P140",
+              "Q922480"
+            ],
+            [
+              "Q922480",
+              "P112",
+              "Q189937"
+            ],
+            [
+              "Q189937",
+              "P937",
+              "Q23436"
+            ]
+          ],
+          "endpoint": "Q23436",
+          "schema_digest": "2abee5497691cf53cc4f4804a592b9681d8f4d49c491a4b886baf28cd58ddda2",
+          "snapshot": 1
+        }
+      },
+      "correct": true,
+      "program_faithful": true,
+      "wrong_program_right_answer": false,
+      "request_payload_sha256": "abc2ce343ace846cd7d18eb8949f176ae7a07e6d24a80e535b1802e8c405a1d2",
+      "state_sha256": "308ba53e64643f745d7afaba5fe835a0f01c4a4176d3db76f8a99a071dfe1cf3"
+    }
+  ],
+  "shared_recorded_call_ids": true,
+  "wrapper_relationship": "Original native wrapper versus later PPR repair wrapper; not a same-wrapper causal intervention.",
+  "sources": {
+    "original_case": {
+      "file": "studies/original_public_history/reproducibility/mqmh/case_1617.json",
+      "sha256": "29ab5c6e71aecafcd153e6e1fe314e93912edb8283ae95a72fd40a56397d73d7"
+    },
+    "runtime_cases": {
+      "file": "studies/repair_qwen7/input/PPR1_Same_Case_Public_Repair/prepared/RUNTIME_CASES.json",
+      "sha256": "7317b6b64063faf036cd1fb80289fb576fe8ff909add7b5b7659bed34092d253"
+    },
+    "selector": {
+      "file": "studies/repair_qwen7/input/PPR1_Same_Case_Public_Repair/vendor/ranker_contract.py",
+      "sha256": "5051c1b31866d47c6b955b301460cffb4d7983566d59990411e4b99749544c44"
+    },
+    "model": {
+      "file": "studies/repair_qwen7/input/PPR1_Same_Case_Public_Repair/reference/MODEL_VERIFY.json",
+      "sha256": "f6531a47e440add37ccf8448c9fb6498c2cba9a7aaa9a181a13a3137dc99918f"
+    },
+    "outcomes": {
+      "file": "studies/repair_qwen7/evaluation/SCORED_LOGICAL.jsonl",
+      "sha256": "d1d9bea1bab23b9a2a4fc441fcfc513a8d2f071aae9f5f0457349add27052ae1"
+    }
+  }
+}

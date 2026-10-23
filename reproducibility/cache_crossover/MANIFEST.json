@@ -1,0 +1,205 @@
+{
+  "schema": "ANONYMOUS_COMPACT_INPUTS_V1",
+  "study": "cache_crossover",
+  "files": [
+    {
+      "bytes": 44830,
+      "sha256": "42cf28ac7e6d5a454d25197ff0bb0899652d02c35412df9cbc7ffa204a86d575",
+      "encoding": "verbatim",
+      "decoded_bytes": 44830,
+      "decoded_sha256": "42cf28ac7e6d5a454d25197ff0bb0899652d02c35412df9cbc7ffa204a86d575",
+      "path": "case_plan.json",
+      "member": "case_plan.json"
+    },
+    {
+      "bytes": 8000,
+      "sha256": "a2fc7bf13e15fc2c64eceee5bbc4ff7df7c8f8870789373272a5c52e758027ee",
+      "encoding": "verbatim",
+      "decoded_bytes": 8000,
+      "decoded_sha256": "a2fc7bf13e15fc2c64eceee5bbc4ff7df7c8f8870789373272a5c52e758027ee",
+      "path": "terminal_worlds.json",
+      "member": "terminal_worlds.json"
+    },
+    {
+      "bytes": 346865,
+      "sha256": "4fafa7adda258e6295f823b09ad13eea020f6a12497b9ac563ecf8f8f7d66aa2",
+      "encoding": "gzip",
+      "decoded_bytes": 9218849,
+      "decoded_sha256": "2baf17d50b24c674dfe5b920405cdeab25dfd7735eb874efc2de8ee662d82dcd",
+      "path": "raw.jsonl.gz",
+      "member": "raw.jsonl"
+    },
+    {
+      "bytes": 60317,
+      "sha256": "67c29e1f8a3e70802074835f4e9304ecf0db0f983897d95b86a27e9d4ed16330",
+      "encoding": "verbatim",
+      "decoded_bytes": 60317,
+      "decoded_sha256": "67c29e1f8a3e70802074835f4e9304ecf0db0f983897d95b86a27e9d4ed16330",
+      "path": "saved_summaries.json",
+      "member": "saved_summaries.json"
+    },
+    {
+      "bytes": 47210,
+      "sha256": "987775b1ca6774eb7026c9fa4c5958fcb84e2a93c0cc2e0e943f3df2629ebc23",
+      "encoding": "verbatim",
+      "decoded_bytes": 47210,
+      "decoded_sha256": "987775b1ca6774eb7026c9fa4c5958fcb84e2a93c0cc2e0e943f3df2629ebc23",
+      "path": "results.json",
+      "member": "results.json"
+    },
+    {
+      "bytes": 393,
+      "sha256": "368e9ef9b433e5d47f8d7456c7c10d1772a1b78182cc23e390f2fb406e97fa7a",
+      "encoding": "verbatim",
+      "decoded_bytes": 393,
+      "decoded_sha256": "368e9ef9b433e5d47f8d7456c7c10d1772a1b78182cc23e390f2fb406e97fa7a",
+      "path": "six_cases.csv",
+      "member": "six_cases.csv"
+    },
+    {
+      "bytes": 513,
+      "sha256": "1760cb8c6f9acfd9f003695c06aa7c23bc4a8470eea26dc45cf1a7864d478d6a",
+      "encoding": "verbatim",
+      "decoded_bytes": 513,
+      "decoded_sha256": "1760cb8c6f9acfd9f003695c06aa7c23bc4a8470eea26dc45cf1a7864d478d6a",
+      "path": "terminal.json",
+      "member": "terminal.json"
+    },
+    {
+      "bytes": 7243,
+      "sha256": "4cf9338a3ed4e599345d40b4c5a9b78aa113fe45c1946620e9ff08406a5222ad",
+      "encoding": "verbatim",
+      "decoded_bytes": 7243,
+      "decoded_sha256": "4cf9338a3ed4e599345d40b4c5a9b78aa113fe45c1946620e9ff08406a5222ad",
+      "path": "frozen_gates.py.txt",
+      "member": "frozen_gates.py.txt"
+    },
+    {
+      "bytes": 26408,
+      "sha256": "101c95624cb8c7bd9274a77f9a8a8801c064e97cb5d50242fc6e5699370acdfb",
+      "encoding": "verbatim",
+      "decoded_bytes": 26408,
+      "decoded_sha256": "101c95624cb8c7bd9274a77f9a8a8801c064e97cb5d50242fc6e5699370acdfb",
+      "path": "extension/candidate.json",
+      "member": "extension/candidate.json"
+    },
+    {
+      "bytes": 29116,
+      "sha256": "cd095237cd63ed369571638b24c31839c9a3e7647f15c50ba20a8ddb164d5345",
+      "encoding": "gzip",
+      "decoded_bytes": 768844,
+      "decoded_sha256": "0e469768662c1e5a12e62b4404fa95a7783bbc2c0e09a6a2cd058c3261e2f2e9",
+      "path": "extension/raw.jsonl.gz",
+      "member": "extension/raw.jsonl"
+    },
+    {
+      "bytes": 133,
+      "sha256": "b8f48ec6df584e4288a522adf579053834733cf7fc8d2b5a773a76f504c9a1e8",
+      "encoding": "verbatim",
+      "decoded_bytes": 133,
+      "decoded_sha256": "b8f48ec6df584e4288a522adf579053834733cf7fc8d2b5a773a76f504c9a1e8",
+      "path": "extension/terminal.json",
+      "member": "extension/terminal.json"
+    },
+    {
+      "bytes": 3975,
+      "sha256": "cdbd494fd405d0f88eea97e0ea40834df9c9c4b3957c35c066d29c1cc55efe5c",
+      "encoding": "verbatim",
+      "decoded_bytes": 3975,
+      "decoded_sha256": "cdbd494fd405d0f88eea97e0ea40834df9c9c4b3957c35c066d29c1cc55efe5c",
+      "path": "extension/replay.json",
+      "member": "extension/replay.json"
+    },
+    {
+      "bytes": 6376,
+      "sha256": "922534995b49e650177fdf23f14e914c397ce37ddc3e839bd449193128a5b8cf",
+      "encoding": "verbatim",
+      "decoded_bytes": 6376,
+      "decoded_sha256": "922534995b49e650177fdf23f14e914c397ce37ddc3e839bd449193128a5b8cf",
+      "path": "extension/frozen_adapter.py.txt",
+      "member": "extension/frozen_adapter.py.txt"
+    },
+    {
+      "bytes": 2340,
+      "sha256": "6f5f648d0e67c13dd95c16161df14bbed344220f3d4b909842fec7f25496774c",
+      "encoding": "verbatim",
+      "decoded_bytes": 2340,
+      "decoded_sha256": "6f5f648d0e67c13dd95c16161df14bbed344220f3d4b909842fec7f25496774c",
+      "repository_path": "artifacts/cache_crossover/query_mappings.json",
+      "member": "tables/query_mappings.json"
+    },
+    {
+      "bytes": 8591,
+      "sha256": "51890a69cae00a09100f232c9642b132421823b2819a1fbbc4511358ae412c1d",
+      "encoding": "verbatim",
+      "decoded_bytes": 8591,
+      "decoded_sha256": "51890a69cae00a09100f232c9642b132421823b2819a1fbbc4511358ae412c1d",
+      "repository_path": "artifacts/cache_crossover/extension_outcome.json",
+      "member": "tables/extension_outcome.json"
+    },
+    {
+      "bytes": 2126,
+      "sha256": "44bb4659391cd2b7aa6e4f0f2c263a20394e80ebaefa2499326144e2a32e6cb7",
+      "encoding": "verbatim",
+      "decoded_bytes": 2126,
+      "decoded_sha256": "44bb4659391cd2b7aa6e4f0f2c263a20394e80ebaefa2499326144e2a32e6cb7",
+      "repository_path": "artifacts/cache_crossover/extension_joint.csv",
+      "member": "tables/extension_joint.csv"
+    },
+    {
+      "bytes": 2115,
+      "sha256": "1225687951c8ddbe3051375cceabac255cb1d708d8078965c7ec018f0987f5c5",
+      "encoding": "verbatim",
+      "decoded_bytes": 2115,
+      "decoded_sha256": "1225687951c8ddbe3051375cceabac255cb1d708d8078965c7ec018f0987f5c5",
+      "repository_path": "artifacts/cache_crossover/extension_direct.csv",
+      "member": "tables/extension_direct.csv"
+    },
+    {
+      "bytes": 7623,
+      "sha256": "86ebc0ab1b88d1c64a20dc75717d7c964e869c28a06818ab0a63a023352d769b",
+      "encoding": "verbatim",
+      "decoded_bytes": 7623,
+      "decoded_sha256": "86ebc0ab1b88d1c64a20dc75717d7c964e869c28a06818ab0a63a023352d769b",
+      "repository_path": "artifacts/cache_crossover/original_panel.csv",
+      "member": "tables/original_panel.csv"
+    },
+    {
+      "bytes": 61334,
+      "sha256": "68483830c6debf24fd4bc0fe1799ed4407a032215ddd7d1e836c1c978fe0349b",
+      "encoding": "verbatim",
+      "decoded_bytes": 61334,
+      "decoded_sha256": "68483830c6debf24fd4bc0fe1799ed4407a032215ddd7d1e836c1c978fe0349b",
+      "repository_path": "reproducibility/state_sufficiency/independent_verification/inputs/designs/SSC1-FINAL-0035.json",
+      "member": "dependencies/SSC1-FINAL-0035.json"
+    },
+    {
+      "bytes": 139048,
+      "sha256": "959723bb54c98cb6bc52cc0568fc4f525a77892fea792c33152731a43c38fec9",
+      "encoding": "verbatim",
+      "decoded_bytes": 139048,
+      "decoded_sha256": "959723bb54c98cb6bc52cc0568fc4f525a77892fea792c33152731a43c38fec9",
+      "repository_path": "reproducibility/state_sufficiency/independent_verification/inputs/responses/gemma/SSC1-FINAL-0035/core.json.gz",
+      "member": "dependencies/core.json.gz"
+    },
+    {
+      "bytes": 5531,
+      "sha256": "0c89da902097e7c4ca62a0819f8a7074546b547efacbcb87e232fc8c4a636f54",
+      "encoding": "verbatim",
+      "decoded_bytes": 5531,
+      "decoded_sha256": "0c89da902097e7c4ca62a0819f8a7074546b547efacbcb87e232fc8c4a636f54",
+      "repository_path": "artifacts/figures/cache_crossover.json",
+      "member": "plots/original.json"
+    },
+    {
+      "bytes": 5173,
+      "sha256": "150fe90a32c8bc69d399e45a71171bc0388ddab680111537a157ef92e4c19505",
+      "encoding": "verbatim",
+      "decoded_bytes": 5173,
+      "decoded_sha256": "150fe90a32c8bc69d399e45a71171bc0388ddab680111537a157ef92e4c19505",
+      "repository_path": "artifacts/figures/cache_crossover_extension.json",
+      "member": "plots/extension.json"
+    }
+  ],
+  "support_files": []
+}

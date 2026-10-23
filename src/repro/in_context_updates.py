@@ -34,16 +34,9 @@ def frozen_modules(base, version):
 
 
 def verify_inputs(base=BASE):
+    from .release_inputs import verify
+    manifest = verify(base, 'in_context_updates')
     supplied = base / 'supplied'
-    manifest = load_json(supplied / 'MANIFEST.json')
-    for row in manifest['files']:
-        path = safe_path(row['path'], supplied)
-        require(path.stat().st_size == row['bytes'] and sha256(path) == row['sha256'],
-                'Qwen source changed: ' + row['path'])
-        if row['transformation'] == 'gzip-lossless':
-            import hashlib
-            require(hashlib.sha256(gzip.decompress(path.read_bytes())).hexdigest() == row['source_sha256'],
-                    'Lossless source binding failed: ' + row['path'])
     freeze = load_json(supplied / 'freezes/PARSER_FREEZE.json')
     for name, digest in freeze['inputs_sha256'].items():
         require(sha256(supplied / 'inputs/built' / name) == digest, 'Frozen input changed: ' + name)

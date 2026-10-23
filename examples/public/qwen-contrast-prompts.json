@@ -1,0 +1,722 @@
+[
+  {
+    "arm": "H0",
+    "branch": "F",
+    "case_id": 963,
+    "chat_sha256": "0e34eea59e747a2956a2422d15e69235c69fd89f11fcf41d6bfe12eaa4b7d230",
+    "input_ids_sha256": "f22623194455d88e1b0b23d683bbd1afb8eeeb37f3934352ec1a552ca249ec99",
+    "input_tokens": 147,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nMarcelo Caetano is employed by University of Lisbon.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\nAlfred Newton is employed by Academy of Fine Arts Vienna.\n\nCorrections:\nSET Alfred Newton is employed by Academy of Fine Arts Vienna.\nSET Marcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nQuestion: Who is the employer of Marcelo Caetano?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F0",
+    "unit_id": "qwen:963:H0:F0"
+  },
+  {
+    "arm": "H1",
+    "branch": "F",
+    "case_id": 963,
+    "chat_sha256": "f5a8fff35ea4fb87c242383e7fa779731089498ab24f7f7d911140f91a9af8f4",
+    "input_ids_sha256": "81c8c3b84faf6ca7065c6af416f27a2c4775448c1962ee65108bed09a315dfa5",
+    "input_tokens": 147,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nAlfred Newton is employed by Academy of Fine Arts Vienna.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\nMarcelo Caetano is employed by University of Lisbon.\n\nCorrections:\nSET Alfred Newton is employed by Academy of Fine Arts Vienna.\nSET Marcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nQuestion: Who is the employer of Marcelo Caetano?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F0",
+    "unit_id": "qwen:963:H1:F0"
+  },
+  {
+    "arm": "S0",
+    "branch": "F",
+    "case_id": 963,
+    "chat_sha256": "2c4160c415a15bc95a932786767beed6a16a3b44386e271388ac402747f68c70",
+    "input_ids_sha256": "f9ca9e3a1f04cb9eda662956ed938cdfd0d9cddb08ec654db24b7fb156e094af",
+    "input_tokens": 147,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nAlfred Newton is employed by University of Lisbon.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\nMarcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nCorrections:\nSET Alfred Newton is employed by Academy of Fine Arts Vienna.\nSET Marcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nQuestion: Who is the employer of Marcelo Caetano?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F0",
+    "unit_id": "qwen:963:S0:F0"
+  },
+  {
+    "arm": "S1",
+    "branch": "F",
+    "case_id": 963,
+    "chat_sha256": "e70661bc1024d969e7dd44a2b09d49ac6bad785f13e61bdb2e8a06b667ff0795",
+    "input_ids_sha256": "49b6d43601d326f9d5bb508a448f7ffd532693644325dc702e1f891372ebdcc0",
+    "input_tokens": 147,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nMarcelo Caetano is employed by Academy of Fine Arts Vienna.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\nAlfred Newton is employed by University of Lisbon.\n\nCorrections:\nSET Alfred Newton is employed by Academy of Fine Arts Vienna.\nSET Marcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nQuestion: Who is the employer of Marcelo Caetano?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F0",
+    "unit_id": "qwen:963:S1:F0"
+  },
+  {
+    "arm": "C",
+    "branch": "F",
+    "case_id": 963,
+    "chat_sha256": "4388ec84df91c726f54461a23eec389a57c5ec3b18598abe6a73d5cca6277831",
+    "input_ids_sha256": "1bc5108526192d2824c64dec1ead3e0fc0cdf9e230db4085734f4fe39b4be6a5",
+    "input_tokens": 119,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nMarcelo Caetano is employed by Academy of Fine Arts Vienna.\nAlfred Newton is employed by Academy of Fine Arts Vienna.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\n\nQuestion: Who is the employer of Marcelo Caetano?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F0",
+    "unit_id": "qwen:963:C:F0"
+  },
+  {
+    "arm": "C+",
+    "branch": "F",
+    "case_id": 963,
+    "chat_sha256": "fe86df9469d6224014c8561f58e6671d0974a80631c09869bddf5d635a6e5b95",
+    "input_ids_sha256": "b429102147514f89c8b6efb3a91bdfb37f4bc31297b1bd0c8611b77c83355f6a",
+    "input_tokens": 149,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nMarcelo Caetano is employed by Academy of Fine Arts Vienna.\nAlfred Newton is employed by Academy of Fine Arts Vienna.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\n\nCorrections:\nSET Alfred Newton is employed by Academy of Fine Arts Vienna.\nSET Marcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nQuestion: Who is the employer of Marcelo Caetano?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F0",
+    "unit_id": "qwen:963:C+:F0"
+  },
+  {
+    "arm": "H0",
+    "branch": "F",
+    "case_id": 963,
+    "chat_sha256": "bb4d92b845e16393d85982fdf8cf39d151f26135165995dc06e065b9d7a0aee3",
+    "input_ids_sha256": "0a98ff109e051a3c5cfca66571dbe7bf0ce97edd725374334c4f53d9ef408217",
+    "input_tokens": 151,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nMarcelo Caetano is employed by University of Lisbon.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\nAlfred Newton is employed by Academy of Fine Arts Vienna.\n\nCorrections:\nSET Alfred Newton is employed by Academy of Fine Arts Vienna.\nSET Marcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nQuestion: Which city is the headquarter of Academy of Fine Arts Vienna located in?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F1",
+    "unit_id": "qwen:963:H0:F1"
+  },
+  {
+    "arm": "H1",
+    "branch": "F",
+    "case_id": 963,
+    "chat_sha256": "685833cb2e28af0e31ea9c4691cad74e072494e9ac4dbcf0373ccf213e39a0e7",
+    "input_ids_sha256": "03d39bf349483916c7a724624328dcab0601e5fdefc988ea0bc4eca39d271147",
+    "input_tokens": 151,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nAlfred Newton is employed by Academy of Fine Arts Vienna.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\nMarcelo Caetano is employed by University of Lisbon.\n\nCorrections:\nSET Alfred Newton is employed by Academy of Fine Arts Vienna.\nSET Marcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nQuestion: Which city is the headquarter of Academy of Fine Arts Vienna located in?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F1",
+    "unit_id": "qwen:963:H1:F1"
+  },
+  {
+    "arm": "S0",
+    "branch": "F",
+    "case_id": 963,
+    "chat_sha256": "1e3d9ae267689650df0c3d22cb50a7fde8906becf478d9f014cfd449615604a2",
+    "input_ids_sha256": "694ac9905a2d230cf37aa8c81407802f27673d1e29f049516437d6d84d507683",
+    "input_tokens": 151,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nAlfred Newton is employed by University of Lisbon.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\nMarcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nCorrections:\nSET Alfred Newton is employed by Academy of Fine Arts Vienna.\nSET Marcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nQuestion: Which city is the headquarter of Academy of Fine Arts Vienna located in?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F1",
+    "unit_id": "qwen:963:S0:F1"
+  },
+  {
+    "arm": "S1",
+    "branch": "F",
+    "case_id": 963,
+    "chat_sha256": "a7b55ce49b6c227a6303309b872f3f07380a8fb140fe98da429e78aea7172111",
+    "input_ids_sha256": "9235bfa1b63b911f63222268ceb22200397d0359005f80ae9a5ab5a5f57d7749",
+    "input_tokens": 151,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nMarcelo Caetano is employed by Academy of Fine Arts Vienna.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\nAlfred Newton is employed by University of Lisbon.\n\nCorrections:\nSET Alfred Newton is employed by Academy of Fine Arts Vienna.\nSET Marcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nQuestion: Which city is the headquarter of Academy of Fine Arts Vienna located in?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F1",
+    "unit_id": "qwen:963:S1:F1"
+  },
+  {
+    "arm": "C",
+    "branch": "F",
+    "case_id": 963,
+    "chat_sha256": "466b9b067439addd1faaf0411ab5b9b96613dcaa555cd3715ea79d5c8961873e",
+    "input_ids_sha256": "29d26386f1e173dcadc956cf263da9b6a399c30f59bd3a5f74a9f6986b0225d2",
+    "input_tokens": 123,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nMarcelo Caetano is employed by Academy of Fine Arts Vienna.\nAlfred Newton is employed by Academy of Fine Arts Vienna.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\n\nQuestion: Which city is the headquarter of Academy of Fine Arts Vienna located in?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F1",
+    "unit_id": "qwen:963:C:F1"
+  },
+  {
+    "arm": "C+",
+    "branch": "F",
+    "case_id": 963,
+    "chat_sha256": "d4bcdaea7c434e55b06e4216ff986a13818b8c7d25c3fc52154be7f5647821b6",
+    "input_ids_sha256": "5d33ce0ddb0c91b164788cd8275143adba22878734ee29e8cf2f2ec9f9f95b65",
+    "input_tokens": 153,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nMarcelo Caetano is employed by Academy of Fine Arts Vienna.\nAlfred Newton is employed by Academy of Fine Arts Vienna.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\n\nCorrections:\nSET Alfred Newton is employed by Academy of Fine Arts Vienna.\nSET Marcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nQuestion: Which city is the headquarter of Academy of Fine Arts Vienna located in?",
+        "role": "user"
+      }
+    ],
+    "query_id": "F1",
+    "unit_id": "qwen:963:C+:F1"
+  },
+  {
+    "arm": "H0",
+    "branch": "Fdecoy",
+    "case_id": 963,
+    "chat_sha256": "2ff8419c984b989c8fcd1ad3f4146aaa68ed75ecd9a5d31ec47acc55fe114832",
+    "input_ids_sha256": "4da51b53f443b1fbeca0adaca2d58233b81159bb70ccfa7bab1d312cacfd3f75",
+    "input_tokens": 144,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nMarcelo Caetano is employed by University of Lisbon.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\nAlfred Newton is employed by Academy of Fine Arts Vienna.\n\nCorrections:\nSET Alfred Newton is employed by Academy of Fine Arts Vienna.\nSET Marcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nQuestion: Who is the employer of Alfred Newton?",
+        "role": "user"
+      }
+    ],
+    "query_id": "Fdecoy",
+    "unit_id": "qwen:963:H0:Fdecoy"
+  },
+  {
+    "arm": "H1",
+    "branch": "Fdecoy",
+    "case_id": 963,
+    "chat_sha256": "433b65dc250a83727be54c5adbcd5573d38680bc61b12a26971ca9682685ac21",
+    "input_ids_sha256": "849140c003dcf6556434c964da647b0320f4bac5c344518754521232f94f8126",
+    "input_tokens": 144,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nAlfred Newton is employed by Academy of Fine Arts Vienna.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\nMarcelo Caetano is employed by University of Lisbon.\n\nCorrections:\nSET Alfred Newton is employed by Academy of Fine Arts Vienna.\nSET Marcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nQuestion: Who is the employer of Alfred Newton?",
+        "role": "user"
+      }
+    ],
+    "query_id": "Fdecoy",
+    "unit_id": "qwen:963:H1:Fdecoy"
+  },
+  {
+    "arm": "S0",
+    "branch": "Fdecoy",
+    "case_id": 963,
+    "chat_sha256": "19dc23b9172b28790eac36d79e5a25a863ef96a5ef1b01583282410c186adc3b",
+    "input_ids_sha256": "d3f0b83ac1db32b9a75ec29bbaf91fde69e6d6e04b9d5fd6ca955a4f03c5a9e7",
+    "input_tokens": 144,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nAlfred Newton is employed by University of Lisbon.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\nMarcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nCorrections:\nSET Alfred Newton is employed by Academy of Fine Arts Vienna.\nSET Marcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nQuestion: Who is the employer of Alfred Newton?",
+        "role": "user"
+      }
+    ],
+    "query_id": "Fdecoy",
+    "unit_id": "qwen:963:S0:Fdecoy"
+  },
+  {
+    "arm": "S1",
+    "branch": "Fdecoy",
+    "case_id": 963,
+    "chat_sha256": "14f5891bb18fcdaadcbecf943cae3c60984a7408197b9226e23a5a3f842ad99d",
+    "input_ids_sha256": "be078ee15091d64a7ccc2b4604d89fd6bfebe9ba8ef14f6acb28babdd06f453e",
+    "input_tokens": 144,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nMarcelo Caetano is employed by Academy of Fine Arts Vienna.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\nAlfred Newton is employed by University of Lisbon.\n\nCorrections:\nSET Alfred Newton is employed by Academy of Fine Arts Vienna.\nSET Marcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nQuestion: Who is the employer of Alfred Newton?",
+        "role": "user"
+      }
+    ],
+    "query_id": "Fdecoy",
+    "unit_id": "qwen:963:S1:Fdecoy"
+  },
+  {
+    "arm": "C",
+    "branch": "Fdecoy",
+    "case_id": 963,
+    "chat_sha256": "1c0ee59af5df6df5d0efb827c06eefb1b9c9b815f38efaa8b9c2a763f3815553",
+    "input_ids_sha256": "dd5c7429c4b47fd71cbd50246c8d4be21db400976a846685f34badc8e37cd045",
+    "input_tokens": 116,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nMarcelo Caetano is employed by Academy of Fine Arts Vienna.\nAlfred Newton is employed by Academy of Fine Arts Vienna.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\n\nQuestion: Who is the employer of Alfred Newton?",
+        "role": "user"
+      }
+    ],
+    "query_id": "Fdecoy",
+    "unit_id": "qwen:963:C:Fdecoy"
+  },
+  {
+    "arm": "C+",
+    "branch": "Fdecoy",
+    "case_id": 963,
+    "chat_sha256": "31d1ebc0f9c671aba60861bc09382b51cd5c64dec51394a5fc7d2d416f8d7985",
+    "input_ids_sha256": "704d2d0d0b9454c876db4f762e89484d90aea3a9bcab4b56a446b33d77ab6f72",
+    "input_tokens": 146,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nMarcelo Caetano is employed by Academy of Fine Arts Vienna.\nAlfred Newton is employed by Academy of Fine Arts Vienna.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\n\nCorrections:\nSET Alfred Newton is employed by Academy of Fine Arts Vienna.\nSET Marcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nQuestion: Who is the employer of Alfred Newton?",
+        "role": "user"
+      }
+    ],
+    "query_id": "Fdecoy",
+    "unit_id": "qwen:963:C+:Fdecoy"
+  },
+  {
+    "arm": "H0",
+    "branch": "J",
+    "case_id": 963,
+    "chat_sha256": "f57998d92c71f95463f3a90e62a47a21d34dc5a3c32f668d5c0de9ec76991f15",
+    "input_ids_sha256": "8cedb9ffd856239afdf2d486ed82a3b1c3c95642b844690d60c5bef0ce3ea9d3",
+    "input_tokens": 151,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nMarcelo Caetano is employed by University of Lisbon.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\nAlfred Newton is employed by Academy of Fine Arts Vienna.\n\nCorrections:\nSET Alfred Newton is employed by Academy of Fine Arts Vienna.\nSET Marcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nQuestion: Where is the headquarters location of the employer of Marcelo Caetano?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J0",
+    "unit_id": "qwen:963:H0:J0"
+  },
+  {
+    "arm": "H1",
+    "branch": "J",
+    "case_id": 963,
+    "chat_sha256": "b07780f51f1f3b8150cca744a023905b2b787ef7a328d7fda0b0147fe89dc41e",
+    "input_ids_sha256": "cdf30a439bcb02bc98697603704229e61393c255f5c81eb01cbec63c1b98f2ce",
+    "input_tokens": 151,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nAlfred Newton is employed by Academy of Fine Arts Vienna.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\nMarcelo Caetano is employed by University of Lisbon.\n\nCorrections:\nSET Alfred Newton is employed by Academy of Fine Arts Vienna.\nSET Marcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nQuestion: Where is the headquarters location of the employer of Marcelo Caetano?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J0",
+    "unit_id": "qwen:963:H1:J0"
+  },
+  {
+    "arm": "S0",
+    "branch": "J",
+    "case_id": 963,
+    "chat_sha256": "c699a03663e65e264e531eeb517f6068675939c1afc534bbc2e18812275b936b",
+    "input_ids_sha256": "8a8b50f333f88be40770f3527f149450e018981079f86e26b59862c0ec5876a5",
+    "input_tokens": 151,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nAlfred Newton is employed by University of Lisbon.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\nMarcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nCorrections:\nSET Alfred Newton is employed by Academy of Fine Arts Vienna.\nSET Marcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nQuestion: Where is the headquarters location of the employer of Marcelo Caetano?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J0",
+    "unit_id": "qwen:963:S0:J0"
+  },
+  {
+    "arm": "S1",
+    "branch": "J",
+    "case_id": 963,
+    "chat_sha256": "2244ad756745ccc4f1bdb1fe91044a40df5f91d56248eefcce53e79e623b7fc6",
+    "input_ids_sha256": "829775047179c5a0bbee84d4aa8f8ae7507861974181d95660003d164d94554f",
+    "input_tokens": 151,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nMarcelo Caetano is employed by Academy of Fine Arts Vienna.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\nAlfred Newton is employed by University of Lisbon.\n\nCorrections:\nSET Alfred Newton is employed by Academy of Fine Arts Vienna.\nSET Marcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nQuestion: Where is the headquarters location of the employer of Marcelo Caetano?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J0",
+    "unit_id": "qwen:963:S1:J0"
+  },
+  {
+    "arm": "C",
+    "branch": "J",
+    "case_id": 963,
+    "chat_sha256": "5116126a0b8cd272a6b3507fd3231c48c92b80bcf7533925d222fbb05909b800",
+    "input_ids_sha256": "5d047e483f57a7ad48cab6c43c5a37bc8c7b413b9488d403abd20e6aeede33e7",
+    "input_tokens": 123,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nMarcelo Caetano is employed by Academy of Fine Arts Vienna.\nAlfred Newton is employed by Academy of Fine Arts Vienna.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\n\nQuestion: Where is the headquarters location of the employer of Marcelo Caetano?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J0",
+    "unit_id": "qwen:963:C:J0"
+  },
+  {
+    "arm": "C+",
+    "branch": "J",
+    "case_id": 963,
+    "chat_sha256": "90aac9cd8e4154adca686d0af996f52ee44c4ccf3a70946b2d28328641f7ea3e",
+    "input_ids_sha256": "e1f1d2fa7444b8f7ef00c05675a8183fbcd6c729a6a3efb0527ccc40f0b84bab",
+    "input_tokens": 153,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nMarcelo Caetano is employed by Academy of Fine Arts Vienna.\nAlfred Newton is employed by Academy of Fine Arts Vienna.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\n\nCorrections:\nSET Alfred Newton is employed by Academy of Fine Arts Vienna.\nSET Marcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nQuestion: Where is the headquarters location of the employer of Marcelo Caetano?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J0",
+    "unit_id": "qwen:963:C+:J0"
+  },
+  {
+    "arm": "H0",
+    "branch": "J",
+    "case_id": 963,
+    "chat_sha256": "a6d454bc9850fc5ffad526d1e3de427f46b3da8a73c33549e18821cb9456cfde",
+    "input_ids_sha256": "0680ede0b91fffc9febaad66e13bc892cc5ed38fd1c9f4e2b2bdcb59b98611c2",
+    "input_tokens": 153,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nMarcelo Caetano is employed by University of Lisbon.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\nAlfred Newton is employed by Academy of Fine Arts Vienna.\n\nCorrections:\nSET Alfred Newton is employed by Academy of Fine Arts Vienna.\nSET Marcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nQuestion: What is the city in which the employer of Marcelo Caetano is headquartered?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J1",
+    "unit_id": "qwen:963:H0:J1"
+  },
+  {
+    "arm": "H1",
+    "branch": "J",
+    "case_id": 963,
+    "chat_sha256": "8242948c70bc017664b353cae707448278fad7c59ab1614dc7cb22a3943724f9",
+    "input_ids_sha256": "fa9f2a522355c89661d9df625b70dd972af18d81cea336c3e37be10e771d78b9",
+    "input_tokens": 153,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nAlfred Newton is employed by Academy of Fine Arts Vienna.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\nMarcelo Caetano is employed by University of Lisbon.\n\nCorrections:\nSET Alfred Newton is employed by Academy of Fine Arts Vienna.\nSET Marcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nQuestion: What is the city in which the employer of Marcelo Caetano is headquartered?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J1",
+    "unit_id": "qwen:963:H1:J1"
+  },
+  {
+    "arm": "S0",
+    "branch": "J",
+    "case_id": 963,
+    "chat_sha256": "3704b5beba85a70cc44df96bd8e96565385c0871d90999e0dd0c12e1c364e5b7",
+    "input_ids_sha256": "bf9b96283bca6901f1d0f3510e18d9e429d2b99c1d330b2c2ee656b1c90e26d3",
+    "input_tokens": 153,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nAlfred Newton is employed by University of Lisbon.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\nMarcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nCorrections:\nSET Alfred Newton is employed by Academy of Fine Arts Vienna.\nSET Marcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nQuestion: What is the city in which the employer of Marcelo Caetano is headquartered?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J1",
+    "unit_id": "qwen:963:S0:J1"
+  },
+  {
+    "arm": "S1",
+    "branch": "J",
+    "case_id": 963,
+    "chat_sha256": "1e9e7ed7b5394d1135d287e67c5a0d270b04443f7ea2fe37d2f365cb61792d2a",
+    "input_ids_sha256": "0d2fd93bb333799fd00295942ee918078e7192b586c9f0a217eae7c0e5995544",
+    "input_tokens": 153,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nMarcelo Caetano is employed by Academy of Fine Arts Vienna.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\nAlfred Newton is employed by University of Lisbon.\n\nCorrections:\nSET Alfred Newton is employed by Academy of Fine Arts Vienna.\nSET Marcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nQuestion: What is the city in which the employer of Marcelo Caetano is headquartered?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J1",
+    "unit_id": "qwen:963:S1:J1"
+  },
+  {
+    "arm": "C",
+    "branch": "J",
+    "case_id": 963,
+    "chat_sha256": "4a2af455beb573b975dac6429873067906f8283f89337d00328392c91a1f8f6e",
+    "input_ids_sha256": "35faf974f2e2ba494dca89dcf364c08e867b5eee7713db4e89b57aea6093f35d",
+    "input_tokens": 125,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nMarcelo Caetano is employed by Academy of Fine Arts Vienna.\nAlfred Newton is employed by Academy of Fine Arts Vienna.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\n\nQuestion: What is the city in which the employer of Marcelo Caetano is headquartered?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J1",
+    "unit_id": "qwen:963:C:J1"
+  },
+  {
+    "arm": "C+",
+    "branch": "J",
+    "case_id": 963,
+    "chat_sha256": "2887d1e2e42c0c99b931fe4941063730a81d2b1ebfc035e1400bbc9a431faac1",
+    "input_ids_sha256": "58771e12c9787f8e6ab31b201f884b5cc5e75b9be916e94b4b591b885a102416",
+    "input_tokens": 155,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nMarcelo Caetano is employed by Academy of Fine Arts Vienna.\nAlfred Newton is employed by Academy of Fine Arts Vienna.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\n\nCorrections:\nSET Alfred Newton is employed by Academy of Fine Arts Vienna.\nSET Marcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nQuestion: What is the city in which the employer of Marcelo Caetano is headquartered?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J1",
+    "unit_id": "qwen:963:C+:J1"
+  },
+  {
+    "arm": "H0",
+    "branch": "J",
+    "case_id": 963,
+    "chat_sha256": "2b3130e2b6071deaa1b3e8667298c83f5f2736942bd16bbe0debb6c239965242",
+    "input_ids_sha256": "f0c56f84984f83647e6648b6addad84290e58e93f4426b0bcf6423ae067ad4f1",
+    "input_tokens": 150,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nMarcelo Caetano is employed by University of Lisbon.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\nAlfred Newton is employed by Academy of Fine Arts Vienna.\n\nCorrections:\nSET Alfred Newton is employed by Academy of Fine Arts Vienna.\nSET Marcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nQuestion: In which city is the employer of Marcelo Caetano headquartered?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J2",
+    "unit_id": "qwen:963:H0:J2"
+  },
+  {
+    "arm": "H1",
+    "branch": "J",
+    "case_id": 963,
+    "chat_sha256": "65298e307441cf06eb14482eb17c41ac9df8605e32af41b3ff7767cc14e8bb76",
+    "input_ids_sha256": "1fd9c691b7d5726f683f595a7b56aecff1c11090cda2e35a8625eac30e2d7abd",
+    "input_tokens": 150,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nAlfred Newton is employed by Academy of Fine Arts Vienna.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\nMarcelo Caetano is employed by University of Lisbon.\n\nCorrections:\nSET Alfred Newton is employed by Academy of Fine Arts Vienna.\nSET Marcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nQuestion: In which city is the employer of Marcelo Caetano headquartered?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J2",
+    "unit_id": "qwen:963:H1:J2"
+  },
+  {
+    "arm": "S0",
+    "branch": "J",
+    "case_id": 963,
+    "chat_sha256": "6778beecee27ffeff2530a19a5c26d783d56903e7c3bdcba77113173e70ea0d1",
+    "input_ids_sha256": "250e0777e938c743ec6d09e5f355ca29ca60a145a5bee39e5fdc1be4cda3bc62",
+    "input_tokens": 150,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nAlfred Newton is employed by University of Lisbon.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\nMarcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nCorrections:\nSET Alfred Newton is employed by Academy of Fine Arts Vienna.\nSET Marcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nQuestion: In which city is the employer of Marcelo Caetano headquartered?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J2",
+    "unit_id": "qwen:963:S0:J2"
+  },
+  {
+    "arm": "S1",
+    "branch": "J",
+    "case_id": 963,
+    "chat_sha256": "c7dc55c1149514d97474eb67c3bb5289e3d5ff9cceabd1d089e2766994824b0b",
+    "input_ids_sha256": "ae4ca6a8de3fa5b15837c577f86004c0526159c08a47ab3224d17111e1ef7e35",
+    "input_tokens": 150,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nMarcelo Caetano is employed by Academy of Fine Arts Vienna.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\nAlfred Newton is employed by University of Lisbon.\n\nCorrections:\nSET Alfred Newton is employed by Academy of Fine Arts Vienna.\nSET Marcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nQuestion: In which city is the employer of Marcelo Caetano headquartered?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J2",
+    "unit_id": "qwen:963:S1:J2"
+  },
+  {
+    "arm": "C",
+    "branch": "J",
+    "case_id": 963,
+    "chat_sha256": "b2ff283dcedd017fc0222c04157c63d87dd956ec5292f431b4558893b99daf6d",
+    "input_ids_sha256": "d99fc53935435709810bf94aae5628fb5e125d146f4d1a3c6e6e5a4752649c85",
+    "input_tokens": 122,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nMarcelo Caetano is employed by Academy of Fine Arts Vienna.\nAlfred Newton is employed by Academy of Fine Arts Vienna.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\n\nQuestion: In which city is the employer of Marcelo Caetano headquartered?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J2",
+    "unit_id": "qwen:963:C:J2"
+  },
+  {
+    "arm": "C+",
+    "branch": "J",
+    "case_id": 963,
+    "chat_sha256": "0efbf2d168beddd112e95719bf4d8e212fdc81e19218b3bc862549943ed1f612",
+    "input_ids_sha256": "95c468be0ae6c05dc8da86c7536d57cfed32b63d6264ab7a6b80e02f1a20e597",
+    "input_tokens": 152,
+    "messages": [
+      {
+        "content": "Records stipulate the current nominated value of each field. The corrections supersede earlier entries. Answer from these records rather than outside knowledge. Return only the answer entity.",
+        "role": "system"
+      },
+      {
+        "content": "Initial record:\nMarcelo Caetano is employed by Academy of Fine Arts Vienna.\nAlfred Newton is employed by Academy of Fine Arts Vienna.\nThe headquarters of University of Lisbon is located in the city of Lisbon.\nThe headquarters of Academy of Fine Arts Vienna is located in the city of Vienna.\n\nCorrections:\nSET Alfred Newton is employed by Academy of Fine Arts Vienna.\nSET Marcelo Caetano is employed by Academy of Fine Arts Vienna.\n\nQuestion: In which city is the employer of Marcelo Caetano headquartered?",
+        "role": "user"
+      }
+    ],
+    "query_id": "J2",
+    "unit_id": "qwen:963:C+:J2"
+  }
+]

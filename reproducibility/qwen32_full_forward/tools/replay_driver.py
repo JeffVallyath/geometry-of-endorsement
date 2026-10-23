@@ -71,7 +71,7 @@ def worked_example(runtime, independent):
     assert [1, 2] in check['matched_pairs'] and [1, 2] in check['high_margin_pairs']
     twin = check['twin_id']
     # This module is the supplied checker, with no study-classification imports.
-    helper = module('qwen32_independent_example', runtime.parents[1] / 'handoff/independent_check.py')
+    helper = module('qwen32_independent_example', runtime.parents[1] / 'checks/independent_check.py')
     raw = helper.raw_load(runtime / f'results/qwen32_t4/final/{rid}/RAW_SCORES.jsonl')
     repeat = helper.raw_load(runtime / f'results/qwen32_t4/repeat_full/{rid}/RAW_SCORES.jsonl')
     design = load(runtime / f'cpu/designs/{rid}.json')
@@ -164,7 +164,7 @@ def main():
         repeats.main()
     finally:
         sys.argv = saved_argv
-    command(args.source / 'handoff/independent_check.py', ['--source', args.source / 'results', '--output', args.output / 'independent'])
+    command(args.source / 'checks/independent_check.py', ['--source', args.source / 'results', '--output', args.output / 'independent'])
     independent = load(args.output / 'independent/INDEPENDENT_CHECK.json')
     example = worked_example(runtime, independent)
     (args.output / 'WORKED_EXAMPLE.json').write_text(json.dumps(example, indent=2) + '\n', encoding='utf8')

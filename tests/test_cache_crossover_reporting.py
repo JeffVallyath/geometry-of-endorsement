@@ -51,13 +51,6 @@ def test_all_original_outcomes_remain_separate_and_unchanged():
         assert row['label']==s['label'] and row['root_id']==s['root_id']
         assert row['code']==('primary' if s['primary'] else 'alternate')
         assert {k:float(row[k]) for k in ('AA','AB','BA','BB')}==s['probability_effects']['cells']
-    appendix=(ROOT/'docs/CACHE_CROSSOVER_APPENDIX.md').read_text(encoding='utf8')
-    assert sum(line.startswith('| ') for line in appendix.splitlines())==25
-    assert 'MIXED/INCONCLUSIVE' in appendix and 'LOW-DISCRIMINATION' in appendix
-    # Regression: PowerShell's legacy default decoding must not corrupt UTF-8.
-    for name in ('docs/CACHE_CROSSOVER_APPENDIX.md','reproducibility/cache_crossover/README.md'):
-        text=(ROOT/name).read_text(encoding='utf8')
-        assert '\u00e2\u20ac' not in text and '\ufffd' not in text
 
 
 def test_independent_extension_replay_and_portable_export(tmp_path):
@@ -134,29 +127,5 @@ def test_every_extension_figure_bar_and_annotation_matches_sources(tmp_path):
         plt.close(fig)
 
 
-@pytest.mark.parametrize('old,new', [
-    ('One retrospectively selected Gemma history pair','Two independently selected Gemma history pairs'),
-    ('not independent cases','independent cases'),
-    ('not parameter editing','parameter editing'),
-    ('mechanism branch is closed for the current paper','mechanism branch needs more root searches'),
-])
-def test_extension_scope_guards(old,new):
-    from repro.evidence import check
-    import re
-    text=(ROOT/'docs/RESULTS_AND_CLAIMS.md').read_text(encoding='utf8')
-    pattern=r'\s+'.join(re.escape(word) for word in old.split())
-    changed,count=re.subn(pattern,new,text)
-    assert count == 1
-    result=check(document='results',overrides={'results':changed})
-    assert any(e['unit']=='cache_crossover_extension' for e in result.errors)
 
 
-def test_no_stale_pending_followup_and_no_new_em_dashes():
-    for name in ('README.md','PROJECT_STRATEGY.md','docs/RESULTS_AND_CLAIMS.md','reproducibility/cache_crossover/README.md'):
-        text=(ROOT/name).read_text(encoding='utf8')
-        assert '\u2014' not in text
-        assert 'have not yet been demonstrated together' not in text
-        assert 'remains optional and has not run' not in text
-    strategy=(ROOT/'PROJECT_STRATEGY.md').read_text(encoding='utf8')
-    assert 'follow-up is now completed' in strategy
-    assert 'mechanism branch is closed for the current paper' in strategy

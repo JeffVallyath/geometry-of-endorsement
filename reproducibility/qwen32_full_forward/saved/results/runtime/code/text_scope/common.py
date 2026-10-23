@@ -8,7 +8,7 @@ import os
 from pathlib import Path
 import sys
 
-DEFAULT_RUNTIME = Path(os.environ.get('V10_TEXT_SCOPE_RUNTIME', 'D:/geometry-of-endorsement/v10-text-scope-runtime-20260918'))
+DEFAULT_RUNTIME = Path('runtime')
 OPERATOR_LIVE = Path(os.environ.get('V10_TEXT_SCOPE_LIVE', str(DEFAULT_RUNTIME/'operator/live')))
 METHODS = ('EXISTING_CORRECTION', 'LATEST_SAME_WORDING')
 CONTEXTS = ('NATIVE_FINAL', *(f'o{o}/{m}' for o in range(8) for m in METHODS))
@@ -44,7 +44,7 @@ def save(path, value):
 
 
 def source_root(runtime):
-    return Path(runtime) / 'source' / 'geometry-of-endorsement'
+    return Path(runtime) / 'reference'
 
 
 def reproduction(runtime):
